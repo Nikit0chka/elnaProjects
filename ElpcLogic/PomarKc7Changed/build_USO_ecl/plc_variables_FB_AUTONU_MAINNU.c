@@ -79,11 +79,6 @@ int __variables_init_FB_AUTONU_MAINNU(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_AUTONU_MAINNU(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27401 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.NEWVALUE
-    st = getVariable(27401);
+  { // 26303 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.NEWVALUE
+    st = getVariable(26303);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.NEWVALUE", 48);
     st->size_data = sizeof(UINT);
@@ -199,8 +197,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
     st->value_p = p_UINT;
   }
-  { // 27402 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.CURRENTVALUE
-    st = getVariable(27402);
+  { // 26304 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.CURRENTVALUE
+    st = getVariable(26304);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.CURRENTVALUE", 52);
     st->size_data = sizeof(UINT);
@@ -211,8 +209,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
     st->value_p = p_UINT;
   }
-  { // 27403 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INOPCCOMMANDSDISABLED
-    st = getVariable(27403);
+  { // 26305 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INOPCCOMMANDSDISABLED
+    st = getVariable(26305);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27404 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND
-    st = getVariable(27404);
+  { // 26306 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND
+    st = getVariable(26306);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -235,8 +233,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27405 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND_ALG
-    st = getVariable(27405);
+  { // 26307 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND_ALG
+    st = getVariable(26307);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -247,8 +245,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27406 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND_ARM
-    st = getVariable(27406);
+  { // 26308 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND_ARM
+    st = getVariable(26308);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -259,8 +257,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27407 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.STATUS
-    st = getVariable(27407);
+  { // 26309 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.STATUS
+    st = getVariable(26309);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -271,8 +269,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27408 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.OPCCOMMANDSDISABLED
-    st = getVariable(27408);
+  { // 26310 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.OPCCOMMANDSDISABLED
+    st = getVariable(26310);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27409 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.VALUE
-    st = getVariable(27409);
+  { // 26311 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.VALUE
+    st = getVariable(26311);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.STRDP.VALUE", 45);
     st->size_data = sizeof(UINT);
@@ -295,8 +293,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
     st->value_p = p_UINT;
   }
-  { // 27414 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SOURCE
-    st = getVariable(27414);
+  { // 26316 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SOURCE
+    st = getVariable(26316);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SOURCE", 40);
     st->size_data = sizeof(BYTE);
@@ -306,8 +304,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27415 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.CMD
-    st = getVariable(27415);
+  { // 26317 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.CMD
+    st = getVariable(26317);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.CMD", 37);
     st->size_data = sizeof(BYTE);
@@ -317,8 +315,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27416 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.PARAMETR
-    st = getVariable(27416);
+  { // 26318 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.PARAMETR
+    st = getVariable(26318);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.PARAMETR", 42);
     st->size_data = sizeof(BYTE);
@@ -328,8 +326,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27417 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.LASTPARAMETR
-    st = getVariable(27417);
+  { // 26319 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.LASTPARAMETR
+    st = getVariable(26319);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.LASTPARAMETR", 46);
     st->size_data = sizeof(BYTE);
@@ -339,8 +337,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->LASTPARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27418 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SOURCE_FOR_STATUS
-    st = getVariable(27418);
+  { // 26320 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SOURCE_FOR_STATUS
+    st = getVariable(26320);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SOURCE_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -350,8 +348,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27419 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.CMD_FOR_STATUS
-    st = getVariable(27419);
+  { // 26321 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.CMD_FOR_STATUS
+    st = getVariable(26321);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.CMD_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -361,8 +359,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27420 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27420);
+  { // 26322 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26322);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.COMMAND_ERROR_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -372,8 +370,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27421 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.IN
-    st = getVariable(27421);
+  { // 26323 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.IN
+    st = getVariable(26323);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -384,8 +382,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27422 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.PT
-    st = getVariable(27422);
+  { // 26324 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.PT
+    st = getVariable(26324);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -396,8 +394,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27423 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.Q
-    st = getVariable(27423);
+  { // 26325 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.Q
+    st = getVariable(26325);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -408,8 +406,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27424 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.ET
-    st = getVariable(27424);
+  { // 26326 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.ET
+    st = getVariable(26326);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -420,8 +418,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27425 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER
-    st = getVariable(27425);
+  { // 26327 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER
+    st = getVariable(26327);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMER", 47);
     st->size_data = sizeof(TON);
@@ -431,8 +429,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_TON = (TON*)&p_FB_DISCRETPARAMETR->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27426 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMERPRIZNAK
-    st = getVariable(27426);
+  { // 26328 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMERPRIZNAK
+    st = getVariable(26328);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.RESETCMDTIMERPRIZNAK", 54);
     st->size_data = sizeof(BOOL);
@@ -442,8 +440,8 @@ int __variables_init_FB_AUTONU_MAINNU(){
     p_BOOL = (BOOL*)&p_FB_DISCRETPARAMETR->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27427 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SECONDTACT
-    st = getVariable(27427);
+  { // 26329 PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SECONDTACT
+    st = getVariable(26329);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTONU_MAINNU.SECONDTACT", 44);
     st->size_data = sizeof(BOOL);

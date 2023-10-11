@@ -79,11 +79,6 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27727 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND
-    st = getVariable(27727);
+  { // 26629 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND
+    st = getVariable(26629);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -199,8 +197,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27728 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND_ALG
-    st = getVariable(27728);
+  { // 26630 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND_ALG
+    st = getVariable(26630);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -211,8 +209,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27729 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND_ARM
-    st = getVariable(27729);
+  { // 26631 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND_ARM
+    st = getVariable(26631);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -223,8 +221,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27730 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.STATUS
-    st = getVariable(27730);
+  { // 26632 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.STATUS
+    st = getVariable(26632);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -235,8 +233,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27731 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.NEWVALUE
-    st = getVariable(27731);
+  { // 26633 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.NEWVALUE
+    st = getVariable(26633);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.NEWVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -247,8 +245,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 27732 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.CURRENTVALUE
-    st = getVariable(27732);
+  { // 26634 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.CURRENTVALUE
+    st = getVariable(26634);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.CURRENTVALUE", 57);
     st->size_data = sizeof(LREAL);
@@ -259,8 +257,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 27733 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MINVAL
-    st = getVariable(27733);
+  { // 26635 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MINVAL
+    st = getVariable(26635);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MINVAL", 51);
     st->size_data = sizeof(LREAL);
@@ -271,8 +269,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 27734 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXVAL
-    st = getVariable(27734);
+  { // 26636 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXVAL
+    st = getVariable(26636);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXVAL", 51);
     st->size_data = sizeof(LREAL);
@@ -283,8 +281,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 27735 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXSTEP
-    st = getVariable(27735);
+  { // 26637 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXSTEP
+    st = getVariable(26637);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXSTEP", 52);
     st->size_data = sizeof(LREAL);
@@ -295,8 +293,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 27736 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MINVAL_ISVALIDREF
-    st = getVariable(27736);
+  { // 26638 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MINVAL_ISVALIDREF
+    st = getVariable(26638);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MINVAL_ISVALIDREF", 62);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 27737 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXVAL_ISVALIDREF
-    st = getVariable(27737);
+  { // 26639 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXVAL_ISVALIDREF
+    st = getVariable(26639);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXVAL_ISVALIDREF", 62);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 27738 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXSTEP_ISVALIDREF
-    st = getVariable(27738);
+  { // 26640 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXSTEP_ISVALIDREF
+    st = getVariable(26640);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.MAXSTEP_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -331,8 +329,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 27739 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INOPCCOMMANDSDISABLED
-    st = getVariable(27739);
+  { // 26641 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INOPCCOMMANDSDISABLED
+    st = getVariable(26641);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27740 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.VALUE
-    st = getVariable(27740);
+  { // 26642 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.VALUE
+    st = getVariable(26642);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.VALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -355,8 +353,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 27741 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.ISVALIDVALUE
-    st = getVariable(27741);
+  { // 26643 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.ISVALIDVALUE
+    st = getVariable(26643);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.ISVALIDVALUE", 57);
     st->size_data = sizeof(BOOL);
@@ -367,8 +365,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 27742 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.OPCCOMMANDSDISABLED
-    st = getVariable(27742);
+  { // 26644 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.OPCCOMMANDSDISABLED
+    st = getVariable(26644);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.STRAP.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -379,8 +377,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27747 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SOURCE
-    st = getVariable(27747);
+  { // 26649 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SOURCE
+    st = getVariable(26649);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SOURCE", 45);
     st->size_data = sizeof(BYTE);
@@ -390,8 +388,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27748 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.CMD
-    st = getVariable(27748);
+  { // 26650 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.CMD
+    st = getVariable(26650);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.CMD", 42);
     st->size_data = sizeof(BYTE);
@@ -401,8 +399,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27749 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SOURCE_FOR_STATUS
-    st = getVariable(27749);
+  { // 26651 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SOURCE_FOR_STATUS
+    st = getVariable(26651);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SOURCE_FOR_STATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -412,8 +410,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27750 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.CMD_FOR_STATUS
-    st = getVariable(27750);
+  { // 26652 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.CMD_FOR_STATUS
+    st = getVariable(26652);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.CMD_FOR_STATUS", 53);
     st->size_data = sizeof(BYTE);
@@ -423,8 +421,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27751 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27751);
+  { // 26653 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26653);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.COMMAND_ERROR_FOR_STATUS", 63);
     st->size_data = sizeof(BYTE);
@@ -434,8 +432,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27752 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.IN
-    st = getVariable(27752);
+  { // 26654 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.IN
+    st = getVariable(26654);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.IN", 55);
     st->size_data = sizeof(BOOL);
@@ -446,8 +444,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27753 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.PT
-    st = getVariable(27753);
+  { // 26655 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.PT
+    st = getVariable(26655);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.PT", 55);
     st->size_data = sizeof(TIME);
@@ -458,8 +456,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27754 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.Q
-    st = getVariable(27754);
+  { // 26656 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.Q
+    st = getVariable(26656);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -470,8 +468,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27755 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.ET
-    st = getVariable(27755);
+  { // 26657 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.ET
+    st = getVariable(26657);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER.ET", 55);
     st->size_data = sizeof(TIME);
@@ -482,8 +480,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27756 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER
-    st = getVariable(27756);
+  { // 26658 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER
+    st = getVariable(26658);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMER", 52);
     st->size_data = sizeof(TON);
@@ -493,8 +491,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_TON = (TON*)&p_FB_ANALOGPARAMETR->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27757 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMERPRIZNAK
-    st = getVariable(27757);
+  { // 26659 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMERPRIZNAK
+    st = getVariable(26659);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RESETCMDTIMERPRIZNAK", 59);
     st->size_data = sizeof(BOOL);
@@ -504,8 +502,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27758 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SECONDTACT
-    st = getVariable(27758);
+  { // 26660 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SECONDTACT
+    st = getVariable(26660);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.SECONDTACT", 49);
     st->size_data = sizeof(BOOL);
@@ -515,8 +513,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR->SECONDTACT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27759 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.INP
-    st = getVariable(27759);
+  { // 26661 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.INP
+    st = getVariable(26661);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.INP", 42);
     st->size_data = sizeof(LREAL);
@@ -526,8 +524,8 @@ int __variables_init_FB_TESTDPMG_UST_DPLOW(){
     p_LREAL = (LREAL*)&p_FB_ANALOGPARAMETR->INP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27760 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RABS
-    st = getVariable(27760);
+  { // 26662 PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RABS
+    st = getVariable(26662);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TESTDPMG_UST_DPLOW.RABS", 43);
     st->size_data = sizeof(LREAL);

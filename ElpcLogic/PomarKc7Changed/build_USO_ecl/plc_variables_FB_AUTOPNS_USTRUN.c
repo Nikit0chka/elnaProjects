@@ -79,11 +79,6 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27557 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND
-    st = getVariable(27557);
+  { // 26459 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND
+    st = getVariable(26459);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -199,8 +197,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27558 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND_ALG
-    st = getVariable(27558);
+  { // 26460 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND_ALG
+    st = getVariable(26460);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -211,8 +209,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27559 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND_ARM
-    st = getVariable(27559);
+  { // 26461 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND_ARM
+    st = getVariable(26461);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -223,8 +221,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27560 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.STATUS
-    st = getVariable(27560);
+  { // 26462 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.STATUS
+    st = getVariable(26462);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -235,8 +233,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27561 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.NEWVALUE
-    st = getVariable(27561);
+  { // 26463 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.NEWVALUE
+    st = getVariable(26463);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.NEWVALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -247,8 +245,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 27562 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.CURRENTVALUE
-    st = getVariable(27562);
+  { // 26464 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.CURRENTVALUE
+    st = getVariable(26464);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.CURRENTVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -259,8 +257,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 27563 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MINVAL
-    st = getVariable(27563);
+  { // 26465 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MINVAL
+    st = getVariable(26465);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MINVAL", 47);
     st->size_data = sizeof(LREAL);
@@ -271,8 +269,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 27564 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXVAL
-    st = getVariable(27564);
+  { // 26466 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXVAL
+    st = getVariable(26466);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXVAL", 47);
     st->size_data = sizeof(LREAL);
@@ -283,8 +281,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 27565 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXSTEP
-    st = getVariable(27565);
+  { // 26467 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXSTEP
+    st = getVariable(26467);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXSTEP", 48);
     st->size_data = sizeof(LREAL);
@@ -295,8 +293,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 27566 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MINVAL_ISVALIDREF
-    st = getVariable(27566);
+  { // 26468 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MINVAL_ISVALIDREF
+    st = getVariable(26468);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MINVAL_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 27567 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXVAL_ISVALIDREF
-    st = getVariable(27567);
+  { // 26469 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXVAL_ISVALIDREF
+    st = getVariable(26469);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXVAL_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 27568 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXSTEP_ISVALIDREF
-    st = getVariable(27568);
+  { // 26470 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXSTEP_ISVALIDREF
+    st = getVariable(26470);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.MAXSTEP_ISVALIDREF", 59);
     st->size_data = sizeof(BOOL);
@@ -331,8 +329,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 27569 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INOPCCOMMANDSDISABLED
-    st = getVariable(27569);
+  { // 26471 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INOPCCOMMANDSDISABLED
+    st = getVariable(26471);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27570 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.VALUE
-    st = getVariable(27570);
+  { // 26472 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.VALUE
+    st = getVariable(26472);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.VALUE", 46);
     st->size_data = sizeof(LREAL);
@@ -355,8 +353,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 27571 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.ISVALIDVALUE
-    st = getVariable(27571);
+  { // 26473 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.ISVALIDVALUE
+    st = getVariable(26473);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.ISVALIDVALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -367,8 +365,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 27572 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.OPCCOMMANDSDISABLED
-    st = getVariable(27572);
+  { // 26474 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.OPCCOMMANDSDISABLED
+    st = getVariable(26474);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.STRAP.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -379,8 +377,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27577 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SOURCE
-    st = getVariable(27577);
+  { // 26479 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SOURCE
+    st = getVariable(26479);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SOURCE", 41);
     st->size_data = sizeof(BYTE);
@@ -390,8 +388,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27578 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.CMD
-    st = getVariable(27578);
+  { // 26480 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.CMD
+    st = getVariable(26480);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.CMD", 38);
     st->size_data = sizeof(BYTE);
@@ -401,8 +399,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27579 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SOURCE_FOR_STATUS
-    st = getVariable(27579);
+  { // 26481 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SOURCE_FOR_STATUS
+    st = getVariable(26481);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SOURCE_FOR_STATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -412,8 +410,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27580 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.CMD_FOR_STATUS
-    st = getVariable(27580);
+  { // 26482 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.CMD_FOR_STATUS
+    st = getVariable(26482);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.CMD_FOR_STATUS", 49);
     st->size_data = sizeof(BYTE);
@@ -423,8 +421,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27581 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27581);
+  { // 26483 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26483);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.COMMAND_ERROR_FOR_STATUS", 59);
     st->size_data = sizeof(BYTE);
@@ -434,8 +432,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BYTE = (BYTE*)&p_FB_ANALOGPARAMETR->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27582 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.IN
-    st = getVariable(27582);
+  { // 26484 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.IN
+    st = getVariable(26484);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.IN", 51);
     st->size_data = sizeof(BOOL);
@@ -446,8 +444,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27583 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.PT
-    st = getVariable(27583);
+  { // 26485 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.PT
+    st = getVariable(26485);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.PT", 51);
     st->size_data = sizeof(TIME);
@@ -458,8 +456,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27584 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.Q
-    st = getVariable(27584);
+  { // 26486 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.Q
+    st = getVariable(26486);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -470,8 +468,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27585 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.ET
-    st = getVariable(27585);
+  { // 26487 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.ET
+    st = getVariable(26487);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER.ET", 51);
     st->size_data = sizeof(TIME);
@@ -482,8 +480,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27586 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER
-    st = getVariable(27586);
+  { // 26488 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER
+    st = getVariable(26488);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMER", 48);
     st->size_data = sizeof(TON);
@@ -493,8 +491,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_TON = (TON*)&p_FB_ANALOGPARAMETR->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27587 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMERPRIZNAK
-    st = getVariable(27587);
+  { // 26489 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMERPRIZNAK
+    st = getVariable(26489);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RESETCMDTIMERPRIZNAK", 55);
     st->size_data = sizeof(BOOL);
@@ -504,8 +502,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27588 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SECONDTACT
-    st = getVariable(27588);
+  { // 26490 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SECONDTACT
+    st = getVariable(26490);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.SECONDTACT", 45);
     st->size_data = sizeof(BOOL);
@@ -515,8 +513,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR->SECONDTACT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27589 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.INP
-    st = getVariable(27589);
+  { // 26491 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.INP
+    st = getVariable(26491);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.INP", 38);
     st->size_data = sizeof(LREAL);
@@ -526,8 +524,8 @@ int __variables_init_FB_AUTOPNS_USTRUN(){
     p_LREAL = (LREAL*)&p_FB_ANALOGPARAMETR->INP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27590 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RABS
-    st = getVariable(27590);
+  { // 26492 PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RABS
+    st = getVariable(26492);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AUTOPNS_USTRUN.RABS", 39);
     st->size_data = sizeof(LREAL);

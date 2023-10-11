@@ -79,11 +79,6 @@ int __variables_init_FB_TYPESWITCH(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_TYPESWITCH(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_TYPESWITCH(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27374 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.NEWVALUE
-    st = getVariable(27374);
+  { // 26276 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.NEWVALUE
+    st = getVariable(26276);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.NEWVALUE", 45);
     st->size_data = sizeof(UINT);
@@ -199,8 +197,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
     st->value_p = p_UINT;
   }
-  { // 27375 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.CURRENTVALUE
-    st = getVariable(27375);
+  { // 26277 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.CURRENTVALUE
+    st = getVariable(26277);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.CURRENTVALUE", 49);
     st->size_data = sizeof(UINT);
@@ -211,8 +209,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
     st->value_p = p_UINT;
   }
-  { // 27376 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INOPCCOMMANDSDISABLED
-    st = getVariable(27376);
+  { // 26278 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INOPCCOMMANDSDISABLED
+    st = getVariable(26278);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INOPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27377 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND
-    st = getVariable(27377);
+  { // 26279 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND
+    st = getVariable(26279);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND", 46);
     st->size_data = sizeof(WORD);
@@ -235,8 +233,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27378 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND_ALG
-    st = getVariable(27378);
+  { // 26280 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND_ALG
+    st = getVariable(26280);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND_ALG", 50);
     st->size_data = sizeof(WORD);
@@ -247,8 +245,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27379 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND_ARM
-    st = getVariable(27379);
+  { // 26281 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND_ARM
+    st = getVariable(26281);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.INCOMMAND_ARM", 50);
     st->size_data = sizeof(WORD);
@@ -259,8 +257,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27380 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.STATUS
-    st = getVariable(27380);
+  { // 26282 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.STATUS
+    st = getVariable(26282);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.STATUS", 43);
     st->size_data = sizeof(DWORD);
@@ -271,8 +269,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27381 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.OPCCOMMANDSDISABLED
-    st = getVariable(27381);
+  { // 26283 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.OPCCOMMANDSDISABLED
+    st = getVariable(26283);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.OPCCOMMANDSDISABLED", 56);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27382 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.VALUE
-    st = getVariable(27382);
+  { // 26284 PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.VALUE
+    st = getVariable(26284);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.STRDP.VALUE", 42);
     st->size_data = sizeof(UINT);
@@ -295,8 +293,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
     st->value_p = p_UINT;
   }
-  { // 27387 PROGRAM0.IM_PROC.FB_TYPESWITCH.SOURCE
-    st = getVariable(27387);
+  { // 26289 PROGRAM0.IM_PROC.FB_TYPESWITCH.SOURCE
+    st = getVariable(26289);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.SOURCE", 37);
     st->size_data = sizeof(BYTE);
@@ -306,8 +304,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27388 PROGRAM0.IM_PROC.FB_TYPESWITCH.CMD
-    st = getVariable(27388);
+  { // 26290 PROGRAM0.IM_PROC.FB_TYPESWITCH.CMD
+    st = getVariable(26290);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.CMD", 34);
     st->size_data = sizeof(BYTE);
@@ -317,8 +315,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27389 PROGRAM0.IM_PROC.FB_TYPESWITCH.PARAMETR
-    st = getVariable(27389);
+  { // 26291 PROGRAM0.IM_PROC.FB_TYPESWITCH.PARAMETR
+    st = getVariable(26291);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.PARAMETR", 39);
     st->size_data = sizeof(BYTE);
@@ -328,8 +326,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27390 PROGRAM0.IM_PROC.FB_TYPESWITCH.LASTPARAMETR
-    st = getVariable(27390);
+  { // 26292 PROGRAM0.IM_PROC.FB_TYPESWITCH.LASTPARAMETR
+    st = getVariable(26292);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.LASTPARAMETR", 43);
     st->size_data = sizeof(BYTE);
@@ -339,8 +337,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->LASTPARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27391 PROGRAM0.IM_PROC.FB_TYPESWITCH.SOURCE_FOR_STATUS
-    st = getVariable(27391);
+  { // 26293 PROGRAM0.IM_PROC.FB_TYPESWITCH.SOURCE_FOR_STATUS
+    st = getVariable(26293);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.SOURCE_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -350,8 +348,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27392 PROGRAM0.IM_PROC.FB_TYPESWITCH.CMD_FOR_STATUS
-    st = getVariable(27392);
+  { // 26294 PROGRAM0.IM_PROC.FB_TYPESWITCH.CMD_FOR_STATUS
+    st = getVariable(26294);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.CMD_FOR_STATUS", 45);
     st->size_data = sizeof(BYTE);
@@ -361,8 +359,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27393 PROGRAM0.IM_PROC.FB_TYPESWITCH.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27393);
+  { // 26295 PROGRAM0.IM_PROC.FB_TYPESWITCH.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26295);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.COMMAND_ERROR_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -372,8 +370,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BYTE = (BYTE*)&p_FB_DISCRETPARAMETR->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27394 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.IN
-    st = getVariable(27394);
+  { // 26296 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.IN
+    st = getVariable(26296);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -384,8 +382,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27395 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.PT
-    st = getVariable(27395);
+  { // 26297 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.PT
+    st = getVariable(26297);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.PT", 47);
     st->size_data = sizeof(TIME);
@@ -396,8 +394,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27396 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.Q
-    st = getVariable(27396);
+  { // 26298 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.Q
+    st = getVariable(26298);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -408,8 +406,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27397 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.ET
-    st = getVariable(27397);
+  { // 26299 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.ET
+    st = getVariable(26299);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER.ET", 47);
     st->size_data = sizeof(TIME);
@@ -420,8 +418,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27398 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER
-    st = getVariable(27398);
+  { // 26300 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER
+    st = getVariable(26300);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMER", 44);
     st->size_data = sizeof(TON);
@@ -431,8 +429,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_TON = (TON*)&p_FB_DISCRETPARAMETR->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27399 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMERPRIZNAK
-    st = getVariable(27399);
+  { // 26301 PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMERPRIZNAK
+    st = getVariable(26301);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.RESETCMDTIMERPRIZNAK", 51);
     st->size_data = sizeof(BOOL);
@@ -442,8 +440,8 @@ int __variables_init_FB_TYPESWITCH(){
     p_BOOL = (BOOL*)&p_FB_DISCRETPARAMETR->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27400 PROGRAM0.IM_PROC.FB_TYPESWITCH.SECONDTACT
-    st = getVariable(27400);
+  { // 26302 PROGRAM0.IM_PROC.FB_TYPESWITCH.SECONDTACT
+    st = getVariable(26302);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TYPESWITCH.SECONDTACT", 41);
     st->size_data = sizeof(BOOL);

@@ -79,11 +79,6 @@ int __variables_init_FB_VOZB_OVERLOAD(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_VOZB_OVERLOAD(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26542 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL.VALUE
-    st = getVariable(26542);
+  { // 25444 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL.VALUE
+    st = getVariable(25444);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL.VALUE", 46);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26543 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL.RELIABILITY
-    st = getVariable(26543);
+  { // 25445 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL.RELIABILITY
+    st = getVariable(25445);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26544 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL._INVERSED
-    st = getVariable(26544);
+  { // 25446 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL._INVERSED
+    st = getVariable(25446);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.SIGNAL._INVERSED", 50);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26545 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.RELIABILITY
-    st = getVariable(26545);
+  { // 25447 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.RELIABILITY
+    st = getVariable(25447);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26546 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.INVERSE
-    st = getVariable(26546);
+  { // 25448 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.INVERSE
+    st = getVariable(25448);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.INVERSE", 48);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26547 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DELAYON
-    st = getVariable(26547);
+  { // 25449 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DELAYON
+    st = getVariable(25449);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DELAYON", 48);
     st->size_data = sizeof(TIME);
@@ -259,8 +257,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26548 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DELAYOFF
-    st = getVariable(26548);
+  { // 25450 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DELAYOFF
+    st = getVariable(25450);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DELAYOFF", 49);
     st->size_data = sizeof(TIME);
@@ -271,8 +269,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26549 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.Q
-    st = getVariable(26549);
+  { // 25451 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.Q
+    st = getVariable(25451);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26550 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.STATUS
-    st = getVariable(26550);
+  { // 25452 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.STATUS
+    st = getVariable(25452);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26551 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DISABLED_SIG
-    st = getVariable(26551);
+  { // 25453 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DISABLED_SIG
+    st = getVariable(25453);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.STR_SS.DISABLED_SIG", 53);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26552 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.IN
-    st = getVariable(26552);
+  { // 25454 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.IN
+    st = getVariable(25454);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26553 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.PT
-    st = getVariable(26553);
+  { // 25455 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.PT
+    st = getVariable(25455);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.PT", 44);
     st->size_data = sizeof(TIME);
@@ -331,8 +329,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26554 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.Q
-    st = getVariable(26554);
+  { // 25456 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.Q
+    st = getVariable(25456);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26555 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.ET
-    st = getVariable(26555);
+  { // 25457 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.ET
+    st = getVariable(25457);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON.ET", 44);
     st->size_data = sizeof(TIME);
@@ -355,8 +353,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26556 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON
-    st = getVariable(26556);
+  { // 25458 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON
+    st = getVariable(25458);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMERON", 41);
     st->size_data = sizeof(TON);
@@ -366,8 +364,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26557 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.IN
-    st = getVariable(26557);
+  { // 25459 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.IN
+    st = getVariable(25459);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -378,8 +376,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26558 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.PT
-    st = getVariable(26558);
+  { // 25460 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.PT
+    st = getVariable(25460);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.PT", 45);
     st->size_data = sizeof(TIME);
@@ -390,8 +388,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26559 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.Q
-    st = getVariable(26559);
+  { // 25461 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.Q
+    st = getVariable(25461);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -402,8 +400,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26560 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.ET
-    st = getVariable(26560);
+  { // 25462 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.ET
+    st = getVariable(25462);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF.ET", 45);
     st->size_data = sizeof(TIME);
@@ -414,8 +412,8 @@ int __variables_init_FB_VOZB_OVERLOAD(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26561 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF
-    st = getVariable(26561);
+  { // 25463 PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF
+    st = getVariable(25463);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_OVERLOAD.TIMEROFF", 42);
     st->size_data = sizeof(TOF);

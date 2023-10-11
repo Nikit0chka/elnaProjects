@@ -79,11 +79,6 @@ int __variables_init_FB_TESTIMALG(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_TESTIMALG(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_TESTIMALG(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 44266 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INRUNONSTART
-    st = getVariable(44266);
+  { // 44198 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INRUNONSTART
+    st = getVariable(44198);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INRUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 44267 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCANRUN
-    st = getVariable(44267);
+  { // 44199 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCANRUN
+    st = getVariable(44199);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 44268 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INHASERROR
-    st = getVariable(44268);
+  { // 44200 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INHASERROR
+    st = getVariable(44200);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INHASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 44269 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INENDED
-    st = getVariable(44269);
+  { // 44201 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INENDED
+    st = getVariable(44201);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 44270 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INOPCCOMMANDSDISABLED
-    st = getVariable(44270);
+  { // 44202 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INOPCCOMMANDSDISABLED
+    st = getVariable(44202);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44271 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND
-    st = getVariable(44271);
+  { // 44203 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND
+    st = getVariable(44203);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -259,8 +257,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44272 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND_ARM
-    st = getVariable(44272);
+  { // 44204 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND_ARM
+    st = getVariable(44204);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -271,8 +269,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44273 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND_ALG
-    st = getVariable(44273);
+  { // 44205 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND_ALG
+    st = getVariable(44205);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -283,8 +281,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44274 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.STATUS
-    st = getVariable(44274);
+  { // 44206 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.STATUS
+    st = getVariable(44206);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44275 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.CANRUN
-    st = getVariable(44275);
+  { // 44207 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.CANRUN
+    st = getVariable(44207);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.CANRUN", 50);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 44276 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.OPCCOMMANDSDISABLED
-    st = getVariable(44276);
+  { // 44208 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.OPCCOMMANDSDISABLED
+    st = getVariable(44208);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44277 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ISRUNING
-    st = getVariable(44277);
+  { // 44209 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ISRUNING
+    st = getVariable(44209);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ISRUNING", 52);
     st->size_data = sizeof(BOOL);
@@ -331,8 +329,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 44278 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.HASERROR
-    st = getVariable(44278);
+  { // 44210 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.HASERROR
+    st = getVariable(44210);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.HASERROR", 52);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 44279 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ISENDED
-    st = getVariable(44279);
+  { // 44211 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ISENDED
+    st = getVariable(44211);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ISENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -355,8 +353,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 44280 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.RUNONSTART
-    st = getVariable(44280);
+  { // 44212 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.RUNONSTART
+    st = getVariable(44212);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.RUNONSTART", 54);
     st->size_data = sizeof(BOOL);
@@ -367,8 +365,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 44281 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.START
-    st = getVariable(44281);
+  { // 44213 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.START
+    st = getVariable(44213);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.START", 49);
     st->size_data = sizeof(DWORD);
@@ -379,8 +377,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 44282 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ERROR
-    st = getVariable(44282);
+  { // 44214 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ERROR
+    st = getVariable(44214);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.ERROR", 49);
     st->size_data = sizeof(DWORD);
@@ -391,8 +389,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 44283 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.TOP
-    st = getVariable(44283);
+  { // 44215 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.TOP
+    st = getVariable(44215);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.STRALG.TOP", 47);
     st->size_data = sizeof(DWORD);
@@ -403,8 +401,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 44288 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.SOURCE
-    st = getVariable(44288);
+  { // 44220 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.SOURCE
+    st = getVariable(44220);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.SOURCE", 43);
     st->size_data = sizeof(BYTE);
@@ -414,8 +412,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TESTIMALG->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44289 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.CMD
-    st = getVariable(44289);
+  { // 44221 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.CMD
+    st = getVariable(44221);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.CMD", 40);
     st->size_data = sizeof(BYTE);
@@ -425,8 +423,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TESTIMALG->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44290 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.LASTCMD
-    st = getVariable(44290);
+  { // 44222 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.LASTCMD
+    st = getVariable(44222);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.LASTCMD", 44);
     st->size_data = sizeof(BYTE);
@@ -436,8 +434,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TESTIMALG->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44291 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.SOURCE_FOR_STATUS
-    st = getVariable(44291);
+  { // 44223 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.SOURCE_FOR_STATUS
+    st = getVariable(44223);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.SOURCE_FOR_STATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -447,8 +445,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TESTIMALG->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44292 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.CMD_FOR_STATUS
-    st = getVariable(44292);
+  { // 44224 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.CMD_FOR_STATUS
+    st = getVariable(44224);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.CMD_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -458,8 +456,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TESTIMALG->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44293 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(44293);
+  { // 44225 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(44225);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.COMMAND_ERROR_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -469,8 +467,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TESTIMALG->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44294 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.IN
-    st = getVariable(44294);
+  { // 44226 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.IN
+    st = getVariable(44226);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -481,8 +479,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 44295 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.PT
-    st = getVariable(44295);
+  { // 44227 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.PT
+    st = getVariable(44227);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.PT", 53);
     st->size_data = sizeof(TIME);
@@ -493,8 +491,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 44296 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.Q
-    st = getVariable(44296);
+  { // 44228 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.Q
+    st = getVariable(44228);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -505,8 +503,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 44297 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.ET
-    st = getVariable(44297);
+  { // 44229 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.ET
+    st = getVariable(44229);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER.ET", 53);
     st->size_data = sizeof(TIME);
@@ -517,8 +515,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 44298 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER
-    st = getVariable(44298);
+  { // 44230 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER
+    st = getVariable(44230);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMER", 50);
     st->size_data = sizeof(TON);
@@ -528,8 +526,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TON = (TON*)&p_TESTIMALG->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 44299 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMERPRIZNAK
-    st = getVariable(44299);
+  { // 44231 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMERPRIZNAK
+    st = getVariable(44231);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.RESETCMDTIMERPRIZNAK", 57);
     st->size_data = sizeof(BOOL);
@@ -539,8 +537,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_TESTIMALG->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 44300 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PROTECTMANAGER.INCOMMAND
-    st = getVariable(44300);
+  { // 44232 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PROTECTMANAGER.INCOMMAND
+    st = getVariable(44232);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PROTECTMANAGER.INCOMMAND", 61);
     st->size_data = sizeof(BYTE);
@@ -551,8 +549,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_PROTECTIONSMANAGER->INCOMMAND;
     st->value_p = p_BYTE;
   }
-  { // 44301 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PROTECTMANAGER.PROTECTIONINREMONT
-    st = getVariable(44301);
+  { // 44233 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PROTECTMANAGER.PROTECTIONINREMONT
+    st = getVariable(44233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PROTECTMANAGER.PROTECTIONINREMONT", 70);
     st->size_data = sizeof(BOOL);
@@ -563,8 +561,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_PROTECTIONSMANAGER->PROTECTIONINREMONT;
     st->value_p = p_BOOL;
   }
-  { // 44302 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.MODE
-    st = getVariable(44302);
+  { // 44234 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.MODE
+    st = getVariable(44234);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.MODE", 52);
     st->size_data = sizeof(UINT);
@@ -575,8 +573,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->MODE;
     st->value_p = p_UINT;
   }
-  { // 44303 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.NARABOTKA
-    st = getVariable(44303);
+  { // 44235 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.NARABOTKA
+    st = getVariable(44235);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.NARABOTKA", 57);
     st->size_data = sizeof(UINT);
@@ -587,8 +585,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NARABOTKA;
     st->value_p = p_UINT;
   }
-  { // 44304 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.NMODE
-    st = getVariable(44304);
+  { // 44236 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.NMODE
+    st = getVariable(44236);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.NMODE", 53);
     st->size_data = sizeof(UINT);
@@ -599,8 +597,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NMODE;
     st->value_p = p_UINT;
   }
-  { // 44305 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.ANALOGSPS
-    st = getVariable(44305);
+  { // 44237 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.ANALOGSPS
+    st = getVariable(44237);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.ANALOGSPS", 57);
     st->size_data = sizeof(BOOL);
@@ -611,8 +609,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->ANALOGSPS;
     st->value_p = p_BOOL;
   }
-  { // 44306 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.DISCRETPS
-    st = getVariable(44306);
+  { // 44238 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.DISCRETPS
+    st = getVariable(44238);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.DISCRETPS", 57);
     st->size_data = sizeof(BOOL);
@@ -623,8 +621,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->DISCRETPS;
     st->value_p = p_BOOL;
   }
-  { // 44307 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.PROTECTIONSIGNALING
-    st = getVariable(44307);
+  { // 44239 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.PROTECTIONSIGNALING
+    st = getVariable(44239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.ALGMANAGER.PROTECTIONSIGNALING", 67);
     st->size_data = sizeof(BOOL);
@@ -635,8 +633,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->PROTECTIONSIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 44308 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_NOTDEFINED
-    st = getVariable(44308);
+  { // 44240 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_NOTDEFINED
+    st = getVariable(44240);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_NOTDEFINED", 60);
     st->size_data = sizeof(UINT);
@@ -647,8 +645,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_NOTDEFINED;
     st->value_p = p_UINT;
   }
-  { // 44309 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_REMONT
-    st = getVariable(44309);
+  { // 44241 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_REMONT
+    st = getVariable(44241);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_REMONT", 56);
     st->size_data = sizeof(UINT);
@@ -659,8 +657,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_REMONT;
     st->value_p = p_UINT;
   }
-  { // 44310 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_STOP
-    st = getVariable(44310);
+  { // 44242 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_STOP
+    st = getVariable(44242);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_STOP", 54);
     st->size_data = sizeof(UINT);
@@ -671,8 +669,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_STOP;
     st->value_p = p_UINT;
   }
-  { // 44311 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_READY
-    st = getVariable(44311);
+  { // 44243 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_READY
+    st = getVariable(44243);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_READY", 55);
     st->size_data = sizeof(UINT);
@@ -683,8 +681,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_READY;
     st->value_p = p_UINT;
   }
-  { // 44312 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_PUSKV
-    st = getVariable(44312);
+  { // 44244 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_PUSKV
+    st = getVariable(44244);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_PUSKV", 55);
     st->size_data = sizeof(UINT);
@@ -695,8 +693,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_PUSKV;
     st->value_p = p_UINT;
   }
-  { // 44313 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_PUSKK
-    st = getVariable(44313);
+  { // 44245 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_PUSKK
+    st = getVariable(44245);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_PUSKK", 55);
     st->size_data = sizeof(UINT);
@@ -707,8 +705,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_PUSKK;
     st->value_p = p_UINT;
   }
-  { // 44314 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTDPMG
-    st = getVariable(44314);
+  { // 44246 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTDPMG
+    st = getVariable(44246);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTDPMG", 58);
     st->size_data = sizeof(UINT);
@@ -719,8 +717,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTDPMG;
     st->value_p = p_UINT;
   }
-  { // 44315 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTPMS
-    st = getVariable(44315);
+  { // 44247 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTPMS
+    st = getVariable(44247);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTPMS", 57);
     st->size_data = sizeof(UINT);
@@ -731,8 +729,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTPMS;
     st->value_p = p_UINT;
   }
-  { // 44316 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_APUSK
-    st = getVariable(44316);
+  { // 44248 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_APUSK
+    st = getVariable(44248);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_APUSK", 55);
     st->size_data = sizeof(UINT);
@@ -743,8 +741,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_APUSK;
     st->value_p = p_UINT;
   }
-  { // 44317 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_MPUSK
-    st = getVariable(44317);
+  { // 44249 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_MPUSK
+    st = getVariable(44249);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_MPUSK", 55);
     st->size_data = sizeof(UINT);
@@ -755,8 +753,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_MPUSK;
     st->value_p = p_UINT;
   }
-  { // 44318 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_WORK_RING
-    st = getVariable(44318);
+  { // 44250 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_WORK_RING
+    st = getVariable(44250);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_WORK_RING", 59);
     st->size_data = sizeof(UINT);
@@ -767,8 +765,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_WORK_RING;
     st->value_p = p_UINT;
   }
-  { // 44319 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_WORK_LINE
-    st = getVariable(44319);
+  { // 44251 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_WORK_LINE
+    st = getVariable(44251);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_WORK_LINE", 59);
     st->size_data = sizeof(UINT);
@@ -779,8 +777,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_WORK_LINE;
     st->value_p = p_UINT;
   }
-  { // 44320 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_NO
-    st = getVariable(44320);
+  { // 44252 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_NO
+    st = getVariable(44252);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_NO", 52);
     st->size_data = sizeof(UINT);
@@ -791,8 +789,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_NO;
     st->value_p = p_UINT;
   }
-  { // 44321 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_AO
-    st = getVariable(44321);
+  { // 44253 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_AO
+    st = getVariable(44253);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_AO", 52);
     st->size_data = sizeof(UINT);
@@ -803,8 +801,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_AO;
     st->value_p = p_UINT;
   }
-  { // 44322 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_EO
-    st = getVariable(44322);
+  { // 44254 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_EO
+    st = getVariable(44254);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_EO", 52);
     st->size_data = sizeof(UINT);
@@ -815,8 +813,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_EO;
     st->value_p = p_UINT;
   }
-  { // 44323 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTIM
-    st = getVariable(44323);
+  { // 44255 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTIM
+    st = getVariable(44255);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTIM", 56);
     st->size_data = sizeof(UINT);
@@ -827,8 +825,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTIM;
     st->value_p = p_UINT;
   }
-  { // 44324 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTAZ
-    st = getVariable(44324);
+  { // 44256 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTAZ
+    st = getVariable(44256);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.MODEGPA.MODE_TESTAZ", 56);
     st->size_data = sizeof(UINT);
@@ -839,8 +837,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTAZ;
     st->value_p = p_UINT;
   }
-  { // 44325 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESTARTALLSIGNALING
-    st = getVariable(44325);
+  { // 44257 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESTARTALLSIGNALING
+    st = getVariable(44257);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESTARTALLSIGNALING", 66);
     st->size_data = sizeof(BYTE);
@@ -851,8 +849,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->RESTARTALLSIGNALING;
     st->value_p = p_BYTE;
   }
-  { // 44326 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESTARTALLPROTECTIONS
-    st = getVariable(44326);
+  { // 44258 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESTARTALLPROTECTIONS
+    st = getVariable(44258);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESTARTALLPROTECTIONS", 68);
     st->size_data = sizeof(BYTE);
@@ -863,8 +861,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->RESTARTALLPROTECTIONS;
     st->value_p = p_BYTE;
   }
-  { // 44327 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.CHECKPROTECTIONS
-    st = getVariable(44327);
+  { // 44259 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.CHECKPROTECTIONS
+    st = getVariable(44259);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.CHECKPROTECTIONS", 63);
     st->size_data = sizeof(BYTE);
@@ -875,8 +873,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->CHECKPROTECTIONS;
     st->value_p = p_BYTE;
   }
-  { // 44328 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESETALLPROTECTIONS
-    st = getVariable(44328);
+  { // 44260 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESETALLPROTECTIONS
+    st = getVariable(44260);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.PMCOMMAND.RESETALLPROTECTIONS", 66);
     st->size_data = sizeof(BYTE);
@@ -887,8 +885,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->RESETALLPROTECTIONS;
     st->value_p = p_BYTE;
   }
-  { // 44329 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND
-    st = getVariable(44329);
+  { // 44261 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND
+    st = getVariable(44261);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -900,8 +898,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44330 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.STATUS
-    st = getVariable(44330);
+  { // 44262 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.STATUS
+    st = getVariable(44262);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -913,8 +911,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44331 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ONSTATUS
-    st = getVariable(44331);
+  { // 44263 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ONSTATUS
+    st = getVariable(44263);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -926,8 +924,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44332 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INOPCCOMMANDSDISABLED
-    st = getVariable(44332);
+  { // 44264 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INOPCCOMMANDSDISABLED
+    st = getVariable(44264);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -939,8 +937,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44333 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SDVIG
-    st = getVariable(44333);
+  { // 44265 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SDVIG
+    st = getVariable(44265);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -952,8 +950,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44334 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.NS
-    st = getVariable(44334);
+  { // 44266 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.NS
+    st = getVariable(44266);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -965,8 +963,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 44335 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.DP
-    st = getVariable(44335);
+  { // 44267 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.DP
+    st = getVariable(44267);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -978,8 +976,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 44336 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.COMMANDFAULT
-    st = getVariable(44336);
+  { // 44268 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.COMMANDFAULT
+    st = getVariable(44268);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -991,8 +989,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44337 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ACCIDENT
-    st = getVariable(44337);
+  { // 44269 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ACCIDENT
+    st = getVariable(44269);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -1004,8 +1002,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44338 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.AUTO
-    st = getVariable(44338);
+  { // 44270 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.AUTO
+    st = getVariable(44270);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -1017,8 +1015,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44339 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.MANUAL
-    st = getVariable(44339);
+  { // 44271 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.MANUAL
+    st = getVariable(44271);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -1030,8 +1028,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44340 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.LOCAL
-    st = getVariable(44340);
+  { // 44272 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.LOCAL
+    st = getVariable(44272);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -1043,8 +1041,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44341 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.DISTANCE
-    st = getVariable(44341);
+  { // 44273 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.DISTANCE
+    st = getVariable(44273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -1056,8 +1054,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44342 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ERRORPOWEROFF
-    st = getVariable(44342);
+  { // 44274 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ERRORPOWEROFF
+    st = getVariable(44274);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -1069,8 +1067,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44343 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ERRORBLOCK
-    st = getVariable(44343);
+  { // 44275 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ERRORBLOCK
+    st = getVariable(44275);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -1082,8 +1080,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44344 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SO
-    st = getVariable(44344);
+  { // 44276 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SO
+    st = getVariable(44276);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -1095,8 +1093,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 44345 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SZ
-    st = getVariable(44345);
+  { // 44277 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SZ
+    st = getVariable(44277);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -1108,8 +1106,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 44346 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.OPCCOMMANDSDISABLED
-    st = getVariable(44346);
+  { // 44278 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.OPCCOMMANDSDISABLED
+    st = getVariable(44278);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1121,8 +1119,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44347 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.LASTCMDISON
-    st = getVariable(44347);
+  { // 44279 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.LASTCMDISON
+    st = getVariable(44279);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -1134,8 +1132,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44348 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_STATON
-    st = getVariable(44348);
+  { // 44280 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_STATON
+    st = getVariable(44280);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -1147,8 +1145,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44349 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_STATOFF
-    st = getVariable(44349);
+  { // 44281 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_STATOFF
+    st = getVariable(44281);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -1160,8 +1158,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44350 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_CMDON
-    st = getVariable(44350);
+  { // 44282 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_CMDON
+    st = getVariable(44282);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -1173,8 +1171,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44351 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_CMDOFF
-    st = getVariable(44351);
+  { // 44283 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_CMDOFF
+    st = getVariable(44283);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -1186,8 +1184,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44352 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INSO
-    st = getVariable(44352);
+  { // 44284 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INSO
+    st = getVariable(44284);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -1199,8 +1197,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 44353 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INSZ
-    st = getVariable(44353);
+  { // 44285 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INSZ
+    st = getVariable(44285);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -1212,8 +1210,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 44354 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INDP
-    st = getVariable(44354);
+  { // 44286 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INDP
+    st = getVariable(44286);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -1225,8 +1223,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 44355 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CONTINUEHOLDCOMMAND
-    st = getVariable(44355);
+  { // 44287 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CONTINUEHOLDCOMMAND
+    st = getVariable(44287);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -1238,8 +1236,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 44356 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND_ALG
-    st = getVariable(44356);
+  { // 44288 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND_ALG
+    st = getVariable(44288);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -1251,8 +1249,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44357 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND_ARM
-    st = getVariable(44357);
+  { // 44289 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND_ARM
+    st = getVariable(44289);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -1264,8 +1262,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44358 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CMDON
-    st = getVariable(44358);
+  { // 44290 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CMDON
+    st = getVariable(44290);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -1277,8 +1275,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44359 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CMDOFF
-    st = getVariable(44359);
+  { // 44291 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CMDOFF
+    st = getVariable(44291);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -1290,8 +1288,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44360 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.RELIABILITY
-    st = getVariable(44360);
+  { // 44292 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.RELIABILITY
+    st = getVariable(44292);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN1.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -1303,8 +1301,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44361 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND
-    st = getVariable(44361);
+  { // 44293 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND
+    st = getVariable(44293);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -1316,8 +1314,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44362 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.STATUS
-    st = getVariable(44362);
+  { // 44294 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.STATUS
+    st = getVariable(44294);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -1329,8 +1327,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44363 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ONSTATUS
-    st = getVariable(44363);
+  { // 44295 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ONSTATUS
+    st = getVariable(44295);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -1342,8 +1340,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44364 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INOPCCOMMANDSDISABLED
-    st = getVariable(44364);
+  { // 44296 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INOPCCOMMANDSDISABLED
+    st = getVariable(44296);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -1355,8 +1353,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44365 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SDVIG
-    st = getVariable(44365);
+  { // 44297 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SDVIG
+    st = getVariable(44297);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -1368,8 +1366,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44366 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.NS
-    st = getVariable(44366);
+  { // 44298 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.NS
+    st = getVariable(44298);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -1381,8 +1379,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 44367 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.DP
-    st = getVariable(44367);
+  { // 44299 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.DP
+    st = getVariable(44299);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -1394,8 +1392,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 44368 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.COMMANDFAULT
-    st = getVariable(44368);
+  { // 44300 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.COMMANDFAULT
+    st = getVariable(44300);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -1407,8 +1405,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44369 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ACCIDENT
-    st = getVariable(44369);
+  { // 44301 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ACCIDENT
+    st = getVariable(44301);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -1420,8 +1418,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44370 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.AUTO
-    st = getVariable(44370);
+  { // 44302 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.AUTO
+    st = getVariable(44302);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -1433,8 +1431,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44371 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.MANUAL
-    st = getVariable(44371);
+  { // 44303 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.MANUAL
+    st = getVariable(44303);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -1446,8 +1444,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44372 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.LOCAL
-    st = getVariable(44372);
+  { // 44304 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.LOCAL
+    st = getVariable(44304);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -1459,8 +1457,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44373 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.DISTANCE
-    st = getVariable(44373);
+  { // 44305 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.DISTANCE
+    st = getVariable(44305);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -1472,8 +1470,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44374 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ERRORPOWEROFF
-    st = getVariable(44374);
+  { // 44306 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ERRORPOWEROFF
+    st = getVariable(44306);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -1485,8 +1483,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44375 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ERRORBLOCK
-    st = getVariable(44375);
+  { // 44307 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ERRORBLOCK
+    st = getVariable(44307);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -1498,8 +1496,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44376 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SO
-    st = getVariable(44376);
+  { // 44308 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SO
+    st = getVariable(44308);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -1511,8 +1509,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 44377 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SZ
-    st = getVariable(44377);
+  { // 44309 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SZ
+    st = getVariable(44309);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -1524,8 +1522,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 44378 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.OPCCOMMANDSDISABLED
-    st = getVariable(44378);
+  { // 44310 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.OPCCOMMANDSDISABLED
+    st = getVariable(44310);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1537,8 +1535,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44379 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.LASTCMDISON
-    st = getVariable(44379);
+  { // 44311 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.LASTCMDISON
+    st = getVariable(44311);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -1550,8 +1548,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44380 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_STATON
-    st = getVariable(44380);
+  { // 44312 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_STATON
+    st = getVariable(44312);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -1563,8 +1561,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44381 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_STATOFF
-    st = getVariable(44381);
+  { // 44313 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_STATOFF
+    st = getVariable(44313);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -1576,8 +1574,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44382 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_CMDON
-    st = getVariable(44382);
+  { // 44314 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_CMDON
+    st = getVariable(44314);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -1589,8 +1587,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44383 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_CMDOFF
-    st = getVariable(44383);
+  { // 44315 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_CMDOFF
+    st = getVariable(44315);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -1602,8 +1600,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44384 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INSO
-    st = getVariable(44384);
+  { // 44316 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INSO
+    st = getVariable(44316);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -1615,8 +1613,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 44385 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INSZ
-    st = getVariable(44385);
+  { // 44317 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INSZ
+    st = getVariable(44317);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -1628,8 +1626,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 44386 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INDP
-    st = getVariable(44386);
+  { // 44318 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INDP
+    st = getVariable(44318);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -1641,8 +1639,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 44387 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CONTINUEHOLDCOMMAND
-    st = getVariable(44387);
+  { // 44319 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CONTINUEHOLDCOMMAND
+    st = getVariable(44319);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -1654,8 +1652,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 44388 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND_ALG
-    st = getVariable(44388);
+  { // 44320 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND_ALG
+    st = getVariable(44320);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -1667,8 +1665,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44389 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND_ARM
-    st = getVariable(44389);
+  { // 44321 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND_ARM
+    st = getVariable(44321);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -1680,8 +1678,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44390 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CMDON
-    st = getVariable(44390);
+  { // 44322 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CMDON
+    st = getVariable(44322);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1691,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44391 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CMDOFF
-    st = getVariable(44391);
+  { // 44323 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CMDOFF
+    st = getVariable(44323);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -1706,8 +1704,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44392 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.RELIABILITY
-    st = getVariable(44392);
+  { // 44324 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.RELIABILITY
+    st = getVariable(44324);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN2.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -1719,8 +1717,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44393 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND
-    st = getVariable(44393);
+  { // 44325 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND
+    st = getVariable(44325);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -1732,8 +1730,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44394 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.STATUS
-    st = getVariable(44394);
+  { // 44326 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.STATUS
+    st = getVariable(44326);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -1745,8 +1743,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44395 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ONSTATUS
-    st = getVariable(44395);
+  { // 44327 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ONSTATUS
+    st = getVariable(44327);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ONSTATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -1758,8 +1756,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44396 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INOPCCOMMANDSDISABLED
-    st = getVariable(44396);
+  { // 44328 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INOPCCOMMANDSDISABLED
+    st = getVariable(44328);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INOPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -1771,8 +1769,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44397 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SDVIG
-    st = getVariable(44397);
+  { // 44329 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SDVIG
+    st = getVariable(44329);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SDVIG", 52);
     st->size_data = sizeof(BOOL);
@@ -1784,8 +1782,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44398 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.NS
-    st = getVariable(44398);
+  { // 44330 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.NS
+    st = getVariable(44330);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.NS", 49);
     st->size_data = sizeof(BOOL);
@@ -1797,8 +1795,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 44399 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.DP
-    st = getVariable(44399);
+  { // 44331 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.DP
+    st = getVariable(44331);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.DP", 49);
     st->size_data = sizeof(BOOL);
@@ -1810,8 +1808,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 44400 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.COMMANDFAULT
-    st = getVariable(44400);
+  { // 44332 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.COMMANDFAULT
+    st = getVariable(44332);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.COMMANDFAULT", 59);
     st->size_data = sizeof(BOOL);
@@ -1823,8 +1821,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44401 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ACCIDENT
-    st = getVariable(44401);
+  { // 44333 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ACCIDENT
+    st = getVariable(44333);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ACCIDENT", 55);
     st->size_data = sizeof(BOOL);
@@ -1836,8 +1834,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44402 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.AUTO
-    st = getVariable(44402);
+  { // 44334 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.AUTO
+    st = getVariable(44334);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.AUTO", 51);
     st->size_data = sizeof(BOOL);
@@ -1849,8 +1847,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44403 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.MANUAL
-    st = getVariable(44403);
+  { // 44335 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.MANUAL
+    st = getVariable(44335);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.MANUAL", 53);
     st->size_data = sizeof(BOOL);
@@ -1862,8 +1860,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44404 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.LOCAL
-    st = getVariable(44404);
+  { // 44336 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.LOCAL
+    st = getVariable(44336);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.LOCAL", 52);
     st->size_data = sizeof(BOOL);
@@ -1875,8 +1873,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44405 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.DISTANCE
-    st = getVariable(44405);
+  { // 44337 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.DISTANCE
+    st = getVariable(44337);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.DISTANCE", 55);
     st->size_data = sizeof(BOOL);
@@ -1888,8 +1886,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44406 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ERRORPOWEROFF
-    st = getVariable(44406);
+  { // 44338 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ERRORPOWEROFF
+    st = getVariable(44338);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ERRORPOWEROFF", 60);
     st->size_data = sizeof(BOOL);
@@ -1901,8 +1899,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44407 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ERRORBLOCK
-    st = getVariable(44407);
+  { // 44339 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ERRORBLOCK
+    st = getVariable(44339);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ERRORBLOCK", 57);
     st->size_data = sizeof(BOOL);
@@ -1914,8 +1912,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44408 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SO
-    st = getVariable(44408);
+  { // 44340 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SO
+    st = getVariable(44340);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SO", 49);
     st->size_data = sizeof(BOOL);
@@ -1927,8 +1925,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 44409 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SZ
-    st = getVariable(44409);
+  { // 44341 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SZ
+    st = getVariable(44341);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.SZ", 49);
     st->size_data = sizeof(BOOL);
@@ -1940,8 +1938,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 44410 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.OPCCOMMANDSDISABLED
-    st = getVariable(44410);
+  { // 44342 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.OPCCOMMANDSDISABLED
+    st = getVariable(44342);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.OPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -1953,8 +1951,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44411 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.LASTCMDISON
-    st = getVariable(44411);
+  { // 44343 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.LASTCMDISON
+    st = getVariable(44343);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.LASTCMDISON", 58);
     st->size_data = sizeof(BOOL);
@@ -1966,8 +1964,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44412 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_STATON
-    st = getVariable(44412);
+  { // 44344 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_STATON
+    st = getVariable(44344);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_STATON", 64);
     st->size_data = sizeof(BOOL);
@@ -1979,8 +1977,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44413 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_STATOFF
-    st = getVariable(44413);
+  { // 44345 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_STATOFF
+    st = getVariable(44345);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_STATOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -1992,8 +1990,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44414 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_CMDON
-    st = getVariable(44414);
+  { // 44346 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_CMDON
+    st = getVariable(44346);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_CMDON", 63);
     st->size_data = sizeof(BOOL);
@@ -2005,8 +2003,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44415 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_CMDOFF
-    st = getVariable(44415);
+  { // 44347 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_CMDOFF
+    st = getVariable(44347);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_CMDOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -2018,8 +2016,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44416 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INSO
-    st = getVariable(44416);
+  { // 44348 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INSO
+    st = getVariable(44348);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INSO", 62);
     st->size_data = sizeof(BOOL);
@@ -2031,8 +2029,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 44417 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INSZ
-    st = getVariable(44417);
+  { // 44349 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INSZ
+    st = getVariable(44349);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INSZ", 62);
     st->size_data = sizeof(BOOL);
@@ -2044,8 +2042,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 44418 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INDP
-    st = getVariable(44418);
+  { // 44350 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INDP
+    st = getVariable(44350);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.ISVALIDREF_INDP", 62);
     st->size_data = sizeof(BOOL);
@@ -2057,8 +2055,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 44419 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CONTINUEHOLDCOMMAND
-    st = getVariable(44419);
+  { // 44351 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CONTINUEHOLDCOMMAND
+    st = getVariable(44351);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CONTINUEHOLDCOMMAND", 66);
     st->size_data = sizeof(TIME);
@@ -2070,8 +2068,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 44420 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND_ALG
-    st = getVariable(44420);
+  { // 44352 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND_ALG
+    st = getVariable(44352);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND_ALG", 60);
     st->size_data = sizeof(WORD);
@@ -2083,8 +2081,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44421 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND_ARM
-    st = getVariable(44421);
+  { // 44353 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND_ARM
+    st = getVariable(44353);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.INCOMMAND_ARM", 60);
     st->size_data = sizeof(WORD);
@@ -2096,8 +2094,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44422 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CMDON
-    st = getVariable(44422);
+  { // 44354 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CMDON
+    st = getVariable(44354);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CMDON", 52);
     st->size_data = sizeof(BOOL);
@@ -2109,8 +2107,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44423 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CMDOFF
-    st = getVariable(44423);
+  { // 44355 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CMDOFF
+    st = getVariable(44355);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.CMDOFF", 53);
     st->size_data = sizeof(BOOL);
@@ -2122,8 +2120,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44424 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.RELIABILITY
-    st = getVariable(44424);
+  { // 44356 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.RELIABILITY
+    st = getVariable(44356);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3B.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -2135,8 +2133,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44425 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND
-    st = getVariable(44425);
+  { // 44357 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND
+    st = getVariable(44357);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2148,8 +2146,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44426 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.STATUS
-    st = getVariable(44426);
+  { // 44358 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.STATUS
+    st = getVariable(44358);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -2161,8 +2159,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44427 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ONSTATUS
-    st = getVariable(44427);
+  { // 44359 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ONSTATUS
+    st = getVariable(44359);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -2174,8 +2172,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44428 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INOPCCOMMANDSDISABLED
-    st = getVariable(44428);
+  { // 44360 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INOPCCOMMANDSDISABLED
+    st = getVariable(44360);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -2187,8 +2185,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44429 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SDVIG
-    st = getVariable(44429);
+  { // 44361 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SDVIG
+    st = getVariable(44361);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -2200,8 +2198,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44430 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.NS
-    st = getVariable(44430);
+  { // 44362 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.NS
+    st = getVariable(44362);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -2213,8 +2211,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 44431 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.DP
-    st = getVariable(44431);
+  { // 44363 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.DP
+    st = getVariable(44363);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -2226,8 +2224,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 44432 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.COMMANDFAULT
-    st = getVariable(44432);
+  { // 44364 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.COMMANDFAULT
+    st = getVariable(44364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -2239,8 +2237,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44433 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ACCIDENT
-    st = getVariable(44433);
+  { // 44365 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ACCIDENT
+    st = getVariable(44365);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -2252,8 +2250,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44434 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.AUTO
-    st = getVariable(44434);
+  { // 44366 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.AUTO
+    st = getVariable(44366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -2265,8 +2263,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44435 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.MANUAL
-    st = getVariable(44435);
+  { // 44367 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.MANUAL
+    st = getVariable(44367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -2278,8 +2276,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44436 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.LOCAL
-    st = getVariable(44436);
+  { // 44368 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.LOCAL
+    st = getVariable(44368);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -2291,8 +2289,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44437 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.DISTANCE
-    st = getVariable(44437);
+  { // 44369 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.DISTANCE
+    st = getVariable(44369);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -2304,8 +2302,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44438 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ERRORPOWEROFF
-    st = getVariable(44438);
+  { // 44370 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ERRORPOWEROFF
+    st = getVariable(44370);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -2317,8 +2315,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44439 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ERRORBLOCK
-    st = getVariable(44439);
+  { // 44371 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ERRORBLOCK
+    st = getVariable(44371);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -2330,8 +2328,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44440 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SO
-    st = getVariable(44440);
+  { // 44372 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SO
+    st = getVariable(44372);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -2343,8 +2341,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 44441 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SZ
-    st = getVariable(44441);
+  { // 44373 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SZ
+    st = getVariable(44373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -2356,8 +2354,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 44442 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.OPCCOMMANDSDISABLED
-    st = getVariable(44442);
+  { // 44374 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.OPCCOMMANDSDISABLED
+    st = getVariable(44374);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -2369,8 +2367,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44443 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.LASTCMDISON
-    st = getVariable(44443);
+  { // 44375 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.LASTCMDISON
+    st = getVariable(44375);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -2382,8 +2380,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44444 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_STATON
-    st = getVariable(44444);
+  { // 44376 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_STATON
+    st = getVariable(44376);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -2395,8 +2393,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44445 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_STATOFF
-    st = getVariable(44445);
+  { // 44377 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_STATOFF
+    st = getVariable(44377);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -2408,8 +2406,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44446 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_CMDON
-    st = getVariable(44446);
+  { // 44378 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_CMDON
+    st = getVariable(44378);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -2421,8 +2419,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44447 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_CMDOFF
-    st = getVariable(44447);
+  { // 44379 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_CMDOFF
+    st = getVariable(44379);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -2434,8 +2432,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44448 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INSO
-    st = getVariable(44448);
+  { // 44380 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INSO
+    st = getVariable(44380);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -2447,8 +2445,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 44449 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INSZ
-    st = getVariable(44449);
+  { // 44381 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INSZ
+    st = getVariable(44381);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -2460,8 +2458,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 44450 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INDP
-    st = getVariable(44450);
+  { // 44382 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INDP
+    st = getVariable(44382);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -2473,8 +2471,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 44451 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CONTINUEHOLDCOMMAND
-    st = getVariable(44451);
+  { // 44383 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CONTINUEHOLDCOMMAND
+    st = getVariable(44383);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -2486,8 +2484,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 44452 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND_ALG
-    st = getVariable(44452);
+  { // 44384 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND_ALG
+    st = getVariable(44384);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -2499,8 +2497,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44453 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND_ARM
-    st = getVariable(44453);
+  { // 44385 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND_ARM
+    st = getVariable(44385);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -2512,8 +2510,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44454 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CMDON
-    st = getVariable(44454);
+  { // 44386 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CMDON
+    st = getVariable(44386);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -2525,8 +2523,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44455 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CMDOFF
-    st = getVariable(44455);
+  { // 44387 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CMDOFF
+    st = getVariable(44387);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -2538,8 +2536,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44456 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.RELIABILITY
-    st = getVariable(44456);
+  { // 44388 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.RELIABILITY
+    st = getVariable(44388);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN4.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -2551,8 +2549,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44457 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND
-    st = getVariable(44457);
+  { // 44389 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND
+    st = getVariable(44389);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2564,8 +2562,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44458 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.STATUS
-    st = getVariable(44458);
+  { // 44390 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.STATUS
+    st = getVariable(44390);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -2577,8 +2575,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44459 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ONSTATUS
-    st = getVariable(44459);
+  { // 44391 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ONSTATUS
+    st = getVariable(44391);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -2590,8 +2588,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44460 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INOPCCOMMANDSDISABLED
-    st = getVariable(44460);
+  { // 44392 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INOPCCOMMANDSDISABLED
+    st = getVariable(44392);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -2603,8 +2601,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44461 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SDVIG
-    st = getVariable(44461);
+  { // 44393 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SDVIG
+    st = getVariable(44393);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -2616,8 +2614,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44462 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.NS
-    st = getVariable(44462);
+  { // 44394 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.NS
+    st = getVariable(44394);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -2629,8 +2627,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 44463 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.DP
-    st = getVariable(44463);
+  { // 44395 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.DP
+    st = getVariable(44395);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -2642,8 +2640,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 44464 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.COMMANDFAULT
-    st = getVariable(44464);
+  { // 44396 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.COMMANDFAULT
+    st = getVariable(44396);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -2655,8 +2653,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44465 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ACCIDENT
-    st = getVariable(44465);
+  { // 44397 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ACCIDENT
+    st = getVariable(44397);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -2668,8 +2666,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44466 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.AUTO
-    st = getVariable(44466);
+  { // 44398 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.AUTO
+    st = getVariable(44398);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -2681,8 +2679,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44467 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.MANUAL
-    st = getVariable(44467);
+  { // 44399 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.MANUAL
+    st = getVariable(44399);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -2694,8 +2692,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44468 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.LOCAL
-    st = getVariable(44468);
+  { // 44400 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.LOCAL
+    st = getVariable(44400);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -2707,8 +2705,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44469 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.DISTANCE
-    st = getVariable(44469);
+  { // 44401 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.DISTANCE
+    st = getVariable(44401);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -2720,8 +2718,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44470 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ERRORPOWEROFF
-    st = getVariable(44470);
+  { // 44402 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ERRORPOWEROFF
+    st = getVariable(44402);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -2733,8 +2731,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44471 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ERRORBLOCK
-    st = getVariable(44471);
+  { // 44403 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ERRORBLOCK
+    st = getVariable(44403);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -2746,8 +2744,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44472 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SO
-    st = getVariable(44472);
+  { // 44404 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SO
+    st = getVariable(44404);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -2759,8 +2757,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 44473 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SZ
-    st = getVariable(44473);
+  { // 44405 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SZ
+    st = getVariable(44405);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -2772,8 +2770,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 44474 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.OPCCOMMANDSDISABLED
-    st = getVariable(44474);
+  { // 44406 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.OPCCOMMANDSDISABLED
+    st = getVariable(44406);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -2785,8 +2783,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44475 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.LASTCMDISON
-    st = getVariable(44475);
+  { // 44407 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.LASTCMDISON
+    st = getVariable(44407);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -2798,8 +2796,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44476 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_STATON
-    st = getVariable(44476);
+  { // 44408 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_STATON
+    st = getVariable(44408);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -2811,8 +2809,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44477 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_STATOFF
-    st = getVariable(44477);
+  { // 44409 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_STATOFF
+    st = getVariable(44409);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -2824,8 +2822,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44478 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_CMDON
-    st = getVariable(44478);
+  { // 44410 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_CMDON
+    st = getVariable(44410);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -2837,8 +2835,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44479 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_CMDOFF
-    st = getVariable(44479);
+  { // 44411 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_CMDOFF
+    st = getVariable(44411);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -2850,8 +2848,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44480 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INSO
-    st = getVariable(44480);
+  { // 44412 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INSO
+    st = getVariable(44412);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -2863,8 +2861,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 44481 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INSZ
-    st = getVariable(44481);
+  { // 44413 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INSZ
+    st = getVariable(44413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -2876,8 +2874,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 44482 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INDP
-    st = getVariable(44482);
+  { // 44414 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INDP
+    st = getVariable(44414);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -2889,8 +2887,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 44483 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CONTINUEHOLDCOMMAND
-    st = getVariable(44483);
+  { // 44415 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CONTINUEHOLDCOMMAND
+    st = getVariable(44415);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -2902,8 +2900,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 44484 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND_ALG
-    st = getVariable(44484);
+  { // 44416 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND_ALG
+    st = getVariable(44416);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -2915,8 +2913,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44485 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND_ARM
-    st = getVariable(44485);
+  { // 44417 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND_ARM
+    st = getVariable(44417);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -2928,8 +2926,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44486 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CMDON
-    st = getVariable(44486);
+  { // 44418 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CMDON
+    st = getVariable(44418);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -2941,8 +2939,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44487 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CMDOFF
-    st = getVariable(44487);
+  { // 44419 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CMDOFF
+    st = getVariable(44419);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -2954,8 +2952,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44488 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.RELIABILITY
-    st = getVariable(44488);
+  { // 44420 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.RELIABILITY
+    st = getVariable(44420);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN5.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -2967,8 +2965,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44489 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND
-    st = getVariable(44489);
+  { // 44421 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND
+    st = getVariable(44421);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2980,8 +2978,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44490 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.STATUS
-    st = getVariable(44490);
+  { // 44422 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.STATUS
+    st = getVariable(44422);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -2993,8 +2991,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44491 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ONSTATUS
-    st = getVariable(44491);
+  { // 44423 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ONSTATUS
+    st = getVariable(44423);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -3006,8 +3004,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44492 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INOPCCOMMANDSDISABLED
-    st = getVariable(44492);
+  { // 44424 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INOPCCOMMANDSDISABLED
+    st = getVariable(44424);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3019,8 +3017,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44493 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SDVIG
-    st = getVariable(44493);
+  { // 44425 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SDVIG
+    st = getVariable(44425);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -3032,8 +3030,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44494 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.NS
-    st = getVariable(44494);
+  { // 44426 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.NS
+    st = getVariable(44426);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -3045,8 +3043,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 44495 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.DP
-    st = getVariable(44495);
+  { // 44427 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.DP
+    st = getVariable(44427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -3058,8 +3056,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 44496 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.COMMANDFAULT
-    st = getVariable(44496);
+  { // 44428 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.COMMANDFAULT
+    st = getVariable(44428);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -3071,8 +3069,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44497 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ACCIDENT
-    st = getVariable(44497);
+  { // 44429 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ACCIDENT
+    st = getVariable(44429);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -3084,8 +3082,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44498 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.AUTO
-    st = getVariable(44498);
+  { // 44430 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.AUTO
+    st = getVariable(44430);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -3097,8 +3095,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44499 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.MANUAL
-    st = getVariable(44499);
+  { // 44431 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.MANUAL
+    st = getVariable(44431);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -3110,8 +3108,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44500 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.LOCAL
-    st = getVariable(44500);
+  { // 44432 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.LOCAL
+    st = getVariable(44432);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -3123,8 +3121,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44501 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.DISTANCE
-    st = getVariable(44501);
+  { // 44433 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.DISTANCE
+    st = getVariable(44433);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -3136,8 +3134,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44502 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ERRORPOWEROFF
-    st = getVariable(44502);
+  { // 44434 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ERRORPOWEROFF
+    st = getVariable(44434);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -3149,8 +3147,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44503 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ERRORBLOCK
-    st = getVariable(44503);
+  { // 44435 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ERRORBLOCK
+    st = getVariable(44435);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -3162,8 +3160,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44504 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SO
-    st = getVariable(44504);
+  { // 44436 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SO
+    st = getVariable(44436);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -3175,8 +3173,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 44505 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SZ
-    st = getVariable(44505);
+  { // 44437 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SZ
+    st = getVariable(44437);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -3188,8 +3186,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 44506 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.OPCCOMMANDSDISABLED
-    st = getVariable(44506);
+  { // 44438 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.OPCCOMMANDSDISABLED
+    st = getVariable(44438);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3201,8 +3199,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44507 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.LASTCMDISON
-    st = getVariable(44507);
+  { // 44439 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.LASTCMDISON
+    st = getVariable(44439);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -3214,8 +3212,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44508 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_STATON
-    st = getVariable(44508);
+  { // 44440 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_STATON
+    st = getVariable(44440);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -3227,8 +3225,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44509 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_STATOFF
-    st = getVariable(44509);
+  { // 44441 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_STATOFF
+    st = getVariable(44441);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -3240,8 +3238,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44510 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_CMDON
-    st = getVariable(44510);
+  { // 44442 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_CMDON
+    st = getVariable(44442);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -3253,8 +3251,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44511 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_CMDOFF
-    st = getVariable(44511);
+  { // 44443 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_CMDOFF
+    st = getVariable(44443);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -3266,8 +3264,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44512 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INSO
-    st = getVariable(44512);
+  { // 44444 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INSO
+    st = getVariable(44444);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -3279,8 +3277,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 44513 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INSZ
-    st = getVariable(44513);
+  { // 44445 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INSZ
+    st = getVariable(44445);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -3292,8 +3290,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 44514 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INDP
-    st = getVariable(44514);
+  { // 44446 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INDP
+    st = getVariable(44446);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -3305,8 +3303,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 44515 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CONTINUEHOLDCOMMAND
-    st = getVariable(44515);
+  { // 44447 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CONTINUEHOLDCOMMAND
+    st = getVariable(44447);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -3318,8 +3316,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 44516 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND_ALG
-    st = getVariable(44516);
+  { // 44448 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND_ALG
+    st = getVariable(44448);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -3331,8 +3329,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44517 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND_ARM
-    st = getVariable(44517);
+  { // 44449 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND_ARM
+    st = getVariable(44449);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -3344,8 +3342,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44518 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CMDON
-    st = getVariable(44518);
+  { // 44450 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CMDON
+    st = getVariable(44450);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -3357,8 +3355,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44519 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CMDOFF
-    st = getVariable(44519);
+  { // 44451 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CMDOFF
+    st = getVariable(44451);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -3370,8 +3368,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44520 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.RELIABILITY
-    st = getVariable(44520);
+  { // 44452 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.RELIABILITY
+    st = getVariable(44452);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN6.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -3383,8 +3381,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44521 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND
-    st = getVariable(44521);
+  { // 44453 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND
+    st = getVariable(44453);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3396,8 +3394,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44522 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND_ALG
-    st = getVariable(44522);
+  { // 44454 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND_ALG
+    st = getVariable(44454);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -3409,8 +3407,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44523 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND_ARM
-    st = getVariable(44523);
+  { // 44455 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND_ARM
+    st = getVariable(44455);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -3422,8 +3420,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44524 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.STATUS
-    st = getVariable(44524);
+  { // 44456 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.STATUS
+    st = getVariable(44456);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -3435,8 +3433,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44525 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ONSTATUS
-    st = getVariable(44525);
+  { // 44457 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ONSTATUS
+    st = getVariable(44457);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -3448,8 +3446,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44526 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INOPCCOMMANDSDISABLED
-    st = getVariable(44526);
+  { // 44458 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INOPCCOMMANDSDISABLED
+    st = getVariable(44458);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3461,8 +3459,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44527 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.SDVIG
-    st = getVariable(44527);
+  { // 44459 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.SDVIG
+    st = getVariable(44459);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -3474,8 +3472,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44528 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.NS
-    st = getVariable(44528);
+  { // 44460 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.NS
+    st = getVariable(44460);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -3487,8 +3485,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 44529 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.COMMANDFAULT
-    st = getVariable(44529);
+  { // 44461 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.COMMANDFAULT
+    st = getVariable(44461);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -3500,8 +3498,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44530 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ACCIDENT
-    st = getVariable(44530);
+  { // 44462 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ACCIDENT
+    st = getVariable(44462);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -3513,8 +3511,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44531 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.LOCAL
-    st = getVariable(44531);
+  { // 44463 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.LOCAL
+    st = getVariable(44463);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -3526,8 +3524,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44532 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.DISTANCE
-    st = getVariable(44532);
+  { // 44464 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.DISTANCE
+    st = getVariable(44464);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -3539,8 +3537,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44533 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BREAKCMDON
-    st = getVariable(44533);
+  { // 44465 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BREAKCMDON
+    st = getVariable(44465);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -3552,8 +3550,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44534 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BREAKCMDOFF
-    st = getVariable(44534);
+  { // 44466 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BREAKCMDOFF
+    st = getVariable(44466);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -3565,8 +3563,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44535 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.OPCCOMMANDSDISABLED
-    st = getVariable(44535);
+  { // 44467 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.OPCCOMMANDSDISABLED
+    st = getVariable(44467);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -3578,8 +3576,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44536 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.LASTCMDISON
-    st = getVariable(44536);
+  { // 44468 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.LASTCMDISON
+    st = getVariable(44468);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -3591,8 +3589,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44537 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_STATON
-    st = getVariable(44537);
+  { // 44469 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_STATON
+    st = getVariable(44469);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -3604,8 +3602,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44538 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_STATOFF
-    st = getVariable(44538);
+  { // 44470 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_STATOFF
+    st = getVariable(44470);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -3617,8 +3615,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44539 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_CMDON
-    st = getVariable(44539);
+  { // 44471 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_CMDON
+    st = getVariable(44471);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -3630,8 +3628,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44540 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_CMDOFF
-    st = getVariable(44540);
+  { // 44472 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_CMDOFF
+    st = getVariable(44472);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -3643,8 +3641,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44541 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44541);
+  { // 44473 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44473);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -3656,8 +3654,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44542 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44542);
+  { // 44474 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44474);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -3669,8 +3667,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44543 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INBLOCKED
-    st = getVariable(44543);
+  { // 44475 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INBLOCKED
+    st = getVariable(44475);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.INBLOCKED", 53);
     st->size_data = sizeof(BOOL);
@@ -3682,8 +3680,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 44544 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BLOCKED
-    st = getVariable(44544);
+  { // 44476 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BLOCKED
+    st = getVariable(44476);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.BLOCKED", 51);
     st->size_data = sizeof(BOOL);
@@ -3695,8 +3693,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 44545 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.OSNOVNOY
-    st = getVariable(44545);
+  { // 44477 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.OSNOVNOY
+    st = getVariable(44477);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.OSNOVNOY", 52);
     st->size_data = sizeof(BOOL);
@@ -3708,8 +3706,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 44546 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.REZERVNY
-    st = getVariable(44546);
+  { // 44478 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.REZERVNY
+    st = getVariable(44478);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.REZERVNY", 52);
     st->size_data = sizeof(BOOL);
@@ -3721,8 +3719,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 44547 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.CMDON
-    st = getVariable(44547);
+  { // 44479 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.CMDON
+    st = getVariable(44479);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -3734,8 +3732,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44548 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.CMDOFF
-    st = getVariable(44548);
+  { // 44480 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.CMDOFF
+    st = getVariable(44480);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -3747,8 +3745,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44549 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.RELIABILITY
-    st = getVariable(44549);
+  { // 44481 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.RELIABILITY
+    st = getVariable(44481);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU1.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -3760,8 +3758,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44550 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND
-    st = getVariable(44550);
+  { // 44482 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND
+    st = getVariable(44482);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3773,8 +3771,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44551 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND_ALG
-    st = getVariable(44551);
+  { // 44483 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND_ALG
+    st = getVariable(44483);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -3786,8 +3784,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44552 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND_ARM
-    st = getVariable(44552);
+  { // 44484 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND_ARM
+    st = getVariable(44484);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -3799,8 +3797,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44553 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.STATUS
-    st = getVariable(44553);
+  { // 44485 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.STATUS
+    st = getVariable(44485);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -3812,8 +3810,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44554 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ONSTATUS
-    st = getVariable(44554);
+  { // 44486 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ONSTATUS
+    st = getVariable(44486);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -3825,8 +3823,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44555 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INOPCCOMMANDSDISABLED
-    st = getVariable(44555);
+  { // 44487 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INOPCCOMMANDSDISABLED
+    st = getVariable(44487);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3838,8 +3836,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44556 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.SDVIG
-    st = getVariable(44556);
+  { // 44488 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.SDVIG
+    st = getVariable(44488);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -3851,8 +3849,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44557 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.NS
-    st = getVariable(44557);
+  { // 44489 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.NS
+    st = getVariable(44489);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -3864,8 +3862,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 44558 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.COMMANDFAULT
-    st = getVariable(44558);
+  { // 44490 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.COMMANDFAULT
+    st = getVariable(44490);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -3877,8 +3875,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44559 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ACCIDENT
-    st = getVariable(44559);
+  { // 44491 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ACCIDENT
+    st = getVariable(44491);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -3890,8 +3888,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44560 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.LOCAL
-    st = getVariable(44560);
+  { // 44492 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.LOCAL
+    st = getVariable(44492);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -3903,8 +3901,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44561 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.DISTANCE
-    st = getVariable(44561);
+  { // 44493 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.DISTANCE
+    st = getVariable(44493);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -3916,8 +3914,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44562 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BREAKCMDON
-    st = getVariable(44562);
+  { // 44494 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BREAKCMDON
+    st = getVariable(44494);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -3929,8 +3927,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44563 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BREAKCMDOFF
-    st = getVariable(44563);
+  { // 44495 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BREAKCMDOFF
+    st = getVariable(44495);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -3942,8 +3940,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44564 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.OPCCOMMANDSDISABLED
-    st = getVariable(44564);
+  { // 44496 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.OPCCOMMANDSDISABLED
+    st = getVariable(44496);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -3955,8 +3953,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44565 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.LASTCMDISON
-    st = getVariable(44565);
+  { // 44497 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.LASTCMDISON
+    st = getVariable(44497);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -3968,8 +3966,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44566 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_STATON
-    st = getVariable(44566);
+  { // 44498 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_STATON
+    st = getVariable(44498);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -3981,8 +3979,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44567 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_STATOFF
-    st = getVariable(44567);
+  { // 44499 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_STATOFF
+    st = getVariable(44499);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -3994,8 +3992,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44568 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_CMDON
-    st = getVariable(44568);
+  { // 44500 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_CMDON
+    st = getVariable(44500);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -4007,8 +4005,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44569 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_CMDOFF
-    st = getVariable(44569);
+  { // 44501 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_CMDOFF
+    st = getVariable(44501);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -4020,8 +4018,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44570 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44570);
+  { // 44502 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44502);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -4033,8 +4031,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44571 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44571);
+  { // 44503 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44503);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -4046,8 +4044,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44572 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INBLOCKED
-    st = getVariable(44572);
+  { // 44504 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INBLOCKED
+    st = getVariable(44504);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.INBLOCKED", 53);
     st->size_data = sizeof(BOOL);
@@ -4059,8 +4057,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 44573 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BLOCKED
-    st = getVariable(44573);
+  { // 44505 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BLOCKED
+    st = getVariable(44505);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.BLOCKED", 51);
     st->size_data = sizeof(BOOL);
@@ -4072,8 +4070,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 44574 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.OSNOVNOY
-    st = getVariable(44574);
+  { // 44506 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.OSNOVNOY
+    st = getVariable(44506);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.OSNOVNOY", 52);
     st->size_data = sizeof(BOOL);
@@ -4085,8 +4083,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 44575 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.REZERVNY
-    st = getVariable(44575);
+  { // 44507 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.REZERVNY
+    st = getVariable(44507);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.REZERVNY", 52);
     st->size_data = sizeof(BOOL);
@@ -4098,8 +4096,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 44576 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.CMDON
-    st = getVariable(44576);
+  { // 44508 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.CMDON
+    st = getVariable(44508);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -4111,8 +4109,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44577 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.CMDOFF
-    st = getVariable(44577);
+  { // 44509 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.CMDOFF
+    st = getVariable(44509);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -4124,8 +4122,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44578 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.RELIABILITY
-    st = getVariable(44578);
+  { // 44510 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.RELIABILITY
+    st = getVariable(44510);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.NU2.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -4137,8 +4135,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44579 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND
-    st = getVariable(44579);
+  { // 44511 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND
+    st = getVariable(44511);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -4150,8 +4148,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44580 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.STATUS
-    st = getVariable(44580);
+  { // 44512 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.STATUS
+    st = getVariable(44512);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -4163,8 +4161,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44581 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ONSTATUS
-    st = getVariable(44581);
+  { // 44513 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ONSTATUS
+    st = getVariable(44513);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -4176,8 +4174,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44582 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INOPCCOMMANDSDISABLED
-    st = getVariable(44582);
+  { // 44514 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INOPCCOMMANDSDISABLED
+    st = getVariable(44514);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -4189,8 +4187,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44583 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.SDVIG
-    st = getVariable(44583);
+  { // 44515 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.SDVIG
+    st = getVariable(44515);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -4202,8 +4200,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44584 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.NS
-    st = getVariable(44584);
+  { // 44516 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.NS
+    st = getVariable(44516);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -4215,8 +4213,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 44585 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.COMMANDFAULT
-    st = getVariable(44585);
+  { // 44517 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.COMMANDFAULT
+    st = getVariable(44517);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -4228,8 +4226,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44586 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ACCIDENT
-    st = getVariable(44586);
+  { // 44518 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ACCIDENT
+    st = getVariable(44518);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -4241,8 +4239,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44587 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.AUTO
-    st = getVariable(44587);
+  { // 44519 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.AUTO
+    st = getVariable(44519);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.AUTO", 48);
     st->size_data = sizeof(BOOL);
@@ -4254,8 +4252,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44588 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.MANUAL
-    st = getVariable(44588);
+  { // 44520 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.MANUAL
+    st = getVariable(44520);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.MANUAL", 50);
     st->size_data = sizeof(BOOL);
@@ -4267,8 +4265,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44589 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.LOCAL
-    st = getVariable(44589);
+  { // 44521 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.LOCAL
+    st = getVariable(44521);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -4280,8 +4278,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44590 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.DISTANCE
-    st = getVariable(44590);
+  { // 44522 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.DISTANCE
+    st = getVariable(44522);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -4293,8 +4291,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44591 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ERRORPOWEROFF
-    st = getVariable(44591);
+  { // 44523 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ERRORPOWEROFF
+    st = getVariable(44523);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ERRORPOWEROFF", 57);
     st->size_data = sizeof(BOOL);
@@ -4306,8 +4304,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44592 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ERRORBLOCK
-    st = getVariable(44592);
+  { // 44524 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ERRORBLOCK
+    st = getVariable(44524);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ERRORBLOCK", 54);
     st->size_data = sizeof(BOOL);
@@ -4319,8 +4317,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44593 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.BREAKCMDON
-    st = getVariable(44593);
+  { // 44525 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.BREAKCMDON
+    st = getVariable(44525);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -4332,8 +4330,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44594 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.BREAKCMDOFF
-    st = getVariable(44594);
+  { // 44526 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.BREAKCMDOFF
+    st = getVariable(44526);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -4345,8 +4343,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44595 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.OPCCOMMANDSDISABLED
-    st = getVariable(44595);
+  { // 44527 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.OPCCOMMANDSDISABLED
+    st = getVariable(44527);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -4358,8 +4356,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44596 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.LASTCMDISON
-    st = getVariable(44596);
+  { // 44528 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.LASTCMDISON
+    st = getVariable(44528);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -4371,8 +4369,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44597 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_STATON
-    st = getVariable(44597);
+  { // 44529 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_STATON
+    st = getVariable(44529);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -4384,8 +4382,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44598 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_STATOFF
-    st = getVariable(44598);
+  { // 44530 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_STATOFF
+    st = getVariable(44530);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -4397,8 +4395,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44599 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_CMDON
-    st = getVariable(44599);
+  { // 44531 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_CMDON
+    st = getVariable(44531);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -4410,8 +4408,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44600 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_CMDOFF
-    st = getVariable(44600);
+  { // 44532 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_CMDOFF
+    st = getVariable(44532);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -4423,8 +4421,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44601 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44601);
+  { // 44533 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44533);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -4436,8 +4434,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44602 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44602);
+  { // 44534 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44534);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -4449,8 +4447,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44603 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND_ALG
-    st = getVariable(44603);
+  { // 44535 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND_ALG
+    st = getVariable(44535);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -4462,8 +4460,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44604 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND_ARM
-    st = getVariable(44604);
+  { // 44536 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND_ARM
+    st = getVariable(44536);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -4475,8 +4473,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44605 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.CMDON
-    st = getVariable(44605);
+  { // 44537 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.CMDON
+    st = getVariable(44537);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -4488,8 +4486,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44606 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.CMDOFF
-    st = getVariable(44606);
+  { // 44538 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.CMDOFF
+    st = getVariable(44538);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -4501,8 +4499,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44607 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.RELIABILITY
-    st = getVariable(44607);
+  { // 44539 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.RELIABILITY
+    st = getVariable(44539);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PNS.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -4514,8 +4512,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44608 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND
-    st = getVariable(44608);
+  { // 44540 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND
+    st = getVariable(44540);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -4527,8 +4525,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44609 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.STATUS
-    st = getVariable(44609);
+  { // 44541 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.STATUS
+    st = getVariable(44541);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -4540,8 +4538,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44610 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ONSTATUS
-    st = getVariable(44610);
+  { // 44542 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ONSTATUS
+    st = getVariable(44542);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ONSTATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -4553,8 +4551,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44611 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(44611);
+  { // 44543 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(44543);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -4566,8 +4564,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44612 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.SDVIG
-    st = getVariable(44612);
+  { // 44544 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.SDVIG
+    st = getVariable(44544);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.SDVIG", 53);
     st->size_data = sizeof(BOOL);
@@ -4579,8 +4577,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44613 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.NS
-    st = getVariable(44613);
+  { // 44545 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.NS
+    st = getVariable(44545);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -4592,8 +4590,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 44614 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.COMMANDFAULT
-    st = getVariable(44614);
+  { // 44546 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.COMMANDFAULT
+    st = getVariable(44546);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.COMMANDFAULT", 60);
     st->size_data = sizeof(BOOL);
@@ -4605,8 +4603,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44615 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ACCIDENT
-    st = getVariable(44615);
+  { // 44547 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ACCIDENT
+    st = getVariable(44547);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ACCIDENT", 56);
     st->size_data = sizeof(BOOL);
@@ -4618,8 +4616,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44616 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.AUTO
-    st = getVariable(44616);
+  { // 44548 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.AUTO
+    st = getVariable(44548);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.AUTO", 52);
     st->size_data = sizeof(BOOL);
@@ -4631,8 +4629,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44617 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.MANUAL
-    st = getVariable(44617);
+  { // 44549 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.MANUAL
+    st = getVariable(44549);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.MANUAL", 54);
     st->size_data = sizeof(BOOL);
@@ -4644,8 +4642,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44618 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.LOCAL
-    st = getVariable(44618);
+  { // 44550 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.LOCAL
+    st = getVariable(44550);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.LOCAL", 53);
     st->size_data = sizeof(BOOL);
@@ -4657,8 +4655,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44619 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.DISTANCE
-    st = getVariable(44619);
+  { // 44551 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.DISTANCE
+    st = getVariable(44551);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.DISTANCE", 56);
     st->size_data = sizeof(BOOL);
@@ -4670,8 +4668,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44620 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ERRORPOWEROFF
-    st = getVariable(44620);
+  { // 44552 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ERRORPOWEROFF
+    st = getVariable(44552);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ERRORPOWEROFF", 61);
     st->size_data = sizeof(BOOL);
@@ -4683,8 +4681,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44621 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ERRORBLOCK
-    st = getVariable(44621);
+  { // 44553 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ERRORBLOCK
+    st = getVariable(44553);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ERRORBLOCK", 58);
     st->size_data = sizeof(BOOL);
@@ -4696,8 +4694,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44622 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.BREAKCMDON
-    st = getVariable(44622);
+  { // 44554 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.BREAKCMDON
+    st = getVariable(44554);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.BREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -4709,8 +4707,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44623 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.BREAKCMDOFF
-    st = getVariable(44623);
+  { // 44555 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.BREAKCMDOFF
+    st = getVariable(44555);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.BREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -4722,8 +4720,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44624 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(44624);
+  { // 44556 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(44556);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -4735,8 +4733,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44625 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.LASTCMDISON
-    st = getVariable(44625);
+  { // 44557 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.LASTCMDISON
+    st = getVariable(44557);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.LASTCMDISON", 59);
     st->size_data = sizeof(BOOL);
@@ -4748,8 +4746,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44626 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_STATON
-    st = getVariable(44626);
+  { // 44558 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_STATON
+    st = getVariable(44558);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_STATON", 65);
     st->size_data = sizeof(BOOL);
@@ -4761,8 +4759,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44627 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(44627);
+  { // 44559 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(44559);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_STATOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -4774,8 +4772,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44628 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_CMDON
-    st = getVariable(44628);
+  { // 44560 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_CMDON
+    st = getVariable(44560);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_CMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -4787,8 +4785,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44629 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(44629);
+  { // 44561 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(44561);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_CMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -4800,8 +4798,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44630 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44630);
+  { // 44562 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44562);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -4813,8 +4811,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44631 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44631);
+  { // 44563 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44563);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -4826,8 +4824,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44632 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND_ALG
-    st = getVariable(44632);
+  { // 44564 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND_ALG
+    st = getVariable(44564);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -4839,8 +4837,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44633 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND_ARM
-    st = getVariable(44633);
+  { // 44565 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND_ARM
+    st = getVariable(44565);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -4852,8 +4850,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44634 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.CMDON
-    st = getVariable(44634);
+  { // 44566 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.CMDON
+    st = getVariable(44566);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.CMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -4865,8 +4863,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44635 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.CMDOFF
-    st = getVariable(44635);
+  { // 44567 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.CMDOFF
+    st = getVariable(44567);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.CMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -4878,8 +4876,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44636 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.RELIABILITY
-    st = getVariable(44636);
+  { // 44568 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.RELIABILITY
+    st = getVariable(44568);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V1_AVOM.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -4891,8 +4889,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44637 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND
-    st = getVariable(44637);
+  { // 44569 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND
+    st = getVariable(44569);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -4904,8 +4902,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44638 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.STATUS
-    st = getVariable(44638);
+  { // 44570 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.STATUS
+    st = getVariable(44570);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -4917,8 +4915,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44639 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ONSTATUS
-    st = getVariable(44639);
+  { // 44571 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ONSTATUS
+    st = getVariable(44571);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ONSTATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -4930,8 +4928,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44640 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(44640);
+  { // 44572 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(44572);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -4943,8 +4941,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44641 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.SDVIG
-    st = getVariable(44641);
+  { // 44573 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.SDVIG
+    st = getVariable(44573);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.SDVIG", 53);
     st->size_data = sizeof(BOOL);
@@ -4956,8 +4954,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44642 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.NS
-    st = getVariable(44642);
+  { // 44574 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.NS
+    st = getVariable(44574);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -4969,8 +4967,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 44643 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.COMMANDFAULT
-    st = getVariable(44643);
+  { // 44575 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.COMMANDFAULT
+    st = getVariable(44575);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.COMMANDFAULT", 60);
     st->size_data = sizeof(BOOL);
@@ -4982,8 +4980,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44644 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ACCIDENT
-    st = getVariable(44644);
+  { // 44576 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ACCIDENT
+    st = getVariable(44576);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ACCIDENT", 56);
     st->size_data = sizeof(BOOL);
@@ -4995,8 +4993,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44645 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.AUTO
-    st = getVariable(44645);
+  { // 44577 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.AUTO
+    st = getVariable(44577);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.AUTO", 52);
     st->size_data = sizeof(BOOL);
@@ -5008,8 +5006,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44646 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.MANUAL
-    st = getVariable(44646);
+  { // 44578 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.MANUAL
+    st = getVariable(44578);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.MANUAL", 54);
     st->size_data = sizeof(BOOL);
@@ -5021,8 +5019,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44647 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.LOCAL
-    st = getVariable(44647);
+  { // 44579 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.LOCAL
+    st = getVariable(44579);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.LOCAL", 53);
     st->size_data = sizeof(BOOL);
@@ -5034,8 +5032,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44648 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.DISTANCE
-    st = getVariable(44648);
+  { // 44580 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.DISTANCE
+    st = getVariable(44580);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.DISTANCE", 56);
     st->size_data = sizeof(BOOL);
@@ -5047,8 +5045,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44649 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ERRORPOWEROFF
-    st = getVariable(44649);
+  { // 44581 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ERRORPOWEROFF
+    st = getVariable(44581);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ERRORPOWEROFF", 61);
     st->size_data = sizeof(BOOL);
@@ -5060,8 +5058,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44650 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ERRORBLOCK
-    st = getVariable(44650);
+  { // 44582 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ERRORBLOCK
+    st = getVariable(44582);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ERRORBLOCK", 58);
     st->size_data = sizeof(BOOL);
@@ -5073,8 +5071,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44651 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.BREAKCMDON
-    st = getVariable(44651);
+  { // 44583 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.BREAKCMDON
+    st = getVariable(44583);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.BREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -5086,8 +5084,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44652 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.BREAKCMDOFF
-    st = getVariable(44652);
+  { // 44584 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.BREAKCMDOFF
+    st = getVariable(44584);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.BREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -5099,8 +5097,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44653 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(44653);
+  { // 44585 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(44585);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -5112,8 +5110,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44654 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.LASTCMDISON
-    st = getVariable(44654);
+  { // 44586 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.LASTCMDISON
+    st = getVariable(44586);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.LASTCMDISON", 59);
     st->size_data = sizeof(BOOL);
@@ -5125,8 +5123,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44655 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_STATON
-    st = getVariable(44655);
+  { // 44587 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_STATON
+    st = getVariable(44587);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_STATON", 65);
     st->size_data = sizeof(BOOL);
@@ -5138,8 +5136,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44656 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(44656);
+  { // 44588 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(44588);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_STATOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -5151,8 +5149,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44657 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_CMDON
-    st = getVariable(44657);
+  { // 44589 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_CMDON
+    st = getVariable(44589);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_CMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -5164,8 +5162,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44658 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(44658);
+  { // 44590 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(44590);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_CMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -5177,8 +5175,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44659 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44659);
+  { // 44591 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44591);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -5190,8 +5188,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44660 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44660);
+  { // 44592 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44592);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -5203,8 +5201,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44661 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND_ALG
-    st = getVariable(44661);
+  { // 44593 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND_ALG
+    st = getVariable(44593);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -5216,8 +5214,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44662 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND_ARM
-    st = getVariable(44662);
+  { // 44594 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND_ARM
+    st = getVariable(44594);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -5229,8 +5227,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44663 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.CMDON
-    st = getVariable(44663);
+  { // 44595 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.CMDON
+    st = getVariable(44595);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.CMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -5242,8 +5240,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44664 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.CMDOFF
-    st = getVariable(44664);
+  { // 44596 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.CMDOFF
+    st = getVariable(44596);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.CMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -5255,8 +5253,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44665 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.RELIABILITY
-    st = getVariable(44665);
+  { // 44597 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.RELIABILITY
+    st = getVariable(44597);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V2_AVOM.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -5268,8 +5266,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44666 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND
-    st = getVariable(44666);
+  { // 44598 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND
+    st = getVariable(44598);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -5281,8 +5279,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44667 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.STATUS
-    st = getVariable(44667);
+  { // 44599 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.STATUS
+    st = getVariable(44599);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -5294,8 +5292,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SECTIONSWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44668 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ONSTATUS
-    st = getVariable(44668);
+  { // 44600 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ONSTATUS
+    st = getVariable(44600);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ONSTATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -5307,8 +5305,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SECTIONSWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44669 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INOPCCOMMANDSDISABLED
-    st = getVariable(44669);
+  { // 44601 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INOPCCOMMANDSDISABLED
+    st = getVariable(44601);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -5320,8 +5318,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44670 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.SDVIG
-    st = getVariable(44670);
+  { // 44602 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.SDVIG
+    st = getVariable(44602);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.SDVIG", 48);
     st->size_data = sizeof(BOOL);
@@ -5333,8 +5331,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44671 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.NS
-    st = getVariable(44671);
+  { // 44603 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.NS
+    st = getVariable(44603);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.NS", 45);
     st->size_data = sizeof(BOOL);
@@ -5346,8 +5344,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 44672 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.COMMANDFAULT
-    st = getVariable(44672);
+  { // 44604 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.COMMANDFAULT
+    st = getVariable(44604);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.COMMANDFAULT", 55);
     st->size_data = sizeof(BOOL);
@@ -5359,8 +5357,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44673 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ACCIDENT
-    st = getVariable(44673);
+  { // 44605 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ACCIDENT
+    st = getVariable(44605);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ACCIDENT", 51);
     st->size_data = sizeof(BOOL);
@@ -5372,8 +5370,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44674 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.LOCAL
-    st = getVariable(44674);
+  { // 44606 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.LOCAL
+    st = getVariable(44606);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.LOCAL", 48);
     st->size_data = sizeof(BOOL);
@@ -5385,8 +5383,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44675 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.DISTANCE
-    st = getVariable(44675);
+  { // 44607 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.DISTANCE
+    st = getVariable(44607);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.DISTANCE", 51);
     st->size_data = sizeof(BOOL);
@@ -5398,8 +5396,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44676 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.OPCCOMMANDSDISABLED
-    st = getVariable(44676);
+  { // 44608 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.OPCCOMMANDSDISABLED
+    st = getVariable(44608);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -5411,8 +5409,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44677 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.LASTCMDISON
-    st = getVariable(44677);
+  { // 44609 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.LASTCMDISON
+    st = getVariable(44609);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.LASTCMDISON", 54);
     st->size_data = sizeof(BOOL);
@@ -5424,8 +5422,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44678 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.OFFKNA
-    st = getVariable(44678);
+  { // 44610 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.OFFKNA
+    st = getVariable(44610);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.OFFKNA", 49);
     st->size_data = sizeof(BOOL);
@@ -5437,8 +5435,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->OFFKNA;
     st->value_p = p_BOOL;
   }
-  { // 44679 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BASKETSTATUS
-    st = getVariable(44679);
+  { // 44611 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BASKETSTATUS
+    st = getVariable(44611);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BASKETSTATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -5450,8 +5448,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SECTIONSWITCH->BASKETSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44680 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_STATON
-    st = getVariable(44680);
+  { // 44612 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_STATON
+    st = getVariable(44612);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_STATON", 60);
     st->size_data = sizeof(BOOL);
@@ -5463,8 +5461,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44681 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_STATOFF
-    st = getVariable(44681);
+  { // 44613 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_STATOFF
+    st = getVariable(44613);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_STATOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -5476,8 +5474,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44682 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_CMDON
-    st = getVariable(44682);
+  { // 44614 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_CMDON
+    st = getVariable(44614);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_CMDON", 59);
     st->size_data = sizeof(BOOL);
@@ -5489,8 +5487,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44683 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_CMDOFF
-    st = getVariable(44683);
+  { // 44615 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_CMDOFF
+    st = getVariable(44615);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_CMDOFF", 60);
     st->size_data = sizeof(BOOL);
@@ -5502,8 +5500,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44684 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44684);
+  { // 44616 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44616);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_INBREAKCMDON", 66);
     st->size_data = sizeof(BOOL);
@@ -5515,8 +5513,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44685 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44685);
+  { // 44617 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44617);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_INBREAKCMDOFF", 67);
     st->size_data = sizeof(BOOL);
@@ -5528,8 +5526,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44686 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BREAKCMDON
-    st = getVariable(44686);
+  { // 44618 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BREAKCMDON
+    st = getVariable(44618);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BREAKCMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -5541,8 +5539,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44687 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BREAKCMDOFF
-    st = getVariable(44687);
+  { // 44619 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BREAKCMDOFF
+    st = getVariable(44619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.BREAKCMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -5554,8 +5552,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44688 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETROLLEDIN
-    st = getVariable(44688);
+  { // 44620 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETROLLEDIN
+    st = getVariable(44620);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETROLLEDIN", 68);
     st->size_data = sizeof(BOOL);
@@ -5567,8 +5565,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETROLLEDIN;
     st->value_p = p_BOOL;
   }
-  { // 44689 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETROLLEDOUT
-    st = getVariable(44689);
+  { // 44621 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETROLLEDOUT
+    st = getVariable(44621);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETROLLEDOUT", 69);
     st->size_data = sizeof(BOOL);
@@ -5580,8 +5578,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETROLLEDOUT;
     st->value_p = p_BOOL;
   }
-  { // 44690 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETTEST
-    st = getVariable(44690);
+  { // 44622 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETTEST
+    st = getVariable(44622);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.ISVALIDREF_BASKETTEST", 64);
     st->size_data = sizeof(BOOL);
@@ -5593,8 +5591,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETTEST;
     st->value_p = p_BOOL;
   }
-  { // 44691 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND_ALG
-    st = getVariable(44691);
+  { // 44623 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND_ALG
+    st = getVariable(44623);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -5606,8 +5604,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44692 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND_ARM
-    st = getVariable(44692);
+  { // 44624 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND_ARM
+    st = getVariable(44624);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -5619,8 +5617,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44693 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.CMDON
-    st = getVariable(44693);
+  { // 44625 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.CMDON
+    st = getVariable(44625);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.CMDON", 48);
     st->size_data = sizeof(BOOL);
@@ -5632,8 +5630,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44694 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.CMDOFF
-    st = getVariable(44694);
+  { // 44626 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.CMDOFF
+    st = getVariable(44626);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.CMDOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -5645,8 +5643,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44695 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.RELIABILITY
-    st = getVariable(44695);
+  { // 44627 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.RELIABILITY
+    st = getVariable(44627);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.MV.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -5658,8 +5656,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44696 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND
-    st = getVariable(44696);
+  { // 44628 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND
+    st = getVariable(44628);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -5671,8 +5669,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 44697 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.STATUS
-    st = getVariable(44697);
+  { // 44629 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.STATUS
+    st = getVariable(44629);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -5684,8 +5682,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44698 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ONSTATUS
-    st = getVariable(44698);
+  { // 44630 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ONSTATUS
+    st = getVariable(44630);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -5697,8 +5695,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 44699 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INOPCCOMMANDSDISABLED
-    st = getVariable(44699);
+  { // 44631 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INOPCCOMMANDSDISABLED
+    st = getVariable(44631);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -5710,8 +5708,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44700 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.SDVIG
-    st = getVariable(44700);
+  { // 44632 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.SDVIG
+    st = getVariable(44632);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -5723,8 +5721,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 44701 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.NS
-    st = getVariable(44701);
+  { // 44633 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.NS
+    st = getVariable(44633);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -5736,8 +5734,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 44702 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.COMMANDFAULT
-    st = getVariable(44702);
+  { // 44634 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.COMMANDFAULT
+    st = getVariable(44634);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -5749,8 +5747,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 44703 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ACCIDENT
-    st = getVariable(44703);
+  { // 44635 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ACCIDENT
+    st = getVariable(44635);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -5762,8 +5760,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 44704 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.AUTO
-    st = getVariable(44704);
+  { // 44636 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.AUTO
+    st = getVariable(44636);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.AUTO", 48);
     st->size_data = sizeof(BOOL);
@@ -5775,8 +5773,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 44705 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.MANUAL
-    st = getVariable(44705);
+  { // 44637 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.MANUAL
+    st = getVariable(44637);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.MANUAL", 50);
     st->size_data = sizeof(BOOL);
@@ -5788,8 +5786,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 44706 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.LOCAL
-    st = getVariable(44706);
+  { // 44638 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.LOCAL
+    st = getVariable(44638);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -5801,8 +5799,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 44707 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.DISTANCE
-    st = getVariable(44707);
+  { // 44639 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.DISTANCE
+    st = getVariable(44639);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -5814,8 +5812,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 44708 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ERRORPOWEROFF
-    st = getVariable(44708);
+  { // 44640 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ERRORPOWEROFF
+    st = getVariable(44640);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ERRORPOWEROFF", 57);
     st->size_data = sizeof(BOOL);
@@ -5827,8 +5825,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 44709 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ERRORBLOCK
-    st = getVariable(44709);
+  { // 44641 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ERRORBLOCK
+    st = getVariable(44641);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ERRORBLOCK", 54);
     st->size_data = sizeof(BOOL);
@@ -5840,8 +5838,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 44710 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.BREAKCMDON
-    st = getVariable(44710);
+  { // 44642 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.BREAKCMDON
+    st = getVariable(44642);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -5853,8 +5851,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44711 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.BREAKCMDOFF
-    st = getVariable(44711);
+  { // 44643 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.BREAKCMDOFF
+    st = getVariable(44643);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -5866,8 +5864,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44712 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.OPCCOMMANDSDISABLED
-    st = getVariable(44712);
+  { // 44644 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.OPCCOMMANDSDISABLED
+    st = getVariable(44644);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -5879,8 +5877,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 44713 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.LASTCMDISON
-    st = getVariable(44713);
+  { // 44645 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.LASTCMDISON
+    st = getVariable(44645);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -5892,8 +5890,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 44714 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_STATON
-    st = getVariable(44714);
+  { // 44646 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_STATON
+    st = getVariable(44646);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -5905,8 +5903,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 44715 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_STATOFF
-    st = getVariable(44715);
+  { // 44647 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_STATOFF
+    st = getVariable(44647);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -5918,8 +5916,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 44716 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_CMDON
-    st = getVariable(44716);
+  { // 44648 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_CMDON
+    st = getVariable(44648);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -5931,8 +5929,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44717 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_CMDOFF
-    st = getVariable(44717);
+  { // 44649 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_CMDOFF
+    st = getVariable(44649);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -5944,8 +5942,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44718 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_INBREAKCMDON
-    st = getVariable(44718);
+  { // 44650 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_INBREAKCMDON
+    st = getVariable(44650);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -5957,8 +5955,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 44719 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(44719);
+  { // 44651 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(44651);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -5970,8 +5968,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44720 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND_ALG
-    st = getVariable(44720);
+  { // 44652 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND_ALG
+    st = getVariable(44652);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -5983,8 +5981,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 44721 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND_ARM
-    st = getVariable(44721);
+  { // 44653 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND_ARM
+    st = getVariable(44653);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -5996,8 +5994,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 44722 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.CMDON
-    st = getVariable(44722);
+  { // 44654 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.CMDON
+    st = getVariable(44654);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -6009,8 +6007,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 44723 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.CMDOFF
-    st = getVariable(44723);
+  { // 44655 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.CMDOFF
+    st = getVariable(44655);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -6022,8 +6020,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 44724 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.RELIABILITY
-    st = getVariable(44724);
+  { // 44656 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.RELIABILITY
+    st = getVariable(44656);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -6035,8 +6033,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44725 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM1.VAR1
-    st = getVariable(44725);
+  { // 44657 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM1.VAR1
+    st = getVariable(44657);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM1.VAR1", 56);
     st->size_data = sizeof(BOOL);
@@ -6048,8 +6046,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM->VAR1;
     st->value_p = p_BOOL;
   }
-  { // 44726 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM1.VAR2
-    st = getVariable(44726);
+  { // 44658 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM1.VAR2
+    st = getVariable(44658);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM1.VAR2", 56);
     st->size_data = sizeof(BOOL);
@@ -6061,8 +6059,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM->VAR2;
     st->value_p = p_BOOL;
   }
-  { // 44727 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM2.VAR1
-    st = getVariable(44727);
+  { // 44659 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM2.VAR1
+    st = getVariable(44659);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM2.VAR1", 56);
     st->size_data = sizeof(BOOL);
@@ -6074,8 +6072,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM2->VAR1;
     st->value_p = p_BOOL;
   }
-  { // 44728 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM2.VAR2
-    st = getVariable(44728);
+  { // 44660 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM2.VAR2
+    st = getVariable(44660);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.RESERVE_IM2.VAR2", 56);
     st->size_data = sizeof(BOOL);
@@ -6087,8 +6085,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM2->VAR2;
     st->value_p = p_BOOL;
   }
-  { // 44729 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.RELIABILITY
-    st = getVariable(44729);
+  { // 44661 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.RELIABILITY
+    st = getVariable(44661);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.RELIABILITY", 81);
     st->size_data = sizeof(BOOL);
@@ -6101,8 +6099,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44730 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.INVERSE
-    st = getVariable(44730);
+  { // 44662 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.INVERSE
+    st = getVariable(44662);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.INVERSE", 77);
     st->size_data = sizeof(BOOL);
@@ -6115,8 +6113,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44731 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYON
-    st = getVariable(44731);
+  { // 44663 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYON
+    st = getVariable(44663);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYON", 77);
     st->size_data = sizeof(TIME);
@@ -6129,8 +6127,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44732 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYOFF
-    st = getVariable(44732);
+  { // 44664 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYOFF
+    st = getVariable(44664);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYOFF", 78);
     st->size_data = sizeof(TIME);
@@ -6143,8 +6141,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44733 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.Q
-    st = getVariable(44733);
+  { // 44665 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.Q
+    st = getVariable(44665);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.Q", 71);
     st->size_data = sizeof(BOOL);
@@ -6157,8 +6155,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44734 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.STATUS
-    st = getVariable(44734);
+  { // 44666 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.STATUS
+    st = getVariable(44666);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.STATUS", 76);
     st->size_data = sizeof(DWORD);
@@ -6171,8 +6169,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44735 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DISABLED_SIG
-    st = getVariable(44735);
+  { // 44667 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DISABLED_SIG
+    st = getVariable(44667);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DISABLED_SIG", 82);
     st->size_data = sizeof(BOOL);
@@ -6185,8 +6183,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44736 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.RELIABILITY
-    st = getVariable(44736);
+  { // 44668 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.RELIABILITY
+    st = getVariable(44668);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.RELIABILITY", 83);
     st->size_data = sizeof(BOOL);
@@ -6199,8 +6197,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44737 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.INVERSE
-    st = getVariable(44737);
+  { // 44669 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.INVERSE
+    st = getVariable(44669);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.INVERSE", 79);
     st->size_data = sizeof(BOOL);
@@ -6213,8 +6211,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44738 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYON
-    st = getVariable(44738);
+  { // 44670 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYON
+    st = getVariable(44670);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYON", 79);
     st->size_data = sizeof(TIME);
@@ -6227,8 +6225,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44739 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYOFF
-    st = getVariable(44739);
+  { // 44671 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYOFF
+    st = getVariable(44671);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYOFF", 80);
     st->size_data = sizeof(TIME);
@@ -6241,8 +6239,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44740 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.Q
-    st = getVariable(44740);
+  { // 44672 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.Q
+    st = getVariable(44672);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.Q", 73);
     st->size_data = sizeof(BOOL);
@@ -6255,8 +6253,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44741 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.STATUS
-    st = getVariable(44741);
+  { // 44673 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.STATUS
+    st = getVariable(44673);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.STATUS", 78);
     st->size_data = sizeof(DWORD);
@@ -6269,8 +6267,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44742 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DISABLED_SIG
-    st = getVariable(44742);
+  { // 44674 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DISABLED_SIG
+    st = getVariable(44674);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DISABLED_SIG", 84);
     st->size_data = sizeof(BOOL);
@@ -6283,8 +6281,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44743 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.RELIABILITY
-    st = getVariable(44743);
+  { // 44675 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.RELIABILITY
+    st = getVariable(44675);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -6297,8 +6295,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44744 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.INVERSE
-    st = getVariable(44744);
+  { // 44676 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.INVERSE
+    st = getVariable(44676);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -6311,8 +6309,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44745 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYON
-    st = getVariable(44745);
+  { // 44677 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYON
+    st = getVariable(44677);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -6325,8 +6323,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44746 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYOFF
-    st = getVariable(44746);
+  { // 44678 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYOFF
+    st = getVariable(44678);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -6339,8 +6337,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44747 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.Q
-    st = getVariable(44747);
+  { // 44679 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.Q
+    st = getVariable(44679);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -6353,8 +6351,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44748 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.STATUS
-    st = getVariable(44748);
+  { // 44680 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.STATUS
+    st = getVariable(44680);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -6367,8 +6365,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44749 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DISABLED_SIG
-    st = getVariable(44749);
+  { // 44681 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DISABLED_SIG
+    st = getVariable(44681);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -6381,8 +6379,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44750 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.RELIABILITY
-    st = getVariable(44750);
+  { // 44682 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.RELIABILITY
+    st = getVariable(44682);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.RELIABILITY", 79);
     st->size_data = sizeof(BOOL);
@@ -6395,8 +6393,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44751 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.INVERSE
-    st = getVariable(44751);
+  { // 44683 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.INVERSE
+    st = getVariable(44683);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.INVERSE", 75);
     st->size_data = sizeof(BOOL);
@@ -6409,8 +6407,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44752 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYON
-    st = getVariable(44752);
+  { // 44684 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYON
+    st = getVariable(44684);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYON", 75);
     st->size_data = sizeof(TIME);
@@ -6423,8 +6421,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44753 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYOFF
-    st = getVariable(44753);
+  { // 44685 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYOFF
+    st = getVariable(44685);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYOFF", 76);
     st->size_data = sizeof(TIME);
@@ -6437,8 +6435,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44754 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.Q
-    st = getVariable(44754);
+  { // 44686 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.Q
+    st = getVariable(44686);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.Q", 69);
     st->size_data = sizeof(BOOL);
@@ -6451,8 +6449,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44755 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.STATUS
-    st = getVariable(44755);
+  { // 44687 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.STATUS
+    st = getVariable(44687);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.STATUS", 74);
     st->size_data = sizeof(DWORD);
@@ -6465,8 +6463,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44756 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DISABLED_SIG
-    st = getVariable(44756);
+  { // 44688 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DISABLED_SIG
+    st = getVariable(44688);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DISABLED_SIG", 80);
     st->size_data = sizeof(BOOL);
@@ -6479,8 +6477,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44757 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.RELIABILITY
-    st = getVariable(44757);
+  { // 44689 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.RELIABILITY
+    st = getVariable(44689);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.RELIABILITY", 75);
     st->size_data = sizeof(BOOL);
@@ -6493,8 +6491,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44758 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.INVERSE
-    st = getVariable(44758);
+  { // 44690 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.INVERSE
+    st = getVariable(44690);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.INVERSE", 71);
     st->size_data = sizeof(BOOL);
@@ -6507,8 +6505,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44759 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DELAYON
-    st = getVariable(44759);
+  { // 44691 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DELAYON
+    st = getVariable(44691);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DELAYON", 71);
     st->size_data = sizeof(TIME);
@@ -6521,8 +6519,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44760 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DELAYOFF
-    st = getVariable(44760);
+  { // 44692 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DELAYOFF
+    st = getVariable(44692);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DELAYOFF", 72);
     st->size_data = sizeof(TIME);
@@ -6535,8 +6533,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44761 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.Q
-    st = getVariable(44761);
+  { // 44693 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.Q
+    st = getVariable(44693);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -6549,8 +6547,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44762 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.STATUS
-    st = getVariable(44762);
+  { // 44694 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.STATUS
+    st = getVariable(44694);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.STATUS", 70);
     st->size_data = sizeof(DWORD);
@@ -6563,8 +6561,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44763 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DISABLED_SIG
-    st = getVariable(44763);
+  { // 44695 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DISABLED_SIG
+    st = getVariable(44695);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.P_OIL_LOW.DISABLED_SIG", 76);
     st->size_data = sizeof(BOOL);
@@ -6577,8 +6575,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44764 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.RELIABILITY
-    st = getVariable(44764);
+  { // 44696 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.RELIABILITY
+    st = getVariable(44696);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.RELIABILITY", 73);
     st->size_data = sizeof(BOOL);
@@ -6591,8 +6589,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44765 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.INVERSE
-    st = getVariable(44765);
+  { // 44697 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.INVERSE
+    st = getVariable(44697);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.INVERSE", 69);
     st->size_data = sizeof(BOOL);
@@ -6605,8 +6603,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44766 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DELAYON
-    st = getVariable(44766);
+  { // 44698 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DELAYON
+    st = getVariable(44698);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DELAYON", 69);
     st->size_data = sizeof(TIME);
@@ -6619,8 +6617,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44767 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DELAYOFF
-    st = getVariable(44767);
+  { // 44699 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DELAYOFF
+    st = getVariable(44699);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
@@ -6633,8 +6631,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44768 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.Q
-    st = getVariable(44768);
+  { // 44700 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.Q
+    st = getVariable(44700);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -6647,8 +6645,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44769 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.STATUS
-    st = getVariable(44769);
+  { // 44701 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.STATUS
+    st = getVariable(44701);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -6661,8 +6659,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44770 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DISABLED_SIG
-    st = getVariable(44770);
+  { // 44702 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DISABLED_SIG
+    st = getVariable(44702);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.KZ_10KV.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
@@ -6675,8 +6673,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44771 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.RELIABILITY
-    st = getVariable(44771);
+  { // 44703 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.RELIABILITY
+    st = getVariable(44703);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.RELIABILITY", 84);
     st->size_data = sizeof(BOOL);
@@ -6689,8 +6687,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44772 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.INVERSE
-    st = getVariable(44772);
+  { // 44704 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.INVERSE
+    st = getVariable(44704);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.INVERSE", 80);
     st->size_data = sizeof(BOOL);
@@ -6703,8 +6701,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44773 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYON
-    st = getVariable(44773);
+  { // 44705 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYON
+    st = getVariable(44705);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYON", 80);
     st->size_data = sizeof(TIME);
@@ -6717,8 +6715,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44774 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYOFF
-    st = getVariable(44774);
+  { // 44706 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYOFF
+    st = getVariable(44706);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYOFF", 81);
     st->size_data = sizeof(TIME);
@@ -6731,8 +6729,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44775 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.Q
-    st = getVariable(44775);
+  { // 44707 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.Q
+    st = getVariable(44707);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.Q", 74);
     st->size_data = sizeof(BOOL);
@@ -6745,8 +6743,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44776 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.STATUS
-    st = getVariable(44776);
+  { // 44708 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.STATUS
+    st = getVariable(44708);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.STATUS", 79);
     st->size_data = sizeof(DWORD);
@@ -6759,8 +6757,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44777 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DISABLED_SIG
-    st = getVariable(44777);
+  { // 44709 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DISABLED_SIG
+    st = getVariable(44709);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DISABLED_SIG", 85);
     st->size_data = sizeof(BOOL);
@@ -6773,8 +6771,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44778 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.RELIABILITY
-    st = getVariable(44778);
+  { // 44710 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.RELIABILITY
+    st = getVariable(44710);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.RELIABILITY", 80);
     st->size_data = sizeof(BOOL);
@@ -6787,8 +6785,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44779 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.INVERSE
-    st = getVariable(44779);
+  { // 44711 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.INVERSE
+    st = getVariable(44711);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.INVERSE", 76);
     st->size_data = sizeof(BOOL);
@@ -6801,8 +6799,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44780 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYON
-    st = getVariable(44780);
+  { // 44712 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYON
+    st = getVariable(44712);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYON", 76);
     st->size_data = sizeof(TIME);
@@ -6815,8 +6813,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44781 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYOFF
-    st = getVariable(44781);
+  { // 44713 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYOFF
+    st = getVariable(44713);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYOFF", 77);
     st->size_data = sizeof(TIME);
@@ -6829,8 +6827,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44782 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.Q
-    st = getVariable(44782);
+  { // 44714 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.Q
+    st = getVariable(44714);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.Q", 70);
     st->size_data = sizeof(BOOL);
@@ -6843,8 +6841,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44783 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.STATUS
-    st = getVariable(44783);
+  { // 44715 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.STATUS
+    st = getVariable(44715);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.STATUS", 75);
     st->size_data = sizeof(DWORD);
@@ -6857,8 +6855,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44784 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DISABLED_SIG
-    st = getVariable(44784);
+  { // 44716 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DISABLED_SIG
+    st = getVariable(44716);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DISABLED_SIG", 81);
     st->size_data = sizeof(BOOL);
@@ -6871,8 +6869,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44785 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.RELIABILITY
-    st = getVariable(44785);
+  { // 44717 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.RELIABILITY
+    st = getVariable(44717);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.RELIABILITY", 84);
     st->size_data = sizeof(BOOL);
@@ -6885,8 +6883,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44786 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.INVERSE
-    st = getVariable(44786);
+  { // 44718 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.INVERSE
+    st = getVariable(44718);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.INVERSE", 80);
     st->size_data = sizeof(BOOL);
@@ -6899,8 +6897,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44787 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYON
-    st = getVariable(44787);
+  { // 44719 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYON
+    st = getVariable(44719);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYON", 80);
     st->size_data = sizeof(TIME);
@@ -6913,8 +6911,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44788 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYOFF
-    st = getVariable(44788);
+  { // 44720 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYOFF
+    st = getVariable(44720);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYOFF", 81);
     st->size_data = sizeof(TIME);
@@ -6927,8 +6925,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44789 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.Q
-    st = getVariable(44789);
+  { // 44721 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.Q
+    st = getVariable(44721);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.Q", 74);
     st->size_data = sizeof(BOOL);
@@ -6941,8 +6939,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44790 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.STATUS
-    st = getVariable(44790);
+  { // 44722 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.STATUS
+    st = getVariable(44722);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.STATUS", 79);
     st->size_data = sizeof(DWORD);
@@ -6955,8 +6953,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44791 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DISABLED_SIG
-    st = getVariable(44791);
+  { // 44723 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DISABLED_SIG
+    st = getVariable(44723);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DISABLED_SIG", 85);
     st->size_data = sizeof(BOOL);
@@ -6969,8 +6967,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44792 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.RELIABILITY
-    st = getVariable(44792);
+  { // 44724 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.RELIABILITY
+    st = getVariable(44724);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.RELIABILITY", 89);
     st->size_data = sizeof(BOOL);
@@ -6983,8 +6981,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44793 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.INVERSE
-    st = getVariable(44793);
+  { // 44725 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.INVERSE
+    st = getVariable(44725);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.INVERSE", 85);
     st->size_data = sizeof(BOOL);
@@ -6997,8 +6995,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44794 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYON
-    st = getVariable(44794);
+  { // 44726 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYON
+    st = getVariable(44726);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYON", 85);
     st->size_data = sizeof(TIME);
@@ -7011,8 +7009,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44795 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYOFF
-    st = getVariable(44795);
+  { // 44727 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYOFF
+    st = getVariable(44727);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYOFF", 86);
     st->size_data = sizeof(TIME);
@@ -7025,8 +7023,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44796 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.Q
-    st = getVariable(44796);
+  { // 44728 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.Q
+    st = getVariable(44728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.Q", 79);
     st->size_data = sizeof(BOOL);
@@ -7039,8 +7037,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44797 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.STATUS
-    st = getVariable(44797);
+  { // 44729 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.STATUS
+    st = getVariable(44729);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.STATUS", 84);
     st->size_data = sizeof(DWORD);
@@ -7053,8 +7051,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44798 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DISABLED_SIG
-    st = getVariable(44798);
+  { // 44730 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DISABLED_SIG
+    st = getVariable(44730);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DISABLED_SIG", 90);
     st->size_data = sizeof(BOOL);
@@ -7067,8 +7065,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44799 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.RELIABILITY
-    st = getVariable(44799);
+  { // 44731 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.RELIABILITY
+    st = getVariable(44731);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.RELIABILITY", 87);
     st->size_data = sizeof(BOOL);
@@ -7081,8 +7079,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44800 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.INVERSE
-    st = getVariable(44800);
+  { // 44732 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.INVERSE
+    st = getVariable(44732);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.INVERSE", 83);
     st->size_data = sizeof(BOOL);
@@ -7095,8 +7093,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44801 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYON
-    st = getVariable(44801);
+  { // 44733 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYON
+    st = getVariable(44733);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYON", 83);
     st->size_data = sizeof(TIME);
@@ -7109,8 +7107,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44802 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYOFF
-    st = getVariable(44802);
+  { // 44734 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYOFF
+    st = getVariable(44734);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYOFF", 84);
     st->size_data = sizeof(TIME);
@@ -7123,8 +7121,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44803 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.Q
-    st = getVariable(44803);
+  { // 44735 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.Q
+    st = getVariable(44735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.Q", 77);
     st->size_data = sizeof(BOOL);
@@ -7137,8 +7135,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44804 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.STATUS
-    st = getVariable(44804);
+  { // 44736 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.STATUS
+    st = getVariable(44736);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.STATUS", 82);
     st->size_data = sizeof(DWORD);
@@ -7151,8 +7149,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44805 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DISABLED_SIG
-    st = getVariable(44805);
+  { // 44737 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DISABLED_SIG
+    st = getVariable(44737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DISABLED_SIG", 88);
     st->size_data = sizeof(BOOL);
@@ -7165,8 +7163,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44806 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.RELIABILITY
-    st = getVariable(44806);
+  { // 44738 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.RELIABILITY
+    st = getVariable(44738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.RELIABILITY", 80);
     st->size_data = sizeof(BOOL);
@@ -7179,8 +7177,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44807 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.INVERSE
-    st = getVariable(44807);
+  { // 44739 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.INVERSE
+    st = getVariable(44739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.INVERSE", 76);
     st->size_data = sizeof(BOOL);
@@ -7193,8 +7191,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44808 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYON
-    st = getVariable(44808);
+  { // 44740 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYON
+    st = getVariable(44740);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYON", 76);
     st->size_data = sizeof(TIME);
@@ -7207,8 +7205,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44809 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYOFF
-    st = getVariable(44809);
+  { // 44741 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYOFF
+    st = getVariable(44741);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYOFF", 77);
     st->size_data = sizeof(TIME);
@@ -7221,8 +7219,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44810 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.Q
-    st = getVariable(44810);
+  { // 44742 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.Q
+    st = getVariable(44742);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.Q", 70);
     st->size_data = sizeof(BOOL);
@@ -7235,8 +7233,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44811 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.STATUS
-    st = getVariable(44811);
+  { // 44743 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.STATUS
+    st = getVariable(44743);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.STATUS", 75);
     st->size_data = sizeof(DWORD);
@@ -7249,8 +7247,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44812 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DISABLED_SIG
-    st = getVariable(44812);
+  { // 44744 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DISABLED_SIG
+    st = getVariable(44744);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_VOZBYDITELA.DISABLED_SIG", 81);
     st->size_data = sizeof(BOOL);
@@ -7263,8 +7261,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44813 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.RELIABILITY
-    st = getVariable(44813);
+  { // 44745 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.RELIABILITY
+    st = getVariable(44745);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -7277,8 +7275,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44814 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.INVERSE
-    st = getVariable(44814);
+  { // 44746 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.INVERSE
+    st = getVariable(44746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -7291,8 +7289,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44815 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYON
-    st = getVariable(44815);
+  { // 44747 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYON
+    st = getVariable(44747);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -7305,8 +7303,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44816 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYOFF
-    st = getVariable(44816);
+  { // 44748 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYOFF
+    st = getVariable(44748);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -7319,8 +7317,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44817 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.Q
-    st = getVariable(44817);
+  { // 44749 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.Q
+    st = getVariable(44749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -7333,8 +7331,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44818 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.STATUS
-    st = getVariable(44818);
+  { // 44750 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.STATUS
+    st = getVariable(44750);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -7347,8 +7345,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44819 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DISABLED_SIG
-    st = getVariable(44819);
+  { // 44751 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DISABLED_SIG
+    st = getVariable(44751);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AVR_OFF.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -7361,8 +7359,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44820 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.RELIABILITY
-    st = getVariable(44820);
+  { // 44752 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.RELIABILITY
+    st = getVariable(44752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.RELIABILITY", 93);
     st->size_data = sizeof(BOOL);
@@ -7375,8 +7373,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44821 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.INVERSE
-    st = getVariable(44821);
+  { // 44753 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.INVERSE
+    st = getVariable(44753);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.INVERSE", 89);
     st->size_data = sizeof(BOOL);
@@ -7389,8 +7387,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44822 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYON
-    st = getVariable(44822);
+  { // 44754 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYON
+    st = getVariable(44754);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYON", 89);
     st->size_data = sizeof(TIME);
@@ -7403,8 +7401,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44823 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYOFF
-    st = getVariable(44823);
+  { // 44755 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYOFF
+    st = getVariable(44755);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYOFF", 90);
     st->size_data = sizeof(TIME);
@@ -7417,8 +7415,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44824 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.Q
-    st = getVariable(44824);
+  { // 44756 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.Q
+    st = getVariable(44756);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.Q", 83);
     st->size_data = sizeof(BOOL);
@@ -7431,8 +7429,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44825 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.STATUS
-    st = getVariable(44825);
+  { // 44757 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.STATUS
+    st = getVariable(44757);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.STATUS", 88);
     st->size_data = sizeof(DWORD);
@@ -7445,8 +7443,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44826 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DISABLED_SIG
-    st = getVariable(44826);
+  { // 44758 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DISABLED_SIG
+    st = getVariable(44758);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DISABLED_SIG", 94);
     st->size_data = sizeof(BOOL);
@@ -7459,8 +7457,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44827 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.RELIABILITY
-    st = getVariable(44827);
+  { // 44759 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.RELIABILITY
+    st = getVariable(44759);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -7473,8 +7471,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44828 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.INVERSE
-    st = getVariable(44828);
+  { // 44760 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.INVERSE
+    st = getVariable(44760);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -7487,8 +7485,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44829 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYON
-    st = getVariable(44829);
+  { // 44761 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYON
+    st = getVariable(44761);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -7501,8 +7499,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44830 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYOFF
-    st = getVariable(44830);
+  { // 44762 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYOFF
+    st = getVariable(44762);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -7515,8 +7513,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44831 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.Q
-    st = getVariable(44831);
+  { // 44763 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.Q
+    st = getVariable(44763);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -7529,8 +7527,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44832 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.STATUS
-    st = getVariable(44832);
+  { // 44764 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.STATUS
+    st = getVariable(44764);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -7543,8 +7541,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44833 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DISABLED_SIG
-    st = getVariable(44833);
+  { // 44765 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DISABLED_SIG
+    st = getVariable(44765);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -7557,8 +7555,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44834 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.RELIABILITY
-    st = getVariable(44834);
+  { // 44766 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.RELIABILITY
+    st = getVariable(44766);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.RELIABILITY", 79);
     st->size_data = sizeof(BOOL);
@@ -7571,8 +7569,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44835 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.INVERSE
-    st = getVariable(44835);
+  { // 44767 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.INVERSE
+    st = getVariable(44767);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.INVERSE", 75);
     st->size_data = sizeof(BOOL);
@@ -7585,8 +7583,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44836 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYON
-    st = getVariable(44836);
+  { // 44768 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYON
+    st = getVariable(44768);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYON", 75);
     st->size_data = sizeof(TIME);
@@ -7599,8 +7597,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44837 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYOFF
-    st = getVariable(44837);
+  { // 44769 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYOFF
+    st = getVariable(44769);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYOFF", 76);
     st->size_data = sizeof(TIME);
@@ -7613,8 +7611,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44838 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.Q
-    st = getVariable(44838);
+  { // 44770 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.Q
+    st = getVariable(44770);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.Q", 69);
     st->size_data = sizeof(BOOL);
@@ -7627,8 +7625,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44839 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.STATUS
-    st = getVariable(44839);
+  { // 44771 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.STATUS
+    st = getVariable(44771);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.STATUS", 74);
     st->size_data = sizeof(DWORD);
@@ -7641,8 +7639,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44840 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DISABLED_SIG
-    st = getVariable(44840);
+  { // 44772 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DISABLED_SIG
+    st = getVariable(44772);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.VOZB_OVERLOAD.DISABLED_SIG", 80);
     st->size_data = sizeof(BOOL);
@@ -7655,8 +7653,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44841 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.RELIABILITY
-    st = getVariable(44841);
+  { // 44773 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.RELIABILITY
+    st = getVariable(44773);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.RELIABILITY", 71);
     st->size_data = sizeof(BOOL);
@@ -7669,8 +7667,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44842 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.INVERSE
-    st = getVariable(44842);
+  { // 44774 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.INVERSE
+    st = getVariable(44774);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.INVERSE", 67);
     st->size_data = sizeof(BOOL);
@@ -7683,8 +7681,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44843 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DELAYON
-    st = getVariable(44843);
+  { // 44775 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DELAYON
+    st = getVariable(44775);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DELAYON", 67);
     st->size_data = sizeof(TIME);
@@ -7697,8 +7695,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44844 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DELAYOFF
-    st = getVariable(44844);
+  { // 44776 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DELAYOFF
+    st = getVariable(44776);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DELAYOFF", 68);
     st->size_data = sizeof(TIME);
@@ -7711,8 +7709,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44845 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.Q
-    st = getVariable(44845);
+  { // 44777 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.Q
+    st = getVariable(44777);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -7725,8 +7723,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44846 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.STATUS
-    st = getVariable(44846);
+  { // 44778 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.STATUS
+    st = getVariable(44778);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.STATUS", 66);
     st->size_data = sizeof(DWORD);
@@ -7739,8 +7737,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44847 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG
-    st = getVariable(44847);
+  { // 44779 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG
+    st = getVariable(44779);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG", 72);
     st->size_data = sizeof(BOOL);
@@ -7753,8 +7751,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44848 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.RELIABILITY
-    st = getVariable(44848);
+  { // 44780 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.RELIABILITY
+    st = getVariable(44780);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.RELIABILITY", 75);
     st->size_data = sizeof(BOOL);
@@ -7767,8 +7765,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44849 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.INVERSE
-    st = getVariable(44849);
+  { // 44781 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.INVERSE
+    st = getVariable(44781);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.INVERSE", 71);
     st->size_data = sizeof(BOOL);
@@ -7781,8 +7779,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44850 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DELAYON
-    st = getVariable(44850);
+  { // 44782 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DELAYON
+    st = getVariable(44782);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DELAYON", 71);
     st->size_data = sizeof(TIME);
@@ -7795,8 +7793,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44851 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DELAYOFF
-    st = getVariable(44851);
+  { // 44783 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DELAYOFF
+    st = getVariable(44783);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DELAYOFF", 72);
     st->size_data = sizeof(TIME);
@@ -7809,8 +7807,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44852 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.Q
-    st = getVariable(44852);
+  { // 44784 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.Q
+    st = getVariable(44784);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -7823,8 +7821,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44853 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.STATUS
-    st = getVariable(44853);
+  { // 44785 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.STATUS
+    st = getVariable(44785);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.STATUS", 70);
     st->size_data = sizeof(DWORD);
@@ -7837,8 +7835,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44854 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DISABLED_SIG
-    st = getVariable(44854);
+  { // 44786 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DISABLED_SIG
+    st = getVariable(44786);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_PRU.DISABLED_SIG", 76);
     st->size_data = sizeof(BOOL);
@@ -7851,8 +7849,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44855 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.RELIABILITY
-    st = getVariable(44855);
+  { // 44787 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.RELIABILITY
+    st = getVariable(44787);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.RELIABILITY", 75);
     st->size_data = sizeof(BOOL);
@@ -7865,8 +7863,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44856 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.INVERSE
-    st = getVariable(44856);
+  { // 44788 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.INVERSE
+    st = getVariable(44788);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.INVERSE", 71);
     st->size_data = sizeof(BOOL);
@@ -7879,8 +7877,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44857 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DELAYON
-    st = getVariable(44857);
+  { // 44789 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DELAYON
+    st = getVariable(44789);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DELAYON", 71);
     st->size_data = sizeof(TIME);
@@ -7893,8 +7891,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44858 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DELAYOFF
-    st = getVariable(44858);
+  { // 44790 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DELAYOFF
+    st = getVariable(44790);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DELAYOFF", 72);
     st->size_data = sizeof(TIME);
@@ -7907,8 +7905,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44859 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.Q
-    st = getVariable(44859);
+  { // 44791 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.Q
+    st = getVariable(44791);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -7921,8 +7919,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44860 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.STATUS
-    st = getVariable(44860);
+  { // 44792 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.STATUS
+    st = getVariable(44792);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.STATUS", 70);
     st->size_data = sizeof(DWORD);
@@ -7935,8 +7933,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44861 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DISABLED_SIG
-    st = getVariable(44861);
+  { // 44793 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DISABLED_SIG
+    st = getVariable(44793);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_READY.DISABLED_SIG", 76);
     st->size_data = sizeof(BOOL);
@@ -7949,8 +7947,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44862 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.RELIABILITY
-    st = getVariable(44862);
+  { // 44794 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.RELIABILITY
+    st = getVariable(44794);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -7963,8 +7961,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44863 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.INVERSE
-    st = getVariable(44863);
+  { // 44795 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.INVERSE
+    st = getVariable(44795);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -7977,8 +7975,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44864 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DELAYON
-    st = getVariable(44864);
+  { // 44796 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DELAYON
+    st = getVariable(44796);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -7991,8 +7989,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44865 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DELAYOFF
-    st = getVariable(44865);
+  { // 44797 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DELAYOFF
+    st = getVariable(44797);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -8005,8 +8003,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44866 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.Q
-    st = getVariable(44866);
+  { // 44798 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.Q
+    st = getVariable(44798);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -8019,8 +8017,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44867 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.STATUS
-    st = getVariable(44867);
+  { // 44799 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.STATUS
+    st = getVariable(44799);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -8033,8 +8031,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44868 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DISABLED_SIG
-    st = getVariable(44868);
+  { // 44800 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DISABLED_SIG
+    st = getVariable(44800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_SRABAT.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -8047,8 +8045,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44869 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.RELIABILITY
-    st = getVariable(44869);
+  { // 44801 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.RELIABILITY
+    st = getVariable(44801);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -8061,8 +8059,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44870 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.INVERSE
-    st = getVariable(44870);
+  { // 44802 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.INVERSE
+    st = getVariable(44802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -8075,8 +8073,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44871 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYON
-    st = getVariable(44871);
+  { // 44803 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYON
+    st = getVariable(44803);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -8089,8 +8087,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44872 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYOFF
-    st = getVariable(44872);
+  { // 44804 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYOFF
+    st = getVariable(44804);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -8103,8 +8101,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44873 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.Q
-    st = getVariable(44873);
+  { // 44805 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.Q
+    st = getVariable(44805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -8117,8 +8115,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44874 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.STATUS
-    st = getVariable(44874);
+  { // 44806 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.STATUS
+    st = getVariable(44806);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -8131,8 +8129,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44875 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DISABLED_SIG
-    st = getVariable(44875);
+  { // 44807 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DISABLED_SIG
+    st = getVariable(44807);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -8145,8 +8143,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44876 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.RELIABILITY
-    st = getVariable(44876);
+  { // 44808 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.RELIABILITY
+    st = getVariable(44808);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -8159,8 +8157,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44877 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.INVERSE
-    st = getVariable(44877);
+  { // 44809 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.INVERSE
+    st = getVariable(44809);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -8173,8 +8171,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44878 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYON
-    st = getVariable(44878);
+  { // 44810 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYON
+    st = getVariable(44810);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -8187,8 +8185,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44879 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYOFF
-    st = getVariable(44879);
+  { // 44811 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYOFF
+    st = getVariable(44811);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -8201,8 +8199,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44880 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.Q
-    st = getVariable(44880);
+  { // 44812 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.Q
+    st = getVariable(44812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -8215,8 +8213,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44881 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.STATUS
-    st = getVariable(44881);
+  { // 44813 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.STATUS
+    st = getVariable(44813);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -8229,8 +8227,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44882 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DISABLED_SIG
-    st = getVariable(44882);
+  { // 44814 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DISABLED_SIG
+    st = getVariable(44814);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -8243,8 +8241,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44883 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.RELIABILITY
-    st = getVariable(44883);
+  { // 44815 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.RELIABILITY
+    st = getVariable(44815);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.RELIABILITY", 81);
     st->size_data = sizeof(BOOL);
@@ -8257,8 +8255,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44884 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.INVERSE
-    st = getVariable(44884);
+  { // 44816 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.INVERSE
+    st = getVariable(44816);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.INVERSE", 77);
     st->size_data = sizeof(BOOL);
@@ -8271,8 +8269,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44885 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYON
-    st = getVariable(44885);
+  { // 44817 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYON
+    st = getVariable(44817);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYON", 77);
     st->size_data = sizeof(TIME);
@@ -8285,8 +8283,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44886 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYOFF
-    st = getVariable(44886);
+  { // 44818 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYOFF
+    st = getVariable(44818);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYOFF", 78);
     st->size_data = sizeof(TIME);
@@ -8299,8 +8297,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44887 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.Q
-    st = getVariable(44887);
+  { // 44819 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.Q
+    st = getVariable(44819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.Q", 71);
     st->size_data = sizeof(BOOL);
@@ -8313,8 +8311,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44888 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.STATUS
-    st = getVariable(44888);
+  { // 44820 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.STATUS
+    st = getVariable(44820);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.STATUS", 76);
     st->size_data = sizeof(DWORD);
@@ -8327,8 +8325,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44889 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DISABLED_SIG
-    st = getVariable(44889);
+  { // 44821 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DISABLED_SIG
+    st = getVariable(44821);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DISABLED_SIG", 82);
     st->size_data = sizeof(BOOL);
@@ -8341,8 +8339,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44890 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.RELIABILITY
-    st = getVariable(44890);
+  { // 44822 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.RELIABILITY
+    st = getVariable(44822);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.RELIABILITY", 81);
     st->size_data = sizeof(BOOL);
@@ -8355,8 +8353,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44891 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.INVERSE
-    st = getVariable(44891);
+  { // 44823 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.INVERSE
+    st = getVariable(44823);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.INVERSE", 77);
     st->size_data = sizeof(BOOL);
@@ -8369,8 +8367,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44892 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYON
-    st = getVariable(44892);
+  { // 44824 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYON
+    st = getVariable(44824);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYON", 77);
     st->size_data = sizeof(TIME);
@@ -8383,8 +8381,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44893 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYOFF
-    st = getVariable(44893);
+  { // 44825 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYOFF
+    st = getVariable(44825);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYOFF", 78);
     st->size_data = sizeof(TIME);
@@ -8397,8 +8395,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44894 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.Q
-    st = getVariable(44894);
+  { // 44826 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.Q
+    st = getVariable(44826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.Q", 71);
     st->size_data = sizeof(BOOL);
@@ -8411,8 +8409,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44895 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.STATUS
-    st = getVariable(44895);
+  { // 44827 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.STATUS
+    st = getVariable(44827);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.STATUS", 76);
     st->size_data = sizeof(DWORD);
@@ -8425,8 +8423,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44896 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DISABLED_SIG
-    st = getVariable(44896);
+  { // 44828 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DISABLED_SIG
+    st = getVariable(44828);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DISABLED_SIG", 82);
     st->size_data = sizeof(BOOL);
@@ -8439,8 +8437,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44897 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.RELIABILITY
-    st = getVariable(44897);
+  { // 44829 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.RELIABILITY
+    st = getVariable(44829);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.RELIABILITY", 83);
     st->size_data = sizeof(BOOL);
@@ -8453,8 +8451,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44898 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.INVERSE
-    st = getVariable(44898);
+  { // 44830 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.INVERSE
+    st = getVariable(44830);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.INVERSE", 79);
     st->size_data = sizeof(BOOL);
@@ -8467,8 +8465,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44899 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYON
-    st = getVariable(44899);
+  { // 44831 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYON
+    st = getVariable(44831);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYON", 79);
     st->size_data = sizeof(TIME);
@@ -8481,8 +8479,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44900 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYOFF
-    st = getVariable(44900);
+  { // 44832 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYOFF
+    st = getVariable(44832);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYOFF", 80);
     st->size_data = sizeof(TIME);
@@ -8495,8 +8493,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44901 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.Q
-    st = getVariable(44901);
+  { // 44833 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.Q
+    st = getVariable(44833);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.Q", 73);
     st->size_data = sizeof(BOOL);
@@ -8509,8 +8507,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44902 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.STATUS
-    st = getVariable(44902);
+  { // 44834 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.STATUS
+    st = getVariable(44834);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.STATUS", 78);
     st->size_data = sizeof(DWORD);
@@ -8523,8 +8521,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44903 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DISABLED_SIG
-    st = getVariable(44903);
+  { // 44835 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DISABLED_SIG
+    st = getVariable(44835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DISABLED_SIG", 84);
     st->size_data = sizeof(BOOL);
@@ -8537,8 +8535,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44904 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.RELIABILITY
-    st = getVariable(44904);
+  { // 44836 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.RELIABILITY
+    st = getVariable(44836);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.RELIABILITY", 72);
     st->size_data = sizeof(BOOL);
@@ -8551,8 +8549,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44905 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.INVERSE
-    st = getVariable(44905);
+  { // 44837 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.INVERSE
+    st = getVariable(44837);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.INVERSE", 68);
     st->size_data = sizeof(BOOL);
@@ -8565,8 +8563,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44906 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DELAYON
-    st = getVariable(44906);
+  { // 44838 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DELAYON
+    st = getVariable(44838);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DELAYON", 68);
     st->size_data = sizeof(TIME);
@@ -8579,8 +8577,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44907 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DELAYOFF
-    st = getVariable(44907);
+  { // 44839 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DELAYOFF
+    st = getVariable(44839);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
@@ -8593,8 +8591,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44908 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.Q
-    st = getVariable(44908);
+  { // 44840 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.Q
+    st = getVariable(44840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -8607,8 +8605,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44909 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.STATUS
-    st = getVariable(44909);
+  { // 44841 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.STATUS
+    st = getVariable(44841);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -8621,8 +8619,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44910 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG
-    st = getVariable(44910);
+  { // 44842 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG
+    st = getVariable(44842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
@@ -8635,8 +8633,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44911 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.RELIABILITY
-    st = getVariable(44911);
+  { // 44843 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.RELIABILITY
+    st = getVariable(44843);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.RELIABILITY", 72);
     st->size_data = sizeof(BOOL);
@@ -8649,8 +8647,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44912 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.INVERSE
-    st = getVariable(44912);
+  { // 44844 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.INVERSE
+    st = getVariable(44844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.INVERSE", 68);
     st->size_data = sizeof(BOOL);
@@ -8663,8 +8661,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44913 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DELAYON
-    st = getVariable(44913);
+  { // 44845 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DELAYON
+    st = getVariable(44845);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DELAYON", 68);
     st->size_data = sizeof(TIME);
@@ -8677,8 +8675,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44914 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DELAYOFF
-    st = getVariable(44914);
+  { // 44846 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DELAYOFF
+    st = getVariable(44846);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
@@ -8691,8 +8689,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44915 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.Q
-    st = getVariable(44915);
+  { // 44847 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.Q
+    st = getVariable(44847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -8705,8 +8703,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44916 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.STATUS
-    st = getVariable(44916);
+  { // 44848 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.STATUS
+    st = getVariable(44848);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -8719,8 +8717,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44917 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG
-    st = getVariable(44917);
+  { // 44849 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG
+    st = getVariable(44849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
@@ -8733,8 +8731,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44918 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.RELIABILITY
-    st = getVariable(44918);
+  { // 44850 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.RELIABILITY
+    st = getVariable(44850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.RELIABILITY", 73);
     st->size_data = sizeof(BOOL);
@@ -8747,8 +8745,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44919 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.INVERSE
-    st = getVariable(44919);
+  { // 44851 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.INVERSE
+    st = getVariable(44851);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.INVERSE", 69);
     st->size_data = sizeof(BOOL);
@@ -8761,8 +8759,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44920 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DELAYON
-    st = getVariable(44920);
+  { // 44852 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DELAYON
+    st = getVariable(44852);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DELAYON", 69);
     st->size_data = sizeof(TIME);
@@ -8775,8 +8773,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44921 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DELAYOFF
-    st = getVariable(44921);
+  { // 44853 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DELAYOFF
+    st = getVariable(44853);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
@@ -8789,8 +8787,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44922 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.Q
-    st = getVariable(44922);
+  { // 44854 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.Q
+    st = getVariable(44854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -8803,8 +8801,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44923 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.STATUS
-    st = getVariable(44923);
+  { // 44855 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.STATUS
+    st = getVariable(44855);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -8817,8 +8815,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44924 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG
-    st = getVariable(44924);
+  { // 44856 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG
+    st = getVariable(44856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
@@ -8831,8 +8829,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44925 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY
-    st = getVariable(44925);
+  { // 44857 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY
+    st = getVariable(44857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -8845,8 +8843,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44926 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE
-    st = getVariable(44926);
+  { // 44858 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE
+    st = getVariable(44858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -8859,8 +8857,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44927 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON
-    st = getVariable(44927);
+  { // 44859 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON
+    st = getVariable(44859);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -8873,8 +8871,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44928 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF
-    st = getVariable(44928);
+  { // 44860 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF
+    st = getVariable(44860);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -8887,8 +8885,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44929 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.Q
-    st = getVariable(44929);
+  { // 44861 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.Q
+    st = getVariable(44861);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -8901,8 +8899,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44930 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS
-    st = getVariable(44930);
+  { // 44862 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS
+    st = getVariable(44862);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -8915,8 +8913,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44931 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG
-    st = getVariable(44931);
+  { // 44863 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG
+    st = getVariable(44863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -8929,8 +8927,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44932 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY
-    st = getVariable(44932);
+  { // 44864 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY
+    st = getVariable(44864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -8943,8 +8941,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44933 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE
-    st = getVariable(44933);
+  { // 44865 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE
+    st = getVariable(44865);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -8957,8 +8955,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44934 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON
-    st = getVariable(44934);
+  { // 44866 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON
+    st = getVariable(44866);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -8971,8 +8969,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44935 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF
-    st = getVariable(44935);
+  { // 44867 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF
+    st = getVariable(44867);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -8985,8 +8983,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44936 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.Q
-    st = getVariable(44936);
+  { // 44868 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.Q
+    st = getVariable(44868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -8999,8 +8997,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44937 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS
-    st = getVariable(44937);
+  { // 44869 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS
+    st = getVariable(44869);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -9013,8 +9011,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44938 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG
-    st = getVariable(44938);
+  { // 44870 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG
+    st = getVariable(44870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -9027,8 +9025,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44939 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY
-    st = getVariable(44939);
+  { // 44871 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY
+    st = getVariable(44871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -9041,8 +9039,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44940 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE
-    st = getVariable(44940);
+  { // 44872 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE
+    st = getVariable(44872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -9055,8 +9053,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44941 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON
-    st = getVariable(44941);
+  { // 44873 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON
+    st = getVariable(44873);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -9069,8 +9067,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44942 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF
-    st = getVariable(44942);
+  { // 44874 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF
+    st = getVariable(44874);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -9083,8 +9081,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44943 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.Q
-    st = getVariable(44943);
+  { // 44875 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.Q
+    st = getVariable(44875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -9097,8 +9095,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44944 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS
-    st = getVariable(44944);
+  { // 44876 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS
+    st = getVariable(44876);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -9111,8 +9109,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44945 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG
-    st = getVariable(44945);
+  { // 44877 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG
+    st = getVariable(44877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -9125,8 +9123,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44946 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY
-    st = getVariable(44946);
+  { // 44878 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY
+    st = getVariable(44878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -9139,8 +9137,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44947 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE
-    st = getVariable(44947);
+  { // 44879 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE
+    st = getVariable(44879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -9153,8 +9151,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44948 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON
-    st = getVariable(44948);
+  { // 44880 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON
+    st = getVariable(44880);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -9167,8 +9165,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44949 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF
-    st = getVariable(44949);
+  { // 44881 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF
+    st = getVariable(44881);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -9181,8 +9179,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44950 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.Q
-    st = getVariable(44950);
+  { // 44882 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.Q
+    st = getVariable(44882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -9195,8 +9193,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44951 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS
-    st = getVariable(44951);
+  { // 44883 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS
+    st = getVariable(44883);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -9209,8 +9207,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44952 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG
-    st = getVariable(44952);
+  { // 44884 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG
+    st = getVariable(44884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -9223,8 +9221,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44953 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY
-    st = getVariable(44953);
+  { // 44885 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY
+    st = getVariable(44885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -9237,8 +9235,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44954 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE
-    st = getVariable(44954);
+  { // 44886 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE
+    st = getVariable(44886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -9251,8 +9249,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44955 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON
-    st = getVariable(44955);
+  { // 44887 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON
+    st = getVariable(44887);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -9265,8 +9263,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44956 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF
-    st = getVariable(44956);
+  { // 44888 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF
+    st = getVariable(44888);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -9279,8 +9277,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44957 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.Q
-    st = getVariable(44957);
+  { // 44889 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.Q
+    st = getVariable(44889);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -9293,8 +9291,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44958 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS
-    st = getVariable(44958);
+  { // 44890 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS
+    st = getVariable(44890);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -9307,8 +9305,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44959 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG
-    st = getVariable(44959);
+  { // 44891 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG
+    st = getVariable(44891);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -9321,8 +9319,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44960 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY
-    st = getVariable(44960);
+  { // 44892 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY
+    st = getVariable(44892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -9335,8 +9333,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44961 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE
-    st = getVariable(44961);
+  { // 44893 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE
+    st = getVariable(44893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -9349,8 +9347,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44962 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON
-    st = getVariable(44962);
+  { // 44894 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON
+    st = getVariable(44894);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -9363,8 +9361,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44963 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF
-    st = getVariable(44963);
+  { // 44895 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF
+    st = getVariable(44895);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -9377,8 +9375,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44964 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.Q
-    st = getVariable(44964);
+  { // 44896 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.Q
+    st = getVariable(44896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -9391,8 +9389,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44965 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS
-    st = getVariable(44965);
+  { // 44897 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS
+    st = getVariable(44897);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -9405,8 +9403,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44966 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG
-    st = getVariable(44966);
+  { // 44898 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG
+    st = getVariable(44898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -9419,8 +9417,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44967 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.RELIABILITY
-    st = getVariable(44967);
+  { // 44899 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.RELIABILITY
+    st = getVariable(44899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.RELIABILITY", 73);
     st->size_data = sizeof(BOOL);
@@ -9433,8 +9431,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44968 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.INVERSE
-    st = getVariable(44968);
+  { // 44900 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.INVERSE
+    st = getVariable(44900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.INVERSE", 69);
     st->size_data = sizeof(BOOL);
@@ -9447,8 +9445,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44969 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DELAYON
-    st = getVariable(44969);
+  { // 44901 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DELAYON
+    st = getVariable(44901);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DELAYON", 69);
     st->size_data = sizeof(TIME);
@@ -9461,8 +9459,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44970 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DELAYOFF
-    st = getVariable(44970);
+  { // 44902 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DELAYOFF
+    st = getVariable(44902);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
@@ -9475,8 +9473,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44971 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.Q
-    st = getVariable(44971);
+  { // 44903 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.Q
+    st = getVariable(44903);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -9489,8 +9487,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44972 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.STATUS
-    st = getVariable(44972);
+  { // 44904 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.STATUS
+    st = getVariable(44904);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -9503,8 +9501,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44973 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG
-    st = getVariable(44973);
+  { // 44905 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG
+    st = getVariable(44905);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
@@ -9517,8 +9515,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44974 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY
-    st = getVariable(44974);
+  { // 44906 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY
+    st = getVariable(44906);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -9531,8 +9529,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44975 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.INVERSE
-    st = getVariable(44975);
+  { // 44907 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.INVERSE
+    st = getVariable(44907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -9545,8 +9543,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44976 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYON
-    st = getVariable(44976);
+  { // 44908 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYON
+    st = getVariable(44908);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -9559,8 +9557,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44977 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF
-    st = getVariable(44977);
+  { // 44909 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF
+    st = getVariable(44909);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -9573,8 +9571,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44978 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.Q
-    st = getVariable(44978);
+  { // 44910 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.Q
+    st = getVariable(44910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -9587,8 +9585,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44979 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.STATUS
-    st = getVariable(44979);
+  { // 44911 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.STATUS
+    st = getVariable(44911);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -9601,8 +9599,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44980 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG
-    st = getVariable(44980);
+  { // 44912 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG
+    st = getVariable(44912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -9615,8 +9613,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44981 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY
-    st = getVariable(44981);
+  { // 44913 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY
+    st = getVariable(44913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -9629,8 +9627,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44982 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.INVERSE
-    st = getVariable(44982);
+  { // 44914 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.INVERSE
+    st = getVariable(44914);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -9643,8 +9641,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44983 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYON
-    st = getVariable(44983);
+  { // 44915 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYON
+    st = getVariable(44915);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -9657,8 +9655,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44984 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF
-    st = getVariable(44984);
+  { // 44916 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF
+    st = getVariable(44916);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -9671,8 +9669,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44985 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.Q
-    st = getVariable(44985);
+  { // 44917 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.Q
+    st = getVariable(44917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -9685,8 +9683,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44986 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.STATUS
-    st = getVariable(44986);
+  { // 44918 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.STATUS
+    st = getVariable(44918);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -9699,8 +9697,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44987 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG
-    st = getVariable(44987);
+  { // 44919 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG
+    st = getVariable(44919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -9713,8 +9711,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44988 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY
-    st = getVariable(44988);
+  { // 44920 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY
+    st = getVariable(44920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -9727,8 +9725,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44989 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.INVERSE
-    st = getVariable(44989);
+  { // 44921 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.INVERSE
+    st = getVariable(44921);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -9741,8 +9739,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44990 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYON
-    st = getVariable(44990);
+  { // 44922 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYON
+    st = getVariable(44922);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -9755,8 +9753,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44991 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF
-    st = getVariable(44991);
+  { // 44923 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF
+    st = getVariable(44923);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -9769,8 +9767,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44992 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.Q
-    st = getVariable(44992);
+  { // 44924 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.Q
+    st = getVariable(44924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -9783,8 +9781,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 44993 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.STATUS
-    st = getVariable(44993);
+  { // 44925 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.STATUS
+    st = getVariable(44925);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -9797,8 +9795,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 44994 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG
-    st = getVariable(44994);
+  { // 44926 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG
+    st = getVariable(44926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -9811,8 +9809,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 44995 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.RELIABILITY
-    st = getVariable(44995);
+  { // 44927 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.RELIABILITY
+    st = getVariable(44927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.RELIABILITY", 72);
     st->size_data = sizeof(BOOL);
@@ -9825,8 +9823,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 44996 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.INVERSE
-    st = getVariable(44996);
+  { // 44928 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.INVERSE
+    st = getVariable(44928);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.INVERSE", 68);
     st->size_data = sizeof(BOOL);
@@ -9839,8 +9837,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 44997 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DELAYON
-    st = getVariable(44997);
+  { // 44929 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DELAYON
+    st = getVariable(44929);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DELAYON", 68);
     st->size_data = sizeof(TIME);
@@ -9853,8 +9851,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 44998 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DELAYOFF
-    st = getVariable(44998);
+  { // 44930 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DELAYOFF
+    st = getVariable(44930);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
@@ -9867,8 +9865,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 44999 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.Q
-    st = getVariable(44999);
+  { // 44931 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.Q
+    st = getVariable(44931);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -9881,8 +9879,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 45000 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.STATUS
-    st = getVariable(45000);
+  { // 44932 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.STATUS
+    st = getVariable(44932);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -9895,8 +9893,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45001 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG
-    st = getVariable(45001);
+  { // 44933 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG
+    st = getVariable(44933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
@@ -9909,8 +9907,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 45002 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY
-    st = getVariable(45002);
+  { // 44934 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY
+    st = getVariable(44934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -9923,8 +9921,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 45003 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.INVERSE
-    st = getVariable(45003);
+  { // 44935 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.INVERSE
+    st = getVariable(44935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -9937,8 +9935,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 45004 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYON
-    st = getVariable(45004);
+  { // 44936 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYON
+    st = getVariable(44936);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -9951,8 +9949,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 45005 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF
-    st = getVariable(45005);
+  { // 44937 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF
+    st = getVariable(44937);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -9965,8 +9963,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 45006 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.Q
-    st = getVariable(45006);
+  { // 44938 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.Q
+    st = getVariable(44938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -9979,8 +9977,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 45007 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.STATUS
-    st = getVariable(45007);
+  { // 44939 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.STATUS
+    st = getVariable(44939);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -9993,8 +9991,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45008 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG
-    st = getVariable(45008);
+  { // 44940 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG
+    st = getVariable(44940);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -10007,8 +10005,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 45009 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY
-    st = getVariable(45009);
+  { // 44941 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY
+    st = getVariable(44941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -10021,8 +10019,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 45010 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.INVERSE
-    st = getVariable(45010);
+  { // 44942 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.INVERSE
+    st = getVariable(44942);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -10035,8 +10033,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 45011 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYON
-    st = getVariable(45011);
+  { // 44943 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYON
+    st = getVariable(44943);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -10049,8 +10047,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 45012 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF
-    st = getVariable(45012);
+  { // 44944 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF
+    st = getVariable(44944);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -10063,8 +10061,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 45013 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.Q
-    st = getVariable(45013);
+  { // 44945 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.Q
+    st = getVariable(44945);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -10077,8 +10075,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 45014 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.STATUS
-    st = getVariable(45014);
+  { // 44946 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.STATUS
+    st = getVariable(44946);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -10091,8 +10089,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45015 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG
-    st = getVariable(45015);
+  { // 44947 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG
+    st = getVariable(44947);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -10105,8 +10103,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 45016 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY
-    st = getVariable(45016);
+  { // 44948 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY
+    st = getVariable(44948);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10119,8 +10117,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 45017 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.INVERSE
-    st = getVariable(45017);
+  { // 44949 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.INVERSE
+    st = getVariable(44949);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10133,8 +10131,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 45018 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYON
-    st = getVariable(45018);
+  { // 44950 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYON
+    st = getVariable(44950);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10147,8 +10145,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 45019 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF
-    st = getVariable(45019);
+  { // 44951 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF
+    st = getVariable(44951);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10161,8 +10159,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 45020 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.Q
-    st = getVariable(45020);
+  { // 44952 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.Q
+    st = getVariable(44952);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10175,8 +10173,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 45021 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.STATUS
-    st = getVariable(45021);
+  { // 44953 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.STATUS
+    st = getVariable(44953);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10189,8 +10187,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45022 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG
-    st = getVariable(45022);
+  { // 44954 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG
+    st = getVariable(44954);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10203,8 +10201,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 45023 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY
-    st = getVariable(45023);
+  { // 44955 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY
+    st = getVariable(44955);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10217,8 +10215,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 45024 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.INVERSE
-    st = getVariable(45024);
+  { // 44956 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.INVERSE
+    st = getVariable(44956);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10231,8 +10229,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 45025 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYON
-    st = getVariable(45025);
+  { // 44957 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYON
+    st = getVariable(44957);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10245,8 +10243,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 45026 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF
-    st = getVariable(45026);
+  { // 44958 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF
+    st = getVariable(44958);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10259,8 +10257,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 45027 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.Q
-    st = getVariable(45027);
+  { // 44959 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.Q
+    st = getVariable(44959);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10273,8 +10271,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 45028 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.STATUS
-    st = getVariable(45028);
+  { // 44960 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.STATUS
+    st = getVariable(44960);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10287,8 +10285,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45029 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG
-    st = getVariable(45029);
+  { // 44961 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG
+    st = getVariable(44961);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10301,8 +10299,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 45030 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY
-    st = getVariable(45030);
+  { // 44962 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY
+    st = getVariable(44962);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10315,8 +10313,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 45031 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.INVERSE
-    st = getVariable(45031);
+  { // 44963 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.INVERSE
+    st = getVariable(44963);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10329,8 +10327,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 45032 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYON
-    st = getVariable(45032);
+  { // 44964 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYON
+    st = getVariable(44964);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10343,8 +10341,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 45033 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF
-    st = getVariable(45033);
+  { // 44965 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF
+    st = getVariable(44965);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10357,8 +10355,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 45034 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.Q
-    st = getVariable(45034);
+  { // 44966 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.Q
+    st = getVariable(44966);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10371,8 +10369,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 45035 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.STATUS
-    st = getVariable(45035);
+  { // 44967 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.STATUS
+    st = getVariable(44967);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10385,8 +10383,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45036 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG
-    st = getVariable(45036);
+  { // 44968 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG
+    st = getVariable(44968);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10399,8 +10397,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 45037 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.WAIT_TIME
-    st = getVariable(45037);
+  { // 44969 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.WAIT_TIME
+    st = getVariable(44969);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.WAIT_TIME", 72);
     st->size_data = sizeof(TIME);
@@ -10413,8 +10411,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45038 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND
-    st = getVariable(45038);
+  { // 44970 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND
+    st = getVariable(44970);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -10427,8 +10425,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45039 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INOPCCOMMANDSDISABLED
-    st = getVariable(45039);
+  { // 44971 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INOPCCOMMANDSDISABLED
+    st = getVariable(44971);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INOPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -10441,8 +10439,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45040 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.Q
-    st = getVariable(45040);
+  { // 44972 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.Q
+    st = getVariable(44972);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -10455,8 +10453,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45041 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.STATUS
-    st = getVariable(45041);
+  { // 44973 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.STATUS
+    st = getVariable(44973);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -10469,8 +10467,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45042 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.OPCCOMMANDSDISABLED
-    st = getVariable(45042);
+  { // 44974 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.OPCCOMMANDSDISABLED
+    st = getVariable(44974);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.OPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -10483,8 +10481,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45043 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ALG
-    st = getVariable(45043);
+  { // 44975 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ALG
+    st = getVariable(44975);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ALG", 76);
     st->size_data = sizeof(WORD);
@@ -10497,8 +10495,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45044 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ARM
-    st = getVariable(45044);
+  { // 44976 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ARM
+    st = getVariable(44976);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ARM", 76);
     st->size_data = sizeof(WORD);
@@ -10511,8 +10509,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45045 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.WAIT_TIME
-    st = getVariable(45045);
+  { // 44977 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.WAIT_TIME
+    st = getVariable(44977);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.WAIT_TIME", 73);
     st->size_data = sizeof(TIME);
@@ -10525,8 +10523,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45046 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND
-    st = getVariable(45046);
+  { // 44978 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND
+    st = getVariable(44978);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND", 73);
     st->size_data = sizeof(WORD);
@@ -10539,8 +10537,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45047 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INOPCCOMMANDSDISABLED
-    st = getVariable(45047);
+  { // 44979 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INOPCCOMMANDSDISABLED
+    st = getVariable(44979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INOPCCOMMANDSDISABLED", 85);
     st->size_data = sizeof(BOOL);
@@ -10553,8 +10551,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45048 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.Q
-    st = getVariable(45048);
+  { // 44980 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.Q
+    st = getVariable(44980);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -10567,8 +10565,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45049 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.STATUS
-    st = getVariable(45049);
+  { // 44981 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.STATUS
+    st = getVariable(44981);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.STATUS", 70);
     st->size_data = sizeof(DWORD);
@@ -10581,8 +10579,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45050 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.OPCCOMMANDSDISABLED
-    st = getVariable(45050);
+  { // 44982 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.OPCCOMMANDSDISABLED
+    st = getVariable(44982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.OPCCOMMANDSDISABLED", 83);
     st->size_data = sizeof(BOOL);
@@ -10595,8 +10593,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45051 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ALG
-    st = getVariable(45051);
+  { // 44983 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ALG
+    st = getVariable(44983);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ALG", 77);
     st->size_data = sizeof(WORD);
@@ -10609,8 +10607,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45052 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ARM
-    st = getVariable(45052);
+  { // 44984 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ARM
+    st = getVariable(44984);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ARM", 77);
     st->size_data = sizeof(WORD);
@@ -10623,8 +10621,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45053 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.WAIT_TIME
-    st = getVariable(45053);
+  { // 44985 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.WAIT_TIME
+    st = getVariable(44985);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.WAIT_TIME", 70);
     st->size_data = sizeof(TIME);
@@ -10637,8 +10635,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45054 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND
-    st = getVariable(45054);
+  { // 44986 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND
+    st = getVariable(44986);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -10651,8 +10649,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45055 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INOPCCOMMANDSDISABLED
-    st = getVariable(45055);
+  { // 44987 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INOPCCOMMANDSDISABLED
+    st = getVariable(44987);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INOPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -10665,8 +10663,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45056 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.Q
-    st = getVariable(45056);
+  { // 44988 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.Q
+    st = getVariable(44988);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -10679,8 +10677,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45057 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.STATUS
-    st = getVariable(45057);
+  { // 44989 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.STATUS
+    st = getVariable(44989);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -10693,8 +10691,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45058 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.OPCCOMMANDSDISABLED
-    st = getVariable(45058);
+  { // 44990 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.OPCCOMMANDSDISABLED
+    st = getVariable(44990);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.OPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -10707,8 +10705,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45059 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ALG
-    st = getVariable(45059);
+  { // 44991 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ALG
+    st = getVariable(44991);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ALG", 74);
     st->size_data = sizeof(WORD);
@@ -10721,8 +10719,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45060 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ARM
-    st = getVariable(45060);
+  { // 44992 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ARM
+    st = getVariable(44992);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ARM", 74);
     st->size_data = sizeof(WORD);
@@ -10735,8 +10733,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45061 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.WAIT_TIME
-    st = getVariable(45061);
+  { // 44993 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.WAIT_TIME
+    st = getVariable(44993);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.WAIT_TIME", 73);
     st->size_data = sizeof(TIME);
@@ -10749,8 +10747,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45062 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND
-    st = getVariable(45062);
+  { // 44994 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND
+    st = getVariable(44994);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND", 73);
     st->size_data = sizeof(WORD);
@@ -10763,8 +10761,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45063 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INOPCCOMMANDSDISABLED
-    st = getVariable(45063);
+  { // 44995 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INOPCCOMMANDSDISABLED
+    st = getVariable(44995);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INOPCCOMMANDSDISABLED", 85);
     st->size_data = sizeof(BOOL);
@@ -10777,8 +10775,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45064 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.Q
-    st = getVariable(45064);
+  { // 44996 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.Q
+    st = getVariable(44996);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -10791,8 +10789,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45065 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.STATUS
-    st = getVariable(45065);
+  { // 44997 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.STATUS
+    st = getVariable(44997);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.STATUS", 70);
     st->size_data = sizeof(DWORD);
@@ -10805,8 +10803,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45066 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.OPCCOMMANDSDISABLED
-    st = getVariable(45066);
+  { // 44998 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.OPCCOMMANDSDISABLED
+    st = getVariable(44998);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.OPCCOMMANDSDISABLED", 83);
     st->size_data = sizeof(BOOL);
@@ -10819,8 +10817,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45067 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ALG
-    st = getVariable(45067);
+  { // 44999 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ALG
+    st = getVariable(44999);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ALG", 77);
     st->size_data = sizeof(WORD);
@@ -10833,8 +10831,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45068 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ARM
-    st = getVariable(45068);
+  { // 45000 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ARM
+    st = getVariable(45000);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ARM", 77);
     st->size_data = sizeof(WORD);
@@ -10847,8 +10845,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45069 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.WAIT_TIME
-    st = getVariable(45069);
+  { // 45001 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.WAIT_TIME
+    st = getVariable(45001);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.WAIT_TIME", 82);
     st->size_data = sizeof(TIME);
@@ -10861,8 +10859,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45070 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND
-    st = getVariable(45070);
+  { // 45002 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND
+    st = getVariable(45002);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND", 82);
     st->size_data = sizeof(WORD);
@@ -10875,8 +10873,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45071 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INOPCCOMMANDSDISABLED
-    st = getVariable(45071);
+  { // 45003 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INOPCCOMMANDSDISABLED
+    st = getVariable(45003);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INOPCCOMMANDSDISABLED", 94);
     st->size_data = sizeof(BOOL);
@@ -10889,8 +10887,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45072 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.Q
-    st = getVariable(45072);
+  { // 45004 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.Q
+    st = getVariable(45004);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.Q", 74);
     st->size_data = sizeof(BOOL);
@@ -10903,8 +10901,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45073 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.STATUS
-    st = getVariable(45073);
+  { // 45005 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.STATUS
+    st = getVariable(45005);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.STATUS", 79);
     st->size_data = sizeof(DWORD);
@@ -10917,8 +10915,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45074 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.OPCCOMMANDSDISABLED
-    st = getVariable(45074);
+  { // 45006 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.OPCCOMMANDSDISABLED
+    st = getVariable(45006);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.OPCCOMMANDSDISABLED", 92);
     st->size_data = sizeof(BOOL);
@@ -10931,8 +10929,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45075 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ALG
-    st = getVariable(45075);
+  { // 45007 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ALG
+    st = getVariable(45007);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ALG", 86);
     st->size_data = sizeof(WORD);
@@ -10945,8 +10943,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45076 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ARM
-    st = getVariable(45076);
+  { // 45008 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ARM
+    st = getVariable(45008);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ARM", 86);
     st->size_data = sizeof(WORD);
@@ -10959,8 +10957,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45077 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.WAIT_TIME
-    st = getVariable(45077);
+  { // 45009 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.WAIT_TIME
+    st = getVariable(45009);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.WAIT_TIME", 82);
     st->size_data = sizeof(TIME);
@@ -10973,8 +10971,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45078 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND
-    st = getVariable(45078);
+  { // 45010 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND
+    st = getVariable(45010);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND", 82);
     st->size_data = sizeof(WORD);
@@ -10987,8 +10985,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45079 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INOPCCOMMANDSDISABLED
-    st = getVariable(45079);
+  { // 45011 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INOPCCOMMANDSDISABLED
+    st = getVariable(45011);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INOPCCOMMANDSDISABLED", 94);
     st->size_data = sizeof(BOOL);
@@ -11001,8 +10999,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45080 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.Q
-    st = getVariable(45080);
+  { // 45012 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.Q
+    st = getVariable(45012);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.Q", 74);
     st->size_data = sizeof(BOOL);
@@ -11015,8 +11013,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45081 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.STATUS
-    st = getVariable(45081);
+  { // 45013 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.STATUS
+    st = getVariable(45013);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.STATUS", 79);
     st->size_data = sizeof(DWORD);
@@ -11029,8 +11027,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45082 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.OPCCOMMANDSDISABLED
-    st = getVariable(45082);
+  { // 45014 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.OPCCOMMANDSDISABLED
+    st = getVariable(45014);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.OPCCOMMANDSDISABLED", 92);
     st->size_data = sizeof(BOOL);
@@ -11043,8 +11041,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45083 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ALG
-    st = getVariable(45083);
+  { // 45015 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ALG
+    st = getVariable(45015);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ALG", 86);
     st->size_data = sizeof(WORD);
@@ -11057,8 +11055,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45084 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ARM
-    st = getVariable(45084);
+  { // 45016 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ARM
+    st = getVariable(45016);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ARM", 86);
     st->size_data = sizeof(WORD);
@@ -11071,8 +11069,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45085 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.WAIT_TIME
-    st = getVariable(45085);
+  { // 45017 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.WAIT_TIME
+    st = getVariable(45017);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.WAIT_TIME", 74);
     st->size_data = sizeof(TIME);
@@ -11085,8 +11083,8 @@ int __variables_init_FB_TESTIMALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 45086 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND
-    st = getVariable(45086);
+  { // 45018 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND
+    st = getVariable(45018);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND", 74);
     st->size_data = sizeof(WORD);
@@ -11099,8 +11097,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45087 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INOPCCOMMANDSDISABLED
-    st = getVariable(45087);
+  { // 45019 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INOPCCOMMANDSDISABLED
+    st = getVariable(45019);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INOPCCOMMANDSDISABLED", 86);
     st->size_data = sizeof(BOOL);
@@ -11113,8 +11111,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45088 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.Q
-    st = getVariable(45088);
+  { // 45020 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.Q
+    st = getVariable(45020);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -11127,8 +11125,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 45089 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.STATUS
-    st = getVariable(45089);
+  { // 45021 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.STATUS
+    st = getVariable(45021);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -11141,8 +11139,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45090 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.OPCCOMMANDSDISABLED
-    st = getVariable(45090);
+  { // 45022 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.OPCCOMMANDSDISABLED
+    st = getVariable(45022);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.OPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -11155,8 +11153,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45091 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ALG
-    st = getVariable(45091);
+  { // 45023 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ALG
+    st = getVariable(45023);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ALG", 78);
     st->size_data = sizeof(WORD);
@@ -11169,8 +11167,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45092 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ARM
-    st = getVariable(45092);
+  { // 45024 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ARM
+    st = getVariable(45024);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ARM", 78);
     st->size_data = sizeof(WORD);
@@ -11183,8 +11181,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45093 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND
-    st = getVariable(45093);
+  { // 45025 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND
+    st = getVariable(45025);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -11196,8 +11194,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45094 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ALG
-    st = getVariable(45094);
+  { // 45026 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ALG
+    st = getVariable(45026);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ALG", 70);
     st->size_data = sizeof(WORD);
@@ -11209,8 +11207,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45095 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ARM
-    st = getVariable(45095);
+  { // 45027 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ARM
+    st = getVariable(45027);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ARM", 70);
     st->size_data = sizeof(WORD);
@@ -11222,8 +11220,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45096 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.STATUS
-    st = getVariable(45096);
+  { // 45028 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.STATUS
+    st = getVariable(45028);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.STATUS", 63);
     st->size_data = sizeof(DWORD);
@@ -11235,8 +11233,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45097 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.NEWVALUE
-    st = getVariable(45097);
+  { // 45029 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.NEWVALUE
+    st = getVariable(45029);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.NEWVALUE", 65);
     st->size_data = sizeof(LREAL);
@@ -11248,8 +11246,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45098 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.CURRENTVALUE
-    st = getVariable(45098);
+  { // 45030 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.CURRENTVALUE
+    st = getVariable(45030);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.CURRENTVALUE", 69);
     st->size_data = sizeof(LREAL);
@@ -11261,8 +11259,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45099 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MINVAL
-    st = getVariable(45099);
+  { // 45031 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MINVAL
+    st = getVariable(45031);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MINVAL", 63);
     st->size_data = sizeof(LREAL);
@@ -11274,8 +11272,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45100 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXVAL
-    st = getVariable(45100);
+  { // 45032 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXVAL
+    st = getVariable(45032);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXVAL", 63);
     st->size_data = sizeof(LREAL);
@@ -11287,8 +11285,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45101 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXSTEP
-    st = getVariable(45101);
+  { // 45033 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXSTEP
+    st = getVariable(45033);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXSTEP", 64);
     st->size_data = sizeof(LREAL);
@@ -11300,8 +11298,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45102 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MINVAL_ISVALIDREF
-    st = getVariable(45102);
+  { // 45034 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MINVAL_ISVALIDREF
+    st = getVariable(45034);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MINVAL_ISVALIDREF", 74);
     st->size_data = sizeof(BOOL);
@@ -11313,8 +11311,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45103 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXVAL_ISVALIDREF
-    st = getVariable(45103);
+  { // 45035 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXVAL_ISVALIDREF
+    st = getVariable(45035);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXVAL_ISVALIDREF", 74);
     st->size_data = sizeof(BOOL);
@@ -11326,8 +11324,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45104 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXSTEP_ISVALIDREF
-    st = getVariable(45104);
+  { // 45036 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXSTEP_ISVALIDREF
+    st = getVariable(45036);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.MAXSTEP_ISVALIDREF", 75);
     st->size_data = sizeof(BOOL);
@@ -11339,8 +11337,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45105 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INOPCCOMMANDSDISABLED
-    st = getVariable(45105);
+  { // 45037 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INOPCCOMMANDSDISABLED
+    st = getVariable(45037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.INOPCCOMMANDSDISABLED", 78);
     st->size_data = sizeof(BOOL);
@@ -11352,8 +11350,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45106 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.VALUE
-    st = getVariable(45106);
+  { // 45038 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.VALUE
+    st = getVariable(45038);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.VALUE", 62);
     st->size_data = sizeof(LREAL);
@@ -11365,8 +11363,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45107 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.ISVALIDVALUE
-    st = getVariable(45107);
+  { // 45039 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.ISVALIDVALUE
+    st = getVariable(45039);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.ISVALIDVALUE", 69);
     st->size_data = sizeof(BOOL);
@@ -11378,8 +11376,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45108 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.OPCCOMMANDSDISABLED
-    st = getVariable(45108);
+  { // 45040 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.OPCCOMMANDSDISABLED
+    st = getVariable(45040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP1.OPCCOMMANDSDISABLED", 76);
     st->size_data = sizeof(BOOL);
@@ -11391,8 +11389,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45109 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND
-    st = getVariable(45109);
+  { // 45041 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND
+    st = getVariable(45041);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -11404,8 +11402,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45110 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ALG
-    st = getVariable(45110);
+  { // 45042 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ALG
+    st = getVariable(45042);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ALG", 70);
     st->size_data = sizeof(WORD);
@@ -11417,8 +11415,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45111 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ARM
-    st = getVariable(45111);
+  { // 45043 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ARM
+    st = getVariable(45043);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ARM", 70);
     st->size_data = sizeof(WORD);
@@ -11430,8 +11428,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45112 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.STATUS
-    st = getVariable(45112);
+  { // 45044 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.STATUS
+    st = getVariable(45044);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.STATUS", 63);
     st->size_data = sizeof(DWORD);
@@ -11443,8 +11441,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45113 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.NEWVALUE
-    st = getVariable(45113);
+  { // 45045 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.NEWVALUE
+    st = getVariable(45045);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.NEWVALUE", 65);
     st->size_data = sizeof(LREAL);
@@ -11456,8 +11454,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45114 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.CURRENTVALUE
-    st = getVariable(45114);
+  { // 45046 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.CURRENTVALUE
+    st = getVariable(45046);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.CURRENTVALUE", 69);
     st->size_data = sizeof(LREAL);
@@ -11469,8 +11467,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45115 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MINVAL
-    st = getVariable(45115);
+  { // 45047 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MINVAL
+    st = getVariable(45047);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MINVAL", 63);
     st->size_data = sizeof(LREAL);
@@ -11482,8 +11480,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45116 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXVAL
-    st = getVariable(45116);
+  { // 45048 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXVAL
+    st = getVariable(45048);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXVAL", 63);
     st->size_data = sizeof(LREAL);
@@ -11495,8 +11493,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45117 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXSTEP
-    st = getVariable(45117);
+  { // 45049 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXSTEP
+    st = getVariable(45049);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXSTEP", 64);
     st->size_data = sizeof(LREAL);
@@ -11508,8 +11506,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45118 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MINVAL_ISVALIDREF
-    st = getVariable(45118);
+  { // 45050 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MINVAL_ISVALIDREF
+    st = getVariable(45050);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MINVAL_ISVALIDREF", 74);
     st->size_data = sizeof(BOOL);
@@ -11521,8 +11519,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45119 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXVAL_ISVALIDREF
-    st = getVariable(45119);
+  { // 45051 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXVAL_ISVALIDREF
+    st = getVariable(45051);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXVAL_ISVALIDREF", 74);
     st->size_data = sizeof(BOOL);
@@ -11534,8 +11532,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45120 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXSTEP_ISVALIDREF
-    st = getVariable(45120);
+  { // 45052 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXSTEP_ISVALIDREF
+    st = getVariable(45052);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.MAXSTEP_ISVALIDREF", 75);
     st->size_data = sizeof(BOOL);
@@ -11547,8 +11545,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45121 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INOPCCOMMANDSDISABLED
-    st = getVariable(45121);
+  { // 45053 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INOPCCOMMANDSDISABLED
+    st = getVariable(45053);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.INOPCCOMMANDSDISABLED", 78);
     st->size_data = sizeof(BOOL);
@@ -11560,8 +11558,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45122 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.VALUE
-    st = getVariable(45122);
+  { // 45054 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.VALUE
+    st = getVariable(45054);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.VALUE", 62);
     st->size_data = sizeof(LREAL);
@@ -11573,8 +11571,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45123 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.ISVALIDVALUE
-    st = getVariable(45123);
+  { // 45055 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.ISVALIDVALUE
+    st = getVariable(45055);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.ISVALIDVALUE", 69);
     st->size_data = sizeof(BOOL);
@@ -11586,8 +11584,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45124 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.OPCCOMMANDSDISABLED
-    st = getVariable(45124);
+  { // 45056 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.OPCCOMMANDSDISABLED
+    st = getVariable(45056);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_ONTEMP2.OPCCOMMANDSDISABLED", 76);
     st->size_data = sizeof(BOOL);
@@ -11599,8 +11597,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45125 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND
-    st = getVariable(45125);
+  { // 45057 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND
+    st = getVariable(45057);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND", 69);
     st->size_data = sizeof(WORD);
@@ -11612,8 +11610,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45126 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ALG
-    st = getVariable(45126);
+  { // 45058 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ALG
+    st = getVariable(45058);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ALG", 73);
     st->size_data = sizeof(WORD);
@@ -11625,8 +11623,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45127 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ARM
-    st = getVariable(45127);
+  { // 45059 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ARM
+    st = getVariable(45059);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ARM", 73);
     st->size_data = sizeof(WORD);
@@ -11638,8 +11636,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45128 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.STATUS
-    st = getVariable(45128);
+  { // 45060 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.STATUS
+    st = getVariable(45060);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.STATUS", 66);
     st->size_data = sizeof(DWORD);
@@ -11651,8 +11649,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45129 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.NEWVALUE
-    st = getVariable(45129);
+  { // 45061 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.NEWVALUE
+    st = getVariable(45061);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.NEWVALUE", 68);
     st->size_data = sizeof(LREAL);
@@ -11664,8 +11662,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45130 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.CURRENTVALUE
-    st = getVariable(45130);
+  { // 45062 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.CURRENTVALUE
+    st = getVariable(45062);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.CURRENTVALUE", 72);
     st->size_data = sizeof(LREAL);
@@ -11677,8 +11675,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45131 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MINVAL
-    st = getVariable(45131);
+  { // 45063 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MINVAL
+    st = getVariable(45063);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MINVAL", 66);
     st->size_data = sizeof(LREAL);
@@ -11690,8 +11688,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45132 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXVAL
-    st = getVariable(45132);
+  { // 45064 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXVAL
+    st = getVariable(45064);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXVAL", 66);
     st->size_data = sizeof(LREAL);
@@ -11703,8 +11701,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45133 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXSTEP
-    st = getVariable(45133);
+  { // 45065 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXSTEP
+    st = getVariable(45065);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXSTEP", 67);
     st->size_data = sizeof(LREAL);
@@ -11716,8 +11714,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45134 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MINVAL_ISVALIDREF
-    st = getVariable(45134);
+  { // 45066 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MINVAL_ISVALIDREF
+    st = getVariable(45066);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MINVAL_ISVALIDREF", 77);
     st->size_data = sizeof(BOOL);
@@ -11729,8 +11727,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45135 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXVAL_ISVALIDREF
-    st = getVariable(45135);
+  { // 45067 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXVAL_ISVALIDREF
+    st = getVariable(45067);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXVAL_ISVALIDREF", 77);
     st->size_data = sizeof(BOOL);
@@ -11742,8 +11740,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45136 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXSTEP_ISVALIDREF
-    st = getVariable(45136);
+  { // 45068 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXSTEP_ISVALIDREF
+    st = getVariable(45068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.MAXSTEP_ISVALIDREF", 78);
     st->size_data = sizeof(BOOL);
@@ -11755,8 +11753,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45137 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INOPCCOMMANDSDISABLED
-    st = getVariable(45137);
+  { // 45069 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INOPCCOMMANDSDISABLED
+    st = getVariable(45069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.INOPCCOMMANDSDISABLED", 81);
     st->size_data = sizeof(BOOL);
@@ -11768,8 +11766,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45138 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.VALUE
-    st = getVariable(45138);
+  { // 45070 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.VALUE
+    st = getVariable(45070);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.VALUE", 65);
     st->size_data = sizeof(LREAL);
@@ -11781,8 +11779,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45139 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.ISVALIDVALUE
-    st = getVariable(45139);
+  { // 45071 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.ISVALIDVALUE
+    st = getVariable(45071);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.ISVALIDVALUE", 72);
     st->size_data = sizeof(BOOL);
@@ -11794,8 +11792,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45140 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.OPCCOMMANDSDISABLED
-    st = getVariable(45140);
+  { // 45072 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.OPCCOMMANDSDISABLED
+    st = getVariable(45072);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOAVOM_HYSTERESIS.OPCCOMMANDSDISABLED", 79);
     st->size_data = sizeof(BOOL);
@@ -11807,8 +11805,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45141 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.NEWVALUE
-    st = getVariable(45141);
+  { // 45073 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.NEWVALUE
+    st = getVariable(45073);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.NEWVALUE", 59);
     st->size_data = sizeof(UINT);
@@ -11820,8 +11818,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
     st->value_p = p_UINT;
   }
-  { // 45142 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.CURRENTVALUE
-    st = getVariable(45142);
+  { // 45074 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.CURRENTVALUE
+    st = getVariable(45074);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.CURRENTVALUE", 63);
     st->size_data = sizeof(UINT);
@@ -11833,8 +11831,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
     st->value_p = p_UINT;
   }
-  { // 45143 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INOPCCOMMANDSDISABLED
-    st = getVariable(45143);
+  { // 45075 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INOPCCOMMANDSDISABLED
+    st = getVariable(45075);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INOPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -11846,8 +11844,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45144 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND
-    st = getVariable(45144);
+  { // 45076 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND
+    st = getVariable(45076);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -11859,8 +11857,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45145 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND_ALG
-    st = getVariable(45145);
+  { // 45077 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND_ALG
+    st = getVariable(45077);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND_ALG", 64);
     st->size_data = sizeof(WORD);
@@ -11872,8 +11870,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45146 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND_ARM
-    st = getVariable(45146);
+  { // 45078 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND_ARM
+    st = getVariable(45078);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.INCOMMAND_ARM", 64);
     st->size_data = sizeof(WORD);
@@ -11885,8 +11883,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45147 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.STATUS
-    st = getVariable(45147);
+  { // 45079 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.STATUS
+    st = getVariable(45079);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.STATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -11898,8 +11896,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45148 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.OPCCOMMANDSDISABLED
-    st = getVariable(45148);
+  { // 45080 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.OPCCOMMANDSDISABLED
+    st = getVariable(45080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.OPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -11911,8 +11909,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45149 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.VALUE
-    st = getVariable(45149);
+  { // 45081 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.VALUE
+    st = getVariable(45081);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TYPESWITCH.VALUE", 56);
     st->size_data = sizeof(UINT);
@@ -11924,8 +11922,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
     st->value_p = p_UINT;
   }
-  { // 45150 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND
-    st = getVariable(45150);
+  { // 45082 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND
+    st = getVariable(45082);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND", 64);
     st->size_data = sizeof(WORD);
@@ -11937,8 +11935,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45151 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND_ALG
-    st = getVariable(45151);
+  { // 45083 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND_ALG
+    st = getVariable(45083);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND_ALG", 68);
     st->size_data = sizeof(WORD);
@@ -11950,8 +11948,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45152 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND_ARM
-    st = getVariable(45152);
+  { // 45084 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND_ARM
+    st = getVariable(45084);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INCOMMAND_ARM", 68);
     st->size_data = sizeof(WORD);
@@ -11963,8 +11961,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45153 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.STATUS
-    st = getVariable(45153);
+  { // 45085 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.STATUS
+    st = getVariable(45085);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.STATUS", 61);
     st->size_data = sizeof(DWORD);
@@ -11976,8 +11974,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45154 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.NEWVALUE
-    st = getVariable(45154);
+  { // 45086 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.NEWVALUE
+    st = getVariable(45086);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.NEWVALUE", 63);
     st->size_data = sizeof(LREAL);
@@ -11989,8 +11987,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45155 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.CURRENTVALUE
-    st = getVariable(45155);
+  { // 45087 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.CURRENTVALUE
+    st = getVariable(45087);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.CURRENTVALUE", 67);
     st->size_data = sizeof(LREAL);
@@ -12002,8 +12000,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45156 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MINVAL
-    st = getVariable(45156);
+  { // 45088 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MINVAL
+    st = getVariable(45088);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MINVAL", 61);
     st->size_data = sizeof(LREAL);
@@ -12015,8 +12013,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45157 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXVAL
-    st = getVariable(45157);
+  { // 45089 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXVAL
+    st = getVariable(45089);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXVAL", 61);
     st->size_data = sizeof(LREAL);
@@ -12028,8 +12026,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45158 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXSTEP
-    st = getVariable(45158);
+  { // 45090 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXSTEP
+    st = getVariable(45090);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXSTEP", 62);
     st->size_data = sizeof(LREAL);
@@ -12041,8 +12039,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45159 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MINVAL_ISVALIDREF
-    st = getVariable(45159);
+  { // 45091 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MINVAL_ISVALIDREF
+    st = getVariable(45091);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MINVAL_ISVALIDREF", 72);
     st->size_data = sizeof(BOOL);
@@ -12054,8 +12052,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45160 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXVAL_ISVALIDREF
-    st = getVariable(45160);
+  { // 45092 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXVAL_ISVALIDREF
+    st = getVariable(45092);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXVAL_ISVALIDREF", 72);
     st->size_data = sizeof(BOOL);
@@ -12067,8 +12065,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45161 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXSTEP_ISVALIDREF
-    st = getVariable(45161);
+  { // 45093 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXSTEP_ISVALIDREF
+    st = getVariable(45093);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.MAXSTEP_ISVALIDREF", 73);
     st->size_data = sizeof(BOOL);
@@ -12080,8 +12078,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45162 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INOPCCOMMANDSDISABLED
-    st = getVariable(45162);
+  { // 45094 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INOPCCOMMANDSDISABLED
+    st = getVariable(45094);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.INOPCCOMMANDSDISABLED", 76);
     st->size_data = sizeof(BOOL);
@@ -12093,8 +12091,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45163 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.VALUE
-    st = getVariable(45163);
+  { // 45095 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.VALUE
+    st = getVariable(45095);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.VALUE", 60);
     st->size_data = sizeof(LREAL);
@@ -12106,8 +12104,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45164 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.ISVALIDVALUE
-    st = getVariable(45164);
+  { // 45096 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.ISVALIDVALUE
+    st = getVariable(45096);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.ISVALIDVALUE", 67);
     st->size_data = sizeof(BOOL);
@@ -12119,8 +12117,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45165 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.OPCCOMMANDSDISABLED
-    st = getVariable(45165);
+  { // 45097 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.OPCCOMMANDSDISABLED
+    st = getVariable(45097);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTRUN.OPCCOMMANDSDISABLED", 74);
     st->size_data = sizeof(BOOL);
@@ -12132,8 +12130,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45166 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND
-    st = getVariable(45166);
+  { // 45098 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND
+    st = getVariable(45098);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND", 65);
     st->size_data = sizeof(WORD);
@@ -12145,8 +12143,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45167 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND_ALG
-    st = getVariable(45167);
+  { // 45099 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND_ALG
+    st = getVariable(45099);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND_ALG", 69);
     st->size_data = sizeof(WORD);
@@ -12158,8 +12156,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45168 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND_ARM
-    st = getVariable(45168);
+  { // 45100 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND_ARM
+    st = getVariable(45100);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INCOMMAND_ARM", 69);
     st->size_data = sizeof(WORD);
@@ -12171,8 +12169,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45169 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.STATUS
-    st = getVariable(45169);
+  { // 45101 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.STATUS
+    st = getVariable(45101);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.STATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -12184,8 +12182,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45170 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.NEWVALUE
-    st = getVariable(45170);
+  { // 45102 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.NEWVALUE
+    st = getVariable(45102);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.NEWVALUE", 64);
     st->size_data = sizeof(LREAL);
@@ -12197,8 +12195,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45171 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.CURRENTVALUE
-    st = getVariable(45171);
+  { // 45103 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.CURRENTVALUE
+    st = getVariable(45103);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.CURRENTVALUE", 68);
     st->size_data = sizeof(LREAL);
@@ -12210,8 +12208,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45172 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MINVAL
-    st = getVariable(45172);
+  { // 45104 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MINVAL
+    st = getVariable(45104);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MINVAL", 62);
     st->size_data = sizeof(LREAL);
@@ -12223,8 +12221,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45173 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXVAL
-    st = getVariable(45173);
+  { // 45105 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXVAL
+    st = getVariable(45105);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXVAL", 62);
     st->size_data = sizeof(LREAL);
@@ -12236,8 +12234,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45174 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXSTEP
-    st = getVariable(45174);
+  { // 45106 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXSTEP
+    st = getVariable(45106);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXSTEP", 63);
     st->size_data = sizeof(LREAL);
@@ -12249,8 +12247,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45175 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MINVAL_ISVALIDREF
-    st = getVariable(45175);
+  { // 45107 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MINVAL_ISVALIDREF
+    st = getVariable(45107);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MINVAL_ISVALIDREF", 73);
     st->size_data = sizeof(BOOL);
@@ -12262,8 +12260,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45176 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXVAL_ISVALIDREF
-    st = getVariable(45176);
+  { // 45108 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXVAL_ISVALIDREF
+    st = getVariable(45108);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXVAL_ISVALIDREF", 73);
     st->size_data = sizeof(BOOL);
@@ -12275,8 +12273,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45177 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXSTEP_ISVALIDREF
-    st = getVariable(45177);
+  { // 45109 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXSTEP_ISVALIDREF
+    st = getVariable(45109);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.MAXSTEP_ISVALIDREF", 74);
     st->size_data = sizeof(BOOL);
@@ -12288,8 +12286,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45178 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INOPCCOMMANDSDISABLED
-    st = getVariable(45178);
+  { // 45110 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INOPCCOMMANDSDISABLED
+    st = getVariable(45110);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.INOPCCOMMANDSDISABLED", 77);
     st->size_data = sizeof(BOOL);
@@ -12301,8 +12299,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45179 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.VALUE
-    st = getVariable(45179);
+  { // 45111 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.VALUE
+    st = getVariable(45111);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.VALUE", 61);
     st->size_data = sizeof(LREAL);
@@ -12314,8 +12312,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45180 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.ISVALIDVALUE
-    st = getVariable(45180);
+  { // 45112 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.ISVALIDVALUE
+    st = getVariable(45112);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.ISVALIDVALUE", 68);
     st->size_data = sizeof(BOOL);
@@ -12327,8 +12325,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45181 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.OPCCOMMANDSDISABLED
-    st = getVariable(45181);
+  { // 45113 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.OPCCOMMANDSDISABLED
+    st = getVariable(45113);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOPNS_USTSTOP.OPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -12340,8 +12338,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45182 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.NEWVALUE
-    st = getVariable(45182);
+  { // 45114 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.NEWVALUE
+    st = getVariable(45114);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.NEWVALUE", 62);
     st->size_data = sizeof(UINT);
@@ -12353,8 +12351,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
     st->value_p = p_UINT;
   }
-  { // 45183 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.CURRENTVALUE
-    st = getVariable(45183);
+  { // 45115 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.CURRENTVALUE
+    st = getVariable(45115);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.CURRENTVALUE", 66);
     st->size_data = sizeof(UINT);
@@ -12366,8 +12364,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
     st->value_p = p_UINT;
   }
-  { // 45184 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INOPCCOMMANDSDISABLED
-    st = getVariable(45184);
+  { // 45116 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INOPCCOMMANDSDISABLED
+    st = getVariable(45116);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INOPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -12379,8 +12377,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45185 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND
-    st = getVariable(45185);
+  { // 45117 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND
+    st = getVariable(45117);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -12392,8 +12390,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45186 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND_ALG
-    st = getVariable(45186);
+  { // 45118 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND_ALG
+    st = getVariable(45118);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND_ALG", 67);
     st->size_data = sizeof(WORD);
@@ -12405,8 +12403,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45187 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND_ARM
-    st = getVariable(45187);
+  { // 45119 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND_ARM
+    st = getVariable(45119);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.INCOMMAND_ARM", 67);
     st->size_data = sizeof(WORD);
@@ -12418,8 +12416,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45188 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.STATUS
-    st = getVariable(45188);
+  { // 45120 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.STATUS
+    st = getVariable(45120);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -12431,8 +12429,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45189 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.OPCCOMMANDSDISABLED
-    st = getVariable(45189);
+  { // 45121 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.OPCCOMMANDSDISABLED
+    st = getVariable(45121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.OPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -12444,8 +12442,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45190 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.VALUE
-    st = getVariable(45190);
+  { // 45122 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.VALUE
+    st = getVariable(45122);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_MAINNU.VALUE", 59);
     st->size_data = sizeof(UINT);
@@ -12457,8 +12455,8 @@ int __variables_init_FB_TESTIMALG(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
     st->value_p = p_UINT;
   }
-  { // 45191 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND
-    st = getVariable(45191);
+  { // 45123 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND
+    st = getVariable(45123);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND", 71);
     st->size_data = sizeof(WORD);
@@ -12470,8 +12468,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45192 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ALG
-    st = getVariable(45192);
+  { // 45124 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ALG
+    st = getVariable(45124);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ALG", 75);
     st->size_data = sizeof(WORD);
@@ -12483,8 +12481,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45193 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ARM
-    st = getVariable(45193);
+  { // 45125 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ARM
+    st = getVariable(45125);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ARM", 75);
     st->size_data = sizeof(WORD);
@@ -12496,8 +12494,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45194 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.STATUS
-    st = getVariable(45194);
+  { // 45126 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.STATUS
+    st = getVariable(45126);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -12509,8 +12507,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45195 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.NEWVALUE
-    st = getVariable(45195);
+  { // 45127 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.NEWVALUE
+    st = getVariable(45127);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.NEWVALUE", 70);
     st->size_data = sizeof(LREAL);
@@ -12522,8 +12520,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45196 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.CURRENTVALUE
-    st = getVariable(45196);
+  { // 45128 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.CURRENTVALUE
+    st = getVariable(45128);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.CURRENTVALUE", 74);
     st->size_data = sizeof(LREAL);
@@ -12535,8 +12533,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45197 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MINVAL
-    st = getVariable(45197);
+  { // 45129 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MINVAL
+    st = getVariable(45129);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MINVAL", 68);
     st->size_data = sizeof(LREAL);
@@ -12548,8 +12546,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45198 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL
-    st = getVariable(45198);
+  { // 45130 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL
+    st = getVariable(45130);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL", 68);
     st->size_data = sizeof(LREAL);
@@ -12561,8 +12559,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45199 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP
-    st = getVariable(45199);
+  { // 45131 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP
+    st = getVariable(45131);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP", 69);
     st->size_data = sizeof(LREAL);
@@ -12574,8 +12572,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45200 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MINVAL_ISVALIDREF
-    st = getVariable(45200);
+  { // 45132 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MINVAL_ISVALIDREF
+    st = getVariable(45132);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MINVAL_ISVALIDREF", 79);
     st->size_data = sizeof(BOOL);
@@ -12587,8 +12585,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45201 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL_ISVALIDREF
-    st = getVariable(45201);
+  { // 45133 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL_ISVALIDREF
+    st = getVariable(45133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL_ISVALIDREF", 79);
     st->size_data = sizeof(BOOL);
@@ -12600,8 +12598,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45202 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP_ISVALIDREF
-    st = getVariable(45202);
+  { // 45134 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP_ISVALIDREF
+    st = getVariable(45134);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP_ISVALIDREF", 80);
     st->size_data = sizeof(BOOL);
@@ -12613,8 +12611,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45203 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INOPCCOMMANDSDISABLED
-    st = getVariable(45203);
+  { // 45135 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INOPCCOMMANDSDISABLED
+    st = getVariable(45135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.INOPCCOMMANDSDISABLED", 83);
     st->size_data = sizeof(BOOL);
@@ -12626,8 +12624,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45204 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.VALUE
-    st = getVariable(45204);
+  { // 45136 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.VALUE
+    st = getVariable(45136);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.VALUE", 67);
     st->size_data = sizeof(LREAL);
@@ -12639,8 +12637,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45205 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.ISVALIDVALUE
-    st = getVariable(45205);
+  { // 45137 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.ISVALIDVALUE
+    st = getVariable(45137);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.ISVALIDVALUE", 74);
     st->size_data = sizeof(BOOL);
@@ -12652,8 +12650,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45206 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.OPCCOMMANDSDISABLED
-    st = getVariable(45206);
+  { // 45138 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.OPCCOMMANDSDISABLED
+    st = getVariable(45138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.PUSKOILSYSTEM_USTDPMG.OPCCOMMANDSDISABLED", 81);
     st->size_data = sizeof(BOOL);
@@ -12665,8 +12663,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45207 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND
-    st = getVariable(45207);
+  { // 45139 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND
+    st = getVariable(45139);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -12678,8 +12676,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45208 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ALG
-    st = getVariable(45208);
+  { // 45140 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ALG
+    st = getVariable(45140);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ALG", 76);
     st->size_data = sizeof(WORD);
@@ -12691,8 +12689,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45209 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ARM
-    st = getVariable(45209);
+  { // 45141 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ARM
+    st = getVariable(45141);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ARM", 76);
     st->size_data = sizeof(WORD);
@@ -12704,8 +12702,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45210 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.STATUS
-    st = getVariable(45210);
+  { // 45142 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.STATUS
+    st = getVariable(45142);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -12717,8 +12715,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45211 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.NEWVALUE
-    st = getVariable(45211);
+  { // 45143 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.NEWVALUE
+    st = getVariable(45143);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.NEWVALUE", 71);
     st->size_data = sizeof(LREAL);
@@ -12730,8 +12728,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45212 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.CURRENTVALUE
-    st = getVariable(45212);
+  { // 45144 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.CURRENTVALUE
+    st = getVariable(45144);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.CURRENTVALUE", 75);
     st->size_data = sizeof(LREAL);
@@ -12743,8 +12741,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45213 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MINVAL
-    st = getVariable(45213);
+  { // 45145 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MINVAL
+    st = getVariable(45145);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MINVAL", 69);
     st->size_data = sizeof(LREAL);
@@ -12756,8 +12754,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45214 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL
-    st = getVariable(45214);
+  { // 45146 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL
+    st = getVariable(45146);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL", 69);
     st->size_data = sizeof(LREAL);
@@ -12769,8 +12767,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45215 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP
-    st = getVariable(45215);
+  { // 45147 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP
+    st = getVariable(45147);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP", 70);
     st->size_data = sizeof(LREAL);
@@ -12782,8 +12780,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45216 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MINVAL_ISVALIDREF
-    st = getVariable(45216);
+  { // 45148 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MINVAL_ISVALIDREF
+    st = getVariable(45148);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MINVAL_ISVALIDREF", 80);
     st->size_data = sizeof(BOOL);
@@ -12795,8 +12793,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45217 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL_ISVALIDREF
-    st = getVariable(45217);
+  { // 45149 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL_ISVALIDREF
+    st = getVariable(45149);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL_ISVALIDREF", 80);
     st->size_data = sizeof(BOOL);
@@ -12808,8 +12806,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45218 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP_ISVALIDREF
-    st = getVariable(45218);
+  { // 45150 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP_ISVALIDREF
+    st = getVariable(45150);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP_ISVALIDREF", 81);
     st->size_data = sizeof(BOOL);
@@ -12821,8 +12819,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45219 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INOPCCOMMANDSDISABLED
-    st = getVariable(45219);
+  { // 45151 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INOPCCOMMANDSDISABLED
+    st = getVariable(45151);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.INOPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -12834,8 +12832,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45220 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.VALUE
-    st = getVariable(45220);
+  { // 45152 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.VALUE
+    st = getVariable(45152);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.VALUE", 68);
     st->size_data = sizeof(LREAL);
@@ -12847,8 +12845,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45221 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.ISVALIDVALUE
-    st = getVariable(45221);
+  { // 45153 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.ISVALIDVALUE
+    st = getVariable(45153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.ISVALIDVALUE", 75);
     st->size_data = sizeof(BOOL);
@@ -12860,8 +12858,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45222 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.OPCCOMMANDSDISABLED
-    st = getVariable(45222);
+  { // 45154 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.OPCCOMMANDSDISABLED
+    st = getVariable(45154);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTOTEN_OFFTEMPERATURE.OPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -12873,8 +12871,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45223 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND
-    st = getVariable(45223);
+  { // 45155 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND
+    st = getVariable(45155);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND", 65);
     st->size_data = sizeof(WORD);
@@ -12886,8 +12884,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45224 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND_ALG
-    st = getVariable(45224);
+  { // 45156 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND_ALG
+    st = getVariable(45156);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND_ALG", 69);
     st->size_data = sizeof(WORD);
@@ -12899,8 +12897,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45225 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND_ARM
-    st = getVariable(45225);
+  { // 45157 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND_ARM
+    st = getVariable(45157);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INCOMMAND_ARM", 69);
     st->size_data = sizeof(WORD);
@@ -12912,8 +12910,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45226 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.STATUS
-    st = getVariable(45226);
+  { // 45158 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.STATUS
+    st = getVariable(45158);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.STATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -12925,8 +12923,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45227 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.NEWVALUE
-    st = getVariable(45227);
+  { // 45159 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.NEWVALUE
+    st = getVariable(45159);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.NEWVALUE", 64);
     st->size_data = sizeof(LREAL);
@@ -12938,8 +12936,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45228 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.CURRENTVALUE
-    st = getVariable(45228);
+  { // 45160 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.CURRENTVALUE
+    st = getVariable(45160);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.CURRENTVALUE", 68);
     st->size_data = sizeof(LREAL);
@@ -12951,8 +12949,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45229 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MINVAL
-    st = getVariable(45229);
+  { // 45161 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MINVAL
+    st = getVariable(45161);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MINVAL", 62);
     st->size_data = sizeof(LREAL);
@@ -12964,8 +12962,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45230 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXVAL
-    st = getVariable(45230);
+  { // 45162 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXVAL
+    st = getVariable(45162);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXVAL", 62);
     st->size_data = sizeof(LREAL);
@@ -12977,8 +12975,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45231 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXSTEP
-    st = getVariable(45231);
+  { // 45163 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXSTEP
+    st = getVariable(45163);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXSTEP", 63);
     st->size_data = sizeof(LREAL);
@@ -12990,8 +12988,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45232 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MINVAL_ISVALIDREF
-    st = getVariable(45232);
+  { // 45164 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MINVAL_ISVALIDREF
+    st = getVariable(45164);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MINVAL_ISVALIDREF", 73);
     st->size_data = sizeof(BOOL);
@@ -13003,8 +13001,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45233 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXVAL_ISVALIDREF
-    st = getVariable(45233);
+  { // 45165 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXVAL_ISVALIDREF
+    st = getVariable(45165);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXVAL_ISVALIDREF", 73);
     st->size_data = sizeof(BOOL);
@@ -13016,8 +13014,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45234 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXSTEP_ISVALIDREF
-    st = getVariable(45234);
+  { // 45166 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXSTEP_ISVALIDREF
+    st = getVariable(45166);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.MAXSTEP_ISVALIDREF", 74);
     st->size_data = sizeof(BOOL);
@@ -13029,8 +13027,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45235 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INOPCCOMMANDSDISABLED
-    st = getVariable(45235);
+  { // 45167 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INOPCCOMMANDSDISABLED
+    st = getVariable(45167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.INOPCCOMMANDSDISABLED", 77);
     st->size_data = sizeof(BOOL);
@@ -13042,8 +13040,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45236 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.VALUE
-    st = getVariable(45236);
+  { // 45168 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.VALUE
+    st = getVariable(45168);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.VALUE", 61);
     st->size_data = sizeof(LREAL);
@@ -13055,8 +13053,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45237 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.ISVALIDVALUE
-    st = getVariable(45237);
+  { // 45169 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.ISVALIDVALUE
+    st = getVariable(45169);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.ISVALIDVALUE", 68);
     st->size_data = sizeof(BOOL);
@@ -13068,8 +13066,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45238 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.OPCCOMMANDSDISABLED
-    st = getVariable(45238);
+  { // 45170 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.OPCCOMMANDSDISABLED
+    st = getVariable(45170);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.AUTONU_UST_SWAP.OPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -13081,8 +13079,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45239 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND
-    st = getVariable(45239);
+  { // 45171 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND
+    st = getVariable(45171);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND", 68);
     st->size_data = sizeof(WORD);
@@ -13094,8 +13092,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45240 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ALG
-    st = getVariable(45240);
+  { // 45172 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ALG
+    st = getVariable(45172);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ALG", 72);
     st->size_data = sizeof(WORD);
@@ -13107,8 +13105,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45241 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ARM
-    st = getVariable(45241);
+  { // 45173 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ARM
+    st = getVariable(45173);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ARM", 72);
     st->size_data = sizeof(WORD);
@@ -13120,8 +13118,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45242 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.STATUS
-    st = getVariable(45242);
+  { // 45174 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.STATUS
+    st = getVariable(45174);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.STATUS", 65);
     st->size_data = sizeof(DWORD);
@@ -13133,8 +13131,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45243 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.NEWVALUE
-    st = getVariable(45243);
+  { // 45175 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.NEWVALUE
+    st = getVariable(45175);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.NEWVALUE", 67);
     st->size_data = sizeof(LREAL);
@@ -13146,8 +13144,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45244 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.CURRENTVALUE
-    st = getVariable(45244);
+  { // 45176 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.CURRENTVALUE
+    st = getVariable(45176);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.CURRENTVALUE", 71);
     st->size_data = sizeof(LREAL);
@@ -13159,8 +13157,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45245 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MINVAL
-    st = getVariable(45245);
+  { // 45177 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MINVAL
+    st = getVariable(45177);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MINVAL", 65);
     st->size_data = sizeof(LREAL);
@@ -13172,8 +13170,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45246 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXVAL
-    st = getVariable(45246);
+  { // 45178 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXVAL
+    st = getVariable(45178);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXVAL", 65);
     st->size_data = sizeof(LREAL);
@@ -13185,8 +13183,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45247 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXSTEP
-    st = getVariable(45247);
+  { // 45179 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXSTEP
+    st = getVariable(45179);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXSTEP", 66);
     st->size_data = sizeof(LREAL);
@@ -13198,8 +13196,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45248 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MINVAL_ISVALIDREF
-    st = getVariable(45248);
+  { // 45180 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MINVAL_ISVALIDREF
+    st = getVariable(45180);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MINVAL_ISVALIDREF", 76);
     st->size_data = sizeof(BOOL);
@@ -13211,8 +13209,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45249 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXVAL_ISVALIDREF
-    st = getVariable(45249);
+  { // 45181 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXVAL_ISVALIDREF
+    st = getVariable(45181);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXVAL_ISVALIDREF", 76);
     st->size_data = sizeof(BOOL);
@@ -13224,8 +13222,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45250 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXSTEP_ISVALIDREF
-    st = getVariable(45250);
+  { // 45182 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXSTEP_ISVALIDREF
+    st = getVariable(45182);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.MAXSTEP_ISVALIDREF", 77);
     st->size_data = sizeof(BOOL);
@@ -13237,8 +13235,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45251 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INOPCCOMMANDSDISABLED
-    st = getVariable(45251);
+  { // 45183 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INOPCCOMMANDSDISABLED
+    st = getVariable(45183);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.INOPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -13250,8 +13248,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45252 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.VALUE
-    st = getVariable(45252);
+  { // 45184 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.VALUE
+    st = getVariable(45184);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.VALUE", 64);
     st->size_data = sizeof(LREAL);
@@ -13263,8 +13261,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45253 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.ISVALIDVALUE
-    st = getVariable(45253);
+  { // 45185 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.ISVALIDVALUE
+    st = getVariable(45185);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.ISVALIDVALUE", 71);
     st->size_data = sizeof(BOOL);
@@ -13276,8 +13274,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45254 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.OPCCOMMANDSDISABLED
-    st = getVariable(45254);
+  { // 45186 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.OPCCOMMANDSDISABLED
+    st = getVariable(45186);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TESTDPMG_UST_DPLOW.OPCCOMMANDSDISABLED", 78);
     st->size_data = sizeof(BOOL);
@@ -13289,8 +13287,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45255 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND
-    st = getVariable(45255);
+  { // 45187 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND
+    st = getVariable(45187);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND", 68);
     st->size_data = sizeof(WORD);
@@ -13302,8 +13300,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45256 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ALG
-    st = getVariable(45256);
+  { // 45188 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ALG
+    st = getVariable(45188);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ALG", 72);
     st->size_data = sizeof(WORD);
@@ -13315,8 +13313,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45257 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ARM
-    st = getVariable(45257);
+  { // 45189 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ARM
+    st = getVariable(45189);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ARM", 72);
     st->size_data = sizeof(WORD);
@@ -13328,8 +13326,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45258 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.STATUS
-    st = getVariable(45258);
+  { // 45190 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.STATUS
+    st = getVariable(45190);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.STATUS", 65);
     st->size_data = sizeof(DWORD);
@@ -13341,8 +13339,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45259 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.NEWVALUE
-    st = getVariable(45259);
+  { // 45191 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.NEWVALUE
+    st = getVariable(45191);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.NEWVALUE", 67);
     st->size_data = sizeof(LREAL);
@@ -13354,8 +13352,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45260 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.CURRENTVALUE
-    st = getVariable(45260);
+  { // 45192 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.CURRENTVALUE
+    st = getVariable(45192);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.CURRENTVALUE", 71);
     st->size_data = sizeof(LREAL);
@@ -13367,8 +13365,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45261 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MINVAL
-    st = getVariable(45261);
+  { // 45193 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MINVAL
+    st = getVariable(45193);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MINVAL", 65);
     st->size_data = sizeof(LREAL);
@@ -13380,8 +13378,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45262 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXVAL
-    st = getVariable(45262);
+  { // 45194 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXVAL
+    st = getVariable(45194);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXVAL", 65);
     st->size_data = sizeof(LREAL);
@@ -13393,8 +13391,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45263 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP
-    st = getVariable(45263);
+  { // 45195 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP
+    st = getVariable(45195);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP", 66);
     st->size_data = sizeof(LREAL);
@@ -13406,8 +13404,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45264 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MINVAL_ISVALIDREF
-    st = getVariable(45264);
+  { // 45196 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MINVAL_ISVALIDREF
+    st = getVariable(45196);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MINVAL_ISVALIDREF", 76);
     st->size_data = sizeof(BOOL);
@@ -13419,8 +13417,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45265 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXVAL_ISVALIDREF
-    st = getVariable(45265);
+  { // 45197 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXVAL_ISVALIDREF
+    st = getVariable(45197);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXVAL_ISVALIDREF", 76);
     st->size_data = sizeof(BOOL);
@@ -13432,8 +13430,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45266 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP_ISVALIDREF
-    st = getVariable(45266);
+  { // 45198 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP_ISVALIDREF
+    st = getVariable(45198);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP_ISVALIDREF", 77);
     st->size_data = sizeof(BOOL);
@@ -13445,8 +13443,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45267 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INOPCCOMMANDSDISABLED
-    st = getVariable(45267);
+  { // 45199 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INOPCCOMMANDSDISABLED
+    st = getVariable(45199);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.INOPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -13458,8 +13456,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45268 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.VALUE
-    st = getVariable(45268);
+  { // 45200 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.VALUE
+    st = getVariable(45200);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.VALUE", 64);
     st->size_data = sizeof(LREAL);
@@ -13471,8 +13469,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45269 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.ISVALIDVALUE
-    st = getVariable(45269);
+  { // 45201 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.ISVALIDVALUE
+    st = getVariable(45201);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.ISVALIDVALUE", 71);
     st->size_data = sizeof(BOOL);
@@ -13484,8 +13482,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45270 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.OPCCOMMANDSDISABLED
-    st = getVariable(45270);
+  { // 45202 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.OPCCOMMANDSDISABLED
+    st = getVariable(45202);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_UGOLVNA.OPCCOMMANDSDISABLED", 78);
     st->size_data = sizeof(BOOL);
@@ -13497,8 +13495,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45271 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND
-    st = getVariable(45271);
+  { // 45203 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND
+    st = getVariable(45203);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND", 62);
     st->size_data = sizeof(WORD);
@@ -13510,8 +13508,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45272 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND_ALG
-    st = getVariable(45272);
+  { // 45204 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND_ALG
+    st = getVariable(45204);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND_ALG", 66);
     st->size_data = sizeof(WORD);
@@ -13523,8 +13521,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45273 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND_ARM
-    st = getVariable(45273);
+  { // 45205 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND_ARM
+    st = getVariable(45205);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INCOMMAND_ARM", 66);
     st->size_data = sizeof(WORD);
@@ -13536,8 +13534,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45274 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.STATUS
-    st = getVariable(45274);
+  { // 45206 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.STATUS
+    st = getVariable(45206);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.STATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -13549,8 +13547,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45275 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.NEWVALUE
-    st = getVariable(45275);
+  { // 45207 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.NEWVALUE
+    st = getVariable(45207);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.NEWVALUE", 61);
     st->size_data = sizeof(LREAL);
@@ -13562,8 +13560,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45276 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.CURRENTVALUE
-    st = getVariable(45276);
+  { // 45208 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.CURRENTVALUE
+    st = getVariable(45208);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.CURRENTVALUE", 65);
     st->size_data = sizeof(LREAL);
@@ -13575,8 +13573,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45277 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MINVAL
-    st = getVariable(45277);
+  { // 45209 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MINVAL
+    st = getVariable(45209);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MINVAL", 59);
     st->size_data = sizeof(LREAL);
@@ -13588,8 +13586,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45278 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXVAL
-    st = getVariable(45278);
+  { // 45210 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXVAL
+    st = getVariable(45210);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXVAL", 59);
     st->size_data = sizeof(LREAL);
@@ -13601,8 +13599,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45279 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXSTEP
-    st = getVariable(45279);
+  { // 45211 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXSTEP
+    st = getVariable(45211);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXSTEP", 60);
     st->size_data = sizeof(LREAL);
@@ -13614,8 +13612,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45280 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MINVAL_ISVALIDREF
-    st = getVariable(45280);
+  { // 45212 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MINVAL_ISVALIDREF
+    st = getVariable(45212);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MINVAL_ISVALIDREF", 70);
     st->size_data = sizeof(BOOL);
@@ -13627,8 +13625,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45281 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXVAL_ISVALIDREF
-    st = getVariable(45281);
+  { // 45213 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXVAL_ISVALIDREF
+    st = getVariable(45213);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXVAL_ISVALIDREF", 70);
     st->size_data = sizeof(BOOL);
@@ -13640,8 +13638,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45282 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXSTEP_ISVALIDREF
-    st = getVariable(45282);
+  { // 45214 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXSTEP_ISVALIDREF
+    st = getVariable(45214);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.MAXSTEP_ISVALIDREF", 71);
     st->size_data = sizeof(BOOL);
@@ -13653,8 +13651,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45283 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INOPCCOMMANDSDISABLED
-    st = getVariable(45283);
+  { // 45215 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INOPCCOMMANDSDISABLED
+    st = getVariable(45215);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.INOPCCOMMANDSDISABLED", 74);
     st->size_data = sizeof(BOOL);
@@ -13666,8 +13664,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45284 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.VALUE
-    st = getVariable(45284);
+  { // 45216 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.VALUE
+    st = getVariable(45216);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.VALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -13679,8 +13677,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45285 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.ISVALIDVALUE
-    st = getVariable(45285);
+  { // 45217 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.ISVALIDVALUE
+    st = getVariable(45217);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.ISVALIDVALUE", 65);
     st->size_data = sizeof(BOOL);
@@ -13692,8 +13690,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45286 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.OPCCOMMANDSDISABLED
-    st = getVariable(45286);
+  { // 45218 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.OPCCOMMANDSDISABLED
+    st = getVariable(45218);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_K.OPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -13705,8 +13703,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45287 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND
-    st = getVariable(45287);
+  { // 45219 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND
+    st = getVariable(45219);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND", 62);
     st->size_data = sizeof(WORD);
@@ -13718,8 +13716,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45288 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND_ALG
-    st = getVariable(45288);
+  { // 45220 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND_ALG
+    st = getVariable(45220);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND_ALG", 66);
     st->size_data = sizeof(WORD);
@@ -13731,8 +13729,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45289 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND_ARM
-    st = getVariable(45289);
+  { // 45221 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND_ARM
+    st = getVariable(45221);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INCOMMAND_ARM", 66);
     st->size_data = sizeof(WORD);
@@ -13744,8 +13742,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45290 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.STATUS
-    st = getVariable(45290);
+  { // 45222 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.STATUS
+    st = getVariable(45222);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.STATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -13757,8 +13755,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45291 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.NEWVALUE
-    st = getVariable(45291);
+  { // 45223 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.NEWVALUE
+    st = getVariable(45223);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.NEWVALUE", 61);
     st->size_data = sizeof(LREAL);
@@ -13770,8 +13768,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45292 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.CURRENTVALUE
-    st = getVariable(45292);
+  { // 45224 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.CURRENTVALUE
+    st = getVariable(45224);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.CURRENTVALUE", 65);
     st->size_data = sizeof(LREAL);
@@ -13783,8 +13781,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45293 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MINVAL
-    st = getVariable(45293);
+  { // 45225 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MINVAL
+    st = getVariable(45225);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MINVAL", 59);
     st->size_data = sizeof(LREAL);
@@ -13796,8 +13794,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45294 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXVAL
-    st = getVariable(45294);
+  { // 45226 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXVAL
+    st = getVariable(45226);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXVAL", 59);
     st->size_data = sizeof(LREAL);
@@ -13809,8 +13807,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45295 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXSTEP
-    st = getVariable(45295);
+  { // 45227 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXSTEP
+    st = getVariable(45227);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXSTEP", 60);
     st->size_data = sizeof(LREAL);
@@ -13822,8 +13820,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45296 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MINVAL_ISVALIDREF
-    st = getVariable(45296);
+  { // 45228 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MINVAL_ISVALIDREF
+    st = getVariable(45228);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MINVAL_ISVALIDREF", 70);
     st->size_data = sizeof(BOOL);
@@ -13835,8 +13833,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45297 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXVAL_ISVALIDREF
-    st = getVariable(45297);
+  { // 45229 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXVAL_ISVALIDREF
+    st = getVariable(45229);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXVAL_ISVALIDREF", 70);
     st->size_data = sizeof(BOOL);
@@ -13848,8 +13846,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45298 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXSTEP_ISVALIDREF
-    st = getVariable(45298);
+  { // 45230 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXSTEP_ISVALIDREF
+    st = getVariable(45230);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.MAXSTEP_ISVALIDREF", 71);
     st->size_data = sizeof(BOOL);
@@ -13861,8 +13859,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45299 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INOPCCOMMANDSDISABLED
-    st = getVariable(45299);
+  { // 45231 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INOPCCOMMANDSDISABLED
+    st = getVariable(45231);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.INOPCCOMMANDSDISABLED", 74);
     st->size_data = sizeof(BOOL);
@@ -13874,8 +13872,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45300 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.VALUE
-    st = getVariable(45300);
+  { // 45232 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.VALUE
+    st = getVariable(45232);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.VALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -13887,8 +13885,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45301 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.ISVALIDVALUE
-    st = getVariable(45301);
+  { // 45233 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.ISVALIDVALUE
+    st = getVariable(45233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.ISVALIDVALUE", 65);
     st->size_data = sizeof(BOOL);
@@ -13900,8 +13898,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45302 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.OPCCOMMANDSDISABLED
-    st = getVariable(45302);
+  { // 45234 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.OPCCOMMANDSDISABLED
+    st = getVariable(45234);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_A.OPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -13913,8 +13911,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45303 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND
-    st = getVariable(45303);
+  { // 45235 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND
+    st = getVariable(45235);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -13926,8 +13924,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 45304 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND_ALG
-    st = getVariable(45304);
+  { // 45236 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND_ALG
+    st = getVariable(45236);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND_ALG", 67);
     st->size_data = sizeof(WORD);
@@ -13939,8 +13937,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 45305 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND_ARM
-    st = getVariable(45305);
+  { // 45237 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND_ARM
+    st = getVariable(45237);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INCOMMAND_ARM", 67);
     st->size_data = sizeof(WORD);
@@ -13952,8 +13950,8 @@ int __variables_init_FB_TESTIMALG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 45306 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.STATUS
-    st = getVariable(45306);
+  { // 45238 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.STATUS
+    st = getVariable(45238);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -13965,8 +13963,8 @@ int __variables_init_FB_TESTIMALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 45307 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.NEWVALUE
-    st = getVariable(45307);
+  { // 45239 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.NEWVALUE
+    st = getVariable(45239);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.NEWVALUE", 62);
     st->size_data = sizeof(LREAL);
@@ -13978,8 +13976,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45308 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.CURRENTVALUE
-    st = getVariable(45308);
+  { // 45240 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.CURRENTVALUE
+    st = getVariable(45240);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.CURRENTVALUE", 66);
     st->size_data = sizeof(LREAL);
@@ -13991,8 +13989,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 45309 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MINVAL
-    st = getVariable(45309);
+  { // 45241 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MINVAL
+    st = getVariable(45241);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MINVAL", 60);
     st->size_data = sizeof(LREAL);
@@ -14004,8 +14002,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 45310 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXVAL
-    st = getVariable(45310);
+  { // 45242 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXVAL
+    st = getVariable(45242);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXVAL", 60);
     st->size_data = sizeof(LREAL);
@@ -14017,8 +14015,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 45311 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXSTEP
-    st = getVariable(45311);
+  { // 45243 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXSTEP
+    st = getVariable(45243);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXSTEP", 61);
     st->size_data = sizeof(LREAL);
@@ -14030,8 +14028,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 45312 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MINVAL_ISVALIDREF
-    st = getVariable(45312);
+  { // 45244 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MINVAL_ISVALIDREF
+    st = getVariable(45244);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MINVAL_ISVALIDREF", 71);
     st->size_data = sizeof(BOOL);
@@ -14043,8 +14041,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45313 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXVAL_ISVALIDREF
-    st = getVariable(45313);
+  { // 45245 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXVAL_ISVALIDREF
+    st = getVariable(45245);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXVAL_ISVALIDREF", 71);
     st->size_data = sizeof(BOOL);
@@ -14056,8 +14054,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45314 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXSTEP_ISVALIDREF
-    st = getVariable(45314);
+  { // 45246 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXSTEP_ISVALIDREF
+    st = getVariable(45246);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.MAXSTEP_ISVALIDREF", 72);
     st->size_data = sizeof(BOOL);
@@ -14069,8 +14067,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 45315 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INOPCCOMMANDSDISABLED
-    st = getVariable(45315);
+  { // 45247 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INOPCCOMMANDSDISABLED
+    st = getVariable(45247);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.INOPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -14082,8 +14080,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 45316 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.VALUE
-    st = getVariable(45316);
+  { // 45248 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.VALUE
+    st = getVariable(45248);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.VALUE", 59);
     st->size_data = sizeof(LREAL);
@@ -14095,8 +14093,8 @@ int __variables_init_FB_TESTIMALG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 45317 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.ISVALIDVALUE
-    st = getVariable(45317);
+  { // 45249 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.ISVALIDVALUE
+    st = getVariable(45249);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.ISVALIDVALUE", 66);
     st->size_data = sizeof(BOOL);
@@ -14108,8 +14106,8 @@ int __variables_init_FB_TESTIMALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 45318 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.OPCCOMMANDSDISABLED
-    st = getVariable(45318);
+  { // 45250 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.OPCCOMMANDSDISABLED
+    st = getVariable(45250);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.ANTIPOMPAG_Y0.OPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -14119,6 +14117,2684 @@ int __variables_init_FB_TESTIMALG(){
     p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
     p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45251 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INCOMMAND
+    st = getVariable(45251);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INCOMMAND", 57);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45252 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.STATUS
+    st = getVariable(45252);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.STATUS", 54);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45253 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ONSTATUS
+    st = getVariable(45253);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ONSTATUS", 56);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45254 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(45254);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INOPCCOMMANDSDISABLED", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45255 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.SDVIG
+    st = getVariable(45255);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.SDVIG", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45256 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.NS
+    st = getVariable(45256);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.NS", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45257 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.COMMANDFAULT
+    st = getVariable(45257);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.COMMANDFAULT", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45258 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ACCIDENT
+    st = getVariable(45258);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ACCIDENT", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45259 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.AUTO
+    st = getVariable(45259);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.AUTO", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45260 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.MANUAL
+    st = getVariable(45260);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.MANUAL", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45261 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.LOCAL
+    st = getVariable(45261);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.LOCAL", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45262 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.DISTANCE
+    st = getVariable(45262);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.DISTANCE", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45263 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ERRORPOWEROFF
+    st = getVariable(45263);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ERRORPOWEROFF", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45264 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ERRORBLOCK
+    st = getVariable(45264);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ERRORBLOCK", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45265 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.BREAKCMDON
+    st = getVariable(45265);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.BREAKCMDON", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45266 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.BREAKCMDOFF
+    st = getVariable(45266);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.BREAKCMDOFF", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45267 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(45267);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.OPCCOMMANDSDISABLED", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45268 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.LASTCMDISON
+    st = getVariable(45268);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.LASTCMDISON", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45269 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_STATON
+    st = getVariable(45269);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_STATON", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45270 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(45270);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_STATOFF", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45271 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_CMDON
+    st = getVariable(45271);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_CMDON", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45272 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(45272);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_CMDOFF", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45273 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(45273);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45274 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(45274);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45275 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INCOMMAND_ALG
+    st = getVariable(45275);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INCOMMAND_ALG", 61);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45276 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INCOMMAND_ARM
+    st = getVariable(45276);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.INCOMMAND_ARM", 61);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45277 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.CMDON
+    st = getVariable(45277);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.CMDON", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45278 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.CMDOFF
+    st = getVariable(45278);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.CMDOFF", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45279 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.RELIABILITY
+    st = getVariable(45279);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V3_AVOM.RELIABILITY", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 45280 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INCOMMAND
+    st = getVariable(45280);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INCOMMAND", 57);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45281 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.STATUS
+    st = getVariable(45281);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.STATUS", 54);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45282 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ONSTATUS
+    st = getVariable(45282);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ONSTATUS", 56);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45283 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(45283);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INOPCCOMMANDSDISABLED", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45284 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.SDVIG
+    st = getVariable(45284);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.SDVIG", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45285 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.NS
+    st = getVariable(45285);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.NS", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45286 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.COMMANDFAULT
+    st = getVariable(45286);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.COMMANDFAULT", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45287 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ACCIDENT
+    st = getVariable(45287);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ACCIDENT", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45288 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.AUTO
+    st = getVariable(45288);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.AUTO", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45289 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.MANUAL
+    st = getVariable(45289);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.MANUAL", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45290 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.LOCAL
+    st = getVariable(45290);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.LOCAL", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45291 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.DISTANCE
+    st = getVariable(45291);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.DISTANCE", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45292 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ERRORPOWEROFF
+    st = getVariable(45292);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ERRORPOWEROFF", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45293 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ERRORBLOCK
+    st = getVariable(45293);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ERRORBLOCK", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45294 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.BREAKCMDON
+    st = getVariable(45294);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.BREAKCMDON", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45295 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.BREAKCMDOFF
+    st = getVariable(45295);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.BREAKCMDOFF", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45296 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(45296);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.OPCCOMMANDSDISABLED", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45297 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.LASTCMDISON
+    st = getVariable(45297);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.LASTCMDISON", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45298 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_STATON
+    st = getVariable(45298);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_STATON", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45299 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(45299);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_STATOFF", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45300 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_CMDON
+    st = getVariable(45300);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_CMDON", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45301 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(45301);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_CMDOFF", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45302 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(45302);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45303 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(45303);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45304 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INCOMMAND_ALG
+    st = getVariable(45304);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INCOMMAND_ALG", 61);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45305 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INCOMMAND_ARM
+    st = getVariable(45305);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.INCOMMAND_ARM", 61);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45306 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.CMDON
+    st = getVariable(45306);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.CMDON", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45307 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.CMDOFF
+    st = getVariable(45307);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.CMDOFF", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45308 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.RELIABILITY
+    st = getVariable(45308);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.V4_AVOM.RELIABILITY", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 45309 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INCOMMAND
+    st = getVariable(45309);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INCOMMAND", 63);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45310 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.STATUS
+    st = getVariable(45310);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.STATUS", 60);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45311 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ONSTATUS
+    st = getVariable(45311);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ONSTATUS", 62);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45312 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(45312);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45313 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.SDVIG
+    st = getVariable(45313);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.SDVIG", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45314 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.NS
+    st = getVariable(45314);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.NS", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45315 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.COMMANDFAULT
+    st = getVariable(45315);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.COMMANDFAULT", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45316 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ACCIDENT
+    st = getVariable(45316);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ACCIDENT", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45317 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.AUTO
+    st = getVariable(45317);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.AUTO", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45318 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.MANUAL
+    st = getVariable(45318);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.MANUAL", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45319 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.LOCAL
+    st = getVariable(45319);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.LOCAL", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45320 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.DISTANCE
+    st = getVariable(45320);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.DISTANCE", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45321 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ERRORPOWEROFF
+    st = getVariable(45321);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ERRORPOWEROFF", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45322 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ERRORBLOCK
+    st = getVariable(45322);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ERRORBLOCK", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45323 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.BREAKCMDON
+    st = getVariable(45323);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.BREAKCMDON", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45324 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.BREAKCMDOFF
+    st = getVariable(45324);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.BREAKCMDOFF", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45325 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED
+    st = getVariable(45325);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED", 73);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45326 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.LASTCMDISON
+    st = getVariable(45326);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.LASTCMDISON", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45327 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_STATON
+    st = getVariable(45327);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_STATON", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45328 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_STATOFF
+    st = getVariable(45328);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_STATOFF", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45329 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_CMDON
+    st = getVariable(45329);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_CMDON", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45330 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF
+    st = getVariable(45330);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45331 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(45331);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON", 77);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45332 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(45332);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45333 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INCOMMAND_ALG
+    st = getVariable(45333);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INCOMMAND_ALG", 67);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45334 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INCOMMAND_ARM
+    st = getVariable(45334);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.INCOMMAND_ARM", 67);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45335 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.CMDON
+    st = getVariable(45335);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.CMDON", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45336 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.CMDOFF
+    st = getVariable(45336);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.CMDOFF", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45337 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.RELIABILITY
+    st = getVariable(45337);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KALORIFERAVOM.RELIABILITY", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->KALORIFERAVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 45338 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INCOMMAND
+    st = getVariable(45338);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INCOMMAND", 53);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45339 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.STATUS
+    st = getVariable(45339);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.STATUS", 50);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45340 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ONSTATUS
+    st = getVariable(45340);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ONSTATUS", 52);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45341 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INOPCCOMMANDSDISABLED
+    st = getVariable(45341);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INOPCCOMMANDSDISABLED", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45342 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.SDVIG
+    st = getVariable(45342);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.SDVIG", 49);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45343 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.NS
+    st = getVariable(45343);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.NS", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45344 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.COMMANDFAULT
+    st = getVariable(45344);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.COMMANDFAULT", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45345 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ACCIDENT
+    st = getVariable(45345);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ACCIDENT", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45346 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.AUTO
+    st = getVariable(45346);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.AUTO", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45347 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.MANUAL
+    st = getVariable(45347);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.MANUAL", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45348 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.LOCAL
+    st = getVariable(45348);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.LOCAL", 49);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45349 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.DISTANCE
+    st = getVariable(45349);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.DISTANCE", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45350 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ERRORPOWEROFF
+    st = getVariable(45350);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ERRORPOWEROFF", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45351 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ERRORBLOCK
+    st = getVariable(45351);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ERRORBLOCK", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45352 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.BREAKCMDON
+    st = getVariable(45352);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.BREAKCMDON", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45353 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.BREAKCMDOFF
+    st = getVariable(45353);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.BREAKCMDOFF", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45354 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.OPCCOMMANDSDISABLED
+    st = getVariable(45354);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.OPCCOMMANDSDISABLED", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45355 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.LASTCMDISON
+    st = getVariable(45355);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.LASTCMDISON", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45356 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_STATON
+    st = getVariable(45356);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_STATON", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45357 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_STATOFF
+    st = getVariable(45357);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_STATOFF", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45358 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_CMDON
+    st = getVariable(45358);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_CMDON", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45359 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_CMDOFF
+    st = getVariable(45359);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_CMDOFF", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45360 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_INBREAKCMDON
+    st = getVariable(45360);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_INBREAKCMDON", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45361 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(45361);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.ISVALIDREF_INBREAKCMDOFF", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45362 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INCOMMAND_ALG
+    st = getVariable(45362);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INCOMMAND_ALG", 57);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45363 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INCOMMAND_ARM
+    st = getVariable(45363);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.INCOMMAND_ARM", 57);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45364 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.CMDON
+    st = getVariable(45364);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.CMDON", 49);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45365 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.CMDOFF
+    st = getVariable(45365);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.CMDOFF", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45366 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.RELIABILITY
+    st = getVariable(45366);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.CMN.RELIABILITY", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->CMN;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 45367 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INCOMMAND
+    st = getVariable(45367);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INCOMMAND", 64);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45368 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.STATUS
+    st = getVariable(45368);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.STATUS", 61);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45369 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ONSTATUS
+    st = getVariable(45369);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ONSTATUS", 63);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45370 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INOPCCOMMANDSDISABLED
+    st = getVariable(45370);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INOPCCOMMANDSDISABLED", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45371 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.SDVIG
+    st = getVariable(45371);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.SDVIG", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45372 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.NS
+    st = getVariable(45372);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.NS", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45373 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.COMMANDFAULT
+    st = getVariable(45373);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.COMMANDFAULT", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45374 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ACCIDENT
+    st = getVariable(45374);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ACCIDENT", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45375 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.AUTO
+    st = getVariable(45375);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.AUTO", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45376 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.MANUAL
+    st = getVariable(45376);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.MANUAL", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45377 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.LOCAL
+    st = getVariable(45377);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.LOCAL", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45378 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.DISTANCE
+    st = getVariable(45378);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.DISTANCE", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45379 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ERRORPOWEROFF
+    st = getVariable(45379);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ERRORPOWEROFF", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45380 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ERRORBLOCK
+    st = getVariable(45380);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ERRORBLOCK", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45381 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.BREAKCMDON
+    st = getVariable(45381);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.BREAKCMDON", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45382 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.BREAKCMDOFF
+    st = getVariable(45382);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.BREAKCMDOFF", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45383 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.OPCCOMMANDSDISABLED
+    st = getVariable(45383);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.OPCCOMMANDSDISABLED", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45384 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.LASTCMDISON
+    st = getVariable(45384);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.LASTCMDISON", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45385 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_STATON
+    st = getVariable(45385);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_STATON", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45386 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_STATOFF
+    st = getVariable(45386);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_STATOFF", 73);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45387 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDON
+    st = getVariable(45387);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDON", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45388 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDOFF
+    st = getVariable(45388);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDOFF", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45389 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDON
+    st = getVariable(45389);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDON", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45390 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(45390);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDOFF", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45391 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INCOMMAND_ALG
+    st = getVariable(45391);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INCOMMAND_ALG", 68);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45392 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INCOMMAND_ARM
+    st = getVariable(45392);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.INCOMMAND_ARM", 68);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45393 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.CMDON
+    st = getVariable(45393);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.CMDON", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45394 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.CMDOFF
+    st = getVariable(45394);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.CMDOFF", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45395 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.RELIABILITY
+    st = getVariable(45395);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_KOLLECTIRA.RELIABILITY", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 45396 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INCOMMAND
+    st = getVariable(45396);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INCOMMAND", 56);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45397 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.STATUS
+    st = getVariable(45397);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.STATUS", 53);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45398 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ONSTATUS
+    st = getVariable(45398);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ONSTATUS", 55);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45399 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INOPCCOMMANDSDISABLED
+    st = getVariable(45399);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INOPCCOMMANDSDISABLED", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45400 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.SDVIG
+    st = getVariable(45400);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.SDVIG", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45401 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.NS
+    st = getVariable(45401);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.NS", 49);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45402 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.COMMANDFAULT
+    st = getVariable(45402);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.COMMANDFAULT", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45403 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ACCIDENT
+    st = getVariable(45403);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ACCIDENT", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45404 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.AUTO
+    st = getVariable(45404);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.AUTO", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45405 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.MANUAL
+    st = getVariable(45405);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.MANUAL", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45406 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.LOCAL
+    st = getVariable(45406);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.LOCAL", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45407 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.DISTANCE
+    st = getVariable(45407);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.DISTANCE", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45408 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ERRORPOWEROFF
+    st = getVariable(45408);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ERRORPOWEROFF", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45409 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ERRORBLOCK
+    st = getVariable(45409);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ERRORBLOCK", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45410 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.BREAKCMDON
+    st = getVariable(45410);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.BREAKCMDON", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45411 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.BREAKCMDOFF
+    st = getVariable(45411);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.BREAKCMDOFF", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45412 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.OPCCOMMANDSDISABLED
+    st = getVariable(45412);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.OPCCOMMANDSDISABLED", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45413 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.LASTCMDISON
+    st = getVariable(45413);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.LASTCMDISON", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45414 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_STATON
+    st = getVariable(45414);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_STATON", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45415 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_STATOFF
+    st = getVariable(45415);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_STATOFF", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45416 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_CMDON
+    st = getVariable(45416);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_CMDON", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45417 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_CMDOFF
+    st = getVariable(45417);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_CMDOFF", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45418 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDON
+    st = getVariable(45418);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDON", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45419 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(45419);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45420 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INCOMMAND_ALG
+    st = getVariable(45420);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INCOMMAND_ALG", 60);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45421 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INCOMMAND_ARM
+    st = getVariable(45421);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.INCOMMAND_ARM", 60);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45422 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.CMDON
+    st = getVariable(45422);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.CMDON", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45423 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.CMDOFF
+    st = getVariable(45423);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.CMDOFF", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45424 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.RELIABILITY
+    st = getVariable(45424);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.TEN_MB.RELIABILITY", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 45425 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INCOMMAND
+    st = getVariable(45425);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INCOMMAND", 55);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 45426 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.STATUS
+    st = getVariable(45426);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.STATUS", 52);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 45427 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ONSTATUS
+    st = getVariable(45427);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ONSTATUS", 54);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 45428 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INOPCCOMMANDSDISABLED
+    st = getVariable(45428);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INOPCCOMMANDSDISABLED", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45429 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.SDVIG
+    st = getVariable(45429);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.SDVIG", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 45430 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.NS
+    st = getVariable(45430);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.NS", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 45431 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.DP
+    st = getVariable(45431);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.DP", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
+    st->value_p = p_BOOL;
+  }
+  { // 45432 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.COMMANDFAULT
+    st = getVariable(45432);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.COMMANDFAULT", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 45433 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ACCIDENT
+    st = getVariable(45433);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ACCIDENT", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 45434 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.AUTO
+    st = getVariable(45434);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.AUTO", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 45435 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.MANUAL
+    st = getVariable(45435);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.MANUAL", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45436 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.LOCAL
+    st = getVariable(45436);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.LOCAL", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 45437 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.DISTANCE
+    st = getVariable(45437);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.DISTANCE", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 45438 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ERRORPOWEROFF
+    st = getVariable(45438);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ERRORPOWEROFF", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45439 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ERRORBLOCK
+    st = getVariable(45439);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ERRORBLOCK", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 45440 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.SO
+    st = getVariable(45440);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.SO", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
+    st->value_p = p_BOOL;
+  }
+  { // 45441 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.SZ
+    st = getVariable(45441);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.SZ", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
+    st->value_p = p_BOOL;
+  }
+  { // 45442 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.OPCCOMMANDSDISABLED
+    st = getVariable(45442);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.OPCCOMMANDSDISABLED", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 45443 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.LASTCMDISON
+    st = getVariable(45443);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.LASTCMDISON", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 45444 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_STATON
+    st = getVariable(45444);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_STATON", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 45445 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_STATOFF
+    st = getVariable(45445);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_STATOFF", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45446 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_CMDON
+    st = getVariable(45446);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_CMDON", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45447 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_CMDOFF
+    st = getVariable(45447);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_CMDOFF", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45448 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_INSO
+    st = getVariable(45448);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_INSO", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
+    st->value_p = p_BOOL;
+  }
+  { // 45449 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_INSZ
+    st = getVariable(45449);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_INSZ", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
+    st->value_p = p_BOOL;
+  }
+  { // 45450 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_INDP
+    st = getVariable(45450);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.ISVALIDREF_INDP", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
+    st->value_p = p_BOOL;
+  }
+  { // 45451 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.CONTINUEHOLDCOMMAND
+    st = getVariable(45451);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.CONTINUEHOLDCOMMAND", 65);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
+    st->value_p = p_TIME;
+  }
+  { // 45452 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INCOMMAND_ALG
+    st = getVariable(45452);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INCOMMAND_ALG", 59);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 45453 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INCOMMAND_ARM
+    st = getVariable(45453);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.INCOMMAND_ARM", 59);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 45454 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.CMDON
+    st = getVariable(45454);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.CMDON", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 45455 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.CMDOFF
+    st = getVariable(45455);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.CMDOFF", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 45456 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.RELIABILITY
+    st = getVariable(45456);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG.IM.KRAN3.RELIABILITY", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_TESTIMALG = (TESTIMALG*)&p_PROC_ALGORITMS->FB_TESTIMALG;
+    p_IMCONFIG = (IMCONFIG*)p_TESTIMALG->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
 

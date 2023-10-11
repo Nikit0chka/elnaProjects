@@ -79,11 +79,6 @@ int __variables_init_FB_P_OIL_LOW(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_P_OIL_LOW(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_P_OIL_LOW(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26322 PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL.VALUE
-    st = getVariable(26322);
+  { // 25224 PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL.VALUE
+    st = getVariable(25224);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL.VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26323 PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL.RELIABILITY
-    st = getVariable(26323);
+  { // 25225 PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL.RELIABILITY
+    st = getVariable(25225);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL.RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26324 PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL._INVERSED
-    st = getVariable(26324);
+  { // 25226 PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL._INVERSED
+    st = getVariable(25226);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.SIGNAL._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26325 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.RELIABILITY
-    st = getVariable(26325);
+  { // 25227 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.RELIABILITY
+    st = getVariable(25227);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26326 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.INVERSE
-    st = getVariable(26326);
+  { // 25228 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.INVERSE
+    st = getVariable(25228);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.INVERSE", 44);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26327 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DELAYON
-    st = getVariable(26327);
+  { // 25229 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DELAYON
+    st = getVariable(25229);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DELAYON", 44);
     st->size_data = sizeof(TIME);
@@ -259,8 +257,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26328 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DELAYOFF
-    st = getVariable(26328);
+  { // 25230 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DELAYOFF
+    st = getVariable(25230);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DELAYOFF", 45);
     st->size_data = sizeof(TIME);
@@ -271,8 +269,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26329 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.Q
-    st = getVariable(26329);
+  { // 25231 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.Q
+    st = getVariable(25231);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.Q", 38);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26330 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.STATUS
-    st = getVariable(26330);
+  { // 25232 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.STATUS
+    st = getVariable(25232);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.STATUS", 43);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26331 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DISABLED_SIG
-    st = getVariable(26331);
+  { // 25233 PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DISABLED_SIG
+    st = getVariable(25233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.STR_SS.DISABLED_SIG", 49);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26332 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.IN
-    st = getVariable(26332);
+  { // 25234 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.IN
+    st = getVariable(25234);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.IN", 40);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26333 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.PT
-    st = getVariable(26333);
+  { // 25235 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.PT
+    st = getVariable(25235);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.PT", 40);
     st->size_data = sizeof(TIME);
@@ -331,8 +329,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26334 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.Q
-    st = getVariable(26334);
+  { // 25236 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.Q
+    st = getVariable(25236);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.Q", 39);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26335 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.ET
-    st = getVariable(26335);
+  { // 25237 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.ET
+    st = getVariable(25237);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON.ET", 40);
     st->size_data = sizeof(TIME);
@@ -355,8 +353,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26336 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON
-    st = getVariable(26336);
+  { // 25238 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON
+    st = getVariable(25238);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMERON", 37);
     st->size_data = sizeof(TON);
@@ -366,8 +364,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26337 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.IN
-    st = getVariable(26337);
+  { // 25239 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.IN
+    st = getVariable(25239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.IN", 41);
     st->size_data = sizeof(BOOL);
@@ -378,8 +376,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26338 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.PT
-    st = getVariable(26338);
+  { // 25240 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.PT
+    st = getVariable(25240);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.PT", 41);
     st->size_data = sizeof(TIME);
@@ -390,8 +388,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26339 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.Q
-    st = getVariable(26339);
+  { // 25241 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.Q
+    st = getVariable(25241);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.Q", 40);
     st->size_data = sizeof(BOOL);
@@ -402,8 +400,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26340 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.ET
-    st = getVariable(26340);
+  { // 25242 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.ET
+    st = getVariable(25242);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF.ET", 41);
     st->size_data = sizeof(TIME);
@@ -414,8 +412,8 @@ int __variables_init_FB_P_OIL_LOW(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26341 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF
-    st = getVariable(26341);
+  { // 25243 PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF
+    st = getVariable(25243);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_P_OIL_LOW.TIMEROFF", 38);
     st->size_data = sizeof(TOF);

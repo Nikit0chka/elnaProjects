@@ -79,11 +79,6 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26262 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL.VALUE
-    st = getVariable(26262);
+  { // 25164 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL.VALUE
+    st = getVariable(25164);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL.VALUE", 50);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26263 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL.RELIABILITY
-    st = getVariable(26263);
+  { // 25165 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL.RELIABILITY
+    st = getVariable(25165);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26264 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL._INVERSED
-    st = getVariable(26264);
+  { // 25166 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL._INVERSED
+    st = getVariable(25166);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.SIGNAL._INVERSED", 54);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26265 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.RELIABILITY
-    st = getVariable(26265);
+  { // 25167 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.RELIABILITY
+    st = getVariable(25167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26266 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.INVERSE
-    st = getVariable(26266);
+  { // 25168 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.INVERSE
+    st = getVariable(25168);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.INVERSE", 52);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26267 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DELAYON
-    st = getVariable(26267);
+  { // 25169 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DELAYON
+    st = getVariable(25169);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DELAYON", 52);
     st->size_data = sizeof(TIME);
@@ -259,8 +257,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26268 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DELAYOFF
-    st = getVariable(26268);
+  { // 25170 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DELAYOFF
+    st = getVariable(25170);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DELAYOFF", 53);
     st->size_data = sizeof(TIME);
@@ -271,8 +269,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26269 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.Q
-    st = getVariable(26269);
+  { // 25171 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.Q
+    st = getVariable(25171);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26270 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.STATUS
-    st = getVariable(26270);
+  { // 25172 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.STATUS
+    st = getVariable(25172);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26271 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DISABLED_SIG
-    st = getVariable(26271);
+  { // 25173 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DISABLED_SIG
+    st = getVariable(25173);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.STR_SS.DISABLED_SIG", 57);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26272 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.IN
-    st = getVariable(26272);
+  { // 25174 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.IN
+    st = getVariable(25174);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26273 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.PT
-    st = getVariable(26273);
+  { // 25175 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.PT
+    st = getVariable(25175);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.PT", 48);
     st->size_data = sizeof(TIME);
@@ -331,8 +329,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26274 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.Q
-    st = getVariable(26274);
+  { // 25176 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.Q
+    st = getVariable(25176);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26275 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.ET
-    st = getVariable(26275);
+  { // 25177 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.ET
+    st = getVariable(25177);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON.ET", 48);
     st->size_data = sizeof(TIME);
@@ -355,8 +353,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26276 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON
-    st = getVariable(26276);
+  { // 25178 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON
+    st = getVariable(25178);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMERON", 45);
     st->size_data = sizeof(TON);
@@ -366,8 +364,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26277 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.IN
-    st = getVariable(26277);
+  { // 25179 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.IN
+    st = getVariable(25179);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -378,8 +376,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26278 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.PT
-    st = getVariable(26278);
+  { // 25180 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.PT
+    st = getVariable(25180);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.PT", 49);
     st->size_data = sizeof(TIME);
@@ -390,8 +388,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26279 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.Q
-    st = getVariable(26279);
+  { // 25181 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.Q
+    st = getVariable(25181);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -402,8 +400,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26280 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.ET
-    st = getVariable(26280);
+  { // 25182 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.ET
+    st = getVariable(25182);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF.ET", 49);
     st->size_data = sizeof(TIME);
@@ -414,8 +412,8 @@ int __variables_init_FB_OSEVOISDVIG_PRAVO(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26281 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF
-    st = getVariable(26281);
+  { // 25183 PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF
+    st = getVariable(25183);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSEVOISDVIG_PRAVO.TIMEROFF", 46);
     st->size_data = sizeof(TOF);

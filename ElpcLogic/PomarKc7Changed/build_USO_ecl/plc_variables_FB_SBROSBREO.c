@@ -79,11 +79,6 @@ int __variables_init_FB_SBROSBREO(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_SBROSBREO(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_SBROSBREO(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27230 PROGRAM0.IM_PROC.FB_SBROSBREO.SIGNAL
-    st = getVariable(27230);
+  { // 26132 PROGRAM0.IM_PROC.FB_SBROSBREO.SIGNAL
+    st = getVariable(26132);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.SIGNAL", 36);
     st->size_data = sizeof(BOOL);
@@ -198,8 +196,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27231 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.WAIT_TIME
-    st = getVariable(27231);
+  { // 26133 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.WAIT_TIME
+    st = getVariable(26133);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.WAIT_TIME", 46);
     st->size_data = sizeof(TIME);
@@ -210,8 +208,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 27232 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND
-    st = getVariable(27232);
+  { // 26134 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND
+    st = getVariable(26134);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND", 46);
     st->size_data = sizeof(WORD);
@@ -222,8 +220,8 @@ int __variables_init_FB_SBROSBREO(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27233 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(27233);
+  { // 26135 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(26135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INOPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);
@@ -234,8 +232,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27234 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.Q
-    st = getVariable(27234);
+  { // 26136 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.Q
+    st = getVariable(26136);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.Q", 38);
     st->size_data = sizeof(BOOL);
@@ -246,8 +244,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 27235 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.STATUS
-    st = getVariable(27235);
+  { // 26137 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.STATUS
+    st = getVariable(26137);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.STATUS", 43);
     st->size_data = sizeof(DWORD);
@@ -258,8 +256,8 @@ int __variables_init_FB_SBROSBREO(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27236 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(27236);
+  { // 26138 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(26138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.OPCCOMMANDSDISABLED", 56);
     st->size_data = sizeof(BOOL);
@@ -270,8 +268,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27237 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND_ALG
-    st = getVariable(27237);
+  { // 26139 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND_ALG
+    st = getVariable(26139);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND_ALG", 50);
     st->size_data = sizeof(WORD);
@@ -282,8 +280,8 @@ int __variables_init_FB_SBROSBREO(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27238 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND_ARM
-    st = getVariable(27238);
+  { // 26140 PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND_ARM
+    st = getVariable(26140);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.STR_SO.INCOMMAND_ARM", 50);
     st->size_data = sizeof(WORD);
@@ -294,8 +292,8 @@ int __variables_init_FB_SBROSBREO(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27239 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.IN
-    st = getVariable(27239);
+  { // 26141 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.IN
+    st = getVariable(26141);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.IN", 43);
     st->size_data = sizeof(BOOL);
@@ -306,8 +304,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27240 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.PT
-    st = getVariable(27240);
+  { // 26142 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.PT
+    st = getVariable(26142);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.PT", 43);
     st->size_data = sizeof(TIME);
@@ -318,8 +316,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27241 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.Q
-    st = getVariable(27241);
+  { // 26143 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.Q
+    st = getVariable(26143);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -330,8 +328,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27242 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.ET
-    st = getVariable(27242);
+  { // 26144 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.ET
+    st = getVariable(26144);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER.ET", 43);
     st->size_data = sizeof(TIME);
@@ -342,8 +340,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27243 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER
-    st = getVariable(27243);
+  { // 26145 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER
+    st = getVariable(26145);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMER", 40);
     st->size_data = sizeof(TON);
@@ -353,8 +351,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27244 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.IN
-    st = getVariable(27244);
+  { // 26146 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.IN
+    st = getVariable(26146);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -365,8 +363,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27245 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.PT
-    st = getVariable(27245);
+  { // 26147 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.PT
+    st = getVariable(26147);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.PT", 46);
     st->size_data = sizeof(TIME);
@@ -377,8 +375,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27246 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.Q
-    st = getVariable(27246);
+  { // 26148 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.Q
+    st = getVariable(26148);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -389,8 +387,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27247 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.ET
-    st = getVariable(27247);
+  { // 26149 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.ET
+    st = getVariable(26149);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER.ET", 46);
     st->size_data = sizeof(TIME);
@@ -401,8 +399,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27248 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER
-    st = getVariable(27248);
+  { // 26150 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER
+    st = getVariable(26150);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMER", 43);
     st->size_data = sizeof(TON);
@@ -412,8 +410,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27249 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.IN
-    st = getVariable(27249);
+  { // 26151 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.IN
+    st = getVariable(26151);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -424,8 +422,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27250 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.PT
-    st = getVariable(27250);
+  { // 26152 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.PT
+    st = getVariable(26152);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.PT", 44);
     st->size_data = sizeof(TIME);
@@ -436,8 +434,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27251 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.Q
-    st = getVariable(27251);
+  { // 26153 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.Q
+    st = getVariable(26153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -448,8 +446,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27252 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.ET
-    st = getVariable(27252);
+  { // 26154 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.ET
+    st = getVariable(26154);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND.ET", 44);
     st->size_data = sizeof(TIME);
@@ -460,8 +458,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27253 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND
-    st = getVariable(27253);
+  { // 26155 PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND
+    st = getVariable(26155);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.TON_COMMAND", 41);
     st->size_data = sizeof(TON);
@@ -471,8 +469,8 @@ int __variables_init_FB_SBROSBREO(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 27254 PROGRAM0.IM_PROC.FB_SBROSBREO.SOURCE
-    st = getVariable(27254);
+  { // 26156 PROGRAM0.IM_PROC.FB_SBROSBREO.SOURCE
+    st = getVariable(26156);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.SOURCE", 36);
     st->size_data = sizeof(BYTE);
@@ -482,8 +480,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27255 PROGRAM0.IM_PROC.FB_SBROSBREO.CMD
-    st = getVariable(27255);
+  { // 26157 PROGRAM0.IM_PROC.FB_SBROSBREO.CMD
+    st = getVariable(26157);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.CMD", 33);
     st->size_data = sizeof(BYTE);
@@ -493,8 +491,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27256 PROGRAM0.IM_PROC.FB_SBROSBREO.LASTCMD
-    st = getVariable(27256);
+  { // 26158 PROGRAM0.IM_PROC.FB_SBROSBREO.LASTCMD
+    st = getVariable(26158);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.LASTCMD", 37);
     st->size_data = sizeof(BYTE);
@@ -504,8 +502,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27257 PROGRAM0.IM_PROC.FB_SBROSBREO.SOURCE_FOR_STATUS
-    st = getVariable(27257);
+  { // 26159 PROGRAM0.IM_PROC.FB_SBROSBREO.SOURCE_FOR_STATUS
+    st = getVariable(26159);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.SOURCE_FOR_STATUS", 47);
     st->size_data = sizeof(BYTE);
@@ -515,8 +513,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27258 PROGRAM0.IM_PROC.FB_SBROSBREO.CMD_FOR_STATUS
-    st = getVariable(27258);
+  { // 26160 PROGRAM0.IM_PROC.FB_SBROSBREO.CMD_FOR_STATUS
+    st = getVariable(26160);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.CMD_FOR_STATUS", 44);
     st->size_data = sizeof(BYTE);
@@ -526,8 +524,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27259 PROGRAM0.IM_PROC.FB_SBROSBREO.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27259);
+  { // 26161 PROGRAM0.IM_PROC.FB_SBROSBREO.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26161);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.COMMAND_ERROR_FOR_STATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -537,8 +535,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27260 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMERPRIZNAK
-    st = getVariable(27260);
+  { // 26162 PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMERPRIZNAK
+    st = getVariable(26162);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.PULSETIMERPRIZNAK", 47);
     st->size_data = sizeof(BOOL);
@@ -548,8 +546,8 @@ int __variables_init_FB_SBROSBREO(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27261 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMERPRIZNAK
-    st = getVariable(27261);
+  { // 26163 PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMERPRIZNAK
+    st = getVariable(26163);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SBROSBREO.RESETCMDTIMERPRIZNAK", 50);
     st->size_data = sizeof(BOOL);

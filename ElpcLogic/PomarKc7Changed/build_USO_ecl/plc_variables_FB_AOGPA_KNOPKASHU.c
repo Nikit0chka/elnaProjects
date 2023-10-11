@@ -79,11 +79,6 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26702 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL.VALUE
-    st = getVariable(26702);
+  { // 25604 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL.VALUE
+    st = getVariable(25604);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL.VALUE", 48);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26703 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL.RELIABILITY
-    st = getVariable(26703);
+  { // 25605 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL.RELIABILITY
+    st = getVariable(25605);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26704 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL._INVERSED
-    st = getVariable(26704);
+  { // 25606 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL._INVERSED
+    st = getVariable(25606);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.SIGNAL._INVERSED", 52);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26705 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.RELIABILITY
-    st = getVariable(26705);
+  { // 25607 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.RELIABILITY
+    st = getVariable(25607);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26706 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.INVERSE
-    st = getVariable(26706);
+  { // 25608 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.INVERSE
+    st = getVariable(25608);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.INVERSE", 50);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26707 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DELAYON
-    st = getVariable(26707);
+  { // 25609 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DELAYON
+    st = getVariable(25609);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DELAYON", 50);
     st->size_data = sizeof(TIME);
@@ -259,8 +257,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26708 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DELAYOFF
-    st = getVariable(26708);
+  { // 25610 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DELAYOFF
+    st = getVariable(25610);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DELAYOFF", 51);
     st->size_data = sizeof(TIME);
@@ -271,8 +269,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26709 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.Q
-    st = getVariable(26709);
+  { // 25611 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.Q
+    st = getVariable(25611);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26710 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.STATUS
-    st = getVariable(26710);
+  { // 25612 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.STATUS
+    st = getVariable(25612);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26711 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DISABLED_SIG
-    st = getVariable(26711);
+  { // 25613 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DISABLED_SIG
+    st = getVariable(25613);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.STR_SS.DISABLED_SIG", 55);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26712 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.IN
-    st = getVariable(26712);
+  { // 25614 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.IN
+    st = getVariable(25614);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26713 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.PT
-    st = getVariable(26713);
+  { // 25615 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.PT
+    st = getVariable(25615);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.PT", 46);
     st->size_data = sizeof(TIME);
@@ -331,8 +329,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26714 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.Q
-    st = getVariable(26714);
+  { // 25616 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.Q
+    st = getVariable(25616);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26715 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.ET
-    st = getVariable(26715);
+  { // 25617 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.ET
+    st = getVariable(25617);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON.ET", 46);
     st->size_data = sizeof(TIME);
@@ -355,8 +353,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26716 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON
-    st = getVariable(26716);
+  { // 25618 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON
+    st = getVariable(25618);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMERON", 43);
     st->size_data = sizeof(TON);
@@ -366,8 +364,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26717 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.IN
-    st = getVariable(26717);
+  { // 25619 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.IN
+    st = getVariable(25619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -378,8 +376,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26718 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.PT
-    st = getVariable(26718);
+  { // 25620 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.PT
+    st = getVariable(25620);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.PT", 47);
     st->size_data = sizeof(TIME);
@@ -390,8 +388,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26719 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.Q
-    st = getVariable(26719);
+  { // 25621 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.Q
+    st = getVariable(25621);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -402,8 +400,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26720 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.ET
-    st = getVariable(26720);
+  { // 25622 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.ET
+    st = getVariable(25622);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF.ET", 47);
     st->size_data = sizeof(TIME);
@@ -414,8 +412,8 @@ int __variables_init_FB_AOGPA_KNOPKASHU(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26721 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF
-    st = getVariable(26721);
+  { // 25623 PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF
+    st = getVariable(25623);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AOGPA_KNOPKASHU.TIMEROFF", 44);
     st->size_data = sizeof(TOF);

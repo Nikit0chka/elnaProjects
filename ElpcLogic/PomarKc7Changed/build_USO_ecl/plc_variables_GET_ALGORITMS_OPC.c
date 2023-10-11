@@ -79,11 +79,6 @@ int __variables_init_GET_ALGORITMS_OPC(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_GET_ALGORITMS_OPC(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 20057 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INRUNONSTART
-    st = getVariable(20057);
+  { // 18547 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INRUNONSTART
+    st = getVariable(18547);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INRUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20058 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCANRUN
-    st = getVariable(20058);
+  { // 18548 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCANRUN
+    st = getVariable(18548);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20059 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INHASERROR
-    st = getVariable(20059);
+  { // 18549 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INHASERROR
+    st = getVariable(18549);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INHASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20060 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INENDED
-    st = getVariable(20060);
+  { // 18550 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INENDED
+    st = getVariable(18550);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20061 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INOPCCOMMANDSDISABLED
-    st = getVariable(20061);
+  { // 18551 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INOPCCOMMANDSDISABLED
+    st = getVariable(18551);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20062 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND
-    st = getVariable(20062);
+  { // 18552 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND
+    st = getVariable(18552);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -259,8 +257,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20063 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND_ARM
-    st = getVariable(20063);
+  { // 18553 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND_ARM
+    st = getVariable(18553);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -271,8 +269,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20064 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND_ALG
-    st = getVariable(20064);
+  { // 18554 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND_ALG
+    st = getVariable(18554);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -283,8 +281,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20065 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.STATUS
-    st = getVariable(20065);
+  { // 18555 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.STATUS
+    st = getVariable(18555);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20066 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.CANRUN
-    st = getVariable(20066);
+  { // 18556 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.CANRUN
+    st = getVariable(18556);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.CANRUN", 50);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20067 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.OPCCOMMANDSDISABLED
-    st = getVariable(20067);
+  { // 18557 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.OPCCOMMANDSDISABLED
+    st = getVariable(18557);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20068 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ISRUNING
-    st = getVariable(20068);
+  { // 18558 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ISRUNING
+    st = getVariable(18558);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ISRUNING", 52);
     st->size_data = sizeof(BOOL);
@@ -331,8 +329,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20069 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.HASERROR
-    st = getVariable(20069);
+  { // 18559 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.HASERROR
+    st = getVariable(18559);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.HASERROR", 52);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20070 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ISENDED
-    st = getVariable(20070);
+  { // 18560 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ISENDED
+    st = getVariable(18560);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ISENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -355,8 +353,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20071 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.RUNONSTART
-    st = getVariable(20071);
+  { // 18561 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.RUNONSTART
+    st = getVariable(18561);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.RUNONSTART", 54);
     st->size_data = sizeof(BOOL);
@@ -367,8 +365,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20072 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.START
-    st = getVariable(20072);
+  { // 18562 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.START
+    st = getVariable(18562);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.START", 49);
     st->size_data = sizeof(DWORD);
@@ -379,8 +377,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20073 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ERROR
-    st = getVariable(20073);
+  { // 18563 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ERROR
+    st = getVariable(18563);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.ERROR", 49);
     st->size_data = sizeof(DWORD);
@@ -391,8 +389,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20074 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.TOP
-    st = getVariable(20074);
+  { // 18564 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.TOP
+    st = getVariable(18564);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTONU.TOP", 47);
     st->size_data = sizeof(DWORD);
@@ -403,8 +401,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20075 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INRUNONSTART
-    st = getVariable(20075);
+  { // 18565 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INRUNONSTART
+    st = getVariable(18565);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INRUNONSTART", 57);
     st->size_data = sizeof(BOOL);
@@ -415,8 +413,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20076 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCANRUN
-    st = getVariable(20076);
+  { // 18566 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCANRUN
+    st = getVariable(18566);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCANRUN", 53);
     st->size_data = sizeof(BOOL);
@@ -427,8 +425,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20077 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INHASERROR
-    st = getVariable(20077);
+  { // 18567 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INHASERROR
+    st = getVariable(18567);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INHASERROR", 55);
     st->size_data = sizeof(BOOL);
@@ -439,8 +437,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20078 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INENDED
-    st = getVariable(20078);
+  { // 18568 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INENDED
+    st = getVariable(18568);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -451,8 +449,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20079 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INOPCCOMMANDSDISABLED
-    st = getVariable(20079);
+  { // 18569 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INOPCCOMMANDSDISABLED
+    st = getVariable(18569);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -463,8 +461,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20080 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND
-    st = getVariable(20080);
+  { // 18570 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND
+    st = getVariable(18570);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -475,8 +473,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20081 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND_ARM
-    st = getVariable(20081);
+  { // 18571 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND_ARM
+    st = getVariable(18571);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -487,8 +485,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20082 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND_ALG
-    st = getVariable(20082);
+  { // 18572 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND_ALG
+    st = getVariable(18572);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -499,8 +497,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20083 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.STATUS
-    st = getVariable(20083);
+  { // 18573 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.STATUS
+    st = getVariable(18573);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -511,8 +509,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20084 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.CANRUN
-    st = getVariable(20084);
+  { // 18574 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.CANRUN
+    st = getVariable(18574);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.CANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -523,8 +521,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20085 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.OPCCOMMANDSDISABLED
-    st = getVariable(20085);
+  { // 18575 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.OPCCOMMANDSDISABLED
+    st = getVariable(18575);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -535,8 +533,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20086 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ISRUNING
-    st = getVariable(20086);
+  { // 18576 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ISRUNING
+    st = getVariable(18576);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ISRUNING", 53);
     st->size_data = sizeof(BOOL);
@@ -547,8 +545,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20087 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.HASERROR
-    st = getVariable(20087);
+  { // 18577 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.HASERROR
+    st = getVariable(18577);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.HASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -559,8 +557,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20088 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ISENDED
-    st = getVariable(20088);
+  { // 18578 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ISENDED
+    st = getVariable(18578);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ISENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -571,8 +569,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20089 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.RUNONSTART
-    st = getVariable(20089);
+  { // 18579 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.RUNONSTART
+    st = getVariable(18579);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.RUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -583,8 +581,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20090 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.START
-    st = getVariable(20090);
+  { // 18580 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.START
+    st = getVariable(18580);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.START", 50);
     st->size_data = sizeof(DWORD);
@@ -595,8 +593,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20091 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ERROR
-    st = getVariable(20091);
+  { // 18581 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ERROR
+    st = getVariable(18581);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.ERROR", 50);
     st->size_data = sizeof(DWORD);
@@ -607,8 +605,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20092 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.TOP
-    st = getVariable(20092);
+  { // 18582 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.TOP
+    st = getVariable(18582);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOPNS.TOP", 48);
     st->size_data = sizeof(DWORD);
@@ -619,8 +617,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20093 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INRUNONSTART
-    st = getVariable(20093);
+  { // 18583 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INRUNONSTART
+    st = getVariable(18583);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INRUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -631,8 +629,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20094 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCANRUN
-    st = getVariable(20094);
+  { // 18584 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCANRUN
+    st = getVariable(18584);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -643,8 +641,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20095 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INHASERROR
-    st = getVariable(20095);
+  { // 18585 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INHASERROR
+    st = getVariable(18585);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INHASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -655,8 +653,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20096 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INENDED
-    st = getVariable(20096);
+  { // 18586 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INENDED
+    st = getVariable(18586);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INENDED", 53);
     st->size_data = sizeof(BOOL);
@@ -667,8 +665,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20097 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(20097);
+  { // 18587 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(18587);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -679,8 +677,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20098 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND
-    st = getVariable(20098);
+  { // 18588 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND
+    st = getVariable(18588);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -691,8 +689,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20099 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND_ARM
-    st = getVariable(20099);
+  { // 18589 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND_ARM
+    st = getVariable(18589);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -703,8 +701,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20100 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND_ALG
-    st = getVariable(20100);
+  { // 18590 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND_ALG
+    st = getVariable(18590);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -715,8 +713,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20101 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.STATUS
-    st = getVariable(20101);
+  { // 18591 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.STATUS
+    st = getVariable(18591);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -727,8 +725,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20102 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.CANRUN
-    st = getVariable(20102);
+  { // 18592 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.CANRUN
+    st = getVariable(18592);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.CANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -739,8 +737,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20103 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.OPCCOMMANDSDISABLED
-    st = getVariable(20103);
+  { // 18593 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.OPCCOMMANDSDISABLED
+    st = getVariable(18593);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -751,8 +749,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20104 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ISRUNING
-    st = getVariable(20104);
+  { // 18594 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ISRUNING
+    st = getVariable(18594);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ISRUNING", 54);
     st->size_data = sizeof(BOOL);
@@ -763,8 +761,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20105 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.HASERROR
-    st = getVariable(20105);
+  { // 18595 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.HASERROR
+    st = getVariable(18595);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.HASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -775,8 +773,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20106 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ISENDED
-    st = getVariable(20106);
+  { // 18596 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ISENDED
+    st = getVariable(18596);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ISENDED", 53);
     st->size_data = sizeof(BOOL);
@@ -787,8 +785,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20107 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.RUNONSTART
-    st = getVariable(20107);
+  { // 18597 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.RUNONSTART
+    st = getVariable(18597);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.RUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -799,8 +797,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20108 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.START
-    st = getVariable(20108);
+  { // 18598 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.START
+    st = getVariable(18598);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.START", 51);
     st->size_data = sizeof(DWORD);
@@ -811,8 +809,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20109 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ERROR
-    st = getVariable(20109);
+  { // 18599 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ERROR
+    st = getVariable(18599);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.ERROR", 51);
     st->size_data = sizeof(DWORD);
@@ -823,8 +821,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20110 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.TOP
-    st = getVariable(20110);
+  { // 18600 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.TOP
+    st = getVariable(18600);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOAVOM.TOP", 49);
     st->size_data = sizeof(DWORD);
@@ -835,8 +833,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20111 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INRUNONSTART
-    st = getVariable(20111);
+  { // 18601 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INRUNONSTART
+    st = getVariable(18601);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INRUNONSTART", 57);
     st->size_data = sizeof(BOOL);
@@ -847,8 +845,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20112 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCANRUN
-    st = getVariable(20112);
+  { // 18602 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCANRUN
+    st = getVariable(18602);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCANRUN", 53);
     st->size_data = sizeof(BOOL);
@@ -859,8 +857,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20113 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INHASERROR
-    st = getVariable(20113);
+  { // 18603 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INHASERROR
+    st = getVariable(18603);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INHASERROR", 55);
     st->size_data = sizeof(BOOL);
@@ -871,8 +869,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20114 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INENDED
-    st = getVariable(20114);
+  { // 18604 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INENDED
+    st = getVariable(18604);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -883,8 +881,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20115 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INOPCCOMMANDSDISABLED
-    st = getVariable(20115);
+  { // 18605 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INOPCCOMMANDSDISABLED
+    st = getVariable(18605);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -895,8 +893,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20116 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND
-    st = getVariable(20116);
+  { // 18606 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND
+    st = getVariable(18606);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -907,8 +905,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20117 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND_ARM
-    st = getVariable(20117);
+  { // 18607 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND_ARM
+    st = getVariable(18607);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -919,8 +917,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20118 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND_ALG
-    st = getVariable(20118);
+  { // 18608 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND_ALG
+    st = getVariable(18608);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -931,8 +929,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20119 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.STATUS
-    st = getVariable(20119);
+  { // 18609 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.STATUS
+    st = getVariable(18609);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -943,8 +941,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20120 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.CANRUN
-    st = getVariable(20120);
+  { // 18610 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.CANRUN
+    st = getVariable(18610);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.CANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -955,8 +953,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20121 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.OPCCOMMANDSDISABLED
-    st = getVariable(20121);
+  { // 18611 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.OPCCOMMANDSDISABLED
+    st = getVariable(18611);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -967,8 +965,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20122 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ISRUNING
-    st = getVariable(20122);
+  { // 18612 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ISRUNING
+    st = getVariable(18612);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ISRUNING", 53);
     st->size_data = sizeof(BOOL);
@@ -979,8 +977,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20123 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.HASERROR
-    st = getVariable(20123);
+  { // 18613 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.HASERROR
+    st = getVariable(18613);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.HASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -991,8 +989,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20124 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ISENDED
-    st = getVariable(20124);
+  { // 18614 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ISENDED
+    st = getVariable(18614);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ISENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -1003,8 +1001,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20125 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.RUNONSTART
-    st = getVariable(20125);
+  { // 18615 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.RUNONSTART
+    st = getVariable(18615);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.RUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -1015,8 +1013,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20126 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.START
-    st = getVariable(20126);
+  { // 18616 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.START
+    st = getVariable(18616);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.START", 50);
     st->size_data = sizeof(DWORD);
@@ -1027,8 +1025,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20127 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ERROR
-    st = getVariable(20127);
+  { // 18617 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ERROR
+    st = getVariable(18617);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.ERROR", 50);
     st->size_data = sizeof(DWORD);
@@ -1039,8 +1037,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20128 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.TOP
-    st = getVariable(20128);
+  { // 18618 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.TOP
+    st = getVariable(18618);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AUTOTEN.TOP", 48);
     st->size_data = sizeof(DWORD);
@@ -1051,8 +1049,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20129 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INRUNONSTART
-    st = getVariable(20129);
+  { // 18619 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INRUNONSTART
+    st = getVariable(18619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INRUNONSTART", 60);
     st->size_data = sizeof(BOOL);
@@ -1063,8 +1061,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20130 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCANRUN
-    st = getVariable(20130);
+  { // 18620 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCANRUN
+    st = getVariable(18620);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCANRUN", 56);
     st->size_data = sizeof(BOOL);
@@ -1075,8 +1073,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20131 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INHASERROR
-    st = getVariable(20131);
+  { // 18621 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INHASERROR
+    st = getVariable(18621);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INHASERROR", 58);
     st->size_data = sizeof(BOOL);
@@ -1087,8 +1085,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20132 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INENDED
-    st = getVariable(20132);
+  { // 18622 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INENDED
+    st = getVariable(18622);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -1099,8 +1097,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20133 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INOPCCOMMANDSDISABLED
-    st = getVariable(20133);
+  { // 18623 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INOPCCOMMANDSDISABLED
+    st = getVariable(18623);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -1111,8 +1109,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20134 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND
-    st = getVariable(20134);
+  { // 18624 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND
+    st = getVariable(18624);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -1123,8 +1121,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20135 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND_ARM
-    st = getVariable(20135);
+  { // 18625 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND_ARM
+    st = getVariable(18625);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -1135,8 +1133,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20136 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND_ALG
-    st = getVariable(20136);
+  { // 18626 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND_ALG
+    st = getVariable(18626);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -1147,8 +1145,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20137 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.STATUS
-    st = getVariable(20137);
+  { // 18627 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.STATUS
+    st = getVariable(18627);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -1159,8 +1157,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20138 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.CANRUN
-    st = getVariable(20138);
+  { // 18628 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.CANRUN
+    st = getVariable(18628);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.CANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -1171,8 +1169,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20139 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.OPCCOMMANDSDISABLED
-    st = getVariable(20139);
+  { // 18629 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.OPCCOMMANDSDISABLED
+    st = getVariable(18629);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -1183,8 +1181,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20140 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ISRUNING
-    st = getVariable(20140);
+  { // 18630 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ISRUNING
+    st = getVariable(18630);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ISRUNING", 56);
     st->size_data = sizeof(BOOL);
@@ -1195,8 +1193,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20141 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.HASERROR
-    st = getVariable(20141);
+  { // 18631 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.HASERROR
+    st = getVariable(18631);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.HASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -1207,8 +1205,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20142 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ISENDED
-    st = getVariable(20142);
+  { // 18632 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ISENDED
+    st = getVariable(18632);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ISENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -1219,8 +1217,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20143 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.RUNONSTART
-    st = getVariable(20143);
+  { // 18633 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.RUNONSTART
+    st = getVariable(18633);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.RUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -1231,8 +1229,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20144 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.START
-    st = getVariable(20144);
+  { // 18634 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.START
+    st = getVariable(18634);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.START", 53);
     st->size_data = sizeof(DWORD);
@@ -1243,8 +1241,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20145 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ERROR
-    st = getVariable(20145);
+  { // 18635 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ERROR
+    st = getVariable(18635);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.ERROR", 53);
     st->size_data = sizeof(DWORD);
@@ -1255,8 +1253,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20146 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.TOP
-    st = getVariable(20146);
+  { // 18636 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.TOP
+    st = getVariable(18636);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ANTIPOMPAG.TOP", 51);
     st->size_data = sizeof(DWORD);
@@ -1267,8 +1265,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20147 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INRUNONSTART
-    st = getVariable(20147);
+  { // 18637 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INRUNONSTART
+    st = getVariable(18637);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INRUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -1279,8 +1277,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20148 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCANRUN
-    st = getVariable(20148);
+  { // 18638 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCANRUN
+    st = getVariable(18638);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -1291,8 +1289,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20149 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INHASERROR
-    st = getVariable(20149);
+  { // 18639 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INHASERROR
+    st = getVariable(18639);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INHASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -1303,8 +1301,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20150 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INENDED
-    st = getVariable(20150);
+  { // 18640 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INENDED
+    st = getVariable(18640);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -1315,8 +1313,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20151 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INOPCCOMMANDSDISABLED
-    st = getVariable(20151);
+  { // 18641 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INOPCCOMMANDSDISABLED
+    st = getVariable(18641);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1327,8 +1325,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20152 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND
-    st = getVariable(20152);
+  { // 18642 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND
+    st = getVariable(18642);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -1339,8 +1337,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20153 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND_ARM
-    st = getVariable(20153);
+  { // 18643 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND_ARM
+    st = getVariable(18643);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -1351,8 +1349,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20154 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND_ALG
-    st = getVariable(20154);
+  { // 18644 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND_ALG
+    st = getVariable(18644);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -1363,8 +1361,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20155 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.STATUS
-    st = getVariable(20155);
+  { // 18645 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.STATUS
+    st = getVariable(18645);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -1375,8 +1373,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20156 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.CANRUN
-    st = getVariable(20156);
+  { // 18646 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.CANRUN
+    st = getVariable(18646);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.CANRUN", 50);
     st->size_data = sizeof(BOOL);
@@ -1387,8 +1385,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20157 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.OPCCOMMANDSDISABLED
-    st = getVariable(20157);
+  { // 18647 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.OPCCOMMANDSDISABLED
+    st = getVariable(18647);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -1399,8 +1397,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20158 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ISRUNING
-    st = getVariable(20158);
+  { // 18648 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ISRUNING
+    st = getVariable(18648);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ISRUNING", 52);
     st->size_data = sizeof(BOOL);
@@ -1411,8 +1409,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20159 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.HASERROR
-    st = getVariable(20159);
+  { // 18649 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.HASERROR
+    st = getVariable(18649);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.HASERROR", 52);
     st->size_data = sizeof(BOOL);
@@ -1423,8 +1421,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20160 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ISENDED
-    st = getVariable(20160);
+  { // 18650 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ISENDED
+    st = getVariable(18650);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ISENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -1435,8 +1433,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20161 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.RUNONSTART
-    st = getVariable(20161);
+  { // 18651 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.RUNONSTART
+    st = getVariable(18651);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.RUNONSTART", 54);
     st->size_data = sizeof(BOOL);
@@ -1447,8 +1445,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20162 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.START
-    st = getVariable(20162);
+  { // 18652 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.START
+    st = getVariable(18652);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.START", 49);
     st->size_data = sizeof(DWORD);
@@ -1459,8 +1457,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20163 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ERROR
-    st = getVariable(20163);
+  { // 18653 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ERROR
+    st = getVariable(18653);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.ERROR", 49);
     st->size_data = sizeof(DWORD);
@@ -1471,8 +1469,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20164 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.TOP
-    st = getVariable(20164);
+  { // 18654 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.TOP
+    st = getVariable(18654);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTIM.TOP", 47);
     st->size_data = sizeof(DWORD);
@@ -1483,8 +1481,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20165 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INRUNONSTART
-    st = getVariable(20165);
+  { // 18655 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INRUNONSTART
+    st = getVariable(18655);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INRUNONSTART", 64);
     st->size_data = sizeof(BOOL);
@@ -1495,8 +1493,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20166 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCANRUN
-    st = getVariable(20166);
+  { // 18656 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCANRUN
+    st = getVariable(18656);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCANRUN", 60);
     st->size_data = sizeof(BOOL);
@@ -1507,8 +1505,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20167 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INHASERROR
-    st = getVariable(20167);
+  { // 18657 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INHASERROR
+    st = getVariable(18657);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INHASERROR", 62);
     st->size_data = sizeof(BOOL);
@@ -1519,8 +1517,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20168 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INENDED
-    st = getVariable(20168);
+  { // 18658 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INENDED
+    st = getVariable(18658);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INENDED", 59);
     st->size_data = sizeof(BOOL);
@@ -1531,8 +1529,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20169 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INOPCCOMMANDSDISABLED
-    st = getVariable(20169);
+  { // 18659 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INOPCCOMMANDSDISABLED
+    st = getVariable(18659);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INOPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -1543,8 +1541,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20170 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND
-    st = getVariable(20170);
+  { // 18660 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND
+    st = getVariable(18660);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -1555,8 +1553,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20171 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND_ARM
-    st = getVariable(20171);
+  { // 18661 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND_ARM
+    st = getVariable(18661);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND_ARM", 65);
     st->size_data = sizeof(WORD);
@@ -1567,8 +1565,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20172 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND_ALG
-    st = getVariable(20172);
+  { // 18662 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND_ALG
+    st = getVariable(18662);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.INCOMMAND_ALG", 65);
     st->size_data = sizeof(WORD);
@@ -1579,8 +1577,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20173 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.STATUS
-    st = getVariable(20173);
+  { // 18663 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.STATUS
+    st = getVariable(18663);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -1591,8 +1589,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20174 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.CANRUN
-    st = getVariable(20174);
+  { // 18664 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.CANRUN
+    st = getVariable(18664);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.CANRUN", 58);
     st->size_data = sizeof(BOOL);
@@ -1603,8 +1601,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20175 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.OPCCOMMANDSDISABLED
-    st = getVariable(20175);
+  { // 18665 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.OPCCOMMANDSDISABLED
+    st = getVariable(18665);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.OPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -1615,8 +1613,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20176 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ISRUNING
-    st = getVariable(20176);
+  { // 18666 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ISRUNING
+    st = getVariable(18666);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ISRUNING", 60);
     st->size_data = sizeof(BOOL);
@@ -1627,8 +1625,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20177 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.HASERROR
-    st = getVariable(20177);
+  { // 18667 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.HASERROR
+    st = getVariable(18667);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.HASERROR", 60);
     st->size_data = sizeof(BOOL);
@@ -1639,8 +1637,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20178 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ISENDED
-    st = getVariable(20178);
+  { // 18668 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ISENDED
+    st = getVariable(18668);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ISENDED", 59);
     st->size_data = sizeof(BOOL);
@@ -1651,8 +1649,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20179 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.RUNONSTART
-    st = getVariable(20179);
+  { // 18669 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.RUNONSTART
+    st = getVariable(18669);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.RUNONSTART", 62);
     st->size_data = sizeof(BOOL);
@@ -1663,8 +1661,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20180 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.START
-    st = getVariable(20180);
+  { // 18670 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.START
+    st = getVariable(18670);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.START", 57);
     st->size_data = sizeof(DWORD);
@@ -1675,8 +1673,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20181 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ERROR
-    st = getVariable(20181);
+  { // 18671 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ERROR
+    st = getVariable(18671);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.ERROR", 57);
     st->size_data = sizeof(DWORD);
@@ -1687,8 +1685,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20182 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.TOP
-    st = getVariable(20182);
+  { // 18672 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.TOP
+    st = getVariable(18672);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPROTECTION.TOP", 55);
     st->size_data = sizeof(DWORD);
@@ -1699,8 +1697,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20183 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INRUNONSTART
-    st = getVariable(20183);
+  { // 18673 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INRUNONSTART
+    st = getVariable(18673);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INRUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -1711,8 +1709,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20184 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCANRUN
-    st = getVariable(20184);
+  { // 18674 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCANRUN
+    st = getVariable(18674);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -1723,8 +1721,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20185 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INHASERROR
-    st = getVariable(20185);
+  { // 18675 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INHASERROR
+    st = getVariable(18675);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INHASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -1735,8 +1733,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20186 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INENDED
-    st = getVariable(20186);
+  { // 18676 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INENDED
+    st = getVariable(18676);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -1747,8 +1745,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20187 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INOPCCOMMANDSDISABLED
-    st = getVariable(20187);
+  { // 18677 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INOPCCOMMANDSDISABLED
+    st = getVariable(18677);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1759,8 +1757,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20188 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND
-    st = getVariable(20188);
+  { // 18678 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND
+    st = getVariable(18678);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -1771,8 +1769,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20189 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND_ARM
-    st = getVariable(20189);
+  { // 18679 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND_ARM
+    st = getVariable(18679);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -1783,8 +1781,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20190 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND_ALG
-    st = getVariable(20190);
+  { // 18680 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND_ALG
+    st = getVariable(18680);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -1795,8 +1793,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20191 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.STATUS
-    st = getVariable(20191);
+  { // 18681 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.STATUS
+    st = getVariable(18681);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -1807,8 +1805,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20192 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.CANRUN
-    st = getVariable(20192);
+  { // 18682 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.CANRUN
+    st = getVariable(18682);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.CANRUN", 50);
     st->size_data = sizeof(BOOL);
@@ -1819,8 +1817,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20193 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.OPCCOMMANDSDISABLED
-    st = getVariable(20193);
+  { // 18683 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.OPCCOMMANDSDISABLED
+    st = getVariable(18683);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -1831,8 +1829,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20194 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ISRUNING
-    st = getVariable(20194);
+  { // 18684 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ISRUNING
+    st = getVariable(18684);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ISRUNING", 52);
     st->size_data = sizeof(BOOL);
@@ -1843,8 +1841,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20195 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.HASERROR
-    st = getVariable(20195);
+  { // 18685 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.HASERROR
+    st = getVariable(18685);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.HASERROR", 52);
     st->size_data = sizeof(BOOL);
@@ -1855,8 +1853,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20196 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ISENDED
-    st = getVariable(20196);
+  { // 18686 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ISENDED
+    st = getVariable(18686);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ISENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -1867,8 +1865,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20197 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.RUNONSTART
-    st = getVariable(20197);
+  { // 18687 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.RUNONSTART
+    st = getVariable(18687);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.RUNONSTART", 54);
     st->size_data = sizeof(BOOL);
@@ -1879,8 +1877,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20198 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.START
-    st = getVariable(20198);
+  { // 18688 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.START
+    st = getVariable(18688);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.START", 49);
     st->size_data = sizeof(DWORD);
@@ -1891,8 +1889,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20199 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ERROR
-    st = getVariable(20199);
+  { // 18689 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ERROR
+    st = getVariable(18689);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.ERROR", 49);
     st->size_data = sizeof(DWORD);
@@ -1903,8 +1901,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20200 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.TOP
-    st = getVariable(20200);
+  { // 18690 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.TOP
+    st = getVariable(18690);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.REMONT.TOP", 47);
     st->size_data = sizeof(DWORD);
@@ -1915,8 +1913,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20201 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INRUNONSTART
-    st = getVariable(20201);
+  { // 18691 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INRUNONSTART
+    st = getVariable(18691);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INRUNONSTART", 53);
     st->size_data = sizeof(BOOL);
@@ -1927,8 +1925,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20202 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCANRUN
-    st = getVariable(20202);
+  { // 18692 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCANRUN
+    st = getVariable(18692);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCANRUN", 49);
     st->size_data = sizeof(BOOL);
@@ -1939,8 +1937,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20203 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INHASERROR
-    st = getVariable(20203);
+  { // 18693 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INHASERROR
+    st = getVariable(18693);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INHASERROR", 51);
     st->size_data = sizeof(BOOL);
@@ -1951,8 +1949,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20204 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INENDED
-    st = getVariable(20204);
+  { // 18694 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INENDED
+    st = getVariable(18694);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INENDED", 48);
     st->size_data = sizeof(BOOL);
@@ -1963,8 +1961,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20205 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INOPCCOMMANDSDISABLED
-    st = getVariable(20205);
+  { // 18695 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INOPCCOMMANDSDISABLED
+    st = getVariable(18695);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -1975,8 +1973,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20206 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND
-    st = getVariable(20206);
+  { // 18696 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND
+    st = getVariable(18696);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -1987,8 +1985,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20207 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND_ARM
-    st = getVariable(20207);
+  { // 18697 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND_ARM
+    st = getVariable(18697);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -1999,8 +1997,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20208 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND_ALG
-    st = getVariable(20208);
+  { // 18698 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND_ALG
+    st = getVariable(18698);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -2011,8 +2009,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20209 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.STATUS
-    st = getVariable(20209);
+  { // 18699 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.STATUS
+    st = getVariable(18699);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -2023,8 +2021,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20210 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.CANRUN
-    st = getVariable(20210);
+  { // 18700 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.CANRUN
+    st = getVariable(18700);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.CANRUN", 47);
     st->size_data = sizeof(BOOL);
@@ -2035,8 +2033,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20211 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.OPCCOMMANDSDISABLED
-    st = getVariable(20211);
+  { // 18701 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.OPCCOMMANDSDISABLED
+    st = getVariable(18701);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -2047,8 +2045,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20212 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ISRUNING
-    st = getVariable(20212);
+  { // 18702 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ISRUNING
+    st = getVariable(18702);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ISRUNING", 49);
     st->size_data = sizeof(BOOL);
@@ -2059,8 +2057,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20213 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.HASERROR
-    st = getVariable(20213);
+  { // 18703 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.HASERROR
+    st = getVariable(18703);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.HASERROR", 49);
     st->size_data = sizeof(BOOL);
@@ -2071,8 +2069,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20214 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ISENDED
-    st = getVariable(20214);
+  { // 18704 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ISENDED
+    st = getVariable(18704);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ISENDED", 48);
     st->size_data = sizeof(BOOL);
@@ -2083,8 +2081,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20215 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.RUNONSTART
-    st = getVariable(20215);
+  { // 18705 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.RUNONSTART
+    st = getVariable(18705);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.RUNONSTART", 51);
     st->size_data = sizeof(BOOL);
@@ -2095,8 +2093,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20216 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.START
-    st = getVariable(20216);
+  { // 18706 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.START
+    st = getVariable(18706);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.START", 46);
     st->size_data = sizeof(DWORD);
@@ -2107,8 +2105,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20217 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ERROR
-    st = getVariable(20217);
+  { // 18707 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ERROR
+    st = getVariable(18707);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.ERROR", 46);
     st->size_data = sizeof(DWORD);
@@ -2119,8 +2117,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20218 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.TOP
-    st = getVariable(20218);
+  { // 18708 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.TOP
+    st = getVariable(18708);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PPU.TOP", 44);
     st->size_data = sizeof(DWORD);
@@ -2131,8 +2129,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20219 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INRUNONSTART
-    st = getVariable(20219);
+  { // 18709 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INRUNONSTART
+    st = getVariable(18709);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INRUNONSTART", 63);
     st->size_data = sizeof(BOOL);
@@ -2143,8 +2141,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20220 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCANRUN
-    st = getVariable(20220);
+  { // 18710 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCANRUN
+    st = getVariable(18710);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCANRUN", 59);
     st->size_data = sizeof(BOOL);
@@ -2155,8 +2153,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20221 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INHASERROR
-    st = getVariable(20221);
+  { // 18711 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INHASERROR
+    st = getVariable(18711);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INHASERROR", 61);
     st->size_data = sizeof(BOOL);
@@ -2167,8 +2165,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20222 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INENDED
-    st = getVariable(20222);
+  { // 18712 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INENDED
+    st = getVariable(18712);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INENDED", 58);
     st->size_data = sizeof(BOOL);
@@ -2179,8 +2177,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20223 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INOPCCOMMANDSDISABLED
-    st = getVariable(20223);
+  { // 18713 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INOPCCOMMANDSDISABLED
+    st = getVariable(18713);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INOPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -2191,8 +2189,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20224 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND
-    st = getVariable(20224);
+  { // 18714 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND
+    st = getVariable(18714);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -2203,8 +2201,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20225 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND_ARM
-    st = getVariable(20225);
+  { // 18715 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND_ARM
+    st = getVariable(18715);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND_ARM", 64);
     st->size_data = sizeof(WORD);
@@ -2215,8 +2213,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20226 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND_ALG
-    st = getVariable(20226);
+  { // 18716 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND_ALG
+    st = getVariable(18716);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.INCOMMAND_ALG", 64);
     st->size_data = sizeof(WORD);
@@ -2227,8 +2225,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20227 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.STATUS
-    st = getVariable(20227);
+  { // 18717 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.STATUS
+    st = getVariable(18717);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.STATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -2239,8 +2237,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20228 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.CANRUN
-    st = getVariable(20228);
+  { // 18718 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.CANRUN
+    st = getVariable(18718);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.CANRUN", 57);
     st->size_data = sizeof(BOOL);
@@ -2251,8 +2249,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20229 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.OPCCOMMANDSDISABLED
-    st = getVariable(20229);
+  { // 18719 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.OPCCOMMANDSDISABLED
+    st = getVariable(18719);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.OPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -2263,8 +2261,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20230 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ISRUNING
-    st = getVariable(20230);
+  { // 18720 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ISRUNING
+    st = getVariable(18720);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ISRUNING", 59);
     st->size_data = sizeof(BOOL);
@@ -2275,8 +2273,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20231 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.HASERROR
-    st = getVariable(20231);
+  { // 18721 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.HASERROR
+    st = getVariable(18721);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.HASERROR", 59);
     st->size_data = sizeof(BOOL);
@@ -2287,8 +2285,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20232 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ISENDED
-    st = getVariable(20232);
+  { // 18722 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ISENDED
+    st = getVariable(18722);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ISENDED", 58);
     st->size_data = sizeof(BOOL);
@@ -2299,8 +2297,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20233 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.RUNONSTART
-    st = getVariable(20233);
+  { // 18723 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.RUNONSTART
+    st = getVariable(18723);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.RUNONSTART", 61);
     st->size_data = sizeof(BOOL);
@@ -2311,8 +2309,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20234 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.START
-    st = getVariable(20234);
+  { // 18724 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.START
+    st = getVariable(18724);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.START", 56);
     st->size_data = sizeof(DWORD);
@@ -2323,8 +2321,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20235 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ERROR
-    st = getVariable(20235);
+  { // 18725 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ERROR
+    st = getVariable(18725);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.ERROR", 56);
     st->size_data = sizeof(DWORD);
@@ -2335,8 +2333,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20236 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.TOP
-    st = getVariable(20236);
+  { // 18726 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.TOP
+    st = getVariable(18726);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKOILSYSTEM.TOP", 54);
     st->size_data = sizeof(DWORD);
@@ -2347,8 +2345,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20237 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INRUNONSTART
-    st = getVariable(20237);
+  { // 18727 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INRUNONSTART
+    st = getVariable(18727);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INRUNONSTART", 59);
     st->size_data = sizeof(BOOL);
@@ -2359,8 +2357,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20238 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCANRUN
-    st = getVariable(20238);
+  { // 18728 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCANRUN
+    st = getVariable(18728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCANRUN", 55);
     st->size_data = sizeof(BOOL);
@@ -2371,8 +2369,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20239 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INHASERROR
-    st = getVariable(20239);
+  { // 18729 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INHASERROR
+    st = getVariable(18729);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INHASERROR", 57);
     st->size_data = sizeof(BOOL);
@@ -2383,8 +2381,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20240 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INENDED
-    st = getVariable(20240);
+  { // 18730 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INENDED
+    st = getVariable(18730);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INENDED", 54);
     st->size_data = sizeof(BOOL);
@@ -2395,8 +2393,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20241 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INOPCCOMMANDSDISABLED
-    st = getVariable(20241);
+  { // 18731 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INOPCCOMMANDSDISABLED
+    st = getVariable(18731);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INOPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -2407,8 +2405,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20242 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND
-    st = getVariable(20242);
+  { // 18732 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND
+    st = getVariable(18732);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -2419,8 +2417,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20243 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND_ARM
-    st = getVariable(20243);
+  { // 18733 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND_ARM
+    st = getVariable(18733);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND_ARM", 60);
     st->size_data = sizeof(WORD);
@@ -2431,8 +2429,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20244 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND_ALG
-    st = getVariable(20244);
+  { // 18734 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND_ALG
+    st = getVariable(18734);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.INCOMMAND_ALG", 60);
     st->size_data = sizeof(WORD);
@@ -2443,8 +2441,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20245 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.STATUS
-    st = getVariable(20245);
+  { // 18735 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.STATUS
+    st = getVariable(18735);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -2455,8 +2453,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20246 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.CANRUN
-    st = getVariable(20246);
+  { // 18736 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.CANRUN
+    st = getVariable(18736);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.CANRUN", 53);
     st->size_data = sizeof(BOOL);
@@ -2467,8 +2465,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20247 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.OPCCOMMANDSDISABLED
-    st = getVariable(20247);
+  { // 18737 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.OPCCOMMANDSDISABLED
+    st = getVariable(18737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.OPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -2479,8 +2477,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20248 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ISRUNING
-    st = getVariable(20248);
+  { // 18738 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ISRUNING
+    st = getVariable(18738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ISRUNING", 55);
     st->size_data = sizeof(BOOL);
@@ -2491,8 +2489,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20249 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.HASERROR
-    st = getVariable(20249);
+  { // 18739 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.HASERROR
+    st = getVariable(18739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.HASERROR", 55);
     st->size_data = sizeof(BOOL);
@@ -2503,8 +2501,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20250 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ISENDED
-    st = getVariable(20250);
+  { // 18740 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ISENDED
+    st = getVariable(18740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ISENDED", 54);
     st->size_data = sizeof(BOOL);
@@ -2515,8 +2513,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20251 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.RUNONSTART
-    st = getVariable(20251);
+  { // 18741 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.RUNONSTART
+    st = getVariable(18741);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.RUNONSTART", 57);
     st->size_data = sizeof(BOOL);
@@ -2527,8 +2525,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20252 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.START
-    st = getVariable(20252);
+  { // 18742 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.START
+    st = getVariable(18742);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.START", 52);
     st->size_data = sizeof(DWORD);
@@ -2539,8 +2537,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20253 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ERROR
-    st = getVariable(20253);
+  { // 18743 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ERROR
+    st = getVariable(18743);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.ERROR", 52);
     st->size_data = sizeof(DWORD);
@@ -2551,8 +2549,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20254 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.TOP
-    st = getVariable(20254);
+  { // 18744 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.TOP
+    st = getVariable(18744);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.ENGINERUN.TOP", 50);
     st->size_data = sizeof(DWORD);
@@ -2563,8 +2561,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20255 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INRUNONSTART
-    st = getVariable(20255);
+  { // 18745 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INRUNONSTART
+    st = getVariable(18745);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INRUNONSTART", 57);
     st->size_data = sizeof(BOOL);
@@ -2575,8 +2573,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20256 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCANRUN
-    st = getVariable(20256);
+  { // 18746 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCANRUN
+    st = getVariable(18746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCANRUN", 53);
     st->size_data = sizeof(BOOL);
@@ -2587,8 +2585,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20257 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INHASERROR
-    st = getVariable(20257);
+  { // 18747 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INHASERROR
+    st = getVariable(18747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INHASERROR", 55);
     st->size_data = sizeof(BOOL);
@@ -2599,8 +2597,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20258 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INENDED
-    st = getVariable(20258);
+  { // 18748 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INENDED
+    st = getVariable(18748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -2611,8 +2609,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20259 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INOPCCOMMANDSDISABLED
-    st = getVariable(20259);
+  { // 18749 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INOPCCOMMANDSDISABLED
+    st = getVariable(18749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -2623,8 +2621,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20260 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND
-    st = getVariable(20260);
+  { // 18750 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND
+    st = getVariable(18750);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -2635,8 +2633,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20261 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND_ARM
-    st = getVariable(20261);
+  { // 18751 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND_ARM
+    st = getVariable(18751);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -2647,8 +2645,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20262 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND_ALG
-    st = getVariable(20262);
+  { // 18752 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND_ALG
+    st = getVariable(18752);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -2659,8 +2657,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20263 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.STATUS
-    st = getVariable(20263);
+  { // 18753 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.STATUS
+    st = getVariable(18753);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -2671,8 +2669,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20264 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.CANRUN
-    st = getVariable(20264);
+  { // 18754 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.CANRUN
+    st = getVariable(18754);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.CANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -2683,8 +2681,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20265 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.OPCCOMMANDSDISABLED
-    st = getVariable(20265);
+  { // 18755 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.OPCCOMMANDSDISABLED
+    st = getVariable(18755);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -2695,8 +2693,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20266 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ISRUNING
-    st = getVariable(20266);
+  { // 18756 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ISRUNING
+    st = getVariable(18756);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ISRUNING", 53);
     st->size_data = sizeof(BOOL);
@@ -2707,8 +2705,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20267 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.HASERROR
-    st = getVariable(20267);
+  { // 18757 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.HASERROR
+    st = getVariable(18757);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.HASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -2719,8 +2717,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20268 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ISENDED
-    st = getVariable(20268);
+  { // 18758 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ISENDED
+    st = getVariable(18758);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ISENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -2731,8 +2729,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20269 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.RUNONSTART
-    st = getVariable(20269);
+  { // 18759 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.RUNONSTART
+    st = getVariable(18759);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.RUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -2743,8 +2741,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20270 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.START
-    st = getVariable(20270);
+  { // 18760 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.START
+    st = getVariable(18760);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.START", 50);
     st->size_data = sizeof(DWORD);
@@ -2755,8 +2753,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20271 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ERROR
-    st = getVariable(20271);
+  { // 18761 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ERROR
+    st = getVariable(18761);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.ERROR", 50);
     st->size_data = sizeof(DWORD);
@@ -2767,8 +2765,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20272 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.TOP
-    st = getVariable(20272);
+  { // 18762 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.TOP
+    st = getVariable(18762);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.FILLING.TOP", 48);
     st->size_data = sizeof(DWORD);
@@ -2779,8 +2777,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20273 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INRUNONSTART
-    st = getVariable(20273);
+  { // 18763 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INRUNONSTART
+    st = getVariable(18763);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INRUNONSTART", 60);
     st->size_data = sizeof(BOOL);
@@ -2791,8 +2789,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20274 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCANRUN
-    st = getVariable(20274);
+  { // 18764 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCANRUN
+    st = getVariable(18764);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCANRUN", 56);
     st->size_data = sizeof(BOOL);
@@ -2803,8 +2801,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20275 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INHASERROR
-    st = getVariable(20275);
+  { // 18765 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INHASERROR
+    st = getVariable(18765);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INHASERROR", 58);
     st->size_data = sizeof(BOOL);
@@ -2815,8 +2813,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20276 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INENDED
-    st = getVariable(20276);
+  { // 18766 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INENDED
+    st = getVariable(18766);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -2827,8 +2825,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20277 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INOPCCOMMANDSDISABLED
-    st = getVariable(20277);
+  { // 18767 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INOPCCOMMANDSDISABLED
+    st = getVariable(18767);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -2839,8 +2837,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20278 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND
-    st = getVariable(20278);
+  { // 18768 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND
+    st = getVariable(18768);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -2851,8 +2849,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20279 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND_ARM
-    st = getVariable(20279);
+  { // 18769 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND_ARM
+    st = getVariable(18769);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -2863,8 +2861,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20280 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND_ALG
-    st = getVariable(20280);
+  { // 18770 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND_ALG
+    st = getVariable(18770);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -2875,8 +2873,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20281 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.STATUS
-    st = getVariable(20281);
+  { // 18771 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.STATUS
+    st = getVariable(18771);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -2887,8 +2885,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20282 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.CANRUN
-    st = getVariable(20282);
+  { // 18772 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.CANRUN
+    st = getVariable(18772);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.CANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -2899,8 +2897,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20283 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.OPCCOMMANDSDISABLED
-    st = getVariable(20283);
+  { // 18773 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.OPCCOMMANDSDISABLED
+    st = getVariable(18773);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -2911,8 +2909,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20284 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ISRUNING
-    st = getVariable(20284);
+  { // 18774 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ISRUNING
+    st = getVariable(18774);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ISRUNING", 56);
     st->size_data = sizeof(BOOL);
@@ -2923,8 +2921,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20285 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.HASERROR
-    st = getVariable(20285);
+  { // 18775 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.HASERROR
+    st = getVariable(18775);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.HASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -2935,8 +2933,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20286 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ISENDED
-    st = getVariable(20286);
+  { // 18776 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ISENDED
+    st = getVariable(18776);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ISENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -2947,8 +2945,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20287 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.RUNONSTART
-    st = getVariable(20287);
+  { // 18777 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.RUNONSTART
+    st = getVariable(18777);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.RUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -2959,8 +2957,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20288 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.START
-    st = getVariable(20288);
+  { // 18778 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.START
+    st = getVariable(18778);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.START", 53);
     st->size_data = sizeof(DWORD);
@@ -2971,8 +2969,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20289 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ERROR
-    st = getVariable(20289);
+  { // 18779 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ERROR
+    st = getVariable(18779);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.ERROR", 53);
     st->size_data = sizeof(DWORD);
@@ -2983,8 +2981,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20290 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.TOP
-    st = getVariable(20290);
+  { // 18780 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.TOP
+    st = getVariable(18780);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.LINETORING.TOP", 51);
     st->size_data = sizeof(DWORD);
@@ -2995,8 +2993,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20291 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INRUNONSTART
-    st = getVariable(20291);
+  { // 18781 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INRUNONSTART
+    st = getVariable(18781);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INRUNONSTART", 60);
     st->size_data = sizeof(BOOL);
@@ -3007,8 +3005,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20292 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCANRUN
-    st = getVariable(20292);
+  { // 18782 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCANRUN
+    st = getVariable(18782);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCANRUN", 56);
     st->size_data = sizeof(BOOL);
@@ -3019,8 +3017,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20293 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INHASERROR
-    st = getVariable(20293);
+  { // 18783 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INHASERROR
+    st = getVariable(18783);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INHASERROR", 58);
     st->size_data = sizeof(BOOL);
@@ -3031,8 +3029,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20294 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INENDED
-    st = getVariable(20294);
+  { // 18784 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INENDED
+    st = getVariable(18784);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -3043,8 +3041,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20295 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INOPCCOMMANDSDISABLED
-    st = getVariable(20295);
+  { // 18785 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INOPCCOMMANDSDISABLED
+    st = getVariable(18785);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -3055,8 +3053,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20296 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND
-    st = getVariable(20296);
+  { // 18786 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND
+    st = getVariable(18786);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -3067,8 +3065,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20297 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND_ARM
-    st = getVariable(20297);
+  { // 18787 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND_ARM
+    st = getVariable(18787);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -3079,8 +3077,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20298 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND_ALG
-    st = getVariable(20298);
+  { // 18788 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND_ALG
+    st = getVariable(18788);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -3091,8 +3089,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20299 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.STATUS
-    st = getVariable(20299);
+  { // 18789 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.STATUS
+    st = getVariable(18789);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -3103,8 +3101,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20300 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.CANRUN
-    st = getVariable(20300);
+  { // 18790 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.CANRUN
+    st = getVariable(18790);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.CANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -3115,8 +3113,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20301 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.OPCCOMMANDSDISABLED
-    st = getVariable(20301);
+  { // 18791 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.OPCCOMMANDSDISABLED
+    st = getVariable(18791);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3127,8 +3125,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20302 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ISRUNING
-    st = getVariable(20302);
+  { // 18792 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ISRUNING
+    st = getVariable(18792);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ISRUNING", 56);
     st->size_data = sizeof(BOOL);
@@ -3139,8 +3137,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20303 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.HASERROR
-    st = getVariable(20303);
+  { // 18793 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.HASERROR
+    st = getVariable(18793);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.HASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -3151,8 +3149,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20304 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ISENDED
-    st = getVariable(20304);
+  { // 18794 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ISENDED
+    st = getVariable(18794);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ISENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -3163,8 +3161,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20305 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.RUNONSTART
-    st = getVariable(20305);
+  { // 18795 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.RUNONSTART
+    st = getVariable(18795);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.RUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -3175,8 +3173,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20306 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.START
-    st = getVariable(20306);
+  { // 18796 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.START
+    st = getVariable(18796);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.START", 53);
     st->size_data = sizeof(DWORD);
@@ -3187,8 +3185,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20307 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ERROR
-    st = getVariable(20307);
+  { // 18797 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ERROR
+    st = getVariable(18797);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.ERROR", 53);
     st->size_data = sizeof(DWORD);
@@ -3199,8 +3197,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20308 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.TOP
-    st = getVariable(20308);
+  { // 18798 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.TOP
+    st = getVariable(18798);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.RINGTOLINE.TOP", 51);
     st->size_data = sizeof(DWORD);
@@ -3211,8 +3209,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20309 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INRUNONSTART
-    st = getVariable(20309);
+  { // 18799 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INRUNONSTART
+    st = getVariable(18799);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INRUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -3223,8 +3221,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20310 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCANRUN
-    st = getVariable(20310);
+  { // 18800 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCANRUN
+    st = getVariable(18800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -3235,8 +3233,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20311 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INHASERROR
-    st = getVariable(20311);
+  { // 18801 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INHASERROR
+    st = getVariable(18801);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INHASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -3247,8 +3245,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20312 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INENDED
-    st = getVariable(20312);
+  { // 18802 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INENDED
+    st = getVariable(18802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INENDED", 50);
     st->size_data = sizeof(BOOL);
@@ -3259,8 +3257,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20313 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INOPCCOMMANDSDISABLED
-    st = getVariable(20313);
+  { // 18803 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INOPCCOMMANDSDISABLED
+    st = getVariable(18803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -3271,8 +3269,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20314 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND
-    st = getVariable(20314);
+  { // 18804 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND
+    st = getVariable(18804);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -3283,8 +3281,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20315 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND_ARM
-    st = getVariable(20315);
+  { // 18805 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND_ARM
+    st = getVariable(18805);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -3295,8 +3293,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20316 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND_ALG
-    st = getVariable(20316);
+  { // 18806 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND_ALG
+    st = getVariable(18806);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -3307,8 +3305,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20317 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.STATUS
-    st = getVariable(20317);
+  { // 18807 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.STATUS
+    st = getVariable(18807);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -3319,8 +3317,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20318 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.CANRUN
-    st = getVariable(20318);
+  { // 18808 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.CANRUN
+    st = getVariable(18808);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.CANRUN", 49);
     st->size_data = sizeof(BOOL);
@@ -3331,8 +3329,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20319 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.OPCCOMMANDSDISABLED
-    st = getVariable(20319);
+  { // 18809 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.OPCCOMMANDSDISABLED
+    st = getVariable(18809);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -3343,8 +3341,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20320 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ISRUNING
-    st = getVariable(20320);
+  { // 18810 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ISRUNING
+    st = getVariable(18810);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ISRUNING", 51);
     st->size_data = sizeof(BOOL);
@@ -3355,8 +3353,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20321 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.HASERROR
-    st = getVariable(20321);
+  { // 18811 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.HASERROR
+    st = getVariable(18811);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.HASERROR", 51);
     st->size_data = sizeof(BOOL);
@@ -3367,8 +3365,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20322 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ISENDED
-    st = getVariable(20322);
+  { // 18812 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ISENDED
+    st = getVariable(18812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ISENDED", 50);
     st->size_data = sizeof(BOOL);
@@ -3379,8 +3377,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20323 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.RUNONSTART
-    st = getVariable(20323);
+  { // 18813 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.RUNONSTART
+    st = getVariable(18813);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.RUNONSTART", 53);
     st->size_data = sizeof(BOOL);
@@ -3391,8 +3389,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20324 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.START
-    st = getVariable(20324);
+  { // 18814 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.START
+    st = getVariable(18814);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.START", 48);
     st->size_data = sizeof(DWORD);
@@ -3403,8 +3401,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20325 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ERROR
-    st = getVariable(20325);
+  { // 18815 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ERROR
+    st = getVariable(18815);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.ERROR", 48);
     st->size_data = sizeof(DWORD);
@@ -3415,8 +3413,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20326 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.TOP
-    st = getVariable(20326);
+  { // 18816 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.TOP
+    st = getVariable(18816);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.APUSK.TOP", 46);
     st->size_data = sizeof(DWORD);
@@ -3427,8 +3425,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20327 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INRUNONSTART
-    st = getVariable(20327);
+  { // 18817 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INRUNONSTART
+    st = getVariable(18817);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INRUNONSTART", 62);
     st->size_data = sizeof(BOOL);
@@ -3439,8 +3437,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20328 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCANRUN
-    st = getVariable(20328);
+  { // 18818 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCANRUN
+    st = getVariable(18818);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCANRUN", 58);
     st->size_data = sizeof(BOOL);
@@ -3451,8 +3449,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20329 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INHASERROR
-    st = getVariable(20329);
+  { // 18819 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INHASERROR
+    st = getVariable(18819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INHASERROR", 60);
     st->size_data = sizeof(BOOL);
@@ -3463,8 +3461,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20330 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INENDED
-    st = getVariable(20330);
+  { // 18820 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INENDED
+    st = getVariable(18820);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INENDED", 57);
     st->size_data = sizeof(BOOL);
@@ -3475,8 +3473,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20331 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INOPCCOMMANDSDISABLED
-    st = getVariable(20331);
+  { // 18821 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INOPCCOMMANDSDISABLED
+    st = getVariable(18821);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INOPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -3487,8 +3485,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20332 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND
-    st = getVariable(20332);
+  { // 18822 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND
+    st = getVariable(18822);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -3499,8 +3497,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20333 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND_ARM
-    st = getVariable(20333);
+  { // 18823 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND_ARM
+    st = getVariable(18823);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND_ARM", 63);
     st->size_data = sizeof(WORD);
@@ -3511,8 +3509,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20334 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND_ALG
-    st = getVariable(20334);
+  { // 18824 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND_ALG
+    st = getVariable(18824);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.INCOMMAND_ALG", 63);
     st->size_data = sizeof(WORD);
@@ -3523,8 +3521,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20335 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.STATUS
-    st = getVariable(20335);
+  { // 18825 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.STATUS
+    st = getVariable(18825);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -3535,8 +3533,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20336 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.CANRUN
-    st = getVariable(20336);
+  { // 18826 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.CANRUN
+    st = getVariable(18826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.CANRUN", 56);
     st->size_data = sizeof(BOOL);
@@ -3547,8 +3545,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20337 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.OPCCOMMANDSDISABLED
-    st = getVariable(20337);
+  { // 18827 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.OPCCOMMANDSDISABLED
+    st = getVariable(18827);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.OPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -3559,8 +3557,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20338 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ISRUNING
-    st = getVariable(20338);
+  { // 18828 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ISRUNING
+    st = getVariable(18828);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ISRUNING", 58);
     st->size_data = sizeof(BOOL);
@@ -3571,8 +3569,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20339 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.HASERROR
-    st = getVariable(20339);
+  { // 18829 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.HASERROR
+    st = getVariable(18829);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.HASERROR", 58);
     st->size_data = sizeof(BOOL);
@@ -3583,8 +3581,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20340 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ISENDED
-    st = getVariable(20340);
+  { // 18830 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ISENDED
+    st = getVariable(18830);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ISENDED", 57);
     st->size_data = sizeof(BOOL);
@@ -3595,8 +3593,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20341 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.RUNONSTART
-    st = getVariable(20341);
+  { // 18831 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.RUNONSTART
+    st = getVariable(18831);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.RUNONSTART", 60);
     st->size_data = sizeof(BOOL);
@@ -3607,8 +3605,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20342 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.START
-    st = getVariable(20342);
+  { // 18832 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.START
+    st = getVariable(18832);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.START", 55);
     st->size_data = sizeof(DWORD);
@@ -3619,8 +3617,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20343 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ERROR
-    st = getVariable(20343);
+  { // 18833 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ERROR
+    st = getVariable(18833);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.ERROR", 55);
     st->size_data = sizeof(DWORD);
@@ -3631,8 +3629,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20344 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.TOP
-    st = getVariable(20344);
+  { // 18834 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.TOP
+    st = getVariable(18834);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.SEMIAUTOPUSK.TOP", 53);
     st->size_data = sizeof(DWORD);
@@ -3643,8 +3641,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20345 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INRUNONSTART
-    st = getVariable(20345);
+  { // 18835 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INRUNONSTART
+    st = getVariable(18835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INRUNONSTART", 52);
     st->size_data = sizeof(BOOL);
@@ -3655,8 +3653,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20346 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCANRUN
-    st = getVariable(20346);
+  { // 18836 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCANRUN
+    st = getVariable(18836);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCANRUN", 48);
     st->size_data = sizeof(BOOL);
@@ -3667,8 +3665,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20347 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INHASERROR
-    st = getVariable(20347);
+  { // 18837 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INHASERROR
+    st = getVariable(18837);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INHASERROR", 50);
     st->size_data = sizeof(BOOL);
@@ -3679,8 +3677,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20348 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INENDED
-    st = getVariable(20348);
+  { // 18838 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INENDED
+    st = getVariable(18838);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INENDED", 47);
     st->size_data = sizeof(BOOL);
@@ -3691,8 +3689,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20349 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INOPCCOMMANDSDISABLED
-    st = getVariable(20349);
+  { // 18839 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INOPCCOMMANDSDISABLED
+    st = getVariable(18839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -3703,8 +3701,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20350 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND
-    st = getVariable(20350);
+  { // 18840 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND
+    st = getVariable(18840);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -3715,8 +3713,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20351 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND_ARM
-    st = getVariable(20351);
+  { // 18841 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND_ARM
+    st = getVariable(18841);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -3727,8 +3725,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20352 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND_ALG
-    st = getVariable(20352);
+  { // 18842 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND_ALG
+    st = getVariable(18842);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -3739,8 +3737,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20353 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.STATUS
-    st = getVariable(20353);
+  { // 18843 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.STATUS
+    st = getVariable(18843);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -3751,8 +3749,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20354 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.CANRUN
-    st = getVariable(20354);
+  { // 18844 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.CANRUN
+    st = getVariable(18844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.CANRUN", 46);
     st->size_data = sizeof(BOOL);
@@ -3763,8 +3761,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20355 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.OPCCOMMANDSDISABLED
-    st = getVariable(20355);
+  { // 18845 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.OPCCOMMANDSDISABLED
+    st = getVariable(18845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -3775,8 +3773,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20356 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ISRUNING
-    st = getVariable(20356);
+  { // 18846 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ISRUNING
+    st = getVariable(18846);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ISRUNING", 48);
     st->size_data = sizeof(BOOL);
@@ -3787,8 +3785,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20357 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.HASERROR
-    st = getVariable(20357);
+  { // 18847 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.HASERROR
+    st = getVariable(18847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.HASERROR", 48);
     st->size_data = sizeof(BOOL);
@@ -3799,8 +3797,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20358 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ISENDED
-    st = getVariable(20358);
+  { // 18848 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ISENDED
+    st = getVariable(18848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ISENDED", 47);
     st->size_data = sizeof(BOOL);
@@ -3811,8 +3809,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20359 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.RUNONSTART
-    st = getVariable(20359);
+  { // 18849 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.RUNONSTART
+    st = getVariable(18849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.RUNONSTART", 50);
     st->size_data = sizeof(BOOL);
@@ -3823,8 +3821,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20360 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.START
-    st = getVariable(20360);
+  { // 18850 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.START
+    st = getVariable(18850);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.START", 45);
     st->size_data = sizeof(DWORD);
@@ -3835,8 +3833,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20361 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ERROR
-    st = getVariable(20361);
+  { // 18851 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ERROR
+    st = getVariable(18851);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.ERROR", 45);
     st->size_data = sizeof(DWORD);
@@ -3847,8 +3845,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20362 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.TOP
-    st = getVariable(20362);
+  { // 18852 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.TOP
+    st = getVariable(18852);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.NO.TOP", 43);
     st->size_data = sizeof(DWORD);
@@ -3859,8 +3857,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20363 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INRUNONSTART
-    st = getVariable(20363);
+  { // 18853 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INRUNONSTART
+    st = getVariable(18853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INRUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -3871,8 +3869,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20364 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCANRUN
-    st = getVariable(20364);
+  { // 18854 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCANRUN
+    st = getVariable(18854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -3883,8 +3881,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20365 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INHASERROR
-    st = getVariable(20365);
+  { // 18855 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INHASERROR
+    st = getVariable(18855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INHASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -3895,8 +3893,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20366 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INENDED
-    st = getVariable(20366);
+  { // 18856 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INENDED
+    st = getVariable(18856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INENDED", 53);
     st->size_data = sizeof(BOOL);
@@ -3907,8 +3905,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20367 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INOPCCOMMANDSDISABLED
-    st = getVariable(20367);
+  { // 18857 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INOPCCOMMANDSDISABLED
+    st = getVariable(18857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3919,8 +3917,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20368 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND
-    st = getVariable(20368);
+  { // 18858 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND
+    st = getVariable(18858);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -3931,8 +3929,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20369 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND_ARM
-    st = getVariable(20369);
+  { // 18859 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND_ARM
+    st = getVariable(18859);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -3943,8 +3941,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20370 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND_ALG
-    st = getVariable(20370);
+  { // 18860 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND_ALG
+    st = getVariable(18860);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -3955,8 +3953,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20371 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.STATUS
-    st = getVariable(20371);
+  { // 18861 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.STATUS
+    st = getVariable(18861);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -3967,8 +3965,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20372 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.CANRUN
-    st = getVariable(20372);
+  { // 18862 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.CANRUN
+    st = getVariable(18862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.CANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -3979,8 +3977,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20373 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.OPCCOMMANDSDISABLED
-    st = getVariable(20373);
+  { // 18863 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.OPCCOMMANDSDISABLED
+    st = getVariable(18863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3991,8 +3989,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20374 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ISRUNING
-    st = getVariable(20374);
+  { // 18864 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ISRUNING
+    st = getVariable(18864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ISRUNING", 54);
     st->size_data = sizeof(BOOL);
@@ -4003,8 +4001,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20375 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.HASERROR
-    st = getVariable(20375);
+  { // 18865 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.HASERROR
+    st = getVariable(18865);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.HASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -4015,8 +4013,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20376 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ISENDED
-    st = getVariable(20376);
+  { // 18866 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ISENDED
+    st = getVariable(18866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ISENDED", 53);
     st->size_data = sizeof(BOOL);
@@ -4027,8 +4025,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20377 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.RUNONSTART
-    st = getVariable(20377);
+  { // 18867 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.RUNONSTART
+    st = getVariable(18867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.RUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -4039,8 +4037,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20378 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.START
-    st = getVariable(20378);
+  { // 18868 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.START
+    st = getVariable(18868);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.START", 51);
     st->size_data = sizeof(DWORD);
@@ -4051,8 +4049,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20379 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ERROR
-    st = getVariable(20379);
+  { // 18869 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ERROR
+    st = getVariable(18869);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.ERROR", 51);
     st->size_data = sizeof(DWORD);
@@ -4063,8 +4061,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20380 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.TOP
-    st = getVariable(20380);
+  { // 18870 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.TOP
+    st = getVariable(18870);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.VIBEGPNS.TOP", 49);
     st->size_data = sizeof(DWORD);
@@ -4075,8 +4073,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20381 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INRUNONSTART
-    st = getVariable(20381);
+  { // 18871 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INRUNONSTART
+    st = getVariable(18871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INRUNONSTART", 52);
     st->size_data = sizeof(BOOL);
@@ -4087,8 +4085,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20382 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCANRUN
-    st = getVariable(20382);
+  { // 18872 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCANRUN
+    st = getVariable(18872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCANRUN", 48);
     st->size_data = sizeof(BOOL);
@@ -4099,8 +4097,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20383 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INHASERROR
-    st = getVariable(20383);
+  { // 18873 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INHASERROR
+    st = getVariable(18873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INHASERROR", 50);
     st->size_data = sizeof(BOOL);
@@ -4111,8 +4109,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20384 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INENDED
-    st = getVariable(20384);
+  { // 18874 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INENDED
+    st = getVariable(18874);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INENDED", 47);
     st->size_data = sizeof(BOOL);
@@ -4123,8 +4121,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20385 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INOPCCOMMANDSDISABLED
-    st = getVariable(20385);
+  { // 18875 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INOPCCOMMANDSDISABLED
+    st = getVariable(18875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -4135,8 +4133,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20386 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND
-    st = getVariable(20386);
+  { // 18876 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND
+    st = getVariable(18876);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -4147,8 +4145,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20387 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND_ARM
-    st = getVariable(20387);
+  { // 18877 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND_ARM
+    st = getVariable(18877);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -4159,8 +4157,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20388 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND_ALG
-    st = getVariable(20388);
+  { // 18878 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND_ALG
+    st = getVariable(18878);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -4171,8 +4169,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20389 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.STATUS
-    st = getVariable(20389);
+  { // 18879 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.STATUS
+    st = getVariable(18879);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -4183,8 +4181,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20390 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.CANRUN
-    st = getVariable(20390);
+  { // 18880 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.CANRUN
+    st = getVariable(18880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.CANRUN", 46);
     st->size_data = sizeof(BOOL);
@@ -4195,8 +4193,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20391 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.OPCCOMMANDSDISABLED
-    st = getVariable(20391);
+  { // 18881 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.OPCCOMMANDSDISABLED
+    st = getVariable(18881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -4207,8 +4205,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20392 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ISRUNING
-    st = getVariable(20392);
+  { // 18882 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ISRUNING
+    st = getVariable(18882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ISRUNING", 48);
     st->size_data = sizeof(BOOL);
@@ -4219,8 +4217,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20393 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.HASERROR
-    st = getVariable(20393);
+  { // 18883 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.HASERROR
+    st = getVariable(18883);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.HASERROR", 48);
     st->size_data = sizeof(BOOL);
@@ -4231,8 +4229,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20394 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ISENDED
-    st = getVariable(20394);
+  { // 18884 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ISENDED
+    st = getVariable(18884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ISENDED", 47);
     st->size_data = sizeof(BOOL);
@@ -4243,8 +4241,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20395 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.RUNONSTART
-    st = getVariable(20395);
+  { // 18885 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.RUNONSTART
+    st = getVariable(18885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.RUNONSTART", 50);
     st->size_data = sizeof(BOOL);
@@ -4255,8 +4253,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20396 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.START
-    st = getVariable(20396);
+  { // 18886 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.START
+    st = getVariable(18886);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.START", 45);
     st->size_data = sizeof(DWORD);
@@ -4267,8 +4265,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20397 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ERROR
-    st = getVariable(20397);
+  { // 18887 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ERROR
+    st = getVariable(18887);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.ERROR", 45);
     st->size_data = sizeof(DWORD);
@@ -4279,8 +4277,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20398 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.TOP
-    st = getVariable(20398);
+  { // 18888 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.TOP
+    st = getVariable(18888);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.AO.TOP", 43);
     st->size_data = sizeof(DWORD);
@@ -4291,8 +4289,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20399 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INRUNONSTART
-    st = getVariable(20399);
+  { // 18889 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INRUNONSTART
+    st = getVariable(18889);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INRUNONSTART", 57);
     st->size_data = sizeof(BOOL);
@@ -4303,8 +4301,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20400 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCANRUN
-    st = getVariable(20400);
+  { // 18890 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCANRUN
+    st = getVariable(18890);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCANRUN", 53);
     st->size_data = sizeof(BOOL);
@@ -4315,8 +4313,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20401 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INHASERROR
-    st = getVariable(20401);
+  { // 18891 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INHASERROR
+    st = getVariable(18891);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INHASERROR", 55);
     st->size_data = sizeof(BOOL);
@@ -4327,8 +4325,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20402 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INENDED
-    st = getVariable(20402);
+  { // 18892 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INENDED
+    st = getVariable(18892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -4339,8 +4337,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20403 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INOPCCOMMANDSDISABLED
-    st = getVariable(20403);
+  { // 18893 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INOPCCOMMANDSDISABLED
+    st = getVariable(18893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -4351,8 +4349,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20404 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND
-    st = getVariable(20404);
+  { // 18894 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND
+    st = getVariable(18894);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -4363,8 +4361,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20405 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND_ARM
-    st = getVariable(20405);
+  { // 18895 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND_ARM
+    st = getVariable(18895);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -4375,8 +4373,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20406 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND_ALG
-    st = getVariable(20406);
+  { // 18896 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND_ALG
+    st = getVariable(18896);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -4387,8 +4385,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20407 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.STATUS
-    st = getVariable(20407);
+  { // 18897 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.STATUS
+    st = getVariable(18897);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -4399,8 +4397,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20408 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.CANRUN
-    st = getVariable(20408);
+  { // 18898 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.CANRUN
+    st = getVariable(18898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.CANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -4411,8 +4409,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20409 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.OPCCOMMANDSDISABLED
-    st = getVariable(20409);
+  { // 18899 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.OPCCOMMANDSDISABLED
+    st = getVariable(18899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -4423,8 +4421,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20410 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ISRUNING
-    st = getVariable(20410);
+  { // 18900 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ISRUNING
+    st = getVariable(18900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ISRUNING", 53);
     st->size_data = sizeof(BOOL);
@@ -4435,8 +4433,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20411 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.HASERROR
-    st = getVariable(20411);
+  { // 18901 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.HASERROR
+    st = getVariable(18901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.HASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -4447,8 +4445,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20412 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ISENDED
-    st = getVariable(20412);
+  { // 18902 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ISENDED
+    st = getVariable(18902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ISENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -4459,8 +4457,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20413 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.RUNONSTART
-    st = getVariable(20413);
+  { // 18903 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.RUNONSTART
+    st = getVariable(18903);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.RUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -4471,8 +4469,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20414 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.START
-    st = getVariable(20414);
+  { // 18904 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.START
+    st = getVariable(18904);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.START", 50);
     st->size_data = sizeof(DWORD);
@@ -4483,8 +4481,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20415 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ERROR
-    st = getVariable(20415);
+  { // 18905 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ERROR
+    st = getVariable(18905);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.ERROR", 50);
     st->size_data = sizeof(DWORD);
@@ -4495,8 +4493,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20416 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.TOP
-    st = getVariable(20416);
+  { // 18906 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.TOP
+    st = getVariable(18906);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTPMS.TOP", 48);
     st->size_data = sizeof(DWORD);
@@ -4507,8 +4505,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20417 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INRUNONSTART
-    st = getVariable(20417);
+  { // 18907 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INRUNONSTART
+    st = getVariable(18907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INRUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -4519,8 +4517,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20418 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCANRUN
-    st = getVariable(20418);
+  { // 18908 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCANRUN
+    st = getVariable(18908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -4531,8 +4529,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20419 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INHASERROR
-    st = getVariable(20419);
+  { // 18909 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INHASERROR
+    st = getVariable(18909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INHASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -4543,8 +4541,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20420 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INENDED
-    st = getVariable(20420);
+  { // 18910 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INENDED
+    st = getVariable(18910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INENDED", 53);
     st->size_data = sizeof(BOOL);
@@ -4555,8 +4553,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20421 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INOPCCOMMANDSDISABLED
-    st = getVariable(20421);
+  { // 18911 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INOPCCOMMANDSDISABLED
+    st = getVariable(18911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -4567,8 +4565,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20422 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND
-    st = getVariable(20422);
+  { // 18912 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND
+    st = getVariable(18912);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -4579,8 +4577,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20423 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND_ARM
-    st = getVariable(20423);
+  { // 18913 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND_ARM
+    st = getVariable(18913);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -4591,8 +4589,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20424 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND_ALG
-    st = getVariable(20424);
+  { // 18914 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND_ALG
+    st = getVariable(18914);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -4603,8 +4601,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20425 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.STATUS
-    st = getVariable(20425);
+  { // 18915 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.STATUS
+    st = getVariable(18915);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -4615,8 +4613,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20426 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.CANRUN
-    st = getVariable(20426);
+  { // 18916 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.CANRUN
+    st = getVariable(18916);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.CANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -4627,8 +4625,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20427 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.OPCCOMMANDSDISABLED
-    st = getVariable(20427);
+  { // 18917 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.OPCCOMMANDSDISABLED
+    st = getVariable(18917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -4639,8 +4637,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20428 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ISRUNING
-    st = getVariable(20428);
+  { // 18918 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ISRUNING
+    st = getVariable(18918);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ISRUNING", 54);
     st->size_data = sizeof(BOOL);
@@ -4651,8 +4649,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20429 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.HASERROR
-    st = getVariable(20429);
+  { // 18919 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.HASERROR
+    st = getVariable(18919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.HASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -4663,8 +4661,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20430 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ISENDED
-    st = getVariable(20430);
+  { // 18920 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ISENDED
+    st = getVariable(18920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ISENDED", 53);
     st->size_data = sizeof(BOOL);
@@ -4675,8 +4673,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20431 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.RUNONSTART
-    st = getVariable(20431);
+  { // 18921 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.RUNONSTART
+    st = getVariable(18921);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.RUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -4687,8 +4685,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20432 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.START
-    st = getVariable(20432);
+  { // 18922 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.START
+    st = getVariable(18922);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.START", 51);
     st->size_data = sizeof(DWORD);
@@ -4699,8 +4697,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20433 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ERROR
-    st = getVariable(20433);
+  { // 18923 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ERROR
+    st = getVariable(18923);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.ERROR", 51);
     st->size_data = sizeof(DWORD);
@@ -4711,8 +4709,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20434 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.TOP
-    st = getVariable(20434);
+  { // 18924 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.TOP
+    st = getVariable(18924);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.TESTDPMG.TOP", 49);
     st->size_data = sizeof(DWORD);
@@ -4723,8 +4721,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20435 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INRUNONSTART
-    st = getVariable(20435);
+  { // 18925 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INRUNONSTART
+    st = getVariable(18925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INRUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -4735,8 +4733,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20436 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCANRUN
-    st = getVariable(20436);
+  { // 18926 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCANRUN
+    st = getVariable(18926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -4747,8 +4745,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20437 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INHASERROR
-    st = getVariable(20437);
+  { // 18927 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INHASERROR
+    st = getVariable(18927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INHASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -4759,8 +4757,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20438 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INENDED
-    st = getVariable(20438);
+  { // 18928 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INENDED
+    st = getVariable(18928);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INENDED", 50);
     st->size_data = sizeof(BOOL);
@@ -4771,8 +4769,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20439 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INOPCCOMMANDSDISABLED
-    st = getVariable(20439);
+  { // 18929 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INOPCCOMMANDSDISABLED
+    st = getVariable(18929);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -4783,8 +4781,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20440 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND
-    st = getVariable(20440);
+  { // 18930 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND
+    st = getVariable(18930);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -4795,8 +4793,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20441 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND_ARM
-    st = getVariable(20441);
+  { // 18931 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND_ARM
+    st = getVariable(18931);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -4807,8 +4805,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20442 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND_ALG
-    st = getVariable(20442);
+  { // 18932 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND_ALG
+    st = getVariable(18932);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -4819,8 +4817,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20443 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.STATUS
-    st = getVariable(20443);
+  { // 18933 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.STATUS
+    st = getVariable(18933);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -4831,8 +4829,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20444 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.CANRUN
-    st = getVariable(20444);
+  { // 18934 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.CANRUN
+    st = getVariable(18934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.CANRUN", 49);
     st->size_data = sizeof(BOOL);
@@ -4843,8 +4841,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20445 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.OPCCOMMANDSDISABLED
-    st = getVariable(20445);
+  { // 18935 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.OPCCOMMANDSDISABLED
+    st = getVariable(18935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -4855,8 +4853,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20446 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ISRUNING
-    st = getVariable(20446);
+  { // 18936 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ISRUNING
+    st = getVariable(18936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ISRUNING", 51);
     st->size_data = sizeof(BOOL);
@@ -4867,8 +4865,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20447 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.HASERROR
-    st = getVariable(20447);
+  { // 18937 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.HASERROR
+    st = getVariable(18937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.HASERROR", 51);
     st->size_data = sizeof(BOOL);
@@ -4879,8 +4877,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20448 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ISENDED
-    st = getVariable(20448);
+  { // 18938 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ISENDED
+    st = getVariable(18938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ISENDED", 50);
     st->size_data = sizeof(BOOL);
@@ -4891,8 +4889,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20449 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.RUNONSTART
-    st = getVariable(20449);
+  { // 18939 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.RUNONSTART
+    st = getVariable(18939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.RUNONSTART", 53);
     st->size_data = sizeof(BOOL);
@@ -4903,8 +4901,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20450 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.START
-    st = getVariable(20450);
+  { // 18940 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.START
+    st = getVariable(18940);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.START", 48);
     st->size_data = sizeof(DWORD);
@@ -4915,8 +4913,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20451 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ERROR
-    st = getVariable(20451);
+  { // 18941 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ERROR
+    st = getVariable(18941);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.ERROR", 48);
     st->size_data = sizeof(DWORD);
@@ -4927,8 +4925,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20452 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.TOP
-    st = getVariable(20452);
+  { // 18942 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.TOP
+    st = getVariable(18942);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKV.TOP", 46);
     st->size_data = sizeof(DWORD);
@@ -4939,8 +4937,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20453 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INRUNONSTART
-    st = getVariable(20453);
+  { // 18943 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INRUNONSTART
+    st = getVariable(18943);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INRUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -4951,8 +4949,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20454 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCANRUN
-    st = getVariable(20454);
+  { // 18944 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCANRUN
+    st = getVariable(18944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -4963,8 +4961,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20455 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INHASERROR
-    st = getVariable(20455);
+  { // 18945 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INHASERROR
+    st = getVariable(18945);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INHASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -4975,8 +4973,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20456 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INENDED
-    st = getVariable(20456);
+  { // 18946 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INENDED
+    st = getVariable(18946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INENDED", 50);
     st->size_data = sizeof(BOOL);
@@ -4987,8 +4985,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 20457 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INOPCCOMMANDSDISABLED
-    st = getVariable(20457);
+  { // 18947 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INOPCCOMMANDSDISABLED
+    st = getVariable(18947);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -4999,8 +4997,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20458 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND
-    st = getVariable(20458);
+  { // 18948 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND
+    st = getVariable(18948);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -5011,8 +5009,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20459 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND_ARM
-    st = getVariable(20459);
+  { // 18949 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND_ARM
+    st = getVariable(18949);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -5023,8 +5021,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20460 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND_ALG
-    st = getVariable(20460);
+  { // 18950 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND_ALG
+    st = getVariable(18950);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -5035,8 +5033,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20461 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.STATUS
-    st = getVariable(20461);
+  { // 18951 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.STATUS
+    st = getVariable(18951);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -5047,8 +5045,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20462 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.CANRUN
-    st = getVariable(20462);
+  { // 18952 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.CANRUN
+    st = getVariable(18952);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.CANRUN", 49);
     st->size_data = sizeof(BOOL);
@@ -5059,8 +5057,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 20463 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.OPCCOMMANDSDISABLED
-    st = getVariable(20463);
+  { // 18953 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.OPCCOMMANDSDISABLED
+    st = getVariable(18953);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -5071,8 +5069,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20464 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ISRUNING
-    st = getVariable(20464);
+  { // 18954 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ISRUNING
+    st = getVariable(18954);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ISRUNING", 51);
     st->size_data = sizeof(BOOL);
@@ -5083,8 +5081,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 20465 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.HASERROR
-    st = getVariable(20465);
+  { // 18955 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.HASERROR
+    st = getVariable(18955);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.HASERROR", 51);
     st->size_data = sizeof(BOOL);
@@ -5095,8 +5093,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 20466 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ISENDED
-    st = getVariable(20466);
+  { // 18956 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ISENDED
+    st = getVariable(18956);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ISENDED", 50);
     st->size_data = sizeof(BOOL);
@@ -5107,8 +5105,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 20467 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.RUNONSTART
-    st = getVariable(20467);
+  { // 18957 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.RUNONSTART
+    st = getVariable(18957);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.RUNONSTART", 53);
     st->size_data = sizeof(BOOL);
@@ -5119,8 +5117,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 20468 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.START
-    st = getVariable(20468);
+  { // 18958 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.START
+    st = getVariable(18958);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.START", 48);
     st->size_data = sizeof(DWORD);
@@ -5131,8 +5129,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 20469 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ERROR
-    st = getVariable(20469);
+  { // 18959 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ERROR
+    st = getVariable(18959);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.ERROR", 48);
     st->size_data = sizeof(DWORD);
@@ -5143,8 +5141,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 20470 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.TOP
-    st = getVariable(20470);
+  { // 18960 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.TOP
+    st = getVariable(18960);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS.PUSKK.TOP", 46);
     st->size_data = sizeof(DWORD);
@@ -5155,8 +5153,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 20471 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER_MODE
-    st = getVariable(20471);
+  { // 18961 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER_MODE
+    st = getVariable(18961);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER_MODE", 42);
     st->size_data = sizeof(UINT);
@@ -5165,8 +5163,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGMANAGER_MODE.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20472 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOAVOM_STATUS
-    st = getVariable(20472);
+  { // 18962 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOAVOM_STATUS
+    st = getVariable(18962);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOAVOM_STATUS", 52);
     st->size_data = sizeof(UDINT);
@@ -5175,8 +5173,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTOAVOM_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20473 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_OFFTIMER
-    st = getVariable(20473);
+  { // 18963 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_OFFTIMER
+    st = getVariable(18963);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_OFFTIMER", 53);
     st->size_data = sizeof(UINT);
@@ -5185,8 +5183,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTOPNS_OFFTIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20474 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_ONTIMER
-    st = getVariable(20474);
+  { // 18964 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_ONTIMER
+    st = getVariable(18964);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_ONTIMER", 52);
     st->size_data = sizeof(UINT);
@@ -5195,8 +5193,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTOPNS_ONTIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20475 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_STATUS
-    st = getVariable(20475);
+  { // 18965 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_STATUS
+    st = getVariable(18965);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOPNS_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -5205,8 +5203,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTOPNS_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20476 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOTEN_STATUS
-    st = getVariable(20476);
+  { // 18966 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOTEN_STATUS
+    st = getVariable(18966);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTOTEN_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -5215,8 +5213,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTOTEN_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20477 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_REMONT_STATUS
-    st = getVariable(20477);
+  { // 18967 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_REMONT_STATUS
+    st = getVariable(18967);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_REMONT_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -5225,8 +5223,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_REMONT_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20478 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPROTECTION_STATUS
-    st = getVariable(20478);
+  { // 18968 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPROTECTION_STATUS
+    st = getVariable(18968);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPROTECTION_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -5235,8 +5233,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPROTECTION_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20479 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTONU_NOTHASREZERVNU
-    st = getVariable(20479);
+  { // 18969 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTONU_NOTHASREZERVNU
+    st = getVariable(18969);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTONU_NOTHASREZERVNU", 58);
     st->size_data = sizeof(BOOL);
@@ -5245,8 +5243,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTONU_NOTHASREZERVNU.value;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20480 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTONU_STATUS
-    st = getVariable(20480);
+  { // 18970 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTONU_STATUS
+    st = getVariable(18970);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AUTONU_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -5255,8 +5253,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AUTONU_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20481 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_ERROR
-    st = getVariable(20481);
+  { // 18971 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_ERROR
+    st = getVariable(18971);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_ERROR", 56);
     st->size_data = sizeof(UDINT);
@@ -5265,8 +5263,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKOILSYSTEM_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20482 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_START
-    st = getVariable(20482);
+  { // 18972 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_START
+    st = getVariable(18972);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_START", 56);
     st->size_data = sizeof(UDINT);
@@ -5275,8 +5273,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKOILSYSTEM_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20483 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_TOP
-    st = getVariable(20483);
+  { // 18973 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_TOP
+    st = getVariable(18973);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_TOP", 54);
     st->size_data = sizeof(UDINT);
@@ -5285,8 +5283,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKOILSYSTEM_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20484 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_STATUS
-    st = getVariable(20484);
+  { // 18974 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_STATUS
+    st = getVariable(18974);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_STATUS", 57);
     st->size_data = sizeof(UDINT);
@@ -5295,8 +5293,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKOILSYSTEM_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20485 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTIM_STATUS
-    st = getVariable(20485);
+  { // 18975 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTIM_STATUS
+    st = getVariable(18975);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTIM_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -5305,8 +5303,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTIM_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20486 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_ERROR
-    st = getVariable(20486);
+  { // 18976 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_ERROR
+    st = getVariable(18976);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_ERROR", 51);
     st->size_data = sizeof(UDINT);
@@ -5315,8 +5313,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_VIBEGPNS_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20487 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_START
-    st = getVariable(20487);
+  { // 18977 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_START
+    st = getVariable(18977);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_START", 51);
     st->size_data = sizeof(UDINT);
@@ -5325,8 +5323,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_VIBEGPNS_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20488 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_TOP
-    st = getVariable(20488);
+  { // 18978 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_TOP
+    st = getVariable(18978);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_TOP", 49);
     st->size_data = sizeof(UDINT);
@@ -5335,8 +5333,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_VIBEGPNS_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20489 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS
-    st = getVariable(20489);
+  { // 18979 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS
+    st = getVariable(18979);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS", 64);
     st->size_data = sizeof(UDINT);
@@ -5345,8 +5343,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20490 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_STATUS
-    st = getVariable(20490);
+  { // 18980 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_STATUS
+    st = getVariable(18980);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_STATUS", 52);
     st->size_data = sizeof(UDINT);
@@ -5355,8 +5353,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_VIBEGPNS_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20491 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER
-    st = getVariable(20491);
+  { // 18981 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER
+    st = getVariable(18981);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER", 61);
     st->size_data = sizeof(UINT);
@@ -5365,8 +5363,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20492 PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER_PROTECTIONINREMONT
-    st = getVariable(20492);
+  { // 18982 PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER_PROTECTIONINREMONT
+    st = getVariable(18982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER_PROTECTIONINREMONT", 60);
     st->size_data = sizeof(BOOL);
@@ -5375,8 +5373,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)p_OPC_ALGORITMS_SET->PROTECTMANAGER_PROTECTIONINREMONT.value;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20493 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.MODE
-    st = getVariable(20493);
+  { // 18983 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.MODE
+    st = getVariable(18983);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.MODE", 42);
     st->size_data = sizeof(UINT);
@@ -5386,8 +5384,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->MODE;
     st->value_p = p_UINT;
   }
-  { // 20494 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.NARABOTKA
-    st = getVariable(20494);
+  { // 18984 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.NARABOTKA
+    st = getVariable(18984);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.NARABOTKA", 47);
     st->size_data = sizeof(UINT);
@@ -5397,8 +5395,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NARABOTKA;
     st->value_p = p_UINT;
   }
-  { // 20495 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.NMODE
-    st = getVariable(20495);
+  { // 18985 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.NMODE
+    st = getVariable(18985);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.NMODE", 43);
     st->size_data = sizeof(UINT);
@@ -5408,8 +5406,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NMODE;
     st->value_p = p_UINT;
   }
-  { // 20496 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.ANALOGSPS
-    st = getVariable(20496);
+  { // 18986 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.ANALOGSPS
+    st = getVariable(18986);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.ANALOGSPS", 47);
     st->size_data = sizeof(BOOL);
@@ -5419,8 +5417,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->ANALOGSPS;
     st->value_p = p_BOOL;
   }
-  { // 20497 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.DISCRETPS
-    st = getVariable(20497);
+  { // 18987 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.DISCRETPS
+    st = getVariable(18987);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.DISCRETPS", 47);
     st->size_data = sizeof(BOOL);
@@ -5430,8 +5428,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->DISCRETPS;
     st->value_p = p_BOOL;
   }
-  { // 20498 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.PROTECTIONSIGNALING
-    st = getVariable(20498);
+  { // 18988 PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.PROTECTIONSIGNALING
+    st = getVariable(18988);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGMANAGER.PROTECTIONSIGNALING", 57);
     st->size_data = sizeof(BOOL);
@@ -5441,8 +5439,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->PROTECTIONSIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 20499 PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER.INCOMMAND
-    st = getVariable(20499);
+  { // 18989 PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER.INCOMMAND
+    st = getVariable(18989);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER.INCOMMAND", 51);
     st->size_data = sizeof(BYTE);
@@ -5452,8 +5450,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BYTE = (BYTE*)&p_STRUCT_PROTECTIONSMANAGER->INCOMMAND;
     st->value_p = p_BYTE;
   }
-  { // 20500 PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER.PROTECTIONINREMONT
-    st = getVariable(20500);
+  { // 18990 PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER.PROTECTIONINREMONT
+    st = getVariable(18990);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.PROTECTMANAGER.PROTECTIONINREMONT", 60);
     st->size_data = sizeof(BOOL);
@@ -5463,8 +5461,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_PROTECTIONSMANAGER->PROTECTIONINREMONT;
     st->value_p = p_BOOL;
   }
-  { // 20501 PROGRAM0.GET_ALGORITMS_OPC.NOTHASREZERVNU
-    st = getVariable(20501);
+  { // 18991 PROGRAM0.GET_ALGORITMS_OPC.NOTHASREZERVNU
+    st = getVariable(18991);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.NOTHASREZERVNU", 41);
     st->size_data = sizeof(BOOL);
@@ -5473,8 +5471,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)p_OPC_ALGORITMS_SET->NOTHASREZERVNU.value;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20502 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AUTOPNS_OFFTIMER
-    st = getVariable(20502);
+  { // 18992 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AUTOPNS_OFFTIMER
+    st = getVariable(18992);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AUTOPNS_OFFTIMER", 53);
     st->size_data = sizeof(UINT);
@@ -5484,8 +5482,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->AUTOPNS_OFFTIMER;
     st->value_p = p_UINT;
   }
-  { // 20503 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AUTOPNS_ONTIMER
-    st = getVariable(20503);
+  { // 18993 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AUTOPNS_ONTIMER
+    st = getVariable(18993);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AUTOPNS_ONTIMER", 52);
     st->size_data = sizeof(UINT);
@@ -5495,8 +5493,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->AUTOPNS_ONTIMER;
     st->value_p = p_UINT;
   }
-  { // 20504 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.VIBEGPNS_TIMER
-    st = getVariable(20504);
+  { // 18994 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.VIBEGPNS_TIMER
+    st = getVariable(18994);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.VIBEGPNS_TIMER", 51);
     st->size_data = sizeof(UINT);
@@ -5506,8 +5504,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->VIBEGPNS_TIMER;
     st->value_p = p_UINT;
   }
-  { // 20505 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.NO_WAITCLOSEKRAN
-    st = getVariable(20505);
+  { // 18995 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.NO_WAITCLOSEKRAN
+    st = getVariable(18995);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.NO_WAITCLOSEKRAN", 53);
     st->size_data = sizeof(UINT);
@@ -5517,8 +5515,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->NO_WAITCLOSEKRAN;
     st->value_p = p_UINT;
   }
-  { // 20506 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AO_WAITKRAN
-    st = getVariable(20506);
+  { // 18996 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AO_WAITKRAN
+    st = getVariable(18996);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.AO_WAITKRAN", 48);
     st->size_data = sizeof(UINT);
@@ -5528,8 +5526,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->AO_WAITKRAN;
     st->value_p = p_UINT;
   }
-  { // 20507 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.TESTPMS_BREAKTEST
-    st = getVariable(20507);
+  { // 18997 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.TESTPMS_BREAKTEST
+    st = getVariable(18997);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.TESTPMS_BREAKTEST", 54);
     st->size_data = sizeof(UINT);
@@ -5539,8 +5537,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->TESTPMS_BREAKTEST;
     st->value_p = p_UINT;
   }
-  { // 20508 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.TESTDPMG_BREAKTEST
-    st = getVariable(20508);
+  { // 18998 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.TESTDPMG_BREAKTEST
+    st = getVariable(18998);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.TESTDPMG_BREAKTEST", 55);
     st->size_data = sizeof(UINT);
@@ -5550,8 +5548,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->TESTDPMG_BREAKTEST;
     st->value_p = p_UINT;
   }
-  { // 20509 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKOILSYSTEM_BREAKPUSKTIMER_POIL
-    st = getVariable(20509);
+  { // 18999 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKOILSYSTEM_BREAKPUSKTIMER_POIL
+    st = getVariable(18999);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKOILSYSTEM_BREAKPUSKTIMER_POIL", 70);
     st->size_data = sizeof(UINT);
@@ -5561,8 +5559,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->PUSKOILSYSTEM_BREAKPUSKTIMER_POIL;
     st->value_p = p_UINT;
   }
-  { // 20510 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.ENGINERUN_BREAKPUSKTIMER
-    st = getVariable(20510);
+  { // 19000 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.ENGINERUN_BREAKPUSKTIMER
+    st = getVariable(19000);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.ENGINERUN_BREAKPUSKTIMER", 61);
     st->size_data = sizeof(UINT);
@@ -5572,8 +5570,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->ENGINERUN_BREAKPUSKTIMER;
     st->value_p = p_UINT;
   }
-  { // 20511 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_BREAKPUSKTIMER
-    st = getVariable(20511);
+  { // 19001 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_BREAKPUSKTIMER
+    st = getVariable(19001);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_BREAKPUSKTIMER", 59);
     st->size_data = sizeof(UINT);
@@ -5583,8 +5581,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->FILLING_BREAKPUSKTIMER;
     st->value_p = p_UINT;
   }
-  { // 20512 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_WAITAFTERKRAN4
-    st = getVariable(20512);
+  { // 19002 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_WAITAFTERKRAN4
+    st = getVariable(19002);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_WAITAFTERKRAN4", 59);
     st->size_data = sizeof(UINT);
@@ -5594,8 +5592,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->FILLING_WAITAFTERKRAN4;
     st->value_p = p_UINT;
   }
-  { // 20513 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_WAITAFTERKRAN5
-    st = getVariable(20513);
+  { // 19003 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_WAITAFTERKRAN5
+    st = getVariable(19003);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.FILLING_WAITAFTERKRAN5", 59);
     st->size_data = sizeof(UINT);
@@ -5605,8 +5603,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->FILLING_WAITAFTERKRAN5;
     st->value_p = p_UINT;
   }
-  { // 20514 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKK_WAIT720
-    st = getVariable(20514);
+  { // 19004 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKK_WAIT720
+    st = getVariable(19004);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKK_WAIT720", 50);
     st->size_data = sizeof(UINT);
@@ -5616,8 +5614,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->PUSKK_WAIT720;
     st->value_p = p_UINT;
   }
-  { // 20515 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKV_WAIT600
-    st = getVariable(20515);
+  { // 19005 PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKV_WAIT600
+    st = getVariable(19005);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGTIMERS.PUSKV_WAIT600", 50);
     st->size_data = sizeof(UINT);
@@ -5627,8 +5625,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_ALGTIMERS->PUSKV_WAIT600;
     st->value_p = p_UINT;
   }
-  { // 20516 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ANSWERVARIANTS
-    st = getVariable(20516);
+  { // 19006 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ANSWERVARIANTS
+    st = getVariable(19006);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ANSWERVARIANTS", 75);
     st->size_data = sizeof(UINT);
@@ -5639,8 +5637,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20517 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.INCOMMAND
-    st = getVariable(20517);
+  { // 19007 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.INCOMMAND
+    st = getVariable(19007);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.INCOMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -5651,8 +5649,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20518 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ASK
-    st = getVariable(20518);
+  { // 19008 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ASK
+    st = getVariable(19008);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ASK", 64);
     st->size_data = sizeof(BOOL);
@@ -5663,8 +5661,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20519 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.RESET
-    st = getVariable(20519);
+  { // 19009 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.RESET
+    st = getVariable(19009);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.RESET", 66);
     st->size_data = sizeof(BOOL);
@@ -5675,8 +5673,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20520 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.STATUS
-    st = getVariable(20520);
+  { // 19010 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.STATUS
+    st = getVariable(19010);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -5687,8 +5685,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20521 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ANSWER
-    st = getVariable(20521);
+  { // 19011 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ANSWER
+    st = getVariable(19011);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.ANSWER", 67);
     st->size_data = sizeof(UINT);
@@ -5699,8 +5697,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20522 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.OPCCOMMANDSDISABLED
-    st = getVariable(20522);
+  { // 19012 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.OPCCOMMANDSDISABLED
+    st = getVariable(19012);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.OPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -5711,8 +5709,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20523 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.INOPCCOMMANDSDISABLED
-    st = getVariable(20523);
+  { // 19013 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.INOPCCOMMANDSDISABLED
+    st = getVariable(19013);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.VIBEGPNS_ALGCONTINUE.INOPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -5723,8 +5721,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20524 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ANSWERVARIANTS
-    st = getVariable(20524);
+  { // 19014 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ANSWERVARIANTS
+    st = getVariable(19014);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ANSWERVARIANTS", 74);
     st->size_data = sizeof(UINT);
@@ -5735,8 +5733,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20525 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.INCOMMAND
-    st = getVariable(20525);
+  { // 19015 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.INCOMMAND
+    st = getVariable(19015);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.INCOMMAND", 69);
     st->size_data = sizeof(WORD);
@@ -5747,8 +5745,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20526 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ASK
-    st = getVariable(20526);
+  { // 19016 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ASK
+    st = getVariable(19016);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ASK", 63);
     st->size_data = sizeof(BOOL);
@@ -5759,8 +5757,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20527 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.RESET
-    st = getVariable(20527);
+  { // 19017 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.RESET
+    st = getVariable(19017);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.RESET", 65);
     st->size_data = sizeof(BOOL);
@@ -5771,8 +5769,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20528 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.STATUS
-    st = getVariable(20528);
+  { // 19018 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.STATUS
+    st = getVariable(19018);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.STATUS", 66);
     st->size_data = sizeof(DWORD);
@@ -5783,8 +5781,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20529 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ANSWER
-    st = getVariable(20529);
+  { // 19019 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ANSWER
+    st = getVariable(19019);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.ANSWER", 66);
     st->size_data = sizeof(UINT);
@@ -5795,8 +5793,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20530 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.OPCCOMMANDSDISABLED
-    st = getVariable(20530);
+  { // 19020 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.OPCCOMMANDSDISABLED
+    st = getVariable(19020);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.OPCCOMMANDSDISABLED", 79);
     st->size_data = sizeof(BOOL);
@@ -5807,8 +5805,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20531 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.INOPCCOMMANDSDISABLED
-    st = getVariable(20531);
+  { // 19021 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.INOPCCOMMANDSDISABLED
+    st = getVariable(19021);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTPMS_ALGCONTINUE.INOPCCOMMANDSDISABLED", 81);
     st->size_data = sizeof(BOOL);
@@ -5819,8 +5817,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20532 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ANSWERVARIANTS
-    st = getVariable(20532);
+  { // 19022 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ANSWERVARIANTS
+    st = getVariable(19022);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ANSWERVARIANTS", 75);
     st->size_data = sizeof(UINT);
@@ -5831,8 +5829,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20533 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.INCOMMAND
-    st = getVariable(20533);
+  { // 19023 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.INCOMMAND
+    st = getVariable(19023);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.INCOMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -5843,8 +5841,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20534 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ASK
-    st = getVariable(20534);
+  { // 19024 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ASK
+    st = getVariable(19024);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ASK", 64);
     st->size_data = sizeof(BOOL);
@@ -5855,8 +5853,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20535 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.RESET
-    st = getVariable(20535);
+  { // 19025 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.RESET
+    st = getVariable(19025);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.RESET", 66);
     st->size_data = sizeof(BOOL);
@@ -5867,8 +5865,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20536 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.STATUS
-    st = getVariable(20536);
+  { // 19026 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.STATUS
+    st = getVariable(19026);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -5879,8 +5877,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20537 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ANSWER
-    st = getVariable(20537);
+  { // 19027 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ANSWER
+    st = getVariable(19027);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.ANSWER", 67);
     st->size_data = sizeof(UINT);
@@ -5891,8 +5889,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20538 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.OPCCOMMANDSDISABLED
-    st = getVariable(20538);
+  { // 19028 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.OPCCOMMANDSDISABLED
+    st = getVariable(19028);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.OPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -5903,8 +5901,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20539 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.INOPCCOMMANDSDISABLED
-    st = getVariable(20539);
+  { // 19029 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.INOPCCOMMANDSDISABLED
+    st = getVariable(19029);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.TESTDPMG_ALGCONTINUE.INOPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -5915,8 +5913,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20540 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ANSWERVARIANTS
-    st = getVariable(20540);
+  { // 19030 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ANSWERVARIANTS
+    st = getVariable(19030);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ANSWERVARIANTS", 76);
     st->size_data = sizeof(UINT);
@@ -5927,8 +5925,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20541 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.INCOMMAND
-    st = getVariable(20541);
+  { // 19031 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.INCOMMAND
+    st = getVariable(19031);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.INCOMMAND", 71);
     st->size_data = sizeof(WORD);
@@ -5939,8 +5937,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20542 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ASK
-    st = getVariable(20542);
+  { // 19032 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ASK
+    st = getVariable(19032);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ASK", 65);
     st->size_data = sizeof(BOOL);
@@ -5951,8 +5949,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20543 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.RESET
-    st = getVariable(20543);
+  { // 19033 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.RESET
+    st = getVariable(19033);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.RESET", 67);
     st->size_data = sizeof(BOOL);
@@ -5963,8 +5961,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20544 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.STATUS
-    st = getVariable(20544);
+  { // 19034 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.STATUS
+    st = getVariable(19034);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -5975,8 +5973,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20545 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ANSWER
-    st = getVariable(20545);
+  { // 19035 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ANSWER
+    st = getVariable(19035);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.ANSWER", 68);
     st->size_data = sizeof(UINT);
@@ -5987,8 +5985,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20546 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.OPCCOMMANDSDISABLED
-    st = getVariable(20546);
+  { // 19036 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.OPCCOMMANDSDISABLED
+    st = getVariable(19036);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.OPCCOMMANDSDISABLED", 81);
     st->size_data = sizeof(BOOL);
@@ -5999,8 +5997,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20547 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.INOPCCOMMANDSDISABLED
-    st = getVariable(20547);
+  { // 19037 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.INOPCCOMMANDSDISABLED
+    st = getVariable(19037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONFILLING.INOPCCOMMANDSDISABLED", 83);
     st->size_data = sizeof(BOOL);
@@ -6011,8 +6009,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20548 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ANSWERVARIANTS
-    st = getVariable(20548);
+  { // 19038 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ANSWERVARIANTS
+    st = getVariable(19038);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ANSWERVARIANTS", 75);
     st->size_data = sizeof(UINT);
@@ -6023,8 +6021,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20549 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.INCOMMAND
-    st = getVariable(20549);
+  { // 19039 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.INCOMMAND
+    st = getVariable(19039);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.INCOMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -6035,8 +6033,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20550 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ASK
-    st = getVariable(20550);
+  { // 19040 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ASK
+    st = getVariable(19040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ASK", 64);
     st->size_data = sizeof(BOOL);
@@ -6047,8 +6045,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20551 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.RESET
-    st = getVariable(20551);
+  { // 19041 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.RESET
+    st = getVariable(19041);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.RESET", 66);
     st->size_data = sizeof(BOOL);
@@ -6059,8 +6057,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20552 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.STATUS
-    st = getVariable(20552);
+  { // 19042 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.STATUS
+    st = getVariable(19042);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -6071,8 +6069,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20553 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ANSWER
-    st = getVariable(20553);
+  { // 19043 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ANSWER
+    st = getVariable(19043);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.ANSWER", 67);
     st->size_data = sizeof(UINT);
@@ -6083,8 +6081,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20554 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.OPCCOMMANDSDISABLED
-    st = getVariable(20554);
+  { // 19044 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.OPCCOMMANDSDISABLED
+    st = getVariable(19044);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.OPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -6095,8 +6093,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20555 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.INOPCCOMMANDSDISABLED
-    st = getVariable(20555);
+  { // 19045 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.INOPCCOMMANDSDISABLED
+    st = getVariable(19045);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKK_QUESTIONUNLOAD.INOPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -6107,8 +6105,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20556 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ANSWERVARIANTS
-    st = getVariable(20556);
+  { // 19046 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ANSWERVARIANTS
+    st = getVariable(19046);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ANSWERVARIANTS", 75);
     st->size_data = sizeof(UINT);
@@ -6119,8 +6117,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20557 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.INCOMMAND
-    st = getVariable(20557);
+  { // 19047 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.INCOMMAND
+    st = getVariable(19047);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.INCOMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -6131,8 +6129,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20558 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ASK
-    st = getVariable(20558);
+  { // 19048 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ASK
+    st = getVariable(19048);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ASK", 64);
     st->size_data = sizeof(BOOL);
@@ -6143,8 +6141,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20559 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.RESET
-    st = getVariable(20559);
+  { // 19049 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.RESET
+    st = getVariable(19049);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.RESET", 66);
     st->size_data = sizeof(BOOL);
@@ -6155,8 +6153,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20560 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.STATUS
-    st = getVariable(20560);
+  { // 19050 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.STATUS
+    st = getVariable(19050);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -6167,8 +6165,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20561 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ANSWER
-    st = getVariable(20561);
+  { // 19051 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ANSWER
+    st = getVariable(19051);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.ANSWER", 67);
     st->size_data = sizeof(UINT);
@@ -6179,8 +6177,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20562 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.OPCCOMMANDSDISABLED
-    st = getVariable(20562);
+  { // 19052 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.OPCCOMMANDSDISABLED
+    st = getVariable(19052);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.OPCCOMMANDSDISABLED", 80);
     st->size_data = sizeof(BOOL);
@@ -6191,8 +6189,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20563 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.INOPCCOMMANDSDISABLED
-    st = getVariable(20563);
+  { // 19053 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.INOPCCOMMANDSDISABLED
+    st = getVariable(19053);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONENGINE.INOPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -6203,8 +6201,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20564 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ANSWERVARIANTS
-    st = getVariable(20564);
+  { // 19054 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ANSWERVARIANTS
+    st = getVariable(19054);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ANSWERVARIANTS", 74);
     st->size_data = sizeof(UINT);
@@ -6215,8 +6213,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20565 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.INCOMMAND
-    st = getVariable(20565);
+  { // 19055 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.INCOMMAND
+    st = getVariable(19055);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.INCOMMAND", 69);
     st->size_data = sizeof(WORD);
@@ -6227,8 +6225,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20566 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ASK
-    st = getVariable(20566);
+  { // 19056 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ASK
+    st = getVariable(19056);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ASK", 63);
     st->size_data = sizeof(BOOL);
@@ -6239,8 +6237,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20567 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.RESET
-    st = getVariable(20567);
+  { // 19057 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.RESET
+    st = getVariable(19057);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.RESET", 65);
     st->size_data = sizeof(BOOL);
@@ -6251,8 +6249,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20568 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.STATUS
-    st = getVariable(20568);
+  { // 19058 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.STATUS
+    st = getVariable(19058);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.STATUS", 66);
     st->size_data = sizeof(DWORD);
@@ -6263,8 +6261,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20569 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ANSWER
-    st = getVariable(20569);
+  { // 19059 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ANSWER
+    st = getVariable(19059);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.ANSWER", 66);
     st->size_data = sizeof(UINT);
@@ -6275,8 +6273,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20570 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.OPCCOMMANDSDISABLED
-    st = getVariable(20570);
+  { // 19060 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.OPCCOMMANDSDISABLED
+    st = getVariable(19060);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.OPCCOMMANDSDISABLED", 79);
     st->size_data = sizeof(BOOL);
@@ -6287,8 +6285,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20571 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.INOPCCOMMANDSDISABLED
-    st = getVariable(20571);
+  { // 19061 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.INOPCCOMMANDSDISABLED
+    st = getVariable(19061);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.PUSKV_QUESTIONMVOFF.INOPCCOMMANDSDISABLED", 81);
     st->size_data = sizeof(BOOL);
@@ -6299,8 +6297,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20572 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ANSWERVARIANTS
-    st = getVariable(20572);
+  { // 19062 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ANSWERVARIANTS
+    st = getVariable(19062);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ANSWERVARIANTS", 77);
     st->size_data = sizeof(UINT);
@@ -6311,8 +6309,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20573 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.INCOMMAND
-    st = getVariable(20573);
+  { // 19063 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.INCOMMAND
+    st = getVariable(19063);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.INCOMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -6323,8 +6321,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20574 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ASK
-    st = getVariable(20574);
+  { // 19064 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ASK
+    st = getVariable(19064);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ASK", 66);
     st->size_data = sizeof(BOOL);
@@ -6335,8 +6333,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20575 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.RESET
-    st = getVariable(20575);
+  { // 19065 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.RESET
+    st = getVariable(19065);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.RESET", 68);
     st->size_data = sizeof(BOOL);
@@ -6347,8 +6345,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20576 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.STATUS
-    st = getVariable(20576);
+  { // 19066 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.STATUS
+    st = getVariable(19066);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -6359,8 +6357,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20577 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ANSWER
-    st = getVariable(20577);
+  { // 19067 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ANSWER
+    st = getVariable(19067);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.ANSWER", 69);
     st->size_data = sizeof(UINT);
@@ -6371,8 +6369,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20578 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.OPCCOMMANDSDISABLED
-    st = getVariable(20578);
+  { // 19068 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.OPCCOMMANDSDISABLED
+    st = getVariable(19068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.OPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -6383,8 +6381,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20579 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.INOPCCOMMANDSDISABLED
-    st = getVariable(20579);
+  { // 19069 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.INOPCCOMMANDSDISABLED
+    st = getVariable(19069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN1PH.INOPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -6395,8 +6393,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20580 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ANSWERVARIANTS
-    st = getVariable(20580);
+  { // 19070 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ANSWERVARIANTS
+    st = getVariable(19070);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ANSWERVARIANTS", 77);
     st->size_data = sizeof(UINT);
@@ -6407,8 +6405,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20581 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.INCOMMAND
-    st = getVariable(20581);
+  { // 19071 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.INCOMMAND
+    st = getVariable(19071);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.INCOMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -6419,8 +6417,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20582 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ASK
-    st = getVariable(20582);
+  { // 19072 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ASK
+    st = getVariable(19072);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ASK", 66);
     st->size_data = sizeof(BOOL);
@@ -6431,8 +6429,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20583 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.RESET
-    st = getVariable(20583);
+  { // 19073 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.RESET
+    st = getVariable(19073);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.RESET", 68);
     st->size_data = sizeof(BOOL);
@@ -6443,8 +6441,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20584 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.STATUS
-    st = getVariable(20584);
+  { // 19074 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.STATUS
+    st = getVariable(19074);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -6455,8 +6453,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20585 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ANSWER
-    st = getVariable(20585);
+  { // 19075 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ANSWER
+    st = getVariable(19075);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.ANSWER", 69);
     st->size_data = sizeof(UINT);
@@ -6467,8 +6465,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20586 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.OPCCOMMANDSDISABLED
-    st = getVariable(20586);
+  { // 19076 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.OPCCOMMANDSDISABLED
+    st = getVariable(19076);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.OPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -6479,8 +6477,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20587 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.INOPCCOMMANDSDISABLED
-    st = getVariable(20587);
+  { // 19077 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.INOPCCOMMANDSDISABLED
+    st = getVariable(19077);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN2PH.INOPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -6491,8 +6489,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20588 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ANSWERVARIANTS
-    st = getVariable(20588);
+  { // 19078 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ANSWERVARIANTS
+    st = getVariable(19078);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ANSWERVARIANTS", 77);
     st->size_data = sizeof(UINT);
@@ -6503,8 +6501,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20589 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.INCOMMAND
-    st = getVariable(20589);
+  { // 19079 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.INCOMMAND
+    st = getVariable(19079);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.INCOMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -6515,8 +6513,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20590 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ASK
-    st = getVariable(20590);
+  { // 19080 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ASK
+    st = getVariable(19080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ASK", 66);
     st->size_data = sizeof(BOOL);
@@ -6527,8 +6525,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20591 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.RESET
-    st = getVariable(20591);
+  { // 19081 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.RESET
+    st = getVariable(19081);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.RESET", 68);
     st->size_data = sizeof(BOOL);
@@ -6539,8 +6537,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20592 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.STATUS
-    st = getVariable(20592);
+  { // 19082 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.STATUS
+    st = getVariable(19082);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -6551,8 +6549,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20593 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ANSWER
-    st = getVariable(20593);
+  { // 19083 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ANSWER
+    st = getVariable(19083);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.ANSWER", 69);
     st->size_data = sizeof(UINT);
@@ -6563,8 +6561,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20594 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.OPCCOMMANDSDISABLED
-    st = getVariable(20594);
+  { // 19084 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.OPCCOMMANDSDISABLED
+    st = getVariable(19084);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.OPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -6575,8 +6573,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20595 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.INOPCCOMMANDSDISABLED
-    st = getVariable(20595);
+  { // 19085 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.INOPCCOMMANDSDISABLED
+    st = getVariable(19085);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN3PH.INOPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -6587,8 +6585,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20596 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ANSWERVARIANTS
-    st = getVariable(20596);
+  { // 19086 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ANSWERVARIANTS
+    st = getVariable(19086);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ANSWERVARIANTS", 77);
     st->size_data = sizeof(UINT);
@@ -6599,8 +6597,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWERVARIANTS;
     st->value_p = p_UINT;
   }
-  { // 20597 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.INCOMMAND
-    st = getVariable(20597);
+  { // 19087 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.INCOMMAND
+    st = getVariable(19087);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.INCOMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -6611,8 +6609,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_WORD = (WORD*)&p_STRUCT_QUESTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20598 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ASK
-    st = getVariable(20598);
+  { // 19088 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ASK
+    st = getVariable(19088);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ASK", 66);
     st->size_data = sizeof(BOOL);
@@ -6623,8 +6621,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->ASK;
     st->value_p = p_BOOL;
   }
-  { // 20599 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.RESET
-    st = getVariable(20599);
+  { // 19089 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.RESET
+    st = getVariable(19089);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.RESET", 68);
     st->size_data = sizeof(BOOL);
@@ -6635,8 +6633,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->RESET;
     st->value_p = p_BOOL;
   }
-  { // 20600 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.STATUS
-    st = getVariable(20600);
+  { // 19090 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.STATUS
+    st = getVariable(19090);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -6647,8 +6645,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_DWORD = (DWORD*)&p_STRUCT_QUESTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20601 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ANSWER
-    st = getVariable(20601);
+  { // 19091 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ANSWER
+    st = getVariable(19091);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.ANSWER", 69);
     st->size_data = sizeof(UINT);
@@ -6659,8 +6657,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)&p_STRUCT_QUESTION->ANSWER;
     st->value_p = p_UINT;
   }
-  { // 20602 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.OPCCOMMANDSDISABLED
-    st = getVariable(20602);
+  { // 19092 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.OPCCOMMANDSDISABLED
+    st = getVariable(19092);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.OPCCOMMANDSDISABLED", 82);
     st->size_data = sizeof(BOOL);
@@ -6671,8 +6669,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20603 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.INOPCCOMMANDSDISABLED
-    st = getVariable(20603);
+  { // 19093 PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.INOPCCOMMANDSDISABLED
+    st = getVariable(19093);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGQUESTIONS.SEMIAUTOPUSK_CMDRUN4PH.INOPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
@@ -6683,8 +6681,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_BOOL = (BOOL*)&p_STRUCT_QUESTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20604 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_ERROR
-    st = getVariable(20604);
+  { // 19094 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_ERROR
+    st = getVariable(19094);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_ERROR", 48);
     st->size_data = sizeof(UDINT);
@@ -6693,8 +6691,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_APUSK_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20605 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_START
-    st = getVariable(20605);
+  { // 19095 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_START
+    st = getVariable(19095);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_START", 48);
     st->size_data = sizeof(UDINT);
@@ -6703,8 +6701,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_APUSK_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20606 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_TOP
-    st = getVariable(20606);
+  { // 19096 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_TOP
+    st = getVariable(19096);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_TOP", 46);
     st->size_data = sizeof(UDINT);
@@ -6713,8 +6711,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_APUSK_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20607 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_STATUS
-    st = getVariable(20607);
+  { // 19097 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_STATUS
+    st = getVariable(19097);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_APUSK_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -6723,8 +6721,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_APUSK_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20608 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_ERROR
-    st = getVariable(20608);
+  { // 19098 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_ERROR
+    st = getVariable(19098);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_ERROR", 53);
     st->size_data = sizeof(UDINT);
@@ -6733,8 +6731,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_RINGTOLINE_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20609 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_START
-    st = getVariable(20609);
+  { // 19099 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_START
+    st = getVariable(19099);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_START", 53);
     st->size_data = sizeof(UDINT);
@@ -6743,8 +6741,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_RINGTOLINE_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20610 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_TOP
-    st = getVariable(20610);
+  { // 19100 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_TOP
+    st = getVariable(19100);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_TOP", 51);
     st->size_data = sizeof(UDINT);
@@ -6753,8 +6751,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_RINGTOLINE_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20611 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_STATUS
-    st = getVariable(20611);
+  { // 19101 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_STATUS
+    st = getVariable(19101);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_RINGTOLINE_STATUS", 54);
     st->size_data = sizeof(UDINT);
@@ -6763,8 +6761,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_RINGTOLINE_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20612 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_ERROR
-    st = getVariable(20612);
+  { // 19102 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_ERROR
+    st = getVariable(19102);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_ERROR", 55);
     st->size_data = sizeof(UDINT);
@@ -6773,8 +6771,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20613 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_START
-    st = getVariable(20613);
+  { // 19103 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_START
+    st = getVariable(19103);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_START", 55);
     st->size_data = sizeof(UDINT);
@@ -6783,8 +6781,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20614 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_TOP
-    st = getVariable(20614);
+  { // 19104 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_TOP
+    st = getVariable(19104);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_TOP", 53);
     st->size_data = sizeof(UDINT);
@@ -6793,8 +6791,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20615 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS
-    st = getVariable(20615);
+  { // 19105 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS
+    st = getVariable(19105);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS", 66);
     st->size_data = sizeof(UDINT);
@@ -6803,8 +6801,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20616 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS
-    st = getVariable(20616);
+  { // 19106 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS
+    st = getVariable(19106);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS", 66);
     st->size_data = sizeof(UDINT);
@@ -6813,8 +6811,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20617 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS
-    st = getVariable(20617);
+  { // 19107 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS
+    st = getVariable(19107);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS", 66);
     st->size_data = sizeof(UDINT);
@@ -6823,8 +6821,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20618 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS
-    st = getVariable(20618);
+  { // 19108 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS
+    st = getVariable(19108);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS", 66);
     st->size_data = sizeof(UDINT);
@@ -6833,8 +6831,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20619 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_STATUS
-    st = getVariable(20619);
+  { // 19109 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_STATUS
+    st = getVariable(19109);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_SEMIAUTOPUSK_STATUS", 56);
     st->size_data = sizeof(UDINT);
@@ -6843,8 +6841,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_SEMIAUTOPUSK_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20620 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_ERROR
-    st = getVariable(20620);
+  { // 19110 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_ERROR
+    st = getVariable(19110);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_ERROR", 45);
     st->size_data = sizeof(UDINT);
@@ -6853,8 +6851,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AO_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20621 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_START
-    st = getVariable(20621);
+  { // 19111 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_START
+    st = getVariable(19111);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_START", 45);
     st->size_data = sizeof(UDINT);
@@ -6863,8 +6861,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AO_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20622 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_TOP
-    st = getVariable(20622);
+  { // 19112 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_TOP
+    st = getVariable(19112);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_TOP", 43);
     st->size_data = sizeof(UDINT);
@@ -6873,8 +6871,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AO_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20623 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_STATUS
-    st = getVariable(20623);
+  { // 19113 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_STATUS
+    st = getVariable(19113);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -6883,8 +6881,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AO_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20624 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_WAITKRAN_TIMER
-    st = getVariable(20624);
+  { // 19114 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_WAITKRAN_TIMER
+    st = getVariable(19114);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_AO_WAITKRAN_TIMER", 54);
     st->size_data = sizeof(UINT);
@@ -6893,8 +6891,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_AO_WAITKRAN_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20625 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER
-    st = getVariable(20625);
+  { // 19115 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER
+    st = getVariable(19115);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER", 67);
     st->size_data = sizeof(UINT);
@@ -6903,8 +6901,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20626 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_ERROR
-    st = getVariable(20626);
+  { // 19116 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_ERROR
+    st = getVariable(19116);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_ERROR", 52);
     st->size_data = sizeof(UDINT);
@@ -6913,8 +6911,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_ENGINERUN_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20627 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_START
-    st = getVariable(20627);
+  { // 19117 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_START
+    st = getVariable(19117);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_START", 52);
     st->size_data = sizeof(UDINT);
@@ -6923,8 +6921,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_ENGINERUN_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20628 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_TOP
-    st = getVariable(20628);
+  { // 19118 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_TOP
+    st = getVariable(19118);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_TOP", 50);
     st->size_data = sizeof(UDINT);
@@ -6933,8 +6931,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_ENGINERUN_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20629 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_STATUS
-    st = getVariable(20629);
+  { // 19119 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_STATUS
+    st = getVariable(19119);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_ENGINERUN_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -6943,8 +6941,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_ENGINERUN_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20630 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER
-    st = getVariable(20630);
+  { // 19120 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER
+    st = getVariable(19120);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER", 65);
     st->size_data = sizeof(UINT);
@@ -6953,8 +6951,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20631 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_ERROR
-    st = getVariable(20631);
+  { // 19121 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_ERROR
+    st = getVariable(19121);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_ERROR", 50);
     st->size_data = sizeof(UDINT);
@@ -6963,8 +6961,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20632 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_START
-    st = getVariable(20632);
+  { // 19122 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_START
+    st = getVariable(19122);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_START", 50);
     st->size_data = sizeof(UDINT);
@@ -6973,8 +6971,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20633 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_TOP
-    st = getVariable(20633);
+  { // 19123 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_TOP
+    st = getVariable(19123);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_TOP", 48);
     st->size_data = sizeof(UDINT);
@@ -6983,8 +6981,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20634 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_STATUS
-    st = getVariable(20634);
+  { // 19124 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_STATUS
+    st = getVariable(19124);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -6993,8 +6991,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20635 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER
-    st = getVariable(20635);
+  { // 19125 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER
+    st = getVariable(19125);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER", 65);
     st->size_data = sizeof(UINT);
@@ -7003,8 +7001,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20636 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER
-    st = getVariable(20636);
+  { // 19126 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER
+    st = getVariable(19126);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER", 65);
     st->size_data = sizeof(UINT);
@@ -7013,8 +7011,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20637 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_ERROR
-    st = getVariable(20637);
+  { // 19127 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_ERROR
+    st = getVariable(19127);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_ERROR", 45);
     st->size_data = sizeof(UDINT);
@@ -7023,8 +7021,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_NO_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20638 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_START
-    st = getVariable(20638);
+  { // 19128 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_START
+    st = getVariable(19128);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_START", 45);
     st->size_data = sizeof(UDINT);
@@ -7033,8 +7031,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_NO_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20639 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_TOP
-    st = getVariable(20639);
+  { // 19129 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_TOP
+    st = getVariable(19129);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_TOP", 43);
     st->size_data = sizeof(UDINT);
@@ -7043,8 +7041,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_NO_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20640 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_STATUS
-    st = getVariable(20640);
+  { // 19130 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_STATUS
+    st = getVariable(19130);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -7053,8 +7051,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_NO_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20641 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_WAITCLOSEKRAN_TIMER
-    st = getVariable(20641);
+  { // 19131 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_WAITCLOSEKRAN_TIMER
+    st = getVariable(19131);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_NO_WAITCLOSEKRAN_TIMER", 59);
     st->size_data = sizeof(UINT);
@@ -7063,8 +7061,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_NO_WAITCLOSEKRAN_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20642 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_ERROR
-    st = getVariable(20642);
+  { // 19132 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_ERROR
+    st = getVariable(19132);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_ERROR", 46);
     st->size_data = sizeof(UDINT);
@@ -7073,8 +7071,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PPU_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20643 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_START
-    st = getVariable(20643);
+  { // 19133 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_START
+    st = getVariable(19133);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_START", 46);
     st->size_data = sizeof(UDINT);
@@ -7083,8 +7081,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PPU_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20644 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_TOP
-    st = getVariable(20644);
+  { // 19134 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_TOP
+    st = getVariable(19134);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_TOP", 44);
     st->size_data = sizeof(UDINT);
@@ -7093,8 +7091,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PPU_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20645 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_STATUS
-    st = getVariable(20645);
+  { // 19135 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_STATUS
+    st = getVariable(19135);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PPU_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -7103,8 +7101,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PPU_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20646 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_ERROR
-    st = getVariable(20646);
+  { // 19136 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_ERROR
+    st = getVariable(19136);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_ERROR", 48);
     st->size_data = sizeof(UDINT);
@@ -7113,8 +7111,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20647 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_START
-    st = getVariable(20647);
+  { // 19137 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_START
+    st = getVariable(19137);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_START", 48);
     st->size_data = sizeof(UDINT);
@@ -7123,8 +7121,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20648 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_TOP
-    st = getVariable(20648);
+  { // 19138 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_TOP
+    st = getVariable(19138);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_TOP", 46);
     st->size_data = sizeof(UDINT);
@@ -7133,8 +7131,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20649 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_QUESTIONFILLING_STATUS
-    st = getVariable(20649);
+  { // 19139 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_QUESTIONFILLING_STATUS
+    st = getVariable(19139);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_QUESTIONFILLING_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -7143,8 +7141,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_QUESTIONFILLING_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20650 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS
-    st = getVariable(20650);
+  { // 19140 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS
+    st = getVariable(19140);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS", 64);
     st->size_data = sizeof(UDINT);
@@ -7153,8 +7151,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20651 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_STATUS
-    st = getVariable(20651);
+  { // 19141 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_STATUS
+    st = getVariable(19141);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -7163,8 +7161,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20652 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_WAIT720_TIMER
-    st = getVariable(20652);
+  { // 19142 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_WAIT720_TIMER
+    st = getVariable(19142);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKK_WAIT720_TIMER", 56);
     st->size_data = sizeof(UINT);
@@ -7173,8 +7171,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKK_WAIT720_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20653 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER
-    st = getVariable(20653);
+  { // 19143 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER
+    st = getVariable(19143);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER", 76);
     st->size_data = sizeof(UINT);
@@ -7183,8 +7181,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20654 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER
-    st = getVariable(20654);
+  { // 19144 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER
+    st = getVariable(19144);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER", 76);
     st->size_data = sizeof(UINT);
@@ -7193,8 +7191,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20655 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_ERROR
-    st = getVariable(20655);
+  { // 19145 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_ERROR
+    st = getVariable(19145);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_ERROR", 48);
     st->size_data = sizeof(UDINT);
@@ -7203,8 +7201,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20656 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_START
-    st = getVariable(20656);
+  { // 19146 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_START
+    st = getVariable(19146);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_START", 48);
     st->size_data = sizeof(UDINT);
@@ -7213,8 +7211,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20657 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_TOP
-    st = getVariable(20657);
+  { // 19147 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_TOP
+    st = getVariable(19147);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_TOP", 46);
     st->size_data = sizeof(UDINT);
@@ -7223,8 +7221,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20658 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_QUESTIONFILLING_STATUS
-    st = getVariable(20658);
+  { // 19148 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_QUESTIONFILLING_STATUS
+    st = getVariable(19148);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_QUESTIONFILLING_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -7233,8 +7231,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_QUESTIONFILLING_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20659 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS
-    st = getVariable(20659);
+  { // 19149 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS
+    st = getVariable(19149);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS", 63);
     st->size_data = sizeof(UDINT);
@@ -7243,8 +7241,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20660 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_STATUS
-    st = getVariable(20660);
+  { // 19150 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_STATUS
+    st = getVariable(19150);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -7253,8 +7251,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20661 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_WAIT600_TIMER
-    st = getVariable(20661);
+  { // 19151 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_WAIT600_TIMER
+    st = getVariable(19151);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_PUSKV_WAIT600_TIMER", 56);
     st->size_data = sizeof(UINT);
@@ -7263,8 +7261,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_PUSKV_WAIT600_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20662 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_BREAKTEST_TIMER
-    st = getVariable(20662);
+  { // 19152 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_BREAKTEST_TIMER
+    st = getVariable(19152);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_BREAKTEST_TIMER", 60);
     st->size_data = sizeof(UINT);
@@ -7273,8 +7271,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPMS_BREAKTEST_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20663 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_ERROR
-    st = getVariable(20663);
+  { // 19153 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_ERROR
+    st = getVariable(19153);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_ERROR", 50);
     st->size_data = sizeof(UDINT);
@@ -7283,8 +7281,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPMS_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20664 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_START
-    st = getVariable(20664);
+  { // 19154 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_START
+    st = getVariable(19154);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_START", 50);
     st->size_data = sizeof(UDINT);
@@ -7293,8 +7291,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPMS_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20665 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_TOP
-    st = getVariable(20665);
+  { // 19155 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_TOP
+    st = getVariable(19155);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_TOP", 48);
     st->size_data = sizeof(UDINT);
@@ -7303,8 +7301,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPMS_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20666 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_ALGCONTINUE_STATUS
-    st = getVariable(20666);
+  { // 19156 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_ALGCONTINUE_STATUS
+    st = getVariable(19156);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_ALGCONTINUE_STATUS", 63);
     st->size_data = sizeof(UDINT);
@@ -7313,8 +7311,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPMS_ALGCONTINUE_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20667 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_STATUS
-    st = getVariable(20667);
+  { // 19157 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_STATUS
+    st = getVariable(19157);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTPMS_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -7323,8 +7321,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTPMS_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20668 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_BREAKTEST_TIMER
-    st = getVariable(20668);
+  { // 19158 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_BREAKTEST_TIMER
+    st = getVariable(19158);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_BREAKTEST_TIMER", 61);
     st->size_data = sizeof(UINT);
@@ -7333,8 +7331,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UINT = (UINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTDPMG_BREAKTEST_TIMER.value;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20669 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_ERROR
-    st = getVariable(20669);
+  { // 19159 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_ERROR
+    st = getVariable(19159);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_ERROR", 51);
     st->size_data = sizeof(UDINT);
@@ -7343,8 +7341,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTDPMG_ERROR.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20670 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_START
-    st = getVariable(20670);
+  { // 19160 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_START
+    st = getVariable(19160);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_START", 51);
     st->size_data = sizeof(UDINT);
@@ -7353,8 +7351,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTDPMG_START.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20671 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_TOP
-    st = getVariable(20671);
+  { // 19161 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_TOP
+    st = getVariable(19161);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_TOP", 49);
     st->size_data = sizeof(UDINT);
@@ -7363,8 +7361,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTDPMG_TOP.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20672 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS
-    st = getVariable(20672);
+  { // 19162 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS
+    st = getVariable(19162);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS", 64);
     st->size_data = sizeof(UDINT);
@@ -7373,8 +7371,8 @@ int __variables_init_GET_ALGORITMS_OPC(){
     p_UDINT = (UDINT*)p_OPC_ALGORITMS_SET->ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS.value;
     UnpackVar(p_UDINT, UDINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20673 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_STATUS
-    st = getVariable(20673);
+  { // 19163 PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_STATUS
+    st = getVariable(19163);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.GET_ALGORITMS_OPC.ALGORITMS_TESTDPMG_STATUS", 52);
     st->size_data = sizeof(UDINT);

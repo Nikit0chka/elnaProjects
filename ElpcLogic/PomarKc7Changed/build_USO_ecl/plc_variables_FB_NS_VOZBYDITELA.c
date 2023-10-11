@@ -79,11 +79,6 @@ int __variables_init_FB_NS_VOZBYDITELA(){
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
   TWORDDATA *p_TWORDDATA;
-  OPC_PROTECTIONS_GET *p_OPC_PROTECTIONS_GET;
-  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
-  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
-  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
-  OPC_PROTECTIONS_SET *p_OPC_PROTECTIONS_SET;
   OPC_ALGORITMS_SET *p_OPC_ALGORITMS_SET;
   ALGORITMSCONFIG *p_ALGORITMSCONFIG;
   STRUCT_ALG *p_STRUCT_ALG;
@@ -133,7 +128,10 @@ int __variables_init_FB_NS_VOZBYDITELA(){
   OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
+  STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
   FB_AIPROTECTION_INIT *p_FB_AIPROTECTION_INIT;
+  STRUCT_AIPROTECTION *p_STRUCT_AIPROTECTION;
+  PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
   FB_DIPROTECTION *p_FB_DIPROTECTION;
@@ -187,8 +185,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26462 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL.VALUE
-    st = getVariable(26462);
+  { // 25364 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL.VALUE
+    st = getVariable(25364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL.VALUE", 47);
     st->size_data = sizeof(BOOL);
@@ -199,8 +197,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26463 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL.RELIABILITY
-    st = getVariable(26463);
+  { // 25365 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL.RELIABILITY
+    st = getVariable(25365);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -211,8 +209,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26464 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL._INVERSED
-    st = getVariable(26464);
+  { // 25366 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL._INVERSED
+    st = getVariable(25366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.SIGNAL._INVERSED", 51);
     st->size_data = sizeof(BOOL);
@@ -223,8 +221,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26465 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.RELIABILITY
-    st = getVariable(26465);
+  { // 25367 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.RELIABILITY
+    st = getVariable(25367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -235,8 +233,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26466 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.INVERSE
-    st = getVariable(26466);
+  { // 25368 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.INVERSE
+    st = getVariable(25368);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.INVERSE", 49);
     st->size_data = sizeof(BOOL);
@@ -247,8 +245,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26467 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DELAYON
-    st = getVariable(26467);
+  { // 25369 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DELAYON
+    st = getVariable(25369);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DELAYON", 49);
     st->size_data = sizeof(TIME);
@@ -259,8 +257,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26468 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DELAYOFF
-    st = getVariable(26468);
+  { // 25370 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DELAYOFF
+    st = getVariable(25370);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DELAYOFF", 50);
     st->size_data = sizeof(TIME);
@@ -271,8 +269,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26469 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.Q
-    st = getVariable(26469);
+  { // 25371 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.Q
+    st = getVariable(25371);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -283,8 +281,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26470 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.STATUS
-    st = getVariable(26470);
+  { // 25372 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.STATUS
+    st = getVariable(25372);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.STATUS", 48);
     st->size_data = sizeof(DWORD);
@@ -295,8 +293,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26471 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DISABLED_SIG
-    st = getVariable(26471);
+  { // 25373 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DISABLED_SIG
+    st = getVariable(25373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.STR_SS.DISABLED_SIG", 54);
     st->size_data = sizeof(BOOL);
@@ -307,8 +305,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26472 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.IN
-    st = getVariable(26472);
+  { // 25374 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.IN
+    st = getVariable(25374);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -319,8 +317,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26473 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.PT
-    st = getVariable(26473);
+  { // 25375 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.PT
+    st = getVariable(25375);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.PT", 45);
     st->size_data = sizeof(TIME);
@@ -331,8 +329,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26474 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.Q
-    st = getVariable(26474);
+  { // 25376 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.Q
+    st = getVariable(25376);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -343,8 +341,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26475 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.ET
-    st = getVariable(26475);
+  { // 25377 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.ET
+    st = getVariable(25377);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON.ET", 45);
     st->size_data = sizeof(TIME);
@@ -355,8 +353,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26476 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON
-    st = getVariable(26476);
+  { // 25378 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON
+    st = getVariable(25378);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMERON", 42);
     st->size_data = sizeof(TON);
@@ -366,8 +364,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26477 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.IN
-    st = getVariable(26477);
+  { // 25379 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.IN
+    st = getVariable(25379);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -378,8 +376,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26478 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.PT
-    st = getVariable(26478);
+  { // 25380 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.PT
+    st = getVariable(25380);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.PT", 46);
     st->size_data = sizeof(TIME);
@@ -390,8 +388,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26479 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.Q
-    st = getVariable(26479);
+  { // 25381 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.Q
+    st = getVariable(25381);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -402,8 +400,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26480 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.ET
-    st = getVariable(26480);
+  { // 25382 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.ET
+    st = getVariable(25382);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF.ET", 46);
     st->size_data = sizeof(TIME);
@@ -414,8 +412,8 @@ int __variables_init_FB_NS_VOZBYDITELA(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26481 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF
-    st = getVariable(26481);
+  { // 25383 PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF
+    st = getVariable(25383);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_VOZBYDITELA.TIMEROFF", 43);
     st->size_data = sizeof(TOF);
