@@ -185,8 +185,8 @@ int __variables_init_TABLEQ_MAX(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 57889 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.PARAMETR
-    st = getVariable(57889);
+  { // 58397 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.PARAMETR
+    st = getVariable(58397);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.PARAMETR", 57);
     st->size_data = sizeof(REAL);
@@ -197,8 +197,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_FB_TABLEVALUE_MAX->PARAMETR;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57890 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[0].X
-    st = getVariable(57890);
+  { // 58398 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[0].X
+    st = getVariable(58398);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[0].X", 60);
     st->size_data = sizeof(REAL);
@@ -211,8 +211,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57891 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[0].Y
-    st = getVariable(57891);
+  { // 58399 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[0].Y
+    st = getVariable(58399);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[0].Y", 60);
     st->size_data = sizeof(REAL);
@@ -225,8 +225,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57892 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[1].X
-    st = getVariable(57892);
+  { // 58400 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[1].X
+    st = getVariable(58400);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[1].X", 60);
     st->size_data = sizeof(REAL);
@@ -239,8 +239,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57893 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[1].Y
-    st = getVariable(57893);
+  { // 58401 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[1].Y
+    st = getVariable(58401);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[1].Y", 60);
     st->size_data = sizeof(REAL);
@@ -253,8 +253,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57894 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[2].X
-    st = getVariable(57894);
+  { // 58402 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[2].X
+    st = getVariable(58402);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[2].X", 60);
     st->size_data = sizeof(REAL);
@@ -267,8 +267,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57895 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[2].Y
-    st = getVariable(57895);
+  { // 58403 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[2].Y
+    st = getVariable(58403);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[2].Y", 60);
     st->size_data = sizeof(REAL);
@@ -281,8 +281,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57896 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[3].X
-    st = getVariable(57896);
+  { // 58404 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[3].X
+    st = getVariable(58404);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[3].X", 60);
     st->size_data = sizeof(REAL);
@@ -295,8 +295,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57897 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[3].Y
-    st = getVariable(57897);
+  { // 58405 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[3].Y
+    st = getVariable(58405);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[3].Y", 60);
     st->size_data = sizeof(REAL);
@@ -309,8 +309,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57898 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[4].X
-    st = getVariable(57898);
+  { // 58406 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[4].X
+    st = getVariable(58406);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[4].X", 60);
     st->size_data = sizeof(REAL);
@@ -323,8 +323,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57899 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[4].Y
-    st = getVariable(57899);
+  { // 58407 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[4].Y
+    st = getVariable(58407);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[4].Y", 60);
     st->size_data = sizeof(REAL);
@@ -337,8 +337,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57900 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[5].X
-    st = getVariable(57900);
+  { // 58408 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[5].X
+    st = getVariable(58408);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[5].X", 60);
     st->size_data = sizeof(REAL);
@@ -351,8 +351,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57901 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[5].Y
-    st = getVariable(57901);
+  { // 58409 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[5].Y
+    st = getVariable(58409);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[5].Y", 60);
     st->size_data = sizeof(REAL);
@@ -365,8 +365,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57902 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[6].X
-    st = getVariable(57902);
+  { // 58410 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[6].X
+    st = getVariable(58410);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[6].X", 60);
     st->size_data = sizeof(REAL);
@@ -379,8 +379,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57903 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[6].Y
-    st = getVariable(57903);
+  { // 58411 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[6].Y
+    st = getVariable(58411);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[6].Y", 60);
     st->size_data = sizeof(REAL);
@@ -393,8 +393,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57904 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[7].X
-    st = getVariable(57904);
+  { // 58412 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[7].X
+    st = getVariable(58412);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[7].X", 60);
     st->size_data = sizeof(REAL);
@@ -407,8 +407,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57905 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[7].Y
-    st = getVariable(57905);
+  { // 58413 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[7].Y
+    st = getVariable(58413);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[7].Y", 60);
     st->size_data = sizeof(REAL);
@@ -421,8 +421,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57906 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[8].X
-    st = getVariable(57906);
+  { // 58414 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[8].X
+    st = getVariable(58414);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[8].X", 60);
     st->size_data = sizeof(REAL);
@@ -435,8 +435,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->X;
     st->value_p = p_REAL;
   }
-  { // 57907 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[8].Y
-    st = getVariable(57907);
+  { // 58415 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[8].Y
+    st = getVariable(58415);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._TABLE[8].Y", 60);
     st->size_data = sizeof(REAL);
@@ -449,8 +449,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_TYPE_TABLEREC->Y;
     st->value_p = p_REAL;
   }
-  { // 57908 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INVERSE
-    st = getVariable(57908);
+  { // 58416 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INVERSE
+    st = getVariable(58416);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INVERSE", 56);
     st->size_data = sizeof(BOOL);
@@ -461,8 +461,8 @@ int __variables_init_TABLEQ_MAX(){
     p_BOOL = (BOOL*)&p_FB_TABLEVALUE_MAX->INVERSE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57909 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.ACTUALVALUE
-    st = getVariable(57909);
+  { // 58417 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.ACTUALVALUE
+    st = getVariable(58417);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.ACTUALVALUE", 60);
     st->size_data = sizeof(REAL);
@@ -473,8 +473,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_FB_TABLEVALUE_MAX->ACTUALVALUE;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57910 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INDEXLESS
-    st = getVariable(57910);
+  { // 58418 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INDEXLESS
+    st = getVariable(58418);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INDEXLESS", 58);
     st->size_data = sizeof(INT);
@@ -485,8 +485,8 @@ int __variables_init_TABLEQ_MAX(){
     p_INT = (INT*)&p_FB_TABLEVALUE_MAX->INDEXLESS;
     UnpackVar(p_INT, INT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57911 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INDEXMORE
-    st = getVariable(57911);
+  { // 58419 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INDEXMORE
+    st = getVariable(58419);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.INDEXMORE", 58);
     st->size_data = sizeof(INT);
@@ -497,8 +497,8 @@ int __variables_init_TABLEQ_MAX(){
     p_INT = (INT*)&p_FB_TABLEVALUE_MAX->INDEXMORE;
     UnpackVar(p_INT, INT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57912 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.MAXTABLELENGTH
-    st = getVariable(57912);
+  { // 58420 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.MAXTABLELENGTH
+    st = getVariable(58420);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.MAXTABLELENGTH", 63);
     st->size_data = sizeof(INT);
@@ -509,8 +509,8 @@ int __variables_init_TABLEQ_MAX(){
     p_INT = (INT*)&p_FB_TABLEVALUE_MAX->MAXTABLELENGTH;
     UnpackVar(p_INT, INT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57913 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.VALI
-    st = getVariable(57913);
+  { // 58421 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.VALI
+    st = getVariable(58421);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.VALI", 53);
     st->size_data = sizeof(REAL);
@@ -521,8 +521,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_FB_TABLEVALUE_MAX->VALI;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57914 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.I
-    st = getVariable(57914);
+  { // 58422 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.I
+    st = getVariable(58422);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.I", 50);
     st->size_data = sizeof(INT);
@@ -533,8 +533,8 @@ int __variables_init_TABLEQ_MAX(){
     p_INT = (INT*)&p_FB_TABLEVALUE_MAX->I;
     UnpackVar(p_INT, INT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57915 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.MOREDISTANCE
-    st = getVariable(57915);
+  { // 58423 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.MOREDISTANCE
+    st = getVariable(58423);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.MOREDISTANCE", 61);
     st->size_data = sizeof(REAL);
@@ -545,8 +545,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_FB_TABLEVALUE_MAX->MOREDISTANCE;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57916 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.LESSDISTANCE
-    st = getVariable(57916);
+  { // 58424 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.LESSDISTANCE
+    st = getVariable(58424);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.LESSDISTANCE", 61);
     st->size_data = sizeof(REAL);
@@ -557,8 +557,8 @@ int __variables_init_TABLEQ_MAX(){
     p_REAL = (REAL*)&p_FB_TABLEVALUE_MAX->LESSDISTANCE;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57917 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.ONINIT
-    st = getVariable(57917);
+  { // 58425 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.ONINIT
+    st = getVariable(58425);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX.ONINIT", 55);
     st->size_data = sizeof(BOOL);
@@ -569,8 +569,8 @@ int __variables_init_TABLEQ_MAX(){
     p_BOOL = (BOOL*)&p_FB_TABLEVALUE_MAX->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57918 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._PREVPARAM
-    st = getVariable(57918);
+  { // 58426 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._PREVPARAM
+    st = getVariable(58426);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.TABLEQ_MAX._PREVPARAM", 59);
     st->size_data = sizeof(REAL);

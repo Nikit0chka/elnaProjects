@@ -625,18 +625,18 @@ TYPE
     Pmaslo_sm_vysokoe : struct_AiProtection;
     Vibro_skorost_OPED_T1 : struct_AiProtection;
     Vibro_skorost_OPED_T2 : struct_AiProtection;
-    Vibro_skorost_OYP_Kolesa_ED_T3 : struct_DiProtection;
-    Vibro_skorost_OP_kolesa_RH_T4 : struct_DiProtection;
-    Vibro_skorost_OP_shesterni_RED_T5 : struct_DiProtection;
-    Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_DiProtection;
+    Vibro_skorost_OYP_Kolesa_ED_T3 : struct_AiProtection;
+    Vibro_skorost_OP_kolesa_RH_T4 : struct_AiProtection;
+    Vibro_skorost_OP_shesterni_RED_T5 : struct_AiProtection;
+    Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AiProtection;
     mvOff : struct_DiProtection;
-    NeispravnostVozbuzhdenijaDi : struct_DiProtection;
-    AO_KC : struct_DiProtection;
+    dPmaslo_gaz_Less100 : struct_DiProtection;
+    Reg_vozb_off : struct_DiProtection;
+    Fail_chastotniy_pusk : struct_DiProtection;
+    Off_avar_switch : struct_DiProtection;
+    AOKC_SHKC : struct_DiProtection;
     AO_PRU : struct_DiProtection;
-    AO_SHU : struct_DiProtection;
-    Srab_BEAO : struct_DiProtection;
-    EAO_PRU : struct_DiProtection;
-    BEAO_knSHU : struct_DiProtection;
+    AO_fromSHU : struct_DiProtection;
     Kran1sdvig : struct_DiProtection;
     Kran2sdvig : struct_DiProtection;
   END_STRUCT;
@@ -6147,52 +6147,52 @@ FUNCTION_BLOCK proc_Protections_Init
 
 
   (*************************************************Стартовая инициализация DiProtection ***************************************************)
-  (* Осевой сдвиг ротора вправо ≥3,7 кгс/см *)
+  (* Осевой сдвиг ротора вправо ≥3,7 кгс/см 
   stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Vibro_skorost_OYP_Kolesa_ED_T3);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
-  (* Осевой сдвиг ротора влево ≥3,7 кгс/см *)
+  (* Осевой сдвиг ротора влево ≥3,7 кгс/см 
   stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
-  (* Низкий перепад давления «масло-газ» ≤1 кгс/см² *)
+  (* Низкий перепад давления «масло-газ» ≤1 кгс/см² 
   stDIp_Ini(data_Ini := true, delay:=T#20S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
-  (* Низкое давление масла смазки ≤ 0,4 кгс/см² *)
+  (* Низкое давление масла смазки ≤ 0,4 кгс/см² 
   stDIp_Ini(data_Ini := true, delay:=T#10S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
+  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);*)
 
   (* МВ отключен *)
   stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.mvOff);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Неисправность возбудительного устройства *)
-  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.NeispravnostVozbuzhdenijaDi);
+  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz_Less100);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Аварийный останов цеха *)
-  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.AO_KC);
+  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Reg_vozb_off);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Аварийный останов АО ЭГПА с ПРУ *)
-  stDIp_Ini(data_Ini := true, delay:=T#100MS, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.AO_PRU);
+  stDIp_Ini(data_Ini := true, delay:=T#100MS, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Fail_chastotniy_pusk);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Аварийный останов АО ЭГПА с ШУ *)
-  stDIp_Ini(data_Ini := true, delay:=T#100MS, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.AO_SHU);
+  stDIp_Ini(data_Ini := true, delay:=T#100MS, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Off_avar_switch);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Срабатывание БЭАО (отказ ПТС) *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inRunOnStart:=TRUE, str_DIp := protections.Srab_BEAO);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inRunOnStart:=TRUE, str_DIp := protections.AOKC_SHKC);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inRunOnStart:=TRUE, str_DIp := protections.EAO_PRU);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inRunOnStart:=TRUE, str_DIp := protections.AO_PRU);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Запуск БЭАО от кнопки ЭАО ШУ *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inRunOnStart:=TRUE, str_DIp := protections.BEAO_knSHU);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inRunOnStart:=TRUE, str_DIp := protections.AO_fromSHU);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* Сдвиг крана №1 *)
@@ -6311,6 +6311,25 @@ FUNCTION_BLOCK proc_Protections_Init
   controlLimit:=_StatusAi.LA, str_AIp := protections.Vibro_skorost_OPED_T2);
   inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
+  (* Уровень масла в маслобаке *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.LA, str_AIp := protections.Vibro_skorost_OYP_Kolesa_ED_T3);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+  (* Уровень масла в маслобаке *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.LA, str_AIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+  (* Уровень масла в маслобаке *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.LA, str_AIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+  (* Уровень масла в маслобаке *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.LA, str_AIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
   IF init THEN initiales := inits; END_IF;
 END_FUNCTION_BLOCK
@@ -6957,6 +6976,10 @@ FUNCTION_BLOCK proc_Protection
     fb_Vibratciia_rotora_nagnetatelia_t4_HA : fb_AiProtection;
     fb_Osevoi_sdvig_rotora_nagnetatelia_HA : fb_AiProtection;
     fb_Uroven_masla_v_maslobake_LA : fb_AiProtection;
+    fb_Vibro_skorost_OYP_Kolesa_ED_T3 : fb_AiProtection;
+    fb_Vibro_skorost_OP_kolesa_RH_T4 : fb_AiProtection;
+    fb_Vibro_skorost_OP_shesterni_RED_T5 : fb_AiProtection;
+    fb_Vibro_skorost_OP_shesterni_reduktora_H_T6 : fb_AiProtection;
   END_VAR
   VAR_EXTERNAL
     protections : ProtectionsConfig;
@@ -6965,41 +6988,41 @@ FUNCTION_BLOCK proc_Protection
   END_VAR
 
   (************************************************************* DiProtection ************************************************************)
-  (* Осевой сдвиг ротора вправо ≥3,7 кгс/см *)
+  (* Осевой сдвиг ротора вправо ≥3,7 кгс/см 
   fb_OsevojSdvigPravyjDi(di := IM.SingleSignals.OsevoiSdvig_pravo, StrDIp := protections.Vibro_skorost_OYP_Kolesa_ED_T3);
-
-  (* Осевой сдвиг ротора влево ≥3,7 кгс/см *)
+  *)
+  (* Осевой сдвиг ротора влево ≥3,7 кгс/см 
   fb_OsevojSdvigLevyjDi(di := IM.SingleSignals.OsevoiSdvig_levo, StrDIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
-
-  (* Низкий перепад давления «масло-газ» ≤1 кгс/см² *)
+  *)
+  (* Низкий перепад давления «масло-газ» ≤1 кгс/см² 
   fb_dP_masloGaz_LowDI(di := IM.SingleSignals.dP_oilgaz_low, StrDIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
-
-  (* Низкое давление масла смазки ≤ 0,4 кгс/см² *)
+  *)
+  (* Низкое давление масла смазки ≤ 0,4 кгс/см² 
   fb_DavlenieMaslaSmazkiDi(di := IM.SingleSignals.P_oil_low, StrDIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-
+  *)
   (* МВ отключен *)
   fb_mvOff(sw:=IM.mv, StrDIp := protections.mvOff);
 
   (* Неисправность возбудительного устройства *)
-  fb_NeispravnostVozbuzhdenijaDi(di := IM.SingleSignals.NS_Vozbyditela, StrDIp := protections.NeispravnostVozbuzhdenijaDi);
+  fb_NeispravnostVozbuzhdenijaDi(di := IM.SingleSignals.NS_Vozbyditela, StrDIp := protections.dPmaslo_gaz_Less100);
 
   (* Аварийный останов цеха *)
-  fb_AO_KcDi(di := IM.SingleSignals.AO_KC, StrDIp := protections.AO_KC);
+  fb_AO_KcDi(di := IM.SingleSignals.AO_KC, StrDIp := protections.Reg_vozb_off);
 
   (* Аварийный останов АО ЭГПА с ПРУ *)
-  fb_AO_PRU(di := IM.SingleSignals.AOGPA_PRU, StrDIp := protections.AO_PRU);
+  fb_AO_PRU(di := IM.SingleSignals.AOGPA_PRU, StrDIp := protections.Fail_chastotniy_pusk);
 
   (* Аварийный останов АО ЭГПА с ШУ *)
-  fb_AO_SHU(di := IM.SingleSignals.AOGPA_knopkaSHU, StrDIp := protections.AO_SHU);
+  fb_AO_SHU(di := IM.SingleSignals.AOGPA_knopkaSHU, StrDIp := protections.Off_avar_switch);
 
   (* Срабатывание БЭАО (отказ ПТС) *)
-  fb_Srab_BEAO(di := IM.SingleSignals.BEO_Srabat, StrDIp := protections.Srab_BEAO);
+  fb_Srab_BEAO(di := IM.SingleSignals.BEO_Srabat, StrDIp := protections.AOKC_SHKC);
 
   (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ *)
-  fb_EAO_PRU(di := IM.SingleSignals.BEO_ON_knopkaPRU, StrDIp := protections.EAO_PRU);
+  fb_EAO_PRU(di := IM.SingleSignals.BEO_ON_knopkaPRU, StrDIp := protections.AO_PRU);
 
   (* Запуск БЭАО от кнопки ЭАО ШУ *)
-  fb_BEAO_knSHU(di := IM.SingleSignals.BEO_ON_knopkaSHU, StrDIp := protections.BEAO_knSHU);
+  fb_BEAO_knSHU(di := IM.SingleSignals.BEO_ON_knopkaSHU, StrDIp := protections.AO_fromSHU);
 
   (* Сдвиг крана №1 *)
   fb_Kran1sdvig(im:=IM.Kran1, StrDIp := protections.Kran1sdvig);
@@ -7073,6 +7096,14 @@ FUNCTION_BLOCK proc_Protection
 
   (* Уровень масла в маслобаке *)
   fb_Uroven_masla_v_maslobake_LA(ai := ai.Yroven_masla_MB, StrAIp := protections.Vibro_skorost_OPED_T2);
+  (* Уровень масла в маслобаке *)
+  fb_Vibro_skorost_OYP_Kolesa_ED_T3(ai := ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3, StrAIp := protections.Vibro_skorost_OYP_Kolesa_ED_T3);
+  (* Уровень масла в маслобаке *)
+  fb_Vibro_skorost_OP_kolesa_RH_T4(ai := ai.Toporno_ypornogo_podshipnika_kolesa_red_HT_4, StrAIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
+  (* Уровень масла в маслобаке *)
+  fb_Vibro_skorost_OP_shesterni_RED_T5(ai := ai.Toporno_podshipnika_shesterni_reduktora_T_5, StrAIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
+  (* Уровень масла в маслобаке *)
+  fb_Vibro_skorost_OP_shesterni_reduktora_H_T6(ai := ai.Toporno_podshipnika_reduktora_HT_6, StrAIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
 END_FUNCTION_BLOCK
 
 FUNCTION resetDiProtection : BOOL
@@ -7129,19 +7160,19 @@ FUNCTION resetAllProtections : BOOL
   resetAiProtection(protections.Pmaslo_sm_vysokoe);
   resetAiProtection(protections.Vibro_skorost_OPED_T1);
   resetAiProtection(protections.Vibro_skorost_OPED_T2);
+  resetAiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3);
+  resetAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
+  resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+  resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
 
-  resetDiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3);
-  resetDiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
-  resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
-  resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
   resetDiProtection(protections.mvOff);
-  resetDiProtection(protections.NeispravnostVozbuzhdenijaDi);
-  resetDiProtection(protections.AO_KC);
+  resetDiProtection(protections.dPmaslo_gaz_Less100);
+  resetDiProtection(protections.Reg_vozb_off);
+  resetDiProtection(protections.Fail_chastotniy_pusk);
+  resetDiProtection(protections.Off_avar_switch);
+  resetDiProtection(protections.AOKC_SHKC);
   resetDiProtection(protections.AO_PRU);
-  resetDiProtection(protections.AO_SHU);
-  resetDiProtection(protections.Srab_BEAO);
-  resetDiProtection(protections.EAO_PRU);
-  resetDiProtection(protections.BEAO_knSHU);
+  resetDiProtection(protections.AO_fromSHU);
   resetDiProtection(protections.Kran1sdvig);
   resetDiProtection(protections.Kran2sdvig);
 END_FUNCTION
@@ -8418,7 +8449,7 @@ FUNCTION_BLOCK fb_vibegPNSAlg
             resetQuestion(algContinue);
 
             resetAiProtection(protections.Os_sdvig_nagnetatelja_Minus);
-            resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+            (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
 
   	IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
   	ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;
@@ -9000,7 +9031,7 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
 
       IF LowOil.top THEN
           runAiProtection(protections.Os_sdvig_nagnetatelja_Minus);
-          runDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+          (*runDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
           runPhase(Poil_DefenseActive);
           IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;
           ai.Pmasla_posle_GNS.Disabled_LA:=FALSE;
@@ -9042,10 +9073,10 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
             runPhase(autoNuOn);
   	runPhase(runProtect_dP);
   	runAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-            runDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+            (*runDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
             IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=FALSE;
             ai.Tmasla_MB.Disabled_LA:=FALSE;
-            ai.Tmasla_MB.Disabled_LW:=FALSE;
+            ai.Tmasla_MB.Disabled_LW:=FALSE;*)
       END_IF;
 
       IF runProtect_dP.start AND NOT runProtect_dP.top THEN
@@ -9952,7 +9983,7 @@ FUNCTION_BLOCK NOAlg
             ai.Tmasla_MB.Disabled_LW:=TRUE;
             IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
             resetAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-            resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+            (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
             runPhase(autoNuOff);           
       END_IF;
@@ -10354,7 +10385,7 @@ FUNCTION_BLOCK AOAlg
             ai.Tmasla_MB.Disabled_LW:=TRUE;
             IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
             resetAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-            resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+            (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
             runPhase(autoNuOff);
             runPhase(nu1off);
@@ -11893,7 +11924,7 @@ FUNCTION_BLOCK puskKalg
       IF filling.top THEN
          OpcCommandsKransEnabled:=TRUE;
          resetDiProtection(protections.Kran1sdvig);
-         resetDiProtection(protections.Kran2sdvig);
+         (*resetDiProtection(protections.Kran2sdvig);*)
          IF NOT _resetQuestion2 THEN
          askQuestion(questionUnload);
          _resetQuestion2:=TRUE;
@@ -11941,7 +11972,7 @@ FUNCTION_BLOCK puskKalg
             ai.Tmasla_MB.Disabled_LW:=TRUE;
             IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
             resetAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-            resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+           (* resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
   	runPhase(AutoNUoff);
 
       END_IF;
@@ -12310,7 +12341,7 @@ FUNCTION_BLOCK puskValg
             ai.Tmasla_MB.Disabled_LW:=TRUE;
             IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
             resetAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-            resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+           (* resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
   	runPhase(AutoNUoff);
 
       END_IF;
@@ -12659,9 +12690,9 @@ FUNCTION_BLOCK testdPmgAlg
           ai.Pmasla_posle_NU.Disabled_LW:=TRUE;
 
           resetAiProtection(protections.Os_sdvig_nagnetatelja_Minus);
-          resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+          (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
           resetAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-          resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+          (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
           resetIfRunning(algoritms.autoNu);
           resetIfRunning(algoritms.AutoPns);
@@ -12755,9 +12786,9 @@ FUNCTION_BLOCK testdPmgAlg
                                           ai.Tmasla_MB.Disabled_LA:=TRUE;
                                           ai.Tmasla_MB.Disabled_LW:=TRUE;
                                           resetAiProtection(protections.Os_sdvig_nagnetatelja_Minus);
-                                          resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+                                          (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
                                           resetAiProtection(protections.Os_sdvig_nagnetatelja_Plus);
-                                          resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+                                          (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
                                           resetPhase(puskOilSystem);
                                           resetPhase(nuOff);
@@ -13720,13 +13751,13 @@ FUNCTION anyProtectionSignaling : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling OR
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling OR
   protections.mvOff.Signaling OR
-  protections.NeispravnostVozbuzhdenijaDi.Signaling OR
-  protections.AO_KC.Signaling OR
+  protections.dPmaslo_gaz_Less100.Signaling OR
+  protections.Reg_vozb_off.Signaling OR
+  protections.Fail_chastotniy_pusk.Signaling OR
+  protections.Off_avar_switch.Signaling OR
+  protections.AOKC_SHKC.Signaling OR
   protections.AO_PRU.Signaling OR
-  protections.AO_SHU.Signaling OR
-  protections.Srab_BEAO.Signaling OR
-  protections.EAO_PRU.Signaling OR
-  protections.BEAO_knSHU.Signaling OR
+  protections.AO_fromSHU.Signaling OR
   protections.Kran1sdvig.Signaling OR
   protections.Kran2sdvig.Signaling;
 END_FUNCTION
@@ -13819,13 +13850,13 @@ FUNCTION UnBlockAllProtections : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=FALSE;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=FALSE;
   protections.mvOff.inOpcCommandsDisabled:=FALSE;
-  protections.NeispravnostVozbuzhdenijaDi.inOpcCommandsDisabled:=FALSE;
-  protections.AO_KC.inOpcCommandsDisabled:=FALSE;
+  protections.dPmaslo_gaz_Less100.inOpcCommandsDisabled:=FALSE;
+  protections.Reg_vozb_off.inOpcCommandsDisabled:=FALSE;
+  protections.Fail_chastotniy_pusk.inOpcCommandsDisabled:=FALSE;
+  protections.Off_avar_switch.inOpcCommandsDisabled:=FALSE;
+  protections.AOKC_SHKC.inOpcCommandsDisabled:=FALSE;
   protections.AO_PRU.inOpcCommandsDisabled:=FALSE;
-  protections.AO_SHU.inOpcCommandsDisabled:=FALSE;
-  protections.Srab_BEAO.inOpcCommandsDisabled:=FALSE;
-  protections.EAO_PRU.inOpcCommandsDisabled:=FALSE;
-  protections.BEAO_knSHU.inOpcCommandsDisabled:=FALSE;
+  protections.AO_fromSHU.inOpcCommandsDisabled:=FALSE;
   protections.Kran1sdvig.inOpcCommandsDisabled:=FALSE;
   protections.Kran2sdvig.inOpcCommandsDisabled:=FALSE;
 END_FUNCTION
@@ -14139,13 +14170,13 @@ FUNCTION anyProtectionInRemont : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.Remont OR
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Remont OR
   protections.mvOff.Remont OR
-  protections.NeispravnostVozbuzhdenijaDi.Remont OR
-  protections.AO_KC.Remont OR
+  protections.dPmaslo_gaz_Less100.Remont OR
+  protections.Reg_vozb_off.Remont OR
+  protections.Fail_chastotniy_pusk.Remont OR
+  protections.Off_avar_switch.Remont OR
+  protections.AOKC_SHKC.Remont OR
   protections.AO_PRU.Remont OR
-  protections.AO_SHU.Remont OR
-  protections.Srab_BEAO.Remont OR
-  protections.EAO_PRU.Remont OR
-  protections.BEAO_knSHU.Remont OR
+  protections.AO_fromSHU.Remont OR
   protections.Kran1sdvig.Remont OR
   protections.Kran2sdvig.Remont;
 END_FUNCTION
@@ -14176,19 +14207,19 @@ FUNCTION runAllProtections : BOOL
   runAiProtection(protections.Pmaslo_sm_vysokoe);
   runAiProtection(protections.Vibro_skorost_OPED_T1);
   runAiProtection(protections.Vibro_skorost_OPED_T2);
+  runAiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3);
+  runAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
+  runAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+  runAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
 
-  runDiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3);
-  runDiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
-  runDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
-  runDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
   runDiProtection(protections.mvOff);
-  runDiProtection(protections.NeispravnostVozbuzhdenijaDi);
-  runDiProtection(protections.AO_KC);
+  runDiProtection(protections.dPmaslo_gaz_Less100);
+  runDiProtection(protections.Reg_vozb_off);
+  runDiProtection(protections.Fail_chastotniy_pusk);
+  runDiProtection(protections.Off_avar_switch);
+  runDiProtection(protections.AOKC_SHKC);
   runDiProtection(protections.AO_PRU);
-  runDiProtection(protections.AO_SHU);
-  runDiProtection(protections.Srab_BEAO);
-  runDiProtection(protections.EAO_PRU);
-  runDiProtection(protections.BEAO_knSHU);
+  runDiProtection(protections.AO_fromSHU);
   runDiProtection(protections.Kran1sdvig);
   runDiProtection(protections.Kran2sdvig);
 END_FUNCTION
@@ -14262,40 +14293,40 @@ FUNCTION ResetAllSignaling : BOOL
       resetAiProtection(protections.Vibro_skorost_OPED_T2); END_IF;
 
   IF protections.Vibro_skorost_OYP_Kolesa_ED_T3.Signaling THEN
-      resetDiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3); END_IF;
+      resetAiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3); END_IF;
 
   IF protections.Vibro_skorost_OP_kolesa_RH_T4.Signaling THEN
-      resetDiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4); END_IF;
+      resetAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4); END_IF;
 
   IF protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling THEN
-      resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5); END_IF;
+      resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5); END_IF;
 
   IF protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling THEN
-      resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6); END_IF;
+      resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6); END_IF;
 
   IF protections.mvOff.Signaling THEN
       resetDiProtection(protections.mvOff); END_IF;
 
-  IF protections.NeispravnostVozbuzhdenijaDi.Signaling THEN
-      resetDiProtection(protections.NeispravnostVozbuzhdenijaDi); END_IF;
+  IF protections.dPmaslo_gaz_Less100.Signaling THEN
+      resetDiProtection(protections.dPmaslo_gaz_Less100); END_IF;
 
-  IF protections.AO_KC.Signaling THEN
-      resetDiProtection(protections.AO_KC); END_IF;
+  IF protections.Reg_vozb_off.Signaling THEN
+      resetDiProtection(protections.Reg_vozb_off); END_IF;
+
+  IF protections.Fail_chastotniy_pusk.Signaling THEN
+      resetDiProtection(protections.Fail_chastotniy_pusk); END_IF;
+
+  IF protections.Off_avar_switch.Signaling THEN
+      resetDiProtection(protections.Off_avar_switch); END_IF;
+
+  IF protections.AOKC_SHKC.Signaling THEN
+      resetDiProtection(protections.AOKC_SHKC); END_IF;
 
   IF protections.AO_PRU.Signaling THEN
       resetDiProtection(protections.AO_PRU); END_IF;
 
-  IF protections.AO_SHU.Signaling THEN
-      resetDiProtection(protections.AO_SHU); END_IF;
-
-  IF protections.Srab_BEAO.Signaling THEN
-      resetDiProtection(protections.Srab_BEAO); END_IF;
-
-  IF protections.EAO_PRU.Signaling THEN
-      resetDiProtection(protections.EAO_PRU); END_IF;
-
-  IF protections.BEAO_knSHU.Signaling THEN
-      resetDiProtection(protections.BEAO_knSHU); END_IF;
+  IF protections.AO_fromSHU.Signaling THEN
+      resetDiProtection(protections.AO_fromSHU); END_IF;
 
   IF protections.Kran1sdvig.Signaling THEN
       resetDiProtection(protections.Kran1sdvig); END_IF;
@@ -14333,26 +14364,27 @@ FUNCTION autoRunProtections : BOOL
 
       runAiProtection(protections.Vibro_skorost_OPED_T1);
 
-      runAiProtection(protections.Vibro_skorost_OPED_T2);
+      runAiProtection(protections.Vibro_skorost_OPED_T2);    
+
+      runAiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3);
+
+      runAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
 
 
-      runDiProtection(protections.Vibro_skorost_OYP_Kolesa_ED_T3);
 
-      runDiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
+      runDiProtection(protections.dPmaslo_gaz_Less100);
 
-      runDiProtection(protections.NeispravnostVozbuzhdenijaDi);
+      runDiProtection(protections.Reg_vozb_off);
 
-      runDiProtection(protections.AO_KC);
+      runDiProtection(protections.Fail_chastotniy_pusk);
+
+      runDiProtection(protections.Off_avar_switch);
+
+      runDiProtection(protections.AOKC_SHKC);
 
       runDiProtection(protections.AO_PRU);
 
-      runDiProtection(protections.AO_SHU);
-
-      runDiProtection(protections.Srab_BEAO);
-
-      runDiProtection(protections.EAO_PRU);
-
-      runDiProtection(protections.BEAO_knSHU);
+      runDiProtection(protections.AO_fromSHU);
 END_FUNCTION
 
 FUNCTION_BLOCK fb_ProtectionsManager
@@ -15042,13 +15074,13 @@ FUNCTION remontAllProtections : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.inCommand_Alg:=cmdRemont;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inCommand_Alg:=cmdRemont;
   protections.mvOff.inCommand_Alg:=cmdRemont;
-  protections.NeispravnostVozbuzhdenijaDi.inCommand_Alg:=cmdRemont;
-  protections.AO_KC.inCommand_Alg:=cmdRemont;
+  protections.dPmaslo_gaz_Less100.inCommand_Alg:=cmdRemont;
+  protections.Reg_vozb_off.inCommand_Alg:=cmdRemont;
+  protections.Fail_chastotniy_pusk.inCommand_Alg:=cmdRemont;
+  protections.Off_avar_switch.inCommand_Alg:=cmdRemont;
+  protections.AOKC_SHKC.inCommand_Alg:=cmdRemont;
   protections.AO_PRU.inCommand_Alg:=cmdRemont;
-  protections.AO_SHU.inCommand_Alg:=cmdRemont;
-  protections.Srab_BEAO.inCommand_Alg:=cmdRemont;
-  protections.EAO_PRU.inCommand_Alg:=cmdRemont;
-  protections.BEAO_knSHU.inCommand_Alg:=cmdRemont;
+  protections.AO_fromSHU.inCommand_Alg:=cmdRemont;
   protections.Kran1sdvig.inCommand_Alg:=cmdRemont;
   protections.Kran2sdvig.inCommand_Alg:=cmdRemont;
 END_FUNCTION
@@ -15084,13 +15116,13 @@ FUNCTION BlockAllProtections : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=TRUE;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=TRUE;
   protections.mvOff.inOpcCommandsDisabled:=TRUE;
-  protections.NeispravnostVozbuzhdenijaDi.inOpcCommandsDisabled:=TRUE;
-  protections.AO_KC.inOpcCommandsDisabled:=TRUE;
+  protections.dPmaslo_gaz_Less100.inOpcCommandsDisabled:=TRUE;
+  protections.Reg_vozb_off.inOpcCommandsDisabled:=TRUE;
+  protections.Fail_chastotniy_pusk.inOpcCommandsDisabled:=TRUE;
+  protections.Off_avar_switch.inOpcCommandsDisabled:=TRUE;
+  protections.AOKC_SHKC.inOpcCommandsDisabled:=TRUE;
   protections.AO_PRU.inOpcCommandsDisabled:=TRUE;
-  protections.AO_SHU.inOpcCommandsDisabled:=TRUE;
-  protections.Srab_BEAO.inOpcCommandsDisabled:=TRUE;
-  protections.EAO_PRU.inOpcCommandsDisabled:=TRUE;
-  protections.BEAO_knSHU.inOpcCommandsDisabled:=TRUE;
+  protections.AO_fromSHU.inOpcCommandsDisabled:=TRUE;
   protections.Kran1sdvig.inOpcCommandsDisabled:=TRUE;
   protections.Kran2sdvig.inOpcCommandsDisabled:=TRUE;
 END_FUNCTION
