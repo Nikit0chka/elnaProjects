@@ -185,8 +185,8 @@ int __variables_init_FB_WAITVIBEG(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 46708 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.DELAY
-    st = getVariable(46708);
+  { // 47035 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.DELAY
+    st = getVariable(47035);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.DELAY", 54);
     st->size_data = sizeof(TIME);
@@ -197,8 +197,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_TIME = (TIME*)&p_FB_PH_TIMER->DELAY;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 46709 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.PHASENUMBER
-    st = getVariable(46709);
+  { // 47036 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.PHASENUMBER
+    st = getVariable(47036);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.PHASENUMBER", 60);
     st->size_data = sizeof(UINT);
@@ -209,8 +209,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_UINT = (UINT*)&p_FB_PH_TIMER->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 46710 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.RUN
-    st = getVariable(46710);
+  { // 47037 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.RUN
+    st = getVariable(47037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.RUN", 58);
     st->size_data = sizeof(BOOL);
@@ -222,8 +222,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 46711 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.RESET
-    st = getVariable(46711);
+  { // 47038 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.RESET
+    st = getVariable(47038);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.RESET", 60);
     st->size_data = sizeof(BOOL);
@@ -235,8 +235,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 46712 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.START
-    st = getVariable(46712);
+  { // 47039 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.START
+    st = getVariable(47039);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.START", 60);
     st->size_data = sizeof(BOOL);
@@ -248,8 +248,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 46713 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.ERROR
-    st = getVariable(46713);
+  { // 47040 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.ERROR
+    st = getVariable(47040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.ERROR", 60);
     st->size_data = sizeof(BOOL);
@@ -261,8 +261,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 46714 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.TOP
-    st = getVariable(46714);
+  { // 47041 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.TOP
+    st = getVariable(47041);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.TOP", 58);
     st->size_data = sizeof(BOOL);
@@ -274,8 +274,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 46715 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.STARTSTATUS
-    st = getVariable(46715);
+  { // 47042 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.STARTSTATUS
+    st = getVariable(47042);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.STARTSTATUS", 66);
     st->size_data = sizeof(DWORD);
@@ -287,8 +287,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 46716 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.ERRORSTATUS
-    st = getVariable(46716);
+  { // 47043 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.ERRORSTATUS
+    st = getVariable(47043);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.ERRORSTATUS", 66);
     st->size_data = sizeof(DWORD);
@@ -300,8 +300,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 46717 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.TOPSTATUS
-    st = getVariable(46717);
+  { // 47044 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.TOPSTATUS
+    st = getVariable(47044);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.STRPH.TOPSTATUS", 64);
     st->size_data = sizeof(DWORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 46718 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG.CLK
-    st = getVariable(46718);
+  { // 47045 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG.CLK
+    st = getVariable(47045);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG.CLK", 70);
     st->size_data = sizeof(BOOL);
@@ -326,8 +326,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 46719 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG.Q
-    st = getVariable(46719);
+  { // 47046 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG.Q
+    st = getVariable(47046);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -339,8 +339,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 46720 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG
-    st = getVariable(46720);
+  { // 47047 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG
+    st = getVariable(47047);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.COMMANDFAULT_TRIG", 66);
     st->size_data = sizeof(R_TRIG);
@@ -351,8 +351,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_TIMER->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 46721 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG.CLK
-    st = getVariable(46721);
+  { // 47048 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG.CLK
+    st = getVariable(47048);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG.CLK", 63);
     st->size_data = sizeof(BOOL);
@@ -364,8 +364,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 46722 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG.Q
-    st = getVariable(46722);
+  { // 47049 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG.Q
+    st = getVariable(47049);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -377,8 +377,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 46723 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG
-    st = getVariable(46723);
+  { // 47050 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG
+    st = getVariable(47050);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.RESET_TRIG", 59);
     st->size_data = sizeof(R_TRIG);
@@ -389,8 +389,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_TIMER->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 46724 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.TIMER
-    st = getVariable(46724);
+  { // 47051 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.TIMER
+    st = getVariable(47051);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG.TIMER", 54);
     st->size_data = sizeof(UINT);
@@ -401,8 +401,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_UINT = (UINT*)&p_FB_PH_TIMER->TIMER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 46725 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.IN
-    st = getVariable(46725);
+  { // 47052 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.IN
+    st = getVariable(47052);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.IN", 58);
     st->size_data = sizeof(BOOL);
@@ -414,8 +414,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 46726 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.PT
-    st = getVariable(46726);
+  { // 47053 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.PT
+    st = getVariable(47053);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.PT", 58);
     st->size_data = sizeof(TIME);
@@ -427,8 +427,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 46727 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.Q
-    st = getVariable(46727);
+  { // 47054 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.Q
+    st = getVariable(47054);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -440,8 +440,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 46728 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.ET
-    st = getVariable(46728);
+  { // 47055 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.ET
+    st = getVariable(47055);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER.ET", 58);
     st->size_data = sizeof(TIME);
@@ -453,8 +453,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 46729 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER
-    st = getVariable(46729);
+  { // 47056 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER
+    st = getVariable(47056);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._TIMER", 55);
     st->size_data = sizeof(TON);
@@ -465,8 +465,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_TON = (TON*)&p_FB_PH_TIMER->_TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 46730 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(46730);
+  { // 47057 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(47057);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_NOTDEFINED", 83);
     st->size_data = sizeof(BYTE);
@@ -478,8 +478,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 46731 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(46731);
+  { // 47058 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(47058);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_ON", 75);
     st->size_data = sizeof(BYTE);
@@ -491,8 +491,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 46732 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(46732);
+  { // 47059 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(47059);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_OFF", 76);
     st->size_data = sizeof(BYTE);
@@ -504,8 +504,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 46733 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(46733);
+  { // 47060 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(47060);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_TRANSITIONAL", 85);
     st->size_data = sizeof(BYTE);
@@ -517,8 +517,8 @@ int __variables_init_FB_WAITVIBEG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 46734 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(46734);
+  { // 47061 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(47061);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_WAITVIBEG._STATUSDUALINPUT.STATUS_ERROR", 78);
     st->size_data = sizeof(BYTE);

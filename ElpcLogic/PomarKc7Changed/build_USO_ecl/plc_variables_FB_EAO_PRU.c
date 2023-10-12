@@ -185,8 +185,8 @@ int __variables_init_FB_EAO_PRU(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 30896 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.RELIABILITY
-    st = getVariable(30896);
+  { // 30875 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.RELIABILITY
+    st = getVariable(30875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -197,8 +197,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 30897 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.INVERSE
-    st = getVariable(30897);
+  { // 30876 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.INVERSE
+    st = getVariable(30876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.INVERSE", 47);
     st->size_data = sizeof(BOOL);
@@ -209,8 +209,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 30898 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DELAYON
-    st = getVariable(30898);
+  { // 30877 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DELAYON
+    st = getVariable(30877);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DELAYON", 47);
     st->size_data = sizeof(TIME);
@@ -221,8 +221,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 30899 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DELAYOFF
-    st = getVariable(30899);
+  { // 30878 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DELAYOFF
+    st = getVariable(30878);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DELAYOFF", 48);
     st->size_data = sizeof(TIME);
@@ -233,8 +233,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 30900 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.Q
-    st = getVariable(30900);
+  { // 30879 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.Q
+    st = getVariable(30879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -245,8 +245,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 30901 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.STATUS
-    st = getVariable(30901);
+  { // 30880 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.STATUS
+    st = getVariable(30880);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -257,8 +257,8 @@ int __variables_init_FB_EAO_PRU(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 30902 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DISABLED_SIG
-    st = getVariable(30902);
+  { // 30881 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DISABLED_SIG
+    st = getVariable(30881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.DI.DISABLED_SIG", 52);
     st->size_data = sizeof(BOOL);
@@ -269,8 +269,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 30903 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.DELAY
-    st = getVariable(30903);
+  { // 30882 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.DELAY
+    st = getVariable(30882);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.DELAY", 49);
     st->size_data = sizeof(TIME);
@@ -281,8 +281,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_STRUCT_DIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 30904 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INTAG
-    st = getVariable(30904);
+  { // 30883 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INTAG
+    st = getVariable(30883);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INTAG", 49);
     st->size_data = sizeof(BYTE);
@@ -293,8 +293,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 30905 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INRUNONSTART
-    st = getVariable(30905);
+  { // 30884 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INRUNONSTART
+    st = getVariable(30884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INRUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -305,8 +305,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 30906 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCANRUN
-    st = getVariable(30906);
+  { // 30885 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCANRUN
+    st = getVariable(30885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -317,8 +317,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 30907 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INOPCCOMMANDSDISABLED
-    st = getVariable(30907);
+  { // 30886 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INOPCCOMMANDSDISABLED
+    st = getVariable(30886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -329,8 +329,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 30908 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND
-    st = getVariable(30908);
+  { // 30887 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND
+    st = getVariable(30887);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -341,8 +341,8 @@ int __variables_init_FB_EAO_PRU(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 30909 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND_ALG
-    st = getVariable(30909);
+  { // 30888 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND_ALG
+    st = getVariable(30888);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -353,8 +353,8 @@ int __variables_init_FB_EAO_PRU(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 30910 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND_ARM
-    st = getVariable(30910);
+  { // 30889 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND_ARM
+    st = getVariable(30889);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -365,8 +365,8 @@ int __variables_init_FB_EAO_PRU(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 30911 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.TAG
-    st = getVariable(30911);
+  { // 30890 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.TAG
+    st = getVariable(30890);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.TAG", 47);
     st->size_data = sizeof(BYTE);
@@ -377,8 +377,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 30912 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.STATUS
-    st = getVariable(30912);
+  { // 30891 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.STATUS
+    st = getVariable(30891);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -389,8 +389,8 @@ int __variables_init_FB_EAO_PRU(){
     p_DWORD = (DWORD*)&p_STRUCT_DIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 30913 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.CANRUN
-    st = getVariable(30913);
+  { // 30892 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.CANRUN
+    st = getVariable(30892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.CANRUN", 50);
     st->size_data = sizeof(BOOL);
@@ -401,8 +401,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 30914 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.OPCCOMMANDSDISABLED
-    st = getVariable(30914);
+  { // 30893 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.OPCCOMMANDSDISABLED
+    st = getVariable(30893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -413,8 +413,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 30915 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.ISRUNNING
-    st = getVariable(30915);
+  { // 30894 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.ISRUNNING
+    st = getVariable(30894);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.ISRUNNING", 53);
     st->size_data = sizeof(BOOL);
@@ -425,8 +425,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 30916 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.HASERROR
-    st = getVariable(30916);
+  { // 30895 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.HASERROR
+    st = getVariable(30895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.HASERROR", 52);
     st->size_data = sizeof(BOOL);
@@ -437,8 +437,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 30917 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.ISENDED
-    st = getVariable(30917);
+  { // 30896 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.ISENDED
+    st = getVariable(30896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.ISENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -449,8 +449,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 30918 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.REMONT
-    st = getVariable(30918);
+  { // 30897 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.REMONT
+    st = getVariable(30897);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.REMONT", 50);
     st->size_data = sizeof(BOOL);
@@ -461,8 +461,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 30919 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.CHECK
-    st = getVariable(30919);
+  { // 30898 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.CHECK
+    st = getVariable(30898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.CHECK", 49);
     st->size_data = sizeof(BOOL);
@@ -473,8 +473,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 30920 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.SIGNALING
-    st = getVariable(30920);
+  { // 30899 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.SIGNALING
+    st = getVariable(30899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.SIGNALING", 53);
     st->size_data = sizeof(BOOL);
@@ -485,8 +485,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 30921 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.SIGNALINGTP
-    st = getVariable(30921);
+  { // 30900 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.SIGNALINGTP
+    st = getVariable(30900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.SIGNALINGTP", 55);
     st->size_data = sizeof(BOOL);
@@ -497,8 +497,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 30922 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.RUNONSTART
-    st = getVariable(30922);
+  { // 30901 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.RUNONSTART
+    st = getVariable(30901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.STRDIP.RUNONSTART", 54);
     st->size_data = sizeof(BOOL);
@@ -509,8 +509,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 30927 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.NOTHING
-    st = getVariable(30927);
+  { // 30906 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.NOTHING
+    st = getVariable(30906);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.NOTHING", 60);
     st->size_data = sizeof(BYTE);
@@ -521,8 +521,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->NOTHING;
     st->value_p = p_BYTE;
   }
-  { // 30928 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOB
-    st = getVariable(30928);
+  { // 30907 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOB
+    st = getVariable(30907);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOB", 56);
     st->size_data = sizeof(BYTE);
@@ -533,8 +533,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOB;
     st->value_p = p_BYTE;
   }
-  { // 30929 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOS
-    st = getVariable(30929);
+  { // 30908 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOS
+    st = getVariable(30908);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOS", 56);
     st->size_data = sizeof(BYTE);
@@ -545,8 +545,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOS;
     st->value_p = p_BYTE;
   }
-  { // 30930 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOPOJ
-    st = getVariable(30930);
+  { // 30909 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOPOJ
+    st = getVariable(30909);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._PROTECTIONTAGS.AOPOJ", 58);
     st->size_data = sizeof(BYTE);
@@ -557,8 +557,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOPOJ;
     st->value_p = p_BYTE;
   }
-  { // 30931 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.IN
-    st = getVariable(30931);
+  { // 30910 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.IN
+    st = getVariable(30910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -569,8 +569,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 30932 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.PT
-    st = getVariable(30932);
+  { // 30911 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.PT
+    st = getVariable(30911);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.PT", 52);
     st->size_data = sizeof(TIME);
@@ -581,8 +581,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 30933 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.Q
-    st = getVariable(30933);
+  { // 30912 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.Q
+    st = getVariable(30912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -593,8 +593,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 30934 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.ET
-    st = getVariable(30934);
+  { // 30913 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.ET
+    st = getVariable(30913);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP.ET", 52);
     st->size_data = sizeof(TIME);
@@ -605,8 +605,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 30935 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP
-    st = getVariable(30935);
+  { // 30914 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP
+    st = getVariable(30914);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU._SIGNALINGTP", 49);
     st->size_data = sizeof(TOF);
@@ -616,8 +616,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TOF = (TOF*)&p_FB_DIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 30936 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.IN
-    st = getVariable(30936);
+  { // 30915 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.IN
+    st = getVariable(30915);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -628,8 +628,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 30937 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.PT
-    st = getVariable(30937);
+  { // 30916 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.PT
+    st = getVariable(30916);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.PT", 45);
     st->size_data = sizeof(TIME);
@@ -640,8 +640,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 30938 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.Q
-    st = getVariable(30938);
+  { // 30917 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.Q
+    st = getVariable(30917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -652,8 +652,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 30939 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.ET
-    st = getVariable(30939);
+  { // 30918 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.ET
+    st = getVariable(30918);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER.ET", 45);
     st->size_data = sizeof(TIME);
@@ -664,8 +664,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 30940 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER
-    st = getVariable(30940);
+  { // 30919 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER
+    st = getVariable(30919);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.TIMER", 42);
     st->size_data = sizeof(TON);
@@ -675,8 +675,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TON = (TON*)&p_FB_DIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 30941 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG.CLK
-    st = getVariable(30941);
+  { // 30920 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG.CLK
+    st = getVariable(30920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG.CLK", 54);
     st->size_data = sizeof(BOOL);
@@ -687,8 +687,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 30942 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG.Q
-    st = getVariable(30942);
+  { // 30921 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG.Q
+    st = getVariable(30921);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -699,8 +699,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 30943 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG
-    st = getVariable(30943);
+  { // 30922 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG
+    st = getVariable(30922);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGTRIG", 50);
     st->size_data = sizeof(R_TRIG);
@@ -710,8 +710,8 @@ int __variables_init_FB_EAO_PRU(){
     p_R_TRIG = (R_TRIG*)&p_FB_DIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 30944 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG.CLK
-    st = getVariable(30944);
+  { // 30923 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG.CLK
+    st = getVariable(30923);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG.CLK", 55);
     st->size_data = sizeof(BOOL);
@@ -722,8 +722,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 30945 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG.Q
-    st = getVariable(30945);
+  { // 30924 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG.Q
+    st = getVariable(30924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -734,8 +734,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 30946 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG
-    st = getVariable(30946);
+  { // 30925 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG
+    st = getVariable(30925);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGFTRIG", 51);
     st->size_data = sizeof(F_TRIG);
@@ -745,8 +745,8 @@ int __variables_init_FB_EAO_PRU(){
     p_F_TRIG = (F_TRIG*)&p_FB_DIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 30947 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGDI
-    st = getVariable(30947);
+  { // 30926 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGDI
+    st = getVariable(30926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINGDI", 48);
     st->size_data = sizeof(BOOL);
@@ -756,8 +756,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_FB_DIPROTECTION->SIGNALINGDI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30948 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SOURCE
-    st = getVariable(30948);
+  { // 30927 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SOURCE
+    st = getVariable(30927);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SOURCE", 43);
     st->size_data = sizeof(BYTE);
@@ -767,8 +767,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30949 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.CMD
-    st = getVariable(30949);
+  { // 30928 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.CMD
+    st = getVariable(30928);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.CMD", 40);
     st->size_data = sizeof(BYTE);
@@ -778,8 +778,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30950 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.LASTCMD
-    st = getVariable(30950);
+  { // 30929 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.LASTCMD
+    st = getVariable(30929);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.LASTCMD", 44);
     st->size_data = sizeof(BYTE);
@@ -789,8 +789,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30951 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SOURCE_FOR_STATUS
-    st = getVariable(30951);
+  { // 30930 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SOURCE_FOR_STATUS
+    st = getVariable(30930);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SOURCE_FOR_STATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -800,8 +800,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30952 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.CMD_FOR_STATUS
-    st = getVariable(30952);
+  { // 30931 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.CMD_FOR_STATUS
+    st = getVariable(30931);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.CMD_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -811,8 +811,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30953 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(30953);
+  { // 30932 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(30932);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.COMMAND_ERROR_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -822,8 +822,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30954 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.IN
-    st = getVariable(30954);
+  { // 30933 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.IN
+    st = getVariable(30933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -834,8 +834,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 30955 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.PT
-    st = getVariable(30955);
+  { // 30934 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.PT
+    st = getVariable(30934);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.PT", 53);
     st->size_data = sizeof(TIME);
@@ -846,8 +846,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 30956 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.Q
-    st = getVariable(30956);
+  { // 30935 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.Q
+    st = getVariable(30935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -858,8 +858,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 30957 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.ET
-    st = getVariable(30957);
+  { // 30936 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.ET
+    st = getVariable(30936);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER.ET", 53);
     st->size_data = sizeof(TIME);
@@ -870,8 +870,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 30958 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER
-    st = getVariable(30958);
+  { // 30937 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER
+    st = getVariable(30937);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMER", 50);
     st->size_data = sizeof(TON);
@@ -881,8 +881,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TON = (TON*)&p_FB_DIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 30959 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMERPRIZNAK
-    st = getVariable(30959);
+  { // 30938 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMERPRIZNAK
+    st = getVariable(30938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RESETCMDTIMERPRIZNAK", 57);
     st->size_data = sizeof(BOOL);
@@ -892,8 +892,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_FB_DIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30960 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.IN
-    st = getVariable(30960);
+  { // 30939 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.IN
+    st = getVariable(30939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -904,8 +904,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 30961 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.PT
-    st = getVariable(30961);
+  { // 30940 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.PT
+    st = getVariable(30940);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.PT", 53);
     st->size_data = sizeof(TIME);
@@ -916,8 +916,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 30962 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.Q
-    st = getVariable(30962);
+  { // 30941 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.Q
+    st = getVariable(30941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -928,8 +928,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 30963 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.ET
-    st = getVariable(30963);
+  { // 30942 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.ET
+    st = getVariable(30942);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER.ET", 53);
     st->size_data = sizeof(TIME);
@@ -940,8 +940,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 30964 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER
-    st = getVariable(30964);
+  { // 30943 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER
+    st = getVariable(30943);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.SIGNALINTIMER", 50);
     st->size_data = sizeof(TON);
@@ -951,8 +951,8 @@ int __variables_init_FB_EAO_PRU(){
     p_TON = (TON*)&p_FB_DIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 30965 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG.CLK
-    st = getVariable(30965);
+  { // 30944 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG.CLK
+    st = getVariable(30944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG.CLK", 56);
     st->size_data = sizeof(BOOL);
@@ -963,8 +963,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 30966 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG.Q
-    st = getVariable(30966);
+  { // 30945 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG.Q
+    st = getVariable(30945);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -975,8 +975,8 @@ int __variables_init_FB_EAO_PRU(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 30967 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG
-    st = getVariable(30967);
+  { // 30946 PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG
+    st = getVariable(30946);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_EAO_PRU.RUNONSTART_TRIG", 52);
     st->size_data = sizeof(R_TRIG);

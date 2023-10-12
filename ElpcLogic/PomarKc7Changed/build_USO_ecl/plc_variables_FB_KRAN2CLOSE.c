@@ -185,8 +185,8 @@ int __variables_init_FB_KRAN2CLOSE(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 59676 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND
-    st = getVariable(59676);
+  { // 59961 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND
+    st = getVariable(59961);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -198,8 +198,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 59677 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.STATUS
-    st = getVariable(59677);
+  { // 59962 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.STATUS
+    st = getVariable(59962);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -211,8 +211,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 59678 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ONSTATUS
-    st = getVariable(59678);
+  { // 59963 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ONSTATUS
+    st = getVariable(59963);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ONSTATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -224,8 +224,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 59679 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED
-    st = getVariable(59679);
+  { // 59964 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED
+    st = getVariable(59964);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -237,8 +237,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 59680 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SDVIG
-    st = getVariable(59680);
+  { // 59965 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SDVIG
+    st = getVariable(59965);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SDVIG", 55);
     st->size_data = sizeof(BOOL);
@@ -250,8 +250,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 59681 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.NS
-    st = getVariable(59681);
+  { // 59966 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.NS
+    st = getVariable(59966);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.NS", 52);
     st->size_data = sizeof(BOOL);
@@ -263,8 +263,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 59682 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.DP
-    st = getVariable(59682);
+  { // 59967 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.DP
+    st = getVariable(59967);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.DP", 52);
     st->size_data = sizeof(BOOL);
@@ -276,8 +276,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 59683 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.COMMANDFAULT
-    st = getVariable(59683);
+  { // 59968 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.COMMANDFAULT
+    st = getVariable(59968);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.COMMANDFAULT", 62);
     st->size_data = sizeof(BOOL);
@@ -289,8 +289,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 59684 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ACCIDENT
-    st = getVariable(59684);
+  { // 59969 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ACCIDENT
+    st = getVariable(59969);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ACCIDENT", 58);
     st->size_data = sizeof(BOOL);
@@ -302,8 +302,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 59685 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.AUTO
-    st = getVariable(59685);
+  { // 59970 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.AUTO
+    st = getVariable(59970);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.AUTO", 54);
     st->size_data = sizeof(BOOL);
@@ -315,8 +315,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 59686 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.MANUAL
-    st = getVariable(59686);
+  { // 59971 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.MANUAL
+    st = getVariable(59971);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.MANUAL", 56);
     st->size_data = sizeof(BOOL);
@@ -328,8 +328,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 59687 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.LOCAL
-    st = getVariable(59687);
+  { // 59972 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.LOCAL
+    st = getVariable(59972);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.LOCAL", 55);
     st->size_data = sizeof(BOOL);
@@ -341,8 +341,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 59688 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.DISTANCE
-    st = getVariable(59688);
+  { // 59973 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.DISTANCE
+    st = getVariable(59973);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.DISTANCE", 58);
     st->size_data = sizeof(BOOL);
@@ -354,8 +354,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 59689 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF
-    st = getVariable(59689);
+  { // 59974 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF
+    st = getVariable(59974);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF", 63);
     st->size_data = sizeof(BOOL);
@@ -367,8 +367,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 59690 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ERRORBLOCK
-    st = getVariable(59690);
+  { // 59975 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ERRORBLOCK
+    st = getVariable(59975);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ERRORBLOCK", 60);
     st->size_data = sizeof(BOOL);
@@ -380,8 +380,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 59691 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SO
-    st = getVariable(59691);
+  { // 59976 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SO
+    st = getVariable(59976);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SO", 52);
     st->size_data = sizeof(BOOL);
@@ -393,8 +393,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 59692 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SZ
-    st = getVariable(59692);
+  { // 59977 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SZ
+    st = getVariable(59977);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.SZ", 52);
     st->size_data = sizeof(BOOL);
@@ -406,8 +406,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 59693 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED
-    st = getVariable(59693);
+  { // 59978 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED
+    st = getVariable(59978);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -419,8 +419,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 59694 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.LASTCMDISON
-    st = getVariable(59694);
+  { // 59979 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.LASTCMDISON
+    st = getVariable(59979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.LASTCMDISON", 61);
     st->size_data = sizeof(BOOL);
@@ -432,8 +432,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 59695 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON
-    st = getVariable(59695);
+  { // 59980 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON
+    st = getVariable(59980);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON", 67);
     st->size_data = sizeof(BOOL);
@@ -445,8 +445,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 59696 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF
-    st = getVariable(59696);
+  { // 59981 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF
+    st = getVariable(59981);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -458,8 +458,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 59697 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON
-    st = getVariable(59697);
+  { // 59982 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON
+    st = getVariable(59982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON", 66);
     st->size_data = sizeof(BOOL);
@@ -471,8 +471,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 59698 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF
-    st = getVariable(59698);
+  { // 59983 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF
+    st = getVariable(59983);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF", 67);
     st->size_data = sizeof(BOOL);
@@ -484,8 +484,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 59699 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO
-    st = getVariable(59699);
+  { // 59984 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO
+    st = getVariable(59984);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO", 65);
     st->size_data = sizeof(BOOL);
@@ -497,8 +497,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 59700 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ
-    st = getVariable(59700);
+  { // 59985 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ
+    st = getVariable(59985);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ", 65);
     st->size_data = sizeof(BOOL);
@@ -510,8 +510,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 59701 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP
-    st = getVariable(59701);
+  { // 59986 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP
+    st = getVariable(59986);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP", 65);
     st->size_data = sizeof(BOOL);
@@ -523,8 +523,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 59702 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND
-    st = getVariable(59702);
+  { // 59987 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND
+    st = getVariable(59987);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND", 69);
     st->size_data = sizeof(TIME);
@@ -536,8 +536,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 59703 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG
-    st = getVariable(59703);
+  { // 59988 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG
+    st = getVariable(59988);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG", 63);
     st->size_data = sizeof(WORD);
@@ -549,8 +549,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 59704 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM
-    st = getVariable(59704);
+  { // 59989 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM
+    st = getVariable(59989);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM", 63);
     st->size_data = sizeof(WORD);
@@ -562,8 +562,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 59705 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CMDON
-    st = getVariable(59705);
+  { // 59990 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CMDON
+    st = getVariable(59990);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CMDON", 55);
     st->size_data = sizeof(BOOL);
@@ -575,8 +575,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 59706 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CMDOFF
-    st = getVariable(59706);
+  { // 59991 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CMDOFF
+    st = getVariable(59991);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.CMDOFF", 56);
     st->size_data = sizeof(BOOL);
@@ -588,8 +588,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 59707 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.RELIABILITY
-    st = getVariable(59707);
+  { // 59992 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.RELIABILITY
+    st = getVariable(59992);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.IM.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -601,8 +601,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 59708 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.RUN
-    st = getVariable(59708);
+  { // 59993 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.RUN
+    st = getVariable(59993);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.RUN", 56);
     st->size_data = sizeof(BOOL);
@@ -614,8 +614,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 59709 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.RESET
-    st = getVariable(59709);
+  { // 59994 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.RESET
+    st = getVariable(59994);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.RESET", 58);
     st->size_data = sizeof(BOOL);
@@ -627,8 +627,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 59710 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.START
-    st = getVariable(59710);
+  { // 59995 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.START
+    st = getVariable(59995);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.START", 58);
     st->size_data = sizeof(BOOL);
@@ -640,8 +640,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 59711 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.ERROR
-    st = getVariable(59711);
+  { // 59996 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.ERROR
+    st = getVariable(59996);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.ERROR", 58);
     st->size_data = sizeof(BOOL);
@@ -653,8 +653,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 59712 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.TOP
-    st = getVariable(59712);
+  { // 59997 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.TOP
+    st = getVariable(59997);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.TOP", 56);
     st->size_data = sizeof(BOOL);
@@ -666,8 +666,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 59713 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS
-    st = getVariable(59713);
+  { // 59998 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS
+    st = getVariable(59998);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS", 64);
     st->size_data = sizeof(DWORD);
@@ -679,8 +679,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 59714 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS
-    st = getVariable(59714);
+  { // 59999 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS
+    st = getVariable(59999);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS", 64);
     st->size_data = sizeof(DWORD);
@@ -692,8 +692,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 59715 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS
-    st = getVariable(59715);
+  { // 60000 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS
+    st = getVariable(60000);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -705,8 +705,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 59716 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.PHASENUMBER
-    st = getVariable(59716);
+  { // 60001 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.PHASENUMBER
+    st = getVariable(60001);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.PHASENUMBER", 58);
     st->size_data = sizeof(UINT);
@@ -717,8 +717,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_UINT = (UINT*)&p_FB_PH_KRAN->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 59717 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK
-    st = getVariable(59717);
+  { // 60002 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK
+    st = getVariable(60002);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK", 68);
     st->size_data = sizeof(BOOL);
@@ -730,8 +730,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 59718 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q
-    st = getVariable(59718);
+  { // 60003 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q
+    st = getVariable(60003);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -743,8 +743,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 59719 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG
-    st = getVariable(59719);
+  { // 60004 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG
+    st = getVariable(60004);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG", 64);
     st->size_data = sizeof(R_TRIG);
@@ -755,8 +755,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 59720 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG.CLK
-    st = getVariable(59720);
+  { // 60005 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG.CLK
+    st = getVariable(60005);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG.CLK", 61);
     st->size_data = sizeof(BOOL);
@@ -768,8 +768,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 59721 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG.Q
-    st = getVariable(59721);
+  { // 60006 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG.Q
+    st = getVariable(60006);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -781,8 +781,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 59722 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG
-    st = getVariable(59722);
+  { // 60007 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG
+    st = getVariable(60007);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE.RESET_TRIG", 57);
     st->size_data = sizeof(R_TRIG);
@@ -793,8 +793,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 59723 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(59723);
+  { // 60008 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(60008);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED", 81);
     st->size_data = sizeof(BYTE);
@@ -806,8 +806,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 59724 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(59724);
+  { // 60009 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(60009);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON", 73);
     st->size_data = sizeof(BYTE);
@@ -819,8 +819,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 59725 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(59725);
+  { // 60010 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(60010);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF", 74);
     st->size_data = sizeof(BYTE);
@@ -832,8 +832,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 59726 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(59726);
+  { // 60011 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(60011);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL", 83);
     st->size_data = sizeof(BYTE);
@@ -845,8 +845,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 59727 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(59727);
+  { // 60012 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(60012);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR", 76);
     st->size_data = sizeof(BYTE);
@@ -858,8 +858,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 66097 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND
-    st = getVariable(66097);
+  { // 66361 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND
+    st = getVariable(66361);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -871,8 +871,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 66098 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.STATUS
-    st = getVariable(66098);
+  { // 66362 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.STATUS
+    st = getVariable(66362);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -884,8 +884,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 66099 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ONSTATUS
-    st = getVariable(66099);
+  { // 66363 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ONSTATUS
+    st = getVariable(66363);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ONSTATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -897,8 +897,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 66100 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED
-    st = getVariable(66100);
+  { // 66364 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED
+    st = getVariable(66364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -910,8 +910,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 66101 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SDVIG
-    st = getVariable(66101);
+  { // 66365 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SDVIG
+    st = getVariable(66365);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SDVIG", 55);
     st->size_data = sizeof(BOOL);
@@ -923,8 +923,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 66102 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.NS
-    st = getVariable(66102);
+  { // 66366 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.NS
+    st = getVariable(66366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.NS", 52);
     st->size_data = sizeof(BOOL);
@@ -936,8 +936,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 66103 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.DP
-    st = getVariable(66103);
+  { // 66367 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.DP
+    st = getVariable(66367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.DP", 52);
     st->size_data = sizeof(BOOL);
@@ -949,8 +949,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 66104 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.COMMANDFAULT
-    st = getVariable(66104);
+  { // 66368 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.COMMANDFAULT
+    st = getVariable(66368);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.COMMANDFAULT", 62);
     st->size_data = sizeof(BOOL);
@@ -962,8 +962,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 66105 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ACCIDENT
-    st = getVariable(66105);
+  { // 66369 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ACCIDENT
+    st = getVariable(66369);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ACCIDENT", 58);
     st->size_data = sizeof(BOOL);
@@ -975,8 +975,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 66106 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.AUTO
-    st = getVariable(66106);
+  { // 66370 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.AUTO
+    st = getVariable(66370);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.AUTO", 54);
     st->size_data = sizeof(BOOL);
@@ -988,8 +988,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 66107 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.MANUAL
-    st = getVariable(66107);
+  { // 66371 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.MANUAL
+    st = getVariable(66371);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.MANUAL", 56);
     st->size_data = sizeof(BOOL);
@@ -1001,8 +1001,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 66108 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.LOCAL
-    st = getVariable(66108);
+  { // 66372 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.LOCAL
+    st = getVariable(66372);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.LOCAL", 55);
     st->size_data = sizeof(BOOL);
@@ -1014,8 +1014,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 66109 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.DISTANCE
-    st = getVariable(66109);
+  { // 66373 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.DISTANCE
+    st = getVariable(66373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.DISTANCE", 58);
     st->size_data = sizeof(BOOL);
@@ -1027,8 +1027,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 66110 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF
-    st = getVariable(66110);
+  { // 66374 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF
+    st = getVariable(66374);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF", 63);
     st->size_data = sizeof(BOOL);
@@ -1040,8 +1040,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 66111 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ERRORBLOCK
-    st = getVariable(66111);
+  { // 66375 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ERRORBLOCK
+    st = getVariable(66375);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ERRORBLOCK", 60);
     st->size_data = sizeof(BOOL);
@@ -1053,8 +1053,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 66112 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SO
-    st = getVariable(66112);
+  { // 66376 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SO
+    st = getVariable(66376);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SO", 52);
     st->size_data = sizeof(BOOL);
@@ -1066,8 +1066,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 66113 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SZ
-    st = getVariable(66113);
+  { // 66377 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SZ
+    st = getVariable(66377);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.SZ", 52);
     st->size_data = sizeof(BOOL);
@@ -1079,8 +1079,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 66114 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED
-    st = getVariable(66114);
+  { // 66378 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED
+    st = getVariable(66378);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -1092,8 +1092,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 66115 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.LASTCMDISON
-    st = getVariable(66115);
+  { // 66379 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.LASTCMDISON
+    st = getVariable(66379);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.LASTCMDISON", 61);
     st->size_data = sizeof(BOOL);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 66116 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON
-    st = getVariable(66116);
+  { // 66380 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON
+    st = getVariable(66380);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON", 67);
     st->size_data = sizeof(BOOL);
@@ -1118,8 +1118,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 66117 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF
-    st = getVariable(66117);
+  { // 66381 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF
+    st = getVariable(66381);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -1131,8 +1131,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 66118 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON
-    st = getVariable(66118);
+  { // 66382 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON
+    st = getVariable(66382);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON", 66);
     st->size_data = sizeof(BOOL);
@@ -1144,8 +1144,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 66119 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF
-    st = getVariable(66119);
+  { // 66383 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF
+    st = getVariable(66383);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF", 67);
     st->size_data = sizeof(BOOL);
@@ -1157,8 +1157,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 66120 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO
-    st = getVariable(66120);
+  { // 66384 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO
+    st = getVariable(66384);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO", 65);
     st->size_data = sizeof(BOOL);
@@ -1170,8 +1170,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 66121 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ
-    st = getVariable(66121);
+  { // 66385 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ
+    st = getVariable(66385);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ", 65);
     st->size_data = sizeof(BOOL);
@@ -1183,8 +1183,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 66122 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP
-    st = getVariable(66122);
+  { // 66386 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP
+    st = getVariable(66386);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP", 65);
     st->size_data = sizeof(BOOL);
@@ -1196,8 +1196,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 66123 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND
-    st = getVariable(66123);
+  { // 66387 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND
+    st = getVariable(66387);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND", 69);
     st->size_data = sizeof(TIME);
@@ -1209,8 +1209,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 66124 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG
-    st = getVariable(66124);
+  { // 66388 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG
+    st = getVariable(66388);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG", 63);
     st->size_data = sizeof(WORD);
@@ -1222,8 +1222,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 66125 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM
-    st = getVariable(66125);
+  { // 66389 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM
+    st = getVariable(66389);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM", 63);
     st->size_data = sizeof(WORD);
@@ -1235,8 +1235,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 66126 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CMDON
-    st = getVariable(66126);
+  { // 66390 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CMDON
+    st = getVariable(66390);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CMDON", 55);
     st->size_data = sizeof(BOOL);
@@ -1248,8 +1248,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 66127 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CMDOFF
-    st = getVariable(66127);
+  { // 66391 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CMDOFF
+    st = getVariable(66391);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.CMDOFF", 56);
     st->size_data = sizeof(BOOL);
@@ -1261,8 +1261,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 66128 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.RELIABILITY
-    st = getVariable(66128);
+  { // 66392 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.RELIABILITY
+    st = getVariable(66392);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.IM.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -1274,8 +1274,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 66129 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.RUN
-    st = getVariable(66129);
+  { // 66393 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.RUN
+    st = getVariable(66393);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.RUN", 56);
     st->size_data = sizeof(BOOL);
@@ -1287,8 +1287,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 66130 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.RESET
-    st = getVariable(66130);
+  { // 66394 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.RESET
+    st = getVariable(66394);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.RESET", 58);
     st->size_data = sizeof(BOOL);
@@ -1300,8 +1300,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 66131 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.START
-    st = getVariable(66131);
+  { // 66395 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.START
+    st = getVariable(66395);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.START", 58);
     st->size_data = sizeof(BOOL);
@@ -1313,8 +1313,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 66132 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.ERROR
-    st = getVariable(66132);
+  { // 66396 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.ERROR
+    st = getVariable(66396);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.ERROR", 58);
     st->size_data = sizeof(BOOL);
@@ -1326,8 +1326,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 66133 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.TOP
-    st = getVariable(66133);
+  { // 66397 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.TOP
+    st = getVariable(66397);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.TOP", 56);
     st->size_data = sizeof(BOOL);
@@ -1339,8 +1339,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 66134 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS
-    st = getVariable(66134);
+  { // 66398 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS
+    st = getVariable(66398);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS", 64);
     st->size_data = sizeof(DWORD);
@@ -1352,8 +1352,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 66135 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS
-    st = getVariable(66135);
+  { // 66399 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS
+    st = getVariable(66399);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS", 64);
     st->size_data = sizeof(DWORD);
@@ -1365,8 +1365,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 66136 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS
-    st = getVariable(66136);
+  { // 66400 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS
+    st = getVariable(66400);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -1378,8 +1378,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 66137 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.PHASENUMBER
-    st = getVariable(66137);
+  { // 66401 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.PHASENUMBER
+    st = getVariable(66401);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.PHASENUMBER", 58);
     st->size_data = sizeof(UINT);
@@ -1390,8 +1390,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_UINT = (UINT*)&p_FB_PH_KRAN->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 66138 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK
-    st = getVariable(66138);
+  { // 66402 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK
+    st = getVariable(66402);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK", 68);
     st->size_data = sizeof(BOOL);
@@ -1403,8 +1403,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 66139 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q
-    st = getVariable(66139);
+  { // 66403 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q
+    st = getVariable(66403);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -1416,8 +1416,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 66140 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG
-    st = getVariable(66140);
+  { // 66404 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG
+    st = getVariable(66404);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG", 64);
     st->size_data = sizeof(R_TRIG);
@@ -1428,8 +1428,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 66141 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG.CLK
-    st = getVariable(66141);
+  { // 66405 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG.CLK
+    st = getVariable(66405);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG.CLK", 61);
     st->size_data = sizeof(BOOL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 66142 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG.Q
-    st = getVariable(66142);
+  { // 66406 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG.Q
+    st = getVariable(66406);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -1454,8 +1454,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 66143 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG
-    st = getVariable(66143);
+  { // 66407 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG
+    st = getVariable(66407);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE.RESET_TRIG", 57);
     st->size_data = sizeof(R_TRIG);
@@ -1466,8 +1466,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 66144 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(66144);
+  { // 66408 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(66408);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED", 81);
     st->size_data = sizeof(BYTE);
@@ -1479,8 +1479,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 66145 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(66145);
+  { // 66409 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(66409);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON", 73);
     st->size_data = sizeof(BYTE);
@@ -1492,8 +1492,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 66146 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(66146);
+  { // 66410 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(66410);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF", 74);
     st->size_data = sizeof(BYTE);
@@ -1505,8 +1505,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 66147 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(66147);
+  { // 66411 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(66411);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL", 83);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1518,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 66148 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(66148);
+  { // 66412 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(66412);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR", 76);
     st->size_data = sizeof(BYTE);
@@ -1531,8 +1531,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 90901 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND
-    st = getVariable(90901);
+  { // 91102 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND
+    st = getVariable(91102);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND", 62);
     st->size_data = sizeof(WORD);
@@ -1544,8 +1544,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 90902 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.STATUS
-    st = getVariable(90902);
+  { // 91103 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.STATUS
+    st = getVariable(91103);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.STATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -1557,8 +1557,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 90903 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ONSTATUS
-    st = getVariable(90903);
+  { // 91104 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ONSTATUS
+    st = getVariable(91104);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ONSTATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -1570,8 +1570,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 90904 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED
-    st = getVariable(90904);
+  { // 91105 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED
+    st = getVariable(91105);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INOPCCOMMANDSDISABLED", 74);
     st->size_data = sizeof(BOOL);
@@ -1583,8 +1583,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 90905 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SDVIG
-    st = getVariable(90905);
+  { // 91106 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SDVIG
+    st = getVariable(91106);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SDVIG", 58);
     st->size_data = sizeof(BOOL);
@@ -1596,8 +1596,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 90906 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.NS
-    st = getVariable(90906);
+  { // 91107 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.NS
+    st = getVariable(91107);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.NS", 55);
     st->size_data = sizeof(BOOL);
@@ -1609,8 +1609,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 90907 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.DP
-    st = getVariable(90907);
+  { // 91108 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.DP
+    st = getVariable(91108);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.DP", 55);
     st->size_data = sizeof(BOOL);
@@ -1622,8 +1622,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 90908 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.COMMANDFAULT
-    st = getVariable(90908);
+  { // 91109 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.COMMANDFAULT
+    st = getVariable(91109);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.COMMANDFAULT", 65);
     st->size_data = sizeof(BOOL);
@@ -1635,8 +1635,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 90909 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ACCIDENT
-    st = getVariable(90909);
+  { // 91110 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ACCIDENT
+    st = getVariable(91110);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ACCIDENT", 61);
     st->size_data = sizeof(BOOL);
@@ -1648,8 +1648,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 90910 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.AUTO
-    st = getVariable(90910);
+  { // 91111 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.AUTO
+    st = getVariable(91111);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.AUTO", 57);
     st->size_data = sizeof(BOOL);
@@ -1661,8 +1661,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 90911 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.MANUAL
-    st = getVariable(90911);
+  { // 91112 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.MANUAL
+    st = getVariable(91112);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.MANUAL", 59);
     st->size_data = sizeof(BOOL);
@@ -1674,8 +1674,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 90912 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.LOCAL
-    st = getVariable(90912);
+  { // 91113 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.LOCAL
+    st = getVariable(91113);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.LOCAL", 58);
     st->size_data = sizeof(BOOL);
@@ -1687,8 +1687,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 90913 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.DISTANCE
-    st = getVariable(90913);
+  { // 91114 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.DISTANCE
+    st = getVariable(91114);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.DISTANCE", 61);
     st->size_data = sizeof(BOOL);
@@ -1700,8 +1700,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 90914 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF
-    st = getVariable(90914);
+  { // 91115 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF
+    st = getVariable(91115);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ERRORPOWEROFF", 66);
     st->size_data = sizeof(BOOL);
@@ -1713,8 +1713,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 90915 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ERRORBLOCK
-    st = getVariable(90915);
+  { // 91116 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ERRORBLOCK
+    st = getVariable(91116);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ERRORBLOCK", 63);
     st->size_data = sizeof(BOOL);
@@ -1726,8 +1726,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 90916 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SO
-    st = getVariable(90916);
+  { // 91117 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SO
+    st = getVariable(91117);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SO", 55);
     st->size_data = sizeof(BOOL);
@@ -1739,8 +1739,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 90917 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SZ
-    st = getVariable(90917);
+  { // 91118 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SZ
+    st = getVariable(91118);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.SZ", 55);
     st->size_data = sizeof(BOOL);
@@ -1752,8 +1752,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 90918 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED
-    st = getVariable(90918);
+  { // 91119 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED
+    st = getVariable(91119);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.OPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -1765,8 +1765,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 90919 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.LASTCMDISON
-    st = getVariable(90919);
+  { // 91120 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.LASTCMDISON
+    st = getVariable(91120);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.LASTCMDISON", 64);
     st->size_data = sizeof(BOOL);
@@ -1778,8 +1778,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 90920 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON
-    st = getVariable(90920);
+  { // 91121 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON
+    st = getVariable(91121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATON", 70);
     st->size_data = sizeof(BOOL);
@@ -1791,8 +1791,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 90921 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF
-    st = getVariable(90921);
+  { // 91122 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF
+    st = getVariable(91122);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_STATOFF", 71);
     st->size_data = sizeof(BOOL);
@@ -1804,8 +1804,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 90922 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON
-    st = getVariable(90922);
+  { // 91123 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON
+    st = getVariable(91123);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDON", 69);
     st->size_data = sizeof(BOOL);
@@ -1817,8 +1817,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 90923 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF
-    st = getVariable(90923);
+  { // 91124 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF
+    st = getVariable(91124);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_CMDOFF", 70);
     st->size_data = sizeof(BOOL);
@@ -1830,8 +1830,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 90924 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO
-    st = getVariable(90924);
+  { // 91125 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO
+    st = getVariable(91125);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSO", 68);
     st->size_data = sizeof(BOOL);
@@ -1843,8 +1843,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 90925 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ
-    st = getVariable(90925);
+  { // 91126 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ
+    st = getVariable(91126);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INSZ", 68);
     st->size_data = sizeof(BOOL);
@@ -1856,8 +1856,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 90926 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP
-    st = getVariable(90926);
+  { // 91127 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP
+    st = getVariable(91127);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.ISVALIDREF_INDP", 68);
     st->size_data = sizeof(BOOL);
@@ -1869,8 +1869,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 90927 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND
-    st = getVariable(90927);
+  { // 91128 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND
+    st = getVariable(91128);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CONTINUEHOLDCOMMAND", 72);
     st->size_data = sizeof(TIME);
@@ -1882,8 +1882,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 90928 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG
-    st = getVariable(90928);
+  { // 91129 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG
+    st = getVariable(91129);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND_ALG", 66);
     st->size_data = sizeof(WORD);
@@ -1895,8 +1895,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 90929 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM
-    st = getVariable(90929);
+  { // 91130 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM
+    st = getVariable(91130);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.INCOMMAND_ARM", 66);
     st->size_data = sizeof(WORD);
@@ -1908,8 +1908,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 90930 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CMDON
-    st = getVariable(90930);
+  { // 91131 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CMDON
+    st = getVariable(91131);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -1921,8 +1921,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 90931 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CMDOFF
-    st = getVariable(90931);
+  { // 91132 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CMDOFF
+    st = getVariable(91132);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.CMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -1934,8 +1934,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 90932 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.RELIABILITY
-    st = getVariable(90932);
+  { // 91133 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.RELIABILITY
+    st = getVariable(91133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.IM.RELIABILITY", 64);
     st->size_data = sizeof(BOOL);
@@ -1947,8 +1947,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 90933 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.RUN
-    st = getVariable(90933);
+  { // 91134 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.RUN
+    st = getVariable(91134);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.RUN", 59);
     st->size_data = sizeof(BOOL);
@@ -1960,8 +1960,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 90934 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.RESET
-    st = getVariable(90934);
+  { // 91135 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.RESET
+    st = getVariable(91135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.RESET", 61);
     st->size_data = sizeof(BOOL);
@@ -1973,8 +1973,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 90935 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.START
-    st = getVariable(90935);
+  { // 91136 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.START
+    st = getVariable(91136);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.START", 61);
     st->size_data = sizeof(BOOL);
@@ -1986,8 +1986,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 90936 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.ERROR
-    st = getVariable(90936);
+  { // 91137 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.ERROR
+    st = getVariable(91137);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.ERROR", 61);
     st->size_data = sizeof(BOOL);
@@ -1999,8 +1999,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 90937 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.TOP
-    st = getVariable(90937);
+  { // 91138 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.TOP
+    st = getVariable(91138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.TOP", 59);
     st->size_data = sizeof(BOOL);
@@ -2012,8 +2012,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 90938 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS
-    st = getVariable(90938);
+  { // 91139 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS
+    st = getVariable(91139);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.STARTSTATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -2025,8 +2025,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 90939 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS
-    st = getVariable(90939);
+  { // 91140 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS
+    st = getVariable(91140);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.ERRORSTATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -2038,8 +2038,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 90940 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS
-    st = getVariable(90940);
+  { // 91141 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS
+    st = getVariable(91141);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.STRPH.TOPSTATUS", 65);
     st->size_data = sizeof(DWORD);
@@ -2051,8 +2051,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 90941 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.PHASENUMBER
-    st = getVariable(90941);
+  { // 91142 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.PHASENUMBER
+    st = getVariable(91142);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.PHASENUMBER", 61);
     st->size_data = sizeof(UINT);
@@ -2063,8 +2063,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_UINT = (UINT*)&p_FB_PH_KRAN->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 90942 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK
-    st = getVariable(90942);
+  { // 91143 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK
+    st = getVariable(91143);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.CLK", 71);
     st->size_data = sizeof(BOOL);
@@ -2076,8 +2076,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 90943 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q
-    st = getVariable(90943);
+  { // 91144 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q
+    st = getVariable(91144);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG.Q", 69);
     st->size_data = sizeof(BOOL);
@@ -2089,8 +2089,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 90944 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG
-    st = getVariable(90944);
+  { // 91145 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG
+    st = getVariable(91145);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.COMMANDFAULT_TRIG", 67);
     st->size_data = sizeof(R_TRIG);
@@ -2101,8 +2101,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 90945 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG.CLK
-    st = getVariable(90945);
+  { // 91146 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG.CLK
+    st = getVariable(91146);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG.CLK", 64);
     st->size_data = sizeof(BOOL);
@@ -2114,8 +2114,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 90946 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG.Q
-    st = getVariable(90946);
+  { // 91147 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG.Q
+    st = getVariable(91147);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -2127,8 +2127,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 90947 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG
-    st = getVariable(90947);
+  { // 91148 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG
+    st = getVariable(91148);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE.RESET_TRIG", 60);
     st->size_data = sizeof(R_TRIG);
@@ -2139,8 +2139,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 90948 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(90948);
+  { // 91149 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(91149);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_NOTDEFINED", 84);
     st->size_data = sizeof(BYTE);
@@ -2152,8 +2152,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 90949 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(90949);
+  { // 91150 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(91150);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ON", 76);
     st->size_data = sizeof(BYTE);
@@ -2165,8 +2165,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 90950 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(90950);
+  { // 91151 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(91151);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_OFF", 77);
     st->size_data = sizeof(BYTE);
@@ -2178,8 +2178,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 90951 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(90951);
+  { // 91152 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(91152);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_TRANSITIONAL", 86);
     st->size_data = sizeof(BYTE);
@@ -2191,8 +2191,8 @@ int __variables_init_FB_KRAN2CLOSE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 90952 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(90952);
+  { // 91153 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(91153);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_KRAN2CLOSE._STATUSDUALINPUT.STATUS_ERROR", 79);
     st->size_data = sizeof(BYTE);

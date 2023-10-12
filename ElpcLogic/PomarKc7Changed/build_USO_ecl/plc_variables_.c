@@ -185,8 +185,8 @@ int __variables_init_(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 129232 RESOURCE1.GMAINT_TIME
-    st = getVariable(129232);
+  { // 129307 RESOURCE1.GMAINT_TIME
+    st = getVariable(129307);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GMAINT_TIME", 21);
     st->size_data = sizeof(REAL);
@@ -194,8 +194,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__GMAINT_TIME;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129233 RESOURCE1.CUR_CYCLE
-    st = getVariable(129233);
+  { // 129308 RESOURCE1.CUR_CYCLE
+    st = getVariable(129308);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.CUR_CYCLE", 19);
     st->size_data = sizeof(REAL);
@@ -203,8 +203,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__CUR_CYCLE;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129234 RESOURCE1.GSTART_TMR
-    st = getVariable(129234);
+  { // 129309 RESOURCE1.GSTART_TMR
+    st = getVariable(129309);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GSTART_TMR", 20);
     st->size_data = sizeof(REAL);
@@ -212,8 +212,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__GSTART_TMR;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129235 RESOURCE1.REQ_CYCLE
-    st = getVariable(129235);
+  { // 129310 RESOURCE1.REQ_CYCLE
+    st = getVariable(129310);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.REQ_CYCLE", 19);
     st->size_data = sizeof(REAL);
@@ -221,8 +221,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__REQ_CYCLE;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129236 RESOURCE1.GF_T_100MSEC
-    st = getVariable(129236);
+  { // 129311 RESOURCE1.GF_T_100MSEC
+    st = getVariable(129311);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GF_T_100MSEC", 22);
     st->size_data = sizeof(BOOL);
@@ -230,8 +230,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__GF_T_100MSEC;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129237 RESOURCE1.GT_1SEC
-    st = getVariable(129237);
+  { // 129312 RESOURCE1.GT_1SEC
+    st = getVariable(129312);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GT_1SEC", 17);
     st->size_data = sizeof(BOOL);
@@ -239,8 +239,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__GT_1SEC;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129238 RESOURCE1.GF_T_1SEC
-    st = getVariable(129238);
+  { // 129313 RESOURCE1.GF_T_1SEC
+    st = getVariable(129313);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GF_T_1SEC", 19);
     st->size_data = sizeof(BOOL);
@@ -248,8 +248,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__GF_T_1SEC;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129239 RESOURCE1.GT_1MIN
-    st = getVariable(129239);
+  { // 129314 RESOURCE1.GT_1MIN
+    st = getVariable(129314);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GT_1MIN", 17);
     st->size_data = sizeof(BOOL);
@@ -257,8 +257,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__GT_1MIN;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129240 RESOURCE1.GR_T_1MIN
-    st = getVariable(129240);
+  { // 129315 RESOURCE1.GR_T_1MIN
+    st = getVariable(129315);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GR_T_1MIN", 19);
     st->size_data = sizeof(BOOL);
@@ -266,8 +266,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__GR_T_1MIN;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129241 RESOURCE1.GF_T_1MIN
-    st = getVariable(129241);
+  { // 129316 RESOURCE1.GF_T_1MIN
+    st = getVariable(129316);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.GF_T_1MIN", 19);
     st->size_data = sizeof(BOOL);
@@ -275,8 +275,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__GF_T_1MIN;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129242 RESOURCE1.T_1SEC
-    st = getVariable(129242);
+  { // 129317 RESOURCE1.T_1SEC
+    st = getVariable(129317);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.T_1SEC", 16);
     st->size_data = sizeof(REAL);
@@ -284,8 +284,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__T_1SEC;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129243 RESOURCE1.DEL_T
-    st = getVariable(129243);
+  { // 129318 RESOURCE1.DEL_T
+    st = getVariable(129318);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DEL_T", 15);
     st->size_data = sizeof(REAL);
@@ -293,8 +293,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__DEL_T;
     UnpackVar(p_REAL, REAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129244 RESOURCE1.NOTHASREZERVNU
-    st = getVariable(129244);
+  { // 129319 RESOURCE1.NOTHASREZERVNU
+    st = getVariable(129319);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.NOTHASREZERVNU", 24);
     st->size_data = sizeof(BOOL);
@@ -302,8 +302,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__NOTHASREZERVNU;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129245 RESOURCE1.RESET_HASNU
-    st = getVariable(129245);
+  { // 129320 RESOURCE1.RESET_HASNU
+    st = getVariable(129320);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.RESET_HASNU", 21);
     st->size_data = sizeof(BOOL);
@@ -311,8 +311,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__RESET_HASNU;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129246 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_HL
-    st = getVariable(129246);
+  { // 129321 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_HL
+    st = getVariable(129321);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_HL", 36);
     st->size_data = sizeof(LREAL);
@@ -320,8 +320,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129247 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_LL
-    st = getVariable(129247);
+  { // 129322 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_LL
+    st = getVariable(129322);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_LL", 36);
     st->size_data = sizeof(LREAL);
@@ -329,8 +329,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129248 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_COMMAND
-    st = getVariable(129248);
+  { // 129323 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_COMMAND
+    st = getVariable(129323);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_COMMAND", 41);
     st->size_data = sizeof(UINT);
@@ -338,8 +338,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129249 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_NEWHL
-    st = getVariable(129249);
+  { // 129324 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_NEWHL
+    st = getVariable(129324);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_NEWHL", 39);
     st->size_data = sizeof(LREAL);
@@ -347,8 +347,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129250 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_NEWLL
-    st = getVariable(129250);
+  { // 129325 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_NEWLL
+    st = getVariable(129325);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_NEWLL", 39);
     st->size_data = sizeof(LREAL);
@@ -356,8 +356,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129251 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_STATUS
-    st = getVariable(129251);
+  { // 129326 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_STATUS
+    st = getVariable(129326);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_STATUS", 40);
     st->size_data = sizeof(UDINT);
@@ -365,8 +365,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129252 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_VALUE
-    st = getVariable(129252);
+  { // 129327 RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_VALUE
+    st = getVariable(129327);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_AKTIVNAIA_MOSHCHNOST_VALUE", 39);
     st->size_data = sizeof(LREAL);
@@ -374,8 +374,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_AKTIVNAIA_MOSHCHNOST_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129253 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA
-    st = getVariable(129253);
+  { // 129328 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA
+    st = getVariable(129328);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA", 48);
     st->size_data = sizeof(LREAL);
@@ -383,8 +383,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129254 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HL
-    st = getVariable(129254);
+  { // 129329 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HL
+    st = getVariable(129329);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HL", 48);
     st->size_data = sizeof(LREAL);
@@ -392,8 +392,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129255 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HW
-    st = getVariable(129255);
+  { // 129330 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HW
+    st = getVariable(129330);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HW", 48);
     st->size_data = sizeof(LREAL);
@@ -401,8 +401,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129256 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LA
-    st = getVariable(129256);
+  { // 129331 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LA
+    st = getVariable(129331);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LA", 48);
     st->size_data = sizeof(LREAL);
@@ -410,8 +410,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129257 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LL
-    st = getVariable(129257);
+  { // 129332 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LL
+    st = getVariable(129332);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LL", 48);
     st->size_data = sizeof(LREAL);
@@ -419,8 +419,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129258 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LW
-    st = getVariable(129258);
+  { // 129333 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LW
+    st = getVariable(129333);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LW", 48);
     st->size_data = sizeof(LREAL);
@@ -428,8 +428,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129259 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_COMMAND
-    st = getVariable(129259);
+  { // 129334 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_COMMAND
+    st = getVariable(129334);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_COMMAND", 53);
     st->size_data = sizeof(UINT);
@@ -437,8 +437,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129260 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHA
-    st = getVariable(129260);
+  { // 129335 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHA
+    st = getVariable(129335);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHA", 51);
     st->size_data = sizeof(LREAL);
@@ -446,8 +446,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129261 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHL
-    st = getVariable(129261);
+  { // 129336 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHL
+    st = getVariable(129336);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHL", 51);
     st->size_data = sizeof(LREAL);
@@ -455,8 +455,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129262 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHW
-    st = getVariable(129262);
+  { // 129337 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHW
+    st = getVariable(129337);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHW", 51);
     st->size_data = sizeof(LREAL);
@@ -464,8 +464,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129263 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLA
-    st = getVariable(129263);
+  { // 129338 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLA
+    st = getVariable(129338);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLA", 51);
     st->size_data = sizeof(LREAL);
@@ -473,8 +473,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129264 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLL
-    st = getVariable(129264);
+  { // 129339 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLL
+    st = getVariable(129339);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLL", 51);
     st->size_data = sizeof(LREAL);
@@ -482,8 +482,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129265 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLW
-    st = getVariable(129265);
+  { // 129340 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLW
+    st = getVariable(129340);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLW", 51);
     st->size_data = sizeof(LREAL);
@@ -491,8 +491,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129266 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_STATUS
-    st = getVariable(129266);
+  { // 129341 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_STATUS
+    st = getVariable(129341);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_STATUS", 52);
     st->size_data = sizeof(UDINT);
@@ -500,8 +500,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129267 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_VALUE
-    st = getVariable(129267);
+  { // 129342 RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_VALUE
+    st = getVariable(129342);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_VALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -509,8 +509,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129268 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_HL
-    st = getVariable(129268);
+  { // 129343 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_HL
+    st = getVariable(129343);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_HL", 45);
     st->size_data = sizeof(LREAL);
@@ -518,8 +518,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129269 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_LL
-    st = getVariable(129269);
+  { // 129344 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_LL
+    st = getVariable(129344);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_LL", 45);
     st->size_data = sizeof(LREAL);
@@ -527,8 +527,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129270 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_COMMAND
-    st = getVariable(129270);
+  { // 129345 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_COMMAND
+    st = getVariable(129345);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_COMMAND", 50);
     st->size_data = sizeof(UINT);
@@ -536,8 +536,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129271 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWHL
-    st = getVariable(129271);
+  { // 129346 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWHL
+    st = getVariable(129346);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWHL", 48);
     st->size_data = sizeof(LREAL);
@@ -545,8 +545,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129272 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWLL
-    st = getVariable(129272);
+  { // 129347 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWLL
+    st = getVariable(129347);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWLL", 48);
     st->size_data = sizeof(LREAL);
@@ -554,8 +554,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129273 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_STATUS
-    st = getVariable(129273);
+  { // 129348 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_STATUS
+    st = getVariable(129348);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -563,8 +563,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129274 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_VALUE
-    st = getVariable(129274);
+  { // 129349 RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_VALUE
+    st = getVariable(129349);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VKHODE_NAGNETATELIA_VALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -572,8 +572,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VKHODE_NAGNETATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129275 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_HL
-    st = getVariable(129275);
+  { // 129350 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_HL
+    st = getVariable(129350);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_HL", 46);
     st->size_data = sizeof(LREAL);
@@ -581,8 +581,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129276 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_LL
-    st = getVariable(129276);
+  { // 129351 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_LL
+    st = getVariable(129351);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_LL", 46);
     st->size_data = sizeof(LREAL);
@@ -590,8 +590,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129277 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_COMMAND
-    st = getVariable(129277);
+  { // 129352 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_COMMAND
+    st = getVariable(129352);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_COMMAND", 51);
     st->size_data = sizeof(UINT);
@@ -599,8 +599,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129278 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWHL
-    st = getVariable(129278);
+  { // 129353 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWHL
+    st = getVariable(129353);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWHL", 49);
     st->size_data = sizeof(LREAL);
@@ -608,8 +608,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129279 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWLL
-    st = getVariable(129279);
+  { // 129354 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWLL
+    st = getVariable(129354);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWLL", 49);
     st->size_data = sizeof(LREAL);
@@ -617,8 +617,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129280 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_STATUS
-    st = getVariable(129280);
+  { // 129355 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_STATUS
+    st = getVariable(129355);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -626,8 +626,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129281 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_VALUE
-    st = getVariable(129281);
+  { // 129356 RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_VALUE
+    st = getVariable(129356);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -635,8 +635,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_GAZA_NA_VYKHODE_NAGNETATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129282 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_HL
-    st = getVariable(129282);
+  { // 129357 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_HL
+    st = getVariable(129357);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_HL", 37);
     st->size_data = sizeof(LREAL);
@@ -644,8 +644,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129283 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LA
-    st = getVariable(129283);
+  { // 129358 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LA
+    st = getVariable(129358);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LA", 37);
     st->size_data = sizeof(LREAL);
@@ -653,8 +653,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_LA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129284 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LL
-    st = getVariable(129284);
+  { // 129359 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LL
+    st = getVariable(129359);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LL", 37);
     st->size_data = sizeof(LREAL);
@@ -662,8 +662,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129285 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LW
-    st = getVariable(129285);
+  { // 129360 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LW
+    st = getVariable(129360);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_LW", 37);
     st->size_data = sizeof(LREAL);
@@ -671,8 +671,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129286 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_COMMAND
-    st = getVariable(129286);
+  { // 129361 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_COMMAND
+    st = getVariable(129361);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_COMMAND", 42);
     st->size_data = sizeof(UINT);
@@ -680,8 +680,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129287 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWHL
-    st = getVariable(129287);
+  { // 129362 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWHL
+    st = getVariable(129362);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWHL", 40);
     st->size_data = sizeof(LREAL);
@@ -689,8 +689,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129288 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLA
-    st = getVariable(129288);
+  { // 129363 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLA
+    st = getVariable(129363);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLA", 40);
     st->size_data = sizeof(LREAL);
@@ -698,8 +698,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_NEWLA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129289 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLL
-    st = getVariable(129289);
+  { // 129364 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLL
+    st = getVariable(129364);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLL", 40);
     st->size_data = sizeof(LREAL);
@@ -707,8 +707,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129290 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLW
-    st = getVariable(129290);
+  { // 129365 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLW
+    st = getVariable(129365);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_NEWLW", 40);
     st->size_data = sizeof(LREAL);
@@ -716,8 +716,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129291 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_STATUS
-    st = getVariable(129291);
+  { // 129366 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_STATUS
+    st = getVariable(129366);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_STATUS", 41);
     st->size_data = sizeof(UDINT);
@@ -725,8 +725,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129292 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_VALUE
-    st = getVariable(129292);
+  { // 129367 RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_VALUE
+    st = getVariable(129367);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_NIZKOE_VALUE", 40);
     st->size_data = sizeof(LREAL);
@@ -734,8 +734,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_NIZKOE_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129293 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_HL
-    st = getVariable(129293);
+  { // 129368 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_HL
+    st = getVariable(129368);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_HL", 52);
     st->size_data = sizeof(LREAL);
@@ -743,8 +743,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129294 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LL
-    st = getVariable(129294);
+  { // 129369 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LL
+    st = getVariable(129369);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LL", 52);
     st->size_data = sizeof(LREAL);
@@ -752,8 +752,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129295 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LW
-    st = getVariable(129295);
+  { // 129370 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LW
+    st = getVariable(129370);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LW", 52);
     st->size_data = sizeof(LREAL);
@@ -761,8 +761,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129296 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_COMMAND
-    st = getVariable(129296);
+  { // 129371 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_COMMAND
+    st = getVariable(129371);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_COMMAND", 57);
     st->size_data = sizeof(UINT);
@@ -770,8 +770,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129297 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWHL
-    st = getVariable(129297);
+  { // 129372 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWHL
+    st = getVariable(129372);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWHL", 55);
     st->size_data = sizeof(LREAL);
@@ -779,8 +779,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129298 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLL
-    st = getVariable(129298);
+  { // 129373 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLL
+    st = getVariable(129373);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLL", 55);
     st->size_data = sizeof(LREAL);
@@ -788,8 +788,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129299 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLW
-    st = getVariable(129299);
+  { // 129374 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLW
+    st = getVariable(129374);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLW", 55);
     st->size_data = sizeof(LREAL);
@@ -797,8 +797,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129300 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_STATUS
-    st = getVariable(129300);
+  { // 129375 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_STATUS
+    st = getVariable(129375);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_STATUS", 56);
     st->size_data = sizeof(UDINT);
@@ -806,8 +806,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129301 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_VALUE
-    st = getVariable(129301);
+  { // 129376 RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_VALUE
+    st = getVariable(129376);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_VALUE", 55);
     st->size_data = sizeof(LREAL);
@@ -815,8 +815,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_SMAZKI_SREDNEE_POSLE_NASOSOV_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129302 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_HL
-    st = getVariable(129302);
+  { // 129377 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_HL
+    st = getVariable(129377);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_HL", 35);
     st->size_data = sizeof(LREAL);
@@ -824,8 +824,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129303 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_LL
-    st = getVariable(129303);
+  { // 129378 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_LL
+    st = getVariable(129378);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_LL", 35);
     st->size_data = sizeof(LREAL);
@@ -833,8 +833,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129304 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_COMMAND
-    st = getVariable(129304);
+  { // 129379 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_COMMAND
+    st = getVariable(129379);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_COMMAND", 40);
     st->size_data = sizeof(UINT);
@@ -842,8 +842,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129305 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_NEWHL
-    st = getVariable(129305);
+  { // 129380 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_NEWHL
+    st = getVariable(129380);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_NEWHL", 38);
     st->size_data = sizeof(LREAL);
@@ -851,8 +851,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129306 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_NEWLL
-    st = getVariable(129306);
+  { // 129381 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_NEWLL
+    st = getVariable(129381);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_NEWLL", 38);
     st->size_data = sizeof(LREAL);
@@ -860,8 +860,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129307 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_STATUS
-    st = getVariable(129307);
+  { // 129382 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_STATUS
+    st = getVariable(129382);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -869,8 +869,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129308 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_VALUE
-    st = getVariable(129308);
+  { // 129383 RESOURCE1.AI_P_MASLA_UPLOTNENIIA_VALUE
+    st = getVariable(129383);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_P_MASLA_UPLOTNENIIA_VALUE", 38);
     st->size_data = sizeof(LREAL);
@@ -878,8 +878,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_P_MASLA_UPLOTNENIIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129309 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_HL
-    st = getVariable(129309);
+  { // 129384 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_HL
+    st = getVariable(129384);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_HL", 38);
     st->size_data = sizeof(LREAL);
@@ -887,8 +887,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129310 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_LL
-    st = getVariable(129310);
+  { // 129385 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_LL
+    st = getVariable(129385);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_LL", 38);
     st->size_data = sizeof(LREAL);
@@ -896,8 +896,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129311 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_COMMAND
-    st = getVariable(129311);
+  { // 129386 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_COMMAND
+    st = getVariable(129386);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_COMMAND", 43);
     st->size_data = sizeof(UINT);
@@ -905,8 +905,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129312 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_NEWHL
-    st = getVariable(129312);
+  { // 129387 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_NEWHL
+    st = getVariable(129387);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_NEWHL", 41);
     st->size_data = sizeof(LREAL);
@@ -914,8 +914,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129313 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_NEWLL
-    st = getVariable(129313);
+  { // 129388 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_NEWLL
+    st = getVariable(129388);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_NEWLL", 41);
     st->size_data = sizeof(LREAL);
@@ -923,8 +923,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129314 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_STATUS
-    st = getVariable(129314);
+  { // 129389 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_STATUS
+    st = getVariable(129389);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -932,8 +932,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129315 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_VALUE
-    st = getVariable(129315);
+  { // 129390 RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_VALUE
+    st = getVariable(129390);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_REAKTIVNAIA_MOSHCHNOST_VALUE", 41);
     st->size_data = sizeof(LREAL);
@@ -941,8 +941,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_REAKTIVNAIA_MOSHCHNOST_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129316 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_HL
-    st = getVariable(129316);
+  { // 129391 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_HL
+    st = getVariable(129391);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_HL", 47);
     st->size_data = sizeof(LREAL);
@@ -950,8 +950,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129317 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_LL
-    st = getVariable(129317);
+  { // 129392 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_LL
+    st = getVariable(129392);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_LL", 47);
     st->size_data = sizeof(LREAL);
@@ -959,8 +959,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129318 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_COMMAND
-    st = getVariable(129318);
+  { // 129393 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_COMMAND
+    st = getVariable(129393);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_COMMAND", 52);
     st->size_data = sizeof(UINT);
@@ -968,8 +968,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129319 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWHL
-    st = getVariable(129319);
+  { // 129394 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWHL
+    st = getVariable(129394);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWHL", 50);
     st->size_data = sizeof(LREAL);
@@ -977,8 +977,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129320 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWLL
-    st = getVariable(129320);
+  { // 129395 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWLL
+    st = getVariable(129395);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWLL", 50);
     st->size_data = sizeof(LREAL);
@@ -986,8 +986,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129321 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_STATUS
-    st = getVariable(129321);
+  { // 129396 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_STATUS
+    st = getVariable(129396);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -995,8 +995,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129322 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_VALUE
-    st = getVariable(129322);
+  { // 129397 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_VALUE
+    st = getVariable(129397);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_VALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -1004,8 +1004,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_1_K_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129323 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_HL
-    st = getVariable(129323);
+  { // 129398 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_HL
+    st = getVariable(129398);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_HL", 47);
     st->size_data = sizeof(LREAL);
@@ -1013,8 +1013,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129324 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_LL
-    st = getVariable(129324);
+  { // 129399 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_LL
+    st = getVariable(129399);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_LL", 47);
     st->size_data = sizeof(LREAL);
@@ -1022,8 +1022,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129325 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_COMMAND
-    st = getVariable(129325);
+  { // 129400 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_COMMAND
+    st = getVariable(129400);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_COMMAND", 52);
     st->size_data = sizeof(UINT);
@@ -1031,8 +1031,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129326 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWHL
-    st = getVariable(129326);
+  { // 129401 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWHL
+    st = getVariable(129401);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWHL", 50);
     st->size_data = sizeof(LREAL);
@@ -1040,8 +1040,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129327 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWLL
-    st = getVariable(129327);
+  { // 129402 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWLL
+    st = getVariable(129402);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWLL", 50);
     st->size_data = sizeof(LREAL);
@@ -1049,8 +1049,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129328 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_STATUS
-    st = getVariable(129328);
+  { // 129403 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_STATUS
+    st = getVariable(129403);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -1058,8 +1058,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129329 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_VALUE
-    st = getVariable(129329);
+  { // 129404 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_VALUE
+    st = getVariable(129404);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_VALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -1067,8 +1067,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_2_K_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129330 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_HL
-    st = getVariable(129330);
+  { // 129405 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_HL
+    st = getVariable(129405);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_HL", 47);
     st->size_data = sizeof(LREAL);
@@ -1076,8 +1076,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129331 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_LL
-    st = getVariable(129331);
+  { // 129406 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_LL
+    st = getVariable(129406);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_LL", 47);
     st->size_data = sizeof(LREAL);
@@ -1085,8 +1085,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129332 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_COMMAND
-    st = getVariable(129332);
+  { // 129407 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_COMMAND
+    st = getVariable(129407);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_COMMAND", 52);
     st->size_data = sizeof(UINT);
@@ -1094,8 +1094,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129333 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWHL
-    st = getVariable(129333);
+  { // 129408 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWHL
+    st = getVariable(129408);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWHL", 50);
     st->size_data = sizeof(LREAL);
@@ -1103,8 +1103,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129334 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWLL
-    st = getVariable(129334);
+  { // 129409 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWLL
+    st = getVariable(129409);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWLL", 50);
     st->size_data = sizeof(LREAL);
@@ -1112,8 +1112,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129335 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_STATUS
-    st = getVariable(129335);
+  { // 129410 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_STATUS
+    st = getVariable(129410);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -1121,8 +1121,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129336 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_VALUE
-    st = getVariable(129336);
+  { // 129411 RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_VALUE
+    st = getVariable(129411);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_VALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -1130,8 +1130,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_AKTIVNOGO_ZHELEZA_STATORA_3_K_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129337 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_HL
-    st = getVariable(129337);
+  { // 129412 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_HL
+    st = getVariable(129412);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_HL", 39);
     st->size_data = sizeof(LREAL);
@@ -1139,8 +1139,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129338 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_LL
-    st = getVariable(129338);
+  { // 129413 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_LL
+    st = getVariable(129413);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_LL", 39);
     st->size_data = sizeof(LREAL);
@@ -1148,8 +1148,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129339 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_COMMAND
-    st = getVariable(129339);
+  { // 129414 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_COMMAND
+    st = getVariable(129414);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_COMMAND", 44);
     st->size_data = sizeof(UINT);
@@ -1157,8 +1157,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129340 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_NEWHL
-    st = getVariable(129340);
+  { // 129415 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_NEWHL
+    st = getVariable(129415);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_NEWHL", 42);
     st->size_data = sizeof(LREAL);
@@ -1166,8 +1166,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129341 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_NEWLL
-    st = getVariable(129341);
+  { // 129416 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_NEWLL
+    st = getVariable(129416);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_NEWLL", 42);
     st->size_data = sizeof(LREAL);
@@ -1175,8 +1175,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129342 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_STATUS
-    st = getVariable(129342);
+  { // 129417 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_STATUS
+    st = getVariable(129417);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_STATUS", 43);
     st->size_data = sizeof(UDINT);
@@ -1184,8 +1184,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129343 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_VALUE
-    st = getVariable(129343);
+  { // 129418 RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_VALUE
+    st = getVariable(129418);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_CLODAIR_DVIGATELIA_T1_VALUE", 42);
     st->size_data = sizeof(LREAL);
@@ -1193,8 +1193,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_CLODAIR_DVIGATELIA_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129344 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_HL
-    st = getVariable(129344);
+  { // 129419 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_HL
+    st = getVariable(129419);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_HL", 37);
     st->size_data = sizeof(LREAL);
@@ -1202,8 +1202,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129345 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_LL
-    st = getVariable(129345);
+  { // 129420 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_LL
+    st = getVariable(129420);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_LL", 37);
     st->size_data = sizeof(LREAL);
@@ -1211,8 +1211,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129346 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_COMMAND
-    st = getVariable(129346);
+  { // 129421 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_COMMAND
+    st = getVariable(129421);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_COMMAND", 42);
     st->size_data = sizeof(UINT);
@@ -1220,8 +1220,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129347 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_NEWHL
-    st = getVariable(129347);
+  { // 129422 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_NEWHL
+    st = getVariable(129422);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_NEWHL", 40);
     st->size_data = sizeof(LREAL);
@@ -1229,8 +1229,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129348 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_NEWLL
-    st = getVariable(129348);
+  { // 129423 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_NEWLL
+    st = getVariable(129423);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_NEWLL", 40);
     st->size_data = sizeof(LREAL);
@@ -1238,8 +1238,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129349 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_STATUS
-    st = getVariable(129349);
+  { // 129424 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_STATUS
+    st = getVariable(129424);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_STATUS", 41);
     st->size_data = sizeof(UDINT);
@@ -1247,8 +1247,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129350 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_VALUE
-    st = getVariable(129350);
+  { // 129425 RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_VALUE
+    st = getVariable(129425);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_IN_NAGNETATELIA_VALUE", 40);
     st->size_data = sizeof(LREAL);
@@ -1256,8 +1256,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_IN_NAGNETATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129351 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HA
-    st = getVariable(129351);
+  { // 129426 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HA
+    st = getVariable(129426);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HA", 38);
     st->size_data = sizeof(LREAL);
@@ -1265,8 +1265,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129352 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HL
-    st = getVariable(129352);
+  { // 129427 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HL
+    st = getVariable(129427);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HL", 38);
     st->size_data = sizeof(LREAL);
@@ -1274,8 +1274,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129353 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HW
-    st = getVariable(129353);
+  { // 129428 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HW
+    st = getVariable(129428);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_HW", 38);
     st->size_data = sizeof(LREAL);
@@ -1283,8 +1283,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129354 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_LL
-    st = getVariable(129354);
+  { // 129429 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_LL
+    st = getVariable(129429);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_LL", 38);
     st->size_data = sizeof(LREAL);
@@ -1292,8 +1292,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129355 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_COMMAND
-    st = getVariable(129355);
+  { // 129430 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_COMMAND
+    st = getVariable(129430);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_COMMAND", 43);
     st->size_data = sizeof(UINT);
@@ -1301,8 +1301,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129356 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHA
-    st = getVariable(129356);
+  { // 129431 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHA
+    st = getVariable(129431);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHA", 41);
     st->size_data = sizeof(LREAL);
@@ -1310,8 +1310,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129357 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHL
-    st = getVariable(129357);
+  { // 129432 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHL
+    st = getVariable(129432);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHL", 41);
     st->size_data = sizeof(LREAL);
@@ -1319,8 +1319,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129358 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHW
-    st = getVariable(129358);
+  { // 129433 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHW
+    st = getVariable(129433);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWHW", 41);
     st->size_data = sizeof(LREAL);
@@ -1328,8 +1328,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129359 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWLL
-    st = getVariable(129359);
+  { // 129434 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWLL
+    st = getVariable(129434);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_NEWLL", 41);
     st->size_data = sizeof(LREAL);
@@ -1337,8 +1337,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129360 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_STATUS
-    st = getVariable(129360);
+  { // 129435 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_STATUS
+    st = getVariable(129435);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -1346,8 +1346,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129361 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_VALUE
-    st = getVariable(129361);
+  { // 129436 RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_VALUE
+    st = getVariable(129436);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_GAZ_OUT_NAGNETATELIA_VALUE", 41);
     st->size_data = sizeof(LREAL);
@@ -1355,8 +1355,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_GAZ_OUT_NAGNETATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129362 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_HL
-    st = getVariable(129362);
+  { // 129437 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_HL
+    st = getVariable(129437);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_HL", 38);
     st->size_data = sizeof(LREAL);
@@ -1364,8 +1364,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129363 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_LL
-    st = getVariable(129363);
+  { // 129438 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_LL
+    st = getVariable(129438);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_LL", 38);
     st->size_data = sizeof(LREAL);
@@ -1373,8 +1373,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129364 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_COMMAND
-    st = getVariable(129364);
+  { // 129439 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_COMMAND
+    st = getVariable(129439);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_COMMAND", 43);
     st->size_data = sizeof(UINT);
@@ -1382,8 +1382,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129365 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_NEWHL
-    st = getVariable(129365);
+  { // 129440 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_NEWHL
+    st = getVariable(129440);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_NEWHL", 41);
     st->size_data = sizeof(LREAL);
@@ -1391,8 +1391,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129366 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_NEWLL
-    st = getVariable(129366);
+  { // 129441 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_NEWLL
+    st = getVariable(129441);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_NEWLL", 41);
     st->size_data = sizeof(LREAL);
@@ -1400,8 +1400,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129367 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_STATUS
-    st = getVariable(129367);
+  { // 129442 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_STATUS
+    st = getVariable(129442);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -1409,8 +1409,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129368 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_VALUE
-    st = getVariable(129368);
+  { // 129443 RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_VALUE
+    st = getVariable(129443);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_HOTAIR_DVIGATELIA_T1_VALUE", 41);
     st->size_data = sizeof(LREAL);
@@ -1418,8 +1418,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_HOTAIR_DVIGATELIA_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129369 RESOURCE1.AI_T_MASLA_DO_AVOM_HL
-    st = getVariable(129369);
+  { // 129444 RESOURCE1.AI_T_MASLA_DO_AVOM_HL
+    st = getVariable(129444);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_HL", 31);
     st->size_data = sizeof(LREAL);
@@ -1427,8 +1427,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_DO_AVOM_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129370 RESOURCE1.AI_T_MASLA_DO_AVOM_LL
-    st = getVariable(129370);
+  { // 129445 RESOURCE1.AI_T_MASLA_DO_AVOM_LL
+    st = getVariable(129445);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_LL", 31);
     st->size_data = sizeof(LREAL);
@@ -1436,8 +1436,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_DO_AVOM_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129371 RESOURCE1.AI_T_MASLA_DO_AVOM_COMMAND
-    st = getVariable(129371);
+  { // 129446 RESOURCE1.AI_T_MASLA_DO_AVOM_COMMAND
+    st = getVariable(129446);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_COMMAND", 36);
     st->size_data = sizeof(UINT);
@@ -1445,8 +1445,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_MASLA_DO_AVOM_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129372 RESOURCE1.AI_T_MASLA_DO_AVOM_NEWHL
-    st = getVariable(129372);
+  { // 129447 RESOURCE1.AI_T_MASLA_DO_AVOM_NEWHL
+    st = getVariable(129447);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_NEWHL", 34);
     st->size_data = sizeof(LREAL);
@@ -1454,8 +1454,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_DO_AVOM_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129373 RESOURCE1.AI_T_MASLA_DO_AVOM_NEWLL
-    st = getVariable(129373);
+  { // 129448 RESOURCE1.AI_T_MASLA_DO_AVOM_NEWLL
+    st = getVariable(129448);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_NEWLL", 34);
     st->size_data = sizeof(LREAL);
@@ -1463,8 +1463,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_DO_AVOM_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129374 RESOURCE1.AI_T_MASLA_DO_AVOM_STATUS
-    st = getVariable(129374);
+  { // 129449 RESOURCE1.AI_T_MASLA_DO_AVOM_STATUS
+    st = getVariable(129449);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -1472,8 +1472,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_MASLA_DO_AVOM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129375 RESOURCE1.AI_T_MASLA_DO_AVOM_VALUE
-    st = getVariable(129375);
+  { // 129450 RESOURCE1.AI_T_MASLA_DO_AVOM_VALUE
+    st = getVariable(129450);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_DO_AVOM_VALUE", 34);
     st->size_data = sizeof(LREAL);
@@ -1481,8 +1481,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_DO_AVOM_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129376 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL
-    st = getVariable(129376);
+  { // 129451 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL
+    st = getVariable(129451);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL", 74);
     st->size_data = sizeof(LREAL);
@@ -1490,8 +1490,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129377 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL
-    st = getVariable(129377);
+  { // 129452 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL
+    st = getVariable(129452);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL", 74);
     st->size_data = sizeof(LREAL);
@@ -1499,8 +1499,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129378 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND
-    st = getVariable(129378);
+  { // 129453 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND
+    st = getVariable(129453);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND", 79);
     st->size_data = sizeof(UINT);
@@ -1508,8 +1508,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129379 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL
-    st = getVariable(129379);
+  { // 129454 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL
+    st = getVariable(129454);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL", 77);
     st->size_data = sizeof(LREAL);
@@ -1517,8 +1517,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129380 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL
-    st = getVariable(129380);
+  { // 129455 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL
+    st = getVariable(129455);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL", 77);
     st->size_data = sizeof(LREAL);
@@ -1526,8 +1526,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129381 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS
-    st = getVariable(129381);
+  { // 129456 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS
+    st = getVariable(129456);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS", 78);
     st->size_data = sizeof(UDINT);
@@ -1535,8 +1535,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129382 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE
-    st = getVariable(129382);
+  { // 129457 RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE
+    st = getVariable(129457);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE", 77);
     st->size_data = sizeof(LREAL);
@@ -1544,8 +1544,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129383 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL
-    st = getVariable(129383);
+  { // 129458 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL
+    st = getVariable(129458);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL", 72);
     st->size_data = sizeof(LREAL);
@@ -1553,8 +1553,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129384 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL
-    st = getVariable(129384);
+  { // 129459 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL
+    st = getVariable(129459);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL", 72);
     st->size_data = sizeof(LREAL);
@@ -1562,8 +1562,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129385 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND
-    st = getVariable(129385);
+  { // 129460 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND
+    st = getVariable(129460);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND", 77);
     st->size_data = sizeof(UINT);
@@ -1571,8 +1571,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129386 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL
-    st = getVariable(129386);
+  { // 129461 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL
+    st = getVariable(129461);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL", 75);
     st->size_data = sizeof(LREAL);
@@ -1580,8 +1580,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129387 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL
-    st = getVariable(129387);
+  { // 129462 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL
+    st = getVariable(129462);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL", 75);
     st->size_data = sizeof(LREAL);
@@ -1589,8 +1589,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129388 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS
-    st = getVariable(129388);
+  { // 129463 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS
+    st = getVariable(129463);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS", 76);
     st->size_data = sizeof(UDINT);
@@ -1598,8 +1598,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129389 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE
-    st = getVariable(129389);
+  { // 129464 RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE
+    st = getVariable(129464);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE", 75);
     st->size_data = sizeof(LREAL);
@@ -1607,8 +1607,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_NA_SLIVE_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129390 RESOURCE1.AI_T_MASLA_POSLE_AVOM_HL
-    st = getVariable(129390);
+  { // 129465 RESOURCE1.AI_T_MASLA_POSLE_AVOM_HL
+    st = getVariable(129465);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_HL", 34);
     st->size_data = sizeof(LREAL);
@@ -1616,8 +1616,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129391 RESOURCE1.AI_T_MASLA_POSLE_AVOM_LL
-    st = getVariable(129391);
+  { // 129466 RESOURCE1.AI_T_MASLA_POSLE_AVOM_LL
+    st = getVariable(129466);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_LL", 34);
     st->size_data = sizeof(LREAL);
@@ -1625,8 +1625,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129392 RESOURCE1.AI_T_MASLA_POSLE_AVOM_COMMAND
-    st = getVariable(129392);
+  { // 129467 RESOURCE1.AI_T_MASLA_POSLE_AVOM_COMMAND
+    st = getVariable(129467);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_COMMAND", 39);
     st->size_data = sizeof(UINT);
@@ -1634,8 +1634,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129393 RESOURCE1.AI_T_MASLA_POSLE_AVOM_NEWHL
-    st = getVariable(129393);
+  { // 129468 RESOURCE1.AI_T_MASLA_POSLE_AVOM_NEWHL
+    st = getVariable(129468);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_NEWHL", 37);
     st->size_data = sizeof(LREAL);
@@ -1643,8 +1643,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129394 RESOURCE1.AI_T_MASLA_POSLE_AVOM_NEWLL
-    st = getVariable(129394);
+  { // 129469 RESOURCE1.AI_T_MASLA_POSLE_AVOM_NEWLL
+    st = getVariable(129469);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_NEWLL", 37);
     st->size_data = sizeof(LREAL);
@@ -1652,8 +1652,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129395 RESOURCE1.AI_T_MASLA_POSLE_AVOM_STATUS
-    st = getVariable(129395);
+  { // 129470 RESOURCE1.AI_T_MASLA_POSLE_AVOM_STATUS
+    st = getVariable(129470);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_STATUS", 38);
     st->size_data = sizeof(UDINT);
@@ -1661,8 +1661,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129396 RESOURCE1.AI_T_MASLA_POSLE_AVOM_VALUE
-    st = getVariable(129396);
+  { // 129471 RESOURCE1.AI_T_MASLA_POSLE_AVOM_VALUE
+    st = getVariable(129471);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_POSLE_AVOM_VALUE", 37);
     st->size_data = sizeof(LREAL);
@@ -1670,8 +1670,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_POSLE_AVOM_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129397 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_HL
-    st = getVariable(129397);
+  { // 129472 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_HL
+    st = getVariable(129472);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_HL", 35);
     st->size_data = sizeof(LREAL);
@@ -1679,8 +1679,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129398 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_HW
-    st = getVariable(129398);
+  { // 129473 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_HW
+    st = getVariable(129473);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_HW", 35);
     st->size_data = sizeof(LREAL);
@@ -1688,8 +1688,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129399 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_LL
-    st = getVariable(129399);
+  { // 129474 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_LL
+    st = getVariable(129474);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_LL", 35);
     st->size_data = sizeof(LREAL);
@@ -1697,8 +1697,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129400 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_LW
-    st = getVariable(129400);
+  { // 129475 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_LW
+    st = getVariable(129475);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_LW", 35);
     st->size_data = sizeof(LREAL);
@@ -1706,8 +1706,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129401 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_COMMAND
-    st = getVariable(129401);
+  { // 129476 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_COMMAND
+    st = getVariable(129476);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_COMMAND", 40);
     st->size_data = sizeof(UINT);
@@ -1715,8 +1715,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129402 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWHL
-    st = getVariable(129402);
+  { // 129477 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWHL
+    st = getVariable(129477);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWHL", 38);
     st->size_data = sizeof(LREAL);
@@ -1724,8 +1724,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129403 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWHW
-    st = getVariable(129403);
+  { // 129478 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWHW
+    st = getVariable(129478);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWHW", 38);
     st->size_data = sizeof(LREAL);
@@ -1733,8 +1733,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129404 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWLL
-    st = getVariable(129404);
+  { // 129479 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWLL
+    st = getVariable(129479);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWLL", 38);
     st->size_data = sizeof(LREAL);
@@ -1742,8 +1742,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129405 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWLW
-    st = getVariable(129405);
+  { // 129480 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWLW
+    st = getVariable(129480);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_NEWLW", 38);
     st->size_data = sizeof(LREAL);
@@ -1751,8 +1751,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129406 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_STATUS
-    st = getVariable(129406);
+  { // 129481 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_STATUS
+    st = getVariable(129481);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -1760,8 +1760,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129407 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_VALUE
-    st = getVariable(129407);
+  { // 129482 RESOURCE1.AI_T_MASLA_V_MASLOBAKE_VALUE
+    st = getVariable(129482);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_MASLA_V_MASLOBAKE_VALUE", 38);
     st->size_data = sizeof(LREAL);
@@ -1769,8 +1769,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_MASLA_V_MASLOBAKE_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129408 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_HL
-    st = getVariable(129408);
+  { // 129483 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_HL
+    st = getVariable(129483);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_HL", 34);
     st->size_data = sizeof(LREAL);
@@ -1778,8 +1778,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129409 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_LL
-    st = getVariable(129409);
+  { // 129484 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_LL
+    st = getVariable(129484);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_LL", 34);
     st->size_data = sizeof(LREAL);
@@ -1787,8 +1787,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129410 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_COMMAND
-    st = getVariable(129410);
+  { // 129485 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_COMMAND
+    st = getVariable(129485);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_COMMAND", 39);
     st->size_data = sizeof(UINT);
@@ -1796,8 +1796,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129411 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_NEWHL
-    st = getVariable(129411);
+  { // 129486 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_NEWHL
+    st = getVariable(129486);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_NEWHL", 37);
     st->size_data = sizeof(LREAL);
@@ -1805,8 +1805,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129412 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_NEWLL
-    st = getVariable(129412);
+  { // 129487 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_NEWLL
+    st = getVariable(129487);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_NEWLL", 37);
     st->size_data = sizeof(LREAL);
@@ -1814,8 +1814,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129413 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_STATUS
-    st = getVariable(129413);
+  { // 129488 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_STATUS
+    st = getVariable(129488);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_STATUS", 38);
     st->size_data = sizeof(UDINT);
@@ -1823,8 +1823,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129414 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_VALUE
-    st = getVariable(129414);
+  { // 129489 RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_VALUE
+    st = getVariable(129489);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_1_K_VALUE", 37);
     st->size_data = sizeof(LREAL);
@@ -1832,8 +1832,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_1_K_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129415 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_HL
-    st = getVariable(129415);
+  { // 129490 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_HL
+    st = getVariable(129490);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_HL", 34);
     st->size_data = sizeof(LREAL);
@@ -1841,8 +1841,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129416 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_LL
-    st = getVariable(129416);
+  { // 129491 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_LL
+    st = getVariable(129491);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_LL", 34);
     st->size_data = sizeof(LREAL);
@@ -1850,8 +1850,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129417 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_COMMAND
-    st = getVariable(129417);
+  { // 129492 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_COMMAND
+    st = getVariable(129492);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_COMMAND", 39);
     st->size_data = sizeof(UINT);
@@ -1859,8 +1859,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129418 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_NEWHL
-    st = getVariable(129418);
+  { // 129493 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_NEWHL
+    st = getVariable(129493);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_NEWHL", 37);
     st->size_data = sizeof(LREAL);
@@ -1868,8 +1868,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129419 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_NEWLL
-    st = getVariable(129419);
+  { // 129494 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_NEWLL
+    st = getVariable(129494);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_NEWLL", 37);
     st->size_data = sizeof(LREAL);
@@ -1877,8 +1877,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129420 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_STATUS
-    st = getVariable(129420);
+  { // 129495 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_STATUS
+    st = getVariable(129495);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_STATUS", 38);
     st->size_data = sizeof(UDINT);
@@ -1886,8 +1886,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129421 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_VALUE
-    st = getVariable(129421);
+  { // 129496 RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_VALUE
+    st = getVariable(129496);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_2_K_VALUE", 37);
     st->size_data = sizeof(LREAL);
@@ -1895,8 +1895,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_2_K_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129422 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_HL
-    st = getVariable(129422);
+  { // 129497 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_HL
+    st = getVariable(129497);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_HL", 34);
     st->size_data = sizeof(LREAL);
@@ -1904,8 +1904,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129423 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_LL
-    st = getVariable(129423);
+  { // 129498 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_LL
+    st = getVariable(129498);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_LL", 34);
     st->size_data = sizeof(LREAL);
@@ -1913,8 +1913,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129424 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_COMMAND
-    st = getVariable(129424);
+  { // 129499 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_COMMAND
+    st = getVariable(129499);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_COMMAND", 39);
     st->size_data = sizeof(UINT);
@@ -1922,8 +1922,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129425 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_NEWHL
-    st = getVariable(129425);
+  { // 129500 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_NEWHL
+    st = getVariable(129500);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_NEWHL", 37);
     st->size_data = sizeof(LREAL);
@@ -1931,8 +1931,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129426 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_NEWLL
-    st = getVariable(129426);
+  { // 129501 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_NEWLL
+    st = getVariable(129501);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_NEWLL", 37);
     st->size_data = sizeof(LREAL);
@@ -1940,8 +1940,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129427 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_STATUS
-    st = getVariable(129427);
+  { // 129502 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_STATUS
+    st = getVariable(129502);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_STATUS", 38);
     st->size_data = sizeof(UDINT);
@@ -1949,8 +1949,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129428 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_VALUE
-    st = getVariable(129428);
+  { // 129503 RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_VALUE
+    st = getVariable(129503);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OBMOTKI_FAZY_3_K_VALUE", 37);
     st->size_data = sizeof(LREAL);
@@ -1958,8 +1958,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OBMOTKI_FAZY_3_K_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129429 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA
-    st = getVariable(129429);
+  { // 129504 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA
+    st = getVariable(129504);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA", 61);
     st->size_data = sizeof(LREAL);
@@ -1967,8 +1967,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129430 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HL
-    st = getVariable(129430);
+  { // 129505 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HL
+    st = getVariable(129505);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HL", 61);
     st->size_data = sizeof(LREAL);
@@ -1976,8 +1976,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129431 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HW
-    st = getVariable(129431);
+  { // 129506 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HW
+    st = getVariable(129506);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HW", 61);
     st->size_data = sizeof(LREAL);
@@ -1985,8 +1985,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129432 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_LL
-    st = getVariable(129432);
+  { // 129507 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_LL
+    st = getVariable(129507);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_LL", 61);
     st->size_data = sizeof(LREAL);
@@ -1994,8 +1994,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129433 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_COMMAND
-    st = getVariable(129433);
+  { // 129508 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_COMMAND
+    st = getVariable(129508);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_COMMAND", 66);
     st->size_data = sizeof(UINT);
@@ -2003,8 +2003,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129434 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHA
-    st = getVariable(129434);
+  { // 129509 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHA
+    st = getVariable(129509);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHA", 64);
     st->size_data = sizeof(LREAL);
@@ -2012,8 +2012,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129435 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHL
-    st = getVariable(129435);
+  { // 129510 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHL
+    st = getVariable(129510);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHL", 64);
     st->size_data = sizeof(LREAL);
@@ -2021,8 +2021,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129436 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHW
-    st = getVariable(129436);
+  { // 129511 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHW
+    st = getVariable(129511);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHW", 64);
     st->size_data = sizeof(LREAL);
@@ -2030,8 +2030,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129437 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWLL
-    st = getVariable(129437);
+  { // 129512 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWLL
+    st = getVariable(129512);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWLL", 64);
     st->size_data = sizeof(LREAL);
@@ -2039,8 +2039,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129438 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_STATUS
-    st = getVariable(129438);
+  { // 129513 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_STATUS
+    st = getVariable(129513);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -2048,8 +2048,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129439 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_VALUE
-    st = getVariable(129439);
+  { // 129514 RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_VALUE
+    st = getVariable(129514);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_VALUE", 64);
     st->size_data = sizeof(LREAL);
@@ -2057,8 +2057,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNO_UPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129440 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA
-    st = getVariable(129440);
+  { // 129515 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA
+    st = getVariable(129515);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA", 54);
     st->size_data = sizeof(LREAL);
@@ -2066,8 +2066,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129441 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HL
-    st = getVariable(129441);
+  { // 129516 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HL
+    st = getVariable(129516);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HL", 54);
     st->size_data = sizeof(LREAL);
@@ -2075,8 +2075,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129442 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HW
-    st = getVariable(129442);
+  { // 129517 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HW
+    st = getVariable(129517);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HW", 54);
     st->size_data = sizeof(LREAL);
@@ -2084,8 +2084,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129443 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_LL
-    st = getVariable(129443);
+  { // 129518 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_LL
+    st = getVariable(129518);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_LL", 54);
     st->size_data = sizeof(LREAL);
@@ -2093,8 +2093,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129444 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_COMMAND
-    st = getVariable(129444);
+  { // 129519 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_COMMAND
+    st = getVariable(129519);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_COMMAND", 59);
     st->size_data = sizeof(UINT);
@@ -2102,8 +2102,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129445 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHA
-    st = getVariable(129445);
+  { // 129520 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHA
+    st = getVariable(129520);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHA", 57);
     st->size_data = sizeof(LREAL);
@@ -2111,8 +2111,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129446 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHL
-    st = getVariable(129446);
+  { // 129521 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHL
+    st = getVariable(129521);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHL", 57);
     st->size_data = sizeof(LREAL);
@@ -2120,8 +2120,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129447 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHW
-    st = getVariable(129447);
+  { // 129522 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHW
+    st = getVariable(129522);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHW", 57);
     st->size_data = sizeof(LREAL);
@@ -2129,8 +2129,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129448 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWLL
-    st = getVariable(129448);
+  { // 129523 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWLL
+    st = getVariable(129523);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWLL", 57);
     st->size_data = sizeof(LREAL);
@@ -2138,8 +2138,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129449 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_STATUS
-    st = getVariable(129449);
+  { // 129524 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_STATUS
+    st = getVariable(129524);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -2147,8 +2147,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129450 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_VALUE
-    st = getVariable(129450);
+  { // 129525 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_VALUE
+    st = getVariable(129525);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_VALUE", 57);
     st->size_data = sizeof(LREAL);
@@ -2156,8 +2156,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129451 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA
-    st = getVariable(129451);
+  { // 129526 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA
+    st = getVariable(129526);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA", 54);
     st->size_data = sizeof(LREAL);
@@ -2165,8 +2165,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129452 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HL
-    st = getVariable(129452);
+  { // 129527 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HL
+    st = getVariable(129527);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HL", 54);
     st->size_data = sizeof(LREAL);
@@ -2174,8 +2174,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129453 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HW
-    st = getVariable(129453);
+  { // 129528 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HW
+    st = getVariable(129528);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HW", 54);
     st->size_data = sizeof(LREAL);
@@ -2183,8 +2183,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129454 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_LL
-    st = getVariable(129454);
+  { // 129529 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_LL
+    st = getVariable(129529);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_LL", 54);
     st->size_data = sizeof(LREAL);
@@ -2192,8 +2192,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129455 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_COMMAND
-    st = getVariable(129455);
+  { // 129530 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_COMMAND
+    st = getVariable(129530);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_COMMAND", 59);
     st->size_data = sizeof(UINT);
@@ -2201,8 +2201,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129456 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHA
-    st = getVariable(129456);
+  { // 129531 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHA
+    st = getVariable(129531);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHA", 57);
     st->size_data = sizeof(LREAL);
@@ -2210,8 +2210,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129457 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHL
-    st = getVariable(129457);
+  { // 129532 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHL
+    st = getVariable(129532);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHL", 57);
     st->size_data = sizeof(LREAL);
@@ -2219,8 +2219,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129458 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHW
-    st = getVariable(129458);
+  { // 129533 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHW
+    st = getVariable(129533);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHW", 57);
     st->size_data = sizeof(LREAL);
@@ -2228,8 +2228,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129459 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWLL
-    st = getVariable(129459);
+  { // 129534 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWLL
+    st = getVariable(129534);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWLL", 57);
     st->size_data = sizeof(LREAL);
@@ -2237,8 +2237,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129460 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_STATUS
-    st = getVariable(129460);
+  { // 129535 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_STATUS
+    st = getVariable(129535);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -2246,8 +2246,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129461 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_VALUE
-    st = getVariable(129461);
+  { // 129536 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_VALUE
+    st = getVariable(129536);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_VALUE", 57);
     st->size_data = sizeof(LREAL);
@@ -2255,8 +2255,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129462 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA
-    st = getVariable(129462);
+  { // 129537 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA
+    st = getVariable(129537);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA", 54);
     st->size_data = sizeof(LREAL);
@@ -2264,8 +2264,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129463 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HL
-    st = getVariable(129463);
+  { // 129538 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HL
+    st = getVariable(129538);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HL", 54);
     st->size_data = sizeof(LREAL);
@@ -2273,8 +2273,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129464 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HW
-    st = getVariable(129464);
+  { // 129539 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HW
+    st = getVariable(129539);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HW", 54);
     st->size_data = sizeof(LREAL);
@@ -2282,8 +2282,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129465 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_LL
-    st = getVariable(129465);
+  { // 129540 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_LL
+    st = getVariable(129540);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_LL", 54);
     st->size_data = sizeof(LREAL);
@@ -2291,8 +2291,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129466 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_COMMAND
-    st = getVariable(129466);
+  { // 129541 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_COMMAND
+    st = getVariable(129541);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_COMMAND", 59);
     st->size_data = sizeof(UINT);
@@ -2300,8 +2300,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129467 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHA
-    st = getVariable(129467);
+  { // 129542 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHA
+    st = getVariable(129542);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHA", 57);
     st->size_data = sizeof(LREAL);
@@ -2309,8 +2309,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129468 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHL
-    st = getVariable(129468);
+  { // 129543 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHL
+    st = getVariable(129543);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHL", 57);
     st->size_data = sizeof(LREAL);
@@ -2318,8 +2318,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129469 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHW
-    st = getVariable(129469);
+  { // 129544 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHW
+    st = getVariable(129544);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHW", 57);
     st->size_data = sizeof(LREAL);
@@ -2327,8 +2327,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129470 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWLL
-    st = getVariable(129470);
+  { // 129545 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWLL
+    st = getVariable(129545);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWLL", 57);
     st->size_data = sizeof(LREAL);
@@ -2336,8 +2336,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129471 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_STATUS
-    st = getVariable(129471);
+  { // 129546 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_STATUS
+    st = getVariable(129546);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -2345,8 +2345,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129472 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_VALUE
-    st = getVariable(129472);
+  { // 129547 RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_VALUE
+    st = getVariable(129547);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_VALUE", 57);
     st->size_data = sizeof(LREAL);
@@ -2354,8 +2354,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129473 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA
-    st = getVariable(129473);
+  { // 129548 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA
+    st = getVariable(129548);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA", 62);
     st->size_data = sizeof(LREAL);
@@ -2363,8 +2363,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129474 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HL
-    st = getVariable(129474);
+  { // 129549 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HL
+    st = getVariable(129549);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HL", 62);
     st->size_data = sizeof(LREAL);
@@ -2372,8 +2372,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129475 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HW
-    st = getVariable(129475);
+  { // 129550 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HW
+    st = getVariable(129550);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HW", 62);
     st->size_data = sizeof(LREAL);
@@ -2381,8 +2381,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129476 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_LL
-    st = getVariable(129476);
+  { // 129551 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_LL
+    st = getVariable(129551);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_LL", 62);
     st->size_data = sizeof(LREAL);
@@ -2390,8 +2390,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129477 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_COMMAND
-    st = getVariable(129477);
+  { // 129552 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_COMMAND
+    st = getVariable(129552);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_COMMAND", 67);
     st->size_data = sizeof(UINT);
@@ -2399,8 +2399,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129478 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHA
-    st = getVariable(129478);
+  { // 129553 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHA
+    st = getVariable(129553);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHA", 65);
     st->size_data = sizeof(LREAL);
@@ -2408,8 +2408,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129479 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHL
-    st = getVariable(129479);
+  { // 129554 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHL
+    st = getVariable(129554);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHL", 65);
     st->size_data = sizeof(LREAL);
@@ -2417,8 +2417,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129480 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHW
-    st = getVariable(129480);
+  { // 129555 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHW
+    st = getVariable(129555);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHW", 65);
     st->size_data = sizeof(LREAL);
@@ -2426,8 +2426,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129481 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWLL
-    st = getVariable(129481);
+  { // 129556 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWLL
+    st = getVariable(129556);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWLL", 65);
     st->size_data = sizeof(LREAL);
@@ -2435,8 +2435,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129482 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_STATUS
-    st = getVariable(129482);
+  { // 129557 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_STATUS
+    st = getVariable(129557);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_STATUS", 66);
     st->size_data = sizeof(UDINT);
@@ -2444,8 +2444,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129483 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_VALUE
-    st = getVariable(129483);
+  { // 129558 RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_VALUE
+    st = getVariable(129558);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_VALUE", 65);
     st->size_data = sizeof(LREAL);
@@ -2453,8 +2453,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129484 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HA
-    st = getVariable(129484);
+  { // 129559 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HA
+    st = getVariable(129559);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HA", 42);
     st->size_data = sizeof(LREAL);
@@ -2462,8 +2462,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129485 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HL
-    st = getVariable(129485);
+  { // 129560 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HL
+    st = getVariable(129560);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HL", 42);
     st->size_data = sizeof(LREAL);
@@ -2471,8 +2471,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129486 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HW
-    st = getVariable(129486);
+  { // 129561 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HW
+    st = getVariable(129561);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_HW", 42);
     st->size_data = sizeof(LREAL);
@@ -2480,8 +2480,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129487 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_LL
-    st = getVariable(129487);
+  { // 129562 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_LL
+    st = getVariable(129562);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_LL", 42);
     st->size_data = sizeof(LREAL);
@@ -2489,8 +2489,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129488 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_COMMAND
-    st = getVariable(129488);
+  { // 129563 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_COMMAND
+    st = getVariable(129563);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_COMMAND", 47);
     st->size_data = sizeof(UINT);
@@ -2498,8 +2498,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129489 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHA
-    st = getVariable(129489);
+  { // 129564 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHA
+    st = getVariable(129564);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHA", 45);
     st->size_data = sizeof(LREAL);
@@ -2507,8 +2507,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129490 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHL
-    st = getVariable(129490);
+  { // 129565 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHL
+    st = getVariable(129565);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHL", 45);
     st->size_data = sizeof(LREAL);
@@ -2516,8 +2516,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129491 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHW
-    st = getVariable(129491);
+  { // 129566 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHW
+    st = getVariable(129566);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHW", 45);
     st->size_data = sizeof(LREAL);
@@ -2525,8 +2525,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129492 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWLL
-    st = getVariable(129492);
+  { // 129567 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWLL
+    st = getVariable(129567);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWLL", 45);
     st->size_data = sizeof(LREAL);
@@ -2534,8 +2534,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129493 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_STATUS
-    st = getVariable(129493);
+  { // 129568 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_STATUS
+    st = getVariable(129568);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -2543,8 +2543,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129494 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_VALUE
-    st = getVariable(129494);
+  { // 129569 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_VALUE
+    st = getVariable(129569);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T1_VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -2552,8 +2552,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129495 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HA
-    st = getVariable(129495);
+  { // 129570 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HA
+    st = getVariable(129570);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HA", 42);
     st->size_data = sizeof(LREAL);
@@ -2561,8 +2561,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129496 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HL
-    st = getVariable(129496);
+  { // 129571 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HL
+    st = getVariable(129571);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HL", 42);
     st->size_data = sizeof(LREAL);
@@ -2570,8 +2570,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129497 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HW
-    st = getVariable(129497);
+  { // 129572 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HW
+    st = getVariable(129572);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_HW", 42);
     st->size_data = sizeof(LREAL);
@@ -2579,8 +2579,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129498 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_LL
-    st = getVariable(129498);
+  { // 129573 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_LL
+    st = getVariable(129573);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_LL", 42);
     st->size_data = sizeof(LREAL);
@@ -2588,8 +2588,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129499 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_COMMAND
-    st = getVariable(129499);
+  { // 129574 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_COMMAND
+    st = getVariable(129574);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_COMMAND", 47);
     st->size_data = sizeof(UINT);
@@ -2597,8 +2597,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129500 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHA
-    st = getVariable(129500);
+  { // 129575 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHA
+    st = getVariable(129575);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHA", 45);
     st->size_data = sizeof(LREAL);
@@ -2606,8 +2606,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129501 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHL
-    st = getVariable(129501);
+  { // 129576 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHL
+    st = getVariable(129576);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHL", 45);
     st->size_data = sizeof(LREAL);
@@ -2615,8 +2615,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129502 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHW
-    st = getVariable(129502);
+  { // 129577 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHW
+    st = getVariable(129577);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHW", 45);
     st->size_data = sizeof(LREAL);
@@ -2624,8 +2624,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129503 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWLL
-    st = getVariable(129503);
+  { // 129578 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWLL
+    st = getVariable(129578);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWLL", 45);
     st->size_data = sizeof(LREAL);
@@ -2633,8 +2633,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129504 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_STATUS
-    st = getVariable(129504);
+  { // 129579 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_STATUS
+    st = getVariable(129579);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -2642,8 +2642,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129505 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_VALUE
-    st = getVariable(129505);
+  { // 129580 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_VALUE
+    st = getVariable(129580);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T2_VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -2651,8 +2651,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T2_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129506 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HA
-    st = getVariable(129506);
+  { // 129581 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HA
+    st = getVariable(129581);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HA", 42);
     st->size_data = sizeof(LREAL);
@@ -2660,8 +2660,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129507 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HL
-    st = getVariable(129507);
+  { // 129582 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HL
+    st = getVariable(129582);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HL", 42);
     st->size_data = sizeof(LREAL);
@@ -2669,8 +2669,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129508 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HW
-    st = getVariable(129508);
+  { // 129583 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HW
+    st = getVariable(129583);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_HW", 42);
     st->size_data = sizeof(LREAL);
@@ -2678,8 +2678,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129509 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_LL
-    st = getVariable(129509);
+  { // 129584 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_LL
+    st = getVariable(129584);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_LL", 42);
     st->size_data = sizeof(LREAL);
@@ -2687,8 +2687,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129510 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_COMMAND
-    st = getVariable(129510);
+  { // 129585 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_COMMAND
+    st = getVariable(129585);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_COMMAND", 47);
     st->size_data = sizeof(UINT);
@@ -2696,8 +2696,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129511 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHA
-    st = getVariable(129511);
+  { // 129586 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHA
+    st = getVariable(129586);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHA", 45);
     st->size_data = sizeof(LREAL);
@@ -2705,8 +2705,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129512 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHL
-    st = getVariable(129512);
+  { // 129587 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHL
+    st = getVariable(129587);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHL", 45);
     st->size_data = sizeof(LREAL);
@@ -2714,8 +2714,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129513 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHW
-    st = getVariable(129513);
+  { // 129588 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHW
+    st = getVariable(129588);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHW", 45);
     st->size_data = sizeof(LREAL);
@@ -2723,8 +2723,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129514 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWLL
-    st = getVariable(129514);
+  { // 129589 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWLL
+    st = getVariable(129589);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWLL", 45);
     st->size_data = sizeof(LREAL);
@@ -2732,8 +2732,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129515 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_STATUS
-    st = getVariable(129515);
+  { // 129590 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_STATUS
+    st = getVariable(129590);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -2741,8 +2741,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129516 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_VALUE
-    st = getVariable(129516);
+  { // 129591 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_VALUE
+    st = getVariable(129591);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T3_VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -2750,8 +2750,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T3_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129517 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HA
-    st = getVariable(129517);
+  { // 129592 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HA
+    st = getVariable(129592);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HA", 42);
     st->size_data = sizeof(LREAL);
@@ -2759,8 +2759,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129518 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HL
-    st = getVariable(129518);
+  { // 129593 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HL
+    st = getVariable(129593);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HL", 42);
     st->size_data = sizeof(LREAL);
@@ -2768,8 +2768,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129519 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HW
-    st = getVariable(129519);
+  { // 129594 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HW
+    st = getVariable(129594);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_HW", 42);
     st->size_data = sizeof(LREAL);
@@ -2777,8 +2777,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129520 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_LL
-    st = getVariable(129520);
+  { // 129595 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_LL
+    st = getVariable(129595);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_LL", 42);
     st->size_data = sizeof(LREAL);
@@ -2786,8 +2786,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129521 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_COMMAND
-    st = getVariable(129521);
+  { // 129596 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_COMMAND
+    st = getVariable(129596);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_COMMAND", 47);
     st->size_data = sizeof(UINT);
@@ -2795,8 +2795,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129522 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHA
-    st = getVariable(129522);
+  { // 129597 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHA
+    st = getVariable(129597);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHA", 45);
     st->size_data = sizeof(LREAL);
@@ -2804,8 +2804,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129523 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHL
-    st = getVariable(129523);
+  { // 129598 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHL
+    st = getVariable(129598);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHL", 45);
     st->size_data = sizeof(LREAL);
@@ -2813,8 +2813,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129524 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHW
-    st = getVariable(129524);
+  { // 129599 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHW
+    st = getVariable(129599);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHW", 45);
     st->size_data = sizeof(LREAL);
@@ -2822,8 +2822,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129525 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWLL
-    st = getVariable(129525);
+  { // 129600 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWLL
+    st = getVariable(129600);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWLL", 45);
     st->size_data = sizeof(LREAL);
@@ -2831,8 +2831,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129526 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_STATUS
-    st = getVariable(129526);
+  { // 129601 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_STATUS
+    st = getVariable(129601);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -2840,8 +2840,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129527 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_VALUE
-    st = getVariable(129527);
+  { // 129602 RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_VALUE
+    st = getVariable(129602);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_PODSHIPNIKA_REDUKTORA_T4_VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -2849,8 +2849,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_PODSHIPNIKA_REDUKTORA_T4_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129528 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA
-    st = getVariable(129528);
+  { // 129603 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA
+    st = getVariable(129603);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA", 60);
     st->size_data = sizeof(LREAL);
@@ -2858,8 +2858,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129529 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HL
-    st = getVariable(129529);
+  { // 129604 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HL
+    st = getVariable(129604);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HL", 60);
     st->size_data = sizeof(LREAL);
@@ -2867,8 +2867,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129530 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HW
-    st = getVariable(129530);
+  { // 129605 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HW
+    st = getVariable(129605);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HW", 60);
     st->size_data = sizeof(LREAL);
@@ -2876,8 +2876,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129531 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_LL
-    st = getVariable(129531);
+  { // 129606 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_LL
+    st = getVariable(129606);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_LL", 60);
     st->size_data = sizeof(LREAL);
@@ -2885,8 +2885,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129532 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_COMMAND
-    st = getVariable(129532);
+  { // 129607 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_COMMAND
+    st = getVariable(129607);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_COMMAND", 65);
     st->size_data = sizeof(UINT);
@@ -2894,8 +2894,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129533 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHA
-    st = getVariable(129533);
+  { // 129608 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHA
+    st = getVariable(129608);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHA", 63);
     st->size_data = sizeof(LREAL);
@@ -2903,8 +2903,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129534 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHL
-    st = getVariable(129534);
+  { // 129609 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHL
+    st = getVariable(129609);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHL", 63);
     st->size_data = sizeof(LREAL);
@@ -2912,8 +2912,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129535 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHW
-    st = getVariable(129535);
+  { // 129610 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHW
+    st = getVariable(129610);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHW", 63);
     st->size_data = sizeof(LREAL);
@@ -2921,8 +2921,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129536 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWLL
-    st = getVariable(129536);
+  { // 129611 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWLL
+    st = getVariable(129611);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWLL", 63);
     st->size_data = sizeof(LREAL);
@@ -2930,8 +2930,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129537 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_STATUS
-    st = getVariable(129537);
+  { // 129612 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_STATUS
+    st = getVariable(129612);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_STATUS", 64);
     st->size_data = sizeof(UDINT);
@@ -2939,8 +2939,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129538 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_VALUE
-    st = getVariable(129538);
+  { // 129613 RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_VALUE
+    st = getVariable(129613);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_VALUE", 63);
     st->size_data = sizeof(LREAL);
@@ -2948,8 +2948,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129539 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_HL
-    st = getVariable(129539);
+  { // 129614 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_HL
+    st = getVariable(129614);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_HL", 45);
     st->size_data = sizeof(LREAL);
@@ -2957,8 +2957,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129540 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_LL
-    st = getVariable(129540);
+  { // 129615 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_LL
+    st = getVariable(129615);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_LL", 45);
     st->size_data = sizeof(LREAL);
@@ -2966,8 +2966,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129541 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_COMMAND
-    st = getVariable(129541);
+  { // 129616 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_COMMAND
+    st = getVariable(129616);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_COMMAND", 50);
     st->size_data = sizeof(UINT);
@@ -2975,8 +2975,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129542 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWHL
-    st = getVariable(129542);
+  { // 129617 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWHL
+    st = getVariable(129617);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWHL", 48);
     st->size_data = sizeof(LREAL);
@@ -2984,8 +2984,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129543 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWLL
-    st = getVariable(129543);
+  { // 129618 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWLL
+    st = getVariable(129618);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWLL", 48);
     st->size_data = sizeof(LREAL);
@@ -2993,8 +2993,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129544 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_STATUS
-    st = getVariable(129544);
+  { // 129619 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_STATUS
+    st = getVariable(129619);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -3002,8 +3002,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129545 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_VALUE
-    st = getVariable(129545);
+  { // 129620 RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_VALUE
+    st = getVariable(129620);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_STATORA_ELEKTRODVIGATELIA_VALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -3011,8 +3011,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_STATORA_ELEKTRODVIGATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129546 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_HL
-    st = getVariable(129546);
+  { // 129621 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_HL
+    st = getVariable(129621);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_HL", 46);
     st->size_data = sizeof(LREAL);
@@ -3020,8 +3020,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129547 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_LL
-    st = getVariable(129547);
+  { // 129622 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_LL
+    st = getVariable(129622);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_LL", 46);
     st->size_data = sizeof(LREAL);
@@ -3029,8 +3029,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129548 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_COMMAND
-    st = getVariable(129548);
+  { // 129623 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_COMMAND
+    st = getVariable(129623);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_COMMAND", 51);
     st->size_data = sizeof(UINT);
@@ -3038,8 +3038,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129549 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWHL
-    st = getVariable(129549);
+  { // 129624 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWHL
+    st = getVariable(129624);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWHL", 49);
     st->size_data = sizeof(LREAL);
@@ -3047,8 +3047,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129550 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWLL
-    st = getVariable(129550);
+  { // 129625 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWLL
+    st = getVariable(129625);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWLL", 49);
     st->size_data = sizeof(LREAL);
@@ -3056,8 +3056,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129551 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_STATUS
-    st = getVariable(129551);
+  { // 129626 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_STATUS
+    st = getVariable(129626);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -3065,8 +3065,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129552 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_VALUE
-    st = getVariable(129552);
+  { // 129627 RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_VALUE
+    st = getVariable(129627);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -3074,8 +3074,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_TOK_VOZBUZHDENIIA_VOZBUDITELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129553 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_HL
-    st = getVariable(129553);
+  { // 129628 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_HL
+    st = getVariable(129628);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_HL", 40);
     st->size_data = sizeof(LREAL);
@@ -3083,8 +3083,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129554 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_HW
-    st = getVariable(129554);
+  { // 129629 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_HW
+    st = getVariable(129629);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_HW", 40);
     st->size_data = sizeof(LREAL);
@@ -3092,8 +3092,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129555 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LA
-    st = getVariable(129555);
+  { // 129630 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LA
+    st = getVariable(129630);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LA", 40);
     st->size_data = sizeof(LREAL);
@@ -3101,8 +3101,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_LA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129556 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LL
-    st = getVariable(129556);
+  { // 129631 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LL
+    st = getVariable(129631);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LL", 40);
     st->size_data = sizeof(LREAL);
@@ -3110,8 +3110,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129557 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LW
-    st = getVariable(129557);
+  { // 129632 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LW
+    st = getVariable(129632);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_LW", 40);
     st->size_data = sizeof(LREAL);
@@ -3119,8 +3119,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129558 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_COMMAND
-    st = getVariable(129558);
+  { // 129633 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_COMMAND
+    st = getVariable(129633);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_COMMAND", 45);
     st->size_data = sizeof(UINT);
@@ -3128,8 +3128,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129559 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWHL
-    st = getVariable(129559);
+  { // 129634 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWHL
+    st = getVariable(129634);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWHL", 43);
     st->size_data = sizeof(LREAL);
@@ -3137,8 +3137,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129560 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWHW
-    st = getVariable(129560);
+  { // 129635 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWHW
+    st = getVariable(129635);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWHW", 43);
     st->size_data = sizeof(LREAL);
@@ -3146,8 +3146,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129561 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLA
-    st = getVariable(129561);
+  { // 129636 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLA
+    st = getVariable(129636);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLA", 43);
     st->size_data = sizeof(LREAL);
@@ -3155,8 +3155,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_NEWLA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129562 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLL
-    st = getVariable(129562);
+  { // 129637 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLL
+    st = getVariable(129637);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLL", 43);
     st->size_data = sizeof(LREAL);
@@ -3164,8 +3164,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129563 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLW
-    st = getVariable(129563);
+  { // 129638 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLW
+    st = getVariable(129638);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_NEWLW", 43);
     st->size_data = sizeof(LREAL);
@@ -3173,8 +3173,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129564 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_STATUS
-    st = getVariable(129564);
+  { // 129639 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_STATUS
+    st = getVariable(129639);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -3182,8 +3182,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129565 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_VALUE
-    st = getVariable(129565);
+  { // 129640 RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_VALUE
+    st = getVariable(129640);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_UROVEN_MASLA_V_MASLOBAKE_VALUE", 43);
     st->size_data = sizeof(LREAL);
@@ -3191,8 +3191,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_UROVEN_MASLA_V_MASLOBAKE_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129566 RESOURCE1.AI_VIBRATCIIA_STD_T1_HA
-    st = getVariable(129566);
+  { // 129641 RESOURCE1.AI_VIBRATCIIA_STD_T1_HA
+    st = getVariable(129641);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_HA", 33);
     st->size_data = sizeof(LREAL);
@@ -3200,8 +3200,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129567 RESOURCE1.AI_VIBRATCIIA_STD_T1_HL
-    st = getVariable(129567);
+  { // 129642 RESOURCE1.AI_VIBRATCIIA_STD_T1_HL
+    st = getVariable(129642);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_HL", 33);
     st->size_data = sizeof(LREAL);
@@ -3209,8 +3209,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129568 RESOURCE1.AI_VIBRATCIIA_STD_T1_HW
-    st = getVariable(129568);
+  { // 129643 RESOURCE1.AI_VIBRATCIIA_STD_T1_HW
+    st = getVariable(129643);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_HW", 33);
     st->size_data = sizeof(LREAL);
@@ -3218,8 +3218,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129569 RESOURCE1.AI_VIBRATCIIA_STD_T1_LL
-    st = getVariable(129569);
+  { // 129644 RESOURCE1.AI_VIBRATCIIA_STD_T1_LL
+    st = getVariable(129644);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_LL", 33);
     st->size_data = sizeof(LREAL);
@@ -3227,8 +3227,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129570 RESOURCE1.AI_VIBRATCIIA_STD_T1_COMMAND
-    st = getVariable(129570);
+  { // 129645 RESOURCE1.AI_VIBRATCIIA_STD_T1_COMMAND
+    st = getVariable(129645);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_COMMAND", 38);
     st->size_data = sizeof(UINT);
@@ -3236,8 +3236,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129571 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHA
-    st = getVariable(129571);
+  { // 129646 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHA
+    st = getVariable(129646);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHA", 36);
     st->size_data = sizeof(LREAL);
@@ -3245,8 +3245,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129572 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHL
-    st = getVariable(129572);
+  { // 129647 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHL
+    st = getVariable(129647);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHL", 36);
     st->size_data = sizeof(LREAL);
@@ -3254,8 +3254,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129573 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHW
-    st = getVariable(129573);
+  { // 129648 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHW
+    st = getVariable(129648);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWHW", 36);
     st->size_data = sizeof(LREAL);
@@ -3263,8 +3263,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129574 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWLL
-    st = getVariable(129574);
+  { // 129649 RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWLL
+    st = getVariable(129649);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_NEWLL", 36);
     st->size_data = sizeof(LREAL);
@@ -3272,8 +3272,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129575 RESOURCE1.AI_VIBRATCIIA_STD_T1_STATUS
-    st = getVariable(129575);
+  { // 129650 RESOURCE1.AI_VIBRATCIIA_STD_T1_STATUS
+    st = getVariable(129650);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_STATUS", 37);
     st->size_data = sizeof(UDINT);
@@ -3281,8 +3281,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129576 RESOURCE1.AI_VIBRATCIIA_STD_T1_VALUE
-    st = getVariable(129576);
+  { // 129651 RESOURCE1.AI_VIBRATCIIA_STD_T1_VALUE
+    st = getVariable(129651);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T1_VALUE", 36);
     st->size_data = sizeof(LREAL);
@@ -3290,8 +3290,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129577 RESOURCE1.AI_VIBRATCIIA_STD_T2_HA
-    st = getVariable(129577);
+  { // 129652 RESOURCE1.AI_VIBRATCIIA_STD_T2_HA
+    st = getVariable(129652);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_HA", 33);
     st->size_data = sizeof(LREAL);
@@ -3299,8 +3299,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129578 RESOURCE1.AI_VIBRATCIIA_STD_T2_HL
-    st = getVariable(129578);
+  { // 129653 RESOURCE1.AI_VIBRATCIIA_STD_T2_HL
+    st = getVariable(129653);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_HL", 33);
     st->size_data = sizeof(LREAL);
@@ -3308,8 +3308,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129579 RESOURCE1.AI_VIBRATCIIA_STD_T2_HW
-    st = getVariable(129579);
+  { // 129654 RESOURCE1.AI_VIBRATCIIA_STD_T2_HW
+    st = getVariable(129654);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_HW", 33);
     st->size_data = sizeof(LREAL);
@@ -3317,8 +3317,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129580 RESOURCE1.AI_VIBRATCIIA_STD_T2_LL
-    st = getVariable(129580);
+  { // 129655 RESOURCE1.AI_VIBRATCIIA_STD_T2_LL
+    st = getVariable(129655);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_LL", 33);
     st->size_data = sizeof(LREAL);
@@ -3326,8 +3326,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129581 RESOURCE1.AI_VIBRATCIIA_STD_T2_COMMAND
-    st = getVariable(129581);
+  { // 129656 RESOURCE1.AI_VIBRATCIIA_STD_T2_COMMAND
+    st = getVariable(129656);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_COMMAND", 38);
     st->size_data = sizeof(UINT);
@@ -3335,8 +3335,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129582 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHA
-    st = getVariable(129582);
+  { // 129657 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHA
+    st = getVariable(129657);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHA", 36);
     st->size_data = sizeof(LREAL);
@@ -3344,8 +3344,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129583 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHL
-    st = getVariable(129583);
+  { // 129658 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHL
+    st = getVariable(129658);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHL", 36);
     st->size_data = sizeof(LREAL);
@@ -3353,8 +3353,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129584 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHW
-    st = getVariable(129584);
+  { // 129659 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHW
+    st = getVariable(129659);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWHW", 36);
     st->size_data = sizeof(LREAL);
@@ -3362,8 +3362,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129585 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWLL
-    st = getVariable(129585);
+  { // 129660 RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWLL
+    st = getVariable(129660);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_NEWLL", 36);
     st->size_data = sizeof(LREAL);
@@ -3371,8 +3371,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129586 RESOURCE1.AI_VIBRATCIIA_STD_T2_STATUS
-    st = getVariable(129586);
+  { // 129661 RESOURCE1.AI_VIBRATCIIA_STD_T2_STATUS
+    st = getVariable(129661);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_STATUS", 37);
     st->size_data = sizeof(UDINT);
@@ -3380,8 +3380,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129587 RESOURCE1.AI_VIBRATCIIA_STD_T2_VALUE
-    st = getVariable(129587);
+  { // 129662 RESOURCE1.AI_VIBRATCIIA_STD_T2_VALUE
+    st = getVariable(129662);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_STD_T2_VALUE", 36);
     st->size_data = sizeof(LREAL);
@@ -3389,8 +3389,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_STD_T2_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129588 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA
-    st = getVariable(129588);
+  { // 129663 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA
+    st = getVariable(129663);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA", 49);
     st->size_data = sizeof(LREAL);
@@ -3398,8 +3398,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129589 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HL
-    st = getVariable(129589);
+  { // 129664 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HL
+    st = getVariable(129664);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HL", 49);
     st->size_data = sizeof(LREAL);
@@ -3407,8 +3407,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129590 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HW
-    st = getVariable(129590);
+  { // 129665 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HW
+    st = getVariable(129665);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HW", 49);
     st->size_data = sizeof(LREAL);
@@ -3416,8 +3416,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129591 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_LL
-    st = getVariable(129591);
+  { // 129666 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_LL
+    st = getVariable(129666);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_LL", 49);
     st->size_data = sizeof(LREAL);
@@ -3425,8 +3425,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129592 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_COMMAND
-    st = getVariable(129592);
+  { // 129667 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_COMMAND
+    st = getVariable(129667);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_COMMAND", 54);
     st->size_data = sizeof(UINT);
@@ -3434,8 +3434,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129593 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHA
-    st = getVariable(129593);
+  { // 129668 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHA
+    st = getVariable(129668);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHA", 52);
     st->size_data = sizeof(LREAL);
@@ -3443,8 +3443,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129594 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHL
-    st = getVariable(129594);
+  { // 129669 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHL
+    st = getVariable(129669);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHL", 52);
     st->size_data = sizeof(LREAL);
@@ -3452,8 +3452,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129595 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHW
-    st = getVariable(129595);
+  { // 129670 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHW
+    st = getVariable(129670);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHW", 52);
     st->size_data = sizeof(LREAL);
@@ -3461,8 +3461,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129596 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWLL
-    st = getVariable(129596);
+  { // 129671 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWLL
+    st = getVariable(129671);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWLL", 52);
     st->size_data = sizeof(LREAL);
@@ -3470,8 +3470,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129597 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_STATUS
-    st = getVariable(129597);
+  { // 129672 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_STATUS
+    st = getVariable(129672);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -3479,8 +3479,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129598 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_VALUE
-    st = getVariable(129598);
+  { // 129673 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_VALUE
+    st = getVariable(129673);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_VALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -3488,8 +3488,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129599 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA
-    st = getVariable(129599);
+  { // 129674 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA
+    st = getVariable(129674);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA", 49);
     st->size_data = sizeof(LREAL);
@@ -3497,8 +3497,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129600 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HL
-    st = getVariable(129600);
+  { // 129675 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HL
+    st = getVariable(129675);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HL", 49);
     st->size_data = sizeof(LREAL);
@@ -3506,8 +3506,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129601 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HW
-    st = getVariable(129601);
+  { // 129676 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HW
+    st = getVariable(129676);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HW", 49);
     st->size_data = sizeof(LREAL);
@@ -3515,8 +3515,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129602 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_LL
-    st = getVariable(129602);
+  { // 129677 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_LL
+    st = getVariable(129677);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_LL", 49);
     st->size_data = sizeof(LREAL);
@@ -3524,8 +3524,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129603 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_COMMAND
-    st = getVariable(129603);
+  { // 129678 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_COMMAND
+    st = getVariable(129678);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_COMMAND", 54);
     st->size_data = sizeof(UINT);
@@ -3533,8 +3533,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129604 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHA
-    st = getVariable(129604);
+  { // 129679 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHA
+    st = getVariable(129679);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHA", 52);
     st->size_data = sizeof(LREAL);
@@ -3542,8 +3542,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129605 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHL
-    st = getVariable(129605);
+  { // 129680 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHL
+    st = getVariable(129680);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHL", 52);
     st->size_data = sizeof(LREAL);
@@ -3551,8 +3551,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129606 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHW
-    st = getVariable(129606);
+  { // 129681 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHW
+    st = getVariable(129681);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHW", 52);
     st->size_data = sizeof(LREAL);
@@ -3560,8 +3560,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129607 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWLL
-    st = getVariable(129607);
+  { // 129682 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWLL
+    st = getVariable(129682);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWLL", 52);
     st->size_data = sizeof(LREAL);
@@ -3569,8 +3569,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129608 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_STATUS
-    st = getVariable(129608);
+  { // 129683 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_STATUS
+    st = getVariable(129683);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -3578,8 +3578,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129609 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_VALUE
-    st = getVariable(129609);
+  { // 129684 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_VALUE
+    st = getVariable(129684);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_VALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -3587,8 +3587,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129610 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA
-    st = getVariable(129610);
+  { // 129685 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA
+    st = getVariable(129685);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA", 49);
     st->size_data = sizeof(LREAL);
@@ -3596,8 +3596,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129611 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HL
-    st = getVariable(129611);
+  { // 129686 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HL
+    st = getVariable(129686);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HL", 49);
     st->size_data = sizeof(LREAL);
@@ -3605,8 +3605,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129612 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HW
-    st = getVariable(129612);
+  { // 129687 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HW
+    st = getVariable(129687);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HW", 49);
     st->size_data = sizeof(LREAL);
@@ -3614,8 +3614,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129613 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_LL
-    st = getVariable(129613);
+  { // 129688 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_LL
+    st = getVariable(129688);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_LL", 49);
     st->size_data = sizeof(LREAL);
@@ -3623,8 +3623,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129614 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_COMMAND
-    st = getVariable(129614);
+  { // 129689 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_COMMAND
+    st = getVariable(129689);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_COMMAND", 54);
     st->size_data = sizeof(UINT);
@@ -3632,8 +3632,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129615 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHA
-    st = getVariable(129615);
+  { // 129690 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHA
+    st = getVariable(129690);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHA", 52);
     st->size_data = sizeof(LREAL);
@@ -3641,8 +3641,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129616 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHL
-    st = getVariable(129616);
+  { // 129691 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHL
+    st = getVariable(129691);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHL", 52);
     st->size_data = sizeof(LREAL);
@@ -3650,8 +3650,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129617 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHW
-    st = getVariable(129617);
+  { // 129692 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHW
+    st = getVariable(129692);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHW", 52);
     st->size_data = sizeof(LREAL);
@@ -3659,8 +3659,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129618 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWLL
-    st = getVariable(129618);
+  { // 129693 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWLL
+    st = getVariable(129693);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWLL", 52);
     st->size_data = sizeof(LREAL);
@@ -3668,8 +3668,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129619 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_STATUS
-    st = getVariable(129619);
+  { // 129694 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_STATUS
+    st = getVariable(129694);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -3677,8 +3677,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129620 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_VALUE
-    st = getVariable(129620);
+  { // 129695 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_VALUE
+    st = getVariable(129695);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_VALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -3686,8 +3686,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129621 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA
-    st = getVariable(129621);
+  { // 129696 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA
+    st = getVariable(129696);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA", 49);
     st->size_data = sizeof(LREAL);
@@ -3695,8 +3695,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129622 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HL
-    st = getVariable(129622);
+  { // 129697 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HL
+    st = getVariable(129697);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HL", 49);
     st->size_data = sizeof(LREAL);
@@ -3704,8 +3704,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129623 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HW
-    st = getVariable(129623);
+  { // 129698 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HW
+    st = getVariable(129698);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HW", 49);
     st->size_data = sizeof(LREAL);
@@ -3713,8 +3713,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129624 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_LL
-    st = getVariable(129624);
+  { // 129699 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_LL
+    st = getVariable(129699);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_LL", 49);
     st->size_data = sizeof(LREAL);
@@ -3722,8 +3722,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129625 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_COMMAND
-    st = getVariable(129625);
+  { // 129700 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_COMMAND
+    st = getVariable(129700);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_COMMAND", 54);
     st->size_data = sizeof(UINT);
@@ -3731,8 +3731,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129626 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHA
-    st = getVariable(129626);
+  { // 129701 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHA
+    st = getVariable(129701);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHA", 52);
     st->size_data = sizeof(LREAL);
@@ -3740,8 +3740,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129627 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHL
-    st = getVariable(129627);
+  { // 129702 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHL
+    st = getVariable(129702);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHL", 52);
     st->size_data = sizeof(LREAL);
@@ -3749,8 +3749,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129628 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHW
-    st = getVariable(129628);
+  { // 129703 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHW
+    st = getVariable(129703);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHW", 52);
     st->size_data = sizeof(LREAL);
@@ -3758,8 +3758,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129629 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWLL
-    st = getVariable(129629);
+  { // 129704 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWLL
+    st = getVariable(129704);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWLL", 52);
     st->size_data = sizeof(LREAL);
@@ -3767,8 +3767,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129630 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_STATUS
-    st = getVariable(129630);
+  { // 129705 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_STATUS
+    st = getVariable(129705);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -3776,8 +3776,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129631 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_VALUE
-    st = getVariable(129631);
+  { // 129706 RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_VALUE
+    st = getVariable(129706);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_VALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -3785,8 +3785,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129632 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_HL
-    st = getVariable(129632);
+  { // 129707 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_HL
+    st = getVariable(129707);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_HL", 40);
     st->size_data = sizeof(LREAL);
@@ -3794,8 +3794,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129633 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_HW
-    st = getVariable(129633);
+  { // 129708 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_HW
+    st = getVariable(129708);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_HW", 40);
     st->size_data = sizeof(LREAL);
@@ -3803,8 +3803,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129634 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_LL
-    st = getVariable(129634);
+  { // 129709 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_LL
+    st = getVariable(129709);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_LL", 40);
     st->size_data = sizeof(LREAL);
@@ -3812,8 +3812,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129635 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_LW
-    st = getVariable(129635);
+  { // 129710 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_LW
+    st = getVariable(129710);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_LW", 40);
     st->size_data = sizeof(LREAL);
@@ -3821,8 +3821,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129636 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_COMMAND
-    st = getVariable(129636);
+  { // 129711 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_COMMAND
+    st = getVariable(129711);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_COMMAND", 45);
     st->size_data = sizeof(UINT);
@@ -3830,8 +3830,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129637 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHL
-    st = getVariable(129637);
+  { // 129712 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHL
+    st = getVariable(129712);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHL", 43);
     st->size_data = sizeof(LREAL);
@@ -3839,8 +3839,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129638 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHW
-    st = getVariable(129638);
+  { // 129713 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHW
+    st = getVariable(129713);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHW", 43);
     st->size_data = sizeof(LREAL);
@@ -3848,8 +3848,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129639 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLL
-    st = getVariable(129639);
+  { // 129714 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLL
+    st = getVariable(129714);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLL", 43);
     st->size_data = sizeof(LREAL);
@@ -3857,8 +3857,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129640 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLW
-    st = getVariable(129640);
+  { // 129715 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLW
+    st = getVariable(129715);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLW", 43);
     st->size_data = sizeof(LREAL);
@@ -3866,8 +3866,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129641 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_STATUS
-    st = getVariable(129641);
+  { // 129716 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_STATUS
+    st = getVariable(129716);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -3875,8 +3875,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129642 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_VALUE
-    st = getVariable(129642);
+  { // 129717 RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_VALUE
+    st = getVariable(129717);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_OSNOVNOI_VVOD_VALUE", 43);
     st->size_data = sizeof(LREAL);
@@ -3884,8 +3884,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_OSNOVNOI_VVOD_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129643 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_HL
-    st = getVariable(129643);
+  { // 129718 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_HL
+    st = getVariable(129718);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_HL", 41);
     st->size_data = sizeof(LREAL);
@@ -3893,8 +3893,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129644 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_HW
-    st = getVariable(129644);
+  { // 129719 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_HW
+    st = getVariable(129719);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_HW", 41);
     st->size_data = sizeof(LREAL);
@@ -3902,8 +3902,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129645 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_LL
-    st = getVariable(129645);
+  { // 129720 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_LL
+    st = getVariable(129720);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_LL", 41);
     st->size_data = sizeof(LREAL);
@@ -3911,8 +3911,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129646 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_LW
-    st = getVariable(129646);
+  { // 129721 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_LW
+    st = getVariable(129721);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_LW", 41);
     st->size_data = sizeof(LREAL);
@@ -3920,8 +3920,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129647 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_COMMAND
-    st = getVariable(129647);
+  { // 129722 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_COMMAND
+    st = getVariable(129722);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_COMMAND", 46);
     st->size_data = sizeof(UINT);
@@ -3929,8 +3929,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129648 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHL
-    st = getVariable(129648);
+  { // 129723 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHL
+    st = getVariable(129723);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHL", 44);
     st->size_data = sizeof(LREAL);
@@ -3938,8 +3938,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129649 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHW
-    st = getVariable(129649);
+  { // 129724 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHW
+    st = getVariable(129724);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHW", 44);
     st->size_data = sizeof(LREAL);
@@ -3947,8 +3947,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129650 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLL
-    st = getVariable(129650);
+  { // 129725 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLL
+    st = getVariable(129725);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLL", 44);
     st->size_data = sizeof(LREAL);
@@ -3956,8 +3956,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129651 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLW
-    st = getVariable(129651);
+  { // 129726 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLW
+    st = getVariable(129726);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLW", 44);
     st->size_data = sizeof(LREAL);
@@ -3965,8 +3965,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129652 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_STATUS
-    st = getVariable(129652);
+  { // 129727 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_STATUS
+    st = getVariable(129727);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_STATUS", 45);
     st->size_data = sizeof(UDINT);
@@ -3974,8 +3974,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129653 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_VALUE
-    st = getVariable(129653);
+  { // 129728 RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_VALUE
+    st = getVariable(129728);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_VOLTAGESHU_REZERVNYI_VVOD_VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -3983,8 +3983,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_VOLTAGESHU_REZERVNYI_VVOD_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129654 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_HL
-    st = getVariable(129654);
+  { // 129729 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_HL
+    st = getVariable(129729);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_HL", 49);
     st->size_data = sizeof(LREAL);
@@ -3992,8 +3992,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129655 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_LL
-    st = getVariable(129655);
+  { // 129730 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_LL
+    st = getVariable(129730);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_LL", 49);
     st->size_data = sizeof(LREAL);
@@ -4001,8 +4001,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129656 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_COMMAND
-    st = getVariable(129656);
+  { // 129731 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_COMMAND
+    st = getVariable(129731);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_COMMAND", 54);
     st->size_data = sizeof(UINT);
@@ -4010,8 +4010,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129657 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWHL
-    st = getVariable(129657);
+  { // 129732 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWHL
+    st = getVariable(129732);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWHL", 52);
     st->size_data = sizeof(LREAL);
@@ -4019,8 +4019,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129658 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWLL
-    st = getVariable(129658);
+  { // 129733 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWLL
+    st = getVariable(129733);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWLL", 52);
     st->size_data = sizeof(LREAL);
@@ -4028,8 +4028,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129659 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_STATUS
-    st = getVariable(129659);
+  { // 129734 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_STATUS
+    st = getVariable(129734);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -4037,8 +4037,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129660 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_VALUE
-    st = getVariable(129660);
+  { // 129735 RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_VALUE
+    st = getVariable(129735);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_VALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -4046,8 +4046,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DP_GAZA_NA_KONFUZORE_NAGNETATELIA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129661 RESOURCE1.AI_DPMASLO_GAZ_HL
-    st = getVariable(129661);
+  { // 129736 RESOURCE1.AI_DPMASLO_GAZ_HL
+    st = getVariable(129736);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_HL", 27);
     st->size_data = sizeof(LREAL);
@@ -4055,8 +4055,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129662 RESOURCE1.AI_DPMASLO_GAZ_LA
-    st = getVariable(129662);
+  { // 129737 RESOURCE1.AI_DPMASLO_GAZ_LA
+    st = getVariable(129737);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_LA", 27);
     st->size_data = sizeof(LREAL);
@@ -4064,8 +4064,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_LA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129663 RESOURCE1.AI_DPMASLO_GAZ_LL
-    st = getVariable(129663);
+  { // 129738 RESOURCE1.AI_DPMASLO_GAZ_LL
+    st = getVariable(129738);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_LL", 27);
     st->size_data = sizeof(LREAL);
@@ -4073,8 +4073,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129664 RESOURCE1.AI_DPMASLO_GAZ_LW
-    st = getVariable(129664);
+  { // 129739 RESOURCE1.AI_DPMASLO_GAZ_LW
+    st = getVariable(129739);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_LW", 27);
     st->size_data = sizeof(LREAL);
@@ -4082,8 +4082,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129665 RESOURCE1.AI_DPMASLO_GAZ_COMMAND
-    st = getVariable(129665);
+  { // 129740 RESOURCE1.AI_DPMASLO_GAZ_COMMAND
+    st = getVariable(129740);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_COMMAND", 32);
     st->size_data = sizeof(UINT);
@@ -4091,8 +4091,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_DPMASLO_GAZ_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129666 RESOURCE1.AI_DPMASLO_GAZ_NEWHL
-    st = getVariable(129666);
+  { // 129741 RESOURCE1.AI_DPMASLO_GAZ_NEWHL
+    st = getVariable(129741);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_NEWHL", 30);
     st->size_data = sizeof(LREAL);
@@ -4100,8 +4100,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129667 RESOURCE1.AI_DPMASLO_GAZ_NEWLA
-    st = getVariable(129667);
+  { // 129742 RESOURCE1.AI_DPMASLO_GAZ_NEWLA
+    st = getVariable(129742);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_NEWLA", 30);
     st->size_data = sizeof(LREAL);
@@ -4109,8 +4109,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_NEWLA;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129668 RESOURCE1.AI_DPMASLO_GAZ_NEWLL
-    st = getVariable(129668);
+  { // 129743 RESOURCE1.AI_DPMASLO_GAZ_NEWLL
+    st = getVariable(129743);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_NEWLL", 30);
     st->size_data = sizeof(LREAL);
@@ -4118,8 +4118,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129669 RESOURCE1.AI_DPMASLO_GAZ_NEWLW
-    st = getVariable(129669);
+  { // 129744 RESOURCE1.AI_DPMASLO_GAZ_NEWLW
+    st = getVariable(129744);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_NEWLW", 30);
     st->size_data = sizeof(LREAL);
@@ -4127,8 +4127,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129670 RESOURCE1.AI_DPMASLO_GAZ_STATUS
-    st = getVariable(129670);
+  { // 129745 RESOURCE1.AI_DPMASLO_GAZ_STATUS
+    st = getVariable(129745);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_STATUS", 31);
     st->size_data = sizeof(UDINT);
@@ -4136,8 +4136,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_DPMASLO_GAZ_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129671 RESOURCE1.AI_DPMASLO_GAZ_VALUE
-    st = getVariable(129671);
+  { // 129746 RESOURCE1.AI_DPMASLO_GAZ_VALUE
+    st = getVariable(129746);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_VALUE", 30);
     st->size_data = sizeof(LREAL);
@@ -4145,8 +4145,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129672 RESOURCE1.IM_SINGLESIGNALS_DVERSHKAFAOTKRYTA_STATUS
-    st = getVariable(129672);
+  { // 129747 RESOURCE1.IM_SINGLESIGNALS_DVERSHKAFAOTKRYTA_STATUS
+    st = getVariable(129747);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_DVERSHKAFAOTKRYTA_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -4154,8 +4154,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_DVERSHKAFAOTKRYTA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129673 RESOURCE1.IM_SINGLESIGNALS_KZ_10KV_STATUS
-    st = getVariable(129673);
+  { // 129748 RESOURCE1.IM_SINGLESIGNALS_KZ_10KV_STATUS
+    st = getVariable(129748);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_KZ_10KV_STATUS", 41);
     st->size_data = sizeof(UDINT);
@@ -4163,8 +4163,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_KZ_10KV_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129674 RESOURCE1.IM_SINGLESIGNALS_NOGPA_KNOPKASHU_STATUS
-    st = getVariable(129674);
+  { // 129749 RESOURCE1.IM_SINGLESIGNALS_NOGPA_KNOPKASHU_STATUS
+    st = getVariable(129749);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NOGPA_KNOPKASHU_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -4172,8 +4172,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NOGPA_KNOPKASHU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129675 RESOURCE1.IM_SINGLESIGNALS_NS_G10_G11_STATUS
-    st = getVariable(129675);
+  { // 129750 RESOURCE1.IM_SINGLESIGNALS_NS_G10_G11_STATUS
+    st = getVariable(129750);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G10_G11_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4181,8 +4181,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G10_G11_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129676 RESOURCE1.IM_SINGLESIGNALS_NS_G13_G14_STATUS
-    st = getVariable(129676);
+  { // 129751 RESOURCE1.IM_SINGLESIGNALS_NS_G13_G14_STATUS
+    st = getVariable(129751);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G13_G14_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4190,8 +4190,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G13_G14_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129677 RESOURCE1.IM_SINGLESIGNALS_NS_G15_G16_STATUS
-    st = getVariable(129677);
+  { // 129752 RESOURCE1.IM_SINGLESIGNALS_NS_G15_G16_STATUS
+    st = getVariable(129752);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G15_G16_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4199,8 +4199,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G15_G16_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129678 RESOURCE1.IM_SINGLESIGNALS_NS_G17_STATUS
-    st = getVariable(129678);
+  { // 129753 RESOURCE1.IM_SINGLESIGNALS_NS_G17_STATUS
+    st = getVariable(129753);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G17_STATUS", 40);
     st->size_data = sizeof(UDINT);
@@ -4208,8 +4208,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G17_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129679 RESOURCE1.IM_SINGLESIGNALS_NS_G18_G19_STATUS
-    st = getVariable(129679);
+  { // 129754 RESOURCE1.IM_SINGLESIGNALS_NS_G18_G19_STATUS
+    st = getVariable(129754);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G18_G19_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4217,8 +4217,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G18_G19_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129680 RESOURCE1.IM_SINGLESIGNALS_NS_G1_G2_STATUS
-    st = getVariable(129680);
+  { // 129755 RESOURCE1.IM_SINGLESIGNALS_NS_G1_G2_STATUS
+    st = getVariable(129755);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G1_G2_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -4226,8 +4226,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G1_G2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129681 RESOURCE1.IM_SINGLESIGNALS_NS_G3_G4_STATUS
-    st = getVariable(129681);
+  { // 129756 RESOURCE1.IM_SINGLESIGNALS_NS_G3_G4_STATUS
+    st = getVariable(129756);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G3_G4_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -4235,8 +4235,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G3_G4_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129682 RESOURCE1.IM_SINGLESIGNALS_NS_G5_G6_STATUS
-    st = getVariable(129682);
+  { // 129757 RESOURCE1.IM_SINGLESIGNALS_NS_G5_G6_STATUS
+    st = getVariable(129757);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G5_G6_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -4244,8 +4244,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G5_G6_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129683 RESOURCE1.IM_SINGLESIGNALS_NS_G7_G8_STATUS
-    st = getVariable(129683);
+  { // 129758 RESOURCE1.IM_SINGLESIGNALS_NS_G7_G8_STATUS
+    st = getVariable(129758);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_NS_G7_G8_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -4253,8 +4253,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_NS_G7_G8_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129684 RESOURCE1.IM_SINGLESIGNALS_OSEVOISDVIG_LEVO_STATUS
-    st = getVariable(129684);
+  { // 129759 RESOURCE1.IM_SINGLESIGNALS_OSEVOISDVIG_LEVO_STATUS
+    st = getVariable(129759);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_OSEVOISDVIG_LEVO_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -4262,8 +4262,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_OSEVOISDVIG_LEVO_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129685 RESOURCE1.IM_SINGLESIGNALS_OSEVOISDVIG_PRAVO_STATUS
-    st = getVariable(129685);
+  { // 129760 RESOURCE1.IM_SINGLESIGNALS_OSEVOISDVIG_PRAVO_STATUS
+    st = getVariable(129760);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_OSEVOISDVIG_PRAVO_STATUS", 51);
     st->size_data = sizeof(UDINT);
@@ -4271,8 +4271,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_OSEVOISDVIG_PRAVO_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129686 RESOURCE1.IM_SINGLESIGNALS_P_OIL_LOW_STATUS
-    st = getVariable(129686);
+  { // 129761 RESOURCE1.IM_SINGLESIGNALS_P_OIL_LOW_STATUS
+    st = getVariable(129761);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_P_OIL_LOW_STATUS", 43);
     st->size_data = sizeof(UDINT);
@@ -4280,8 +4280,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_P_OIL_LOW_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129687 RESOURCE1.IM_SINGLESIGNALS_QF10_QF11_ON_STATUS
-    st = getVariable(129687);
+  { // 129762 RESOURCE1.IM_SINGLESIGNALS_QF10_QF11_ON_STATUS
+    st = getVariable(129762);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF10_QF11_ON_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -4289,8 +4289,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF10_QF11_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129688 RESOURCE1.IM_SINGLESIGNALS_QF12_QF13_ON_STATUS
-    st = getVariable(129688);
+  { // 129763 RESOURCE1.IM_SINGLESIGNALS_QF12_QF13_ON_STATUS
+    st = getVariable(129763);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF12_QF13_ON_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -4298,8 +4298,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF12_QF13_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129689 RESOURCE1.IM_SINGLESIGNALS_QF14_QF15_ON_STATUS
-    st = getVariable(129689);
+  { // 129764 RESOURCE1.IM_SINGLESIGNALS_QF14_QF15_ON_STATUS
+    st = getVariable(129764);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF14_QF15_ON_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -4307,8 +4307,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF14_QF15_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129690 RESOURCE1.IM_SINGLESIGNALS_QF1_ON_STATUS
-    st = getVariable(129690);
+  { // 129765 RESOURCE1.IM_SINGLESIGNALS_QF1_ON_STATUS
+    st = getVariable(129765);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF1_ON_STATUS", 40);
     st->size_data = sizeof(UDINT);
@@ -4316,8 +4316,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF1_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129691 RESOURCE1.IM_SINGLESIGNALS_QF22_ON_STATUS
-    st = getVariable(129691);
+  { // 129766 RESOURCE1.IM_SINGLESIGNALS_QF22_ON_STATUS
+    st = getVariable(129766);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF22_ON_STATUS", 41);
     st->size_data = sizeof(UDINT);
@@ -4325,8 +4325,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF22_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129692 RESOURCE1.IM_SINGLESIGNALS_QF23_ON_STATUS
-    st = getVariable(129692);
+  { // 129767 RESOURCE1.IM_SINGLESIGNALS_QF23_ON_STATUS
+    st = getVariable(129767);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF23_ON_STATUS", 41);
     st->size_data = sizeof(UDINT);
@@ -4334,8 +4334,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF23_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129693 RESOURCE1.IM_SINGLESIGNALS_QF2_ON_STATUS
-    st = getVariable(129693);
+  { // 129768 RESOURCE1.IM_SINGLESIGNALS_QF2_ON_STATUS
+    st = getVariable(129768);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF2_ON_STATUS", 40);
     st->size_data = sizeof(UDINT);
@@ -4343,8 +4343,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF2_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129694 RESOURCE1.IM_SINGLESIGNALS_QF4_QF5_ON_STATUS
-    st = getVariable(129694);
+  { // 129769 RESOURCE1.IM_SINGLESIGNALS_QF4_QF5_ON_STATUS
+    st = getVariable(129769);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF4_QF5_ON_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4352,8 +4352,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF4_QF5_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129695 RESOURCE1.IM_SINGLESIGNALS_QF6_QF7_ON_STATUS
-    st = getVariable(129695);
+  { // 129770 RESOURCE1.IM_SINGLESIGNALS_QF6_QF7_ON_STATUS
+    st = getVariable(129770);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF6_QF7_ON_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4361,8 +4361,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF6_QF7_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129696 RESOURCE1.IM_SINGLESIGNALS_QF8_QF9_ON_STATUS
-    st = getVariable(129696);
+  { // 129771 RESOURCE1.IM_SINGLESIGNALS_QF8_QF9_ON_STATUS
+    st = getVariable(129771);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_QF8_QF9_ON_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -4370,8 +4370,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_QF8_QF9_ON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129697 RESOURCE1.IM_SINGLESIGNALS_VOZB_ASINCHHOD_STATUS
-    st = getVariable(129697);
+  { // 129772 RESOURCE1.IM_SINGLESIGNALS_VOZB_ASINCHHOD_STATUS
+    st = getVariable(129772);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_VOZB_ASINCHHOD_STATUS", 48);
     st->size_data = sizeof(UDINT);
@@ -4379,8 +4379,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_VOZB_ASINCHHOD_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129698 RESOURCE1.IM_SINGLESIGNALS_VOZB_CONTROLVOZBUDITELA_STATUS
-    st = getVariable(129698);
+  { // 129773 RESOURCE1.IM_SINGLESIGNALS_VOZB_CONTROLVOZBUDITELA_STATUS
+    st = getVariable(129773);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_VOZB_CONTROLVOZBUDITELA_STATUS", 57);
     st->size_data = sizeof(UDINT);
@@ -4388,8 +4388,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_VOZB_CONTROLVOZBUDITELA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129699 RESOURCE1.IM_SINGLESIGNALS_VOZB_KONTAKTORON_STATUS
-    st = getVariable(129699);
+  { // 129774 RESOURCE1.IM_SINGLESIGNALS_VOZB_KONTAKTORON_STATUS
+    st = getVariable(129774);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_VOZB_KONTAKTORON_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -4397,8 +4397,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_VOZB_KONTAKTORON_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129700 RESOURCE1.IM_SINGLESIGNALS_VOZB_OVERLOAD_STATUS
-    st = getVariable(129700);
+  { // 129775 RESOURCE1.IM_SINGLESIGNALS_VOZB_OVERLOAD_STATUS
+    st = getVariable(129775);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_VOZB_OVERLOAD_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -4406,8 +4406,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_VOZB_OVERLOAD_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129701 RESOURCE1.IM_SINGLESIGNALS_VOZB_PROBOIVENTILA_STATUS
-    st = getVariable(129701);
+  { // 129776 RESOURCE1.IM_SINGLESIGNALS_VOZB_PROBOIVENTILA_STATUS
+    st = getVariable(129776);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_VOZB_PROBOIVENTILA_STATUS", 52);
     st->size_data = sizeof(UDINT);
@@ -4415,8 +4415,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_VOZB_PROBOIVENTILA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129702 RESOURCE1.IM_SINGLESIGNALS_VOZB_RESYNCHRONIZE_STATUS
-    st = getVariable(129702);
+  { // 129777 RESOURCE1.IM_SINGLESIGNALS_VOZB_RESYNCHRONIZE_STATUS
+    st = getVariable(129777);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_VOZB_RESYNCHRONIZE_STATUS", 52);
     st->size_data = sizeof(UDINT);
@@ -4424,8 +4424,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_VOZB_RESYNCHRONIZE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129703 RESOURCE1.IM_SINGLESIGNALS_DP_GAZGAZ_KRAN1_STATUS
-    st = getVariable(129703);
+  { // 129778 RESOURCE1.IM_SINGLESIGNALS_DP_GAZGAZ_KRAN1_STATUS
+    st = getVariable(129778);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_DP_GAZGAZ_KRAN1_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -4433,8 +4433,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_DP_GAZGAZ_KRAN1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129704 RESOURCE1.IM_SINGLESIGNALS_DP_OILGAZ_LOW_STATUS
-    st = getVariable(129704);
+  { // 129779 RESOURCE1.IM_SINGLESIGNALS_DP_OILGAZ_LOW_STATUS
+    st = getVariable(129779);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_SINGLESIGNALS_DP_OILGAZ_LOW_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -4442,8 +4442,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_SINGLESIGNALS_DP_OILGAZ_LOW_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129705 RESOURCE1.IM_TEN_INCOMMAND_ARM
-    st = getVariable(129705);
+  { // 129780 RESOURCE1.IM_TEN_INCOMMAND_ARM
+    st = getVariable(129780);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_TEN_INCOMMAND_ARM", 30);
     st->size_data = sizeof(UINT);
@@ -4451,8 +4451,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_TEN_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129706 RESOURCE1.IM_TEN_STATUS
-    st = getVariable(129706);
+  { // 129781 RESOURCE1.IM_TEN_STATUS
+    st = getVariable(129781);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_TEN_STATUS", 23);
     st->size_data = sizeof(UDINT);
@@ -4460,8 +4460,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_TEN_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129707 RESOURCE1.IM_KRAN1_INCOMMAND_ARM
-    st = getVariable(129707);
+  { // 129782 RESOURCE1.IM_KRAN1_INCOMMAND_ARM
+    st = getVariable(129782);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN1_INCOMMAND_ARM", 32);
     st->size_data = sizeof(UINT);
@@ -4469,8 +4469,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_KRAN1_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129708 RESOURCE1.IM_KRAN1_STATUS
-    st = getVariable(129708);
+  { // 129783 RESOURCE1.IM_KRAN1_STATUS
+    st = getVariable(129783);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN1_STATUS", 25);
     st->size_data = sizeof(UDINT);
@@ -4478,8 +4478,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_KRAN1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129709 RESOURCE1.IM_KRAN2_INCOMMAND_ARM
-    st = getVariable(129709);
+  { // 129784 RESOURCE1.IM_KRAN2_INCOMMAND_ARM
+    st = getVariable(129784);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN2_INCOMMAND_ARM", 32);
     st->size_data = sizeof(UINT);
@@ -4487,8 +4487,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_KRAN2_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129710 RESOURCE1.IM_KRAN2_STATUS
-    st = getVariable(129710);
+  { // 129785 RESOURCE1.IM_KRAN2_STATUS
+    st = getVariable(129785);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN2_STATUS", 25);
     st->size_data = sizeof(UDINT);
@@ -4496,8 +4496,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_KRAN2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129711 RESOURCE1.IM_KRAN3B_INCOMMAND_ARM
-    st = getVariable(129711);
+  { // 129786 RESOURCE1.IM_KRAN3B_INCOMMAND_ARM
+    st = getVariable(129786);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN3B_INCOMMAND_ARM", 33);
     st->size_data = sizeof(UINT);
@@ -4505,8 +4505,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_KRAN3B_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129712 RESOURCE1.IM_KRAN3B_STATUS
-    st = getVariable(129712);
+  { // 129787 RESOURCE1.IM_KRAN3B_STATUS
+    st = getVariable(129787);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN3B_STATUS", 26);
     st->size_data = sizeof(UDINT);
@@ -4514,8 +4514,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_KRAN3B_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129713 RESOURCE1.IM_KRAN4_INCOMMAND_ARM
-    st = getVariable(129713);
+  { // 129788 RESOURCE1.IM_KRAN4_INCOMMAND_ARM
+    st = getVariable(129788);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN4_INCOMMAND_ARM", 32);
     st->size_data = sizeof(UINT);
@@ -4523,8 +4523,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_KRAN4_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129714 RESOURCE1.IM_KRAN4_STATUS
-    st = getVariable(129714);
+  { // 129789 RESOURCE1.IM_KRAN4_STATUS
+    st = getVariable(129789);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN4_STATUS", 25);
     st->size_data = sizeof(UDINT);
@@ -4532,8 +4532,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_KRAN4_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129715 RESOURCE1.IM_KRAN5_INCOMMAND_ARM
-    st = getVariable(129715);
+  { // 129790 RESOURCE1.IM_KRAN5_INCOMMAND_ARM
+    st = getVariable(129790);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN5_INCOMMAND_ARM", 32);
     st->size_data = sizeof(UINT);
@@ -4541,8 +4541,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_KRAN5_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129716 RESOURCE1.IM_KRAN5_STATUS
-    st = getVariable(129716);
+  { // 129791 RESOURCE1.IM_KRAN5_STATUS
+    st = getVariable(129791);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN5_STATUS", 25);
     st->size_data = sizeof(UDINT);
@@ -4550,8 +4550,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_KRAN5_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129717 RESOURCE1.IM_KRAN6_INCOMMAND_ARM
-    st = getVariable(129717);
+  { // 129792 RESOURCE1.IM_KRAN6_INCOMMAND_ARM
+    st = getVariable(129792);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN6_INCOMMAND_ARM", 32);
     st->size_data = sizeof(UINT);
@@ -4559,8 +4559,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_KRAN6_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129718 RESOURCE1.IM_KRAN6_STATUS
-    st = getVariable(129718);
+  { // 129793 RESOURCE1.IM_KRAN6_STATUS
+    st = getVariable(129793);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_KRAN6_STATUS", 25);
     st->size_data = sizeof(UDINT);
@@ -4568,8 +4568,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_KRAN6_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129719 RESOURCE1.IM_MV_INCOMMAND_ARM
-    st = getVariable(129719);
+  { // 129794 RESOURCE1.IM_MV_INCOMMAND_ARM
+    st = getVariable(129794);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_MV_INCOMMAND_ARM", 29);
     st->size_data = sizeof(UINT);
@@ -4577,8 +4577,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_MV_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129720 RESOURCE1.IM_MV_STATUS
-    st = getVariable(129720);
+  { // 129795 RESOURCE1.IM_MV_STATUS
+    st = getVariable(129795);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_MV_STATUS", 22);
     st->size_data = sizeof(UDINT);
@@ -4586,8 +4586,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_MV_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129721 RESOURCE1.IM_NU1_INCOMMAND_ARM
-    st = getVariable(129721);
+  { // 129796 RESOURCE1.IM_NU1_INCOMMAND_ARM
+    st = getVariable(129796);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_NU1_INCOMMAND_ARM", 30);
     st->size_data = sizeof(UINT);
@@ -4595,8 +4595,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_NU1_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129722 RESOURCE1.IM_NU1_STATUS
-    st = getVariable(129722);
+  { // 129797 RESOURCE1.IM_NU1_STATUS
+    st = getVariable(129797);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_NU1_STATUS", 23);
     st->size_data = sizeof(UDINT);
@@ -4604,8 +4604,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_NU1_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129723 RESOURCE1.IM_NU2_INCOMMAND_ARM
-    st = getVariable(129723);
+  { // 129798 RESOURCE1.IM_NU2_INCOMMAND_ARM
+    st = getVariable(129798);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_NU2_INCOMMAND_ARM", 30);
     st->size_data = sizeof(UINT);
@@ -4613,8 +4613,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_NU2_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129724 RESOURCE1.IM_NU2_STATUS
-    st = getVariable(129724);
+  { // 129799 RESOURCE1.IM_NU2_STATUS
+    st = getVariable(129799);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_NU2_STATUS", 23);
     st->size_data = sizeof(UDINT);
@@ -4622,8 +4622,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_NU2_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129725 RESOURCE1.IM_PNS_INCOMMAND_ARM
-    st = getVariable(129725);
+  { // 129800 RESOURCE1.IM_PNS_INCOMMAND_ARM
+    st = getVariable(129800);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_PNS_INCOMMAND_ARM", 30);
     st->size_data = sizeof(UINT);
@@ -4631,8 +4631,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_PNS_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129726 RESOURCE1.IM_PNS_STATUS
-    st = getVariable(129726);
+  { // 129801 RESOURCE1.IM_PNS_STATUS
+    st = getVariable(129801);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_PNS_STATUS", 23);
     st->size_data = sizeof(UDINT);
@@ -4640,8 +4640,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_PNS_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129727 RESOURCE1.IM_V1_AVOM_INCOMMAND_ARM
-    st = getVariable(129727);
+  { // 129802 RESOURCE1.IM_V1_AVOM_INCOMMAND_ARM
+    st = getVariable(129802);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_V1_AVOM_INCOMMAND_ARM", 34);
     st->size_data = sizeof(UINT);
@@ -4649,8 +4649,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_V1_AVOM_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129728 RESOURCE1.IM_V1_AVOM_STATUS
-    st = getVariable(129728);
+  { // 129803 RESOURCE1.IM_V1_AVOM_STATUS
+    st = getVariable(129803);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_V1_AVOM_STATUS", 27);
     st->size_data = sizeof(UDINT);
@@ -4658,8 +4658,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_V1_AVOM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129729 RESOURCE1.IM_V2_AVOM_INCOMMAND_ARM
-    st = getVariable(129729);
+  { // 129804 RESOURCE1.IM_V2_AVOM_INCOMMAND_ARM
+    st = getVariable(129804);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_V2_AVOM_INCOMMAND_ARM", 34);
     st->size_data = sizeof(UINT);
@@ -4667,8 +4667,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__IM_V2_AVOM_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129730 RESOURCE1.IM_V2_AVOM_STATUS
-    st = getVariable(129730);
+  { // 129805 RESOURCE1.IM_V2_AVOM_STATUS
+    st = getVariable(129805);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.IM_V2_AVOM_STATUS", 27);
     st->size_data = sizeof(UDINT);
@@ -4676,8 +4676,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__IM_V2_AVOM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129731 RESOURCE1.ALGMANAGER_MODE
-    st = getVariable(129731);
+  { // 129806 RESOURCE1.ALGMANAGER_MODE
+    st = getVariable(129806);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGMANAGER_MODE", 25);
     st->size_data = sizeof(UINT);
@@ -4685,8 +4685,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGMANAGER_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129732 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_VALUE
-    st = getVariable(129732);
+  { // 129807 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_VALUE
+    st = getVariable(129807);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -4694,8 +4694,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_UGOLVNA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129733 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_INCOMMAND_ARM
-    st = getVariable(129733);
+  { // 129808 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_INCOMMAND_ARM
+    st = getVariable(129808);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_INCOMMAND_ARM", 52);
     st->size_data = sizeof(UINT);
@@ -4703,8 +4703,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_UGOLVNA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129734 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_NEWVALUE
-    st = getVariable(129734);
+  { // 129809 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_NEWVALUE
+    st = getVariable(129809);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_NEWVALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -4712,8 +4712,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_UGOLVNA_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129735 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_STATUS
-    st = getVariable(129735);
+  { // 129810 RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_STATUS
+    st = getVariable(129810);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_UGOLVNA_STATUS", 45);
     st->size_data = sizeof(UDINT);
@@ -4721,8 +4721,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_UGOLVNA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129736 RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_VALUE
-    st = getVariable(129736);
+  { // 129811 RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_VALUE
+    st = getVariable(129811);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_VALUE", 38);
     st->size_data = sizeof(LREAL);
@@ -4730,8 +4730,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_Q_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129737 RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_INCOMMAND_ARM
-    st = getVariable(129737);
+  { // 129812 RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_INCOMMAND_ARM
+    st = getVariable(129812);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_INCOMMAND_ARM", 46);
     st->size_data = sizeof(UINT);
@@ -4739,8 +4739,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_Q_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129738 RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_STATUS
-    st = getVariable(129738);
+  { // 129813 RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_STATUS
+    st = getVariable(129813);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_Q_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -4748,8 +4748,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_Q_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129739 RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_VALUE
-    st = getVariable(129739);
+  { // 129814 RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_VALUE
+    st = getVariable(129814);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_VALUE", 42);
     st->size_data = sizeof(LREAL);
@@ -4757,8 +4757,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_ZAPAS_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129740 RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_INCOMMAND_ARM
-    st = getVariable(129740);
+  { // 129815 RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_INCOMMAND_ARM
+    st = getVariable(129815);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_INCOMMAND_ARM", 50);
     st->size_data = sizeof(UINT);
@@ -4766,8 +4766,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_ZAPAS_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129741 RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_STATUS
-    st = getVariable(129741);
+  { // 129816 RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_STATUS
+    st = getVariable(129816);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ANTIPOMPAG_ZAPAS_STATUS", 43);
     st->size_data = sizeof(UDINT);
@@ -4775,8 +4775,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ANTIPOMPAG_ZAPAS_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129742 RESOURCE1.ALGORITMS_APUSK_ERROR
-    st = getVariable(129742);
+  { // 129817 RESOURCE1.ALGORITMS_APUSK_ERROR
+    st = getVariable(129817);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_APUSK_ERROR", 31);
     st->size_data = sizeof(UDINT);
@@ -4784,8 +4784,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_APUSK_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129743 RESOURCE1.ALGORITMS_APUSK_START
-    st = getVariable(129743);
+  { // 129818 RESOURCE1.ALGORITMS_APUSK_START
+    st = getVariable(129818);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_APUSK_START", 31);
     st->size_data = sizeof(UDINT);
@@ -4793,8 +4793,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_APUSK_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129744 RESOURCE1.ALGORITMS_APUSK_TOP
-    st = getVariable(129744);
+  { // 129819 RESOURCE1.ALGORITMS_APUSK_TOP
+    st = getVariable(129819);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_APUSK_TOP", 29);
     st->size_data = sizeof(UDINT);
@@ -4802,8 +4802,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_APUSK_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129745 RESOURCE1.ALGORITMS_APUSK_INCOMMAND_ARM
-    st = getVariable(129745);
+  { // 129820 RESOURCE1.ALGORITMS_APUSK_INCOMMAND_ARM
+    st = getVariable(129820);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_APUSK_INCOMMAND_ARM", 39);
     st->size_data = sizeof(UINT);
@@ -4811,8 +4811,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_APUSK_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129746 RESOURCE1.ALGORITMS_APUSK_STATUS
-    st = getVariable(129746);
+  { // 129821 RESOURCE1.ALGORITMS_APUSK_STATUS
+    st = getVariable(129821);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_APUSK_STATUS", 32);
     st->size_data = sizeof(UDINT);
@@ -4820,8 +4820,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_APUSK_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129747 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_VALUE
-    st = getVariable(129747);
+  { // 129822 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_VALUE
+    st = getVariable(129822);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -4829,8 +4829,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOAVOM_HYSTERESIS_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129748 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_INCOMMAND_ARM
-    st = getVariable(129748);
+  { // 129823 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_INCOMMAND_ARM
+    st = getVariable(129823);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_INCOMMAND_ARM", 53);
     st->size_data = sizeof(UINT);
@@ -4838,8 +4838,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_HYSTERESIS_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129749 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_NEWVALUE
-    st = getVariable(129749);
+  { // 129824 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_NEWVALUE
+    st = getVariable(129824);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_NEWVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -4847,8 +4847,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOAVOM_HYSTERESIS_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129750 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_STATUS
-    st = getVariable(129750);
+  { // 129825 RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_STATUS
+    st = getVariable(129825);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_HYSTERESIS_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -4856,8 +4856,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_HYSTERESIS_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129751 RESOURCE1.ALGORITMS_AUTOAVOM_INCOMMAND_ARM
-    st = getVariable(129751);
+  { // 129826 RESOURCE1.ALGORITMS_AUTOAVOM_INCOMMAND_ARM
+    st = getVariable(129826);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_INCOMMAND_ARM", 42);
     st->size_data = sizeof(UINT);
@@ -4865,8 +4865,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129752 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_VALUE
-    st = getVariable(129752);
+  { // 129827 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_VALUE
+    st = getVariable(129827);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -4874,8 +4874,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON1TEMPERATURE_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129753 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_INCOMMAND_ARM
-    st = getVariable(129753);
+  { // 129828 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_INCOMMAND_ARM
+    st = getVariable(129828);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_INCOMMAND_ARM", 57);
     st->size_data = sizeof(UINT);
@@ -4883,8 +4883,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON1TEMPERATURE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129754 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_NEWVALUE
-    st = getVariable(129754);
+  { // 129829 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_NEWVALUE
+    st = getVariable(129829);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_NEWVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -4892,8 +4892,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON1TEMPERATURE_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129755 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_STATUS
-    st = getVariable(129755);
+  { // 129830 RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_STATUS
+    st = getVariable(129830);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON1TEMPERATURE_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -4901,8 +4901,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON1TEMPERATURE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129756 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_VALUE
-    st = getVariable(129756);
+  { // 129831 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_VALUE
+    st = getVariable(129831);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -4910,8 +4910,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON2TEMPERATURE_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129757 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_INCOMMAND_ARM
-    st = getVariable(129757);
+  { // 129832 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_INCOMMAND_ARM
+    st = getVariable(129832);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_INCOMMAND_ARM", 57);
     st->size_data = sizeof(UINT);
@@ -4919,8 +4919,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON2TEMPERATURE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129758 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_NEWVALUE
-    st = getVariable(129758);
+  { // 129833 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_NEWVALUE
+    st = getVariable(129833);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_NEWVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -4928,8 +4928,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON2TEMPERATURE_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129759 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_STATUS
-    st = getVariable(129759);
+  { // 129834 RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_STATUS
+    st = getVariable(129834);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_ON2TEMPERATURE_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -4937,8 +4937,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_ON2TEMPERATURE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129760 RESOURCE1.ALGORITMS_AUTOAVOM_STATUS
-    st = getVariable(129760);
+  { // 129835 RESOURCE1.ALGORITMS_AUTOAVOM_STATUS
+    st = getVariable(129835);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOAVOM_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -4946,8 +4946,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOAVOM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129761 RESOURCE1.ALGORITMS_AUTOPNS_OFFTIMER
-    st = getVariable(129761);
+  { // 129836 RESOURCE1.ALGORITMS_AUTOPNS_OFFTIMER
+    st = getVariable(129836);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_OFFTIMER", 36);
     st->size_data = sizeof(UINT);
@@ -4955,8 +4955,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOPNS_OFFTIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129762 RESOURCE1.ALGORITMS_AUTOPNS_ONTIMER
-    st = getVariable(129762);
+  { // 129837 RESOURCE1.ALGORITMS_AUTOPNS_ONTIMER
+    st = getVariable(129837);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_ONTIMER", 35);
     st->size_data = sizeof(UINT);
@@ -4964,8 +4964,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOPNS_ONTIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129763 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_VALUE
-    st = getVariable(129763);
+  { // 129838 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_VALUE
+    st = getVariable(129838);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_VALUE", 41);
     st->size_data = sizeof(LREAL);
@@ -4973,8 +4973,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_RUN_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129764 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_INCOMMAND_ARM
-    st = getVariable(129764);
+  { // 129839 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_INCOMMAND_ARM
+    st = getVariable(129839);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_INCOMMAND_ARM", 49);
     st->size_data = sizeof(UINT);
@@ -4982,8 +4982,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_RUN_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129765 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_NEWVALUE
-    st = getVariable(129765);
+  { // 129840 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_NEWVALUE
+    st = getVariable(129840);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_NEWVALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -4991,8 +4991,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_RUN_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129766 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_STATUS
-    st = getVariable(129766);
+  { // 129841 RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_STATUS
+    st = getVariable(129841);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_RUN_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -5000,8 +5000,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_RUN_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129767 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_VALUE
-    st = getVariable(129767);
+  { // 129842 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_VALUE
+    st = getVariable(129842);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_VALUE", 42);
     st->size_data = sizeof(LREAL);
@@ -5009,8 +5009,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_STOP_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129768 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_INCOMMAND_ARM
-    st = getVariable(129768);
+  { // 129843 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_INCOMMAND_ARM
+    st = getVariable(129843);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_INCOMMAND_ARM", 50);
     st->size_data = sizeof(UINT);
@@ -5018,8 +5018,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_STOP_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129769 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_NEWVALUE
-    st = getVariable(129769);
+  { // 129844 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_NEWVALUE
+    st = getVariable(129844);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_NEWVALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -5027,8 +5027,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_STOP_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129770 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_STATUS
-    st = getVariable(129770);
+  { // 129845 RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_STATUS
+    st = getVariable(129845);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_UST_STOP_STATUS", 43);
     st->size_data = sizeof(UDINT);
@@ -5036,8 +5036,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOPNS_UST_STOP_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129771 RESOURCE1.ALGORITMS_AUTOPNS_INCOMMAND_ARM
-    st = getVariable(129771);
+  { // 129846 RESOURCE1.ALGORITMS_AUTOPNS_INCOMMAND_ARM
+    st = getVariable(129846);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_INCOMMAND_ARM", 41);
     st->size_data = sizeof(UINT);
@@ -5045,8 +5045,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOPNS_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129772 RESOURCE1.ALGORITMS_AUTOPNS_STATUS
-    st = getVariable(129772);
+  { // 129847 RESOURCE1.ALGORITMS_AUTOPNS_STATUS
+    st = getVariable(129847);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOPNS_STATUS", 34);
     st->size_data = sizeof(UDINT);
@@ -5054,8 +5054,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOPNS_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129773 RESOURCE1.ALGORITMS_AUTOTEN_INCOMMAND_ARM
-    st = getVariable(129773);
+  { // 129848 RESOURCE1.ALGORITMS_AUTOTEN_INCOMMAND_ARM
+    st = getVariable(129848);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOTEN_INCOMMAND_ARM", 41);
     st->size_data = sizeof(UINT);
@@ -5063,8 +5063,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOTEN_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129774 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_VALUE
-    st = getVariable(129774);
+  { // 129849 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_VALUE
+    st = getVariable(129849);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_VALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -5072,8 +5072,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOTEN_OFFTEMPERATURE_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129775 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_INCOMMAND_ARM
-    st = getVariable(129775);
+  { // 129850 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_INCOMMAND_ARM
+    st = getVariable(129850);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -5081,8 +5081,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTOTEN_OFFTEMPERATURE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129776 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_NEWVALUE
-    st = getVariable(129776);
+  { // 129851 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_NEWVALUE
+    st = getVariable(129851);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_NEWVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -5090,8 +5090,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTOTEN_OFFTEMPERATURE_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129777 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_STATUS
-    st = getVariable(129777);
+  { // 129852 RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_STATUS
+    st = getVariable(129852);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOTEN_OFFTEMPERATURE_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -5099,8 +5099,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOTEN_OFFTEMPERATURE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129778 RESOURCE1.ALGORITMS_AUTOTEN_STATUS
-    st = getVariable(129778);
+  { // 129853 RESOURCE1.ALGORITMS_AUTOTEN_STATUS
+    st = getVariable(129853);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTOTEN_STATUS", 34);
     st->size_data = sizeof(UDINT);
@@ -5108,8 +5108,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTOTEN_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129779 RESOURCE1.ALGORITMS_REMONT_INCOMMAND_ARM
-    st = getVariable(129779);
+  { // 129854 RESOURCE1.ALGORITMS_REMONT_INCOMMAND_ARM
+    st = getVariable(129854);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_REMONT_INCOMMAND_ARM", 40);
     st->size_data = sizeof(UINT);
@@ -5117,8 +5117,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_REMONT_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129780 RESOURCE1.ALGORITMS_REMONT_STATUS
-    st = getVariable(129780);
+  { // 129855 RESOURCE1.ALGORITMS_REMONT_STATUS
+    st = getVariable(129855);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_REMONT_STATUS", 33);
     st->size_data = sizeof(UDINT);
@@ -5126,8 +5126,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_REMONT_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129781 RESOURCE1.ALGORITMS_RINGTOLINE_ERROR
-    st = getVariable(129781);
+  { // 129856 RESOURCE1.ALGORITMS_RINGTOLINE_ERROR
+    st = getVariable(129856);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_RINGTOLINE_ERROR", 36);
     st->size_data = sizeof(UDINT);
@@ -5135,8 +5135,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_RINGTOLINE_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129782 RESOURCE1.ALGORITMS_RINGTOLINE_START
-    st = getVariable(129782);
+  { // 129857 RESOURCE1.ALGORITMS_RINGTOLINE_START
+    st = getVariable(129857);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_RINGTOLINE_START", 36);
     st->size_data = sizeof(UDINT);
@@ -5144,8 +5144,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_RINGTOLINE_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129783 RESOURCE1.ALGORITMS_RINGTOLINE_TOP
-    st = getVariable(129783);
+  { // 129858 RESOURCE1.ALGORITMS_RINGTOLINE_TOP
+    st = getVariable(129858);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_RINGTOLINE_TOP", 34);
     st->size_data = sizeof(UDINT);
@@ -5153,8 +5153,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_RINGTOLINE_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129784 RESOURCE1.ALGORITMS_RINGTOLINE_INCOMMAND_ARM
-    st = getVariable(129784);
+  { // 129859 RESOURCE1.ALGORITMS_RINGTOLINE_INCOMMAND_ARM
+    st = getVariable(129859);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_RINGTOLINE_INCOMMAND_ARM", 44);
     st->size_data = sizeof(UINT);
@@ -5162,8 +5162,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_RINGTOLINE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129785 RESOURCE1.ALGORITMS_RINGTOLINE_STATUS
-    st = getVariable(129785);
+  { // 129860 RESOURCE1.ALGORITMS_RINGTOLINE_STATUS
+    st = getVariable(129860);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_RINGTOLINE_STATUS", 37);
     st->size_data = sizeof(UDINT);
@@ -5171,8 +5171,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_RINGTOLINE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129786 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_ERROR
-    st = getVariable(129786);
+  { // 129861 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_ERROR
+    st = getVariable(129861);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_ERROR", 38);
     st->size_data = sizeof(UDINT);
@@ -5180,8 +5180,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129787 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_START
-    st = getVariable(129787);
+  { // 129862 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_START
+    st = getVariable(129862);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_START", 38);
     st->size_data = sizeof(UDINT);
@@ -5189,8 +5189,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129788 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_TOP
-    st = getVariable(129788);
+  { // 129863 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_TOP
+    st = getVariable(129863);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_TOP", 36);
     st->size_data = sizeof(UDINT);
@@ -5198,8 +5198,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129789 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_INCOMMAND_ARM
-    st = getVariable(129789);
+  { // 129864 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_INCOMMAND_ARM
+    st = getVariable(129864);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -5207,8 +5207,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129790 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS
-    st = getVariable(129790);
+  { // 129865 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS
+    st = getVariable(129865);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -5216,8 +5216,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN1PH_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129791 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_INCOMMAND_ARM
-    st = getVariable(129791);
+  { // 129866 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_INCOMMAND_ARM
+    st = getVariable(129866);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -5225,8 +5225,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129792 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS
-    st = getVariable(129792);
+  { // 129867 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS
+    st = getVariable(129867);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -5234,8 +5234,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN2PH_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129793 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_INCOMMAND_ARM
-    st = getVariable(129793);
+  { // 129868 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_INCOMMAND_ARM
+    st = getVariable(129868);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -5243,8 +5243,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129794 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS
-    st = getVariable(129794);
+  { // 129869 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS
+    st = getVariable(129869);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -5252,8 +5252,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN3PH_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129795 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_INCOMMAND_ARM
-    st = getVariable(129795);
+  { // 129870 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_INCOMMAND_ARM
+    st = getVariable(129870);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -5261,8 +5261,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129796 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS
-    st = getVariable(129796);
+  { // 129871 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS
+    st = getVariable(129871);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -5270,8 +5270,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_CMDRUN4PH_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129797 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_INCOMMAND_ARM
-    st = getVariable(129797);
+  { // 129872 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_INCOMMAND_ARM
+    st = getVariable(129872);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_INCOMMAND_ARM", 46);
     st->size_data = sizeof(UINT);
@@ -5279,8 +5279,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129798 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_STATUS
-    st = getVariable(129798);
+  { // 129873 RESOURCE1.ALGORITMS_SEMIAUTOPUSK_STATUS
+    st = getVariable(129873);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_SEMIAUTOPUSK_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -5288,8 +5288,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_SEMIAUTOPUSK_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129799 RESOURCE1.ALGORITMS_TESTPROTECTION_INCOMMAND_ARM
-    st = getVariable(129799);
+  { // 129874 RESOURCE1.ALGORITMS_TESTPROTECTION_INCOMMAND_ARM
+    st = getVariable(129874);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPROTECTION_INCOMMAND_ARM", 48);
     st->size_data = sizeof(UINT);
@@ -5297,8 +5297,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTPROTECTION_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129800 RESOURCE1.ALGORITMS_TESTPROTECTION_STATUS
-    st = getVariable(129800);
+  { // 129875 RESOURCE1.ALGORITMS_TESTPROTECTION_STATUS
+    st = getVariable(129875);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPROTECTION_STATUS", 41);
     st->size_data = sizeof(UDINT);
@@ -5306,8 +5306,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTPROTECTION_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129801 RESOURCE1.ALGORITMS_AO_ERROR
-    st = getVariable(129801);
+  { // 129876 RESOURCE1.ALGORITMS_AO_ERROR
+    st = getVariable(129876);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AO_ERROR", 28);
     st->size_data = sizeof(UDINT);
@@ -5315,8 +5315,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AO_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129802 RESOURCE1.ALGORITMS_AO_START
-    st = getVariable(129802);
+  { // 129877 RESOURCE1.ALGORITMS_AO_START
+    st = getVariable(129877);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AO_START", 28);
     st->size_data = sizeof(UDINT);
@@ -5324,8 +5324,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AO_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129803 RESOURCE1.ALGORITMS_AO_TOP
-    st = getVariable(129803);
+  { // 129878 RESOURCE1.ALGORITMS_AO_TOP
+    st = getVariable(129878);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AO_TOP", 26);
     st->size_data = sizeof(UDINT);
@@ -5333,8 +5333,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AO_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129804 RESOURCE1.ALGORITMS_AO_INCOMMAND_ARM
-    st = getVariable(129804);
+  { // 129879 RESOURCE1.ALGORITMS_AO_INCOMMAND_ARM
+    st = getVariable(129879);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AO_INCOMMAND_ARM", 36);
     st->size_data = sizeof(UINT);
@@ -5342,8 +5342,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AO_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129805 RESOURCE1.ALGORITMS_AO_STATUS
-    st = getVariable(129805);
+  { // 129880 RESOURCE1.ALGORITMS_AO_STATUS
+    st = getVariable(129880);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AO_STATUS", 29);
     st->size_data = sizeof(UDINT);
@@ -5351,8 +5351,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AO_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129806 RESOURCE1.ALGORITMS_AO_WAITKRAN_TIMER
-    st = getVariable(129806);
+  { // 129881 RESOURCE1.ALGORITMS_AO_WAITKRAN_TIMER
+    st = getVariable(129881);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AO_WAITKRAN_TIMER", 37);
     st->size_data = sizeof(UINT);
@@ -5360,8 +5360,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AO_WAITKRAN_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129807 RESOURCE1.ALGORITMS_AUTONU_NOTHASREZERVNU
-    st = getVariable(129807);
+  { // 129882 RESOURCE1.ALGORITMS_AUTONU_NOTHASREZERVNU
+    st = getVariable(129882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_NOTHASREZERVNU", 41);
     st->size_data = sizeof(BOOL);
@@ -5369,8 +5369,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__ALGORITMS_AUTONU_NOTHASREZERVNU;
     UnpackVar(p_BOOL, BOOL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129808 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_VALUE
-    st = getVariable(129808);
+  { // 129883 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_VALUE
+    st = getVariable(129883);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_VALUE", 41);
     st->size_data = sizeof(LREAL);
@@ -5378,8 +5378,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTONU_UST_SWAP_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129809 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_INCOMMAND_ARM
-    st = getVariable(129809);
+  { // 129884 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_INCOMMAND_ARM
+    st = getVariable(129884);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_INCOMMAND_ARM", 49);
     st->size_data = sizeof(UINT);
@@ -5387,8 +5387,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTONU_UST_SWAP_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129810 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_NEWVALUE
-    st = getVariable(129810);
+  { // 129885 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_NEWVALUE
+    st = getVariable(129885);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_NEWVALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -5396,8 +5396,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_AUTONU_UST_SWAP_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129811 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_STATUS
-    st = getVariable(129811);
+  { // 129886 RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_STATUS
+    st = getVariable(129886);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_UST_SWAP_STATUS", 42);
     st->size_data = sizeof(UDINT);
@@ -5405,8 +5405,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTONU_UST_SWAP_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129812 RESOURCE1.ALGORITMS_AUTONU_INCOMMAND_ARM
-    st = getVariable(129812);
+  { // 129887 RESOURCE1.ALGORITMS_AUTONU_INCOMMAND_ARM
+    st = getVariable(129887);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_INCOMMAND_ARM", 40);
     st->size_data = sizeof(UINT);
@@ -5414,8 +5414,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTONU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129813 RESOURCE1.ALGORITMS_AUTONU_MAINNU_INCOMMAND_ARM
-    st = getVariable(129813);
+  { // 129888 RESOURCE1.ALGORITMS_AUTONU_MAINNU_INCOMMAND_ARM
+    st = getVariable(129888);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_MAINNU_INCOMMAND_ARM", 47);
     st->size_data = sizeof(UINT);
@@ -5423,8 +5423,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_AUTONU_MAINNU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129814 RESOURCE1.ALGORITMS_AUTONU_MAINNU_STATUS
-    st = getVariable(129814);
+  { // 129889 RESOURCE1.ALGORITMS_AUTONU_MAINNU_STATUS
+    st = getVariable(129889);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_MAINNU_STATUS", 40);
     st->size_data = sizeof(UDINT);
@@ -5432,8 +5432,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTONU_MAINNU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129815 RESOURCE1.ALGORITMS_AUTONU_STATUS
-    st = getVariable(129815);
+  { // 129890 RESOURCE1.ALGORITMS_AUTONU_STATUS
+    st = getVariable(129890);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_STATUS", 33);
     st->size_data = sizeof(UDINT);
@@ -5441,8 +5441,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_AUTONU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129816 RESOURCE1.ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER
-    st = getVariable(129816);
+  { // 129891 RESOURCE1.ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER
+    st = getVariable(129891);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER", 50);
     st->size_data = sizeof(UINT);
@@ -5450,8 +5450,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_ENGINERUN_BREAKPUSKTIMER_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129817 RESOURCE1.ALGORITMS_ENGINERUN_ERROR
-    st = getVariable(129817);
+  { // 129892 RESOURCE1.ALGORITMS_ENGINERUN_ERROR
+    st = getVariable(129892);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ENGINERUN_ERROR", 35);
     st->size_data = sizeof(UDINT);
@@ -5459,8 +5459,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ENGINERUN_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129818 RESOURCE1.ALGORITMS_ENGINERUN_START
-    st = getVariable(129818);
+  { // 129893 RESOURCE1.ALGORITMS_ENGINERUN_START
+    st = getVariable(129893);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ENGINERUN_START", 35);
     st->size_data = sizeof(UDINT);
@@ -5468,8 +5468,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ENGINERUN_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129819 RESOURCE1.ALGORITMS_ENGINERUN_TOP
-    st = getVariable(129819);
+  { // 129894 RESOURCE1.ALGORITMS_ENGINERUN_TOP
+    st = getVariable(129894);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ENGINERUN_TOP", 33);
     st->size_data = sizeof(UDINT);
@@ -5477,8 +5477,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ENGINERUN_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129820 RESOURCE1.ALGORITMS_ENGINERUN_INCOMMAND_ARM
-    st = getVariable(129820);
+  { // 129895 RESOURCE1.ALGORITMS_ENGINERUN_INCOMMAND_ARM
+    st = getVariable(129895);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ENGINERUN_INCOMMAND_ARM", 43);
     st->size_data = sizeof(UINT);
@@ -5486,8 +5486,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_ENGINERUN_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129821 RESOURCE1.ALGORITMS_ENGINERUN_STATUS
-    st = getVariable(129821);
+  { // 129896 RESOURCE1.ALGORITMS_ENGINERUN_STATUS
+    st = getVariable(129896);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_ENGINERUN_STATUS", 36);
     st->size_data = sizeof(UDINT);
@@ -5495,8 +5495,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_ENGINERUN_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129822 RESOURCE1.ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER
-    st = getVariable(129822);
+  { // 129897 RESOURCE1.ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER
+    st = getVariable(129897);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER", 48);
     st->size_data = sizeof(UINT);
@@ -5504,8 +5504,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_FILLING_BREAKPUSKTIMER_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129823 RESOURCE1.ALGORITMS_FILLING_ERROR
-    st = getVariable(129823);
+  { // 129898 RESOURCE1.ALGORITMS_FILLING_ERROR
+    st = getVariable(129898);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_ERROR", 33);
     st->size_data = sizeof(UDINT);
@@ -5513,8 +5513,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_FILLING_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129824 RESOURCE1.ALGORITMS_FILLING_START
-    st = getVariable(129824);
+  { // 129899 RESOURCE1.ALGORITMS_FILLING_START
+    st = getVariable(129899);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_START", 33);
     st->size_data = sizeof(UDINT);
@@ -5522,8 +5522,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_FILLING_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129825 RESOURCE1.ALGORITMS_FILLING_TOP
-    st = getVariable(129825);
+  { // 129900 RESOURCE1.ALGORITMS_FILLING_TOP
+    st = getVariable(129900);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_TOP", 31);
     st->size_data = sizeof(UDINT);
@@ -5531,8 +5531,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_FILLING_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129826 RESOURCE1.ALGORITMS_FILLING_INCOMMAND_ARM
-    st = getVariable(129826);
+  { // 129901 RESOURCE1.ALGORITMS_FILLING_INCOMMAND_ARM
+    st = getVariable(129901);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_INCOMMAND_ARM", 41);
     st->size_data = sizeof(UINT);
@@ -5540,8 +5540,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_FILLING_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129827 RESOURCE1.ALGORITMS_FILLING_STATUS
-    st = getVariable(129827);
+  { // 129902 RESOURCE1.ALGORITMS_FILLING_STATUS
+    st = getVariable(129902);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_STATUS", 34);
     st->size_data = sizeof(UDINT);
@@ -5549,8 +5549,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_FILLING_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129828 RESOURCE1.ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER
-    st = getVariable(129828);
+  { // 129903 RESOURCE1.ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER
+    st = getVariable(129903);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER", 48);
     st->size_data = sizeof(UINT);
@@ -5558,8 +5558,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_FILLING_WAITAFTERKRAN4_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129829 RESOURCE1.ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER
-    st = getVariable(129829);
+  { // 129904 RESOURCE1.ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER
+    st = getVariable(129904);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER", 48);
     st->size_data = sizeof(UINT);
@@ -5567,8 +5567,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_FILLING_WAITAFTERKRAN5_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129830 RESOURCE1.ALGORITMS_NO_ERROR
-    st = getVariable(129830);
+  { // 129905 RESOURCE1.ALGORITMS_NO_ERROR
+    st = getVariable(129905);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_NO_ERROR", 28);
     st->size_data = sizeof(UDINT);
@@ -5576,8 +5576,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_NO_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129831 RESOURCE1.ALGORITMS_NO_START
-    st = getVariable(129831);
+  { // 129906 RESOURCE1.ALGORITMS_NO_START
+    st = getVariable(129906);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_NO_START", 28);
     st->size_data = sizeof(UDINT);
@@ -5585,8 +5585,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_NO_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129832 RESOURCE1.ALGORITMS_NO_TOP
-    st = getVariable(129832);
+  { // 129907 RESOURCE1.ALGORITMS_NO_TOP
+    st = getVariable(129907);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_NO_TOP", 26);
     st->size_data = sizeof(UDINT);
@@ -5594,8 +5594,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_NO_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129833 RESOURCE1.ALGORITMS_NO_INCOMMAND_ARM
-    st = getVariable(129833);
+  { // 129908 RESOURCE1.ALGORITMS_NO_INCOMMAND_ARM
+    st = getVariable(129908);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_NO_INCOMMAND_ARM", 36);
     st->size_data = sizeof(UINT);
@@ -5603,8 +5603,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_NO_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129834 RESOURCE1.ALGORITMS_NO_STATUS
-    st = getVariable(129834);
+  { // 129909 RESOURCE1.ALGORITMS_NO_STATUS
+    st = getVariable(129909);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_NO_STATUS", 29);
     st->size_data = sizeof(UDINT);
@@ -5612,8 +5612,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_NO_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129835 RESOURCE1.ALGORITMS_NO_WAITCLOSEKRAN_TIMER
-    st = getVariable(129835);
+  { // 129910 RESOURCE1.ALGORITMS_NO_WAITCLOSEKRAN_TIMER
+    st = getVariable(129910);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_NO_WAITCLOSEKRAN_TIMER", 42);
     st->size_data = sizeof(UINT);
@@ -5621,8 +5621,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_NO_WAITCLOSEKRAN_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129836 RESOURCE1.ALGORITMS_PPU_ERROR
-    st = getVariable(129836);
+  { // 129911 RESOURCE1.ALGORITMS_PPU_ERROR
+    st = getVariable(129911);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PPU_ERROR", 29);
     st->size_data = sizeof(UDINT);
@@ -5630,8 +5630,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PPU_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129837 RESOURCE1.ALGORITMS_PPU_START
-    st = getVariable(129837);
+  { // 129912 RESOURCE1.ALGORITMS_PPU_START
+    st = getVariable(129912);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PPU_START", 29);
     st->size_data = sizeof(UDINT);
@@ -5639,8 +5639,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PPU_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129838 RESOURCE1.ALGORITMS_PPU_TOP
-    st = getVariable(129838);
+  { // 129913 RESOURCE1.ALGORITMS_PPU_TOP
+    st = getVariable(129913);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PPU_TOP", 27);
     st->size_data = sizeof(UDINT);
@@ -5648,8 +5648,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PPU_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129839 RESOURCE1.ALGORITMS_PPU_INCOMMAND_ARM
-    st = getVariable(129839);
+  { // 129914 RESOURCE1.ALGORITMS_PPU_INCOMMAND_ARM
+    st = getVariable(129914);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PPU_INCOMMAND_ARM", 37);
     st->size_data = sizeof(UINT);
@@ -5657,8 +5657,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PPU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129840 RESOURCE1.ALGORITMS_PPU_STATUS
-    st = getVariable(129840);
+  { // 129915 RESOURCE1.ALGORITMS_PPU_STATUS
+    st = getVariable(129915);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PPU_STATUS", 30);
     st->size_data = sizeof(UDINT);
@@ -5666,8 +5666,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PPU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129841 RESOURCE1.ALGORITMS_PUSKK_ERROR
-    st = getVariable(129841);
+  { // 129916 RESOURCE1.ALGORITMS_PUSKK_ERROR
+    st = getVariable(129916);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_ERROR", 31);
     st->size_data = sizeof(UDINT);
@@ -5675,8 +5675,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKK_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129842 RESOURCE1.ALGORITMS_PUSKK_START
-    st = getVariable(129842);
+  { // 129917 RESOURCE1.ALGORITMS_PUSKK_START
+    st = getVariable(129917);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_START", 31);
     st->size_data = sizeof(UDINT);
@@ -5684,8 +5684,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKK_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129843 RESOURCE1.ALGORITMS_PUSKK_TOP
-    st = getVariable(129843);
+  { // 129918 RESOURCE1.ALGORITMS_PUSKK_TOP
+    st = getVariable(129918);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_TOP", 29);
     st->size_data = sizeof(UDINT);
@@ -5693,8 +5693,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKK_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129844 RESOURCE1.ALGORITMS_PUSKK_INCOMMAND_ARM
-    st = getVariable(129844);
+  { // 129919 RESOURCE1.ALGORITMS_PUSKK_INCOMMAND_ARM
+    st = getVariable(129919);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_INCOMMAND_ARM", 39);
     st->size_data = sizeof(UINT);
@@ -5702,8 +5702,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKK_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129845 RESOURCE1.ALGORITMS_PUSKK_QUESTIONFILLING_INCOMMAND_ARM
-    st = getVariable(129845);
+  { // 129920 RESOURCE1.ALGORITMS_PUSKK_QUESTIONFILLING_INCOMMAND_ARM
+    st = getVariable(129920);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_QUESTIONFILLING_INCOMMAND_ARM", 55);
     st->size_data = sizeof(UINT);
@@ -5711,8 +5711,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKK_QUESTIONFILLING_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129846 RESOURCE1.ALGORITMS_PUSKK_QUESTIONFILLING_STATUS
-    st = getVariable(129846);
+  { // 129921 RESOURCE1.ALGORITMS_PUSKK_QUESTIONFILLING_STATUS
+    st = getVariable(129921);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_QUESTIONFILLING_STATUS", 48);
     st->size_data = sizeof(UDINT);
@@ -5720,8 +5720,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKK_QUESTIONFILLING_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129847 RESOURCE1.ALGORITMS_PUSKK_QUESTIONUNLOAD_INCOMMAND_ARM
-    st = getVariable(129847);
+  { // 129922 RESOURCE1.ALGORITMS_PUSKK_QUESTIONUNLOAD_INCOMMAND_ARM
+    st = getVariable(129922);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_QUESTIONUNLOAD_INCOMMAND_ARM", 54);
     st->size_data = sizeof(UINT);
@@ -5729,8 +5729,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKK_QUESTIONUNLOAD_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129848 RESOURCE1.ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS
-    st = getVariable(129848);
+  { // 129923 RESOURCE1.ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS
+    st = getVariable(129923);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -5738,8 +5738,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKK_QUESTIONUNLOAD_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129849 RESOURCE1.ALGORITMS_PUSKK_STATUS
-    st = getVariable(129849);
+  { // 129924 RESOURCE1.ALGORITMS_PUSKK_STATUS
+    st = getVariable(129924);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_STATUS", 32);
     st->size_data = sizeof(UDINT);
@@ -5747,8 +5747,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKK_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129850 RESOURCE1.ALGORITMS_PUSKK_WAIT720_TIMER
-    st = getVariable(129850);
+  { // 129925 RESOURCE1.ALGORITMS_PUSKK_WAIT720_TIMER
+    st = getVariable(129925);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKK_WAIT720_TIMER", 39);
     st->size_data = sizeof(UINT);
@@ -5756,8 +5756,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKK_WAIT720_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129851 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER
-    st = getVariable(129851);
+  { // 129926 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER
+    st = getVariable(129926);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER", 59);
     st->size_data = sizeof(UINT);
@@ -5765,8 +5765,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_POIL_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129852 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER
-    st = getVariable(129852);
+  { // 129927 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER
+    st = getVariable(129927);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER", 59);
     st->size_data = sizeof(UINT);
@@ -5774,8 +5774,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_BREAKPUSKTIMER_DPMG_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129853 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_ERROR
-    st = getVariable(129853);
+  { // 129928 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_ERROR
+    st = getVariable(129928);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_ERROR", 39);
     st->size_data = sizeof(UDINT);
@@ -5783,8 +5783,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129854 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_START
-    st = getVariable(129854);
+  { // 129929 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_START
+    st = getVariable(129929);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_START", 39);
     st->size_data = sizeof(UDINT);
@@ -5792,8 +5792,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129855 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_TOP
-    st = getVariable(129855);
+  { // 129930 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_TOP
+    st = getVariable(129930);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_TOP", 37);
     st->size_data = sizeof(UDINT);
@@ -5801,8 +5801,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129856 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_VALUE
-    st = getVariable(129856);
+  { // 129931 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_VALUE
+    st = getVariable(129931);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_VALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -5810,8 +5810,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_UST_DPMG_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129857 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_INCOMMAND_ARM
-    st = getVariable(129857);
+  { // 129932 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_INCOMMAND_ARM
+    st = getVariable(129932);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -5819,8 +5819,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_UST_DPMG_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129858 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_NEWVALUE
-    st = getVariable(129858);
+  { // 129933 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_NEWVALUE
+    st = getVariable(129933);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_NEWVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -5828,8 +5828,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_UST_DPMG_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129859 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_STATUS
-    st = getVariable(129859);
+  { // 129934 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_STATUS
+    st = getVariable(129934);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_UST_DPMG_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -5837,8 +5837,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_UST_DPMG_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129860 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_INCOMMAND_ARM
-    st = getVariable(129860);
+  { // 129935 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_INCOMMAND_ARM
+    st = getVariable(129935);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_INCOMMAND_ARM", 47);
     st->size_data = sizeof(UINT);
@@ -5846,8 +5846,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129861 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_STATUS
-    st = getVariable(129861);
+  { // 129936 RESOURCE1.ALGORITMS_PUSKOILSYSTEM_STATUS
+    st = getVariable(129936);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKOILSYSTEM_STATUS", 40);
     st->size_data = sizeof(UDINT);
@@ -5855,8 +5855,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKOILSYSTEM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129862 RESOURCE1.ALGORITMS_PUSKV_ERROR
-    st = getVariable(129862);
+  { // 129937 RESOURCE1.ALGORITMS_PUSKV_ERROR
+    st = getVariable(129937);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_ERROR", 31);
     st->size_data = sizeof(UDINT);
@@ -5864,8 +5864,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKV_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129863 RESOURCE1.ALGORITMS_PUSKV_START
-    st = getVariable(129863);
+  { // 129938 RESOURCE1.ALGORITMS_PUSKV_START
+    st = getVariable(129938);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_START", 31);
     st->size_data = sizeof(UDINT);
@@ -5873,8 +5873,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKV_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129864 RESOURCE1.ALGORITMS_PUSKV_TOP
-    st = getVariable(129864);
+  { // 129939 RESOURCE1.ALGORITMS_PUSKV_TOP
+    st = getVariable(129939);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_TOP", 29);
     st->size_data = sizeof(UDINT);
@@ -5882,8 +5882,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKV_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129865 RESOURCE1.ALGORITMS_PUSKV_INCOMMAND_ARM
-    st = getVariable(129865);
+  { // 129940 RESOURCE1.ALGORITMS_PUSKV_INCOMMAND_ARM
+    st = getVariable(129940);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_INCOMMAND_ARM", 39);
     st->size_data = sizeof(UINT);
@@ -5891,8 +5891,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKV_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129866 RESOURCE1.ALGORITMS_PUSKV_QUESTIONFILLING_INCOMMAND_ARM
-    st = getVariable(129866);
+  { // 129941 RESOURCE1.ALGORITMS_PUSKV_QUESTIONFILLING_INCOMMAND_ARM
+    st = getVariable(129941);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_QUESTIONFILLING_INCOMMAND_ARM", 55);
     st->size_data = sizeof(UINT);
@@ -5900,8 +5900,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKV_QUESTIONFILLING_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129867 RESOURCE1.ALGORITMS_PUSKV_QUESTIONFILLING_STATUS
-    st = getVariable(129867);
+  { // 129942 RESOURCE1.ALGORITMS_PUSKV_QUESTIONFILLING_STATUS
+    st = getVariable(129942);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_QUESTIONFILLING_STATUS", 48);
     st->size_data = sizeof(UDINT);
@@ -5909,8 +5909,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKV_QUESTIONFILLING_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129868 RESOURCE1.ALGORITMS_PUSKV_QUESTIONMVOFF_INCOMMAND_ARM
-    st = getVariable(129868);
+  { // 129943 RESOURCE1.ALGORITMS_PUSKV_QUESTIONMVOFF_INCOMMAND_ARM
+    st = getVariable(129943);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_QUESTIONMVOFF_INCOMMAND_ARM", 53);
     st->size_data = sizeof(UINT);
@@ -5918,8 +5918,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKV_QUESTIONMVOFF_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129869 RESOURCE1.ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS
-    st = getVariable(129869);
+  { // 129944 RESOURCE1.ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS
+    st = getVariable(129944);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -5927,8 +5927,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKV_QUESTIONMVOFF_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129870 RESOURCE1.ALGORITMS_PUSKV_STATUS
-    st = getVariable(129870);
+  { // 129945 RESOURCE1.ALGORITMS_PUSKV_STATUS
+    st = getVariable(129945);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_STATUS", 32);
     st->size_data = sizeof(UDINT);
@@ -5936,8 +5936,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_PUSKV_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129871 RESOURCE1.ALGORITMS_PUSKV_WAIT600_TIMER
-    st = getVariable(129871);
+  { // 129946 RESOURCE1.ALGORITMS_PUSKV_WAIT600_TIMER
+    st = getVariable(129946);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_PUSKV_WAIT600_TIMER", 39);
     st->size_data = sizeof(UINT);
@@ -5945,8 +5945,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_PUSKV_WAIT600_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129872 RESOURCE1.ALGORITMS_TESTIM_TYPESWITCH_INCOMMAND_ARM
-    st = getVariable(129872);
+  { // 129947 RESOURCE1.ALGORITMS_TESTIM_TYPESWITCH_INCOMMAND_ARM
+    st = getVariable(129947);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTIM_TYPESWITCH_INCOMMAND_ARM", 51);
     st->size_data = sizeof(UINT);
@@ -5954,8 +5954,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTIM_TYPESWITCH_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129873 RESOURCE1.ALGORITMS_TESTIM_TYPESWITCH_STATUS
-    st = getVariable(129873);
+  { // 129948 RESOURCE1.ALGORITMS_TESTIM_TYPESWITCH_STATUS
+    st = getVariable(129948);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTIM_TYPESWITCH_STATUS", 44);
     st->size_data = sizeof(UDINT);
@@ -5963,8 +5963,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTIM_TYPESWITCH_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129874 RESOURCE1.ALGORITMS_TESTIM_INCOMMAND_ARM
-    st = getVariable(129874);
+  { // 129949 RESOURCE1.ALGORITMS_TESTIM_INCOMMAND_ARM
+    st = getVariable(129949);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTIM_INCOMMAND_ARM", 40);
     st->size_data = sizeof(UINT);
@@ -5972,8 +5972,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTIM_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129875 RESOURCE1.ALGORITMS_TESTIM_STATUS
-    st = getVariable(129875);
+  { // 129950 RESOURCE1.ALGORITMS_TESTIM_STATUS
+    st = getVariable(129950);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTIM_STATUS", 33);
     st->size_data = sizeof(UDINT);
@@ -5981,8 +5981,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTIM_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129876 RESOURCE1.ALGORITMS_TESTPMS_BREAKTEST_TIMER
-    st = getVariable(129876);
+  { // 129951 RESOURCE1.ALGORITMS_TESTPMS_BREAKTEST_TIMER
+    st = getVariable(129951);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_BREAKTEST_TIMER", 43);
     st->size_data = sizeof(UINT);
@@ -5990,8 +5990,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTPMS_BREAKTEST_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129877 RESOURCE1.ALGORITMS_TESTPMS_ERROR
-    st = getVariable(129877);
+  { // 129952 RESOURCE1.ALGORITMS_TESTPMS_ERROR
+    st = getVariable(129952);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_ERROR", 33);
     st->size_data = sizeof(UDINT);
@@ -5999,8 +5999,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTPMS_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129878 RESOURCE1.ALGORITMS_TESTPMS_START
-    st = getVariable(129878);
+  { // 129953 RESOURCE1.ALGORITMS_TESTPMS_START
+    st = getVariable(129953);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_START", 33);
     st->size_data = sizeof(UDINT);
@@ -6008,8 +6008,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTPMS_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129879 RESOURCE1.ALGORITMS_TESTPMS_TOP
-    st = getVariable(129879);
+  { // 129954 RESOURCE1.ALGORITMS_TESTPMS_TOP
+    st = getVariable(129954);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_TOP", 31);
     st->size_data = sizeof(UDINT);
@@ -6017,8 +6017,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTPMS_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129880 RESOURCE1.ALGORITMS_TESTPMS_ALGCONTINUE_INCOMMAND_ARM
-    st = getVariable(129880);
+  { // 129955 RESOURCE1.ALGORITMS_TESTPMS_ALGCONTINUE_INCOMMAND_ARM
+    st = getVariable(129955);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_ALGCONTINUE_INCOMMAND_ARM", 53);
     st->size_data = sizeof(UINT);
@@ -6026,8 +6026,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTPMS_ALGCONTINUE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129881 RESOURCE1.ALGORITMS_TESTPMS_ALGCONTINUE_STATUS
-    st = getVariable(129881);
+  { // 129956 RESOURCE1.ALGORITMS_TESTPMS_ALGCONTINUE_STATUS
+    st = getVariable(129956);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_ALGCONTINUE_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -6035,8 +6035,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTPMS_ALGCONTINUE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129882 RESOURCE1.ALGORITMS_TESTPMS_INCOMMAND_ARM
-    st = getVariable(129882);
+  { // 129957 RESOURCE1.ALGORITMS_TESTPMS_INCOMMAND_ARM
+    st = getVariable(129957);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_INCOMMAND_ARM", 41);
     st->size_data = sizeof(UINT);
@@ -6044,8 +6044,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTPMS_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129883 RESOURCE1.ALGORITMS_TESTPMS_STATUS
-    st = getVariable(129883);
+  { // 129958 RESOURCE1.ALGORITMS_TESTPMS_STATUS
+    st = getVariable(129958);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTPMS_STATUS", 34);
     st->size_data = sizeof(UDINT);
@@ -6053,8 +6053,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTPMS_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129884 RESOURCE1.ALGORITMS_TESTDPMG_BREAKTEST_TIMER
-    st = getVariable(129884);
+  { // 129959 RESOURCE1.ALGORITMS_TESTDPMG_BREAKTEST_TIMER
+    st = getVariable(129959);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_BREAKTEST_TIMER", 44);
     st->size_data = sizeof(UINT);
@@ -6062,8 +6062,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTDPMG_BREAKTEST_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129885 RESOURCE1.ALGORITMS_TESTDPMG_ERROR
-    st = getVariable(129885);
+  { // 129960 RESOURCE1.ALGORITMS_TESTDPMG_ERROR
+    st = getVariable(129960);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_ERROR", 34);
     st->size_data = sizeof(UDINT);
@@ -6071,8 +6071,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTDPMG_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129886 RESOURCE1.ALGORITMS_TESTDPMG_START
-    st = getVariable(129886);
+  { // 129961 RESOURCE1.ALGORITMS_TESTDPMG_START
+    st = getVariable(129961);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_START", 34);
     st->size_data = sizeof(UDINT);
@@ -6080,8 +6080,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTDPMG_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129887 RESOURCE1.ALGORITMS_TESTDPMG_TOP
-    st = getVariable(129887);
+  { // 129962 RESOURCE1.ALGORITMS_TESTDPMG_TOP
+    st = getVariable(129962);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_TOP", 32);
     st->size_data = sizeof(UDINT);
@@ -6089,8 +6089,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTDPMG_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129888 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_VALUE
-    st = getVariable(129888);
+  { // 129963 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_VALUE
+    st = getVariable(129963);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -6098,8 +6098,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_TESTDPMG_UST_DPLOW_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129889 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_INCOMMAND_ARM
-    st = getVariable(129889);
+  { // 129964 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_INCOMMAND_ARM
+    st = getVariable(129964);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_INCOMMAND_ARM", 52);
     st->size_data = sizeof(UINT);
@@ -6107,8 +6107,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTDPMG_UST_DPLOW_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129890 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_NEWVALUE
-    st = getVariable(129890);
+  { // 129965 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_NEWVALUE
+    st = getVariable(129965);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_NEWVALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -6116,8 +6116,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__ALGORITMS_TESTDPMG_UST_DPLOW_NEWVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129891 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_STATUS
-    st = getVariable(129891);
+  { // 129966 RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_STATUS
+    st = getVariable(129966);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_UST_DPLOW_STATUS", 45);
     st->size_data = sizeof(UDINT);
@@ -6125,8 +6125,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTDPMG_UST_DPLOW_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129892 RESOURCE1.ALGORITMS_TESTDPMG_ALGCONTINUE_INCOMMAND_ARM
-    st = getVariable(129892);
+  { // 129967 RESOURCE1.ALGORITMS_TESTDPMG_ALGCONTINUE_INCOMMAND_ARM
+    st = getVariable(129967);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_ALGCONTINUE_INCOMMAND_ARM", 54);
     st->size_data = sizeof(UINT);
@@ -6134,8 +6134,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTDPMG_ALGCONTINUE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129893 RESOURCE1.ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS
-    st = getVariable(129893);
+  { // 129968 RESOURCE1.ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS
+    st = getVariable(129968);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -6143,8 +6143,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTDPMG_ALGCONTINUE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129894 RESOURCE1.ALGORITMS_TESTDPMG_INCOMMAND_ARM
-    st = getVariable(129894);
+  { // 129969 RESOURCE1.ALGORITMS_TESTDPMG_INCOMMAND_ARM
+    st = getVariable(129969);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_INCOMMAND_ARM", 42);
     st->size_data = sizeof(UINT);
@@ -6152,8 +6152,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_TESTDPMG_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129895 RESOURCE1.ALGORITMS_TESTDPMG_STATUS
-    st = getVariable(129895);
+  { // 129970 RESOURCE1.ALGORITMS_TESTDPMG_STATUS
+    st = getVariable(129970);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_TESTDPMG_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -6161,8 +6161,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_TESTDPMG_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129896 RESOURCE1.ALGORITMS_VIBEGPNS_ERROR
-    st = getVariable(129896);
+  { // 129971 RESOURCE1.ALGORITMS_VIBEGPNS_ERROR
+    st = getVariable(129971);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_ERROR", 34);
     st->size_data = sizeof(UDINT);
@@ -6170,8 +6170,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_ERROR;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129897 RESOURCE1.ALGORITMS_VIBEGPNS_START
-    st = getVariable(129897);
+  { // 129972 RESOURCE1.ALGORITMS_VIBEGPNS_START
+    st = getVariable(129972);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_START", 34);
     st->size_data = sizeof(UDINT);
@@ -6179,8 +6179,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_START;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129898 RESOURCE1.ALGORITMS_VIBEGPNS_TOP
-    st = getVariable(129898);
+  { // 129973 RESOURCE1.ALGORITMS_VIBEGPNS_TOP
+    st = getVariable(129973);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_TOP", 32);
     st->size_data = sizeof(UDINT);
@@ -6188,8 +6188,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_TOP;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129899 RESOURCE1.ALGORITMS_VIBEGPNS_ALGCONTINUE_INCOMMAND_ARM
-    st = getVariable(129899);
+  { // 129974 RESOURCE1.ALGORITMS_VIBEGPNS_ALGCONTINUE_INCOMMAND_ARM
+    st = getVariable(129974);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_ALGCONTINUE_INCOMMAND_ARM", 54);
     st->size_data = sizeof(UINT);
@@ -6197,8 +6197,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_ALGCONTINUE_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129900 RESOURCE1.ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS
-    st = getVariable(129900);
+  { // 129975 RESOURCE1.ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS
+    st = getVariable(129975);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -6206,8 +6206,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_ALGCONTINUE_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129901 RESOURCE1.ALGORITMS_VIBEGPNS_INCOMMAND_ARM
-    st = getVariable(129901);
+  { // 129976 RESOURCE1.ALGORITMS_VIBEGPNS_INCOMMAND_ARM
+    st = getVariable(129976);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_INCOMMAND_ARM", 42);
     st->size_data = sizeof(UINT);
@@ -6215,8 +6215,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129902 RESOURCE1.ALGORITMS_VIBEGPNS_STATUS
-    st = getVariable(129902);
+  { // 129977 RESOURCE1.ALGORITMS_VIBEGPNS_STATUS
+    st = getVariable(129977);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -6224,8 +6224,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129903 RESOURCE1.ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER
-    st = getVariable(129903);
+  { // 129978 RESOURCE1.ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER
+    st = getVariable(129978);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER", 44);
     st->size_data = sizeof(UINT);
@@ -6233,8 +6233,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__ALGORITMS_VIBEGPNS_WAITVIBEG_TIMER;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129904 RESOURCE1.PROTECTMANAGER_PROTECTIONINREMONT
-    st = getVariable(129904);
+  { // 129979 RESOURCE1.PROTECTMANAGER_PROTECTIONINREMONT
+    st = getVariable(129979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTMANAGER_PROTECTIONINREMONT", 43);
     st->size_data = sizeof(BOOL);
@@ -6242,8 +6242,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__PROTECTMANAGER_PROTECTIONINREMONT;
     UnpackVar(p_BOOL, BOOL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129905 RESOURCE1.PROTECTIONS_AO_KC_INCOMMAND_ARM
-    st = getVariable(129905);
+  { // 129980 RESOURCE1.PROTECTIONS_AO_KC_INCOMMAND_ARM
+    st = getVariable(129980);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_AO_KC_INCOMMAND_ARM", 41);
     st->size_data = sizeof(UINT);
@@ -6251,8 +6251,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_AO_KC_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129906 RESOURCE1.PROTECTIONS_AO_KC_STATUS
-    st = getVariable(129906);
+  { // 129981 RESOURCE1.PROTECTIONS_AO_KC_STATUS
+    st = getVariable(129981);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_AO_KC_STATUS", 34);
     st->size_data = sizeof(UDINT);
@@ -6260,8 +6260,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_AO_KC_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129907 RESOURCE1.PROTECTIONS_AO_PRU_INCOMMAND_ARM
-    st = getVariable(129907);
+  { // 129982 RESOURCE1.PROTECTIONS_AO_PRU_INCOMMAND_ARM
+    st = getVariable(129982);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_AO_PRU_INCOMMAND_ARM", 42);
     st->size_data = sizeof(UINT);
@@ -6269,8 +6269,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_AO_PRU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129908 RESOURCE1.PROTECTIONS_AO_PRU_STATUS
-    st = getVariable(129908);
+  { // 129983 RESOURCE1.PROTECTIONS_AO_PRU_STATUS
+    st = getVariable(129983);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_AO_PRU_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -6278,8 +6278,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_AO_PRU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129909 RESOURCE1.PROTECTIONS_AO_SHU_INCOMMAND_ARM
-    st = getVariable(129909);
+  { // 129984 RESOURCE1.PROTECTIONS_AO_SHU_INCOMMAND_ARM
+    st = getVariable(129984);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_AO_SHU_INCOMMAND_ARM", 42);
     st->size_data = sizeof(UINT);
@@ -6287,8 +6287,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_AO_SHU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129910 RESOURCE1.PROTECTIONS_AO_SHU_STATUS
-    st = getVariable(129910);
+  { // 129985 RESOURCE1.PROTECTIONS_AO_SHU_STATUS
+    st = getVariable(129985);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_AO_SHU_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -6296,8 +6296,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_AO_SHU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129911 RESOURCE1.PROTECTIONS_BEAO_KNSHU_INCOMMAND_ARM
-    st = getVariable(129911);
+  { // 129986 RESOURCE1.PROTECTIONS_BEAO_KNSHU_INCOMMAND_ARM
+    st = getVariable(129986);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_BEAO_KNSHU_INCOMMAND_ARM", 46);
     st->size_data = sizeof(UINT);
@@ -6305,8 +6305,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_BEAO_KNSHU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129912 RESOURCE1.PROTECTIONS_BEAO_KNSHU_STATUS
-    st = getVariable(129912);
+  { // 129987 RESOURCE1.PROTECTIONS_BEAO_KNSHU_STATUS
+    st = getVariable(129987);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_BEAO_KNSHU_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -6314,8 +6314,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_BEAO_KNSHU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129913 RESOURCE1.PROTECTIONS_DAVLENIEMASLASMAZKIDI_INCOMMAND_ARM
-    st = getVariable(129913);
+  { // 129988 RESOURCE1.PROTECTIONS_DAVLENIEMASLASMAZKIDI_INCOMMAND_ARM
+    st = getVariable(129988);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_DAVLENIEMASLASMAZKIDI_INCOMMAND_ARM", 57);
     st->size_data = sizeof(UINT);
@@ -6323,8 +6323,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_DAVLENIEMASLASMAZKIDI_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129914 RESOURCE1.PROTECTIONS_DAVLENIEMASLASMAZKIDI_STATUS
-    st = getVariable(129914);
+  { // 129989 RESOURCE1.PROTECTIONS_DAVLENIEMASLASMAZKIDI_STATUS
+    st = getVariable(129989);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_DAVLENIEMASLASMAZKIDI_STATUS", 50);
     st->size_data = sizeof(UDINT);
@@ -6332,8 +6332,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_DAVLENIEMASLASMAZKIDI_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129915 RESOURCE1.PROTECTIONS_EAO_PRU_INCOMMAND_ARM
-    st = getVariable(129915);
+  { // 129990 RESOURCE1.PROTECTIONS_EAO_PRU_INCOMMAND_ARM
+    st = getVariable(129990);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_EAO_PRU_INCOMMAND_ARM", 43);
     st->size_data = sizeof(UINT);
@@ -6341,8 +6341,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_EAO_PRU_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129916 RESOURCE1.PROTECTIONS_EAO_PRU_STATUS
-    st = getVariable(129916);
+  { // 129991 RESOURCE1.PROTECTIONS_EAO_PRU_STATUS
+    st = getVariable(129991);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_EAO_PRU_STATUS", 36);
     st->size_data = sizeof(UDINT);
@@ -6350,8 +6350,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_EAO_PRU_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129917 RESOURCE1.PROTECTIONS_KRAN1SDVIG_INCOMMAND_ARM
-    st = getVariable(129917);
+  { // 129992 RESOURCE1.PROTECTIONS_KRAN1SDVIG_INCOMMAND_ARM
+    st = getVariable(129992);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_KRAN1SDVIG_INCOMMAND_ARM", 46);
     st->size_data = sizeof(UINT);
@@ -6359,8 +6359,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_KRAN1SDVIG_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129918 RESOURCE1.PROTECTIONS_KRAN1SDVIG_STATUS
-    st = getVariable(129918);
+  { // 129993 RESOURCE1.PROTECTIONS_KRAN1SDVIG_STATUS
+    st = getVariable(129993);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_KRAN1SDVIG_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -6368,8 +6368,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_KRAN1SDVIG_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129919 RESOURCE1.PROTECTIONS_KRAN2SDVIG_INCOMMAND_ARM
-    st = getVariable(129919);
+  { // 129994 RESOURCE1.PROTECTIONS_KRAN2SDVIG_INCOMMAND_ARM
+    st = getVariable(129994);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_KRAN2SDVIG_INCOMMAND_ARM", 46);
     st->size_data = sizeof(UINT);
@@ -6377,8 +6377,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_KRAN2SDVIG_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129920 RESOURCE1.PROTECTIONS_KRAN2SDVIG_STATUS
-    st = getVariable(129920);
+  { // 129995 RESOURCE1.PROTECTIONS_KRAN2SDVIG_STATUS
+    st = getVariable(129995);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_KRAN2SDVIG_STATUS", 39);
     st->size_data = sizeof(UDINT);
@@ -6386,8 +6386,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_KRAN2SDVIG_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129921 RESOURCE1.PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_INCOMMAND_ARM
-    st = getVariable(129921);
+  { // 129996 RESOURCE1.PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_INCOMMAND_ARM
+    st = getVariable(129996);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_INCOMMAND_ARM", 71);
     st->size_data = sizeof(UINT);
@@ -6395,8 +6395,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129922 RESOURCE1.PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_STATUS
-    st = getVariable(129922);
+  { // 129997 RESOURCE1.PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_STATUS
+    st = getVariable(129997);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_STATUS", 64);
     st->size_data = sizeof(UDINT);
@@ -6404,8 +6404,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_OSEVOI_SDVIG_ROTORA_NAGNETATELIA_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129923 RESOURCE1.PROTECTIONS_OSEVOJSDVIGLEVYJDI_INCOMMAND_ARM
-    st = getVariable(129923);
+  { // 129998 RESOURCE1.PROTECTIONS_OSEVOJSDVIGLEVYJDI_INCOMMAND_ARM
+    st = getVariable(129998);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_OSEVOJSDVIGLEVYJDI_INCOMMAND_ARM", 54);
     st->size_data = sizeof(UINT);
@@ -6413,8 +6413,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_OSEVOJSDVIGLEVYJDI_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129924 RESOURCE1.PROTECTIONS_OSEVOJSDVIGLEVYJDI_STATUS
-    st = getVariable(129924);
+  { // 129999 RESOURCE1.PROTECTIONS_OSEVOJSDVIGLEVYJDI_STATUS
+    st = getVariable(129999);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_OSEVOJSDVIGLEVYJDI_STATUS", 47);
     st->size_data = sizeof(UDINT);
@@ -6422,8 +6422,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_OSEVOJSDVIGLEVYJDI_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129925 RESOURCE1.PROTECTIONS_OSEVOJSDVIGPRAVYJDI_INCOMMAND_ARM
-    st = getVariable(129925);
+  { // 130000 RESOURCE1.PROTECTIONS_OSEVOJSDVIGPRAVYJDI_INCOMMAND_ARM
+    st = getVariable(130000);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_OSEVOJSDVIGPRAVYJDI_INCOMMAND_ARM", 55);
     st->size_data = sizeof(UINT);
@@ -6431,8 +6431,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_OSEVOJSDVIGPRAVYJDI_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129926 RESOURCE1.PROTECTIONS_OSEVOJSDVIGPRAVYJDI_STATUS
-    st = getVariable(129926);
+  { // 130001 RESOURCE1.PROTECTIONS_OSEVOJSDVIGPRAVYJDI_STATUS
+    st = getVariable(130001);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_OSEVOJSDVIGPRAVYJDI_STATUS", 48);
     st->size_data = sizeof(UDINT);
@@ -6440,8 +6440,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_OSEVOJSDVIGPRAVYJDI_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129927 RESOURCE1.PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_INCOMMAND_ARM
-    st = getVariable(129927);
+  { // 130002 RESOURCE1.PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_INCOMMAND_ARM
+    st = getVariable(130002);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_INCOMMAND_ARM", 60);
     st->size_data = sizeof(UINT);
@@ -6449,8 +6449,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129928 RESOURCE1.PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_STATUS
-    st = getVariable(129928);
+  { // 130003 RESOURCE1.PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_STATUS
+    st = getVariable(130003);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_STATUS", 53);
     st->size_data = sizeof(UDINT);
@@ -6458,8 +6458,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_P_MASLA_SMAZKI_NIZKOE_LA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129929 RESOURCE1.PROTECTIONS_SRAB_BEAO_INCOMMAND_ARM
-    st = getVariable(129929);
+  { // 130004 RESOURCE1.PROTECTIONS_SRAB_BEAO_INCOMMAND_ARM
+    st = getVariable(130004);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_SRAB_BEAO_INCOMMAND_ARM", 45);
     st->size_data = sizeof(UINT);
@@ -6467,8 +6467,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_SRAB_BEAO_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129930 RESOURCE1.PROTECTIONS_SRAB_BEAO_STATUS
-    st = getVariable(129930);
+  { // 130005 RESOURCE1.PROTECTIONS_SRAB_BEAO_STATUS
+    st = getVariable(130005);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_SRAB_BEAO_STATUS", 38);
     st->size_data = sizeof(UDINT);
@@ -6476,8 +6476,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_SRAB_BEAO_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129931 RESOURCE1.PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_INCOMMAND_ARM
-    st = getVariable(129931);
+  { // 130006 RESOURCE1.PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_INCOMMAND_ARM
+    st = getVariable(130006);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_INCOMMAND_ARM", 69);
     st->size_data = sizeof(UINT);
@@ -6485,8 +6485,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129932 RESOURCE1.PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_STATUS
-    st = getVariable(129932);
+  { // 130007 RESOURCE1.PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_STATUS
+    st = getVariable(130007);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_STATUS", 62);
     st->size_data = sizeof(UDINT);
@@ -6494,8 +6494,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_GAZA_NA_VYKHODE_NAGNETATELIA_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129933 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_INCOMMAND_ARM
-    st = getVariable(129933);
+  { // 130008 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_INCOMMAND_ARM
+    st = getVariable(130008);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_INCOMMAND_ARM", 77);
     st->size_data = sizeof(UINT);
@@ -6503,8 +6503,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129934 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_STATUS
-    st = getVariable(129934);
+  { // 130009 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_STATUS
+    st = getVariable(130009);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_STATUS", 70);
     st->size_data = sizeof(UDINT);
@@ -6512,8 +6512,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T1_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129935 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_INCOMMAND_ARM
-    st = getVariable(129935);
+  { // 130010 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_INCOMMAND_ARM
+    st = getVariable(130010);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_INCOMMAND_ARM", 77);
     st->size_data = sizeof(UINT);
@@ -6521,8 +6521,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129936 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_STATUS
-    st = getVariable(129936);
+  { // 130011 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_STATUS
+    st = getVariable(130011);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_STATUS", 70);
     st->size_data = sizeof(UDINT);
@@ -6530,8 +6530,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T2_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129937 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_INCOMMAND_ARM
-    st = getVariable(129937);
+  { // 130012 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_INCOMMAND_ARM
+    st = getVariable(130012);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_INCOMMAND_ARM", 77);
     st->size_data = sizeof(UINT);
@@ -6539,8 +6539,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129938 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_STATUS
-    st = getVariable(129938);
+  { // 130013 RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_STATUS
+    st = getVariable(130013);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_STATUS", 70);
     st->size_data = sizeof(UDINT);
@@ -6548,8 +6548,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_OPORNOGO_PODSHIPNIKA_NAGNETATELIA_T3_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129939 RESOURCE1.PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_INCOMMAND_ARM
-    st = getVariable(129939);
+  { // 130014 RESOURCE1.PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_INCOMMAND_ARM
+    st = getVariable(130014);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_INCOMMAND_ARM", 83);
     st->size_data = sizeof(UINT);
@@ -6557,8 +6557,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129940 RESOURCE1.PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_STATUS
-    st = getVariable(129940);
+  { // 130015 RESOURCE1.PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_STATUS
+    st = getVariable(130015);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_STATUS", 76);
     st->size_data = sizeof(UDINT);
@@ -6566,8 +6566,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_OPORNOUPORNOGO_PODSHIPNIKA_NAGNETATELIA_T4_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129941 RESOURCE1.PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_INCOMMAND_ARM
-    st = getVariable(129941);
+  { // 130016 RESOURCE1.PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_INCOMMAND_ARM
+    st = getVariable(130016);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_INCOMMAND_ARM", 85);
     st->size_data = sizeof(UINT);
@@ -6575,8 +6575,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129942 RESOURCE1.PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_STATUS
-    st = getVariable(129942);
+  { // 130017 RESOURCE1.PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_STATUS
+    st = getVariable(130017);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_STATUS", 78);
     st->size_data = sizeof(UDINT);
@@ -6584,8 +6584,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_PEREDNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T1_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129943 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_INCOMMAND_ARM
-    st = getVariable(129943);
+  { // 130018 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_INCOMMAND_ARM
+    st = getVariable(130018);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_INCOMMAND_ARM", 65);
     st->size_data = sizeof(UINT);
@@ -6593,8 +6593,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129944 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_STATUS
-    st = getVariable(129944);
+  { // 130019 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_STATUS
+    st = getVariable(130019);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -6602,8 +6602,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T1_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129945 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_INCOMMAND_ARM
-    st = getVariable(129945);
+  { // 130020 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_INCOMMAND_ARM
+    st = getVariable(130020);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_INCOMMAND_ARM", 65);
     st->size_data = sizeof(UINT);
@@ -6611,8 +6611,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129946 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_STATUS
-    st = getVariable(129946);
+  { // 130021 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_STATUS
+    st = getVariable(130021);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -6620,8 +6620,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T2_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129947 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_INCOMMAND_ARM
-    st = getVariable(129947);
+  { // 130022 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_INCOMMAND_ARM
+    st = getVariable(130022);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_INCOMMAND_ARM", 65);
     st->size_data = sizeof(UINT);
@@ -6629,8 +6629,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129948 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_STATUS
-    st = getVariable(129948);
+  { // 130023 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_STATUS
+    st = getVariable(130023);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -6638,8 +6638,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T3_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129949 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_INCOMMAND_ARM
-    st = getVariable(129949);
+  { // 130024 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_INCOMMAND_ARM
+    st = getVariable(130024);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_INCOMMAND_ARM", 65);
     st->size_data = sizeof(UINT);
@@ -6647,8 +6647,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129950 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_STATUS
-    st = getVariable(129950);
+  { // 130025 RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_STATUS
+    st = getVariable(130025);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_STATUS", 58);
     st->size_data = sizeof(UDINT);
@@ -6656,8 +6656,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_PODSHIPNIKA_REDUKTORA_T4_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129951 RESOURCE1.PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_INCOMMAND_ARM
-    st = getVariable(129951);
+  { // 130026 RESOURCE1.PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_INCOMMAND_ARM
+    st = getVariable(130026);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_INCOMMAND_ARM", 83);
     st->size_data = sizeof(UINT);
@@ -6665,8 +6665,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129952 RESOURCE1.PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_STATUS
-    st = getVariable(129952);
+  { // 130027 RESOURCE1.PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_STATUS
+    st = getVariable(130027);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_STATUS", 76);
     st->size_data = sizeof(UDINT);
@@ -6674,8 +6674,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_T_ZADNEGO_OPORNOGO_PODSHIPNIKA_DVIGATELIA_T2_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129953 RESOURCE1.PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_INCOMMAND_ARM
-    st = getVariable(129953);
+  { // 130028 RESOURCE1.PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_INCOMMAND_ARM
+    st = getVariable(130028);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_INCOMMAND_ARM", 63);
     st->size_data = sizeof(UINT);
@@ -6683,8 +6683,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129954 RESOURCE1.PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_STATUS
-    st = getVariable(129954);
+  { // 130029 RESOURCE1.PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_STATUS
+    st = getVariable(130029);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_STATUS", 56);
     st->size_data = sizeof(UDINT);
@@ -6692,8 +6692,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_UROVEN_MASLA_V_MASLOBAKE_LA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129955 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T1_HA_INCOMMAND_ARM
-    st = getVariable(129955);
+  { // 130030 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T1_HA_INCOMMAND_ARM
+    st = getVariable(130030);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T1_HA_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -6701,8 +6701,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_STD_T1_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129956 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T1_HA_STATUS
-    st = getVariable(129956);
+  { // 130031 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T1_HA_STATUS
+    st = getVariable(130031);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T1_HA_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -6710,8 +6710,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_STD_T1_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129957 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T2_HA_INCOMMAND_ARM
-    st = getVariable(129957);
+  { // 130032 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T2_HA_INCOMMAND_ARM
+    st = getVariable(130032);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T2_HA_INCOMMAND_ARM", 56);
     st->size_data = sizeof(UINT);
@@ -6719,8 +6719,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_STD_T2_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129958 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T2_HA_STATUS
-    st = getVariable(129958);
+  { // 130033 RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T2_HA_STATUS
+    st = getVariable(130033);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_STD_T2_HA_STATUS", 49);
     st->size_data = sizeof(UDINT);
@@ -6728,8 +6728,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_STD_T2_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129959 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_INCOMMAND_ARM
-    st = getVariable(129959);
+  { // 130034 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_INCOMMAND_ARM
+    st = getVariable(130034);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_INCOMMAND_ARM", 72);
     st->size_data = sizeof(UINT);
@@ -6737,8 +6737,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129960 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_STATUS
-    st = getVariable(129960);
+  { // 130035 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_STATUS
+    st = getVariable(130035);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -6746,8 +6746,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T1_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129961 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_INCOMMAND_ARM
-    st = getVariable(129961);
+  { // 130036 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_INCOMMAND_ARM
+    st = getVariable(130036);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_INCOMMAND_ARM", 72);
     st->size_data = sizeof(UINT);
@@ -6755,8 +6755,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129962 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_STATUS
-    st = getVariable(129962);
+  { // 130037 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_STATUS
+    st = getVariable(130037);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -6764,8 +6764,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T2_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129963 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_INCOMMAND_ARM
-    st = getVariable(129963);
+  { // 130038 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_INCOMMAND_ARM
+    st = getVariable(130038);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_INCOMMAND_ARM", 72);
     st->size_data = sizeof(UINT);
@@ -6773,8 +6773,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129964 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_STATUS
-    st = getVariable(129964);
+  { // 130039 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_STATUS
+    st = getVariable(130039);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -6782,8 +6782,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T3_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129965 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_INCOMMAND_ARM
-    st = getVariable(129965);
+  { // 130040 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_INCOMMAND_ARM
+    st = getVariable(130040);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_INCOMMAND_ARM", 72);
     st->size_data = sizeof(UINT);
@@ -6791,8 +6791,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129966 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_STATUS
-    st = getVariable(129966);
+  { // 130041 RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_STATUS
+    st = getVariable(130041);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_STATUS", 65);
     st->size_data = sizeof(UDINT);
@@ -6800,8 +6800,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_VIBRATCIIA_ROTORA_NAGNETATELIA_T4_HA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129967 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LOWDI_INCOMMAND_ARM
-    st = getVariable(129967);
+  { // 130042 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LOWDI_INCOMMAND_ARM
+    st = getVariable(130042);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LOWDI_INCOMMAND_ARM", 53);
     st->size_data = sizeof(UINT);
@@ -6809,8 +6809,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_DP_MASLOGAZ_LOWDI_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129968 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LOWDI_STATUS
-    st = getVariable(129968);
+  { // 130043 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LOWDI_STATUS
+    st = getVariable(130043);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LOWDI_STATUS", 46);
     st->size_data = sizeof(UDINT);
@@ -6818,8 +6818,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_DP_MASLOGAZ_LOWDI_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129969 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LA_INCOMMAND_ARM
-    st = getVariable(129969);
+  { // 130044 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LA_INCOMMAND_ARM
+    st = getVariable(130044);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LA_INCOMMAND_ARM", 50);
     st->size_data = sizeof(UINT);
@@ -6827,8 +6827,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_DP_MASLOGAZ_LA_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129970 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LA_STATUS
-    st = getVariable(129970);
+  { // 130045 RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LA_STATUS
+    st = getVariable(130045);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_DP_MASLOGAZ_LA_STATUS", 43);
     st->size_data = sizeof(UDINT);
@@ -6836,8 +6836,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_DP_MASLOGAZ_LA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129971 RESOURCE1.PROTECTIONS_MVOFF_INCOMMAND_ARM
-    st = getVariable(129971);
+  { // 130046 RESOURCE1.PROTECTIONS_MVOFF_INCOMMAND_ARM
+    st = getVariable(130046);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_MVOFF_INCOMMAND_ARM", 41);
     st->size_data = sizeof(UINT);
@@ -6845,8 +6845,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__PROTECTIONS_MVOFF_INCOMMAND_ARM;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129972 RESOURCE1.PROTECTIONS_MVOFF_STATUS
-    st = getVariable(129972);
+  { // 130047 RESOURCE1.PROTECTIONS_MVOFF_STATUS
+    st = getVariable(130047);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.PROTECTIONS_MVOFF_STATUS", 34);
     st->size_data = sizeof(UDINT);
@@ -6854,8 +6854,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__PROTECTIONS_MVOFF_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129973 RESOURCE1.ALGORITMS_AUTONU_RESET_HASNU
-    st = getVariable(129973);
+  { // 130048 RESOURCE1.ALGORITMS_AUTONU_RESET_HASNU
+    st = getVariable(130048);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.ALGORITMS_AUTONU_RESET_HASNU", 38);
     st->size_data = sizeof(BOOL);
@@ -6863,8 +6863,8 @@ int __variables_init_(){
     p_BOOL = (BOOL*)&RESOURCE1__ALGORITMS_AUTONU_RESET_HASNU;
     UnpackVar(p_BOOL, BOOL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129974 RESOURCE1.A1_10_ERR_MODE
-    st = getVariable(129974);
+  { // 130049 RESOURCE1.A1_10_ERR_MODE
+    st = getVariable(130049);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_10_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -6872,8 +6872,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_10_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129975 RESOURCE1.A1_11_ERR_MODE
-    st = getVariable(129975);
+  { // 130050 RESOURCE1.A1_11_ERR_MODE
+    st = getVariable(130050);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_11_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -6881,8 +6881,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_11_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129976 RESOURCE1.A1_12_ERR_MODE
-    st = getVariable(129976);
+  { // 130051 RESOURCE1.A1_12_ERR_MODE
+    st = getVariable(130051);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_12_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -6890,8 +6890,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_12_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129977 RESOURCE1.A1_13_ERR_MODE
-    st = getVariable(129977);
+  { // 130052 RESOURCE1.A1_13_ERR_MODE
+    st = getVariable(130052);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_13_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -6899,8 +6899,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_13_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129978 RESOURCE1.A1_14_ERR_MODE
-    st = getVariable(129978);
+  { // 130053 RESOURCE1.A1_14_ERR_MODE
+    st = getVariable(130053);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_14_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -6908,8 +6908,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_14_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129979 RESOURCE1.A1_15_ERR_MODE
-    st = getVariable(129979);
+  { // 130054 RESOURCE1.A1_15_ERR_MODE
+    st = getVariable(130054);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_15_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -6917,8 +6917,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_15_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129980 RESOURCE1.A1_1_ERR_MODE
-    st = getVariable(129980);
+  { // 130055 RESOURCE1.A1_1_ERR_MODE
+    st = getVariable(130055);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_1_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6926,8 +6926,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_1_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129981 RESOURCE1.A1_2_ERR_MODE
-    st = getVariable(129981);
+  { // 130056 RESOURCE1.A1_2_ERR_MODE
+    st = getVariable(130056);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_2_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6935,8 +6935,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_2_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129982 RESOURCE1.A1_3_ERR_MODE
-    st = getVariable(129982);
+  { // 130057 RESOURCE1.A1_3_ERR_MODE
+    st = getVariable(130057);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_3_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6944,8 +6944,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_3_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129983 RESOURCE1.A1_4_ERR_MODE
-    st = getVariable(129983);
+  { // 130058 RESOURCE1.A1_4_ERR_MODE
+    st = getVariable(130058);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_4_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6953,8 +6953,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_4_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129984 RESOURCE1.A1_5_ERR_MODE
-    st = getVariable(129984);
+  { // 130059 RESOURCE1.A1_5_ERR_MODE
+    st = getVariable(130059);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_5_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6962,8 +6962,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_5_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129985 RESOURCE1.A1_6_ERR_MODE
-    st = getVariable(129985);
+  { // 130060 RESOURCE1.A1_6_ERR_MODE
+    st = getVariable(130060);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_6_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6971,8 +6971,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_6_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129986 RESOURCE1.A1_7_ERR_MODE
-    st = getVariable(129986);
+  { // 130061 RESOURCE1.A1_7_ERR_MODE
+    st = getVariable(130061);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_7_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6980,8 +6980,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_7_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129987 RESOURCE1.A1_8_ERR_MODE
-    st = getVariable(129987);
+  { // 130062 RESOURCE1.A1_8_ERR_MODE
+    st = getVariable(130062);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_8_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6989,8 +6989,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_8_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129988 RESOURCE1.A1_9_ERR_MODE
-    st = getVariable(129988);
+  { // 130063 RESOURCE1.A1_9_ERR_MODE
+    st = getVariable(130063);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A1_9_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -6998,8 +6998,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A1_9_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129989 RESOURCE1.A2_10_ERR_MODE
-    st = getVariable(129989);
+  { // 130064 RESOURCE1.A2_10_ERR_MODE
+    st = getVariable(130064);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_10_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -7007,8 +7007,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_10_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129990 RESOURCE1.A2_11_ERR_MODE
-    st = getVariable(129990);
+  { // 130065 RESOURCE1.A2_11_ERR_MODE
+    st = getVariable(130065);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_11_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -7016,8 +7016,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_11_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129991 RESOURCE1.A2_12_ERR_MODE
-    st = getVariable(129991);
+  { // 130066 RESOURCE1.A2_12_ERR_MODE
+    st = getVariable(130066);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_12_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -7025,8 +7025,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_12_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129992 RESOURCE1.A2_13_ERR_MODE
-    st = getVariable(129992);
+  { // 130067 RESOURCE1.A2_13_ERR_MODE
+    st = getVariable(130067);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_13_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -7034,8 +7034,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_13_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129993 RESOURCE1.A2_14_ERR_MODE
-    st = getVariable(129993);
+  { // 130068 RESOURCE1.A2_14_ERR_MODE
+    st = getVariable(130068);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_14_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -7043,8 +7043,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_14_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129994 RESOURCE1.A2_15_ERR_MODE
-    st = getVariable(129994);
+  { // 130069 RESOURCE1.A2_15_ERR_MODE
+    st = getVariable(130069);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_15_ERR_MODE", 24);
     st->size_data = sizeof(UINT);
@@ -7052,8 +7052,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_15_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129995 RESOURCE1.A2_1_ERR_MODE
-    st = getVariable(129995);
+  { // 130070 RESOURCE1.A2_1_ERR_MODE
+    st = getVariable(130070);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_1_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7061,8 +7061,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_1_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129996 RESOURCE1.A2_2_ERR_MODE
-    st = getVariable(129996);
+  { // 130071 RESOURCE1.A2_2_ERR_MODE
+    st = getVariable(130071);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_2_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7070,8 +7070,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_2_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129997 RESOURCE1.A2_3_ERR_MODE
-    st = getVariable(129997);
+  { // 130072 RESOURCE1.A2_3_ERR_MODE
+    st = getVariable(130072);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_3_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7079,8 +7079,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_3_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129998 RESOURCE1.A2_4_ERR_MODE
-    st = getVariable(129998);
+  { // 130073 RESOURCE1.A2_4_ERR_MODE
+    st = getVariable(130073);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_4_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7088,8 +7088,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_4_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 129999 RESOURCE1.A2_5_ERR_MODE
-    st = getVariable(129999);
+  { // 130074 RESOURCE1.A2_5_ERR_MODE
+    st = getVariable(130074);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_5_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7097,8 +7097,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_5_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130000 RESOURCE1.A2_6_ERR_MODE
-    st = getVariable(130000);
+  { // 130075 RESOURCE1.A2_6_ERR_MODE
+    st = getVariable(130075);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_6_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7106,8 +7106,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_6_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130001 RESOURCE1.A2_7_ERR_MODE
-    st = getVariable(130001);
+  { // 130076 RESOURCE1.A2_7_ERR_MODE
+    st = getVariable(130076);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_7_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7115,8 +7115,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_7_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130002 RESOURCE1.A2_8_ERR_MODE
-    st = getVariable(130002);
+  { // 130077 RESOURCE1.A2_8_ERR_MODE
+    st = getVariable(130077);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_8_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7124,8 +7124,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_8_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130003 RESOURCE1.A2_9_ERR_MODE
-    st = getVariable(130003);
+  { // 130078 RESOURCE1.A2_9_ERR_MODE
+    st = getVariable(130078);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.A2_9_ERR_MODE", 23);
     st->size_data = sizeof(UINT);
@@ -7133,8 +7133,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__A2_9_ERR_MODE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130004 RESOURCE1.AI_0_DBLVALUE
-    st = getVariable(130004);
+  { // 130079 RESOURCE1.AI_0_DBLVALUE
+    st = getVariable(130079);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_0_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7142,8 +7142,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_0_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130005 RESOURCE1.AI_10_DBLVALUE
-    st = getVariable(130005);
+  { // 130080 RESOURCE1.AI_10_DBLVALUE
+    st = getVariable(130080);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_10_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7151,8 +7151,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_10_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130006 RESOURCE1.AI_11_DBLVALUE
-    st = getVariable(130006);
+  { // 130081 RESOURCE1.AI_11_DBLVALUE
+    st = getVariable(130081);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_11_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7160,8 +7160,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_11_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130007 RESOURCE1.AI_12_DBLVALUE
-    st = getVariable(130007);
+  { // 130082 RESOURCE1.AI_12_DBLVALUE
+    st = getVariable(130082);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_12_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7169,8 +7169,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_12_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130008 RESOURCE1.AI_13_DBLVALUE
-    st = getVariable(130008);
+  { // 130083 RESOURCE1.AI_13_DBLVALUE
+    st = getVariable(130083);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_13_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7178,8 +7178,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_13_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130009 RESOURCE1.AI_14_DBLVALUE
-    st = getVariable(130009);
+  { // 130084 RESOURCE1.AI_14_DBLVALUE
+    st = getVariable(130084);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_14_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7187,8 +7187,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_14_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130010 RESOURCE1.AI_15_DBLVALUE
-    st = getVariable(130010);
+  { // 130085 RESOURCE1.AI_15_DBLVALUE
+    st = getVariable(130085);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_15_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7196,8 +7196,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_15_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130011 RESOURCE1.AI_16_DBLVALUE
-    st = getVariable(130011);
+  { // 130086 RESOURCE1.AI_16_DBLVALUE
+    st = getVariable(130086);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_16_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7205,8 +7205,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_16_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130012 RESOURCE1.AI_17_DBLVALUE
-    st = getVariable(130012);
+  { // 130087 RESOURCE1.AI_17_DBLVALUE
+    st = getVariable(130087);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_17_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7214,8 +7214,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_17_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130013 RESOURCE1.AI_18_DBLVALUE
-    st = getVariable(130013);
+  { // 130088 RESOURCE1.AI_18_DBLVALUE
+    st = getVariable(130088);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_18_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7223,8 +7223,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_18_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130014 RESOURCE1.AI_19_DBLVALUE
-    st = getVariable(130014);
+  { // 130089 RESOURCE1.AI_19_DBLVALUE
+    st = getVariable(130089);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_19_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7232,8 +7232,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_19_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130015 RESOURCE1.AI_1_DBLVALUE
-    st = getVariable(130015);
+  { // 130090 RESOURCE1.AI_1_DBLVALUE
+    st = getVariable(130090);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_1_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7241,8 +7241,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_1_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130016 RESOURCE1.AI_20_DBLVALUE
-    st = getVariable(130016);
+  { // 130091 RESOURCE1.AI_20_DBLVALUE
+    st = getVariable(130091);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_20_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7250,8 +7250,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_20_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130017 RESOURCE1.AI_21_DBLVALUE
-    st = getVariable(130017);
+  { // 130092 RESOURCE1.AI_21_DBLVALUE
+    st = getVariable(130092);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_21_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7259,8 +7259,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_21_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130018 RESOURCE1.AI_22_DBLVALUE
-    st = getVariable(130018);
+  { // 130093 RESOURCE1.AI_22_DBLVALUE
+    st = getVariable(130093);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_22_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7268,8 +7268,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_22_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130019 RESOURCE1.AI_23_DBLVALUE
-    st = getVariable(130019);
+  { // 130094 RESOURCE1.AI_23_DBLVALUE
+    st = getVariable(130094);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_23_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7277,8 +7277,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_23_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130020 RESOURCE1.AI_24_DBLVALUE
-    st = getVariable(130020);
+  { // 130095 RESOURCE1.AI_24_DBLVALUE
+    st = getVariable(130095);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_24_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7286,8 +7286,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_24_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130021 RESOURCE1.AI_25_DBLVALUE
-    st = getVariable(130021);
+  { // 130096 RESOURCE1.AI_25_DBLVALUE
+    st = getVariable(130096);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_25_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7295,8 +7295,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_25_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130022 RESOURCE1.AI_26_DBLVALUE
-    st = getVariable(130022);
+  { // 130097 RESOURCE1.AI_26_DBLVALUE
+    st = getVariable(130097);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_26_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7304,8 +7304,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_26_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130023 RESOURCE1.AI_27_DBLVALUE
-    st = getVariable(130023);
+  { // 130098 RESOURCE1.AI_27_DBLVALUE
+    st = getVariable(130098);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_27_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7313,8 +7313,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_27_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130024 RESOURCE1.AI_28_DBLVALUE
-    st = getVariable(130024);
+  { // 130099 RESOURCE1.AI_28_DBLVALUE
+    st = getVariable(130099);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_28_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7322,8 +7322,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_28_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130025 RESOURCE1.AI_29_DBLVALUE
-    st = getVariable(130025);
+  { // 130100 RESOURCE1.AI_29_DBLVALUE
+    st = getVariable(130100);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_29_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7331,8 +7331,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_29_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130026 RESOURCE1.AI_2_DBLVALUE
-    st = getVariable(130026);
+  { // 130101 RESOURCE1.AI_2_DBLVALUE
+    st = getVariable(130101);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_2_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7340,8 +7340,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_2_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130027 RESOURCE1.AI_30_DBLVALUE
-    st = getVariable(130027);
+  { // 130102 RESOURCE1.AI_30_DBLVALUE
+    st = getVariable(130102);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_30_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7349,8 +7349,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_30_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130028 RESOURCE1.AI_31_DBLVALUE
-    st = getVariable(130028);
+  { // 130103 RESOURCE1.AI_31_DBLVALUE
+    st = getVariable(130103);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_31_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7358,8 +7358,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_31_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130029 RESOURCE1.AI_32_DBLVALUE
-    st = getVariable(130029);
+  { // 130104 RESOURCE1.AI_32_DBLVALUE
+    st = getVariable(130104);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_32_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7367,8 +7367,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_32_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130030 RESOURCE1.AI_33_DBLVALUE
-    st = getVariable(130030);
+  { // 130105 RESOURCE1.AI_33_DBLVALUE
+    st = getVariable(130105);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_33_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7376,8 +7376,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_33_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130031 RESOURCE1.AI_34_DBLVALUE
-    st = getVariable(130031);
+  { // 130106 RESOURCE1.AI_34_DBLVALUE
+    st = getVariable(130106);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_34_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7385,8 +7385,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_34_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130032 RESOURCE1.AI_35_DBLVALUE
-    st = getVariable(130032);
+  { // 130107 RESOURCE1.AI_35_DBLVALUE
+    st = getVariable(130107);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_35_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7394,8 +7394,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_35_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130033 RESOURCE1.AI_36_DBLVALUE
-    st = getVariable(130033);
+  { // 130108 RESOURCE1.AI_36_DBLVALUE
+    st = getVariable(130108);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_36_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7403,8 +7403,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_36_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130034 RESOURCE1.AI_37_DBLVALUE
-    st = getVariable(130034);
+  { // 130109 RESOURCE1.AI_37_DBLVALUE
+    st = getVariable(130109);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_37_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7412,8 +7412,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_37_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130035 RESOURCE1.AI_38_DBLVALUE
-    st = getVariable(130035);
+  { // 130110 RESOURCE1.AI_38_DBLVALUE
+    st = getVariable(130110);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_38_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7421,8 +7421,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_38_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130036 RESOURCE1.AI_39_DBLVALUE
-    st = getVariable(130036);
+  { // 130111 RESOURCE1.AI_39_DBLVALUE
+    st = getVariable(130111);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_39_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7430,8 +7430,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_39_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130037 RESOURCE1.AI_3_DBLVALUE
-    st = getVariable(130037);
+  { // 130112 RESOURCE1.AI_3_DBLVALUE
+    st = getVariable(130112);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_3_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7439,8 +7439,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_3_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130038 RESOURCE1.AI_40_DBLVALUE
-    st = getVariable(130038);
+  { // 130113 RESOURCE1.AI_40_DBLVALUE
+    st = getVariable(130113);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_40_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7448,8 +7448,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_40_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130039 RESOURCE1.AI_41_DBLVALUE
-    st = getVariable(130039);
+  { // 130114 RESOURCE1.AI_41_DBLVALUE
+    st = getVariable(130114);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_41_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7457,8 +7457,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_41_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130040 RESOURCE1.AI_42_DBLVALUE
-    st = getVariable(130040);
+  { // 130115 RESOURCE1.AI_42_DBLVALUE
+    st = getVariable(130115);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_42_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7466,8 +7466,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_42_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130041 RESOURCE1.AI_43_DBLVALUE
-    st = getVariable(130041);
+  { // 130116 RESOURCE1.AI_43_DBLVALUE
+    st = getVariable(130116);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_43_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7475,8 +7475,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_43_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130042 RESOURCE1.AI_44_DBLVALUE
-    st = getVariable(130042);
+  { // 130117 RESOURCE1.AI_44_DBLVALUE
+    st = getVariable(130117);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_44_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7484,8 +7484,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_44_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130043 RESOURCE1.AI_45_DBLVALUE
-    st = getVariable(130043);
+  { // 130118 RESOURCE1.AI_45_DBLVALUE
+    st = getVariable(130118);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_45_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7493,8 +7493,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_45_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130044 RESOURCE1.AI_46_DBLVALUE
-    st = getVariable(130044);
+  { // 130119 RESOURCE1.AI_46_DBLVALUE
+    st = getVariable(130119);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_46_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7502,8 +7502,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_46_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130045 RESOURCE1.AI_47_DBLVALUE
-    st = getVariable(130045);
+  { // 130120 RESOURCE1.AI_47_DBLVALUE
+    st = getVariable(130120);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_47_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7511,8 +7511,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_47_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130046 RESOURCE1.AI_48_DBLVALUE
-    st = getVariable(130046);
+  { // 130121 RESOURCE1.AI_48_DBLVALUE
+    st = getVariable(130121);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_48_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7520,8 +7520,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_48_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130047 RESOURCE1.AI_49_DBLVALUE
-    st = getVariable(130047);
+  { // 130122 RESOURCE1.AI_49_DBLVALUE
+    st = getVariable(130122);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_49_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7529,8 +7529,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_49_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130048 RESOURCE1.AI_4_DBLVALUE
-    st = getVariable(130048);
+  { // 130123 RESOURCE1.AI_4_DBLVALUE
+    st = getVariable(130123);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_4_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7538,8 +7538,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_4_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130049 RESOURCE1.AI_50_DBLVALUE
-    st = getVariable(130049);
+  { // 130124 RESOURCE1.AI_50_DBLVALUE
+    st = getVariable(130124);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_50_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7547,8 +7547,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_50_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130050 RESOURCE1.AI_51_DBLVALUE
-    st = getVariable(130050);
+  { // 130125 RESOURCE1.AI_51_DBLVALUE
+    st = getVariable(130125);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_51_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7556,8 +7556,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_51_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130051 RESOURCE1.AI_52_DBLVALUE
-    st = getVariable(130051);
+  { // 130126 RESOURCE1.AI_52_DBLVALUE
+    st = getVariable(130126);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_52_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7565,8 +7565,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_52_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130052 RESOURCE1.AI_53_DBLVALUE
-    st = getVariable(130052);
+  { // 130127 RESOURCE1.AI_53_DBLVALUE
+    st = getVariable(130127);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_53_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7574,8 +7574,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_53_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130053 RESOURCE1.AI_54_DBLVALUE
-    st = getVariable(130053);
+  { // 130128 RESOURCE1.AI_54_DBLVALUE
+    st = getVariable(130128);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_54_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7583,8 +7583,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_54_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130054 RESOURCE1.AI_55_DBLVALUE
-    st = getVariable(130054);
+  { // 130129 RESOURCE1.AI_55_DBLVALUE
+    st = getVariable(130129);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_55_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7592,8 +7592,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_55_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130055 RESOURCE1.AI_56_DBLVALUE
-    st = getVariable(130055);
+  { // 130130 RESOURCE1.AI_56_DBLVALUE
+    st = getVariable(130130);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_56_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7601,8 +7601,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_56_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130056 RESOURCE1.AI_57_DBLVALUE
-    st = getVariable(130056);
+  { // 130131 RESOURCE1.AI_57_DBLVALUE
+    st = getVariable(130131);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_57_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7610,8 +7610,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_57_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130057 RESOURCE1.AI_58_DBLVALUE
-    st = getVariable(130057);
+  { // 130132 RESOURCE1.AI_58_DBLVALUE
+    st = getVariable(130132);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_58_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7619,8 +7619,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_58_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130058 RESOURCE1.AI_59_DBLVALUE
-    st = getVariable(130058);
+  { // 130133 RESOURCE1.AI_59_DBLVALUE
+    st = getVariable(130133);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_59_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7628,8 +7628,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_59_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130059 RESOURCE1.AI_5_DBLVALUE
-    st = getVariable(130059);
+  { // 130134 RESOURCE1.AI_5_DBLVALUE
+    st = getVariable(130134);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_5_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7637,8 +7637,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_5_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130060 RESOURCE1.AI_60_DBLVALUE
-    st = getVariable(130060);
+  { // 130135 RESOURCE1.AI_60_DBLVALUE
+    st = getVariable(130135);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_60_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7646,8 +7646,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_60_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130061 RESOURCE1.AI_61_DBLVALUE
-    st = getVariable(130061);
+  { // 130136 RESOURCE1.AI_61_DBLVALUE
+    st = getVariable(130136);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_61_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7655,8 +7655,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_61_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130062 RESOURCE1.AI_62_DBLVALUE
-    st = getVariable(130062);
+  { // 130137 RESOURCE1.AI_62_DBLVALUE
+    st = getVariable(130137);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_62_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7664,8 +7664,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_62_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130063 RESOURCE1.AI_63_DBLVALUE
-    st = getVariable(130063);
+  { // 130138 RESOURCE1.AI_63_DBLVALUE
+    st = getVariable(130138);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_63_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7673,8 +7673,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_63_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130064 RESOURCE1.AI_64_DBLVALUE
-    st = getVariable(130064);
+  { // 130139 RESOURCE1.AI_64_DBLVALUE
+    st = getVariable(130139);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_64_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7682,8 +7682,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_64_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130065 RESOURCE1.AI_65_DBLVALUE
-    st = getVariable(130065);
+  { // 130140 RESOURCE1.AI_65_DBLVALUE
+    st = getVariable(130140);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_65_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7691,8 +7691,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_65_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130066 RESOURCE1.AI_66_DBLVALUE
-    st = getVariable(130066);
+  { // 130141 RESOURCE1.AI_66_DBLVALUE
+    st = getVariable(130141);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_66_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7700,8 +7700,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_66_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130067 RESOURCE1.AI_67_DBLVALUE
-    st = getVariable(130067);
+  { // 130142 RESOURCE1.AI_67_DBLVALUE
+    st = getVariable(130142);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_67_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7709,8 +7709,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_67_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130068 RESOURCE1.AI_68_DBLVALUE
-    st = getVariable(130068);
+  { // 130143 RESOURCE1.AI_68_DBLVALUE
+    st = getVariable(130143);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_68_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7718,8 +7718,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_68_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130069 RESOURCE1.AI_69_DBLVALUE
-    st = getVariable(130069);
+  { // 130144 RESOURCE1.AI_69_DBLVALUE
+    st = getVariable(130144);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_69_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7727,8 +7727,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_69_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130070 RESOURCE1.AI_6_DBLVALUE
-    st = getVariable(130070);
+  { // 130145 RESOURCE1.AI_6_DBLVALUE
+    st = getVariable(130145);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_6_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7736,8 +7736,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_6_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130071 RESOURCE1.AI_70_DBLVALUE
-    st = getVariable(130071);
+  { // 130146 RESOURCE1.AI_70_DBLVALUE
+    st = getVariable(130146);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_70_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7745,8 +7745,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_70_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130072 RESOURCE1.AI_71_DBLVALUE
-    st = getVariable(130072);
+  { // 130147 RESOURCE1.AI_71_DBLVALUE
+    st = getVariable(130147);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_71_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7754,8 +7754,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_71_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130073 RESOURCE1.AI_72_DBLVALUE
-    st = getVariable(130073);
+  { // 130148 RESOURCE1.AI_72_DBLVALUE
+    st = getVariable(130148);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_72_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7763,8 +7763,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_72_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130074 RESOURCE1.AI_73_DBLVALUE
-    st = getVariable(130074);
+  { // 130149 RESOURCE1.AI_73_DBLVALUE
+    st = getVariable(130149);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_73_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7772,8 +7772,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_73_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130075 RESOURCE1.AI_74_DBLVALUE
-    st = getVariable(130075);
+  { // 130150 RESOURCE1.AI_74_DBLVALUE
+    st = getVariable(130150);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_74_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7781,8 +7781,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_74_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130076 RESOURCE1.AI_75_DBLVALUE
-    st = getVariable(130076);
+  { // 130151 RESOURCE1.AI_75_DBLVALUE
+    st = getVariable(130151);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_75_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7790,8 +7790,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_75_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130077 RESOURCE1.AI_76_DBLVALUE
-    st = getVariable(130077);
+  { // 130152 RESOURCE1.AI_76_DBLVALUE
+    st = getVariable(130152);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_76_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7799,8 +7799,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_76_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130078 RESOURCE1.AI_77_DBLVALUE
-    st = getVariable(130078);
+  { // 130153 RESOURCE1.AI_77_DBLVALUE
+    st = getVariable(130153);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_77_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7808,8 +7808,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_77_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130079 RESOURCE1.AI_78_DBLVALUE
-    st = getVariable(130079);
+  { // 130154 RESOURCE1.AI_78_DBLVALUE
+    st = getVariable(130154);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_78_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7817,8 +7817,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_78_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130080 RESOURCE1.AI_79_DBLVALUE
-    st = getVariable(130080);
+  { // 130155 RESOURCE1.AI_79_DBLVALUE
+    st = getVariable(130155);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_79_DBLVALUE", 24);
     st->size_data = sizeof(LREAL);
@@ -7826,8 +7826,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_79_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130081 RESOURCE1.AI_7_DBLVALUE
-    st = getVariable(130081);
+  { // 130156 RESOURCE1.AI_7_DBLVALUE
+    st = getVariable(130156);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_7_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7835,8 +7835,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_7_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130082 RESOURCE1.AI_8_DBLVALUE
-    st = getVariable(130082);
+  { // 130157 RESOURCE1.AI_8_DBLVALUE
+    st = getVariable(130157);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_8_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7844,8 +7844,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_8_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130083 RESOURCE1.AI_9_DBLVALUE
-    st = getVariable(130083);
+  { // 130158 RESOURCE1.AI_9_DBLVALUE
+    st = getVariable(130158);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_9_DBLVALUE", 23);
     st->size_data = sizeof(LREAL);
@@ -7853,8 +7853,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_9_DBLVALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130084 RESOURCE1.BS_CORE1
-    st = getVariable(130084);
+  { // 130159 RESOURCE1.BS_CORE1
+    st = getVariable(130159);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_CORE1", 18);
     st->size_data = sizeof(REAL);
@@ -7862,8 +7862,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_CORE1;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130085 RESOURCE1.BS_CORE2
-    st = getVariable(130085);
+  { // 130160 RESOURCE1.BS_CORE2
+    st = getVariable(130160);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_CORE2", 18);
     st->size_data = sizeof(REAL);
@@ -7871,8 +7871,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_CORE2;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130086 RESOURCE1.BS_CORE3
-    st = getVariable(130086);
+  { // 130161 RESOURCE1.BS_CORE3
+    st = getVariable(130161);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_CORE3", 18);
     st->size_data = sizeof(REAL);
@@ -7880,8 +7880,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_CORE3;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130087 RESOURCE1.BS_CORE4
-    st = getVariable(130087);
+  { // 130162 RESOURCE1.BS_CORE4
+    st = getVariable(130162);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_CORE4", 18);
     st->size_data = sizeof(REAL);
@@ -7889,8 +7889,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_CORE4;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130088 RESOURCE1.BS_FREEMEMORY
-    st = getVariable(130088);
+  { // 130163 RESOURCE1.BS_FREEMEMORY
+    st = getVariable(130163);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_FREEMEMORY", 23);
     st->size_data = sizeof(REAL);
@@ -7898,8 +7898,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_FREEMEMORY;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130089 RESOURCE1.BS_TEMP1
-    st = getVariable(130089);
+  { // 130164 RESOURCE1.BS_TEMP1
+    st = getVariable(130164);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_TEMP1", 18);
     st->size_data = sizeof(REAL);
@@ -7907,8 +7907,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_TEMP1;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130090 RESOURCE1.BS_TEMP2
-    st = getVariable(130090);
+  { // 130165 RESOURCE1.BS_TEMP2
+    st = getVariable(130165);
     memcpy(st->IEC_TYPE, "REAL", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.BS_TEMP2", 18);
     st->size_data = sizeof(REAL);
@@ -7916,8 +7916,8 @@ int __variables_init_(){
     p_REAL = (REAL*)&RESOURCE1__BS_TEMP2;
     UnpackVar(p_REAL, REAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130091 RESOURCE1.DI_0_1_WVALUE
-    st = getVariable(130091);
+  { // 130166 RESOURCE1.DI_0_1_WVALUE
+    st = getVariable(130166);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_0_1_WVALUE", 23);
     st->size_data = sizeof(UDINT);
@@ -7925,8 +7925,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_0_1_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130092 RESOURCE1.DI_10_11_WVALUE
-    st = getVariable(130092);
+  { // 130167 RESOURCE1.DI_10_11_WVALUE
+    st = getVariable(130167);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_10_11_WVALUE", 25);
     st->size_data = sizeof(UDINT);
@@ -7934,8 +7934,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_10_11_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130093 RESOURCE1.DI_12_13_WVALUE
-    st = getVariable(130093);
+  { // 130168 RESOURCE1.DI_12_13_WVALUE
+    st = getVariable(130168);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_12_13_WVALUE", 25);
     st->size_data = sizeof(UDINT);
@@ -7943,8 +7943,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_12_13_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130094 RESOURCE1.DI_14_15_WVALUE
-    st = getVariable(130094);
+  { // 130169 RESOURCE1.DI_14_15_WVALUE
+    st = getVariable(130169);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_14_15_WVALUE", 25);
     st->size_data = sizeof(UDINT);
@@ -7952,8 +7952,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_14_15_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130095 RESOURCE1.DI_16_17_WVALUE
-    st = getVariable(130095);
+  { // 130170 RESOURCE1.DI_16_17_WVALUE
+    st = getVariable(130170);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_16_17_WVALUE", 25);
     st->size_data = sizeof(UDINT);
@@ -7961,8 +7961,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_16_17_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130096 RESOURCE1.DI_18_19_WVALUE
-    st = getVariable(130096);
+  { // 130171 RESOURCE1.DI_18_19_WVALUE
+    st = getVariable(130171);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_18_19_WVALUE", 25);
     st->size_data = sizeof(UDINT);
@@ -7970,8 +7970,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_18_19_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130097 RESOURCE1.DI_20_21_WVALUE
-    st = getVariable(130097);
+  { // 130172 RESOURCE1.DI_20_21_WVALUE
+    st = getVariable(130172);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_20_21_WVALUE", 25);
     st->size_data = sizeof(UDINT);
@@ -7979,8 +7979,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_20_21_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130098 RESOURCE1.DI_2_3_WVALUE
-    st = getVariable(130098);
+  { // 130173 RESOURCE1.DI_2_3_WVALUE
+    st = getVariable(130173);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_2_3_WVALUE", 23);
     st->size_data = sizeof(UDINT);
@@ -7988,8 +7988,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_2_3_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130099 RESOURCE1.DI_4_5_WVALUE
-    st = getVariable(130099);
+  { // 130174 RESOURCE1.DI_4_5_WVALUE
+    st = getVariable(130174);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_4_5_WVALUE", 23);
     st->size_data = sizeof(UDINT);
@@ -7997,8 +7997,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_4_5_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130100 RESOURCE1.DI_6_7_WVALUE
-    st = getVariable(130100);
+  { // 130175 RESOURCE1.DI_6_7_WVALUE
+    st = getVariable(130175);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_6_7_WVALUE", 23);
     st->size_data = sizeof(UDINT);
@@ -8006,8 +8006,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_6_7_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130101 RESOURCE1.DI_8_9_WVALUE
-    st = getVariable(130101);
+  { // 130176 RESOURCE1.DI_8_9_WVALUE
+    st = getVariable(130176);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DI_8_9_WVALUE", 23);
     st->size_data = sizeof(UDINT);
@@ -8015,8 +8015,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__DI_8_9_WVALUE;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130102 RESOURCE1.DO_0_WVALUE
-    st = getVariable(130102);
+  { // 130177 RESOURCE1.DO_0_WVALUE
+    st = getVariable(130177);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DO_0_WVALUE", 21);
     st->size_data = sizeof(UINT);
@@ -8024,8 +8024,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__DO_0_WVALUE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130103 RESOURCE1.DO_1_WVALUE
-    st = getVariable(130103);
+  { // 130178 RESOURCE1.DO_1_WVALUE
+    st = getVariable(130178);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DO_1_WVALUE", 21);
     st->size_data = sizeof(UINT);
@@ -8033,8 +8033,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__DO_1_WVALUE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130104 RESOURCE1.DO_2_WVALUE
-    st = getVariable(130104);
+  { // 130179 RESOURCE1.DO_2_WVALUE
+    st = getVariable(130179);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DO_2_WVALUE", 21);
     st->size_data = sizeof(UINT);
@@ -8042,8 +8042,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__DO_2_WVALUE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130105 RESOURCE1.DO_3_WVALUE
-    st = getVariable(130105);
+  { // 130180 RESOURCE1.DO_3_WVALUE
+    st = getVariable(130180);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DO_3_WVALUE", 21);
     st->size_data = sizeof(UINT);
@@ -8051,8 +8051,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__DO_3_WVALUE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130106 RESOURCE1.DO_4_WVALUE
-    st = getVariable(130106);
+  { // 130181 RESOURCE1.DO_4_WVALUE
+    st = getVariable(130181);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DO_4_WVALUE", 21);
     st->size_data = sizeof(UINT);
@@ -8060,8 +8060,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__DO_4_WVALUE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130107 RESOURCE1.DO_5_WVALUE
-    st = getVariable(130107);
+  { // 130182 RESOURCE1.DO_5_WVALUE
+    st = getVariable(130182);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.DO_5_WVALUE", 21);
     st->size_data = sizeof(UINT);
@@ -8069,8 +8069,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__DO_5_WVALUE;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130108 RESOURCE1.AI_T_VNYTRI_SHKAFA_HL
-    st = getVariable(130108);
+  { // 130183 RESOURCE1.AI_T_VNYTRI_SHKAFA_HL
+    st = getVariable(130183);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_HL", 31);
     st->size_data = sizeof(LREAL);
@@ -8078,8 +8078,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_HL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130109 RESOURCE1.AI_T_VNYTRI_SHKAFA_HW
-    st = getVariable(130109);
+  { // 130184 RESOURCE1.AI_T_VNYTRI_SHKAFA_HW
+    st = getVariable(130184);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_HW", 31);
     st->size_data = sizeof(LREAL);
@@ -8087,8 +8087,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_HW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130110 RESOURCE1.AI_T_VNYTRI_SHKAFA_LL
-    st = getVariable(130110);
+  { // 130185 RESOURCE1.AI_T_VNYTRI_SHKAFA_LL
+    st = getVariable(130185);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_LL", 31);
     st->size_data = sizeof(LREAL);
@@ -8096,8 +8096,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_LL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130111 RESOURCE1.AI_T_VNYTRI_SHKAFA_LW
-    st = getVariable(130111);
+  { // 130186 RESOURCE1.AI_T_VNYTRI_SHKAFA_LW
+    st = getVariable(130186);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_LW", 31);
     st->size_data = sizeof(LREAL);
@@ -8105,8 +8105,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_LW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130112 RESOURCE1.AI_T_VNYTRI_SHKAFA_COMMAND
-    st = getVariable(130112);
+  { // 130187 RESOURCE1.AI_T_VNYTRI_SHKAFA_COMMAND
+    st = getVariable(130187);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_COMMAND", 36);
     st->size_data = sizeof(UINT);
@@ -8114,8 +8114,8 @@ int __variables_init_(){
     p_UINT = (UINT*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_COMMAND;
     UnpackVar(p_UINT, UINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130113 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWHL
-    st = getVariable(130113);
+  { // 130188 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWHL
+    st = getVariable(130188);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWHL", 34);
     st->size_data = sizeof(LREAL);
@@ -8123,8 +8123,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_NEWHL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130114 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWHW
-    st = getVariable(130114);
+  { // 130189 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWHW
+    st = getVariable(130189);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWHW", 34);
     st->size_data = sizeof(LREAL);
@@ -8132,8 +8132,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_NEWHW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130115 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWLL
-    st = getVariable(130115);
+  { // 130190 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWLL
+    st = getVariable(130190);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWLL", 34);
     st->size_data = sizeof(LREAL);
@@ -8141,8 +8141,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_NEWLL;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130116 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWLW
-    st = getVariable(130116);
+  { // 130191 RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWLW
+    st = getVariable(130191);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_NEWLW", 34);
     st->size_data = sizeof(LREAL);
@@ -8150,8 +8150,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_NEWLW;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130117 RESOURCE1.AI_T_VNYTRI_SHKAFA_STATUS
-    st = getVariable(130117);
+  { // 130192 RESOURCE1.AI_T_VNYTRI_SHKAFA_STATUS
+    st = getVariable(130192);
     memcpy(st->IEC_TYPE, "UDINT", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_STATUS", 35);
     st->size_data = sizeof(UDINT);
@@ -8159,8 +8159,8 @@ int __variables_init_(){
     p_UDINT = (UDINT*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_STATUS;
     UnpackVar(p_UDINT, UDINT_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130118 RESOURCE1.AI_T_VNYTRI_SHKAFA_VALUE
-    st = getVariable(130118);
+  { // 130193 RESOURCE1.AI_T_VNYTRI_SHKAFA_VALUE
+    st = getVariable(130193);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_T_VNYTRI_SHKAFA_VALUE", 34);
     st->size_data = sizeof(LREAL);
@@ -8168,8 +8168,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_T_VNYTRI_SHKAFA_VALUE;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130119 RESOURCE1.AI_DPMASLO_GAZ_MAXCHANGEDOWN
-    st = getVariable(130119);
+  { // 130194 RESOURCE1.AI_DPMASLO_GAZ_MAXCHANGEDOWN
+    st = getVariable(130194);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_MAXCHANGEDOWN", 38);
     st->size_data = sizeof(LREAL);
@@ -8177,8 +8177,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_MAXCHANGEDOWN;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130120 RESOURCE1.AI_DPMASLO_GAZ_MAXCHANGEUP
-    st = getVariable(130120);
+  { // 130195 RESOURCE1.AI_DPMASLO_GAZ_MAXCHANGEUP
+    st = getVariable(130195);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_MAXCHANGEUP", 36);
     st->size_data = sizeof(LREAL);
@@ -8186,8 +8186,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_MAXCHANGEUP;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130121 RESOURCE1.AI_DPMASLO_GAZ_NEWMAXCHANGEDOWN
-    st = getVariable(130121);
+  { // 130196 RESOURCE1.AI_DPMASLO_GAZ_NEWMAXCHANGEDOWN
+    st = getVariable(130196);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_NEWMAXCHANGEDOWN", 41);
     st->size_data = sizeof(LREAL);
@@ -8195,8 +8195,8 @@ int __variables_init_(){
     p_LREAL = (LREAL*)&RESOURCE1__AI_DPMASLO_GAZ_NEWMAXCHANGEDOWN;
     UnpackVar(p_LREAL, LREAL_O_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130122 RESOURCE1.AI_DPMASLO_GAZ_NEWMAXCHANGEUP
-    st = getVariable(130122);
+  { // 130197 RESOURCE1.AI_DPMASLO_GAZ_NEWMAXCHANGEUP
+    st = getVariable(130197);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "RESOURCE1.AI_DPMASLO_GAZ_NEWMAXCHANGEUP", 39);
     st->size_data = sizeof(LREAL);
