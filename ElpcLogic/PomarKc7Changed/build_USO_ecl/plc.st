@@ -253,31 +253,27 @@ TYPE
     Disabled_Sig : BOOL;
   END_STRUCT;
   IM_singleSignals : STRUCT
-    dP_gazgaz_Kran1 : struct_singleSignal;
-    OsevoiSdvig_pravo : struct_singleSignal;
-    OsevoiSdvig_levo : struct_singleSignal;
-    dP_oilgaz_low : struct_singleSignal;
-    P_oil_low : struct_singleSignal;
-    KZ_10kv : struct_singleSignal;
-    Vozb_ProboiVentila : struct_singleSignal;
-    Vozb_AsinchHod : struct_singleSignal;
-    Vozb_ReSynchronize : struct_singleSignal;
-    Vozb_ControlVozbuditela : struct_singleSignal;
-    NS_ForsingVozbugdenia : struct_singleSignal;
-    NS_Vozbyditela : struct_singleSignal;
-    Vozb_AVR_off : struct_singleSignal;
-    Vozb_AutoUprVozbuditela_off : struct_singleSignal;
-    Vozb_KontaktorON : struct_singleSignal;
-    Vozb_Overload : struct_singleSignal;
-    AO_KC : struct_singleSignal;
-    AOGPA_PRU : struct_singleSignal;
-    BEO_Ready : struct_singleSignal;
-    BEO_Srabat : struct_singleSignal;
-    BEO_ON_knopkaSHU : struct_singleSignal;
-    BEO_ON_knopkaPRU : struct_singleSignal;
-    NOGPA_knopkaSHU : struct_singleSignal;
-    AOGPA_knopkaSHU : struct_singleSignal;
-    DverShkafaOtkryta : struct_singleSignal;
+    dP_maslo_gaz_Less100 : struct_singleSignal;
+    dp_kran1_Less100 : struct_singleSignal;
+    Zagazovannost_dvigatelya_05prc_rezerv : struct_singleSignal;
+    Zagazovannost_dvigatelya_1prc_rezerv : struct_singleSignal;
+    Zagazovannost_nagnetatelya_05prc_rezerv : struct_singleSignal;
+    Zagazovannost_nagnetatelya_1prc_rezerv : struct_singleSignal;
+    Vozbud_neispr_tsepey_upr_AVR_pit : struct_singleSignal;
+    Vozbud_razreshenie_zagruzki : struct_singleSignal;
+    Vozbud_gotovnost : struct_singleSignal;
+    Vozbud_neispravnost : struct_singleSignal;
+    SHAVR1_v_rabote : struct_singleSignal;
+    SHAVR2_v_rabote : struct_singleSignal;
+    Net_10kv_rezerv : struct_singleSignal;
+    MV_telezhka_vikachen : struct_singleSignal;
+    Avariinoe_otkluch_vikluchatelya : struct_singleSignal;
+    Assinhronnii_hod_peregruzka : struct_singleSignal;
+    SHU_v_GPA_vkluch : struct_singleSignal;
+    SHP_v_GPA_vkluch : struct_singleSignal;
+    KRU_neispr_rezerv : struct_singleSignal;
+    Tok_vozbuzhdenia_est_rezerv : struct_singleSignal;
+    Voltage_na_sektsii_norm : struct_singleSignal;
     QF1_on : struct_singleSignal;
     QF2_on : struct_singleSignal;
     QF23_on : struct_singleSignal;
@@ -297,6 +293,36 @@ TYPE
     NS_G18_G19 : struct_singleSignal;
     NS_G10_G11 : struct_singleSignal;
     NS_G13_G14 : struct_singleSignal;
+    AVOM1_avtomat : struct_singleSignal;
+    AVOM2_avtomat : struct_singleSignal;
+    AVOM3_avtomat : struct_singleSignal;
+    AVOM4_avtomat : struct_singleSignal;
+    PNS_avtomat_rezerv : struct_singleSignal;
+    NU1_avtomat : struct_singleSignal;
+    NU2_avtomat : struct_singleSignal;
+    TEN_MB_avtomat_rezerv : struct_singleSignal;
+    TEN_kollectora_avtomat : struct_singleSignal;
+    KaloriferAVOM_avtomat : struct_singleSignal;
+    CMN_avtomat_rezerv : struct_singleSignal;
+    Uroven_masla_akkum : struct_singleSignal;
+    NKU1_GPA_on_rezerv : struct_singleSignal;
+    NKU2_GPA_on_rezerv : struct_singleSignal;
+    AO_KC : struct_singleSignal;
+    AO_GPA_knopka_PRU : struct_singleSignal;
+    EO_GPA_knopka_PRU : struct_singleSignal;
+    AO_GPA_knopka_SHU_EGPA : struct_singleSignal;
+    EO_GPA_knopka_SHU_EGPA : struct_singleSignal;
+    BEAO_srabotal : struct_singleSignal;
+    SAU_GPA220V_osnovnoy_est : struct_singleSignal;
+    SAU_GPA220V_reserv_est : struct_singleSignal;
+    Krani24V_est : struct_singleSignal;
+    BEAO220V_est : struct_singleSignal;
+    V24_est : struct_singleSignal;
+    GPA_pozhar_rezerv : struct_singleSignal;
+    Chastotny_pusk : struct_singleSignal;
+    Neuspesh_chastotny_pusk : struct_singleSignal;
+    Rezhim_ruchnogo_regulirovaniya : struct_singleSignal;
+    Reaktornii_pusk_perek : struct_singleSignal;
   END_STRUCT;
   struct_singleOutput : STRUCT
     wait_time : TIME;
@@ -309,13 +335,13 @@ TYPE
     inCommand_ARM : WORD;
   END_STRUCT;
   IM_singleOutputs : STRUCT
-    Lampa_NO : struct_singleOutput;
-    VzvodBREO : struct_singleOutput;
-    AO_GPA : struct_singleOutput;
-    SbrosBREO : struct_singleOutput;
-    IndikicijaPS_fonar : struct_singleOutput;
-    IndikicijaAS_fonar : struct_singleOutput;
-    mv_off_KNA : struct_singleOutput;
+    Kran1_smazka_on : struct_singleOutput;
+    Kran2_smazka_on : struct_singleOutput;
+    Gpa1_norm : struct_singleOutput;
+    Gpa1_neisprav : struct_singleOutput;
+    Gpa1_avariya : struct_singleOutput;
+    Pusk : struct_singleOutput;
+    Ostanov : struct_singleOutput;
   END_STRUCT;
   struct_Kran : STRUCT
     inCommand : WORD;
@@ -453,38 +479,10 @@ TYPE
     var1 : BOOL;
     var2 : BOOL;
   END_STRUCT;
-  struct_AnalogParametr : STRUCT
-    inCommand : WORD;
-    inCommand_Alg : WORD;
-    inCommand_ARM : WORD;
-    status : DWORD;
-    newValue : LREAL;
-    currentValue : LREAL;
-    minVal : LREAL;
-    maxVal : LREAL;
-    maxStep : LREAL;
-    minVal_ISVALIDREF : BOOL;
-    maxVal_ISVALIDREF : BOOL;
-    maxStep_ISVALIDREF : BOOL;
-    inOpcCommandsDisabled : BOOL;
-    Value : LREAL;
-    isValidValue : BOOL;
-    OpcCommandsDisabled : BOOL;
-  END_STRUCT;
-  struct_DiscretParametr : STRUCT
-    newValue : UINT;
-    currentValue : UINT;
-    inOpcCommandsDisabled : BOOL;
-    inCommand : WORD;
-    inCommand_Alg : WORD;
-    inCommand_ARM : WORD;
-    status : DWORD;
-    OpcCommandsDisabled : BOOL;
-    Value : UINT;
-  END_STRUCT;
   ImConfig : STRUCT
     Kran1 : struct_Kran;
     Kran2 : struct_Kran;
+    Kran3 : struct_Kran;
     Kran3b : struct_Kran;
     Kran4 : struct_Kran;
     Kran5 : struct_Kran;
@@ -494,34 +492,17 @@ TYPE
     pns : struct_Switch;
     v1_Avom : struct_Switch;
     v2_Avom : struct_Switch;
+    v3_Avom : struct_Switch;
+    v4_Avom : struct_Switch;
     mv : struct_SectionSwitch;
-    Ten : struct_Switch;
     Reserve_IM1 : struct_ReserveIM;
     Reserve_IM2 : struct_ReserveIM2;
     SingleSignals : IM_singleSignals;
     SingleOutputs : IM_singleOutputs;
-    AutoAvom_onTemp1 : struct_AnalogParametr;
-    AutoAvom_onTemp2 : struct_AnalogParametr;
-    AutoAvom_hysteresis : struct_AnalogParametr;
-    TypeSwitch : struct_DiscretParametr;
-    AutoPns_UstRun : struct_AnalogParametr;
-    AutoPns_UstStop : struct_AnalogParametr;
-    AutoNU_mainNU : struct_DiscretParametr;
-    PuskOilSystem_UstdPmg : struct_AnalogParametr;
-    AutoTen_offTemperature : struct_AnalogParametr;
-    AutoNU_Ust_Swap : struct_AnalogParametr;
-    testdPmg_Ust_dPLow : struct_AnalogParametr;
-    AntiPompag_UgolVNA : struct_AnalogParametr;
-    AntiPompag_K : struct_AnalogParametr;
-    AntiPompag_A : struct_AnalogParametr;
-    AntiPompag_y0 : struct_AnalogParametr;
-    v3_Avom : struct_Switch;
-    v4_Avom : struct_Switch;
     KaloriferAVOM : struct_Switch;
     CMN : struct_Switch;
-    TEN_Kollectira : struct_Switch;
+    TEN_kollectora : struct_Switch;
     TEN_MB : struct_Switch;
-    Kran3 : struct_Kran;
   END_STRUCT;
   struct_DualStateIm : STRUCT
     inCommand : WORD;
@@ -557,6 +538,35 @@ TYPE
     BASKET_TRANSITIONAL : BYTE := 3;
     BASKET_ERROR : BYTE := 4;
     BASKET_TEST : BYTE := 5;
+  END_STRUCT;
+  struct_AnalogParametr : STRUCT
+    inCommand : WORD;
+    inCommand_Alg : WORD;
+    inCommand_ARM : WORD;
+    status : DWORD;
+    newValue : LREAL;
+    currentValue : LREAL;
+    minVal : LREAL;
+    maxVal : LREAL;
+    maxStep : LREAL;
+    minVal_ISVALIDREF : BOOL;
+    maxVal_ISVALIDREF : BOOL;
+    maxStep_ISVALIDREF : BOOL;
+    inOpcCommandsDisabled : BOOL;
+    Value : LREAL;
+    isValidValue : BOOL;
+    OpcCommandsDisabled : BOOL;
+  END_STRUCT;
+  struct_DiscretParametr : STRUCT
+    newValue : UINT;
+    currentValue : UINT;
+    inOpcCommandsDisabled : BOOL;
+    inCommand : WORD;
+    inCommand_Alg : WORD;
+    inCommand_ARM : WORD;
+    status : DWORD;
+    OpcCommandsDisabled : BOOL;
+    Value : UINT;
   END_STRUCT;
   struct_AiProtection : STRUCT
     controlLimit : BYTE;
@@ -3563,8 +3573,6 @@ FUNCTION_BLOCK proc_IM_Init
   END_VAR
 
   inits := 0; (* Флаг необходимости инициализации структур-дескрипторов *)
-
-
                                        (* Стартовая инициализация ИМ *)
   (* Кран 1 *)
   stKr_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
@@ -3578,6 +3586,13 @@ FUNCTION_BLOCK proc_IM_Init
         ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
         ISVALIDREF_inSo:=true, ISVALIDREF_inSz:=true,
         str_Kr := IM.Kran2);
+  inits := inits + BOOL_TO_UINT(stKr_Ini.Init);
+
+  (* Кран 3 *)
+  stKr_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
+        ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
+        ISVALIDREF_inSo:=true, ISVALIDREF_inSz:=true,
+        str_Kr := IM.Kran3);
   inits := inits + BOOL_TO_UINT(stKr_Ini.Init);
 
   (* Кран 3b *)
@@ -3643,11 +3658,18 @@ FUNCTION_BLOCK proc_IM_Init
         str_Sw := IM.v2_Avom);
   inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
-  (* ТЭН *)
-  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
+  (* В3 АВОМ вентилятор охлаждения *)
+  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
         ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-        (*ISVALIDREF_inBreakCmdOn:=true, ISVALIDREF_inBreakCmdOff:=true,*)
-        str_Sw := IM.Ten);
+        ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+        str_Sw := IM.v3_Avom);
+  inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
+
+  (* В4 АВОМ вентилятор охлаждения *)
+  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+        ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
+        ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+        str_Sw := IM.v4_Avom);
   inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
   (* МВ масляный выключатель *)
@@ -3658,208 +3680,82 @@ FUNCTION_BLOCK proc_IM_Init
         str_Sw := IM.mv);
   inits := inits + BOOL_TO_UINT(stSSw_Ini.Init);
 
-                                       (* Стартовая инициализация Аналоговых и Дискретных параметров *)
+  (* В4 АВОМ вентилятор охлаждения *)
+  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+        ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
+        ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+        str_Sw := IM.KaloriferAVOM);
+  inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
-  (* Температура включения АВОМ1 в алгоритме АвтоАвом *)
-  stAp_Ini(data_Ini := true, currentValue:=40.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=-50.0, maxVal:=150.0,
-        strAP := IM.AutoAvom_onTemp1);
-  inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
+  (* В4 АВОМ вентилятор охлаждения *)
+  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+        ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
+        ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+        str_Sw := IM.CMN);
+  inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
-  (* Температура включения АВОМ2 в алгоритме АвтоАвом *)
-  stAp_Ini(data_Ini := true, currentValue:=50.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=-50.0, maxVal:=150.0,
-        strAP := IM.AutoAvom_onTemp2);
-  inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
+  (* В4 АВОМ вентилятор охлаждения *)
+  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+        ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
+        ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+        str_Sw := IM.TEN_kollectora);
+  inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
-  (* Гистерезис уставок теммпературы в алгоритме АвтоАвом *)
-  stAp_Ini(data_Ini := true, currentValue:=2.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=0.0, maxVal:=100.0,
-        strAP := IM.AutoAvom_hysteresis);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-
-  (* Давление включения ПНС в алгоритме АвтоПНС *)
-  stAp_Ini(data_Ini := true, currentValue:=40.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=0.0, maxVal:=400.0,
-        strAP := IM.AutoPns_UstRun);
-  inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-  (* Давление отключения ПНС в алгоритме АвтоПНС *)
-  stAp_Ini(data_Ini := true, currentValue:=80.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=0.0, maxVal:=400.0,
-        strAP := IM.AutoPns_UstStop);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
+  (* В4 АВОМ вентилятор охлаждения *)
+  stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+        ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
+        ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+        str_Sw := IM.TEN_MB);
+  inits := inits + BOOL_TO_UINT(stSw_Ini.Init); 
 
 
-  (* Давление масло-газ включения защит в алгоритме Пуск Маслосистемы *)
-  stAp_Ini(data_Ini := true, currentValue:=100.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=0.0, maxVal:=630.0,
-        strAP := IM.PuskOilSystem_UstdPmg);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-   (* Температура отключения ТЭНа в алгоритме АвтоТЭН *)
-  stAp_Ini(data_Ini := true, currentValue:=20.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=-50.0, maxVal:=150.0,
-        strAP := IM.AutoTen_offTemperature);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-    (* Уставка включения резервного НУ по перепаду давления "масло-газ" в алгоритме АвтоНУ *)
-  stAp_Ini(data_Ini := true, currentValue:=105.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=0.0, maxVal:=630.0,
-        strAP := IM.AutoNU_Ust_Swap);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-   (* Уставка по перепаду давления "масло-газ" в алгоритме Тест dPmg *)
-  stAp_Ini(data_Ini := true, currentValue:=100.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=0.0, maxVal:=630.0,
-        strAP := IM.testdPmg_Ust_dPLow);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-    (* Угол наклона ВНА в алгоритме Антипомпаж *)
-  stAp_Ini(data_Ini := true, currentValue:=0.0,
-        minVal_ISVALIDREF:=true, maxVal_ISVALIDREF:=true, 
-        minVal:=-35.0, maxVal:=35.0,
-        strAP := IM.AntiPompag_UgolVNA);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);
-
-    (*Коэффициент сжимаемости газа в алгоритме Антипомпаж *)
-  stAp_Ini(data_Ini := true, currentValue:=0.94,
-        strAP := IM.AntiPompag_K);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);                    
-
-    (*Коэффициент расхода конфузора в алгоритме Антипомпаж *)
-  stAp_Ini(data_Ini := true, currentValue:=68.4,
-        strAP := IM.AntiPompag_A);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);      
-
-    (*Удельный вес газа в алгоритме Антипомпаж *)
-  stAp_Ini(data_Ini := true, currentValue:=0.73,
-        strAP := IM.AntiPompag_y0);
-   inits := inits + BOOL_TO_UINT(stAp_Ini.Init);                                    
-
-
-  (* Переключатель разблокировки кранов: 1 - допстить управление кранами *)
-  stDp_Ini(data_Ini := true, currentValue:=0,
-        strDp := IM.TypeSwitch);   
-  inits := inits + BOOL_TO_UINT(stDp_Ini.Init);
-
-  (* Селектор выбора основной/резервный НУ *)
-  stDp_Ini(data_Ini := true, currentValue:=0,
-        strDp := IM.AutoNU_mainNU);   
-  inits := inits + BOOL_TO_UINT(stDp_Ini.Init);
-
-
-
-                                       (* Стартовая инициализация singleSignal *)
-
+                                       (* Стартовая инициализация singleSignal *)    
       (* Перепад давления «газ-газ» на кране 1 ≤1 кгс/см² *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.dP_gazgaz_Kran1);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.dP_maslo_gaz_Less100);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
    (* Осевой сдвиг ротора вправо ≥3,7 кгс/см² *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.OsevoiSdvig_pravo);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-   (* Осевой сдвиг ротора влево ≥3,7 кгс/см² *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.OsevoiSdvig_levo);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-   (* Низкий перепад давления «масло-газ» ≤1 кгс/см² *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.dP_oilgaz_low);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-  (* Низкое давление масла смазки ≤ 0,4 кгс/см² *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.P_oil_low);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-      (* Защита по замыканию на землю 10 кВ (пробой изоляции кабелей) *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.KZ_10kv);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.dp_kran1_Less100);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
       (* Пробой вентиля *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_ProboiVentila);   
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
       (* Асинхронный ход и перегрузка *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_AsinchHod);   
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_razreshenie_zagruzki);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
       (* Работа схемы ресинхронизации *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_ReSynchronize);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_gotovnost);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
       (* Контроль состояния возбудительного устройства  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_ControlVozbuditela);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_neispravnost);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
       (* Неисправность форсировки воз-буждения  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NS_ForsingVozbugdenia);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHAVR1_v_rabote);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Неисправность возбудительного устройства  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NS_Vozbyditela);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Отключен АВР  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_AVR_off);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Отключено автоматическое управление возбудителем  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_AutoUprVozbuditela_off);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Контактор возбуждения включен  *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_KontaktorON);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Перегрузка  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozb_Overload);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Аварийный останов цеха  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_KC);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHAVR2_v_rabote);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* АО ГПА от кнопки на ПРУ  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AOGPA_PRU);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.MV_telezhka_vikachen);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Готовность включения БЭО по отказу контроллера  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEO_Ready);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Срабатывание БЭАО  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEO_Srabat);   
+  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Запуск БЭАО от кнопки ЭАО ШУ  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEO_ON_knopkaSHU);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ   *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEO_ON_knopkaPRU);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* НО ГПА от ШУ   *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NOGPA_knopkaSHU);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* АО ГПА от ШУ   *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AOGPA_knopkaSHU);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Дверь шкафа открыта   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.DverShkafaOtkryta);   
+      (* Дверь шкафа открыта   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Voltage_na_sektsii_norm);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Выключатель основного ввода питания QF1  в положении включен   *)
@@ -3938,34 +3834,189 @@ FUNCTION_BLOCK proc_IM_Init
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NS_G13_G14);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-                                       (* Стартовая инициализация singleOutput *)
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM1_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM2_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM3_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM4_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NU1_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NU2_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.TEN_kollectora_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.KaloriferAVOM_avtomat);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+      (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Uroven_masla_akkum);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_KC);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_GPA_knopka_PRU);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.EO_GPA_knopka_PRU);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_GPA_knopka_SHU_EGPA);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.EO_GPA_knopka_SHU_EGPA);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEAO_srabotal);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SAU_GPA220V_osnovnoy_est);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SAU_GPA220V_reserv_est);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Krani24V_est);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEAO220V_est);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.V24_est);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Chastotny_pusk);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Neuspesh_chastotny_pusk);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Rezhim_ruchnogo_regulirovaniya);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Reaktornii_pusk_perek);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_05prc_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_1prc_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_05prc_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_1prc_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Net_10kv_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Tok_vozbuzhdenia_est_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.KRU_neispr_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.PNS_avtomat_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.TEN_MB_avtomat_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.CMN_avtomat_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NKU1_GPA_on_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NKU2_GPA_on_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.GPA_pozhar_rezerv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+                                       (* Стартовая инициализация singleOutput *)
   (* Идикация НО (подсветка кнопки на шкафу)   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Lampa_NO);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Kran1_smazka_on);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Взвод включения БЭАО по неисправности ПТС   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, wait_time:=T#2S, str_SO := IM.SingleOutputs.VzvodBREO);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, wait_time:=T#2S, str_SO := IM.SingleOutputs.Kran2_smazka_on);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Авария ЭГПА в КЦ   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.AO_GPA);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_norm);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
-  (* Сброс включения БЭАО по неисправности ПТС   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, wait_time:=T#2S, str_SO := IM.SingleOutputs.SbrosBREO);   
+  (* Авария ЭГПА в КЦ   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_neisprav);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Индикация ПС Фонарь   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.IndikicijaPS_fonar);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_avariya);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Индикация АС Фонарь   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.IndikicijaAS_fonar);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Pusk);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Отключение МВ1 от КНА   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.mv_off_KNA);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Ostanov);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   initiales := 0;
@@ -5200,169 +5251,11 @@ FUNCTION_BLOCK fb_singleOutput
   				OR BOOL_TO_DWORD(str_SO.Q);
 END_FUNCTION_BLOCK
 
-FUNCTION_BLOCK fb_DiscretParametr
-  VAR_IN_OUT
-    StrDP : struct_DiscretParametr;
-  END_VAR
-  VAR
-    _sunpackerCommand : fb_sunpackerCommand;
-    source : BYTE;
-    cmd : BYTE;
-    parametr : BYTE;
-    lastParametr : BYTE;
-    source_for_Status : BYTE;
-    cmd_for_Status : BYTE;
-    command_error_for_Status : BYTE;
-    resetCmdTimer : TON;
-    resetCmdTimerPriznak : BOOL;
-    secondTact : BOOL;
-  END_VAR
-
-  IF NOT secondTact THEN
-  	StrDP.Value := StrDP.currentValue;
-  	secondTact := true;
-  END_IF;
-
-  StrDP.OpcCommandsDisabled := StrDP.inOpcCommandsDisabled;
-
-  (* ---- Если управление с ВУ заблокировано, то передаем команду из алгоритма ---- *)
-  IF StrDP.inOpcCommandsDisabled THEN
-  	StrDP.inCommand := StrDP.inCommand_Alg;
-  ELSE (* иначе передаем команду с АРМа*)
-  	StrDP.inCommand := StrDP.inCommand_ARM;
-  END_IF;                                                                                           
-
-  _sunpackerCommand(command := StrDP.inCommand);
-  	source := _sunpackerCommand.source;
-            parametr := _sunpackerCommand.parametr;
-  	cmd := _sunpackerCommand.cmd;
-
-  IF NOT StrDP.inOpcCommandsDisabled THEN         
-  StrDP.newValue:= BYTE_TO_UINT(parametr);
-  END_IF;
-
-  IF cmd <> 0 AND StrDP.Value <> StrDP.newValue AND (((NOT StrDP.opcCommandsDisabled) AND source > 0) OR source = 0) then
-  	CASE BYTE_TO_INT(cmd) OF
-  	(*cmd_ChangeValue*) 1 : 
-                                    StrDP.Value := StrDP.newValue;
-                                    StrDP.opcCommandsDisabled:=FALSE;				
-  	END_CASE;	
-  	source_for_Status := source;
-  	cmd_for_Status := cmd;
-  	resetCmdTimer(IN := FALSE);
-  	resetCmdTimerPriznak := TRUE;
-  END_IF;
-
-  lastParametr := parametr;
-
-  StrDP.status := SHL(BYTE_TO_DWORD(source_for_Status), 29) 
-  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
-  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
-  			OR SHL(BOOL_TO_DWORD(StrDP.OpcCommandsDisabled ), 21)
-                                OR SHL(UINT_TO_DWORD(StrDP.Value), 5);
-
-
-  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
-  IF resetCmdTimer.Q THEN
-  	resetCmdTimerPriznak := FALSE;
-  	source_for_Status := 0;
-  	cmd_for_Status := 0;
-  	command_error_for_Status := 0;
-  END_IF;
-END_FUNCTION_BLOCK
-
-FUNCTION_BLOCK fb_AnalogParametr
-  VAR_IN_OUT
-    StrAP : struct_AnalogParametr;
-  END_VAR
-  VAR
-    _sunpackerCommand : fb_sunpackerCommand;
-    source : BYTE;
-    cmd : BYTE;
-    source_for_Status : BYTE;
-    cmd_for_Status : BYTE;
-    command_error_for_Status : BYTE;
-    resetCmdTimer : TON;
-    resetCmdTimerPriznak : BOOL;
-    secondTact : BOOL;
-    inp : LREAL;
-    rABS : LREAL;
-  END_VAR
-
-  IF NOT secondTact THEN
-  	StrAP.Value := StrAP.currentValue;
-  	secondTact := true;
-  END_IF;
-
-  StrAP.OpcCommandsDisabled := StrAP.inOpcCommandsDisabled;
-
-   (* ---- Если управление с ВУ заблокировано, то передаем команду из алгоритма ---- *)
-  IF StrAP.inOpcCommandsDisabled THEN
-  	StrAP.inCommand := StrAP.inCommand_Alg;
-  ELSE (* иначе передаем команду с АРМа*)
-  	StrAP.inCommand := StrAP.inCommand_ARM;
-  END_IF;                                                                                         
-
-  _sunpackerCommand(command := StrAP.inCommand);
-  	source := _sunpackerCommand.source;
-  	cmd := _sunpackerCommand.cmd;
-
-  IF cmd <> 0 AND StrAP.newValue <> StrAP.Value and (((NOT StrAP.opcCommandsDisabled) AND source > 0) OR source = 0) then
-  	CASE BYTE_TO_INT(cmd) OF
-  	(*cmd_ChangeValue*) 1 :
-  				StrAP.isValidValue := TRUE;
-  				IF StrAP.minVal_ISVALIDREF AND StrAP.isValidValue THEN
-  					IF StrAP.newValue < StrAP.minVal THEN
-  						StrAP.isValidValue := FALSE;
-  					END_IF;
-  				END_IF;
-  				IF StrAP.maxVal_ISVALIDREF AND StrAP.isValidValue THEN
-  					IF StrAP.newValue > StrAP.maxVal THEN
-  						StrAP.isValidValue := FALSE;
-  					END_IF;
-  				END_IF;
-  				IF StrAP.maxStep_ISVALIDREF AND StrAP.isValidValue  THEN
-  					inp := StrAP.Value - StrAP.newValue;
-  					IF inp < 0.0 THEN
-  						rABS := -inp;
-  					ELSE
-  						rABS := inp;
-  					END_IF;
-  					IF rABS > StrAP.maxStep THEN
-  						StrAP.isValidValue := FALSE;
-  					END_IF;
-  				END_IF;
-  				IF StrAP.isValidValue THEN
-  					StrAP.Value := StrAP.newValue;
-  					command_error_for_Status := 0;
-  				ELSE
-  					command_error_for_Status := cmd;
-  				END_IF;
-  	END_CASE;	
-  	source_for_Status := source;
-  	cmd_for_Status := cmd;
-  	resetCmdTimer(IN := FALSE);
-  	resetCmdTimerPriznak := TRUE;
-  END_IF;
-
-  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
-  IF resetCmdTimer.Q THEN
-  	resetCmdTimerPriznak := FALSE;
-  	source_for_Status := 0;
-  	cmd_for_Status := 0;
-  	command_error_for_Status := 0;
-  END_IF; 
-
-  StrAP.status := SHL(BYTE_TO_DWORD(source_for_Status), 29) 
-  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
-  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
-  			OR SHL(BOOL_TO_DWORD(StrAP.OpcCommandsDisabled ), 21);
-END_FUNCTION_BLOCK
-
 FUNCTION_BLOCK proc_IM
   VAR
     fb_Kran1 : fb_Kran;
     fb_Kran2 : fb_Kran;
+    fb_Kran3 : fb_Kran;
     fb_Kran3b : fb_Kran;
     fb_Kran4 : fb_Kran;
     fb_Kran5 : fb_Kran;
@@ -5372,7 +5265,12 @@ FUNCTION_BLOCK proc_IM
     fb_pns : fb_Switch;
     fb_v1_Avom : fb_Switch;
     fb_v2_Avom : fb_Switch;
-    fb_Ten : fb_Switch;
+    fb_v3_Avom : fb_Switch;
+    fb_v4_Avom : fb_Switch;
+    fb_TEN_kollectora : fb_Switch;
+    fb_KaloriferAVOM : fb_Switch;
+    fb_CMN : fb_Switch;
+    fb_TEN_MB : fb_Switch;
     fb_mv : fb_SectionSwitch;
     fb_PLC_Control : fb_meandr;
   END_VAR
@@ -5382,31 +5280,44 @@ FUNCTION_BLOCK proc_IM
     IM : ImConfig;
   END_VAR
   VAR
-    fb_KZ_10kv : fb_singleSignal;
-    fb_OsevoiSdvig_pravo : fb_singleSignal;
-    fb_OsevoiSdvig_levo : fb_singleSignal;
-    fb_dP_oilgaz_low : fb_singleSignal;
-    fb_P_oil_low : fb_singleSignal;
-    fb_dP_gazgaz_Kran1 : fb_singleSignal;
-    fb_Vozb_ProboiVentila : fb_singleSignal;
-    fb_Vozb_AsinchHod : fb_singleSignal;
-    fb_Vozb_ReSynchronize : fb_singleSignal;
-    fb_Vozb_ControlVozbuditela : fb_singleSignal;
-    fb_NS_ForsingVozbugdenia : fb_singleSignal;
-    fb_NS_Vozbyditela : fb_singleSignal;
+    fb_dP_maslo_gaz_Less100 : fb_singleSignal;
+    fb_dp_kran1_Less100 : fb_singleSignal;
+    fb_Vozbud_neispr_tsepey_upr_AVR_pit : fb_singleSignal;
+    fb_Vozbud_razreshenie_zagruzki : fb_singleSignal;
+    fb_Vozbud_gotovnost : fb_singleSignal;
+    fb_Vozbud_neispravnost : fb_singleSignal;
+    fb_SHAVR1_v_rabote : fb_singleSignal;
+    fb_SHAVR2_v_rabote : fb_singleSignal;
     fb_Vozb_AVR_off : fb_singleSignal;
-    fb_Vozb_AutoUprVozbuditela_off : fb_singleSignal;
-    fb_Vozb_KontaktorON : fb_singleSignal;
-    fb_Vozb_Overload : fb_singleSignal;
+    fb_MV_telezhka_vikachen : fb_singleSignal;
+    fb_Assinhronnii_hod_peregruzka : fb_singleSignal;
+    fb_SHU_v_GPA_vkluch : fb_singleSignal;
+    fb_SHP_v_GPA_vkluch : fb_singleSignal;
+    fb_AVOM1_avtomat : fb_singleSignal;
+    fb_Voltage_na_sektsii_norm : fb_singleSignal;
+    fb_AVOM2_avtomat : fb_singleSignal;
+    fb_AVOM3_avtomat : fb_singleSignal;
+    fb_AVOM4_avtomat : fb_singleSignal;
+    fb_NU1_avtomat : fb_singleSignal;
+    fb_NU2_avtomat : fb_singleSignal;
+    fb_TEN_kollectora_avtomat : fb_singleSignal;
+    fb_KaloriferAVOM_avtomat : fb_singleSignal;
+    fb_CMN_avtomat : fb_singleSignal;
+    fb_Uroven_masla_akkum : fb_singleSignal;
     fb_AO_KC : fb_singleSignal;
-    fb_AOGPA_PRU : fb_singleSignal;
-    fb_BEO_Ready : fb_singleSignal;
-    fb_BEO_Srabat : fb_singleSignal;
-    fb_BEO_ON_knopkaSHU : fb_singleSignal;
-    fb_BEO_ON_knopkaPRU : fb_singleSignal;
-    fb_NOGPA_knopkaSHU : fb_singleSignal;
-    fb_AOGPA_knopkaSHU : fb_singleSignal;
-    fb_DverShkafaOtkryta : fb_singleSignal;
+    fb_AO_GPA_knopka_PRU : fb_singleSignal;
+    fb_EO_GPA_knopka_PRU : fb_singleSignal;
+    fb_AO_GPA_knopka_SHU_EGPA : fb_singleSignal;
+    fb_EO_GPA_knopka_SHU_EGPA : fb_singleSignal;
+    fb_BEAO_srabotal : fb_singleSignal;
+    fb_SAU_GPA220V_est : fb_singleSignal;
+    fb_Krani24V_est : fb_singleSignal;
+    fb_V24_est : fb_singleSignal;
+    fb_Chastotny_pusk : fb_singleSignal;
+    fb_Neuspesh_chastotny_pusk : fb_singleSignal;
+    fb_Rezhim_ruchnogo_regulirovaniya : fb_singleSignal;
+    fb_Reaktornii_pusk_perek : fb_singleSignal;
+    fb_SAU_GPA220V_reserv_est : fb_singleSignal;
     fb_QF1_on : fb_singleSignal;
     fb_QF2_on : fb_singleSignal;
     fb_QF23_on : fb_singleSignal;
@@ -5426,29 +5337,28 @@ FUNCTION_BLOCK proc_IM
     fb_NS_G18_G19 : fb_singleSignal;
     fb_NS_G10_G11 : fb_singleSignal;
     fb_NS_G13_G14 : fb_singleSignal;
-    fb_Lampa_NO : fb_singleOutput;
-    fb_VzvodBREO : fb_singleOutput;
-    fb_AO_GPA : fb_singleOutput;
-    fb_SbrosBREO : fb_singleOutput;
-    fb_IndikicijaPS_fonar : fb_singleOutput;
-    fb_IndikicijaAS_fonar : fb_singleOutput;
-    fb_mv_off_KNA : fb_singleOutput;
-    fb_TypeSwitch : fb_DiscretParametr;
-    fb_AutoNU_mainNU : fb_DiscretParametr;
-    fb_AutoNU_Reset_HasNU : fb_DiscretParametr;
-    fb_AutoAvom_hysteresis : fb_AnalogParametr;
-    fb_AutoAvom_onTemp1 : fb_AnalogParametr;
-    fb_AutoAvom_onTemp2 : fb_AnalogParametr;
-    fb_AutoPns_UstRun : fb_AnalogParametr;
-    fb_AutoPns_UstStop : fb_AnalogParametr;
-    fb_PuskOilSystem_UstdPmg : fb_AnalogParametr;
-    fb_AutoTen_offTemperature : fb_AnalogParametr;
-    fb_AutoNU_Ust_Swap : fb_AnalogParametr;
-    fb_testdPmg_Ust_dPLow : fb_AnalogParametr;
-    fb_AntiPompag_UgolVNA : fb_AnalogParametr;
-    fb_AntiPompag_K : fb_AnalogParametr;
-    fb_AntiPompag_A : fb_AnalogParametr;
-    fb_AntiPompag_y0 : fb_AnalogParametr;
+    fb_Zagazovannost_dvigatelya_05prc_rezerv : fb_singleSignal;
+    fb_Zagazovannost_dvigatelya_1prc_rezerv : fb_singleSignal;
+    fb_Zagazovannost_nagnetatelya_05prc_rezerv : fb_singleSignal;
+    fb_Zagazovannost_nagnetatelya_1prc_rezerv : fb_singleSignal;
+    fb_Net_10kv_rezerv : fb_singleSignal;
+    fb_KRU_neispr_rezerv : fb_singleSignal;
+    fb_Tok_vozbuzhdenia_est_rezerv : fb_singleSignal;
+    fb_PNS_avtomat_rezerv : fb_singleSignal;
+    fb_CMN_avtomat_rezerv : fb_singleSignal;
+    fb_NKU1_GPA_on_rezerv : fb_singleSignal;
+    fb_NKU2_GPA_on_rezerv : fb_singleSignal;
+    fb_GPA_pozhar_rezerv : fb_singleSignal;
+    fb_TEN_MB_avtomat_rezerv : fb_singleSignal;
+    fb_Avariinoe_otkluch_vikluchatelya : fb_singleSignal;
+    fb_BEAO220V_est : fb_singleSignal;
+    fb_Kran1_smazka_on : fb_singleOutput;
+    fb_Kran2_smazka_on : fb_singleOutput;
+    fb_Gpa1_norm : fb_singleOutput;
+    fb_Gpa1_neisprav : fb_singleOutput;
+    fb_Gpa1_avariya : fb_singleOutput;
+    fb_Pusk : fb_singleOutput;
+    fb_Ostanov : fb_singleOutput;
   END_VAR
 
   (* Циклический опрос. ИМ *)
@@ -5470,6 +5380,12 @@ FUNCTION_BLOCK proc_IM
            inSo := di.di_12.bits[2], inSz := di.di_12.bits[3],
            cmdOn:=od.do_0.bits[2], cmdOff:=od.do_0.bits[3],
            strKr:= IM.Kran2  );
+
+  fb_Kran3(statOn := di.di_0.bits[2]._inversed, statOn_reliability:= di.di_0.bits[2].reliability,
+           statOff := di.di_0.bits[3]._inversed,  statOff_reliability:= di.di_0.bits[3].reliability,
+           inSo := di.di_12.bits[2], inSz := di.di_12.bits[3],
+           cmdOn:=od.do_0.bits[2], cmdOff:=od.do_0.bits[3],
+           strKr:= IM.Kran3  );
 
   (* Кран 3b *)
   fb_Kran3b(statOn := di.di_0.bits[4]._inversed, statOn_reliability:= di.di_0.bits[4].reliability,
@@ -5528,95 +5444,162 @@ FUNCTION_BLOCK proc_IM
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
            StrSw:= IM.v2_Avom  );
 
-  (*  ТЭН *)
-    fb_Ten(statOn := di.di_14.bits[0].value, statOn_reliability:= di.di_14.bits[0].reliability,
-           statOff := di.di_14.bits[1].value, statOff_reliability:= di.di_14.bits[1].reliability,
-           cmdOn:=od.do_1.bits[13] , cmdOff:=od.do_2.bits[1],
-           StrSw:= IM.Ten  );
+           (*  В2 АВОМ вентилятор охлаждения *)
+  fb_v3_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
+           inBreakCmdOn := di.di_11.bits[0],
+           cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+           StrSw:= IM.v3_Avom  );
+
+           (*  В2 АВОМ вентилятор охлаждения *)
+  fb_v4_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
+           inBreakCmdOn := di.di_11.bits[0],
+           cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+           StrSw:= IM.v4_Avom  );
 
   (*  МВ масляный выключатель *)
-      fb_mv(statOff := di.di_4.bits[7].value, statOff_reliability:= di.di_4.bits[7].reliability,
+  fb_mv(statOff := di.di_4.bits[7].value, statOff_reliability:= di.di_4.bits[7].reliability,
            inBreakCmdOff := di.di_11.bits[2], inoffKNA:= di.di_5.bits[2],
            basketRolledin:= di.di_5.bits[1], basketRolledout:= di.di_5.bits[0],
            cmdOn:=od.do_1.bits[10] , cmdOff:=od.do_1.bits[11],
            StrSw:= IM.mv  );
 
+  fb_TEN_kollectora(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
+           inBreakCmdOn := di.di_11.bits[0],
+           cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+           StrSw:= IM.TEN_kollectora  );
+
+  fb_KaloriferAVOM(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
+           inBreakCmdOn := di.di_11.bits[0],
+           cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+           StrSw:= IM.KaloriferAVOM  ); 
+
+  fb_CMN(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
+           inBreakCmdOn := di.di_11.bits[0],
+           cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+           StrSw:= IM.CMN);
+
+  fb_TEN_MB(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
+           inBreakCmdOn := di.di_11.bits[0],
+           cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+           StrSw:= IM.TEN_MB);                
+
+
   (*************************************************** singleSignals ********************************************)
 
    (* Перепад давления «газ-газ» на кране 1 ≤1 кгс/см² *)
-  fb_dP_gazgaz_Kran1(signal :=di.di_2.bits[0], str_SS := IM.SingleSignals.dP_gazgaz_Kran1);   
+  fb_dP_maslo_gaz_Less100(signal :=di.di_2.bits[0], str_SS := IM.SingleSignals.dP_maslo_gaz_Less100);   
 
    (* Осевой сдвиг ротора вправо ≥3,7 кгс/см² *)
-  fb_OsevoiSdvig_pravo(signal :=di.di_2.bits[1], str_SS := IM.SingleSignals.OsevoiSdvig_pravo);   
+  fb_dp_kran1_Less100(signal :=di.di_2.bits[1], str_SS := IM.SingleSignals.dp_kran1_Less100);   
 
    (* Осевой сдвиг ротора влево ≥3,7 кгс/см² *)
-  fb_OsevoiSdvig_levo(signal :=di.di_2.bits[2], str_SS := IM.SingleSignals.OsevoiSdvig_levo);   
+  fb_Vozbud_neispr_tsepey_upr_AVR_pit(signal :=di.di_2.bits[2], str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
 
    (* Низкий перепад давления «масло-газ» ≤1 кгс/см² *)
-  fb_dP_oilgaz_low(signal :=di.di_2.bits[3], str_SS := IM.SingleSignals.dP_oilgaz_low);   
+  fb_Vozbud_razreshenie_zagruzki(signal :=di.di_2.bits[3], str_SS := IM.SingleSignals.Vozbud_razreshenie_zagruzki);   
 
   (* Низкое давление масла смазки ≤ 0,4 кгс/см² *)
-  fb_P_oil_low(signal :=di.di_2.bits[4], str_SS := IM.SingleSignals.P_oil_low);   
+  fb_Vozbud_gotovnost(signal :=di.di_2.bits[4], str_SS := IM.SingleSignals.Vozbud_gotovnost);   
 
       (* Защита по замыканию на землю 10 кВ (пробой изоляции кабелей) *)
-  fb_KZ_10kv(signal :=di.di_3.bits[2], str_SS := IM.SingleSignals.KZ_10kv);   
+  fb_Vozbud_neispravnost(signal :=di.di_3.bits[2], str_SS := IM.SingleSignals.Vozbud_neispravnost);   
 
       (* Пробой вентиля *)
-  fb_Vozb_ProboiVentila(signal :=di.di_3.bits[3], str_SS := IM.SingleSignals.Vozb_ProboiVentila);   
+  fb_SHAVR1_v_rabote(signal :=di.di_3.bits[3], str_SS := IM.SingleSignals.SHAVR1_v_rabote);   
 
       (* Асинхронный ход и перегрузка *)
-  fb_Vozb_AsinchHod(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Vozb_AsinchHod);   
-
-      (* Работа схемы ресинхронизации *)
-  fb_Vozb_ReSynchronize(signal :=di.di_3.bits[5], str_SS := IM.SingleSignals.Vozb_ReSynchronize);   
-
-      (* Контроль состояния возбудительного устройства  *)
-  fb_Vozb_ControlVozbuditela(signal :=di.di_3.bits[6], str_SS := IM.SingleSignals.Vozb_ControlVozbuditela);   
-
-      (* Неисправность форсировки воз-буждения  *)
-  fb_NS_ForsingVozbugdenia(signal :=di.di_3.bits[7], str_SS := IM.SingleSignals.NS_ForsingVozbugdenia);   
-
-    (* Неисправность возбудительного устройства  *)
-  fb_NS_Vozbyditela(signal :=di.di_4.bits[0], str_SS := IM.SingleSignals.NS_Vozbyditela);   
+  fb_SHAVR2_v_rabote(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHAVR2_v_rabote);   
 
     (* Отключен АВР  *)
-  fb_Vozb_AVR_off(signal :=di.di_4.bits[1], str_SS := IM.SingleSignals.Vozb_AVR_off);   
+  fb_MV_telezhka_vikachen(signal :=di.di_4.bits[1], str_SS := IM.SingleSignals.MV_telezhka_vikachen);   
 
     (* Отключено автоматическое управление возбудителем  *)
-  fb_Vozb_AutoUprVozbuditela_off(signal :=di.di_4.bits[2], str_SS := IM.SingleSignals.Vozb_AutoUprVozbuditela_off);   
+  fb_Assinhronnii_hod_peregruzka(signal :=di.di_4.bits[2], str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);   
 
     (* Контактор возбуждения включен  *)
-  fb_Vozb_KontaktorON(signal :=di.di_4.bits[3], str_SS := IM.SingleSignals.Vozb_KontaktorON);   
+  fb_SHU_v_GPA_vkluch(signal :=di.di_4.bits[3], str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);   
 
     (* Перегрузка  *)
-  fb_Vozb_Overload(signal :=di.di_4.bits[4], str_SS := IM.SingleSignals.Vozb_Overload);   
-
-    (* Аварийный останов цеха  *)
-  fb_AO_KC(signal :=di.di_5.bits[5], str_SS := IM.SingleSignals.AO_KC);   
+  fb_SHP_v_GPA_vkluch(signal :=di.di_4.bits[4], str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);   
 
     (* АО ГПА от кнопки на ПРУ  *)
-  fb_AOGPA_PRU(signal :=di.di_5.bits[6], str_SS := IM.SingleSignals.AOGPA_PRU);   
+  fb_Voltage_na_sektsii_norm(signal :=di.di_5.bits[6], str_SS := IM.SingleSignals.Voltage_na_sektsii_norm);   
 
     (* Готовность включения БЭО по отказу контроллера  *)
-  fb_BEO_Ready(signal :=di.di_6.bits[0], str_SS := IM.SingleSignals.BEO_Ready);   
+  fb_AVOM1_avtomat(signal :=di.di_6.bits[0], str_SS := IM.SingleSignals.AVOM1_avtomat);   
 
     (* Срабатывание БЭАО  *)
-  fb_BEO_Srabat(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.BEO_Srabat);   
+  fb_AVOM2_avtomat(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.AVOM2_avtomat);   
 
     (* Запуск БЭАО от кнопки ЭАО ШУ  *)
-  fb_BEO_ON_knopkaSHU(signal :=di.di_6.bits[2], str_SS := IM.SingleSignals.BEO_ON_knopkaSHU);   
+  fb_AVOM3_avtomat(signal :=di.di_6.bits[2], str_SS := IM.SingleSignals.AVOM3_avtomat);   
 
     (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ   *)
-  fb_BEO_ON_knopkaPRU(signal :=di.di_6.bits[7], str_SS := IM.SingleSignals.BEO_ON_knopkaPRU);   
-
-    (* НО ГПА от ШУ   *)
-  fb_NOGPA_knopkaSHU(signal :=di.di_6.bits[3], str_SS := IM.SingleSignals.NOGPA_knopkaSHU);   
-
-    (* АО ГПА от ШУ   *)
-  fb_AOGPA_knopkaSHU(signal :=di.di_6.bits[4], str_SS := IM.SingleSignals.AOGPA_knopkaSHU);   
+  fb_AVOM4_avtomat(signal :=di.di_6.bits[7], str_SS := IM.SingleSignals.AVOM4_avtomat);   
 
     (* Дверь шкафа открыта   *)
-  fb_DverShkafaOtkryta(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.DverShkafaOtkryta);   
+  fb_NU1_avtomat(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.NU1_avtomat);   
+
+    (* Перегрузка  *)
+  fb_NU2_avtomat(signal :=di.di_4.bits[4], str_SS := IM.SingleSignals.NU2_avtomat);   
+
+    (* Аварийный останов цеха  *)
+  fb_TEN_kollectora_avtomat(signal :=di.di_5.bits[5], str_SS := IM.SingleSignals.TEN_kollectora_avtomat);   
+
+    (* АО ГПА от кнопки на ПРУ  *)
+  fb_KaloriferAVOM_avtomat(signal :=di.di_5.bits[6], str_SS := IM.SingleSignals.KaloriferAVOM_avtomat);   
+
+    (* Срабатывание БЭАО  *)
+  fb_Uroven_masla_akkum(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.Uroven_masla_akkum);   
+
+    (* НО ГПА от ШУ   *)
+  fb_AO_KC(signal :=di.di_6.bits[3], str_SS := IM.SingleSignals.AO_KC);   
+
+    (* АО ГПА от ШУ   *)
+  fb_AO_GPA_knopka_PRU(signal :=di.di_6.bits[4], str_SS := IM.SingleSignals.AO_GPA_knopka_PRU);   
+
+    (* Дверь шкафа открыта   *)
+  fb_EO_GPA_knopka_PRU(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.EO_GPA_knopka_PRU);    
+
+    (* Дверь шкафа открыта   *)
+  fb_AO_GPA_knopka_SHU_EGPA(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.AO_GPA_knopka_SHU_EGPA);  
+
+    (* Дверь шкафа открыта   *)
+  fb_EO_GPA_knopka_SHU_EGPA(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.EO_GPA_knopka_SHU_EGPA);  
+
+    (* Дверь шкафа открыта   *)
+  fb_BEAO_srabotal(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.BEAO_srabotal);  
+
+    (* Дверь шкафа открыта   *)
+  fb_SAU_GPA220V_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.SAU_GPA220V_osnovnoy_est);  
+
+    (* Дверь шкафа открыта   *)
+  fb_SAU_GPA220V_reserv_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.SAU_GPA220V_reserv_est); 
+
+    (* Дверь шкафа открыта   *)
+  fb_Krani24V_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Krani24V_est);  
+
+    (* Дверь шкафа открыта   *)
+  fb_V24_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.V24_est);  
+
+    (* Дверь шкафа открыта   *)
+  fb_Chastotny_pusk(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Chastotny_pusk);  
+
+    (* Дверь шкафа открыта   *)
+  fb_Neuspesh_chastotny_pusk(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Neuspesh_chastotny_pusk);  
+
+    (* Дверь шкафа открыта   *)
+  fb_Rezhim_ruchnogo_regulirovaniya(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Rezhim_ruchnogo_regulirovaniya);  
+
+    (* Дверь шкафа открыта   *)
+  fb_Reaktornii_pusk_perek(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Reaktornii_pusk_perek);  
+
+    (* Дверь шкафа открыта   *)
+  fb_Avariinoe_otkluch_vikluchatelya(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);  
+
+    (* Дверь шкафа открыта   *)
+  fb_BEAO220V_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.BEAO220V_est);  
+
 
     (* Выключатель основного ввода питания QF1  в положении включен   *)
   fb_QF1_on(signal :=di.di_7.bits[6], str_SS := IM.SingleSignals.QF1_on);   
@@ -5673,384 +5656,73 @@ FUNCTION_BLOCK proc_IM
   fb_NS_G10_G11(signal :=di.di_9.bits[6], str_SS := IM.SingleSignals.NS_G10_G11);   
 
     (* Неисправность источников питания G13, G14 (=24 В)   *)
-  fb_NS_G13_G14(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.NS_G13_G14);  
+  fb_NS_G13_G14(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.NS_G13_G14); 
+
+    (* Неисправность источников питания группы 2: G3, G4 (=24 В)   *)
+  fb_Zagazovannost_dvigatelya_05prc_rezerv(signal :=di.di_9.bits[0], str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_05prc_rezerv);   
+
+    (* Неисправность источников питания внутренних ПТС: G15, G16 (=24 В)   *)
+  fb_Zagazovannost_dvigatelya_1prc_rezerv(signal :=di.di_9.bits[1], str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_1prc_rezerv);   
+
+    (* Неисправность источника питания аналоговых сигналов: G17 (=24 В)   *)
+  fb_Zagazovannost_nagnetatelya_05prc_rezerv(signal :=di.di_9.bits[2], str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_05prc_rezerv);   
+
+    (* Неисправность источников питания группы 3: G5, G6 (=24 В)   *)
+  fb_Zagazovannost_nagnetatelya_1prc_rezerv(signal :=di.di_9.bits[3], str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_1prc_rezerv);   
+
+    (* Неисправность источников питания группы 4: G7, G8 (=24 В)   *)
+  fb_Net_10kv_rezerv(signal :=di.di_9.bits[4], str_SS := IM.SingleSignals.Net_10kv_rezerv);   
+
+    (* Неисправность источников питания внешних цепей: G18, G19 (=24 В)   *)
+  fb_KRU_neispr_rezerv(signal :=di.di_9.bits[5], str_SS := IM.SingleSignals.KRU_neispr_rezerv);   
+
+    (* Неисправность источников питания группы 5: G9, G10, G11, G12 (=110 В)   *)
+  fb_Tok_vozbuzhdenia_est_rezerv(signal :=di.di_9.bits[6], str_SS := IM.SingleSignals.Tok_vozbuzhdenia_est_rezerv);   
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  fb_PNS_avtomat_rezerv(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.PNS_avtomat_rezerv); 
+
+    (* Неисправность источников питания группы 3: G5, G6 (=24 В)   *)
+  fb_CMN_avtomat_rezerv(signal :=di.di_9.bits[3], str_SS := IM.SingleSignals.CMN_avtomat_rezerv);   
+
+    (* Неисправность источников питания группы 4: G7, G8 (=24 В)   *)
+  fb_NKU1_GPA_on_rezerv(signal :=di.di_9.bits[4], str_SS := IM.SingleSignals.NKU1_GPA_on_rezerv);   
+
+    (* Неисправность источников питания внешних цепей: G18, G19 (=24 В)   *)
+  fb_NKU2_GPA_on_rezerv(signal :=di.di_9.bits[5], str_SS := IM.SingleSignals.NKU2_GPA_on_rezerv);   
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  fb_GPA_pozhar_rezerv(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.GPA_pozhar_rezerv); 
+
+    (* Неисправность источников питания G13, G14 (=24 В)   *)
+  fb_TEN_MB_avtomat_rezerv(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.TEN_MB_avtomat_rezerv); 
 
 
   (*************************************************** SingleOutputs ********************************************)
 
   (* Идикация НО (подсветка кнопки на шкафу)   *)
-  fb_Lampa_NO(str_SO := IM.SingleOutputs.Lampa_NO, signal:=od.do_2.bits[11]);  
+  fb_Kran1_smazka_on(str_SO := IM.SingleOutputs.Kran1_smazka_on, signal:=od.do_2.bits[11]);  
 
   (* Взвод включения БЭАО по неисправности ПТС   *)
-  fb_VzvodBREO(str_SO := IM.SingleOutputs.VzvodBREO, signal:=od.do_2.bits[14]);  
+  fb_Kran2_smazka_on(str_SO := IM.SingleOutputs.Kran2_smazka_on, signal:=od.do_2.bits[14]);  
 
   (* Авария ЭГПА в КЦ   *)
-  fb_AO_GPA(str_SO := IM.SingleOutputs.AO_GPA, signal:=od.do_2.bits[0]);    
+  fb_Gpa1_norm(str_SO := IM.SingleOutputs.Gpa1_norm, signal:=od.do_2.bits[0]);    
 
   (* Сброс включения БЭАО по неисправности ПТС   *)
-  fb_SbrosBREO(str_SO := IM.SingleOutputs.SbrosBREO, signal:=od.do_2.bits[15]);   
+  fb_Gpa1_neisprav(str_SO := IM.SingleOutputs.Gpa1_neisprav, signal:=od.do_2.bits[15]);   
 
   (* Индикация ПС Фонарь   *)
-  fb_IndikicijaPS_fonar(str_SO := IM.SingleOutputs.IndikicijaPS_fonar, signal:=od.do_2.bits[13]);    
+  fb_Gpa1_avariya(str_SO := IM.SingleOutputs.Gpa1_avariya, signal:=od.do_2.bits[13]);    
 
   (* Индикация АС Фонарь   *)
-  fb_IndikicijaAS_fonar(str_SO := IM.SingleOutputs.IndikicijaAS_fonar, signal:=od.do_2.bits[12]);   
+  fb_Pusk(str_SO := IM.SingleOutputs.Pusk, signal:=od.do_2.bits[12]);   
 
   (* Отключение МВ1 от КНА   *)
-  fb_mv_off_KNA(str_SO := IM.SingleOutputs.mv_off_KNA, signal:=od.do_1.bits[12]); 
+  fb_Ostanov(str_SO := IM.SingleOutputs.Ostanov, signal:=od.do_1.bits[12]);   
 
 
    (**************************************** Аналоговые и Дискретные параметры ***********************************)
-
-    (* Гистерезис температуры вклюючения вентиляторов в алгоритме АвтоАВОМ  *)  
-  fb_AutoAvom_hysteresis(StrAP:=IM.AutoAvom_hysteresis);
-
-    (* Температура вклюючения АВОМ1 в алгоритме АвтоАВОМ  *)  
-  fb_AutoAvom_onTemp1(StrAP:=IM.AutoAvom_onTemp1);
-
-    (* Температура вклюючения АВОМ1 в алгоритме АвтоАВОМ  *)  
-  fb_AutoAvom_onTemp2(StrAP:=IM.AutoAvom_onTemp2);
-
-    (* Температура включения ПНС в алгоритме АвтоПНС  *)  
-  fb_AutoPns_UstRun(StrAP:=IM.AutoPns_UstRun);
-
-    (* Температура отключения ПНС в алгоритме АвтоПНС  *)  
-  fb_AutoPns_UstStop(StrAP:=IM.AutoPns_UstStop);
-
-    (* Давление масло-газ включения защит в алгоритме Пуск Маслосистемы  *)  
-  fb_PuskOilSystem_UstdPmg(StrAP:=IM.PuskOilSystem_UstdPmg);
-
-  (* Температура отключения ТЭНа в алгоритме АвтоТЭН *)
-  fb_AutoTen_offTemperature(StrAP:=IM.AutoTen_offTemperature);
-
-  (* Уставка включения резервного НУ по перепаду давления "масло-газ" в алгоритме АвтоНУ *)
-  fb_AutoNU_Ust_Swap(StrAP:=IM.AutoNU_Ust_Swap);
-
-  (* Уставка по перепаду давления "масло-газ" в алгоритме Тест dPmg *)
-  fb_testdPmg_Ust_dPLow(StrAP:=IM.testdPmg_Ust_dPLow);
-
-  (* Угол наклона ВНА в алгоритме Антипомпаж *)
-  fb_AntiPompag_UgolVNA(StrAP:=IM.AntiPompag_UgolVNA);
-
-  (*Коэффициент сжимаемости газа в алгоритме Антипомпаж *)
-  fb_AntiPompag_K(StrAP:=IM.AntiPompag_K);
-
-  (* Коэффициент расхода конфузора в алгоритме Антипомпаж *)
-  fb_AntiPompag_A(StrAP:=IM.AntiPompag_A);
-
-  (* Удельный вес газа в алгоритме Антипомпаж *)
-  fb_AntiPompag_y0(StrAP:=IM.AntiPompag_y0);
-
-    (* Переключатель разблокировки кранов: 1 - допстить управление кранами  *)                                   
-  fb_TypeSwitch(StrDP:=IM.TypeSwitch);
-
-    (* Селектор выбора основной/резервный НУ  *)                                   
-  fb_AutoNU_mainNU(StrDP:=IM.AutoNU_mainNU);
-END_FUNCTION_BLOCK
-
-FUNCTION_BLOCK OPC_IM_get
-  VAR_EXTERNAL
-    IM : ImConfig;
-    IM_SingleSignals_DverShkafaOtkryta_status : UDINT;
-    IM_SingleSignals_KZ_10kv_status : UDINT;
-    IM_SingleSignals_NOGPA_knopkaSHU_status : UDINT;
-    IM_SingleSignals_NS_G10_G11_status : UDINT;
-    IM_SingleSignals_NS_G13_G14_status : UDINT;
-    IM_SingleSignals_NS_G15_G16_status : UDINT;
-    IM_SingleSignals_NS_G17_status : UDINT;
-    IM_SingleSignals_NS_G18_G19_status : UDINT;
-    IM_SingleSignals_NS_G1_G2_status : UDINT;
-    IM_SingleSignals_NS_G3_G4_status : UDINT;
-    IM_SingleSignals_NS_G5_G6_status : UDINT;
-    IM_SingleSignals_NS_G7_G8_status : UDINT;
-    IM_SingleSignals_OsevoiSdvig_levo_status : UDINT;
-    IM_SingleSignals_OsevoiSdvig_pravo_status : UDINT;
-    IM_SingleSignals_P_oil_low_status : UDINT;
-    IM_SingleSignals_QF10_QF11_on_status : UDINT;
-    IM_SingleSignals_QF12_QF13_on_status : UDINT;
-    IM_SingleSignals_QF14_QF15_on_status : UDINT;
-    IM_SingleSignals_QF1_on_status : UDINT;
-    IM_SingleSignals_QF22_on_status : UDINT;
-    IM_SingleSignals_QF23_on_status : UDINT;
-    IM_SingleSignals_QF2_on_status : UDINT;
-    IM_SingleSignals_QF4_QF5_on_status : UDINT;
-    IM_SingleSignals_QF6_QF7_on_status : UDINT;
-    IM_SingleSignals_QF8_QF9_on_status : UDINT;
-    IM_SingleSignals_Vozb_AsinchHod_status : UDINT;
-    IM_SingleSignals_Vozb_ControlVozbuditela_status : UDINT;
-    IM_SingleSignals_Vozb_KontaktorON_status : UDINT;
-    IM_SingleSignals_Vozb_Overload_status : UDINT;
-    IM_SingleSignals_Vozb_ProboiVentila_status : UDINT;
-    IM_SingleSignals_Vozb_ReSynchronize_status : UDINT;
-    IM_SingleSignals_dP_gazgaz_Kran1_status : UDINT;
-    IM_SingleSignals_dP_oilgaz_low_status : UDINT;
-    IM_Ten_inCommand_ARM : UINT;
-    IM_Ten_status : UDINT;
-    IM_kran1_inCommand_ARM : UINT;
-    IM_kran1_status : UDINT;
-    IM_kran2_inCommand_ARM : UINT;
-    IM_kran2_status : UDINT;
-    IM_kran3b_inCommand_ARM : UINT;
-    IM_kran3b_status : UDINT;
-    IM_kran4_inCommand_ARM : UINT;
-    IM_kran4_status : UDINT;
-    IM_kran5_inCommand_ARM : UINT;
-    IM_kran5_status : UDINT;
-    IM_kran6_inCommand_ARM : UINT;
-    IM_kran6_status : UDINT;
-    IM_mv_inCommand_ARM : UINT;
-    IM_mv_status : UDINT;
-    IM_nu1_inCommand_ARM : UINT;
-    IM_nu1_status : UDINT;
-    IM_nu2_inCommand_ARM : UINT;
-    IM_nu2_status : UDINT;
-    IM_pns_inCommand_ARM : UINT;
-    IM_pns_status : UDINT;
-    IM_v1_Avom_inCommand_ARM : UINT;
-    IM_v1_Avom_status : UDINT;
-    IM_v2_Avom_inCommand_ARM : UINT;
-    IM_v2_Avom_status : UDINT;
-    algoritms_testIm_TypeSwitch_inCommand_ARM : UINT;
-    algoritms_autoNu_mainNU_inCommand_ARM : UINT;
-    algoritms_AutoAvom_hysteresis_inCommand_ARM : UINT;
-    algoritms_AutoAvom_hysteresis_newValue : LREAL;
-    algoritms_AutoAvom_on1Temperature_inCommand_ARM : UINT;
-    algoritms_AutoAvom_on1Temperature_newValue : LREAL;
-    algoritms_AutoAvom_on2Temperature_inCommand_ARM : UINT;
-    algoritms_AutoAvom_on2Temperature_newValue : LREAL;
-    algoritms_AutoTen_offTemperature_inCommand_ARM : UINT;
-    algoritms_AutoTen_offTemperature_newValue : LREAL;
-    algoritms_AutoPns_Ust_Run_inCommand_ARM : UINT;
-    algoritms_AutoPns_Ust_Run_newValue : LREAL;
-    algoritms_AutoPns_Ust_Stop_inCommand_ARM : UINT;
-    algoritms_AutoPns_Ust_Stop_newValue : LREAL;
-    algoritms_puskOilSystem_Ust_dPmg_inCommand_ARM : UINT;
-    algoritms_puskOilSystem_Ust_dPmg_newValue : LREAL;
-    algoritms_autoNu_Ust_Swap_inCommand_ARM : UINT;
-    algoritms_autoNu_Ust_Swap_newValue : LREAL;
-    algoritms_AntiPompag_UgolVNA_inCommand_ARM : UINT;
-    algoritms_AntiPompag_UgolVNA_newValue : LREAL;
-    algoritms_testdPmg_Ust_dPLow_inCommand_ARM : UINT;
-    algoritms_testdPmg_Ust_dPLow_newValue : LREAL;
-    Reset_HasNU : BOOL;
-    algoritms_autoNu_Reset_HasNU : BOOL;
-  END_VAR
-
-  (* OPC Get - IM. Чтение текущих состояний тэгов _______________________________________________________*)
-
-  Im.kran1.inCommand_ARM	:= UINT_TO_WORD(IM_kran1_inCommand_ARM);
-  Im.kran2.inCommand_ARM	:= UINT_TO_WORD(IM_kran2_inCommand_ARM);
-  Im.kran3b.inCommand_ARM	:= UINT_TO_WORD(IM_kran3b_inCommand_ARM);
-  Im.kran4.inCommand_ARM	:= UINT_TO_WORD(IM_kran4_inCommand_ARM);
-  Im.kran5.inCommand_ARM	:= UINT_TO_WORD(IM_kran5_inCommand_ARM);
-  Im.kran6.inCommand_ARM	:= UINT_TO_WORD(IM_kran6_inCommand_ARM);
-  Im.mv.inCommand_ARM	          := UINT_TO_WORD(IM_mv_inCommand_ARM);
-  Im.nu1.inCommand_ARM	:= UINT_TO_WORD(IM_nu1_inCommand_ARM);
-  Im.nu2.inCommand_ARM	:= UINT_TO_WORD(IM_nu2_inCommand_ARM);
-  Im.pns.inCommand_ARM	:= UINT_TO_WORD(IM_pns_inCommand_ARM);
-  Im.Ten.inCommand_ARM	:= UINT_TO_WORD(IM_Ten_inCommand_ARM);
-  Im.v1_Avom.inCommand_ARM	:= UINT_TO_WORD(IM_v1_Avom_inCommand_ARM);
-  Im.v2_Avom.inCommand_ARM	:= UINT_TO_WORD(IM_v2_Avom_inCommand_ARM);
-
-  Im.AutoAvom_hysteresis.newValue        := algoritms_AutoAvom_hysteresis_newValue;
-  Im.AutoAvom_hysteresis.inCommand_ARM   := UINT_TO_WORD(algoritms_AutoAvom_hysteresis_inCommand_ARM);
-  Im.AutoAvom_onTemp1.newValue        := algoritms_AutoAvom_on1Temperature_newValue;
-  Im.AutoAvom_onTemp1.inCommand_ARM      := UINT_TO_WORD(algoritms_AutoAvom_on1Temperature_inCommand_ARM);
-  Im.AutoAvom_onTemp2.newValue        := algoritms_AutoAvom_on2Temperature_newValue;
-  Im.AutoAvom_onTemp2.inCommand_ARM      := UINT_TO_WORD(algoritms_AutoAvom_on2Temperature_inCommand_ARM);
-
-  Im.AutoTen_offTemperature.newValue        := algoritms_AutoTen_offTemperature_newValue;
-  Im.AutoTen_offTemperature.inCommand_ARM   := UINT_TO_WORD(algoritms_AutoTen_offTemperature_inCommand_ARM);
-
-  Im.AutoPns_UstRun.newValue        := algoritms_AutoPns_Ust_Run_newValue;
-  Im.AutoPns_UstRun.inCommand_ARM   := UINT_TO_WORD(algoritms_AutoPns_Ust_Run_inCommand_ARM);
-  Im.AutoPns_UstStop.newValue        := algoritms_AutoPns_Ust_Stop_newValue;
-  Im.AutoPns_UstStop.inCommand_ARM   := UINT_TO_WORD(algoritms_AutoPns_Ust_Stop_inCommand_ARM);
-
-  Im.PuskOilSystem_UstdPmg.newValue        := algoritms_puskOilSystem_Ust_dPmg_newValue;
-  Im.PuskOilSystem_UstdPmg.inCommand_ARM   := UINT_TO_WORD(algoritms_puskOilSystem_Ust_dPmg_inCommand_ARM);
-
-  Im.AutoNU_Ust_Swap.newValue        := algoritms_autoNu_Ust_Swap_newValue;
-  Im.AutoNU_Ust_Swap.inCommand_ARM   := UINT_TO_WORD(algoritms_autoNu_Ust_Swap_inCommand_ARM);
-
-  Im.testdPmg_Ust_dPLow.newValue        := algoritms_testdPmg_Ust_dPLow_newValue;
-  Im.testdPmg_Ust_dPLow.inCommand_ARM   := UINT_TO_WORD(algoritms_testdPmg_Ust_dPLow_inCommand_ARM);
-
-  Im.AntiPompag_UgolVNA.newValue        := algoritms_AntiPompag_UgolVNA_newValue;
-  Im.AntiPompag_UgolVNA.inCommand_ARM   := UINT_TO_WORD(algoritms_AntiPompag_UgolVNA_inCommand_ARM);
-
-  Im.TypeSwitch.inCommand_ARM           := UINT_TO_WORD(algoritms_testIm_TypeSwitch_inCommand_ARM);
-
-  Im.AutoNU_mainNU.inCommand_ARM        := UINT_TO_WORD(algoritms_autoNu_mainNU_inCommand_ARM);
-
-  Reset_HasNU   := algoritms_autoNu_Reset_HasNU;
-END_FUNCTION_BLOCK
-
-FUNCTION_BLOCK OPC_IM_set
-  VAR_EXTERNAL
-    IM : ImConfig;
-    IM_SingleSignals_DverShkafaOtkryta_status : UDINT;
-    IM_SingleSignals_KZ_10kv_status : UDINT;
-    IM_SingleSignals_NOGPA_knopkaSHU_status : UDINT;
-    IM_SingleSignals_NS_G10_G11_status : UDINT;
-    IM_SingleSignals_NS_G13_G14_status : UDINT;
-    IM_SingleSignals_NS_G15_G16_status : UDINT;
-    IM_SingleSignals_NS_G17_status : UDINT;
-    IM_SingleSignals_NS_G18_G19_status : UDINT;
-    IM_SingleSignals_NS_G1_G2_status : UDINT;
-    IM_SingleSignals_NS_G3_G4_status : UDINT;
-    IM_SingleSignals_NS_G5_G6_status : UDINT;
-    IM_SingleSignals_NS_G7_G8_status : UDINT;
-    IM_SingleSignals_OsevoiSdvig_levo_status : UDINT;
-    IM_SingleSignals_OsevoiSdvig_pravo_status : UDINT;
-    IM_SingleSignals_P_oil_low_status : UDINT;
-    IM_SingleSignals_QF10_QF11_on_status : UDINT;
-    IM_SingleSignals_QF12_QF13_on_status : UDINT;
-    IM_SingleSignals_QF14_QF15_on_status : UDINT;
-    IM_SingleSignals_QF1_on_status : UDINT;
-    IM_SingleSignals_QF22_on_status : UDINT;
-    IM_SingleSignals_QF23_on_status : UDINT;
-    IM_SingleSignals_QF2_on_status : UDINT;
-    IM_SingleSignals_QF4_QF5_on_status : UDINT;
-    IM_SingleSignals_QF6_QF7_on_status : UDINT;
-    IM_SingleSignals_QF8_QF9_on_status : UDINT;
-    IM_SingleSignals_Vozb_AsinchHod_status : UDINT;
-    IM_SingleSignals_Vozb_ControlVozbuditela_status : UDINT;
-    IM_SingleSignals_Vozb_KontaktorON_status : UDINT;
-    IM_SingleSignals_Vozb_Overload_status : UDINT;
-    IM_SingleSignals_Vozb_ProboiVentila_status : UDINT;
-    IM_SingleSignals_Vozb_ReSynchronize_status : UDINT;
-    IM_SingleSignals_dP_gazgaz_Kran1_status : UDINT;
-    IM_SingleSignals_dP_oilgaz_low_status : UDINT;
-    IM_Ten_inCommand_ARM : UINT;
-    IM_Ten_status : UDINT;
-    IM_kran1_inCommand_ARM : UINT;
-    IM_kran1_status : UDINT;
-    IM_kran2_inCommand_ARM : UINT;
-    IM_kran2_status : UDINT;
-    IM_kran3b_inCommand_ARM : UINT;
-    IM_kran3b_status : UDINT;
-    IM_kran4_inCommand_ARM : UINT;
-    IM_kran4_status : UDINT;
-    IM_kran5_inCommand_ARM : UINT;
-    IM_kran5_status : UDINT;
-    IM_kran6_inCommand_ARM : UINT;
-    IM_kran6_status : UDINT;
-    IM_mv_inCommand_ARM : UINT;
-    IM_mv_status : UDINT;
-    IM_nu1_inCommand_ARM : UINT;
-    IM_nu1_status : UDINT;
-    IM_nu2_inCommand_ARM : UINT;
-    IM_nu2_status : UDINT;
-    IM_pns_inCommand_ARM : UINT;
-    IM_pns_status : UDINT;
-    IM_v1_Avom_inCommand_ARM : UINT;
-    IM_v1_Avom_status : UDINT;
-    IM_v2_Avom_inCommand_ARM : UINT;
-    IM_v2_Avom_status : UDINT;
-    algoritms_AutoAvom_hysteresis_Value : LREAL;
-    algoritms_AutoAvom_hysteresis_status : UDINT;
-    algoritms_AutoAvom_on1Temperature_Value : LREAL;
-    algoritms_AutoAvom_on1Temperature_status : UDINT;
-    algoritms_AutoAvom_on2Temperature_Value : LREAL;
-    algoritms_AutoAvom_on2Temperature_status : UDINT;
-    algoritms_autoNu_mainNU_status : UDINT;
-    algoritms_testIm_TypeSwitch_status : UDINT;
-    algoritms_AutoTen_offTemperature_Value : LREAL;
-    algoritms_AutoTen_offTemperature_status : UDINT;
-    algoritms_AutoPns_Ust_Run_Value : LREAL;
-    algoritms_AutoPns_Ust_Run_status : UDINT;
-    algoritms_AutoPns_Ust_Stop_Value : LREAL;
-    algoritms_AutoPns_Ust_Stop_status : UDINT;
-    algoritms_puskOilSystem_Ust_dPmg_Value : LREAL;
-    algoritms_puskOilSystem_Ust_dPmg_status : UDINT;
-    algoritms_autoNu_Ust_Swap_Value : LREAL;
-    algoritms_autoNu_Ust_Swap_status : UDINT;
-    algoritms_AntiPompag_UgolVNA_Value : LREAL;
-    algoritms_AntiPompag_UgolVNA_status : UDINT;
-    algoritms_testdPmg_Ust_dPLow_Value : LREAL;
-    algoritms_testdPmg_Ust_dPLow_status : UDINT;
-  END_VAR
-
-  (* OPC Set - IM. Запись текущих состояний тэгов _______________________________________________________*)
-
-  IM_kran1_status	:= DWORD_TO_UDINT(Im.kran1.status);
-  IM_kran2_status	:= DWORD_TO_UDINT(Im.kran2.status);
-  IM_kran3b_status	:= DWORD_TO_UDINT(Im.kran3b.status);
-  IM_kran4_status	:= DWORD_TO_UDINT(Im.kran4.status);
-  IM_kran5_status	:= DWORD_TO_UDINT(Im.kran5.status);
-  IM_kran6_status	:= DWORD_TO_UDINT(Im.kran6.status);
-  IM_mv_status	:= DWORD_TO_UDINT(Im.mv.status);
-  IM_nu1_status	:= DWORD_TO_UDINT(Im.nu1.status);
-  IM_nu2_status	:= DWORD_TO_UDINT(Im.nu2.status);
-  IM_pns_status	:= DWORD_TO_UDINT(Im.pns.status);
-  IM_Ten_status	:= DWORD_TO_UDINT(Im.Ten.status);
-  IM_v1_Avom_status	:= DWORD_TO_UDINT(Im.v1_Avom.status);
-  IM_v2_Avom_status	:= DWORD_TO_UDINT(Im.v2_Avom.status);
-  IM_SingleSignals_NOGPA_knopkaSHU_status	:= DWORD_TO_UDINT(Im.SingleSignals.NOGPA_knopkaSHU.status);
-  IM_SingleSignals_dP_gazgaz_Kran1_status	:= DWORD_TO_UDINT(Im.SingleSignals.dP_gazgaz_Kran1.status);
-  IM_SingleSignals_P_oil_low_status	:= DWORD_TO_UDINT(Im.SingleSignals.P_oil_low.status);
-  IM_SingleSignals_DverShkafaOtkryta_status	:= DWORD_TO_UDINT(Im.SingleSignals.DverShkafaOtkryta.status);
-  IM_SingleSignals_KZ_10kv_status	:= DWORD_TO_UDINT(Im.SingleSignals.KZ_10kv.status);
-  IM_SingleSignals_OsevoiSdvig_levo_status	:= DWORD_TO_UDINT(Im.SingleSignals.OsevoiSdvig_levo.status);
-  IM_SingleSignals_OsevoiSdvig_pravo_status	:= DWORD_TO_UDINT(Im.SingleSignals.OsevoiSdvig_pravo.status);
-  IM_SingleSignals_QF4_QF5_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF4_QF5_on.status);
-  IM_SingleSignals_QF6_QF7_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF6_QF7_on.status);
-  IM_SingleSignals_QF8_QF9_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF8_QF9_on.status);
-  IM_SingleSignals_QF10_QF11_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF10_QF11_on.status);
-  IM_SingleSignals_QF12_QF13_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF12_QF13_on.status);
-  IM_SingleSignals_QF14_QF15_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF14_QF15_on.status);
-  IM_SingleSignals_QF1_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF1_on.status);
-  IM_SingleSignals_QF2_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF2_on.status);
-  IM_SingleSignals_QF23_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF23_on.status);
-  IM_SingleSignals_Vozb_AsinchHod_status	:= DWORD_TO_UDINT(Im.SingleSignals.Vozb_AsinchHod.status);
-  IM_SingleSignals_Vozb_ControlVozbuditela_status	:= DWORD_TO_UDINT(Im.SingleSignals.Vozb_ControlVozbuditela.status);
-  IM_SingleSignals_Vozb_KontaktorON_status	:= DWORD_TO_UDINT(Im.SingleSignals.Vozb_KontaktorON.status);
-  IM_SingleSignals_Vozb_Overload_status	:= DWORD_TO_UDINT(Im.SingleSignals.Vozb_Overload.status);
-  IM_SingleSignals_Vozb_ProboiVentila_status	:= DWORD_TO_UDINT(Im.SingleSignals.Vozb_ProboiVentila.status);
-  IM_SingleSignals_Vozb_ReSynchronize_status	:= DWORD_TO_UDINT(Im.SingleSignals.Vozb_ReSynchronize.status);
-  IM_SingleSignals_dP_oilgaz_low_status	:= DWORD_TO_UDINT(Im.SingleSignals.dP_oilgaz_low.status);
-  IM_SingleSignals_QF22_on_status	:= DWORD_TO_UDINT(Im.SingleSignals.QF22_on.status);
-  IM_SingleSignals_NS_G1_G2_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G1_G2.status);
-  IM_SingleSignals_NS_G3_G4_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G3_G4.status);
-  IM_SingleSignals_NS_G5_G6_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G5_G6.status);
-  IM_SingleSignals_NS_G7_G8_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G7_G8.status);
-  IM_SingleSignals_NS_G10_G11_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G10_G11.status);
-  IM_SingleSignals_NS_G13_G14_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G13_G14.status);
-  IM_SingleSignals_NS_G15_G16_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G15_G16.status);
-  IM_SingleSignals_NS_G17_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G17.status);
-  IM_SingleSignals_NS_G18_G19_status	:= DWORD_TO_UDINT(Im.SingleSignals.NS_G18_G19.status);
-
-  algoritms_AutoAvom_hysteresis_Value        := Im.AutoAvom_hysteresis.Value;
-  algoritms_AutoAvom_hysteresis_status       := DWORD_TO_UDINT(Im.AutoAvom_hysteresis.status);
-  algoritms_AutoAvom_on1Temperature_Value    := Im.AutoAvom_onTemp1.Value;
-  algoritms_AutoAvom_on1Temperature_status   := DWORD_TO_UDINT(Im.AutoAvom_onTemp1.status);
-  algoritms_AutoAvom_on2Temperature_Value    := Im.AutoAvom_onTemp2.Value;
-  algoritms_AutoAvom_on2Temperature_status   := DWORD_TO_UDINT(Im.AutoAvom_onTemp2.status);
-
-  algoritms_AutoTen_offTemperature_Value    := Im.AutoTen_offTemperature.Value;
-  algoritms_AutoTen_offTemperature_status   := DWORD_TO_UDINT(Im.AutoTen_offTemperature.status);
-
-  algoritms_AutoPns_Ust_Run_Value    := Im.AutoPns_UstRun.Value;
-  algoritms_AutoPns_Ust_Run_status   := DWORD_TO_UDINT(Im.AutoPns_UstRun.status);
-  algoritms_AutoPns_Ust_Stop_Value    := Im.AutoPns_UstStop.Value;
-  algoritms_AutoPns_Ust_Stop_status   := DWORD_TO_UDINT(Im.AutoPns_UstStop.status);
-
-  algoritms_puskOilSystem_Ust_dPmg_Value    := Im.PuskOilSystem_UstdPmg.Value;
-  algoritms_puskOilSystem_Ust_dPmg_status   := DWORD_TO_UDINT(Im.PuskOilSystem_UstdPmg.status);
-
-  algoritms_autoNu_Ust_Swap_Value    := Im.AutoNU_Ust_Swap.Value;
-  algoritms_autoNu_Ust_Swap_status   := DWORD_TO_UDINT(Im.AutoNU_Ust_Swap.status);
-
-  algoritms_testdPmg_Ust_dPLow_Value    := Im.testdPmg_Ust_dPLow.Value;
-  algoritms_testdPmg_Ust_dPLow_status   := DWORD_TO_UDINT(Im.testdPmg_Ust_dPLow.status);
-
-  algoritms_AntiPompag_UgolVNA_Value    := Im.AntiPompag_UgolVNA.Value;
-  algoritms_AntiPompag_UgolVNA_status   := DWORD_TO_UDINT(Im.AntiPompag_UgolVNA.status);
-
-  algoritms_testIm_TypeSwitch_status  :=  DWORD_TO_UDINT(Im.TypeSwitch.status);  
-
-  algoritms_autoNu_mainNU_status      :=  DWORD_TO_UDINT(Im.AutoNU_mainNU.status);
 END_FUNCTION_BLOCK
 
 FUNCTION_BLOCK fb_DiProtection_Init
@@ -6146,22 +5818,6 @@ FUNCTION_BLOCK proc_Protections_Init
 
 
   (*************************************************Стартовая инициализация DiProtection ***************************************************)
-  (* Осевой сдвиг ротора вправо ≥3,7 кгс/см 
-  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Vibro_skorost_OYP_kolesa_ED_T3);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
-
-  (* Осевой сдвиг ротора влево ≥3,7 кгс/см 
-  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
-
-  (* Низкий перепад давления «масло-газ» ≤1 кгс/см² 
-  stDIp_Ini(data_Ini := true, delay:=T#20S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
-
-  (* Низкое давление масла смазки ≤ 0,4 кгс/см² 
-  stDIp_Ini(data_Ini := true, delay:=T#10S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);*)
-
   (* МВ отключен *)
   stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.mvOff);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
@@ -6203,8 +5859,6 @@ FUNCTION_BLOCK proc_Protections_Init
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (*************************************************Стартовая инициализация AiProtection ***************************************************)
-
-
   (* Температура переднего опорного подшипника двигателя, т.1 *)
   stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
   controlLimit:=_StatusAi.HA, str_AIp := protections.Topornogo_podshipnika_EDT_1);
@@ -6985,48 +6639,35 @@ FUNCTION_BLOCK proc_Protection
   END_VAR
 
   (************************************************************* DiProtection ************************************************************)
-  (* Осевой сдвиг ротора вправо ≥3,7 кгс/см 
-  fb_OsevojSdvigPravyjDi(di := IM.SingleSignals.OsevoiSdvig_pravo, StrDIp := protections.Vibro_skorost_OYP_Kolesa_ED_T3);
-  *)
-  (* Осевой сдвиг ротора влево ≥3,7 кгс/см 
-  fb_OsevojSdvigLevyjDi(di := IM.SingleSignals.OsevoiSdvig_levo, StrDIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
-  *)
-  (* Низкий перепад давления «масло-газ» ≤1 кгс/см² 
-  fb_dP_masloGaz_LowDI(di := IM.SingleSignals.dP_oilgaz_low, StrDIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
-  *)
-  (* Низкое давление масла смазки ≤ 0,4 кгс/см² 
-  fb_DavlenieMaslaSmazkiDi(di := IM.SingleSignals.P_oil_low, StrDIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-  *)
   (* МВ отключен *)
   fb_mvOff(sw:=IM.mv, StrDIp := protections.mvOff);
 
-  (* Неисправность возбудительного устройства *)
+  (* Неисправность возбудительного устройства *
   fb_NeispravnostVozbuzhdenijaDi(di := IM.SingleSignals.NS_Vozbyditela, StrDIp := protections.dPmaslo_gaz_Less100);
 
-  (* Аварийный останов цеха *)
+  (* Аварийный останов цеха *
   fb_AO_KcDi(di := IM.SingleSignals.AO_KC, StrDIp := protections.Reg_vozb_off);
 
-  (* Аварийный останов АО ЭГПА с ПРУ *)
+  (* Аварийный останов АО ЭГПА с ПРУ *
   fb_AO_PRU(di := IM.SingleSignals.AOGPA_PRU, StrDIp := protections.Fail_chastotniy_pusk);
 
-  (* Аварийный останов АО ЭГПА с ШУ *)
+  (* Аварийный останов АО ЭГПА с ШУ *
   fb_AO_SHU(di := IM.SingleSignals.AOGPA_knopkaSHU, StrDIp := protections.Off_avar_switch);
 
-  (* Срабатывание БЭАО (отказ ПТС) *)
+  (* Срабатывание БЭАО (отказ ПТС) *
   fb_Srab_BEAO(di := IM.SingleSignals.BEO_Srabat, StrDIp := protections.AOKC_SHKC);
 
-  (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ *)
+  (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ *
   fb_EAO_PRU(di := IM.SingleSignals.BEO_ON_knopkaPRU, StrDIp := protections.AO_PRU);
 
-  (* Запуск БЭАО от кнопки ЭАО ШУ *)
+  (* Запуск БЭАО от кнопки ЭАО ШУ *
   fb_BEAO_knSHU(di := IM.SingleSignals.BEO_ON_knopkaSHU, StrDIp := protections.AO_fromSHU);
 
-  (* Сдвиг крана №1 *)
+  (* Сдвиг крана №1 *
   fb_Kran1sdvig(im:=IM.Kran1, StrDIp := protections.Kran1sdvig);
 
-  (* Сдвиг крана №2 *)
-  fb_Kran2sdvig(im:=IM.Kran2, StrDIp := protections.Kran2sdvig);
-
+  (* Сдвиг крана №2 *
+  fb_Kran2sdvig(im:=IM.Kran2, StrDIp := protections.Kran2sdvig);*)
 
   (************************************************************* AiProtection ************************************************************)
 
@@ -7203,7 +6844,7 @@ FUNCTION BlockAllIM : BOOL
   IF NOT IM.pns.inOpcCommandsDisabled     THEN IM.pns.inOpcCommandsDisabled:=TRUE; END_IF;
   IF NOT IM.v1_Avom.inOpcCommandsDisabled THEN IM.v1_Avom.inOpcCommandsDisabled:=TRUE; END_IF;
   IF NOT IM.v2_Avom.inOpcCommandsDisabled THEN IM.v2_Avom.inOpcCommandsDisabled:=TRUE; END_IF;
-  IF NOT IM.Ten.inOpcCommandsDisabled     THEN IM.Ten.inOpcCommandsDisabled:=TRUE; END_IF;
+  (*IF NOT IM.Ten.inOpcCommandsDisabled     THEN IM.Ten.inOpcCommandsDisabled:=TRUE; END_IF;*)
   IF NOT IM.mv.inOpcCommandsDisabled      THEN IM.mv.inOpcCommandsDisabled:=TRUE; END_IF;
 END_FUNCTION
 
@@ -7212,7 +6853,7 @@ FUNCTION UnBlockAllIM : BOOL
     IM : ImConfig;
   END_VAR
 
-  IF IM.TypeSwitch.Value = 1 THEN
+  (*IF IM.TypeSwitch.Value = 1 THEN*)
 
   IF IM.Kran1.inOpcCommandsDisabled   THEN IM.Kran1.inOpcCommandsDisabled:=FALSE; END_IF;
   IF IM.Kran2.inOpcCommandsDisabled   THEN IM.Kran2.inOpcCommandsDisabled:=FALSE; END_IF;
@@ -7220,7 +6861,7 @@ FUNCTION UnBlockAllIM : BOOL
   IF IM.Kran4.inOpcCommandsDisabled   THEN IM.Kran4.inOpcCommandsDisabled:=FALSE; END_IF;
   IF IM.Kran5.inOpcCommandsDisabled   THEN IM.Kran5.inOpcCommandsDisabled:=FALSE; END_IF;
   (*IF IM.Kran6.inOpcCommandsDisabled   THEN IM.Kran6.inOpcCommandsDisabled:=FALSE; END_IF;*)
-  END_IF;
+  (*END_IF;*)
 
 
   IF IM.nu1.inOpcCommandsDisabled     THEN IM.nu1.inOpcCommandsDisabled:=FALSE; END_IF;
@@ -7228,7 +6869,7 @@ FUNCTION UnBlockAllIM : BOOL
   IF IM.pns.inOpcCommandsDisabled     THEN IM.pns.inOpcCommandsDisabled:=FALSE; END_IF;
   IF IM.v1_Avom.inOpcCommandsDisabled THEN IM.v1_Avom.inOpcCommandsDisabled:=FALSE; END_IF;
   IF IM.v2_Avom.inOpcCommandsDisabled THEN IM.v2_Avom.inOpcCommandsDisabled:=FALSE; END_IF;
-  IF IM.Ten.inOpcCommandsDisabled     THEN IM.Ten.inOpcCommandsDisabled:=FALSE; END_IF;
+  (*IF IM.Ten.inOpcCommandsDisabled     THEN IM.Ten.inOpcCommandsDisabled:=FALSE; END_IF;*)
   IF IM.mv.inOpcCommandsDisabled      THEN IM.mv.inOpcCommandsDisabled:=FALSE; END_IF;
 END_FUNCTION
 
@@ -7400,8 +7041,8 @@ FUNCTION_BLOCK TestProtectionAlg
                                                         algManager.nMode:=ModeGpa.MODE_TESTAZ;
                                                         protectManager.inCommand:=PMcommand.CheckProtections;
   					    EnableAiLimits(ai);
-                                                        IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;
-                                                        IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=FALSE;
+                                                        (*IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;*)
+                                                        (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=FALSE;*)
                                                     (*StrAlg.inOpcCommandsDisabled:=FALSE;*)		
   					cmd_for_Status := cmd;
   					source_for_Status := source;
@@ -7420,8 +7061,8 @@ FUNCTION_BLOCK TestProtectionAlg
   				StrAlg.hasError 	:= FALSE;
                                           (*****************       OnReset       *****************)
                                                     DisableAiLimits(ai);
-                                                    IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
-                                                    IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+                                                    (*IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
+                                                    IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
                                                     protectManager.inCommand:=PMcommand.RestartAllProtections;
                                                     algManager.nMode:=ModeGpa.MODE_STOP;
 
@@ -8460,7 +8101,7 @@ FUNCTION_BLOCK fb_vibegPNSAlg
             resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
             (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
 
-  	IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
+  	(*IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;*)
   	ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;
             ai.Pmasla_posle_GNS.Disabled_LW:=TRUE;
             ai.Pmasla_posle_NU.Disabled_LW:=TRUE;
@@ -9017,7 +8658,7 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
   END_IF;
 
                 fb_pnsOn(StrPh:=pnsOn, Im:=IM.pns);
-               fb_LowOil(StrPh:=LowOil, ai:=ai.Pmasla_posle_GNS, more:=im.AutoPns_UstRun.Value);
+               (*fb_LowOil(StrPh:=LowOil, ai:=ai.Pmasla_posle_GNS, more:=im.AutoPns_UstRun.Value);*)
   fb_BreakPuskTimer_Poil(StrPh:=BreakPuskTimer_Poil, timer:=AlgTimers.puskOilSystem_BreakPuskTimer_Poil);
    fb_Poil_DefenseActive(StrPh:=Poil_DefenseActive);
                  fb_nuOn(StrPh:=nuOn);
@@ -9025,7 +8666,7 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
                 fb_nu2On(StrPh:=nu2On, Im:=Im.nu2);
              fb_autoNuOn(StrPh:=autoNuOn, alg:=algoritms.autoNu);  
               fb_di_dPmg(StrPh:=di_dPmg);
-         fb_dP_oilGas100(StrPh:=dP_oilGas100, ai:=ai.Tmasla_MB, more:=im.PuskOilSystem_UstdPmg.Value);
+         (*fb_dP_oilGas100(StrPh:=dP_oilGas100, ai:=ai.Tmasla_MB, more:=im.PuskOilSystem_UstdPmg.Value);*)
         fb_runProtect_dP(StrPh:=runProtect_dP);
      fb_testUnsuccessful(StrPh:=testUnsuccessful);
 
@@ -9042,7 +8683,7 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
           runAiProtection(protections.Os_sdvig_nagnetatelja_minus);
           (*runDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
           runPhase(Poil_DefenseActive);
-          IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;
+          (*IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;*)
           ai.Pmasla_posle_GNS.Disabled_LA:=FALSE;
           ai.Pmasla_posle_GNS.Disabled_LW:=FALSE;
           ai.Pmasla_posle_NU.Disabled_LW:=FALSE;
@@ -9059,13 +8700,13 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
 
 
       IF nuOn.start AND NOT nuOn.top THEN
-          IF IM.AutoNU_mainNU.Value = 0 THEN
+         (* IF IM.SingleOutputs.Value = 0 THEN
               runPhase(nu1On);
           END_IF;
 
-          IF IM.AutoNU_mainNU.Value = 1 THEN
+          IF IM.SingleOutputs.Value = 1 THEN
               runPhase(nu2On);
-          END_IF;
+          END_IF;*)
          nuOn.top:= Im.nu1.onStatus = _statusDualInput.STATUS_ON OR Im.nu2.onStatus = _statusDualInput.STATUS_ON;
       END_IF;	
 
@@ -9074,9 +8715,9 @@ FUNCTION_BLOCK fb_puskOilSystemAlg
             runPhase(dP_oilGas100);
       END_IF;	
 
-      IF di_dPmg.start AND NOT di_dPmg.top THEN
+      (*IF di_dPmg.start AND NOT di_dPmg.top THEN
          di_dPmg.top:= NOT IM.SingleSignals.dP_oilgaz_low.Q;
-      END_IF;
+      END_IF;*)
 
       IF dP_oilGas100.top AND di_dPmg.top THEN
             runPhase(autoNuOn);
@@ -9927,7 +9568,7 @@ FUNCTION_BLOCK NOAlg
              fb_nu1off(StrPh:=nu1off, Im:=Im.nu1);
              fb_nu2off(StrPh:=nu2off, Im:=Im.nu2);
       fb_waitCloseKran(StrPh:=waitCloseKran, timer:=AlgTimers.NO_waitCloseKran);           
-             fb_LowOil(StrPh:=LowOil, ai:=ai.Pmasla_posle_GNS, less:=im.AutoPns_UstRun.value);
+             (*fb_LowOil(StrPh:=LowOil, ai:=ai.Pmasla_posle_GNS, less:=im.AutoPns_UstRun.value);*)
          fb_pnsWaitOff(StrPh:=pnsWaitOff, alg:=algoritms.vibegPNS, waitCompletion:=TRUE);
     fb_runUnsuccessful(StrPh:=runUnsuccessful);
 
@@ -9990,7 +9631,7 @@ FUNCTION_BLOCK NOAlg
       IF pInNagLess100.top AND pnsOn.top THEN
   	ai.Tmasla_MB.Disabled_LA:=TRUE;
             ai.Tmasla_MB.Disabled_LW:=TRUE;
-            IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+            (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
             resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
             (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
@@ -10057,7 +9698,7 @@ FUNCTION_BLOCK NOAlg
   					(*****************       OnRun       *****************)
 
                                                     algManager.nMode:=ModeGpa.MODE_NO;
-                                                    runIfNotRunningSO(IM.SingleOutputs.Lampa_NO);
+                                                    (*runIfNotRunningSO(IM.SingleOutputs.Lampa_NO);*)
 
                                                     runPhase(kran3bOpen);
                                                     runPhase(kran4Close);         
@@ -10091,9 +9732,9 @@ FUNCTION_BLOCK NOAlg
 
                                            (*****************       OnReset       *****************)
                                           waitReset(IN:=FALSE);
-                                          resetIfRunningSO(IM.SingleOutputs.Lampa_NO);
+                                          (*resetIfRunningSO(IM.SingleOutputs.Lampa_NO);*)
                                           resetIfRunning(algoritms.vibegPNS);
-                                          impulseSO(Im.SingleOutputs.SbrosBREO);
+                                          (*impulseSO(Im.SingleOutputs.SbrosBREO);*)
 
                                           resetPhase(kran4Close);
                                           resetPhase(mvOff);
@@ -10392,7 +10033,7 @@ FUNCTION_BLOCK AOAlg
       IF pInNagLess100.top AND kran3bOpen.top AND mvOff.top THEN
   	ai.Tmasla_MB.Disabled_LA:=TRUE;
             ai.Tmasla_MB.Disabled_LW:=TRUE;
-            IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+            (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
             resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
             (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
@@ -10450,8 +10091,8 @@ FUNCTION_BLOCK AOAlg
   					(*****************       OnRun       *****************)
 
                                                     StrAlg.opcCommandsDisabled:=TRUE;
-                                                    runIfNotRunningSO(IM.SingleOutputs.IndikicijaAS_fonar);
-                                                    runIfNotRunningSO(IM.SingleOutputs.AO_GPA);
+                                                    (*runIfNotRunningSO(IM.SingleOutputs.IndikicijaAS_fonar);
+                                                    runIfNotRunningSO(IM.SingleOutputs.AO_GPA);*)
                                                     stopPusk(algoritms);
                                                     algManager.nMode:=ModeGpa.MODE_AO;
 
@@ -10487,11 +10128,11 @@ FUNCTION_BLOCK AOAlg
                                            (*****************       OnReset       *****************)
                                           protectManager.inCommand:=PMcommand.RestartAllSignaling;
                                           waitReset(IN:=FALSE);
-                                          resetIfRunningSO(IM.SingleOutputs.IndikicijaAS_fonar);
-                                          resetIfRunningSO(IM.SingleOutputs.AO_GPA);
+                                          (*resetIfRunningSO(IM.SingleOutputs.IndikicijaAS_fonar);
+                                          resetIfRunningSO(IM.SingleOutputs.AO_GPA);*)
                                           resetIfRunning(algoritms.vibegPNS);
                                           algManager.nMode:=ModeGpa.MODE_STOP;
-                                          impulseSO(Im.SingleOutputs.SbrosBREO);
+                                          (*impulseSO(Im.SingleOutputs.SbrosBREO);*)
 
                                           resetPhase(kran4Close);
                                           resetPhase(mvOff);
@@ -10745,7 +10386,7 @@ FUNCTION nsCepeiControl : BOOL
   	im.PNS.reliability OR
             im.v1_Avom.reliability OR
             im.v2_Avom.reliability OR
-            im.Ten.reliability OR
+            (*im.Ten.reliability OR*)
   	im.mv.reliability);
 END_FUNCTION
 
@@ -10917,9 +10558,9 @@ FUNCTION_BLOCK ppuAlg
       Voltage_ok.top	:=NapryageniaOK(IM);
       controlCircuits_ok.top	:=NOT nsCepeiUpravlenya(IM);
       controlCircuitsIM_ok.top	:=NOT nsCepeiControl(IM);
-      BEAO_otKnSHU.top	:=NOT Im.singleSignals.BEO_ON_knopkaSHU.Q AND Im.singleSignals.BEO_ON_knopkaSHU.reliability;
+      (*BEAO_otKnSHU.top	:=NOT Im.singleSignals.BEO_ON_knopkaSHU.Q AND Im.singleSignals.BEO_ON_knopkaSHU.reliability;*)
       circuitAO_ok.top	:=NOT Im.singleSignals.AO_KC.Q AND Im.singleSignals.AO_KC.reliability;
-      BREO_Srabotal.top	:=NOT Im.singleSignals.BEO_Srabat.Q AND Im.singleSignals.BEO_Srabat.reliability;
+      (*BREO_Srabotal.top	:=NOT Im.singleSignals.BEO_Srabat.Q AND Im.singleSignals.BEO_Srabat.reliability;*)
       DI_ok.top	:=NOT discretNS(di);
       AI_ok.top	:=NOT analogsNS(ai);
       mvOff.top:=Im.mv.onStatus = _statusDualInput.STATUS_OFF;
@@ -10938,12 +10579,12 @@ FUNCTION_BLOCK ppuAlg
       Avom_2_off.top:=Im.v2_Avom.onStatus = _statusDualInput.STATUS_OFF;
 
       Est_rezerv_NU.top:= NOT NotHasRezervNU; 	
-      Not_AO_NO_EAO.top:=	   NOT ( Im.singleOutputs.AO_GPA.q
+      (*Not_AO_NO_EAO.top:=	   NOT ( Im.singleOutputs.AO_GPA.q
                                       OR Im.singleSignals.AO_KC.q
                                       OR Im.singleSignals.AOGPA_knopkaSHU.q
                                       OR Im.singleSignals.AOGPA_PRU.q
                                       OR Im.singleSignals.NOGPA_knopkaSHU.q
-                                      OR Im.singleSignals.BEO_Srabat.q);
+                                      OR Im.singleSignals.BEO_Srabat.q);*)
 
       Not_AS_PS.top:=	NOT (algManager.DiscretPS OR algManager.analogsPS OR algManager.ProtectionSignaling);
       BusketTest.top:=Im.mv.basketStatus = _basketStats.BASKET_ROLLEDOUT;
@@ -11388,9 +11029,9 @@ FUNCTION_BLOCK fillingAlg
          runPhase(didPKran1);
       END_IF;
 
-      IF didPKran1.start AND NOT didPKran1.top THEN
+      (*IF didPKran1.start AND NOT didPKran1.top THEN
       didPKran1.top:= im.singleSignals.dP_gazgaz_Kran1.Q;
-      END_IF;
+      END_IF;*)
 
       IF waitAfterKran5.top AND didPKran1.top THEN
             runPhase(kran1Open); 
@@ -11629,7 +11270,7 @@ FUNCTION_BLOCK engineRunAlg
   END_IF;
 
           fb_BreakPuskTimer(StrPh:=BreakPuskTimer, timer:=AlgTimers.engineRun_BreakPuskTimer);
-        fb_LowOil_upStopust(StrPh:=LowOil_upStopust, ai:=ai.Pmasla_posle_GNS, more:=im.AutoPns_UstStop.Value);
+       (* fb_LowOil_upStopust(StrPh:=LowOil_upStopust, ai:=ai.Pmasla_posle_GNS, more:=im.AutoPns_UstStop.Value);*)
                     fb_mvOn(StrPh:=mvOn, Im:=Im.mv);
               fb_AutoPns_ph(StrPh:=AutoPns_ph, alg:=algoritms.AutoPns);
              fb_AutoAvom_ph(StrPh:=AutoAvom_ph, alg:=algoritms.AutoAvom);
@@ -11979,7 +11620,7 @@ FUNCTION_BLOCK puskKalg
 
             ai.Tmasla_MB.Disabled_LA:=TRUE;
             ai.Tmasla_MB.Disabled_LW:=TRUE;
-            IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+            (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
             resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
            (* resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
   	runPhase(AutoNUoff);
@@ -12016,18 +11657,18 @@ FUNCTION_BLOCK puskKalg
   	IF      (im.pns.onStatus = _statusDualInput.STATUS_ON)
                 AND (im.nu1.onStatus = _statusDualInput.STATUS_ON OR im.nu2.onStatus = _statusDualInput.STATUS_ON)
   	    AND (ai.Tmasla_MB.interval >= _statusAi.normal)
-                AND (ai.Tmasla_MB.value > im.PuskOilSystem_UstdPmg.Value)
+                (*AND (ai.Tmasla_MB.value > im.PuskOilSystem_UstdPmg.Value)*)
             THEN
   	    IM.Kran3b.inOpcCommandsDisabled:=FALSE;
   	    Im.kran4.inOpcCommandsDisabled:=FALSE;
   	    Im.kran5.inOpcCommandsDisabled:=FALSE;
-  		IF	Im.SingleSignals.dP_gazgaz_Kran1.q THEN
+  		(*IF	Im.SingleSignals.dP_gazgaz_Kran1.q THEN
   			Im.kran1.inOpcCommandsDisabled:=FALSE; 
   			Im.kran2.inOpcCommandsDisabled:=FALSE;
   		ELSE
   			Im.kran1.inOpcCommandsDisabled:=TRUE; 
   			Im.kran2.inOpcCommandsDisabled:=TRUE;
-  		END_IF;
+  		END_IF;*)
             ELSE
   	    Im.kran1.inOpcCommandsDisabled:=TRUE; 
   	    Im.kran2.inOpcCommandsDisabled:=TRUE; 
@@ -12348,7 +11989,7 @@ FUNCTION_BLOCK puskValg
 
             ai.Tmasla_MB.Disabled_LA:=TRUE;
             ai.Tmasla_MB.Disabled_LW:=TRUE;
-            IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+            (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
             resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
            (* resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
   	runPhase(AutoNUoff);
@@ -12613,7 +12254,7 @@ FUNCTION_BLOCK testdPmgAlg
       fb_puskOilSystem(StrPh:=puskOilSystem, alg:=algoritms.puskOilSystem);
         fb_algContinue(StrQ:=algContinue);
               fb_nuOff(StrPh:=nuOff);
-             fb_dPmgAi(StrPh:=dPmgAi, ai:=ai.Tmasla_MB, less:=im.testdPmg_Ust_dPLow.Value);
+             (*fb_dPmgAi(StrPh:=dPmgAi, ai:=ai.Tmasla_MB, less:=im.testdPmg_Ust_dPLow.Value);*)
              fb_dPmgDi(StrPh:=dPmgDi);
                fb_nuOn(StrPh:=nuOn);
             fb_noRezrv(StrPh:=noRezrv);
@@ -12669,9 +12310,9 @@ FUNCTION_BLOCK testdPmgAlg
           runPhase(dPmgDi);
       END_IF;
 
-      IF dPmgDi.start AND NOT dPmgDi.top THEN 
+      (*IF dPmgDi.start AND NOT dPmgDi.top THEN 
           dPmgDi.top:=Im.SingleSignals.dP_oilgaz_low.q;
-      END_IF;
+      END_IF;*)
 
       IF dPmgAi.top AND dPmgDi.top THEN
           runPhase(nuOn);    
@@ -12692,8 +12333,8 @@ FUNCTION_BLOCK testdPmgAlg
       IF  WaitOnNU.Q AND noRezrv.top THEN
           ai.Tmasla_MB.Disabled_LA:=TRUE;
           ai.Tmasla_MB.Disabled_LW:=TRUE;
-          IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
-          IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
+          (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+          IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;*)
           ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;
           ai.Pmasla_posle_GNS.Disabled_LW:=TRUE;
           ai.Pmasla_posle_NU.Disabled_LW:=TRUE;
@@ -12790,8 +12431,8 @@ FUNCTION_BLOCK testdPmgAlg
                                           ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;
                                           ai.Pmasla_posle_GNS.Disabled_LW:=TRUE;
                                           ai.Pmasla_posle_NU.Disabled_LW:=TRUE;
-                                          IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
-                                          IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+                                          (*IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
+                                          IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
                                           ai.Tmasla_MB.Disabled_LA:=TRUE;
                                           ai.Tmasla_MB.Disabled_LW:=TRUE;
                                           resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
@@ -13042,7 +12683,7 @@ FUNCTION_BLOCK testPmsAlg
       END_IF;
 
       IF runProtecrionAi.top THEN
-           IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;
+           (*IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;*)
            ai.Pmasla_posle_GNS.Disabled_LA:=FALSE;
            ai.Pmasla_posle_GNS.Disabled_LW:=FALSE;
            ai.Pmasla_posle_NU.Disabled_LW:=FALSE;
@@ -13137,7 +12778,7 @@ FUNCTION_BLOCK testPmsAlg
                                           ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;
                                           ai.Pmasla_posle_GNS.Disabled_LW:=TRUE;
                                           ai.Pmasla_posle_NU.Disabled_LW:=TRUE;
-                                          IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
+                                         (* IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;*)
                                           resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
 
                                           resetPhase(pnsOn);
@@ -13320,7 +12961,7 @@ FUNCTION_BLOCK ApuskAlg
 
 
                                                     algManager.nMode:=ModeGpa.MODE_APUSK;
-                                                    impulseSO(Im.SingleOutputs.VzvodBREO);
+                                                    (*impulseSO(Im.SingleOutputs.VzvodBREO);*)
                                                     runPhase(runOilsystem); 
 
   					cmd_for_Status := cmd;
@@ -13531,7 +13172,7 @@ FUNCTION_BLOCK SemiAutoPuskAlg
 
 
                                                     algManager.nMode:=ModeGpa.MODE_MPUSK;
-                                                    impulseSO(Im.SingleOutputs.VzvodBREO);
+                                                    (*impulseSO(Im.SingleOutputs.VzvodBREO);*)
                                                     askQuestion(cmdRun1ph);
 
   					cmd_for_Status := cmd;
@@ -13642,44 +13283,44 @@ FUNCTION_BLOCK proc_algoritms
 
   fb_TestImAlg(StrAlg:=algoritms.testIm);
 
-  fb_AutoTen(StrAlg:= algoritms.AutoTen,
+  (*fb_AutoTen(StrAlg:= algoritms.AutoTen,
   T_masla:= ai.Toporno_podshipnika_EDT_1,
   Uroven_masla:= ai.Yroven_masla_MB,
   offTemperature:= Im.AutoTen_offTemperature,
   TEN:= Im.Ten,
-  PNS:= Im.pns);
+  PNS:= Im.pns);*)
 
-  fb_AutoPns(StrAlg:= algoritms.AutoPns,
+  (*fb_AutoPns(StrAlg:= algoritms.AutoPns,
   Poil:= ai.Pmasla_posle_GNS,
   Ust_Run:= Im.AutoPns_UstRun,
   Ust_Stop:= Im.AutoPns_UstStop,
   Nasos:= Im.pns,
-  diPlow:= Im.SingleSignals.P_oil_low);
+  diPlow:= Im.SingleSignals.P_oil_low);*)
 
-  fb_AutoAvom(StrAlg:= algoritms.AutoAvom,
+  (*fb_AutoAvom(StrAlg:= algoritms.AutoAvom,
   im1:= Im.v1_Avom,
   im2:= Im.v2_Avom,
   on1Temperature:= Im.AutoAvom_onTemp1,
   on2Temperature:= Im.AutoAvom_onTemp2,
   hystereses:= Im.AutoAvom_hysteresis,
-  ai:= ai.Tnarujnogo_vozduha);
+  ai:= ai.Tnarujnogo_vozduha);*)
 
   fb_vibegPNS(StrAlg:=algoritms.vibegPNS,
   algContinue:=AlgQuestions.vibegPNS_algContinue
   );
 
-  fb_AutoNU(StrAlg:=algoritms.autoNu,
+  (*fb_AutoNU(StrAlg:=algoritms.autoNu,
   nu1:=Im.nu1,
   nu2:=Im.nu2,
   Ust_Swap:= Im.AutoNU_Ust_Swap,
   mainNU:= Im.AutoNU_mainNU,
   dPoil:=ai.Tmasla_MB,
   Lowdp_di:=Im.SingleSignals.dP_oilgaz_low
-  );
+  );*)
 
   fb_puskOilSystem(StrAlg:=algoritms.puskOilSystem);
 
-  fb_AntiPompag(StrAlg:=algoritms.AntiPompag,
+  (*fb_AntiPompag(StrAlg:=algoritms.AntiPompag,
   Rashod:= ai.Vibro_skorost_OP_shesterni_reduktora_H_T6,
   Zapas:= ai.Vibro_skorost_OP_shesterni_RED_T5,
   P_gasIn:=ai.dPgaza_na_maslo_filtre,
@@ -13689,7 +13330,7 @@ FUNCTION_BLOCK proc_algoritms
   UgolVNA:= im.AntiPompag_UgolVNA,
   K:=im.AntiPompag_K,
   A:=im.AntiPompag_A,
-  y0:=im.AntiPompag_y0);
+  y0:=im.AntiPompag_y0);*)
 
   fb_NOAlg(StrAlg:=algoritms.no);
 
@@ -13818,13 +13459,13 @@ FUNCTION anyDiscretPS : BOOL
     im : ImConfig;
   END_VAR
 
-  anyDiscretPS:=
-      Im.SingleSignals.KZ_10kv.Q                     OR 
+  anyDiscretPS:= 
+      Im.SingleSignals.BEAO_srabotal.Q                   (*  OR 
       Im.SingleSignals.Vozb_ProboiVentila.Q	 OR
       Im.SingleSignals.Vozb_AsinchHod.Q	           OR
       Im.SingleSignals.NS_ForsingVozbugdenia.Q       OR
       Im.SingleSignals.Vozb_AutoUprVozbuditela_off.Q OR
-      Im.SingleSignals.Vozb_KontaktorON.Q;
+      Im.SingleSignals.Vozb_KontaktorON.Q*);
 END_FUNCTION
 
 FUNCTION UnBlockAllProtections : BOOL
@@ -13896,8 +13537,8 @@ FUNCTION_BLOCK fb_AlgoritmsManager
 
   IF NOT onInit THEN
             DisableAiLimits(ai);
-            IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
-            IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;
+            (*IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;
+            IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
             str_AM.nMode:=ModeGpa.MODE_STOP;
             BlockAllIM(IM);
             runIfNotRunning(algoritms.AutoTen);
@@ -13908,7 +13549,7 @@ FUNCTION_BLOCK fb_AlgoritmsManager
   str_AM.AnalogsPs:=anyAnalogsPs(ai);
   str_AM.ProtectionSignaling:=anyProtectionSignaling(protections);
 
-  EoTrig(CLK := IM.SingleSignals.BEO_Srabat.Q);
+  (*EoTrig(CLK := IM.SingleSignals.BEO_Srabat.Q);*)
   IF EoTrig.Q THEN
   	stopPusk(algoritms);
   	resetAndDisable(algoritms.Remont);
@@ -13916,34 +13557,34 @@ FUNCTION_BLOCK fb_AlgoritmsManager
   	resetAndDisable(algoritms.ao);
   	str_AM.nMode:=ModeGpa.MODE_EO;
   END_IF;
-  EoFTrig(CLK := IM.SingleSignals.BEO_Srabat.Q);
+  (*EoFTrig(CLK := IM.SingleSignals.BEO_Srabat.Q);*)
   IF EoFTrig.Q THEN
   	str_AM.nMode:=ModeGpa.MODE_STOP;
   	runIfNotRunning(algoritms.ao);
   END_IF;
 
-  IF (str_AM.ProtectionSignaling OR Im.SingleSignals.AO_KC.Q OR Im.SingleSignals.AOGPA_knopkaSHU.Q OR Im.SingleSignals.AOGPA_PRU.Q ) 
+  (*IF (str_AM.ProtectionSignaling OR Im.SingleSignals.AO_KC.Q OR Im.SingleSignals.AOGPA_knopkaSHU.Q OR Im.SingleSignals.AOGPA_PRU.Q ) 
   	AND NOT((str_AM.mode=ModeGpa.MODE_AO) OR (str_AM.mode=ModeGpa.MODE_EO) OR IM.SingleOutputs.IndikicijaAS_fonar.Q
             OR (str_AM.mode=ModeGpa.MODE_TESTAZ) OR (str_AM.mode=ModeGpa.MODE_TESTDPMG) OR (str_AM.mode=ModeGpa.MODE_REMONT) OR
             (str_AM.mode=ModeGpa.MODE_TESTPMS))THEN
   		runIfNotRunning(algoritms.ao);
   	str_AM.nMode:=ModeGpa.MODE_AO;	
   END_IF;
-
-  IF Im.SingleSignals.NOGPA_knopkaSHU.Q  AND algoritms.no.CanRun THEN
+  *)
+  (*IF Im.SingleSignals.NOGPA_knopkaSHU.Q  AND algoritms.no.CanRun THEN
   	runIfNotRunning(algoritms.no);
             str_AM.nMode:=ModeGpa.MODE_NO;
-  END_IF;
+  END_IF;*)
 
 
   PsLampTrig(CLK := str_AM.DiscretPS OR str_AM.AnalogsPs);
-  IF PsLampTrig.Q THEN
+  (*IF PsLampTrig.Q THEN
             runIfNotRunningSO(IM.SingleOutputs.IndikicijaPS_fonar);
-  END_IF;
+  END_IF;*)
   PsLampFTrig(CLK := str_AM.DiscretPS OR str_AM.AnalogsPs);
-  IF PsLampFTrig.Q THEN
+  (*IF PsLampFTrig.Q THEN
             resetIfRunningSO(IM.SingleOutputs.IndikicijaPS_fonar);
-  END_IF;
+  END_IF;*)
 
   IF str_AM.mode = ModeGpa.MODE_WORK_Line OR str_AM.mode = ModeGpa.MODE_WORK_Ring  THEN
 
@@ -14484,8 +14125,6 @@ PROGRAM program0
     Set_algoritms_OPC : OPC_algoritms_get;
     IM_structs_ini : proc_IM_Init;
     IM_Proc : proc_IM;
-    Get_IM_OPC : OPC_IM_get;
-    Set_IM_OPC : OPC_IM_set;
     Protections_structs_ini : proc_Protections_Init;
     Protections_Proc : proc_Protection;
     Algoritms_Proc : proc_algoritms;
@@ -14545,8 +14184,7 @@ PROGRAM program0
   (* Перенос OPC-тэгов в элементы структур каналов. *)
         (*___________________________________________AI________________________________________________*)
       (*Get_AI_OPC(); *)
-      Get_IM_OPC();  
-      Get_algoritms_OPC();
+       Get_algoritms_OPC();
 
 
      (* Пересчёт защит САУ. *)
@@ -14584,7 +14222,6 @@ PROGRAM program0
     (* Передача состояний каналов AI. *)
   (*Set_AI_OPC();)*
   (* Передача состояний каналов ИМ. *)
-  Set_IM_OPC();
   (* Передача состояний защит. *)
   (* Передача состояний алгоритмов. *)
   Set_algoritms_OPC();
@@ -14809,6 +14446,94 @@ FUNCTION_BLOCK fb_DualStateIm
   		OR shl(BOOL_TO_DWORD(StrDs.Ns), 4) 
                   	OR shl(BOOL_TO_DWORD(StrDs.Accident ),3)
   		OR BYTE_TO_DWORD(StrDs.onStatus);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK fb_AnalogParametr
+  VAR_IN_OUT
+    StrAP : struct_AnalogParametr;
+  END_VAR
+  VAR
+    _sunpackerCommand : fb_sunpackerCommand;
+    source : BYTE;
+    cmd : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    secondTact : BOOL;
+    inp : LREAL;
+    rABS : LREAL;
+  END_VAR
+
+  IF NOT secondTact THEN
+  	StrAP.Value := StrAP.currentValue;
+  	secondTact := true;
+  END_IF;
+
+  StrAP.OpcCommandsDisabled := StrAP.inOpcCommandsDisabled;
+
+   (* ---- Если управление с ВУ заблокировано, то передаем команду из алгоритма ---- *)
+  IF StrAP.inOpcCommandsDisabled THEN
+  	StrAP.inCommand := StrAP.inCommand_Alg;
+  ELSE (* иначе передаем команду с АРМа*)
+  	StrAP.inCommand := StrAP.inCommand_ARM;
+  END_IF;                                                                                         
+
+  _sunpackerCommand(command := StrAP.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND StrAP.newValue <> StrAP.Value and (((NOT StrAP.opcCommandsDisabled) AND source > 0) OR source = 0) then
+  	CASE BYTE_TO_INT(cmd) OF
+  	(*cmd_ChangeValue*) 1 :
+  				StrAP.isValidValue := TRUE;
+  				IF StrAP.minVal_ISVALIDREF AND StrAP.isValidValue THEN
+  					IF StrAP.newValue < StrAP.minVal THEN
+  						StrAP.isValidValue := FALSE;
+  					END_IF;
+  				END_IF;
+  				IF StrAP.maxVal_ISVALIDREF AND StrAP.isValidValue THEN
+  					IF StrAP.newValue > StrAP.maxVal THEN
+  						StrAP.isValidValue := FALSE;
+  					END_IF;
+  				END_IF;
+  				IF StrAP.maxStep_ISVALIDREF AND StrAP.isValidValue  THEN
+  					inp := StrAP.Value - StrAP.newValue;
+  					IF inp < 0.0 THEN
+  						rABS := -inp;
+  					ELSE
+  						rABS := inp;
+  					END_IF;
+  					IF rABS > StrAP.maxStep THEN
+  						StrAP.isValidValue := FALSE;
+  					END_IF;
+  				END_IF;
+  				IF StrAP.isValidValue THEN
+  					StrAP.Value := StrAP.newValue;
+  					command_error_for_Status := 0;
+  				ELSE
+  					command_error_for_Status := cmd;
+  				END_IF;
+  	END_CASE;	
+  	source_for_Status := source;
+  	cmd_for_Status := cmd;
+  	resetCmdTimer(IN := FALSE);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAP.status := SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAP.OpcCommandsDisabled ), 21);
 END_FUNCTION_BLOCK
 
 FUNCTION_BLOCK fb_BaseProtection
@@ -15040,6 +14765,77 @@ FUNCTION_BLOCK fb_BaseAlgoritm
   			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
   			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
   			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK fb_DiscretParametr
+  VAR_IN_OUT
+    StrDP : struct_DiscretParametr;
+  END_VAR
+  VAR
+    _sunpackerCommand : fb_sunpackerCommand;
+    source : BYTE;
+    cmd : BYTE;
+    parametr : BYTE;
+    lastParametr : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    secondTact : BOOL;
+  END_VAR
+
+  IF NOT secondTact THEN
+  	StrDP.Value := StrDP.currentValue;
+  	secondTact := true;
+  END_IF;
+
+  StrDP.OpcCommandsDisabled := StrDP.inOpcCommandsDisabled;
+
+  (* ---- Если управление с ВУ заблокировано, то передаем команду из алгоритма ---- *)
+  IF StrDP.inOpcCommandsDisabled THEN
+  	StrDP.inCommand := StrDP.inCommand_Alg;
+  ELSE (* иначе передаем команду с АРМа*)
+  	StrDP.inCommand := StrDP.inCommand_ARM;
+  END_IF;                                                                                           
+
+  _sunpackerCommand(command := StrDP.inCommand);
+  	source := _sunpackerCommand.source;
+            parametr := _sunpackerCommand.parametr;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF NOT StrDP.inOpcCommandsDisabled THEN         
+  StrDP.newValue:= BYTE_TO_UINT(parametr);
+  END_IF;
+
+  IF cmd <> 0 AND StrDP.Value <> StrDP.newValue AND (((NOT StrDP.opcCommandsDisabled) AND source > 0) OR source = 0) then
+  	CASE BYTE_TO_INT(cmd) OF
+  	(*cmd_ChangeValue*) 1 : 
+                                    StrDP.Value := StrDP.newValue;
+                                    StrDP.opcCommandsDisabled:=FALSE;				
+  	END_CASE;	
+  	source_for_Status := source;
+  	cmd_for_Status := cmd;
+  	resetCmdTimer(IN := FALSE);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+
+  lastParametr := parametr;
+
+  StrDP.status := SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrDP.OpcCommandsDisabled ), 21)
+                                OR SHL(UINT_TO_DWORD(StrDP.Value), 5);
+
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF;
 END_FUNCTION_BLOCK
 
 FUNCTION remontAllProtections : BOOL

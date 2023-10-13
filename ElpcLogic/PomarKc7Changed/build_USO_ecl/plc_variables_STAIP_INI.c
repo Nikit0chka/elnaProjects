@@ -122,10 +122,6 @@ int __variables_init_STAIP_INI(){
   FB_MEANDR *p_FB_MEANDR;
   FB_SINGLESIGNAL *p_FB_SINGLESIGNAL;
   FB_SINGLEOUTPUT *p_FB_SINGLEOUTPUT;
-  FB_DISCRETPARAMETR *p_FB_DISCRETPARAMETR;
-  FB_ANALOGPARAMETR *p_FB_ANALOGPARAMETR;
-  OPC_IM_GET *p_OPC_IM_GET;
-  OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
   STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
@@ -185,8 +181,8 @@ int __variables_init_STAIP_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 29381 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.DATA_INI
-    st = getVariable(29381);
+  { // 27403 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.DATA_INI
+    st = getVariable(27403);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.DATA_INI", 51);
     st->size_data = sizeof(BOOL);
@@ -196,8 +192,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29382 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.CONTROLLIMIT
-    st = getVariable(29382);
+  { // 27404 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.CONTROLLIMIT
+    st = getVariable(27404);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.CONTROLLIMIT", 55);
     st->size_data = sizeof(BYTE);
@@ -207,8 +203,8 @@ int __variables_init_STAIP_INI(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION_INIT->CONTROLLIMIT;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29383 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.DELAY
-    st = getVariable(29383);
+  { // 27405 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.DELAY
+    st = getVariable(27405);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.DELAY", 48);
     st->size_data = sizeof(TIME);
@@ -218,8 +214,8 @@ int __variables_init_STAIP_INI(){
     p_TIME = (TIME*)&p_FB_AIPROTECTION_INIT->DELAY;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29384 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INTAG
-    st = getVariable(29384);
+  { // 27406 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INTAG
+    st = getVariable(27406);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INTAG", 48);
     st->size_data = sizeof(BYTE);
@@ -229,8 +225,8 @@ int __variables_init_STAIP_INI(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION_INIT->INTAG;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29385 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INRUNONSTART
-    st = getVariable(29385);
+  { // 27407 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INRUNONSTART
+    st = getVariable(27407);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INRUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -240,8 +236,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION_INIT->INRUNONSTART;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29386 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CONTROLLIMIT
-    st = getVariable(29386);
+  { // 27408 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CONTROLLIMIT
+    st = getVariable(27408);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CONTROLLIMIT", 63);
     st->size_data = sizeof(BYTE);
@@ -252,8 +248,8 @@ int __variables_init_STAIP_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->CONTROLLIMIT;
     st->value_p = p_BYTE;
   }
-  { // 29387 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.DELAY
-    st = getVariable(29387);
+  { // 27409 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.DELAY
+    st = getVariable(27409);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.DELAY", 56);
     st->size_data = sizeof(TIME);
@@ -264,8 +260,8 @@ int __variables_init_STAIP_INI(){
     p_TIME = (TIME*)&p_STRUCT_AIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 29388 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INTAG
-    st = getVariable(29388);
+  { // 27410 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INTAG
+    st = getVariable(27410);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INTAG", 56);
     st->size_data = sizeof(BYTE);
@@ -276,8 +272,8 @@ int __variables_init_STAIP_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 29389 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INRUNONSTART
-    st = getVariable(29389);
+  { // 27411 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INRUNONSTART
+    st = getVariable(27411);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INRUNONSTART", 63);
     st->size_data = sizeof(BOOL);
@@ -288,8 +284,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 29390 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCANRUN
-    st = getVariable(29390);
+  { // 27412 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCANRUN
+    st = getVariable(27412);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCANRUN", 59);
     st->size_data = sizeof(BOOL);
@@ -300,8 +296,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 29391 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INOPCCOMMANDSDISABLED
-    st = getVariable(29391);
+  { // 27413 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INOPCCOMMANDSDISABLED
+    st = getVariable(27413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INOPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -312,8 +308,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 29392 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND
-    st = getVariable(29392);
+  { // 27414 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND
+    st = getVariable(27414);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -324,8 +320,8 @@ int __variables_init_STAIP_INI(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 29393 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND_ALG
-    st = getVariable(29393);
+  { // 27415 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND_ALG
+    st = getVariable(27415);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND_ALG", 64);
     st->size_data = sizeof(WORD);
@@ -336,8 +332,8 @@ int __variables_init_STAIP_INI(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 29394 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND_ARM
-    st = getVariable(29394);
+  { // 27416 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND_ARM
+    st = getVariable(27416);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.INCOMMAND_ARM", 64);
     st->size_data = sizeof(WORD);
@@ -348,8 +344,8 @@ int __variables_init_STAIP_INI(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 29395 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.TAG
-    st = getVariable(29395);
+  { // 27417 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.TAG
+    st = getVariable(27417);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.TAG", 54);
     st->size_data = sizeof(BYTE);
@@ -360,8 +356,8 @@ int __variables_init_STAIP_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 29396 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.STATUS
-    st = getVariable(29396);
+  { // 27418 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.STATUS
+    st = getVariable(27418);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.STATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -372,8 +368,8 @@ int __variables_init_STAIP_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_AIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 29397 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CANRUN
-    st = getVariable(29397);
+  { // 27419 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CANRUN
+    st = getVariable(27419);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CANRUN", 57);
     st->size_data = sizeof(BOOL);
@@ -384,8 +380,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 29398 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.OPCCOMMANDSDISABLED
-    st = getVariable(29398);
+  { // 27420 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.OPCCOMMANDSDISABLED
+    st = getVariable(27420);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.OPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -396,8 +392,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 29399 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.ISRUNNING
-    st = getVariable(29399);
+  { // 27421 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.ISRUNNING
+    st = getVariable(27421);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.ISRUNNING", 60);
     st->size_data = sizeof(BOOL);
@@ -408,8 +404,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 29400 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.HASERROR
-    st = getVariable(29400);
+  { // 27422 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.HASERROR
+    st = getVariable(27422);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.HASERROR", 59);
     st->size_data = sizeof(BOOL);
@@ -420,8 +416,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 29401 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.ISENDED
-    st = getVariable(29401);
+  { // 27423 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.ISENDED
+    st = getVariable(27423);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.ISENDED", 58);
     st->size_data = sizeof(BOOL);
@@ -432,8 +428,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 29402 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.REMONT
-    st = getVariable(29402);
+  { // 27424 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.REMONT
+    st = getVariable(27424);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.REMONT", 57);
     st->size_data = sizeof(BOOL);
@@ -444,8 +440,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 29403 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CHECK
-    st = getVariable(29403);
+  { // 27425 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CHECK
+    st = getVariable(27425);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.CHECK", 56);
     st->size_data = sizeof(BOOL);
@@ -456,8 +452,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 29404 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.SIGNALING
-    st = getVariable(29404);
+  { // 27426 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.SIGNALING
+    st = getVariable(27426);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.SIGNALING", 60);
     st->size_data = sizeof(BOOL);
@@ -468,8 +464,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 29405 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.SIGNALINGTP
-    st = getVariable(29405);
+  { // 27427 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.SIGNALINGTP
+    st = getVariable(27427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.SIGNALINGTP", 62);
     st->size_data = sizeof(BOOL);
@@ -480,8 +476,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 29406 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.RUNONSTART
-    st = getVariable(29406);
+  { // 27428 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.RUNONSTART
+    st = getVariable(27428);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.STR_AIP.RUNONSTART", 61);
     st->size_data = sizeof(BOOL);
@@ -492,8 +488,8 @@ int __variables_init_STAIP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 29407 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INIT
-    st = getVariable(29407);
+  { // 27429 PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INIT
+    st = getVariable(27429);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_STRUCTS_INI.STAIP_INI.INIT", 47);
     st->size_data = sizeof(BOOL);

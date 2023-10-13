@@ -122,10 +122,6 @@ int __variables_init_IM_STRUCTS_INI(){
   FB_MEANDR *p_FB_MEANDR;
   FB_SINGLESIGNAL *p_FB_SINGLESIGNAL;
   FB_SINGLEOUTPUT *p_FB_SINGLEOUTPUT;
-  FB_DISCRETPARAMETR *p_FB_DISCRETPARAMETR;
-  FB_ANALOGPARAMETR *p_FB_ANALOGPARAMETR;
-  OPC_IM_GET *p_OPC_IM_GET;
-  OPC_IM_SET *p_OPC_IM_SET;
   PROC_PROTECTIONS_INIT *p_PROC_PROTECTIONS_INIT;
   FB_DIPROTECTION_INIT *p_FB_DIPROTECTION_INIT;
   STRUCT_DIPROTECTION *p_STRUCT_DIPROTECTION;
@@ -983,8 +979,392 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 19987 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND
+  { // 19987 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND
     st = getVariable(19987);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND", 42);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 19988 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.STATUS
+    st = getVariable(19988);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.STATUS", 39);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 19989 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ONSTATUS
+    st = getVariable(19989);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ONSTATUS", 41);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 19990 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INOPCCOMMANDSDISABLED
+    st = getVariable(19990);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INOPCCOMMANDSDISABLED", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 19991 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SDVIG
+    st = getVariable(19991);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SDVIG", 38);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 19992 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.NS
+    st = getVariable(19992);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.NS", 35);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 19993 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DP
+    st = getVariable(19993);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DP", 35);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
+    st->value_p = p_BOOL;
+  }
+  { // 19994 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.COMMANDFAULT
+    st = getVariable(19994);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.COMMANDFAULT", 45);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 19995 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ACCIDENT
+    st = getVariable(19995);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ACCIDENT", 41);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 19996 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.AUTO
+    st = getVariable(19996);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.AUTO", 37);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 19997 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.MANUAL
+    st = getVariable(19997);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.MANUAL", 39);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 19998 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LOCAL
+    st = getVariable(19998);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LOCAL", 38);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 19999 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DISTANCE
+    st = getVariable(19999);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DISTANCE", 41);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 20000 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORPOWEROFF
+    st = getVariable(20000);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORPOWEROFF", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20001 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORBLOCK
+    st = getVariable(20001);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORBLOCK", 43);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 20002 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SO
+    st = getVariable(20002);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SO", 35);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
+    st->value_p = p_BOOL;
+  }
+  { // 20003 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SZ
+    st = getVariable(20003);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SZ", 35);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
+    st->value_p = p_BOOL;
+  }
+  { // 20004 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.OPCCOMMANDSDISABLED
+    st = getVariable(20004);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.OPCCOMMANDSDISABLED", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20005 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LASTCMDISON
+    st = getVariable(20005);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LASTCMDISON", 44);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 20006 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATON
+    st = getVariable(20006);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATON", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 20007 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATOFF
+    st = getVariable(20007);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATOFF", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20008 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDON
+    st = getVariable(20008);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDON", 49);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20009 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDOFF
+    st = getVariable(20009);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDOFF", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20010 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSO
+    st = getVariable(20010);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSO", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
+    st->value_p = p_BOOL;
+  }
+  { // 20011 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSZ
+    st = getVariable(20011);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSZ", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
+    st->value_p = p_BOOL;
+  }
+  { // 20012 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INDP
+    st = getVariable(20012);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INDP", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
+    st->value_p = p_BOOL;
+  }
+  { // 20013 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CONTINUEHOLDCOMMAND
+    st = getVariable(20013);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CONTINUEHOLDCOMMAND", 52);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
+    st->value_p = p_TIME;
+  }
+  { // 20014 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ALG
+    st = getVariable(20014);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ALG", 46);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 20015 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ARM
+    st = getVariable(20015);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ARM", 46);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 20016 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDON
+    st = getVariable(20016);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDON", 38);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20017 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDOFF
+    st = getVariable(20017);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDOFF", 39);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20018 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.RELIABILITY
+    st = getVariable(20018);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.RELIABILITY", 44);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
+    p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20019 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND
+    st = getVariable(20019);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND", 43);
     st->size_data = sizeof(WORD);
@@ -995,8 +1375,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 19988 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.STATUS
-    st = getVariable(19988);
+  { // 20020 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.STATUS
+    st = getVariable(20020);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.STATUS", 40);
     st->size_data = sizeof(DWORD);
@@ -1007,8 +1387,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 19989 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ONSTATUS
-    st = getVariable(19989);
+  { // 20021 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ONSTATUS
+    st = getVariable(20021);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ONSTATUS", 42);
     st->size_data = sizeof(BYTE);
@@ -1019,8 +1399,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 19990 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INOPCCOMMANDSDISABLED
-    st = getVariable(19990);
+  { // 20022 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INOPCCOMMANDSDISABLED
+    st = getVariable(20022);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INOPCCOMMANDSDISABLED", 55);
     st->size_data = sizeof(BOOL);
@@ -1031,8 +1411,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19991 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SDVIG
-    st = getVariable(19991);
+  { // 20023 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SDVIG
+    st = getVariable(20023);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SDVIG", 39);
     st->size_data = sizeof(BOOL);
@@ -1043,8 +1423,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 19992 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.NS
-    st = getVariable(19992);
+  { // 20024 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.NS
+    st = getVariable(20024);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.NS", 36);
     st->size_data = sizeof(BOOL);
@@ -1055,8 +1435,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 19993 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.DP
-    st = getVariable(19993);
+  { // 20025 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.DP
+    st = getVariable(20025);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.DP", 36);
     st->size_data = sizeof(BOOL);
@@ -1067,8 +1447,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 19994 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.COMMANDFAULT
-    st = getVariable(19994);
+  { // 20026 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.COMMANDFAULT
+    st = getVariable(20026);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.COMMANDFAULT", 46);
     st->size_data = sizeof(BOOL);
@@ -1079,8 +1459,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 19995 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ACCIDENT
-    st = getVariable(19995);
+  { // 20027 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ACCIDENT
+    st = getVariable(20027);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ACCIDENT", 42);
     st->size_data = sizeof(BOOL);
@@ -1091,8 +1471,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 19996 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.AUTO
-    st = getVariable(19996);
+  { // 20028 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.AUTO
+    st = getVariable(20028);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.AUTO", 38);
     st->size_data = sizeof(BOOL);
@@ -1103,8 +1483,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 19997 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.MANUAL
-    st = getVariable(19997);
+  { // 20029 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.MANUAL
+    st = getVariable(20029);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.MANUAL", 40);
     st->size_data = sizeof(BOOL);
@@ -1115,8 +1495,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 19998 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.LOCAL
-    st = getVariable(19998);
+  { // 20030 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.LOCAL
+    st = getVariable(20030);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.LOCAL", 39);
     st->size_data = sizeof(BOOL);
@@ -1127,8 +1507,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 19999 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.DISTANCE
-    st = getVariable(19999);
+  { // 20031 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.DISTANCE
+    st = getVariable(20031);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.DISTANCE", 42);
     st->size_data = sizeof(BOOL);
@@ -1139,8 +1519,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20000 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ERRORPOWEROFF
-    st = getVariable(20000);
+  { // 20032 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ERRORPOWEROFF
+    st = getVariable(20032);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ERRORPOWEROFF", 47);
     st->size_data = sizeof(BOOL);
@@ -1151,8 +1531,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20001 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ERRORBLOCK
-    st = getVariable(20001);
+  { // 20033 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ERRORBLOCK
+    st = getVariable(20033);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ERRORBLOCK", 44);
     st->size_data = sizeof(BOOL);
@@ -1163,8 +1543,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20002 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SO
-    st = getVariable(20002);
+  { // 20034 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SO
+    st = getVariable(20034);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SO", 36);
     st->size_data = sizeof(BOOL);
@@ -1175,8 +1555,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 20003 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SZ
-    st = getVariable(20003);
+  { // 20035 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SZ
+    st = getVariable(20035);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.SZ", 36);
     st->size_data = sizeof(BOOL);
@@ -1187,8 +1567,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 20004 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.OPCCOMMANDSDISABLED
-    st = getVariable(20004);
+  { // 20036 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.OPCCOMMANDSDISABLED
+    st = getVariable(20036);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.OPCCOMMANDSDISABLED", 53);
     st->size_data = sizeof(BOOL);
@@ -1199,8 +1579,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20005 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.LASTCMDISON
-    st = getVariable(20005);
+  { // 20037 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.LASTCMDISON
+    st = getVariable(20037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.LASTCMDISON", 45);
     st->size_data = sizeof(BOOL);
@@ -1211,8 +1591,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20006 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_STATON
-    st = getVariable(20006);
+  { // 20038 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_STATON
+    st = getVariable(20038);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_STATON", 51);
     st->size_data = sizeof(BOOL);
@@ -1223,8 +1603,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20007 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_STATOFF
-    st = getVariable(20007);
+  { // 20039 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_STATOFF
+    st = getVariable(20039);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_STATOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -1235,8 +1615,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20008 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_CMDON
-    st = getVariable(20008);
+  { // 20040 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_CMDON
+    st = getVariable(20040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_CMDON", 50);
     st->size_data = sizeof(BOOL);
@@ -1247,8 +1627,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20009 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_CMDOFF
-    st = getVariable(20009);
+  { // 20041 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_CMDOFF
+    st = getVariable(20041);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_CMDOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -1259,8 +1639,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20010 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INSO
-    st = getVariable(20010);
+  { // 20042 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INSO
+    st = getVariable(20042);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INSO", 49);
     st->size_data = sizeof(BOOL);
@@ -1271,8 +1651,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 20011 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INSZ
-    st = getVariable(20011);
+  { // 20043 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INSZ
+    st = getVariable(20043);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INSZ", 49);
     st->size_data = sizeof(BOOL);
@@ -1283,8 +1663,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 20012 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INDP
-    st = getVariable(20012);
+  { // 20044 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INDP
+    st = getVariable(20044);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.ISVALIDREF_INDP", 49);
     st->size_data = sizeof(BOOL);
@@ -1295,8 +1675,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 20013 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CONTINUEHOLDCOMMAND
-    st = getVariable(20013);
+  { // 20045 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CONTINUEHOLDCOMMAND
+    st = getVariable(20045);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CONTINUEHOLDCOMMAND", 53);
     st->size_data = sizeof(TIME);
@@ -1307,8 +1687,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 20014 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND_ALG
-    st = getVariable(20014);
+  { // 20046 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND_ALG
+    st = getVariable(20046);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND_ALG", 47);
     st->size_data = sizeof(WORD);
@@ -1319,8 +1699,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20015 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND_ARM
-    st = getVariable(20015);
+  { // 20047 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND_ARM
+    st = getVariable(20047);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.INCOMMAND_ARM", 47);
     st->size_data = sizeof(WORD);
@@ -1331,8 +1711,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20016 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CMDON
-    st = getVariable(20016);
+  { // 20048 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CMDON
+    st = getVariable(20048);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CMDON", 39);
     st->size_data = sizeof(BOOL);
@@ -1343,8 +1723,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20017 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CMDOFF
-    st = getVariable(20017);
+  { // 20049 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CMDOFF
+    st = getVariable(20049);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.CMDOFF", 40);
     st->size_data = sizeof(BOOL);
@@ -1355,8 +1735,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20018 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.RELIABILITY
-    st = getVariable(20018);
+  { // 20050 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.RELIABILITY
+    st = getVariable(20050);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3B.RELIABILITY", 45);
     st->size_data = sizeof(BOOL);
@@ -1367,8 +1747,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20019 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND
-    st = getVariable(20019);
+  { // 20051 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND
+    st = getVariable(20051);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND", 42);
     st->size_data = sizeof(WORD);
@@ -1379,8 +1759,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20020 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.STATUS
-    st = getVariable(20020);
+  { // 20052 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.STATUS
+    st = getVariable(20052);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.STATUS", 39);
     st->size_data = sizeof(DWORD);
@@ -1391,8 +1771,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20021 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ONSTATUS
-    st = getVariable(20021);
+  { // 20053 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ONSTATUS
+    st = getVariable(20053);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ONSTATUS", 41);
     st->size_data = sizeof(BYTE);
@@ -1403,8 +1783,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20022 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INOPCCOMMANDSDISABLED
-    st = getVariable(20022);
+  { // 20054 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INOPCCOMMANDSDISABLED
+    st = getVariable(20054);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INOPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -1415,8 +1795,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20023 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SDVIG
-    st = getVariable(20023);
+  { // 20055 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SDVIG
+    st = getVariable(20055);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SDVIG", 38);
     st->size_data = sizeof(BOOL);
@@ -1427,8 +1807,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20024 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.NS
-    st = getVariable(20024);
+  { // 20056 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.NS
+    st = getVariable(20056);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.NS", 35);
     st->size_data = sizeof(BOOL);
@@ -1439,8 +1819,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 20025 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.DP
-    st = getVariable(20025);
+  { // 20057 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.DP
+    st = getVariable(20057);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.DP", 35);
     st->size_data = sizeof(BOOL);
@@ -1451,8 +1831,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 20026 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.COMMANDFAULT
-    st = getVariable(20026);
+  { // 20058 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.COMMANDFAULT
+    st = getVariable(20058);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.COMMANDFAULT", 45);
     st->size_data = sizeof(BOOL);
@@ -1463,8 +1843,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20027 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ACCIDENT
-    st = getVariable(20027);
+  { // 20059 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ACCIDENT
+    st = getVariable(20059);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ACCIDENT", 41);
     st->size_data = sizeof(BOOL);
@@ -1475,8 +1855,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20028 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.AUTO
-    st = getVariable(20028);
+  { // 20060 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.AUTO
+    st = getVariable(20060);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.AUTO", 37);
     st->size_data = sizeof(BOOL);
@@ -1487,8 +1867,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20029 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.MANUAL
-    st = getVariable(20029);
+  { // 20061 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.MANUAL
+    st = getVariable(20061);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.MANUAL", 39);
     st->size_data = sizeof(BOOL);
@@ -1499,8 +1879,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20030 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.LOCAL
-    st = getVariable(20030);
+  { // 20062 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.LOCAL
+    st = getVariable(20062);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.LOCAL", 38);
     st->size_data = sizeof(BOOL);
@@ -1511,8 +1891,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20031 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.DISTANCE
-    st = getVariable(20031);
+  { // 20063 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.DISTANCE
+    st = getVariable(20063);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.DISTANCE", 41);
     st->size_data = sizeof(BOOL);
@@ -1523,8 +1903,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20032 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ERRORPOWEROFF
-    st = getVariable(20032);
+  { // 20064 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ERRORPOWEROFF
+    st = getVariable(20064);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ERRORPOWEROFF", 46);
     st->size_data = sizeof(BOOL);
@@ -1535,8 +1915,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20033 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ERRORBLOCK
-    st = getVariable(20033);
+  { // 20065 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ERRORBLOCK
+    st = getVariable(20065);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ERRORBLOCK", 43);
     st->size_data = sizeof(BOOL);
@@ -1547,8 +1927,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20034 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SO
-    st = getVariable(20034);
+  { // 20066 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SO
+    st = getVariable(20066);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SO", 35);
     st->size_data = sizeof(BOOL);
@@ -1559,8 +1939,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 20035 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SZ
-    st = getVariable(20035);
+  { // 20067 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SZ
+    st = getVariable(20067);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.SZ", 35);
     st->size_data = sizeof(BOOL);
@@ -1571,8 +1951,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 20036 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.OPCCOMMANDSDISABLED
-    st = getVariable(20036);
+  { // 20068 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.OPCCOMMANDSDISABLED
+    st = getVariable(20068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.OPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -1583,8 +1963,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20037 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.LASTCMDISON
-    st = getVariable(20037);
+  { // 20069 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.LASTCMDISON
+    st = getVariable(20069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.LASTCMDISON", 44);
     st->size_data = sizeof(BOOL);
@@ -1595,8 +1975,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20038 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_STATON
-    st = getVariable(20038);
+  { // 20070 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_STATON
+    st = getVariable(20070);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_STATON", 50);
     st->size_data = sizeof(BOOL);
@@ -1607,8 +1987,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20039 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_STATOFF
-    st = getVariable(20039);
+  { // 20071 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_STATOFF
+    st = getVariable(20071);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_STATOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -1619,8 +1999,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20040 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_CMDON
-    st = getVariable(20040);
+  { // 20072 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_CMDON
+    st = getVariable(20072);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -1631,8 +2011,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20041 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_CMDOFF
-    st = getVariable(20041);
+  { // 20073 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_CMDOFF
+    st = getVariable(20073);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -1643,8 +2023,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20042 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INSO
-    st = getVariable(20042);
+  { // 20074 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INSO
+    st = getVariable(20074);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INSO", 48);
     st->size_data = sizeof(BOOL);
@@ -1655,8 +2035,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 20043 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INSZ
-    st = getVariable(20043);
+  { // 20075 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INSZ
+    st = getVariable(20075);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INSZ", 48);
     st->size_data = sizeof(BOOL);
@@ -1667,8 +2047,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 20044 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INDP
-    st = getVariable(20044);
+  { // 20076 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INDP
+    st = getVariable(20076);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.ISVALIDREF_INDP", 48);
     st->size_data = sizeof(BOOL);
@@ -1679,8 +2059,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 20045 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CONTINUEHOLDCOMMAND
-    st = getVariable(20045);
+  { // 20077 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CONTINUEHOLDCOMMAND
+    st = getVariable(20077);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CONTINUEHOLDCOMMAND", 52);
     st->size_data = sizeof(TIME);
@@ -1691,8 +2071,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 20046 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND_ALG
-    st = getVariable(20046);
+  { // 20078 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND_ALG
+    st = getVariable(20078);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND_ALG", 46);
     st->size_data = sizeof(WORD);
@@ -1703,8 +2083,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20047 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND_ARM
-    st = getVariable(20047);
+  { // 20079 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND_ARM
+    st = getVariable(20079);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.INCOMMAND_ARM", 46);
     st->size_data = sizeof(WORD);
@@ -1715,8 +2095,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20048 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CMDON
-    st = getVariable(20048);
+  { // 20080 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CMDON
+    st = getVariable(20080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CMDON", 38);
     st->size_data = sizeof(BOOL);
@@ -1727,8 +2107,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20049 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CMDOFF
-    st = getVariable(20049);
+  { // 20081 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CMDOFF
+    st = getVariable(20081);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.CMDOFF", 39);
     st->size_data = sizeof(BOOL);
@@ -1739,8 +2119,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20050 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.RELIABILITY
-    st = getVariable(20050);
+  { // 20082 PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.RELIABILITY
+    st = getVariable(20082);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN4.RELIABILITY", 44);
     st->size_data = sizeof(BOOL);
@@ -1751,8 +2131,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20051 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND
-    st = getVariable(20051);
+  { // 20083 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND
+    st = getVariable(20083);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND", 42);
     st->size_data = sizeof(WORD);
@@ -1763,8 +2143,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20052 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.STATUS
-    st = getVariable(20052);
+  { // 20084 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.STATUS
+    st = getVariable(20084);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.STATUS", 39);
     st->size_data = sizeof(DWORD);
@@ -1775,8 +2155,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20053 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ONSTATUS
-    st = getVariable(20053);
+  { // 20085 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ONSTATUS
+    st = getVariable(20085);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ONSTATUS", 41);
     st->size_data = sizeof(BYTE);
@@ -1787,8 +2167,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20054 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INOPCCOMMANDSDISABLED
-    st = getVariable(20054);
+  { // 20086 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INOPCCOMMANDSDISABLED
+    st = getVariable(20086);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INOPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -1799,8 +2179,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20055 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SDVIG
-    st = getVariable(20055);
+  { // 20087 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SDVIG
+    st = getVariable(20087);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SDVIG", 38);
     st->size_data = sizeof(BOOL);
@@ -1811,8 +2191,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20056 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.NS
-    st = getVariable(20056);
+  { // 20088 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.NS
+    st = getVariable(20088);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.NS", 35);
     st->size_data = sizeof(BOOL);
@@ -1823,8 +2203,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 20057 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.DP
-    st = getVariable(20057);
+  { // 20089 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.DP
+    st = getVariable(20089);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.DP", 35);
     st->size_data = sizeof(BOOL);
@@ -1835,8 +2215,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 20058 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.COMMANDFAULT
-    st = getVariable(20058);
+  { // 20090 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.COMMANDFAULT
+    st = getVariable(20090);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.COMMANDFAULT", 45);
     st->size_data = sizeof(BOOL);
@@ -1847,8 +2227,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20059 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ACCIDENT
-    st = getVariable(20059);
+  { // 20091 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ACCIDENT
+    st = getVariable(20091);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ACCIDENT", 41);
     st->size_data = sizeof(BOOL);
@@ -1859,8 +2239,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20060 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.AUTO
-    st = getVariable(20060);
+  { // 20092 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.AUTO
+    st = getVariable(20092);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.AUTO", 37);
     st->size_data = sizeof(BOOL);
@@ -1871,8 +2251,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20061 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.MANUAL
-    st = getVariable(20061);
+  { // 20093 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.MANUAL
+    st = getVariable(20093);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.MANUAL", 39);
     st->size_data = sizeof(BOOL);
@@ -1883,8 +2263,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20062 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.LOCAL
-    st = getVariable(20062);
+  { // 20094 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.LOCAL
+    st = getVariable(20094);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.LOCAL", 38);
     st->size_data = sizeof(BOOL);
@@ -1895,8 +2275,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20063 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.DISTANCE
-    st = getVariable(20063);
+  { // 20095 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.DISTANCE
+    st = getVariable(20095);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.DISTANCE", 41);
     st->size_data = sizeof(BOOL);
@@ -1907,8 +2287,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20064 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ERRORPOWEROFF
-    st = getVariable(20064);
+  { // 20096 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ERRORPOWEROFF
+    st = getVariable(20096);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ERRORPOWEROFF", 46);
     st->size_data = sizeof(BOOL);
@@ -1919,8 +2299,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20065 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ERRORBLOCK
-    st = getVariable(20065);
+  { // 20097 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ERRORBLOCK
+    st = getVariable(20097);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ERRORBLOCK", 43);
     st->size_data = sizeof(BOOL);
@@ -1931,8 +2311,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20066 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SO
-    st = getVariable(20066);
+  { // 20098 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SO
+    st = getVariable(20098);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SO", 35);
     st->size_data = sizeof(BOOL);
@@ -1943,8 +2323,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 20067 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SZ
-    st = getVariable(20067);
+  { // 20099 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SZ
+    st = getVariable(20099);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.SZ", 35);
     st->size_data = sizeof(BOOL);
@@ -1955,8 +2335,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 20068 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.OPCCOMMANDSDISABLED
-    st = getVariable(20068);
+  { // 20100 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.OPCCOMMANDSDISABLED
+    st = getVariable(20100);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.OPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -1967,8 +2347,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20069 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.LASTCMDISON
-    st = getVariable(20069);
+  { // 20101 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.LASTCMDISON
+    st = getVariable(20101);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.LASTCMDISON", 44);
     st->size_data = sizeof(BOOL);
@@ -1979,8 +2359,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20070 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_STATON
-    st = getVariable(20070);
+  { // 20102 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_STATON
+    st = getVariable(20102);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_STATON", 50);
     st->size_data = sizeof(BOOL);
@@ -1991,8 +2371,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20071 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_STATOFF
-    st = getVariable(20071);
+  { // 20103 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_STATOFF
+    st = getVariable(20103);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_STATOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -2003,8 +2383,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20072 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_CMDON
-    st = getVariable(20072);
+  { // 20104 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_CMDON
+    st = getVariable(20104);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -2015,8 +2395,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20073 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_CMDOFF
-    st = getVariable(20073);
+  { // 20105 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_CMDOFF
+    st = getVariable(20105);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -2027,8 +2407,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20074 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INSO
-    st = getVariable(20074);
+  { // 20106 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INSO
+    st = getVariable(20106);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INSO", 48);
     st->size_data = sizeof(BOOL);
@@ -2039,8 +2419,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 20075 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INSZ
-    st = getVariable(20075);
+  { // 20107 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INSZ
+    st = getVariable(20107);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INSZ", 48);
     st->size_data = sizeof(BOOL);
@@ -2051,8 +2431,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 20076 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INDP
-    st = getVariable(20076);
+  { // 20108 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INDP
+    st = getVariable(20108);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.ISVALIDREF_INDP", 48);
     st->size_data = sizeof(BOOL);
@@ -2063,8 +2443,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 20077 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CONTINUEHOLDCOMMAND
-    st = getVariable(20077);
+  { // 20109 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CONTINUEHOLDCOMMAND
+    st = getVariable(20109);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CONTINUEHOLDCOMMAND", 52);
     st->size_data = sizeof(TIME);
@@ -2075,8 +2455,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 20078 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND_ALG
-    st = getVariable(20078);
+  { // 20110 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND_ALG
+    st = getVariable(20110);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND_ALG", 46);
     st->size_data = sizeof(WORD);
@@ -2087,8 +2467,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20079 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND_ARM
-    st = getVariable(20079);
+  { // 20111 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND_ARM
+    st = getVariable(20111);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.INCOMMAND_ARM", 46);
     st->size_data = sizeof(WORD);
@@ -2099,8 +2479,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20080 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CMDON
-    st = getVariable(20080);
+  { // 20112 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CMDON
+    st = getVariable(20112);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CMDON", 38);
     st->size_data = sizeof(BOOL);
@@ -2111,8 +2491,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20081 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CMDOFF
-    st = getVariable(20081);
+  { // 20113 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CMDOFF
+    st = getVariable(20113);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.CMDOFF", 39);
     st->size_data = sizeof(BOOL);
@@ -2123,8 +2503,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20082 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.RELIABILITY
-    st = getVariable(20082);
+  { // 20114 PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.RELIABILITY
+    st = getVariable(20114);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN5.RELIABILITY", 44);
     st->size_data = sizeof(BOOL);
@@ -2135,8 +2515,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20083 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND
-    st = getVariable(20083);
+  { // 20115 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND
+    st = getVariable(20115);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND", 42);
     st->size_data = sizeof(WORD);
@@ -2147,8 +2527,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20084 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.STATUS
-    st = getVariable(20084);
+  { // 20116 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.STATUS
+    st = getVariable(20116);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.STATUS", 39);
     st->size_data = sizeof(DWORD);
@@ -2159,8 +2539,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20085 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ONSTATUS
-    st = getVariable(20085);
+  { // 20117 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ONSTATUS
+    st = getVariable(20117);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ONSTATUS", 41);
     st->size_data = sizeof(BYTE);
@@ -2171,8 +2551,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20086 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INOPCCOMMANDSDISABLED
-    st = getVariable(20086);
+  { // 20118 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INOPCCOMMANDSDISABLED
+    st = getVariable(20118);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INOPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -2183,8 +2563,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20087 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SDVIG
-    st = getVariable(20087);
+  { // 20119 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SDVIG
+    st = getVariable(20119);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SDVIG", 38);
     st->size_data = sizeof(BOOL);
@@ -2195,8 +2575,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20088 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.NS
-    st = getVariable(20088);
+  { // 20120 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.NS
+    st = getVariable(20120);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.NS", 35);
     st->size_data = sizeof(BOOL);
@@ -2207,8 +2587,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 20089 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.DP
-    st = getVariable(20089);
+  { // 20121 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.DP
+    st = getVariable(20121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.DP", 35);
     st->size_data = sizeof(BOOL);
@@ -2219,8 +2599,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 20090 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.COMMANDFAULT
-    st = getVariable(20090);
+  { // 20122 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.COMMANDFAULT
+    st = getVariable(20122);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.COMMANDFAULT", 45);
     st->size_data = sizeof(BOOL);
@@ -2231,8 +2611,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20091 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ACCIDENT
-    st = getVariable(20091);
+  { // 20123 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ACCIDENT
+    st = getVariable(20123);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ACCIDENT", 41);
     st->size_data = sizeof(BOOL);
@@ -2243,8 +2623,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20092 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.AUTO
-    st = getVariable(20092);
+  { // 20124 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.AUTO
+    st = getVariable(20124);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.AUTO", 37);
     st->size_data = sizeof(BOOL);
@@ -2255,8 +2635,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20093 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.MANUAL
-    st = getVariable(20093);
+  { // 20125 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.MANUAL
+    st = getVariable(20125);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.MANUAL", 39);
     st->size_data = sizeof(BOOL);
@@ -2267,8 +2647,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20094 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.LOCAL
-    st = getVariable(20094);
+  { // 20126 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.LOCAL
+    st = getVariable(20126);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.LOCAL", 38);
     st->size_data = sizeof(BOOL);
@@ -2279,8 +2659,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20095 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.DISTANCE
-    st = getVariable(20095);
+  { // 20127 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.DISTANCE
+    st = getVariable(20127);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.DISTANCE", 41);
     st->size_data = sizeof(BOOL);
@@ -2291,8 +2671,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20096 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ERRORPOWEROFF
-    st = getVariable(20096);
+  { // 20128 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ERRORPOWEROFF
+    st = getVariable(20128);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ERRORPOWEROFF", 46);
     st->size_data = sizeof(BOOL);
@@ -2303,8 +2683,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20097 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ERRORBLOCK
-    st = getVariable(20097);
+  { // 20129 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ERRORBLOCK
+    st = getVariable(20129);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ERRORBLOCK", 43);
     st->size_data = sizeof(BOOL);
@@ -2315,8 +2695,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20098 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SO
-    st = getVariable(20098);
+  { // 20130 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SO
+    st = getVariable(20130);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SO", 35);
     st->size_data = sizeof(BOOL);
@@ -2327,8 +2707,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 20099 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SZ
-    st = getVariable(20099);
+  { // 20131 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SZ
+    st = getVariable(20131);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.SZ", 35);
     st->size_data = sizeof(BOOL);
@@ -2339,8 +2719,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 20100 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.OPCCOMMANDSDISABLED
-    st = getVariable(20100);
+  { // 20132 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.OPCCOMMANDSDISABLED
+    st = getVariable(20132);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.OPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -2351,8 +2731,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20101 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.LASTCMDISON
-    st = getVariable(20101);
+  { // 20133 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.LASTCMDISON
+    st = getVariable(20133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.LASTCMDISON", 44);
     st->size_data = sizeof(BOOL);
@@ -2363,8 +2743,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20102 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_STATON
-    st = getVariable(20102);
+  { // 20134 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_STATON
+    st = getVariable(20134);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_STATON", 50);
     st->size_data = sizeof(BOOL);
@@ -2375,8 +2755,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20103 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_STATOFF
-    st = getVariable(20103);
+  { // 20135 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_STATOFF
+    st = getVariable(20135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_STATOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -2387,8 +2767,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20104 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_CMDON
-    st = getVariable(20104);
+  { // 20136 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_CMDON
+    st = getVariable(20136);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -2399,8 +2779,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20105 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_CMDOFF
-    st = getVariable(20105);
+  { // 20137 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_CMDOFF
+    st = getVariable(20137);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -2411,8 +2791,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20106 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INSO
-    st = getVariable(20106);
+  { // 20138 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INSO
+    st = getVariable(20138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INSO", 48);
     st->size_data = sizeof(BOOL);
@@ -2423,8 +2803,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 20107 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INSZ
-    st = getVariable(20107);
+  { // 20139 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INSZ
+    st = getVariable(20139);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INSZ", 48);
     st->size_data = sizeof(BOOL);
@@ -2435,8 +2815,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 20108 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INDP
-    st = getVariable(20108);
+  { // 20140 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INDP
+    st = getVariable(20140);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.ISVALIDREF_INDP", 48);
     st->size_data = sizeof(BOOL);
@@ -2447,8 +2827,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 20109 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CONTINUEHOLDCOMMAND
-    st = getVariable(20109);
+  { // 20141 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CONTINUEHOLDCOMMAND
+    st = getVariable(20141);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CONTINUEHOLDCOMMAND", 52);
     st->size_data = sizeof(TIME);
@@ -2459,8 +2839,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 20110 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND_ALG
-    st = getVariable(20110);
+  { // 20142 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND_ALG
+    st = getVariable(20142);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND_ALG", 46);
     st->size_data = sizeof(WORD);
@@ -2471,8 +2851,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20111 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND_ARM
-    st = getVariable(20111);
+  { // 20143 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND_ARM
+    st = getVariable(20143);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.INCOMMAND_ARM", 46);
     st->size_data = sizeof(WORD);
@@ -2483,8 +2863,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20112 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CMDON
-    st = getVariable(20112);
+  { // 20144 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CMDON
+    st = getVariable(20144);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CMDON", 38);
     st->size_data = sizeof(BOOL);
@@ -2495,8 +2875,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20113 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CMDOFF
-    st = getVariable(20113);
+  { // 20145 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CMDOFF
+    st = getVariable(20145);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.CMDOFF", 39);
     st->size_data = sizeof(BOOL);
@@ -2507,8 +2887,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20114 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.RELIABILITY
-    st = getVariable(20114);
+  { // 20146 PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.RELIABILITY
+    st = getVariable(20146);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN6.RELIABILITY", 44);
     st->size_data = sizeof(BOOL);
@@ -2519,8 +2899,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20115 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND
-    st = getVariable(20115);
+  { // 20147 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND
+    st = getVariable(20147);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND", 40);
     st->size_data = sizeof(WORD);
@@ -2531,8 +2911,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20116 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND_ALG
-    st = getVariable(20116);
+  { // 20148 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND_ALG
+    st = getVariable(20148);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND_ALG", 44);
     st->size_data = sizeof(WORD);
@@ -2543,8 +2923,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20117 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND_ARM
-    st = getVariable(20117);
+  { // 20149 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND_ARM
+    st = getVariable(20149);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.INCOMMAND_ARM", 44);
     st->size_data = sizeof(WORD);
@@ -2555,8 +2935,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20118 PROGRAM0.IM_STRUCTS_INI.IM.NU1.STATUS
-    st = getVariable(20118);
+  { // 20150 PROGRAM0.IM_STRUCTS_INI.IM.NU1.STATUS
+    st = getVariable(20150);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.STATUS", 37);
     st->size_data = sizeof(DWORD);
@@ -2567,8 +2947,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20119 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ONSTATUS
-    st = getVariable(20119);
+  { // 20151 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ONSTATUS
+    st = getVariable(20151);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ONSTATUS", 39);
     st->size_data = sizeof(BYTE);
@@ -2579,8 +2959,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20120 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INOPCCOMMANDSDISABLED
-    st = getVariable(20120);
+  { // 20152 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INOPCCOMMANDSDISABLED
+    st = getVariable(20152);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.INOPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -2591,8 +2971,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20121 PROGRAM0.IM_STRUCTS_INI.IM.NU1.SDVIG
-    st = getVariable(20121);
+  { // 20153 PROGRAM0.IM_STRUCTS_INI.IM.NU1.SDVIG
+    st = getVariable(20153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.SDVIG", 36);
     st->size_data = sizeof(BOOL);
@@ -2603,8 +2983,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20122 PROGRAM0.IM_STRUCTS_INI.IM.NU1.NS
-    st = getVariable(20122);
+  { // 20154 PROGRAM0.IM_STRUCTS_INI.IM.NU1.NS
+    st = getVariable(20154);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.NS", 33);
     st->size_data = sizeof(BOOL);
@@ -2615,8 +2995,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 20123 PROGRAM0.IM_STRUCTS_INI.IM.NU1.COMMANDFAULT
-    st = getVariable(20123);
+  { // 20155 PROGRAM0.IM_STRUCTS_INI.IM.NU1.COMMANDFAULT
+    st = getVariable(20155);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.COMMANDFAULT", 43);
     st->size_data = sizeof(BOOL);
@@ -2627,8 +3007,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20124 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ACCIDENT
-    st = getVariable(20124);
+  { // 20156 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ACCIDENT
+    st = getVariable(20156);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ACCIDENT", 39);
     st->size_data = sizeof(BOOL);
@@ -2639,8 +3019,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20125 PROGRAM0.IM_STRUCTS_INI.IM.NU1.LOCAL
-    st = getVariable(20125);
+  { // 20157 PROGRAM0.IM_STRUCTS_INI.IM.NU1.LOCAL
+    st = getVariable(20157);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.LOCAL", 36);
     st->size_data = sizeof(BOOL);
@@ -2651,8 +3031,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20126 PROGRAM0.IM_STRUCTS_INI.IM.NU1.DISTANCE
-    st = getVariable(20126);
+  { // 20158 PROGRAM0.IM_STRUCTS_INI.IM.NU1.DISTANCE
+    st = getVariable(20158);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.DISTANCE", 39);
     st->size_data = sizeof(BOOL);
@@ -2663,8 +3043,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20127 PROGRAM0.IM_STRUCTS_INI.IM.NU1.BREAKCMDON
-    st = getVariable(20127);
+  { // 20159 PROGRAM0.IM_STRUCTS_INI.IM.NU1.BREAKCMDON
+    st = getVariable(20159);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.BREAKCMDON", 41);
     st->size_data = sizeof(BOOL);
@@ -2675,8 +3055,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20128 PROGRAM0.IM_STRUCTS_INI.IM.NU1.BREAKCMDOFF
-    st = getVariable(20128);
+  { // 20160 PROGRAM0.IM_STRUCTS_INI.IM.NU1.BREAKCMDOFF
+    st = getVariable(20160);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.BREAKCMDOFF", 42);
     st->size_data = sizeof(BOOL);
@@ -2687,8 +3067,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20129 PROGRAM0.IM_STRUCTS_INI.IM.NU1.OPCCOMMANDSDISABLED
-    st = getVariable(20129);
+  { // 20161 PROGRAM0.IM_STRUCTS_INI.IM.NU1.OPCCOMMANDSDISABLED
+    st = getVariable(20161);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.OPCCOMMANDSDISABLED", 50);
     st->size_data = sizeof(BOOL);
@@ -2699,8 +3079,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20130 PROGRAM0.IM_STRUCTS_INI.IM.NU1.LASTCMDISON
-    st = getVariable(20130);
+  { // 20162 PROGRAM0.IM_STRUCTS_INI.IM.NU1.LASTCMDISON
+    st = getVariable(20162);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.LASTCMDISON", 42);
     st->size_data = sizeof(BOOL);
@@ -2711,8 +3091,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20131 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_STATON
-    st = getVariable(20131);
+  { // 20163 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_STATON
+    st = getVariable(20163);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_STATON", 48);
     st->size_data = sizeof(BOOL);
@@ -2723,8 +3103,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20132 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_STATOFF
-    st = getVariable(20132);
+  { // 20164 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_STATOFF
+    st = getVariable(20164);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_STATOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -2735,8 +3115,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20133 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_CMDON
-    st = getVariable(20133);
+  { // 20165 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_CMDON
+    st = getVariable(20165);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_CMDON", 47);
     st->size_data = sizeof(BOOL);
@@ -2747,8 +3127,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20134 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_CMDOFF
-    st = getVariable(20134);
+  { // 20166 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_CMDOFF
+    st = getVariable(20166);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_CMDOFF", 48);
     st->size_data = sizeof(BOOL);
@@ -2759,8 +3139,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20135 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20135);
+  { // 20167 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_INBREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -2771,8 +3151,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20136 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20136);
+  { // 20168 PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20168);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.ISVALIDREF_INBREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -2783,8 +3163,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20137 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INBLOCKED
-    st = getVariable(20137);
+  { // 20169 PROGRAM0.IM_STRUCTS_INI.IM.NU1.INBLOCKED
+    st = getVariable(20169);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.INBLOCKED", 40);
     st->size_data = sizeof(BOOL);
@@ -2795,8 +3175,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 20138 PROGRAM0.IM_STRUCTS_INI.IM.NU1.BLOCKED
-    st = getVariable(20138);
+  { // 20170 PROGRAM0.IM_STRUCTS_INI.IM.NU1.BLOCKED
+    st = getVariable(20170);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.BLOCKED", 38);
     st->size_data = sizeof(BOOL);
@@ -2807,8 +3187,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 20139 PROGRAM0.IM_STRUCTS_INI.IM.NU1.OSNOVNOY
-    st = getVariable(20139);
+  { // 20171 PROGRAM0.IM_STRUCTS_INI.IM.NU1.OSNOVNOY
+    st = getVariable(20171);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.OSNOVNOY", 39);
     st->size_data = sizeof(BOOL);
@@ -2819,8 +3199,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 20140 PROGRAM0.IM_STRUCTS_INI.IM.NU1.REZERVNY
-    st = getVariable(20140);
+  { // 20172 PROGRAM0.IM_STRUCTS_INI.IM.NU1.REZERVNY
+    st = getVariable(20172);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.REZERVNY", 39);
     st->size_data = sizeof(BOOL);
@@ -2831,8 +3211,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 20141 PROGRAM0.IM_STRUCTS_INI.IM.NU1.CMDON
-    st = getVariable(20141);
+  { // 20173 PROGRAM0.IM_STRUCTS_INI.IM.NU1.CMDON
+    st = getVariable(20173);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.CMDON", 36);
     st->size_data = sizeof(BOOL);
@@ -2843,8 +3223,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20142 PROGRAM0.IM_STRUCTS_INI.IM.NU1.CMDOFF
-    st = getVariable(20142);
+  { // 20174 PROGRAM0.IM_STRUCTS_INI.IM.NU1.CMDOFF
+    st = getVariable(20174);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.CMDOFF", 37);
     st->size_data = sizeof(BOOL);
@@ -2855,8 +3235,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20143 PROGRAM0.IM_STRUCTS_INI.IM.NU1.RELIABILITY
-    st = getVariable(20143);
+  { // 20175 PROGRAM0.IM_STRUCTS_INI.IM.NU1.RELIABILITY
+    st = getVariable(20175);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU1.RELIABILITY", 42);
     st->size_data = sizeof(BOOL);
@@ -2867,8 +3247,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20144 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND
-    st = getVariable(20144);
+  { // 20176 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND
+    st = getVariable(20176);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND", 40);
     st->size_data = sizeof(WORD);
@@ -2879,8 +3259,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20145 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND_ALG
-    st = getVariable(20145);
+  { // 20177 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND_ALG
+    st = getVariable(20177);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND_ALG", 44);
     st->size_data = sizeof(WORD);
@@ -2891,8 +3271,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20146 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND_ARM
-    st = getVariable(20146);
+  { // 20178 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND_ARM
+    st = getVariable(20178);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.INCOMMAND_ARM", 44);
     st->size_data = sizeof(WORD);
@@ -2903,8 +3283,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20147 PROGRAM0.IM_STRUCTS_INI.IM.NU2.STATUS
-    st = getVariable(20147);
+  { // 20179 PROGRAM0.IM_STRUCTS_INI.IM.NU2.STATUS
+    st = getVariable(20179);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.STATUS", 37);
     st->size_data = sizeof(DWORD);
@@ -2915,8 +3295,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20148 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ONSTATUS
-    st = getVariable(20148);
+  { // 20180 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ONSTATUS
+    st = getVariable(20180);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ONSTATUS", 39);
     st->size_data = sizeof(BYTE);
@@ -2927,8 +3307,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20149 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INOPCCOMMANDSDISABLED
-    st = getVariable(20149);
+  { // 20181 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INOPCCOMMANDSDISABLED
+    st = getVariable(20181);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.INOPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -2939,8 +3319,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20150 PROGRAM0.IM_STRUCTS_INI.IM.NU2.SDVIG
-    st = getVariable(20150);
+  { // 20182 PROGRAM0.IM_STRUCTS_INI.IM.NU2.SDVIG
+    st = getVariable(20182);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.SDVIG", 36);
     st->size_data = sizeof(BOOL);
@@ -2951,8 +3331,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20151 PROGRAM0.IM_STRUCTS_INI.IM.NU2.NS
-    st = getVariable(20151);
+  { // 20183 PROGRAM0.IM_STRUCTS_INI.IM.NU2.NS
+    st = getVariable(20183);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.NS", 33);
     st->size_data = sizeof(BOOL);
@@ -2963,8 +3343,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 20152 PROGRAM0.IM_STRUCTS_INI.IM.NU2.COMMANDFAULT
-    st = getVariable(20152);
+  { // 20184 PROGRAM0.IM_STRUCTS_INI.IM.NU2.COMMANDFAULT
+    st = getVariable(20184);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.COMMANDFAULT", 43);
     st->size_data = sizeof(BOOL);
@@ -2975,8 +3355,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20153 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ACCIDENT
-    st = getVariable(20153);
+  { // 20185 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ACCIDENT
+    st = getVariable(20185);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ACCIDENT", 39);
     st->size_data = sizeof(BOOL);
@@ -2987,8 +3367,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20154 PROGRAM0.IM_STRUCTS_INI.IM.NU2.LOCAL
-    st = getVariable(20154);
+  { // 20186 PROGRAM0.IM_STRUCTS_INI.IM.NU2.LOCAL
+    st = getVariable(20186);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.LOCAL", 36);
     st->size_data = sizeof(BOOL);
@@ -2999,8 +3379,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20155 PROGRAM0.IM_STRUCTS_INI.IM.NU2.DISTANCE
-    st = getVariable(20155);
+  { // 20187 PROGRAM0.IM_STRUCTS_INI.IM.NU2.DISTANCE
+    st = getVariable(20187);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.DISTANCE", 39);
     st->size_data = sizeof(BOOL);
@@ -3011,8 +3391,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20156 PROGRAM0.IM_STRUCTS_INI.IM.NU2.BREAKCMDON
-    st = getVariable(20156);
+  { // 20188 PROGRAM0.IM_STRUCTS_INI.IM.NU2.BREAKCMDON
+    st = getVariable(20188);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.BREAKCMDON", 41);
     st->size_data = sizeof(BOOL);
@@ -3023,8 +3403,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20157 PROGRAM0.IM_STRUCTS_INI.IM.NU2.BREAKCMDOFF
-    st = getVariable(20157);
+  { // 20189 PROGRAM0.IM_STRUCTS_INI.IM.NU2.BREAKCMDOFF
+    st = getVariable(20189);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.BREAKCMDOFF", 42);
     st->size_data = sizeof(BOOL);
@@ -3035,8 +3415,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20158 PROGRAM0.IM_STRUCTS_INI.IM.NU2.OPCCOMMANDSDISABLED
-    st = getVariable(20158);
+  { // 20190 PROGRAM0.IM_STRUCTS_INI.IM.NU2.OPCCOMMANDSDISABLED
+    st = getVariable(20190);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.OPCCOMMANDSDISABLED", 50);
     st->size_data = sizeof(BOOL);
@@ -3047,8 +3427,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20159 PROGRAM0.IM_STRUCTS_INI.IM.NU2.LASTCMDISON
-    st = getVariable(20159);
+  { // 20191 PROGRAM0.IM_STRUCTS_INI.IM.NU2.LASTCMDISON
+    st = getVariable(20191);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.LASTCMDISON", 42);
     st->size_data = sizeof(BOOL);
@@ -3059,8 +3439,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20160 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_STATON
-    st = getVariable(20160);
+  { // 20192 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_STATON
+    st = getVariable(20192);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_STATON", 48);
     st->size_data = sizeof(BOOL);
@@ -3071,8 +3451,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20161 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_STATOFF
-    st = getVariable(20161);
+  { // 20193 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_STATOFF
+    st = getVariable(20193);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_STATOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -3083,8 +3463,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20162 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_CMDON
-    st = getVariable(20162);
+  { // 20194 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_CMDON
+    st = getVariable(20194);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_CMDON", 47);
     st->size_data = sizeof(BOOL);
@@ -3095,8 +3475,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20163 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_CMDOFF
-    st = getVariable(20163);
+  { // 20195 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_CMDOFF
+    st = getVariable(20195);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_CMDOFF", 48);
     st->size_data = sizeof(BOOL);
@@ -3107,8 +3487,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20164 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20164);
+  { // 20196 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20196);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_INBREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -3119,8 +3499,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20165 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20165);
+  { // 20197 PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20197);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.ISVALIDREF_INBREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -3131,8 +3511,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20166 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INBLOCKED
-    st = getVariable(20166);
+  { // 20198 PROGRAM0.IM_STRUCTS_INI.IM.NU2.INBLOCKED
+    st = getVariable(20198);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.INBLOCKED", 40);
     st->size_data = sizeof(BOOL);
@@ -3143,8 +3523,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 20167 PROGRAM0.IM_STRUCTS_INI.IM.NU2.BLOCKED
-    st = getVariable(20167);
+  { // 20199 PROGRAM0.IM_STRUCTS_INI.IM.NU2.BLOCKED
+    st = getVariable(20199);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.BLOCKED", 38);
     st->size_data = sizeof(BOOL);
@@ -3155,8 +3535,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 20168 PROGRAM0.IM_STRUCTS_INI.IM.NU2.OSNOVNOY
-    st = getVariable(20168);
+  { // 20200 PROGRAM0.IM_STRUCTS_INI.IM.NU2.OSNOVNOY
+    st = getVariable(20200);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.OSNOVNOY", 39);
     st->size_data = sizeof(BOOL);
@@ -3167,8 +3547,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 20169 PROGRAM0.IM_STRUCTS_INI.IM.NU2.REZERVNY
-    st = getVariable(20169);
+  { // 20201 PROGRAM0.IM_STRUCTS_INI.IM.NU2.REZERVNY
+    st = getVariable(20201);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.REZERVNY", 39);
     st->size_data = sizeof(BOOL);
@@ -3179,8 +3559,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 20170 PROGRAM0.IM_STRUCTS_INI.IM.NU2.CMDON
-    st = getVariable(20170);
+  { // 20202 PROGRAM0.IM_STRUCTS_INI.IM.NU2.CMDON
+    st = getVariable(20202);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.CMDON", 36);
     st->size_data = sizeof(BOOL);
@@ -3191,8 +3571,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20171 PROGRAM0.IM_STRUCTS_INI.IM.NU2.CMDOFF
-    st = getVariable(20171);
+  { // 20203 PROGRAM0.IM_STRUCTS_INI.IM.NU2.CMDOFF
+    st = getVariable(20203);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.CMDOFF", 37);
     st->size_data = sizeof(BOOL);
@@ -3203,8 +3583,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20172 PROGRAM0.IM_STRUCTS_INI.IM.NU2.RELIABILITY
-    st = getVariable(20172);
+  { // 20204 PROGRAM0.IM_STRUCTS_INI.IM.NU2.RELIABILITY
+    st = getVariable(20204);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.NU2.RELIABILITY", 42);
     st->size_data = sizeof(BOOL);
@@ -3215,8 +3595,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20173 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND
-    st = getVariable(20173);
+  { // 20205 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND
+    st = getVariable(20205);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND", 40);
     st->size_data = sizeof(WORD);
@@ -3227,8 +3607,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20174 PROGRAM0.IM_STRUCTS_INI.IM.PNS.STATUS
-    st = getVariable(20174);
+  { // 20206 PROGRAM0.IM_STRUCTS_INI.IM.PNS.STATUS
+    st = getVariable(20206);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.STATUS", 37);
     st->size_data = sizeof(DWORD);
@@ -3239,8 +3619,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20175 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ONSTATUS
-    st = getVariable(20175);
+  { // 20207 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ONSTATUS
+    st = getVariable(20207);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ONSTATUS", 39);
     st->size_data = sizeof(BYTE);
@@ -3251,8 +3631,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20176 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INOPCCOMMANDSDISABLED
-    st = getVariable(20176);
+  { // 20208 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INOPCCOMMANDSDISABLED
+    st = getVariable(20208);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.INOPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -3263,8 +3643,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20177 PROGRAM0.IM_STRUCTS_INI.IM.PNS.SDVIG
-    st = getVariable(20177);
+  { // 20209 PROGRAM0.IM_STRUCTS_INI.IM.PNS.SDVIG
+    st = getVariable(20209);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.SDVIG", 36);
     st->size_data = sizeof(BOOL);
@@ -3275,8 +3655,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20178 PROGRAM0.IM_STRUCTS_INI.IM.PNS.NS
-    st = getVariable(20178);
+  { // 20210 PROGRAM0.IM_STRUCTS_INI.IM.PNS.NS
+    st = getVariable(20210);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.NS", 33);
     st->size_data = sizeof(BOOL);
@@ -3287,8 +3667,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 20179 PROGRAM0.IM_STRUCTS_INI.IM.PNS.COMMANDFAULT
-    st = getVariable(20179);
+  { // 20211 PROGRAM0.IM_STRUCTS_INI.IM.PNS.COMMANDFAULT
+    st = getVariable(20211);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.COMMANDFAULT", 43);
     st->size_data = sizeof(BOOL);
@@ -3299,8 +3679,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20180 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ACCIDENT
-    st = getVariable(20180);
+  { // 20212 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ACCIDENT
+    st = getVariable(20212);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ACCIDENT", 39);
     st->size_data = sizeof(BOOL);
@@ -3311,8 +3691,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20181 PROGRAM0.IM_STRUCTS_INI.IM.PNS.AUTO
-    st = getVariable(20181);
+  { // 20213 PROGRAM0.IM_STRUCTS_INI.IM.PNS.AUTO
+    st = getVariable(20213);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.AUTO", 35);
     st->size_data = sizeof(BOOL);
@@ -3323,8 +3703,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20182 PROGRAM0.IM_STRUCTS_INI.IM.PNS.MANUAL
-    st = getVariable(20182);
+  { // 20214 PROGRAM0.IM_STRUCTS_INI.IM.PNS.MANUAL
+    st = getVariable(20214);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.MANUAL", 37);
     st->size_data = sizeof(BOOL);
@@ -3335,8 +3715,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20183 PROGRAM0.IM_STRUCTS_INI.IM.PNS.LOCAL
-    st = getVariable(20183);
+  { // 20215 PROGRAM0.IM_STRUCTS_INI.IM.PNS.LOCAL
+    st = getVariable(20215);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.LOCAL", 36);
     st->size_data = sizeof(BOOL);
@@ -3347,8 +3727,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20184 PROGRAM0.IM_STRUCTS_INI.IM.PNS.DISTANCE
-    st = getVariable(20184);
+  { // 20216 PROGRAM0.IM_STRUCTS_INI.IM.PNS.DISTANCE
+    st = getVariable(20216);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.DISTANCE", 39);
     st->size_data = sizeof(BOOL);
@@ -3359,8 +3739,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20185 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ERRORPOWEROFF
-    st = getVariable(20185);
+  { // 20217 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ERRORPOWEROFF
+    st = getVariable(20217);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ERRORPOWEROFF", 44);
     st->size_data = sizeof(BOOL);
@@ -3371,8 +3751,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20186 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ERRORBLOCK
-    st = getVariable(20186);
+  { // 20218 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ERRORBLOCK
+    st = getVariable(20218);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ERRORBLOCK", 41);
     st->size_data = sizeof(BOOL);
@@ -3383,8 +3763,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20187 PROGRAM0.IM_STRUCTS_INI.IM.PNS.BREAKCMDON
-    st = getVariable(20187);
+  { // 20219 PROGRAM0.IM_STRUCTS_INI.IM.PNS.BREAKCMDON
+    st = getVariable(20219);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.BREAKCMDON", 41);
     st->size_data = sizeof(BOOL);
@@ -3395,8 +3775,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20188 PROGRAM0.IM_STRUCTS_INI.IM.PNS.BREAKCMDOFF
-    st = getVariable(20188);
+  { // 20220 PROGRAM0.IM_STRUCTS_INI.IM.PNS.BREAKCMDOFF
+    st = getVariable(20220);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.BREAKCMDOFF", 42);
     st->size_data = sizeof(BOOL);
@@ -3407,8 +3787,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20189 PROGRAM0.IM_STRUCTS_INI.IM.PNS.OPCCOMMANDSDISABLED
-    st = getVariable(20189);
+  { // 20221 PROGRAM0.IM_STRUCTS_INI.IM.PNS.OPCCOMMANDSDISABLED
+    st = getVariable(20221);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.OPCCOMMANDSDISABLED", 50);
     st->size_data = sizeof(BOOL);
@@ -3419,8 +3799,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20190 PROGRAM0.IM_STRUCTS_INI.IM.PNS.LASTCMDISON
-    st = getVariable(20190);
+  { // 20222 PROGRAM0.IM_STRUCTS_INI.IM.PNS.LASTCMDISON
+    st = getVariable(20222);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.LASTCMDISON", 42);
     st->size_data = sizeof(BOOL);
@@ -3431,8 +3811,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20191 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_STATON
-    st = getVariable(20191);
+  { // 20223 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_STATON
+    st = getVariable(20223);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_STATON", 48);
     st->size_data = sizeof(BOOL);
@@ -3443,8 +3823,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20192 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_STATOFF
-    st = getVariable(20192);
+  { // 20224 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_STATOFF
+    st = getVariable(20224);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_STATOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -3455,8 +3835,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20193 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_CMDON
-    st = getVariable(20193);
+  { // 20225 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_CMDON
+    st = getVariable(20225);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_CMDON", 47);
     st->size_data = sizeof(BOOL);
@@ -3467,8 +3847,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20194 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_CMDOFF
-    st = getVariable(20194);
+  { // 20226 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_CMDOFF
+    st = getVariable(20226);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_CMDOFF", 48);
     st->size_data = sizeof(BOOL);
@@ -3479,8 +3859,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20195 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20195);
+  { // 20227 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20227);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_INBREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -3491,8 +3871,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20196 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20196);
+  { // 20228 PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20228);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.ISVALIDREF_INBREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -3503,8 +3883,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20197 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND_ALG
-    st = getVariable(20197);
+  { // 20229 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND_ALG
+    st = getVariable(20229);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND_ALG", 44);
     st->size_data = sizeof(WORD);
@@ -3515,8 +3895,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20198 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND_ARM
-    st = getVariable(20198);
+  { // 20230 PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND_ARM
+    st = getVariable(20230);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.INCOMMAND_ARM", 44);
     st->size_data = sizeof(WORD);
@@ -3527,8 +3907,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20199 PROGRAM0.IM_STRUCTS_INI.IM.PNS.CMDON
-    st = getVariable(20199);
+  { // 20231 PROGRAM0.IM_STRUCTS_INI.IM.PNS.CMDON
+    st = getVariable(20231);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.CMDON", 36);
     st->size_data = sizeof(BOOL);
@@ -3539,8 +3919,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20200 PROGRAM0.IM_STRUCTS_INI.IM.PNS.CMDOFF
-    st = getVariable(20200);
+  { // 20232 PROGRAM0.IM_STRUCTS_INI.IM.PNS.CMDOFF
+    st = getVariable(20232);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.CMDOFF", 37);
     st->size_data = sizeof(BOOL);
@@ -3551,8 +3931,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20201 PROGRAM0.IM_STRUCTS_INI.IM.PNS.RELIABILITY
-    st = getVariable(20201);
+  { // 20233 PROGRAM0.IM_STRUCTS_INI.IM.PNS.RELIABILITY
+    st = getVariable(20233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PNS.RELIABILITY", 42);
     st->size_data = sizeof(BOOL);
@@ -3563,8 +3943,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20202 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND
-    st = getVariable(20202);
+  { // 20234 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND
+    st = getVariable(20234);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND", 44);
     st->size_data = sizeof(WORD);
@@ -3575,8 +3955,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20203 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.STATUS
-    st = getVariable(20203);
+  { // 20235 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.STATUS
+    st = getVariable(20235);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.STATUS", 41);
     st->size_data = sizeof(DWORD);
@@ -3587,8 +3967,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20204 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ONSTATUS
-    st = getVariable(20204);
+  { // 20236 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ONSTATUS
+    st = getVariable(20236);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ONSTATUS", 43);
     st->size_data = sizeof(BYTE);
@@ -3599,8 +3979,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20205 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(20205);
+  { // 20237 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(20237);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INOPCCOMMANDSDISABLED", 56);
     st->size_data = sizeof(BOOL);
@@ -3611,8 +3991,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20206 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.SDVIG
-    st = getVariable(20206);
+  { // 20238 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.SDVIG
+    st = getVariable(20238);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.SDVIG", 40);
     st->size_data = sizeof(BOOL);
@@ -3623,8 +4003,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20207 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.NS
-    st = getVariable(20207);
+  { // 20239 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.NS
+    st = getVariable(20239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.NS", 37);
     st->size_data = sizeof(BOOL);
@@ -3635,8 +4015,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 20208 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.COMMANDFAULT
-    st = getVariable(20208);
+  { // 20240 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.COMMANDFAULT
+    st = getVariable(20240);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.COMMANDFAULT", 47);
     st->size_data = sizeof(BOOL);
@@ -3647,8 +4027,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20209 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ACCIDENT
-    st = getVariable(20209);
+  { // 20241 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ACCIDENT
+    st = getVariable(20241);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ACCIDENT", 43);
     st->size_data = sizeof(BOOL);
@@ -3659,8 +4039,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20210 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.AUTO
-    st = getVariable(20210);
+  { // 20242 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.AUTO
+    st = getVariable(20242);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.AUTO", 39);
     st->size_data = sizeof(BOOL);
@@ -3671,8 +4051,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20211 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.MANUAL
-    st = getVariable(20211);
+  { // 20243 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.MANUAL
+    st = getVariable(20243);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.MANUAL", 41);
     st->size_data = sizeof(BOOL);
@@ -3683,8 +4063,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20212 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.LOCAL
-    st = getVariable(20212);
+  { // 20244 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.LOCAL
+    st = getVariable(20244);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.LOCAL", 40);
     st->size_data = sizeof(BOOL);
@@ -3695,8 +4075,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20213 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.DISTANCE
-    st = getVariable(20213);
+  { // 20245 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.DISTANCE
+    st = getVariable(20245);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.DISTANCE", 43);
     st->size_data = sizeof(BOOL);
@@ -3707,8 +4087,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20214 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ERRORPOWEROFF
-    st = getVariable(20214);
+  { // 20246 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ERRORPOWEROFF
+    st = getVariable(20246);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ERRORPOWEROFF", 48);
     st->size_data = sizeof(BOOL);
@@ -3719,8 +4099,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20215 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ERRORBLOCK
-    st = getVariable(20215);
+  { // 20247 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ERRORBLOCK
+    st = getVariable(20247);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ERRORBLOCK", 45);
     st->size_data = sizeof(BOOL);
@@ -3731,8 +4111,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20216 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.BREAKCMDON
-    st = getVariable(20216);
+  { // 20248 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.BREAKCMDON
+    st = getVariable(20248);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.BREAKCMDON", 45);
     st->size_data = sizeof(BOOL);
@@ -3743,8 +4123,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20217 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.BREAKCMDOFF
-    st = getVariable(20217);
+  { // 20249 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.BREAKCMDOFF
+    st = getVariable(20249);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.BREAKCMDOFF", 46);
     st->size_data = sizeof(BOOL);
@@ -3755,8 +4135,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20218 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(20218);
+  { // 20250 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(20250);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.OPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -3767,8 +4147,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20219 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.LASTCMDISON
-    st = getVariable(20219);
+  { // 20251 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.LASTCMDISON
+    st = getVariable(20251);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.LASTCMDISON", 46);
     st->size_data = sizeof(BOOL);
@@ -3779,8 +4159,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20220 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_STATON
-    st = getVariable(20220);
+  { // 20252 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_STATON
+    st = getVariable(20252);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_STATON", 52);
     st->size_data = sizeof(BOOL);
@@ -3791,8 +4171,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20221 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(20221);
+  { // 20253 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(20253);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_STATOFF", 53);
     st->size_data = sizeof(BOOL);
@@ -3803,8 +4183,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20222 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_CMDON
-    st = getVariable(20222);
+  { // 20254 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_CMDON
+    st = getVariable(20254);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -3815,8 +4195,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20223 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(20223);
+  { // 20255 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(20255);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -3827,8 +4207,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20224 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20224);
+  { // 20256 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20256);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -3839,8 +4219,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20225 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20225);
+  { // 20257 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20257);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -3851,8 +4231,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20226 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND_ALG
-    st = getVariable(20226);
+  { // 20258 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND_ALG
+    st = getVariable(20258);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND_ALG", 48);
     st->size_data = sizeof(WORD);
@@ -3863,8 +4243,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20227 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND_ARM
-    st = getVariable(20227);
+  { // 20259 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND_ARM
+    st = getVariable(20259);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.INCOMMAND_ARM", 48);
     st->size_data = sizeof(WORD);
@@ -3875,8 +4255,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20228 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.CMDON
-    st = getVariable(20228);
+  { // 20260 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.CMDON
+    st = getVariable(20260);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.CMDON", 40);
     st->size_data = sizeof(BOOL);
@@ -3887,8 +4267,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20229 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.CMDOFF
-    st = getVariable(20229);
+  { // 20261 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.CMDOFF
+    st = getVariable(20261);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.CMDOFF", 41);
     st->size_data = sizeof(BOOL);
@@ -3899,8 +4279,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20230 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.RELIABILITY
-    st = getVariable(20230);
+  { // 20262 PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.RELIABILITY
+    st = getVariable(20262);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V1_AVOM.RELIABILITY", 46);
     st->size_data = sizeof(BOOL);
@@ -3911,8 +4291,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20231 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND
-    st = getVariable(20231);
+  { // 20263 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND
+    st = getVariable(20263);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND", 44);
     st->size_data = sizeof(WORD);
@@ -3923,8 +4303,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20232 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.STATUS
-    st = getVariable(20232);
+  { // 20264 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.STATUS
+    st = getVariable(20264);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.STATUS", 41);
     st->size_data = sizeof(DWORD);
@@ -3935,8 +4315,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20233 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ONSTATUS
-    st = getVariable(20233);
+  { // 20265 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ONSTATUS
+    st = getVariable(20265);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ONSTATUS", 43);
     st->size_data = sizeof(BYTE);
@@ -3947,8 +4327,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20234 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(20234);
+  { // 20266 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(20266);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INOPCCOMMANDSDISABLED", 56);
     st->size_data = sizeof(BOOL);
@@ -3959,8 +4339,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20235 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.SDVIG
-    st = getVariable(20235);
+  { // 20267 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.SDVIG
+    st = getVariable(20267);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.SDVIG", 40);
     st->size_data = sizeof(BOOL);
@@ -3971,8 +4351,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20236 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.NS
-    st = getVariable(20236);
+  { // 20268 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.NS
+    st = getVariable(20268);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.NS", 37);
     st->size_data = sizeof(BOOL);
@@ -3983,8 +4363,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 20237 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.COMMANDFAULT
-    st = getVariable(20237);
+  { // 20269 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.COMMANDFAULT
+    st = getVariable(20269);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.COMMANDFAULT", 47);
     st->size_data = sizeof(BOOL);
@@ -3995,8 +4375,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20238 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ACCIDENT
-    st = getVariable(20238);
+  { // 20270 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ACCIDENT
+    st = getVariable(20270);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ACCIDENT", 43);
     st->size_data = sizeof(BOOL);
@@ -4007,8 +4387,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20239 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.AUTO
-    st = getVariable(20239);
+  { // 20271 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.AUTO
+    st = getVariable(20271);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.AUTO", 39);
     st->size_data = sizeof(BOOL);
@@ -4019,8 +4399,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20240 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.MANUAL
-    st = getVariable(20240);
+  { // 20272 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.MANUAL
+    st = getVariable(20272);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.MANUAL", 41);
     st->size_data = sizeof(BOOL);
@@ -4031,8 +4411,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20241 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.LOCAL
-    st = getVariable(20241);
+  { // 20273 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.LOCAL
+    st = getVariable(20273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.LOCAL", 40);
     st->size_data = sizeof(BOOL);
@@ -4043,8 +4423,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20242 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.DISTANCE
-    st = getVariable(20242);
+  { // 20274 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.DISTANCE
+    st = getVariable(20274);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.DISTANCE", 43);
     st->size_data = sizeof(BOOL);
@@ -4055,8 +4435,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20243 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ERRORPOWEROFF
-    st = getVariable(20243);
+  { // 20275 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ERRORPOWEROFF
+    st = getVariable(20275);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ERRORPOWEROFF", 48);
     st->size_data = sizeof(BOOL);
@@ -4067,8 +4447,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20244 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ERRORBLOCK
-    st = getVariable(20244);
+  { // 20276 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ERRORBLOCK
+    st = getVariable(20276);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ERRORBLOCK", 45);
     st->size_data = sizeof(BOOL);
@@ -4079,8 +4459,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20245 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.BREAKCMDON
-    st = getVariable(20245);
+  { // 20277 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.BREAKCMDON
+    st = getVariable(20277);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.BREAKCMDON", 45);
     st->size_data = sizeof(BOOL);
@@ -4091,8 +4471,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20246 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.BREAKCMDOFF
-    st = getVariable(20246);
+  { // 20278 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.BREAKCMDOFF
+    st = getVariable(20278);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.BREAKCMDOFF", 46);
     st->size_data = sizeof(BOOL);
@@ -4103,8 +4483,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20247 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(20247);
+  { // 20279 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(20279);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.OPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -4115,8 +4495,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20248 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.LASTCMDISON
-    st = getVariable(20248);
+  { // 20280 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.LASTCMDISON
+    st = getVariable(20280);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.LASTCMDISON", 46);
     st->size_data = sizeof(BOOL);
@@ -4127,8 +4507,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20249 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_STATON
-    st = getVariable(20249);
+  { // 20281 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_STATON
+    st = getVariable(20281);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_STATON", 52);
     st->size_data = sizeof(BOOL);
@@ -4139,8 +4519,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20250 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(20250);
+  { // 20282 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(20282);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_STATOFF", 53);
     st->size_data = sizeof(BOOL);
@@ -4151,8 +4531,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20251 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_CMDON
-    st = getVariable(20251);
+  { // 20283 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_CMDON
+    st = getVariable(20283);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -4163,8 +4543,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20252 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(20252);
+  { // 20284 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(20284);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -4175,8 +4555,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20253 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20253);
+  { // 20285 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20285);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -4187,8 +4567,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20254 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20254);
+  { // 20286 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20286);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -4199,8 +4579,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20255 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND_ALG
-    st = getVariable(20255);
+  { // 20287 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND_ALG
+    st = getVariable(20287);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND_ALG", 48);
     st->size_data = sizeof(WORD);
@@ -4211,8 +4591,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20256 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND_ARM
-    st = getVariable(20256);
+  { // 20288 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND_ARM
+    st = getVariable(20288);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.INCOMMAND_ARM", 48);
     st->size_data = sizeof(WORD);
@@ -4223,8 +4603,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20257 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.CMDON
-    st = getVariable(20257);
+  { // 20289 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.CMDON
+    st = getVariable(20289);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.CMDON", 40);
     st->size_data = sizeof(BOOL);
@@ -4235,8 +4615,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20258 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.CMDOFF
-    st = getVariable(20258);
+  { // 20290 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.CMDOFF
+    st = getVariable(20290);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.CMDOFF", 41);
     st->size_data = sizeof(BOOL);
@@ -4247,8 +4627,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20259 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.RELIABILITY
-    st = getVariable(20259);
+  { // 20291 PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.RELIABILITY
+    st = getVariable(20291);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V2_AVOM.RELIABILITY", 46);
     st->size_data = sizeof(BOOL);
@@ -4259,8 +4639,704 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20260 PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND
-    st = getVariable(20260);
+  { // 20292 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND
+    st = getVariable(20292);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND", 44);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 20293 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.STATUS
+    st = getVariable(20293);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.STATUS", 41);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20294 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ONSTATUS
+    st = getVariable(20294);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ONSTATUS", 43);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 20295 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(20295);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INOPCCOMMANDSDISABLED", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20296 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.SDVIG
+    st = getVariable(20296);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.SDVIG", 40);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20297 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.NS
+    st = getVariable(20297);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.NS", 37);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 20298 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.COMMANDFAULT
+    st = getVariable(20298);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.COMMANDFAULT", 47);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 20299 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ACCIDENT
+    st = getVariable(20299);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ACCIDENT", 43);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 20300 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.AUTO
+    st = getVariable(20300);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.AUTO", 39);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 20301 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.MANUAL
+    st = getVariable(20301);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.MANUAL", 41);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 20302 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LOCAL
+    st = getVariable(20302);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LOCAL", 40);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 20303 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.DISTANCE
+    st = getVariable(20303);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.DISTANCE", 43);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 20304 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORPOWEROFF
+    st = getVariable(20304);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORPOWEROFF", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20305 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORBLOCK
+    st = getVariable(20305);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORBLOCK", 45);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 20306 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDON
+    st = getVariable(20306);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDON", 45);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20307 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDOFF
+    st = getVariable(20307);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDOFF", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20308 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(20308);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.OPCCOMMANDSDISABLED", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20309 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LASTCMDISON
+    st = getVariable(20309);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LASTCMDISON", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 20310 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATON
+    st = getVariable(20310);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATON", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 20311 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(20311);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATOFF", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20312 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDON
+    st = getVariable(20312);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDON", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20313 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(20313);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDOFF", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20314 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20314);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20315 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20315);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20316 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ALG
+    st = getVariable(20316);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ALG", 48);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 20317 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ARM
+    st = getVariable(20317);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ARM", 48);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 20318 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDON
+    st = getVariable(20318);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDON", 40);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20319 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDOFF
+    st = getVariable(20319);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDOFF", 41);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20320 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.RELIABILITY
+    st = getVariable(20320);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.RELIABILITY", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20321 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND
+    st = getVariable(20321);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND", 44);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 20322 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.STATUS
+    st = getVariable(20322);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.STATUS", 41);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20323 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ONSTATUS
+    st = getVariable(20323);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ONSTATUS", 43);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
+    st->value_p = p_BYTE;
+  }
+  { // 20324 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(20324);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INOPCCOMMANDSDISABLED", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20325 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.SDVIG
+    st = getVariable(20325);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.SDVIG", 40);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20326 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.NS
+    st = getVariable(20326);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.NS", 37);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
+    st->value_p = p_BOOL;
+  }
+  { // 20327 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.COMMANDFAULT
+    st = getVariable(20327);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.COMMANDFAULT", 47);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
+    st->value_p = p_BOOL;
+  }
+  { // 20328 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ACCIDENT
+    st = getVariable(20328);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ACCIDENT", 43);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
+    st->value_p = p_BOOL;
+  }
+  { // 20329 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.AUTO
+    st = getVariable(20329);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.AUTO", 39);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
+    st->value_p = p_BOOL;
+  }
+  { // 20330 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.MANUAL
+    st = getVariable(20330);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.MANUAL", 41);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
+    st->value_p = p_BOOL;
+  }
+  { // 20331 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LOCAL
+    st = getVariable(20331);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LOCAL", 40);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
+    st->value_p = p_BOOL;
+  }
+  { // 20332 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.DISTANCE
+    st = getVariable(20332);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.DISTANCE", 43);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
+    st->value_p = p_BOOL;
+  }
+  { // 20333 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORPOWEROFF
+    st = getVariable(20333);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORPOWEROFF", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20334 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORBLOCK
+    st = getVariable(20334);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORBLOCK", 45);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
+    st->value_p = p_BOOL;
+  }
+  { // 20335 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDON
+    st = getVariable(20335);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDON", 45);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20336 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDOFF
+    st = getVariable(20336);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDOFF", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20337 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(20337);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.OPCCOMMANDSDISABLED", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20338 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LASTCMDISON
+    st = getVariable(20338);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LASTCMDISON", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
+    st->value_p = p_BOOL;
+  }
+  { // 20339 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATON
+    st = getVariable(20339);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATON", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
+    st->value_p = p_BOOL;
+  }
+  { // 20340 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(20340);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATOFF", 53);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20341 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDON
+    st = getVariable(20341);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDON", 51);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20342 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(20342);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDOFF", 52);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20343 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20343);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20344 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20344);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20345 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ALG
+    st = getVariable(20345);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ALG", 48);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 20346 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ARM
+    st = getVariable(20346);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ARM", 48);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 20347 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDON
+    st = getVariable(20347);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDON", 40);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    st->value_p = p_BOOL;
+  }
+  { // 20348 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDOFF
+    st = getVariable(20348);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDOFF", 41);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    st->value_p = p_BOOL;
+  }
+  { // 20349 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.RELIABILITY
+    st = getVariable(20349);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.RELIABILITY", 46);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20350 PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND
+    st = getVariable(20350);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND", 39);
     st->size_data = sizeof(WORD);
@@ -4271,8 +5347,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20261 PROGRAM0.IM_STRUCTS_INI.IM.MV.STATUS
-    st = getVariable(20261);
+  { // 20351 PROGRAM0.IM_STRUCTS_INI.IM.MV.STATUS
+    st = getVariable(20351);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.STATUS", 36);
     st->size_data = sizeof(DWORD);
@@ -4283,8 +5359,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SECTIONSWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20262 PROGRAM0.IM_STRUCTS_INI.IM.MV.ONSTATUS
-    st = getVariable(20262);
+  { // 20352 PROGRAM0.IM_STRUCTS_INI.IM.MV.ONSTATUS
+    st = getVariable(20352);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ONSTATUS", 38);
     st->size_data = sizeof(BYTE);
@@ -4295,8 +5371,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SECTIONSWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20263 PROGRAM0.IM_STRUCTS_INI.IM.MV.INOPCCOMMANDSDISABLED
-    st = getVariable(20263);
+  { // 20353 PROGRAM0.IM_STRUCTS_INI.IM.MV.INOPCCOMMANDSDISABLED
+    st = getVariable(20353);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.INOPCCOMMANDSDISABLED", 51);
     st->size_data = sizeof(BOOL);
@@ -4307,8 +5383,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20264 PROGRAM0.IM_STRUCTS_INI.IM.MV.SDVIG
-    st = getVariable(20264);
+  { // 20354 PROGRAM0.IM_STRUCTS_INI.IM.MV.SDVIG
+    st = getVariable(20354);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.SDVIG", 35);
     st->size_data = sizeof(BOOL);
@@ -4319,8 +5395,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20265 PROGRAM0.IM_STRUCTS_INI.IM.MV.NS
-    st = getVariable(20265);
+  { // 20355 PROGRAM0.IM_STRUCTS_INI.IM.MV.NS
+    st = getVariable(20355);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.NS", 32);
     st->size_data = sizeof(BOOL);
@@ -4331,8 +5407,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 20266 PROGRAM0.IM_STRUCTS_INI.IM.MV.COMMANDFAULT
-    st = getVariable(20266);
+  { // 20356 PROGRAM0.IM_STRUCTS_INI.IM.MV.COMMANDFAULT
+    st = getVariable(20356);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.COMMANDFAULT", 42);
     st->size_data = sizeof(BOOL);
@@ -4343,8 +5419,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20267 PROGRAM0.IM_STRUCTS_INI.IM.MV.ACCIDENT
-    st = getVariable(20267);
+  { // 20357 PROGRAM0.IM_STRUCTS_INI.IM.MV.ACCIDENT
+    st = getVariable(20357);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ACCIDENT", 38);
     st->size_data = sizeof(BOOL);
@@ -4355,8 +5431,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20268 PROGRAM0.IM_STRUCTS_INI.IM.MV.LOCAL
-    st = getVariable(20268);
+  { // 20358 PROGRAM0.IM_STRUCTS_INI.IM.MV.LOCAL
+    st = getVariable(20358);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.LOCAL", 35);
     st->size_data = sizeof(BOOL);
@@ -4367,8 +5443,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20269 PROGRAM0.IM_STRUCTS_INI.IM.MV.DISTANCE
-    st = getVariable(20269);
+  { // 20359 PROGRAM0.IM_STRUCTS_INI.IM.MV.DISTANCE
+    st = getVariable(20359);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.DISTANCE", 38);
     st->size_data = sizeof(BOOL);
@@ -4379,8 +5455,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20270 PROGRAM0.IM_STRUCTS_INI.IM.MV.OPCCOMMANDSDISABLED
-    st = getVariable(20270);
+  { // 20360 PROGRAM0.IM_STRUCTS_INI.IM.MV.OPCCOMMANDSDISABLED
+    st = getVariable(20360);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.OPCCOMMANDSDISABLED", 49);
     st->size_data = sizeof(BOOL);
@@ -4391,8 +5467,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20271 PROGRAM0.IM_STRUCTS_INI.IM.MV.LASTCMDISON
-    st = getVariable(20271);
+  { // 20361 PROGRAM0.IM_STRUCTS_INI.IM.MV.LASTCMDISON
+    st = getVariable(20361);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.LASTCMDISON", 41);
     st->size_data = sizeof(BOOL);
@@ -4403,8 +5479,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20272 PROGRAM0.IM_STRUCTS_INI.IM.MV.OFFKNA
-    st = getVariable(20272);
+  { // 20362 PROGRAM0.IM_STRUCTS_INI.IM.MV.OFFKNA
+    st = getVariable(20362);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.OFFKNA", 36);
     st->size_data = sizeof(BOOL);
@@ -4415,8 +5491,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->OFFKNA;
     st->value_p = p_BOOL;
   }
-  { // 20273 PROGRAM0.IM_STRUCTS_INI.IM.MV.BASKETSTATUS
-    st = getVariable(20273);
+  { // 20363 PROGRAM0.IM_STRUCTS_INI.IM.MV.BASKETSTATUS
+    st = getVariable(20363);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.BASKETSTATUS", 42);
     st->size_data = sizeof(BYTE);
@@ -4427,8 +5503,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SECTIONSWITCH->BASKETSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20274 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_STATON
-    st = getVariable(20274);
+  { // 20364 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_STATON
+    st = getVariable(20364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_STATON", 47);
     st->size_data = sizeof(BOOL);
@@ -4439,8 +5515,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20275 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_STATOFF
-    st = getVariable(20275);
+  { // 20365 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_STATOFF
+    st = getVariable(20365);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_STATOFF", 48);
     st->size_data = sizeof(BOOL);
@@ -4451,8 +5527,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20276 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_CMDON
-    st = getVariable(20276);
+  { // 20366 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_CMDON
+    st = getVariable(20366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_CMDON", 46);
     st->size_data = sizeof(BOOL);
@@ -4463,8 +5539,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20277 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_CMDOFF
-    st = getVariable(20277);
+  { // 20367 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_CMDOFF
+    st = getVariable(20367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_CMDOFF", 47);
     st->size_data = sizeof(BOOL);
@@ -4475,8 +5551,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20278 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20278);
+  { // 20368 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20368);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_INBREAKCMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -4487,8 +5563,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20279 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20279);
+  { // 20369 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20369);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_INBREAKCMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -4499,8 +5575,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20280 PROGRAM0.IM_STRUCTS_INI.IM.MV.BREAKCMDON
-    st = getVariable(20280);
+  { // 20370 PROGRAM0.IM_STRUCTS_INI.IM.MV.BREAKCMDON
+    st = getVariable(20370);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.BREAKCMDON", 40);
     st->size_data = sizeof(BOOL);
@@ -4511,8 +5587,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20281 PROGRAM0.IM_STRUCTS_INI.IM.MV.BREAKCMDOFF
-    st = getVariable(20281);
+  { // 20371 PROGRAM0.IM_STRUCTS_INI.IM.MV.BREAKCMDOFF
+    st = getVariable(20371);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.BREAKCMDOFF", 41);
     st->size_data = sizeof(BOOL);
@@ -4523,8 +5599,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20282 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETROLLEDIN
-    st = getVariable(20282);
+  { // 20372 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETROLLEDIN
+    st = getVariable(20372);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETROLLEDIN", 55);
     st->size_data = sizeof(BOOL);
@@ -4535,8 +5611,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETROLLEDIN;
     st->value_p = p_BOOL;
   }
-  { // 20283 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETROLLEDOUT
-    st = getVariable(20283);
+  { // 20373 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETROLLEDOUT
+    st = getVariable(20373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETROLLEDOUT", 56);
     st->size_data = sizeof(BOOL);
@@ -4547,8 +5623,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETROLLEDOUT;
     st->value_p = p_BOOL;
   }
-  { // 20284 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETTEST
-    st = getVariable(20284);
+  { // 20374 PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETTEST
+    st = getVariable(20374);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.ISVALIDREF_BASKETTEST", 51);
     st->size_data = sizeof(BOOL);
@@ -4559,8 +5635,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETTEST;
     st->value_p = p_BOOL;
   }
-  { // 20285 PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND_ALG
-    st = getVariable(20285);
+  { // 20375 PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND_ALG
+    st = getVariable(20375);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND_ALG", 43);
     st->size_data = sizeof(WORD);
@@ -4571,8 +5647,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20286 PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND_ARM
-    st = getVariable(20286);
+  { // 20376 PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND_ARM
+    st = getVariable(20376);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.INCOMMAND_ARM", 43);
     st->size_data = sizeof(WORD);
@@ -4583,8 +5659,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20287 PROGRAM0.IM_STRUCTS_INI.IM.MV.CMDON
-    st = getVariable(20287);
+  { // 20377 PROGRAM0.IM_STRUCTS_INI.IM.MV.CMDON
+    st = getVariable(20377);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.CMDON", 35);
     st->size_data = sizeof(BOOL);
@@ -4595,8 +5671,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20288 PROGRAM0.IM_STRUCTS_INI.IM.MV.CMDOFF
-    st = getVariable(20288);
+  { // 20378 PROGRAM0.IM_STRUCTS_INI.IM.MV.CMDOFF
+    st = getVariable(20378);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.CMDOFF", 36);
     st->size_data = sizeof(BOOL);
@@ -4607,8 +5683,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20289 PROGRAM0.IM_STRUCTS_INI.IM.MV.RELIABILITY
-    st = getVariable(20289);
+  { // 20379 PROGRAM0.IM_STRUCTS_INI.IM.MV.RELIABILITY
+    st = getVariable(20379);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.MV.RELIABILITY", 41);
     st->size_data = sizeof(BOOL);
@@ -4619,356 +5695,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20290 PROGRAM0.IM_STRUCTS_INI.IM.TEN.INCOMMAND
-    st = getVariable(20290);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.INCOMMAND", 40);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20291 PROGRAM0.IM_STRUCTS_INI.IM.TEN.STATUS
-    st = getVariable(20291);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.STATUS", 37);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20292 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ONSTATUS
-    st = getVariable(20292);
-    memcpy(st->IEC_TYPE, "BYTE", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ONSTATUS", 39);
-    st->size_data = sizeof(BYTE);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
-    st->value_p = p_BYTE;
-  }
-  { // 20293 PROGRAM0.IM_STRUCTS_INI.IM.TEN.INOPCCOMMANDSDISABLED
-    st = getVariable(20293);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.INOPCCOMMANDSDISABLED", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20294 PROGRAM0.IM_STRUCTS_INI.IM.TEN.SDVIG
-    st = getVariable(20294);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.SDVIG", 36);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20295 PROGRAM0.IM_STRUCTS_INI.IM.TEN.NS
-    st = getVariable(20295);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.NS", 33);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
-    st->value_p = p_BOOL;
-  }
-  { // 20296 PROGRAM0.IM_STRUCTS_INI.IM.TEN.COMMANDFAULT
-    st = getVariable(20296);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.COMMANDFAULT", 43);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
-    st->value_p = p_BOOL;
-  }
-  { // 20297 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ACCIDENT
-    st = getVariable(20297);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ACCIDENT", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
-    st->value_p = p_BOOL;
-  }
-  { // 20298 PROGRAM0.IM_STRUCTS_INI.IM.TEN.AUTO
-    st = getVariable(20298);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.AUTO", 35);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
-    st->value_p = p_BOOL;
-  }
-  { // 20299 PROGRAM0.IM_STRUCTS_INI.IM.TEN.MANUAL
-    st = getVariable(20299);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.MANUAL", 37);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
-    st->value_p = p_BOOL;
-  }
-  { // 20300 PROGRAM0.IM_STRUCTS_INI.IM.TEN.LOCAL
-    st = getVariable(20300);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.LOCAL", 36);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
-    st->value_p = p_BOOL;
-  }
-  { // 20301 PROGRAM0.IM_STRUCTS_INI.IM.TEN.DISTANCE
-    st = getVariable(20301);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.DISTANCE", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
-    st->value_p = p_BOOL;
-  }
-  { // 20302 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ERRORPOWEROFF
-    st = getVariable(20302);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ERRORPOWEROFF", 44);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20303 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ERRORBLOCK
-    st = getVariable(20303);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ERRORBLOCK", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
-    st->value_p = p_BOOL;
-  }
-  { // 20304 PROGRAM0.IM_STRUCTS_INI.IM.TEN.BREAKCMDON
-    st = getVariable(20304);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.BREAKCMDON", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20305 PROGRAM0.IM_STRUCTS_INI.IM.TEN.BREAKCMDOFF
-    st = getVariable(20305);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.BREAKCMDOFF", 42);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20306 PROGRAM0.IM_STRUCTS_INI.IM.TEN.OPCCOMMANDSDISABLED
-    st = getVariable(20306);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.OPCCOMMANDSDISABLED", 50);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20307 PROGRAM0.IM_STRUCTS_INI.IM.TEN.LASTCMDISON
-    st = getVariable(20307);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.LASTCMDISON", 42);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
-    st->value_p = p_BOOL;
-  }
-  { // 20308 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_STATON
-    st = getVariable(20308);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_STATON", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
-    st->value_p = p_BOOL;
-  }
-  { // 20309 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_STATOFF
-    st = getVariable(20309);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_STATOFF", 49);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20310 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_CMDON
-    st = getVariable(20310);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_CMDON", 47);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20311 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_CMDOFF
-    st = getVariable(20311);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_CMDOFF", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20312 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20312);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_INBREAKCMDON", 54);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20313 PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20313);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.ISVALIDREF_INBREAKCMDOFF", 55);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20314 PROGRAM0.IM_STRUCTS_INI.IM.TEN.INCOMMAND_ALG
-    st = getVariable(20314);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.INCOMMAND_ALG", 44);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20315 PROGRAM0.IM_STRUCTS_INI.IM.TEN.INCOMMAND_ARM
-    st = getVariable(20315);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.INCOMMAND_ARM", 44);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20316 PROGRAM0.IM_STRUCTS_INI.IM.TEN.CMDON
-    st = getVariable(20316);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.CMDON", 36);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20317 PROGRAM0.IM_STRUCTS_INI.IM.TEN.CMDOFF
-    st = getVariable(20317);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.CMDOFF", 37);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20318 PROGRAM0.IM_STRUCTS_INI.IM.TEN.RELIABILITY
-    st = getVariable(20318);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN.RELIABILITY", 42);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20319 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM1.VAR1
-    st = getVariable(20319);
+  { // 20380 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM1.VAR1
+    st = getVariable(20380);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM1.VAR1", 43);
     st->size_data = sizeof(BOOL);
@@ -4979,8 +5707,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM->VAR1;
     st->value_p = p_BOOL;
   }
-  { // 20320 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM1.VAR2
-    st = getVariable(20320);
+  { // 20381 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM1.VAR2
+    st = getVariable(20381);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM1.VAR2", 43);
     st->size_data = sizeof(BOOL);
@@ -4991,8 +5719,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM->VAR2;
     st->value_p = p_BOOL;
   }
-  { // 20321 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM2.VAR1
-    st = getVariable(20321);
+  { // 20382 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM2.VAR1
+    st = getVariable(20382);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM2.VAR1", 43);
     st->size_data = sizeof(BOOL);
@@ -5003,8 +5731,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM2->VAR1;
     st->value_p = p_BOOL;
   }
-  { // 20322 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM2.VAR2
-    st = getVariable(20322);
+  { // 20383 PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM2.VAR2
+    st = getVariable(20383);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.RESERVE_IM2.VAR2", 43);
     st->size_data = sizeof(BOOL);
@@ -5015,2283 +5743,1919 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM2->VAR2;
     st->value_p = p_BOOL;
   }
-  { // 20323 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.RELIABILITY
-    st = getVariable(20323);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.RELIABILITY", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20324 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.INVERSE
-    st = getVariable(20324);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.INVERSE", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20325 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYON
-    st = getVariable(20325);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYON", 64);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20326 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYOFF
-    st = getVariable(20326);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DELAYOFF", 65);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20327 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.Q
-    st = getVariable(20327);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.Q", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20328 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.STATUS
-    st = getVariable(20328);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.STATUS", 63);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20329 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DISABLED_SIG
-    st = getVariable(20329);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_GAZGAZ_KRAN1.DISABLED_SIG", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_GAZGAZ_KRAN1;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20330 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.RELIABILITY
-    st = getVariable(20330);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.RELIABILITY", 70);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20331 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.INVERSE
-    st = getVariable(20331);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.INVERSE", 66);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20332 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYON
-    st = getVariable(20332);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYON", 66);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20333 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYOFF
-    st = getVariable(20333);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DELAYOFF", 67);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20334 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.Q
-    st = getVariable(20334);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.Q", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20335 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.STATUS
-    st = getVariable(20335);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.STATUS", 65);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20336 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DISABLED_SIG
-    st = getVariable(20336);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_PRAVO.DISABLED_SIG", 71);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_PRAVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20337 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.RELIABILITY
-    st = getVariable(20337);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.RELIABILITY", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20338 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.INVERSE
-    st = getVariable(20338);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.INVERSE", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20339 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYON
-    st = getVariable(20339);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYON", 65);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20340 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYOFF
-    st = getVariable(20340);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DELAYOFF", 66);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20341 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.Q
-    st = getVariable(20341);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.Q", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20342 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.STATUS
-    st = getVariable(20342);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.STATUS", 64);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20343 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DISABLED_SIG
-    st = getVariable(20343);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.OSEVOISDVIG_LEVO.DISABLED_SIG", 70);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSEVOISDVIG_LEVO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20344 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.RELIABILITY
-    st = getVariable(20344);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.RELIABILITY", 66);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20345 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.INVERSE
-    st = getVariable(20345);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.INVERSE", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20346 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYON
-    st = getVariable(20346);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYON", 62);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20347 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYOFF
-    st = getVariable(20347);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DELAYOFF", 63);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20348 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.Q
-    st = getVariable(20348);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.Q", 56);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20349 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.STATUS
-    st = getVariable(20349);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.STATUS", 61);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20350 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DISABLED_SIG
-    st = getVariable(20350);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_OILGAZ_LOW.DISABLED_SIG", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_OILGAZ_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20351 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.RELIABILITY
-    st = getVariable(20351);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.RELIABILITY", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20352 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.INVERSE
-    st = getVariable(20352);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.INVERSE", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20353 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.DELAYON
-    st = getVariable(20353);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.DELAYON", 58);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20354 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.DELAYOFF
-    st = getVariable(20354);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.DELAYOFF", 59);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20355 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.Q
-    st = getVariable(20355);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.Q", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20356 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.STATUS
-    st = getVariable(20356);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.STATUS", 57);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20357 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.DISABLED_SIG
-    st = getVariable(20357);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.P_OIL_LOW.DISABLED_SIG", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->P_OIL_LOW;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20358 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.RELIABILITY
-    st = getVariable(20358);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.RELIABILITY", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20359 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.INVERSE
-    st = getVariable(20359);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.INVERSE", 56);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20360 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.DELAYON
-    st = getVariable(20360);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.DELAYON", 56);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20361 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.DELAYOFF
-    st = getVariable(20361);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.DELAYOFF", 57);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20362 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.Q
-    st = getVariable(20362);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.Q", 50);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20363 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.STATUS
-    st = getVariable(20363);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.STATUS", 55);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20364 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.DISABLED_SIG
-    st = getVariable(20364);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KZ_10KV.DISABLED_SIG", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KZ_10KV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20365 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.RELIABILITY
-    st = getVariable(20365);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.RELIABILITY", 71);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20366 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.INVERSE
-    st = getVariable(20366);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.INVERSE", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20367 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYON
-    st = getVariable(20367);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYON", 67);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20368 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYOFF
-    st = getVariable(20368);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DELAYOFF", 68);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20369 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.Q
-    st = getVariable(20369);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.Q", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20370 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.STATUS
-    st = getVariable(20370);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.STATUS", 66);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20371 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DISABLED_SIG
-    st = getVariable(20371);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_PROBOIVENTILA.DISABLED_SIG", 72);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_PROBOIVENTILA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20372 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.RELIABILITY
-    st = getVariable(20372);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.RELIABILITY", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20373 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.INVERSE
-    st = getVariable(20373);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.INVERSE", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20374 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYON
-    st = getVariable(20374);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYON", 63);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20375 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYOFF
-    st = getVariable(20375);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DELAYOFF", 64);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20376 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.Q
-    st = getVariable(20376);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.Q", 57);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20377 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.STATUS
-    st = getVariable(20377);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.STATUS", 62);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20378 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DISABLED_SIG
-    st = getVariable(20378);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_ASINCHHOD.DISABLED_SIG", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_ASINCHHOD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20379 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.RELIABILITY
-    st = getVariable(20379);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.RELIABILITY", 71);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20380 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.INVERSE
-    st = getVariable(20380);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.INVERSE", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 20381 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYON
-    st = getVariable(20381);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYON", 67);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 20382 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYOFF
-    st = getVariable(20382);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DELAYOFF", 68);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 20383 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.Q
-    st = getVariable(20383);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.Q", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20384 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.STATUS
+  { // 20384 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.RELIABILITY
     st = getVariable(20384);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.STATUS", 66);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.RELIABILITY", 73);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20385 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DISABLED_SIG
+  { // 20385 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.INVERSE
     st = getVariable(20385);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_RESYNCHRONIZE.DISABLED_SIG", 72);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.INVERSE", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_RESYNCHRONIZE;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20386 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.RELIABILITY
-    st = getVariable(20386);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.RELIABILITY", 76);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20387 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.INVERSE
-    st = getVariable(20387);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.INVERSE", 72);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20388 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYON
-    st = getVariable(20388);
+  { // 20386 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYON
+    st = getVariable(20386);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYON", 72);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYON", 69);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20389 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYOFF
-    st = getVariable(20389);
+  { // 20387 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYOFF
+    st = getVariable(20387);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DELAYOFF", 73);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20390 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.Q
+  { // 20388 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q
+    st = getVariable(20388);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20389 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.STATUS
+    st = getVariable(20389);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.STATUS", 68);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20390 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DISABLED_SIG
     st = getVariable(20390);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.Q", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_MASLO_GAZ_LESS100;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20391 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.STATUS
+  { // 20391 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.RELIABILITY
     st = getVariable(20391);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.STATUS", 71);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.RELIABILITY", 69);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20392 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DISABLED_SIG
+  { // 20392 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.INVERSE
     st = getVariable(20392);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_CONTROLVOZBUDITELA.DISABLED_SIG", 77);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.INVERSE", 65);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_CONTROLVOZBUDITELA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20393 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.RELIABILITY
-    st = getVariable(20393);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.RELIABILITY", 74);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20394 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.INVERSE
-    st = getVariable(20394);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.INVERSE", 70);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20395 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYON
-    st = getVariable(20395);
+  { // 20393 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYON
+    st = getVariable(20393);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYON", 70);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYON", 65);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20396 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYOFF
-    st = getVariable(20396);
+  { // 20394 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYOFF
+    st = getVariable(20394);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DELAYOFF", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYOFF", 66);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20397 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.Q
+  { // 20395 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.Q
+    st = getVariable(20395);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.Q", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20396 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.STATUS
+    st = getVariable(20396);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.STATUS", 64);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20397 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DISABLED_SIG
     st = getVariable(20397);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.Q", 64);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DISABLED_SIG", 70);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DP_KRAN1_LESS100;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20398 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.STATUS
+  { // 20398 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.RELIABILITY
     st = getVariable(20398);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.STATUS", 69);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.RELIABILITY", 90);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20399 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DISABLED_SIG
+  { // 20399 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.INVERSE
     st = getVariable(20399);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_FORSINGVOZBUGDENIA.DISABLED_SIG", 75);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.INVERSE", 86);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_FORSINGVOZBUGDENIA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20400 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.RELIABILITY
-    st = getVariable(20400);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.RELIABILITY", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20401 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.INVERSE
-    st = getVariable(20401);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.INVERSE", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20402 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYON
-    st = getVariable(20402);
+  { // 20400 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYON
+    st = getVariable(20400);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYON", 63);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYON", 86);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20403 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYOFF
-    st = getVariable(20403);
+  { // 20401 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYOFF
+    st = getVariable(20401);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.DELAYOFF", 64);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYOFF", 87);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20404 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.Q
+  { // 20402 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.Q
+    st = getVariable(20402);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.Q", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20403 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.STATUS
+    st = getVariable(20403);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.STATUS", 85);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20404 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DISABLED_SIG
     st = getVariable(20404);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.Q", 57);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DISABLED_SIG", 91);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20405 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.STATUS
+  { // 20405 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.RELIABILITY
     st = getVariable(20405);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.STATUS", 62);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.RELIABILITY", 89);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20406 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.DISABLED_SIG
+  { // 20406 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.INVERSE
     st = getVariable(20406);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_VOZBYDITELA.DISABLED_SIG", 68);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.INVERSE", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NS_VOZBYDITELA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20407 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.RELIABILITY
-    st = getVariable(20407);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.RELIABILITY", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20408 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.INVERSE
-    st = getVariable(20408);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.INVERSE", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20409 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYON
-    st = getVariable(20409);
+  { // 20407 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYON
+    st = getVariable(20407);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYON", 61);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYON", 85);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20410 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYOFF
-    st = getVariable(20410);
+  { // 20408 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYOFF
+    st = getVariable(20408);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.DELAYOFF", 62);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYOFF", 86);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20411 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.Q
+  { // 20409 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.Q
+    st = getVariable(20409);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.Q", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20410 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.STATUS
+    st = getVariable(20410);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.STATUS", 84);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20411 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DISABLED_SIG
     st = getVariable(20411);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.Q", 55);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DISABLED_SIG", 90);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20412 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.STATUS
+  { // 20412 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.RELIABILITY
     st = getVariable(20412);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.STATUS", 60);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.RELIABILITY", 92);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20413 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.DISABLED_SIG
+  { // 20413 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.INVERSE
     st = getVariable(20413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AVR_OFF.DISABLED_SIG", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.INVERSE", 88);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AVR_OFF;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20414 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.RELIABILITY
-    st = getVariable(20414);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.RELIABILITY", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20415 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.INVERSE
-    st = getVariable(20415);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.INVERSE", 76);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20416 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYON
-    st = getVariable(20416);
+  { // 20414 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYON
+    st = getVariable(20414);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYON", 76);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYON", 88);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20417 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYOFF
-    st = getVariable(20417);
+  { // 20415 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYOFF
+    st = getVariable(20415);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DELAYOFF", 77);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYOFF", 89);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20418 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.Q
+  { // 20416 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.Q
+    st = getVariable(20416);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.Q", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20417 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.STATUS
+    st = getVariable(20417);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.STATUS", 87);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20418 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DISABLED_SIG
     st = getVariable(20418);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.Q", 70);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DISABLED_SIG", 93);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20419 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.STATUS
+  { // 20419 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.RELIABILITY
     st = getVariable(20419);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.STATUS", 75);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.RELIABILITY", 91);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20420 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DISABLED_SIG
+  { // 20420 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.INVERSE
     st = getVariable(20420);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_AUTOUPRVOZBUDITELA_OFF.DISABLED_SIG", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.INVERSE", 87);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_AUTOUPRVOZBUDITELA_OFF;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20421 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.RELIABILITY
-    st = getVariable(20421);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.RELIABILITY", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20422 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.INVERSE
-    st = getVariable(20422);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.INVERSE", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20423 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYON
-    st = getVariable(20423);
+  { // 20421 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYON
+    st = getVariable(20421);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYON", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYON", 87);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20424 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYOFF
-    st = getVariable(20424);
+  { // 20422 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYOFF
+    st = getVariable(20422);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DELAYOFF", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYOFF", 88);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20425 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.Q
+  { // 20423 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.Q
+    st = getVariable(20423);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.Q", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20424 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.STATUS
+    st = getVariable(20424);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.STATUS", 86);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20425 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DISABLED_SIG
     st = getVariable(20425);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.Q", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DISABLED_SIG", 92);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20426 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.STATUS
+  { // 20426 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.RELIABILITY
     st = getVariable(20426);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.STATUS", 64);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.RELIABILITY", 85);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20427 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DISABLED_SIG
+  { // 20427 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.INVERSE
     st = getVariable(20427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_KONTAKTORON.DISABLED_SIG", 70);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.INVERSE", 81);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_KONTAKTORON;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20428 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.RELIABILITY
-    st = getVariable(20428);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.RELIABILITY", 66);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20429 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.INVERSE
-    st = getVariable(20429);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.INVERSE", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20430 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYON
-    st = getVariable(20430);
+  { // 20428 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYON
+    st = getVariable(20428);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYON", 62);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYON", 81);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20431 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYOFF
-    st = getVariable(20431);
+  { // 20429 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYOFF
+    st = getVariable(20429);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.DELAYOFF", 63);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYOFF", 82);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20432 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.Q
+  { // 20430 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.Q
+    st = getVariable(20430);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.Q", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20431 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.STATUS
+    st = getVariable(20431);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.STATUS", 80);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20432 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DISABLED_SIG
     st = getVariable(20432);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.Q", 56);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DISABLED_SIG", 86);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20433 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.STATUS
+  { // 20433 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.RELIABILITY
     st = getVariable(20433);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.STATUS", 61);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.RELIABILITY", 80);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20434 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.DISABLED_SIG
+  { // 20434 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.INVERSE
     st = getVariable(20434);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZB_OVERLOAD.DISABLED_SIG", 67);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.INVERSE", 76);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZB_OVERLOAD;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20435 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.RELIABILITY
-    st = getVariable(20435);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.RELIABILITY", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20436 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.INVERSE
-    st = getVariable(20436);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.INVERSE", 54);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20437 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYON
-    st = getVariable(20437);
+  { // 20435 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYON
+    st = getVariable(20435);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYON", 54);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYON", 76);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20438 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYOFF
-    st = getVariable(20438);
+  { // 20436 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYOFF
+    st = getVariable(20436);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYOFF", 55);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYOFF", 77);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20439 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.Q
+  { // 20437 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.Q
+    st = getVariable(20437);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.Q", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20438 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.STATUS
+    st = getVariable(20438);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.STATUS", 75);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20439 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DISABLED_SIG
     st = getVariable(20439);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.Q", 48);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DISABLED_SIG", 81);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20440 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.STATUS
+  { // 20440 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.RELIABILITY
     st = getVariable(20440);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.STATUS", 53);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.RELIABILITY", 69);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20441 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG
+  { // 20441 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.INVERSE
     st = getVariable(20441);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.INVERSE", 65);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20442 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.RELIABILITY
-    st = getVariable(20442);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.RELIABILITY", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20443 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.INVERSE
-    st = getVariable(20443);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.INVERSE", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20444 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.DELAYON
-    st = getVariable(20444);
+  { // 20442 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYON
+    st = getVariable(20442);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.DELAYON", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYON", 65);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20445 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.DELAYOFF
-    st = getVariable(20445);
+  { // 20443 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYOFF
+    st = getVariable(20443);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.DELAYOFF", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYOFF", 66);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20446 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.Q
+  { // 20444 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.Q
+    st = getVariable(20444);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.Q", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20445 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.STATUS
+    st = getVariable(20445);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.STATUS", 64);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20446 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DISABLED_SIG
     st = getVariable(20446);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.Q", 52);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DISABLED_SIG", 70);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_GOTOVNOST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20447 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.STATUS
+  { // 20447 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.RELIABILITY
     st = getVariable(20447);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.STATUS", 57);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.RELIABILITY", 72);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20448 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.DISABLED_SIG
+  { // 20448 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.INVERSE
     st = getVariable(20448);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_PRU.DISABLED_SIG", 63);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.INVERSE", 68);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20449 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.RELIABILITY
-    st = getVariable(20449);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.RELIABILITY", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20450 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.INVERSE
-    st = getVariable(20450);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.INVERSE", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20451 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.DELAYON
-    st = getVariable(20451);
+  { // 20449 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYON
+    st = getVariable(20449);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.DELAYON", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYON", 68);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20452 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.DELAYOFF
-    st = getVariable(20452);
+  { // 20450 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYOFF
+    st = getVariable(20450);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.DELAYOFF", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20453 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.Q
+  { // 20451 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.Q
+    st = getVariable(20451);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.Q", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20452 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.STATUS
+    st = getVariable(20452);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.STATUS", 67);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20453 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DISABLED_SIG
     st = getVariable(20453);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.Q", 52);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPRAVNOST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20454 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.STATUS
+  { // 20454 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.RELIABILITY
     st = getVariable(20454);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.STATUS", 57);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.RELIABILITY", 68);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20455 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.DISABLED_SIG
+  { // 20455 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.INVERSE
     st = getVariable(20455);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_READY.DISABLED_SIG", 63);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.INVERSE", 64);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_READY;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20456 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.RELIABILITY
-    st = getVariable(20456);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.RELIABILITY", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20457 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.INVERSE
-    st = getVariable(20457);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.INVERSE", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20458 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.DELAYON
-    st = getVariable(20458);
+  { // 20456 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYON
+    st = getVariable(20456);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.DELAYON", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYON", 64);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20459 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.DELAYOFF
-    st = getVariable(20459);
+  { // 20457 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYOFF
+    st = getVariable(20457);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.DELAYOFF", 60);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYOFF", 65);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20460 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.Q
+  { // 20458 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.Q
+    st = getVariable(20458);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.Q", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20459 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.STATUS
+    st = getVariable(20459);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.STATUS", 63);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20460 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DISABLED_SIG
     st = getVariable(20460);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.Q", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DISABLED_SIG", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR1_V_RABOTE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20461 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.STATUS
+  { // 20461 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.RELIABILITY
     st = getVariable(20461);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.STATUS", 58);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.RELIABILITY", 68);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20462 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.DISABLED_SIG
+  { // 20462 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.INVERSE
     st = getVariable(20462);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_SRABAT.DISABLED_SIG", 64);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.INVERSE", 64);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_SRABAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20463 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.RELIABILITY
-    st = getVariable(20463);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.RELIABILITY", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20464 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.INVERSE
-    st = getVariable(20464);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.INVERSE", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20465 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYON
-    st = getVariable(20465);
+  { // 20463 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYON
+    st = getVariable(20463);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYON", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYON", 64);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20466 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYOFF
-    st = getVariable(20466);
+  { // 20464 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYOFF
+    st = getVariable(20464);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DELAYOFF", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYOFF", 65);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20467 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.Q
+  { // 20465 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.Q
+    st = getVariable(20465);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.Q", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20466 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.STATUS
+    st = getVariable(20466);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.STATUS", 63);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20467 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DISABLED_SIG
     st = getVariable(20467);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.Q", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DISABLED_SIG", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHAVR2_V_RABOTE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20468 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.STATUS
+  { // 20468 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.RELIABILITY
     st = getVariable(20468);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.STATUS", 64);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.RELIABILITY", 68);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20469 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DISABLED_SIG
+  { // 20469 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.INVERSE
     st = getVariable(20469);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKASHU.DISABLED_SIG", 70);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.INVERSE", 64);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20470 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.RELIABILITY
-    st = getVariable(20470);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.RELIABILITY", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20471 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.INVERSE
-    st = getVariable(20471);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.INVERSE", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20472 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYON
-    st = getVariable(20472);
+  { // 20470 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYON
+    st = getVariable(20470);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYON", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYON", 64);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20473 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYOFF
-    st = getVariable(20473);
+  { // 20471 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYOFF
+    st = getVariable(20471);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DELAYOFF", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYOFF", 65);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20474 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.Q
+  { // 20472 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.Q
+    st = getVariable(20472);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.Q", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20473 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.STATUS
+    st = getVariable(20473);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.STATUS", 63);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20474 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.DISABLED_SIG
     st = getVariable(20474);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.Q", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NET_10KV_REZERV.DISABLED_SIG", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20475 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.STATUS
+  { // 20475 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.RELIABILITY
     st = getVariable(20475);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.STATUS", 64);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.RELIABILITY", 73);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20476 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DISABLED_SIG
+  { // 20476 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.INVERSE
     st = getVariable(20476);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEO_ON_KNOPKAPRU.DISABLED_SIG", 70);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.INVERSE", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEO_ON_KNOPKAPRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20477 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.RELIABILITY
-    st = getVariable(20477);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.RELIABILITY", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20478 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.INVERSE
-    st = getVariable(20478);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.INVERSE", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20479 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYON
-    st = getVariable(20479);
+  { // 20477 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYON
+    st = getVariable(20477);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYON", 64);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYON", 69);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20480 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYOFF
-    st = getVariable(20480);
+  { // 20478 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYOFF
+    st = getVariable(20478);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DELAYOFF", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20481 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.Q
+  { // 20479 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.Q
+    st = getVariable(20479);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.Q", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20480 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.STATUS
+    st = getVariable(20480);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.STATUS", 68);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20481 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DISABLED_SIG
     st = getVariable(20481);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.Q", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20482 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.STATUS
+  { // 20482 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.RELIABILITY
     st = getVariable(20482);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.STATUS", 63);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.RELIABILITY", 84);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20483 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DISABLED_SIG
+  { // 20483 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.INVERSE
     st = getVariable(20483);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NOGPA_KNOPKASHU.DISABLED_SIG", 69);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.INVERSE", 80);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NOGPA_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20484 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.RELIABILITY
-    st = getVariable(20484);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.RELIABILITY", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20485 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.INVERSE
-    st = getVariable(20485);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.INVERSE", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20486 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYON
-    st = getVariable(20486);
+  { // 20484 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYON
+    st = getVariable(20484);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYON", 64);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYON", 80);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20487 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYOFF
-    st = getVariable(20487);
+  { // 20485 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYOFF
+    st = getVariable(20485);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DELAYOFF", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYOFF", 81);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20488 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.Q
+  { // 20486 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.Q
+    st = getVariable(20486);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.Q", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20487 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.STATUS
+    st = getVariable(20487);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.STATUS", 79);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20488 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DISABLED_SIG
     st = getVariable(20488);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.Q", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DISABLED_SIG", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20489 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.STATUS
-    st = getVariable(20489);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.STATUS", 63);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20490 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DISABLED_SIG
-    st = getVariable(20490);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AOGPA_KNOPKASHU.DISABLED_SIG", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AOGPA_KNOPKASHU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVARIINOE_OTKLUCH_VIKLUCHATELYA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20491 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.RELIABILITY
-    st = getVariable(20491);
+  { // 20489 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.RELIABILITY
+    st = getVariable(20489);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.RELIABILITY", 70);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.RELIABILITY", 80);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20492 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.INVERSE
-    st = getVariable(20492);
+  { // 20490 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.INVERSE
+    st = getVariable(20490);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.INVERSE", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.INVERSE", 76);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20493 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYON
-    st = getVariable(20493);
+  { // 20491 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYON
+    st = getVariable(20491);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYON", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYON", 76);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20494 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYOFF
-    st = getVariable(20494);
+  { // 20492 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYOFF
+    st = getVariable(20492);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DELAYOFF", 67);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYOFF", 77);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20495 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.Q
-    st = getVariable(20495);
+  { // 20493 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.Q
+    st = getVariable(20493);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.Q", 60);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.Q", 70);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20496 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.STATUS
-    st = getVariable(20496);
+  { // 20494 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.STATUS
+    st = getVariable(20494);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.STATUS", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.STATUS", 75);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20497 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DISABLED_SIG
-    st = getVariable(20497);
+  { // 20495 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DISABLED_SIG
+    st = getVariable(20495);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.DVERSHKAFAOTKRYTA.DISABLED_SIG", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DISABLED_SIG", 81);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVERSHKAFAOTKRYTA;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ASSINHRONNII_HOD_PEREGRUZKA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20498 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.RELIABILITY
+  { // 20496 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.RELIABILITY
+    st = getVariable(20496);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.RELIABILITY", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20497 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.INVERSE
+    st = getVariable(20497);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.INVERSE", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20498 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYON
     st = getVariable(20498);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYON", 65);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20499 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYOFF
+    st = getVariable(20499);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYOFF", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20500 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.Q
+    st = getVariable(20500);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.Q", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20501 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.STATUS
+    st = getVariable(20501);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.STATUS", 64);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20502 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DISABLED_SIG
+    st = getVariable(20502);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DISABLED_SIG", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHU_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20503 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.RELIABILITY
+    st = getVariable(20503);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.RELIABILITY", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20504 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.INVERSE
+    st = getVariable(20504);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.INVERSE", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20505 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYON
+    st = getVariable(20505);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYON", 65);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20506 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYOFF
+    st = getVariable(20506);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYOFF", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20507 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.Q
+    st = getVariable(20507);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.Q", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20508 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.STATUS
+    st = getVariable(20508);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.STATUS", 64);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20509 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DISABLED_SIG
+    st = getVariable(20509);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DISABLED_SIG", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SHP_V_GPA_VKLUCH;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20510 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.RELIABILITY
+    st = getVariable(20510);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.RELIABILITY", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20511 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.INVERSE
+    st = getVariable(20511);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.INVERSE", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20512 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYON
+    st = getVariable(20512);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYON", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20513 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYOFF
+    st = getVariable(20513);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYOFF", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20514 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.Q
+    st = getVariable(20514);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.Q", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20515 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.STATUS
+    st = getVariable(20515);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.STATUS", 65);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20516 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DISABLED_SIG
+    st = getVariable(20516);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DISABLED_SIG", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20517 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.RELIABILITY
+    st = getVariable(20517);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.RELIABILITY", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20518 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.INVERSE
+    st = getVariable(20518);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.INVERSE", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20519 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYON
+    st = getVariable(20519);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYON", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20520 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYOFF
+    st = getVariable(20520);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYOFF", 77);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20521 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.Q
+    st = getVariable(20521);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.Q", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20522 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.STATUS
+    st = getVariable(20522);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.STATUS", 75);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20523 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DISABLED_SIG
+    st = getVariable(20523);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DISABLED_SIG", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20524 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.RELIABILITY
+    st = getVariable(20524);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.RELIABILITY", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20525 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.INVERSE
+    st = getVariable(20525);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.INVERSE", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20526 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYON
+    st = getVariable(20526);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYON", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20527 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYOFF
+    st = getVariable(20527);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYOFF", 73);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20528 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.Q
+    st = getVariable(20528);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.Q", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20529 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.STATUS
+    st = getVariable(20529);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.STATUS", 71);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20530 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DISABLED_SIG
+    st = getVariable(20530);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DISABLED_SIG", 77);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20531 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.RELIABILITY
+    st = getVariable(20531);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -7303,8 +7667,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20499 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.INVERSE
-    st = getVariable(20499);
+  { // 20532 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.INVERSE
+    st = getVariable(20532);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.INVERSE", 55);
     st->size_data = sizeof(BOOL);
@@ -7316,8 +7680,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20500 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DELAYON
-    st = getVariable(20500);
+  { // 20533 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DELAYON
+    st = getVariable(20533);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DELAYON", 55);
     st->size_data = sizeof(TIME);
@@ -7329,8 +7693,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20501 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DELAYOFF
-    st = getVariable(20501);
+  { // 20534 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DELAYOFF
+    st = getVariable(20534);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DELAYOFF", 56);
     st->size_data = sizeof(TIME);
@@ -7342,8 +7706,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20502 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.Q
-    st = getVariable(20502);
+  { // 20535 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.Q
+    st = getVariable(20535);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -7355,8 +7719,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20503 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.STATUS
-    st = getVariable(20503);
+  { // 20536 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.STATUS
+    st = getVariable(20536);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -7368,8 +7732,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20504 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG
-    st = getVariable(20504);
+  { // 20537 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG
+    st = getVariable(20537);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG", 60);
     st->size_data = sizeof(BOOL);
@@ -7381,8 +7745,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20505 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.RELIABILITY
-    st = getVariable(20505);
+  { // 20538 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.RELIABILITY
+    st = getVariable(20538);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -7394,8 +7758,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20506 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.INVERSE
-    st = getVariable(20506);
+  { // 20539 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.INVERSE
+    st = getVariable(20539);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.INVERSE", 55);
     st->size_data = sizeof(BOOL);
@@ -7407,8 +7771,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20507 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DELAYON
-    st = getVariable(20507);
+  { // 20540 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DELAYON
+    st = getVariable(20540);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DELAYON", 55);
     st->size_data = sizeof(TIME);
@@ -7420,8 +7784,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20508 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DELAYOFF
-    st = getVariable(20508);
+  { // 20541 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DELAYOFF
+    st = getVariable(20541);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DELAYOFF", 56);
     st->size_data = sizeof(TIME);
@@ -7433,8 +7797,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20509 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.Q
-    st = getVariable(20509);
+  { // 20542 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.Q
+    st = getVariable(20542);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -7446,8 +7810,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20510 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.STATUS
-    st = getVariable(20510);
+  { // 20543 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.STATUS
+    st = getVariable(20543);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -7459,8 +7823,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20511 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG
-    st = getVariable(20511);
+  { // 20544 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG
+    st = getVariable(20544);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG", 60);
     st->size_data = sizeof(BOOL);
@@ -7472,8 +7836,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20512 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.RELIABILITY
-    st = getVariable(20512);
+  { // 20545 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.RELIABILITY
+    st = getVariable(20545);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -7485,8 +7849,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20513 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.INVERSE
-    st = getVariable(20513);
+  { // 20546 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.INVERSE
+    st = getVariable(20546);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.INVERSE", 56);
     st->size_data = sizeof(BOOL);
@@ -7498,8 +7862,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20514 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DELAYON
-    st = getVariable(20514);
+  { // 20547 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DELAYON
+    st = getVariable(20547);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DELAYON", 56);
     st->size_data = sizeof(TIME);
@@ -7511,8 +7875,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20515 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DELAYOFF
-    st = getVariable(20515);
+  { // 20548 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DELAYOFF
+    st = getVariable(20548);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DELAYOFF", 57);
     st->size_data = sizeof(TIME);
@@ -7524,8 +7888,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20516 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.Q
-    st = getVariable(20516);
+  { // 20549 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.Q
+    st = getVariable(20549);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -7537,8 +7901,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20517 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.STATUS
-    st = getVariable(20517);
+  { // 20550 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.STATUS
+    st = getVariable(20550);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -7550,8 +7914,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20518 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG
-    st = getVariable(20518);
+  { // 20551 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG
+    st = getVariable(20551);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG", 61);
     st->size_data = sizeof(BOOL);
@@ -7563,8 +7927,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20519 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY
-    st = getVariable(20519);
+  { // 20552 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY
+    st = getVariable(20552);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -7576,8 +7940,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20520 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE
-    st = getVariable(20520);
+  { // 20553 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE
+    st = getVariable(20553);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -7589,8 +7953,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20521 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON
-    st = getVariable(20521);
+  { // 20554 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON
+    st = getVariable(20554);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -7602,8 +7966,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20522 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF
-    st = getVariable(20522);
+  { // 20555 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF
+    st = getVariable(20555);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -7615,8 +7979,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20523 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.Q
-    st = getVariable(20523);
+  { // 20556 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.Q
+    st = getVariable(20556);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -7628,8 +7992,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20524 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS
-    st = getVariable(20524);
+  { // 20557 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS
+    st = getVariable(20557);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -7641,8 +8005,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20525 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG
-    st = getVariable(20525);
+  { // 20558 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG
+    st = getVariable(20558);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -7654,8 +8018,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20526 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY
-    st = getVariable(20526);
+  { // 20559 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY
+    st = getVariable(20559);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -7667,8 +8031,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20527 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE
-    st = getVariable(20527);
+  { // 20560 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE
+    st = getVariable(20560);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -7680,8 +8044,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20528 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON
-    st = getVariable(20528);
+  { // 20561 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON
+    st = getVariable(20561);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -7693,8 +8057,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20529 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF
-    st = getVariable(20529);
+  { // 20562 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF
+    st = getVariable(20562);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -7706,8 +8070,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20530 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.Q
-    st = getVariable(20530);
+  { // 20563 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.Q
+    st = getVariable(20563);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -7719,8 +8083,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20531 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS
-    st = getVariable(20531);
+  { // 20564 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS
+    st = getVariable(20564);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -7732,8 +8096,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20532 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG
-    st = getVariable(20532);
+  { // 20565 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG
+    st = getVariable(20565);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -7745,8 +8109,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20533 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY
-    st = getVariable(20533);
+  { // 20566 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY
+    st = getVariable(20566);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -7758,8 +8122,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20534 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE
-    st = getVariable(20534);
+  { // 20567 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE
+    st = getVariable(20567);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -7771,8 +8135,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20535 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON
-    st = getVariable(20535);
+  { // 20568 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON
+    st = getVariable(20568);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -7784,8 +8148,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20536 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF
-    st = getVariable(20536);
+  { // 20569 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF
+    st = getVariable(20569);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -7797,8 +8161,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20537 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.Q
-    st = getVariable(20537);
+  { // 20570 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.Q
+    st = getVariable(20570);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -7810,8 +8174,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20538 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS
-    st = getVariable(20538);
+  { // 20571 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS
+    st = getVariable(20571);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -7823,8 +8187,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20539 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG
-    st = getVariable(20539);
+  { // 20572 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG
+    st = getVariable(20572);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -7836,8 +8200,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20540 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY
-    st = getVariable(20540);
+  { // 20573 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY
+    st = getVariable(20573);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY", 65);
     st->size_data = sizeof(BOOL);
@@ -7849,8 +8213,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20541 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE
-    st = getVariable(20541);
+  { // 20574 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE
+    st = getVariable(20574);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE", 61);
     st->size_data = sizeof(BOOL);
@@ -7862,8 +8226,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20542 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON
-    st = getVariable(20542);
+  { // 20575 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON
+    st = getVariable(20575);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON", 61);
     st->size_data = sizeof(TIME);
@@ -7875,8 +8239,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20543 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF
-    st = getVariable(20543);
+  { // 20576 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF
+    st = getVariable(20576);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF", 62);
     st->size_data = sizeof(TIME);
@@ -7888,8 +8252,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20544 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.Q
-    st = getVariable(20544);
+  { // 20577 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.Q
+    st = getVariable(20577);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -7901,8 +8265,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20545 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS
-    st = getVariable(20545);
+  { // 20578 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS
+    st = getVariable(20578);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -7914,8 +8278,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20546 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG
-    st = getVariable(20546);
+  { // 20579 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG
+    st = getVariable(20579);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG", 66);
     st->size_data = sizeof(BOOL);
@@ -7927,8 +8291,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20547 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY
-    st = getVariable(20547);
+  { // 20580 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY
+    st = getVariable(20580);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY", 65);
     st->size_data = sizeof(BOOL);
@@ -7940,8 +8304,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20548 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE
-    st = getVariable(20548);
+  { // 20581 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE
+    st = getVariable(20581);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE", 61);
     st->size_data = sizeof(BOOL);
@@ -7953,8 +8317,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20549 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON
-    st = getVariable(20549);
+  { // 20582 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON
+    st = getVariable(20582);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON", 61);
     st->size_data = sizeof(TIME);
@@ -7966,8 +8330,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20550 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF
-    st = getVariable(20550);
+  { // 20583 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF
+    st = getVariable(20583);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF", 62);
     st->size_data = sizeof(TIME);
@@ -7979,8 +8343,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20551 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.Q
-    st = getVariable(20551);
+  { // 20584 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.Q
+    st = getVariable(20584);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -7992,8 +8356,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20552 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS
-    st = getVariable(20552);
+  { // 20585 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS
+    st = getVariable(20585);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -8005,8 +8369,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20553 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG
-    st = getVariable(20553);
+  { // 20586 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG
+    st = getVariable(20586);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG", 66);
     st->size_data = sizeof(BOOL);
@@ -8018,8 +8382,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20554 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY
-    st = getVariable(20554);
+  { // 20587 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY
+    st = getVariable(20587);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY", 65);
     st->size_data = sizeof(BOOL);
@@ -8031,8 +8395,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20555 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE
-    st = getVariable(20555);
+  { // 20588 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE
+    st = getVariable(20588);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE", 61);
     st->size_data = sizeof(BOOL);
@@ -8044,8 +8408,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20556 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON
-    st = getVariable(20556);
+  { // 20589 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON
+    st = getVariable(20589);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON", 61);
     st->size_data = sizeof(TIME);
@@ -8057,8 +8421,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20557 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF
-    st = getVariable(20557);
+  { // 20590 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF
+    st = getVariable(20590);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF", 62);
     st->size_data = sizeof(TIME);
@@ -8070,8 +8434,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20558 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.Q
-    st = getVariable(20558);
+  { // 20591 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.Q
+    st = getVariable(20591);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -8083,8 +8447,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20559 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS
-    st = getVariable(20559);
+  { // 20592 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS
+    st = getVariable(20592);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -8096,8 +8460,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20560 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG
-    st = getVariable(20560);
+  { // 20593 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG
+    st = getVariable(20593);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG", 66);
     st->size_data = sizeof(BOOL);
@@ -8109,8 +8473,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20561 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.RELIABILITY
-    st = getVariable(20561);
+  { // 20594 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.RELIABILITY
+    st = getVariable(20594);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -8122,8 +8486,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20562 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.INVERSE
-    st = getVariable(20562);
+  { // 20595 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.INVERSE
+    st = getVariable(20595);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.INVERSE", 56);
     st->size_data = sizeof(BOOL);
@@ -8135,8 +8499,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20563 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DELAYON
-    st = getVariable(20563);
+  { // 20596 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DELAYON
+    st = getVariable(20596);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DELAYON", 56);
     st->size_data = sizeof(TIME);
@@ -8148,8 +8512,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20564 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DELAYOFF
-    st = getVariable(20564);
+  { // 20597 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DELAYOFF
+    st = getVariable(20597);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DELAYOFF", 57);
     st->size_data = sizeof(TIME);
@@ -8161,8 +8525,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20565 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.Q
-    st = getVariable(20565);
+  { // 20598 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.Q
+    st = getVariable(20598);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -8174,8 +8538,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20566 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.STATUS
-    st = getVariable(20566);
+  { // 20599 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.STATUS
+    st = getVariable(20599);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -8187,8 +8551,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20567 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG
-    st = getVariable(20567);
+  { // 20600 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG
+    st = getVariable(20600);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG", 61);
     st->size_data = sizeof(BOOL);
@@ -8200,8 +8564,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20568 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY
-    st = getVariable(20568);
+  { // 20601 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY
+    st = getVariable(20601);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -8213,8 +8577,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20569 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.INVERSE
-    st = getVariable(20569);
+  { // 20602 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.INVERSE
+    st = getVariable(20602);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.INVERSE", 57);
     st->size_data = sizeof(BOOL);
@@ -8226,8 +8590,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20570 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DELAYON
-    st = getVariable(20570);
+  { // 20603 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DELAYON
+    st = getVariable(20603);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DELAYON", 57);
     st->size_data = sizeof(TIME);
@@ -8239,8 +8603,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20571 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF
-    st = getVariable(20571);
+  { // 20604 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF
+    st = getVariable(20604);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF", 58);
     st->size_data = sizeof(TIME);
@@ -8252,8 +8616,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20572 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.Q
-    st = getVariable(20572);
+  { // 20605 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.Q
+    st = getVariable(20605);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -8265,8 +8629,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20573 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.STATUS
-    st = getVariable(20573);
+  { // 20606 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.STATUS
+    st = getVariable(20606);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -8278,8 +8642,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20574 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG
-    st = getVariable(20574);
+  { // 20607 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG
+    st = getVariable(20607);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG", 62);
     st->size_data = sizeof(BOOL);
@@ -8291,8 +8655,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20575 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY
-    st = getVariable(20575);
+  { // 20608 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY
+    st = getVariable(20608);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -8304,8 +8668,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20576 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.INVERSE
-    st = getVariable(20576);
+  { // 20609 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.INVERSE
+    st = getVariable(20609);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.INVERSE", 57);
     st->size_data = sizeof(BOOL);
@@ -8317,8 +8681,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20577 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DELAYON
-    st = getVariable(20577);
+  { // 20610 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DELAYON
+    st = getVariable(20610);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DELAYON", 57);
     st->size_data = sizeof(TIME);
@@ -8330,8 +8694,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20578 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF
-    st = getVariable(20578);
+  { // 20611 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF
+    st = getVariable(20611);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF", 58);
     st->size_data = sizeof(TIME);
@@ -8343,8 +8707,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20579 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.Q
-    st = getVariable(20579);
+  { // 20612 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.Q
+    st = getVariable(20612);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -8356,8 +8720,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20580 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.STATUS
-    st = getVariable(20580);
+  { // 20613 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.STATUS
+    st = getVariable(20613);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -8369,8 +8733,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20581 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG
-    st = getVariable(20581);
+  { // 20614 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG
+    st = getVariable(20614);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG", 62);
     st->size_data = sizeof(BOOL);
@@ -8382,8 +8746,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20582 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY
-    st = getVariable(20582);
+  { // 20615 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY
+    st = getVariable(20615);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -8395,8 +8759,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20583 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.INVERSE
-    st = getVariable(20583);
+  { // 20616 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.INVERSE
+    st = getVariable(20616);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -8408,8 +8772,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20584 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DELAYON
-    st = getVariable(20584);
+  { // 20617 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DELAYON
+    st = getVariable(20617);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -8421,8 +8785,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20585 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF
-    st = getVariable(20585);
+  { // 20618 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF
+    st = getVariable(20618);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -8434,8 +8798,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20586 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.Q
-    st = getVariable(20586);
+  { // 20619 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.Q
+    st = getVariable(20619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -8447,8 +8811,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20587 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.STATUS
-    st = getVariable(20587);
+  { // 20620 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.STATUS
+    st = getVariable(20620);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -8460,8 +8824,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20588 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG
-    st = getVariable(20588);
+  { // 20621 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG
+    st = getVariable(20621);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -8473,8 +8837,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20589 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.RELIABILITY
-    st = getVariable(20589);
+  { // 20622 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.RELIABILITY
+    st = getVariable(20622);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -8486,8 +8850,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20590 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.INVERSE
-    st = getVariable(20590);
+  { // 20623 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.INVERSE
+    st = getVariable(20623);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.INVERSE", 55);
     st->size_data = sizeof(BOOL);
@@ -8499,8 +8863,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20591 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DELAYON
-    st = getVariable(20591);
+  { // 20624 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DELAYON
+    st = getVariable(20624);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DELAYON", 55);
     st->size_data = sizeof(TIME);
@@ -8512,8 +8876,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20592 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DELAYOFF
-    st = getVariable(20592);
+  { // 20625 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DELAYOFF
+    st = getVariable(20625);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DELAYOFF", 56);
     st->size_data = sizeof(TIME);
@@ -8525,8 +8889,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20593 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.Q
-    st = getVariable(20593);
+  { // 20626 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.Q
+    st = getVariable(20626);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -8538,8 +8902,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20594 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.STATUS
-    st = getVariable(20594);
+  { // 20627 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.STATUS
+    st = getVariable(20627);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -8551,8 +8915,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20595 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG
-    st = getVariable(20595);
+  { // 20628 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG
+    st = getVariable(20628);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG", 60);
     st->size_data = sizeof(BOOL);
@@ -8564,8 +8928,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20596 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY
-    st = getVariable(20596);
+  { // 20629 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY
+    st = getVariable(20629);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -8577,8 +8941,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20597 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.INVERSE
-    st = getVariable(20597);
+  { // 20630 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.INVERSE
+    st = getVariable(20630);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.INVERSE", 57);
     st->size_data = sizeof(BOOL);
@@ -8590,8 +8954,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20598 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DELAYON
-    st = getVariable(20598);
+  { // 20631 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DELAYON
+    st = getVariable(20631);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DELAYON", 57);
     st->size_data = sizeof(TIME);
@@ -8603,8 +8967,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20599 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF
-    st = getVariable(20599);
+  { // 20632 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF
+    st = getVariable(20632);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF", 58);
     st->size_data = sizeof(TIME);
@@ -8616,8 +8980,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20600 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.Q
-    st = getVariable(20600);
+  { // 20633 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.Q
+    st = getVariable(20633);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -8629,8 +8993,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20601 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.STATUS
-    st = getVariable(20601);
+  { // 20634 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.STATUS
+    st = getVariable(20634);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -8642,8 +9006,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20602 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG
-    st = getVariable(20602);
+  { // 20635 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG
+    st = getVariable(20635);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG", 62);
     st->size_data = sizeof(BOOL);
@@ -8655,8 +9019,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20603 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY
-    st = getVariable(20603);
+  { // 20636 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY
+    st = getVariable(20636);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -8668,8 +9032,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20604 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.INVERSE
-    st = getVariable(20604);
+  { // 20637 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.INVERSE
+    st = getVariable(20637);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.INVERSE", 57);
     st->size_data = sizeof(BOOL);
@@ -8681,8 +9045,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20605 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DELAYON
-    st = getVariable(20605);
+  { // 20638 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DELAYON
+    st = getVariable(20638);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DELAYON", 57);
     st->size_data = sizeof(TIME);
@@ -8694,8 +9058,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20606 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF
-    st = getVariable(20606);
+  { // 20639 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF
+    st = getVariable(20639);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF", 58);
     st->size_data = sizeof(TIME);
@@ -8707,8 +9071,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20607 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.Q
-    st = getVariable(20607);
+  { // 20640 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.Q
+    st = getVariable(20640);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -8720,8 +9084,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20608 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.STATUS
-    st = getVariable(20608);
+  { // 20641 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.STATUS
+    st = getVariable(20641);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -8733,8 +9097,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20609 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG
-    st = getVariable(20609);
+  { // 20642 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG
+    st = getVariable(20642);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG", 62);
     st->size_data = sizeof(BOOL);
@@ -8746,8 +9110,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20610 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY
-    st = getVariable(20610);
+  { // 20643 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY
+    st = getVariable(20643);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -8759,8 +9123,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20611 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.INVERSE
-    st = getVariable(20611);
+  { // 20644 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.INVERSE
+    st = getVariable(20644);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -8772,8 +9136,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20612 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DELAYON
-    st = getVariable(20612);
+  { // 20645 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DELAYON
+    st = getVariable(20645);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -8785,8 +9149,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20613 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF
-    st = getVariable(20613);
+  { // 20646 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF
+    st = getVariable(20646);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -8798,8 +9162,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20614 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.Q
-    st = getVariable(20614);
+  { // 20647 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.Q
+    st = getVariable(20647);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -8811,8 +9175,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20615 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.STATUS
-    st = getVariable(20615);
+  { // 20648 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.STATUS
+    st = getVariable(20648);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -8824,8 +9188,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20616 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG
-    st = getVariable(20616);
+  { // 20649 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG
+    st = getVariable(20649);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -8837,8 +9201,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20617 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY
-    st = getVariable(20617);
+  { // 20650 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY
+    st = getVariable(20650);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -8850,8 +9214,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20618 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.INVERSE
-    st = getVariable(20618);
+  { // 20651 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.INVERSE
+    st = getVariable(20651);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -8863,8 +9227,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20619 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DELAYON
-    st = getVariable(20619);
+  { // 20652 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DELAYON
+    st = getVariable(20652);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -8876,8 +9240,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20620 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF
-    st = getVariable(20620);
+  { // 20653 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF
+    st = getVariable(20653);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -8889,8 +9253,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20621 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.Q
-    st = getVariable(20621);
+  { // 20654 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.Q
+    st = getVariable(20654);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -8902,8 +9266,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20622 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.STATUS
-    st = getVariable(20622);
+  { // 20655 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.STATUS
+    st = getVariable(20655);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -8915,8 +9279,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20623 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG
-    st = getVariable(20623);
+  { // 20656 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG
+    st = getVariable(20656);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -8928,8 +9292,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20624 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY
-    st = getVariable(20624);
+  { // 20657 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY
+    st = getVariable(20657);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY", 63);
     st->size_data = sizeof(BOOL);
@@ -8941,8 +9305,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 20625 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.INVERSE
-    st = getVariable(20625);
+  { // 20658 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.INVERSE
+    st = getVariable(20658);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.INVERSE", 59);
     st->size_data = sizeof(BOOL);
@@ -8954,8 +9318,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20626 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DELAYON
-    st = getVariable(20626);
+  { // 20659 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DELAYON
+    st = getVariable(20659);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DELAYON", 59);
     st->size_data = sizeof(TIME);
@@ -8967,8 +9331,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20627 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF
-    st = getVariable(20627);
+  { // 20660 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF
+    st = getVariable(20660);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF", 60);
     st->size_data = sizeof(TIME);
@@ -8980,8 +9344,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 20628 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.Q
-    st = getVariable(20628);
+  { // 20661 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.Q
+    st = getVariable(20661);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -8993,8 +9357,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20629 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.STATUS
-    st = getVariable(20629);
+  { // 20662 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.STATUS
+    st = getVariable(20662);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -9006,8 +9370,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20630 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG
-    st = getVariable(20630);
+  { // 20663 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG
+    st = getVariable(20663);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG", 64);
     st->size_data = sizeof(BOOL);
@@ -9019,4144 +9383,3466 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20631 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.WAIT_TIME
-    st = getVariable(20631);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.WAIT_TIME", 59);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
-    st->value_p = p_TIME;
-  }
-  { // 20632 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND
-    st = getVariable(20632);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND", 59);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20633 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INOPCCOMMANDSDISABLED
-    st = getVariable(20633);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INOPCCOMMANDSDISABLED", 71);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20634 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.Q
-    st = getVariable(20634);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.Q", 51);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20635 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.STATUS
-    st = getVariable(20635);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.STATUS", 56);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20636 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.OPCCOMMANDSDISABLED
-    st = getVariable(20636);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.OPCCOMMANDSDISABLED", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20637 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ALG
-    st = getVariable(20637);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ALG", 63);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20638 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ARM
-    st = getVariable(20638);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.LAMPA_NO.INCOMMAND_ARM", 63);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->LAMPA_NO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20639 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.WAIT_TIME
-    st = getVariable(20639);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.WAIT_TIME", 60);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
-    st->value_p = p_TIME;
-  }
-  { // 20640 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND
-    st = getVariable(20640);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND", 60);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20641 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INOPCCOMMANDSDISABLED
-    st = getVariable(20641);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INOPCCOMMANDSDISABLED", 72);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20642 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.Q
-    st = getVariable(20642);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.Q", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20643 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.STATUS
-    st = getVariable(20643);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.STATUS", 57);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20644 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.OPCCOMMANDSDISABLED
-    st = getVariable(20644);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.OPCCOMMANDSDISABLED", 70);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20645 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ALG
-    st = getVariable(20645);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ALG", 64);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20646 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ARM
-    st = getVariable(20646);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.VZVODBREO.INCOMMAND_ARM", 64);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->VZVODBREO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20647 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.WAIT_TIME
-    st = getVariable(20647);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.WAIT_TIME", 57);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
-    st->value_p = p_TIME;
-  }
-  { // 20648 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND
-    st = getVariable(20648);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND", 57);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20649 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INOPCCOMMANDSDISABLED
-    st = getVariable(20649);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INOPCCOMMANDSDISABLED", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20650 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.Q
-    st = getVariable(20650);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.Q", 49);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20651 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.STATUS
-    st = getVariable(20651);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.STATUS", 54);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20652 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.OPCCOMMANDSDISABLED
-    st = getVariable(20652);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.OPCCOMMANDSDISABLED", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20653 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ALG
-    st = getVariable(20653);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ALG", 61);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20654 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ARM
-    st = getVariable(20654);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.AO_GPA.INCOMMAND_ARM", 61);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_GPA;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20655 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.WAIT_TIME
-    st = getVariable(20655);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.WAIT_TIME", 60);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
-    st->value_p = p_TIME;
-  }
-  { // 20656 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND
-    st = getVariable(20656);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND", 60);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20657 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INOPCCOMMANDSDISABLED
-    st = getVariable(20657);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INOPCCOMMANDSDISABLED", 72);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20658 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.Q
-    st = getVariable(20658);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.Q", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20659 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.STATUS
-    st = getVariable(20659);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.STATUS", 57);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20660 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.OPCCOMMANDSDISABLED
-    st = getVariable(20660);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.OPCCOMMANDSDISABLED", 70);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20661 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ALG
-    st = getVariable(20661);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ALG", 64);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20662 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ARM
-    st = getVariable(20662);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.SBROSBREO.INCOMMAND_ARM", 64);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SBROSBREO;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20663 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.WAIT_TIME
-    st = getVariable(20663);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.WAIT_TIME", 69);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
-    st->value_p = p_TIME;
-  }
-  { // 20664 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND
+  { // 20664 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.RELIABILITY
     st = getVariable(20664);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND", 69);
-    st->size_data = sizeof(WORD);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.RELIABILITY", 66);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20665 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INOPCCOMMANDSDISABLED
+  { // 20665 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.INVERSE
     st = getVariable(20665);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INOPCCOMMANDSDISABLED", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.INVERSE", 62);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 20666 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.Q
+  { // 20666 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYON
     st = getVariable(20666);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.Q", 61);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYON", 62);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
-    st->value_p = p_BOOL;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
   }
-  { // 20667 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.STATUS
+  { // 20667 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYOFF
     st = getVariable(20667);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.STATUS", 66);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYOFF", 63);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
-    st->value_p = p_DWORD;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
   }
-  { // 20668 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.OPCCOMMANDSDISABLED
+  { // 20668 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.Q
     st = getVariable(20668);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.OPCCOMMANDSDISABLED", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.Q", 56);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20669 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ALG
+  { // 20669 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.STATUS
     st = getVariable(20669);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ALG", 73);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20670 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ARM
-    st = getVariable(20670);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAPS_FONAR.INCOMMAND_ARM", 73);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAPS_FONAR;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20671 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.WAIT_TIME
-    st = getVariable(20671);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.WAIT_TIME", 69);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
-    st->value_p = p_TIME;
-  }
-  { // 20672 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND
-    st = getVariable(20672);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND", 69);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20673 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INOPCCOMMANDSDISABLED
-    st = getVariable(20673);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INOPCCOMMANDSDISABLED", 81);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20674 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.Q
-    st = getVariable(20674);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.Q", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 20675 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.STATUS
-    st = getVariable(20675);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.STATUS", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.STATUS", 61);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20676 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.OPCCOMMANDSDISABLED
-    st = getVariable(20676);
+  { // 20670 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DISABLED_SIG
+    st = getVariable(20670);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.OPCCOMMANDSDISABLED", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DISABLED_SIG", 67);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 20677 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ALG
-    st = getVariable(20677);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ALG", 73);
-    st->size_data = sizeof(WORD);
+  { // 20671 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.RELIABILITY
+    st = getVariable(20671);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.RELIABILITY", 66);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
-    st->value_p = p_WORD;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
   }
-  { // 20678 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ARM
-    st = getVariable(20678);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.INDIKICIJAAS_FONAR.INCOMMAND_ARM", 73);
-    st->size_data = sizeof(WORD);
+  { // 20672 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.INVERSE
+    st = getVariable(20672);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.INVERSE", 62);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->INDIKICIJAAS_FONAR;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
-    st->value_p = p_WORD;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
   }
-  { // 20679 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.WAIT_TIME
-    st = getVariable(20679);
+  { // 20673 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYON
+    st = getVariable(20673);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.WAIT_TIME", 61);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYON", 62);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 20680 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND
-    st = getVariable(20680);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND", 61);
-    st->size_data = sizeof(WORD);
+  { // 20674 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYOFF
+    st = getVariable(20674);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYOFF", 63);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
-    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
-    st->value_p = p_WORD;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
   }
-  { // 20681 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INOPCCOMMANDSDISABLED
-    st = getVariable(20681);
+  { // 20675 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.Q
+    st = getVariable(20675);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INOPCCOMMANDSDISABLED", 73);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.Q", 56);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 20682 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.Q
+  { // 20676 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.STATUS
+    st = getVariable(20676);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.STATUS", 61);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20677 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DISABLED_SIG
+    st = getVariable(20677);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DISABLED_SIG", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20678 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.RELIABILITY
+    st = getVariable(20678);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.RELIABILITY", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20679 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.INVERSE
+    st = getVariable(20679);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.INVERSE", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20680 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYON
+    st = getVariable(20680);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYON", 62);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20681 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYOFF
+    st = getVariable(20681);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYOFF", 63);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20682 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.Q
     st = getVariable(20682);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.Q", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.Q", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20683 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.STATUS
+    st = getVariable(20683);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.STATUS", 61);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20684 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DISABLED_SIG
+    st = getVariable(20684);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DISABLED_SIG", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20685 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.RELIABILITY
+    st = getVariable(20685);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.RELIABILITY", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20686 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.INVERSE
+    st = getVariable(20686);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.INVERSE", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20687 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYON
+    st = getVariable(20687);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYON", 62);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20688 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYOFF
+    st = getVariable(20688);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYOFF", 63);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20689 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.Q
+    st = getVariable(20689);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.Q", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20690 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.STATUS
+    st = getVariable(20690);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.STATUS", 61);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20691 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DISABLED_SIG
+    st = getVariable(20691);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DISABLED_SIG", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20692 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.RELIABILITY
+    st = getVariable(20692);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.RELIABILITY", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20693 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.INVERSE
+    st = getVariable(20693);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.INVERSE", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20694 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYON
+    st = getVariable(20694);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYON", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20695 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYOFF
+    st = getVariable(20695);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYOFF", 68);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20696 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.Q
+    st = getVariable(20696);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.Q", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20697 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.STATUS
+    st = getVariable(20697);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.STATUS", 66);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20698 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DISABLED_SIG
+    st = getVariable(20698);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DISABLED_SIG", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20699 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.RELIABILITY
+    st = getVariable(20699);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.RELIABILITY", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20700 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.INVERSE
+    st = getVariable(20700);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.INVERSE", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20701 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYON
+    st = getVariable(20701);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYON", 60);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20702 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYOFF
+    st = getVariable(20702);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYOFF", 61);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20703 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.Q
+    st = getVariable(20703);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.Q", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20704 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.STATUS
+    st = getVariable(20704);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.STATUS", 59);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20705 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.DISABLED_SIG
+    st = getVariable(20705);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU1_AVTOMAT.DISABLED_SIG", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20706 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.RELIABILITY
+    st = getVariable(20706);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.RELIABILITY", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20707 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.INVERSE
+    st = getVariable(20707);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.INVERSE", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20708 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYON
+    st = getVariable(20708);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYON", 60);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20709 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYOFF
+    st = getVariable(20709);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYOFF", 61);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20710 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.Q
+    st = getVariable(20710);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.Q", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20711 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.STATUS
+    st = getVariable(20711);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.STATUS", 59);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20712 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.DISABLED_SIG
+    st = getVariable(20712);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NU2_AVTOMAT.DISABLED_SIG", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20713 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.RELIABILITY
+    st = getVariable(20713);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.RELIABILITY", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20714 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.INVERSE
+    st = getVariable(20714);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.INVERSE", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20715 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYON
+    st = getVariable(20715);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYON", 70);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20716 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYOFF
+    st = getVariable(20716);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYOFF", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20717 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.Q
+    st = getVariable(20717);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.Q", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20718 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.STATUS
+    st = getVariable(20718);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.STATUS", 69);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20719 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DISABLED_SIG
+    st = getVariable(20719);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DISABLED_SIG", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20720 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.RELIABILITY
+    st = getVariable(20720);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.RELIABILITY", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20721 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.INVERSE
+    st = getVariable(20721);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.INVERSE", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20722 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYON
+    st = getVariable(20722);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYON", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20723 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYOFF
+    st = getVariable(20723);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYOFF", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20724 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.Q
+    st = getVariable(20724);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.Q", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20725 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.STATUS
+    st = getVariable(20725);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.STATUS", 70);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20726 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DISABLED_SIG
+    st = getVariable(20726);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DISABLED_SIG", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20727 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.RELIABILITY
+    st = getVariable(20727);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.RELIABILITY", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20728 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.INVERSE
+    st = getVariable(20728);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.INVERSE", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20729 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYON
+    st = getVariable(20729);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYON", 70);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20730 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYOFF
+    st = getVariable(20730);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYOFF", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20731 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.Q
+    st = getVariable(20731);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.Q", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20732 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.STATUS
+    st = getVariable(20732);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.STATUS", 69);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20733 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DISABLED_SIG
+    st = getVariable(20733);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DISABLED_SIG", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20734 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.RELIABILITY
+    st = getVariable(20734);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.RELIABILITY", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20735 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.INVERSE
+    st = getVariable(20735);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.INVERSE", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20736 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYON
+    st = getVariable(20736);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYON", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20737 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYOFF
+    st = getVariable(20737);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYOFF", 68);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20738 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.Q
+    st = getVariable(20738);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.Q", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20739 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.STATUS
+    st = getVariable(20739);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.STATUS", 66);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20740 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DISABLED_SIG
+    st = getVariable(20740);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DISABLED_SIG", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20741 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.RELIABILITY
+    st = getVariable(20741);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.RELIABILITY", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20742 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.INVERSE
+    st = getVariable(20742);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.INVERSE", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20743 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYON
+    st = getVariable(20743);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYON", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20744 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYOFF
+    st = getVariable(20744);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYOFF", 68);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20745 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.Q
+    st = getVariable(20745);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.Q", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20746 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.STATUS
+    st = getVariable(20746);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.STATUS", 66);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20747 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DISABLED_SIG
+    st = getVariable(20747);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DISABLED_SIG", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->UROVEN_MASLA_AKKUM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20748 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.RELIABILITY
+    st = getVariable(20748);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.RELIABILITY", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20749 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.INVERSE
+    st = getVariable(20749);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.INVERSE", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20750 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYON
+    st = getVariable(20750);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYON", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20751 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYOFF
+    st = getVariable(20751);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYOFF", 68);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20752 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.Q
+    st = getVariable(20752);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.Q", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20753 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.STATUS
+    st = getVariable(20753);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.STATUS", 66);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20754 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DISABLED_SIG
+    st = getVariable(20754);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DISABLED_SIG", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20755 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.RELIABILITY
+    st = getVariable(20755);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.RELIABILITY", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20756 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.INVERSE
+    st = getVariable(20756);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.INVERSE", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20757 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYON
+    st = getVariable(20757);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYON", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20758 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYOFF
+    st = getVariable(20758);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYOFF", 68);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20759 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.Q
+    st = getVariable(20759);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.Q", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20760 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.STATUS
+    st = getVariable(20760);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.STATUS", 66);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20761 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DISABLED_SIG
+    st = getVariable(20761);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DISABLED_SIG", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20762 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.RELIABILITY
+    st = getVariable(20762);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.RELIABILITY", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20763 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.INVERSE
+    st = getVariable(20763);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.INVERSE", 54);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20764 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYON
+    st = getVariable(20764);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYON", 54);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20765 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYOFF
+    st = getVariable(20765);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DELAYOFF", 55);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20766 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.Q
+    st = getVariable(20766);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.Q", 48);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20767 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.STATUS
+    st = getVariable(20767);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.STATUS", 53);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20768 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG
+    st = getVariable(20768);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG", 59);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20769 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.RELIABILITY
+    st = getVariable(20769);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.RELIABILITY", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20770 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.INVERSE
+    st = getVariable(20770);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.INVERSE", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20771 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYON
+    st = getVariable(20771);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYON", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20772 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYOFF
+    st = getVariable(20772);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYOFF", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20773 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.Q
+    st = getVariable(20773);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.Q", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20774 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.STATUS
+    st = getVariable(20774);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.STATUS", 65);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20775 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DISABLED_SIG
+    st = getVariable(20775);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DISABLED_SIG", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20776 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.RELIABILITY
+    st = getVariable(20776);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.RELIABILITY", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20777 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.INVERSE
+    st = getVariable(20777);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.INVERSE", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20778 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYON
+    st = getVariable(20778);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYON", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20779 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYOFF
+    st = getVariable(20779);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYOFF", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20780 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.Q
+    st = getVariable(20780);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.Q", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20781 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.STATUS
+    st = getVariable(20781);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.STATUS", 65);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20782 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DISABLED_SIG
+    st = getVariable(20782);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DISABLED_SIG", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20783 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.RELIABILITY
+    st = getVariable(20783);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.RELIABILITY", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20784 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.INVERSE
+    st = getVariable(20784);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.INVERSE", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20785 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYON
+    st = getVariable(20785);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYON", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20786 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYOFF
+    st = getVariable(20786);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYOFF", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20787 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.Q
+    st = getVariable(20787);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.Q", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20788 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.STATUS
+    st = getVariable(20788);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.STATUS", 70);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20789 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG
+    st = getVariable(20789);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20790 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.RELIABILITY
+    st = getVariable(20790);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.RELIABILITY", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20791 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.INVERSE
+    st = getVariable(20791);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.INVERSE", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20792 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYON
+    st = getVariable(20792);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYON", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20793 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYOFF
+    st = getVariable(20793);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYOFF", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20794 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.Q
+    st = getVariable(20794);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.Q", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20795 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.STATUS
+    st = getVariable(20795);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.STATUS", 70);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20796 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG
+    st = getVariable(20796);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20797 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.RELIABILITY
+    st = getVariable(20797);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.RELIABILITY", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20798 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.INVERSE
+    st = getVariable(20798);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.INVERSE", 62);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20799 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYON
+    st = getVariable(20799);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYON", 62);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20800 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYOFF
+    st = getVariable(20800);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYOFF", 63);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20801 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.Q
+    st = getVariable(20801);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.Q", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20802 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.STATUS
+    st = getVariable(20802);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.STATUS", 61);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20803 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.DISABLED_SIG
+    st = getVariable(20803);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO_SRABOTAL.DISABLED_SIG", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO_SRABOTAL;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20804 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.RELIABILITY
+    st = getVariable(20804);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.RELIABILITY", 77);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20805 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.INVERSE
+    st = getVariable(20805);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.INVERSE", 73);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20806 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYON
+    st = getVariable(20806);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYON", 73);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20807 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYOFF
+    st = getVariable(20807);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYOFF", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20808 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.Q
+    st = getVariable(20808);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.Q", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20809 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.STATUS
+    st = getVariable(20809);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.STATUS", 72);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20810 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DISABLED_SIG
+    st = getVariable(20810);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DISABLED_SIG", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20811 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.RELIABILITY
+    st = getVariable(20811);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.RELIABILITY", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20812 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.INVERSE
+    st = getVariable(20812);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.INVERSE", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20813 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYON
+    st = getVariable(20813);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYON", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20814 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYOFF
+    st = getVariable(20814);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYOFF", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20815 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.Q
+    st = getVariable(20815);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.Q", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20816 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.STATUS
+    st = getVariable(20816);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.STATUS", 70);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20817 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DISABLED_SIG
+    st = getVariable(20817);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DISABLED_SIG", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20818 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.RELIABILITY
+    st = getVariable(20818);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.RELIABILITY", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20819 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.INVERSE
+    st = getVariable(20819);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.INVERSE", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20820 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.DELAYON
+    st = getVariable(20820);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.DELAYON", 61);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20821 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.DELAYOFF
+    st = getVariable(20821);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.DELAYOFF", 62);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20822 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.Q
+    st = getVariable(20822);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.Q", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20823 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.STATUS
+    st = getVariable(20823);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.STATUS", 60);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20824 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.DISABLED_SIG
+    st = getVariable(20824);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.KRANI24V_EST.DISABLED_SIG", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20825 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.RELIABILITY
+    st = getVariable(20825);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.RELIABILITY", 65);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20826 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.INVERSE
+    st = getVariable(20826);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.INVERSE", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20827 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.DELAYON
+    st = getVariable(20827);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.DELAYON", 61);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20828 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.DELAYOFF
+    st = getVariable(20828);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.DELAYOFF", 62);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20829 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.Q
+    st = getVariable(20829);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.Q", 55);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20830 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.STATUS
+    st = getVariable(20830);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.STATUS", 60);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20831 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.DISABLED_SIG
+    st = getVariable(20831);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.BEAO220V_EST.DISABLED_SIG", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20832 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.RELIABILITY
+    st = getVariable(20832);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.RELIABILITY", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20833 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.INVERSE
+    st = getVariable(20833);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.INVERSE", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20834 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.DELAYON
+    st = getVariable(20834);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.DELAYON", 56);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20835 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.DELAYOFF
+    st = getVariable(20835);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.DELAYOFF", 57);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20836 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.Q
+    st = getVariable(20836);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.Q", 50);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20837 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.STATUS
+    st = getVariable(20837);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.STATUS", 55);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20838 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.DISABLED_SIG
+    st = getVariable(20838);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.V24_EST.DISABLED_SIG", 61);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20839 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.RELIABILITY
+    st = getVariable(20839);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.RELIABILITY", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20840 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.INVERSE
+    st = getVariable(20840);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.INVERSE", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20841 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYON
+    st = getVariable(20841);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYON", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20842 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYOFF
+    st = getVariable(20842);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYOFF", 67);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20843 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.Q
+    st = getVariable(20843);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.Q", 60);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20844 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.STATUS
+    st = getVariable(20844);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.STATUS", 65);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20845 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DISABLED_SIG
+    st = getVariable(20845);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DISABLED_SIG", 71);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20846 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.RELIABILITY
+    st = getVariable(20846);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.RELIABILITY", 67);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20847 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.INVERSE
+    st = getVariable(20847);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.INVERSE", 63);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20848 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYON
+    st = getVariable(20848);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYON", 63);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20849 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYOFF
+    st = getVariable(20849);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYOFF", 64);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20850 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.Q
+    st = getVariable(20850);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.Q", 57);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20851 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.STATUS
+    st = getVariable(20851);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.STATUS", 62);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20852 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DISABLED_SIG
+    st = getVariable(20852);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DISABLED_SIG", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20853 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.RELIABILITY
+    st = getVariable(20853);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.RELIABILITY", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20854 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.INVERSE
+    st = getVariable(20854);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.INVERSE", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20855 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYON
+    st = getVariable(20855);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYON", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20856 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYOFF
+    st = getVariable(20856);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYOFF", 73);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20857 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.Q
+    st = getVariable(20857);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.Q", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20858 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.STATUS
+    st = getVariable(20858);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.STATUS", 71);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20859 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DISABLED_SIG
+    st = getVariable(20859);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DISABLED_SIG", 77);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NEUSPESH_CHASTOTNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20860 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.RELIABILITY
+    st = getVariable(20860);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.RELIABILITY", 83);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20861 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.INVERSE
+    st = getVariable(20861);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.INVERSE", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20862 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYON
+    st = getVariable(20862);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYON", 79);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20863 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYOFF
+    st = getVariable(20863);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYOFF", 80);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20864 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.Q
+    st = getVariable(20864);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.Q", 73);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20865 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.STATUS
+    st = getVariable(20865);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.STATUS", 78);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20866 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DISABLED_SIG
+    st = getVariable(20866);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DISABLED_SIG", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REZHIM_RUCHNOGO_REGULIROVANIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20867 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.RELIABILITY
+    st = getVariable(20867);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.RELIABILITY", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 20868 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.INVERSE
+    st = getVariable(20868);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.INVERSE", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 20869 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYON
+    st = getVariable(20869);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYON", 70);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 20870 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYOFF
+    st = getVariable(20870);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYOFF", 71);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 20871 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.Q
+    st = getVariable(20871);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.Q", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20872 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.STATUS
+    st = getVariable(20872);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.STATUS", 69);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20873 PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DISABLED_SIG
+    st = getVariable(20873);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DISABLED_SIG", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 20874 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.WAIT_TIME
+    st = getVariable(20874);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.WAIT_TIME", 66);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 20875 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND
+    st = getVariable(20875);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND", 66);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 20876 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INOPCCOMMANDSDISABLED
+    st = getVariable(20876);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INOPCCOMMANDSDISABLED", 78);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20877 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.Q
+    st = getVariable(20877);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.Q", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 20683 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.STATUS
-    st = getVariable(20683);
+  { // 20878 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.STATUS
+    st = getVariable(20878);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.STATUS", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.STATUS", 63);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20684 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.OPCCOMMANDSDISABLED
-    st = getVariable(20684);
+  { // 20879 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.OPCCOMMANDSDISABLED
+    st = getVariable(20879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.OPCCOMMANDSDISABLED", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.OPCCOMMANDSDISABLED", 76);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20685 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ALG
-    st = getVariable(20685);
+  { // 20880 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ALG
+    st = getVariable(20880);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ALG", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ALG", 70);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20686 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ARM
-    st = getVariable(20686);
+  { // 20881 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ARM
+    st = getVariable(20881);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.MV_OFF_KNA.INCOMMAND_ARM", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ARM", 70);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->MV_OFF_KNA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20687 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INCOMMAND
-    st = getVariable(20687);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INCOMMAND", 53);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20688 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ALG
-    st = getVariable(20688);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ALG", 57);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20689 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ARM
-    st = getVariable(20689);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INCOMMAND_ARM", 57);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20690 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.STATUS
-    st = getVariable(20690);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.STATUS", 50);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20691 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.NEWVALUE
-    st = getVariable(20691);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.NEWVALUE", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20692 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.CURRENTVALUE
-    st = getVariable(20692);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.CURRENTVALUE", 56);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20693 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MINVAL
-    st = getVariable(20693);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MINVAL", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20694 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXVAL
-    st = getVariable(20694);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXVAL", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20695 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXSTEP
-    st = getVariable(20695);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXSTEP", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20696 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MINVAL_ISVALIDREF
-    st = getVariable(20696);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MINVAL_ISVALIDREF", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20697 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXVAL_ISVALIDREF
-    st = getVariable(20697);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXVAL_ISVALIDREF", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20698 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXSTEP_ISVALIDREF
-    st = getVariable(20698);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.MAXSTEP_ISVALIDREF", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20699 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INOPCCOMMANDSDISABLED
-    st = getVariable(20699);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.INOPCCOMMANDSDISABLED", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20700 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.VALUE
-    st = getVariable(20700);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.VALUE", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20701 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.ISVALIDVALUE
-    st = getVariable(20701);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.ISVALIDVALUE", 56);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20702 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.OPCCOMMANDSDISABLED
-    st = getVariable(20702);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP1.OPCCOMMANDSDISABLED", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP1;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20703 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INCOMMAND
-    st = getVariable(20703);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INCOMMAND", 53);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20704 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ALG
-    st = getVariable(20704);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ALG", 57);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20705 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ARM
-    st = getVariable(20705);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INCOMMAND_ARM", 57);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20706 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.STATUS
-    st = getVariable(20706);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.STATUS", 50);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20707 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.NEWVALUE
-    st = getVariable(20707);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.NEWVALUE", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20708 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.CURRENTVALUE
-    st = getVariable(20708);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.CURRENTVALUE", 56);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20709 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MINVAL
-    st = getVariable(20709);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MINVAL", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20710 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXVAL
-    st = getVariable(20710);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXVAL", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20711 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXSTEP
-    st = getVariable(20711);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXSTEP", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20712 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MINVAL_ISVALIDREF
-    st = getVariable(20712);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MINVAL_ISVALIDREF", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20713 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXVAL_ISVALIDREF
-    st = getVariable(20713);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXVAL_ISVALIDREF", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20714 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXSTEP_ISVALIDREF
-    st = getVariable(20714);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.MAXSTEP_ISVALIDREF", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20715 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INOPCCOMMANDSDISABLED
-    st = getVariable(20715);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.INOPCCOMMANDSDISABLED", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20716 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.VALUE
-    st = getVariable(20716);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.VALUE", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20717 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.ISVALIDVALUE
-    st = getVariable(20717);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.ISVALIDVALUE", 56);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20718 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.OPCCOMMANDSDISABLED
-    st = getVariable(20718);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_ONTEMP2.OPCCOMMANDSDISABLED", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_ONTEMP2;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20719 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INCOMMAND
-    st = getVariable(20719);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INCOMMAND", 56);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20720 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ALG
-    st = getVariable(20720);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ALG", 60);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20721 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ARM
-    st = getVariable(20721);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INCOMMAND_ARM", 60);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20722 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.STATUS
-    st = getVariable(20722);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.STATUS", 53);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20723 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.NEWVALUE
-    st = getVariable(20723);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.NEWVALUE", 55);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20724 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.CURRENTVALUE
-    st = getVariable(20724);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.CURRENTVALUE", 59);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20725 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MINVAL
-    st = getVariable(20725);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MINVAL", 53);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20726 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXVAL
-    st = getVariable(20726);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXVAL", 53);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20727 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXSTEP
-    st = getVariable(20727);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXSTEP", 54);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20728 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MINVAL_ISVALIDREF
-    st = getVariable(20728);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MINVAL_ISVALIDREF", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20729 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXVAL_ISVALIDREF
-    st = getVariable(20729);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXVAL_ISVALIDREF", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20730 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXSTEP_ISVALIDREF
-    st = getVariable(20730);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.MAXSTEP_ISVALIDREF", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20731 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INOPCCOMMANDSDISABLED
-    st = getVariable(20731);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.INOPCCOMMANDSDISABLED", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20732 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.VALUE
-    st = getVariable(20732);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.VALUE", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20733 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.ISVALIDVALUE
-    st = getVariable(20733);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.ISVALIDVALUE", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20734 PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.OPCCOMMANDSDISABLED
-    st = getVariable(20734);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOAVOM_HYSTERESIS.OPCCOMMANDSDISABLED", 66);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOAVOM_HYSTERESIS;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20735 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.NEWVALUE
-    st = getVariable(20735);
-    memcpy(st->IEC_TYPE, "UINT", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.NEWVALUE", 46);
-    st->size_data = sizeof(UINT);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
-    st->value_p = p_UINT;
-  }
-  { // 20736 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.CURRENTVALUE
-    st = getVariable(20736);
-    memcpy(st->IEC_TYPE, "UINT", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.CURRENTVALUE", 50);
-    st->size_data = sizeof(UINT);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
-    st->value_p = p_UINT;
-  }
-  { // 20737 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INOPCCOMMANDSDISABLED
-    st = getVariable(20737);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INOPCCOMMANDSDISABLED", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20738 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INCOMMAND
-    st = getVariable(20738);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INCOMMAND", 47);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20739 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INCOMMAND_ALG
-    st = getVariable(20739);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INCOMMAND_ALG", 51);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20740 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INCOMMAND_ARM
-    st = getVariable(20740);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.INCOMMAND_ARM", 51);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20741 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.STATUS
-    st = getVariable(20741);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.STATUS", 44);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20742 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.OPCCOMMANDSDISABLED
-    st = getVariable(20742);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.OPCCOMMANDSDISABLED", 57);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20743 PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.VALUE
-    st = getVariable(20743);
-    memcpy(st->IEC_TYPE, "UINT", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TYPESWITCH.VALUE", 43);
-    st->size_data = sizeof(UINT);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->TYPESWITCH;
-    p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
-    st->value_p = p_UINT;
-  }
-  { // 20744 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INCOMMAND
-    st = getVariable(20744);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INCOMMAND", 51);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20745 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INCOMMAND_ALG
-    st = getVariable(20745);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INCOMMAND_ALG", 55);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20746 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INCOMMAND_ARM
-    st = getVariable(20746);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INCOMMAND_ARM", 55);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20747 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.STATUS
-    st = getVariable(20747);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.STATUS", 48);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20748 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.NEWVALUE
-    st = getVariable(20748);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.NEWVALUE", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20749 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.CURRENTVALUE
-    st = getVariable(20749);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.CURRENTVALUE", 54);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20750 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MINVAL
-    st = getVariable(20750);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MINVAL", 48);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20751 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXVAL
-    st = getVariable(20751);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXVAL", 48);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20752 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXSTEP
-    st = getVariable(20752);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXSTEP", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20753 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MINVAL_ISVALIDREF
-    st = getVariable(20753);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MINVAL_ISVALIDREF", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20754 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXVAL_ISVALIDREF
-    st = getVariable(20754);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXVAL_ISVALIDREF", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20755 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXSTEP_ISVALIDREF
-    st = getVariable(20755);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.MAXSTEP_ISVALIDREF", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20756 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INOPCCOMMANDSDISABLED
-    st = getVariable(20756);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.INOPCCOMMANDSDISABLED", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20757 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.VALUE
-    st = getVariable(20757);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.VALUE", 47);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20758 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.ISVALIDVALUE
-    st = getVariable(20758);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.ISVALIDVALUE", 54);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20759 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.OPCCOMMANDSDISABLED
-    st = getVariable(20759);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTRUN.OPCCOMMANDSDISABLED", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTRUN;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20760 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INCOMMAND
-    st = getVariable(20760);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INCOMMAND", 52);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20761 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INCOMMAND_ALG
-    st = getVariable(20761);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INCOMMAND_ALG", 56);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20762 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INCOMMAND_ARM
-    st = getVariable(20762);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INCOMMAND_ARM", 56);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20763 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.STATUS
-    st = getVariable(20763);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.STATUS", 49);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20764 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.NEWVALUE
-    st = getVariable(20764);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.NEWVALUE", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20765 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.CURRENTVALUE
-    st = getVariable(20765);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.CURRENTVALUE", 55);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20766 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MINVAL
-    st = getVariable(20766);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MINVAL", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20767 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXVAL
-    st = getVariable(20767);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXVAL", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20768 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXSTEP
-    st = getVariable(20768);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXSTEP", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20769 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MINVAL_ISVALIDREF
-    st = getVariable(20769);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MINVAL_ISVALIDREF", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20770 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXVAL_ISVALIDREF
-    st = getVariable(20770);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXVAL_ISVALIDREF", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20771 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXSTEP_ISVALIDREF
-    st = getVariable(20771);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.MAXSTEP_ISVALIDREF", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20772 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INOPCCOMMANDSDISABLED
-    st = getVariable(20772);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.INOPCCOMMANDSDISABLED", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20773 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.VALUE
-    st = getVariable(20773);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.VALUE", 48);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20774 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.ISVALIDVALUE
-    st = getVariable(20774);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.ISVALIDVALUE", 55);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20775 PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.OPCCOMMANDSDISABLED
-    st = getVariable(20775);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOPNS_USTSTOP.OPCCOMMANDSDISABLED", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOPNS_USTSTOP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20776 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.NEWVALUE
-    st = getVariable(20776);
-    memcpy(st->IEC_TYPE, "UINT", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.NEWVALUE", 49);
-    st->size_data = sizeof(UINT);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
-    st->value_p = p_UINT;
-  }
-  { // 20777 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.CURRENTVALUE
-    st = getVariable(20777);
-    memcpy(st->IEC_TYPE, "UINT", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.CURRENTVALUE", 53);
-    st->size_data = sizeof(UINT);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
-    st->value_p = p_UINT;
-  }
-  { // 20778 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INOPCCOMMANDSDISABLED
-    st = getVariable(20778);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INOPCCOMMANDSDISABLED", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20779 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INCOMMAND
-    st = getVariable(20779);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INCOMMAND", 50);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20780 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INCOMMAND_ALG
-    st = getVariable(20780);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INCOMMAND_ALG", 54);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20781 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INCOMMAND_ARM
-    st = getVariable(20781);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.INCOMMAND_ARM", 54);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20782 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.STATUS
-    st = getVariable(20782);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.STATUS", 47);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20783 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.OPCCOMMANDSDISABLED
-    st = getVariable(20783);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.OPCCOMMANDSDISABLED", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20784 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.VALUE
-    st = getVariable(20784);
-    memcpy(st->IEC_TYPE, "UINT", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_MAINNU.VALUE", 46);
-    st->size_data = sizeof(UINT);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_DISCRETPARAMETR = (STRUCT_DISCRETPARAMETR*)&p_IMCONFIG->AUTONU_MAINNU;
-    p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
-    st->value_p = p_UINT;
-  }
-  { // 20785 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND
-    st = getVariable(20785);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND", 58);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20786 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ALG
-    st = getVariable(20786);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ALG", 62);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20787 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ARM
-    st = getVariable(20787);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INCOMMAND_ARM", 62);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20788 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.STATUS
-    st = getVariable(20788);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.STATUS", 55);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20789 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.NEWVALUE
-    st = getVariable(20789);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.NEWVALUE", 57);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20790 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.CURRENTVALUE
-    st = getVariable(20790);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.CURRENTVALUE", 61);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20791 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MINVAL
-    st = getVariable(20791);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MINVAL", 55);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20792 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL
-    st = getVariable(20792);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL", 55);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20793 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP
-    st = getVariable(20793);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP", 56);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20794 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MINVAL_ISVALIDREF
-    st = getVariable(20794);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MINVAL_ISVALIDREF", 66);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20795 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL_ISVALIDREF
-    st = getVariable(20795);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXVAL_ISVALIDREF", 66);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20796 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP_ISVALIDREF
-    st = getVariable(20796);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.MAXSTEP_ISVALIDREF", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20797 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INOPCCOMMANDSDISABLED
-    st = getVariable(20797);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.INOPCCOMMANDSDISABLED", 70);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20798 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.VALUE
-    st = getVariable(20798);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.VALUE", 54);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20799 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.ISVALIDVALUE
-    st = getVariable(20799);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.ISVALIDVALUE", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20800 PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.OPCCOMMANDSDISABLED
-    st = getVariable(20800);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.PUSKOILSYSTEM_USTDPMG.OPCCOMMANDSDISABLED", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->PUSKOILSYSTEM_USTDPMG;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20801 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND
-    st = getVariable(20801);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND", 59);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20802 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ALG
-    st = getVariable(20802);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ALG", 63);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20803 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ARM
-    st = getVariable(20803);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INCOMMAND_ARM", 63);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20804 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.STATUS
-    st = getVariable(20804);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.STATUS", 56);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20805 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.NEWVALUE
-    st = getVariable(20805);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.NEWVALUE", 58);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20806 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.CURRENTVALUE
-    st = getVariable(20806);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.CURRENTVALUE", 62);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20807 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MINVAL
-    st = getVariable(20807);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MINVAL", 56);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20808 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL
-    st = getVariable(20808);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL", 56);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20809 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP
-    st = getVariable(20809);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP", 57);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20810 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MINVAL_ISVALIDREF
-    st = getVariable(20810);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MINVAL_ISVALIDREF", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20811 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL_ISVALIDREF
-    st = getVariable(20811);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXVAL_ISVALIDREF", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20812 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP_ISVALIDREF
-    st = getVariable(20812);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.MAXSTEP_ISVALIDREF", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20813 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INOPCCOMMANDSDISABLED
-    st = getVariable(20813);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.INOPCCOMMANDSDISABLED", 71);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20814 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.VALUE
-    st = getVariable(20814);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.VALUE", 55);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20815 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.ISVALIDVALUE
-    st = getVariable(20815);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.ISVALIDVALUE", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20816 PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.OPCCOMMANDSDISABLED
-    st = getVariable(20816);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTOTEN_OFFTEMPERATURE.OPCCOMMANDSDISABLED", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTOTEN_OFFTEMPERATURE;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20817 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INCOMMAND
-    st = getVariable(20817);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INCOMMAND", 52);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20818 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INCOMMAND_ALG
-    st = getVariable(20818);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INCOMMAND_ALG", 56);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20819 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INCOMMAND_ARM
-    st = getVariable(20819);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INCOMMAND_ARM", 56);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20820 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.STATUS
-    st = getVariable(20820);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.STATUS", 49);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20821 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.NEWVALUE
-    st = getVariable(20821);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.NEWVALUE", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20822 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.CURRENTVALUE
-    st = getVariable(20822);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.CURRENTVALUE", 55);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20823 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MINVAL
-    st = getVariable(20823);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MINVAL", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20824 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXVAL
-    st = getVariable(20824);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXVAL", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20825 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXSTEP
-    st = getVariable(20825);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXSTEP", 50);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20826 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MINVAL_ISVALIDREF
-    st = getVariable(20826);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MINVAL_ISVALIDREF", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20827 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXVAL_ISVALIDREF
-    st = getVariable(20827);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXVAL_ISVALIDREF", 60);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20828 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXSTEP_ISVALIDREF
-    st = getVariable(20828);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.MAXSTEP_ISVALIDREF", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20829 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INOPCCOMMANDSDISABLED
-    st = getVariable(20829);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.INOPCCOMMANDSDISABLED", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20830 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.VALUE
-    st = getVariable(20830);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.VALUE", 48);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20831 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.ISVALIDVALUE
-    st = getVariable(20831);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.ISVALIDVALUE", 55);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20832 PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.OPCCOMMANDSDISABLED
-    st = getVariable(20832);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.AUTONU_UST_SWAP.OPCCOMMANDSDISABLED", 62);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->AUTONU_UST_SWAP;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20833 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INCOMMAND
-    st = getVariable(20833);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INCOMMAND", 55);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20834 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ALG
-    st = getVariable(20834);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ALG", 59);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20835 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ARM
-    st = getVariable(20835);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INCOMMAND_ARM", 59);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20836 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.STATUS
-    st = getVariable(20836);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.STATUS", 52);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20837 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.NEWVALUE
-    st = getVariable(20837);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.NEWVALUE", 54);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20838 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.CURRENTVALUE
-    st = getVariable(20838);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.CURRENTVALUE", 58);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20839 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MINVAL
-    st = getVariable(20839);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MINVAL", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20840 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXVAL
-    st = getVariable(20840);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXVAL", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20841 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXSTEP
-    st = getVariable(20841);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXSTEP", 53);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20842 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MINVAL_ISVALIDREF
-    st = getVariable(20842);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MINVAL_ISVALIDREF", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20843 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXVAL_ISVALIDREF
-    st = getVariable(20843);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXVAL_ISVALIDREF", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20844 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXSTEP_ISVALIDREF
-    st = getVariable(20844);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.MAXSTEP_ISVALIDREF", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20845 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INOPCCOMMANDSDISABLED
-    st = getVariable(20845);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.INOPCCOMMANDSDISABLED", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20846 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.VALUE
-    st = getVariable(20846);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.VALUE", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20847 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.ISVALIDVALUE
-    st = getVariable(20847);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.ISVALIDVALUE", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20848 PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.OPCCOMMANDSDISABLED
-    st = getVariable(20848);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TESTDPMG_UST_DPLOW.OPCCOMMANDSDISABLED", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->TESTDPMG_UST_DPLOW;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20849 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND
-    st = getVariable(20849);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND", 55);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20850 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ALG
-    st = getVariable(20850);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ALG", 59);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20851 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ARM
-    st = getVariable(20851);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INCOMMAND_ARM", 59);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20852 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.STATUS
-    st = getVariable(20852);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.STATUS", 52);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20853 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.NEWVALUE
-    st = getVariable(20853);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.NEWVALUE", 54);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20854 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.CURRENTVALUE
-    st = getVariable(20854);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.CURRENTVALUE", 58);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20855 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MINVAL
-    st = getVariable(20855);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MINVAL", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20856 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXVAL
-    st = getVariable(20856);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXVAL", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20857 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP
-    st = getVariable(20857);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP", 53);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20858 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MINVAL_ISVALIDREF
-    st = getVariable(20858);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MINVAL_ISVALIDREF", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20859 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXVAL_ISVALIDREF
-    st = getVariable(20859);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXVAL_ISVALIDREF", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20860 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP_ISVALIDREF
-    st = getVariable(20860);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.MAXSTEP_ISVALIDREF", 64);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20861 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INOPCCOMMANDSDISABLED
-    st = getVariable(20861);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.INOPCCOMMANDSDISABLED", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20862 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.VALUE
-    st = getVariable(20862);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.VALUE", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20863 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.ISVALIDVALUE
-    st = getVariable(20863);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.ISVALIDVALUE", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20864 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.OPCCOMMANDSDISABLED
-    st = getVariable(20864);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_UGOLVNA.OPCCOMMANDSDISABLED", 65);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_UGOLVNA;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20865 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INCOMMAND
-    st = getVariable(20865);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INCOMMAND", 49);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20866 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INCOMMAND_ALG
-    st = getVariable(20866);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INCOMMAND_ALG", 53);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20867 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INCOMMAND_ARM
-    st = getVariable(20867);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INCOMMAND_ARM", 53);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20868 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.STATUS
-    st = getVariable(20868);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.STATUS", 46);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 20869 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.NEWVALUE
-    st = getVariable(20869);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.NEWVALUE", 48);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20870 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.CURRENTVALUE
-    st = getVariable(20870);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.CURRENTVALUE", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20871 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MINVAL
-    st = getVariable(20871);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MINVAL", 46);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20872 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXVAL
-    st = getVariable(20872);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXVAL", 46);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
-  }
-  { // 20873 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXSTEP
-    st = getVariable(20873);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXSTEP", 47);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
-  }
-  { // 20874 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MINVAL_ISVALIDREF
-    st = getVariable(20874);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MINVAL_ISVALIDREF", 57);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20875 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXVAL_ISVALIDREF
-    st = getVariable(20875);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXVAL_ISVALIDREF", 57);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20876 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXSTEP_ISVALIDREF
-    st = getVariable(20876);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.MAXSTEP_ISVALIDREF", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
-    st->value_p = p_BOOL;
-  }
-  { // 20877 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INOPCCOMMANDSDISABLED
-    st = getVariable(20877);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.INOPCCOMMANDSDISABLED", 61);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20878 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.VALUE
-    st = getVariable(20878);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.VALUE", 45);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20879 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.ISVALIDVALUE
-    st = getVariable(20879);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.ISVALIDVALUE", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
-    st->value_p = p_BOOL;
-  }
-  { // 20880 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.OPCCOMMANDSDISABLED
-    st = getVariable(20880);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_K.OPCCOMMANDSDISABLED", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_K;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20881 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INCOMMAND
-    st = getVariable(20881);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INCOMMAND", 49);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20882 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INCOMMAND_ALG
+  { // 20882 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.WAIT_TIME
     st = getVariable(20882);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INCOMMAND_ALG", 53);
-    st->size_data = sizeof(WORD);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.WAIT_TIME", 66);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
   }
-  { // 20883 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INCOMMAND_ARM
+  { // 20883 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND
     st = getVariable(20883);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INCOMMAND_ARM", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND", 66);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20884 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.STATUS
+  { // 20884 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INOPCCOMMANDSDISABLED
     st = getVariable(20884);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INOPCCOMMANDSDISABLED", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20885 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.Q
+    st = getVariable(20885);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.Q", 58);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20886 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.STATUS
+    st = getVariable(20886);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.STATUS", 46);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.STATUS", 63);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20885 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.NEWVALUE
-    st = getVariable(20885);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.NEWVALUE", 48);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20886 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.CURRENTVALUE
-    st = getVariable(20886);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.CURRENTVALUE", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20887 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MINVAL
+  { // 20887 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.OPCCOMMANDSDISABLED
     st = getVariable(20887);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MINVAL", 46);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.OPCCOMMANDSDISABLED", 76);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
   }
-  { // 20888 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXVAL
+  { // 20888 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ALG
     st = getVariable(20888);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXVAL", 46);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ALG", 70);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
   }
-  { // 20889 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXSTEP
+  { // 20889 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ARM
     st = getVariable(20889);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXSTEP", 47);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ARM", 70);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
   }
-  { // 20890 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MINVAL_ISVALIDREF
+  { // 20890 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.WAIT_TIME
     st = getVariable(20890);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MINVAL_ISVALIDREF", 57);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.WAIT_TIME", 60);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
   }
-  { // 20891 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXVAL_ISVALIDREF
+  { // 20891 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INCOMMAND
     st = getVariable(20891);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXVAL_ISVALIDREF", 57);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INCOMMAND", 60);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
   }
-  { // 20892 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXSTEP_ISVALIDREF
+  { // 20892 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INOPCCOMMANDSDISABLED
     st = getVariable(20892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.MAXSTEP_ISVALIDREF", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INOPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20893 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INOPCCOMMANDSDISABLED
+  { // 20893 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.Q
     st = getVariable(20893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.INOPCCOMMANDSDISABLED", 61);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.Q", 52);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 20894 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.VALUE
+  { // 20894 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.STATUS
     st = getVariable(20894);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.VALUE", 45);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.STATUS", 57);
+    st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
   }
-  { // 20895 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.ISVALIDVALUE
+  { // 20895 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.OPCCOMMANDSDISABLED
     st = getVariable(20895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.ISVALIDVALUE", 52);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.OPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20896 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.OPCCOMMANDSDISABLED
+  { // 20896 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INCOMMAND_ALG
     st = getVariable(20896);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_A.OPCCOMMANDSDISABLED", 59);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INCOMMAND_ALG", 64);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_A;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
   }
-  { // 20897 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INCOMMAND
+  { // 20897 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INCOMMAND_ARM
     st = getVariable(20897);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INCOMMAND", 50);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NORM.INCOMMAND_ARM", 64);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NORM;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20898 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INCOMMAND_ALG
+  { // 20898 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.WAIT_TIME
     st = getVariable(20898);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INCOMMAND_ALG", 54);
-    st->size_data = sizeof(WORD);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.WAIT_TIME", 64);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
-    st->value_p = p_WORD;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
   }
-  { // 20899 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INCOMMAND_ARM
+  { // 20899 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND
     st = getVariable(20899);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INCOMMAND_ARM", 54);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND", 64);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20900 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.STATUS
+  { // 20900 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INOPCCOMMANDSDISABLED
     st = getVariable(20900);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INOPCCOMMANDSDISABLED", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 20901 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.Q
+    st = getVariable(20901);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.Q", 56);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 20902 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.STATUS
+    st = getVariable(20902);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.STATUS", 47);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.STATUS", 61);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20901 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.NEWVALUE
-    st = getVariable(20901);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.NEWVALUE", 49);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20902 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.CURRENTVALUE
-    st = getVariable(20902);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.CURRENTVALUE", 53);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
-    st->value_p = p_LREAL;
-  }
-  { // 20903 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MINVAL
+  { // 20903 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.OPCCOMMANDSDISABLED
     st = getVariable(20903);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MINVAL", 47);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.OPCCOMMANDSDISABLED", 74);
+    st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
   }
-  { // 20904 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXVAL
+  { // 20904 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ALG
     st = getVariable(20904);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXVAL", 47);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ALG", 68);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
   }
-  { // 20905 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXSTEP
+  { // 20905 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ARM
     st = getVariable(20905);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXSTEP", 48);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ARM", 68);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
   }
-  { // 20906 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MINVAL_ISVALIDREF
+  { // 20906 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.WAIT_TIME
     st = getVariable(20906);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MINVAL_ISVALIDREF", 58);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.WAIT_TIME", 63);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
   }
-  { // 20907 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXVAL_ISVALIDREF
+  { // 20907 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND
     st = getVariable(20907);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXVAL_ISVALIDREF", 58);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND", 63);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
-    st->value_p = p_BOOL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
   }
-  { // 20908 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXSTEP_ISVALIDREF
+  { // 20908 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INOPCCOMMANDSDISABLED
     st = getVariable(20908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.MAXSTEP_ISVALIDREF", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INOPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20909 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INOPCCOMMANDSDISABLED
+  { // 20909 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.Q
     st = getVariable(20909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.INOPCCOMMANDSDISABLED", 62);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.Q", 55);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 20910 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.VALUE
+  { // 20910 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.STATUS
     st = getVariable(20910);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.VALUE", 46);
-    st->size_data = sizeof(LREAL);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.STATUS", 60);
+    st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
-    st->value_p = p_LREAL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
   }
-  { // 20911 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.ISVALIDVALUE
+  { // 20911 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.OPCCOMMANDSDISABLED
     st = getVariable(20911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.ISVALIDVALUE", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.OPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20912 PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.OPCCOMMANDSDISABLED
+  { // 20912 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ALG
     st = getVariable(20912);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.ANTIPOMPAG_Y0.OPCCOMMANDSDISABLED", 60);
-    st->size_data = sizeof(BOOL);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ALG", 67);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_ANALOGPARAMETR = (STRUCT_ANALOGPARAMETR*)&p_IMCONFIG->ANTIPOMPAG_Y0;
-    p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
   }
-  { // 20913 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND
+  { // 20913 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ARM
     st = getVariable(20913);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND", 44);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ARM", 67);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20914 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.STATUS
+  { // 20914 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.WAIT_TIME
     st = getVariable(20914);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.STATUS", 41);
-    st->size_data = sizeof(DWORD);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.WAIT_TIME", 55);
+    st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
-    st->value_p = p_DWORD;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
   }
-  { // 20915 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ONSTATUS
+  { // 20915 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INCOMMAND
     st = getVariable(20915);
-    memcpy(st->IEC_TYPE, "BYTE", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ONSTATUS", 43);
-    st->size_data = sizeof(BYTE);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INCOMMAND", 55);
+    st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
-    st->value_p = p_BYTE;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
   }
-  { // 20916 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INOPCCOMMANDSDISABLED
+  { // 20916 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INOPCCOMMANDSDISABLED
     st = getVariable(20916);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INOPCCOMMANDSDISABLED", 56);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20917 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.SDVIG
+  { // 20917 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.Q
     st = getVariable(20917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.SDVIG", 40);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.Q", 47);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 20918 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.NS
+  { // 20918 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.STATUS
     st = getVariable(20918);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.NS", 37);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
-    st->value_p = p_BOOL;
-  }
-  { // 20919 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.COMMANDFAULT
-    st = getVariable(20919);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.COMMANDFAULT", 47);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
-    st->value_p = p_BOOL;
-  }
-  { // 20920 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ACCIDENT
-    st = getVariable(20920);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ACCIDENT", 43);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
-    st->value_p = p_BOOL;
-  }
-  { // 20921 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.AUTO
-    st = getVariable(20921);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.AUTO", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
-    st->value_p = p_BOOL;
-  }
-  { // 20922 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.MANUAL
-    st = getVariable(20922);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.MANUAL", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
-    st->value_p = p_BOOL;
-  }
-  { // 20923 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LOCAL
-    st = getVariable(20923);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LOCAL", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
-    st->value_p = p_BOOL;
-  }
-  { // 20924 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.DISTANCE
-    st = getVariable(20924);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.DISTANCE", 43);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
-    st->value_p = p_BOOL;
-  }
-  { // 20925 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORPOWEROFF
-    st = getVariable(20925);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORPOWEROFF", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20926 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORBLOCK
-    st = getVariable(20926);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ERRORBLOCK", 45);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
-    st->value_p = p_BOOL;
-  }
-  { // 20927 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDON
-    st = getVariable(20927);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDON", 45);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20928 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDOFF
-    st = getVariable(20928);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.BREAKCMDOFF", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20929 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(20929);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.OPCCOMMANDSDISABLED", 54);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20930 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LASTCMDISON
-    st = getVariable(20930);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.LASTCMDISON", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
-    st->value_p = p_BOOL;
-  }
-  { // 20931 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATON
-    st = getVariable(20931);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATON", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
-    st->value_p = p_BOOL;
-  }
-  { // 20932 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(20932);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_STATOFF", 53);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20933 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDON
-    st = getVariable(20933);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDON", 51);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20934 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(20934);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_CMDOFF", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20935 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20935);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20936 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20936);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20937 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ALG
-    st = getVariable(20937);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ALG", 48);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 20938 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ARM
-    st = getVariable(20938);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.INCOMMAND_ARM", 48);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 20939 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDON
-    st = getVariable(20939);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDON", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20940 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDOFF
-    st = getVariable(20940);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.CMDOFF", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20941 PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.RELIABILITY
-    st = getVariable(20941);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V3_AVOM.RELIABILITY", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V3_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 20942 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND
-    st = getVariable(20942);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND", 44);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 20943 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.STATUS
-    st = getVariable(20943);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.STATUS", 41);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.STATUS", 52);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20944 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ONSTATUS
-    st = getVariable(20944);
-    memcpy(st->IEC_TYPE, "BYTE", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ONSTATUS", 43);
-    st->size_data = sizeof(BYTE);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
-    st->value_p = p_BYTE;
-  }
-  { // 20945 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(20945);
+  { // 20919 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.OPCCOMMANDSDISABLED
+    st = getVariable(20919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INOPCCOMMANDSDISABLED", 56);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20946 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.SDVIG
-    st = getVariable(20946);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.SDVIG", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
-    st->value_p = p_BOOL;
-  }
-  { // 20947 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.NS
-    st = getVariable(20947);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.NS", 37);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
-    st->value_p = p_BOOL;
-  }
-  { // 20948 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.COMMANDFAULT
-    st = getVariable(20948);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.COMMANDFAULT", 47);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
-    st->value_p = p_BOOL;
-  }
-  { // 20949 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ACCIDENT
-    st = getVariable(20949);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ACCIDENT", 43);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
-    st->value_p = p_BOOL;
-  }
-  { // 20950 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.AUTO
-    st = getVariable(20950);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.AUTO", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
-    st->value_p = p_BOOL;
-  }
-  { // 20951 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.MANUAL
-    st = getVariable(20951);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.MANUAL", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
-    st->value_p = p_BOOL;
-  }
-  { // 20952 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LOCAL
-    st = getVariable(20952);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LOCAL", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
-    st->value_p = p_BOOL;
-  }
-  { // 20953 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.DISTANCE
-    st = getVariable(20953);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.DISTANCE", 43);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
-    st->value_p = p_BOOL;
-  }
-  { // 20954 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORPOWEROFF
-    st = getVariable(20954);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORPOWEROFF", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20955 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORBLOCK
-    st = getVariable(20955);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ERRORBLOCK", 45);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
-    st->value_p = p_BOOL;
-  }
-  { // 20956 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDON
-    st = getVariable(20956);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDON", 45);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20957 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDOFF
-    st = getVariable(20957);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.BREAKCMDOFF", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20958 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(20958);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.OPCCOMMANDSDISABLED", 54);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 20959 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LASTCMDISON
-    st = getVariable(20959);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.LASTCMDISON", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
-    st->value_p = p_BOOL;
-  }
-  { // 20960 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATON
-    st = getVariable(20960);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATON", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
-    st->value_p = p_BOOL;
-  }
-  { // 20961 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(20961);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_STATOFF", 53);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20962 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDON
-    st = getVariable(20962);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDON", 51);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20963 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(20963);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_CMDOFF", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20964 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20964);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON", 58);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 20965 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20965);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF", 59);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 20966 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ALG
-    st = getVariable(20966);
+  { // 20920 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ALG
+    st = getVariable(20920);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ALG", 48);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20967 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ARM
-    st = getVariable(20967);
+  { // 20921 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ARM
+    st = getVariable(20921);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.INCOMMAND_ARM", 48);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20968 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDON
-    st = getVariable(20968);
+  { // 20922 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.WAIT_TIME
+    st = getVariable(20922);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.WAIT_TIME", 58);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 20923 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND
+    st = getVariable(20923);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND", 58);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 20924 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INOPCCOMMANDSDISABLED
+    st = getVariable(20924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDON", 40);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INOPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20969 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDOFF
-    st = getVariable(20969);
+  { // 20925 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.Q
+    st = getVariable(20925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.CMDOFF", 41);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.Q", 50);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 20970 PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.RELIABILITY
-    st = getVariable(20970);
+  { // 20926 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.STATUS
+    st = getVariable(20926);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.STATUS", 55);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 20927 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.OPCCOMMANDSDISABLED
+    st = getVariable(20927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.V4_AVOM.RELIABILITY", 46);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.OPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->V4_AVOM;
-    p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20971 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND
-    st = getVariable(20971);
+  { // 20928 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ALG
+    st = getVariable(20928);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ALG", 62);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 20929 PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ARM
+    st = getVariable(20929);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ARM", 62);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
+    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 20930 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND
+    st = getVariable(20930);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -13167,8 +12853,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 20972 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.STATUS
-    st = getVariable(20972);
+  { // 20931 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.STATUS
+    st = getVariable(20931);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -13179,8 +12865,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 20973 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ONSTATUS
-    st = getVariable(20973);
+  { // 20932 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ONSTATUS
+    st = getVariable(20932);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ONSTATUS", 49);
     st->size_data = sizeof(BYTE);
@@ -13191,8 +12877,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 20974 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(20974);
+  { // 20933 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(20933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -13203,8 +12889,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20975 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.SDVIG
-    st = getVariable(20975);
+  { // 20934 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.SDVIG
+    st = getVariable(20934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.SDVIG", 46);
     st->size_data = sizeof(BOOL);
@@ -13215,8 +12901,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 20976 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.NS
-    st = getVariable(20976);
+  { // 20935 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.NS
+    st = getVariable(20935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.NS", 43);
     st->size_data = sizeof(BOOL);
@@ -13227,8 +12913,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 20977 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.COMMANDFAULT
-    st = getVariable(20977);
+  { // 20936 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.COMMANDFAULT
+    st = getVariable(20936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.COMMANDFAULT", 53);
     st->size_data = sizeof(BOOL);
@@ -13239,8 +12925,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 20978 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ACCIDENT
-    st = getVariable(20978);
+  { // 20937 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ACCIDENT
+    st = getVariable(20937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ACCIDENT", 49);
     st->size_data = sizeof(BOOL);
@@ -13251,8 +12937,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 20979 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.AUTO
-    st = getVariable(20979);
+  { // 20938 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.AUTO
+    st = getVariable(20938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.AUTO", 45);
     st->size_data = sizeof(BOOL);
@@ -13263,8 +12949,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 20980 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.MANUAL
-    st = getVariable(20980);
+  { // 20939 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.MANUAL
+    st = getVariable(20939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.MANUAL", 47);
     st->size_data = sizeof(BOOL);
@@ -13275,8 +12961,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 20981 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.LOCAL
-    st = getVariable(20981);
+  { // 20940 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.LOCAL
+    st = getVariable(20940);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.LOCAL", 46);
     st->size_data = sizeof(BOOL);
@@ -13287,8 +12973,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 20982 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.DISTANCE
-    st = getVariable(20982);
+  { // 20941 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.DISTANCE
+    st = getVariable(20941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.DISTANCE", 49);
     st->size_data = sizeof(BOOL);
@@ -13299,8 +12985,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 20983 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ERRORPOWEROFF
-    st = getVariable(20983);
+  { // 20942 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ERRORPOWEROFF
+    st = getVariable(20942);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ERRORPOWEROFF", 54);
     st->size_data = sizeof(BOOL);
@@ -13311,8 +12997,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 20984 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ERRORBLOCK
-    st = getVariable(20984);
+  { // 20943 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ERRORBLOCK
+    st = getVariable(20943);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ERRORBLOCK", 51);
     st->size_data = sizeof(BOOL);
@@ -13323,8 +13009,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 20985 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.BREAKCMDON
-    st = getVariable(20985);
+  { // 20944 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.BREAKCMDON
+    st = getVariable(20944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.BREAKCMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -13335,8 +13021,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20986 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.BREAKCMDOFF
-    st = getVariable(20986);
+  { // 20945 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.BREAKCMDOFF
+    st = getVariable(20945);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.BREAKCMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -13347,8 +13033,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20987 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED
-    st = getVariable(20987);
+  { // 20946 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED
+    st = getVariable(20946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -13359,8 +13045,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 20988 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.LASTCMDISON
-    st = getVariable(20988);
+  { // 20947 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.LASTCMDISON
+    st = getVariable(20947);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.LASTCMDISON", 52);
     st->size_data = sizeof(BOOL);
@@ -13371,8 +13057,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 20989 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_STATON
-    st = getVariable(20989);
+  { // 20948 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_STATON
+    st = getVariable(20948);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_STATON", 58);
     st->size_data = sizeof(BOOL);
@@ -13383,8 +13069,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 20990 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_STATOFF
-    st = getVariable(20990);
+  { // 20949 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_STATOFF
+    st = getVariable(20949);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_STATOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -13395,8 +13081,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 20991 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_CMDON
-    st = getVariable(20991);
+  { // 20950 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_CMDON
+    st = getVariable(20950);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_CMDON", 57);
     st->size_data = sizeof(BOOL);
@@ -13407,8 +13093,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20992 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF
-    st = getVariable(20992);
+  { // 20951 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF
+    st = getVariable(20951);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF", 58);
     st->size_data = sizeof(BOOL);
@@ -13419,8 +13105,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20993 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(20993);
+  { // 20952 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20952);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -13431,8 +13117,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 20994 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(20994);
+  { // 20953 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20953);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -13443,8 +13129,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20995 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND_ALG
-    st = getVariable(20995);
+  { // 20954 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND_ALG
+    st = getVariable(20954);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -13455,8 +13141,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 20996 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND_ARM
-    st = getVariable(20996);
+  { // 20955 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND_ARM
+    st = getVariable(20955);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -13467,8 +13153,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 20997 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.CMDON
-    st = getVariable(20997);
+  { // 20956 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.CMDON
+    st = getVariable(20956);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.CMDON", 46);
     st->size_data = sizeof(BOOL);
@@ -13479,8 +13165,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 20998 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.CMDOFF
-    st = getVariable(20998);
+  { // 20957 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.CMDOFF
+    st = getVariable(20957);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.CMDOFF", 47);
     st->size_data = sizeof(BOOL);
@@ -13491,8 +13177,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 20999 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.RELIABILITY
-    st = getVariable(20999);
+  { // 20958 PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.RELIABILITY
+    st = getVariable(20958);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KALORIFERAVOM.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -13503,8 +13189,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 21000 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND
-    st = getVariable(21000);
+  { // 20959 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND
+    st = getVariable(20959);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND", 40);
     st->size_data = sizeof(WORD);
@@ -13515,8 +13201,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 21001 PROGRAM0.IM_STRUCTS_INI.IM.CMN.STATUS
-    st = getVariable(21001);
+  { // 20960 PROGRAM0.IM_STRUCTS_INI.IM.CMN.STATUS
+    st = getVariable(20960);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.STATUS", 37);
     st->size_data = sizeof(DWORD);
@@ -13527,8 +13213,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 21002 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ONSTATUS
-    st = getVariable(21002);
+  { // 20961 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ONSTATUS
+    st = getVariable(20961);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ONSTATUS", 39);
     st->size_data = sizeof(BYTE);
@@ -13539,8 +13225,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 21003 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INOPCCOMMANDSDISABLED
-    st = getVariable(21003);
+  { // 20962 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INOPCCOMMANDSDISABLED
+    st = getVariable(20962);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.INOPCCOMMANDSDISABLED", 52);
     st->size_data = sizeof(BOOL);
@@ -13551,8 +13237,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 21004 PROGRAM0.IM_STRUCTS_INI.IM.CMN.SDVIG
-    st = getVariable(21004);
+  { // 20963 PROGRAM0.IM_STRUCTS_INI.IM.CMN.SDVIG
+    st = getVariable(20963);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.SDVIG", 36);
     st->size_data = sizeof(BOOL);
@@ -13563,8 +13249,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 21005 PROGRAM0.IM_STRUCTS_INI.IM.CMN.NS
-    st = getVariable(21005);
+  { // 20964 PROGRAM0.IM_STRUCTS_INI.IM.CMN.NS
+    st = getVariable(20964);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.NS", 33);
     st->size_data = sizeof(BOOL);
@@ -13575,8 +13261,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 21006 PROGRAM0.IM_STRUCTS_INI.IM.CMN.COMMANDFAULT
-    st = getVariable(21006);
+  { // 20965 PROGRAM0.IM_STRUCTS_INI.IM.CMN.COMMANDFAULT
+    st = getVariable(20965);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.COMMANDFAULT", 43);
     st->size_data = sizeof(BOOL);
@@ -13587,8 +13273,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 21007 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ACCIDENT
-    st = getVariable(21007);
+  { // 20966 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ACCIDENT
+    st = getVariable(20966);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ACCIDENT", 39);
     st->size_data = sizeof(BOOL);
@@ -13599,8 +13285,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 21008 PROGRAM0.IM_STRUCTS_INI.IM.CMN.AUTO
-    st = getVariable(21008);
+  { // 20967 PROGRAM0.IM_STRUCTS_INI.IM.CMN.AUTO
+    st = getVariable(20967);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.AUTO", 35);
     st->size_data = sizeof(BOOL);
@@ -13611,8 +13297,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 21009 PROGRAM0.IM_STRUCTS_INI.IM.CMN.MANUAL
-    st = getVariable(21009);
+  { // 20968 PROGRAM0.IM_STRUCTS_INI.IM.CMN.MANUAL
+    st = getVariable(20968);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.MANUAL", 37);
     st->size_data = sizeof(BOOL);
@@ -13623,8 +13309,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 21010 PROGRAM0.IM_STRUCTS_INI.IM.CMN.LOCAL
-    st = getVariable(21010);
+  { // 20969 PROGRAM0.IM_STRUCTS_INI.IM.CMN.LOCAL
+    st = getVariable(20969);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.LOCAL", 36);
     st->size_data = sizeof(BOOL);
@@ -13635,8 +13321,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 21011 PROGRAM0.IM_STRUCTS_INI.IM.CMN.DISTANCE
-    st = getVariable(21011);
+  { // 20970 PROGRAM0.IM_STRUCTS_INI.IM.CMN.DISTANCE
+    st = getVariable(20970);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.DISTANCE", 39);
     st->size_data = sizeof(BOOL);
@@ -13647,8 +13333,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 21012 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ERRORPOWEROFF
-    st = getVariable(21012);
+  { // 20971 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ERRORPOWEROFF
+    st = getVariable(20971);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ERRORPOWEROFF", 44);
     st->size_data = sizeof(BOOL);
@@ -13659,8 +13345,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 21013 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ERRORBLOCK
-    st = getVariable(21013);
+  { // 20972 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ERRORBLOCK
+    st = getVariable(20972);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ERRORBLOCK", 41);
     st->size_data = sizeof(BOOL);
@@ -13671,8 +13357,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 21014 PROGRAM0.IM_STRUCTS_INI.IM.CMN.BREAKCMDON
-    st = getVariable(21014);
+  { // 20973 PROGRAM0.IM_STRUCTS_INI.IM.CMN.BREAKCMDON
+    st = getVariable(20973);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.BREAKCMDON", 41);
     st->size_data = sizeof(BOOL);
@@ -13683,8 +13369,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 21015 PROGRAM0.IM_STRUCTS_INI.IM.CMN.BREAKCMDOFF
-    st = getVariable(21015);
+  { // 20974 PROGRAM0.IM_STRUCTS_INI.IM.CMN.BREAKCMDOFF
+    st = getVariable(20974);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.BREAKCMDOFF", 42);
     st->size_data = sizeof(BOOL);
@@ -13695,8 +13381,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21016 PROGRAM0.IM_STRUCTS_INI.IM.CMN.OPCCOMMANDSDISABLED
-    st = getVariable(21016);
+  { // 20975 PROGRAM0.IM_STRUCTS_INI.IM.CMN.OPCCOMMANDSDISABLED
+    st = getVariable(20975);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.OPCCOMMANDSDISABLED", 50);
     st->size_data = sizeof(BOOL);
@@ -13707,8 +13393,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 21017 PROGRAM0.IM_STRUCTS_INI.IM.CMN.LASTCMDISON
-    st = getVariable(21017);
+  { // 20976 PROGRAM0.IM_STRUCTS_INI.IM.CMN.LASTCMDISON
+    st = getVariable(20976);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.LASTCMDISON", 42);
     st->size_data = sizeof(BOOL);
@@ -13719,8 +13405,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 21018 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_STATON
-    st = getVariable(21018);
+  { // 20977 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_STATON
+    st = getVariable(20977);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_STATON", 48);
     st->size_data = sizeof(BOOL);
@@ -13731,8 +13417,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 21019 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_STATOFF
-    st = getVariable(21019);
+  { // 20978 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_STATOFF
+    st = getVariable(20978);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_STATOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -13743,8 +13429,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 21020 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_CMDON
-    st = getVariable(21020);
+  { // 20979 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_CMDON
+    st = getVariable(20979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_CMDON", 47);
     st->size_data = sizeof(BOOL);
@@ -13755,8 +13441,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 21021 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_CMDOFF
-    st = getVariable(21021);
+  { // 20980 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_CMDOFF
+    st = getVariable(20980);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_CMDOFF", 48);
     st->size_data = sizeof(BOOL);
@@ -13767,8 +13453,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21022 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_INBREAKCMDON
-    st = getVariable(21022);
+  { // 20981 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_INBREAKCMDON
+    st = getVariable(20981);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_INBREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -13779,8 +13465,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 21023 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(21023);
+  { // 20982 PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(20982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.ISVALIDREF_INBREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -13791,8 +13477,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21024 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND_ALG
-    st = getVariable(21024);
+  { // 20983 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND_ALG
+    st = getVariable(20983);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND_ALG", 44);
     st->size_data = sizeof(WORD);
@@ -13803,8 +13489,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 21025 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND_ARM
-    st = getVariable(21025);
+  { // 20984 PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND_ARM
+    st = getVariable(20984);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.INCOMMAND_ARM", 44);
     st->size_data = sizeof(WORD);
@@ -13815,8 +13501,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 21026 PROGRAM0.IM_STRUCTS_INI.IM.CMN.CMDON
-    st = getVariable(21026);
+  { // 20985 PROGRAM0.IM_STRUCTS_INI.IM.CMN.CMDON
+    st = getVariable(20985);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.CMDON", 36);
     st->size_data = sizeof(BOOL);
@@ -13827,8 +13513,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 21027 PROGRAM0.IM_STRUCTS_INI.IM.CMN.CMDOFF
-    st = getVariable(21027);
+  { // 20986 PROGRAM0.IM_STRUCTS_INI.IM.CMN.CMDOFF
+    st = getVariable(20986);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.CMDOFF", 37);
     st->size_data = sizeof(BOOL);
@@ -13839,8 +13525,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21028 PROGRAM0.IM_STRUCTS_INI.IM.CMN.RELIABILITY
-    st = getVariable(21028);
+  { // 20987 PROGRAM0.IM_STRUCTS_INI.IM.CMN.RELIABILITY
+    st = getVariable(20987);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.CMN.RELIABILITY", 42);
     st->size_data = sizeof(BOOL);
@@ -13851,356 +13537,356 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 21029 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INCOMMAND
-    st = getVariable(21029);
+  { // 20988 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INCOMMAND
+    st = getVariable(20988);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INCOMMAND", 51);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INCOMMAND", 51);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 21030 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.STATUS
-    st = getVariable(21030);
+  { // 20989 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.STATUS
+    st = getVariable(20989);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.STATUS", 48);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.STATUS", 48);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 21031 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ONSTATUS
-    st = getVariable(21031);
+  { // 20990 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ONSTATUS
+    st = getVariable(20990);
     memcpy(st->IEC_TYPE, "BYTE", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ONSTATUS", 50);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ONSTATUS", 50);
     st->size_data = sizeof(BYTE);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 21032 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INOPCCOMMANDSDISABLED
-    st = getVariable(21032);
+  { // 20991 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INOPCCOMMANDSDISABLED
+    st = getVariable(20991);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INOPCCOMMANDSDISABLED", 63);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INOPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 21033 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.SDVIG
-    st = getVariable(21033);
+  { // 20992 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.SDVIG
+    st = getVariable(20992);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.SDVIG", 47);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.SDVIG", 47);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 21034 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.NS
-    st = getVariable(21034);
+  { // 20993 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.NS
+    st = getVariable(20993);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.NS", 44);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.NS", 44);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 21035 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.COMMANDFAULT
-    st = getVariable(21035);
+  { // 20994 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.COMMANDFAULT
+    st = getVariable(20994);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.COMMANDFAULT", 54);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.COMMANDFAULT", 54);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 21036 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ACCIDENT
-    st = getVariable(21036);
+  { // 20995 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ACCIDENT
+    st = getVariable(20995);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ACCIDENT", 50);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ACCIDENT", 50);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 21037 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.AUTO
-    st = getVariable(21037);
+  { // 20996 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.AUTO
+    st = getVariable(20996);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.AUTO", 46);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.AUTO", 46);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 21038 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.MANUAL
-    st = getVariable(21038);
+  { // 20997 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.MANUAL
+    st = getVariable(20997);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.MANUAL", 48);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.MANUAL", 48);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 21039 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.LOCAL
-    st = getVariable(21039);
+  { // 20998 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.LOCAL
+    st = getVariable(20998);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.LOCAL", 47);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.LOCAL", 47);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 21040 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.DISTANCE
-    st = getVariable(21040);
+  { // 20999 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.DISTANCE
+    st = getVariable(20999);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.DISTANCE", 50);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.DISTANCE", 50);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 21041 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ERRORPOWEROFF
-    st = getVariable(21041);
+  { // 21000 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ERRORPOWEROFF
+    st = getVariable(21000);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ERRORPOWEROFF", 55);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ERRORPOWEROFF", 55);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 21042 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ERRORBLOCK
-    st = getVariable(21042);
+  { // 21001 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ERRORBLOCK
+    st = getVariable(21001);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ERRORBLOCK", 52);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ERRORBLOCK", 52);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 21043 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.BREAKCMDON
-    st = getVariable(21043);
+  { // 21002 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.BREAKCMDON
+    st = getVariable(21002);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.BREAKCMDON", 52);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.BREAKCMDON", 52);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 21044 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.BREAKCMDOFF
-    st = getVariable(21044);
+  { // 21003 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.BREAKCMDOFF
+    st = getVariable(21003);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.BREAKCMDOFF", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.BREAKCMDOFF", 53);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21045 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.OPCCOMMANDSDISABLED
-    st = getVariable(21045);
+  { // 21004 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.OPCCOMMANDSDISABLED
+    st = getVariable(21004);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.OPCCOMMANDSDISABLED", 61);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.OPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 21046 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.LASTCMDISON
-    st = getVariable(21046);
+  { // 21005 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.LASTCMDISON
+    st = getVariable(21005);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.LASTCMDISON", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.LASTCMDISON", 53);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 21047 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_STATON
-    st = getVariable(21047);
+  { // 21006 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_STATON
+    st = getVariable(21006);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_STATON", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_STATON", 59);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 21048 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_STATOFF
-    st = getVariable(21048);
+  { // 21007 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_STATOFF
+    st = getVariable(21007);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_STATOFF", 60);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_STATOFF", 60);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 21049 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDON
-    st = getVariable(21049);
+  { // 21008 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_CMDON
+    st = getVariable(21008);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDON", 58);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_CMDON", 58);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 21050 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDOFF
-    st = getVariable(21050);
+  { // 21009 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_CMDOFF
+    st = getVariable(21009);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_CMDOFF", 59);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_CMDOFF", 59);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21051 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDON
-    st = getVariable(21051);
+  { // 21010 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDON
+    st = getVariable(21010);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDON", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDON", 65);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 21052 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(21052);
+  { // 21011 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(21011);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.ISVALIDREF_INBREAKCMDOFF", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDOFF", 66);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21053 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INCOMMAND_ALG
-    st = getVariable(21053);
+  { // 21012 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INCOMMAND_ALG
+    st = getVariable(21012);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INCOMMAND_ALG", 55);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INCOMMAND_ALG", 55);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 21054 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INCOMMAND_ARM
-    st = getVariable(21054);
+  { // 21013 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INCOMMAND_ARM
+    st = getVariable(21013);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.INCOMMAND_ARM", 55);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.INCOMMAND_ARM", 55);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 21055 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.CMDON
-    st = getVariable(21055);
+  { // 21014 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.CMDON
+    st = getVariable(21014);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.CMDON", 47);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.CMDON", 47);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 21056 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.CMDOFF
-    st = getVariable(21056);
+  { // 21015 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.CMDOFF
+    st = getVariable(21015);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.CMDOFF", 48);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.CMDOFF", 48);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21057 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.RELIABILITY
-    st = getVariable(21057);
+  { // 21016 PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.RELIABILITY
+    st = getVariable(21016);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTIRA.RELIABILITY", 53);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_KOLLECTORA.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTIRA;
+    p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_KOLLECTORA;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 21058 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND
-    st = getVariable(21058);
+  { // 21017 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND
+    st = getVariable(21017);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND", 43);
     st->size_data = sizeof(WORD);
@@ -14211,8 +13897,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 21059 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.STATUS
-    st = getVariable(21059);
+  { // 21018 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.STATUS
+    st = getVariable(21018);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.STATUS", 40);
     st->size_data = sizeof(DWORD);
@@ -14223,8 +13909,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 21060 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ONSTATUS
-    st = getVariable(21060);
+  { // 21019 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ONSTATUS
+    st = getVariable(21019);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ONSTATUS", 42);
     st->size_data = sizeof(BYTE);
@@ -14235,8 +13921,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 21061 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INOPCCOMMANDSDISABLED
-    st = getVariable(21061);
+  { // 21020 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INOPCCOMMANDSDISABLED
+    st = getVariable(21020);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INOPCCOMMANDSDISABLED", 55);
     st->size_data = sizeof(BOOL);
@@ -14247,8 +13933,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 21062 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.SDVIG
-    st = getVariable(21062);
+  { // 21021 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.SDVIG
+    st = getVariable(21021);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.SDVIG", 39);
     st->size_data = sizeof(BOOL);
@@ -14259,8 +13945,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 21063 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.NS
-    st = getVariable(21063);
+  { // 21022 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.NS
+    st = getVariable(21022);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.NS", 36);
     st->size_data = sizeof(BOOL);
@@ -14271,8 +13957,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 21064 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.COMMANDFAULT
-    st = getVariable(21064);
+  { // 21023 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.COMMANDFAULT
+    st = getVariable(21023);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.COMMANDFAULT", 46);
     st->size_data = sizeof(BOOL);
@@ -14283,8 +13969,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 21065 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ACCIDENT
-    st = getVariable(21065);
+  { // 21024 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ACCIDENT
+    st = getVariable(21024);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ACCIDENT", 42);
     st->size_data = sizeof(BOOL);
@@ -14295,8 +13981,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 21066 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.AUTO
-    st = getVariable(21066);
+  { // 21025 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.AUTO
+    st = getVariable(21025);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.AUTO", 38);
     st->size_data = sizeof(BOOL);
@@ -14307,8 +13993,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 21067 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.MANUAL
-    st = getVariable(21067);
+  { // 21026 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.MANUAL
+    st = getVariable(21026);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.MANUAL", 40);
     st->size_data = sizeof(BOOL);
@@ -14319,8 +14005,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 21068 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.LOCAL
-    st = getVariable(21068);
+  { // 21027 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.LOCAL
+    st = getVariable(21027);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.LOCAL", 39);
     st->size_data = sizeof(BOOL);
@@ -14331,8 +14017,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 21069 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.DISTANCE
-    st = getVariable(21069);
+  { // 21028 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.DISTANCE
+    st = getVariable(21028);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.DISTANCE", 42);
     st->size_data = sizeof(BOOL);
@@ -14343,8 +14029,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 21070 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ERRORPOWEROFF
-    st = getVariable(21070);
+  { // 21029 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ERRORPOWEROFF
+    st = getVariable(21029);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ERRORPOWEROFF", 47);
     st->size_data = sizeof(BOOL);
@@ -14355,8 +14041,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 21071 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ERRORBLOCK
-    st = getVariable(21071);
+  { // 21030 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ERRORBLOCK
+    st = getVariable(21030);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ERRORBLOCK", 44);
     st->size_data = sizeof(BOOL);
@@ -14367,8 +14053,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 21072 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.BREAKCMDON
-    st = getVariable(21072);
+  { // 21031 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.BREAKCMDON
+    st = getVariable(21031);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.BREAKCMDON", 44);
     st->size_data = sizeof(BOOL);
@@ -14379,8 +14065,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 21073 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.BREAKCMDOFF
-    st = getVariable(21073);
+  { // 21032 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.BREAKCMDOFF
+    st = getVariable(21032);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.BREAKCMDOFF", 45);
     st->size_data = sizeof(BOOL);
@@ -14391,8 +14077,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21074 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.OPCCOMMANDSDISABLED
-    st = getVariable(21074);
+  { // 21033 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.OPCCOMMANDSDISABLED
+    st = getVariable(21033);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.OPCCOMMANDSDISABLED", 53);
     st->size_data = sizeof(BOOL);
@@ -14403,8 +14089,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 21075 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.LASTCMDISON
-    st = getVariable(21075);
+  { // 21034 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.LASTCMDISON
+    st = getVariable(21034);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.LASTCMDISON", 45);
     st->size_data = sizeof(BOOL);
@@ -14415,8 +14101,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 21076 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_STATON
-    st = getVariable(21076);
+  { // 21035 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_STATON
+    st = getVariable(21035);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_STATON", 51);
     st->size_data = sizeof(BOOL);
@@ -14427,8 +14113,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 21077 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_STATOFF
-    st = getVariable(21077);
+  { // 21036 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_STATOFF
+    st = getVariable(21036);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_STATOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -14439,8 +14125,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 21078 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_CMDON
-    st = getVariable(21078);
+  { // 21037 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_CMDON
+    st = getVariable(21037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_CMDON", 50);
     st->size_data = sizeof(BOOL);
@@ -14451,8 +14137,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 21079 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_CMDOFF
-    st = getVariable(21079);
+  { // 21038 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_CMDOFF
+    st = getVariable(21038);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_CMDOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -14463,8 +14149,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21080 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_INBREAKCMDON
-    st = getVariable(21080);
+  { // 21039 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_INBREAKCMDON
+    st = getVariable(21039);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_INBREAKCMDON", 57);
     st->size_data = sizeof(BOOL);
@@ -14475,8 +14161,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 21081 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(21081);
+  { // 21040 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(21040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF", 58);
     st->size_data = sizeof(BOOL);
@@ -14487,8 +14173,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21082 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND_ALG
-    st = getVariable(21082);
+  { // 21041 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND_ALG
+    st = getVariable(21041);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND_ALG", 47);
     st->size_data = sizeof(WORD);
@@ -14499,8 +14185,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 21083 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND_ARM
-    st = getVariable(21083);
+  { // 21042 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND_ARM
+    st = getVariable(21042);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.INCOMMAND_ARM", 47);
     st->size_data = sizeof(WORD);
@@ -14511,8 +14197,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 21084 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.CMDON
-    st = getVariable(21084);
+  { // 21043 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.CMDON
+    st = getVariable(21043);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.CMDON", 39);
     st->size_data = sizeof(BOOL);
@@ -14523,8 +14209,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 21085 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.CMDOFF
-    st = getVariable(21085);
+  { // 21044 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.CMDOFF
+    st = getVariable(21044);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.CMDOFF", 40);
     st->size_data = sizeof(BOOL);
@@ -14535,8 +14221,8 @@ int __variables_init_IM_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 21086 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.RELIABILITY
-    st = getVariable(21086);
+  { // 21045 PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.RELIABILITY
+    st = getVariable(21045);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.TEN_MB.RELIABILITY", 45);
     st->size_data = sizeof(BOOL);
@@ -14545,390 +14231,6 @@ int __variables_init_IM_STRUCTS_INI(){
     p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
     p_STRUCT_SWITCH = (STRUCT_SWITCH*)&p_IMCONFIG->TEN_MB;
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 21087 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND
-    st = getVariable(21087);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND", 42);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
-    st->value_p = p_WORD;
-  }
-  { // 21088 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.STATUS
-    st = getVariable(21088);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.STATUS", 39);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 21089 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ONSTATUS
-    st = getVariable(21089);
-    memcpy(st->IEC_TYPE, "BYTE", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ONSTATUS", 41);
-    st->size_data = sizeof(BYTE);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
-    st->value_p = p_BYTE;
-  }
-  { // 21090 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INOPCCOMMANDSDISABLED
-    st = getVariable(21090);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INOPCCOMMANDSDISABLED", 54);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 21091 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SDVIG
-    st = getVariable(21091);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SDVIG", 38);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
-    st->value_p = p_BOOL;
-  }
-  { // 21092 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.NS
-    st = getVariable(21092);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.NS", 35);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
-    st->value_p = p_BOOL;
-  }
-  { // 21093 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DP
-    st = getVariable(21093);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DP", 35);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
-    st->value_p = p_BOOL;
-  }
-  { // 21094 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.COMMANDFAULT
-    st = getVariable(21094);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.COMMANDFAULT", 45);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
-    st->value_p = p_BOOL;
-  }
-  { // 21095 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ACCIDENT
-    st = getVariable(21095);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ACCIDENT", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
-    st->value_p = p_BOOL;
-  }
-  { // 21096 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.AUTO
-    st = getVariable(21096);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.AUTO", 37);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
-    st->value_p = p_BOOL;
-  }
-  { // 21097 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.MANUAL
-    st = getVariable(21097);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.MANUAL", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
-    st->value_p = p_BOOL;
-  }
-  { // 21098 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LOCAL
-    st = getVariable(21098);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LOCAL", 38);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
-    st->value_p = p_BOOL;
-  }
-  { // 21099 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DISTANCE
-    st = getVariable(21099);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.DISTANCE", 41);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
-    st->value_p = p_BOOL;
-  }
-  { // 21100 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORPOWEROFF
-    st = getVariable(21100);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORPOWEROFF", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
-    st->value_p = p_BOOL;
-  }
-  { // 21101 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORBLOCK
-    st = getVariable(21101);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ERRORBLOCK", 43);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
-    st->value_p = p_BOOL;
-  }
-  { // 21102 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SO
-    st = getVariable(21102);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SO", 35);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
-    st->value_p = p_BOOL;
-  }
-  { // 21103 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SZ
-    st = getVariable(21103);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.SZ", 35);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
-    st->value_p = p_BOOL;
-  }
-  { // 21104 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.OPCCOMMANDSDISABLED
-    st = getVariable(21104);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.OPCCOMMANDSDISABLED", 52);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
-    st->value_p = p_BOOL;
-  }
-  { // 21105 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LASTCMDISON
-    st = getVariable(21105);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.LASTCMDISON", 44);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
-    st->value_p = p_BOOL;
-  }
-  { // 21106 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATON
-    st = getVariable(21106);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATON", 50);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
-    st->value_p = p_BOOL;
-  }
-  { // 21107 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATOFF
-    st = getVariable(21107);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_STATOFF", 51);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 21108 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDON
-    st = getVariable(21108);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDON", 49);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 21109 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDOFF
-    st = getVariable(21109);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_CMDOFF", 50);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 21110 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSO
-    st = getVariable(21110);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSO", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
-    st->value_p = p_BOOL;
-  }
-  { // 21111 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSZ
-    st = getVariable(21111);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INSZ", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
-    st->value_p = p_BOOL;
-  }
-  { // 21112 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INDP
-    st = getVariable(21112);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.ISVALIDREF_INDP", 48);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
-    st->value_p = p_BOOL;
-  }
-  { // 21113 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CONTINUEHOLDCOMMAND
-    st = getVariable(21113);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CONTINUEHOLDCOMMAND", 52);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
-    st->value_p = p_TIME;
-  }
-  { // 21114 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ALG
-    st = getVariable(21114);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ALG", 46);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
-    st->value_p = p_WORD;
-  }
-  { // 21115 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ARM
-    st = getVariable(21115);
-    memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.INCOMMAND_ARM", 46);
-    st->size_data = sizeof(WORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
-    st->value_p = p_WORD;
-  }
-  { // 21116 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDON
-    st = getVariable(21116);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDON", 38);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
-    st->value_p = p_BOOL;
-  }
-  { // 21117 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDOFF
-    st = getVariable(21117);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.CMDOFF", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
-    st->value_p = p_BOOL;
-  }
-  { // 21118 PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.RELIABILITY
-    st = getVariable(21118);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.IM.KRAN3.RELIABILITY", 44);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_IM_INIT = (PROC_IM_INIT*)&p_PROGRAM0->IM_STRUCTS_INI;
-    p_IMCONFIG = (IMCONFIG*)p_PROC_IM_INIT->IM.value;
-    p_STRUCT_KRAN = (STRUCT_KRAN*)&p_IMCONFIG->KRAN3;
-    p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
 
