@@ -130,9 +130,9 @@ int __variables_init_DO_2(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_DO_2(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 18283 PROGRAM0.DO_PROC.DO_2.ARDOUT.WFLAGS
-    st = getVariable(18283);
+  { // 18781 PROGRAM0.DO_PROC.DO_2.ARDOUT.WFLAGS
+    st = getVariable(18781);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.ARDOUT.WFLAGS", 35);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_DO_2(){
     p_UINT = (UINT*)&p_TWORDDATA->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 18284 PROGRAM0.DO_PROC.DO_2.ARDOUT.WVALUE
-    st = getVariable(18284);
+  { // 18782 PROGRAM0.DO_PROC.DO_2.ARDOUT.WVALUE
+    st = getVariable(18782);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.ARDOUT.WVALUE", 35);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_DO_2(){
     p_UINT = (UINT*)&p_TWORDDATA->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 18285 PROGRAM0.DO_PROC.DO_2.ERR_MOD.WFLAGS
-    st = getVariable(18285);
+  { // 18783 PROGRAM0.DO_PROC.DO_2.ERR_MOD.WFLAGS
+    st = getVariable(18783);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.ERR_MOD.WFLAGS", 36);
     st->size_data = sizeof(UINT);
@@ -217,8 +217,8 @@ int __variables_init_DO_2(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 18286 PROGRAM0.DO_PROC.DO_2.ERR_MOD.WVALUE
-    st = getVariable(18286);
+  { // 18784 PROGRAM0.DO_PROC.DO_2.ERR_MOD.WVALUE
+    st = getVariable(18784);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.ERR_MOD.WVALUE", 36);
     st->size_data = sizeof(UINT);
@@ -229,8 +229,8 @@ int __variables_init_DO_2(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 18287 PROGRAM0.DO_PROC.DO_2.ERR_MOD.NANOSEC
-    st = getVariable(18287);
+  { // 18785 PROGRAM0.DO_PROC.DO_2.ERR_MOD.NANOSEC
+    st = getVariable(18785);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.ERR_MOD.NANOSEC", 37);
     st->size_data = sizeof(ULINT);
@@ -241,8 +241,8 @@ int __variables_init_DO_2(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 18288 PROGRAM0.DO_PROC.DO_2.ERR_MOD.RESERVE
-    st = getVariable(18288);
+  { // 18786 PROGRAM0.DO_PROC.DO_2.ERR_MOD.RESERVE
+    st = getVariable(18786);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.ERR_MOD.RESERVE", 37);
     st->size_data = sizeof(ULINT);
@@ -253,8 +253,8 @@ int __variables_init_DO_2(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 18289 PROGRAM0.DO_PROC.DO_2.STRDO.IMIT
-    st = getVariable(18289);
+  { // 18787 PROGRAM0.DO_PROC.DO_2.STRDO.IMIT
+    st = getVariable(18787);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.IMIT", 32);
     st->size_data = sizeof(BOOL);
@@ -265,8 +265,8 @@ int __variables_init_DO_2(){
     p_BOOL = (BOOL*)&p_STRUCT_DO->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 18290 PROGRAM0.DO_PROC.DO_2.STRDO.BLCONNECT
-    st = getVariable(18290);
+  { // 18788 PROGRAM0.DO_PROC.DO_2.STRDO.BLCONNECT
+    st = getVariable(18788);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BLCONNECT", 37);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_DO_2(){
     p_BOOL = (BOOL*)&p_STRUCT_DO->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 18291 PROGRAM0.DO_PROC.DO_2.STRDO.VALUE
-    st = getVariable(18291);
+  { // 18789 PROGRAM0.DO_PROC.DO_2.STRDO.VALUE
+    st = getVariable(18789);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.VALUE", 33);
     st->size_data = sizeof(WORD);
@@ -289,8 +289,8 @@ int __variables_init_DO_2(){
     p_WORD = (WORD*)&p_STRUCT_DO->VALUE;
     st->value_p = p_WORD;
   }
-  { // 18292 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[0]
-    st = getVariable(18292);
+  { // 18790 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[0]
+    st = getVariable(18790);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[0]", 35);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[0];;
   }
-  { // 18293 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[1]
-    st = getVariable(18293);
+  { // 18791 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[1]
+    st = getVariable(18791);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[1]", 35);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[1];;
   }
-  { // 18294 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[2]
-    st = getVariable(18294);
+  { // 18792 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[2]
+    st = getVariable(18792);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[2]", 35);
     st->size_data = sizeof(BOOL);
@@ -325,8 +325,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[2];;
   }
-  { // 18295 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[3]
-    st = getVariable(18295);
+  { // 18793 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[3]
+    st = getVariable(18793);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[3]", 35);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[3];;
   }
-  { // 18296 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[4]
-    st = getVariable(18296);
+  { // 18794 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[4]
+    st = getVariable(18794);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[4]", 35);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[4];;
   }
-  { // 18297 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[5]
-    st = getVariable(18297);
+  { // 18795 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[5]
+    st = getVariable(18795);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[5]", 35);
     st->size_data = sizeof(BOOL);
@@ -361,8 +361,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[5];;
   }
-  { // 18298 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[6]
-    st = getVariable(18298);
+  { // 18796 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[6]
+    st = getVariable(18796);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[6]", 35);
     st->size_data = sizeof(BOOL);
@@ -373,8 +373,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[6];;
   }
-  { // 18299 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[7]
-    st = getVariable(18299);
+  { // 18797 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[7]
+    st = getVariable(18797);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[7]", 35);
     st->size_data = sizeof(BOOL);
@@ -385,8 +385,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[7];;
   }
-  { // 18300 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[8]
-    st = getVariable(18300);
+  { // 18798 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[8]
+    st = getVariable(18798);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[8]", 35);
     st->size_data = sizeof(BOOL);
@@ -397,8 +397,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[8];;
   }
-  { // 18301 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[9]
-    st = getVariable(18301);
+  { // 18799 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[9]
+    st = getVariable(18799);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[9]", 35);
     st->size_data = sizeof(BOOL);
@@ -409,8 +409,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[9];;
   }
-  { // 18302 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[10]
-    st = getVariable(18302);
+  { // 18800 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[10]
+    st = getVariable(18800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[10]", 36);
     st->size_data = sizeof(BOOL);
@@ -421,8 +421,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[10];;
   }
-  { // 18303 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[11]
-    st = getVariable(18303);
+  { // 18801 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[11]
+    st = getVariable(18801);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[11]", 36);
     st->size_data = sizeof(BOOL);
@@ -433,8 +433,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[11];;
   }
-  { // 18304 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[12]
-    st = getVariable(18304);
+  { // 18802 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[12]
+    st = getVariable(18802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[12]", 36);
     st->size_data = sizeof(BOOL);
@@ -445,8 +445,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[12];;
   }
-  { // 18305 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[13]
-    st = getVariable(18305);
+  { // 18803 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[13]
+    st = getVariable(18803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[13]", 36);
     st->size_data = sizeof(BOOL);
@@ -457,8 +457,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[13];;
   }
-  { // 18306 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[14]
-    st = getVariable(18306);
+  { // 18804 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[14]
+    st = getVariable(18804);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[14]", 36);
     st->size_data = sizeof(BOOL);
@@ -469,8 +469,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[14];;
   }
-  { // 18307 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[15]
-    st = getVariable(18307);
+  { // 18805 PROGRAM0.DO_PROC.DO_2.STRDO.BITS[15]
+    st = getVariable(18805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.STRDO.BITS[15]", 36);
     st->size_data = sizeof(BOOL);
@@ -481,8 +481,8 @@ int __variables_init_DO_2(){
     p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
     st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[15];;
   }
-  { // 18308 PROGRAM0.DO_PROC.DO_2.BITNUMBER
-    st = getVariable(18308);
+  { // 18806 PROGRAM0.DO_PROC.DO_2.BITNUMBER
+    st = getVariable(18806);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.DO_2.BITNUMBER", 31);
     st->size_data = sizeof(INT);

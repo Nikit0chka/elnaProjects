@@ -130,9 +130,9 @@ int __variables_init_FB_OSTANOV(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_OSTANOV(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27341 PROGRAM0.IM_PROC.FB_OSTANOV.SIGNAL
-    st = getVariable(27341);
+  { // 27839 PROGRAM0.IM_PROC.FB_OSTANOV.SIGNAL
+    st = getVariable(27839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.SIGNAL", 34);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27342 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.WAIT_TIME
-    st = getVariable(27342);
+  { // 27840 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.WAIT_TIME
+    st = getVariable(27840);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.WAIT_TIME", 44);
     st->size_data = sizeof(TIME);
@@ -204,8 +204,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 27343 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND
-    st = getVariable(27343);
+  { // 27841 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND
+    st = getVariable(27841);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND", 44);
     st->size_data = sizeof(WORD);
@@ -216,8 +216,8 @@ int __variables_init_FB_OSTANOV(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27344 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(27344);
+  { // 27842 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(27842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INOPCCOMMANDSDISABLED", 56);
     st->size_data = sizeof(BOOL);
@@ -228,8 +228,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27345 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.Q
-    st = getVariable(27345);
+  { // 27843 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.Q
+    st = getVariable(27843);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.Q", 36);
     st->size_data = sizeof(BOOL);
@@ -240,8 +240,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 27346 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.STATUS
-    st = getVariable(27346);
+  { // 27844 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.STATUS
+    st = getVariable(27844);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.STATUS", 41);
     st->size_data = sizeof(DWORD);
@@ -252,8 +252,8 @@ int __variables_init_FB_OSTANOV(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27347 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(27347);
+  { // 27845 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(27845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.OPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -264,8 +264,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27348 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND_ALG
-    st = getVariable(27348);
+  { // 27846 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND_ALG
+    st = getVariable(27846);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND_ALG", 48);
     st->size_data = sizeof(WORD);
@@ -276,8 +276,8 @@ int __variables_init_FB_OSTANOV(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27349 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND_ARM
-    st = getVariable(27349);
+  { // 27847 PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND_ARM
+    st = getVariable(27847);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.STR_SO.INCOMMAND_ARM", 48);
     st->size_data = sizeof(WORD);
@@ -288,8 +288,8 @@ int __variables_init_FB_OSTANOV(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27350 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.IN
-    st = getVariable(27350);
+  { // 27848 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.IN
+    st = getVariable(27848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.IN", 41);
     st->size_data = sizeof(BOOL);
@@ -300,8 +300,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27351 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.PT
-    st = getVariable(27351);
+  { // 27849 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.PT
+    st = getVariable(27849);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.PT", 41);
     st->size_data = sizeof(TIME);
@@ -312,8 +312,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27352 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.Q
-    st = getVariable(27352);
+  { // 27850 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.Q
+    st = getVariable(27850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.Q", 40);
     st->size_data = sizeof(BOOL);
@@ -324,8 +324,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27353 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.ET
-    st = getVariable(27353);
+  { // 27851 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.ET
+    st = getVariable(27851);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER.ET", 41);
     st->size_data = sizeof(TIME);
@@ -336,8 +336,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27354 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER
-    st = getVariable(27354);
+  { // 27852 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER
+    st = getVariable(27852);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMER", 38);
     st->size_data = sizeof(TON);
@@ -347,8 +347,8 @@ int __variables_init_FB_OSTANOV(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27355 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.IN
-    st = getVariable(27355);
+  { // 27853 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.IN
+    st = getVariable(27853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -359,8 +359,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27356 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.PT
-    st = getVariable(27356);
+  { // 27854 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.PT
+    st = getVariable(27854);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.PT", 44);
     st->size_data = sizeof(TIME);
@@ -371,8 +371,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27357 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.Q
-    st = getVariable(27357);
+  { // 27855 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.Q
+    st = getVariable(27855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -383,8 +383,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27358 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.ET
-    st = getVariable(27358);
+  { // 27856 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.ET
+    st = getVariable(27856);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER.ET", 44);
     st->size_data = sizeof(TIME);
@@ -395,8 +395,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27359 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER
-    st = getVariable(27359);
+  { // 27857 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER
+    st = getVariable(27857);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMER", 41);
     st->size_data = sizeof(TON);
@@ -406,8 +406,8 @@ int __variables_init_FB_OSTANOV(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27360 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.IN
-    st = getVariable(27360);
+  { // 27858 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.IN
+    st = getVariable(27858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.IN", 42);
     st->size_data = sizeof(BOOL);
@@ -418,8 +418,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27361 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.PT
-    st = getVariable(27361);
+  { // 27859 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.PT
+    st = getVariable(27859);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.PT", 42);
     st->size_data = sizeof(TIME);
@@ -430,8 +430,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27362 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.Q
-    st = getVariable(27362);
+  { // 27860 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.Q
+    st = getVariable(27860);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -442,8 +442,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27363 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.ET
-    st = getVariable(27363);
+  { // 27861 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.ET
+    st = getVariable(27861);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND.ET", 42);
     st->size_data = sizeof(TIME);
@@ -454,8 +454,8 @@ int __variables_init_FB_OSTANOV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27364 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND
-    st = getVariable(27364);
+  { // 27862 PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND
+    st = getVariable(27862);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.TON_COMMAND", 39);
     st->size_data = sizeof(TON);
@@ -465,8 +465,8 @@ int __variables_init_FB_OSTANOV(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 27365 PROGRAM0.IM_PROC.FB_OSTANOV.SOURCE
-    st = getVariable(27365);
+  { // 27863 PROGRAM0.IM_PROC.FB_OSTANOV.SOURCE
+    st = getVariable(27863);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.SOURCE", 34);
     st->size_data = sizeof(BYTE);
@@ -476,8 +476,8 @@ int __variables_init_FB_OSTANOV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27366 PROGRAM0.IM_PROC.FB_OSTANOV.CMD
-    st = getVariable(27366);
+  { // 27864 PROGRAM0.IM_PROC.FB_OSTANOV.CMD
+    st = getVariable(27864);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.CMD", 31);
     st->size_data = sizeof(BYTE);
@@ -487,8 +487,8 @@ int __variables_init_FB_OSTANOV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27367 PROGRAM0.IM_PROC.FB_OSTANOV.LASTCMD
-    st = getVariable(27367);
+  { // 27865 PROGRAM0.IM_PROC.FB_OSTANOV.LASTCMD
+    st = getVariable(27865);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.LASTCMD", 35);
     st->size_data = sizeof(BYTE);
@@ -498,8 +498,8 @@ int __variables_init_FB_OSTANOV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27368 PROGRAM0.IM_PROC.FB_OSTANOV.SOURCE_FOR_STATUS
-    st = getVariable(27368);
+  { // 27866 PROGRAM0.IM_PROC.FB_OSTANOV.SOURCE_FOR_STATUS
+    st = getVariable(27866);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.SOURCE_FOR_STATUS", 45);
     st->size_data = sizeof(BYTE);
@@ -509,8 +509,8 @@ int __variables_init_FB_OSTANOV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27369 PROGRAM0.IM_PROC.FB_OSTANOV.CMD_FOR_STATUS
-    st = getVariable(27369);
+  { // 27867 PROGRAM0.IM_PROC.FB_OSTANOV.CMD_FOR_STATUS
+    st = getVariable(27867);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.CMD_FOR_STATUS", 42);
     st->size_data = sizeof(BYTE);
@@ -520,8 +520,8 @@ int __variables_init_FB_OSTANOV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27370 PROGRAM0.IM_PROC.FB_OSTANOV.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27370);
+  { // 27868 PROGRAM0.IM_PROC.FB_OSTANOV.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(27868);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.COMMAND_ERROR_FOR_STATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -531,8 +531,8 @@ int __variables_init_FB_OSTANOV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27371 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMERPRIZNAK
-    st = getVariable(27371);
+  { // 27869 PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMERPRIZNAK
+    st = getVariable(27869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.PULSETIMERPRIZNAK", 45);
     st->size_data = sizeof(BOOL);
@@ -542,8 +542,8 @@ int __variables_init_FB_OSTANOV(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27372 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMERPRIZNAK
-    st = getVariable(27372);
+  { // 27870 PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMERPRIZNAK
+    st = getVariable(27870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_OSTANOV.RESETCMDTIMERPRIZNAK", 48);
     st->size_data = sizeof(BOOL);

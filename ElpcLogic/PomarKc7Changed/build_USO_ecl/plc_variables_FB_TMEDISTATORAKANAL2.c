@@ -130,9 +130,9 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 3635 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.WFLAGS
-    st = getVariable(3635);
+  { // 3745 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.WFLAGS
+    st = getVariable(3745);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.WFLAGS", 51);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_UINT = (UINT*)&p_TITEMAIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 3636 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.WRESERVED
-    st = getVariable(3636);
+  { // 3746 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.WRESERVED
+    st = getVariable(3746);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.WRESERVED", 54);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_UINT = (UINT*)&p_TITEMAIN->WRESERVED;
     st->value_p = p_UINT;
   }
-  { // 3637 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.DBLVALUE
-    st = getVariable(3637);
+  { // 3747 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.DBLVALUE
+    st = getVariable(3747);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.DBLVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -217,8 +217,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_TITEMAIN->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 3638 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.NANOSEC
-    st = getVariable(3638);
+  { // 3748 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.NANOSEC
+    st = getVariable(3748);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.NANOSEC", 52);
     st->size_data = sizeof(ULINT);
@@ -229,8 +229,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_ULINT = (ULINT*)&p_TITEMAIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 3639 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.RESERVE
-    st = getVariable(3639);
+  { // 3749 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.RESERVE
+    st = getVariable(3749);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ARAIN.RESERVE", 52);
     st->size_data = sizeof(ULINT);
@@ -241,8 +241,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_ULINT = (ULINT*)&p_TITEMAIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 3640 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.WFLAGS
-    st = getVariable(3640);
+  { // 3750 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.WFLAGS
+    st = getVariable(3750);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.WFLAGS", 53);
     st->size_data = sizeof(UINT);
@@ -253,8 +253,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 3641 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.WVALUE
-    st = getVariable(3641);
+  { // 3751 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.WVALUE
+    st = getVariable(3751);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.WVALUE", 53);
     st->size_data = sizeof(UINT);
@@ -265,8 +265,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 3642 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.NANOSEC
-    st = getVariable(3642);
+  { // 3752 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.NANOSEC
+    st = getVariable(3752);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.NANOSEC", 54);
     st->size_data = sizeof(ULINT);
@@ -277,8 +277,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 3643 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.RESERVE
-    st = getVariable(3643);
+  { // 3753 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.RESERVE
+    st = getVariable(3753);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ERR_MOD.RESERVE", 54);
     st->size_data = sizeof(ULINT);
@@ -289,8 +289,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 3644 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.VALUE
-    st = getVariable(3644);
+  { // 3754 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.VALUE
+    st = getVariable(3754);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.VALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 3645 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.STATUS
-    st = getVariable(3645);
+  { // 3755 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.STATUS
+    st = getVariable(3755);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 3646 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INTERVAL
-    st = getVariable(3646);
+  { // 3756 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INTERVAL
+    st = getVariable(3756);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INTERVAL", 53);
     st->size_data = sizeof(BYTE);
@@ -325,8 +325,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 3647 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND
-    st = getVariable(3647);
+  { // 3757 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND
+    st = getVariable(3757);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 3648 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.BLCONNECT
-    st = getVariable(3648);
+  { // 3758 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.BLCONNECT
+    st = getVariable(3758);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.BLCONNECT", 54);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 3649 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLL
-    st = getVariable(3649);
+  { // 3759 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLL
+    st = getVariable(3759);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLL", 48);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 3650 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHL
-    st = getVariable(3650);
+  { // 3760 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHL
+    st = getVariable(3760);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHL", 48);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 3651 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLA
-    st = getVariable(3651);
+  { // 3761 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLA
+    st = getVariable(3761);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLA", 48);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 3652 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHA
-    st = getVariable(3652);
+  { // 3762 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHA
+    st = getVariable(3762);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHA", 48);
     st->size_data = sizeof(LREAL);
@@ -397,8 +397,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 3653 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLW
-    st = getVariable(3653);
+  { // 3763 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLW
+    st = getVariable(3763);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DLW", 48);
     st->size_data = sizeof(LREAL);
@@ -409,8 +409,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 3654 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHW
-    st = getVariable(3654);
+  { // 3764 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHW
+    st = getVariable(3764);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DHW", 48);
     st->size_data = sizeof(LREAL);
@@ -421,8 +421,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 3655 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LL
-    st = getVariable(3655);
+  { // 3765 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LL
+    st = getVariable(3765);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LL", 47);
     st->size_data = sizeof(LREAL);
@@ -433,8 +433,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 3656 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HL
-    st = getVariable(3656);
+  { // 3766 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HL
+    st = getVariable(3766);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HL", 47);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 3657 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LA
-    st = getVariable(3657);
+  { // 3767 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LA
+    st = getVariable(3767);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LA", 47);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 3658 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HA
-    st = getVariable(3658);
+  { // 3768 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HA
+    st = getVariable(3768);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HA", 47);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 3659 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LW
-    st = getVariable(3659);
+  { // 3769 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LW
+    st = getVariable(3769);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.LW", 47);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 3660 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HW
-    st = getVariable(3660);
+  { // 3770 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HW
+    st = getVariable(3770);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HW", 47);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 3661 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_LA
-    st = getVariable(3661);
+  { // 3771 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_LA
+    st = getVariable(3771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_LA", 58);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 3662 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_HA
-    st = getVariable(3662);
+  { // 3772 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_HA
+    st = getVariable(3772);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_HA", 58);
     st->size_data = sizeof(BOOL);
@@ -517,8 +517,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 3663 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_LW
-    st = getVariable(3663);
+  { // 3773 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_LW
+    st = getVariable(3773);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_LW", 58);
     st->size_data = sizeof(BOOL);
@@ -529,8 +529,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 3664 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_HW
-    st = getVariable(3664);
+  { // 3774 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_HW
+    st = getVariable(3774);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.ISVALIDREF_HW", 58);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 3665 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INPLL
-    st = getVariable(3665);
+  { // 3775 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INPLL
+    st = getVariable(3775);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INPLL", 50);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 3666 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INPHL
-    st = getVariable(3666);
+  { // 3776 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INPHL
+    st = getVariable(3776);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INPHL", 50);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 3667 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(3667);
+  { // 3777 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(3777);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CURRENTSHOTCIRCUIT", 63);
     st->size_data = sizeof(LREAL);
@@ -577,8 +577,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 3668 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(3668);
+  { // 3778 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(3778);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CURRENTBREAKCIRCUIT", 64);
     st->size_data = sizeof(LREAL);
@@ -589,8 +589,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 3669 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXCHANGESPEED
-    st = getVariable(3669);
+  { // 3779 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXCHANGESPEED
+    st = getVariable(3779);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXCHANGESPEED", 59);
     st->size_data = sizeof(LREAL);
@@ -601,8 +601,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 3670 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(3670);
+  { // 3780 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(3780);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXCHANGESPEEDDOWN", 63);
     st->size_data = sizeof(LREAL);
@@ -613,8 +613,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 3671 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CHANGESPEED
-    st = getVariable(3671);
+  { // 3781 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CHANGESPEED
+    st = getVariable(3781);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.CHANGESPEED", 56);
     st->size_data = sizeof(LREAL);
@@ -625,8 +625,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 3672 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HISTERESIS
-    st = getVariable(3672);
+  { // 3782 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HISTERESIS
+    st = getVariable(3782);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.HISTERESIS", 55);
     st->size_data = sizeof(LREAL);
@@ -637,8 +637,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 3673 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.APERTURFILTER
-    st = getVariable(3673);
+  { // 3783 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.APERTURFILTER
+    st = getVariable(3783);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.APERTURFILTER", 58);
     st->size_data = sizeof(LREAL);
@@ -649,8 +649,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 3674 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.EXPONENTIALFILTER
-    st = getVariable(3674);
+  { // 3784 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.EXPONENTIALFILTER
+    st = getVariable(3784);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.EXPONENTIALFILTER", 62);
     st->size_data = sizeof(LREAL);
@@ -661,8 +661,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 3675 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.RASSOGLASOVANIE
-    st = getVariable(3675);
+  { // 3785 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.RASSOGLASOVANIE
+    st = getVariable(3785);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.RASSOGLASOVANIE", 60);
     st->size_data = sizeof(LREAL);
@@ -673,8 +673,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 3676 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(3676);
+  { // 3786 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(3786);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 3677 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_LA
-    st = getVariable(3677);
+  { // 3787 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_LA
+    st = getVariable(3787);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_LA", 56);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 3678 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_HA
-    st = getVariable(3678);
+  { // 3788 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_HA
+    st = getVariable(3788);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_HA", 56);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 3679 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_LW
-    st = getVariable(3679);
+  { // 3789 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_LW
+    st = getVariable(3789);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_LW", 56);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 3680 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_HW
-    st = getVariable(3680);
+  { // 3790 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_HW
+    st = getVariable(3790);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DISABLED_HW", 56);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 3681 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYLA
-    st = getVariable(3681);
+  { // 3791 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYLA
+    st = getVariable(3791);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYLA", 52);
     st->size_data = sizeof(TIME);
@@ -745,8 +745,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 3682 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYLW
-    st = getVariable(3682);
+  { // 3792 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYLW
+    st = getVariable(3792);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYLW", 52);
     st->size_data = sizeof(TIME);
@@ -757,8 +757,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 3683 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYHW
-    st = getVariable(3683);
+  { // 3793 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYHW
+    st = getVariable(3793);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYHW", 52);
     st->size_data = sizeof(TIME);
@@ -769,8 +769,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 3684 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYHA
-    st = getVariable(3684);
+  { // 3794 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYHA
+    st = getVariable(3794);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DELAYHA", 52);
     st->size_data = sizeof(TIME);
@@ -781,8 +781,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 3685 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(3685);
+  { // 3795 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(3795);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MINVALUE_ISVALIDREF", 64);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 3686 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(3686);
+  { // 3796 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(3796);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXVALUE_ISVALIDREF", 64);
     st->size_data = sizeof(BOOL);
@@ -805,8 +805,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 3687 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MINVALUE
-    st = getVariable(3687);
+  { // 3797 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MINVALUE
+    st = getVariable(3797);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MINVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -817,8 +817,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 3688 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXVALUE
-    st = getVariable(3688);
+  { // 3798 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXVALUE
+    st = getVariable(3798);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.MAXVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 3689 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(3689);
+  { // 3799 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(3799);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 3690 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.IMIT
-    st = getVariable(3690);
+  { // 3800 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.IMIT
+    st = getVariable(3800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.IMIT", 49);
     st->size_data = sizeof(BOOL);
@@ -853,8 +853,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 3691 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.REMONT
-    st = getVariable(3691);
+  { // 3801 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.REMONT
+    st = getVariable(3801);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.REMONT", 51);
     st->size_data = sizeof(BOOL);
@@ -865,8 +865,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 3692 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS
-    st = getVariable(3692);
+  { // 3802 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS
+    st = getVariable(3802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS", 47);
     st->size_data = sizeof(BOOL);
@@ -877,8 +877,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 3693 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS_MIN
-    st = getVariable(3693);
+  { // 3803 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS_MIN
+    st = getVariable(3803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS_MIN", 51);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 3694 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS_MAX
-    st = getVariable(3694);
+  { // 3804 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS_MAX
+    st = getVariable(3804);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.NS_MAX", 51);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 3695 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND_ALG
-    st = getVariable(3695);
+  { // 3805 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND_ALG
+    st = getVariable(3805);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -913,8 +913,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 3696 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND_ARM
-    st = getVariable(3696);
+  { // 3806 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND_ARM
+    st = getVariable(3806);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 3697 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DMAXCHANGESPEED
-    st = getVariable(3697);
+  { // 3807 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DMAXCHANGESPEED
+    st = getVariable(3807);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DMAXCHANGESPEED", 60);
     st->size_data = sizeof(LREAL);
@@ -937,8 +937,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 3698 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(3698);
+  { // 3808 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(3808);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.STRAI.DMAXCHANGESPEEDDOWN", 64);
     st->size_data = sizeof(LREAL);
@@ -949,8 +949,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 3699 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NOTDEFINED
-    st = getVariable(3699);
+  { // 3809 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NOTDEFINED
+    st = getVariable(3809);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NOTDEFINED", 59);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 3700 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LL
-    st = getVariable(3700);
+  { // 3810 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LL
+    st = getVariable(3810);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LL", 51);
     st->size_data = sizeof(BYTE);
@@ -973,8 +973,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 3701 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HL
-    st = getVariable(3701);
+  { // 3811 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HL
+    st = getVariable(3811);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HL", 51);
     st->size_data = sizeof(BYTE);
@@ -985,8 +985,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 3702 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NOTRELIABLE
-    st = getVariable(3702);
+  { // 3812 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NOTRELIABLE
+    st = getVariable(3812);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NOTRELIABLE", 60);
     st->size_data = sizeof(BYTE);
@@ -997,8 +997,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 3703 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NORMAL
-    st = getVariable(3703);
+  { // 3813 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NORMAL
+    st = getVariable(3813);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.NORMAL", 55);
     st->size_data = sizeof(BYTE);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 3704 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LW
-    st = getVariable(3704);
+  { // 3814 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LW
+    st = getVariable(3814);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LW", 51);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 3705 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HW
-    st = getVariable(3705);
+  { // 3815 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HW
+    st = getVariable(3815);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HW", 51);
     st->size_data = sizeof(BYTE);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 3706 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LA
-    st = getVariable(3706);
+  { // 3816 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LA
+    st = getVariable(3816);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.LA", 51);
     st->size_data = sizeof(BYTE);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 3707 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HA
-    st = getVariable(3707);
+  { // 3817 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HA
+    st = getVariable(3817);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._STATUSAI.HA", 51);
     st->size_data = sizeof(BYTE);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 3708 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_SETUSTAVKI
-    st = getVariable(3708);
+  { // 3818 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_SETUSTAVKI
+    st = getVariable(3818);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_SETUSTAVKI", 68);
     st->size_data = sizeof(WORD);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETUSTAVKI;
     st->value_p = p_WORD;
   }
-  { // 3709 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_SETREMONT
-    st = getVariable(3709);
+  { // 3819 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_SETREMONT
+    st = getVariable(3819);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_SETREMONT", 67);
     st->size_data = sizeof(WORD);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETREMONT;
     st->value_p = p_WORD;
   }
-  { // 3710 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_RESETREMONT
-    st = getVariable(3710);
+  { // 3820 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_RESETREMONT
+    st = getVariable(3820);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_RESETREMONT", 69);
     st->size_data = sizeof(WORD);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_RESETREMONT;
     st->value_p = p_WORD;
   }
-  { // 3711 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_KVITNOTRELIABLE
-    st = getVariable(3711);
+  { // 3821 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_KVITNOTRELIABLE
+    st = getVariable(3821);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._COMMANDANALOG.CMD_KVITNOTRELIABLE", 73);
     st->size_data = sizeof(WORD);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_KVITNOTRELIABLE;
     st->value_p = p_WORD;
   }
-  { // 3716 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.NONE
-    st = getVariable(3716);
+  { // 3826 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.NONE
+    st = getVariable(3826);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.NONE", 61);
     st->size_data = sizeof(BYTE);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->NONE;
     st->value_p = p_BYTE;
   }
-  { // 3717 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LL
-    st = getVariable(3717);
+  { // 3827 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LL
+    st = getVariable(3827);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LL", 59);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LL;
     st->value_p = p_BYTE;
   }
-  { // 3718 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LW
-    st = getVariable(3718);
+  { // 3828 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LW
+    st = getVariable(3828);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LW", 59);
     st->size_data = sizeof(BYTE);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LW;
     st->value_p = p_BYTE;
   }
-  { // 3719 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HW
-    st = getVariable(3719);
+  { // 3829 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HW
+    st = getVariable(3829);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HW", 59);
     st->size_data = sizeof(BYTE);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HW;
     st->value_p = p_BYTE;
   }
-  { // 3720 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LA
-    st = getVariable(3720);
+  { // 3830 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LA
+    st = getVariable(3830);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.LA", 59);
     st->size_data = sizeof(BYTE);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LA;
     st->value_p = p_BYTE;
   }
-  { // 3721 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HA
-    st = getVariable(3721);
+  { // 3831 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HA
+    st = getVariable(3831);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HA", 59);
     st->size_data = sizeof(BYTE);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HA;
     st->value_p = p_BYTE;
   }
-  { // 3722 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HL
-    st = getVariable(3722);
+  { // 3832 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HL
+    st = getVariable(3832);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.HL", 59);
     st->size_data = sizeof(BYTE);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HL;
     st->value_p = p_BYTE;
   }
-  { // 3723 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.SIPUP
-    st = getVariable(3723);
+  { // 3833 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.SIPUP
+    st = getVariable(3833);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.SIPUP", 62);
     st->size_data = sizeof(BYTE);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPUP;
     st->value_p = p_BYTE;
   }
-  { // 3724 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.SIPDOWN
-    st = getVariable(3724);
+  { // 3834 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.SIPDOWN
+    st = getVariable(3834);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._ANALOGLIMITFLAGS.SIPDOWN", 64);
     st->size_data = sizeof(BYTE);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPDOWN;
     st->value_p = p_BYTE;
   }
-  { // 3725 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NOTRELIABLE
-    st = getVariable(3725);
+  { // 3835 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NOTRELIABLE
+    st = getVariable(3835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NOTRELIABLE", 50);
     st->size_data = sizeof(BOOL);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->NOTRELIABLE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3726 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUE
-    st = getVariable(3726);
+  { // 3836 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUE
+    st = getVariable(3836);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -1235,8 +1235,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->_LASTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3727 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.IN
-    st = getVariable(3727);
+  { // 3837 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.IN
+    st = getVariable(3837);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.IN", 55);
     st->size_data = sizeof(BOOL);
@@ -1247,8 +1247,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 3728 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.PT
-    st = getVariable(3728);
+  { // 3838 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.PT
+    st = getVariable(3838);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.PT", 55);
     st->size_data = sizeof(TIME);
@@ -1259,8 +1259,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 3729 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.Q
-    st = getVariable(3729);
+  { // 3839 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.Q
+    st = getVariable(3839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 3730 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.ET
-    st = getVariable(3730);
+  { // 3840 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.ET
+    st = getVariable(3840);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER.ET", 55);
     st->size_data = sizeof(TIME);
@@ -1283,8 +1283,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 3731 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER
-    st = getVariable(3731);
+  { // 3841 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER
+    st = getVariable(3841);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMER", 52);
     st->size_data = sizeof(TON);
@@ -1294,8 +1294,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 3732 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.IN
-    st = getVariable(3732);
+  { // 3842 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.IN
+    st = getVariable(3842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -1306,8 +1306,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 3733 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.PT
-    st = getVariable(3733);
+  { // 3843 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.PT
+    st = getVariable(3843);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.PT", 57);
     st->size_data = sizeof(TIME);
@@ -1318,8 +1318,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 3734 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.Q
-    st = getVariable(3734);
+  { // 3844 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.Q
+    st = getVariable(3844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1330,8 +1330,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 3735 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.ET
-    st = getVariable(3735);
+  { // 3845 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.ET
+    st = getVariable(3845);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER.ET", 57);
     st->size_data = sizeof(TIME);
@@ -1342,8 +1342,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 3736 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER
-    st = getVariable(3736);
+  { // 3846 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER
+    st = getVariable(3846);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2._LASTVALUETIMER", 54);
     st->size_data = sizeof(TON);
@@ -1353,8 +1353,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->_LASTVALUETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 3737 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMERPRIZNAK
-    st = getVariable(3737);
+  { // 3847 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMERPRIZNAK
+    st = getVariable(3847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RESETCMDTIMERPRIZNAK", 59);
     st->size_data = sizeof(BOOL);
@@ -1364,8 +1364,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3738 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.K
-    st = getVariable(3738);
+  { // 3848 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.K
+    st = getVariable(3848);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.K", 40);
     st->size_data = sizeof(LREAL);
@@ -1375,8 +1375,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->K;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3739 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.B
-    st = getVariable(3739);
+  { // 3849 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.B
+    st = getVariable(3849);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.B", 40);
     st->size_data = sizeof(LREAL);
@@ -1386,8 +1386,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->B;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3740 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.AP
-    st = getVariable(3740);
+  { // 3850 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.AP
+    st = getVariable(3850);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.AP", 41);
     st->size_data = sizeof(LREAL);
@@ -1397,8 +1397,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->AP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3741 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RAZNITSA
-    st = getVariable(3741);
+  { // 3851 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RAZNITSA
+    st = getVariable(3851);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RAZNITSA", 47);
     st->size_data = sizeof(LREAL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RAZNITSA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3742 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RABS
-    st = getVariable(3742);
+  { // 3852 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RABS
+    st = getVariable(3852);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.RABS", 43);
     st->size_data = sizeof(LREAL);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RABS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3743 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.H
-    st = getVariable(3743);
+  { // 3853 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.H
+    st = getVariable(3853);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.H", 40);
     st->size_data = sizeof(LREAL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->H;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3744 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.MISMATCH
-    st = getVariable(3744);
+  { // 3854 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.MISMATCH
+    st = getVariable(3854);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.MISMATCH", 47);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->MISMATCH;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3745 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.PARAMETR
-    st = getVariable(3745);
+  { // 3855 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.PARAMETR
+    st = getVariable(3855);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.PARAMETR", 47);
     st->size_data = sizeof(BYTE);
@@ -1452,8 +1452,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3746 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.SOURCE
-    st = getVariable(3746);
+  { // 3856 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.SOURCE
+    st = getVariable(3856);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.SOURCE", 45);
     st->size_data = sizeof(BYTE);
@@ -1463,8 +1463,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3747 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.CMD
-    st = getVariable(3747);
+  { // 3857 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.CMD
+    st = getVariable(3857);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.CMD", 42);
     st->size_data = sizeof(BYTE);
@@ -1474,8 +1474,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3748 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LASTCMD
-    st = getVariable(3748);
+  { // 3858 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LASTCMD
+    st = getVariable(3858);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LASTCMD", 46);
     st->size_data = sizeof(BYTE);
@@ -1485,8 +1485,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3749 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.SOURCE_FOR_STATUS
-    st = getVariable(3749);
+  { // 3859 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.SOURCE_FOR_STATUS
+    st = getVariable(3859);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.SOURCE_FOR_STATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -1496,8 +1496,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3750 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.CMD_FOR_STATUS
-    st = getVariable(3750);
+  { // 3860 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.CMD_FOR_STATUS
+    st = getVariable(3860);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.CMD_FOR_STATUS", 53);
     st->size_data = sizeof(BYTE);
@@ -1507,8 +1507,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3751 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(3751);
+  { // 3861 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(3861);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.COMMAND_ERROR_FOR_STATUS", 63);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1518,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3752 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ONINIT
-    st = getVariable(3752);
+  { // 3862 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ONINIT
+    st = getVariable(3862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ONINIT", 45);
     st->size_data = sizeof(BOOL);
@@ -1529,8 +1529,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 3753 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG.CLK
-    st = getVariable(3753);
+  { // 3863 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG.CLK
+    st = getVariable(3863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG.CLK", 51);
     st->size_data = sizeof(BOOL);
@@ -1541,8 +1541,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3754 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG.Q
-    st = getVariable(3754);
+  { // 3864 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG.Q
+    st = getVariable(3864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1553,8 +1553,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3755 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG
-    st = getVariable(3755);
+  { // 3865 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG
+    st = getVariable(3865);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.OFF_TRIG", 47);
     st->size_data = sizeof(R_TRIG);
@@ -1564,8 +1564,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->OFF_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 3756 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG.CLK
-    st = getVariable(3756);
+  { // 3866 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG.CLK
+    st = getVariable(3866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG.CLK", 50);
     st->size_data = sizeof(BOOL);
@@ -1576,8 +1576,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3757 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG.Q
-    st = getVariable(3757);
+  { // 3867 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG.Q
+    st = getVariable(3867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1588,8 +1588,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3758 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG
-    st = getVariable(3758);
+  { // 3868 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG
+    st = getVariable(3868);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.ON_TRIG", 46);
     st->size_data = sizeof(R_TRIG);
@@ -1599,8 +1599,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->ON_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 3759 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG.CLK
-    st = getVariable(3759);
+  { // 3869 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG.CLK
+    st = getVariable(3869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG.CLK", 54);
     st->size_data = sizeof(BOOL);
@@ -1611,8 +1611,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3760 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG.Q
-    st = getVariable(3760);
+  { // 3870 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG.Q
+    st = getVariable(3870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -1623,8 +1623,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3761 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG
-    st = getVariable(3761);
+  { // 3871 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG
+    st = getVariable(3871);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.REMONT_TRIG", 50);
     st->size_data = sizeof(R_TRIG);
@@ -1634,8 +1634,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->REMONT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 3762 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG.CLK
-    st = getVariable(3762);
+  { // 3872 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG.CLK
+    st = getVariable(3872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG.CLK", 50);
     st->size_data = sizeof(BOOL);
@@ -1646,8 +1646,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3763 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG.Q
-    st = getVariable(3763);
+  { // 3873 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG.Q
+    st = getVariable(3873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1658,8 +1658,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3764 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG
-    st = getVariable(3764);
+  { // 3874 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG
+    st = getVariable(3874);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.LL_TRIG", 46);
     st->size_data = sizeof(R_TRIG);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->LL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 3765 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG.CLK
-    st = getVariable(3765);
+  { // 3875 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG.CLK
+    st = getVariable(3875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG.CLK", 50);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3766 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG.Q
-    st = getVariable(3766);
+  { // 3876 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG.Q
+    st = getVariable(3876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3767 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG
-    st = getVariable(3767);
+  { // 3877 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG
+    st = getVariable(3877);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.HL_TRIG", 46);
     st->size_data = sizeof(R_TRIG);
@@ -1704,8 +1704,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->HL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 3768 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG.CLK
-    st = getVariable(3768);
+  { // 3878 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG.CLK
+    st = getVariable(3878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG.CLK", 54);
     st->size_data = sizeof(BOOL);
@@ -1716,8 +1716,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3769 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG.Q
-    st = getVariable(3769);
+  { // 3879 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG.Q
+    st = getVariable(3879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -1728,8 +1728,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3770 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG
-    st = getVariable(3770);
+  { // 3880 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG
+    st = getVariable(3880);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NORMAL_TRIG", 50);
     st->size_data = sizeof(R_TRIG);
@@ -1739,8 +1739,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->NORMAL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 3771 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG.CLK
-    st = getVariable(3771);
+  { // 3881 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG.CLK
+    st = getVariable(3881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG.CLK", 58);
     st->size_data = sizeof(BOOL);
@@ -1751,8 +1751,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 3772 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG.Q
-    st = getVariable(3772);
+  { // 3882 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG.Q
+    st = getVariable(3882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1763,8 +1763,8 @@ int __variables_init_FB_TMEDISTATORAKANAL2(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 3773 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG
-    st = getVariable(3773);
+  { // 3883 PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG
+    st = getVariable(3883);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TMEDISTATORAKANAL2.NEDOSTOVER_TRIG", 54);
     st->size_data = sizeof(R_TRIG);

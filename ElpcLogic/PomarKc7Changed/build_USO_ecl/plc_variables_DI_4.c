@@ -130,9 +130,9 @@ int __variables_init_DI_4(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_DI_4(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 15624 PROGRAM0.DI_PROC.DI_4.ARDIN.WFLAGS
-    st = getVariable(15624);
+  { // 16122 PROGRAM0.DI_PROC.DI_4.ARDIN.WFLAGS
+    st = getVariable(16122);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ARDIN.WFLAGS", 34);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_DI_4(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 15625 PROGRAM0.DI_PROC.DI_4.ARDIN.WVALUE
-    st = getVariable(15625);
+  { // 16123 PROGRAM0.DI_PROC.DI_4.ARDIN.WVALUE
+    st = getVariable(16123);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ARDIN.WVALUE", 34);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_DI_4(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 15626 PROGRAM0.DI_PROC.DI_4.ARDIN.NANOSEC
-    st = getVariable(15626);
+  { // 16124 PROGRAM0.DI_PROC.DI_4.ARDIN.NANOSEC
+    st = getVariable(16124);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ARDIN.NANOSEC", 35);
     st->size_data = sizeof(ULINT);
@@ -217,8 +217,8 @@ int __variables_init_DI_4(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 15627 PROGRAM0.DI_PROC.DI_4.ARDIN.RESERVE
-    st = getVariable(15627);
+  { // 16125 PROGRAM0.DI_PROC.DI_4.ARDIN.RESERVE
+    st = getVariable(16125);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ARDIN.RESERVE", 35);
     st->size_data = sizeof(ULINT);
@@ -229,8 +229,8 @@ int __variables_init_DI_4(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 15628 PROGRAM0.DI_PROC.DI_4.ERR_MOD.WFLAGS
-    st = getVariable(15628);
+  { // 16126 PROGRAM0.DI_PROC.DI_4.ERR_MOD.WFLAGS
+    st = getVariable(16126);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ERR_MOD.WFLAGS", 36);
     st->size_data = sizeof(UINT);
@@ -241,8 +241,8 @@ int __variables_init_DI_4(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 15629 PROGRAM0.DI_PROC.DI_4.ERR_MOD.WVALUE
-    st = getVariable(15629);
+  { // 16127 PROGRAM0.DI_PROC.DI_4.ERR_MOD.WVALUE
+    st = getVariable(16127);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ERR_MOD.WVALUE", 36);
     st->size_data = sizeof(UINT);
@@ -253,8 +253,8 @@ int __variables_init_DI_4(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 15630 PROGRAM0.DI_PROC.DI_4.ERR_MOD.NANOSEC
-    st = getVariable(15630);
+  { // 16128 PROGRAM0.DI_PROC.DI_4.ERR_MOD.NANOSEC
+    st = getVariable(16128);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ERR_MOD.NANOSEC", 37);
     st->size_data = sizeof(ULINT);
@@ -265,8 +265,8 @@ int __variables_init_DI_4(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 15631 PROGRAM0.DI_PROC.DI_4.ERR_MOD.RESERVE
-    st = getVariable(15631);
+  { // 16129 PROGRAM0.DI_PROC.DI_4.ERR_MOD.RESERVE
+    st = getVariable(16129);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.ERR_MOD.RESERVE", 37);
     st->size_data = sizeof(ULINT);
@@ -277,8 +277,8 @@ int __variables_init_DI_4(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 15632 PROGRAM0.DI_PROC.DI_4.STRDI.IMIT
-    st = getVariable(15632);
+  { // 16130 PROGRAM0.DI_PROC.DI_4.STRDI.IMIT
+    st = getVariable(16130);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.IMIT", 32);
     st->size_data = sizeof(BOOL);
@@ -289,8 +289,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_STRUCT_DI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 15633 PROGRAM0.DI_PROC.DI_4.STRDI.VALUE
-    st = getVariable(15633);
+  { // 16131 PROGRAM0.DI_PROC.DI_4.STRDI.VALUE
+    st = getVariable(16131);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.VALUE", 33);
     st->size_data = sizeof(WORD);
@@ -301,8 +301,8 @@ int __variables_init_DI_4(){
     p_WORD = (WORD*)&p_STRUCT_DI->VALUE;
     st->value_p = p_WORD;
   }
-  { // 15634 PROGRAM0.DI_PROC.DI_4.STRDI.RELIABILITY
-    st = getVariable(15634);
+  { // 16132 PROGRAM0.DI_PROC.DI_4.STRDI.RELIABILITY
+    st = getVariable(16132);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.RELIABILITY", 39);
     st->size_data = sizeof(WORD);
@@ -313,8 +313,8 @@ int __variables_init_DI_4(){
     p_WORD = (WORD*)&p_STRUCT_DI->RELIABILITY;
     st->value_p = p_WORD;
   }
-  { // 15635 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0].VALUE
-    st = getVariable(15635);
+  { // 16133 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0].VALUE
+    st = getVariable(16133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -327,8 +327,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15636 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0].RELIABILITY
-    st = getVariable(15636);
+  { // 16134 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0].RELIABILITY
+    st = getVariable(16134);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -341,8 +341,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15637 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0]._INVERSED
-    st = getVariable(15637);
+  { // 16135 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0]._INVERSED
+    st = getVariable(16135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[0]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -355,8 +355,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15638 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1].VALUE
-    st = getVariable(15638);
+  { // 16136 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1].VALUE
+    st = getVariable(16136);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -369,8 +369,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15639 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1].RELIABILITY
-    st = getVariable(15639);
+  { // 16137 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1].RELIABILITY
+    st = getVariable(16137);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -383,8 +383,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15640 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1]._INVERSED
-    st = getVariable(15640);
+  { // 16138 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1]._INVERSED
+    st = getVariable(16138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[1]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -397,8 +397,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15641 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2].VALUE
-    st = getVariable(15641);
+  { // 16139 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2].VALUE
+    st = getVariable(16139);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -411,8 +411,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15642 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2].RELIABILITY
-    st = getVariable(15642);
+  { // 16140 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2].RELIABILITY
+    st = getVariable(16140);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -425,8 +425,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15643 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2]._INVERSED
-    st = getVariable(15643);
+  { // 16141 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2]._INVERSED
+    st = getVariable(16141);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[2]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -439,8 +439,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15644 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3].VALUE
-    st = getVariable(15644);
+  { // 16142 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3].VALUE
+    st = getVariable(16142);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -453,8 +453,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15645 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3].RELIABILITY
-    st = getVariable(15645);
+  { // 16143 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3].RELIABILITY
+    st = getVariable(16143);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -467,8 +467,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15646 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3]._INVERSED
-    st = getVariable(15646);
+  { // 16144 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3]._INVERSED
+    st = getVariable(16144);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[3]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -481,8 +481,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15647 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4].VALUE
-    st = getVariable(15647);
+  { // 16145 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4].VALUE
+    st = getVariable(16145);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -495,8 +495,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15648 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4].RELIABILITY
-    st = getVariable(15648);
+  { // 16146 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4].RELIABILITY
+    st = getVariable(16146);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -509,8 +509,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15649 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4]._INVERSED
-    st = getVariable(15649);
+  { // 16147 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4]._INVERSED
+    st = getVariable(16147);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[4]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -523,8 +523,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15650 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5].VALUE
-    st = getVariable(15650);
+  { // 16148 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5].VALUE
+    st = getVariable(16148);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -537,8 +537,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15651 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5].RELIABILITY
-    st = getVariable(15651);
+  { // 16149 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5].RELIABILITY
+    st = getVariable(16149);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -551,8 +551,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15652 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5]._INVERSED
-    st = getVariable(15652);
+  { // 16150 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5]._INVERSED
+    st = getVariable(16150);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[5]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -565,8 +565,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15653 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6].VALUE
-    st = getVariable(15653);
+  { // 16151 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6].VALUE
+    st = getVariable(16151);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -579,8 +579,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15654 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6].RELIABILITY
-    st = getVariable(15654);
+  { // 16152 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6].RELIABILITY
+    st = getVariable(16152);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -593,8 +593,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15655 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6]._INVERSED
-    st = getVariable(15655);
+  { // 16153 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6]._INVERSED
+    st = getVariable(16153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[6]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -607,8 +607,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15656 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7].VALUE
-    st = getVariable(15656);
+  { // 16154 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7].VALUE
+    st = getVariable(16154);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -621,8 +621,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15657 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7].RELIABILITY
-    st = getVariable(15657);
+  { // 16155 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7].RELIABILITY
+    st = getVariable(16155);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -635,8 +635,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15658 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7]._INVERSED
-    st = getVariable(15658);
+  { // 16156 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7]._INVERSED
+    st = getVariable(16156);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[7]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -649,8 +649,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15659 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8].VALUE
-    st = getVariable(15659);
+  { // 16157 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8].VALUE
+    st = getVariable(16157);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -663,8 +663,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15660 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8].RELIABILITY
-    st = getVariable(15660);
+  { // 16158 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8].RELIABILITY
+    st = getVariable(16158);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -677,8 +677,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15661 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8]._INVERSED
-    st = getVariable(15661);
+  { // 16159 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8]._INVERSED
+    st = getVariable(16159);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[8]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -691,8 +691,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15662 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9].VALUE
-    st = getVariable(15662);
+  { // 16160 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9].VALUE
+    st = getVariable(16160);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9].VALUE", 41);
     st->size_data = sizeof(BOOL);
@@ -705,8 +705,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15663 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9].RELIABILITY
-    st = getVariable(15663);
+  { // 16161 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9].RELIABILITY
+    st = getVariable(16161);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9].RELIABILITY", 47);
     st->size_data = sizeof(BOOL);
@@ -719,8 +719,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15664 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9]._INVERSED
-    st = getVariable(15664);
+  { // 16162 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9]._INVERSED
+    st = getVariable(16162);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[9]._INVERSED", 45);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15665 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10].VALUE
-    st = getVariable(15665);
+  { // 16163 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10].VALUE
+    st = getVariable(16163);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10].VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -747,8 +747,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15666 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10].RELIABILITY
-    st = getVariable(15666);
+  { // 16164 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10].RELIABILITY
+    st = getVariable(16164);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10].RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -761,8 +761,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15667 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10]._INVERSED
-    st = getVariable(15667);
+  { // 16165 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10]._INVERSED
+    st = getVariable(16165);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[10]._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -775,8 +775,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15668 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11].VALUE
-    st = getVariable(15668);
+  { // 16166 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11].VALUE
+    st = getVariable(16166);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11].VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -789,8 +789,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15669 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11].RELIABILITY
-    st = getVariable(15669);
+  { // 16167 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11].RELIABILITY
+    st = getVariable(16167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11].RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -803,8 +803,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15670 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11]._INVERSED
-    st = getVariable(15670);
+  { // 16168 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11]._INVERSED
+    st = getVariable(16168);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[11]._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -817,8 +817,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15671 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12].VALUE
-    st = getVariable(15671);
+  { // 16169 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12].VALUE
+    st = getVariable(16169);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12].VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -831,8 +831,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15672 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12].RELIABILITY
-    st = getVariable(15672);
+  { // 16170 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12].RELIABILITY
+    st = getVariable(16170);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12].RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -845,8 +845,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15673 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12]._INVERSED
-    st = getVariable(15673);
+  { // 16171 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12]._INVERSED
+    st = getVariable(16171);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[12]._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -859,8 +859,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15674 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13].VALUE
-    st = getVariable(15674);
+  { // 16172 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13].VALUE
+    st = getVariable(16172);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13].VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -873,8 +873,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15675 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13].RELIABILITY
-    st = getVariable(15675);
+  { // 16173 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13].RELIABILITY
+    st = getVariable(16173);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13].RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -887,8 +887,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15676 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13]._INVERSED
-    st = getVariable(15676);
+  { // 16174 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13]._INVERSED
+    st = getVariable(16174);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[13]._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15677 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14].VALUE
-    st = getVariable(15677);
+  { // 16175 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14].VALUE
+    st = getVariable(16175);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14].VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -915,8 +915,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15678 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14].RELIABILITY
-    st = getVariable(15678);
+  { // 16176 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14].RELIABILITY
+    st = getVariable(16176);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14].RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -929,8 +929,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15679 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14]._INVERSED
-    st = getVariable(15679);
+  { // 16177 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14]._INVERSED
+    st = getVariable(16177);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[14]._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -943,8 +943,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15680 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15].VALUE
-    st = getVariable(15680);
+  { // 16178 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15].VALUE
+    st = getVariable(16178);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15].VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -957,8 +957,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 15681 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15].RELIABILITY
-    st = getVariable(15681);
+  { // 16179 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15].RELIABILITY
+    st = getVariable(16179);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15].RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -971,8 +971,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 15682 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15]._INVERSED
-    st = getVariable(15682);
+  { // 16180 PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15]._INVERSED
+    st = getVariable(16180);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BITS[15]._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -985,8 +985,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 15683 PROGRAM0.DI_PROC.DI_4.STRDI.BLCONNECT
-    st = getVariable(15683);
+  { // 16181 PROGRAM0.DI_PROC.DI_4.STRDI.BLCONNECT
+    st = getVariable(16181);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.STRDI.BLCONNECT", 37);
     st->size_data = sizeof(BOOL);
@@ -997,8 +997,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_STRUCT_DI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 15684 PROGRAM0.DI_PROC.DI_4.BOUNCE
-    st = getVariable(15684);
+  { // 16182 PROGRAM0.DI_PROC.DI_4.BOUNCE
+    st = getVariable(16182);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.BOUNCE", 28);
     st->size_data = sizeof(BOOL);
@@ -1008,8 +1008,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_FB_DISOURCEMLP->BOUNCE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 15685 PROGRAM0.DI_PROC.DI_4._VALUE
-    st = getVariable(15685);
+  { // 16183 PROGRAM0.DI_PROC.DI_4._VALUE
+    st = getVariable(16183);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4._VALUE", 28);
     st->size_data = sizeof(WORD);
@@ -1019,8 +1019,8 @@ int __variables_init_DI_4(){
     p_WORD = (WORD*)&p_FB_DISOURCEMLP->_VALUE;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 15686 PROGRAM0.DI_PROC.DI_4._RELIABILITY
-    st = getVariable(15686);
+  { // 16184 PROGRAM0.DI_PROC.DI_4._RELIABILITY
+    st = getVariable(16184);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4._RELIABILITY", 34);
     st->size_data = sizeof(BOOL);
@@ -1030,8 +1030,8 @@ int __variables_init_DI_4(){
     p_BOOL = (BOOL*)&p_FB_DISOURCEMLP->_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 15687 PROGRAM0.DI_PROC.DI_4.BITNUMBER
-    st = getVariable(15687);
+  { // 16185 PROGRAM0.DI_PROC.DI_4.BITNUMBER
+    st = getVariable(16185);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.BITNUMBER", 31);
     st->size_data = sizeof(INT);
@@ -1041,8 +1041,8 @@ int __variables_init_DI_4(){
     p_INT = (INT*)&p_FB_DISOURCEMLP->BITNUMBER;
     UnpackVar(p_INT, INT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 15688 PROGRAM0.DI_PROC.DI_4.BITNUM
-    st = getVariable(15688);
+  { // 16186 PROGRAM0.DI_PROC.DI_4.BITNUM
+    st = getVariable(16186);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DI_PROC.DI_4.BITNUM", 28);
     st->size_data = sizeof(INT);

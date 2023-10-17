@@ -130,9 +130,9 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26105 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL.VALUE
-    st = getVariable(26105);
+  { // 26603 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL.VALUE
+    st = getVariable(26603);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL.VALUE", 54);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26106 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL.RELIABILITY
-    st = getVariable(26106);
+  { // 26604 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL.RELIABILITY
+    st = getVariable(26604);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26107 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL._INVERSED
-    st = getVariable(26107);
+  { // 26605 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL._INVERSED
+    st = getVariable(26605);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.SIGNAL._INVERSED", 58);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26108 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.RELIABILITY
-    st = getVariable(26108);
+  { // 26606 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.RELIABILITY
+    st = getVariable(26606);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26109 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.INVERSE
-    st = getVariable(26109);
+  { // 26607 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.INVERSE
+    st = getVariable(26607);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.INVERSE", 56);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26110 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DELAYON
-    st = getVariable(26110);
+  { // 26608 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DELAYON
+    st = getVariable(26608);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DELAYON", 56);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26111 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DELAYOFF
-    st = getVariable(26111);
+  { // 26609 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DELAYOFF
+    st = getVariable(26609);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DELAYOFF", 57);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26112 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.Q
-    st = getVariable(26112);
+  { // 26610 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.Q
+    st = getVariable(26610);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26113 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.STATUS
-    st = getVariable(26113);
+  { // 26611 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.STATUS
+    st = getVariable(26611);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26114 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DISABLED_SIG
-    st = getVariable(26114);
+  { // 26612 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DISABLED_SIG
+    st = getVariable(26612);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.STR_SS.DISABLED_SIG", 61);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26115 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.IN
-    st = getVariable(26115);
+  { // 26613 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.IN
+    st = getVariable(26613);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26116 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.PT
-    st = getVariable(26116);
+  { // 26614 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.PT
+    st = getVariable(26614);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.PT", 52);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26117 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.Q
-    st = getVariable(26117);
+  { // 26615 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.Q
+    st = getVariable(26615);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26118 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.ET
-    st = getVariable(26118);
+  { // 26616 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.ET
+    st = getVariable(26616);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON.ET", 52);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26119 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON
-    st = getVariable(26119);
+  { // 26617 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON
+    st = getVariable(26617);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMERON", 49);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26120 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.IN
-    st = getVariable(26120);
+  { // 26618 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.IN
+    st = getVariable(26618);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26121 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.PT
-    st = getVariable(26121);
+  { // 26619 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.PT
+    st = getVariable(26619);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.PT", 53);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26122 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.Q
-    st = getVariable(26122);
+  { // 26620 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.Q
+    st = getVariable(26620);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26123 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.ET
-    st = getVariable(26123);
+  { // 26621 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.ET
+    st = getVariable(26621);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF.ET", 53);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_KALORIFERAVOM_AVTOMAT(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26124 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF
-    st = getVariable(26124);
+  { // 26622 PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF
+    st = getVariable(26622);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM_AVTOMAT.TIMEROFF", 50);
     st->size_data = sizeof(TOF);

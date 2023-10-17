@@ -130,9 +130,9 @@ int __variables_init_FB_GPA1_NEISPRAV(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27233 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SIGNAL
-    st = getVariable(27233);
+  { // 27731 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SIGNAL
+    st = getVariable(27731);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SIGNAL", 40);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27234 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.WAIT_TIME
-    st = getVariable(27234);
+  { // 27732 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.WAIT_TIME
+    st = getVariable(27732);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.WAIT_TIME", 50);
     st->size_data = sizeof(TIME);
@@ -204,8 +204,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 27235 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND
-    st = getVariable(27235);
+  { // 27733 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND
+    st = getVariable(27733);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -216,8 +216,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27236 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(27236);
+  { // 27734 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(27734);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -228,8 +228,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27237 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.Q
-    st = getVariable(27237);
+  { // 27735 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.Q
+    st = getVariable(27735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -240,8 +240,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 27238 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.STATUS
-    st = getVariable(27238);
+  { // 27736 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.STATUS
+    st = getVariable(27736);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -252,8 +252,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27239 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(27239);
+  { // 27737 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(27737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -264,8 +264,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27240 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND_ALG
-    st = getVariable(27240);
+  { // 27738 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND_ALG
+    st = getVariable(27738);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -276,8 +276,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27241 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND_ARM
-    st = getVariable(27241);
+  { // 27739 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND_ARM
+    st = getVariable(27739);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.STR_SO.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -288,8 +288,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27242 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.IN
-    st = getVariable(27242);
+  { // 27740 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.IN
+    st = getVariable(27740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -300,8 +300,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27243 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.PT
-    st = getVariable(27243);
+  { // 27741 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.PT
+    st = getVariable(27741);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.PT", 47);
     st->size_data = sizeof(TIME);
@@ -312,8 +312,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27244 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.Q
-    st = getVariable(27244);
+  { // 27742 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.Q
+    st = getVariable(27742);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -324,8 +324,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27245 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.ET
-    st = getVariable(27245);
+  { // 27743 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.ET
+    st = getVariable(27743);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER.ET", 47);
     st->size_data = sizeof(TIME);
@@ -336,8 +336,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27246 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER
-    st = getVariable(27246);
+  { // 27744 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER
+    st = getVariable(27744);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMER", 44);
     st->size_data = sizeof(TON);
@@ -347,8 +347,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27247 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.IN
-    st = getVariable(27247);
+  { // 27745 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.IN
+    st = getVariable(27745);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -359,8 +359,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27248 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.PT
-    st = getVariable(27248);
+  { // 27746 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.PT
+    st = getVariable(27746);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -371,8 +371,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27249 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.Q
-    st = getVariable(27249);
+  { // 27747 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.Q
+    st = getVariable(27747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -383,8 +383,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27250 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.ET
-    st = getVariable(27250);
+  { // 27748 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.ET
+    st = getVariable(27748);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -395,8 +395,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27251 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER
-    st = getVariable(27251);
+  { // 27749 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER
+    st = getVariable(27749);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMER", 47);
     st->size_data = sizeof(TON);
@@ -406,8 +406,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27252 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.IN
-    st = getVariable(27252);
+  { // 27750 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.IN
+    st = getVariable(27750);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -418,8 +418,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27253 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.PT
-    st = getVariable(27253);
+  { // 27751 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.PT
+    st = getVariable(27751);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.PT", 48);
     st->size_data = sizeof(TIME);
@@ -430,8 +430,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27254 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.Q
-    st = getVariable(27254);
+  { // 27752 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.Q
+    st = getVariable(27752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -442,8 +442,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27255 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.ET
-    st = getVariable(27255);
+  { // 27753 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.ET
+    st = getVariable(27753);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND.ET", 48);
     st->size_data = sizeof(TIME);
@@ -454,8 +454,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27256 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND
-    st = getVariable(27256);
+  { // 27754 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND
+    st = getVariable(27754);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.TON_COMMAND", 45);
     st->size_data = sizeof(TON);
@@ -465,8 +465,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 27257 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SOURCE
-    st = getVariable(27257);
+  { // 27755 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SOURCE
+    st = getVariable(27755);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SOURCE", 40);
     st->size_data = sizeof(BYTE);
@@ -476,8 +476,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27258 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.CMD
-    st = getVariable(27258);
+  { // 27756 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.CMD
+    st = getVariable(27756);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.CMD", 37);
     st->size_data = sizeof(BYTE);
@@ -487,8 +487,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27259 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.LASTCMD
-    st = getVariable(27259);
+  { // 27757 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.LASTCMD
+    st = getVariable(27757);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.LASTCMD", 41);
     st->size_data = sizeof(BYTE);
@@ -498,8 +498,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27260 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SOURCE_FOR_STATUS
-    st = getVariable(27260);
+  { // 27758 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SOURCE_FOR_STATUS
+    st = getVariable(27758);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.SOURCE_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -509,8 +509,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27261 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.CMD_FOR_STATUS
-    st = getVariable(27261);
+  { // 27759 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.CMD_FOR_STATUS
+    st = getVariable(27759);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.CMD_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -520,8 +520,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27262 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27262);
+  { // 27760 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(27760);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.COMMAND_ERROR_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -531,8 +531,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27263 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMERPRIZNAK
-    st = getVariable(27263);
+  { // 27761 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMERPRIZNAK
+    st = getVariable(27761);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.PULSETIMERPRIZNAK", 51);
     st->size_data = sizeof(BOOL);
@@ -542,8 +542,8 @@ int __variables_init_FB_GPA1_NEISPRAV(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27264 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMERPRIZNAK
-    st = getVariable(27264);
+  { // 27762 PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMERPRIZNAK
+    st = getVariable(27762);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_NEISPRAV.RESETCMDTIMERPRIZNAK", 54);
     st->size_data = sizeof(BOOL);

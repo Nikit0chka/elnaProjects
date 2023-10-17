@@ -130,9 +130,9 @@ int __variables_init_FB_VOZB_AVR_OFF(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 25845 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL.VALUE
-    st = getVariable(25845);
+  { // 26343 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL.VALUE
+    st = getVariable(26343);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL.VALUE", 45);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 25846 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL.RELIABILITY
-    st = getVariable(25846);
+  { // 26344 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL.RELIABILITY
+    st = getVariable(26344);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25847 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL._INVERSED
-    st = getVariable(25847);
+  { // 26345 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL._INVERSED
+    st = getVariable(26345);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.SIGNAL._INVERSED", 49);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 25848 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.RELIABILITY
-    st = getVariable(25848);
+  { // 26346 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.RELIABILITY
+    st = getVariable(26346);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25849 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.INVERSE
-    st = getVariable(25849);
+  { // 26347 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.INVERSE
+    st = getVariable(26347);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.INVERSE", 47);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 25850 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DELAYON
-    st = getVariable(25850);
+  { // 26348 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DELAYON
+    st = getVariable(26348);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DELAYON", 47);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 25851 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DELAYOFF
-    st = getVariable(25851);
+  { // 26349 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DELAYOFF
+    st = getVariable(26349);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DELAYOFF", 48);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 25852 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.Q
-    st = getVariable(25852);
+  { // 26350 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.Q
+    st = getVariable(26350);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 25853 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.STATUS
-    st = getVariable(25853);
+  { // 26351 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.STATUS
+    st = getVariable(26351);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 25854 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DISABLED_SIG
-    st = getVariable(25854);
+  { // 26352 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DISABLED_SIG
+    st = getVariable(26352);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.STR_SS.DISABLED_SIG", 52);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 25855 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.IN
-    st = getVariable(25855);
+  { // 26353 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.IN
+    st = getVariable(26353);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.IN", 43);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 25856 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.PT
-    st = getVariable(25856);
+  { // 26354 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.PT
+    st = getVariable(26354);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.PT", 43);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 25857 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.Q
-    st = getVariable(25857);
+  { // 26355 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.Q
+    st = getVariable(26355);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 25858 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.ET
-    st = getVariable(25858);
+  { // 26356 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.ET
+    st = getVariable(26356);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON.ET", 43);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 25859 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON
-    st = getVariable(25859);
+  { // 26357 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON
+    st = getVariable(26357);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMERON", 40);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 25860 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.IN
-    st = getVariable(25860);
+  { // 26358 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.IN
+    st = getVariable(26358);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 25861 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.PT
-    st = getVariable(25861);
+  { // 26359 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.PT
+    st = getVariable(26359);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.PT", 44);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 25862 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.Q
-    st = getVariable(25862);
+  { // 26360 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.Q
+    st = getVariable(26360);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 25863 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.ET
-    st = getVariable(25863);
+  { // 26361 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.ET
+    st = getVariable(26361);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF.ET", 44);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_VOZB_AVR_OFF(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 25864 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF
-    st = getVariable(25864);
+  { // 26362 PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF
+    st = getVariable(26362);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZB_AVR_OFF.TIMEROFF", 41);
     st->size_data = sizeof(TOF);

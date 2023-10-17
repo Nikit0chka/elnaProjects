@@ -130,9 +130,9 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27045 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL.VALUE
-    st = getVariable(27045);
+  { // 27543 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL.VALUE
+    st = getVariable(27543);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL.VALUE", 50);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 27046 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL.RELIABILITY
-    st = getVariable(27046);
+  { // 27544 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL.RELIABILITY
+    st = getVariable(27544);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 27047 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL._INVERSED
-    st = getVariable(27047);
+  { // 27545 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL._INVERSED
+    st = getVariable(27545);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.SIGNAL._INVERSED", 54);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 27048 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.RELIABILITY
-    st = getVariable(27048);
+  { // 27546 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.RELIABILITY
+    st = getVariable(27546);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 27049 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.INVERSE
-    st = getVariable(27049);
+  { // 27547 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.INVERSE
+    st = getVariable(27547);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.INVERSE", 52);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 27050 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DELAYON
-    st = getVariable(27050);
+  { // 27548 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DELAYON
+    st = getVariable(27548);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DELAYON", 52);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 27051 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DELAYOFF
-    st = getVariable(27051);
+  { // 27549 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DELAYOFF
+    st = getVariable(27549);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DELAYOFF", 53);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 27052 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.Q
-    st = getVariable(27052);
+  { // 27550 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.Q
+    st = getVariable(27550);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 27053 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.STATUS
-    st = getVariable(27053);
+  { // 27551 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.STATUS
+    st = getVariable(27551);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27054 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DISABLED_SIG
-    st = getVariable(27054);
+  { // 27552 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DISABLED_SIG
+    st = getVariable(27552);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.STR_SS.DISABLED_SIG", 57);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 27055 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.IN
-    st = getVariable(27055);
+  { // 27553 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.IN
+    st = getVariable(27553);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27056 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.PT
-    st = getVariable(27056);
+  { // 27554 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.PT
+    st = getVariable(27554);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.PT", 48);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27057 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.Q
-    st = getVariable(27057);
+  { // 27555 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.Q
+    st = getVariable(27555);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27058 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.ET
-    st = getVariable(27058);
+  { // 27556 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.ET
+    st = getVariable(27556);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON.ET", 48);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27059 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON
-    st = getVariable(27059);
+  { // 27557 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON
+    st = getVariable(27557);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMERON", 45);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 27060 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.IN
-    st = getVariable(27060);
+  { // 27558 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.IN
+    st = getVariable(27558);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 27061 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.PT
-    st = getVariable(27061);
+  { // 27559 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.PT
+    st = getVariable(27559);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.PT", 49);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 27062 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.Q
-    st = getVariable(27062);
+  { // 27560 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.Q
+    st = getVariable(27560);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 27063 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.ET
-    st = getVariable(27063);
+  { // 27561 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.ET
+    st = getVariable(27561);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF.ET", 49);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_GPA_POZHAR_REZERV(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 27064 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF
-    st = getVariable(27064);
+  { // 27562 PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF
+    st = getVariable(27562);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA_POZHAR_REZERV.TIMEROFF", 46);
     st->size_data = sizeof(TOF);

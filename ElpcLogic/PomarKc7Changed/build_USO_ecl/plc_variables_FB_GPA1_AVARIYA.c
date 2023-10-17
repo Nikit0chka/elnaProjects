@@ -130,9 +130,9 @@ int __variables_init_FB_GPA1_AVARIYA(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27269 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SIGNAL
-    st = getVariable(27269);
+  { // 27767 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SIGNAL
+    st = getVariable(27767);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SIGNAL", 39);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27270 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.WAIT_TIME
-    st = getVariable(27270);
+  { // 27768 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.WAIT_TIME
+    st = getVariable(27768);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.WAIT_TIME", 49);
     st->size_data = sizeof(TIME);
@@ -204,8 +204,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 27271 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND
-    st = getVariable(27271);
+  { // 27769 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND
+    st = getVariable(27769);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -216,8 +216,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27272 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(27272);
+  { // 27770 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(27770);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -228,8 +228,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27273 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.Q
-    st = getVariable(27273);
+  { // 27771 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.Q
+    st = getVariable(27771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -240,8 +240,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 27274 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.STATUS
-    st = getVariable(27274);
+  { // 27772 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.STATUS
+    st = getVariable(27772);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -252,8 +252,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27275 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(27275);
+  { // 27773 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(27773);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -264,8 +264,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27276 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND_ALG
-    st = getVariable(27276);
+  { // 27774 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND_ALG
+    st = getVariable(27774);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -276,8 +276,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27277 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND_ARM
-    st = getVariable(27277);
+  { // 27775 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND_ARM
+    st = getVariable(27775);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.STR_SO.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -288,8 +288,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27278 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.IN
-    st = getVariable(27278);
+  { // 27776 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.IN
+    st = getVariable(27776);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -300,8 +300,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27279 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.PT
-    st = getVariable(27279);
+  { // 27777 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.PT
+    st = getVariable(27777);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.PT", 46);
     st->size_data = sizeof(TIME);
@@ -312,8 +312,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27280 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.Q
-    st = getVariable(27280);
+  { // 27778 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.Q
+    st = getVariable(27778);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -324,8 +324,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27281 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.ET
-    st = getVariable(27281);
+  { // 27779 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.ET
+    st = getVariable(27779);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER.ET", 46);
     st->size_data = sizeof(TIME);
@@ -336,8 +336,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27282 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER
-    st = getVariable(27282);
+  { // 27780 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER
+    st = getVariable(27780);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMER", 43);
     st->size_data = sizeof(TON);
@@ -347,8 +347,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27283 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.IN
-    st = getVariable(27283);
+  { // 27781 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.IN
+    st = getVariable(27781);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -359,8 +359,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27284 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.PT
-    st = getVariable(27284);
+  { // 27782 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.PT
+    st = getVariable(27782);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.PT", 49);
     st->size_data = sizeof(TIME);
@@ -371,8 +371,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27285 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.Q
-    st = getVariable(27285);
+  { // 27783 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.Q
+    st = getVariable(27783);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -383,8 +383,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27286 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.ET
-    st = getVariable(27286);
+  { // 27784 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.ET
+    st = getVariable(27784);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER.ET", 49);
     st->size_data = sizeof(TIME);
@@ -395,8 +395,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27287 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER
-    st = getVariable(27287);
+  { // 27785 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER
+    st = getVariable(27785);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMER", 46);
     st->size_data = sizeof(TON);
@@ -406,8 +406,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27288 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.IN
-    st = getVariable(27288);
+  { // 27786 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.IN
+    st = getVariable(27786);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -418,8 +418,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27289 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.PT
-    st = getVariable(27289);
+  { // 27787 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.PT
+    st = getVariable(27787);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.PT", 47);
     st->size_data = sizeof(TIME);
@@ -430,8 +430,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27290 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.Q
-    st = getVariable(27290);
+  { // 27788 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.Q
+    st = getVariable(27788);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -442,8 +442,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27291 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.ET
-    st = getVariable(27291);
+  { // 27789 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.ET
+    st = getVariable(27789);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND.ET", 47);
     st->size_data = sizeof(TIME);
@@ -454,8 +454,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27292 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND
-    st = getVariable(27292);
+  { // 27790 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND
+    st = getVariable(27790);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.TON_COMMAND", 44);
     st->size_data = sizeof(TON);
@@ -465,8 +465,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 27293 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SOURCE
-    st = getVariable(27293);
+  { // 27791 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SOURCE
+    st = getVariable(27791);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SOURCE", 39);
     st->size_data = sizeof(BYTE);
@@ -476,8 +476,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27294 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.CMD
-    st = getVariable(27294);
+  { // 27792 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.CMD
+    st = getVariable(27792);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.CMD", 36);
     st->size_data = sizeof(BYTE);
@@ -487,8 +487,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27295 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.LASTCMD
-    st = getVariable(27295);
+  { // 27793 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.LASTCMD
+    st = getVariable(27793);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.LASTCMD", 40);
     st->size_data = sizeof(BYTE);
@@ -498,8 +498,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27296 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SOURCE_FOR_STATUS
-    st = getVariable(27296);
+  { // 27794 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SOURCE_FOR_STATUS
+    st = getVariable(27794);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.SOURCE_FOR_STATUS", 50);
     st->size_data = sizeof(BYTE);
@@ -509,8 +509,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27297 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.CMD_FOR_STATUS
-    st = getVariable(27297);
+  { // 27795 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.CMD_FOR_STATUS
+    st = getVariable(27795);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.CMD_FOR_STATUS", 47);
     st->size_data = sizeof(BYTE);
@@ -520,8 +520,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27298 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27298);
+  { // 27796 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(27796);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.COMMAND_ERROR_FOR_STATUS", 57);
     st->size_data = sizeof(BYTE);
@@ -531,8 +531,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27299 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMERPRIZNAK
-    st = getVariable(27299);
+  { // 27797 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMERPRIZNAK
+    st = getVariable(27797);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.PULSETIMERPRIZNAK", 50);
     st->size_data = sizeof(BOOL);
@@ -542,8 +542,8 @@ int __variables_init_FB_GPA1_AVARIYA(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27300 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMERPRIZNAK
-    st = getVariable(27300);
+  { // 27798 PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMERPRIZNAK
+    st = getVariable(27798);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_GPA1_AVARIYA.RESETCMDTIMERPRIZNAK", 53);
     st->size_data = sizeof(BOOL);

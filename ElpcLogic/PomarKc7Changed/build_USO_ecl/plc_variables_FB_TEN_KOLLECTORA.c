@@ -130,9 +130,9 @@ int __variables_init_FB_TEN_KOLLECTORA(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 22723 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATON
-    st = getVariable(22723);
+  { // 23221 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATON
+    st = getVariable(23221);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATON", 41);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22724 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATOFF
-    st = getVariable(22724);
+  { // 23222 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATOFF
+    st = getVariable(23222);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATOFF", 42);
     st->size_data = sizeof(BOOL);
@@ -203,8 +203,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22725 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATON_RELIABILITY
-    st = getVariable(22725);
+  { // 23223 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATON_RELIABILITY
+    st = getVariable(23223);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATON_RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -214,8 +214,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATON_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22726 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATOFF_RELIABILITY
-    st = getVariable(22726);
+  { // 23224 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATOFF_RELIABILITY
+    st = getVariable(23224);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STATOFF_RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -225,8 +225,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATOFF_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22727 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND
-    st = getVariable(22727);
+  { // 23225 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND
+    st = getVariable(23225);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -237,8 +237,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 22728 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.STATUS
-    st = getVariable(22728);
+  { // 23226 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.STATUS
+    st = getVariable(23226);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -249,8 +249,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 22729 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ONSTATUS
-    st = getVariable(22729);
+  { // 23227 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ONSTATUS
+    st = getVariable(23227);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ONSTATUS", 49);
     st->size_data = sizeof(BYTE);
@@ -261,8 +261,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 22730 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INOPCCOMMANDSDISABLED
-    st = getVariable(22730);
+  { // 23228 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INOPCCOMMANDSDISABLED
+    st = getVariable(23228);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -273,8 +273,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 22731 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.SDVIG
-    st = getVariable(22731);
+  { // 23229 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.SDVIG
+    st = getVariable(23229);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.SDVIG", 46);
     st->size_data = sizeof(BOOL);
@@ -285,8 +285,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 22732 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.NS
-    st = getVariable(22732);
+  { // 23230 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.NS
+    st = getVariable(23230);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.NS", 43);
     st->size_data = sizeof(BOOL);
@@ -297,8 +297,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 22733 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.COMMANDFAULT
-    st = getVariable(22733);
+  { // 23231 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.COMMANDFAULT
+    st = getVariable(23231);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.COMMANDFAULT", 53);
     st->size_data = sizeof(BOOL);
@@ -309,8 +309,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 22734 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ACCIDENT
-    st = getVariable(22734);
+  { // 23232 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ACCIDENT
+    st = getVariable(23232);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ACCIDENT", 49);
     st->size_data = sizeof(BOOL);
@@ -321,8 +321,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 22735 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.AUTO
-    st = getVariable(22735);
+  { // 23233 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.AUTO
+    st = getVariable(23233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.AUTO", 45);
     st->size_data = sizeof(BOOL);
@@ -333,8 +333,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 22736 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.MANUAL
-    st = getVariable(22736);
+  { // 23234 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.MANUAL
+    st = getVariable(23234);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.MANUAL", 47);
     st->size_data = sizeof(BOOL);
@@ -345,8 +345,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 22737 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.LOCAL
-    st = getVariable(22737);
+  { // 23235 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.LOCAL
+    st = getVariable(23235);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.LOCAL", 46);
     st->size_data = sizeof(BOOL);
@@ -357,8 +357,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 22738 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.DISTANCE
-    st = getVariable(22738);
+  { // 23236 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.DISTANCE
+    st = getVariable(23236);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.DISTANCE", 49);
     st->size_data = sizeof(BOOL);
@@ -369,8 +369,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 22739 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ERRORPOWEROFF
-    st = getVariable(22739);
+  { // 23237 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ERRORPOWEROFF
+    st = getVariable(23237);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ERRORPOWEROFF", 54);
     st->size_data = sizeof(BOOL);
@@ -381,8 +381,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 22740 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ERRORBLOCK
-    st = getVariable(22740);
+  { // 23238 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ERRORBLOCK
+    st = getVariable(23238);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ERRORBLOCK", 51);
     st->size_data = sizeof(BOOL);
@@ -393,8 +393,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 22741 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.BREAKCMDON
-    st = getVariable(22741);
+  { // 23239 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.BREAKCMDON
+    st = getVariable(23239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.BREAKCMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -405,8 +405,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 22742 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.BREAKCMDOFF
-    st = getVariable(22742);
+  { // 23240 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.BREAKCMDOFF
+    st = getVariable(23240);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.BREAKCMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -417,8 +417,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22743 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.OPCCOMMANDSDISABLED
-    st = getVariable(22743);
+  { // 23241 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.OPCCOMMANDSDISABLED
+    st = getVariable(23241);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -429,8 +429,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 22744 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.LASTCMDISON
-    st = getVariable(22744);
+  { // 23242 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.LASTCMDISON
+    st = getVariable(23242);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.LASTCMDISON", 52);
     st->size_data = sizeof(BOOL);
@@ -441,8 +441,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 22745 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_STATON
-    st = getVariable(22745);
+  { // 23243 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_STATON
+    st = getVariable(23243);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_STATON", 58);
     st->size_data = sizeof(BOOL);
@@ -453,8 +453,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 22746 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_STATOFF
-    st = getVariable(22746);
+  { // 23244 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_STATOFF
+    st = getVariable(23244);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_STATOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -465,8 +465,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 22747 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_CMDON
-    st = getVariable(22747);
+  { // 23245 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_CMDON
+    st = getVariable(23245);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_CMDON", 57);
     st->size_data = sizeof(BOOL);
@@ -477,8 +477,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 22748 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_CMDOFF
-    st = getVariable(22748);
+  { // 23246 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_CMDOFF
+    st = getVariable(23246);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_CMDOFF", 58);
     st->size_data = sizeof(BOOL);
@@ -489,8 +489,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22749 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_INBREAKCMDON
-    st = getVariable(22749);
+  { // 23247 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_INBREAKCMDON
+    st = getVariable(23247);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_INBREAKCMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -501,8 +501,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 22750 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(22750);
+  { // 23248 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(23248);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.ISVALIDREF_INBREAKCMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -513,8 +513,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22751 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND_ALG
-    st = getVariable(22751);
+  { // 23249 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND_ALG
+    st = getVariable(23249);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -525,8 +525,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 22752 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND_ARM
-    st = getVariable(22752);
+  { // 23250 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND_ARM
+    st = getVariable(23250);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -537,8 +537,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 22753 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.CMDON
-    st = getVariable(22753);
+  { // 23251 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.CMDON
+    st = getVariable(23251);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.CMDON", 46);
     st->size_data = sizeof(BOOL);
@@ -549,8 +549,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 22754 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.CMDOFF
-    st = getVariable(22754);
+  { // 23252 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.CMDOFF
+    st = getVariable(23252);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.CMDOFF", 47);
     st->size_data = sizeof(BOOL);
@@ -561,8 +561,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22755 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.RELIABILITY
-    st = getVariable(22755);
+  { // 23253 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.RELIABILITY
+    st = getVariable(23253);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.STRSW.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -573,8 +573,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22756 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS.VALUE
-    st = getVariable(22756);
+  { // 23254 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS.VALUE
+    st = getVariable(23254);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS.VALUE", 45);
     st->size_data = sizeof(BOOL);
@@ -585,8 +585,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22757 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS.RELIABILITY
-    st = getVariable(22757);
+  { // 23255 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS.RELIABILITY
+    st = getVariable(23255);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -597,8 +597,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22758 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS._INVERSED
-    st = getVariable(22758);
+  { // 23256 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS._INVERSED
+    st = getVariable(23256);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INNS._INVERSED", 49);
     st->size_data = sizeof(BOOL);
@@ -609,8 +609,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22759 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT.VALUE
-    st = getVariable(22759);
+  { // 23257 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT.VALUE
+    st = getVariable(23257);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT.VALUE", 51);
     st->size_data = sizeof(BOOL);
@@ -621,8 +621,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22760 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT.RELIABILITY
-    st = getVariable(22760);
+  { // 23258 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT.RELIABILITY
+    st = getVariable(23258);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -633,8 +633,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22761 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT._INVERSED
-    st = getVariable(22761);
+  { // 23259 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT._INVERSED
+    st = getVariable(23259);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INACCIDENT._INVERSED", 55);
     st->size_data = sizeof(BOOL);
@@ -645,8 +645,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22762 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO.VALUE
-    st = getVariable(22762);
+  { // 23260 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO.VALUE
+    st = getVariable(23260);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO.VALUE", 47);
     st->size_data = sizeof(BOOL);
@@ -657,8 +657,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22763 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO.RELIABILITY
-    st = getVariable(22763);
+  { // 23261 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO.RELIABILITY
+    st = getVariable(23261);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -669,8 +669,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22764 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO._INVERSED
-    st = getVariable(22764);
+  { // 23262 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO._INVERSED
+    st = getVariable(23262);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INAUTO._INVERSED", 51);
     st->size_data = sizeof(BOOL);
@@ -681,8 +681,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22765 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL.VALUE
-    st = getVariable(22765);
+  { // 23263 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL.VALUE
+    st = getVariable(23263);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL.VALUE", 49);
     st->size_data = sizeof(BOOL);
@@ -693,8 +693,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22766 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL.RELIABILITY
-    st = getVariable(22766);
+  { // 23264 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL.RELIABILITY
+    st = getVariable(23264);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -705,8 +705,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22767 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL._INVERSED
-    st = getVariable(22767);
+  { // 23265 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL._INVERSED
+    st = getVariable(23265);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INMANUAL._INVERSED", 53);
     st->size_data = sizeof(BOOL);
@@ -717,8 +717,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22768 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL.VALUE
-    st = getVariable(22768);
+  { // 23266 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL.VALUE
+    st = getVariable(23266);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL.VALUE", 48);
     st->size_data = sizeof(BOOL);
@@ -729,8 +729,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22769 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL.RELIABILITY
-    st = getVariable(22769);
+  { // 23267 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL.RELIABILITY
+    st = getVariable(23267);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -741,8 +741,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22770 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL._INVERSED
-    st = getVariable(22770);
+  { // 23268 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL._INVERSED
+    st = getVariable(23268);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INLOCAL._INVERSED", 52);
     st->size_data = sizeof(BOOL);
@@ -753,8 +753,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22771 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE.VALUE
-    st = getVariable(22771);
+  { // 23269 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE.VALUE
+    st = getVariable(23269);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE.VALUE", 51);
     st->size_data = sizeof(BOOL);
@@ -765,8 +765,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22772 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE.RELIABILITY
-    st = getVariable(22772);
+  { // 23270 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE.RELIABILITY
+    st = getVariable(23270);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -777,8 +777,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22773 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE._INVERSED
-    st = getVariable(22773);
+  { // 23271 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE._INVERSED
+    st = getVariable(23271);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INDISTANCE._INVERSED", 55);
     st->size_data = sizeof(BOOL);
@@ -789,8 +789,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22774 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF.VALUE
-    st = getVariable(22774);
+  { // 23272 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF.VALUE
+    st = getVariable(23272);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF.VALUE", 56);
     st->size_data = sizeof(BOOL);
@@ -801,8 +801,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22775 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF.RELIABILITY
-    st = getVariable(22775);
+  { // 23273 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF.RELIABILITY
+    st = getVariable(23273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF.RELIABILITY", 62);
     st->size_data = sizeof(BOOL);
@@ -813,8 +813,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22776 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF._INVERSED
-    st = getVariable(22776);
+  { // 23274 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF._INVERSED
+    st = getVariable(23274);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORPOWEROFF._INVERSED", 60);
     st->size_data = sizeof(BOOL);
@@ -825,8 +825,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22777 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK.VALUE
-    st = getVariable(22777);
+  { // 23275 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK.VALUE
+    st = getVariable(23275);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK.VALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -837,8 +837,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22778 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK.RELIABILITY
-    st = getVariable(22778);
+  { // 23276 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK.RELIABILITY
+    st = getVariable(23276);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -849,8 +849,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22779 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK._INVERSED
-    st = getVariable(22779);
+  { // 23277 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK._INVERSED
+    st = getVariable(23277);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INERRORBLOCK._INVERSED", 57);
     st->size_data = sizeof(BOOL);
@@ -861,8 +861,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22780 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON.VALUE
-    st = getVariable(22780);
+  { // 23278 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON.VALUE
+    st = getVariable(23278);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON.VALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -873,8 +873,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22781 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON.RELIABILITY
-    st = getVariable(22781);
+  { // 23279 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON.RELIABILITY
+    st = getVariable(23279);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -885,8 +885,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22782 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON._INVERSED
-    st = getVariable(22782);
+  { // 23280 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON._INVERSED
+    st = getVariable(23280);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDON._INVERSED", 57);
     st->size_data = sizeof(BOOL);
@@ -897,8 +897,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22783 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF.VALUE
-    st = getVariable(22783);
+  { // 23281 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF.VALUE
+    st = getVariable(23281);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF.VALUE", 54);
     st->size_data = sizeof(BOOL);
@@ -909,8 +909,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22784 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF.RELIABILITY
-    st = getVariable(22784);
+  { // 23282 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF.RELIABILITY
+    st = getVariable(23282);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -921,8 +921,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22785 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF._INVERSED
-    st = getVariable(22785);
+  { // 23283 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF._INVERSED
+    st = getVariable(23283);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.INBREAKCMDOFF._INVERSED", 58);
     st->size_data = sizeof(BOOL);
@@ -933,8 +933,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22786 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ONINIT
-    st = getVariable(22786);
+  { // 23284 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ONINIT
+    st = getVariable(23284);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ONINIT", 41);
     st->size_data = sizeof(BOOL);
@@ -944,8 +944,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22787 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATON
-    st = getVariable(22787);
+  { // 23285 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATON
+    st = getVariable(23285);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATON", 42);
     st->size_data = sizeof(BOOL);
@@ -955,8 +955,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22788 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATOFF
-    st = getVariable(22788);
+  { // 23286 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATOFF
+    st = getVariable(23286);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATOFF", 43);
     st->size_data = sizeof(BOOL);
@@ -966,8 +966,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22789 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.LASTONSTATUS
-    st = getVariable(22789);
+  { // 23287 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.LASTONSTATUS
+    st = getVariable(23287);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.LASTONSTATUS", 47);
     st->size_data = sizeof(BYTE);
@@ -977,8 +977,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->LASTONSTATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22790 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMD
-    st = getVariable(22790);
+  { // 23288 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMD
+    st = getVariable(23288);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMD", 38);
     st->size_data = sizeof(BYTE);
@@ -988,8 +988,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22791 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SOURCE
-    st = getVariable(22791);
+  { // 23289 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SOURCE
+    st = getVariable(23289);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SOURCE", 41);
     st->size_data = sizeof(BYTE);
@@ -999,8 +999,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22792 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.LASTCMD
-    st = getVariable(22792);
+  { // 23290 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.LASTCMD
+    st = getVariable(23290);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.LASTCMD", 42);
     st->size_data = sizeof(BYTE);
@@ -1010,8 +1010,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22793 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SOURCE_FOR_STATUS
-    st = getVariable(22793);
+  { // 23291 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SOURCE_FOR_STATUS
+    st = getVariable(23291);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SOURCE_FOR_STATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22794 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMD_FOR_STATUS
-    st = getVariable(22794);
+  { // 23292 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMD_FOR_STATUS
+    st = getVariable(23292);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMD_FOR_STATUS", 49);
     st->size_data = sizeof(BYTE);
@@ -1032,8 +1032,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22795 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(22795);
+  { // 23293 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(23293);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.COMMAND_ERROR_FOR_STATUS", 59);
     st->size_data = sizeof(BYTE);
@@ -1043,8 +1043,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22800 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(22800);
+  { // 23298 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(23298);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_NOTDEFINED", 69);
     st->size_data = sizeof(BYTE);
@@ -1055,8 +1055,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 22801 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(22801);
+  { // 23299 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(23299);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_ON", 61);
     st->size_data = sizeof(BYTE);
@@ -1067,8 +1067,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 22802 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(22802);
+  { // 23300 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(23300);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_OFF", 62);
     st->size_data = sizeof(BYTE);
@@ -1079,8 +1079,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 22803 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(22803);
+  { // 23301 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(23301);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_TRANSITIONAL", 71);
     st->size_data = sizeof(BYTE);
@@ -1091,8 +1091,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 22804 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(22804);
+  { // 23302 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(23302);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._STATUSDUALINPUT.STATUS_ERROR", 64);
     st->size_data = sizeof(BYTE);
@@ -1103,8 +1103,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 22805 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_ON
-    st = getVariable(22805);
+  { // 23303 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_ON
+    st = getVariable(23303);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_ON", 59);
     st->size_data = sizeof(BYTE);
@@ -1115,8 +1115,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_ON;
     st->value_p = p_BYTE;
   }
-  { // 22806 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_OFF
-    st = getVariable(22806);
+  { // 23304 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_OFF
+    st = getVariable(23304);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_OFF", 60);
     st->size_data = sizeof(BYTE);
@@ -1127,8 +1127,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_OFF;
     st->value_p = p_BYTE;
   }
-  { // 22807 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_RESET
-    st = getVariable(22807);
+  { // 23305 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_RESET
+    st = getVariable(23305);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDDUALINPUT.CMD_RESET", 62);
     st->size_data = sizeof(BYTE);
@@ -1139,8 +1139,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_RESET;
     st->value_p = p_BYTE;
   }
-  { // 22808 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDERRORTIMER
-    st = getVariable(22808);
+  { // 23306 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDERRORTIMER
+    st = getVariable(23306);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._COMMANDERRORTIMER", 53);
     st->size_data = sizeof(BOOL);
@@ -1150,8 +1150,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_COMMANDERRORTIMER;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22809 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.RESETERRORTIMER
-    st = getVariable(22809);
+  { // 23307 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.RESETERRORTIMER
+    st = getVariable(23307);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.RESETERRORTIMER", 50);
     st->size_data = sizeof(BOOL);
@@ -1161,8 +1161,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->RESETERRORTIMER;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22810 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.GETSDVIG
-    st = getVariable(22810);
+  { // 23308 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.GETSDVIG
+    st = getVariable(23308);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.GETSDVIG", 43);
     st->size_data = sizeof(BOOL);
@@ -1172,8 +1172,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->GETSDVIG;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22811 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._CHANGWITHOUTCOMMAND
-    st = getVariable(22811);
+  { // 23309 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._CHANGWITHOUTCOMMAND
+    st = getVariable(23309);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._CHANGWITHOUTCOMMAND", 55);
     st->size_data = sizeof(BOOL);
@@ -1183,8 +1183,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_CHANGWITHOUTCOMMAND;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22812 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.IN
-    st = getVariable(22812);
+  { // 23310 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.IN
+    st = getVariable(23310);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.IN", 51);
     st->size_data = sizeof(BOOL);
@@ -1195,8 +1195,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 22813 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.PT
-    st = getVariable(22813);
+  { // 23311 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.PT
+    st = getVariable(23311);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.PT", 51);
     st->size_data = sizeof(TIME);
@@ -1207,8 +1207,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 22814 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.Q
-    st = getVariable(22814);
+  { // 23312 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.Q
+    st = getVariable(23312);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -1219,8 +1219,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 22815 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.ET
-    st = getVariable(22815);
+  { // 23313 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.ET
+    st = getVariable(23313);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER.ET", 51);
     st->size_data = sizeof(TIME);
@@ -1231,8 +1231,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 22816 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER
-    st = getVariable(22816);
+  { // 23314 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER
+    st = getVariable(23314);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.ERRORCMDTIMER", 48);
     st->size_data = sizeof(TON);
@@ -1242,8 +1242,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TON = (TON*)&p_FB_SWITCH->ERRORCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 22817 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.IN
-    st = getVariable(22817);
+  { // 23315 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.IN
+    st = getVariable(23315);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -1254,8 +1254,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 22818 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.PT
-    st = getVariable(22818);
+  { // 23316 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.PT
+    st = getVariable(23316);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.PT", 48);
     st->size_data = sizeof(TIME);
@@ -1266,8 +1266,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 22819 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.Q
-    st = getVariable(22819);
+  { // 23317 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.Q
+    st = getVariable(23317);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1278,8 +1278,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 22820 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.ET
-    st = getVariable(22820);
+  { // 23318 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.ET
+    st = getVariable(23318);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET.ET", 48);
     st->size_data = sizeof(TIME);
@@ -1290,8 +1290,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 22821 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET
-    st = getVariable(22821);
+  { // 23319 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET
+    st = getVariable(23319);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.SDVIGRESET", 45);
     st->size_data = sizeof(TON);
@@ -1301,8 +1301,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TON = (TON*)&p_FB_SWITCH->SDVIGRESET;
     st->value_p = (void *)p_TON;
   }
-  { // 22822 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.IN
-    st = getVariable(22822);
+  { // 23320 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.IN
+    st = getVariable(23320);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -1313,8 +1313,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 22823 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.PT
-    st = getVariable(22823);
+  { // 23321 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.PT
+    st = getVariable(23321);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.PT", 49);
     st->size_data = sizeof(TIME);
@@ -1325,8 +1325,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 22824 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.Q
-    st = getVariable(22824);
+  { // 23322 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.Q
+    st = getVariable(23322);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1337,8 +1337,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 22825 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.ET
-    st = getVariable(22825);
+  { // 23323 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.ET
+    st = getVariable(23323);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET.ET", 49);
     st->size_data = sizeof(TIME);
@@ -1349,8 +1349,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 22826 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET
-    st = getVariable(22826);
+  { // 23324 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET
+    st = getVariable(23324);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._ERRORRESET", 46);
     st->size_data = sizeof(TON);
@@ -1360,8 +1360,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TON = (TON*)&p_FB_SWITCH->_ERRORRESET;
     st->value_p = (void *)p_TON;
   }
-  { // 22827 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.IN
-    st = getVariable(22827);
+  { // 23325 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.IN
+    st = getVariable(23325);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -1372,8 +1372,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 22828 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.PT
-    st = getVariable(22828);
+  { // 23326 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.PT
+    st = getVariable(23326);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.PT", 49);
     st->size_data = sizeof(TIME);
@@ -1384,8 +1384,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 22829 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.Q
-    st = getVariable(22829);
+  { // 23327 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.Q
+    st = getVariable(23327);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1396,8 +1396,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 22830 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.ET
-    st = getVariable(22830);
+  { // 23328 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.ET
+    st = getVariable(23328);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS.ET", 49);
     st->size_data = sizeof(TIME);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 22831 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS
-    st = getVariable(22831);
+  { // 23329 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS
+    st = getVariable(23329);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.OUTPUTSSETS", 46);
     st->size_data = sizeof(TOF);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_TOF = (TOF*)&p_FB_SWITCH->OUTPUTSSETS;
     st->value_p = (void *)p_TOF;
   }
-  { // 22832 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMDON
-    st = getVariable(22832);
+  { // 23330 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMDON
+    st = getVariable(23330);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMDON", 40);
     st->size_data = sizeof(BOOL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_TEN_KOLLECTORA(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->CMDON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22833 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMDOFF
-    st = getVariable(22833);
+  { // 23331 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMDOFF
+    st = getVariable(23331);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA.CMDOFF", 41);
     st->size_data = sizeof(BOOL);

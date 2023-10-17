@@ -130,9 +130,9 @@ int __variables_init_FB_NET_10KV_REZERV(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26905 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL.VALUE
-    st = getVariable(26905);
+  { // 27403 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL.VALUE
+    st = getVariable(27403);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL.VALUE", 48);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26906 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL.RELIABILITY
-    st = getVariable(26906);
+  { // 27404 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL.RELIABILITY
+    st = getVariable(27404);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26907 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL._INVERSED
-    st = getVariable(26907);
+  { // 27405 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL._INVERSED
+    st = getVariable(27405);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.SIGNAL._INVERSED", 52);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26908 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.RELIABILITY
-    st = getVariable(26908);
+  { // 27406 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.RELIABILITY
+    st = getVariable(27406);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26909 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.INVERSE
-    st = getVariable(26909);
+  { // 27407 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.INVERSE
+    st = getVariable(27407);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.INVERSE", 50);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26910 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DELAYON
-    st = getVariable(26910);
+  { // 27408 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DELAYON
+    st = getVariable(27408);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DELAYON", 50);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26911 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DELAYOFF
-    st = getVariable(26911);
+  { // 27409 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DELAYOFF
+    st = getVariable(27409);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DELAYOFF", 51);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26912 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.Q
-    st = getVariable(26912);
+  { // 27410 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.Q
+    st = getVariable(27410);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26913 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.STATUS
-    st = getVariable(26913);
+  { // 27411 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.STATUS
+    st = getVariable(27411);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26914 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DISABLED_SIG
-    st = getVariable(26914);
+  { // 27412 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DISABLED_SIG
+    st = getVariable(27412);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.STR_SS.DISABLED_SIG", 55);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26915 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.IN
-    st = getVariable(26915);
+  { // 27413 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.IN
+    st = getVariable(27413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26916 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.PT
-    st = getVariable(26916);
+  { // 27414 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.PT
+    st = getVariable(27414);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.PT", 46);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26917 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.Q
-    st = getVariable(26917);
+  { // 27415 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.Q
+    st = getVariable(27415);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26918 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.ET
-    st = getVariable(26918);
+  { // 27416 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.ET
+    st = getVariable(27416);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON.ET", 46);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26919 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON
-    st = getVariable(26919);
+  { // 27417 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON
+    st = getVariable(27417);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMERON", 43);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26920 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.IN
-    st = getVariable(26920);
+  { // 27418 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.IN
+    st = getVariable(27418);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26921 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.PT
-    st = getVariable(26921);
+  { // 27419 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.PT
+    st = getVariable(27419);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.PT", 47);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26922 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.Q
-    st = getVariable(26922);
+  { // 27420 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.Q
+    st = getVariable(27420);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26923 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.ET
-    st = getVariable(26923);
+  { // 27421 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.ET
+    st = getVariable(27421);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF.ET", 47);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_NET_10KV_REZERV(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26924 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF
-    st = getVariable(26924);
+  { // 27422 PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF
+    st = getVariable(27422);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NET_10KV_REZERV.TIMEROFF", 44);
     st->size_data = sizeof(TOF);

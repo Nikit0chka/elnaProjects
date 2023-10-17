@@ -130,9 +130,9 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 25865 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL.VALUE
-    st = getVariable(25865);
+  { // 26363 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL.VALUE
+    st = getVariable(26363);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL.VALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 25866 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL.RELIABILITY
-    st = getVariable(25866);
+  { // 26364 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL.RELIABILITY
+    st = getVariable(26364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25867 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL._INVERSED
-    st = getVariable(25867);
+  { // 26365 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL._INVERSED
+    st = getVariable(26365);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.SIGNAL._INVERSED", 57);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 25868 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.RELIABILITY
-    st = getVariable(25868);
+  { // 26366 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.RELIABILITY
+    st = getVariable(26366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25869 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.INVERSE
-    st = getVariable(25869);
+  { // 26367 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.INVERSE
+    st = getVariable(26367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.INVERSE", 55);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 25870 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DELAYON
-    st = getVariable(25870);
+  { // 26368 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DELAYON
+    st = getVariable(26368);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DELAYON", 55);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 25871 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DELAYOFF
-    st = getVariable(25871);
+  { // 26369 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DELAYOFF
+    st = getVariable(26369);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DELAYOFF", 56);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 25872 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.Q
-    st = getVariable(25872);
+  { // 26370 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.Q
+    st = getVariable(26370);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 25873 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.STATUS
-    st = getVariable(25873);
+  { // 26371 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.STATUS
+    st = getVariable(26371);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 25874 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DISABLED_SIG
-    st = getVariable(25874);
+  { // 26372 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DISABLED_SIG
+    st = getVariable(26372);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.STR_SS.DISABLED_SIG", 60);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 25875 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.IN
-    st = getVariable(25875);
+  { // 26373 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.IN
+    st = getVariable(26373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.IN", 51);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 25876 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.PT
-    st = getVariable(25876);
+  { // 26374 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.PT
+    st = getVariable(26374);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.PT", 51);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 25877 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.Q
-    st = getVariable(25877);
+  { // 26375 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.Q
+    st = getVariable(26375);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 25878 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.ET
-    st = getVariable(25878);
+  { // 26376 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.ET
+    st = getVariable(26376);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON.ET", 51);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 25879 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON
-    st = getVariable(25879);
+  { // 26377 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON
+    st = getVariable(26377);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMERON", 48);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 25880 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.IN
-    st = getVariable(25880);
+  { // 26378 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.IN
+    st = getVariable(26378);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 25881 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.PT
-    st = getVariable(25881);
+  { // 26379 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.PT
+    st = getVariable(26379);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.PT", 52);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 25882 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.Q
-    st = getVariable(25882);
+  { // 26380 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.Q
+    st = getVariable(26380);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 25883 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.ET
-    st = getVariable(25883);
+  { // 26381 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.ET
+    st = getVariable(26381);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF.ET", 52);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_MV_TELEZHKA_VIKACHEN(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 25884 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF
-    st = getVariable(25884);
+  { // 26382 PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF
+    st = getVariable(26382);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV_TELEZHKA_VIKACHEN.TIMEROFF", 49);
     st->size_data = sizeof(TOF);

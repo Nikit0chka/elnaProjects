@@ -130,9 +130,9 @@ int __variables_init_FB_ANTIPOMPAG(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_ANTIPOMPAG(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 56698 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND
-    st = getVariable(56698);
+  { // 62717 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND
+    st = getVariable(62717);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -193,8 +193,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56699 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.STATUS
-    st = getVariable(56699);
+  { // 62718 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.STATUS
+    st = getVariable(62718);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -205,8 +205,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56700 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ONSTATUS
-    st = getVariable(56700);
+  { // 62719 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ONSTATUS
+    st = getVariable(62719);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -217,8 +217,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 56701 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INOPCCOMMANDSDISABLED
-    st = getVariable(56701);
+  { // 62720 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INOPCCOMMANDSDISABLED
+    st = getVariable(62720);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56702 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SDVIG
-    st = getVariable(56702);
+  { // 62721 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SDVIG
+    st = getVariable(62721);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 56703 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.NS
-    st = getVariable(56703);
+  { // 62722 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.NS
+    st = getVariable(62722);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -253,8 +253,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 56704 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.DP
-    st = getVariable(56704);
+  { // 62723 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.DP
+    st = getVariable(62723);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.DP", 46);
     st->size_data = sizeof(BOOL);
@@ -265,8 +265,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 56705 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.COMMANDFAULT
-    st = getVariable(56705);
+  { // 62724 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.COMMANDFAULT
+    st = getVariable(62724);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 56706 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ACCIDENT
-    st = getVariable(56706);
+  { // 62725 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ACCIDENT
+    st = getVariable(62725);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -289,8 +289,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 56707 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.AUTO
-    st = getVariable(56707);
+  { // 62726 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.AUTO
+    st = getVariable(62726);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.AUTO", 48);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 56708 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.MANUAL
-    st = getVariable(56708);
+  { // 62727 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.MANUAL
+    st = getVariable(62727);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.MANUAL", 50);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 56709 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.LOCAL
-    st = getVariable(56709);
+  { // 62728 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.LOCAL
+    st = getVariable(62728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -325,8 +325,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 56710 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.DISTANCE
-    st = getVariable(56710);
+  { // 62729 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.DISTANCE
+    st = getVariable(62729);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 56711 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ERRORPOWEROFF
-    st = getVariable(56711);
+  { // 62730 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ERRORPOWEROFF
+    st = getVariable(62730);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ERRORPOWEROFF", 57);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 56712 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ERRORBLOCK
-    st = getVariable(56712);
+  { // 62731 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ERRORBLOCK
+    st = getVariable(62731);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ERRORBLOCK", 54);
     st->size_data = sizeof(BOOL);
@@ -361,8 +361,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 56713 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SO
-    st = getVariable(56713);
+  { // 62732 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SO
+    st = getVariable(62732);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SO", 46);
     st->size_data = sizeof(BOOL);
@@ -373,8 +373,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 56714 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SZ
-    st = getVariable(56714);
+  { // 62733 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SZ
+    st = getVariable(62733);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.SZ", 46);
     st->size_data = sizeof(BOOL);
@@ -385,8 +385,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 56715 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.OPCCOMMANDSDISABLED
-    st = getVariable(56715);
+  { // 62734 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.OPCCOMMANDSDISABLED
+    st = getVariable(62734);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -397,8 +397,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56716 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.LASTCMDISON
-    st = getVariable(56716);
+  { // 62735 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.LASTCMDISON
+    st = getVariable(62735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -409,8 +409,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 56717 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_STATON
-    st = getVariable(56717);
+  { // 62736 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_STATON
+    st = getVariable(62736);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -421,8 +421,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 56718 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_STATOFF
-    st = getVariable(56718);
+  { // 62737 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_STATOFF
+    st = getVariable(62737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -433,8 +433,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 56719 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_CMDON
-    st = getVariable(56719);
+  { // 62738 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_CMDON
+    st = getVariable(62738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -445,8 +445,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 56720 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_CMDOFF
-    st = getVariable(56720);
+  { // 62739 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_CMDOFF
+    st = getVariable(62739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -457,8 +457,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 56721 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INSO
-    st = getVariable(56721);
+  { // 62740 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INSO
+    st = getVariable(62740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INSO", 59);
     st->size_data = sizeof(BOOL);
@@ -469,8 +469,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 56722 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INSZ
-    st = getVariable(56722);
+  { // 62741 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INSZ
+    st = getVariable(62741);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INSZ", 59);
     st->size_data = sizeof(BOOL);
@@ -481,8 +481,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 56723 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INDP
-    st = getVariable(56723);
+  { // 62742 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INDP
+    st = getVariable(62742);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.ISVALIDREF_INDP", 59);
     st->size_data = sizeof(BOOL);
@@ -493,8 +493,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 56724 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CONTINUEHOLDCOMMAND
-    st = getVariable(56724);
+  { // 62743 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CONTINUEHOLDCOMMAND
+    st = getVariable(62743);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CONTINUEHOLDCOMMAND", 63);
     st->size_data = sizeof(TIME);
@@ -505,8 +505,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 56725 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND_ALG
-    st = getVariable(56725);
+  { // 62744 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND_ALG
+    st = getVariable(62744);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -517,8 +517,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 56726 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND_ARM
-    st = getVariable(56726);
+  { // 62745 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND_ARM
+    st = getVariable(62745);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -529,8 +529,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 56727 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CMDON
-    st = getVariable(56727);
+  { // 62746 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CMDON
+    st = getVariable(62746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 56728 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CMDOFF
-    st = getVariable(56728);
+  { // 62747 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CMDOFF
+    st = getVariable(62747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -553,8 +553,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 56729 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.RELIABILITY
-    st = getVariable(56729);
+  { // 62748 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.RELIABILITY
+    st = getVariable(62748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.KRAN6.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -565,8 +565,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 56730 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INRUNONSTART
-    st = getVariable(56730);
+  { // 62749 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INRUNONSTART
+    st = getVariable(62749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INRUNONSTART", 57);
     st->size_data = sizeof(BOOL);
@@ -577,8 +577,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 56731 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCANRUN
-    st = getVariable(56731);
+  { // 62750 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCANRUN
+    st = getVariable(62750);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCANRUN", 53);
     st->size_data = sizeof(BOOL);
@@ -589,8 +589,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 56732 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INHASERROR
-    st = getVariable(56732);
+  { // 62751 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INHASERROR
+    st = getVariable(62751);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INHASERROR", 55);
     st->size_data = sizeof(BOOL);
@@ -601,8 +601,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 56733 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INENDED
-    st = getVariable(56733);
+  { // 62752 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INENDED
+    st = getVariable(62752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -613,8 +613,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 56734 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INOPCCOMMANDSDISABLED
-    st = getVariable(56734);
+  { // 62753 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INOPCCOMMANDSDISABLED
+    st = getVariable(62753);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -625,8 +625,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56735 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND
-    st = getVariable(56735);
+  { // 62754 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND
+    st = getVariable(62754);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -637,8 +637,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56736 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND_ARM
-    st = getVariable(56736);
+  { // 62755 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND_ARM
+    st = getVariable(62755);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -649,8 +649,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 56737 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND_ALG
-    st = getVariable(56737);
+  { // 62756 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND_ALG
+    st = getVariable(62756);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -661,8 +661,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 56738 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.STATUS
-    st = getVariable(56738);
+  { // 62757 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.STATUS
+    st = getVariable(62757);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -673,8 +673,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56739 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.CANRUN
-    st = getVariable(56739);
+  { // 62758 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.CANRUN
+    st = getVariable(62758);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.CANRUN", 51);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 56740 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.OPCCOMMANDSDISABLED
-    st = getVariable(56740);
+  { // 62759 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.OPCCOMMANDSDISABLED
+    st = getVariable(62759);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56741 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ISRUNING
-    st = getVariable(56741);
+  { // 62760 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ISRUNING
+    st = getVariable(62760);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ISRUNING", 53);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 56742 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.HASERROR
-    st = getVariable(56742);
+  { // 62761 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.HASERROR
+    st = getVariable(62761);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.HASERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 56743 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ISENDED
-    st = getVariable(56743);
+  { // 62762 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ISENDED
+    st = getVariable(62762);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ISENDED", 52);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 56744 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.RUNONSTART
-    st = getVariable(56744);
+  { // 62763 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.RUNONSTART
+    st = getVariable(62763);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.RUNONSTART", 55);
     st->size_data = sizeof(BOOL);
@@ -745,8 +745,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 56745 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.START
-    st = getVariable(56745);
+  { // 62764 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.START
+    st = getVariable(62764);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.START", 50);
     st->size_data = sizeof(DWORD);
@@ -757,8 +757,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 56746 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ERROR
-    st = getVariable(56746);
+  { // 62765 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ERROR
+    st = getVariable(62765);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.ERROR", 50);
     st->size_data = sizeof(DWORD);
@@ -769,8 +769,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 56747 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.TOP
-    st = getVariable(56747);
+  { // 62766 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.TOP
+    st = getVariable(62766);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.STRALG.TOP", 48);
     st->size_data = sizeof(DWORD);
@@ -781,8 +781,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 56748 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.VALUE
-    st = getVariable(56748);
+  { // 62767 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.VALUE
+    st = getVariable(62767);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.VALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -793,8 +793,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 56749 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.STATUS
-    st = getVariable(56749);
+  { // 62768 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.STATUS
+    st = getVariable(62768);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -805,8 +805,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56750 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INTERVAL
-    st = getVariable(56750);
+  { // 62769 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INTERVAL
+    st = getVariable(62769);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INTERVAL", 53);
     st->size_data = sizeof(BYTE);
@@ -817,8 +817,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 56751 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND
-    st = getVariable(56751);
+  { // 62770 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND
+    st = getVariable(62770);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -829,8 +829,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56752 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.BLCONNECT
-    st = getVariable(56752);
+  { // 62771 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.BLCONNECT
+    st = getVariable(62771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.BLCONNECT", 54);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 56753 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLL
-    st = getVariable(56753);
+  { // 62772 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLL
+    st = getVariable(62772);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLL", 48);
     st->size_data = sizeof(LREAL);
@@ -853,8 +853,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 56754 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHL
-    st = getVariable(56754);
+  { // 62773 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHL
+    st = getVariable(62773);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHL", 48);
     st->size_data = sizeof(LREAL);
@@ -865,8 +865,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 56755 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLA
-    st = getVariable(56755);
+  { // 62774 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLA
+    st = getVariable(62774);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLA", 48);
     st->size_data = sizeof(LREAL);
@@ -877,8 +877,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 56756 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHA
-    st = getVariable(56756);
+  { // 62775 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHA
+    st = getVariable(62775);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHA", 48);
     st->size_data = sizeof(LREAL);
@@ -889,8 +889,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 56757 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLW
-    st = getVariable(56757);
+  { // 62776 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLW
+    st = getVariable(62776);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DLW", 48);
     st->size_data = sizeof(LREAL);
@@ -901,8 +901,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 56758 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHW
-    st = getVariable(56758);
+  { // 62777 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHW
+    st = getVariable(62777);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DHW", 48);
     st->size_data = sizeof(LREAL);
@@ -913,8 +913,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 56759 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LL
-    st = getVariable(56759);
+  { // 62778 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LL
+    st = getVariable(62778);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LL", 47);
     st->size_data = sizeof(LREAL);
@@ -925,8 +925,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 56760 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HL
-    st = getVariable(56760);
+  { // 62779 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HL
+    st = getVariable(62779);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HL", 47);
     st->size_data = sizeof(LREAL);
@@ -937,8 +937,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 56761 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LA
-    st = getVariable(56761);
+  { // 62780 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LA
+    st = getVariable(62780);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LA", 47);
     st->size_data = sizeof(LREAL);
@@ -949,8 +949,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 56762 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HA
-    st = getVariable(56762);
+  { // 62781 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HA
+    st = getVariable(62781);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HA", 47);
     st->size_data = sizeof(LREAL);
@@ -961,8 +961,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 56763 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LW
-    st = getVariable(56763);
+  { // 62782 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LW
+    st = getVariable(62782);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.LW", 47);
     st->size_data = sizeof(LREAL);
@@ -973,8 +973,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 56764 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HW
-    st = getVariable(56764);
+  { // 62783 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HW
+    st = getVariable(62783);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HW", 47);
     st->size_data = sizeof(LREAL);
@@ -985,8 +985,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 56765 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_LA
-    st = getVariable(56765);
+  { // 62784 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_LA
+    st = getVariable(62784);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_LA", 58);
     st->size_data = sizeof(BOOL);
@@ -997,8 +997,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 56766 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_HA
-    st = getVariable(56766);
+  { // 62785 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_HA
+    st = getVariable(62785);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_HA", 58);
     st->size_data = sizeof(BOOL);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 56767 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_LW
-    st = getVariable(56767);
+  { // 62786 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_LW
+    st = getVariable(62786);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_LW", 58);
     st->size_data = sizeof(BOOL);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 56768 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_HW
-    st = getVariable(56768);
+  { // 62787 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_HW
+    st = getVariable(62787);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.ISVALIDREF_HW", 58);
     st->size_data = sizeof(BOOL);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 56769 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INPLL
-    st = getVariable(56769);
+  { // 62788 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INPLL
+    st = getVariable(62788);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INPLL", 50);
     st->size_data = sizeof(LREAL);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 56770 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INPHL
-    st = getVariable(56770);
+  { // 62789 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INPHL
+    st = getVariable(62789);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INPHL", 50);
     st->size_data = sizeof(LREAL);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 56771 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CURRENTSHOTCIRCUIT
-    st = getVariable(56771);
+  { // 62790 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CURRENTSHOTCIRCUIT
+    st = getVariable(62790);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CURRENTSHOTCIRCUIT", 63);
     st->size_data = sizeof(LREAL);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56772 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CURRENTBREAKCIRCUIT
-    st = getVariable(56772);
+  { // 62791 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CURRENTBREAKCIRCUIT
+    st = getVariable(62791);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CURRENTBREAKCIRCUIT", 64);
     st->size_data = sizeof(LREAL);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56773 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXCHANGESPEED
-    st = getVariable(56773);
+  { // 62792 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXCHANGESPEED
+    st = getVariable(62792);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXCHANGESPEED", 59);
     st->size_data = sizeof(LREAL);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56774 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXCHANGESPEEDDOWN
-    st = getVariable(56774);
+  { // 62793 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXCHANGESPEEDDOWN
+    st = getVariable(62793);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXCHANGESPEEDDOWN", 63);
     st->size_data = sizeof(LREAL);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56775 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CHANGESPEED
-    st = getVariable(56775);
+  { // 62794 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CHANGESPEED
+    st = getVariable(62794);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.CHANGESPEED", 56);
     st->size_data = sizeof(LREAL);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56776 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HISTERESIS
-    st = getVariable(56776);
+  { // 62795 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HISTERESIS
+    st = getVariable(62795);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.HISTERESIS", 55);
     st->size_data = sizeof(LREAL);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 56777 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.APERTURFILTER
-    st = getVariable(56777);
+  { // 62796 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.APERTURFILTER
+    st = getVariable(62796);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.APERTURFILTER", 58);
     st->size_data = sizeof(LREAL);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56778 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.EXPONENTIALFILTER
-    st = getVariable(56778);
+  { // 62797 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.EXPONENTIALFILTER
+    st = getVariable(62797);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.EXPONENTIALFILTER", 62);
     st->size_data = sizeof(LREAL);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56779 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.RASSOGLASOVANIE
-    st = getVariable(56779);
+  { // 62798 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.RASSOGLASOVANIE
+    st = getVariable(62798);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.RASSOGLASOVANIE", 60);
     st->size_data = sizeof(LREAL);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 56780 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.OPCCOMMANDSDISABLED
-    st = getVariable(56780);
+  { // 62799 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.OPCCOMMANDSDISABLED
+    st = getVariable(62799);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.OPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56781 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_LA
-    st = getVariable(56781);
+  { // 62800 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_LA
+    st = getVariable(62800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_LA", 56);
     st->size_data = sizeof(BOOL);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 56782 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_HA
-    st = getVariable(56782);
+  { // 62801 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_HA
+    st = getVariable(62801);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_HA", 56);
     st->size_data = sizeof(BOOL);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 56783 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_LW
-    st = getVariable(56783);
+  { // 62802 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_LW
+    st = getVariable(62802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_LW", 56);
     st->size_data = sizeof(BOOL);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 56784 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_HW
-    st = getVariable(56784);
+  { // 62803 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_HW
+    st = getVariable(62803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DISABLED_HW", 56);
     st->size_data = sizeof(BOOL);
@@ -1225,8 +1225,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 56785 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYLA
-    st = getVariable(56785);
+  { // 62804 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYLA
+    st = getVariable(62804);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYLA", 52);
     st->size_data = sizeof(TIME);
@@ -1237,8 +1237,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 56786 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYLW
-    st = getVariable(56786);
+  { // 62805 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYLW
+    st = getVariable(62805);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYLW", 52);
     st->size_data = sizeof(TIME);
@@ -1249,8 +1249,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 56787 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYHW
-    st = getVariable(56787);
+  { // 62806 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYHW
+    st = getVariable(62806);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYHW", 52);
     st->size_data = sizeof(TIME);
@@ -1261,8 +1261,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 56788 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYHA
-    st = getVariable(56788);
+  { // 62807 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYHA
+    st = getVariable(62807);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DELAYHA", 52);
     st->size_data = sizeof(TIME);
@@ -1273,8 +1273,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 56789 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MINVALUE_ISVALIDREF
-    st = getVariable(56789);
+  { // 62808 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MINVALUE_ISVALIDREF
+    st = getVariable(62808);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MINVALUE_ISVALIDREF", 64);
     st->size_data = sizeof(BOOL);
@@ -1285,8 +1285,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56790 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXVALUE_ISVALIDREF
-    st = getVariable(56790);
+  { // 62809 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXVALUE_ISVALIDREF
+    st = getVariable(62809);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXVALUE_ISVALIDREF", 64);
     st->size_data = sizeof(BOOL);
@@ -1297,8 +1297,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56791 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MINVALUE
-    st = getVariable(56791);
+  { // 62810 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MINVALUE
+    st = getVariable(62810);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MINVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -1309,8 +1309,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56792 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXVALUE
-    st = getVariable(56792);
+  { // 62811 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXVALUE
+    st = getVariable(62811);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.MAXVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -1321,8 +1321,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56793 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INOPCCOMMANDSDISABLED
-    st = getVariable(56793);
+  { // 62812 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INOPCCOMMANDSDISABLED
+    st = getVariable(62812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INOPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -1333,8 +1333,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56794 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.IMIT
-    st = getVariable(56794);
+  { // 62813 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.IMIT
+    st = getVariable(62813);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.IMIT", 49);
     st->size_data = sizeof(BOOL);
@@ -1345,8 +1345,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 56795 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.REMONT
-    st = getVariable(56795);
+  { // 62814 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.REMONT
+    st = getVariable(62814);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.REMONT", 51);
     st->size_data = sizeof(BOOL);
@@ -1357,8 +1357,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 56796 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS
-    st = getVariable(56796);
+  { // 62815 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS
+    st = getVariable(62815);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS", 47);
     st->size_data = sizeof(BOOL);
@@ -1369,8 +1369,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 56797 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS_MIN
-    st = getVariable(56797);
+  { // 62816 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS_MIN
+    st = getVariable(62816);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS_MIN", 51);
     st->size_data = sizeof(BOOL);
@@ -1381,8 +1381,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 56798 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS_MAX
-    st = getVariable(56798);
+  { // 62817 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS_MAX
+    st = getVariable(62817);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.NS_MAX", 51);
     st->size_data = sizeof(BOOL);
@@ -1393,8 +1393,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 56799 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND_ALG
-    st = getVariable(56799);
+  { // 62818 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND_ALG
+    st = getVariable(62818);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND_ALG", 58);
     st->size_data = sizeof(WORD);
@@ -1405,8 +1405,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 56800 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND_ARM
-    st = getVariable(56800);
+  { // 62819 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND_ARM
+    st = getVariable(62819);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.INCOMMAND_ARM", 58);
     st->size_data = sizeof(WORD);
@@ -1417,8 +1417,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 56801 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DMAXCHANGESPEED
-    st = getVariable(56801);
+  { // 62820 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DMAXCHANGESPEED
+    st = getVariable(62820);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DMAXCHANGESPEED", 60);
     st->size_data = sizeof(LREAL);
@@ -1429,8 +1429,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56802 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DMAXCHANGESPEEDDOWN
-    st = getVariable(56802);
+  { // 62821 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DMAXCHANGESPEEDDOWN
+    st = getVariable(62821);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RASHOD.DMAXCHANGESPEEDDOWN", 64);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56803 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.VALUE
-    st = getVariable(56803);
+  { // 62822 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.VALUE
+    st = getVariable(62822);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -1453,8 +1453,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 56804 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.STATUS
-    st = getVariable(56804);
+  { // 62823 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.STATUS
+    st = getVariable(62823);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -1465,8 +1465,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56805 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INTERVAL
-    st = getVariable(56805);
+  { // 62824 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INTERVAL
+    st = getVariable(62824);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INTERVAL", 52);
     st->size_data = sizeof(BYTE);
@@ -1477,8 +1477,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 56806 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND
-    st = getVariable(56806);
+  { // 62825 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND
+    st = getVariable(62825);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -1489,8 +1489,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56807 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.BLCONNECT
-    st = getVariable(56807);
+  { // 62826 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.BLCONNECT
+    st = getVariable(62826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.BLCONNECT", 53);
     st->size_data = sizeof(BOOL);
@@ -1501,8 +1501,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 56808 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLL
-    st = getVariable(56808);
+  { // 62827 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLL
+    st = getVariable(62827);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLL", 47);
     st->size_data = sizeof(LREAL);
@@ -1513,8 +1513,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 56809 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHL
-    st = getVariable(56809);
+  { // 62828 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHL
+    st = getVariable(62828);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHL", 47);
     st->size_data = sizeof(LREAL);
@@ -1525,8 +1525,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 56810 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLA
-    st = getVariable(56810);
+  { // 62829 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLA
+    st = getVariable(62829);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLA", 47);
     st->size_data = sizeof(LREAL);
@@ -1537,8 +1537,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 56811 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHA
-    st = getVariable(56811);
+  { // 62830 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHA
+    st = getVariable(62830);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHA", 47);
     st->size_data = sizeof(LREAL);
@@ -1549,8 +1549,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 56812 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLW
-    st = getVariable(56812);
+  { // 62831 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLW
+    st = getVariable(62831);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DLW", 47);
     st->size_data = sizeof(LREAL);
@@ -1561,8 +1561,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 56813 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHW
-    st = getVariable(56813);
+  { // 62832 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHW
+    st = getVariable(62832);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DHW", 47);
     st->size_data = sizeof(LREAL);
@@ -1573,8 +1573,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 56814 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LL
-    st = getVariable(56814);
+  { // 62833 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LL
+    st = getVariable(62833);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LL", 46);
     st->size_data = sizeof(LREAL);
@@ -1585,8 +1585,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 56815 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HL
-    st = getVariable(56815);
+  { // 62834 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HL
+    st = getVariable(62834);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HL", 46);
     st->size_data = sizeof(LREAL);
@@ -1597,8 +1597,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 56816 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LA
-    st = getVariable(56816);
+  { // 62835 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LA
+    st = getVariable(62835);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LA", 46);
     st->size_data = sizeof(LREAL);
@@ -1609,8 +1609,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 56817 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HA
-    st = getVariable(56817);
+  { // 62836 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HA
+    st = getVariable(62836);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HA", 46);
     st->size_data = sizeof(LREAL);
@@ -1621,8 +1621,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 56818 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LW
-    st = getVariable(56818);
+  { // 62837 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LW
+    st = getVariable(62837);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.LW", 46);
     st->size_data = sizeof(LREAL);
@@ -1633,8 +1633,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 56819 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HW
-    st = getVariable(56819);
+  { // 62838 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HW
+    st = getVariable(62838);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HW", 46);
     st->size_data = sizeof(LREAL);
@@ -1645,8 +1645,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 56820 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_LA
-    st = getVariable(56820);
+  { // 62839 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_LA
+    st = getVariable(62839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -1657,8 +1657,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 56821 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_HA
-    st = getVariable(56821);
+  { // 62840 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_HA
+    st = getVariable(62840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 56822 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_LW
-    st = getVariable(56822);
+  { // 62841 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_LW
+    st = getVariable(62841);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 56823 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_HW
-    st = getVariable(56823);
+  { // 62842 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_HW
+    st = getVariable(62842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.ISVALIDREF_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 56824 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INPLL
-    st = getVariable(56824);
+  { // 62843 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INPLL
+    st = getVariable(62843);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INPLL", 49);
     st->size_data = sizeof(LREAL);
@@ -1705,8 +1705,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 56825 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INPHL
-    st = getVariable(56825);
+  { // 62844 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INPHL
+    st = getVariable(62844);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INPHL", 49);
     st->size_data = sizeof(LREAL);
@@ -1717,8 +1717,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 56826 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CURRENTSHOTCIRCUIT
-    st = getVariable(56826);
+  { // 62845 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CURRENTSHOTCIRCUIT
+    st = getVariable(62845);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CURRENTSHOTCIRCUIT", 62);
     st->size_data = sizeof(LREAL);
@@ -1729,8 +1729,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56827 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CURRENTBREAKCIRCUIT
-    st = getVariable(56827);
+  { // 62846 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CURRENTBREAKCIRCUIT
+    st = getVariable(62846);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CURRENTBREAKCIRCUIT", 63);
     st->size_data = sizeof(LREAL);
@@ -1741,8 +1741,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56828 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXCHANGESPEED
-    st = getVariable(56828);
+  { // 62847 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXCHANGESPEED
+    st = getVariable(62847);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXCHANGESPEED", 58);
     st->size_data = sizeof(LREAL);
@@ -1753,8 +1753,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56829 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXCHANGESPEEDDOWN
-    st = getVariable(56829);
+  { // 62848 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXCHANGESPEEDDOWN
+    st = getVariable(62848);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXCHANGESPEEDDOWN", 62);
     st->size_data = sizeof(LREAL);
@@ -1765,8 +1765,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56830 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CHANGESPEED
-    st = getVariable(56830);
+  { // 62849 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CHANGESPEED
+    st = getVariable(62849);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.CHANGESPEED", 55);
     st->size_data = sizeof(LREAL);
@@ -1777,8 +1777,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56831 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HISTERESIS
-    st = getVariable(56831);
+  { // 62850 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HISTERESIS
+    st = getVariable(62850);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.HISTERESIS", 54);
     st->size_data = sizeof(LREAL);
@@ -1789,8 +1789,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 56832 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.APERTURFILTER
-    st = getVariable(56832);
+  { // 62851 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.APERTURFILTER
+    st = getVariable(62851);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.APERTURFILTER", 57);
     st->size_data = sizeof(LREAL);
@@ -1801,8 +1801,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56833 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.EXPONENTIALFILTER
-    st = getVariable(56833);
+  { // 62852 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.EXPONENTIALFILTER
+    st = getVariable(62852);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.EXPONENTIALFILTER", 61);
     st->size_data = sizeof(LREAL);
@@ -1813,8 +1813,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56834 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.RASSOGLASOVANIE
-    st = getVariable(56834);
+  { // 62853 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.RASSOGLASOVANIE
+    st = getVariable(62853);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.RASSOGLASOVANIE", 59);
     st->size_data = sizeof(LREAL);
@@ -1825,8 +1825,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 56835 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.OPCCOMMANDSDISABLED
-    st = getVariable(56835);
+  { // 62854 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.OPCCOMMANDSDISABLED
+    st = getVariable(62854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -1837,8 +1837,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56836 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_LA
-    st = getVariable(56836);
+  { // 62855 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_LA
+    st = getVariable(62855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_LA", 55);
     st->size_data = sizeof(BOOL);
@@ -1849,8 +1849,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 56837 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_HA
-    st = getVariable(56837);
+  { // 62856 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_HA
+    st = getVariable(62856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_HA", 55);
     st->size_data = sizeof(BOOL);
@@ -1861,8 +1861,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 56838 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_LW
-    st = getVariable(56838);
+  { // 62857 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_LW
+    st = getVariable(62857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_LW", 55);
     st->size_data = sizeof(BOOL);
@@ -1873,8 +1873,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 56839 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_HW
-    st = getVariable(56839);
+  { // 62858 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_HW
+    st = getVariable(62858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DISABLED_HW", 55);
     st->size_data = sizeof(BOOL);
@@ -1885,8 +1885,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 56840 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYLA
-    st = getVariable(56840);
+  { // 62859 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYLA
+    st = getVariable(62859);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYLA", 51);
     st->size_data = sizeof(TIME);
@@ -1897,8 +1897,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 56841 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYLW
-    st = getVariable(56841);
+  { // 62860 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYLW
+    st = getVariable(62860);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYLW", 51);
     st->size_data = sizeof(TIME);
@@ -1909,8 +1909,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 56842 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYHW
-    st = getVariable(56842);
+  { // 62861 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYHW
+    st = getVariable(62861);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYHW", 51);
     st->size_data = sizeof(TIME);
@@ -1921,8 +1921,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 56843 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYHA
-    st = getVariable(56843);
+  { // 62862 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYHA
+    st = getVariable(62862);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DELAYHA", 51);
     st->size_data = sizeof(TIME);
@@ -1933,8 +1933,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 56844 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MINVALUE_ISVALIDREF
-    st = getVariable(56844);
+  { // 62863 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MINVALUE_ISVALIDREF
+    st = getVariable(62863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MINVALUE_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -1945,8 +1945,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56845 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXVALUE_ISVALIDREF
-    st = getVariable(56845);
+  { // 62864 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXVALUE_ISVALIDREF
+    st = getVariable(62864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXVALUE_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -1957,8 +1957,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56846 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MINVALUE
-    st = getVariable(56846);
+  { // 62865 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MINVALUE
+    st = getVariable(62865);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MINVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -1969,8 +1969,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56847 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXVALUE
-    st = getVariable(56847);
+  { // 62866 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXVALUE
+    st = getVariable(62866);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.MAXVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -1981,8 +1981,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56848 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INOPCCOMMANDSDISABLED
-    st = getVariable(56848);
+  { // 62867 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INOPCCOMMANDSDISABLED
+    st = getVariable(62867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1993,8 +1993,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56849 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.IMIT
-    st = getVariable(56849);
+  { // 62868 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.IMIT
+    st = getVariable(62868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.IMIT", 48);
     st->size_data = sizeof(BOOL);
@@ -2005,8 +2005,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 56850 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.REMONT
-    st = getVariable(56850);
+  { // 62869 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.REMONT
+    st = getVariable(62869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.REMONT", 50);
     st->size_data = sizeof(BOOL);
@@ -2017,8 +2017,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 56851 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS
-    st = getVariable(56851);
+  { // 62870 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS
+    st = getVariable(62870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -2029,8 +2029,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 56852 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS_MIN
-    st = getVariable(56852);
+  { // 62871 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS_MIN
+    st = getVariable(62871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS_MIN", 50);
     st->size_data = sizeof(BOOL);
@@ -2041,8 +2041,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 56853 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS_MAX
-    st = getVariable(56853);
+  { // 62872 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS_MAX
+    st = getVariable(62872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.NS_MAX", 50);
     st->size_data = sizeof(BOOL);
@@ -2053,8 +2053,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 56854 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND_ALG
-    st = getVariable(56854);
+  { // 62873 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND_ALG
+    st = getVariable(62873);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -2065,8 +2065,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 56855 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND_ARM
-    st = getVariable(56855);
+  { // 62874 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND_ARM
+    st = getVariable(62874);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -2077,8 +2077,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 56856 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DMAXCHANGESPEED
-    st = getVariable(56856);
+  { // 62875 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DMAXCHANGESPEED
+    st = getVariable(62875);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DMAXCHANGESPEED", 59);
     st->size_data = sizeof(LREAL);
@@ -2089,8 +2089,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56857 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DMAXCHANGESPEEDDOWN
-    st = getVariable(56857);
+  { // 62876 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DMAXCHANGESPEEDDOWN
+    st = getVariable(62876);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.ZAPAS.DMAXCHANGESPEEDDOWN", 63);
     st->size_data = sizeof(LREAL);
@@ -2101,8 +2101,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56858 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.VALUE
-    st = getVariable(56858);
+  { // 62877 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.VALUE
+    st = getVariable(62877);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.VALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -2113,8 +2113,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 56859 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.STATUS
-    st = getVariable(56859);
+  { // 62878 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.STATUS
+    st = getVariable(62878);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -2125,8 +2125,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56860 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INTERVAL
-    st = getVariable(56860);
+  { // 62879 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INTERVAL
+    st = getVariable(62879);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INTERVAL", 54);
     st->size_data = sizeof(BYTE);
@@ -2137,8 +2137,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 56861 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND
-    st = getVariable(56861);
+  { // 62880 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND
+    st = getVariable(62880);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2149,8 +2149,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56862 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.BLCONNECT
-    st = getVariable(56862);
+  { // 62881 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.BLCONNECT
+    st = getVariable(62881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.BLCONNECT", 55);
     st->size_data = sizeof(BOOL);
@@ -2161,8 +2161,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 56863 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLL
-    st = getVariable(56863);
+  { // 62882 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLL
+    st = getVariable(62882);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLL", 49);
     st->size_data = sizeof(LREAL);
@@ -2173,8 +2173,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 56864 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHL
-    st = getVariable(56864);
+  { // 62883 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHL
+    st = getVariable(62883);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHL", 49);
     st->size_data = sizeof(LREAL);
@@ -2185,8 +2185,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 56865 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLA
-    st = getVariable(56865);
+  { // 62884 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLA
+    st = getVariable(62884);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLA", 49);
     st->size_data = sizeof(LREAL);
@@ -2197,8 +2197,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 56866 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHA
-    st = getVariable(56866);
+  { // 62885 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHA
+    st = getVariable(62885);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHA", 49);
     st->size_data = sizeof(LREAL);
@@ -2209,8 +2209,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 56867 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLW
-    st = getVariable(56867);
+  { // 62886 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLW
+    st = getVariable(62886);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DLW", 49);
     st->size_data = sizeof(LREAL);
@@ -2221,8 +2221,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 56868 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHW
-    st = getVariable(56868);
+  { // 62887 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHW
+    st = getVariable(62887);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DHW", 49);
     st->size_data = sizeof(LREAL);
@@ -2233,8 +2233,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 56869 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LL
-    st = getVariable(56869);
+  { // 62888 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LL
+    st = getVariable(62888);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LL", 48);
     st->size_data = sizeof(LREAL);
@@ -2245,8 +2245,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 56870 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HL
-    st = getVariable(56870);
+  { // 62889 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HL
+    st = getVariable(62889);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HL", 48);
     st->size_data = sizeof(LREAL);
@@ -2257,8 +2257,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 56871 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LA
-    st = getVariable(56871);
+  { // 62890 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LA
+    st = getVariable(62890);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LA", 48);
     st->size_data = sizeof(LREAL);
@@ -2269,8 +2269,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 56872 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HA
-    st = getVariable(56872);
+  { // 62891 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HA
+    st = getVariable(62891);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HA", 48);
     st->size_data = sizeof(LREAL);
@@ -2281,8 +2281,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 56873 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LW
-    st = getVariable(56873);
+  { // 62892 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LW
+    st = getVariable(62892);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.LW", 48);
     st->size_data = sizeof(LREAL);
@@ -2293,8 +2293,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 56874 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HW
-    st = getVariable(56874);
+  { // 62893 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HW
+    st = getVariable(62893);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HW", 48);
     st->size_data = sizeof(LREAL);
@@ -2305,8 +2305,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 56875 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_LA
-    st = getVariable(56875);
+  { // 62894 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_LA
+    st = getVariable(62894);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_LA", 59);
     st->size_data = sizeof(BOOL);
@@ -2317,8 +2317,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 56876 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_HA
-    st = getVariable(56876);
+  { // 62895 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_HA
+    st = getVariable(62895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_HA", 59);
     st->size_data = sizeof(BOOL);
@@ -2329,8 +2329,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 56877 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_LW
-    st = getVariable(56877);
+  { // 62896 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_LW
+    st = getVariable(62896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_LW", 59);
     st->size_data = sizeof(BOOL);
@@ -2341,8 +2341,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 56878 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_HW
-    st = getVariable(56878);
+  { // 62897 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_HW
+    st = getVariable(62897);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.ISVALIDREF_HW", 59);
     st->size_data = sizeof(BOOL);
@@ -2353,8 +2353,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 56879 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INPLL
-    st = getVariable(56879);
+  { // 62898 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INPLL
+    st = getVariable(62898);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INPLL", 51);
     st->size_data = sizeof(LREAL);
@@ -2365,8 +2365,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 56880 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INPHL
-    st = getVariable(56880);
+  { // 62899 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INPHL
+    st = getVariable(62899);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INPHL", 51);
     st->size_data = sizeof(LREAL);
@@ -2377,8 +2377,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 56881 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CURRENTSHOTCIRCUIT
-    st = getVariable(56881);
+  { // 62900 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CURRENTSHOTCIRCUIT
+    st = getVariable(62900);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CURRENTSHOTCIRCUIT", 64);
     st->size_data = sizeof(LREAL);
@@ -2389,8 +2389,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56882 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CURRENTBREAKCIRCUIT
-    st = getVariable(56882);
+  { // 62901 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CURRENTBREAKCIRCUIT
+    st = getVariable(62901);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CURRENTBREAKCIRCUIT", 65);
     st->size_data = sizeof(LREAL);
@@ -2401,8 +2401,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56883 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXCHANGESPEED
-    st = getVariable(56883);
+  { // 62902 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXCHANGESPEED
+    st = getVariable(62902);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXCHANGESPEED", 60);
     st->size_data = sizeof(LREAL);
@@ -2413,8 +2413,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56884 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXCHANGESPEEDDOWN
-    st = getVariable(56884);
+  { // 62903 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXCHANGESPEEDDOWN
+    st = getVariable(62903);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXCHANGESPEEDDOWN", 64);
     st->size_data = sizeof(LREAL);
@@ -2425,8 +2425,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56885 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CHANGESPEED
-    st = getVariable(56885);
+  { // 62904 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CHANGESPEED
+    st = getVariable(62904);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.CHANGESPEED", 57);
     st->size_data = sizeof(LREAL);
@@ -2437,8 +2437,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56886 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HISTERESIS
-    st = getVariable(56886);
+  { // 62905 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HISTERESIS
+    st = getVariable(62905);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.HISTERESIS", 56);
     st->size_data = sizeof(LREAL);
@@ -2449,8 +2449,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 56887 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.APERTURFILTER
-    st = getVariable(56887);
+  { // 62906 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.APERTURFILTER
+    st = getVariable(62906);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.APERTURFILTER", 59);
     st->size_data = sizeof(LREAL);
@@ -2461,8 +2461,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56888 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.EXPONENTIALFILTER
-    st = getVariable(56888);
+  { // 62907 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.EXPONENTIALFILTER
+    st = getVariable(62907);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.EXPONENTIALFILTER", 63);
     st->size_data = sizeof(LREAL);
@@ -2473,8 +2473,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56889 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.RASSOGLASOVANIE
-    st = getVariable(56889);
+  { // 62908 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.RASSOGLASOVANIE
+    st = getVariable(62908);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.RASSOGLASOVANIE", 61);
     st->size_data = sizeof(LREAL);
@@ -2485,8 +2485,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 56890 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.OPCCOMMANDSDISABLED
-    st = getVariable(56890);
+  { // 62909 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.OPCCOMMANDSDISABLED
+    st = getVariable(62909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -2497,8 +2497,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56891 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_LA
-    st = getVariable(56891);
+  { // 62910 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_LA
+    st = getVariable(62910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -2509,8 +2509,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 56892 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_HA
-    st = getVariable(56892);
+  { // 62911 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_HA
+    st = getVariable(62911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -2521,8 +2521,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 56893 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_LW
-    st = getVariable(56893);
+  { // 62912 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_LW
+    st = getVariable(62912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -2533,8 +2533,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 56894 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_HW
-    st = getVariable(56894);
+  { // 62913 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_HW
+    st = getVariable(62913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DISABLED_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -2545,8 +2545,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 56895 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYLA
-    st = getVariable(56895);
+  { // 62914 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYLA
+    st = getVariable(62914);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYLA", 53);
     st->size_data = sizeof(TIME);
@@ -2557,8 +2557,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 56896 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYLW
-    st = getVariable(56896);
+  { // 62915 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYLW
+    st = getVariable(62915);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYLW", 53);
     st->size_data = sizeof(TIME);
@@ -2569,8 +2569,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 56897 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYHW
-    st = getVariable(56897);
+  { // 62916 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYHW
+    st = getVariable(62916);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYHW", 53);
     st->size_data = sizeof(TIME);
@@ -2581,8 +2581,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 56898 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYHA
-    st = getVariable(56898);
+  { // 62917 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYHA
+    st = getVariable(62917);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DELAYHA", 53);
     st->size_data = sizeof(TIME);
@@ -2593,8 +2593,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 56899 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MINVALUE_ISVALIDREF
-    st = getVariable(56899);
+  { // 62918 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MINVALUE_ISVALIDREF
+    st = getVariable(62918);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MINVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -2605,8 +2605,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56900 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXVALUE_ISVALIDREF
-    st = getVariable(56900);
+  { // 62919 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXVALUE_ISVALIDREF
+    st = getVariable(62919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -2617,8 +2617,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56901 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MINVALUE
-    st = getVariable(56901);
+  { // 62920 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MINVALUE
+    st = getVariable(62920);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MINVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -2629,8 +2629,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56902 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXVALUE
-    st = getVariable(56902);
+  { // 62921 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXVALUE
+    st = getVariable(62921);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.MAXVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -2641,8 +2641,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56903 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INOPCCOMMANDSDISABLED
-    st = getVariable(56903);
+  { // 62922 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INOPCCOMMANDSDISABLED
+    st = getVariable(62922);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -2653,8 +2653,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56904 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.IMIT
-    st = getVariable(56904);
+  { // 62923 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.IMIT
+    st = getVariable(62923);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.IMIT", 50);
     st->size_data = sizeof(BOOL);
@@ -2665,8 +2665,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 56905 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.REMONT
-    st = getVariable(56905);
+  { // 62924 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.REMONT
+    st = getVariable(62924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.REMONT", 52);
     st->size_data = sizeof(BOOL);
@@ -2677,8 +2677,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 56906 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS
-    st = getVariable(56906);
+  { // 62925 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS
+    st = getVariable(62925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -2689,8 +2689,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 56907 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS_MIN
-    st = getVariable(56907);
+  { // 62926 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS_MIN
+    st = getVariable(62926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS_MIN", 52);
     st->size_data = sizeof(BOOL);
@@ -2701,8 +2701,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 56908 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS_MAX
-    st = getVariable(56908);
+  { // 62927 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS_MAX
+    st = getVariable(62927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.NS_MAX", 52);
     st->size_data = sizeof(BOOL);
@@ -2713,8 +2713,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 56909 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND_ALG
-    st = getVariable(56909);
+  { // 62928 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND_ALG
+    st = getVariable(62928);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -2725,8 +2725,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 56910 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND_ARM
-    st = getVariable(56910);
+  { // 62929 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND_ARM
+    st = getVariable(62929);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -2737,8 +2737,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 56911 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DMAXCHANGESPEED
-    st = getVariable(56911);
+  { // 62930 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DMAXCHANGESPEED
+    st = getVariable(62930);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DMAXCHANGESPEED", 61);
     st->size_data = sizeof(LREAL);
@@ -2749,8 +2749,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56912 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DMAXCHANGESPEEDDOWN
-    st = getVariable(56912);
+  { // 62931 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DMAXCHANGESPEEDDOWN
+    st = getVariable(62931);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.P_GASIN.DMAXCHANGESPEEDDOWN", 65);
     st->size_data = sizeof(LREAL);
@@ -2761,8 +2761,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56913 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.VALUE
-    st = getVariable(56913);
+  { // 62932 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.VALUE
+    st = getVariable(62932);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.VALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -2773,8 +2773,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 56914 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.STATUS
-    st = getVariable(56914);
+  { // 62933 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.STATUS
+    st = getVariable(62933);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -2785,8 +2785,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56915 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INTERVAL
-    st = getVariable(56915);
+  { // 62934 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INTERVAL
+    st = getVariable(62934);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INTERVAL", 54);
     st->size_data = sizeof(BYTE);
@@ -2797,8 +2797,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 56916 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND
-    st = getVariable(56916);
+  { // 62935 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND
+    st = getVariable(62935);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2809,8 +2809,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56917 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.BLCONNECT
-    st = getVariable(56917);
+  { // 62936 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.BLCONNECT
+    st = getVariable(62936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.BLCONNECT", 55);
     st->size_data = sizeof(BOOL);
@@ -2821,8 +2821,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 56918 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLL
-    st = getVariable(56918);
+  { // 62937 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLL
+    st = getVariable(62937);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLL", 49);
     st->size_data = sizeof(LREAL);
@@ -2833,8 +2833,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 56919 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHL
-    st = getVariable(56919);
+  { // 62938 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHL
+    st = getVariable(62938);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHL", 49);
     st->size_data = sizeof(LREAL);
@@ -2845,8 +2845,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 56920 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLA
-    st = getVariable(56920);
+  { // 62939 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLA
+    st = getVariable(62939);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLA", 49);
     st->size_data = sizeof(LREAL);
@@ -2857,8 +2857,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 56921 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHA
-    st = getVariable(56921);
+  { // 62940 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHA
+    st = getVariable(62940);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHA", 49);
     st->size_data = sizeof(LREAL);
@@ -2869,8 +2869,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 56922 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLW
-    st = getVariable(56922);
+  { // 62941 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLW
+    st = getVariable(62941);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DLW", 49);
     st->size_data = sizeof(LREAL);
@@ -2881,8 +2881,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 56923 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHW
-    st = getVariable(56923);
+  { // 62942 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHW
+    st = getVariable(62942);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DHW", 49);
     st->size_data = sizeof(LREAL);
@@ -2893,8 +2893,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 56924 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LL
-    st = getVariable(56924);
+  { // 62943 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LL
+    st = getVariable(62943);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LL", 48);
     st->size_data = sizeof(LREAL);
@@ -2905,8 +2905,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 56925 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HL
-    st = getVariable(56925);
+  { // 62944 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HL
+    st = getVariable(62944);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HL", 48);
     st->size_data = sizeof(LREAL);
@@ -2917,8 +2917,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 56926 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LA
-    st = getVariable(56926);
+  { // 62945 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LA
+    st = getVariable(62945);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LA", 48);
     st->size_data = sizeof(LREAL);
@@ -2929,8 +2929,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 56927 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HA
-    st = getVariable(56927);
+  { // 62946 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HA
+    st = getVariable(62946);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HA", 48);
     st->size_data = sizeof(LREAL);
@@ -2941,8 +2941,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 56928 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LW
-    st = getVariable(56928);
+  { // 62947 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LW
+    st = getVariable(62947);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.LW", 48);
     st->size_data = sizeof(LREAL);
@@ -2953,8 +2953,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 56929 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HW
-    st = getVariable(56929);
+  { // 62948 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HW
+    st = getVariable(62948);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HW", 48);
     st->size_data = sizeof(LREAL);
@@ -2965,8 +2965,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 56930 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_LA
-    st = getVariable(56930);
+  { // 62949 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_LA
+    st = getVariable(62949);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_LA", 59);
     st->size_data = sizeof(BOOL);
@@ -2977,8 +2977,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 56931 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_HA
-    st = getVariable(56931);
+  { // 62950 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_HA
+    st = getVariable(62950);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_HA", 59);
     st->size_data = sizeof(BOOL);
@@ -2989,8 +2989,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 56932 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_LW
-    st = getVariable(56932);
+  { // 62951 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_LW
+    st = getVariable(62951);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_LW", 59);
     st->size_data = sizeof(BOOL);
@@ -3001,8 +3001,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 56933 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_HW
-    st = getVariable(56933);
+  { // 62952 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_HW
+    st = getVariable(62952);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.ISVALIDREF_HW", 59);
     st->size_data = sizeof(BOOL);
@@ -3013,8 +3013,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 56934 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INPLL
-    st = getVariable(56934);
+  { // 62953 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INPLL
+    st = getVariable(62953);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INPLL", 51);
     st->size_data = sizeof(LREAL);
@@ -3025,8 +3025,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 56935 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INPHL
-    st = getVariable(56935);
+  { // 62954 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INPHL
+    st = getVariable(62954);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INPHL", 51);
     st->size_data = sizeof(LREAL);
@@ -3037,8 +3037,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 56936 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CURRENTSHOTCIRCUIT
-    st = getVariable(56936);
+  { // 62955 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CURRENTSHOTCIRCUIT
+    st = getVariable(62955);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CURRENTSHOTCIRCUIT", 64);
     st->size_data = sizeof(LREAL);
@@ -3049,8 +3049,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56937 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CURRENTBREAKCIRCUIT
-    st = getVariable(56937);
+  { // 62956 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CURRENTBREAKCIRCUIT
+    st = getVariable(62956);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CURRENTBREAKCIRCUIT", 65);
     st->size_data = sizeof(LREAL);
@@ -3061,8 +3061,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56938 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXCHANGESPEED
-    st = getVariable(56938);
+  { // 62957 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXCHANGESPEED
+    st = getVariable(62957);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXCHANGESPEED", 60);
     st->size_data = sizeof(LREAL);
@@ -3073,8 +3073,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56939 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXCHANGESPEEDDOWN
-    st = getVariable(56939);
+  { // 62958 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXCHANGESPEEDDOWN
+    st = getVariable(62958);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXCHANGESPEEDDOWN", 64);
     st->size_data = sizeof(LREAL);
@@ -3085,8 +3085,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56940 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CHANGESPEED
-    st = getVariable(56940);
+  { // 62959 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CHANGESPEED
+    st = getVariable(62959);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.CHANGESPEED", 57);
     st->size_data = sizeof(LREAL);
@@ -3097,8 +3097,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56941 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HISTERESIS
-    st = getVariable(56941);
+  { // 62960 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HISTERESIS
+    st = getVariable(62960);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.HISTERESIS", 56);
     st->size_data = sizeof(LREAL);
@@ -3109,8 +3109,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 56942 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.APERTURFILTER
-    st = getVariable(56942);
+  { // 62961 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.APERTURFILTER
+    st = getVariable(62961);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.APERTURFILTER", 59);
     st->size_data = sizeof(LREAL);
@@ -3121,8 +3121,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56943 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.EXPONENTIALFILTER
-    st = getVariable(56943);
+  { // 62962 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.EXPONENTIALFILTER
+    st = getVariable(62962);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.EXPONENTIALFILTER", 63);
     st->size_data = sizeof(LREAL);
@@ -3133,8 +3133,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56944 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.RASSOGLASOVANIE
-    st = getVariable(56944);
+  { // 62963 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.RASSOGLASOVANIE
+    st = getVariable(62963);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.RASSOGLASOVANIE", 61);
     st->size_data = sizeof(LREAL);
@@ -3145,8 +3145,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 56945 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.OPCCOMMANDSDISABLED
-    st = getVariable(56945);
+  { // 62964 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.OPCCOMMANDSDISABLED
+    st = getVariable(62964);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3157,8 +3157,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56946 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_LA
-    st = getVariable(56946);
+  { // 62965 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_LA
+    st = getVariable(62965);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -3169,8 +3169,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 56947 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_HA
-    st = getVariable(56947);
+  { // 62966 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_HA
+    st = getVariable(62966);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -3181,8 +3181,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 56948 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_LW
-    st = getVariable(56948);
+  { // 62967 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_LW
+    st = getVariable(62967);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -3193,8 +3193,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 56949 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_HW
-    st = getVariable(56949);
+  { // 62968 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_HW
+    st = getVariable(62968);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DISABLED_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -3205,8 +3205,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 56950 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYLA
-    st = getVariable(56950);
+  { // 62969 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYLA
+    st = getVariable(62969);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYLA", 53);
     st->size_data = sizeof(TIME);
@@ -3217,8 +3217,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 56951 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYLW
-    st = getVariable(56951);
+  { // 62970 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYLW
+    st = getVariable(62970);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYLW", 53);
     st->size_data = sizeof(TIME);
@@ -3229,8 +3229,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 56952 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYHW
-    st = getVariable(56952);
+  { // 62971 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYHW
+    st = getVariable(62971);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYHW", 53);
     st->size_data = sizeof(TIME);
@@ -3241,8 +3241,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 56953 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYHA
-    st = getVariable(56953);
+  { // 62972 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYHA
+    st = getVariable(62972);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DELAYHA", 53);
     st->size_data = sizeof(TIME);
@@ -3253,8 +3253,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 56954 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MINVALUE_ISVALIDREF
-    st = getVariable(56954);
+  { // 62973 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MINVALUE_ISVALIDREF
+    st = getVariable(62973);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MINVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -3265,8 +3265,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56955 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXVALUE_ISVALIDREF
-    st = getVariable(56955);
+  { // 62974 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXVALUE_ISVALIDREF
+    st = getVariable(62974);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -3277,8 +3277,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 56956 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MINVALUE
-    st = getVariable(56956);
+  { // 62975 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MINVALUE
+    st = getVariable(62975);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MINVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -3289,8 +3289,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56957 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXVALUE
-    st = getVariable(56957);
+  { // 62976 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXVALUE
+    st = getVariable(62976);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.MAXVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -3301,8 +3301,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 56958 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INOPCCOMMANDSDISABLED
-    st = getVariable(56958);
+  { // 62977 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INOPCCOMMANDSDISABLED
+    st = getVariable(62977);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3313,8 +3313,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 56959 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.IMIT
-    st = getVariable(56959);
+  { // 62978 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.IMIT
+    st = getVariable(62978);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.IMIT", 50);
     st->size_data = sizeof(BOOL);
@@ -3325,8 +3325,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 56960 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.REMONT
-    st = getVariable(56960);
+  { // 62979 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.REMONT
+    st = getVariable(62979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.REMONT", 52);
     st->size_data = sizeof(BOOL);
@@ -3337,8 +3337,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 56961 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS
-    st = getVariable(56961);
+  { // 62980 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS
+    st = getVariable(62980);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -3349,8 +3349,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 56962 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS_MIN
-    st = getVariable(56962);
+  { // 62981 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS_MIN
+    st = getVariable(62981);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS_MIN", 52);
     st->size_data = sizeof(BOOL);
@@ -3361,8 +3361,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 56963 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS_MAX
-    st = getVariable(56963);
+  { // 62982 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS_MAX
+    st = getVariable(62982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.NS_MAX", 52);
     st->size_data = sizeof(BOOL);
@@ -3373,8 +3373,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 56964 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND_ALG
-    st = getVariable(56964);
+  { // 62983 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND_ALG
+    st = getVariable(62983);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -3385,8 +3385,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 56965 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND_ARM
-    st = getVariable(56965);
+  { // 62984 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND_ARM
+    st = getVariable(62984);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -3397,8 +3397,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 56966 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DMAXCHANGESPEED
-    st = getVariable(56966);
+  { // 62985 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DMAXCHANGESPEED
+    st = getVariable(62985);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DMAXCHANGESPEED", 61);
     st->size_data = sizeof(LREAL);
@@ -3409,8 +3409,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56967 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DMAXCHANGESPEEDDOWN
-    st = getVariable(56967);
+  { // 62986 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DMAXCHANGESPEEDDOWN
+    st = getVariable(62986);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.T_GASIN.DMAXCHANGESPEEDDOWN", 65);
     st->size_data = sizeof(LREAL);
@@ -3421,8 +3421,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56968 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.VALUE
-    st = getVariable(56968);
+  { // 62987 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.VALUE
+    st = getVariable(62987);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.VALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -3433,8 +3433,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 56969 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.STATUS
-    st = getVariable(56969);
+  { // 62988 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.STATUS
+    st = getVariable(62988);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -3445,8 +3445,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 56970 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INTERVAL
-    st = getVariable(56970);
+  { // 62989 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INTERVAL
+    st = getVariable(62989);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INTERVAL", 54);
     st->size_data = sizeof(BYTE);
@@ -3457,8 +3457,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 56971 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND
-    st = getVariable(56971);
+  { // 62990 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND
+    st = getVariable(62990);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -3469,8 +3469,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 56972 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.BLCONNECT
-    st = getVariable(56972);
+  { // 62991 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.BLCONNECT
+    st = getVariable(62991);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.BLCONNECT", 55);
     st->size_data = sizeof(BOOL);
@@ -3481,8 +3481,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 56973 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLL
-    st = getVariable(56973);
+  { // 62992 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLL
+    st = getVariable(62992);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLL", 49);
     st->size_data = sizeof(LREAL);
@@ -3493,8 +3493,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 56974 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHL
-    st = getVariable(56974);
+  { // 62993 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHL
+    st = getVariable(62993);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHL", 49);
     st->size_data = sizeof(LREAL);
@@ -3505,8 +3505,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 56975 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLA
-    st = getVariable(56975);
+  { // 62994 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLA
+    st = getVariable(62994);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLA", 49);
     st->size_data = sizeof(LREAL);
@@ -3517,8 +3517,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 56976 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHA
-    st = getVariable(56976);
+  { // 62995 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHA
+    st = getVariable(62995);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHA", 49);
     st->size_data = sizeof(LREAL);
@@ -3529,8 +3529,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 56977 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLW
-    st = getVariable(56977);
+  { // 62996 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLW
+    st = getVariable(62996);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DLW", 49);
     st->size_data = sizeof(LREAL);
@@ -3541,8 +3541,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 56978 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHW
-    st = getVariable(56978);
+  { // 62997 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHW
+    st = getVariable(62997);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DHW", 49);
     st->size_data = sizeof(LREAL);
@@ -3553,8 +3553,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 56979 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LL
-    st = getVariable(56979);
+  { // 62998 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LL
+    st = getVariable(62998);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LL", 48);
     st->size_data = sizeof(LREAL);
@@ -3565,8 +3565,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 56980 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HL
-    st = getVariable(56980);
+  { // 62999 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HL
+    st = getVariable(62999);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HL", 48);
     st->size_data = sizeof(LREAL);
@@ -3577,8 +3577,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 56981 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LA
-    st = getVariable(56981);
+  { // 63000 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LA
+    st = getVariable(63000);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LA", 48);
     st->size_data = sizeof(LREAL);
@@ -3589,8 +3589,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 56982 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HA
-    st = getVariable(56982);
+  { // 63001 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HA
+    st = getVariable(63001);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HA", 48);
     st->size_data = sizeof(LREAL);
@@ -3601,8 +3601,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 56983 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LW
-    st = getVariable(56983);
+  { // 63002 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LW
+    st = getVariable(63002);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.LW", 48);
     st->size_data = sizeof(LREAL);
@@ -3613,8 +3613,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 56984 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HW
-    st = getVariable(56984);
+  { // 63003 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HW
+    st = getVariable(63003);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HW", 48);
     st->size_data = sizeof(LREAL);
@@ -3625,8 +3625,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 56985 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_LA
-    st = getVariable(56985);
+  { // 63004 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_LA
+    st = getVariable(63004);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_LA", 59);
     st->size_data = sizeof(BOOL);
@@ -3637,8 +3637,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 56986 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_HA
-    st = getVariable(56986);
+  { // 63005 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_HA
+    st = getVariable(63005);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_HA", 59);
     st->size_data = sizeof(BOOL);
@@ -3649,8 +3649,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 56987 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_LW
-    st = getVariable(56987);
+  { // 63006 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_LW
+    st = getVariable(63006);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_LW", 59);
     st->size_data = sizeof(BOOL);
@@ -3661,8 +3661,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 56988 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_HW
-    st = getVariable(56988);
+  { // 63007 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_HW
+    st = getVariable(63007);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.ISVALIDREF_HW", 59);
     st->size_data = sizeof(BOOL);
@@ -3673,8 +3673,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 56989 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INPLL
-    st = getVariable(56989);
+  { // 63008 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INPLL
+    st = getVariable(63008);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INPLL", 51);
     st->size_data = sizeof(LREAL);
@@ -3685,8 +3685,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 56990 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INPHL
-    st = getVariable(56990);
+  { // 63009 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INPHL
+    st = getVariable(63009);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INPHL", 51);
     st->size_data = sizeof(LREAL);
@@ -3697,8 +3697,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 56991 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CURRENTSHOTCIRCUIT
-    st = getVariable(56991);
+  { // 63010 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CURRENTSHOTCIRCUIT
+    st = getVariable(63010);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CURRENTSHOTCIRCUIT", 64);
     st->size_data = sizeof(LREAL);
@@ -3709,8 +3709,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56992 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CURRENTBREAKCIRCUIT
-    st = getVariable(56992);
+  { // 63011 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CURRENTBREAKCIRCUIT
+    st = getVariable(63011);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CURRENTBREAKCIRCUIT", 65);
     st->size_data = sizeof(LREAL);
@@ -3721,8 +3721,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 56993 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXCHANGESPEED
-    st = getVariable(56993);
+  { // 63012 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXCHANGESPEED
+    st = getVariable(63012);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXCHANGESPEED", 60);
     st->size_data = sizeof(LREAL);
@@ -3733,8 +3733,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56994 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXCHANGESPEEDDOWN
-    st = getVariable(56994);
+  { // 63013 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXCHANGESPEEDDOWN
+    st = getVariable(63013);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXCHANGESPEEDDOWN", 64);
     st->size_data = sizeof(LREAL);
@@ -3745,8 +3745,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 56995 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CHANGESPEED
-    st = getVariable(56995);
+  { // 63014 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CHANGESPEED
+    st = getVariable(63014);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.CHANGESPEED", 57);
     st->size_data = sizeof(LREAL);
@@ -3757,8 +3757,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 56996 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HISTERESIS
-    st = getVariable(56996);
+  { // 63015 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HISTERESIS
+    st = getVariable(63015);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.HISTERESIS", 56);
     st->size_data = sizeof(LREAL);
@@ -3769,8 +3769,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 56997 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.APERTURFILTER
-    st = getVariable(56997);
+  { // 63016 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.APERTURFILTER
+    st = getVariable(63016);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.APERTURFILTER", 59);
     st->size_data = sizeof(LREAL);
@@ -3781,8 +3781,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56998 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.EXPONENTIALFILTER
-    st = getVariable(56998);
+  { // 63017 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.EXPONENTIALFILTER
+    st = getVariable(63017);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.EXPONENTIALFILTER", 63);
     st->size_data = sizeof(LREAL);
@@ -3793,8 +3793,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 56999 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.RASSOGLASOVANIE
-    st = getVariable(56999);
+  { // 63018 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.RASSOGLASOVANIE
+    st = getVariable(63018);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.RASSOGLASOVANIE", 61);
     st->size_data = sizeof(LREAL);
@@ -3805,8 +3805,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 57000 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.OPCCOMMANDSDISABLED
-    st = getVariable(57000);
+  { // 63019 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.OPCCOMMANDSDISABLED
+    st = getVariable(63019);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3817,8 +3817,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57001 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_LA
-    st = getVariable(57001);
+  { // 63020 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_LA
+    st = getVariable(63020);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -3829,8 +3829,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 57002 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_HA
-    st = getVariable(57002);
+  { // 63021 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_HA
+    st = getVariable(63021);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -3841,8 +3841,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 57003 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_LW
-    st = getVariable(57003);
+  { // 63022 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_LW
+    st = getVariable(63022);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -3853,8 +3853,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 57004 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_HW
-    st = getVariable(57004);
+  { // 63023 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_HW
+    st = getVariable(63023);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DISABLED_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -3865,8 +3865,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 57005 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYLA
-    st = getVariable(57005);
+  { // 63024 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYLA
+    st = getVariable(63024);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYLA", 53);
     st->size_data = sizeof(TIME);
@@ -3877,8 +3877,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 57006 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYLW
-    st = getVariable(57006);
+  { // 63025 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYLW
+    st = getVariable(63025);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYLW", 53);
     st->size_data = sizeof(TIME);
@@ -3889,8 +3889,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 57007 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYHW
-    st = getVariable(57007);
+  { // 63026 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYHW
+    st = getVariable(63026);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYHW", 53);
     st->size_data = sizeof(TIME);
@@ -3901,8 +3901,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 57008 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYHA
-    st = getVariable(57008);
+  { // 63027 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYHA
+    st = getVariable(63027);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DELAYHA", 53);
     st->size_data = sizeof(TIME);
@@ -3913,8 +3913,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 57009 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MINVALUE_ISVALIDREF
-    st = getVariable(57009);
+  { // 63028 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MINVALUE_ISVALIDREF
+    st = getVariable(63028);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MINVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -3925,8 +3925,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57010 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXVALUE_ISVALIDREF
-    st = getVariable(57010);
+  { // 63029 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXVALUE_ISVALIDREF
+    st = getVariable(63029);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -3937,8 +3937,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57011 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MINVALUE
-    st = getVariable(57011);
+  { // 63030 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MINVALUE
+    st = getVariable(63030);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MINVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -3949,8 +3949,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57012 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXVALUE
-    st = getVariable(57012);
+  { // 63031 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXVALUE
+    st = getVariable(63031);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.MAXVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -3961,8 +3961,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57013 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INOPCCOMMANDSDISABLED
-    st = getVariable(57013);
+  { // 63032 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INOPCCOMMANDSDISABLED
+    st = getVariable(63032);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3973,8 +3973,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57014 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.IMIT
-    st = getVariable(57014);
+  { // 63033 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.IMIT
+    st = getVariable(63033);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.IMIT", 50);
     st->size_data = sizeof(BOOL);
@@ -3985,8 +3985,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 57015 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.REMONT
-    st = getVariable(57015);
+  { // 63034 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.REMONT
+    st = getVariable(63034);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.REMONT", 52);
     st->size_data = sizeof(BOOL);
@@ -3997,8 +3997,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 57016 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS
-    st = getVariable(57016);
+  { // 63035 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS
+    st = getVariable(63035);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -4009,8 +4009,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 57017 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS_MIN
-    st = getVariable(57017);
+  { // 63036 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS_MIN
+    st = getVariable(63036);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS_MIN", 52);
     st->size_data = sizeof(BOOL);
@@ -4021,8 +4021,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 57018 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS_MAX
-    st = getVariable(57018);
+  { // 63037 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS_MAX
+    st = getVariable(63037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.NS_MAX", 52);
     st->size_data = sizeof(BOOL);
@@ -4033,8 +4033,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 57019 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND_ALG
-    st = getVariable(57019);
+  { // 63038 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND_ALG
+    st = getVariable(63038);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -4045,8 +4045,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 57020 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND_ARM
-    st = getVariable(57020);
+  { // 63039 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND_ARM
+    st = getVariable(63039);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -4057,8 +4057,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 57021 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DMAXCHANGESPEED
-    st = getVariable(57021);
+  { // 63040 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DMAXCHANGESPEED
+    st = getVariable(63040);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DMAXCHANGESPEED", 61);
     st->size_data = sizeof(LREAL);
@@ -4069,8 +4069,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 57022 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DMAXCHANGESPEEDDOWN
-    st = getVariable(57022);
+  { // 63041 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DMAXCHANGESPEEDDOWN
+    st = getVariable(63041);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.DP_KONF.DMAXCHANGESPEEDDOWN", 65);
     st->size_data = sizeof(LREAL);
@@ -4081,8 +4081,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 57023 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND
-    st = getVariable(57023);
+  { // 63042 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND
+    st = getVariable(63042);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -4093,8 +4093,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 57024 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND_ALG
-    st = getVariable(57024);
+  { // 63043 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND_ALG
+    st = getVariable(63043);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -4105,8 +4105,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 57025 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND_ARM
-    st = getVariable(57025);
+  { // 63044 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND_ARM
+    st = getVariable(63044);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -4117,8 +4117,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 57026 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.STATUS
-    st = getVariable(57026);
+  { // 63045 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.STATUS
+    st = getVariable(63045);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -4129,8 +4129,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 57027 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.NEWVALUE
-    st = getVariable(57027);
+  { // 63046 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.NEWVALUE
+    st = getVariable(63046);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.NEWVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -4141,8 +4141,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57028 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.CURRENTVALUE
-    st = getVariable(57028);
+  { // 63047 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.CURRENTVALUE
+    st = getVariable(63047);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.CURRENTVALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -4153,8 +4153,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57029 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MINVAL
-    st = getVariable(57029);
+  { // 63048 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MINVAL
+    st = getVariable(63048);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MINVAL", 52);
     st->size_data = sizeof(LREAL);
@@ -4165,8 +4165,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 57030 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXVAL
-    st = getVariable(57030);
+  { // 63049 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXVAL
+    st = getVariable(63049);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXVAL", 52);
     st->size_data = sizeof(LREAL);
@@ -4177,8 +4177,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 57031 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXSTEP
-    st = getVariable(57031);
+  { // 63050 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXSTEP
+    st = getVariable(63050);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXSTEP", 53);
     st->size_data = sizeof(LREAL);
@@ -4189,8 +4189,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 57032 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MINVAL_ISVALIDREF
-    st = getVariable(57032);
+  { // 63051 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MINVAL_ISVALIDREF
+    st = getVariable(63051);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MINVAL_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -4201,8 +4201,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57033 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXVAL_ISVALIDREF
-    st = getVariable(57033);
+  { // 63052 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXVAL_ISVALIDREF
+    st = getVariable(63052);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXVAL_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -4213,8 +4213,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57034 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXSTEP_ISVALIDREF
-    st = getVariable(57034);
+  { // 63053 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXSTEP_ISVALIDREF
+    st = getVariable(63053);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.MAXSTEP_ISVALIDREF", 64);
     st->size_data = sizeof(BOOL);
@@ -4225,8 +4225,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57035 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INOPCCOMMANDSDISABLED
-    st = getVariable(57035);
+  { // 63054 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INOPCCOMMANDSDISABLED
+    st = getVariable(63054);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -4237,8 +4237,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57036 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.VALUE
-    st = getVariable(57036);
+  { // 63055 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.VALUE
+    st = getVariable(63055);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.VALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -4249,8 +4249,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 57037 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.ISVALIDVALUE
-    st = getVariable(57037);
+  { // 63056 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.ISVALIDVALUE
+    st = getVariable(63056);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.ISVALIDVALUE", 58);
     st->size_data = sizeof(BOOL);
@@ -4261,8 +4261,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 57038 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.OPCCOMMANDSDISABLED
-    st = getVariable(57038);
+  { // 63057 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.OPCCOMMANDSDISABLED
+    st = getVariable(63057);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.UGOLVNA.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -4273,8 +4273,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57039 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND
-    st = getVariable(57039);
+  { // 63058 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND
+    st = getVariable(63058);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -4285,8 +4285,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 57040 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND_ALG
-    st = getVariable(57040);
+  { // 63059 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND_ALG
+    st = getVariable(63059);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -4297,8 +4297,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 57041 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND_ARM
-    st = getVariable(57041);
+  { // 63060 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND_ARM
+    st = getVariable(63060);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -4309,8 +4309,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 57042 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.STATUS
-    st = getVariable(57042);
+  { // 63061 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.STATUS
+    st = getVariable(63061);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -4321,8 +4321,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 57043 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.NEWVALUE
-    st = getVariable(57043);
+  { // 63062 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.NEWVALUE
+    st = getVariable(63062);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.NEWVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -4333,8 +4333,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57044 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.CURRENTVALUE
-    st = getVariable(57044);
+  { // 63063 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.CURRENTVALUE
+    st = getVariable(63063);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.CURRENTVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -4345,8 +4345,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57045 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MINVAL
-    st = getVariable(57045);
+  { // 63064 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MINVAL
+    st = getVariable(63064);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MINVAL", 46);
     st->size_data = sizeof(LREAL);
@@ -4357,8 +4357,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 57046 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXVAL
-    st = getVariable(57046);
+  { // 63065 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXVAL
+    st = getVariable(63065);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXVAL", 46);
     st->size_data = sizeof(LREAL);
@@ -4369,8 +4369,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 57047 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXSTEP
-    st = getVariable(57047);
+  { // 63066 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXSTEP
+    st = getVariable(63066);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXSTEP", 47);
     st->size_data = sizeof(LREAL);
@@ -4381,8 +4381,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 57048 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MINVAL_ISVALIDREF
-    st = getVariable(57048);
+  { // 63067 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MINVAL_ISVALIDREF
+    st = getVariable(63067);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MINVAL_ISVALIDREF", 57);
     st->size_data = sizeof(BOOL);
@@ -4393,8 +4393,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57049 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXVAL_ISVALIDREF
-    st = getVariable(57049);
+  { // 63068 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXVAL_ISVALIDREF
+    st = getVariable(63068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXVAL_ISVALIDREF", 57);
     st->size_data = sizeof(BOOL);
@@ -4405,8 +4405,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57050 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXSTEP_ISVALIDREF
-    st = getVariable(57050);
+  { // 63069 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXSTEP_ISVALIDREF
+    st = getVariable(63069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.MAXSTEP_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -4417,8 +4417,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57051 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INOPCCOMMANDSDISABLED
-    st = getVariable(57051);
+  { // 63070 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INOPCCOMMANDSDISABLED
+    st = getVariable(63070);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -4429,8 +4429,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57052 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.VALUE
-    st = getVariable(57052);
+  { // 63071 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.VALUE
+    st = getVariable(63071);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -4441,8 +4441,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 57053 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.ISVALIDVALUE
-    st = getVariable(57053);
+  { // 63072 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.ISVALIDVALUE
+    st = getVariable(63072);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.ISVALIDVALUE", 52);
     st->size_data = sizeof(BOOL);
@@ -4453,8 +4453,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 57054 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.OPCCOMMANDSDISABLED
-    st = getVariable(57054);
+  { // 63073 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.OPCCOMMANDSDISABLED
+    st = getVariable(63073);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.K.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -4465,8 +4465,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57055 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND
-    st = getVariable(57055);
+  { // 63074 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND
+    st = getVariable(63074);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -4477,8 +4477,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 57056 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND_ALG
-    st = getVariable(57056);
+  { // 63075 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND_ALG
+    st = getVariable(63075);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -4489,8 +4489,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 57057 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND_ARM
-    st = getVariable(57057);
+  { // 63076 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND_ARM
+    st = getVariable(63076);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -4501,8 +4501,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 57058 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.STATUS
-    st = getVariable(57058);
+  { // 63077 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.STATUS
+    st = getVariable(63077);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -4513,8 +4513,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 57059 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.NEWVALUE
-    st = getVariable(57059);
+  { // 63078 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.NEWVALUE
+    st = getVariable(63078);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.NEWVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -4525,8 +4525,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57060 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.CURRENTVALUE
-    st = getVariable(57060);
+  { // 63079 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.CURRENTVALUE
+    st = getVariable(63079);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.CURRENTVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -4537,8 +4537,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57061 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MINVAL
-    st = getVariable(57061);
+  { // 63080 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MINVAL
+    st = getVariable(63080);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MINVAL", 46);
     st->size_data = sizeof(LREAL);
@@ -4549,8 +4549,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 57062 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXVAL
-    st = getVariable(57062);
+  { // 63081 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXVAL
+    st = getVariable(63081);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXVAL", 46);
     st->size_data = sizeof(LREAL);
@@ -4561,8 +4561,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 57063 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXSTEP
-    st = getVariable(57063);
+  { // 63082 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXSTEP
+    st = getVariable(63082);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXSTEP", 47);
     st->size_data = sizeof(LREAL);
@@ -4573,8 +4573,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 57064 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MINVAL_ISVALIDREF
-    st = getVariable(57064);
+  { // 63083 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MINVAL_ISVALIDREF
+    st = getVariable(63083);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MINVAL_ISVALIDREF", 57);
     st->size_data = sizeof(BOOL);
@@ -4585,8 +4585,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57065 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXVAL_ISVALIDREF
-    st = getVariable(57065);
+  { // 63084 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXVAL_ISVALIDREF
+    st = getVariable(63084);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXVAL_ISVALIDREF", 57);
     st->size_data = sizeof(BOOL);
@@ -4597,8 +4597,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57066 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXSTEP_ISVALIDREF
-    st = getVariable(57066);
+  { // 63085 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXSTEP_ISVALIDREF
+    st = getVariable(63085);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.MAXSTEP_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -4609,8 +4609,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57067 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INOPCCOMMANDSDISABLED
-    st = getVariable(57067);
+  { // 63086 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INOPCCOMMANDSDISABLED
+    st = getVariable(63086);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -4621,8 +4621,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57068 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.VALUE
-    st = getVariable(57068);
+  { // 63087 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.VALUE
+    st = getVariable(63087);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -4633,8 +4633,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 57069 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.ISVALIDVALUE
-    st = getVariable(57069);
+  { // 63088 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.ISVALIDVALUE
+    st = getVariable(63088);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.ISVALIDVALUE", 52);
     st->size_data = sizeof(BOOL);
@@ -4645,8 +4645,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 57070 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.OPCCOMMANDSDISABLED
-    st = getVariable(57070);
+  { // 63089 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.OPCCOMMANDSDISABLED
+    st = getVariable(63089);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.A.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -4657,8 +4657,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57071 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND
-    st = getVariable(57071);
+  { // 63090 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND
+    st = getVariable(63090);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -4669,8 +4669,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 57072 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND_ALG
-    st = getVariable(57072);
+  { // 63091 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND_ALG
+    st = getVariable(63091);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -4681,8 +4681,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 57073 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND_ARM
-    st = getVariable(57073);
+  { // 63092 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND_ARM
+    st = getVariable(63092);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -4693,8 +4693,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 57074 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.STATUS
-    st = getVariable(57074);
+  { // 63093 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.STATUS
+    st = getVariable(63093);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -4705,8 +4705,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 57075 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.NEWVALUE
-    st = getVariable(57075);
+  { // 63094 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.NEWVALUE
+    st = getVariable(63094);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.NEWVALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -4717,8 +4717,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57076 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.CURRENTVALUE
-    st = getVariable(57076);
+  { // 63095 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.CURRENTVALUE
+    st = getVariable(63095);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.CURRENTVALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -4729,8 +4729,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 57077 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MINVAL
-    st = getVariable(57077);
+  { // 63096 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MINVAL
+    st = getVariable(63096);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MINVAL", 47);
     st->size_data = sizeof(LREAL);
@@ -4741,8 +4741,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 57078 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXVAL
-    st = getVariable(57078);
+  { // 63097 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXVAL
+    st = getVariable(63097);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXVAL", 47);
     st->size_data = sizeof(LREAL);
@@ -4753,8 +4753,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 57079 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXSTEP
-    st = getVariable(57079);
+  { // 63098 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXSTEP
+    st = getVariable(63098);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXSTEP", 48);
     st->size_data = sizeof(LREAL);
@@ -4765,8 +4765,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 57080 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MINVAL_ISVALIDREF
-    st = getVariable(57080);
+  { // 63099 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MINVAL_ISVALIDREF
+    st = getVariable(63099);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MINVAL_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -4777,8 +4777,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57081 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXVAL_ISVALIDREF
-    st = getVariable(57081);
+  { // 63100 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXVAL_ISVALIDREF
+    st = getVariable(63100);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXVAL_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -4789,8 +4789,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57082 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXSTEP_ISVALIDREF
-    st = getVariable(57082);
+  { // 63101 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXSTEP_ISVALIDREF
+    st = getVariable(63101);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.MAXSTEP_ISVALIDREF", 59);
     st->size_data = sizeof(BOOL);
@@ -4801,8 +4801,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 57083 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INOPCCOMMANDSDISABLED
-    st = getVariable(57083);
+  { // 63102 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INOPCCOMMANDSDISABLED
+    st = getVariable(63102);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -4813,8 +4813,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57084 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.VALUE
-    st = getVariable(57084);
+  { // 63103 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.VALUE
+    st = getVariable(63103);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.VALUE", 46);
     st->size_data = sizeof(LREAL);
@@ -4825,8 +4825,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 57085 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.ISVALIDVALUE
-    st = getVariable(57085);
+  { // 63104 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.ISVALIDVALUE
+    st = getVariable(63104);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.ISVALIDVALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -4837,8 +4837,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 57086 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.OPCCOMMANDSDISABLED
-    st = getVariable(57086);
+  { // 63105 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.OPCCOMMANDSDISABLED
+    st = getVariable(63105);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Y0.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -4849,8 +4849,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 57087 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Q_MAX
-    st = getVariable(57087);
+  { // 63106 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Q_MAX
+    st = getVariable(63106);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Q_MAX", 43);
     st->size_data = sizeof(LREAL);
@@ -4860,8 +4860,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_FB_ANTIPOMPAGALG->Q_MAX;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57088 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Q_MIN
-    st = getVariable(57088);
+  { // 63107 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Q_MIN
+    st = getVariable(63107);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.Q_MIN", 43);
     st->size_data = sizeof(LREAL);
@@ -4871,8 +4871,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_LREAL = (LREAL*)&p_FB_ANTIPOMPAGALG->Q_MIN;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57089 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.POMPAJ
-    st = getVariable(57089);
+  { // 63108 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.POMPAJ
+    st = getVariable(63108);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.POMPAJ", 44);
     st->size_data = sizeof(BOOL);
@@ -4882,8 +4882,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_FB_ANTIPOMPAGALG->POMPAJ;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57090 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NOTDEFINED
-    st = getVariable(57090);
+  { // 63109 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NOTDEFINED
+    st = getVariable(63109);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NOTDEFINED", 58);
     st->size_data = sizeof(BYTE);
@@ -4894,8 +4894,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 57091 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LL
-    st = getVariable(57091);
+  { // 63110 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LL
+    st = getVariable(63110);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LL", 50);
     st->size_data = sizeof(BYTE);
@@ -4906,8 +4906,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 57092 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HL
-    st = getVariable(57092);
+  { // 63111 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HL
+    st = getVariable(63111);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HL", 50);
     st->size_data = sizeof(BYTE);
@@ -4918,8 +4918,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 57093 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NOTRELIABLE
-    st = getVariable(57093);
+  { // 63112 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NOTRELIABLE
+    st = getVariable(63112);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NOTRELIABLE", 59);
     st->size_data = sizeof(BYTE);
@@ -4930,8 +4930,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 57094 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NORMAL
-    st = getVariable(57094);
+  { // 63113 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NORMAL
+    st = getVariable(63113);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.NORMAL", 54);
     st->size_data = sizeof(BYTE);
@@ -4942,8 +4942,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 57095 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LW
-    st = getVariable(57095);
+  { // 63114 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LW
+    st = getVariable(63114);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LW", 50);
     st->size_data = sizeof(BYTE);
@@ -4954,8 +4954,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 57096 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HW
-    st = getVariable(57096);
+  { // 63115 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HW
+    st = getVariable(63115);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HW", 50);
     st->size_data = sizeof(BYTE);
@@ -4966,8 +4966,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 57097 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LA
-    st = getVariable(57097);
+  { // 63116 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LA
+    st = getVariable(63116);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.LA", 50);
     st->size_data = sizeof(BYTE);
@@ -4978,8 +4978,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 57098 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HA
-    st = getVariable(57098);
+  { // 63117 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HA
+    st = getVariable(63117);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSAI.HA", 50);
     st->size_data = sizeof(BYTE);
@@ -4990,8 +4990,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 57099 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(57099);
+  { // 63118 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(63118);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_NOTDEFINED", 72);
     st->size_data = sizeof(BYTE);
@@ -5002,8 +5002,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 57100 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(57100);
+  { // 63119 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(63119);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_ON", 64);
     st->size_data = sizeof(BYTE);
@@ -5014,8 +5014,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 57101 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(57101);
+  { // 63120 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(63120);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_OFF", 65);
     st->size_data = sizeof(BYTE);
@@ -5026,8 +5026,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 57102 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(57102);
+  { // 63121 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(63121);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_TRANSITIONAL", 74);
     st->size_data = sizeof(BYTE);
@@ -5038,8 +5038,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 57103 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(57103);
+  { // 63122 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(63122);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._STATUSDUALINPUT.STATUS_ERROR", 67);
     st->size_data = sizeof(BYTE);
@@ -5050,8 +5050,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 57108 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.SOURCE
-    st = getVariable(57108);
+  { // 63127 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.SOURCE
+    st = getVariable(63127);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.SOURCE", 44);
     st->size_data = sizeof(BYTE);
@@ -5061,8 +5061,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_FB_ANTIPOMPAGALG->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57109 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.CMD
-    st = getVariable(57109);
+  { // 63128 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.CMD
+    st = getVariable(63128);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.CMD", 41);
     st->size_data = sizeof(BYTE);
@@ -5072,8 +5072,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_FB_ANTIPOMPAGALG->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57110 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.LASTCMD
-    st = getVariable(57110);
+  { // 63129 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.LASTCMD
+    st = getVariable(63129);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.LASTCMD", 45);
     st->size_data = sizeof(BYTE);
@@ -5083,8 +5083,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_FB_ANTIPOMPAGALG->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57111 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.SOURCE_FOR_STATUS
-    st = getVariable(57111);
+  { // 63130 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.SOURCE_FOR_STATUS
+    st = getVariable(63130);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.SOURCE_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -5094,8 +5094,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_FB_ANTIPOMPAGALG->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57112 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.CMD_FOR_STATUS
-    st = getVariable(57112);
+  { // 63131 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.CMD_FOR_STATUS
+    st = getVariable(63131);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.CMD_FOR_STATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -5105,8 +5105,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_FB_ANTIPOMPAGALG->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57113 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(57113);
+  { // 63132 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(63132);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.COMMAND_ERROR_FOR_STATUS", 62);
     st->size_data = sizeof(BYTE);
@@ -5116,8 +5116,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BYTE = (BYTE*)&p_FB_ANTIPOMPAGALG->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 57114 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.IN
-    st = getVariable(57114);
+  { // 63133 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.IN
+    st = getVariable(63133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.IN", 54);
     st->size_data = sizeof(BOOL);
@@ -5128,8 +5128,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 57115 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.PT
-    st = getVariable(57115);
+  { // 63134 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.PT
+    st = getVariable(63134);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.PT", 54);
     st->size_data = sizeof(TIME);
@@ -5140,8 +5140,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 57116 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.Q
-    st = getVariable(57116);
+  { // 63135 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.Q
+    st = getVariable(63135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -5152,8 +5152,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 57117 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.ET
-    st = getVariable(57117);
+  { // 63136 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.ET
+    st = getVariable(63136);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER.ET", 54);
     st->size_data = sizeof(TIME);
@@ -5164,8 +5164,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 57118 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER
-    st = getVariable(57118);
+  { // 63137 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER
+    st = getVariable(63137);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMER", 51);
     st->size_data = sizeof(TON);
@@ -5175,8 +5175,8 @@ int __variables_init_FB_ANTIPOMPAG(){
     p_TON = (TON*)&p_FB_ANTIPOMPAGALG->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 57119 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMERPRIZNAK
-    st = getVariable(57119);
+  { // 63138 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMERPRIZNAK
+    st = getVariable(63138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG.RESETCMDTIMERPRIZNAK", 58);
     st->size_data = sizeof(BOOL);

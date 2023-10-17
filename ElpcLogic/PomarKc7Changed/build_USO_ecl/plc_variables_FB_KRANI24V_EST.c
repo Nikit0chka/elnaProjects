@@ -130,9 +130,9 @@ int __variables_init_FB_KRANI24V_EST(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_KRANI24V_EST(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26305 PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL.VALUE
-    st = getVariable(26305);
+  { // 26803 PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL.VALUE
+    st = getVariable(26803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL.VALUE", 45);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26306 PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL.RELIABILITY
-    st = getVariable(26306);
+  { // 26804 PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL.RELIABILITY
+    st = getVariable(26804);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26307 PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL._INVERSED
-    st = getVariable(26307);
+  { // 26805 PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL._INVERSED
+    st = getVariable(26805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.SIGNAL._INVERSED", 49);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26308 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.RELIABILITY
-    st = getVariable(26308);
+  { // 26806 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.RELIABILITY
+    st = getVariable(26806);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26309 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.INVERSE
-    st = getVariable(26309);
+  { // 26807 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.INVERSE
+    st = getVariable(26807);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.INVERSE", 47);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26310 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DELAYON
-    st = getVariable(26310);
+  { // 26808 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DELAYON
+    st = getVariable(26808);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DELAYON", 47);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26311 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DELAYOFF
-    st = getVariable(26311);
+  { // 26809 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DELAYOFF
+    st = getVariable(26809);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DELAYOFF", 48);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26312 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.Q
-    st = getVariable(26312);
+  { // 26810 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.Q
+    st = getVariable(26810);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26313 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.STATUS
-    st = getVariable(26313);
+  { // 26811 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.STATUS
+    st = getVariable(26811);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26314 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DISABLED_SIG
-    st = getVariable(26314);
+  { // 26812 PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DISABLED_SIG
+    st = getVariable(26812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.STR_SS.DISABLED_SIG", 52);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26315 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.IN
-    st = getVariable(26315);
+  { // 26813 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.IN
+    st = getVariable(26813);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.IN", 43);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26316 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.PT
-    st = getVariable(26316);
+  { // 26814 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.PT
+    st = getVariable(26814);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.PT", 43);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26317 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.Q
-    st = getVariable(26317);
+  { // 26815 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.Q
+    st = getVariable(26815);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26318 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.ET
-    st = getVariable(26318);
+  { // 26816 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.ET
+    st = getVariable(26816);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON.ET", 43);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26319 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON
-    st = getVariable(26319);
+  { // 26817 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON
+    st = getVariable(26817);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMERON", 40);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26320 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.IN
-    st = getVariable(26320);
+  { // 26818 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.IN
+    st = getVariable(26818);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26321 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.PT
-    st = getVariable(26321);
+  { // 26819 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.PT
+    st = getVariable(26819);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.PT", 44);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26322 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.Q
-    st = getVariable(26322);
+  { // 26820 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.Q
+    st = getVariable(26820);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26323 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.ET
-    st = getVariable(26323);
+  { // 26821 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.ET
+    st = getVariable(26821);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF.ET", 44);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_KRANI24V_EST(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26324 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF
-    st = getVariable(26324);
+  { // 26822 PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF
+    st = getVariable(26822);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRANI24V_EST.TIMEROFF", 41);
     st->size_data = sizeof(TOF);

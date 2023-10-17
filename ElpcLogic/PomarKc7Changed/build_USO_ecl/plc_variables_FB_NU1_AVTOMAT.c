@@ -130,9 +130,9 @@ int __variables_init_FB_NU1_AVTOMAT(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26045 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL.VALUE
-    st = getVariable(26045);
+  { // 26543 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL.VALUE
+    st = getVariable(26543);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL.VALUE", 44);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26046 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL.RELIABILITY
-    st = getVariable(26046);
+  { // 26544 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL.RELIABILITY
+    st = getVariable(26544);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL.RELIABILITY", 50);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26047 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL._INVERSED
-    st = getVariable(26047);
+  { // 26545 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL._INVERSED
+    st = getVariable(26545);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.SIGNAL._INVERSED", 48);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26048 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.RELIABILITY
-    st = getVariable(26048);
+  { // 26546 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.RELIABILITY
+    st = getVariable(26546);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.RELIABILITY", 50);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26049 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.INVERSE
-    st = getVariable(26049);
+  { // 26547 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.INVERSE
+    st = getVariable(26547);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.INVERSE", 46);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26050 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DELAYON
-    st = getVariable(26050);
+  { // 26548 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DELAYON
+    st = getVariable(26548);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DELAYON", 46);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26051 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DELAYOFF
-    st = getVariable(26051);
+  { // 26549 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DELAYOFF
+    st = getVariable(26549);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DELAYOFF", 47);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26052 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.Q
-    st = getVariable(26052);
+  { // 26550 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.Q
+    st = getVariable(26550);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.Q", 40);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26053 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.STATUS
-    st = getVariable(26053);
+  { // 26551 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.STATUS
+    st = getVariable(26551);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26054 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DISABLED_SIG
-    st = getVariable(26054);
+  { // 26552 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DISABLED_SIG
+    st = getVariable(26552);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.STR_SS.DISABLED_SIG", 51);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26055 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.IN
-    st = getVariable(26055);
+  { // 26553 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.IN
+    st = getVariable(26553);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.IN", 42);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26056 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.PT
-    st = getVariable(26056);
+  { // 26554 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.PT
+    st = getVariable(26554);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.PT", 42);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26057 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.Q
-    st = getVariable(26057);
+  { // 26555 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.Q
+    st = getVariable(26555);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26058 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.ET
-    st = getVariable(26058);
+  { // 26556 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.ET
+    st = getVariable(26556);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON.ET", 42);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26059 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON
-    st = getVariable(26059);
+  { // 26557 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON
+    st = getVariable(26557);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMERON", 39);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26060 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.IN
-    st = getVariable(26060);
+  { // 26558 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.IN
+    st = getVariable(26558);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.IN", 43);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26061 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.PT
-    st = getVariable(26061);
+  { // 26559 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.PT
+    st = getVariable(26559);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.PT", 43);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26062 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.Q
-    st = getVariable(26062);
+  { // 26560 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.Q
+    st = getVariable(26560);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26063 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.ET
-    st = getVariable(26063);
+  { // 26561 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.ET
+    st = getVariable(26561);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF.ET", 43);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_NU1_AVTOMAT(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26064 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF
-    st = getVariable(26064);
+  { // 26562 PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF
+    st = getVariable(26562);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1_AVTOMAT.TIMEROFF", 40);
     st->size_data = sizeof(TOF);

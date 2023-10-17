@@ -130,9 +130,9 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 25765 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL.VALUE
-    st = getVariable(25765);
+  { // 26263 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL.VALUE
+    st = getVariable(26263);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL.VALUE", 49);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 25766 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL.RELIABILITY
-    st = getVariable(25766);
+  { // 26264 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL.RELIABILITY
+    st = getVariable(26264);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25767 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL._INVERSED
-    st = getVariable(25767);
+  { // 26265 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL._INVERSED
+    st = getVariable(26265);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.SIGNAL._INVERSED", 53);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 25768 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.RELIABILITY
-    st = getVariable(25768);
+  { // 26266 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.RELIABILITY
+    st = getVariable(26266);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25769 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.INVERSE
-    st = getVariable(25769);
+  { // 26267 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.INVERSE
+    st = getVariable(26267);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.INVERSE", 51);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 25770 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DELAYON
-    st = getVariable(25770);
+  { // 26268 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DELAYON
+    st = getVariable(26268);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DELAYON", 51);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 25771 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DELAYOFF
-    st = getVariable(25771);
+  { // 26269 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DELAYOFF
+    st = getVariable(26269);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DELAYOFF", 52);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 25772 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.Q
-    st = getVariable(25772);
+  { // 26270 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.Q
+    st = getVariable(26270);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 25773 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.STATUS
-    st = getVariable(25773);
+  { // 26271 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.STATUS
+    st = getVariable(26271);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 25774 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DISABLED_SIG
-    st = getVariable(25774);
+  { // 26272 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DISABLED_SIG
+    st = getVariable(26272);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.STR_SS.DISABLED_SIG", 56);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 25775 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.IN
-    st = getVariable(25775);
+  { // 26273 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.IN
+    st = getVariable(26273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 25776 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.PT
-    st = getVariable(25776);
+  { // 26274 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.PT
+    st = getVariable(26274);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.PT", 47);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 25777 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.Q
-    st = getVariable(25777);
+  { // 26275 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.Q
+    st = getVariable(26275);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 25778 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.ET
-    st = getVariable(25778);
+  { // 26276 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.ET
+    st = getVariable(26276);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON.ET", 47);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 25779 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON
-    st = getVariable(25779);
+  { // 26277 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON
+    st = getVariable(26277);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMERON", 44);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 25780 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.IN
-    st = getVariable(25780);
+  { // 26278 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.IN
+    st = getVariable(26278);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 25781 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.PT
-    st = getVariable(25781);
+  { // 26279 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.PT
+    st = getVariable(26279);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.PT", 48);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 25782 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.Q
-    st = getVariable(25782);
+  { // 26280 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.Q
+    st = getVariable(26280);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 25783 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.ET
-    st = getVariable(25783);
+  { // 26281 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.ET
+    st = getVariable(26281);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF.ET", 48);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_VOZBUD_GOTOVNOST(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 25784 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF
-    st = getVariable(25784);
+  { // 26282 PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF
+    st = getVariable(26282);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOZBUD_GOTOVNOST.TIMEROFF", 45);
     st->size_data = sizeof(TOF);

@@ -130,9 +130,9 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
   PROTECTIONSCONFIG *p_PROTECTIONSCONFIG;
   TYPE_PROTECTIONTAGS *p_TYPE_PROTECTIONTAGS;
   PROC_PROTECTION *p_PROC_PROTECTION;
-  FB_DIPROTECTION *p_FB_DIPROTECTION;
-  F_TRIG *p_F_TRIG;
   FB_MVPROTECTION *p_FB_MVPROTECTION;
+  F_TRIG *p_F_TRIG;
+  FB_DIPROTECTION *p_FB_DIPROTECTION;
   FB_KRANOPENPROTECTION *p_FB_KRANOPENPROTECTION;
   FB_AIPROTECTION *p_FB_AIPROTECTION;
   PROC_ALGORITMS *p_PROC_ALGORITMS;
@@ -181,8 +181,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26925 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL.VALUE
-    st = getVariable(26925);
+  { // 27423 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL.VALUE
+    st = getVariable(27423);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL.VALUE", 50);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26926 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL.RELIABILITY
-    st = getVariable(26926);
+  { // 27424 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL.RELIABILITY
+    st = getVariable(27424);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26927 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL._INVERSED
-    st = getVariable(26927);
+  { // 27425 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL._INVERSED
+    st = getVariable(27425);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.SIGNAL._INVERSED", 54);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26928 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.RELIABILITY
-    st = getVariable(26928);
+  { // 27426 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.RELIABILITY
+    st = getVariable(27426);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26929 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.INVERSE
-    st = getVariable(26929);
+  { // 27427 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.INVERSE
+    st = getVariable(27427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.INVERSE", 52);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26930 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DELAYON
-    st = getVariable(26930);
+  { // 27428 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DELAYON
+    st = getVariable(27428);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DELAYON", 52);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26931 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DELAYOFF
-    st = getVariable(26931);
+  { // 27429 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DELAYOFF
+    st = getVariable(27429);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DELAYOFF", 53);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26932 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.Q
-    st = getVariable(26932);
+  { // 27430 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.Q
+    st = getVariable(27430);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26933 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.STATUS
-    st = getVariable(26933);
+  { // 27431 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.STATUS
+    st = getVariable(27431);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26934 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DISABLED_SIG
-    st = getVariable(26934);
+  { // 27432 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DISABLED_SIG
+    st = getVariable(27432);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.STR_SS.DISABLED_SIG", 57);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26935 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.IN
-    st = getVariable(26935);
+  { // 27433 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.IN
+    st = getVariable(27433);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26936 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.PT
-    st = getVariable(26936);
+  { // 27434 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.PT
+    st = getVariable(27434);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.PT", 48);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26937 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.Q
-    st = getVariable(26937);
+  { // 27435 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.Q
+    st = getVariable(27435);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26938 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.ET
-    st = getVariable(26938);
+  { // 27436 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.ET
+    st = getVariable(27436);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON.ET", 48);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26939 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON
-    st = getVariable(26939);
+  { // 27437 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON
+    st = getVariable(27437);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMERON", 45);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26940 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.IN
-    st = getVariable(26940);
+  { // 27438 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.IN
+    st = getVariable(27438);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26941 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.PT
-    st = getVariable(26941);
+  { // 27439 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.PT
+    st = getVariable(27439);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.PT", 49);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26942 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.Q
-    st = getVariable(26942);
+  { // 27440 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.Q
+    st = getVariable(27440);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26943 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.ET
-    st = getVariable(26943);
+  { // 27441 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.ET
+    st = getVariable(27441);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF.ET", 49);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_KRU_NEISPR_REZERV(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26944 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF
-    st = getVariable(26944);
+  { // 27442 PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF
+    st = getVariable(27442);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRU_NEISPR_REZERV.TIMEROFF", 46);
     st->size_data = sizeof(TOF);
