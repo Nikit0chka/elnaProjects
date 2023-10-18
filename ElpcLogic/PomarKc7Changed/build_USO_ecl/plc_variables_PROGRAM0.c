@@ -280,8 +280,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_PROGRAM0->LIFE_COUNT;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 138823 PROGRAM0.ALGMANAGER.MODE
-    st = getVariable(138823);
+  { // 138767 PROGRAM0.ALGMANAGER.MODE
+    st = getVariable(138767);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.MODE", 24);
     st->size_data = sizeof(UINT);
@@ -290,8 +290,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->MODE;
     st->value_p = p_UINT;
   }
-  { // 138824 PROGRAM0.ALGMANAGER.NARABOTKA
-    st = getVariable(138824);
+  { // 138768 PROGRAM0.ALGMANAGER.NARABOTKA
+    st = getVariable(138768);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.NARABOTKA", 29);
     st->size_data = sizeof(UINT);
@@ -300,8 +300,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NARABOTKA;
     st->value_p = p_UINT;
   }
-  { // 138825 PROGRAM0.ALGMANAGER.NMODE
-    st = getVariable(138825);
+  { // 138769 PROGRAM0.ALGMANAGER.NMODE
+    st = getVariable(138769);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.NMODE", 25);
     st->size_data = sizeof(UINT);
@@ -310,8 +310,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NMODE;
     st->value_p = p_UINT;
   }
-  { // 138826 PROGRAM0.ALGMANAGER.ANALOGSPS
-    st = getVariable(138826);
+  { // 138770 PROGRAM0.ALGMANAGER.ANALOGSPS
+    st = getVariable(138770);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.ANALOGSPS", 29);
     st->size_data = sizeof(BOOL);
@@ -320,8 +320,8 @@ int __variables_init_PROGRAM0(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->ANALOGSPS;
     st->value_p = p_BOOL;
   }
-  { // 138827 PROGRAM0.ALGMANAGER.DISCRETPS
-    st = getVariable(138827);
+  { // 138771 PROGRAM0.ALGMANAGER.DISCRETPS
+    st = getVariable(138771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.DISCRETPS", 29);
     st->size_data = sizeof(BOOL);
@@ -330,8 +330,8 @@ int __variables_init_PROGRAM0(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->DISCRETPS;
     st->value_p = p_BOOL;
   }
-  { // 138828 PROGRAM0.ALGMANAGER.PROTECTIONSIGNALING
-    st = getVariable(138828);
+  { // 138772 PROGRAM0.ALGMANAGER.PROTECTIONSIGNALING
+    st = getVariable(138772);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.PROTECTIONSIGNALING", 39);
     st->size_data = sizeof(BOOL);
@@ -340,8 +340,8 @@ int __variables_init_PROGRAM0(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->PROTECTIONSIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 138829 PROGRAM0.PROTECTMANAGER.INCOMMAND
-    st = getVariable(138829);
+  { // 138773 PROGRAM0.PROTECTMANAGER.INCOMMAND
+    st = getVariable(138773);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTMANAGER.INCOMMAND", 33);
     st->size_data = sizeof(BYTE);
@@ -350,8 +350,8 @@ int __variables_init_PROGRAM0(){
     p_BYTE = (BYTE*)&p_STRUCT_PROTECTIONSMANAGER->INCOMMAND;
     st->value_p = p_BYTE;
   }
-  { // 138830 PROGRAM0.PROTECTMANAGER.PROTECTIONINREMONT
-    st = getVariable(138830);
+  { // 138774 PROGRAM0.PROTECTMANAGER.PROTECTIONINREMONT
+    st = getVariable(138774);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTMANAGER.PROTECTIONINREMONT", 42);
     st->size_data = sizeof(BOOL);

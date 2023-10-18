@@ -339,7 +339,7 @@ TYPE
   IM_singleOutputs : STRUCT
     Kran1_smazka_on : struct_singleOutput;
     Kran2_smazka_on : struct_singleOutput;
-    Gpa1_norm : struct_singleOutput;
+    Gpa1_rabota : struct_singleOutput;
     Gpa1_neisprav : struct_singleOutput;
     Gpa1_avariya : struct_singleOutput;
     Pusk : struct_singleOutput;
@@ -696,6 +696,7 @@ TYPE
     MODE_EO : UINT := 14;
     MODE_TESTIM : UINT := 15;
     MODE_TESTAZ : UINT := 16;
+    MODE_PUSK_FIRST_FAZA1 : UINT := 17;
   END_STRUCT;
   TYPE_DualStateImAction : (_on, _off) := _on;
   TYPE_PhaseAlgoritmAction : (_run, _reset) := _run;
@@ -4050,7 +4051,7 @@ FUNCTION_BLOCK proc_IM_Init
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Авария ЭГПА в КЦ   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_norm);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_rabota);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Авария ЭГПА в КЦ   *)
@@ -5431,6 +5432,7 @@ FUNCTION_BLOCK proc_IM
            cmdOn:=od.do_0.bits[2], cmdOff:=od.do_0.bits[3],
            strKr:= IM.Kran2  );
 
+  (* Кран 3 *)
   fb_Kran3(statOn := di.di_0.bits[2]._inversed, statOn_reliability:= di.di_0.bits[2].reliability,
            statOff := di.di_0.bits[3]._inversed,  statOff_reliability:= di.di_0.bits[3].reliability,
            inSo := di.di_12.bits[2], inSz := di.di_12.bits[3],
@@ -5494,13 +5496,13 @@ FUNCTION_BLOCK proc_IM
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
            StrSw:= IM.v2_Avom  );
 
-           (*  В2 АВОМ вентилятор охлаждения *)
+  (*  В3 АВОМ вентилятор охлаждения *)
   fb_v3_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
            inBreakCmdOn := di.di_11.bits[0],
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
            StrSw:= IM.v3_Avom  );
 
-           (*  В2 АВОМ вентилятор охлаждения *)
+  (*  В4 АВОМ вентилятор охлаждения *)
   fb_v4_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
            inBreakCmdOn := di.di_11.bits[0],
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
@@ -5513,78 +5515,80 @@ FUNCTION_BLOCK proc_IM
            cmdOn:=od.do_1.bits[10] , cmdOff:=od.do_1.bits[11],
            StrSw:= IM.mv  );
 
+  (* Тен коллектора *)
   fb_TEN_kollectora(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
            inBreakCmdOn := di.di_11.bits[0],
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
            StrSw:= IM.TEN_kollectora  );
 
+  (* Калорифер АВОМ *)
   fb_KaloriferAVOM(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
            inBreakCmdOn := di.di_11.bits[0],
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
            StrSw:= IM.KaloriferAVOM  ); 
 
+  (* ЦМН *)
   fb_CMN(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
            inBreakCmdOn := di.di_11.bits[0],
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
            StrSw:= IM.CMN);
 
+  (* Тен маслобака *)
   fb_TEN_MB(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
            inBreakCmdOn := di.di_11.bits[0],
            cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
-           StrSw:= IM.TEN_MB);                
-
-
+           StrSw:= IM.TEN_MB);                         
   (*************************************************** singleSignals ********************************************)
 
-   (* Перепад давления «газ-газ» на кране 1 ≤1 кгс/см² *)
+  (* Перепад давления масло газ м*)
   fb_dP_maslo_gaz_Less100(signal :=di.di_2.bits[0], str_SS := IM.SingleSignals.dP_maslo_gaz_Less100);   
 
-   (* Осевой сдвиг ротора вправо ≥3,7 кгс/см² *)
+  (* Перепад давления кран 1 *)
   fb_dp_kran1_Less100(signal :=di.di_2.bits[1], str_SS := IM.SingleSignals.dp_kran1_Less100);   
 
-   (* Осевой сдвиг ротора влево ≥3,7 кгс/см² *)
+  (* Неисправность цепей управления возбудителя *)
   fb_Vozbud_neispr_tsepey_upr_AVR_pit(signal :=di.di_2.bits[2], str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
 
-   (* Низкий перепад давления «масло-газ» ≤1 кгс/см² *)
+   (* Возбудитель разрешение загрузки *)
   fb_Vozbud_razreshenie_zagruzki(signal :=di.di_2.bits[3], str_SS := IM.SingleSignals.Vozbud_razreshenie_zagruzki);   
 
-  (* Низкое давление масла смазки ≤ 0,4 кгс/см² *)
+  (* Возбудитель готовность *)
   fb_Vozbud_gotovnost(signal :=di.di_2.bits[4], str_SS := IM.SingleSignals.Vozbud_gotovnost);   
 
-      (* Защита по замыканию на землю 10 кВ (пробой изоляции кабелей) *)
+  (* Возбудитель неисправность *)
   fb_Vozbud_neispravnost(signal :=di.di_3.bits[2], str_SS := IM.SingleSignals.Vozbud_neispravnost);   
 
-      (* Пробой вентиля *)
+  (* ЩАВР 1 в работе *)
   fb_SHAVR1_v_rabote(signal :=di.di_3.bits[3], str_SS := IM.SingleSignals.SHAVR1_v_rabote);   
 
-      (* Асинхронный ход и перегрузка *)
+  (* ЩАВР 2 в работе *)
   fb_SHAVR2_v_rabote(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHAVR2_v_rabote);   
 
-    (* Отключен АВР  *)
+  (* МВ в контр положениии тележка выкачена *)
   fb_MV_telezhka_vikachen(signal :=di.di_4.bits[1], str_SS := IM.SingleSignals.MV_telezhka_vikachen);   
 
-    (* Отключено автоматическое управление возбудителем  *)
+  (* Ассинхронный ход перегрузка *)
   fb_Assinhronnii_hod_peregruzka(signal :=di.di_4.bits[2], str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);   
 
-    (* Контактор возбуждения включен  *)
+  (* Автомат ШУ в ячейке ГПА включен *)
   fb_SHU_v_GPA_vkluch(signal :=di.di_4.bits[3], str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);   
 
-    (* Перегрузка  *)
+  (* Автомат ШП в ячейке ГПА включен *)
   fb_SHP_v_GPA_vkluch(signal :=di.di_4.bits[4], str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);   
 
-    (* АО ГПА от кнопки на ПРУ  *)
+  (* АО ГПА от кнопки на ПРУ  *)
   fb_Voltage_na_sektsii_norm(signal :=di.di_5.bits[6], str_SS := IM.SingleSignals.Voltage_na_sektsii_norm);   
 
-    (* Готовность включения БЭО по отказу контроллера  *)
+  (* АВОМ 1 в автоматическом режиме  *)
   fb_AVOM1_avtomat(signal :=di.di_6.bits[0], str_SS := IM.SingleSignals.AVOM1_avtomat);   
 
-    (* Срабатывание БЭАО  *)
+  (* АВОМ 2 в автоматическом режиме  *)
   fb_AVOM2_avtomat(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.AVOM2_avtomat);   
 
-    (* Запуск БЭАО от кнопки ЭАО ШУ  *)
+  (* АВОМ 3 в автоматическом режиме  *)
   fb_AVOM3_avtomat(signal :=di.di_6.bits[2], str_SS := IM.SingleSignals.AVOM3_avtomat);   
 
-    (* Экстренный аварийный останов ЭАО ЭГПА с ПРУ   *)
+  (* АВОМ 4 в автоматическом режиме  *)
   fb_AVOM4_avtomat(signal :=di.di_6.bits[7], str_SS := IM.SingleSignals.AVOM4_avtomat);   
 
     (* Дверь шкафа открыта   *)
@@ -5757,7 +5761,7 @@ FUNCTION_BLOCK proc_IM
   fb_Kran2_smazka_on(str_SO := IM.SingleOutputs.Kran2_smazka_on, signal:=od.do_2.bits[14]);  
 
   (* Авария ЭГПА в КЦ   *)
-  fb_Gpa1_norm(str_SO := IM.SingleOutputs.Gpa1_norm, signal:=od.do_2.bits[0]);    
+  fb_Gpa1_norm(str_SO := IM.SingleOutputs.Gpa1_rabota, signal:=od.do_2.bits[0]);    
 
   (* Сброс включения БЭАО по неисправности ПТС   *)
   fb_Gpa1_neisprav(str_SO := IM.SingleOutputs.Gpa1_neisprav, signal:=od.do_2.bits[15]);   
@@ -10519,31 +10523,90 @@ FUNCTION_BLOCK AOAlg
   			OR BOOL_TO_DWORD(StrAlg.isRuning);
 END_FUNCTION_BLOCK
 
-FUNCTION NapryageniaOK : BOOL
+FUNCTION anyProtectionSignaling : BOOL
   VAR_INPUT
-    im : ImConfig;
+    protections : ProtectionsConfig;
   END_VAR
 
-  NapryageniaOK:=
-  NOT (Im.SingleSignals.NS_G1_G2.Q
-  OR Im.SingleSignals.NS_G10_G11.Q
-  OR Im.SingleSignals.NS_G13_G14.Q
-  OR Im.SingleSignals.NS_G15_G16.Q
-  OR Im.SingleSignals.NS_G17.Q
-  OR Im.SingleSignals.NS_G18_G19.Q
-  OR Im.SingleSignals.NS_G3_G4.Q
-  OR Im.SingleSignals.NS_G5_G6.Q
-  OR Im.SingleSignals.NS_G7_G8.Q
-  OR im.SingleSignals.QF1_on.Q
-  OR Im.SingleSignals.QF2_on.Q
-  OR Im.SingleSignals.QF23_on.Q
-  OR Im.SingleSignals.QF4_QF5_on.Q
-  OR Im.SingleSignals.QF6_QF7_on.Q
-  OR Im.SingleSignals.QF8_QF9_on.Q
-  OR Im.SingleSignals.QF10_QF11_on.Q
-  OR im.SingleSignals.QF12_QF13_on.Q
-  OR im.SingleSignals.QF22_on.Q
-  OR Im.SingleSignals.QF14_QF15_on.Q);
+  anyProtectionSignaling:=
+  protections.Topornogo_podshipnika_EDT_1.Signaling OR
+  protections.Toporno_ypornogo_podshipnika_EDT_2.Signaling OR
+  protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.Signaling OR
+  protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.Signaling OR
+  protections.Topornogo_podshipnika_shesterni_reduktora_T_5.Signaling OR
+  protections.Topornogo_podshipnika_reduktora_HT_6.Signaling OR
+  protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.Signaling OR
+  protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.Signaling OR
+  protections.Typornogo_podshipnika_rav_kolodok_HT_9.Signaling OR
+  protections.Typornogo_podshipnika_nerab_kolodok_HT_10.Signaling OR
+  protections.Tgaza_na_vyhode_H.Signaling OR
+  protections.Os_sdvig_nagnetatelja_plus.Signaling OR
+  protections.Os_sdvig_nagnetatelja_minus.Signaling OR
+  protections.Pgaza_na_vhode_nagnetatelia.Signaling OR
+  protections.Pgaza_na_vyhode_nagnetatelia.Signaling OR
+  protections.dPmaslo_gaz.Signaling OR
+  protections.Pmaslo_sm_nizkoe.Signaling OR
+  protections.Pmaslo_sm_vysokoe.Signaling OR
+  protections.Vibro_skorost_OPED_T1.Signaling OR
+  protections.Vibro_skorost_OPED_T2.Signaling OR
+  protections.Vibro_skorost_OYP_kolesa_ED_T3.Signaling OR
+  protections.Vibro_skorost_OP_kolesa_RH_T4.Signaling OR
+  protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling OR
+  protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling OR
+  protections.mvOff.Signaling OR
+  protections.dPmaslo_gaz.Signaling OR
+  protections.dP_kran1.Signaling OR
+  protections.Kran1sdvig.Signaling OR
+  protections.Kran2sdvig.Signaling OR
+  protections.Uroven_masla_v_akkum.Signaling OR
+  protections.Neispravnost_vozbud.Signaling OR
+  protections.Avariya_vozbud.Signaling OR
+  protections.NY1_net_voltage.Signaling OR
+  protections.NY2_net_voltage.Signaling OR
+  protections.PNS_net_voltage.Signaling;
+END_FUNCTION
+
+FUNCTION anyAnalogsPs : BOOL
+  VAR_INPUT
+    ai : AiConfig;
+  END_VAR
+  VAR
+    statusAi : TYPE_StatusAi;
+  END_VAR
+
+  anyAnalogsPs:=
+  ai.Toporno_podshipnika_EDT_1.interval= statusAi.HW OR
+  ai.Toporno_podshipnika_EDT_1.interval= statusAi.LW OR
+  ai.Toporno_ypornogo_podshipnika_EDT_2.interval= statusAi.HW OR
+  ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.interval= statusAi.HW OR
+  ai.Toporno_podshipnika_reduktora_HT_6.interval= statusAi.HW OR
+  ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1.interval= statusAi.HW OR
+  ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2.interval= statusAi.HW OR
+  ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1.interval= statusAi.HW OR
+  ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2.interval= statusAi.HW OR
+  ai.Tholodnogo_vozduha_ED_kanal_1.interval= statusAi.HW OR
+  ai.Tholodnogo_vozduha_ED_kanal_2.interval= statusAi.HW OR
+  ai.Tgorjachego_vozduha_ED_kanal_1.interval= statusAi.HW OR
+  ai.Tgaza_na_vyhode_H.interval= statusAi.HW OR
+  ai.Tmasla_MB.interval= statusAi.LW OR
+  ai.Pmasla_posle_GNS.interval= statusAi.LW OR
+  ai.Pmasla_posle_NU.interval= statusAi.LW OR
+  ai.dPgaza_na_konfuzore.interval= statusAi.HW OR 
+  ai.Os_sdvig_nagnetatelja_plus.interval= statusAi.HW OR 
+  ai.Os_sdvig_nagnetatelja_minus.interval= statusAi.HW OR 
+  ai.dPmaslo_gaz.interval= statusAi.HW OR 
+  ai.Pgaza_na_vhode_nagnetatelia.interval= statusAi.HW OR 
+  ai.Pgaza_na_vyhode_nagnetatelia.interval= statusAi.HW OR 
+  ai.Pimpuls_gaz.interval= statusAi.HW OR 
+  ai.Pimpuls_gaz.interval= statusAi.LW OR 
+  ai.Yroven_masla_MB.interval= statusAi.HW OR 
+  ai.Yroven_masla_MB.interval= statusAi.LW OR
+  ai.Tmasla_MB_TEN.interval= statusAi.HW OR 
+  ai.Tmasla_MB_TEN.interval= statusAi.LW OR 
+  ai.Vibro_skorost_OYP_kolesa_ED_T3.interval= statusAi.HW OR 
+  ai.Vibro_skorost_OYP_kolesa_ED_T3.interval= statusAi.LW OR 
+  ai.Vibro_skorost_OP_kolesa_RH_T4.interval= statusAi.HW OR 
+  ai.Vibro_skorost_OP_kolesa_RH_T4.interval= statusAi.LW;
 END_FUNCTION
 
 FUNCTION nsCepeiUpravlenya : BOOL
@@ -10566,29 +10629,6 @@ FUNCTION nsCepeiUpravlenya : BOOL
             im.v2_Avom.breakCmdOn OR
             (*im.Ten.breakCmdOn OR*)
   	im.mv.breakCmdOff;
-END_FUNCTION
-
-FUNCTION discretNS : BOOL
-  VAR_INPUT
-    di : DiConfig;
-  END_VAR
-
-  discretNS:=  ((di.di_0.reliability <> 255)
-                OR (di.di_1.reliability <> 255)
-                OR (di.di_2.reliability <> 255)
-                OR (di.di_3.reliability <> 255)
-                OR (di.di_4.reliability <> 255)
-                OR (di.di_5.reliability <> 255)
-                OR (di.di_6.reliability <> 255)
-                OR (di.di_7.reliability <> 255)
-                OR (di.di_8.reliability <> 255)
-                OR (di.di_9.reliability <> 255)
-                OR (di.di_10.reliability <> 255)
-                OR (di.di_11.reliability <> 255)
-                OR (di.di_12.reliability <> 255)
-                OR (di.di_13.reliability <> 255)
-                OR (di.di_14.reliability <> 255));
-               (* OR (di.di_15.reliability <> 255)); *)
 END_FUNCTION
 
 FUNCTION analogsNS : BOOL
@@ -10647,91 +10687,65 @@ FUNCTION analogsNS : BOOL
   OR((ai.Vibro_skorost_OP_kolesa_RH_T4.Interval < statusAi.Normal) AND NOT ai.Vibro_skorost_OP_kolesa_RH_T4.remont);
 END_FUNCTION
 
-FUNCTION nsCepeiControl : BOOL
-  VAR_INPUT
-    im : ImConfig;
-  END_VAR
-
-  nsCepeiControl:= NOT (
-  	im.kran1.reliability OR
-  	im.kran2.reliability OR 
-  	im.kran4.reliability OR 
-  	im.kran5.reliability OR 
-  	im.kran6.reliability OR 
-  	im.kran3b.reliability OR 
-  	im.pns.reliability OR
-  	im.nu1.reliability OR
-  	im.nu2.reliability OR
-  	im.PNS.reliability OR
-            im.v1_Avom.reliability OR
-            im.v2_Avom.reliability OR
-            (*im.Ten.reliability OR*)
-  	im.mv.reliability);
-END_FUNCTION
-
 FUNCTION_BLOCK ppuAlg
   VAR_IN_OUT
     StrAlg : struct_Alg;
   END_VAR
   VAR
-    Sau_ok : struct_PhaseAlgoritm;
-    Voltage_ok : struct_PhaseAlgoritm;
-    controlCircuits_ok : struct_PhaseAlgoritm;
-    controlCircuitsIM_ok : struct_PhaseAlgoritm;
+    BMP_Err : struct_PhaseAlgoritm;
+    Level_masla_Norm : struct_PhaseAlgoritm;
+    T_masla_Norm : struct_PhaseAlgoritm;
+    Krans_ready_to_move : struct_PhaseAlgoritm;
   END_VAR
   VAR_IN_OUT
-    BEAO_otKnSHU : struct_PhaseAlgoritm;
-    circuitAO_ok : struct_PhaseAlgoritm;
-    BREO_Srabotal : struct_PhaseAlgoritm;
-    DI_ok : struct_PhaseAlgoritm;
-    AI_ok : struct_PhaseAlgoritm;
-    Loil_ok : struct_PhaseAlgoritm;
-    Toil_ok : struct_PhaseAlgoritm;
-    mvOff : struct_PhaseAlgoritm;
-    Kr_1_close : struct_PhaseAlgoritm;
-    Kr_2_close : struct_PhaseAlgoritm;
-    Kr_3b_open : struct_PhaseAlgoritm;
-    Kr_4_close : struct_PhaseAlgoritm;
-    Kr_5_open : struct_PhaseAlgoritm;
-    PNS_off : struct_PhaseAlgoritm;
-    NU_1_off : struct_PhaseAlgoritm;
-    NU_2_off : struct_PhaseAlgoritm;
-    Avom_1_off : struct_PhaseAlgoritm;
-    Avom_2_off : struct_PhaseAlgoritm;
-    Est_rezerv_NU : struct_PhaseAlgoritm;
-    Not_AO_NO_EAO : struct_PhaseAlgoritm;
-    Not_AS_PS : struct_PhaseAlgoritm;
-    BusketTest : struct_PhaseAlgoritm;
-    BusketRolledIn : struct_PhaseAlgoritm;
+    Krans_Poloj : struct_PhaseAlgoritm;
+    Net_AO_KC_SHKS04M : struct_PhaseAlgoritm;
+    EGPA_Stop : struct_PhaseAlgoritm;
+    Avt_SHU_vkl : struct_PhaseAlgoritm;
+    All_IM_Off : struct_PhaseAlgoritm;
+    Nalichie220_SHU_Ai : struct_PhaseAlgoritm;
+    BP_Norm : struct_PhaseAlgoritm;
+    Naprajenie_U_IM : struct_PhaseAlgoritm;
+    MV_Poloj_RolledON : struct_PhaseAlgoritm;
+    MV_Poloj_RolledOFF : struct_PhaseAlgoritm;
+    NOTAnalogNS : struct_PhaseAlgoritm;
+    Net_ASPS_Analogs : struct_PhaseAlgoritm;
+    Not_AS : struct_PhaseAlgoritm;
+    Gotov_Vozb : struct_PhaseAlgoritm;
+    Reactornyi_P : struct_PhaseAlgoritm;
+    Chastotnyi_P : struct_PhaseAlgoritm;
+    dP_kr1 : struct_PhaseAlgoritm;
+    Auto_Rej : struct_PhaseAlgoritm;
+    CK_IM_Norm : struct_PhaseAlgoritm;
+    HAnd_Mode : struct_PhaseAlgoritm;
+    Impuls_Gaz : struct_PhaseAlgoritm;
   END_VAR
   VAR
-    fb_Sau_ok : fb_ph_CustomPhase;
-    fb_Voltage_ok : fb_ph_CustomPhase;
-    fb_controlCircuits_ok : fb_ph_CustomPhase;
-    fb_controlCircuitsIM_ok : fb_ph_CustomPhase;
-    fb_BEAO_otKnSHU : fb_ph_CustomPhase;
-    fb_circuitAO_ok : fb_ph_CustomPhase;
-    fb_BREO_Srabotal : fb_ph_CustomPhase;
-    fb_DI_ok : fb_ph_CustomPhase;
-    fb_AI_ok : fb_ph_CustomPhase;
-    fb_Loil_ok : fb_ph_CustomPhase;
-    fb_Toil_ok : fb_ph_CustomPhase;
-    fb_mvOff : fb_ph_CustomPhase;
-    fb_Kr_1_close : fb_ph_CustomPhase;
-    fb_Kr_2_close : fb_ph_CustomPhase;
-    fb_Kr_3b_open : fb_ph_CustomPhase;
-    fb_Kr_4_close : fb_ph_CustomPhase;
-    fb_Kr_5_open : fb_ph_CustomPhase;
-    fb_PNS_off : fb_ph_CustomPhase;
-    fb_NU_1_off : fb_ph_CustomPhase;
-    fb_NU_2_off : fb_ph_CustomPhase;
-    fb_Avom_1_off : fb_ph_CustomPhase;
-    fb_Avom_2_off : fb_ph_CustomPhase;
-    fb_Est_rezerv_NU : fb_ph_CustomPhase;
-    fb_Not_AO_NO_EAO : fb_ph_CustomPhase;
-    fb_Not_AS_PS : fb_ph_CustomPhase;
-    fb_BusketTest : fb_ph_CustomPhase;
-    fb_BusketRolledIn : fb_ph_CustomPhase;
+    fb_BMP_Err : fb_ph_CustomPhase;
+    fb_Level_masla_Norm : fb_ph_CustomPhase;
+    fb_T_masla_Norm : fb_ph_CustomPhase;
+    fb_Krans_ready_to_move : fb_ph_CustomPhase;
+    fb_Krans_Poloj : fb_ph_CustomPhase;
+    fb_Net_AO_KC_SHKS04M : fb_ph_CustomPhase;
+    fb_EGPA_Stop : fb_ph_CustomPhase;
+    fb_Avt_SHU_vkl : fb_ph_CustomPhase;
+    fb_All_IM_Off : fb_ph_CustomPhase;
+    fb_Nalichie220_SHU_Ai : fb_ph_CustomPhase;
+    fb_BP_Norm : fb_ph_CustomPhase;
+    fb_Naprajenie_U_IM : fb_ph_CustomPhase;
+    fb_MV_Poloj_RolledON : fb_ph_CustomPhase;
+    fb_MV_Poloj_RolledOFF : fb_ph_CustomPhase;
+    fb_NOTAnalogNS : fb_ph_CustomPhase;
+    fb_Net_ASPS_Analogs : fb_ph_CustomPhase;
+    fb_Not_AS : fb_ph_CustomPhase;
+    fb_Gotov_Vozb : fb_ph_CustomPhase;
+    fb_Reactornyi_P : fb_ph_CustomPhase;
+    fb_Chastotnyi_P : fb_ph_CustomPhase;
+    fb_dP_kr1 : fb_ph_CustomPhase;
+    fb_Auto_Rej : fb_ph_CustomPhase;
+    fb_CK_IM_Norm : fb_ph_CustomPhase;
+    fb_HAnd_Mode : fb_ph_CustomPhase;
+    fb_Impuls_Gaz : fb_ph_CustomPhase;
     _sunpackerCommand : fb_sunpackerCommand;
     modeR_Trig : R_TRIG;
     modeF_Trig : F_TRIG;
@@ -10770,130 +10784,189 @@ FUNCTION_BLOCK ppuAlg
   END_VAR
 
   IF NOT onInit THEN
-                fb_Sau_ok(phaseNumber:=0);
-            fb_Voltage_ok(phaseNumber:=1);
-    fb_controlCircuits_ok(phaseNumber:=2);
-  fb_controlCircuitsIM_ok(phaseNumber:=5);
-          fb_BEAO_otKnSHU(phaseNumber:=6);
-          fb_circuitAO_ok(phaseNumber:=7);
-         fb_BREO_Srabotal(phaseNumber:=9);
-                 fb_DI_ok(phaseNumber:=10);
-                 fb_AI_ok(phaseNumber:=11);
-               fb_Loil_ok(phaseNumber:=12);
-               fb_Toil_ok(phaseNumber:=13);
-                 fb_mvOff(phaseNumber:=14);
-            fb_Kr_1_close(phaseNumber:=15);
-            fb_Kr_2_close(phaseNumber:=16);
-            fb_Kr_3b_open(phaseNumber:=17);
-            fb_Kr_4_close(phaseNumber:=18);
-             fb_Kr_5_open(phaseNumber:=19);
-               fb_PNS_off(phaseNumber:=20);
-              fb_NU_1_off(phaseNumber:=21);
-              fb_NU_2_off(phaseNumber:=22);
-            fb_Avom_1_off(phaseNumber:=23);
-            fb_Avom_2_off(phaseNumber:=24);
-         fb_Est_rezerv_NU(phaseNumber:=25);
-         fb_Not_AO_NO_EAO(phaseNumber:=26);
-             fb_Not_AS_PS(phaseNumber:=27);
-            fb_BusketTest(phaseNumber:=28);
-        fb_BusketRolledIn(phaseNumber:=29);   
+
+      fb_BMP_Err(phaseNumber:=0);
+      fb_Level_masla_Norm(phaseNumber:=1);
+      fb_T_masla_Norm(phaseNumber:=2);
+      fb_Krans_ready_to_move(phaseNumber:=5);
+      fb_Krans_Poloj(phaseNumber:=6);
+      fb_Net_AO_KC_SHKS04M(phaseNumber:=7);
+      fb_EGPA_Stop(phaseNumber:=9);
+      fb_Avt_SHU_vkl(phaseNumber:=10);
+      fb_All_IM_Off(phaseNumber:=11);
+      fb_Nalichie220_SHU_Ai(phaseNumber:=12);
+      fb_BP_Norm(phaseNumber:=13);
+      fb_Naprajenie_U_IM(phaseNumber:=14);
+      fb_MV_Poloj_RolledON(phaseNumber:=15);
+      fb_MV_Poloj_RolledOFF(phaseNumber:=16);
+      fb_NOTAnalogNS(phaseNumber:=17);
+      fb_Net_ASPS_Analogs(phaseNumber:=18);
+      fb_Not_AS(phaseNumber:=19);
+      fb_Gotov_Vozb(phaseNumber:=20);
+      fb_Reactornyi_P(phaseNumber:=21);
+      fb_Chastotnyi_P(phaseNumber:=22);
+      fb_dP_kr1(phaseNumber:=23);
+      fb_Auto_Rej(phaseNumber:=24);
+      fb_CK_IM_Norm(phaseNumber:=25);
+      fb_HAnd_Mode(phaseNumber:=26);
+      fb_Impuls_Gaz(phaseNumber:=27);                                
 
   onInit:=TRUE;
   END_IF;
 
-                fb_Sau_ok(StrPh:=Sau_ok);
-            fb_Voltage_ok(StrPh:=Voltage_ok);
-    fb_controlCircuits_ok(StrPh:=controlCircuits_ok);
-  fb_controlCircuitsIM_ok(StrPh:=controlCircuitsIM_ok);
-          fb_BEAO_otKnSHU(StrPh:=BEAO_otKnSHU);
-          fb_circuitAO_ok(StrPh:=circuitAO_ok);
-         fb_BREO_Srabotal(StrPh:=BREO_Srabotal);
-                 fb_DI_ok(StrPh:=DI_ok);
-                 fb_AI_ok(StrPh:=AI_ok);
-               fb_Loil_ok(StrPh:=Loil_ok);
-               fb_Toil_ok(StrPh:=Toil_ok);
-                 fb_mvOff(StrPh:=mvOff);
-            fb_Kr_1_close(StrPh:=Kr_1_close);
-            fb_Kr_2_close(StrPh:=Kr_2_close);
-            fb_Kr_3b_open(StrPh:=Kr_3b_open);
-            fb_Kr_4_close(StrPh:=Kr_4_close);
-             fb_Kr_5_open(StrPh:=Kr_5_open);
-               fb_PNS_off(StrPh:=PNS_off);
-              fb_NU_1_off(StrPh:=NU_1_off);
-              fb_NU_2_off(StrPh:=NU_2_off);
-            fb_Avom_1_off(StrPh:=Avom_1_off);
-            fb_Avom_2_off(StrPh:=Avom_2_off);
-         fb_Est_rezerv_NU(StrPh:=Est_rezerv_NU);
-         fb_Not_AO_NO_EAO(StrPh:=Not_AO_NO_EAO);
-             fb_Not_AS_PS(StrPh:=Not_AS_PS);
-            fb_BusketTest(StrPh:=BusketTest);
-        fb_BusketRolledIn(StrPh:=BusketRolledIn); 
-
+  fb_BMP_Err(StrPh:=BMP_Err);
+  fb_Level_masla_Norm(StrPh:=Level_masla_Norm);
+  fb_T_masla_Norm(StrPh:=T_masla_Norm);
+  fb_Krans_ready_to_move(StrPh:=Krans_ready_to_move);
+  fb_Krans_Poloj(StrPh:=Krans_Poloj);
+  fb_Net_AO_KC_SHKS04M(StrPh:=Net_AO_KC_SHKS04M);
+  fb_EGPA_Stop(StrPh:=EGPA_Stop);
+  fb_Avt_SHU_vkl(StrPh:=Avt_SHU_vkl);
+  fb_All_IM_Off(StrPh:=All_IM_Off);
+  fb_Nalichie220_SHU_Ai(StrPh:=Nalichie220_SHU_Ai);
+  fb_BP_Norm(StrPh:=BP_Norm);
+  fb_Naprajenie_U_IM(StrPh:=Naprajenie_U_IM);
+  fb_MV_Poloj_RolledON(StrPh:=MV_Poloj_RolledON);
+  fb_MV_Poloj_RolledOFF(StrPh:=MV_Poloj_RolledOFF);
+  fb_NOTAnalogNS(StrPh:=NOTAnalogNS);
+  fb_Net_ASPS_Analogs(StrPh:=Net_ASPS_Analogs);
+  fb_Not_AS(StrPh:=Not_AS);
+  fb_Gotov_Vozb(StrPh:=Gotov_Vozb);
+  fb_Reactornyi_P(StrPh:=Reactornyi_P);
+  fb_Chastotnyi_P(StrPh:=Chastotnyi_P);
+  fb_dP_kr1(StrPh:=dP_kr1);
+  fb_Auto_Rej(StrPh:=Auto_Rej);
+  fb_CK_IM_Norm(StrPh:=CK_IM_Norm);
+  fb_HAnd_Mode(StrPh:=HAnd_Mode);
+  fb_Impuls_Gaz(StrPh:=Impuls_Gaz);
 
   IF StrAlg.isRuning THEN
 
+      (*BMP_Err.top:= ((BMPERR_k = 0) OR (kontroller.imit)); надо разобраться кто такой BMPERR_k*)
+      (*уровень масла в норме*)
+      Level_masla_Norm.top := (ai.Yroven_masla_MB.interval = _statusAi.normal);
 
-      Sau_ok.top:= (*(NOT kontroller.diagnostic.ns)  OR kontroller.imit;*) TRUE;
-      Voltage_ok.top	:=NapryageniaOK(IM);
-      controlCircuits_ok.top	:=NOT nsCepeiUpravlenya(IM);
-      controlCircuitsIM_ok.top	:=NOT nsCepeiControl(IM);
-      (*BEAO_otKnSHU.top	:=NOT Im.singleSignals.BEO_ON_knopkaSHU.Q AND Im.singleSignals.BEO_ON_knopkaSHU.reliability;*)
-      circuitAO_ok.top	:=NOT Im.singleSignals.AO_KC.Q AND Im.singleSignals.AO_KC.reliability;
-      (*BREO_Srabotal.top	:=NOT Im.singleSignals.BEO_Srabat.Q AND Im.singleSignals.BEO_Srabat.reliability;*)
-      DI_ok.top	:=NOT discretNS(di);
-      AI_ok.top	:=NOT analogsNS(ai);
-      mvOff.top:=Im.mv.onStatus = _statusDualInput.STATUS_OFF;
-      Toil_ok.top:=(ai.Toporno_podshipnika_EDT_1.interval = _statusAi.normal); 
-      Loil_ok.top:=(ai.Yroven_masla_MB.interval= _statusAi.normal) ;
+      (*температура масла в норме*)
+      T_masla_Norm.top:= (ai.Tmasla_MB.interval = _statusAi.normal); 
 
-      Kr_1_close.top:=Im.kran1.onStatus = _statusDualInput.STATUS_OFF;
-      Kr_2_close.top:=Im.kran2.onStatus = _statusDualInput.STATUS_OFF;
-      Kr_3b_open.top:=Im.kran3b.onStatus = _statusDualInput.STATUS_ON;
-      Kr_4_close.top:=Im.kran4.onStatus = _statusDualInput.STATUS_OFF;
-      Kr_5_open.top:=	Im.kran5.onStatus = _statusDualInput.STATUS_ON;
-      PNS_off.top:=	Im.pns.onStatus = _statusDualInput.STATUS_OFF;	
-      NU_1_off.top:=	Im.nu1.onStatus = _statusDualInput.STATUS_OFF;
-      NU_2_off.top:=	Im.nu2.onStatus = _statusDualInput.STATUS_OFF;
-      Avom_1_off.top:=Im.v1_Avom.onStatus = _statusDualInput.STATUS_OFF;
-      Avom_2_off.top:=Im.v2_Avom.onStatus = _statusDualInput.STATUS_OFF;
+      (*kраны готовы к управлению*)
+      Krans_ready_to_move.top:= NOT (IM.Kran1.So OR IM.Kran1.Sz OR IM.Kran2.So OR IM.Kran2.Sz OR IM.Kran3.So OR
+                                     IM.Kran3.Sz OR IM.Kran3b.So OR IM.Kran3b.Sz OR IM.Kran4.So OR IM.Kran4.Sz OR
+  			     IM.Kran5.So OR IM.Kran5.Sz OR IM.Kran6.So OR IM.Kran6.Sz); 
 
-      Est_rezerv_NU.top:= NOT NotHasRezervNU; 	
-      (*Not_AO_NO_EAO.top:=	   NOT ( Im.singleOutputs.AO_GPA.q
-                                      OR Im.singleSignals.AO_KC.q
-                                      OR Im.singleSignals.AOGPA_knopkaSHU.q
-                                      OR Im.singleSignals.AOGPA_PRU.q
-                                      OR Im.singleSignals.NOGPA_knopkaSHU.q
-                                      OR Im.singleSignals.BEO_Srabat.q);*)
+      (*положение кранов верное*)
+      Krans_Poloj.top:= (Im.Kran1.onStatus=_statusDualInput.STATUS_OFF) AND
+  		  (Im.Kran2.onStatus=_statusDualInput.STATUS_OFF) AND
+  		  (Im.Kran3.onStatus=_statusDualInput.STATUS_OFF) AND
+  		  (Im.Kran3b.onStatus=_statusDualInput.STATUS_ON) AND
+  		  (Im.Kran4.onStatus=_statusDualInput.STATUS_OFF) AND
+  		  (Im.Kran5.onStatus=_statusDualInput.STATUS_ON) AND 
+                        (Im.Kran6.onStatus=_statusDualInput.STATUS_ON); 
+      (*Нет АО от ШКС
+      Net_AO_KC_SHKS04M.top:= haveAlarms(); кто такой haveAlarms*)
 
-      Not_AS_PS.top:=	NOT (algManager.DiscretPS OR algManager.analogsPS OR algManager.ProtectionSignaling);
-      BusketTest.top:=Im.mv.basketStatus = _basketStats.BASKET_ROLLEDOUT;
-      BusketRolledIn.top:=Im.mv.basketStatus = _basketStats.BASKET_RolledIN;
+      (*Режим ЭГПА остановлен *)
+      EGPA_Stop.top := (algManager.mode = ModeGpa.MODE_STOP);
 
-      ppuDone:=                 Sau_ok.top AND
-  			Voltage_ok.top AND
-  			controlCircuits_ok.top AND
-  			controlCircuitsIM_ok.top AND
-  			circuitAO_ok.top AND
-  			BEAO_otKnSHU.top	AND
-  			BREO_Srabotal.top	AND
-  			DI_ok.top AND
-  			AI_ok.top AND
-  			Loil_ok.top AND
-  			Toil_ok.top AND
-  			mvOff.top AND
-  			Kr_1_close.top AND
-  			Kr_2_close.top AND
-  			Kr_3b_open.top AND
-  			Kr_4_close.top AND
-  			Kr_5_open.top AND
-  			PNS_off.top AND
-  			NU_1_off.top AND
-  			NU_2_off.top AND
-  			Avom_1_off.top AND
-  			Avom_2_off.top AND
-  			Est_rezerv_NU.top AND
-  			Not_AO_NO_EAO.top AND
-  			Not_AS_PS.top ;
+      (*Автомат ШУ включен *)
+      Avt_SHU_vkl.top := IM.SingleSignals.SHU_v_GPA_vkluch.Q;                                                                                  
+
+      (*Все исполнительные механизмы выключены *)
+      All_IM_Off.top := (IM.mv.onStatus=_statusDualInput.STATUS_OFF) AND (IM.pns.onStatus=_statusDualInput.STATUS_OFF) AND
+                        (IM.nu1.onStatus=_statusDualInput.STATUS_OFF) AND (IM.nu2.onStatus=_statusDualInput.STATUS_OFF) AND
+                        (IM.v1_Avom.onStatus=_statusDualInput.STATUS_OFF) AND (IM.v2_Avom.onStatus=_statusDualInput.STATUS_OFF) AND
+  		  (IM.v3_Avom.onStatus=_statusDualInput.STATUS_OFF)AND (IM.v4_Avom.onStatus=_statusDualInput.STATUS_OFF) AND
+                        (IM.CMN.onStatus=_statusDualInput.STATUS_OFF) AND (IM.TEN_MB.onStatus=_statusDualInput.STATUS_OFF) AND
+                        (IM.TEN_kollectora.onStatus=_statusDualInput.STATUS_OFF) AND (IM.KaloriferAVOM.onStatus=_statusDualInput.STATUS_OFF); 
+
+      (*Наличие 220 в шу*)
+      Nalichie220_SHU_Ai.top :=	(ai.Kontrol_per_220V.interval = _statusAi.normal)	 AND (ai.Kontrol_post_220V.interval = _statusAi.normal);				
+
+      (*Блоки питания норм
+      BP_Norm.top:= 
+  		(IM.NalichieBP1.Q AND
+  		IM.NalichieBP2.Q AND	
+  		IM.NalichieBP3.Q AND
+  		IM.NalichieBP4.Q AND
+  		IM.NalichieBP5.Q AND
+  		IM.NalichieBP6.Q AND
+  		IM.NalichieBP7_BP8.Q AND
+  		IM.NalichieBP9_BP10.Q AND
+
+  		IM.Nalichie220BEAO.Q AND
+  		IM.NalichiePer220naVhode.Q AND
+  		IM.NalichiePost220naVhode.Q AND
+  		IM.NalichieBP11.Q AND
+  		IM.NalichieBP12.Q); нет сигналов таких *)
+
+      (*Напряжение исполнительниых механизмов                
+      Naprajenie_U_IM.top := IM.NalichieU_CMN.q AND IM.NalichieU_NU1.Q AND IM.Nalichie_CU_MV.Q  AND IM.NalichieU_NU2.Q AND 
+  						IM.NalichieU_PNS.Q; нет сигналов таких *)
+
+      (* положение тележки мв вкачена *)                
+      MV_Poloj_RolledON.top:= IM.mv.basketStatus = _basketStats.BASKET_ROLLEDIN;
+
+      (* положение тележки мв выкачена *)  
+      MV_Poloj_RolledOFF.top:= IM.mv.basketStatus = _basketStats.BASKET_ROLLEDOUT;
+
+      (* нет неисправных аналоговых сигналов *)
+      NOTAnalogNS.top :=  NOT analogsNS(); 
+
+      (* нет аварийных/предупредительных сигнализаций аналоговых сигналов *)
+      Net_ASPS_Analogs.top := anyAnalogsPs(); (*Не понял где посмотреть наличие ас аналогов *)    
+
+      (* нет сработанных защит *)
+      Not_AS.top := NOT anyProtectionSignaling();
+
+      (* готовность возбудителя *)
+      Gotov_Vozb.top:= IM.SingleSignals.Vozbud_gotovnost.Q;
+
+      (* реакторный пуск *)
+      Reactornyi_P.top := IM.SingleSignals.Reaktornii_pusk_perek.Q AND NOT IM.SingleSignals.Chastotny_pusk.Q;
+
+      (* частотный пуск *)
+      Chastotnyi_P.top:=IM.SingleSignals.Chastotny_pusk.Q AND NOT IM.SingleSignals.Reaktornii_pusk_perek.Q;
+
+      (* нет перепада давления на кране 1 *)                                                                                                
+      dP_kr1.top:= NOT IM.SingleSignals.dp_kran1_Less100.Q (*AND (IM.PerepadDavlenieKran1_CK.status = 1))*);
+
+      (* в автоматическом ли режиме исполнительные механизмы *)                                                                                                                                                                
+      (*Auto_Rej.top := im.NU1_Automat.Q AND im.PNS_Automat.Q AND im.NU2_Automat.Q;*)
+
+      (* есть наряжение в цепях управления ИМ *)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+      CK_IM_Norm.top := nsCepeiUpravlenya();
+
+      (* ручной режим *)
+      HAnd_Mode.top:= NOT im.SingleSignals.Rezhim_ruchnogo_regulirovaniya.Q;
+
+      (* импульсный газ *)
+      Impuls_Gaz.top:= ai.Pimpuls_gaz.interval=_statusAi.normal;
+
+      ppuDone := BMP_Err.top AND
+  	     Level_masla_Norm.top AND
+                 T_masla_Norm.top AND
+  	     Krans_ready_to_move.top AND
+  	     Krans_Poloj.top AND
+  	     Net_AO_KC_SHKS04M.top AND
+  	     EGPA_Stop.top AND
+                 Avt_SHU_vkl.top AND
+                 All_IM_Off.top AND
+                 Nalichie220_SHU_Ai.top AND
+                 BP_Norm.top AND
+                 Naprajenie_U_IM.top AND
+                 MV_Poloj_RolledON.top AND
+                 MV_Poloj_RolledOFF.top AND 
+                 NOTAnalogNS.top AND 
+                 Net_ASPS_Analogs.top AND 
+                 Not_AS.top AND 
+                 Gotov_Vozb.top AND
+                 Reactornyi_P.top AND
+                 Chastotnyi_P.top AND
+                 dP_kr1.top AND
+                 Auto_Rej.top AND
+                 CK_IM_Norm.top AND
+                 HAnd_Mode.top AND
+                 Impuls_Gaz.top;
 
 
       puskAllowed:= ppuDone AND Im.mv.basketStatus = _basketStats.BASKET_ROLLEDIN;
@@ -10974,33 +11047,31 @@ FUNCTION_BLOCK ppuAlg
 
                                            (*****************       OnReset       *****************)
 
-                                                    resetPhase(Sau_ok); 
-                                                    resetPhase(Voltage_ok);
-                                                    resetPhase(controlCircuits_ok);
-                                                    resetPhase(controlCircuitsIM_ok);
-                                                    resetPhase(BEAO_otKnSHU);
-                                                    resetPhase(circuitAO_ok);
-                                                    resetPhase(BREO_Srabotal);
-                                                    resetPhase(DI_ok);
-                                                    resetPhase(AI_ok);
-                                                    resetPhase(Loil_ok);
-                                                    resetPhase(Toil_ok);
-                                                    resetPhase(mvOff);
-                                                    resetPhase(Kr_1_close);
-                                                    resetPhase(Kr_2_close);
-                                                    resetPhase(Kr_3b_open);
-                                                    resetPhase(Kr_4_close);
-                                                    resetPhase(Kr_5_open);
-                                                    resetPhase(PNS_off);
-                                                    resetPhase(NU_1_off);
-                                                    resetPhase(NU_2_off);
-                                                    resetPhase(Avom_1_off);
-                                                    resetPhase(Avom_2_off);  
-                                                    resetPhase(Est_rezerv_NU);
-                                                    resetPhase(Not_AO_NO_EAO);
-                                                    resetPhase(Not_AS_PS);
-                                                    resetPhase(BusketTest);
-                                                    resetPhase(BusketRolledIn);
+                                                    resetPhase(BMP_Err); 
+                                                    resetPhase(Level_masla_Norm);
+                                                    resetPhase(T_masla_Norm);
+                                                    resetPhase(Krans_ready_to_move);
+                                                    resetPhase(Krans_Poloj);
+                                                    resetPhase(Net_AO_KC_SHKS04M);
+                                                    resetPhase(EGPA_Stop);
+                                                    resetPhase(Avt_SHU_vkl);
+                                                    resetPhase(All_IM_Off);
+                                                    resetPhase(Nalichie220_SHU_Ai);
+                                                    resetPhase(BP_Norm);
+                                                    resetPhase(Naprajenie_U_IM);
+                                                    resetPhase(MV_Poloj_RolledON);
+                                                    resetPhase(MV_Poloj_RolledOFF);
+                                                    resetPhase(NOTAnalogNS);
+                                                    resetPhase(Net_ASPS_Analogs);
+                                                    resetPhase(Not_AS);
+                                                    resetPhase(Gotov_Vozb);
+                                                    resetPhase(Reactornyi_P);
+                                                    resetPhase(Chastotnyi_P);
+                                                    resetPhase(dP_kr1);
+                                                    resetPhase(Auto_Rej);  
+                                                    resetPhase(CK_IM_Norm);
+                                                    resetPhase(HAnd_Mode);
+                                                    resetPhase(Impuls_Gaz);
 
                                                     algoritms.testPms.inCanRun:=  FALSE;
                                                     algoritms.testdPmg.inCanRun:= FALSE;
@@ -11031,89 +11102,84 @@ FUNCTION_BLOCK ppuAlg
   	command_error_for_Status := 0;
   END_IF; 
 
-  StrAlg.Start:= Sau_ok.startStatus
-              OR Voltage_ok.startStatus
-              OR controlCircuits_ok.startStatus
-              OR controlCircuitsIM_ok.startStatus
-              OR BEAO_otKnSHU.startStatus
-              OR circuitAO_ok.startStatus
-              OR BREO_Srabotal.startStatus
-              OR DI_ok.startStatus
-              OR AI_ok.startStatus
-              OR Loil_ok.startStatus
-              OR Toil_ok.startStatus
-              OR mvOff.startStatus
-              OR Kr_1_close.startStatus
-              OR Kr_2_close.startStatus
-              OR Kr_3b_open.startStatus
-              OR Kr_4_close.startStatus
-              OR Kr_5_open.startStatus
-              OR PNS_off.startStatus
-              OR NU_1_off.startStatus
-              OR NU_2_off.startStatus
-              OR Avom_1_off.startStatus
-              OR Avom_2_off.startStatus
-              OR Est_rezerv_NU.startStatus
-              OR Not_AO_NO_EAO.startStatus
-              OR Not_AS_PS.startStatus
-              OR BusketTest.startStatus
-              OR BusketRolledIn.startStatus;
+  StrAlg.Start:= BMP_Err.startStatus
+              OR Level_masla_Norm.startStatus
+              OR T_masla_Norm.startStatus
+              OR Krans_ready_to_move.startStatus
+              OR Krans_Poloj.startStatus
+              OR Net_AO_KC_SHKS04M.startStatus
+              OR EGPA_Stop.startStatus
+              OR Avt_SHU_vkl.startStatus
+              OR All_IM_Off.startStatus
+              OR Nalichie220_SHU_Ai.startStatus
+              OR BP_Norm.startStatus
+              OR Naprajenie_U_IM.startStatus
+              OR MV_Poloj_RolledON.startStatus
+              OR MV_Poloj_RolledOFF.startStatus
+              OR NOTAnalogNS.startStatus
+              OR Net_ASPS_Analogs.startStatus
+              OR Not_AS.startStatus
+              OR Gotov_Vozb.startStatus
+              OR Reactornyi_P.startStatus
+              OR Chastotnyi_P.startStatus
+              OR dP_kr1.startStatus
+              OR Auto_Rej.startStatus
+              OR CK_IM_Norm.startStatus
+              OR HAnd_Mode.startStatus
+              OR Impuls_Gaz.startStatus;
 
-  StrAlg.Error:= Sau_ok.errorStatus
-              OR Voltage_ok.errorStatus
-              OR controlCircuits_ok.errorStatus
-              OR controlCircuitsIM_ok.errorStatus
-              OR BEAO_otKnSHU.errorStatus
-              OR circuitAO_ok.errorStatus
-              OR BREO_Srabotal.errorStatus
-              OR DI_ok.errorStatus
-              OR AI_ok.errorStatus
-              OR Loil_ok.errorStatus
-              OR Toil_ok.errorStatus
-              OR mvOff.errorStatus
-              OR Kr_1_close.errorStatus
-              OR Kr_2_close.errorStatus
-              OR Kr_3b_open.errorStatus
-              OR Kr_4_close.errorStatus
-              OR Kr_5_open.errorStatus
-              OR PNS_off.errorStatus
-              OR NU_1_off.errorStatus
-              OR NU_2_off.errorStatus
-              OR Avom_1_off.errorStatus
-              OR Avom_2_off.errorStatus
-              OR Est_rezerv_NU.errorStatus
-              OR Not_AO_NO_EAO.errorStatus
-              OR Not_AS_PS.errorStatus
-              OR BusketTest.errorStatus
-              OR BusketRolledIn.errorStatus;
+  StrAlg.Error:= BMP_Err.errorStatus
+              OR Level_masla_Norm.errorStatus
+              OR T_masla_Norm.errorStatus
+              OR Krans_ready_to_move.errorStatus
+              OR Krans_Poloj.errorStatus
+              OR Net_AO_KC_SHKS04M.errorStatus
+              OR EGPA_Stop.errorStatus
+              OR Avt_SHU_vkl.errorStatus
+              OR All_IM_Off.errorStatus
+              OR Nalichie220_SHU_Ai.errorStatus
+              OR BP_Norm.errorStatus
+              OR Naprajenie_U_IM.errorStatus
+              OR MV_Poloj_RolledON.errorStatus
+              OR MV_Poloj_RolledOFF.errorStatus
+              OR NOTAnalogNS.errorStatus
+              OR Net_ASPS_Analogs.errorStatus
+              OR Not_AS.errorStatus
+              OR Gotov_Vozb.errorStatus
+              OR Reactornyi_P.errorStatus
+              OR Chastotnyi_P.errorStatus
+              OR dP_kr1.errorStatus
+              OR Auto_Rej.errorStatus
+              OR CK_IM_Norm.errorStatus
+              OR HAnd_Mode.errorStatus
+              OR Impuls_Gaz.errorStatus;
 
-  StrAlg.Top:=   Sau_ok.topStatus
-              OR Voltage_ok.topStatus
-              OR controlCircuits_ok.topStatus
-              OR controlCircuitsIM_ok.topStatus
-              OR BEAO_otKnSHU.topStatus
-              OR circuitAO_ok.topStatus
-              OR BREO_Srabotal.topStatus
-              OR DI_ok.topStatus
-              OR AI_ok.topStatus
-              OR Loil_ok.topStatus
-              OR Toil_ok.topStatus
-              OR mvOff.topStatus
-              OR Kr_1_close.topStatus
-              OR Kr_2_close.topStatus
-              OR Kr_3b_open.topStatus
-              OR Kr_4_close.topStatus
-              OR Kr_5_open.topStatus
-              OR PNS_off.topStatus
-              OR NU_1_off.topStatus
-              OR NU_2_off.topStatus
-              OR Avom_1_off.topStatus
-              OR Avom_2_off.topStatus
-              OR Est_rezerv_NU.topStatus
-              OR Not_AO_NO_EAO.topStatus
-              OR Not_AS_PS.topStatus
-              OR BusketTest.topStatus
-              OR BusketRolledIn.topStatus;                                   
+  StrAlg.Top:=   BMP_Err.topStatus
+              OR Level_masla_Norm.topStatus
+              OR T_masla_Norm.topStatus
+              OR Krans_ready_to_move.topStatus
+              OR Krans_Poloj.topStatus
+              OR Net_AO_KC_SHKS04M.topStatus
+              OR EGPA_Stop.topStatus
+              OR Avt_SHU_vkl.topStatus
+              OR All_IM_Off.topStatus
+              OR Nalichie220_SHU_Ai.topStatus
+              OR BP_Norm.topStatus
+              OR Naprajenie_U_IM.topStatus
+              OR MV_Poloj_RolledON.topStatus
+              OR MV_Poloj_RolledOFF.topStatus
+              OR NOTAnalogNS.topStatus
+              OR Net_ASPS_Analogs.topStatus
+              OR Not_AS.topStatus
+              OR Gotov_Vozb.topStatus
+              OR Reactornyi_P.topStatus
+              OR Chastotnyi_P.topStatus
+              OR dP_kr1.topStatus
+              OR Auto_Rej.topStatus
+              OR CK_IM_Norm.topStatus
+              OR HAnd_Mode.topStatus
+              OR Impuls_Gaz.topStatus;
+
 
   (*TODO: TYPE PROGRAM CODE HERE*)
   StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
@@ -13648,92 +13714,6 @@ FUNCTION_BLOCK proc_algoritms
   );
 END_FUNCTION_BLOCK
 
-FUNCTION anyProtectionSignaling : BOOL
-  VAR_INPUT
-    protections : ProtectionsConfig;
-  END_VAR
-
-  anyProtectionSignaling:=
-  protections.Topornogo_podshipnika_EDT_1.Signaling OR
-  protections.Toporno_ypornogo_podshipnika_EDT_2.Signaling OR
-  protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.Signaling OR
-  protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.Signaling OR
-  protections.Topornogo_podshipnika_shesterni_reduktora_T_5.Signaling OR
-  protections.Topornogo_podshipnika_reduktora_HT_6.Signaling OR
-  protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.Signaling OR
-  protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.Signaling OR
-  protections.Typornogo_podshipnika_rav_kolodok_HT_9.Signaling OR
-  protections.Typornogo_podshipnika_nerab_kolodok_HT_10.Signaling OR
-  protections.Tgaza_na_vyhode_H.Signaling OR
-  protections.Os_sdvig_nagnetatelja_plus.Signaling OR
-  protections.Os_sdvig_nagnetatelja_minus.Signaling OR
-  protections.Pgaza_na_vhode_nagnetatelia.Signaling OR
-  protections.Pgaza_na_vyhode_nagnetatelia.Signaling OR
-  protections.dPmaslo_gaz.Signaling OR
-  protections.Pmaslo_sm_nizkoe.Signaling OR
-  protections.Pmaslo_sm_vysokoe.Signaling OR
-  protections.Vibro_skorost_OPED_T1.Signaling OR
-  protections.Vibro_skorost_OPED_T2.Signaling OR
-  protections.Vibro_skorost_OYP_kolesa_ED_T3.Signaling OR
-  protections.Vibro_skorost_OP_kolesa_RH_T4.Signaling OR
-  protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling OR
-  protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling OR
-  protections.mvOff.Signaling OR
-  protections.dPmaslo_gaz.Signaling OR
-  protections.dP_kran1.Signaling OR
-  protections.Kran1sdvig.Signaling OR
-  protections.Kran2sdvig.Signaling OR
-  protections.Uroven_masla_v_akkum.Signaling OR
-  protections.Neispravnost_vozbud.Signaling OR
-  protections.Avariya_vozbud.Signaling OR
-  protections.NY1_net_voltage.Signaling OR
-  protections.NY2_net_voltage.Signaling OR
-  protections.PNS_net_voltage.Signaling;
-END_FUNCTION
-
-FUNCTION anyAnalogsPs : BOOL
-  VAR_INPUT
-    ai : AiConfig;
-  END_VAR
-  VAR
-    statusAi : TYPE_StatusAi;
-  END_VAR
-
-  anyAnalogsPs:=
-  ai.Toporno_podshipnika_EDT_1.interval= statusAi.HW OR
-  ai.Toporno_podshipnika_EDT_1.interval= statusAi.LW OR
-  ai.Toporno_ypornogo_podshipnika_EDT_2.interval= statusAi.HW OR
-  ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.interval= statusAi.HW OR
-  ai.Toporno_podshipnika_reduktora_HT_6.interval= statusAi.HW OR
-  ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1.interval= statusAi.HW OR
-  ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2.interval= statusAi.HW OR
-  ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1.interval= statusAi.HW OR
-  ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2.interval= statusAi.HW OR
-  ai.Tholodnogo_vozduha_ED_kanal_1.interval= statusAi.HW OR
-  ai.Tholodnogo_vozduha_ED_kanal_2.interval= statusAi.HW OR
-  ai.Tgorjachego_vozduha_ED_kanal_1.interval= statusAi.HW OR
-  ai.Tgaza_na_vyhode_H.interval= statusAi.HW OR
-  ai.Tmasla_MB.interval= statusAi.LW OR
-  ai.Pmasla_posle_GNS.interval= statusAi.LW OR
-  ai.Pmasla_posle_NU.interval= statusAi.LW OR
-  ai.dPgaza_na_konfuzore.interval= statusAi.HW OR 
-  ai.Os_sdvig_nagnetatelja_plus.interval= statusAi.HW OR 
-  ai.Os_sdvig_nagnetatelja_minus.interval= statusAi.HW OR 
-  ai.dPmaslo_gaz.interval= statusAi.HW OR 
-  ai.Pgaza_na_vhode_nagnetatelia.interval= statusAi.HW OR 
-  ai.Pgaza_na_vyhode_nagnetatelia.interval= statusAi.HW OR 
-  ai.Pimpuls_gaz.interval= statusAi.HW OR 
-  ai.Pimpuls_gaz.interval= statusAi.LW OR 
-  ai.Yroven_masla_MB.interval= statusAi.HW OR 
-  ai.Yroven_masla_MB.interval= statusAi.LW OR
-  ai.Tmasla_MB_TEN.interval= statusAi.HW OR 
-  ai.Tmasla_MB_TEN.interval= statusAi.LW OR 
-  ai.Vibro_skorost_OYP_kolesa_ED_T3.interval= statusAi.HW OR 
-  ai.Vibro_skorost_OYP_kolesa_ED_T3.interval= statusAi.LW OR 
-  ai.Vibro_skorost_OP_kolesa_RH_T4.interval= statusAi.HW OR 
-  ai.Vibro_skorost_OP_kolesa_RH_T4.interval= statusAi.LW;
-END_FUNCTION
-
 FUNCTION anyDiscretPS : BOOL
   VAR_INPUT
     im : ImConfig;
@@ -15303,6 +15283,78 @@ FUNCTION_BLOCK ph_SingleSignal
   StrPh.topStatus := SHL(BOOL_TO_DWORD(StrPh.top), PhaseNumber);
 END_FUNCTION_BLOCK
 
+FUNCTION NapryageniaOK : BOOL
+  VAR_INPUT
+    im : ImConfig;
+  END_VAR
+
+  NapryageniaOK:=
+  NOT (Im.SingleSignals.NS_G1_G2.Q
+  OR Im.SingleSignals.NS_G10_G11.Q
+  OR Im.SingleSignals.NS_G13_G14.Q
+  OR Im.SingleSignals.NS_G15_G16.Q
+  OR Im.SingleSignals.NS_G17.Q
+  OR Im.SingleSignals.NS_G18_G19.Q
+  OR Im.SingleSignals.NS_G3_G4.Q
+  OR Im.SingleSignals.NS_G5_G6.Q
+  OR Im.SingleSignals.NS_G7_G8.Q
+  OR im.SingleSignals.QF1_on.Q
+  OR Im.SingleSignals.QF2_on.Q
+  OR Im.SingleSignals.QF23_on.Q
+  OR Im.SingleSignals.QF4_QF5_on.Q
+  OR Im.SingleSignals.QF6_QF7_on.Q
+  OR Im.SingleSignals.QF8_QF9_on.Q
+  OR Im.SingleSignals.QF10_QF11_on.Q
+  OR im.SingleSignals.QF12_QF13_on.Q
+  OR im.SingleSignals.QF22_on.Q
+  OR Im.SingleSignals.QF14_QF15_on.Q);
+END_FUNCTION
+
+FUNCTION discretNS : BOOL
+  VAR_INPUT
+    di : DiConfig;
+  END_VAR
+
+  discretNS:=  ((di.di_0.reliability <> 255)
+                OR (di.di_1.reliability <> 255)
+                OR (di.di_2.reliability <> 255)
+                OR (di.di_3.reliability <> 255)
+                OR (di.di_4.reliability <> 255)
+                OR (di.di_5.reliability <> 255)
+                OR (di.di_6.reliability <> 255)
+                OR (di.di_7.reliability <> 255)
+                OR (di.di_8.reliability <> 255)
+                OR (di.di_9.reliability <> 255)
+                OR (di.di_10.reliability <> 255)
+                OR (di.di_11.reliability <> 255)
+                OR (di.di_12.reliability <> 255)
+                OR (di.di_13.reliability <> 255)
+                OR (di.di_14.reliability <> 255));
+               (* OR (di.di_15.reliability <> 255)); *)
+END_FUNCTION
+
+FUNCTION nsCepeiControl : BOOL
+  VAR_INPUT
+    im : ImConfig;
+  END_VAR
+
+  nsCepeiControl:= NOT (
+  	im.kran1.reliability OR
+  	im.kran2.reliability OR 
+  	im.kran4.reliability OR 
+  	im.kran5.reliability OR 
+  	im.kran6.reliability OR 
+  	im.kran3b.reliability OR 
+  	im.pns.reliability OR
+  	im.nu1.reliability OR
+  	im.nu2.reliability OR
+  	im.PNS.reliability OR
+            im.v1_Avom.reliability OR
+            im.v2_Avom.reliability OR
+            (*im.Ten.reliability OR*)
+  	im.mv.reliability);
+END_FUNCTION
+
 FUNCTION_BLOCK ExtNarabotka
   VAR
     saveInterval : TIME := T#30S;
@@ -15361,6 +15413,236 @@ FUNCTION_BLOCK ExtNarabotka
   narabotka:=0;
   reset:=FALSE;
   END_IF;
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Pusk_first_faza1
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    timer240 : struct_PhaseAlgoritm;
+    pmsMore50 : struct_PhaseAlgoritm;
+    pnsOn : struct_PhaseAlgoritm;
+    pmsMore300 : struct_PhaseAlgoritm;
+    Protection_Pms : struct_PhaseAlgoritm;
+    Error_Alg : struct_PhaseAlgoritm;
+    fb_timer240 : fb_ph_Timer;
+    fb_PnmMore50 : fb_ph_algoritm;
+    fb_PnsOn : fb_ph_Switch;
+    fb_PmsMore300 : fb_ph_algoritm;
+    fb_Protection_Pms : fb_ph_algoritm;
+    fb_Error_Alg : fb_ph_algoritm;
+    _sunpackerCommand : fb_sunpackerCommand;
+    _PhaseAlgoritmAction : TYPE_PhaseAlgoritmAction;
+    _statusDualInput : TYPE_statusDualInput;
+    _Answers : TYPE_Answers;
+    source : BYTE;
+    cmd : BYTE;
+    lastCmd : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    onInit : BOOL;
+    waitReset : TON;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+    IM : ImConfig;
+    protections : ProtectionsConfig;
+    _statusAi : TYPE_StatusAi;
+    ai : AiConfig;
+  END_VAR
+
+  IF NOT onInit THEN
+
+           fb_timer240(phaseNumber:=0, delay:=T#240S);
+           fb_PnmMore50(phaseNumber:=1);
+           fb_PnsOn(phaseNumber:=2, act:=_on);
+           fb_PmsMore300(phaseNumber:=3);
+           fb_Protection_Pms(phaseNumber:=4);              
+           fb_Error_Alg(phaseNumber:=5);
+
+  onInit:=TRUE;
+  END_IF;
+
+  fb_timer240(StrPh:=timer240);
+  fb_PnmMore50(StrPh:=pmsMore50);
+  fb_PnsOn(StrPh:=pnsOn, IM := Im.pns);
+  fb_PmsMore300(StrPh:=pmsMore300);
+  fb_Protection_Pms(StrPh:=Protection_Pms);              
+  fb_Error_Alg(StrPh:=Error_Alg);                               
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  IF StrAlg.isRuning THEN
+
+      StrAlg.hasError := pnsOn.error;
+
+      (* не взведены защиты - запуск таймера *)
+      IF NOT Protection_Pms.top THEN
+  	runPhase(timer240); 
+      END_IF;
+
+      (* не начался запуск пнс - запуск пнс *)
+      IF NOT pnsOn.start THEN
+  	runPhase(pnsOn);
+      END_IF;
+
+      (* запуск пнс завершен - запус защит *)
+      IF pnsOn.top THEN
+           runPhase(pmsMore50);
+          (*chto-to ne tak, mne kazhetsya*)
+      END_IF;   
+
+
+      (* не завершился запуск защиты 50 - проверка давления 50 *)
+      IF pmsMore50.start AND (NOT pmsMore50.top) THEN
+  	IF ai.Pmaslo_sm_nizkoe.interval = _statusAi.NORMAL AND ai.Pmaslo_sm_nizkoe.value > 50.0  THEN
+  	    runPhase(pnsOn);
+            END_IF;
+      END_IF;
+
+
+      (* не завершился запуск защиты 300 - проверка давления 300 *)
+      IF  pmsMore300.start AND (NOT pmsMore300.top) THEN
+  	IF ai.Pmaslo_sm_vysokoe.interval = _statusAi.NORMAL AND ai.Pmaslo_sm_vysokoe.value > 300.0  THEN
+  	    runPhase(pnsOn);
+  	END_IF;
+      END_IF;
+
+      (* давление было проверено - запуск защит*)     
+      IF pmsMore50.top AND pmsMore300.top THEN
+          runPhase(Protection_Pms);
+      END_IF;
+
+      (* запуск защит не завршен - запуск защит*)
+      IF Protection_Pms.start AND (NOT Protection_Pms.top) THEN
+  	Protection_Pms.top := TRUE;
+      END_IF;
+
+      (* таймер завершился до запуска защит - ошибка *)
+      IF timer240.top THEN 
+  	Error_Alg.ERROR := TRUE; (*не понятное куда его сунуть и нужен ли он*)
+      ELSE
+  	Error_Alg.ERROR := FALSE;	
+      END_IF;
+
+      (* защиты выствалены до завршения таймера - сброс таймера *)
+      IF Protection_Pms.top THEN
+  	resetPhase(timer240);
+      END_IF;
+
+      StrAlg.isEnded:= pnsOn.Top AND Protection_Pms.Top (*Как будто нужно таймер *);
+  END_IF;
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  (* ---- Если управление с ВУ заблокировано, то  передаем команду из алгоритма ---- *)
+  IF StrAlg.inOpcCommandsDisabled THEN
+  	StrAlg.inCommand := StrAlg.inCommand_Alg;
+  ELSE (* иначе передаем команду с АРМа*)
+  	StrAlg.inCommand := StrAlg.inCommand_ARM;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cmdRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA1;
+
+                                                    runPhase(pnsOn);
+                                                    resetAiProtection(protections.Pmaslo_sm_nizkoe);                                                  
+                                                    resetAiProtection(protections.Pmaslo_sm_vysokoe);
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          resetPhase(timer240);
+                                          resetPhase(pmsMore50);
+                                          resetPhase(pnsOn);
+                                          resetPhase(pmsMore300);
+                                          resetPhase(Protection_Pms);
+                                          resetPhase(Error_Alg);
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= timer240.startStatus
+              OR pmsMore50.startStatus
+              OR pnsOn.startStatus
+              OR Error_Alg.startStatus
+              OR pmsMore300.startStatus
+              OR Protection_Pms.startStatus;
+
+
+  StrAlg.Error := timer240.errorStatus
+              OR pmsMore50.errorStatus
+              OR pnsOn.errorStatus
+              OR Error_Alg.errorStatus
+              OR pmsMore300.errorStatus
+              OR Protection_Pms.errorStatus;          
+
+  StrAlg.Top := timer240.topStatus
+              OR pmsMore50.topStatus
+              OR pnsOn.topStatus
+              OR Error_Alg.topStatus
+              OR pmsMore300.topStatus
+              OR Protection_Pms.topStatus;  
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
 END_FUNCTION_BLOCK
 
 
