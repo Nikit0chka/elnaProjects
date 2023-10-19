@@ -181,8 +181,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 29529 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.RELIABILITY
-    st = getVariable(29529);
+  { // 29550 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.RELIABILITY
+    st = getVariable(29550);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 29530 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.INVERSE
-    st = getVariable(29530);
+  { // 29551 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.INVERSE
+    st = getVariable(29551);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.INVERSE", 54);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 29531 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DELAYON
-    st = getVariable(29531);
+  { // 29552 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DELAYON
+    st = getVariable(29552);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DELAYON", 54);
     st->size_data = sizeof(TIME);
@@ -217,8 +217,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 29532 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DELAYOFF
-    st = getVariable(29532);
+  { // 29553 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DELAYOFF
+    st = getVariable(29553);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DELAYOFF", 55);
     st->size_data = sizeof(TIME);
@@ -229,8 +229,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 29533 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.Q
-    st = getVariable(29533);
+  { // 29554 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.Q
+    st = getVariable(29554);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 29534 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.STATUS
-    st = getVariable(29534);
+  { // 29555 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.STATUS
+    st = getVariable(29555);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -253,8 +253,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 29535 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DISABLED_SIG
-    st = getVariable(29535);
+  { // 29556 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DISABLED_SIG
+    st = getVariable(29556);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.DI.DISABLED_SIG", 59);
     st->size_data = sizeof(BOOL);
@@ -265,8 +265,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 29536 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.DELAY
-    st = getVariable(29536);
+  { // 29557 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.DELAY
+    st = getVariable(29557);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.DELAY", 56);
     st->size_data = sizeof(TIME);
@@ -277,8 +277,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_STRUCT_DIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 29537 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INTAG
-    st = getVariable(29537);
+  { // 29558 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INTAG
+    st = getVariable(29558);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INTAG", 56);
     st->size_data = sizeof(BYTE);
@@ -289,8 +289,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 29538 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INRUNONSTART
-    st = getVariable(29538);
+  { // 29559 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INRUNONSTART
+    st = getVariable(29559);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INRUNONSTART", 63);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 29539 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCANRUN
-    st = getVariable(29539);
+  { // 29560 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCANRUN
+    st = getVariable(29560);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCANRUN", 59);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 29540 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INOPCCOMMANDSDISABLED
-    st = getVariable(29540);
+  { // 29561 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INOPCCOMMANDSDISABLED
+    st = getVariable(29561);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INOPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -325,8 +325,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 29541 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND
-    st = getVariable(29541);
+  { // 29562 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND
+    st = getVariable(29562);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 29542 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND_ALG
-    st = getVariable(29542);
+  { // 29563 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND_ALG
+    st = getVariable(29563);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND_ALG", 64);
     st->size_data = sizeof(WORD);
@@ -349,8 +349,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 29543 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND_ARM
-    st = getVariable(29543);
+  { // 29564 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND_ARM
+    st = getVariable(29564);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.INCOMMAND_ARM", 64);
     st->size_data = sizeof(WORD);
@@ -361,8 +361,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 29544 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.TAG
-    st = getVariable(29544);
+  { // 29565 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.TAG
+    st = getVariable(29565);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.TAG", 54);
     st->size_data = sizeof(BYTE);
@@ -373,8 +373,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 29545 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.STATUS
-    st = getVariable(29545);
+  { // 29566 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.STATUS
+    st = getVariable(29566);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.STATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -385,8 +385,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_DWORD = (DWORD*)&p_STRUCT_DIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 29546 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.CANRUN
-    st = getVariable(29546);
+  { // 29567 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.CANRUN
+    st = getVariable(29567);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.CANRUN", 57);
     st->size_data = sizeof(BOOL);
@@ -397,8 +397,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 29547 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.OPCCOMMANDSDISABLED
-    st = getVariable(29547);
+  { // 29568 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.OPCCOMMANDSDISABLED
+    st = getVariable(29568);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.OPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -409,8 +409,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 29548 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.ISRUNNING
-    st = getVariable(29548);
+  { // 29569 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.ISRUNNING
+    st = getVariable(29569);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.ISRUNNING", 60);
     st->size_data = sizeof(BOOL);
@@ -421,8 +421,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 29549 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.HASERROR
-    st = getVariable(29549);
+  { // 29570 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.HASERROR
+    st = getVariable(29570);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.HASERROR", 59);
     st->size_data = sizeof(BOOL);
@@ -433,8 +433,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 29550 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.ISENDED
-    st = getVariable(29550);
+  { // 29571 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.ISENDED
+    st = getVariable(29571);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.ISENDED", 58);
     st->size_data = sizeof(BOOL);
@@ -445,8 +445,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 29551 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.REMONT
-    st = getVariable(29551);
+  { // 29572 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.REMONT
+    st = getVariable(29572);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.REMONT", 57);
     st->size_data = sizeof(BOOL);
@@ -457,8 +457,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 29552 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.CHECK
-    st = getVariable(29552);
+  { // 29573 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.CHECK
+    st = getVariable(29573);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.CHECK", 56);
     st->size_data = sizeof(BOOL);
@@ -469,8 +469,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 29553 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.SIGNALING
-    st = getVariable(29553);
+  { // 29574 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.SIGNALING
+    st = getVariable(29574);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.SIGNALING", 60);
     st->size_data = sizeof(BOOL);
@@ -481,8 +481,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 29554 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.SIGNALINGTP
-    st = getVariable(29554);
+  { // 29575 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.SIGNALINGTP
+    st = getVariable(29575);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.SIGNALINGTP", 62);
     st->size_data = sizeof(BOOL);
@@ -493,8 +493,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 29555 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.RUNONSTART
-    st = getVariable(29555);
+  { // 29576 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.RUNONSTART
+    st = getVariable(29576);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.STRDIP.RUNONSTART", 61);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 29560 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.NOTHING
-    st = getVariable(29560);
+  { // 29581 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.NOTHING
+    st = getVariable(29581);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.NOTHING", 67);
     st->size_data = sizeof(BYTE);
@@ -517,8 +517,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->NOTHING;
     st->value_p = p_BYTE;
   }
-  { // 29561 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOB
-    st = getVariable(29561);
+  { // 29582 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOB
+    st = getVariable(29582);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOB", 63);
     st->size_data = sizeof(BYTE);
@@ -529,8 +529,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOB;
     st->value_p = p_BYTE;
   }
-  { // 29562 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOS
-    st = getVariable(29562);
+  { // 29583 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOS
+    st = getVariable(29583);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOS", 63);
     st->size_data = sizeof(BYTE);
@@ -541,8 +541,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOS;
     st->value_p = p_BYTE;
   }
-  { // 29563 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOPOJ
-    st = getVariable(29563);
+  { // 29584 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOPOJ
+    st = getVariable(29584);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._PROTECTIONTAGS.AOPOJ", 65);
     st->size_data = sizeof(BYTE);
@@ -553,8 +553,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOPOJ;
     st->value_p = p_BYTE;
   }
-  { // 29564 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.IN
-    st = getVariable(29564);
+  { // 29585 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.IN
+    st = getVariable(29585);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.IN", 59);
     st->size_data = sizeof(BOOL);
@@ -565,8 +565,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 29565 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.PT
-    st = getVariable(29565);
+  { // 29586 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.PT
+    st = getVariable(29586);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.PT", 59);
     st->size_data = sizeof(TIME);
@@ -577,8 +577,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 29566 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.Q
-    st = getVariable(29566);
+  { // 29587 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.Q
+    st = getVariable(29587);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.Q", 58);
     st->size_data = sizeof(BOOL);
@@ -589,8 +589,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 29567 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.ET
-    st = getVariable(29567);
+  { // 29588 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.ET
+    st = getVariable(29588);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP.ET", 59);
     st->size_data = sizeof(TIME);
@@ -601,8 +601,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 29568 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP
-    st = getVariable(29568);
+  { // 29589 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP
+    st = getVariable(29589);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD._SIGNALINGTP", 56);
     st->size_data = sizeof(TOF);
@@ -612,8 +612,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TOF = (TOF*)&p_FB_DIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 29569 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.IN
-    st = getVariable(29569);
+  { // 29590 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.IN
+    st = getVariable(29590);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -624,8 +624,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 29570 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.PT
-    st = getVariable(29570);
+  { // 29591 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.PT
+    st = getVariable(29591);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.PT", 52);
     st->size_data = sizeof(TIME);
@@ -636,8 +636,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 29571 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.Q
-    st = getVariable(29571);
+  { // 29592 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.Q
+    st = getVariable(29592);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -648,8 +648,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 29572 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.ET
-    st = getVariable(29572);
+  { // 29593 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.ET
+    st = getVariable(29593);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER.ET", 52);
     st->size_data = sizeof(TIME);
@@ -660,8 +660,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 29573 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER
-    st = getVariable(29573);
+  { // 29594 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER
+    st = getVariable(29594);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.TIMER", 49);
     st->size_data = sizeof(TON);
@@ -671,8 +671,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TON = (TON*)&p_FB_DIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 29574 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG.CLK
-    st = getVariable(29574);
+  { // 29595 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG.CLK
+    st = getVariable(29595);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG.CLK", 61);
     st->size_data = sizeof(BOOL);
@@ -683,8 +683,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 29575 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG.Q
-    st = getVariable(29575);
+  { // 29596 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG.Q
+    st = getVariable(29596);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -695,8 +695,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 29576 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG
-    st = getVariable(29576);
+  { // 29597 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG
+    st = getVariable(29597);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGTRIG", 57);
     st->size_data = sizeof(R_TRIG);
@@ -706,8 +706,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_R_TRIG = (R_TRIG*)&p_FB_DIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 29577 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG.CLK
-    st = getVariable(29577);
+  { // 29598 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG.CLK
+    st = getVariable(29598);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG.CLK", 62);
     st->size_data = sizeof(BOOL);
@@ -718,8 +718,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 29578 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG.Q
-    st = getVariable(29578);
+  { // 29599 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG.Q
+    st = getVariable(29599);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG.Q", 60);
     st->size_data = sizeof(BOOL);
@@ -730,8 +730,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 29579 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG
-    st = getVariable(29579);
+  { // 29600 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG
+    st = getVariable(29600);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGFTRIG", 58);
     st->size_data = sizeof(F_TRIG);
@@ -741,8 +741,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_F_TRIG = (F_TRIG*)&p_FB_DIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 29580 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGDI
-    st = getVariable(29580);
+  { // 29601 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGDI
+    st = getVariable(29601);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINGDI", 55);
     st->size_data = sizeof(BOOL);
@@ -752,8 +752,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_FB_DIPROTECTION->SIGNALINGDI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29581 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SOURCE
-    st = getVariable(29581);
+  { // 29602 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SOURCE
+    st = getVariable(29602);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -763,8 +763,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29582 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.CMD
-    st = getVariable(29582);
+  { // 29603 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.CMD
+    st = getVariable(29603);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -774,8 +774,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29583 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.LASTCMD
-    st = getVariable(29583);
+  { // 29604 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.LASTCMD
+    st = getVariable(29604);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.LASTCMD", 51);
     st->size_data = sizeof(BYTE);
@@ -785,8 +785,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29584 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SOURCE_FOR_STATUS
-    st = getVariable(29584);
+  { // 29605 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SOURCE_FOR_STATUS
+    st = getVariable(29605);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SOURCE_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -796,8 +796,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29585 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.CMD_FOR_STATUS
-    st = getVariable(29585);
+  { // 29606 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.CMD_FOR_STATUS
+    st = getVariable(29606);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.CMD_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -807,8 +807,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29586 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(29586);
+  { // 29607 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(29607);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.COMMAND_ERROR_FOR_STATUS", 68);
     st->size_data = sizeof(BYTE);
@@ -818,8 +818,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29587 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.IN
-    st = getVariable(29587);
+  { // 29608 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.IN
+    st = getVariable(29608);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.IN", 60);
     st->size_data = sizeof(BOOL);
@@ -830,8 +830,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 29588 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.PT
-    st = getVariable(29588);
+  { // 29609 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.PT
+    st = getVariable(29609);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.PT", 60);
     st->size_data = sizeof(TIME);
@@ -842,8 +842,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 29589 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.Q
-    st = getVariable(29589);
+  { // 29610 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.Q
+    st = getVariable(29610);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -854,8 +854,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 29590 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.ET
-    st = getVariable(29590);
+  { // 29611 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.ET
+    st = getVariable(29611);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER.ET", 60);
     st->size_data = sizeof(TIME);
@@ -866,8 +866,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 29591 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER
-    st = getVariable(29591);
+  { // 29612 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER
+    st = getVariable(29612);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMER", 57);
     st->size_data = sizeof(TON);
@@ -877,8 +877,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TON = (TON*)&p_FB_DIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 29592 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMERPRIZNAK
-    st = getVariable(29592);
+  { // 29613 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMERPRIZNAK
+    st = getVariable(29613);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RESETCMDTIMERPRIZNAK", 64);
     st->size_data = sizeof(BOOL);
@@ -888,8 +888,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_FB_DIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29593 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.IN
-    st = getVariable(29593);
+  { // 29614 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.IN
+    st = getVariable(29614);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.IN", 60);
     st->size_data = sizeof(BOOL);
@@ -900,8 +900,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 29594 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.PT
-    st = getVariable(29594);
+  { // 29615 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.PT
+    st = getVariable(29615);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.PT", 60);
     st->size_data = sizeof(TIME);
@@ -912,8 +912,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 29595 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.Q
-    st = getVariable(29595);
+  { // 29616 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.Q
+    st = getVariable(29616);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -924,8 +924,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 29596 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.ET
-    st = getVariable(29596);
+  { // 29617 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.ET
+    st = getVariable(29617);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER.ET", 60);
     st->size_data = sizeof(TIME);
@@ -936,8 +936,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 29597 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER
-    st = getVariable(29597);
+  { // 29618 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER
+    st = getVariable(29618);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.SIGNALINTIMER", 57);
     st->size_data = sizeof(TON);
@@ -947,8 +947,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_TON = (TON*)&p_FB_DIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 29598 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG.CLK
-    st = getVariable(29598);
+  { // 29619 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG.CLK
+    st = getVariable(29619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG.CLK", 63);
     st->size_data = sizeof(BOOL);
@@ -959,8 +959,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 29599 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG.Q
-    st = getVariable(29599);
+  { // 29620 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG.Q
+    st = getVariable(29620);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -971,8 +971,8 @@ int __variables_init_FB_AVARIYA_VOZBUD(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 29600 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG
-    st = getVariable(29600);
+  { // 29621 PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG
+    st = getVariable(29621);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AVARIYA_VOZBUD.RUNONSTART_TRIG", 59);
     st->size_data = sizeof(R_TRIG);

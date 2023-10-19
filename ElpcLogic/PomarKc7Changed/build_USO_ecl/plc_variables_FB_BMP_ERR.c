@@ -181,8 +181,8 @@ int __variables_init_FB_BMP_ERR(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 77369 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.PHASENUMBER
-    st = getVariable(77369);
+  { // 77505 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.PHASENUMBER
+    st = getVariable(77505);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.PHASENUMBER", 56);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_BMP_ERR(){
     p_UINT = (UINT*)&p_FB_PH_CUSTOMPHASE->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 77370 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.RUN
-    st = getVariable(77370);
+  { // 77506 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.RUN
+    st = getVariable(77506);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.RUN", 54);
     st->size_data = sizeof(BOOL);
@@ -206,8 +206,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 77371 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.RESET
-    st = getVariable(77371);
+  { // 77507 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.RESET
+    st = getVariable(77507);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.RESET", 56);
     st->size_data = sizeof(BOOL);
@@ -219,8 +219,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 77372 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.START
-    st = getVariable(77372);
+  { // 77508 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.START
+    st = getVariable(77508);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.START", 56);
     st->size_data = sizeof(BOOL);
@@ -232,8 +232,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 77373 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.ERROR
-    st = getVariable(77373);
+  { // 77509 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.ERROR
+    st = getVariable(77509);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.ERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -245,8 +245,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 77374 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.TOP
-    st = getVariable(77374);
+  { // 77510 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.TOP
+    st = getVariable(77510);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.TOP", 54);
     st->size_data = sizeof(BOOL);
@@ -258,8 +258,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 77375 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.STARTSTATUS
-    st = getVariable(77375);
+  { // 77511 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.STARTSTATUS
+    st = getVariable(77511);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.STARTSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -271,8 +271,8 @@ int __variables_init_FB_BMP_ERR(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 77376 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.ERRORSTATUS
-    st = getVariable(77376);
+  { // 77512 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.ERRORSTATUS
+    st = getVariable(77512);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.ERRORSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -284,8 +284,8 @@ int __variables_init_FB_BMP_ERR(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 77377 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.TOPSTATUS
-    st = getVariable(77377);
+  { // 77513 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.TOPSTATUS
+    st = getVariable(77513);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.STRPH.TOPSTATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -297,8 +297,8 @@ int __variables_init_FB_BMP_ERR(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 77378 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG.CLK
-    st = getVariable(77378);
+  { // 77514 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG.CLK
+    st = getVariable(77514);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG.CLK", 66);
     st->size_data = sizeof(BOOL);
@@ -310,8 +310,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 77379 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG.Q
-    st = getVariable(77379);
+  { // 77515 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG.Q
+    st = getVariable(77515);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -323,8 +323,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 77380 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG
-    st = getVariable(77380);
+  { // 77516 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG
+    st = getVariable(77516);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.COMMANDFAULT_TRIG", 62);
     st->size_data = sizeof(R_TRIG);
@@ -335,8 +335,8 @@ int __variables_init_FB_BMP_ERR(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_CUSTOMPHASE->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 77381 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG.CLK
-    st = getVariable(77381);
+  { // 77517 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG.CLK
+    st = getVariable(77517);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -348,8 +348,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 77382 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG.Q
-    st = getVariable(77382);
+  { // 77518 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG.Q
+    st = getVariable(77518);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -361,8 +361,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 77383 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG
-    st = getVariable(77383);
+  { // 77519 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG
+    st = getVariable(77519);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR.RESET_TRIG", 55);
     st->size_data = sizeof(R_TRIG);
@@ -373,8 +373,8 @@ int __variables_init_FB_BMP_ERR(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_CUSTOMPHASE->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 77384 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(77384);
+  { // 77520 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(77520);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_NOTDEFINED", 79);
     st->size_data = sizeof(BYTE);
@@ -386,8 +386,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 77385 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(77385);
+  { // 77521 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(77521);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_ON", 71);
     st->size_data = sizeof(BYTE);
@@ -399,8 +399,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 77386 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(77386);
+  { // 77522 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(77522);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_OFF", 72);
     st->size_data = sizeof(BYTE);
@@ -412,8 +412,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 77387 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(77387);
+  { // 77523 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(77523);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_TRANSITIONAL", 81);
     st->size_data = sizeof(BYTE);
@@ -425,8 +425,8 @@ int __variables_init_FB_BMP_ERR(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 77388 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(77388);
+  { // 77524 PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(77524);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG.FB_BMP_ERR._STATUSDUALINPUT.STATUS_ERROR", 74);
     st->size_data = sizeof(BYTE);

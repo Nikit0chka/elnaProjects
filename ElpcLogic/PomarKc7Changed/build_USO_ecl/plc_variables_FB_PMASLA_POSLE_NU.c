@@ -181,8 +181,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 33987 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.VALUE
-    st = getVariable(33987);
+  { // 34008 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.VALUE
+    st = getVariable(34008);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.VALUE", 53);
     st->size_data = sizeof(LREAL);
@@ -193,8 +193,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 33988 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.STATUS
-    st = getVariable(33988);
+  { // 34009 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.STATUS
+    st = getVariable(34009);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -205,8 +205,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 33989 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INTERVAL
-    st = getVariable(33989);
+  { // 34010 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INTERVAL
+    st = getVariable(34010);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INTERVAL", 56);
     st->size_data = sizeof(BYTE);
@@ -217,8 +217,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 33990 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND
-    st = getVariable(33990);
+  { // 34011 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND
+    st = getVariable(34011);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -229,8 +229,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 33991 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.BLCONNECT
-    st = getVariable(33991);
+  { // 34012 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.BLCONNECT
+    st = getVariable(34012);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.BLCONNECT", 57);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 33992 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLL
-    st = getVariable(33992);
+  { // 34013 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLL
+    st = getVariable(34013);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLL", 51);
     st->size_data = sizeof(LREAL);
@@ -253,8 +253,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 33993 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHL
-    st = getVariable(33993);
+  { // 34014 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHL
+    st = getVariable(34014);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHL", 51);
     st->size_data = sizeof(LREAL);
@@ -265,8 +265,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 33994 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLA
-    st = getVariable(33994);
+  { // 34015 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLA
+    st = getVariable(34015);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLA", 51);
     st->size_data = sizeof(LREAL);
@@ -277,8 +277,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 33995 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHA
-    st = getVariable(33995);
+  { // 34016 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHA
+    st = getVariable(34016);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHA", 51);
     st->size_data = sizeof(LREAL);
@@ -289,8 +289,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 33996 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLW
-    st = getVariable(33996);
+  { // 34017 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLW
+    st = getVariable(34017);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DLW", 51);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 33997 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHW
-    st = getVariable(33997);
+  { // 34018 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHW
+    st = getVariable(34018);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DHW", 51);
     st->size_data = sizeof(LREAL);
@@ -313,8 +313,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 33998 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LL
-    st = getVariable(33998);
+  { // 34019 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LL
+    st = getVariable(34019);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LL", 50);
     st->size_data = sizeof(LREAL);
@@ -325,8 +325,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 33999 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HL
-    st = getVariable(33999);
+  { // 34020 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HL
+    st = getVariable(34020);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HL", 50);
     st->size_data = sizeof(LREAL);
@@ -337,8 +337,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 34000 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LA
-    st = getVariable(34000);
+  { // 34021 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LA
+    st = getVariable(34021);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LA", 50);
     st->size_data = sizeof(LREAL);
@@ -349,8 +349,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 34001 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HA
-    st = getVariable(34001);
+  { // 34022 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HA
+    st = getVariable(34022);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HA", 50);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 34002 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LW
-    st = getVariable(34002);
+  { // 34023 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LW
+    st = getVariable(34023);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.LW", 50);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 34003 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HW
-    st = getVariable(34003);
+  { // 34024 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HW
+    st = getVariable(34024);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HW", 50);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 34004 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_LA
-    st = getVariable(34004);
+  { // 34025 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_LA
+    st = getVariable(34025);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_LA", 61);
     st->size_data = sizeof(BOOL);
@@ -397,8 +397,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 34005 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_HA
-    st = getVariable(34005);
+  { // 34026 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_HA
+    st = getVariable(34026);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_HA", 61);
     st->size_data = sizeof(BOOL);
@@ -409,8 +409,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 34006 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_LW
-    st = getVariable(34006);
+  { // 34027 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_LW
+    st = getVariable(34027);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_LW", 61);
     st->size_data = sizeof(BOOL);
@@ -421,8 +421,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 34007 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_HW
-    st = getVariable(34007);
+  { // 34028 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_HW
+    st = getVariable(34028);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.ISVALIDREF_HW", 61);
     st->size_data = sizeof(BOOL);
@@ -433,8 +433,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 34008 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INPLL
-    st = getVariable(34008);
+  { // 34029 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INPLL
+    st = getVariable(34029);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INPLL", 53);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 34009 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INPHL
-    st = getVariable(34009);
+  { // 34030 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INPHL
+    st = getVariable(34030);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INPHL", 53);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 34010 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CURRENTSHOTCIRCUIT
-    st = getVariable(34010);
+  { // 34031 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CURRENTSHOTCIRCUIT
+    st = getVariable(34031);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CURRENTSHOTCIRCUIT", 66);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 34011 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CURRENTBREAKCIRCUIT
-    st = getVariable(34011);
+  { // 34032 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CURRENTBREAKCIRCUIT
+    st = getVariable(34032);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CURRENTBREAKCIRCUIT", 67);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 34012 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXCHANGESPEED
-    st = getVariable(34012);
+  { // 34033 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXCHANGESPEED
+    st = getVariable(34033);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXCHANGESPEED", 62);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 34013 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXCHANGESPEEDDOWN
-    st = getVariable(34013);
+  { // 34034 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXCHANGESPEEDDOWN
+    st = getVariable(34034);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXCHANGESPEEDDOWN", 66);
     st->size_data = sizeof(LREAL);
@@ -505,8 +505,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 34014 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CHANGESPEED
-    st = getVariable(34014);
+  { // 34035 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CHANGESPEED
+    st = getVariable(34035);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.CHANGESPEED", 59);
     st->size_data = sizeof(LREAL);
@@ -517,8 +517,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 34015 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HISTERESIS
-    st = getVariable(34015);
+  { // 34036 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HISTERESIS
+    st = getVariable(34036);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.HISTERESIS", 58);
     st->size_data = sizeof(LREAL);
@@ -529,8 +529,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 34016 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.APERTURFILTER
-    st = getVariable(34016);
+  { // 34037 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.APERTURFILTER
+    st = getVariable(34037);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.APERTURFILTER", 61);
     st->size_data = sizeof(LREAL);
@@ -541,8 +541,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 34017 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.EXPONENTIALFILTER
-    st = getVariable(34017);
+  { // 34038 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.EXPONENTIALFILTER
+    st = getVariable(34038);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.EXPONENTIALFILTER", 65);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 34018 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.RASSOGLASOVANIE
-    st = getVariable(34018);
+  { // 34039 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.RASSOGLASOVANIE
+    st = getVariable(34039);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.RASSOGLASOVANIE", 63);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 34019 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.OPCCOMMANDSDISABLED
-    st = getVariable(34019);
+  { // 34040 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.OPCCOMMANDSDISABLED
+    st = getVariable(34040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -577,8 +577,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 34020 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_LA
-    st = getVariable(34020);
+  { // 34041 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_LA
+    st = getVariable(34041);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_LA", 59);
     st->size_data = sizeof(BOOL);
@@ -589,8 +589,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 34021 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_HA
-    st = getVariable(34021);
+  { // 34042 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_HA
+    st = getVariable(34042);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_HA", 59);
     st->size_data = sizeof(BOOL);
@@ -601,8 +601,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 34022 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_LW
-    st = getVariable(34022);
+  { // 34043 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_LW
+    st = getVariable(34043);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_LW", 59);
     st->size_data = sizeof(BOOL);
@@ -613,8 +613,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 34023 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_HW
-    st = getVariable(34023);
+  { // 34044 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_HW
+    st = getVariable(34044);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DISABLED_HW", 59);
     st->size_data = sizeof(BOOL);
@@ -625,8 +625,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 34024 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYLA
-    st = getVariable(34024);
+  { // 34045 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYLA
+    st = getVariable(34045);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYLA", 55);
     st->size_data = sizeof(TIME);
@@ -637,8 +637,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 34025 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYLW
-    st = getVariable(34025);
+  { // 34046 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYLW
+    st = getVariable(34046);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYLW", 55);
     st->size_data = sizeof(TIME);
@@ -649,8 +649,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 34026 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYHW
-    st = getVariable(34026);
+  { // 34047 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYHW
+    st = getVariable(34047);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYHW", 55);
     st->size_data = sizeof(TIME);
@@ -661,8 +661,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 34027 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYHA
-    st = getVariable(34027);
+  { // 34048 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYHA
+    st = getVariable(34048);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DELAYHA", 55);
     st->size_data = sizeof(TIME);
@@ -673,8 +673,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 34028 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MINVALUE_ISVALIDREF
-    st = getVariable(34028);
+  { // 34049 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MINVALUE_ISVALIDREF
+    st = getVariable(34049);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MINVALUE_ISVALIDREF", 67);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 34029 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXVALUE_ISVALIDREF
-    st = getVariable(34029);
+  { // 34050 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXVALUE_ISVALIDREF
+    st = getVariable(34050);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXVALUE_ISVALIDREF", 67);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 34030 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MINVALUE
-    st = getVariable(34030);
+  { // 34051 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MINVALUE
+    st = getVariable(34051);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MINVALUE", 56);
     st->size_data = sizeof(LREAL);
@@ -709,8 +709,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 34031 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXVALUE
-    st = getVariable(34031);
+  { // 34052 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXVALUE
+    st = getVariable(34052);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.MAXVALUE", 56);
     st->size_data = sizeof(LREAL);
@@ -721,8 +721,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 34032 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INOPCCOMMANDSDISABLED
-    st = getVariable(34032);
+  { // 34053 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INOPCCOMMANDSDISABLED
+    st = getVariable(34053);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 34033 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.IMIT
-    st = getVariable(34033);
+  { // 34054 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.IMIT
+    st = getVariable(34054);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.IMIT", 52);
     st->size_data = sizeof(BOOL);
@@ -745,8 +745,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 34034 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.REMONT
-    st = getVariable(34034);
+  { // 34055 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.REMONT
+    st = getVariable(34055);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.REMONT", 54);
     st->size_data = sizeof(BOOL);
@@ -757,8 +757,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 34035 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS
-    st = getVariable(34035);
+  { // 34056 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS
+    st = getVariable(34056);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -769,8 +769,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 34036 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS_MIN
-    st = getVariable(34036);
+  { // 34057 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS_MIN
+    st = getVariable(34057);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS_MIN", 54);
     st->size_data = sizeof(BOOL);
@@ -781,8 +781,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 34037 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS_MAX
-    st = getVariable(34037);
+  { // 34058 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS_MAX
+    st = getVariable(34058);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.NS_MAX", 54);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 34038 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND_ALG
-    st = getVariable(34038);
+  { // 34059 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND_ALG
+    st = getVariable(34059);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -805,8 +805,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 34039 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND_ARM
-    st = getVariable(34039);
+  { // 34060 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND_ARM
+    st = getVariable(34060);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -817,8 +817,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 34040 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DMAXCHANGESPEED
-    st = getVariable(34040);
+  { // 34061 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DMAXCHANGESPEED
+    st = getVariable(34061);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DMAXCHANGESPEED", 63);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 34041 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DMAXCHANGESPEEDDOWN
-    st = getVariable(34041);
+  { // 34062 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DMAXCHANGESPEEDDOWN
+    st = getVariable(34062);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.AI.DMAXCHANGESPEEDDOWN", 67);
     st->size_data = sizeof(LREAL);
@@ -841,8 +841,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 34042 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CONTROLLIMIT
-    st = getVariable(34042);
+  { // 34063 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CONTROLLIMIT
+    st = getVariable(34063);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CONTROLLIMIT", 64);
     st->size_data = sizeof(BYTE);
@@ -853,8 +853,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->CONTROLLIMIT;
     st->value_p = p_BYTE;
   }
-  { // 34043 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.DELAY
-    st = getVariable(34043);
+  { // 34064 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.DELAY
+    st = getVariable(34064);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.DELAY", 57);
     st->size_data = sizeof(TIME);
@@ -865,8 +865,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_STRUCT_AIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 34044 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INTAG
-    st = getVariable(34044);
+  { // 34065 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INTAG
+    st = getVariable(34065);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INTAG", 57);
     st->size_data = sizeof(BYTE);
@@ -877,8 +877,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 34045 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INRUNONSTART
-    st = getVariable(34045);
+  { // 34066 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INRUNONSTART
+    st = getVariable(34066);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INRUNONSTART", 64);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 34046 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCANRUN
-    st = getVariable(34046);
+  { // 34067 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCANRUN
+    st = getVariable(34067);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCANRUN", 60);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 34047 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INOPCCOMMANDSDISABLED
-    st = getVariable(34047);
+  { // 34068 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INOPCCOMMANDSDISABLED
+    st = getVariable(34068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INOPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -913,8 +913,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 34048 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND
-    st = getVariable(34048);
+  { // 34069 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND
+    st = getVariable(34069);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 34049 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND_ALG
-    st = getVariable(34049);
+  { // 34070 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND_ALG
+    st = getVariable(34070);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND_ALG", 65);
     st->size_data = sizeof(WORD);
@@ -937,8 +937,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 34050 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND_ARM
-    st = getVariable(34050);
+  { // 34071 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND_ARM
+    st = getVariable(34071);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.INCOMMAND_ARM", 65);
     st->size_data = sizeof(WORD);
@@ -949,8 +949,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 34051 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.TAG
-    st = getVariable(34051);
+  { // 34072 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.TAG
+    st = getVariable(34072);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.TAG", 55);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 34052 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.STATUS
-    st = getVariable(34052);
+  { // 34073 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.STATUS
+    st = getVariable(34073);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.STATUS", 58);
     st->size_data = sizeof(DWORD);
@@ -973,8 +973,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_DWORD = (DWORD*)&p_STRUCT_AIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 34053 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CANRUN
-    st = getVariable(34053);
+  { // 34074 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CANRUN
+    st = getVariable(34074);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CANRUN", 58);
     st->size_data = sizeof(BOOL);
@@ -985,8 +985,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 34054 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.OPCCOMMANDSDISABLED
-    st = getVariable(34054);
+  { // 34075 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.OPCCOMMANDSDISABLED
+    st = getVariable(34075);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.OPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -997,8 +997,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 34055 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.ISRUNNING
-    st = getVariable(34055);
+  { // 34076 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.ISRUNNING
+    st = getVariable(34076);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.ISRUNNING", 61);
     st->size_data = sizeof(BOOL);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 34056 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.HASERROR
-    st = getVariable(34056);
+  { // 34077 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.HASERROR
+    st = getVariable(34077);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.HASERROR", 60);
     st->size_data = sizeof(BOOL);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 34057 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.ISENDED
-    st = getVariable(34057);
+  { // 34078 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.ISENDED
+    st = getVariable(34078);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.ISENDED", 59);
     st->size_data = sizeof(BOOL);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 34058 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.REMONT
-    st = getVariable(34058);
+  { // 34079 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.REMONT
+    st = getVariable(34079);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.REMONT", 58);
     st->size_data = sizeof(BOOL);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 34059 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CHECK
-    st = getVariable(34059);
+  { // 34080 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CHECK
+    st = getVariable(34080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.CHECK", 57);
     st->size_data = sizeof(BOOL);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 34060 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.SIGNALING
-    st = getVariable(34060);
+  { // 34081 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.SIGNALING
+    st = getVariable(34081);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.SIGNALING", 61);
     st->size_data = sizeof(BOOL);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 34061 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.SIGNALINGTP
-    st = getVariable(34061);
+  { // 34082 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.SIGNALINGTP
+    st = getVariable(34082);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.SIGNALINGTP", 63);
     st->size_data = sizeof(BOOL);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 34062 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.RUNONSTART
-    st = getVariable(34062);
+  { // 34083 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.RUNONSTART
+    st = getVariable(34083);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.STRAIP.RUNONSTART", 62);
     st->size_data = sizeof(BOOL);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 34067 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.IN
-    st = getVariable(34067);
+  { // 34088 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.IN
+    st = getVariable(34088);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.IN", 60);
     st->size_data = sizeof(BOOL);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 34068 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.PT
-    st = getVariable(34068);
+  { // 34089 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.PT
+    st = getVariable(34089);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.PT", 60);
     st->size_data = sizeof(TIME);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 34069 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.Q
-    st = getVariable(34069);
+  { // 34090 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.Q
+    st = getVariable(34090);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 34070 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.ET
-    st = getVariable(34070);
+  { // 34091 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.ET
+    st = getVariable(34091);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP.ET", 60);
     st->size_data = sizeof(TIME);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 34071 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP
-    st = getVariable(34071);
+  { // 34092 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP
+    st = getVariable(34092);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SIGNALINGTP", 57);
     st->size_data = sizeof(TOF);
@@ -1152,8 +1152,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TOF = (TOF*)&p_FB_AIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 34072 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NOTDEFINED
-    st = getVariable(34072);
+  { // 34093 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NOTDEFINED
+    st = getVariable(34093);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NOTDEFINED", 65);
     st->size_data = sizeof(BYTE);
@@ -1164,8 +1164,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 34073 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LL
-    st = getVariable(34073);
+  { // 34094 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LL
+    st = getVariable(34094);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LL", 57);
     st->size_data = sizeof(BYTE);
@@ -1176,8 +1176,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 34074 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HL
-    st = getVariable(34074);
+  { // 34095 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HL
+    st = getVariable(34095);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HL", 57);
     st->size_data = sizeof(BYTE);
@@ -1188,8 +1188,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 34075 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NOTRELIABLE
-    st = getVariable(34075);
+  { // 34096 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NOTRELIABLE
+    st = getVariable(34096);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NOTRELIABLE", 66);
     st->size_data = sizeof(BYTE);
@@ -1200,8 +1200,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 34076 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NORMAL
-    st = getVariable(34076);
+  { // 34097 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NORMAL
+    st = getVariable(34097);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.NORMAL", 61);
     st->size_data = sizeof(BYTE);
@@ -1212,8 +1212,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 34077 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LW
-    st = getVariable(34077);
+  { // 34098 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LW
+    st = getVariable(34098);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LW", 57);
     st->size_data = sizeof(BYTE);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 34078 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HW
-    st = getVariable(34078);
+  { // 34099 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HW
+    st = getVariable(34099);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HW", 57);
     st->size_data = sizeof(BYTE);
@@ -1236,8 +1236,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 34079 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LA
-    st = getVariable(34079);
+  { // 34100 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LA
+    st = getVariable(34100);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.LA", 57);
     st->size_data = sizeof(BYTE);
@@ -1248,8 +1248,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 34080 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HA
-    st = getVariable(34080);
+  { // 34101 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HA
+    st = getVariable(34101);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._STATUSAI.HA", 57);
     st->size_data = sizeof(BYTE);
@@ -1260,8 +1260,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 34081 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SOURCE
-    st = getVariable(34081);
+  { // 34102 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SOURCE
+    st = getVariable(34102);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SOURCE", 51);
     st->size_data = sizeof(BYTE);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34082 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.CMD
-    st = getVariable(34082);
+  { // 34103 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.CMD
+    st = getVariable(34103);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.CMD", 48);
     st->size_data = sizeof(BYTE);
@@ -1282,8 +1282,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34083 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.LASTCMD
-    st = getVariable(34083);
+  { // 34104 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.LASTCMD
+    st = getVariable(34104);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.LASTCMD", 52);
     st->size_data = sizeof(BYTE);
@@ -1293,8 +1293,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34084 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SOURCE_FOR_STATUS
-    st = getVariable(34084);
+  { // 34105 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SOURCE_FOR_STATUS
+    st = getVariable(34105);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SOURCE_FOR_STATUS", 62);
     st->size_data = sizeof(BYTE);
@@ -1304,8 +1304,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34085 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.CMD_FOR_STATUS
-    st = getVariable(34085);
+  { // 34106 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.CMD_FOR_STATUS
+    st = getVariable(34106);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.CMD_FOR_STATUS", 59);
     st->size_data = sizeof(BYTE);
@@ -1315,8 +1315,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34086 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(34086);
+  { // 34107 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(34107);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.COMMAND_ERROR_FOR_STATUS", 69);
     st->size_data = sizeof(BYTE);
@@ -1326,8 +1326,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34087 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.IN
-    st = getVariable(34087);
+  { // 34108 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.IN
+    st = getVariable(34108);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.IN", 61);
     st->size_data = sizeof(BOOL);
@@ -1338,8 +1338,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 34088 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.PT
-    st = getVariable(34088);
+  { // 34109 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.PT
+    st = getVariable(34109);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.PT", 61);
     st->size_data = sizeof(TIME);
@@ -1350,8 +1350,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 34089 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.Q
-    st = getVariable(34089);
+  { // 34110 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.Q
+    st = getVariable(34110);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.Q", 60);
     st->size_data = sizeof(BOOL);
@@ -1362,8 +1362,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 34090 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.ET
-    st = getVariable(34090);
+  { // 34111 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.ET
+    st = getVariable(34111);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER.ET", 61);
     st->size_data = sizeof(TIME);
@@ -1374,8 +1374,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 34091 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER
-    st = getVariable(34091);
+  { // 34112 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER
+    st = getVariable(34112);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMER", 58);
     st->size_data = sizeof(TON);
@@ -1385,8 +1385,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TON = (TON*)&p_FB_AIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 34092 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMERPRIZNAK
-    st = getVariable(34092);
+  { // 34113 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMERPRIZNAK
+    st = getVariable(34113);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.RESETCMDTIMERPRIZNAK", 65);
     st->size_data = sizeof(BOOL);
@@ -1396,8 +1396,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34093 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.IN
-    st = getVariable(34093);
+  { // 34114 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.IN
+    st = getVariable(34114);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.IN", 61);
     st->size_data = sizeof(BOOL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 34094 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.PT
-    st = getVariable(34094);
+  { // 34115 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.PT
+    st = getVariable(34115);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.PT", 61);
     st->size_data = sizeof(TIME);
@@ -1420,8 +1420,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 34095 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.Q
-    st = getVariable(34095);
+  { // 34116 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.Q
+    st = getVariable(34116);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.Q", 60);
     st->size_data = sizeof(BOOL);
@@ -1432,8 +1432,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 34096 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.ET
-    st = getVariable(34096);
+  { // 34117 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.ET
+    st = getVariable(34117);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER.ET", 61);
     st->size_data = sizeof(TIME);
@@ -1444,8 +1444,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 34097 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER
-    st = getVariable(34097);
+  { // 34118 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER
+    st = getVariable(34118);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINTIMER", 58);
     st->size_data = sizeof(TON);
@@ -1455,8 +1455,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TON = (TON*)&p_FB_AIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 34098 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.IN
-    st = getVariable(34098);
+  { // 34119 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.IN
+    st = getVariable(34119);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -1467,8 +1467,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 34099 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.PT
-    st = getVariable(34099);
+  { // 34120 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.PT
+    st = getVariable(34120);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.PT", 53);
     st->size_data = sizeof(TIME);
@@ -1479,8 +1479,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 34100 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.Q
-    st = getVariable(34100);
+  { // 34121 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.Q
+    st = getVariable(34121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -1491,8 +1491,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 34101 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.ET
-    st = getVariable(34101);
+  { // 34122 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.ET
+    st = getVariable(34122);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER.ET", 53);
     st->size_data = sizeof(TIME);
@@ -1503,8 +1503,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 34102 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER
-    st = getVariable(34102);
+  { // 34123 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER
+    st = getVariable(34123);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.TIMER", 50);
     st->size_data = sizeof(TON);
@@ -1514,8 +1514,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_TON = (TON*)&p_FB_AIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 34103 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG.CLK
-    st = getVariable(34103);
+  { // 34124 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG.CLK
+    st = getVariable(34124);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG.CLK", 62);
     st->size_data = sizeof(BOOL);
@@ -1526,8 +1526,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 34104 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG.Q
-    st = getVariable(34104);
+  { // 34125 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG.Q
+    st = getVariable(34125);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG.Q", 60);
     st->size_data = sizeof(BOOL);
@@ -1538,8 +1538,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 34105 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG
-    st = getVariable(34105);
+  { // 34126 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG
+    st = getVariable(34126);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGTRIG", 58);
     st->size_data = sizeof(R_TRIG);
@@ -1549,8 +1549,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_R_TRIG = (R_TRIG*)&p_FB_AIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 34106 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG.CLK
-    st = getVariable(34106);
+  { // 34127 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG.CLK
+    st = getVariable(34127);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG.CLK", 63);
     st->size_data = sizeof(BOOL);
@@ -1561,8 +1561,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 34107 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG.Q
-    st = getVariable(34107);
+  { // 34128 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG.Q
+    st = getVariable(34128);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -1573,8 +1573,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 34108 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG
-    st = getVariable(34108);
+  { // 34129 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG
+    st = getVariable(34129);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGFTRIG", 59);
     st->size_data = sizeof(F_TRIG);
@@ -1584,8 +1584,8 @@ int __variables_init_FB_PMASLA_POSLE_NU(){
     p_F_TRIG = (F_TRIG*)&p_FB_AIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 34109 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGAI
-    st = getVariable(34109);
+  { // 34130 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGAI
+    st = getVariable(34130);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU.SIGNALINGAI", 56);
     st->size_data = sizeof(BOOL);

@@ -649,7 +649,8 @@ TYPE
     Pmasla_posle_NU : struct_AiProtection;
     Pmasla_smazki_posle_gns : struct_AiProtection;
     Pimpuls_gaz : struct_AiProtection;
-    dPmaslo_gaz : struct_DiProtection;
+    dPmaslo_gaz : struct_AiProtection;
+    dPmaslo_gaz_less100 : struct_DiProtection;
     dP_kran1 : struct_DiProtection;
     dP_maslo_na_filtre : struct_AiProtection;
     Os_sdvig_nagnetatelja_plus : struct_AiProtection;
@@ -697,6 +698,7 @@ TYPE
     MODE_TESTIM : UINT := 15;
     MODE_TESTAZ : UINT := 16;
     MODE_PUSK_FIRST_FAZA1 : UINT := 17;
+    MODE_PUSK_FIRST_FAZA2 : UINT := 18;
   END_STRUCT;
   TYPE_DualStateImAction : (_on, _off) := _on;
   TYPE_PhaseAlgoritmAction : (_run, _reset) := _run;
@@ -5872,7 +5874,7 @@ FUNCTION_BLOCK proc_Protections_Init
 
   (*************************************************Стартовая инициализация DiProtection ***************************************************)
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dP_kran1);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz_less100);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
@@ -5912,7 +5914,7 @@ FUNCTION_BLOCK proc_Protections_Init
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz_less100);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (*************************************************Стартовая инициализация AiProtection ***************************************************)
@@ -6164,6 +6166,11 @@ FUNCTION_BLOCK proc_Protections_Init
    (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
   stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
   controlLimit:=_StatusAi.HA, str_AIp := protections.Kontrol_post_220V_high242);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
+
+   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
+  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.dPmaslo_gaz);
   inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
 
 
@@ -6851,7 +6858,7 @@ FUNCTION_BLOCK proc_Protection
   fb_mvOff(sw:=IM.mv, StrDIp := protections.mvOff);
 
   (* Неисправность возбудительного устройства *)
-  fb_dPmaslo_gaz_Less100(di := IM.SingleSignals.dP_maslo_gaz_Less100, StrDIp := protections.dPmaslo_gaz);
+  fb_dPmaslo_gaz_Less100(di := IM.SingleSignals.dP_maslo_gaz_Less100, StrDIp := protections.dPmaslo_gaz_less100);
 
   (* Аварийный останов цеха *)
   fb_Uroven_masla_v_akkum(di := IM.SingleSignals.Uroven_masla_akkum, StrDIp := protections.Uroven_masla_v_akkum);
@@ -7038,6 +7045,9 @@ FUNCTION_BLOCK proc_Protection
 
   (* Температура газа на выходе нагнетателя *)
   fb_Kontrol_post_220V_high242(ai := ai.Kontrol_post_220V, StrAIp := protections.Kontrol_post_220V_high242);
+
+  (* Температура газа на выходе нагнетателя *)
+  fb_dPmaslo_gaz(ai := ai.dPmaslo_gaz, StrAIp := protections.dPmaslo_gaz);
 END_FUNCTION_BLOCK
 
 FUNCTION resetDiProtection : BOOL
@@ -7096,10 +7106,11 @@ FUNCTION resetAllProtections : BOOL
   resetAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
   resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
   resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+  resetAiProtection(protections.dPmaslo_gaz);
 
-  resetDiProtection(protections.dPmaslo_gaz);
+  resetDiProtection(protections.dPmaslo_gaz_less100);
   resetDiProtection(protections.mvOff);
-  resetDiProtection(protections.dP_kran1);
+  resetDiProtection(protections.dPmaslo_gaz_less100);
   resetDiProtection(protections.Uroven_masla_v_akkum);
   resetDiProtection(protections.Neispravnost_vozbud);
   resetDiProtection(protections.Avariya_vozbud);
@@ -9989,7 +10000,7 @@ FUNCTION_BLOCK NOAlg
                                                     runPhase(runUnsuccessful); 
 
                                                     resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
-                                                    resetDiProtection(protections.dPmaslo_gaz);
+                                                    resetAiProtection(protections.dPmaslo_gaz);
                                                     resetAiProtection(protections.Pmaslo_sm_nizkoe);
                                                     resetAiProtection(protections.Pmaslo_sm_vysokoe);
                                                     resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
@@ -10384,7 +10395,7 @@ FUNCTION_BLOCK AOAlg
 
                                                     resetDiProtection(protections.mvOff);
                                                     resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
-                                                    resetDiProtection(protections.dPmaslo_gaz);
+                                                    resetAiProtection(protections.dPmaslo_gaz);
                                                     resetAiProtection(protections.Pmaslo_sm_nizkoe);
                                                     resetAiProtection(protections.Pmaslo_sm_vysokoe);
                                                     resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
@@ -10555,7 +10566,7 @@ FUNCTION anyProtectionSignaling : BOOL
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling OR
   protections.mvOff.Signaling OR
   protections.dPmaslo_gaz.Signaling OR
-  protections.dP_kran1.Signaling OR
+  protections.dPmaslo_gaz_less100.Signaling OR
   protections.Kran1sdvig.Signaling OR
   protections.Kran2sdvig.Signaling OR
   protections.Uroven_masla_v_akkum.Signaling OR
@@ -11396,7 +11407,7 @@ FUNCTION_BLOCK fillingAlg
             runAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
             runAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
             runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
-            runDiProtection(protections.dPmaslo_gaz);
+            runAiProtection(protections.dPmaslo_gaz);
             runAiProtection(protections.Pmaslo_sm_nizkoe);
             runAiProtection(protections.Pmaslo_sm_vysokoe);
 
@@ -13758,7 +13769,7 @@ FUNCTION UnBlockAllProtections : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=FALSE;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=FALSE;
   protections.mvOff.inOpcCommandsDisabled:=FALSE;
-  protections.dP_kran1.inOpcCommandsDisabled:=FALSE;
+  protections.dPmaslo_gaz_less100.inOpcCommandsDisabled:=FALSE;
   protections.Kran1sdvig.inOpcCommandsDisabled:=FALSE;
   protections.Kran2sdvig.inOpcCommandsDisabled:=FALSE;
   protections.Uroven_masla_v_akkum.inOpcCommandsDisabled:=FALSE;
@@ -14079,7 +14090,7 @@ FUNCTION anyProtectionInRemont : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.Remont OR
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Remont OR
   protections.mvOff.Remont OR
-  protections.dP_kran1.Remont OR
+  protections.dPmaslo_gaz_less100.Remont OR
   protections.Kran1sdvig.Remont OR
   protections.Kran2sdvig.Remont OR
   protections.Uroven_masla_v_akkum.Remont OR
@@ -14118,9 +14129,10 @@ FUNCTION runAllProtections : BOOL
   runAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
   runAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
   runAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+  runAiProtection(protections.dPmaslo_gaz);
 
   runDiProtection(protections.mvOff);
-  runDiProtection(protections.dP_kran1);
+  runDiProtection(protections.dPmaslo_gaz_less100);
   runDiProtection(protections.Kran1sdvig);
   runDiProtection(protections.Kran2sdvig);
   runDiProtection(protections.Uroven_masla_v_akkum);
@@ -14129,7 +14141,6 @@ FUNCTION runAllProtections : BOOL
   runDiProtection(protections.NY1_net_voltage);
   runDiProtection(protections.NY2_net_voltage);
   runDiProtection(protections.PNS_net_voltage);
-  runDiProtection(protections.dPmaslo_gaz);
 END_FUNCTION
 
 FUNCTION ResetAllSignaling : BOOL
@@ -14206,11 +14217,14 @@ FUNCTION ResetAllSignaling : BOOL
   IF protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling THEN
       resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6); END_IF;
 
+  IF protections.dPmaslo_gaz.Signaling THEN
+      resetAiProtection(protections.dPmaslo_gaz); END_IF;
+
   IF protections.mvOff.Signaling THEN
       resetDiProtection(protections.mvOff); END_IF;
 
-  IF protections.dP_kran1.Signaling THEN
-      resetDiProtection(protections.dP_kran1); END_IF;
+  IF protections.dPmaslo_gaz_less100.Signaling THEN
+      resetDiProtection(protections.dPmaslo_gaz_less100); END_IF;
 
   IF protections.Kran1sdvig.Signaling THEN
       resetDiProtection(protections.Kran1sdvig); END_IF;
@@ -14235,9 +14249,6 @@ FUNCTION ResetAllSignaling : BOOL
 
   IF protections.PNS_net_voltage.Signaling THEN
       resetDiProtection(protections.PNS_net_voltage); END_IF;
-
-  IF protections.dPmaslo_gaz.Signaling THEN
-      resetDiProtection(protections.dPmaslo_gaz); END_IF;
 END_FUNCTION
 
 FUNCTION autoRunProtections : BOOL
@@ -14277,7 +14288,7 @@ FUNCTION autoRunProtections : BOOL
 
 
 
-      runDiProtection(protections.dP_kran1);
+      runDiProtection(protections.dPmaslo_gaz_less100);
 
       runDiProtection(protections.mvOff);
 
@@ -15139,7 +15150,7 @@ FUNCTION remontAllProtections : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.inCommand_Alg:=cmdRemont;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inCommand_Alg:=cmdRemont;
   protections.mvOff.inCommand_Alg:=cmdRemont;
-  protections.dP_kran1.inCommand_Alg:=cmdRemont;
+  protections.dPmaslo_gaz_less100.inCommand_Alg:=cmdRemont;
   protections.Uroven_masla_v_akkum.inCommand_Alg:=cmdRemont;
   protections.Neispravnost_vozbud.inCommand_Alg:=cmdRemont;
   protections.Avariya_vozbud.inCommand_Alg:=cmdRemont;
@@ -15180,7 +15191,7 @@ FUNCTION BlockAllProtections : BOOL
   protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=TRUE;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=TRUE;
   protections.mvOff.inOpcCommandsDisabled:=TRUE;
-  protections.dP_kran1.inOpcCommandsDisabled:=TRUE;
+  protections.dPmaslo_gaz_less100.inOpcCommandsDisabled:=TRUE;
   protections.Kran1sdvig.inOpcCommandsDisabled:=TRUE;
   protections.Kran2sdvig.inOpcCommandsDisabled:=TRUE;
   protections.Uroven_masla_v_akkum.inOpcCommandsDisabled:=TRUE;
@@ -15495,14 +15506,13 @@ FUNCTION_BLOCK Pusk_first_faza1
       (* запуск пнс завершен - запус защит *)
       IF pnsOn.top THEN
            runPhase(pmsMore50);
-          (*chto-to ne tak, mne kazhetsya*)
       END_IF;   
 
 
       (* не завершился запуск защиты 50 - проверка давления 50 *)
       IF pmsMore50.start AND (NOT pmsMore50.top) THEN
   	IF ai.Pmaslo_sm_nizkoe.interval = _statusAi.NORMAL AND ai.Pmaslo_sm_nizkoe.value > 50.0  THEN
-  	    runPhase(pnsOn);
+  	    runPhase(pnsOn);(*kak-to vozvesti zashitu *)
             END_IF;
       END_IF;
 
@@ -15510,7 +15520,7 @@ FUNCTION_BLOCK Pusk_first_faza1
       (* не завершился запуск защиты 300 - проверка давления 300 *)
       IF  pmsMore300.start AND (NOT pmsMore300.top) THEN
   	IF ai.Pmaslo_sm_vysokoe.interval = _statusAi.NORMAL AND ai.Pmaslo_sm_vysokoe.value > 300.0  THEN
-  	    runPhase(pnsOn);
+  	    runPhase(pnsOn);(*kak-to vozvesti zashitu *)
   	END_IF;
       END_IF;
 
@@ -15521,14 +15531,16 @@ FUNCTION_BLOCK Pusk_first_faza1
 
       (* запуск защит не завршен - запуск защит*)
       IF Protection_Pms.start AND (NOT Protection_Pms.top) THEN
-  	Protection_Pms.top := TRUE;
+  	runAiProtection(protections.Pmaslo_sm_nizkoe);
+            runAiProtection(protections.Pmaslo_sm_vysokoe);
+            Protection_Pms.top := TRUE;
       END_IF;
 
       (* таймер завершился до запуска защит - ошибка *)
       IF timer240.top THEN 
-  	Error_Alg.ERROR := TRUE; (*не понятное куда его сунуть и нужен ли он*)
+          Error_Alg.ERROR := TRUE; (*не понятное куда его сунуть и нужен ли он*)
       ELSE
-  	Error_Alg.ERROR := FALSE;	
+          Error_Alg.ERROR := FALSE;	
       END_IF;
 
       (* защиты выствалены до завршения таймера - сброс таймера *)
@@ -15643,6 +15655,570 @@ FUNCTION_BLOCK Pusk_first_faza1
   			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
   			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
   			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Pusk_first_faza2
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    nu1On : struct_PhaseAlgoritm;
+    nu2On : struct_PhaseAlgoritm;
+    timer240 : struct_PhaseAlgoritm;
+    dPmg_more100 : struct_PhaseAlgoritm;
+    Auto_NU1 : struct_PhaseAlgoritm;
+    Error_Alg : struct_PhaseAlgoritm;
+    fb_timer240 : fb_ph_Timer;
+    fb_nu1On : fb_ph_OilPump;
+    fb_nu2On : fb_ph_OilPump;
+    fb_dPmg_more100 : fb_ph_algoritm;
+    fb_Auto_NU1 : fb_ph_algoritm;
+    fb_Error_Alg : fb_ph_algoritm;
+    _sunpackerCommand : fb_sunpackerCommand;
+    _statusDualInput : TYPE_statusDualInput;
+    _Answers : TYPE_Answers;
+    source : BYTE;
+    cmd : BYTE;
+    lastCmd : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    onInit : BOOL;
+    waitReset : TON;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+    IM : ImConfig;
+    protections : ProtectionsConfig;
+    algoritms : AlgoritmsConfig;
+    ai : AiConfig;
+    statusAi : TYPE_StatusAi;
+  END_VAR
+
+  IF NOT onInit THEN         
+           fb_nu1On(phaseNumber:=1, act:=_on );
+           fb_nu2On(phaseNumber:=2, act:=_on);
+           fb_dPmg_more100(phaseNumber:=3);
+           fb_Error_Alg(phaseNumber:=4);
+           fb_Auto_NU1(phaseNumber:=5);       
+  onInit:=TRUE;
+  END_IF;
+
+  fb_timer240(StrPh:=timer240);
+  fb_nu1On(StrPh:= nu1On,Im:=Im.nu1);
+  fb_nu2On(StrPh:= nu2On,Im:=Im.nu2);
+  fb_dPmg_more100(StrPh:=dPmg_more100);
+  fb_Auto_NU1(StrPh:=Auto_NU1, alg:=algoritms.autoNu); (*komu ono nujno to blat *) (*Kak vibrat nason osnovnim? *)
+  fb_Error_Alg(StrPh:=Error_Alg);             
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  IF StrAlg.isRuning THEN
+
+      StrAlg.hasError := nu1On.error AND nu2On.error AND Auto_NU1.error;
+
+      (* защита не возведена - запускаем таймер *)
+      IF NOT dPmg_more100.top THEN
+  	runPhase(timer240);
+      END_IF;
+
+      (* носос 1 не включен - включаем насос*)
+      IF NOT nu1On.start THEN
+  	runPhase(nu1On);
+      END_IF;
+
+      (* носос 2 не включен - включаем насос*)
+      IF NOT nu2On.start THEN
+  	runPhase(nu2On);
+      END_IF;   
+
+      (* один из насосов включен - включение защиты *)
+      IF ((IM.nu1.onStatus = _statusDualInput.status_on OR IM.nu2.onStatus = _statusDualInput.status_on) AND  (nu1On.start OR nu2On.Start)) THEN
+  	runPhase(dPmg_more100); 
+  	nu1On.top:=TRUE;
+            nu2On.top:=TRUE;
+      END_IF;
+
+      (* фаза защиты активна - включение защиты *)
+      IF dPmg_more100.start AND NOT dPmg_more100.top THEN
+  	IF NOT IM.SingleSignals.dP_maslo_gaz_Less100.Q AND IM.SingleSignals.dP_maslo_gaz_Less100.status = 1 AND 
+  	ai.dPmaslo_gaz.interval >= statusAi.normal AND ai.dPmaslo_gaz.value > 150.0 THEN
+                dPmg_more100.top:=TRUE;
+  	END_IF;
+      END_IF;
+
+      (*таймер завершился до возведения защит - ошибка *)
+      IF timer240.top THEN 
+  	Error_Alg.error := TRUE;
+      ELSE
+  	Error_Alg.error := FALSE;	
+      END_IF;
+
+      IF dPmg_more100.top AND nu1On.top AND nu2On.top THEN
+  	Auto_NU1.top:=TRUE;
+  	runAiProtection(protections.dPmaslo_gaz);
+            runDiProtection(protections.dPmaslo_gaz_less100);
+  	resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
+  	resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  	algoritms.autoNu.CanRun:=TRUE;
+  	(*algoritms.autoNu.run ();ниче не ясно*)
+  	resetPhase(timer240);
+      END_IF; 
+  END_IF;
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  (* ---- Если управление с ВУ заблокировано, то  передаем команду из алгоритма ---- *)
+  IF StrAlg.inOpcCommandsDisabled THEN
+  	StrAlg.inCommand := StrAlg.inCommand_Alg;
+  ELSE (* иначе передаем команду с АРМа*)
+  	StrAlg.inCommand := StrAlg.inCommand_ARM;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cmdRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA2;
+
+                                                    runPhase(timer240);
+                                                    runPhase(nu1On);
+                                                    runPhase(nu2On);
+                                                    resetAiProtection(protections.dPmaslo_gaz);                                                  
+                                                    resetDiProtection(protections.dPmaslo_gaz_less100);
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          resetPhase(nu1On);
+                                          resetPhase(nu2On);
+                                          resetPhase(timer240);
+                                          resetPhase(dPmg_more100);
+                                          resetPhase(Auto_NU1);
+                                          resetPhase(Error_Alg);
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= timer240.startStatus
+              OR nu1On.startStatus
+              OR nu2On.startStatus
+              OR dPmg_more100.startStatus
+              OR Auto_NU1.startStatus
+              OR Error_Alg.startStatus;
+
+
+  StrAlg.Error := timer240.errorStatus
+              OR nu1On.errorStatus
+              OR nu2On.errorStatus
+              OR dPmg_more100.errorStatus
+              OR Auto_NU1.errorStatus
+              OR Error_Alg.errorStatus;          
+
+  StrAlg.Top := timer240.topStatus
+              OR nu1On.topStatus
+              OR nu2On.topStatus
+              OR dPmg_more100.topStatus
+              OR Auto_NU1.topStatus
+              OR Error_Alg.topStatus;  
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Pusk_second_faza_chastotny
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    timer120 : struct_PhaseAlgoritm;
+    timer5 : struct_PhaseAlgoritm;
+    Shup : struct_PhaseAlgoritm;
+    Net_Chast : struct_PhaseAlgoritm;
+    mvOn : struct_PhaseAlgoritm;
+    pGNSmore04 : struct_PhaseAlgoritm;
+    gotov_K_zagruzke : struct_PhaseAlgoritm;
+    dPmg_Top : struct_PhaseAlgoritm;
+    AutoPNS_Start : struct_PhaseAlgoritm;
+    fb_timer120 : fb_ph_Timer;
+    fb_timer5 : fb_ph_Timer;
+    fb_Shup : fb_ph_OilPump;
+    fb_Net_Chast : fb_ph_algoritm;
+    fb_mvOn : fb_ph_SectionSwitch;
+    fb_pGNSmore04 : fb_ph_algoritm;
+    fb_gotov_K_zagruzke : fb_ph_algoritm;
+    fb_dPmg_Top : fb_ph_algoritm;
+    fb_AutoPNS_Start : fb_ph_algoritm;
+    _sunpackerCommand : fb_sunpackerCommand;
+    _statusDualInput : TYPE_statusDualInput;
+    _Answers : TYPE_Answers;
+    source : BYTE;
+    cmd : BYTE;
+    lastCmd : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    onInit : BOOL;
+    waitReset : TON;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+    IM : ImConfig;
+    protections : ProtectionsConfig;
+    algoritms : AlgoritmsConfig;
+    ai : AiConfig;
+    statusAi : TYPE_StatusAi;
+  END_VAR
+
+  IF NOT onInit THEN         
+           fb_timer120(phaseNumber:=1, delay:=T#120S);
+           fb_timer5(phaseNumber:=2, delay:=T#5S);
+           fb_Shup(phaseNumber:=3);
+           fb_Net_Chast(phaseNumber:=4);
+           fb_mvOn(phaseNumber:=5,  act:=_on); 
+           fb_pGNSmore04(phaseNumber:=6); 
+           fb_gotov_K_zagruzke(phaseNumber:=7); 
+           fb_dPmg_Top(phaseNumber:=8); 
+           fb_AutoPNS_Start(phaseNumber:=9, act:=_run, waitCompletion:=FALSE);       
+  onInit:=TRUE;
+  END_IF;
+
+  fb_timer120(StrPh:=timer120);
+  fb_timer5(StrPh:= timer5);
+  fb_Shup(StrPh:= Shup);
+  fb_Net_Chast(StrPh:=Net_Chast);
+  fb_mvOn(StrPh:=mvOn, Im:=IM.mv);
+  fb_pGNSmore04(StrPh:=pGNSmore04); 
+  fb_gotov_K_zagruzke(StrPh:=gotov_K_zagruzke);  
+  fb_dPmg_Top(StrPh:=dPmg_Top);              
+  fb_AutoPNS_Start(StrPh:=AutoPNS_Start, alg:=algoritms.autoPns);  
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  IF StrAlg.isRuning THEN
+      (* мв не включен - запуск таймера *)
+      IF NOT mvOn.top THEN
+  	runphase(timer120);
+      END_IF;
+      (* частотный пуск не совершен - запуск таймера *)
+      IF NOT Net_Chast.top THEN
+  	runphase(timer5);
+      END_IF;
+
+      (* ШУП не запущен - запуск *)
+      IF NOT Shup.start THEN
+  	runphase(Shup);
+      END_IF;
+
+      (* ШУП не завершился - запуск ШУПб МВ *)
+      IF NOT Shup.top AND Shup.start THEN
+  	(*IM.Pusk_SHUP.impulse (); как запустить ШПУ *)
+  	Shup.top:=TRUE;
+  	runphase(mvOn);
+      END_IF;
+
+      (* частотный пуск не запущен - запуск *)
+      IF NOT Net_Chast.start THEN
+  	runphase(Net_Chast);
+      END_IF;
+
+      (* частотный пуск не завершился - запуск *)
+      IF Net_Chast.start AND (NOT Net_Chast.top) THEN
+  	IF (NOT IM.SingleSignals.Chastotny_pusk.Q) AND (IM.SingleSignals.Chastotny_pusk.status = 1) THEN
+  		Net_Chast.top:=TRUE;
+  		resetPhase(timer5);
+  	END_IF;
+      END_IF;
+
+      (* таймер не истек и мв не включен - вовзедение защиты *)
+      (*IF (NOT timer120.top) AND (NOT mvOn.top) THEN
+  	protections.p_Fail_Chastotniy_Pusk.run();
+      ELSE
+  	protections.p_Fail_Chastotniy_Pusk.reset();
+      END_IF;*)(*nijego ne ponimay *)
+
+      (* мв не завершился - включение мв *)
+      IF mvOn.start AND NOT mvOn.top THEN
+  	IF IM.mv.onStatus = _statusDualInput.STATUS_ON THEN
+                mvOn.top:=TRUE;
+  	END_IF;
+      END_IF;
+
+      (* мв завершился - что-то делаем *)
+      IF mvOn.top THEN 
+  	IF NOT pGNSmore04.start (*AND (algManager.mode = ModeGpa.MODE_PUSKPP_Ch OR algManager.mode = ModeGpa.MODE_PUSKAP_Ch)какой режим *) THEN
+  		runphase(pGNSmore04); 
+  	END_IF;
+           (* IF NOT autoAVOM_canrun_flag THEN
+                algoritms.AutoAvom.CanRun:=TRUE;
+  	    autoAVOM_canrun_flag:=TRUE; kto ti
+  	END_IF;*)
+  	resetPhase(timer120);
+  	runphase(gotov_K_zagruzke);
+
+            IF NOT dPmg_Top.start (* AND ((algManager.mode = modegpa.MODE_PUSKAP_Ch) OR (algManager.mode = modegpa.MODE_PUSKPP_Ch))*) THEN
+                runphase(dPmg_Top);
+  	END_IF;
+
+            runDiProtection(protections.mvOff); 
+  	(*protections.p_OFFAvarSwitch.run();
+  	protections.p_RegVozbOff.run(); таких защит нет *)
+      END_IF;
+
+
+      IF dPmg_Top.start AND NOT dPmg_Top.top THEN
+  	IF NOT IM.SingleSignals.dP_maslo_gaz_Less100.Q AND IM.SingleSignals.dP_maslo_gaz_Less100.status = 1 AND ai.dPmaslo_gaz.value > 150.0 THEN 
+  		dPmg_Top.top:=TRUE;
+  		runAiProtection(protections.dPmaslo_gaz);
+  		runDiProtection(protections.dPmaslo_gaz_less100);
+  		resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
+  		resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  		(*algoritms.autoNu.CanRun:=TRUE;*)
+  		(*algoritms.autoNu.run(); кого чего, ничего не понимаю *)
+  	END_IF;
+      END_IF;
+
+      IF pGNSmore04.start AND NOT pGNSmore04.top THEN 
+  	IF ai.Pmasla_posle_GNS.interval (*почему интервал, если есть статус *) >= statusAi.NORMAL AND ai.Pmasla_posle_GNS.value > 400.0 THEN
+  	  	pGNSmore04.top:=TRUE; 
+  	END_IF;
+      END_IF;
+
+      IF (pGNSmore04.top AND gotov_K_zagruzke.top AND dPmg_Top.top )(*AND (algManager.mode = modegpa.MODE_PUSKAP_Ch OR (algManager.mode = modegpa.MODE_PUSKPP_Ch) *)OR 
+  	(gotov_K_zagruzke.top) (*AND (algManager.mode = modegpa.MODE_PUSKV_Ch OR algManager.mode = modegpa.MODE_I))*) AND NOT AutoPNS_Start.top  THEN 
+  	algoritms.AutoPns.CanRun :=TRUE;
+  	(*algoritms.AutoPns;*)
+  	AutoPNS_Start.top:=TRUE;
+      END_IF;
+
+      IF (NOT Net_Chast.top AND timer5.top) OR (timer120.top AND NOT mvOn.top) THEN
+  	algoritms.ao.CanRun:=TRUE;
+  	(*algoritms.ao.run ();*)
+      END_IF;
+  END_IF;
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  (* ---- Если управление с ВУ заблокировано, то  передаем команду из алгоритма ---- *)
+  IF StrAlg.inOpcCommandsDisabled THEN
+  	StrAlg.inCommand := StrAlg.inCommand_Alg;
+  ELSE (* иначе передаем команду с АРМа*)
+  	StrAlg.inCommand := StrAlg.inCommand_ARM;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cmdRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA2;
+
+                                                    runPhase(timer120);
+                                                    runPhase(timer5);
+                                                    runPhase(Shup);
+                                                    resetAiProtection(protections.dPmaslo_gaz);                                                  
+                                                    resetDiProtection(protections.dPmaslo_gaz_less100);
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          resetPhase(timer5);
+                                          resetPhase(Shup);
+                                          resetPhase(timer120);
+                                          resetPhase(Net_Chast);
+                                          resetPhase(mvOn);
+                                          resetPhase(pGNSmore04);
+                                          resetPhase(gotov_K_zagruzke);
+                                          resetPhase(dPmg_Top);
+                                          resetPhase(AutoPNS_Start);
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= timer120.startStatus
+              OR timer5.startStatus
+              OR Shup.startStatus
+              OR Net_Chast.startStatus
+              OR mvOn.startStatus
+              OR pGNSmore04.startStatus
+              OR gotov_K_zagruzke.startStatus
+              OR dPmg_Top.startStatus
+              OR AutoPNS_Start.startStatus;
+
+
+  StrAlg.Error := timer120.errorStatus
+              OR timer5.errorStatus
+              OR Shup.errorStatus
+              OR Net_Chast.errorStatus
+              OR mvOn.errorStatus
+              OR pGNSmore04.errorStatus
+              OR gotov_K_zagruzke.errorStatus
+              OR dPmg_Top.errorStatus
+              OR AutoPNS_Start.errorStatus;          
+
+  StrAlg.Top := timer120.topStatus
+              OR timer5.topStatus
+              OR Shup.topStatus
+              OR Net_Chast.topStatus
+              OR mvOn.topStatus
+              OR gotov_K_zagruzke.topStatus
+              OR dPmg_Top.topStatus
+              OR AutoPNS_Start.topStatus
+              OR pGNSmore04.topStatus;  
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Pusk_second_faza_reactor
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    timer25 : struct_PhaseAlgoritm;
+    timer3 : struct_PhaseAlgoritm;
+    Mv_Error : struct_PhaseAlgoritm;
+    mvOn : struct_PhaseAlgoritm;
+    pGNSmore04 : struct_PhaseAlgoritm;
+    gotov_K_zagruzke : struct_PhaseAlgoritm;
+    dPmg_Top : struct_PhaseAlgoritm;
+    AutoPNS_Start : struct_PhaseAlgoritm;
+    fb_timer25 : fb_ph_Timer;
+    fb_timer3 : fb_ph_Timer;
+    fb_Mv_Error : fb_ph_algoritm;
+    fb_mvOn : fb_ph_SectionSwitch;
+    fb_pGNSmore04 : fb_ph_algoritm;
+    fb_gotov_K_zagruzke : fb_ph_algoritm;
+    fb_dPmg_Top : fb_ph_algoritm;
+    fb_AutoPNS_Start : fb_ph_algoritm;
+    _sunpackerCommand : fb_sunpackerCommand;
+    _statusDualInput : TYPE_statusDualInput;
+    _Answers : TYPE_Answers;
+    source : BYTE;
+    cmd : BYTE;
+    lastCmd : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    onInit : BOOL;
+    waitReset : TON;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+    IM : ImConfig;
+    protections : ProtectionsConfig;
+    algoritms : AlgoritmsConfig;
+    ai : AiConfig;
+    statusAi : TYPE_StatusAi;
+  END_VAR
+
+  fb_Mv_Error(phaseNumber:=7);
 END_FUNCTION_BLOCK
 
 
