@@ -181,8 +181,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 9218 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.WFLAGS
-    st = getVariable(9218);
+  { // 9108 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.WFLAGS
+    st = getVariable(9108);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.WFLAGS", 50);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_UINT = (UINT*)&p_TITEMAIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9219 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.WRESERVED
-    st = getVariable(9219);
+  { // 9109 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.WRESERVED
+    st = getVariable(9109);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.WRESERVED", 53);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_UINT = (UINT*)&p_TITEMAIN->WRESERVED;
     st->value_p = p_UINT;
   }
-  { // 9220 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.DBLVALUE
-    st = getVariable(9220);
+  { // 9110 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.DBLVALUE
+    st = getVariable(9110);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.DBLVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -217,8 +217,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_TITEMAIN->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9221 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.NANOSEC
-    st = getVariable(9221);
+  { // 9111 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.NANOSEC
+    st = getVariable(9111);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.NANOSEC", 51);
     st->size_data = sizeof(ULINT);
@@ -229,8 +229,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_ULINT = (ULINT*)&p_TITEMAIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9222 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.RESERVE
-    st = getVariable(9222);
+  { // 9112 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.RESERVE
+    st = getVariable(9112);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ARAIN.RESERVE", 51);
     st->size_data = sizeof(ULINT);
@@ -241,8 +241,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_ULINT = (ULINT*)&p_TITEMAIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9223 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.WFLAGS
-    st = getVariable(9223);
+  { // 9113 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.WFLAGS
+    st = getVariable(9113);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.WFLAGS", 52);
     st->size_data = sizeof(UINT);
@@ -253,8 +253,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9224 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.WVALUE
-    st = getVariable(9224);
+  { // 9114 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.WVALUE
+    st = getVariable(9114);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.WVALUE", 52);
     st->size_data = sizeof(UINT);
@@ -265,8 +265,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 9225 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.NANOSEC
-    st = getVariable(9225);
+  { // 9115 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.NANOSEC
+    st = getVariable(9115);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.NANOSEC", 53);
     st->size_data = sizeof(ULINT);
@@ -277,8 +277,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9226 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.RESERVE
-    st = getVariable(9226);
+  { // 9116 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.RESERVE
+    st = getVariable(9116);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ERR_MOD.RESERVE", 53);
     st->size_data = sizeof(ULINT);
@@ -289,8 +289,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9227 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.VALUE
-    st = getVariable(9227);
+  { // 9117 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.VALUE
+    st = getVariable(9117);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 9228 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.STATUS
-    st = getVariable(9228);
+  { // 9118 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.STATUS
+    st = getVariable(9118);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 9229 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INTERVAL
-    st = getVariable(9229);
+  { // 9119 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INTERVAL
+    st = getVariable(9119);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INTERVAL", 52);
     st->size_data = sizeof(BYTE);
@@ -325,8 +325,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 9230 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND
-    st = getVariable(9230);
+  { // 9120 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND
+    st = getVariable(9120);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 9231 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.BLCONNECT
-    st = getVariable(9231);
+  { // 9121 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.BLCONNECT
+    st = getVariable(9121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.BLCONNECT", 53);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 9232 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLL
-    st = getVariable(9232);
+  { // 9122 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLL
+    st = getVariable(9122);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLL", 47);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 9233 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHL
-    st = getVariable(9233);
+  { // 9123 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHL
+    st = getVariable(9123);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHL", 47);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 9234 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLA
-    st = getVariable(9234);
+  { // 9124 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLA
+    st = getVariable(9124);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLA", 47);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 9235 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHA
-    st = getVariable(9235);
+  { // 9125 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHA
+    st = getVariable(9125);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHA", 47);
     st->size_data = sizeof(LREAL);
@@ -397,8 +397,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 9236 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLW
-    st = getVariable(9236);
+  { // 9126 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLW
+    st = getVariable(9126);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DLW", 47);
     st->size_data = sizeof(LREAL);
@@ -409,8 +409,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 9237 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHW
-    st = getVariable(9237);
+  { // 9127 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHW
+    st = getVariable(9127);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DHW", 47);
     st->size_data = sizeof(LREAL);
@@ -421,8 +421,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 9238 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LL
-    st = getVariable(9238);
+  { // 9128 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LL
+    st = getVariable(9128);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LL", 46);
     st->size_data = sizeof(LREAL);
@@ -433,8 +433,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 9239 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HL
-    st = getVariable(9239);
+  { // 9129 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HL
+    st = getVariable(9129);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HL", 46);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 9240 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LA
-    st = getVariable(9240);
+  { // 9130 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LA
+    st = getVariable(9130);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LA", 46);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 9241 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HA
-    st = getVariable(9241);
+  { // 9131 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HA
+    st = getVariable(9131);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HA", 46);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 9242 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LW
-    st = getVariable(9242);
+  { // 9132 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LW
+    st = getVariable(9132);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.LW", 46);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 9243 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HW
-    st = getVariable(9243);
+  { // 9133 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HW
+    st = getVariable(9133);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HW", 46);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 9244 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_LA
-    st = getVariable(9244);
+  { // 9134 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_LA
+    st = getVariable(9134);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 9245 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_HA
-    st = getVariable(9245);
+  { // 9135 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_HA
+    st = getVariable(9135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -517,8 +517,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 9246 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_LW
-    st = getVariable(9246);
+  { // 9136 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_LW
+    st = getVariable(9136);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -529,8 +529,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 9247 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_HW
-    st = getVariable(9247);
+  { // 9137 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_HW
+    st = getVariable(9137);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.ISVALIDREF_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 9248 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INPLL
-    st = getVariable(9248);
+  { // 9138 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INPLL
+    st = getVariable(9138);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INPLL", 49);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 9249 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INPHL
-    st = getVariable(9249);
+  { // 9139 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INPHL
+    st = getVariable(9139);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INPHL", 49);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 9250 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(9250);
+  { // 9140 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(9140);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CURRENTSHOTCIRCUIT", 62);
     st->size_data = sizeof(LREAL);
@@ -577,8 +577,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9251 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(9251);
+  { // 9141 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(9141);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CURRENTBREAKCIRCUIT", 63);
     st->size_data = sizeof(LREAL);
@@ -589,8 +589,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9252 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXCHANGESPEED
-    st = getVariable(9252);
+  { // 9142 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXCHANGESPEED
+    st = getVariable(9142);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXCHANGESPEED", 58);
     st->size_data = sizeof(LREAL);
@@ -601,8 +601,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9253 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(9253);
+  { // 9143 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(9143);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXCHANGESPEEDDOWN", 62);
     st->size_data = sizeof(LREAL);
@@ -613,8 +613,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9254 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CHANGESPEED
-    st = getVariable(9254);
+  { // 9144 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CHANGESPEED
+    st = getVariable(9144);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.CHANGESPEED", 55);
     st->size_data = sizeof(LREAL);
@@ -625,8 +625,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9255 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HISTERESIS
-    st = getVariable(9255);
+  { // 9145 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HISTERESIS
+    st = getVariable(9145);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.HISTERESIS", 54);
     st->size_data = sizeof(LREAL);
@@ -637,8 +637,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 9256 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.APERTURFILTER
-    st = getVariable(9256);
+  { // 9146 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.APERTURFILTER
+    st = getVariable(9146);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.APERTURFILTER", 57);
     st->size_data = sizeof(LREAL);
@@ -649,8 +649,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9257 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.EXPONENTIALFILTER
-    st = getVariable(9257);
+  { // 9147 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.EXPONENTIALFILTER
+    st = getVariable(9147);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.EXPONENTIALFILTER", 61);
     st->size_data = sizeof(LREAL);
@@ -661,8 +661,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9258 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.RASSOGLASOVANIE
-    st = getVariable(9258);
+  { // 9148 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.RASSOGLASOVANIE
+    st = getVariable(9148);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.RASSOGLASOVANIE", 59);
     st->size_data = sizeof(LREAL);
@@ -673,8 +673,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 9259 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(9259);
+  { // 9149 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(9149);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9260 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_LA
-    st = getVariable(9260);
+  { // 9150 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_LA
+    st = getVariable(9150);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_LA", 55);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 9261 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_HA
-    st = getVariable(9261);
+  { // 9151 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_HA
+    st = getVariable(9151);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_HA", 55);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 9262 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_LW
-    st = getVariable(9262);
+  { // 9152 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_LW
+    st = getVariable(9152);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_LW", 55);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 9263 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_HW
-    st = getVariable(9263);
+  { // 9153 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_HW
+    st = getVariable(9153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DISABLED_HW", 55);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 9264 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYLA
-    st = getVariable(9264);
+  { // 9154 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYLA
+    st = getVariable(9154);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYLA", 51);
     st->size_data = sizeof(TIME);
@@ -745,8 +745,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 9265 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYLW
-    st = getVariable(9265);
+  { // 9155 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYLW
+    st = getVariable(9155);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYLW", 51);
     st->size_data = sizeof(TIME);
@@ -757,8 +757,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 9266 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYHW
-    st = getVariable(9266);
+  { // 9156 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYHW
+    st = getVariable(9156);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYHW", 51);
     st->size_data = sizeof(TIME);
@@ -769,8 +769,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 9267 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYHA
-    st = getVariable(9267);
+  { // 9157 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYHA
+    st = getVariable(9157);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DELAYHA", 51);
     st->size_data = sizeof(TIME);
@@ -781,8 +781,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 9268 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(9268);
+  { // 9158 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(9158);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MINVALUE_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9269 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(9269);
+  { // 9159 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(9159);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXVALUE_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -805,8 +805,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9270 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MINVALUE
-    st = getVariable(9270);
+  { // 9160 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MINVALUE
+    st = getVariable(9160);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MINVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -817,8 +817,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9271 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXVALUE
-    st = getVariable(9271);
+  { // 9161 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXVALUE
+    st = getVariable(9161);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.MAXVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9272 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(9272);
+  { // 9162 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(9162);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9273 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.IMIT
-    st = getVariable(9273);
+  { // 9163 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.IMIT
+    st = getVariable(9163);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.IMIT", 48);
     st->size_data = sizeof(BOOL);
@@ -853,8 +853,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 9274 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.REMONT
-    st = getVariable(9274);
+  { // 9164 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.REMONT
+    st = getVariable(9164);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.REMONT", 50);
     st->size_data = sizeof(BOOL);
@@ -865,8 +865,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 9275 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS
-    st = getVariable(9275);
+  { // 9165 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS
+    st = getVariable(9165);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -877,8 +877,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 9276 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS_MIN
-    st = getVariable(9276);
+  { // 9166 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS_MIN
+    st = getVariable(9166);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS_MIN", 50);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 9277 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS_MAX
-    st = getVariable(9277);
+  { // 9167 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS_MAX
+    st = getVariable(9167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.NS_MAX", 50);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 9278 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND_ALG
-    st = getVariable(9278);
+  { // 9168 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND_ALG
+    st = getVariable(9168);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -913,8 +913,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 9279 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND_ARM
-    st = getVariable(9279);
+  { // 9169 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND_ARM
+    st = getVariable(9169);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 9280 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DMAXCHANGESPEED
-    st = getVariable(9280);
+  { // 9170 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DMAXCHANGESPEED
+    st = getVariable(9170);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DMAXCHANGESPEED", 59);
     st->size_data = sizeof(LREAL);
@@ -937,8 +937,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9281 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(9281);
+  { // 9171 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(9171);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.STRAI.DMAXCHANGESPEEDDOWN", 63);
     st->size_data = sizeof(LREAL);
@@ -949,8 +949,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9282 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NOTDEFINED
-    st = getVariable(9282);
+  { // 9172 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NOTDEFINED
+    st = getVariable(9172);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NOTDEFINED", 58);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 9283 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LL
-    st = getVariable(9283);
+  { // 9173 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LL
+    st = getVariable(9173);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LL", 50);
     st->size_data = sizeof(BYTE);
@@ -973,8 +973,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 9284 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HL
-    st = getVariable(9284);
+  { // 9174 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HL
+    st = getVariable(9174);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HL", 50);
     st->size_data = sizeof(BYTE);
@@ -985,8 +985,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 9285 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NOTRELIABLE
-    st = getVariable(9285);
+  { // 9175 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NOTRELIABLE
+    st = getVariable(9175);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NOTRELIABLE", 59);
     st->size_data = sizeof(BYTE);
@@ -997,8 +997,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 9286 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NORMAL
-    st = getVariable(9286);
+  { // 9176 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NORMAL
+    st = getVariable(9176);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.NORMAL", 54);
     st->size_data = sizeof(BYTE);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 9287 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LW
-    st = getVariable(9287);
+  { // 9177 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LW
+    st = getVariable(9177);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LW", 50);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 9288 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HW
-    st = getVariable(9288);
+  { // 9178 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HW
+    st = getVariable(9178);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HW", 50);
     st->size_data = sizeof(BYTE);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 9289 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LA
-    st = getVariable(9289);
+  { // 9179 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LA
+    st = getVariable(9179);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.LA", 50);
     st->size_data = sizeof(BYTE);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 9290 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HA
-    st = getVariable(9290);
+  { // 9180 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HA
+    st = getVariable(9180);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._STATUSAI.HA", 50);
     st->size_data = sizeof(BYTE);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 9291 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_SETUSTAVKI
-    st = getVariable(9291);
+  { // 9181 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_SETUSTAVKI
+    st = getVariable(9181);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_SETUSTAVKI", 67);
     st->size_data = sizeof(WORD);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETUSTAVKI;
     st->value_p = p_WORD;
   }
-  { // 9292 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_SETREMONT
-    st = getVariable(9292);
+  { // 9182 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_SETREMONT
+    st = getVariable(9182);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_SETREMONT", 66);
     st->size_data = sizeof(WORD);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9293 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_RESETREMONT
-    st = getVariable(9293);
+  { // 9183 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_RESETREMONT
+    st = getVariable(9183);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_RESETREMONT", 68);
     st->size_data = sizeof(WORD);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_RESETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9294 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_KVITNOTRELIABLE
-    st = getVariable(9294);
+  { // 9184 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_KVITNOTRELIABLE
+    st = getVariable(9184);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._COMMANDANALOG.CMD_KVITNOTRELIABLE", 72);
     st->size_data = sizeof(WORD);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_KVITNOTRELIABLE;
     st->value_p = p_WORD;
   }
-  { // 9299 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.NONE
-    st = getVariable(9299);
+  { // 9189 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.NONE
+    st = getVariable(9189);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.NONE", 60);
     st->size_data = sizeof(BYTE);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->NONE;
     st->value_p = p_BYTE;
   }
-  { // 9300 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LL
-    st = getVariable(9300);
+  { // 9190 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LL
+    st = getVariable(9190);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LL", 58);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LL;
     st->value_p = p_BYTE;
   }
-  { // 9301 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LW
-    st = getVariable(9301);
+  { // 9191 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LW
+    st = getVariable(9191);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LW", 58);
     st->size_data = sizeof(BYTE);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LW;
     st->value_p = p_BYTE;
   }
-  { // 9302 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HW
-    st = getVariable(9302);
+  { // 9192 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HW
+    st = getVariable(9192);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HW", 58);
     st->size_data = sizeof(BYTE);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HW;
     st->value_p = p_BYTE;
   }
-  { // 9303 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LA
-    st = getVariable(9303);
+  { // 9193 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LA
+    st = getVariable(9193);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.LA", 58);
     st->size_data = sizeof(BYTE);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LA;
     st->value_p = p_BYTE;
   }
-  { // 9304 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HA
-    st = getVariable(9304);
+  { // 9194 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HA
+    st = getVariable(9194);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HA", 58);
     st->size_data = sizeof(BYTE);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HA;
     st->value_p = p_BYTE;
   }
-  { // 9305 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HL
-    st = getVariable(9305);
+  { // 9195 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HL
+    st = getVariable(9195);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.HL", 58);
     st->size_data = sizeof(BYTE);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HL;
     st->value_p = p_BYTE;
   }
-  { // 9306 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.SIPUP
-    st = getVariable(9306);
+  { // 9196 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.SIPUP
+    st = getVariable(9196);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.SIPUP", 61);
     st->size_data = sizeof(BYTE);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPUP;
     st->value_p = p_BYTE;
   }
-  { // 9307 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.SIPDOWN
-    st = getVariable(9307);
+  { // 9197 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.SIPDOWN
+    st = getVariable(9197);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._ANALOGLIMITFLAGS.SIPDOWN", 63);
     st->size_data = sizeof(BYTE);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPDOWN;
     st->value_p = p_BYTE;
   }
-  { // 9308 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NOTRELIABLE
-    st = getVariable(9308);
+  { // 9198 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NOTRELIABLE
+    st = getVariable(9198);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NOTRELIABLE", 49);
     st->size_data = sizeof(BOOL);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->NOTRELIABLE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9309 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUE
-    st = getVariable(9309);
+  { // 9199 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUE
+    st = getVariable(9199);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -1235,8 +1235,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->_LASTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9310 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.IN
-    st = getVariable(9310);
+  { // 9200 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.IN
+    st = getVariable(9200);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.IN", 54);
     st->size_data = sizeof(BOOL);
@@ -1247,8 +1247,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 9311 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.PT
-    st = getVariable(9311);
+  { // 9201 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.PT
+    st = getVariable(9201);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.PT", 54);
     st->size_data = sizeof(TIME);
@@ -1259,8 +1259,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 9312 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.Q
-    st = getVariable(9312);
+  { // 9202 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.Q
+    st = getVariable(9202);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 9313 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.ET
-    st = getVariable(9313);
+  { // 9203 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.ET
+    st = getVariable(9203);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER.ET", 54);
     st->size_data = sizeof(TIME);
@@ -1283,8 +1283,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 9314 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER
-    st = getVariable(9314);
+  { // 9204 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER
+    st = getVariable(9204);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMER", 51);
     st->size_data = sizeof(TON);
@@ -1294,8 +1294,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 9315 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.IN
-    st = getVariable(9315);
+  { // 9205 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.IN
+    st = getVariable(9205);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.IN", 56);
     st->size_data = sizeof(BOOL);
@@ -1306,8 +1306,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 9316 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.PT
-    st = getVariable(9316);
+  { // 9206 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.PT
+    st = getVariable(9206);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.PT", 56);
     st->size_data = sizeof(TIME);
@@ -1318,8 +1318,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 9317 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.Q
-    st = getVariable(9317);
+  { // 9207 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.Q
+    st = getVariable(9207);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -1330,8 +1330,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 9318 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.ET
-    st = getVariable(9318);
+  { // 9208 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.ET
+    st = getVariable(9208);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER.ET", 56);
     st->size_data = sizeof(TIME);
@@ -1342,8 +1342,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 9319 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER
-    st = getVariable(9319);
+  { // 9209 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER
+    st = getVariable(9209);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ._LASTVALUETIMER", 53);
     st->size_data = sizeof(TON);
@@ -1353,8 +1353,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->_LASTVALUETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 9320 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMERPRIZNAK
-    st = getVariable(9320);
+  { // 9210 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMERPRIZNAK
+    st = getVariable(9210);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RESETCMDTIMERPRIZNAK", 58);
     st->size_data = sizeof(BOOL);
@@ -1364,8 +1364,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9321 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.K
-    st = getVariable(9321);
+  { // 9211 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.K
+    st = getVariable(9211);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.K", 39);
     st->size_data = sizeof(LREAL);
@@ -1375,8 +1375,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->K;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9322 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.B
-    st = getVariable(9322);
+  { // 9212 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.B
+    st = getVariable(9212);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.B", 39);
     st->size_data = sizeof(LREAL);
@@ -1386,8 +1386,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->B;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9323 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.AP
-    st = getVariable(9323);
+  { // 9213 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.AP
+    st = getVariable(9213);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.AP", 40);
     st->size_data = sizeof(LREAL);
@@ -1397,8 +1397,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->AP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9324 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RAZNITSA
-    st = getVariable(9324);
+  { // 9214 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RAZNITSA
+    st = getVariable(9214);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RAZNITSA", 46);
     st->size_data = sizeof(LREAL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RAZNITSA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9325 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RABS
-    st = getVariable(9325);
+  { // 9215 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RABS
+    st = getVariable(9215);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.RABS", 42);
     st->size_data = sizeof(LREAL);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RABS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9326 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.H
-    st = getVariable(9326);
+  { // 9216 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.H
+    st = getVariable(9216);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.H", 39);
     st->size_data = sizeof(LREAL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->H;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9327 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.MISMATCH
-    st = getVariable(9327);
+  { // 9217 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.MISMATCH
+    st = getVariable(9217);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.MISMATCH", 46);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->MISMATCH;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9328 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.PARAMETR
-    st = getVariable(9328);
+  { // 9218 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.PARAMETR
+    st = getVariable(9218);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.PARAMETR", 46);
     st->size_data = sizeof(BYTE);
@@ -1452,8 +1452,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9329 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.SOURCE
-    st = getVariable(9329);
+  { // 9219 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.SOURCE
+    st = getVariable(9219);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.SOURCE", 44);
     st->size_data = sizeof(BYTE);
@@ -1463,8 +1463,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9330 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.CMD
-    st = getVariable(9330);
+  { // 9220 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.CMD
+    st = getVariable(9220);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.CMD", 41);
     st->size_data = sizeof(BYTE);
@@ -1474,8 +1474,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9331 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LASTCMD
-    st = getVariable(9331);
+  { // 9221 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LASTCMD
+    st = getVariable(9221);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LASTCMD", 45);
     st->size_data = sizeof(BYTE);
@@ -1485,8 +1485,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9332 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.SOURCE_FOR_STATUS
-    st = getVariable(9332);
+  { // 9222 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.SOURCE_FOR_STATUS
+    st = getVariable(9222);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.SOURCE_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -1496,8 +1496,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9333 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.CMD_FOR_STATUS
-    st = getVariable(9333);
+  { // 9223 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.CMD_FOR_STATUS
+    st = getVariable(9223);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.CMD_FOR_STATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -1507,8 +1507,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9334 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(9334);
+  { // 9224 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(9224);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.COMMAND_ERROR_FOR_STATUS", 62);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1518,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9335 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ONINIT
-    st = getVariable(9335);
+  { // 9225 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ONINIT
+    st = getVariable(9225);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ONINIT", 44);
     st->size_data = sizeof(BOOL);
@@ -1529,8 +1529,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9336 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG.CLK
-    st = getVariable(9336);
+  { // 9226 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG.CLK
+    st = getVariable(9226);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG.CLK", 50);
     st->size_data = sizeof(BOOL);
@@ -1541,8 +1541,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9337 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG.Q
-    st = getVariable(9337);
+  { // 9227 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG.Q
+    st = getVariable(9227);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1553,8 +1553,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9338 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG
-    st = getVariable(9338);
+  { // 9228 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG
+    st = getVariable(9228);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.OFF_TRIG", 46);
     st->size_data = sizeof(R_TRIG);
@@ -1564,8 +1564,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->OFF_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9339 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG.CLK
-    st = getVariable(9339);
+  { // 9229 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG.CLK
+    st = getVariable(9229);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG.CLK", 49);
     st->size_data = sizeof(BOOL);
@@ -1576,8 +1576,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9340 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG.Q
-    st = getVariable(9340);
+  { // 9230 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG.Q
+    st = getVariable(9230);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1588,8 +1588,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9341 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG
-    st = getVariable(9341);
+  { // 9231 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG
+    st = getVariable(9231);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.ON_TRIG", 45);
     st->size_data = sizeof(R_TRIG);
@@ -1599,8 +1599,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->ON_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9342 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG.CLK
-    st = getVariable(9342);
+  { // 9232 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG.CLK
+    st = getVariable(9232);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG.CLK", 53);
     st->size_data = sizeof(BOOL);
@@ -1611,8 +1611,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9343 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG.Q
-    st = getVariable(9343);
+  { // 9233 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG.Q
+    st = getVariable(9233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -1623,8 +1623,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9344 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG
-    st = getVariable(9344);
+  { // 9234 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG
+    st = getVariable(9234);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.REMONT_TRIG", 49);
     st->size_data = sizeof(R_TRIG);
@@ -1634,8 +1634,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->REMONT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9345 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG.CLK
-    st = getVariable(9345);
+  { // 9235 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG.CLK
+    st = getVariable(9235);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG.CLK", 49);
     st->size_data = sizeof(BOOL);
@@ -1646,8 +1646,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9346 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG.Q
-    st = getVariable(9346);
+  { // 9236 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG.Q
+    st = getVariable(9236);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1658,8 +1658,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9347 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG
-    st = getVariable(9347);
+  { // 9237 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG
+    st = getVariable(9237);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.LL_TRIG", 45);
     st->size_data = sizeof(R_TRIG);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->LL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9348 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG.CLK
-    st = getVariable(9348);
+  { // 9238 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG.CLK
+    st = getVariable(9238);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG.CLK", 49);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9349 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG.Q
-    st = getVariable(9349);
+  { // 9239 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG.Q
+    st = getVariable(9239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9350 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG
-    st = getVariable(9350);
+  { // 9240 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG
+    st = getVariable(9240);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.HL_TRIG", 45);
     st->size_data = sizeof(R_TRIG);
@@ -1704,8 +1704,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->HL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9351 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG.CLK
-    st = getVariable(9351);
+  { // 9241 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG.CLK
+    st = getVariable(9241);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG.CLK", 53);
     st->size_data = sizeof(BOOL);
@@ -1716,8 +1716,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9352 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG.Q
-    st = getVariable(9352);
+  { // 9242 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG.Q
+    st = getVariable(9242);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -1728,8 +1728,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9353 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG
-    st = getVariable(9353);
+  { // 9243 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG
+    st = getVariable(9243);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NORMAL_TRIG", 49);
     st->size_data = sizeof(R_TRIG);
@@ -1739,8 +1739,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->NORMAL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9354 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG.CLK
-    st = getVariable(9354);
+  { // 9244 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG.CLK
+    st = getVariable(9244);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG.CLK", 57);
     st->size_data = sizeof(BOOL);
@@ -1751,8 +1751,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9355 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG.Q
-    st = getVariable(9355);
+  { // 9245 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG.Q
+    st = getVariable(9245);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -1763,8 +1763,8 @@ int __variables_init_FB_DAVLENIEIMPULSGAZ(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9356 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG
-    st = getVariable(9356);
+  { // 9246 PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG
+    st = getVariable(9246);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_DAVLENIEIMPULSGAZ.NEDOSTOVER_TRIG", 53);
     st->size_data = sizeof(R_TRIG);

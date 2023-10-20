@@ -181,8 +181,8 @@ int __variables_init_FB_KONTROL_POST220V(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 9635 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.WFLAGS
-    st = getVariable(9635);
+  { // 9525 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.WFLAGS
+    st = getVariable(9525);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.WFLAGS", 49);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_UINT = (UINT*)&p_TITEMAIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9636 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.WRESERVED
-    st = getVariable(9636);
+  { // 9526 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.WRESERVED
+    st = getVariable(9526);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.WRESERVED", 52);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_UINT = (UINT*)&p_TITEMAIN->WRESERVED;
     st->value_p = p_UINT;
   }
-  { // 9637 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.DBLVALUE
-    st = getVariable(9637);
+  { // 9527 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.DBLVALUE
+    st = getVariable(9527);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.DBLVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -217,8 +217,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_TITEMAIN->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9638 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.NANOSEC
-    st = getVariable(9638);
+  { // 9528 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.NANOSEC
+    st = getVariable(9528);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.NANOSEC", 50);
     st->size_data = sizeof(ULINT);
@@ -229,8 +229,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_ULINT = (ULINT*)&p_TITEMAIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9639 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.RESERVE
-    st = getVariable(9639);
+  { // 9529 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.RESERVE
+    st = getVariable(9529);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ARAIN.RESERVE", 50);
     st->size_data = sizeof(ULINT);
@@ -241,8 +241,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_ULINT = (ULINT*)&p_TITEMAIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9640 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.WFLAGS
-    st = getVariable(9640);
+  { // 9530 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.WFLAGS
+    st = getVariable(9530);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.WFLAGS", 51);
     st->size_data = sizeof(UINT);
@@ -253,8 +253,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9641 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.WVALUE
-    st = getVariable(9641);
+  { // 9531 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.WVALUE
+    st = getVariable(9531);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.WVALUE", 51);
     st->size_data = sizeof(UINT);
@@ -265,8 +265,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 9642 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.NANOSEC
-    st = getVariable(9642);
+  { // 9532 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.NANOSEC
+    st = getVariable(9532);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.NANOSEC", 52);
     st->size_data = sizeof(ULINT);
@@ -277,8 +277,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9643 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.RESERVE
-    st = getVariable(9643);
+  { // 9533 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.RESERVE
+    st = getVariable(9533);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ERR_MOD.RESERVE", 52);
     st->size_data = sizeof(ULINT);
@@ -289,8 +289,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9644 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.VALUE
-    st = getVariable(9644);
+  { // 9534 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.VALUE
+    st = getVariable(9534);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.VALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 9645 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.STATUS
-    st = getVariable(9645);
+  { // 9535 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.STATUS
+    st = getVariable(9535);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 9646 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INTERVAL
-    st = getVariable(9646);
+  { // 9536 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INTERVAL
+    st = getVariable(9536);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INTERVAL", 51);
     st->size_data = sizeof(BYTE);
@@ -325,8 +325,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 9647 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND
-    st = getVariable(9647);
+  { // 9537 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND
+    st = getVariable(9537);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 9648 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.BLCONNECT
-    st = getVariable(9648);
+  { // 9538 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.BLCONNECT
+    st = getVariable(9538);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.BLCONNECT", 52);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 9649 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLL
-    st = getVariable(9649);
+  { // 9539 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLL
+    st = getVariable(9539);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLL", 46);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 9650 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHL
-    st = getVariable(9650);
+  { // 9540 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHL
+    st = getVariable(9540);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHL", 46);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 9651 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLA
-    st = getVariable(9651);
+  { // 9541 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLA
+    st = getVariable(9541);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLA", 46);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 9652 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHA
-    st = getVariable(9652);
+  { // 9542 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHA
+    st = getVariable(9542);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHA", 46);
     st->size_data = sizeof(LREAL);
@@ -397,8 +397,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 9653 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLW
-    st = getVariable(9653);
+  { // 9543 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLW
+    st = getVariable(9543);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DLW", 46);
     st->size_data = sizeof(LREAL);
@@ -409,8 +409,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 9654 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHW
-    st = getVariable(9654);
+  { // 9544 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHW
+    st = getVariable(9544);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DHW", 46);
     st->size_data = sizeof(LREAL);
@@ -421,8 +421,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 9655 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LL
-    st = getVariable(9655);
+  { // 9545 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LL
+    st = getVariable(9545);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LL", 45);
     st->size_data = sizeof(LREAL);
@@ -433,8 +433,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 9656 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HL
-    st = getVariable(9656);
+  { // 9546 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HL
+    st = getVariable(9546);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HL", 45);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 9657 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LA
-    st = getVariable(9657);
+  { // 9547 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LA
+    st = getVariable(9547);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LA", 45);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 9658 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HA
-    st = getVariable(9658);
+  { // 9548 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HA
+    st = getVariable(9548);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HA", 45);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 9659 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LW
-    st = getVariable(9659);
+  { // 9549 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LW
+    st = getVariable(9549);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.LW", 45);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 9660 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HW
-    st = getVariable(9660);
+  { // 9550 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HW
+    st = getVariable(9550);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HW", 45);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 9661 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_LA
-    st = getVariable(9661);
+  { // 9551 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_LA
+    st = getVariable(9551);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_LA", 56);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 9662 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_HA
-    st = getVariable(9662);
+  { // 9552 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_HA
+    st = getVariable(9552);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_HA", 56);
     st->size_data = sizeof(BOOL);
@@ -517,8 +517,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 9663 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_LW
-    st = getVariable(9663);
+  { // 9553 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_LW
+    st = getVariable(9553);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_LW", 56);
     st->size_data = sizeof(BOOL);
@@ -529,8 +529,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 9664 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_HW
-    st = getVariable(9664);
+  { // 9554 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_HW
+    st = getVariable(9554);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.ISVALIDREF_HW", 56);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 9665 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INPLL
-    st = getVariable(9665);
+  { // 9555 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INPLL
+    st = getVariable(9555);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INPLL", 48);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 9666 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INPHL
-    st = getVariable(9666);
+  { // 9556 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INPHL
+    st = getVariable(9556);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INPHL", 48);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 9667 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(9667);
+  { // 9557 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(9557);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CURRENTSHOTCIRCUIT", 61);
     st->size_data = sizeof(LREAL);
@@ -577,8 +577,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9668 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(9668);
+  { // 9558 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(9558);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CURRENTBREAKCIRCUIT", 62);
     st->size_data = sizeof(LREAL);
@@ -589,8 +589,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9669 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXCHANGESPEED
-    st = getVariable(9669);
+  { // 9559 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXCHANGESPEED
+    st = getVariable(9559);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXCHANGESPEED", 57);
     st->size_data = sizeof(LREAL);
@@ -601,8 +601,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9670 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(9670);
+  { // 9560 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(9560);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXCHANGESPEEDDOWN", 61);
     st->size_data = sizeof(LREAL);
@@ -613,8 +613,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9671 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CHANGESPEED
-    st = getVariable(9671);
+  { // 9561 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CHANGESPEED
+    st = getVariable(9561);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.CHANGESPEED", 54);
     st->size_data = sizeof(LREAL);
@@ -625,8 +625,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9672 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HISTERESIS
-    st = getVariable(9672);
+  { // 9562 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HISTERESIS
+    st = getVariable(9562);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.HISTERESIS", 53);
     st->size_data = sizeof(LREAL);
@@ -637,8 +637,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 9673 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.APERTURFILTER
-    st = getVariable(9673);
+  { // 9563 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.APERTURFILTER
+    st = getVariable(9563);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.APERTURFILTER", 56);
     st->size_data = sizeof(LREAL);
@@ -649,8 +649,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9674 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.EXPONENTIALFILTER
-    st = getVariable(9674);
+  { // 9564 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.EXPONENTIALFILTER
+    st = getVariable(9564);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.EXPONENTIALFILTER", 60);
     st->size_data = sizeof(LREAL);
@@ -661,8 +661,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9675 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.RASSOGLASOVANIE
-    st = getVariable(9675);
+  { // 9565 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.RASSOGLASOVANIE
+    st = getVariable(9565);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.RASSOGLASOVANIE", 58);
     st->size_data = sizeof(LREAL);
@@ -673,8 +673,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 9676 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(9676);
+  { // 9566 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(9566);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9677 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_LA
-    st = getVariable(9677);
+  { // 9567 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_LA
+    st = getVariable(9567);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_LA", 54);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 9678 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_HA
-    st = getVariable(9678);
+  { // 9568 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_HA
+    st = getVariable(9568);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_HA", 54);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 9679 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_LW
-    st = getVariable(9679);
+  { // 9569 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_LW
+    st = getVariable(9569);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_LW", 54);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 9680 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_HW
-    st = getVariable(9680);
+  { // 9570 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_HW
+    st = getVariable(9570);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DISABLED_HW", 54);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 9681 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYLA
-    st = getVariable(9681);
+  { // 9571 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYLA
+    st = getVariable(9571);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYLA", 50);
     st->size_data = sizeof(TIME);
@@ -745,8 +745,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 9682 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYLW
-    st = getVariable(9682);
+  { // 9572 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYLW
+    st = getVariable(9572);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYLW", 50);
     st->size_data = sizeof(TIME);
@@ -757,8 +757,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 9683 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYHW
-    st = getVariable(9683);
+  { // 9573 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYHW
+    st = getVariable(9573);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYHW", 50);
     st->size_data = sizeof(TIME);
@@ -769,8 +769,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 9684 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYHA
-    st = getVariable(9684);
+  { // 9574 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYHA
+    st = getVariable(9574);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DELAYHA", 50);
     st->size_data = sizeof(TIME);
@@ -781,8 +781,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 9685 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(9685);
+  { // 9575 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(9575);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MINVALUE_ISVALIDREF", 62);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9686 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(9686);
+  { // 9576 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(9576);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXVALUE_ISVALIDREF", 62);
     st->size_data = sizeof(BOOL);
@@ -805,8 +805,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9687 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MINVALUE
-    st = getVariable(9687);
+  { // 9577 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MINVALUE
+    st = getVariable(9577);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MINVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -817,8 +817,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9688 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXVALUE
-    st = getVariable(9688);
+  { // 9578 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXVALUE
+    st = getVariable(9578);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.MAXVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9689 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(9689);
+  { // 9579 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(9579);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9690 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.IMIT
-    st = getVariable(9690);
+  { // 9580 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.IMIT
+    st = getVariable(9580);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.IMIT", 47);
     st->size_data = sizeof(BOOL);
@@ -853,8 +853,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 9691 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.REMONT
-    st = getVariable(9691);
+  { // 9581 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.REMONT
+    st = getVariable(9581);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.REMONT", 49);
     st->size_data = sizeof(BOOL);
@@ -865,8 +865,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 9692 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS
-    st = getVariable(9692);
+  { // 9582 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS
+    st = getVariable(9582);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS", 45);
     st->size_data = sizeof(BOOL);
@@ -877,8 +877,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 9693 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS_MIN
-    st = getVariable(9693);
+  { // 9583 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS_MIN
+    st = getVariable(9583);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS_MIN", 49);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 9694 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS_MAX
-    st = getVariable(9694);
+  { // 9584 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS_MAX
+    st = getVariable(9584);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.NS_MAX", 49);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 9695 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND_ALG
-    st = getVariable(9695);
+  { // 9585 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND_ALG
+    st = getVariable(9585);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -913,8 +913,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 9696 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND_ARM
-    st = getVariable(9696);
+  { // 9586 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND_ARM
+    st = getVariable(9586);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 9697 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DMAXCHANGESPEED
-    st = getVariable(9697);
+  { // 9587 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DMAXCHANGESPEED
+    st = getVariable(9587);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DMAXCHANGESPEED", 58);
     st->size_data = sizeof(LREAL);
@@ -937,8 +937,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9698 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(9698);
+  { // 9588 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(9588);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.STRAI.DMAXCHANGESPEEDDOWN", 62);
     st->size_data = sizeof(LREAL);
@@ -949,8 +949,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9699 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NOTDEFINED
-    st = getVariable(9699);
+  { // 9589 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NOTDEFINED
+    st = getVariable(9589);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NOTDEFINED", 57);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 9700 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LL
-    st = getVariable(9700);
+  { // 9590 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LL
+    st = getVariable(9590);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LL", 49);
     st->size_data = sizeof(BYTE);
@@ -973,8 +973,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 9701 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HL
-    st = getVariable(9701);
+  { // 9591 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HL
+    st = getVariable(9591);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HL", 49);
     st->size_data = sizeof(BYTE);
@@ -985,8 +985,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 9702 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NOTRELIABLE
-    st = getVariable(9702);
+  { // 9592 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NOTRELIABLE
+    st = getVariable(9592);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NOTRELIABLE", 58);
     st->size_data = sizeof(BYTE);
@@ -997,8 +997,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 9703 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NORMAL
-    st = getVariable(9703);
+  { // 9593 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NORMAL
+    st = getVariable(9593);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.NORMAL", 53);
     st->size_data = sizeof(BYTE);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 9704 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LW
-    st = getVariable(9704);
+  { // 9594 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LW
+    st = getVariable(9594);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LW", 49);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 9705 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HW
-    st = getVariable(9705);
+  { // 9595 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HW
+    st = getVariable(9595);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HW", 49);
     st->size_data = sizeof(BYTE);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 9706 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LA
-    st = getVariable(9706);
+  { // 9596 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LA
+    st = getVariable(9596);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.LA", 49);
     st->size_data = sizeof(BYTE);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 9707 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HA
-    st = getVariable(9707);
+  { // 9597 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HA
+    st = getVariable(9597);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._STATUSAI.HA", 49);
     st->size_data = sizeof(BYTE);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 9708 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_SETUSTAVKI
-    st = getVariable(9708);
+  { // 9598 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_SETUSTAVKI
+    st = getVariable(9598);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_SETUSTAVKI", 66);
     st->size_data = sizeof(WORD);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETUSTAVKI;
     st->value_p = p_WORD;
   }
-  { // 9709 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_SETREMONT
-    st = getVariable(9709);
+  { // 9599 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_SETREMONT
+    st = getVariable(9599);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_SETREMONT", 65);
     st->size_data = sizeof(WORD);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9710 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_RESETREMONT
-    st = getVariable(9710);
+  { // 9600 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_RESETREMONT
+    st = getVariable(9600);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_RESETREMONT", 67);
     st->size_data = sizeof(WORD);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_RESETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9711 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_KVITNOTRELIABLE
-    st = getVariable(9711);
+  { // 9601 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_KVITNOTRELIABLE
+    st = getVariable(9601);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._COMMANDANALOG.CMD_KVITNOTRELIABLE", 71);
     st->size_data = sizeof(WORD);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_KVITNOTRELIABLE;
     st->value_p = p_WORD;
   }
-  { // 9716 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.NONE
-    st = getVariable(9716);
+  { // 9606 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.NONE
+    st = getVariable(9606);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.NONE", 59);
     st->size_data = sizeof(BYTE);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->NONE;
     st->value_p = p_BYTE;
   }
-  { // 9717 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LL
-    st = getVariable(9717);
+  { // 9607 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LL
+    st = getVariable(9607);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LL", 57);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LL;
     st->value_p = p_BYTE;
   }
-  { // 9718 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LW
-    st = getVariable(9718);
+  { // 9608 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LW
+    st = getVariable(9608);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LW", 57);
     st->size_data = sizeof(BYTE);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LW;
     st->value_p = p_BYTE;
   }
-  { // 9719 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HW
-    st = getVariable(9719);
+  { // 9609 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HW
+    st = getVariable(9609);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HW", 57);
     st->size_data = sizeof(BYTE);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HW;
     st->value_p = p_BYTE;
   }
-  { // 9720 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LA
-    st = getVariable(9720);
+  { // 9610 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LA
+    st = getVariable(9610);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.LA", 57);
     st->size_data = sizeof(BYTE);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LA;
     st->value_p = p_BYTE;
   }
-  { // 9721 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HA
-    st = getVariable(9721);
+  { // 9611 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HA
+    st = getVariable(9611);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HA", 57);
     st->size_data = sizeof(BYTE);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HA;
     st->value_p = p_BYTE;
   }
-  { // 9722 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HL
-    st = getVariable(9722);
+  { // 9612 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HL
+    st = getVariable(9612);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.HL", 57);
     st->size_data = sizeof(BYTE);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HL;
     st->value_p = p_BYTE;
   }
-  { // 9723 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.SIPUP
-    st = getVariable(9723);
+  { // 9613 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.SIPUP
+    st = getVariable(9613);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.SIPUP", 60);
     st->size_data = sizeof(BYTE);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPUP;
     st->value_p = p_BYTE;
   }
-  { // 9724 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.SIPDOWN
-    st = getVariable(9724);
+  { // 9614 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.SIPDOWN
+    st = getVariable(9614);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._ANALOGLIMITFLAGS.SIPDOWN", 62);
     st->size_data = sizeof(BYTE);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPDOWN;
     st->value_p = p_BYTE;
   }
-  { // 9725 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NOTRELIABLE
-    st = getVariable(9725);
+  { // 9615 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NOTRELIABLE
+    st = getVariable(9615);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NOTRELIABLE", 48);
     st->size_data = sizeof(BOOL);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->NOTRELIABLE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9726 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUE
-    st = getVariable(9726);
+  { // 9616 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUE
+    st = getVariable(9616);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -1235,8 +1235,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->_LASTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9727 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.IN
-    st = getVariable(9727);
+  { // 9617 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.IN
+    st = getVariable(9617);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -1247,8 +1247,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 9728 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.PT
-    st = getVariable(9728);
+  { // 9618 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.PT
+    st = getVariable(9618);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.PT", 53);
     st->size_data = sizeof(TIME);
@@ -1259,8 +1259,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 9729 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.Q
-    st = getVariable(9729);
+  { // 9619 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.Q
+    st = getVariable(9619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 9730 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.ET
-    st = getVariable(9730);
+  { // 9620 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.ET
+    st = getVariable(9620);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER.ET", 53);
     st->size_data = sizeof(TIME);
@@ -1283,8 +1283,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 9731 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER
-    st = getVariable(9731);
+  { // 9621 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER
+    st = getVariable(9621);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMER", 50);
     st->size_data = sizeof(TON);
@@ -1294,8 +1294,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 9732 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.IN
-    st = getVariable(9732);
+  { // 9622 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.IN
+    st = getVariable(9622);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.IN", 55);
     st->size_data = sizeof(BOOL);
@@ -1306,8 +1306,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 9733 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.PT
-    st = getVariable(9733);
+  { // 9623 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.PT
+    st = getVariable(9623);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.PT", 55);
     st->size_data = sizeof(TIME);
@@ -1318,8 +1318,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 9734 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.Q
-    st = getVariable(9734);
+  { // 9624 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.Q
+    st = getVariable(9624);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -1330,8 +1330,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 9735 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.ET
-    st = getVariable(9735);
+  { // 9625 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.ET
+    st = getVariable(9625);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER.ET", 55);
     st->size_data = sizeof(TIME);
@@ -1342,8 +1342,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 9736 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER
-    st = getVariable(9736);
+  { // 9626 PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER
+    st = getVariable(9626);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V._LASTVALUETIMER", 52);
     st->size_data = sizeof(TON);
@@ -1353,8 +1353,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->_LASTVALUETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 9737 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMERPRIZNAK
-    st = getVariable(9737);
+  { // 9627 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMERPRIZNAK
+    st = getVariable(9627);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RESETCMDTIMERPRIZNAK", 57);
     st->size_data = sizeof(BOOL);
@@ -1364,8 +1364,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9738 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.K
-    st = getVariable(9738);
+  { // 9628 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.K
+    st = getVariable(9628);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.K", 38);
     st->size_data = sizeof(LREAL);
@@ -1375,8 +1375,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->K;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9739 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.B
-    st = getVariable(9739);
+  { // 9629 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.B
+    st = getVariable(9629);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.B", 38);
     st->size_data = sizeof(LREAL);
@@ -1386,8 +1386,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->B;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9740 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.AP
-    st = getVariable(9740);
+  { // 9630 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.AP
+    st = getVariable(9630);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.AP", 39);
     st->size_data = sizeof(LREAL);
@@ -1397,8 +1397,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->AP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9741 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RAZNITSA
-    st = getVariable(9741);
+  { // 9631 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RAZNITSA
+    st = getVariable(9631);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RAZNITSA", 45);
     st->size_data = sizeof(LREAL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RAZNITSA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9742 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RABS
-    st = getVariable(9742);
+  { // 9632 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RABS
+    st = getVariable(9632);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.RABS", 41);
     st->size_data = sizeof(LREAL);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RABS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9743 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.H
-    st = getVariable(9743);
+  { // 9633 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.H
+    st = getVariable(9633);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.H", 38);
     st->size_data = sizeof(LREAL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->H;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9744 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.MISMATCH
-    st = getVariable(9744);
+  { // 9634 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.MISMATCH
+    st = getVariable(9634);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.MISMATCH", 45);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->MISMATCH;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9745 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.PARAMETR
-    st = getVariable(9745);
+  { // 9635 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.PARAMETR
+    st = getVariable(9635);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.PARAMETR", 45);
     st->size_data = sizeof(BYTE);
@@ -1452,8 +1452,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9746 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.SOURCE
-    st = getVariable(9746);
+  { // 9636 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.SOURCE
+    st = getVariable(9636);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.SOURCE", 43);
     st->size_data = sizeof(BYTE);
@@ -1463,8 +1463,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9747 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.CMD
-    st = getVariable(9747);
+  { // 9637 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.CMD
+    st = getVariable(9637);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.CMD", 40);
     st->size_data = sizeof(BYTE);
@@ -1474,8 +1474,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9748 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LASTCMD
-    st = getVariable(9748);
+  { // 9638 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LASTCMD
+    st = getVariable(9638);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LASTCMD", 44);
     st->size_data = sizeof(BYTE);
@@ -1485,8 +1485,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9749 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.SOURCE_FOR_STATUS
-    st = getVariable(9749);
+  { // 9639 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.SOURCE_FOR_STATUS
+    st = getVariable(9639);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.SOURCE_FOR_STATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -1496,8 +1496,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9750 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.CMD_FOR_STATUS
-    st = getVariable(9750);
+  { // 9640 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.CMD_FOR_STATUS
+    st = getVariable(9640);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.CMD_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -1507,8 +1507,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9751 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(9751);
+  { // 9641 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(9641);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.COMMAND_ERROR_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1518,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9752 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ONINIT
-    st = getVariable(9752);
+  { // 9642 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ONINIT
+    st = getVariable(9642);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ONINIT", 43);
     st->size_data = sizeof(BOOL);
@@ -1529,8 +1529,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9753 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG.CLK
-    st = getVariable(9753);
+  { // 9643 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG.CLK
+    st = getVariable(9643);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG.CLK", 49);
     st->size_data = sizeof(BOOL);
@@ -1541,8 +1541,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9754 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG.Q
-    st = getVariable(9754);
+  { // 9644 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG.Q
+    st = getVariable(9644);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1553,8 +1553,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9755 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG
-    st = getVariable(9755);
+  { // 9645 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG
+    st = getVariable(9645);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.OFF_TRIG", 45);
     st->size_data = sizeof(R_TRIG);
@@ -1564,8 +1564,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->OFF_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9756 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG.CLK
-    st = getVariable(9756);
+  { // 9646 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG.CLK
+    st = getVariable(9646);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG.CLK", 48);
     st->size_data = sizeof(BOOL);
@@ -1576,8 +1576,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9757 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG.Q
-    st = getVariable(9757);
+  { // 9647 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG.Q
+    st = getVariable(9647);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -1588,8 +1588,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9758 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG
-    st = getVariable(9758);
+  { // 9648 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG
+    st = getVariable(9648);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.ON_TRIG", 44);
     st->size_data = sizeof(R_TRIG);
@@ -1599,8 +1599,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->ON_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9759 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG.CLK
-    st = getVariable(9759);
+  { // 9649 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG.CLK
+    st = getVariable(9649);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG.CLK", 52);
     st->size_data = sizeof(BOOL);
@@ -1611,8 +1611,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9760 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG.Q
-    st = getVariable(9760);
+  { // 9650 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG.Q
+    st = getVariable(9650);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -1623,8 +1623,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9761 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG
-    st = getVariable(9761);
+  { // 9651 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG
+    st = getVariable(9651);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.REMONT_TRIG", 48);
     st->size_data = sizeof(R_TRIG);
@@ -1634,8 +1634,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->REMONT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9762 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG.CLK
-    st = getVariable(9762);
+  { // 9652 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG.CLK
+    st = getVariable(9652);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG.CLK", 48);
     st->size_data = sizeof(BOOL);
@@ -1646,8 +1646,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9763 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG.Q
-    st = getVariable(9763);
+  { // 9653 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG.Q
+    st = getVariable(9653);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -1658,8 +1658,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9764 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG
-    st = getVariable(9764);
+  { // 9654 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG
+    st = getVariable(9654);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.LL_TRIG", 44);
     st->size_data = sizeof(R_TRIG);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->LL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9765 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG.CLK
-    st = getVariable(9765);
+  { // 9655 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG.CLK
+    st = getVariable(9655);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG.CLK", 48);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9766 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG.Q
-    st = getVariable(9766);
+  { // 9656 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG.Q
+    st = getVariable(9656);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9767 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG
-    st = getVariable(9767);
+  { // 9657 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG
+    st = getVariable(9657);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.HL_TRIG", 44);
     st->size_data = sizeof(R_TRIG);
@@ -1704,8 +1704,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->HL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9768 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG.CLK
-    st = getVariable(9768);
+  { // 9658 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG.CLK
+    st = getVariable(9658);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG.CLK", 52);
     st->size_data = sizeof(BOOL);
@@ -1716,8 +1716,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9769 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG.Q
-    st = getVariable(9769);
+  { // 9659 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG.Q
+    st = getVariable(9659);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -1728,8 +1728,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9770 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG
-    st = getVariable(9770);
+  { // 9660 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG
+    st = getVariable(9660);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NORMAL_TRIG", 48);
     st->size_data = sizeof(R_TRIG);
@@ -1739,8 +1739,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->NORMAL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9771 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG.CLK
-    st = getVariable(9771);
+  { // 9661 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG.CLK
+    st = getVariable(9661);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG.CLK", 56);
     st->size_data = sizeof(BOOL);
@@ -1751,8 +1751,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9772 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG.Q
-    st = getVariable(9772);
+  { // 9662 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG.Q
+    st = getVariable(9662);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -1763,8 +1763,8 @@ int __variables_init_FB_KONTROL_POST220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9773 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG
-    st = getVariable(9773);
+  { // 9663 PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG
+    st = getVariable(9663);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_POST220V.NEDOSTOVER_TRIG", 52);
     st->size_data = sizeof(R_TRIG);

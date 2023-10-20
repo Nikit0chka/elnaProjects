@@ -181,8 +181,8 @@ int __variables_init_FB_REMONTALG(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 42085 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INRUNONSTART
-    st = getVariable(42085);
+  { // 40736 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INRUNONSTART
+    st = getVariable(40736);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INRUNONSTART", 56);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 42086 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCANRUN
-    st = getVariable(42086);
+  { // 40737 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCANRUN
+    st = getVariable(40737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCANRUN", 52);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 42087 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INHASERROR
-    st = getVariable(42087);
+  { // 40738 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INHASERROR
+    st = getVariable(40738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INHASERROR", 54);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 42088 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INENDED
-    st = getVariable(42088);
+  { // 40739 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INENDED
+    st = getVariable(40739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 42089 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INOPCCOMMANDSDISABLED
-    st = getVariable(42089);
+  { // 40740 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INOPCCOMMANDSDISABLED
+    st = getVariable(40740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42090 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND
-    st = getVariable(42090);
+  { // 40741 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND
+    st = getVariable(40741);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -253,8 +253,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42091 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND_ARM
-    st = getVariable(42091);
+  { // 40742 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND_ARM
+    st = getVariable(40742);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -265,8 +265,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42092 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND_ALG
-    st = getVariable(42092);
+  { // 40743 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND_ALG
+    st = getVariable(40743);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -277,8 +277,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42093 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.STATUS
-    st = getVariable(42093);
+  { // 40744 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.STATUS
+    st = getVariable(40744);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42094 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.CANRUN
-    st = getVariable(42094);
+  { // 40745 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.CANRUN
+    st = getVariable(40745);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.CANRUN", 50);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 42095 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.OPCCOMMANDSDISABLED
-    st = getVariable(42095);
+  { // 40746 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.OPCCOMMANDSDISABLED
+    st = getVariable(40746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42096 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ISRUNING
-    st = getVariable(42096);
+  { // 40747 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ISRUNING
+    st = getVariable(40747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ISRUNING", 52);
     st->size_data = sizeof(BOOL);
@@ -325,8 +325,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 42097 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.HASERROR
-    st = getVariable(42097);
+  { // 40748 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.HASERROR
+    st = getVariable(40748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.HASERROR", 52);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 42098 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ISENDED
-    st = getVariable(42098);
+  { // 40749 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ISENDED
+    st = getVariable(40749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ISENDED", 51);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 42099 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.RUNONSTART
-    st = getVariable(42099);
+  { // 40750 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.RUNONSTART
+    st = getVariable(40750);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.RUNONSTART", 54);
     st->size_data = sizeof(BOOL);
@@ -361,8 +361,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 42100 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.START
-    st = getVariable(42100);
+  { // 40751 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.START
+    st = getVariable(40751);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.START", 49);
     st->size_data = sizeof(DWORD);
@@ -373,8 +373,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 42101 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ERROR
-    st = getVariable(42101);
+  { // 40752 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ERROR
+    st = getVariable(40752);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.ERROR", 49);
     st->size_data = sizeof(DWORD);
@@ -385,8 +385,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 42102 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.TOP
-    st = getVariable(42102);
+  { // 40753 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.TOP
+    st = getVariable(40753);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.STRALG.TOP", 47);
     st->size_data = sizeof(DWORD);
@@ -397,8 +397,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 42107 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.SOURCE
-    st = getVariable(42107);
+  { // 40758 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.SOURCE
+    st = getVariable(40758);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.SOURCE", 43);
     st->size_data = sizeof(BYTE);
@@ -408,8 +408,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_REMONTALG->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42108 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.CMD
-    st = getVariable(42108);
+  { // 40759 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.CMD
+    st = getVariable(40759);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.CMD", 40);
     st->size_data = sizeof(BYTE);
@@ -419,8 +419,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_REMONTALG->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42109 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.LASTCMD
-    st = getVariable(42109);
+  { // 40760 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.LASTCMD
+    st = getVariable(40760);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.LASTCMD", 44);
     st->size_data = sizeof(BYTE);
@@ -430,8 +430,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_REMONTALG->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42110 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.SOURCE_FOR_STATUS
-    st = getVariable(42110);
+  { // 40761 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.SOURCE_FOR_STATUS
+    st = getVariable(40761);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.SOURCE_FOR_STATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -441,8 +441,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_REMONTALG->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42111 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.CMD_FOR_STATUS
-    st = getVariable(42111);
+  { // 40762 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.CMD_FOR_STATUS
+    st = getVariable(40762);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.CMD_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -452,8 +452,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_REMONTALG->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42112 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(42112);
+  { // 40763 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(40763);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.COMMAND_ERROR_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -463,8 +463,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_REMONTALG->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42113 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.IN
-    st = getVariable(42113);
+  { // 40764 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.IN
+    st = getVariable(40764);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -475,8 +475,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 42114 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.PT
-    st = getVariable(42114);
+  { // 40765 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.PT
+    st = getVariable(40765);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.PT", 53);
     st->size_data = sizeof(TIME);
@@ -487,8 +487,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 42115 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.Q
-    st = getVariable(42115);
+  { // 40766 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.Q
+    st = getVariable(40766);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -499,8 +499,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 42116 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.ET
-    st = getVariable(42116);
+  { // 40767 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.ET
+    st = getVariable(40767);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER.ET", 53);
     st->size_data = sizeof(TIME);
@@ -511,8 +511,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 42117 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER
-    st = getVariable(42117);
+  { // 40768 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER
+    st = getVariable(40768);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMER", 50);
     st->size_data = sizeof(TON);
@@ -522,8 +522,8 @@ int __variables_init_FB_REMONTALG(){
     p_TON = (TON*)&p_REMONTALG->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 42118 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMERPRIZNAK
-    st = getVariable(42118);
+  { // 40769 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMERPRIZNAK
+    st = getVariable(40769);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.RESETCMDTIMERPRIZNAK", 57);
     st->size_data = sizeof(BOOL);
@@ -533,8 +533,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_REMONTALG->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 42119 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PROTECTMANAGER.INCOMMAND
-    st = getVariable(42119);
+  { // 40770 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PROTECTMANAGER.INCOMMAND
+    st = getVariable(40770);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PROTECTMANAGER.INCOMMAND", 61);
     st->size_data = sizeof(BYTE);
@@ -545,8 +545,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_PROTECTIONSMANAGER->INCOMMAND;
     st->value_p = p_BYTE;
   }
-  { // 42120 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PROTECTMANAGER.PROTECTIONINREMONT
-    st = getVariable(42120);
+  { // 40771 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PROTECTMANAGER.PROTECTIONINREMONT
+    st = getVariable(40771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PROTECTMANAGER.PROTECTIONINREMONT", 70);
     st->size_data = sizeof(BOOL);
@@ -557,8 +557,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_PROTECTIONSMANAGER->PROTECTIONINREMONT;
     st->value_p = p_BOOL;
   }
-  { // 42121 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.MODE
-    st = getVariable(42121);
+  { // 40772 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.MODE
+    st = getVariable(40772);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.MODE", 52);
     st->size_data = sizeof(UINT);
@@ -569,8 +569,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->MODE;
     st->value_p = p_UINT;
   }
-  { // 42122 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.NARABOTKA
-    st = getVariable(42122);
+  { // 40773 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.NARABOTKA
+    st = getVariable(40773);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.NARABOTKA", 57);
     st->size_data = sizeof(UINT);
@@ -581,8 +581,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NARABOTKA;
     st->value_p = p_UINT;
   }
-  { // 42123 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.NMODE
-    st = getVariable(42123);
+  { // 40774 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.NMODE
+    st = getVariable(40774);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.NMODE", 53);
     st->size_data = sizeof(UINT);
@@ -593,8 +593,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NMODE;
     st->value_p = p_UINT;
   }
-  { // 42124 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.ANALOGSPS
-    st = getVariable(42124);
+  { // 40775 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.ANALOGSPS
+    st = getVariable(40775);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.ANALOGSPS", 57);
     st->size_data = sizeof(BOOL);
@@ -605,8 +605,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->ANALOGSPS;
     st->value_p = p_BOOL;
   }
-  { // 42125 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.DISCRETPS
-    st = getVariable(42125);
+  { // 40776 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.DISCRETPS
+    st = getVariable(40776);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.DISCRETPS", 57);
     st->size_data = sizeof(BOOL);
@@ -617,8 +617,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->DISCRETPS;
     st->value_p = p_BOOL;
   }
-  { // 42126 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.PROTECTIONSIGNALING
-    st = getVariable(42126);
+  { // 40777 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.PROTECTIONSIGNALING
+    st = getVariable(40777);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.ALGMANAGER.PROTECTIONSIGNALING", 67);
     st->size_data = sizeof(BOOL);
@@ -629,8 +629,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->PROTECTIONSIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 42127 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_NOTDEFINED
-    st = getVariable(42127);
+  { // 40778 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_NOTDEFINED
+    st = getVariable(40778);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_NOTDEFINED", 60);
     st->size_data = sizeof(UINT);
@@ -641,8 +641,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_NOTDEFINED;
     st->value_p = p_UINT;
   }
-  { // 42128 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_REMONT
-    st = getVariable(42128);
+  { // 40779 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_REMONT
+    st = getVariable(40779);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_REMONT", 56);
     st->size_data = sizeof(UINT);
@@ -653,8 +653,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_REMONT;
     st->value_p = p_UINT;
   }
-  { // 42129 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_STOP
-    st = getVariable(42129);
+  { // 40780 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_STOP
+    st = getVariable(40780);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_STOP", 54);
     st->size_data = sizeof(UINT);
@@ -665,8 +665,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_STOP;
     st->value_p = p_UINT;
   }
-  { // 42130 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_READY
-    st = getVariable(42130);
+  { // 40781 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_READY
+    st = getVariable(40781);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_READY", 55);
     st->size_data = sizeof(UINT);
@@ -677,8 +677,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_READY;
     st->value_p = p_UINT;
   }
-  { // 42131 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSKV
-    st = getVariable(42131);
+  { // 40782 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSKV
+    st = getVariable(40782);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSKV", 55);
     st->size_data = sizeof(UINT);
@@ -689,8 +689,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_PUSKV;
     st->value_p = p_UINT;
   }
-  { // 42132 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSKK
-    st = getVariable(42132);
+  { // 40783 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSKK
+    st = getVariable(40783);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSKK", 55);
     st->size_data = sizeof(UINT);
@@ -701,8 +701,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_PUSKK;
     st->value_p = p_UINT;
   }
-  { // 42133 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTDPMG
-    st = getVariable(42133);
+  { // 40784 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTDPMG
+    st = getVariable(40784);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTDPMG", 58);
     st->size_data = sizeof(UINT);
@@ -713,8 +713,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTDPMG;
     st->value_p = p_UINT;
   }
-  { // 42134 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTPMS
-    st = getVariable(42134);
+  { // 40785 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTPMS
+    st = getVariable(40785);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTPMS", 57);
     st->size_data = sizeof(UINT);
@@ -725,8 +725,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTPMS;
     st->value_p = p_UINT;
   }
-  { // 42135 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_APUSK
-    st = getVariable(42135);
+  { // 40786 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_APUSK
+    st = getVariable(40786);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_APUSK", 55);
     st->size_data = sizeof(UINT);
@@ -737,8 +737,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_APUSK;
     st->value_p = p_UINT;
   }
-  { // 42136 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_MPUSK
-    st = getVariable(42136);
+  { // 40787 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_MPUSK
+    st = getVariable(40787);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_MPUSK", 55);
     st->size_data = sizeof(UINT);
@@ -749,8 +749,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_MPUSK;
     st->value_p = p_UINT;
   }
-  { // 42137 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_WORK_RING
-    st = getVariable(42137);
+  { // 40788 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_WORK_RING
+    st = getVariable(40788);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_WORK_RING", 59);
     st->size_data = sizeof(UINT);
@@ -761,8 +761,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_WORK_RING;
     st->value_p = p_UINT;
   }
-  { // 42138 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_WORK_LINE
-    st = getVariable(42138);
+  { // 40789 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_WORK_LINE
+    st = getVariable(40789);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_WORK_LINE", 59);
     st->size_data = sizeof(UINT);
@@ -773,8 +773,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_WORK_LINE;
     st->value_p = p_UINT;
   }
-  { // 42139 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_NO
-    st = getVariable(42139);
+  { // 40790 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_NO
+    st = getVariable(40790);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_NO", 52);
     st->size_data = sizeof(UINT);
@@ -785,8 +785,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_NO;
     st->value_p = p_UINT;
   }
-  { // 42140 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_AO
-    st = getVariable(42140);
+  { // 40791 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_AO
+    st = getVariable(40791);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_AO", 52);
     st->size_data = sizeof(UINT);
@@ -797,8 +797,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_AO;
     st->value_p = p_UINT;
   }
-  { // 42141 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_EO
-    st = getVariable(42141);
+  { // 40792 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_EO
+    st = getVariable(40792);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_EO", 52);
     st->size_data = sizeof(UINT);
@@ -809,8 +809,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_EO;
     st->value_p = p_UINT;
   }
-  { // 42142 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTIM
-    st = getVariable(42142);
+  { // 40793 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTIM
+    st = getVariable(40793);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTIM", 56);
     st->size_data = sizeof(UINT);
@@ -821,8 +821,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTIM;
     st->value_p = p_UINT;
   }
-  { // 42143 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTAZ
-    st = getVariable(42143);
+  { // 40794 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTAZ
+    st = getVariable(40794);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_TESTAZ", 56);
     st->size_data = sizeof(UINT);
@@ -833,8 +833,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_TESTAZ;
     st->value_p = p_UINT;
   }
-  { // 42144 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSK_FIRST_FAZA1
-    st = getVariable(42144);
+  { // 40795 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSK_FIRST_FAZA1
+    st = getVariable(40795);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSK_FIRST_FAZA1", 66);
     st->size_data = sizeof(UINT);
@@ -845,8 +845,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_PUSK_FIRST_FAZA1;
     st->value_p = p_UINT;
   }
-  { // 42145 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSK_FIRST_FAZA2
-    st = getVariable(42145);
+  { // 40796 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSK_FIRST_FAZA2
+    st = getVariable(40796);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.MODEGPA.MODE_PUSK_FIRST_FAZA2", 66);
     st->size_data = sizeof(UINT);
@@ -857,8 +857,8 @@ int __variables_init_FB_REMONTALG(){
     p_UINT = (UINT*)&p_TYPE_MODEGPA->MODE_PUSK_FIRST_FAZA2;
     st->value_p = p_UINT;
   }
-  { // 42146 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESTARTALLSIGNALING
-    st = getVariable(42146);
+  { // 40797 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESTARTALLSIGNALING
+    st = getVariable(40797);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESTARTALLSIGNALING", 66);
     st->size_data = sizeof(BYTE);
@@ -869,8 +869,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->RESTARTALLSIGNALING;
     st->value_p = p_BYTE;
   }
-  { // 42147 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESTARTALLPROTECTIONS
-    st = getVariable(42147);
+  { // 40798 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESTARTALLPROTECTIONS
+    st = getVariable(40798);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESTARTALLPROTECTIONS", 68);
     st->size_data = sizeof(BYTE);
@@ -881,8 +881,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->RESTARTALLPROTECTIONS;
     st->value_p = p_BYTE;
   }
-  { // 42148 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.CHECKPROTECTIONS
-    st = getVariable(42148);
+  { // 40799 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.CHECKPROTECTIONS
+    st = getVariable(40799);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.CHECKPROTECTIONS", 63);
     st->size_data = sizeof(BYTE);
@@ -893,8 +893,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->CHECKPROTECTIONS;
     st->value_p = p_BYTE;
   }
-  { // 42149 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESETALLPROTECTIONS
-    st = getVariable(42149);
+  { // 40800 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESETALLPROTECTIONS
+    st = getVariable(40800);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.PMCOMMAND.RESETALLPROTECTIONS", 66);
     st->size_data = sizeof(BYTE);
@@ -905,8 +905,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDSPOTECTIONSMANAGER->RESETALLPROTECTIONS;
     st->value_p = p_BYTE;
   }
-  { // 42150 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND
-    st = getVariable(42150);
+  { // 40801 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND
+    st = getVariable(40801);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -918,8 +918,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42151 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.STATUS
-    st = getVariable(42151);
+  { // 40802 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.STATUS
+    st = getVariable(40802);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -931,8 +931,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42152 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ONSTATUS
-    st = getVariable(42152);
+  { // 40803 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ONSTATUS
+    st = getVariable(40803);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -944,8 +944,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42153 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INOPCCOMMANDSDISABLED
-    st = getVariable(42153);
+  { // 40804 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INOPCCOMMANDSDISABLED
+    st = getVariable(40804);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -957,8 +957,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42154 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SDVIG
-    st = getVariable(42154);
+  { // 40805 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SDVIG
+    st = getVariable(40805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -970,8 +970,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42155 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.NS
-    st = getVariable(42155);
+  { // 40806 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.NS
+    st = getVariable(40806);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -983,8 +983,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42156 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.DP
-    st = getVariable(42156);
+  { // 40807 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.DP
+    st = getVariable(40807);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -996,8 +996,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42157 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.COMMANDFAULT
-    st = getVariable(42157);
+  { // 40808 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.COMMANDFAULT
+    st = getVariable(40808);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42158 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ACCIDENT
-    st = getVariable(42158);
+  { // 40809 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ACCIDENT
+    st = getVariable(40809);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -1022,8 +1022,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42159 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.AUTO
-    st = getVariable(42159);
+  { // 40810 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.AUTO
+    st = getVariable(40810);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -1035,8 +1035,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42160 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.MANUAL
-    st = getVariable(42160);
+  { // 40811 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.MANUAL
+    st = getVariable(40811);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -1048,8 +1048,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42161 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.LOCAL
-    st = getVariable(42161);
+  { // 40812 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.LOCAL
+    st = getVariable(40812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -1061,8 +1061,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42162 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.DISTANCE
-    st = getVariable(42162);
+  { // 40813 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.DISTANCE
+    st = getVariable(40813);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -1074,8 +1074,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42163 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ERRORPOWEROFF
-    st = getVariable(42163);
+  { // 40814 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ERRORPOWEROFF
+    st = getVariable(40814);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -1087,8 +1087,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42164 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ERRORBLOCK
-    st = getVariable(42164);
+  { // 40815 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ERRORBLOCK
+    st = getVariable(40815);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -1100,8 +1100,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42165 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SO
-    st = getVariable(42165);
+  { // 40816 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SO
+    st = getVariable(40816);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -1113,8 +1113,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42166 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SZ
-    st = getVariable(42166);
+  { // 40817 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SZ
+    st = getVariable(40817);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -1126,8 +1126,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42167 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.OPCCOMMANDSDISABLED
-    st = getVariable(42167);
+  { // 40818 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.OPCCOMMANDSDISABLED
+    st = getVariable(40818);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1139,8 +1139,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42168 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.LASTCMDISON
-    st = getVariable(42168);
+  { // 40819 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.LASTCMDISON
+    st = getVariable(40819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -1152,8 +1152,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42169 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_STATON
-    st = getVariable(42169);
+  { // 40820 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_STATON
+    st = getVariable(40820);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42170 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_STATOFF
-    st = getVariable(42170);
+  { // 40821 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_STATOFF
+    st = getVariable(40821);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -1178,8 +1178,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42171 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_CMDON
-    st = getVariable(42171);
+  { // 40822 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_CMDON
+    st = getVariable(40822);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -1191,8 +1191,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42172 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_CMDOFF
-    st = getVariable(42172);
+  { // 40823 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_CMDOFF
+    st = getVariable(40823);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -1204,8 +1204,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42173 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INSO
-    st = getVariable(42173);
+  { // 40824 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INSO
+    st = getVariable(40824);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -1217,8 +1217,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42174 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INSZ
-    st = getVariable(42174);
+  { // 40825 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INSZ
+    st = getVariable(40825);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -1230,8 +1230,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42175 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INDP
-    st = getVariable(42175);
+  { // 40826 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INDP
+    st = getVariable(40826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -1243,8 +1243,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42176 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CONTINUEHOLDCOMMAND
-    st = getVariable(42176);
+  { // 40827 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CONTINUEHOLDCOMMAND
+    st = getVariable(40827);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -1256,8 +1256,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42177 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND_ALG
-    st = getVariable(42177);
+  { // 40828 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND_ALG
+    st = getVariable(40828);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -1269,8 +1269,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42178 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND_ARM
-    st = getVariable(42178);
+  { // 40829 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND_ARM
+    st = getVariable(40829);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -1282,8 +1282,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42179 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CMDON
-    st = getVariable(42179);
+  { // 40830 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CMDON
+    st = getVariable(40830);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -1295,8 +1295,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42180 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CMDOFF
-    st = getVariable(42180);
+  { // 40831 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CMDOFF
+    st = getVariable(40831);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -1308,8 +1308,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42181 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.RELIABILITY
-    st = getVariable(42181);
+  { // 40832 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.RELIABILITY
+    st = getVariable(40832);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN1.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -1321,8 +1321,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42182 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND
-    st = getVariable(42182);
+  { // 40833 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND
+    st = getVariable(40833);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -1334,8 +1334,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42183 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.STATUS
-    st = getVariable(42183);
+  { // 40834 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.STATUS
+    st = getVariable(40834);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -1347,8 +1347,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42184 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ONSTATUS
-    st = getVariable(42184);
+  { // 40835 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ONSTATUS
+    st = getVariable(40835);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -1360,8 +1360,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42185 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INOPCCOMMANDSDISABLED
-    st = getVariable(42185);
+  { // 40836 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INOPCCOMMANDSDISABLED
+    st = getVariable(40836);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -1373,8 +1373,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42186 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SDVIG
-    st = getVariable(42186);
+  { // 40837 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SDVIG
+    st = getVariable(40837);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -1386,8 +1386,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42187 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.NS
-    st = getVariable(42187);
+  { // 40838 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.NS
+    st = getVariable(40838);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -1399,8 +1399,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42188 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.DP
-    st = getVariable(42188);
+  { // 40839 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.DP
+    st = getVariable(40839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -1412,8 +1412,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42189 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.COMMANDFAULT
-    st = getVariable(42189);
+  { // 40840 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.COMMANDFAULT
+    st = getVariable(40840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -1425,8 +1425,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42190 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ACCIDENT
-    st = getVariable(42190);
+  { // 40841 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ACCIDENT
+    st = getVariable(40841);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -1438,8 +1438,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42191 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.AUTO
-    st = getVariable(42191);
+  { // 40842 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.AUTO
+    st = getVariable(40842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -1451,8 +1451,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42192 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.MANUAL
-    st = getVariable(42192);
+  { // 40843 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.MANUAL
+    st = getVariable(40843);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -1464,8 +1464,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42193 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.LOCAL
-    st = getVariable(42193);
+  { // 40844 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.LOCAL
+    st = getVariable(40844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -1477,8 +1477,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42194 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.DISTANCE
-    st = getVariable(42194);
+  { // 40845 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.DISTANCE
+    st = getVariable(40845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -1490,8 +1490,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42195 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ERRORPOWEROFF
-    st = getVariable(42195);
+  { // 40846 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ERRORPOWEROFF
+    st = getVariable(40846);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -1503,8 +1503,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42196 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ERRORBLOCK
-    st = getVariable(42196);
+  { // 40847 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ERRORBLOCK
+    st = getVariable(40847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -1516,8 +1516,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42197 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SO
-    st = getVariable(42197);
+  { // 40848 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SO
+    st = getVariable(40848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -1529,8 +1529,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42198 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SZ
-    st = getVariable(42198);
+  { // 40849 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SZ
+    st = getVariable(40849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -1542,8 +1542,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42199 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.OPCCOMMANDSDISABLED
-    st = getVariable(42199);
+  { // 40850 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.OPCCOMMANDSDISABLED
+    st = getVariable(40850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1555,8 +1555,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42200 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.LASTCMDISON
-    st = getVariable(42200);
+  { // 40851 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.LASTCMDISON
+    st = getVariable(40851);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -1568,8 +1568,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42201 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_STATON
-    st = getVariable(42201);
+  { // 40852 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_STATON
+    st = getVariable(40852);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -1581,8 +1581,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42202 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_STATOFF
-    st = getVariable(42202);
+  { // 40853 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_STATOFF
+    st = getVariable(40853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -1594,8 +1594,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42203 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_CMDON
-    st = getVariable(42203);
+  { // 40854 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_CMDON
+    st = getVariable(40854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -1607,8 +1607,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42204 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_CMDOFF
-    st = getVariable(42204);
+  { // 40855 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_CMDOFF
+    st = getVariable(40855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -1620,8 +1620,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42205 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INSO
-    st = getVariable(42205);
+  { // 40856 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INSO
+    st = getVariable(40856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -1633,8 +1633,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42206 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INSZ
-    st = getVariable(42206);
+  { // 40857 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INSZ
+    st = getVariable(40857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -1646,8 +1646,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42207 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INDP
-    st = getVariable(42207);
+  { // 40858 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INDP
+    st = getVariable(40858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -1659,8 +1659,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42208 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CONTINUEHOLDCOMMAND
-    st = getVariable(42208);
+  { // 40859 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CONTINUEHOLDCOMMAND
+    st = getVariable(40859);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -1672,8 +1672,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42209 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND_ALG
-    st = getVariable(42209);
+  { // 40860 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND_ALG
+    st = getVariable(40860);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -1685,8 +1685,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42210 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND_ARM
-    st = getVariable(42210);
+  { // 40861 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND_ARM
+    st = getVariable(40861);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -1698,8 +1698,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42211 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CMDON
-    st = getVariable(42211);
+  { // 40862 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CMDON
+    st = getVariable(40862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -1711,8 +1711,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42212 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CMDOFF
-    st = getVariable(42212);
+  { // 40863 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CMDOFF
+    st = getVariable(40863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -1724,8 +1724,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42213 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.RELIABILITY
-    st = getVariable(42213);
+  { // 40864 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.RELIABILITY
+    st = getVariable(40864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN2.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -1737,8 +1737,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42214 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND
-    st = getVariable(42214);
+  { // 40865 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND
+    st = getVariable(40865);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -1750,8 +1750,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42215 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.STATUS
-    st = getVariable(42215);
+  { // 40866 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.STATUS
+    st = getVariable(40866);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -1763,8 +1763,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42216 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ONSTATUS
-    st = getVariable(42216);
+  { // 40867 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ONSTATUS
+    st = getVariable(40867);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -1776,8 +1776,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42217 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INOPCCOMMANDSDISABLED
-    st = getVariable(42217);
+  { // 40868 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INOPCCOMMANDSDISABLED
+    st = getVariable(40868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -1789,8 +1789,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42218 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SDVIG
-    st = getVariable(42218);
+  { // 40869 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SDVIG
+    st = getVariable(40869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -1802,8 +1802,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42219 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.NS
-    st = getVariable(42219);
+  { // 40870 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.NS
+    st = getVariable(40870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -1815,8 +1815,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42220 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.DP
-    st = getVariable(42220);
+  { // 40871 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.DP
+    st = getVariable(40871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -1828,8 +1828,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42221 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.COMMANDFAULT
-    st = getVariable(42221);
+  { // 40872 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.COMMANDFAULT
+    st = getVariable(40872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -1841,8 +1841,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42222 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ACCIDENT
-    st = getVariable(42222);
+  { // 40873 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ACCIDENT
+    st = getVariable(40873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -1854,8 +1854,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42223 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.AUTO
-    st = getVariable(42223);
+  { // 40874 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.AUTO
+    st = getVariable(40874);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -1867,8 +1867,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42224 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.MANUAL
-    st = getVariable(42224);
+  { // 40875 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.MANUAL
+    st = getVariable(40875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -1880,8 +1880,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42225 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.LOCAL
-    st = getVariable(42225);
+  { // 40876 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.LOCAL
+    st = getVariable(40876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -1893,8 +1893,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42226 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.DISTANCE
-    st = getVariable(42226);
+  { // 40877 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.DISTANCE
+    st = getVariable(40877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -1906,8 +1906,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42227 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ERRORPOWEROFF
-    st = getVariable(42227);
+  { // 40878 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ERRORPOWEROFF
+    st = getVariable(40878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -1919,8 +1919,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42228 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ERRORBLOCK
-    st = getVariable(42228);
+  { // 40879 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ERRORBLOCK
+    st = getVariable(40879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -1932,8 +1932,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42229 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SO
-    st = getVariable(42229);
+  { // 40880 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SO
+    st = getVariable(40880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -1945,8 +1945,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42230 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SZ
-    st = getVariable(42230);
+  { // 40881 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SZ
+    st = getVariable(40881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -1958,8 +1958,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42231 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.OPCCOMMANDSDISABLED
-    st = getVariable(42231);
+  { // 40882 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.OPCCOMMANDSDISABLED
+    st = getVariable(40882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -1971,8 +1971,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42232 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.LASTCMDISON
-    st = getVariable(42232);
+  { // 40883 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.LASTCMDISON
+    st = getVariable(40883);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -1984,8 +1984,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42233 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_STATON
-    st = getVariable(42233);
+  { // 40884 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_STATON
+    st = getVariable(40884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -1997,8 +1997,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42234 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_STATOFF
-    st = getVariable(42234);
+  { // 40885 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_STATOFF
+    st = getVariable(40885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -2010,8 +2010,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42235 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_CMDON
-    st = getVariable(42235);
+  { // 40886 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_CMDON
+    st = getVariable(40886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -2023,8 +2023,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42236 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_CMDOFF
-    st = getVariable(42236);
+  { // 40887 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_CMDOFF
+    st = getVariable(40887);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -2036,8 +2036,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42237 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INSO
-    st = getVariable(42237);
+  { // 40888 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INSO
+    st = getVariable(40888);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -2049,8 +2049,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42238 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INSZ
-    st = getVariable(42238);
+  { // 40889 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INSZ
+    st = getVariable(40889);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -2062,8 +2062,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42239 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INDP
-    st = getVariable(42239);
+  { // 40890 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INDP
+    st = getVariable(40890);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -2075,8 +2075,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42240 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CONTINUEHOLDCOMMAND
-    st = getVariable(42240);
+  { // 40891 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CONTINUEHOLDCOMMAND
+    st = getVariable(40891);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -2088,8 +2088,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42241 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND_ALG
-    st = getVariable(42241);
+  { // 40892 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND_ALG
+    st = getVariable(40892);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -2101,8 +2101,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42242 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND_ARM
-    st = getVariable(42242);
+  { // 40893 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND_ARM
+    st = getVariable(40893);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -2114,8 +2114,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42243 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CMDON
-    st = getVariable(42243);
+  { // 40894 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CMDON
+    st = getVariable(40894);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -2127,8 +2127,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42244 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CMDOFF
-    st = getVariable(42244);
+  { // 40895 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CMDOFF
+    st = getVariable(40895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -2140,8 +2140,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42245 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.RELIABILITY
-    st = getVariable(42245);
+  { // 40896 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.RELIABILITY
+    st = getVariable(40896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -2153,8 +2153,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42246 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND
-    st = getVariable(42246);
+  { // 40897 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND
+    st = getVariable(40897);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -2166,8 +2166,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42247 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.STATUS
-    st = getVariable(42247);
+  { // 40898 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.STATUS
+    st = getVariable(40898);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -2179,8 +2179,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42248 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ONSTATUS
-    st = getVariable(42248);
+  { // 40899 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ONSTATUS
+    st = getVariable(40899);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ONSTATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -2192,8 +2192,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42249 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INOPCCOMMANDSDISABLED
-    st = getVariable(42249);
+  { // 40900 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INOPCCOMMANDSDISABLED
+    st = getVariable(40900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INOPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -2205,8 +2205,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42250 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SDVIG
-    st = getVariable(42250);
+  { // 40901 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SDVIG
+    st = getVariable(40901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SDVIG", 52);
     st->size_data = sizeof(BOOL);
@@ -2218,8 +2218,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42251 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.NS
-    st = getVariable(42251);
+  { // 40902 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.NS
+    st = getVariable(40902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.NS", 49);
     st->size_data = sizeof(BOOL);
@@ -2231,8 +2231,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42252 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.DP
-    st = getVariable(42252);
+  { // 40903 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.DP
+    st = getVariable(40903);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.DP", 49);
     st->size_data = sizeof(BOOL);
@@ -2244,8 +2244,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42253 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.COMMANDFAULT
-    st = getVariable(42253);
+  { // 40904 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.COMMANDFAULT
+    st = getVariable(40904);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.COMMANDFAULT", 59);
     st->size_data = sizeof(BOOL);
@@ -2257,8 +2257,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42254 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ACCIDENT
-    st = getVariable(42254);
+  { // 40905 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ACCIDENT
+    st = getVariable(40905);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ACCIDENT", 55);
     st->size_data = sizeof(BOOL);
@@ -2270,8 +2270,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42255 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.AUTO
-    st = getVariable(42255);
+  { // 40906 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.AUTO
+    st = getVariable(40906);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.AUTO", 51);
     st->size_data = sizeof(BOOL);
@@ -2283,8 +2283,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42256 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.MANUAL
-    st = getVariable(42256);
+  { // 40907 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.MANUAL
+    st = getVariable(40907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.MANUAL", 53);
     st->size_data = sizeof(BOOL);
@@ -2296,8 +2296,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42257 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.LOCAL
-    st = getVariable(42257);
+  { // 40908 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.LOCAL
+    st = getVariable(40908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.LOCAL", 52);
     st->size_data = sizeof(BOOL);
@@ -2309,8 +2309,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42258 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.DISTANCE
-    st = getVariable(42258);
+  { // 40909 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.DISTANCE
+    st = getVariable(40909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.DISTANCE", 55);
     st->size_data = sizeof(BOOL);
@@ -2322,8 +2322,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42259 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ERRORPOWEROFF
-    st = getVariable(42259);
+  { // 40910 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ERRORPOWEROFF
+    st = getVariable(40910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ERRORPOWEROFF", 60);
     st->size_data = sizeof(BOOL);
@@ -2335,8 +2335,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42260 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ERRORBLOCK
-    st = getVariable(42260);
+  { // 40911 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ERRORBLOCK
+    st = getVariable(40911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ERRORBLOCK", 57);
     st->size_data = sizeof(BOOL);
@@ -2348,8 +2348,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42261 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SO
-    st = getVariable(42261);
+  { // 40912 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SO
+    st = getVariable(40912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SO", 49);
     st->size_data = sizeof(BOOL);
@@ -2361,8 +2361,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42262 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SZ
-    st = getVariable(42262);
+  { // 40913 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SZ
+    st = getVariable(40913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.SZ", 49);
     st->size_data = sizeof(BOOL);
@@ -2374,8 +2374,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42263 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.OPCCOMMANDSDISABLED
-    st = getVariable(42263);
+  { // 40914 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.OPCCOMMANDSDISABLED
+    st = getVariable(40914);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.OPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -2387,8 +2387,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42264 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.LASTCMDISON
-    st = getVariable(42264);
+  { // 40915 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.LASTCMDISON
+    st = getVariable(40915);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.LASTCMDISON", 58);
     st->size_data = sizeof(BOOL);
@@ -2400,8 +2400,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42265 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_STATON
-    st = getVariable(42265);
+  { // 40916 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_STATON
+    st = getVariable(40916);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_STATON", 64);
     st->size_data = sizeof(BOOL);
@@ -2413,8 +2413,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42266 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_STATOFF
-    st = getVariable(42266);
+  { // 40917 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_STATOFF
+    st = getVariable(40917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_STATOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -2426,8 +2426,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42267 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_CMDON
-    st = getVariable(42267);
+  { // 40918 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_CMDON
+    st = getVariable(40918);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_CMDON", 63);
     st->size_data = sizeof(BOOL);
@@ -2439,8 +2439,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42268 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_CMDOFF
-    st = getVariable(42268);
+  { // 40919 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_CMDOFF
+    st = getVariable(40919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_CMDOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -2452,8 +2452,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42269 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INSO
-    st = getVariable(42269);
+  { // 40920 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INSO
+    st = getVariable(40920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INSO", 62);
     st->size_data = sizeof(BOOL);
@@ -2465,8 +2465,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42270 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INSZ
-    st = getVariable(42270);
+  { // 40921 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INSZ
+    st = getVariable(40921);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INSZ", 62);
     st->size_data = sizeof(BOOL);
@@ -2478,8 +2478,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42271 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INDP
-    st = getVariable(42271);
+  { // 40922 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INDP
+    st = getVariable(40922);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.ISVALIDREF_INDP", 62);
     st->size_data = sizeof(BOOL);
@@ -2491,8 +2491,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42272 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CONTINUEHOLDCOMMAND
-    st = getVariable(42272);
+  { // 40923 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CONTINUEHOLDCOMMAND
+    st = getVariable(40923);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CONTINUEHOLDCOMMAND", 66);
     st->size_data = sizeof(TIME);
@@ -2504,8 +2504,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42273 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND_ALG
-    st = getVariable(42273);
+  { // 40924 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND_ALG
+    st = getVariable(40924);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND_ALG", 60);
     st->size_data = sizeof(WORD);
@@ -2517,8 +2517,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42274 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND_ARM
-    st = getVariable(42274);
+  { // 40925 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND_ARM
+    st = getVariable(40925);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.INCOMMAND_ARM", 60);
     st->size_data = sizeof(WORD);
@@ -2530,8 +2530,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42275 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CMDON
-    st = getVariable(42275);
+  { // 40926 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CMDON
+    st = getVariable(40926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CMDON", 52);
     st->size_data = sizeof(BOOL);
@@ -2543,8 +2543,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42276 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CMDOFF
-    st = getVariable(42276);
+  { // 40927 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CMDOFF
+    st = getVariable(40927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.CMDOFF", 53);
     st->size_data = sizeof(BOOL);
@@ -2556,8 +2556,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42277 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.RELIABILITY
-    st = getVariable(42277);
+  { // 40928 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.RELIABILITY
+    st = getVariable(40928);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN3B.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -2569,8 +2569,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42278 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND
-    st = getVariable(42278);
+  { // 40929 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND
+    st = getVariable(40929);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2582,8 +2582,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42279 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.STATUS
-    st = getVariable(42279);
+  { // 40930 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.STATUS
+    st = getVariable(40930);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -2595,8 +2595,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42280 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ONSTATUS
-    st = getVariable(42280);
+  { // 40931 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ONSTATUS
+    st = getVariable(40931);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -2608,8 +2608,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42281 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INOPCCOMMANDSDISABLED
-    st = getVariable(42281);
+  { // 40932 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INOPCCOMMANDSDISABLED
+    st = getVariable(40932);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -2621,8 +2621,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42282 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SDVIG
-    st = getVariable(42282);
+  { // 40933 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SDVIG
+    st = getVariable(40933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -2634,8 +2634,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42283 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.NS
-    st = getVariable(42283);
+  { // 40934 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.NS
+    st = getVariable(40934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -2647,8 +2647,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42284 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.DP
-    st = getVariable(42284);
+  { // 40935 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.DP
+    st = getVariable(40935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -2660,8 +2660,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42285 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.COMMANDFAULT
-    st = getVariable(42285);
+  { // 40936 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.COMMANDFAULT
+    st = getVariable(40936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -2673,8 +2673,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42286 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ACCIDENT
-    st = getVariable(42286);
+  { // 40937 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ACCIDENT
+    st = getVariable(40937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -2686,8 +2686,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42287 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.AUTO
-    st = getVariable(42287);
+  { // 40938 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.AUTO
+    st = getVariable(40938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -2699,8 +2699,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42288 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.MANUAL
-    st = getVariable(42288);
+  { // 40939 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.MANUAL
+    st = getVariable(40939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -2712,8 +2712,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42289 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.LOCAL
-    st = getVariable(42289);
+  { // 40940 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.LOCAL
+    st = getVariable(40940);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -2725,8 +2725,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42290 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.DISTANCE
-    st = getVariable(42290);
+  { // 40941 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.DISTANCE
+    st = getVariable(40941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -2738,8 +2738,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42291 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ERRORPOWEROFF
-    st = getVariable(42291);
+  { // 40942 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ERRORPOWEROFF
+    st = getVariable(40942);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -2751,8 +2751,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42292 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ERRORBLOCK
-    st = getVariable(42292);
+  { // 40943 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ERRORBLOCK
+    st = getVariable(40943);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -2764,8 +2764,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42293 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SO
-    st = getVariable(42293);
+  { // 40944 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SO
+    st = getVariable(40944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -2777,8 +2777,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42294 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SZ
-    st = getVariable(42294);
+  { // 40945 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SZ
+    st = getVariable(40945);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -2790,8 +2790,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42295 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.OPCCOMMANDSDISABLED
-    st = getVariable(42295);
+  { // 40946 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.OPCCOMMANDSDISABLED
+    st = getVariable(40946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -2803,8 +2803,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42296 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.LASTCMDISON
-    st = getVariable(42296);
+  { // 40947 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.LASTCMDISON
+    st = getVariable(40947);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -2816,8 +2816,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42297 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_STATON
-    st = getVariable(42297);
+  { // 40948 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_STATON
+    st = getVariable(40948);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -2829,8 +2829,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42298 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_STATOFF
-    st = getVariable(42298);
+  { // 40949 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_STATOFF
+    st = getVariable(40949);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -2842,8 +2842,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42299 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_CMDON
-    st = getVariable(42299);
+  { // 40950 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_CMDON
+    st = getVariable(40950);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -2855,8 +2855,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42300 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_CMDOFF
-    st = getVariable(42300);
+  { // 40951 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_CMDOFF
+    st = getVariable(40951);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -2868,8 +2868,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42301 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INSO
-    st = getVariable(42301);
+  { // 40952 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INSO
+    st = getVariable(40952);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -2881,8 +2881,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42302 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INSZ
-    st = getVariable(42302);
+  { // 40953 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INSZ
+    st = getVariable(40953);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -2894,8 +2894,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42303 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INDP
-    st = getVariable(42303);
+  { // 40954 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INDP
+    st = getVariable(40954);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -2907,8 +2907,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42304 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CONTINUEHOLDCOMMAND
-    st = getVariable(42304);
+  { // 40955 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CONTINUEHOLDCOMMAND
+    st = getVariable(40955);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -2920,8 +2920,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42305 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND_ALG
-    st = getVariable(42305);
+  { // 40956 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND_ALG
+    st = getVariable(40956);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -2933,8 +2933,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42306 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND_ARM
-    st = getVariable(42306);
+  { // 40957 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND_ARM
+    st = getVariable(40957);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -2946,8 +2946,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42307 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CMDON
-    st = getVariable(42307);
+  { // 40958 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CMDON
+    st = getVariable(40958);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -2959,8 +2959,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42308 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CMDOFF
-    st = getVariable(42308);
+  { // 40959 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CMDOFF
+    st = getVariable(40959);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -2972,8 +2972,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42309 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.RELIABILITY
-    st = getVariable(42309);
+  { // 40960 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.RELIABILITY
+    st = getVariable(40960);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN4.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -2985,8 +2985,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42310 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND
-    st = getVariable(42310);
+  { // 40961 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND
+    st = getVariable(40961);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -2998,8 +2998,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42311 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.STATUS
-    st = getVariable(42311);
+  { // 40962 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.STATUS
+    st = getVariable(40962);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -3011,8 +3011,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42312 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ONSTATUS
-    st = getVariable(42312);
+  { // 40963 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ONSTATUS
+    st = getVariable(40963);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -3024,8 +3024,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42313 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INOPCCOMMANDSDISABLED
-    st = getVariable(42313);
+  { // 40964 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INOPCCOMMANDSDISABLED
+    st = getVariable(40964);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3037,8 +3037,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42314 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SDVIG
-    st = getVariable(42314);
+  { // 40965 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SDVIG
+    st = getVariable(40965);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -3050,8 +3050,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42315 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.NS
-    st = getVariable(42315);
+  { // 40966 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.NS
+    st = getVariable(40966);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -3063,8 +3063,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42316 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.DP
-    st = getVariable(42316);
+  { // 40967 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.DP
+    st = getVariable(40967);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -3076,8 +3076,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42317 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.COMMANDFAULT
-    st = getVariable(42317);
+  { // 40968 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.COMMANDFAULT
+    st = getVariable(40968);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -3089,8 +3089,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42318 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ACCIDENT
-    st = getVariable(42318);
+  { // 40969 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ACCIDENT
+    st = getVariable(40969);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -3102,8 +3102,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42319 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.AUTO
-    st = getVariable(42319);
+  { // 40970 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.AUTO
+    st = getVariable(40970);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -3115,8 +3115,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42320 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.MANUAL
-    st = getVariable(42320);
+  { // 40971 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.MANUAL
+    st = getVariable(40971);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -3128,8 +3128,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42321 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.LOCAL
-    st = getVariable(42321);
+  { // 40972 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.LOCAL
+    st = getVariable(40972);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -3141,8 +3141,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42322 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.DISTANCE
-    st = getVariable(42322);
+  { // 40973 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.DISTANCE
+    st = getVariable(40973);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -3154,8 +3154,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42323 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ERRORPOWEROFF
-    st = getVariable(42323);
+  { // 40974 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ERRORPOWEROFF
+    st = getVariable(40974);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -3167,8 +3167,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42324 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ERRORBLOCK
-    st = getVariable(42324);
+  { // 40975 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ERRORBLOCK
+    st = getVariable(40975);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -3180,8 +3180,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42325 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SO
-    st = getVariable(42325);
+  { // 40976 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SO
+    st = getVariable(40976);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -3193,8 +3193,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42326 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SZ
-    st = getVariable(42326);
+  { // 40977 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SZ
+    st = getVariable(40977);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -3206,8 +3206,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42327 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.OPCCOMMANDSDISABLED
-    st = getVariable(42327);
+  { // 40978 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.OPCCOMMANDSDISABLED
+    st = getVariable(40978);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3219,8 +3219,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42328 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.LASTCMDISON
-    st = getVariable(42328);
+  { // 40979 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.LASTCMDISON
+    st = getVariable(40979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -3232,8 +3232,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42329 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_STATON
-    st = getVariable(42329);
+  { // 40980 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_STATON
+    st = getVariable(40980);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -3245,8 +3245,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42330 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_STATOFF
-    st = getVariable(42330);
+  { // 40981 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_STATOFF
+    st = getVariable(40981);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -3258,8 +3258,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42331 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_CMDON
-    st = getVariable(42331);
+  { // 40982 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_CMDON
+    st = getVariable(40982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -3271,8 +3271,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42332 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_CMDOFF
-    st = getVariable(42332);
+  { // 40983 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_CMDOFF
+    st = getVariable(40983);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -3284,8 +3284,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42333 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INSO
-    st = getVariable(42333);
+  { // 40984 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INSO
+    st = getVariable(40984);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -3297,8 +3297,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42334 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INSZ
-    st = getVariable(42334);
+  { // 40985 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INSZ
+    st = getVariable(40985);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -3310,8 +3310,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42335 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INDP
-    st = getVariable(42335);
+  { // 40986 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INDP
+    st = getVariable(40986);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -3323,8 +3323,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42336 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CONTINUEHOLDCOMMAND
-    st = getVariable(42336);
+  { // 40987 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CONTINUEHOLDCOMMAND
+    st = getVariable(40987);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -3336,8 +3336,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42337 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND_ALG
-    st = getVariable(42337);
+  { // 40988 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND_ALG
+    st = getVariable(40988);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -3349,8 +3349,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42338 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND_ARM
-    st = getVariable(42338);
+  { // 40989 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND_ARM
+    st = getVariable(40989);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -3362,8 +3362,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42339 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CMDON
-    st = getVariable(42339);
+  { // 40990 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CMDON
+    st = getVariable(40990);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -3375,8 +3375,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42340 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CMDOFF
-    st = getVariable(42340);
+  { // 40991 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CMDOFF
+    st = getVariable(40991);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -3388,8 +3388,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42341 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.RELIABILITY
-    st = getVariable(42341);
+  { // 40992 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.RELIABILITY
+    st = getVariable(40992);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN5.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -3401,8 +3401,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42342 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND
-    st = getVariable(42342);
+  { // 40993 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND
+    st = getVariable(40993);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -3414,8 +3414,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42343 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.STATUS
-    st = getVariable(42343);
+  { // 40994 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.STATUS
+    st = getVariable(40994);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -3427,8 +3427,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42344 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ONSTATUS
-    st = getVariable(42344);
+  { // 40995 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ONSTATUS
+    st = getVariable(40995);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ONSTATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -3440,8 +3440,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42345 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INOPCCOMMANDSDISABLED
-    st = getVariable(42345);
+  { // 40996 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INOPCCOMMANDSDISABLED
+    st = getVariable(40996);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -3453,8 +3453,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42346 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SDVIG
-    st = getVariable(42346);
+  { // 40997 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SDVIG
+    st = getVariable(40997);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SDVIG", 51);
     st->size_data = sizeof(BOOL);
@@ -3466,8 +3466,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42347 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.NS
-    st = getVariable(42347);
+  { // 40998 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.NS
+    st = getVariable(40998);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -3479,8 +3479,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 42348 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.DP
-    st = getVariable(42348);
+  { // 40999 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.DP
+    st = getVariable(40999);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.DP", 48);
     st->size_data = sizeof(BOOL);
@@ -3492,8 +3492,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 42349 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.COMMANDFAULT
-    st = getVariable(42349);
+  { // 41000 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.COMMANDFAULT
+    st = getVariable(41000);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.COMMANDFAULT", 58);
     st->size_data = sizeof(BOOL);
@@ -3505,8 +3505,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42350 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ACCIDENT
-    st = getVariable(42350);
+  { // 41001 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ACCIDENT
+    st = getVariable(41001);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ACCIDENT", 54);
     st->size_data = sizeof(BOOL);
@@ -3518,8 +3518,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42351 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.AUTO
-    st = getVariable(42351);
+  { // 41002 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.AUTO
+    st = getVariable(41002);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.AUTO", 50);
     st->size_data = sizeof(BOOL);
@@ -3531,8 +3531,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42352 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.MANUAL
-    st = getVariable(42352);
+  { // 41003 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.MANUAL
+    st = getVariable(41003);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.MANUAL", 52);
     st->size_data = sizeof(BOOL);
@@ -3544,8 +3544,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42353 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.LOCAL
-    st = getVariable(42353);
+  { // 41004 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.LOCAL
+    st = getVariable(41004);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.LOCAL", 51);
     st->size_data = sizeof(BOOL);
@@ -3557,8 +3557,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42354 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.DISTANCE
-    st = getVariable(42354);
+  { // 41005 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.DISTANCE
+    st = getVariable(41005);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.DISTANCE", 54);
     st->size_data = sizeof(BOOL);
@@ -3570,8 +3570,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42355 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ERRORPOWEROFF
-    st = getVariable(42355);
+  { // 41006 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ERRORPOWEROFF
+    st = getVariable(41006);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ERRORPOWEROFF", 59);
     st->size_data = sizeof(BOOL);
@@ -3583,8 +3583,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42356 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ERRORBLOCK
-    st = getVariable(42356);
+  { // 41007 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ERRORBLOCK
+    st = getVariable(41007);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ERRORBLOCK", 56);
     st->size_data = sizeof(BOOL);
@@ -3596,8 +3596,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42357 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SO
-    st = getVariable(42357);
+  { // 41008 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SO
+    st = getVariable(41008);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SO", 48);
     st->size_data = sizeof(BOOL);
@@ -3609,8 +3609,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 42358 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SZ
-    st = getVariable(42358);
+  { // 41009 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SZ
+    st = getVariable(41009);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.SZ", 48);
     st->size_data = sizeof(BOOL);
@@ -3622,8 +3622,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 42359 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.OPCCOMMANDSDISABLED
-    st = getVariable(42359);
+  { // 41010 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.OPCCOMMANDSDISABLED
+    st = getVariable(41010);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3635,8 +3635,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42360 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.LASTCMDISON
-    st = getVariable(42360);
+  { // 41011 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.LASTCMDISON
+    st = getVariable(41011);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.LASTCMDISON", 57);
     st->size_data = sizeof(BOOL);
@@ -3648,8 +3648,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42361 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_STATON
-    st = getVariable(42361);
+  { // 41012 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_STATON
+    st = getVariable(41012);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_STATON", 63);
     st->size_data = sizeof(BOOL);
@@ -3661,8 +3661,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42362 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_STATOFF
-    st = getVariable(42362);
+  { // 41013 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_STATOFF
+    st = getVariable(41013);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_STATOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -3674,8 +3674,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42363 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_CMDON
-    st = getVariable(42363);
+  { // 41014 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_CMDON
+    st = getVariable(41014);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_CMDON", 62);
     st->size_data = sizeof(BOOL);
@@ -3687,8 +3687,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42364 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_CMDOFF
-    st = getVariable(42364);
+  { // 41015 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_CMDOFF
+    st = getVariable(41015);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_CMDOFF", 63);
     st->size_data = sizeof(BOOL);
@@ -3700,8 +3700,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42365 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INSO
-    st = getVariable(42365);
+  { // 41016 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INSO
+    st = getVariable(41016);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INSO", 61);
     st->size_data = sizeof(BOOL);
@@ -3713,8 +3713,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 42366 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INSZ
-    st = getVariable(42366);
+  { // 41017 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INSZ
+    st = getVariable(41017);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INSZ", 61);
     st->size_data = sizeof(BOOL);
@@ -3726,8 +3726,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 42367 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INDP
-    st = getVariable(42367);
+  { // 41018 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INDP
+    st = getVariable(41018);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.ISVALIDREF_INDP", 61);
     st->size_data = sizeof(BOOL);
@@ -3739,8 +3739,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 42368 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CONTINUEHOLDCOMMAND
-    st = getVariable(42368);
+  { // 41019 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CONTINUEHOLDCOMMAND
+    st = getVariable(41019);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CONTINUEHOLDCOMMAND", 65);
     st->size_data = sizeof(TIME);
@@ -3752,8 +3752,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 42369 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND_ALG
-    st = getVariable(42369);
+  { // 41020 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND_ALG
+    st = getVariable(41020);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -3765,8 +3765,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42370 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND_ARM
-    st = getVariable(42370);
+  { // 41021 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND_ARM
+    st = getVariable(41021);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -3778,8 +3778,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42371 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CMDON
-    st = getVariable(42371);
+  { // 41022 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CMDON
+    st = getVariable(41022);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CMDON", 51);
     st->size_data = sizeof(BOOL);
@@ -3791,8 +3791,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42372 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CMDOFF
-    st = getVariable(42372);
+  { // 41023 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CMDOFF
+    st = getVariable(41023);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.CMDOFF", 52);
     st->size_data = sizeof(BOOL);
@@ -3804,8 +3804,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42373 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.RELIABILITY
-    st = getVariable(42373);
+  { // 41024 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.RELIABILITY
+    st = getVariable(41024);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KRAN6.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -3817,8 +3817,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42374 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND
-    st = getVariable(42374);
+  { // 41025 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND
+    st = getVariable(41025);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3830,8 +3830,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42375 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND_ALG
-    st = getVariable(42375);
+  { // 41026 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND_ALG
+    st = getVariable(41026);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -3843,8 +3843,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42376 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND_ARM
-    st = getVariable(42376);
+  { // 41027 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND_ARM
+    st = getVariable(41027);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -3856,8 +3856,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42377 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.STATUS
-    st = getVariable(42377);
+  { // 41028 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.STATUS
+    st = getVariable(41028);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -3869,8 +3869,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42378 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ONSTATUS
-    st = getVariable(42378);
+  { // 41029 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ONSTATUS
+    st = getVariable(41029);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -3882,8 +3882,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42379 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INOPCCOMMANDSDISABLED
-    st = getVariable(42379);
+  { // 41030 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INOPCCOMMANDSDISABLED
+    st = getVariable(41030);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -3895,8 +3895,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42380 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.SDVIG
-    st = getVariable(42380);
+  { // 41031 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.SDVIG
+    st = getVariable(41031);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -3908,8 +3908,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42381 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.NS
-    st = getVariable(42381);
+  { // 41032 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.NS
+    st = getVariable(41032);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -3921,8 +3921,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 42382 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.COMMANDFAULT
-    st = getVariable(42382);
+  { // 41033 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.COMMANDFAULT
+    st = getVariable(41033);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -3934,8 +3934,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42383 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ACCIDENT
-    st = getVariable(42383);
+  { // 41034 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ACCIDENT
+    st = getVariable(41034);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -3947,8 +3947,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42384 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.LOCAL
-    st = getVariable(42384);
+  { // 41035 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.LOCAL
+    st = getVariable(41035);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -3960,8 +3960,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42385 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.DISTANCE
-    st = getVariable(42385);
+  { // 41036 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.DISTANCE
+    st = getVariable(41036);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -3973,8 +3973,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42386 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BREAKCMDON
-    st = getVariable(42386);
+  { // 41037 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BREAKCMDON
+    st = getVariable(41037);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -3986,8 +3986,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42387 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BREAKCMDOFF
-    st = getVariable(42387);
+  { // 41038 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BREAKCMDOFF
+    st = getVariable(41038);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -3999,8 +3999,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42388 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.OPCCOMMANDSDISABLED
-    st = getVariable(42388);
+  { // 41039 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.OPCCOMMANDSDISABLED
+    st = getVariable(41039);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -4012,8 +4012,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42389 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.LASTCMDISON
-    st = getVariable(42389);
+  { // 41040 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.LASTCMDISON
+    st = getVariable(41040);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -4025,8 +4025,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42390 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_STATON
-    st = getVariable(42390);
+  { // 41041 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_STATON
+    st = getVariable(41041);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -4038,8 +4038,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42391 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_STATOFF
-    st = getVariable(42391);
+  { // 41042 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_STATOFF
+    st = getVariable(41042);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -4051,8 +4051,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42392 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_CMDON
-    st = getVariable(42392);
+  { // 41043 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_CMDON
+    st = getVariable(41043);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -4064,8 +4064,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42393 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_CMDOFF
-    st = getVariable(42393);
+  { // 41044 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_CMDOFF
+    st = getVariable(41044);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -4077,8 +4077,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42394 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42394);
+  { // 41045 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41045);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -4090,8 +4090,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42395 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42395);
+  { // 41046 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41046);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -4103,8 +4103,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42396 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INBLOCKED
-    st = getVariable(42396);
+  { // 41047 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INBLOCKED
+    st = getVariable(41047);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.INBLOCKED", 53);
     st->size_data = sizeof(BOOL);
@@ -4116,8 +4116,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 42397 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BLOCKED
-    st = getVariable(42397);
+  { // 41048 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BLOCKED
+    st = getVariable(41048);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.BLOCKED", 51);
     st->size_data = sizeof(BOOL);
@@ -4129,8 +4129,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 42398 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.OSNOVNOY
-    st = getVariable(42398);
+  { // 41049 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.OSNOVNOY
+    st = getVariable(41049);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.OSNOVNOY", 52);
     st->size_data = sizeof(BOOL);
@@ -4142,8 +4142,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 42399 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.REZERVNY
-    st = getVariable(42399);
+  { // 41050 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.REZERVNY
+    st = getVariable(41050);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.REZERVNY", 52);
     st->size_data = sizeof(BOOL);
@@ -4155,8 +4155,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 42400 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.CMDON
-    st = getVariable(42400);
+  { // 41051 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.CMDON
+    st = getVariable(41051);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -4168,8 +4168,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42401 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.CMDOFF
-    st = getVariable(42401);
+  { // 41052 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.CMDOFF
+    st = getVariable(41052);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -4181,8 +4181,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42402 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.RELIABILITY
-    st = getVariable(42402);
+  { // 41053 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.RELIABILITY
+    st = getVariable(41053);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU1.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -4194,8 +4194,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42403 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND
-    st = getVariable(42403);
+  { // 41054 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND
+    st = getVariable(41054);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -4207,8 +4207,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42404 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND_ALG
-    st = getVariable(42404);
+  { // 41055 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND_ALG
+    st = getVariable(41055);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -4220,8 +4220,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42405 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND_ARM
-    st = getVariable(42405);
+  { // 41056 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND_ARM
+    st = getVariable(41056);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -4233,8 +4233,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42406 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.STATUS
-    st = getVariable(42406);
+  { // 41057 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.STATUS
+    st = getVariable(41057);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -4246,8 +4246,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42407 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ONSTATUS
-    st = getVariable(42407);
+  { // 41058 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ONSTATUS
+    st = getVariable(41058);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -4259,8 +4259,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42408 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INOPCCOMMANDSDISABLED
-    st = getVariable(42408);
+  { // 41059 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INOPCCOMMANDSDISABLED
+    st = getVariable(41059);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -4272,8 +4272,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42409 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.SDVIG
-    st = getVariable(42409);
+  { // 41060 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.SDVIG
+    st = getVariable(41060);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -4285,8 +4285,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42410 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.NS
-    st = getVariable(42410);
+  { // 41061 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.NS
+    st = getVariable(41061);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -4298,8 +4298,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 42411 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.COMMANDFAULT
-    st = getVariable(42411);
+  { // 41062 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.COMMANDFAULT
+    st = getVariable(41062);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -4311,8 +4311,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42412 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ACCIDENT
-    st = getVariable(42412);
+  { // 41063 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ACCIDENT
+    st = getVariable(41063);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -4324,8 +4324,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42413 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.LOCAL
-    st = getVariable(42413);
+  { // 41064 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.LOCAL
+    st = getVariable(41064);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -4337,8 +4337,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42414 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.DISTANCE
-    st = getVariable(42414);
+  { // 41065 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.DISTANCE
+    st = getVariable(41065);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -4350,8 +4350,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42415 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BREAKCMDON
-    st = getVariable(42415);
+  { // 41066 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BREAKCMDON
+    st = getVariable(41066);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -4363,8 +4363,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42416 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BREAKCMDOFF
-    st = getVariable(42416);
+  { // 41067 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BREAKCMDOFF
+    st = getVariable(41067);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -4376,8 +4376,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42417 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.OPCCOMMANDSDISABLED
-    st = getVariable(42417);
+  { // 41068 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.OPCCOMMANDSDISABLED
+    st = getVariable(41068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -4389,8 +4389,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42418 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.LASTCMDISON
-    st = getVariable(42418);
+  { // 41069 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.LASTCMDISON
+    st = getVariable(41069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -4402,8 +4402,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42419 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_STATON
-    st = getVariable(42419);
+  { // 41070 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_STATON
+    st = getVariable(41070);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -4415,8 +4415,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42420 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_STATOFF
-    st = getVariable(42420);
+  { // 41071 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_STATOFF
+    st = getVariable(41071);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -4428,8 +4428,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42421 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_CMDON
-    st = getVariable(42421);
+  { // 41072 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_CMDON
+    st = getVariable(41072);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -4441,8 +4441,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42422 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_CMDOFF
-    st = getVariable(42422);
+  { // 41073 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_CMDOFF
+    st = getVariable(41073);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -4454,8 +4454,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42423 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42423);
+  { // 41074 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41074);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -4467,8 +4467,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42424 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42424);
+  { // 41075 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41075);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -4480,8 +4480,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42425 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INBLOCKED
-    st = getVariable(42425);
+  { // 41076 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INBLOCKED
+    st = getVariable(41076);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.INBLOCKED", 53);
     st->size_data = sizeof(BOOL);
@@ -4493,8 +4493,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 42426 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BLOCKED
-    st = getVariable(42426);
+  { // 41077 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BLOCKED
+    st = getVariable(41077);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.BLOCKED", 51);
     st->size_data = sizeof(BOOL);
@@ -4506,8 +4506,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 42427 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.OSNOVNOY
-    st = getVariable(42427);
+  { // 41078 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.OSNOVNOY
+    st = getVariable(41078);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.OSNOVNOY", 52);
     st->size_data = sizeof(BOOL);
@@ -4519,8 +4519,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 42428 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.REZERVNY
-    st = getVariable(42428);
+  { // 41079 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.REZERVNY
+    st = getVariable(41079);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.REZERVNY", 52);
     st->size_data = sizeof(BOOL);
@@ -4532,8 +4532,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 42429 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.CMDON
-    st = getVariable(42429);
+  { // 41080 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.CMDON
+    st = getVariable(41080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -4545,8 +4545,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42430 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.CMDOFF
-    st = getVariable(42430);
+  { // 41081 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.CMDOFF
+    st = getVariable(41081);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -4558,8 +4558,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42431 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.RELIABILITY
-    st = getVariable(42431);
+  { // 41082 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.RELIABILITY
+    st = getVariable(41082);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.NU2.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -4571,8 +4571,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42432 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND
-    st = getVariable(42432);
+  { // 41083 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND
+    st = getVariable(41083);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -4584,8 +4584,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42433 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.STATUS
-    st = getVariable(42433);
+  { // 41084 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.STATUS
+    st = getVariable(41084);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -4597,8 +4597,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42434 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ONSTATUS
-    st = getVariable(42434);
+  { // 41085 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ONSTATUS
+    st = getVariable(41085);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -4610,8 +4610,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42435 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INOPCCOMMANDSDISABLED
-    st = getVariable(42435);
+  { // 41086 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INOPCCOMMANDSDISABLED
+    st = getVariable(41086);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -4623,8 +4623,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42436 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.SDVIG
-    st = getVariable(42436);
+  { // 41087 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.SDVIG
+    st = getVariable(41087);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -4636,8 +4636,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42437 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.NS
-    st = getVariable(42437);
+  { // 41088 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.NS
+    st = getVariable(41088);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -4649,8 +4649,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 42438 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.COMMANDFAULT
-    st = getVariable(42438);
+  { // 41089 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.COMMANDFAULT
+    st = getVariable(41089);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -4662,8 +4662,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42439 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ACCIDENT
-    st = getVariable(42439);
+  { // 41090 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ACCIDENT
+    st = getVariable(41090);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -4675,8 +4675,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42440 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.AUTO
-    st = getVariable(42440);
+  { // 41091 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.AUTO
+    st = getVariable(41091);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.AUTO", 48);
     st->size_data = sizeof(BOOL);
@@ -4688,8 +4688,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42441 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.MANUAL
-    st = getVariable(42441);
+  { // 41092 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.MANUAL
+    st = getVariable(41092);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.MANUAL", 50);
     st->size_data = sizeof(BOOL);
@@ -4701,8 +4701,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42442 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.LOCAL
-    st = getVariable(42442);
+  { // 41093 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.LOCAL
+    st = getVariable(41093);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -4714,8 +4714,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42443 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.DISTANCE
-    st = getVariable(42443);
+  { // 41094 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.DISTANCE
+    st = getVariable(41094);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -4727,8 +4727,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42444 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ERRORPOWEROFF
-    st = getVariable(42444);
+  { // 41095 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ERRORPOWEROFF
+    st = getVariable(41095);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ERRORPOWEROFF", 57);
     st->size_data = sizeof(BOOL);
@@ -4740,8 +4740,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42445 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ERRORBLOCK
-    st = getVariable(42445);
+  { // 41096 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ERRORBLOCK
+    st = getVariable(41096);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ERRORBLOCK", 54);
     st->size_data = sizeof(BOOL);
@@ -4753,8 +4753,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42446 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.BREAKCMDON
-    st = getVariable(42446);
+  { // 41097 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.BREAKCMDON
+    st = getVariable(41097);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -4766,8 +4766,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42447 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.BREAKCMDOFF
-    st = getVariable(42447);
+  { // 41098 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.BREAKCMDOFF
+    st = getVariable(41098);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -4779,8 +4779,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42448 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.OPCCOMMANDSDISABLED
-    st = getVariable(42448);
+  { // 41099 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.OPCCOMMANDSDISABLED
+    st = getVariable(41099);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -4792,8 +4792,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42449 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.LASTCMDISON
-    st = getVariable(42449);
+  { // 41100 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.LASTCMDISON
+    st = getVariable(41100);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -4805,8 +4805,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42450 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_STATON
-    st = getVariable(42450);
+  { // 41101 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_STATON
+    st = getVariable(41101);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -4818,8 +4818,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42451 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_STATOFF
-    st = getVariable(42451);
+  { // 41102 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_STATOFF
+    st = getVariable(41102);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -4831,8 +4831,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42452 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_CMDON
-    st = getVariable(42452);
+  { // 41103 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_CMDON
+    st = getVariable(41103);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -4844,8 +4844,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42453 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_CMDOFF
-    st = getVariable(42453);
+  { // 41104 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_CMDOFF
+    st = getVariable(41104);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -4857,8 +4857,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42454 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42454);
+  { // 41105 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41105);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -4870,8 +4870,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42455 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42455);
+  { // 41106 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41106);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -4883,8 +4883,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42456 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND_ALG
-    st = getVariable(42456);
+  { // 41107 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND_ALG
+    st = getVariable(41107);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -4896,8 +4896,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42457 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND_ARM
-    st = getVariable(42457);
+  { // 41108 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND_ARM
+    st = getVariable(41108);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -4909,8 +4909,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42458 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.CMDON
-    st = getVariable(42458);
+  { // 41109 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.CMDON
+    st = getVariable(41109);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -4922,8 +4922,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42459 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.CMDOFF
-    st = getVariable(42459);
+  { // 41110 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.CMDOFF
+    st = getVariable(41110);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -4935,8 +4935,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42460 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.RELIABILITY
-    st = getVariable(42460);
+  { // 41111 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.RELIABILITY
+    st = getVariable(41111);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.PNS.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -4948,8 +4948,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42461 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND
-    st = getVariable(42461);
+  { // 41112 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND
+    st = getVariable(41112);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -4961,8 +4961,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42462 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.STATUS
-    st = getVariable(42462);
+  { // 41113 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.STATUS
+    st = getVariable(41113);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -4974,8 +4974,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42463 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ONSTATUS
-    st = getVariable(42463);
+  { // 41114 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ONSTATUS
+    st = getVariable(41114);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ONSTATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -4987,8 +4987,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42464 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(42464);
+  { // 41115 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(41115);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -5000,8 +5000,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42465 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.SDVIG
-    st = getVariable(42465);
+  { // 41116 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.SDVIG
+    st = getVariable(41116);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.SDVIG", 53);
     st->size_data = sizeof(BOOL);
@@ -5013,8 +5013,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42466 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.NS
-    st = getVariable(42466);
+  { // 41117 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.NS
+    st = getVariable(41117);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -5026,8 +5026,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 42467 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.COMMANDFAULT
-    st = getVariable(42467);
+  { // 41118 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.COMMANDFAULT
+    st = getVariable(41118);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.COMMANDFAULT", 60);
     st->size_data = sizeof(BOOL);
@@ -5039,8 +5039,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42468 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ACCIDENT
-    st = getVariable(42468);
+  { // 41119 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ACCIDENT
+    st = getVariable(41119);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ACCIDENT", 56);
     st->size_data = sizeof(BOOL);
@@ -5052,8 +5052,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42469 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.AUTO
-    st = getVariable(42469);
+  { // 41120 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.AUTO
+    st = getVariable(41120);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.AUTO", 52);
     st->size_data = sizeof(BOOL);
@@ -5065,8 +5065,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42470 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.MANUAL
-    st = getVariable(42470);
+  { // 41121 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.MANUAL
+    st = getVariable(41121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.MANUAL", 54);
     st->size_data = sizeof(BOOL);
@@ -5078,8 +5078,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42471 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.LOCAL
-    st = getVariable(42471);
+  { // 41122 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.LOCAL
+    st = getVariable(41122);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.LOCAL", 53);
     st->size_data = sizeof(BOOL);
@@ -5091,8 +5091,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42472 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.DISTANCE
-    st = getVariable(42472);
+  { // 41123 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.DISTANCE
+    st = getVariable(41123);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.DISTANCE", 56);
     st->size_data = sizeof(BOOL);
@@ -5104,8 +5104,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42473 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ERRORPOWEROFF
-    st = getVariable(42473);
+  { // 41124 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ERRORPOWEROFF
+    st = getVariable(41124);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ERRORPOWEROFF", 61);
     st->size_data = sizeof(BOOL);
@@ -5117,8 +5117,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42474 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ERRORBLOCK
-    st = getVariable(42474);
+  { // 41125 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ERRORBLOCK
+    st = getVariable(41125);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ERRORBLOCK", 58);
     st->size_data = sizeof(BOOL);
@@ -5130,8 +5130,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42475 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.BREAKCMDON
-    st = getVariable(42475);
+  { // 41126 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.BREAKCMDON
+    st = getVariable(41126);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.BREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -5143,8 +5143,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42476 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.BREAKCMDOFF
-    st = getVariable(42476);
+  { // 41127 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.BREAKCMDOFF
+    st = getVariable(41127);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.BREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -5156,8 +5156,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42477 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(42477);
+  { // 41128 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(41128);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -5169,8 +5169,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42478 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.LASTCMDISON
-    st = getVariable(42478);
+  { // 41129 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.LASTCMDISON
+    st = getVariable(41129);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.LASTCMDISON", 59);
     st->size_data = sizeof(BOOL);
@@ -5182,8 +5182,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42479 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_STATON
-    st = getVariable(42479);
+  { // 41130 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_STATON
+    st = getVariable(41130);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_STATON", 65);
     st->size_data = sizeof(BOOL);
@@ -5195,8 +5195,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42480 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(42480);
+  { // 41131 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(41131);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_STATOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -5208,8 +5208,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42481 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_CMDON
-    st = getVariable(42481);
+  { // 41132 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_CMDON
+    st = getVariable(41132);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_CMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -5221,8 +5221,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42482 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(42482);
+  { // 41133 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(41133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_CMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -5234,8 +5234,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42483 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42483);
+  { // 41134 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41134);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -5247,8 +5247,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42484 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42484);
+  { // 41135 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -5260,8 +5260,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42485 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND_ALG
-    st = getVariable(42485);
+  { // 41136 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND_ALG
+    st = getVariable(41136);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -5273,8 +5273,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42486 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND_ARM
-    st = getVariable(42486);
+  { // 41137 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND_ARM
+    st = getVariable(41137);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -5286,8 +5286,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42487 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.CMDON
-    st = getVariable(42487);
+  { // 41138 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.CMDON
+    st = getVariable(41138);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.CMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -5299,8 +5299,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42488 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.CMDOFF
-    st = getVariable(42488);
+  { // 41139 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.CMDOFF
+    st = getVariable(41139);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.CMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -5312,8 +5312,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42489 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.RELIABILITY
-    st = getVariable(42489);
+  { // 41140 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.RELIABILITY
+    st = getVariable(41140);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V1_AVOM.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -5325,8 +5325,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42490 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND
-    st = getVariable(42490);
+  { // 41141 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND
+    st = getVariable(41141);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -5338,8 +5338,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42491 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.STATUS
-    st = getVariable(42491);
+  { // 41142 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.STATUS
+    st = getVariable(41142);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -5351,8 +5351,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42492 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ONSTATUS
-    st = getVariable(42492);
+  { // 41143 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ONSTATUS
+    st = getVariable(41143);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ONSTATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -5364,8 +5364,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42493 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(42493);
+  { // 41144 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(41144);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -5377,8 +5377,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42494 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.SDVIG
-    st = getVariable(42494);
+  { // 41145 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.SDVIG
+    st = getVariable(41145);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.SDVIG", 53);
     st->size_data = sizeof(BOOL);
@@ -5390,8 +5390,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42495 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.NS
-    st = getVariable(42495);
+  { // 41146 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.NS
+    st = getVariable(41146);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -5403,8 +5403,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 42496 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.COMMANDFAULT
-    st = getVariable(42496);
+  { // 41147 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.COMMANDFAULT
+    st = getVariable(41147);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.COMMANDFAULT", 60);
     st->size_data = sizeof(BOOL);
@@ -5416,8 +5416,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42497 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ACCIDENT
-    st = getVariable(42497);
+  { // 41148 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ACCIDENT
+    st = getVariable(41148);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ACCIDENT", 56);
     st->size_data = sizeof(BOOL);
@@ -5429,8 +5429,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42498 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.AUTO
-    st = getVariable(42498);
+  { // 41149 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.AUTO
+    st = getVariable(41149);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.AUTO", 52);
     st->size_data = sizeof(BOOL);
@@ -5442,8 +5442,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42499 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.MANUAL
-    st = getVariable(42499);
+  { // 41150 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.MANUAL
+    st = getVariable(41150);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.MANUAL", 54);
     st->size_data = sizeof(BOOL);
@@ -5455,8 +5455,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42500 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.LOCAL
-    st = getVariable(42500);
+  { // 41151 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.LOCAL
+    st = getVariable(41151);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.LOCAL", 53);
     st->size_data = sizeof(BOOL);
@@ -5468,8 +5468,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42501 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.DISTANCE
-    st = getVariable(42501);
+  { // 41152 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.DISTANCE
+    st = getVariable(41152);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.DISTANCE", 56);
     st->size_data = sizeof(BOOL);
@@ -5481,8 +5481,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42502 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ERRORPOWEROFF
-    st = getVariable(42502);
+  { // 41153 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ERRORPOWEROFF
+    st = getVariable(41153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ERRORPOWEROFF", 61);
     st->size_data = sizeof(BOOL);
@@ -5494,8 +5494,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42503 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ERRORBLOCK
-    st = getVariable(42503);
+  { // 41154 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ERRORBLOCK
+    st = getVariable(41154);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ERRORBLOCK", 58);
     st->size_data = sizeof(BOOL);
@@ -5507,8 +5507,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42504 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.BREAKCMDON
-    st = getVariable(42504);
+  { // 41155 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.BREAKCMDON
+    st = getVariable(41155);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.BREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -5520,8 +5520,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42505 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.BREAKCMDOFF
-    st = getVariable(42505);
+  { // 41156 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.BREAKCMDOFF
+    st = getVariable(41156);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.BREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -5533,8 +5533,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42506 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(42506);
+  { // 41157 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(41157);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -5546,8 +5546,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42507 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.LASTCMDISON
-    st = getVariable(42507);
+  { // 41158 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.LASTCMDISON
+    st = getVariable(41158);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.LASTCMDISON", 59);
     st->size_data = sizeof(BOOL);
@@ -5559,8 +5559,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42508 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_STATON
-    st = getVariable(42508);
+  { // 41159 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_STATON
+    st = getVariable(41159);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_STATON", 65);
     st->size_data = sizeof(BOOL);
@@ -5572,8 +5572,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42509 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(42509);
+  { // 41160 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(41160);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_STATOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -5585,8 +5585,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42510 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_CMDON
-    st = getVariable(42510);
+  { // 41161 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_CMDON
+    st = getVariable(41161);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_CMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -5598,8 +5598,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42511 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(42511);
+  { // 41162 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(41162);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_CMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -5611,8 +5611,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42512 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42512);
+  { // 41163 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41163);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -5624,8 +5624,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42513 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42513);
+  { // 41164 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41164);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -5637,8 +5637,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42514 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND_ALG
-    st = getVariable(42514);
+  { // 41165 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND_ALG
+    st = getVariable(41165);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -5650,8 +5650,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42515 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND_ARM
-    st = getVariable(42515);
+  { // 41166 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND_ARM
+    st = getVariable(41166);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -5663,8 +5663,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42516 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.CMDON
-    st = getVariable(42516);
+  { // 41167 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.CMDON
+    st = getVariable(41167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.CMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -5676,8 +5676,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42517 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.CMDOFF
-    st = getVariable(42517);
+  { // 41168 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.CMDOFF
+    st = getVariable(41168);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.CMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -5689,8 +5689,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42518 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.RELIABILITY
-    st = getVariable(42518);
+  { // 41169 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.RELIABILITY
+    st = getVariable(41169);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V2_AVOM.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -5702,8 +5702,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42519 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND
-    st = getVariable(42519);
+  { // 41170 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND
+    st = getVariable(41170);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -5715,8 +5715,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42520 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.STATUS
-    st = getVariable(42520);
+  { // 41171 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.STATUS
+    st = getVariable(41171);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -5728,8 +5728,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42521 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ONSTATUS
-    st = getVariable(42521);
+  { // 41172 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ONSTATUS
+    st = getVariable(41172);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ONSTATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -5741,8 +5741,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42522 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(42522);
+  { // 41173 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(41173);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -5754,8 +5754,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42523 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.SDVIG
-    st = getVariable(42523);
+  { // 41174 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.SDVIG
+    st = getVariable(41174);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.SDVIG", 53);
     st->size_data = sizeof(BOOL);
@@ -5767,8 +5767,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42524 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.NS
-    st = getVariable(42524);
+  { // 41175 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.NS
+    st = getVariable(41175);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -5780,8 +5780,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 42525 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.COMMANDFAULT
-    st = getVariable(42525);
+  { // 41176 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.COMMANDFAULT
+    st = getVariable(41176);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.COMMANDFAULT", 60);
     st->size_data = sizeof(BOOL);
@@ -5793,8 +5793,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42526 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ACCIDENT
-    st = getVariable(42526);
+  { // 41177 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ACCIDENT
+    st = getVariable(41177);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ACCIDENT", 56);
     st->size_data = sizeof(BOOL);
@@ -5806,8 +5806,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42527 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.AUTO
-    st = getVariable(42527);
+  { // 41178 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.AUTO
+    st = getVariable(41178);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.AUTO", 52);
     st->size_data = sizeof(BOOL);
@@ -5819,8 +5819,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42528 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.MANUAL
-    st = getVariable(42528);
+  { // 41179 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.MANUAL
+    st = getVariable(41179);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.MANUAL", 54);
     st->size_data = sizeof(BOOL);
@@ -5832,8 +5832,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42529 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.LOCAL
-    st = getVariable(42529);
+  { // 41180 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.LOCAL
+    st = getVariable(41180);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.LOCAL", 53);
     st->size_data = sizeof(BOOL);
@@ -5845,8 +5845,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42530 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.DISTANCE
-    st = getVariable(42530);
+  { // 41181 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.DISTANCE
+    st = getVariable(41181);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.DISTANCE", 56);
     st->size_data = sizeof(BOOL);
@@ -5858,8 +5858,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42531 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ERRORPOWEROFF
-    st = getVariable(42531);
+  { // 41182 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ERRORPOWEROFF
+    st = getVariable(41182);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ERRORPOWEROFF", 61);
     st->size_data = sizeof(BOOL);
@@ -5871,8 +5871,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42532 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ERRORBLOCK
-    st = getVariable(42532);
+  { // 41183 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ERRORBLOCK
+    st = getVariable(41183);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ERRORBLOCK", 58);
     st->size_data = sizeof(BOOL);
@@ -5884,8 +5884,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42533 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.BREAKCMDON
-    st = getVariable(42533);
+  { // 41184 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.BREAKCMDON
+    st = getVariable(41184);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.BREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -5897,8 +5897,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42534 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.BREAKCMDOFF
-    st = getVariable(42534);
+  { // 41185 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.BREAKCMDOFF
+    st = getVariable(41185);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.BREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -5910,8 +5910,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42535 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(42535);
+  { // 41186 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(41186);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -5923,8 +5923,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42536 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.LASTCMDISON
-    st = getVariable(42536);
+  { // 41187 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.LASTCMDISON
+    st = getVariable(41187);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.LASTCMDISON", 59);
     st->size_data = sizeof(BOOL);
@@ -5936,8 +5936,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42537 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_STATON
-    st = getVariable(42537);
+  { // 41188 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_STATON
+    st = getVariable(41188);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_STATON", 65);
     st->size_data = sizeof(BOOL);
@@ -5949,8 +5949,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42538 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(42538);
+  { // 41189 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(41189);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_STATOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -5962,8 +5962,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42539 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_CMDON
-    st = getVariable(42539);
+  { // 41190 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_CMDON
+    st = getVariable(41190);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_CMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -5975,8 +5975,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42540 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(42540);
+  { // 41191 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(41191);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_CMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -5988,8 +5988,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42541 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42541);
+  { // 41192 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41192);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -6001,8 +6001,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42542 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42542);
+  { // 41193 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41193);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -6014,8 +6014,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42543 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND_ALG
-    st = getVariable(42543);
+  { // 41194 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND_ALG
+    st = getVariable(41194);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -6027,8 +6027,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42544 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND_ARM
-    st = getVariable(42544);
+  { // 41195 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND_ARM
+    st = getVariable(41195);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -6040,8 +6040,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42545 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.CMDON
-    st = getVariable(42545);
+  { // 41196 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.CMDON
+    st = getVariable(41196);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.CMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -6053,8 +6053,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42546 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.CMDOFF
-    st = getVariable(42546);
+  { // 41197 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.CMDOFF
+    st = getVariable(41197);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.CMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -6066,8 +6066,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42547 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.RELIABILITY
-    st = getVariable(42547);
+  { // 41198 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.RELIABILITY
+    st = getVariable(41198);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V3_AVOM.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -6079,8 +6079,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42548 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND
-    st = getVariable(42548);
+  { // 41199 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND
+    st = getVariable(41199);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -6092,8 +6092,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42549 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.STATUS
-    st = getVariable(42549);
+  { // 41200 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.STATUS
+    st = getVariable(41200);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -6105,8 +6105,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42550 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ONSTATUS
-    st = getVariable(42550);
+  { // 41201 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ONSTATUS
+    st = getVariable(41201);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ONSTATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -6118,8 +6118,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42551 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(42551);
+  { // 41202 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(41202);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -6131,8 +6131,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42552 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.SDVIG
-    st = getVariable(42552);
+  { // 41203 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.SDVIG
+    st = getVariable(41203);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.SDVIG", 53);
     st->size_data = sizeof(BOOL);
@@ -6144,8 +6144,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42553 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.NS
-    st = getVariable(42553);
+  { // 41204 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.NS
+    st = getVariable(41204);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.NS", 50);
     st->size_data = sizeof(BOOL);
@@ -6157,8 +6157,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 42554 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.COMMANDFAULT
-    st = getVariable(42554);
+  { // 41205 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.COMMANDFAULT
+    st = getVariable(41205);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.COMMANDFAULT", 60);
     st->size_data = sizeof(BOOL);
@@ -6170,8 +6170,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42555 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ACCIDENT
-    st = getVariable(42555);
+  { // 41206 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ACCIDENT
+    st = getVariable(41206);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ACCIDENT", 56);
     st->size_data = sizeof(BOOL);
@@ -6183,8 +6183,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42556 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.AUTO
-    st = getVariable(42556);
+  { // 41207 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.AUTO
+    st = getVariable(41207);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.AUTO", 52);
     st->size_data = sizeof(BOOL);
@@ -6196,8 +6196,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 42557 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.MANUAL
-    st = getVariable(42557);
+  { // 41208 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.MANUAL
+    st = getVariable(41208);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.MANUAL", 54);
     st->size_data = sizeof(BOOL);
@@ -6209,8 +6209,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 42558 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.LOCAL
-    st = getVariable(42558);
+  { // 41209 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.LOCAL
+    st = getVariable(41209);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.LOCAL", 53);
     st->size_data = sizeof(BOOL);
@@ -6222,8 +6222,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42559 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.DISTANCE
-    st = getVariable(42559);
+  { // 41210 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.DISTANCE
+    st = getVariable(41210);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.DISTANCE", 56);
     st->size_data = sizeof(BOOL);
@@ -6235,8 +6235,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42560 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ERRORPOWEROFF
-    st = getVariable(42560);
+  { // 41211 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ERRORPOWEROFF
+    st = getVariable(41211);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ERRORPOWEROFF", 61);
     st->size_data = sizeof(BOOL);
@@ -6248,8 +6248,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 42561 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ERRORBLOCK
-    st = getVariable(42561);
+  { // 41212 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ERRORBLOCK
+    st = getVariable(41212);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ERRORBLOCK", 58);
     st->size_data = sizeof(BOOL);
@@ -6261,8 +6261,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 42562 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.BREAKCMDON
-    st = getVariable(42562);
+  { // 41213 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.BREAKCMDON
+    st = getVariable(41213);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.BREAKCMDON", 58);
     st->size_data = sizeof(BOOL);
@@ -6274,8 +6274,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42563 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.BREAKCMDOFF
-    st = getVariable(42563);
+  { // 41214 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.BREAKCMDOFF
+    st = getVariable(41214);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.BREAKCMDOFF", 59);
     st->size_data = sizeof(BOOL);
@@ -6287,8 +6287,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42564 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.OPCCOMMANDSDISABLED
-    st = getVariable(42564);
+  { // 41215 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.OPCCOMMANDSDISABLED
+    st = getVariable(41215);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -6300,8 +6300,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42565 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.LASTCMDISON
-    st = getVariable(42565);
+  { // 41216 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.LASTCMDISON
+    st = getVariable(41216);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.LASTCMDISON", 59);
     st->size_data = sizeof(BOOL);
@@ -6313,8 +6313,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42566 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_STATON
-    st = getVariable(42566);
+  { // 41217 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_STATON
+    st = getVariable(41217);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_STATON", 65);
     st->size_data = sizeof(BOOL);
@@ -6326,8 +6326,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42567 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_STATOFF
-    st = getVariable(42567);
+  { // 41218 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_STATOFF
+    st = getVariable(41218);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_STATOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -6339,8 +6339,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42568 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_CMDON
-    st = getVariable(42568);
+  { // 41219 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_CMDON
+    st = getVariable(41219);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_CMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -6352,8 +6352,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42569 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_CMDOFF
-    st = getVariable(42569);
+  { // 41220 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_CMDOFF
+    st = getVariable(41220);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_CMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -6365,8 +6365,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42570 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42570);
+  { // 41221 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41221);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -6378,8 +6378,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42571 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42571);
+  { // 41222 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41222);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.ISVALIDREF_INBREAKCMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -6391,8 +6391,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42572 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND_ALG
-    st = getVariable(42572);
+  { // 41223 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND_ALG
+    st = getVariable(41223);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -6404,8 +6404,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42573 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND_ARM
-    st = getVariable(42573);
+  { // 41224 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND_ARM
+    st = getVariable(41224);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -6417,8 +6417,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42574 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.CMDON
-    st = getVariable(42574);
+  { // 41225 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.CMDON
+    st = getVariable(41225);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.CMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -6430,8 +6430,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42575 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.CMDOFF
-    st = getVariable(42575);
+  { // 41226 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.CMDOFF
+    st = getVariable(41226);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.CMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -6443,8 +6443,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42576 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.RELIABILITY
-    st = getVariable(42576);
+  { // 41227 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.RELIABILITY
+    st = getVariable(41227);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.V4_AVOM.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -6456,8 +6456,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42577 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND
-    st = getVariable(42577);
+  { // 41228 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND
+    st = getVariable(41228);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -6469,8 +6469,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 42578 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.STATUS
-    st = getVariable(42578);
+  { // 41229 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.STATUS
+    st = getVariable(41229);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -6482,8 +6482,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SECTIONSWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42579 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ONSTATUS
-    st = getVariable(42579);
+  { // 41230 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ONSTATUS
+    st = getVariable(41230);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ONSTATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -6495,8 +6495,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SECTIONSWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42580 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INOPCCOMMANDSDISABLED
-    st = getVariable(42580);
+  { // 41231 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INOPCCOMMANDSDISABLED
+    st = getVariable(41231);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -6508,8 +6508,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42581 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.SDVIG
-    st = getVariable(42581);
+  { // 41232 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.SDVIG
+    st = getVariable(41232);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.SDVIG", 48);
     st->size_data = sizeof(BOOL);
@@ -6521,8 +6521,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 42582 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.NS
-    st = getVariable(42582);
+  { // 41233 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.NS
+    st = getVariable(41233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.NS", 45);
     st->size_data = sizeof(BOOL);
@@ -6534,8 +6534,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 42583 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.COMMANDFAULT
-    st = getVariable(42583);
+  { // 41234 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.COMMANDFAULT
+    st = getVariable(41234);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.COMMANDFAULT", 55);
     st->size_data = sizeof(BOOL);
@@ -6547,8 +6547,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 42584 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ACCIDENT
-    st = getVariable(42584);
+  { // 41235 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ACCIDENT
+    st = getVariable(41235);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ACCIDENT", 51);
     st->size_data = sizeof(BOOL);
@@ -6560,8 +6560,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 42585 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.LOCAL
-    st = getVariable(42585);
+  { // 41236 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.LOCAL
+    st = getVariable(41236);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.LOCAL", 48);
     st->size_data = sizeof(BOOL);
@@ -6573,8 +6573,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 42586 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.DISTANCE
-    st = getVariable(42586);
+  { // 41237 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.DISTANCE
+    st = getVariable(41237);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.DISTANCE", 51);
     st->size_data = sizeof(BOOL);
@@ -6586,8 +6586,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 42587 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.OPCCOMMANDSDISABLED
-    st = getVariable(42587);
+  { // 41238 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.OPCCOMMANDSDISABLED
+    st = getVariable(41238);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -6599,8 +6599,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 42588 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.LASTCMDISON
-    st = getVariable(42588);
+  { // 41239 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.LASTCMDISON
+    st = getVariable(41239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.LASTCMDISON", 54);
     st->size_data = sizeof(BOOL);
@@ -6612,8 +6612,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 42589 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.OFFKNA
-    st = getVariable(42589);
+  { // 41240 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.OFFKNA
+    st = getVariable(41240);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.OFFKNA", 49);
     st->size_data = sizeof(BOOL);
@@ -6625,8 +6625,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->OFFKNA;
     st->value_p = p_BOOL;
   }
-  { // 42590 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BASKETSTATUS
-    st = getVariable(42590);
+  { // 41241 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BASKETSTATUS
+    st = getVariable(41241);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BASKETSTATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -6638,8 +6638,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SECTIONSWITCH->BASKETSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 42591 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_STATON
-    st = getVariable(42591);
+  { // 41242 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_STATON
+    st = getVariable(41242);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_STATON", 60);
     st->size_data = sizeof(BOOL);
@@ -6651,8 +6651,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 42592 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_STATOFF
-    st = getVariable(42592);
+  { // 41243 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_STATOFF
+    st = getVariable(41243);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_STATOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -6664,8 +6664,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 42593 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_CMDON
-    st = getVariable(42593);
+  { // 41244 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_CMDON
+    st = getVariable(41244);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_CMDON", 59);
     st->size_data = sizeof(BOOL);
@@ -6677,8 +6677,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42594 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_CMDOFF
-    st = getVariable(42594);
+  { // 41245 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_CMDOFF
+    st = getVariable(41245);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_CMDOFF", 60);
     st->size_data = sizeof(BOOL);
@@ -6690,8 +6690,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42595 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_INBREAKCMDON
-    st = getVariable(42595);
+  { // 41246 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41246);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_INBREAKCMDON", 66);
     st->size_data = sizeof(BOOL);
@@ -6703,8 +6703,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42596 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(42596);
+  { // 41247 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41247);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_INBREAKCMDOFF", 67);
     st->size_data = sizeof(BOOL);
@@ -6716,8 +6716,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42597 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BREAKCMDON
-    st = getVariable(42597);
+  { // 41248 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BREAKCMDON
+    st = getVariable(41248);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BREAKCMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -6729,8 +6729,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 42598 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BREAKCMDOFF
-    st = getVariable(42598);
+  { // 41249 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BREAKCMDOFF
+    st = getVariable(41249);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.BREAKCMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -6742,8 +6742,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42599 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETROLLEDIN
-    st = getVariable(42599);
+  { // 41250 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETROLLEDIN
+    st = getVariable(41250);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETROLLEDIN", 68);
     st->size_data = sizeof(BOOL);
@@ -6755,8 +6755,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETROLLEDIN;
     st->value_p = p_BOOL;
   }
-  { // 42600 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETROLLEDOUT
-    st = getVariable(42600);
+  { // 41251 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETROLLEDOUT
+    st = getVariable(41251);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETROLLEDOUT", 69);
     st->size_data = sizeof(BOOL);
@@ -6768,8 +6768,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETROLLEDOUT;
     st->value_p = p_BOOL;
   }
-  { // 42601 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETTEST
-    st = getVariable(42601);
+  { // 41252 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETTEST
+    st = getVariable(41252);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.ISVALIDREF_BASKETTEST", 64);
     st->size_data = sizeof(BOOL);
@@ -6781,8 +6781,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->ISVALIDREF_BASKETTEST;
     st->value_p = p_BOOL;
   }
-  { // 42602 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND_ALG
-    st = getVariable(42602);
+  { // 41253 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND_ALG
+    st = getVariable(41253);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -6794,8 +6794,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 42603 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND_ARM
-    st = getVariable(42603);
+  { // 41254 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND_ARM
+    st = getVariable(41254);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -6807,8 +6807,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SECTIONSWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 42604 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.CMDON
-    st = getVariable(42604);
+  { // 41255 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.CMDON
+    st = getVariable(41255);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.CMDON", 48);
     st->size_data = sizeof(BOOL);
@@ -6820,8 +6820,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 42605 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.CMDOFF
-    st = getVariable(42605);
+  { // 41256 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.CMDOFF
+    st = getVariable(41256);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.CMDOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -6833,8 +6833,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 42606 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.RELIABILITY
-    st = getVariable(42606);
+  { // 41257 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.RELIABILITY
+    st = getVariable(41257);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.MV.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -6846,8 +6846,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SECTIONSWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42607 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM1.VAR1
-    st = getVariable(42607);
+  { // 41258 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM1.VAR1
+    st = getVariable(41258);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM1.VAR1", 56);
     st->size_data = sizeof(BOOL);
@@ -6859,8 +6859,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM->VAR1;
     st->value_p = p_BOOL;
   }
-  { // 42608 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM1.VAR2
-    st = getVariable(42608);
+  { // 41259 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM1.VAR2
+    st = getVariable(41259);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM1.VAR2", 56);
     st->size_data = sizeof(BOOL);
@@ -6872,8 +6872,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM->VAR2;
     st->value_p = p_BOOL;
   }
-  { // 42609 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM2.VAR1
-    st = getVariable(42609);
+  { // 41260 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM2.VAR1
+    st = getVariable(41260);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM2.VAR1", 56);
     st->size_data = sizeof(BOOL);
@@ -6885,8 +6885,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM2->VAR1;
     st->value_p = p_BOOL;
   }
-  { // 42610 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM2.VAR2
-    st = getVariable(42610);
+  { // 41261 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM2.VAR2
+    st = getVariable(41261);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.RESERVE_IM2.VAR2", 56);
     st->size_data = sizeof(BOOL);
@@ -6898,8 +6898,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_RESERVEIM2->VAR2;
     st->value_p = p_BOOL;
   }
-  { // 42611 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.RELIABILITY
-    st = getVariable(42611);
+  { // 41262 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.RELIABILITY
+    st = getVariable(41262);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.RELIABILITY", 86);
     st->size_data = sizeof(BOOL);
@@ -6912,8 +6912,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42612 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.INVERSE
-    st = getVariable(42612);
+  { // 41263 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.INVERSE
+    st = getVariable(41263);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.INVERSE", 82);
     st->size_data = sizeof(BOOL);
@@ -6926,8 +6926,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42613 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYON
-    st = getVariable(42613);
+  { // 41264 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYON
+    st = getVariable(41264);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYON", 82);
     st->size_data = sizeof(TIME);
@@ -6940,8 +6940,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42614 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYOFF
-    st = getVariable(42614);
+  { // 41265 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYOFF
+    st = getVariable(41265);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DELAYOFF", 83);
     st->size_data = sizeof(TIME);
@@ -6954,8 +6954,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42615 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q
-    st = getVariable(42615);
+  { // 41266 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q
+    st = getVariable(41266);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q", 76);
     st->size_data = sizeof(BOOL);
@@ -6968,8 +6968,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42616 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.STATUS
-    st = getVariable(42616);
+  { // 41267 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.STATUS
+    st = getVariable(41267);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.STATUS", 81);
     st->size_data = sizeof(DWORD);
@@ -6982,8 +6982,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42617 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DISABLED_SIG
-    st = getVariable(42617);
+  { // 41268 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DISABLED_SIG
+    st = getVariable(41268);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.DISABLED_SIG", 87);
     st->size_data = sizeof(BOOL);
@@ -6996,8 +6996,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42618 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.RELIABILITY
-    st = getVariable(42618);
+  { // 41269 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.RELIABILITY
+    st = getVariable(41269);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -7010,8 +7010,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42619 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.INVERSE
-    st = getVariable(42619);
+  { // 41270 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.INVERSE
+    st = getVariable(41270);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -7024,8 +7024,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42620 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYON
-    st = getVariable(42620);
+  { // 41271 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYON
+    st = getVariable(41271);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -7038,8 +7038,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42621 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYOFF
-    st = getVariable(42621);
+  { // 41272 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYOFF
+    st = getVariable(41272);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -7052,8 +7052,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42622 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.Q
-    st = getVariable(42622);
+  { // 41273 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.Q
+    st = getVariable(41273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -7066,8 +7066,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42623 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.STATUS
-    st = getVariable(42623);
+  { // 41274 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.STATUS
+    st = getVariable(41274);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -7080,8 +7080,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42624 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DISABLED_SIG
-    st = getVariable(42624);
+  { // 41275 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DISABLED_SIG
+    st = getVariable(41275);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DP_KRAN1_LESS100.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -7094,596 +7094,106 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42625 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.RELIABILITY
-    st = getVariable(42625);
+  { // 41276 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.RELIABILITY
+    st = getVariable(41276);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.RELIABILITY", 103);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.RELIABILITY", 91);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42626 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.INVERSE
-    st = getVariable(42626);
+  { // 41277 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.INVERSE
+    st = getVariable(41277);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.INVERSE", 99);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.INVERSE", 87);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42627 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYON
-    st = getVariable(42627);
+  { // 41278 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.DELAYON
+    st = getVariable(41278);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYON", 99);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.DELAYON", 87);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42628 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYOFF
-    st = getVariable(42628);
+  { // 41279 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.DELAYOFF
+    st = getVariable(41279);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DELAYOFF", 100);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.DELAYOFF", 88);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42629 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.Q
-    st = getVariable(42629);
+  { // 41280 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.Q
+    st = getVariable(41280);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.Q", 93);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.Q", 81);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42630 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.STATUS
-    st = getVariable(42630);
+  { // 41281 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.STATUS
+    st = getVariable(41281);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.STATUS", 98);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.STATUS", 86);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42631 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DISABLED_SIG
-    st = getVariable(42631);
+  { // 41282 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.DISABLED_SIG
+    st = getVariable(41282);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV.DISABLED_SIG", 104);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.RAZRESHENIE_ZAGRUZKI_DVIG.DISABLED_SIG", 92);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_05PRC_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->RAZRESHENIE_ZAGRUZKI_DVIG;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42632 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.RELIABILITY
-    st = getVariable(42632);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.RELIABILITY", 102);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42633 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.INVERSE
-    st = getVariable(42633);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.INVERSE", 98);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42634 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYON
-    st = getVariable(42634);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYON", 98);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42635 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYOFF
-    st = getVariable(42635);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DELAYOFF", 99);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42636 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.Q
-    st = getVariable(42636);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.Q", 92);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42637 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.STATUS
-    st = getVariable(42637);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.STATUS", 97);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42638 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DISABLED_SIG
-    st = getVariable(42638);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV.DISABLED_SIG", 103);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_DVIGATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42639 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.RELIABILITY
-    st = getVariable(42639);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.RELIABILITY", 105);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42640 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.INVERSE
-    st = getVariable(42640);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.INVERSE", 101);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42641 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYON
-    st = getVariable(42641);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYON", 101);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42642 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYOFF
-    st = getVariable(42642);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DELAYOFF", 102);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42643 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.Q
-    st = getVariable(42643);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.Q", 95);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42644 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.STATUS
-    st = getVariable(42644);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.STATUS", 100);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42645 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DISABLED_SIG
-    st = getVariable(42645);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV.DISABLED_SIG", 106);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_05PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42646 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.RELIABILITY
-    st = getVariable(42646);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.RELIABILITY", 104);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42647 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.INVERSE
-    st = getVariable(42647);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.INVERSE", 100);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42648 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYON
-    st = getVariable(42648);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYON", 100);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42649 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYOFF
-    st = getVariable(42649);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DELAYOFF", 101);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42650 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.Q
-    st = getVariable(42650);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.Q", 94);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42651 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.STATUS
-    st = getVariable(42651);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.STATUS", 99);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42652 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DISABLED_SIG
-    st = getVariable(42652);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV.DISABLED_SIG", 105);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->ZAGAZOVANNOST_NAGNETATELYA_1PRC_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42653 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.RELIABILITY
-    st = getVariable(42653);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.RELIABILITY", 98);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42654 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.INVERSE
-    st = getVariable(42654);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.INVERSE", 94);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42655 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYON
-    st = getVariable(42655);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYON", 94);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42656 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYOFF
-    st = getVariable(42656);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYOFF", 95);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42657 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.Q
-    st = getVariable(42657);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.Q", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42658 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.STATUS
-    st = getVariable(42658);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.STATUS", 93);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42659 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DISABLED_SIG
-    st = getVariable(42659);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DISABLED_SIG", 99);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42660 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.RELIABILITY
-    st = getVariable(42660);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.RELIABILITY", 93);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42661 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.INVERSE
-    st = getVariable(42661);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.INVERSE", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42662 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYON
-    st = getVariable(42662);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYON", 89);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42663 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYOFF
-    st = getVariable(42663);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DELAYOFF", 90);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42664 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.Q
-    st = getVariable(42664);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.Q", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42665 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.STATUS
-    st = getVariable(42665);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.STATUS", 88);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42666 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DISABLED_SIG
-    st = getVariable(42666);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_RAZRESHENIE_ZAGRUZKI.DISABLED_SIG", 94);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_RAZRESHENIE_ZAGRUZKI;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42667 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.RELIABILITY
-    st = getVariable(42667);
+  { // 41283 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.RELIABILITY
+    st = getVariable(41283);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -7696,8 +7206,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42668 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.INVERSE
-    st = getVariable(42668);
+  { // 41284 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.INVERSE
+    st = getVariable(41284);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -7710,8 +7220,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42669 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYON
-    st = getVariable(42669);
+  { // 41285 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYON
+    st = getVariable(41285);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -7724,8 +7234,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42670 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYOFF
-    st = getVariable(42670);
+  { // 41286 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYOFF
+    st = getVariable(41286);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -7738,8 +7248,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42671 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.Q
-    st = getVariable(42671);
+  { // 41287 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.Q
+    st = getVariable(41287);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -7752,8 +7262,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42672 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.STATUS
-    st = getVariable(42672);
+  { // 41288 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.STATUS
+    st = getVariable(41288);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -7766,8 +7276,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42673 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DISABLED_SIG
-    st = getVariable(42673);
+  { // 41289 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DISABLED_SIG
+    st = getVariable(41289);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_GOTOVNOST.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -7780,8 +7290,106 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42674 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.RELIABILITY
-    st = getVariable(42674);
+  { // 41290 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.RELIABILITY
+    st = getVariable(41290);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.RELIABILITY", 98);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41291 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.INVERSE
+    st = getVariable(41291);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.INVERSE", 94);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41292 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYON
+    st = getVariable(41292);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYON", 94);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41293 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYOFF
+    st = getVariable(41293);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DELAYOFF", 95);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41294 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.Q
+    st = getVariable(41294);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.Q", 88);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41295 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.STATUS
+    st = getVariable(41295);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.STATUS", 93);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41296 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DISABLED_SIG
+    st = getVariable(41296);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT.DISABLED_SIG", 99);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOZBUD_NEISPR_TSEPEY_UPR_AVR_PIT;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41297 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.RELIABILITY
+    st = getVariable(41297);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.RELIABILITY", 85);
     st->size_data = sizeof(BOOL);
@@ -7794,8 +7402,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42675 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.INVERSE
-    st = getVariable(42675);
+  { // 41298 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.INVERSE
+    st = getVariable(41298);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.INVERSE", 81);
     st->size_data = sizeof(BOOL);
@@ -7808,8 +7416,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42676 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYON
-    st = getVariable(42676);
+  { // 41299 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYON
+    st = getVariable(41299);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYON", 81);
     st->size_data = sizeof(TIME);
@@ -7822,8 +7430,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42677 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYOFF
-    st = getVariable(42677);
+  { // 41300 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYOFF
+    st = getVariable(41300);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DELAYOFF", 82);
     st->size_data = sizeof(TIME);
@@ -7836,8 +7444,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42678 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.Q
-    st = getVariable(42678);
+  { // 41301 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.Q
+    st = getVariable(41301);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.Q", 75);
     st->size_data = sizeof(BOOL);
@@ -7850,8 +7458,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42679 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.STATUS
-    st = getVariable(42679);
+  { // 41302 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.STATUS
+    st = getVariable(41302);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.STATUS", 80);
     st->size_data = sizeof(DWORD);
@@ -7864,8 +7472,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42680 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DISABLED_SIG
-    st = getVariable(42680);
+  { // 41303 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DISABLED_SIG
+    st = getVariable(41303);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOZBUD_NEISPRAVNOST.DISABLED_SIG", 86);
     st->size_data = sizeof(BOOL);
@@ -7878,8 +7486,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42681 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.RELIABILITY
-    st = getVariable(42681);
+  { // 41304 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.RELIABILITY
+    st = getVariable(41304);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.RELIABILITY", 81);
     st->size_data = sizeof(BOOL);
@@ -7892,8 +7500,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42682 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.INVERSE
-    st = getVariable(42682);
+  { // 41305 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.INVERSE
+    st = getVariable(41305);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.INVERSE", 77);
     st->size_data = sizeof(BOOL);
@@ -7906,8 +7514,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42683 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYON
-    st = getVariable(42683);
+  { // 41306 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYON
+    st = getVariable(41306);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYON", 77);
     st->size_data = sizeof(TIME);
@@ -7920,8 +7528,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42684 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYOFF
-    st = getVariable(42684);
+  { // 41307 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYOFF
+    st = getVariable(41307);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DELAYOFF", 78);
     st->size_data = sizeof(TIME);
@@ -7934,8 +7542,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42685 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.Q
-    st = getVariable(42685);
+  { // 41308 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.Q
+    st = getVariable(41308);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.Q", 71);
     st->size_data = sizeof(BOOL);
@@ -7948,8 +7556,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42686 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.STATUS
-    st = getVariable(42686);
+  { // 41309 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.STATUS
+    st = getVariable(41309);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.STATUS", 76);
     st->size_data = sizeof(DWORD);
@@ -7962,8 +7570,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42687 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DISABLED_SIG
-    st = getVariable(42687);
+  { // 41310 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DISABLED_SIG
+    st = getVariable(41310);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR1_V_RABOTE.DISABLED_SIG", 82);
     st->size_data = sizeof(BOOL);
@@ -7976,8 +7584,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42688 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.RELIABILITY
-    st = getVariable(42688);
+  { // 41311 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.RELIABILITY
+    st = getVariable(41311);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.RELIABILITY", 81);
     st->size_data = sizeof(BOOL);
@@ -7990,8 +7598,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42689 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.INVERSE
-    st = getVariable(42689);
+  { // 41312 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.INVERSE
+    st = getVariable(41312);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.INVERSE", 77);
     st->size_data = sizeof(BOOL);
@@ -8004,8 +7612,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42690 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYON
-    st = getVariable(42690);
+  { // 41313 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYON
+    st = getVariable(41313);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYON", 77);
     st->size_data = sizeof(TIME);
@@ -8018,8 +7626,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42691 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYOFF
-    st = getVariable(42691);
+  { // 41314 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYOFF
+    st = getVariable(41314);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DELAYOFF", 78);
     st->size_data = sizeof(TIME);
@@ -8032,8 +7640,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42692 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.Q
-    st = getVariable(42692);
+  { // 41315 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.Q
+    st = getVariable(41315);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.Q", 71);
     st->size_data = sizeof(BOOL);
@@ -8046,8 +7654,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42693 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.STATUS
-    st = getVariable(42693);
+  { // 41316 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.STATUS
+    st = getVariable(41316);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.STATUS", 76);
     st->size_data = sizeof(DWORD);
@@ -8060,8 +7668,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42694 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DISABLED_SIG
-    st = getVariable(42694);
+  { // 41317 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DISABLED_SIG
+    st = getVariable(41317);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHAVR2_V_RABOTE.DISABLED_SIG", 82);
     st->size_data = sizeof(BOOL);
@@ -8074,204 +7682,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42695 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.RELIABILITY
-    st = getVariable(42695);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.RELIABILITY", 81);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42696 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.INVERSE
-    st = getVariable(42696);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.INVERSE", 77);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42697 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYON
-    st = getVariable(42697);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYON", 77);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42698 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYOFF
-    st = getVariable(42698);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.DELAYOFF", 78);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42699 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.Q
-    st = getVariable(42699);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.Q", 71);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42700 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.STATUS
-    st = getVariable(42700);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.STATUS", 76);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42701 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.DISABLED_SIG
-    st = getVariable(42701);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NET_10KV_REZERV.DISABLED_SIG", 82);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NET_10KV_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42702 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.RELIABILITY
-    st = getVariable(42702);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.RELIABILITY", 86);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42703 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.INVERSE
-    st = getVariable(42703);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.INVERSE", 82);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42704 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYON
-    st = getVariable(42704);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYON", 82);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42705 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYOFF
-    st = getVariable(42705);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DELAYOFF", 83);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42706 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.Q
-    st = getVariable(42706);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.Q", 76);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42707 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.STATUS
-    st = getVariable(42707);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.STATUS", 81);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42708 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DISABLED_SIG
-    st = getVariable(42708);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.MV_TELEZHKA_VIKACHEN.DISABLED_SIG", 87);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->MV_TELEZHKA_VIKACHEN;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42709 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.RELIABILITY
-    st = getVariable(42709);
+  { // 41318 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.RELIABILITY
+    st = getVariable(41318);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.RELIABILITY", 97);
     st->size_data = sizeof(BOOL);
@@ -8284,8 +7696,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42710 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.INVERSE
-    st = getVariable(42710);
+  { // 41319 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.INVERSE
+    st = getVariable(41319);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.INVERSE", 93);
     st->size_data = sizeof(BOOL);
@@ -8298,8 +7710,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42711 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYON
-    st = getVariable(42711);
+  { // 41320 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYON
+    st = getVariable(41320);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYON", 93);
     st->size_data = sizeof(TIME);
@@ -8312,8 +7724,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42712 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYOFF
-    st = getVariable(42712);
+  { // 41321 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYOFF
+    st = getVariable(41321);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DELAYOFF", 94);
     st->size_data = sizeof(TIME);
@@ -8326,8 +7738,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42713 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.Q
-    st = getVariable(42713);
+  { // 41322 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.Q
+    st = getVariable(41322);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.Q", 87);
     st->size_data = sizeof(BOOL);
@@ -8340,8 +7752,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42714 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.STATUS
-    st = getVariable(42714);
+  { // 41323 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.STATUS
+    st = getVariable(41323);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.STATUS", 92);
     st->size_data = sizeof(DWORD);
@@ -8354,8 +7766,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42715 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DISABLED_SIG
-    st = getVariable(42715);
+  { // 41324 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DISABLED_SIG
+    st = getVariable(41324);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVARIINOE_OTKLUCH_VIKLUCHATELYA.DISABLED_SIG", 98);
     st->size_data = sizeof(BOOL);
@@ -8368,8 +7780,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42716 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.RELIABILITY
-    st = getVariable(42716);
+  { // 41325 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.RELIABILITY
+    st = getVariable(41325);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.RELIABILITY", 93);
     st->size_data = sizeof(BOOL);
@@ -8382,8 +7794,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42717 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.INVERSE
-    st = getVariable(42717);
+  { // 41326 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.INVERSE
+    st = getVariable(41326);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.INVERSE", 89);
     st->size_data = sizeof(BOOL);
@@ -8396,8 +7808,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42718 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYON
-    st = getVariable(42718);
+  { // 41327 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYON
+    st = getVariable(41327);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYON", 89);
     st->size_data = sizeof(TIME);
@@ -8410,8 +7822,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42719 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYOFF
-    st = getVariable(42719);
+  { // 41328 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYOFF
+    st = getVariable(41328);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DELAYOFF", 90);
     st->size_data = sizeof(TIME);
@@ -8424,8 +7836,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42720 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.Q
-    st = getVariable(42720);
+  { // 41329 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.Q
+    st = getVariable(41329);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.Q", 83);
     st->size_data = sizeof(BOOL);
@@ -8438,8 +7850,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42721 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.STATUS
-    st = getVariable(42721);
+  { // 41330 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.STATUS
+    st = getVariable(41330);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.STATUS", 88);
     st->size_data = sizeof(DWORD);
@@ -8452,8 +7864,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42722 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DISABLED_SIG
-    st = getVariable(42722);
+  { // 41331 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DISABLED_SIG
+    st = getVariable(41331);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.ASSINHRONNII_HOD_PEREGRUZKA.DISABLED_SIG", 94);
     st->size_data = sizeof(BOOL);
@@ -8466,8 +7878,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42723 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.RELIABILITY
-    st = getVariable(42723);
+  { // 41332 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.RELIABILITY
+    st = getVariable(41332);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -8480,8 +7892,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42724 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.INVERSE
-    st = getVariable(42724);
+  { // 41333 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.INVERSE
+    st = getVariable(41333);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -8494,8 +7906,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42725 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYON
-    st = getVariable(42725);
+  { // 41334 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYON
+    st = getVariable(41334);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -8508,8 +7920,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42726 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYOFF
-    st = getVariable(42726);
+  { // 41335 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYOFF
+    st = getVariable(41335);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -8522,8 +7934,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42727 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.Q
-    st = getVariable(42727);
+  { // 41336 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.Q
+    st = getVariable(41336);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -8536,8 +7948,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42728 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.STATUS
-    st = getVariable(42728);
+  { // 41337 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.STATUS
+    st = getVariable(41337);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -8550,8 +7962,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42729 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DISABLED_SIG
-    st = getVariable(42729);
+  { // 41338 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DISABLED_SIG
+    st = getVariable(41338);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHU_V_GPA_VKLUCH.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -8564,8 +7976,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42730 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.RELIABILITY
-    st = getVariable(42730);
+  { // 41339 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.RELIABILITY
+    st = getVariable(41339);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.RELIABILITY", 82);
     st->size_data = sizeof(BOOL);
@@ -8578,8 +7990,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42731 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.INVERSE
-    st = getVariable(42731);
+  { // 41340 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.INVERSE
+    st = getVariable(41340);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.INVERSE", 78);
     st->size_data = sizeof(BOOL);
@@ -8592,8 +8004,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42732 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYON
-    st = getVariable(42732);
+  { // 41341 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYON
+    st = getVariable(41341);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYON", 78);
     st->size_data = sizeof(TIME);
@@ -8606,8 +8018,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42733 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYOFF
-    st = getVariable(42733);
+  { // 41342 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYOFF
+    st = getVariable(41342);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DELAYOFF", 79);
     st->size_data = sizeof(TIME);
@@ -8620,8 +8032,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42734 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.Q
-    st = getVariable(42734);
+  { // 41343 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.Q
+    st = getVariable(41343);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.Q", 72);
     st->size_data = sizeof(BOOL);
@@ -8634,8 +8046,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42735 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.STATUS
-    st = getVariable(42735);
+  { // 41344 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.STATUS
+    st = getVariable(41344);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.STATUS", 77);
     st->size_data = sizeof(DWORD);
@@ -8648,8 +8060,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42736 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DISABLED_SIG
-    st = getVariable(42736);
+  { // 41345 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DISABLED_SIG
+    st = getVariable(41345);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SHP_V_GPA_VKLUCH.DISABLED_SIG", 83);
     st->size_data = sizeof(BOOL);
@@ -8662,302 +8074,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42737 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.RELIABILITY
-    st = getVariable(42737);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.RELIABILITY", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42738 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.INVERSE
-    st = getVariable(42738);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.INVERSE", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42739 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYON
-    st = getVariable(42739);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYON", 79);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42740 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYOFF
-    st = getVariable(42740);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DELAYOFF", 80);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42741 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.Q
-    st = getVariable(42741);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.Q", 73);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42742 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.STATUS
-    st = getVariable(42742);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.STATUS", 78);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42743 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DISABLED_SIG
-    st = getVariable(42743);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRU_NEISPR_REZERV.DISABLED_SIG", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRU_NEISPR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42744 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.RELIABILITY
-    st = getVariable(42744);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.RELIABILITY", 93);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42745 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.INVERSE
-    st = getVariable(42745);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.INVERSE", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42746 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYON
-    st = getVariable(42746);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYON", 89);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42747 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYOFF
-    st = getVariable(42747);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DELAYOFF", 90);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42748 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.Q
-    st = getVariable(42748);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.Q", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42749 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.STATUS
-    st = getVariable(42749);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.STATUS", 88);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42750 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DISABLED_SIG
-    st = getVariable(42750);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TOK_VOZBUZHDENIA_EST_REZERV.DISABLED_SIG", 94);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TOK_VOZBUZHDENIA_EST_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42751 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.RELIABILITY
-    st = getVariable(42751);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.RELIABILITY", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42752 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.INVERSE
-    st = getVariable(42752);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.INVERSE", 85);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42753 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYON
-    st = getVariable(42753);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYON", 85);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42754 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYOFF
-    st = getVariable(42754);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DELAYOFF", 86);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42755 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.Q
-    st = getVariable(42755);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.Q", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42756 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.STATUS
-    st = getVariable(42756);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.STATUS", 84);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42757 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DISABLED_SIG
-    st = getVariable(42757);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_NA_SEKTSII_NORM.DISABLED_SIG", 90);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_NA_SEKTSII_NORM;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42758 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.RELIABILITY
-    st = getVariable(42758);
+  { // 41346 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.RELIABILITY
+    st = getVariable(41346);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.RELIABILITY", 72);
     st->size_data = sizeof(BOOL);
@@ -8970,8 +8088,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42759 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.INVERSE
-    st = getVariable(42759);
+  { // 41347 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.INVERSE
+    st = getVariable(41347);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.INVERSE", 68);
     st->size_data = sizeof(BOOL);
@@ -8984,8 +8102,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42760 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DELAYON
-    st = getVariable(42760);
+  { // 41348 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DELAYON
+    st = getVariable(41348);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DELAYON", 68);
     st->size_data = sizeof(TIME);
@@ -8998,8 +8116,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42761 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DELAYOFF
-    st = getVariable(42761);
+  { // 41349 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DELAYOFF
+    st = getVariable(41349);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
@@ -9012,8 +8130,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42762 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.Q
-    st = getVariable(42762);
+  { // 41350 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.Q
+    st = getVariable(41350);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -9026,8 +8144,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42763 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.STATUS
-    st = getVariable(42763);
+  { // 41351 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.STATUS
+    st = getVariable(41351);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -9040,8 +8158,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42764 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG
-    st = getVariable(42764);
+  { // 41352 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG
+    st = getVariable(41352);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF1_ON.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
@@ -9054,8 +8172,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42765 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.RELIABILITY
-    st = getVariable(42765);
+  { // 41353 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.RELIABILITY
+    st = getVariable(41353);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.RELIABILITY", 72);
     st->size_data = sizeof(BOOL);
@@ -9068,8 +8186,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42766 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.INVERSE
-    st = getVariable(42766);
+  { // 41354 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.INVERSE
+    st = getVariable(41354);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.INVERSE", 68);
     st->size_data = sizeof(BOOL);
@@ -9082,8 +8200,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42767 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DELAYON
-    st = getVariable(42767);
+  { // 41355 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DELAYON
+    st = getVariable(41355);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DELAYON", 68);
     st->size_data = sizeof(TIME);
@@ -9096,8 +8214,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42768 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DELAYOFF
-    st = getVariable(42768);
+  { // 41356 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DELAYOFF
+    st = getVariable(41356);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
@@ -9110,8 +8228,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42769 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.Q
-    st = getVariable(42769);
+  { // 41357 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.Q
+    st = getVariable(41357);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -9124,8 +8242,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42770 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.STATUS
-    st = getVariable(42770);
+  { // 41358 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.STATUS
+    st = getVariable(41358);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -9138,8 +8256,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42771 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG
-    st = getVariable(42771);
+  { // 41359 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG
+    st = getVariable(41359);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF2_ON.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
@@ -9152,8 +8270,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42772 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.RELIABILITY
-    st = getVariable(42772);
+  { // 41360 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.RELIABILITY
+    st = getVariable(41360);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.RELIABILITY", 73);
     st->size_data = sizeof(BOOL);
@@ -9166,8 +8284,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42773 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.INVERSE
-    st = getVariable(42773);
+  { // 41361 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.INVERSE
+    st = getVariable(41361);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.INVERSE", 69);
     st->size_data = sizeof(BOOL);
@@ -9180,8 +8298,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42774 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DELAYON
-    st = getVariable(42774);
+  { // 41362 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DELAYON
+    st = getVariable(41362);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DELAYON", 69);
     st->size_data = sizeof(TIME);
@@ -9194,8 +8312,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42775 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DELAYOFF
-    st = getVariable(42775);
+  { // 41363 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DELAYOFF
+    st = getVariable(41363);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
@@ -9208,8 +8326,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42776 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.Q
-    st = getVariable(42776);
+  { // 41364 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.Q
+    st = getVariable(41364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -9222,8 +8340,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42777 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.STATUS
-    st = getVariable(42777);
+  { // 41365 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.STATUS
+    st = getVariable(41365);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -9236,8 +8354,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42778 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG
-    st = getVariable(42778);
+  { // 41366 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG
+    st = getVariable(41366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF23_ON.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
@@ -9250,8 +8368,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42779 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY
-    st = getVariable(42779);
+  { // 41367 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY
+    st = getVariable(41367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -9264,8 +8382,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42780 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE
-    st = getVariable(42780);
+  { // 41368 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE
+    st = getVariable(41368);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -9278,8 +8396,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42781 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON
-    st = getVariable(42781);
+  { // 41369 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON
+    st = getVariable(41369);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -9292,8 +8410,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42782 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF
-    st = getVariable(42782);
+  { // 41370 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF
+    st = getVariable(41370);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -9306,8 +8424,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42783 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.Q
-    st = getVariable(42783);
+  { // 41371 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.Q
+    st = getVariable(41371);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -9320,8 +8438,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42784 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS
-    st = getVariable(42784);
+  { // 41372 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS
+    st = getVariable(41372);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -9334,8 +8452,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42785 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG
-    st = getVariable(42785);
+  { // 41373 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG
+    st = getVariable(41373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF4_QF5_ON.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -9348,8 +8466,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42786 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY
-    st = getVariable(42786);
+  { // 41374 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY
+    st = getVariable(41374);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -9362,8 +8480,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42787 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE
-    st = getVariable(42787);
+  { // 41375 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE
+    st = getVariable(41375);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -9376,8 +8494,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42788 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON
-    st = getVariable(42788);
+  { // 41376 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON
+    st = getVariable(41376);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -9390,8 +8508,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42789 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF
-    st = getVariable(42789);
+  { // 41377 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF
+    st = getVariable(41377);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -9404,8 +8522,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42790 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.Q
-    st = getVariable(42790);
+  { // 41378 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.Q
+    st = getVariable(41378);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -9418,8 +8536,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42791 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS
-    st = getVariable(42791);
+  { // 41379 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS
+    st = getVariable(41379);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -9432,8 +8550,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42792 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG
-    st = getVariable(42792);
+  { // 41380 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG
+    st = getVariable(41380);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF6_QF7_ON.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -9446,8 +8564,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42793 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY
-    st = getVariable(42793);
+  { // 41381 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY
+    st = getVariable(41381);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -9460,8 +8578,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42794 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE
-    st = getVariable(42794);
+  { // 41382 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE
+    st = getVariable(41382);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -9474,8 +8592,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42795 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON
-    st = getVariable(42795);
+  { // 41383 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON
+    st = getVariable(41383);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -9488,8 +8606,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42796 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF
-    st = getVariable(42796);
+  { // 41384 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF
+    st = getVariable(41384);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -9502,8 +8620,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42797 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.Q
-    st = getVariable(42797);
+  { // 41385 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.Q
+    st = getVariable(41385);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -9516,8 +8634,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42798 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS
-    st = getVariable(42798);
+  { // 41386 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS
+    st = getVariable(41386);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -9530,8 +8648,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42799 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG
-    st = getVariable(42799);
+  { // 41387 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG
+    st = getVariable(41387);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF8_QF9_ON.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -9544,8 +8662,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42800 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY
-    st = getVariable(42800);
+  { // 41388 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY
+    st = getVariable(41388);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -9558,8 +8676,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42801 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE
-    st = getVariable(42801);
+  { // 41389 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE
+    st = getVariable(41389);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -9572,8 +8690,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42802 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON
-    st = getVariable(42802);
+  { // 41390 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON
+    st = getVariable(41390);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -9586,8 +8704,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42803 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF
-    st = getVariable(42803);
+  { // 41391 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF
+    st = getVariable(41391);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -9600,8 +8718,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42804 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.Q
-    st = getVariable(42804);
+  { // 41392 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.Q
+    st = getVariable(41392);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -9614,8 +8732,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42805 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS
-    st = getVariable(42805);
+  { // 41393 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS
+    st = getVariable(41393);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -9628,8 +8746,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42806 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG
-    st = getVariable(42806);
+  { // 41394 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG
+    st = getVariable(41394);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF10_QF11_ON.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -9642,8 +8760,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42807 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY
-    st = getVariable(42807);
+  { // 41395 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY
+    st = getVariable(41395);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -9656,8 +8774,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42808 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE
-    st = getVariable(42808);
+  { // 41396 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE
+    st = getVariable(41396);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -9670,8 +8788,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42809 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON
-    st = getVariable(42809);
+  { // 41397 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON
+    st = getVariable(41397);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -9684,8 +8802,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42810 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF
-    st = getVariable(42810);
+  { // 41398 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF
+    st = getVariable(41398);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -9698,8 +8816,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42811 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.Q
-    st = getVariable(42811);
+  { // 41399 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.Q
+    st = getVariable(41399);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -9712,8 +8830,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42812 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS
-    st = getVariable(42812);
+  { // 41400 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS
+    st = getVariable(41400);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -9726,8 +8844,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42813 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG
-    st = getVariable(42813);
+  { // 41401 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG
+    st = getVariable(41401);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF12_QF13_ON.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -9740,8 +8858,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42814 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY
-    st = getVariable(42814);
+  { // 41402 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY
+    st = getVariable(41402);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.RELIABILITY", 78);
     st->size_data = sizeof(BOOL);
@@ -9754,8 +8872,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42815 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE
-    st = getVariable(42815);
+  { // 41403 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE
+    st = getVariable(41403);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.INVERSE", 74);
     st->size_data = sizeof(BOOL);
@@ -9768,8 +8886,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42816 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON
-    st = getVariable(42816);
+  { // 41404 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON
+    st = getVariable(41404);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYON", 74);
     st->size_data = sizeof(TIME);
@@ -9782,8 +8900,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42817 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF
-    st = getVariable(42817);
+  { // 41405 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF
+    st = getVariable(41405);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DELAYOFF", 75);
     st->size_data = sizeof(TIME);
@@ -9796,8 +8914,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42818 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.Q
-    st = getVariable(42818);
+  { // 41406 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.Q
+    st = getVariable(41406);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.Q", 68);
     st->size_data = sizeof(BOOL);
@@ -9810,8 +8928,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42819 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS
-    st = getVariable(42819);
+  { // 41407 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS
+    st = getVariable(41407);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.STATUS", 73);
     st->size_data = sizeof(DWORD);
@@ -9824,8 +8942,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42820 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG
-    st = getVariable(42820);
+  { // 41408 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG
+    st = getVariable(41408);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF14_QF15_ON.DISABLED_SIG", 79);
     st->size_data = sizeof(BOOL);
@@ -9838,8 +8956,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42821 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.RELIABILITY
-    st = getVariable(42821);
+  { // 41409 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.RELIABILITY
+    st = getVariable(41409);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.RELIABILITY", 73);
     st->size_data = sizeof(BOOL);
@@ -9852,8 +8970,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42822 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.INVERSE
-    st = getVariable(42822);
+  { // 41410 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.INVERSE
+    st = getVariable(41410);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.INVERSE", 69);
     st->size_data = sizeof(BOOL);
@@ -9866,8 +8984,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42823 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DELAYON
-    st = getVariable(42823);
+  { // 41411 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DELAYON
+    st = getVariable(41411);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DELAYON", 69);
     st->size_data = sizeof(TIME);
@@ -9880,8 +8998,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42824 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DELAYOFF
-    st = getVariable(42824);
+  { // 41412 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DELAYOFF
+    st = getVariable(41412);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DELAYOFF", 70);
     st->size_data = sizeof(TIME);
@@ -9894,8 +9012,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42825 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.Q
-    st = getVariable(42825);
+  { // 41413 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.Q
+    st = getVariable(41413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -9908,8 +9026,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42826 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.STATUS
-    st = getVariable(42826);
+  { // 41414 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.STATUS
+    st = getVariable(41414);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.STATUS", 68);
     st->size_data = sizeof(DWORD);
@@ -9922,8 +9040,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42827 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG
-    st = getVariable(42827);
+  { // 41415 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG
+    st = getVariable(41415);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.QF22_ON.DISABLED_SIG", 74);
     st->size_data = sizeof(BOOL);
@@ -9936,8 +9054,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42828 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY
-    st = getVariable(42828);
+  { // 41416 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY
+    st = getVariable(41416);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -9950,8 +9068,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42829 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.INVERSE
-    st = getVariable(42829);
+  { // 41417 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.INVERSE
+    st = getVariable(41417);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -9964,8 +9082,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42830 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYON
-    st = getVariable(42830);
+  { // 41418 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYON
+    st = getVariable(41418);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -9978,8 +9096,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42831 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF
-    st = getVariable(42831);
+  { // 41419 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF
+    st = getVariable(41419);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -9992,8 +9110,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42832 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.Q
-    st = getVariable(42832);
+  { // 41420 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.Q
+    st = getVariable(41420);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -10006,8 +9124,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42833 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.STATUS
-    st = getVariable(42833);
+  { // 41421 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.STATUS
+    st = getVariable(41421);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -10020,8 +9138,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42834 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG
-    st = getVariable(42834);
+  { // 41422 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG
+    st = getVariable(41422);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G1_G2.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -10034,8 +9152,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42835 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY
-    st = getVariable(42835);
+  { // 41423 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY
+    st = getVariable(41423);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -10048,8 +9166,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42836 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.INVERSE
-    st = getVariable(42836);
+  { // 41424 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.INVERSE
+    st = getVariable(41424);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -10062,8 +9180,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42837 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYON
-    st = getVariable(42837);
+  { // 41425 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYON
+    st = getVariable(41425);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -10076,8 +9194,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42838 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF
-    st = getVariable(42838);
+  { // 41426 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF
+    st = getVariable(41426);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -10090,8 +9208,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42839 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.Q
-    st = getVariable(42839);
+  { // 41427 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.Q
+    st = getVariable(41427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -10104,8 +9222,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42840 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.STATUS
-    st = getVariable(42840);
+  { // 41428 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.STATUS
+    st = getVariable(41428);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -10118,8 +9236,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42841 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG
-    st = getVariable(42841);
+  { // 41429 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG
+    st = getVariable(41429);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G3_G4.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -10132,8 +9250,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42842 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY
-    st = getVariable(42842);
+  { // 41430 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY
+    st = getVariable(41430);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10146,8 +9264,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42843 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.INVERSE
-    st = getVariable(42843);
+  { // 41431 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.INVERSE
+    st = getVariable(41431);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10160,8 +9278,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42844 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYON
-    st = getVariable(42844);
+  { // 41432 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYON
+    st = getVariable(41432);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10174,8 +9292,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42845 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF
-    st = getVariable(42845);
+  { // 41433 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF
+    st = getVariable(41433);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10188,8 +9306,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42846 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.Q
-    st = getVariable(42846);
+  { // 41434 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.Q
+    st = getVariable(41434);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10202,8 +9320,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42847 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.STATUS
-    st = getVariable(42847);
+  { // 41435 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.STATUS
+    st = getVariable(41435);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10216,8 +9334,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42848 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG
-    st = getVariable(42848);
+  { // 41436 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG
+    st = getVariable(41436);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G15_G16.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10230,8 +9348,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42849 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.RELIABILITY
-    st = getVariable(42849);
+  { // 41437 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.RELIABILITY
+    st = getVariable(41437);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.RELIABILITY", 72);
     st->size_data = sizeof(BOOL);
@@ -10244,8 +9362,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42850 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.INVERSE
-    st = getVariable(42850);
+  { // 41438 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.INVERSE
+    st = getVariable(41438);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.INVERSE", 68);
     st->size_data = sizeof(BOOL);
@@ -10258,8 +9376,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42851 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DELAYON
-    st = getVariable(42851);
+  { // 41439 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DELAYON
+    st = getVariable(41439);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DELAYON", 68);
     st->size_data = sizeof(TIME);
@@ -10272,8 +9390,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42852 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DELAYOFF
-    st = getVariable(42852);
+  { // 41440 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DELAYOFF
+    st = getVariable(41440);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DELAYOFF", 69);
     st->size_data = sizeof(TIME);
@@ -10286,8 +9404,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42853 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.Q
-    st = getVariable(42853);
+  { // 41441 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.Q
+    st = getVariable(41441);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -10300,8 +9418,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42854 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.STATUS
-    st = getVariable(42854);
+  { // 41442 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.STATUS
+    st = getVariable(41442);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.STATUS", 67);
     st->size_data = sizeof(DWORD);
@@ -10314,8 +9432,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42855 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG
-    st = getVariable(42855);
+  { // 41443 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG
+    st = getVariable(41443);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G17.DISABLED_SIG", 73);
     st->size_data = sizeof(BOOL);
@@ -10328,8 +9446,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42856 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY
-    st = getVariable(42856);
+  { // 41444 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY
+    st = getVariable(41444);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -10342,8 +9460,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42857 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.INVERSE
-    st = getVariable(42857);
+  { // 41445 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.INVERSE
+    st = getVariable(41445);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -10356,8 +9474,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42858 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYON
-    st = getVariable(42858);
+  { // 41446 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYON
+    st = getVariable(41446);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -10370,8 +9488,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42859 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF
-    st = getVariable(42859);
+  { // 41447 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF
+    st = getVariable(41447);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -10384,8 +9502,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42860 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.Q
-    st = getVariable(42860);
+  { // 41448 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.Q
+    st = getVariable(41448);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -10398,8 +9516,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42861 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.STATUS
-    st = getVariable(42861);
+  { // 41449 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.STATUS
+    st = getVariable(41449);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -10412,8 +9530,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42862 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG
-    st = getVariable(42862);
+  { // 41450 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG
+    st = getVariable(41450);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G5_G6.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -10426,8 +9544,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42863 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY
-    st = getVariable(42863);
+  { // 41451 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY
+    st = getVariable(41451);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.RELIABILITY", 74);
     st->size_data = sizeof(BOOL);
@@ -10440,8 +9558,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42864 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.INVERSE
-    st = getVariable(42864);
+  { // 41452 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.INVERSE
+    st = getVariable(41452);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.INVERSE", 70);
     st->size_data = sizeof(BOOL);
@@ -10454,8 +9572,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42865 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYON
-    st = getVariable(42865);
+  { // 41453 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYON
+    st = getVariable(41453);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYON", 70);
     st->size_data = sizeof(TIME);
@@ -10468,8 +9586,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42866 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF
-    st = getVariable(42866);
+  { // 41454 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF
+    st = getVariable(41454);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DELAYOFF", 71);
     st->size_data = sizeof(TIME);
@@ -10482,8 +9600,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42867 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.Q
-    st = getVariable(42867);
+  { // 41455 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.Q
+    st = getVariable(41455);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -10496,8 +9614,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42868 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.STATUS
-    st = getVariable(42868);
+  { // 41456 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.STATUS
+    st = getVariable(41456);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.STATUS", 69);
     st->size_data = sizeof(DWORD);
@@ -10510,8 +9628,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42869 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG
-    st = getVariable(42869);
+  { // 41457 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG
+    st = getVariable(41457);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G7_G8.DISABLED_SIG", 75);
     st->size_data = sizeof(BOOL);
@@ -10524,8 +9642,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42870 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY
-    st = getVariable(42870);
+  { // 41458 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY
+    st = getVariable(41458);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10538,8 +9656,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42871 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.INVERSE
-    st = getVariable(42871);
+  { // 41459 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.INVERSE
+    st = getVariable(41459);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10552,8 +9670,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42872 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYON
-    st = getVariable(42872);
+  { // 41460 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYON
+    st = getVariable(41460);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10566,8 +9684,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42873 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF
-    st = getVariable(42873);
+  { // 41461 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF
+    st = getVariable(41461);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10580,8 +9698,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42874 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.Q
-    st = getVariable(42874);
+  { // 41462 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.Q
+    st = getVariable(41462);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10594,8 +9712,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42875 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.STATUS
-    st = getVariable(42875);
+  { // 41463 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.STATUS
+    st = getVariable(41463);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10608,8 +9726,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42876 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG
-    st = getVariable(42876);
+  { // 41464 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG
+    st = getVariable(41464);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G18_G19.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10622,8 +9740,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42877 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY
-    st = getVariable(42877);
+  { // 41465 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY
+    st = getVariable(41465);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10636,8 +9754,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42878 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.INVERSE
-    st = getVariable(42878);
+  { // 41466 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.INVERSE
+    st = getVariable(41466);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10650,8 +9768,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42879 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYON
-    st = getVariable(42879);
+  { // 41467 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYON
+    st = getVariable(41467);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10664,8 +9782,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42880 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF
-    st = getVariable(42880);
+  { // 41468 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF
+    st = getVariable(41468);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10678,8 +9796,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42881 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.Q
-    st = getVariable(42881);
+  { // 41469 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.Q
+    st = getVariable(41469);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10692,8 +9810,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42882 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.STATUS
-    st = getVariable(42882);
+  { // 41470 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.STATUS
+    st = getVariable(41470);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10706,8 +9824,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42883 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG
-    st = getVariable(42883);
+  { // 41471 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG
+    st = getVariable(41471);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G10_G11.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10720,8 +9838,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42884 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY
-    st = getVariable(42884);
+  { // 41472 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY
+    st = getVariable(41472);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.RELIABILITY", 76);
     st->size_data = sizeof(BOOL);
@@ -10734,8 +9852,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42885 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.INVERSE
-    st = getVariable(42885);
+  { // 41473 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.INVERSE
+    st = getVariable(41473);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.INVERSE", 72);
     st->size_data = sizeof(BOOL);
@@ -10748,8 +9866,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42886 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYON
-    st = getVariable(42886);
+  { // 41474 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYON
+    st = getVariable(41474);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYON", 72);
     st->size_data = sizeof(TIME);
@@ -10762,8 +9880,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42887 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF
-    st = getVariable(42887);
+  { // 41475 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF
+    st = getVariable(41475);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DELAYOFF", 73);
     st->size_data = sizeof(TIME);
@@ -10776,8 +9894,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42888 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.Q
-    st = getVariable(42888);
+  { // 41476 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.Q
+    st = getVariable(41476);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.Q", 66);
     st->size_data = sizeof(BOOL);
@@ -10790,8 +9908,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42889 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.STATUS
-    st = getVariable(42889);
+  { // 41477 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.STATUS
+    st = getVariable(41477);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.STATUS", 71);
     st->size_data = sizeof(DWORD);
@@ -10804,8 +9922,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42890 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG
-    st = getVariable(42890);
+  { // 41478 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG
+    st = getVariable(41478);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NS_G13_G14.DISABLED_SIG", 77);
     st->size_data = sizeof(BOOL);
@@ -10818,1086 +9936,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42891 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.RELIABILITY
-    st = getVariable(42891);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.RELIABILITY", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42892 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.INVERSE
-    st = getVariable(42892);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.INVERSE", 75);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42893 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYON
-    st = getVariable(42893);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYON", 75);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42894 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYOFF
-    st = getVariable(42894);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DELAYOFF", 76);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42895 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.Q
-    st = getVariable(42895);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.Q", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42896 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.STATUS
-    st = getVariable(42896);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.STATUS", 74);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42897 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DISABLED_SIG
-    st = getVariable(42897);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM1_AVTOMAT.DISABLED_SIG", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42898 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.RELIABILITY
-    st = getVariable(42898);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.RELIABILITY", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42899 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.INVERSE
-    st = getVariable(42899);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.INVERSE", 75);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42900 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYON
-    st = getVariable(42900);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYON", 75);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42901 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYOFF
-    st = getVariable(42901);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DELAYOFF", 76);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42902 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.Q
-    st = getVariable(42902);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.Q", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42903 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.STATUS
-    st = getVariable(42903);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.STATUS", 74);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42904 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DISABLED_SIG
-    st = getVariable(42904);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM2_AVTOMAT.DISABLED_SIG", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42905 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.RELIABILITY
-    st = getVariable(42905);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.RELIABILITY", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42906 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.INVERSE
-    st = getVariable(42906);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.INVERSE", 75);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42907 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYON
-    st = getVariable(42907);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYON", 75);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42908 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYOFF
-    st = getVariable(42908);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DELAYOFF", 76);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42909 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.Q
-    st = getVariable(42909);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.Q", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42910 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.STATUS
-    st = getVariable(42910);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.STATUS", 74);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42911 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DISABLED_SIG
-    st = getVariable(42911);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM3_AVTOMAT.DISABLED_SIG", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM3_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42912 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.RELIABILITY
-    st = getVariable(42912);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.RELIABILITY", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42913 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.INVERSE
-    st = getVariable(42913);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.INVERSE", 75);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42914 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYON
-    st = getVariable(42914);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYON", 75);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42915 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYOFF
-    st = getVariable(42915);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DELAYOFF", 76);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42916 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.Q
-    st = getVariable(42916);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.Q", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42917 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.STATUS
-    st = getVariable(42917);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.STATUS", 74);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42918 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DISABLED_SIG
-    st = getVariable(42918);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AVOM4_AVTOMAT.DISABLED_SIG", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AVOM4_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42919 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.RELIABILITY
-    st = getVariable(42919);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.RELIABILITY", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42920 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.INVERSE
-    st = getVariable(42920);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.INVERSE", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42921 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYON
-    st = getVariable(42921);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYON", 80);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42922 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYOFF
-    st = getVariable(42922);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DELAYOFF", 81);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42923 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.Q
-    st = getVariable(42923);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.Q", 74);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42924 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.STATUS
-    st = getVariable(42924);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.STATUS", 79);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42925 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DISABLED_SIG
-    st = getVariable(42925);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.PNS_AVTOMAT_REZERV.DISABLED_SIG", 85);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->PNS_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42926 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.RELIABILITY
-    st = getVariable(42926);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.RELIABILITY", 77);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42927 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.INVERSE
-    st = getVariable(42927);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.INVERSE", 73);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42928 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYON
-    st = getVariable(42928);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYON", 73);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42929 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYOFF
-    st = getVariable(42929);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.DELAYOFF", 74);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42930 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.Q
-    st = getVariable(42930);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.Q", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42931 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.STATUS
-    st = getVariable(42931);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.STATUS", 72);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42932 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.DISABLED_SIG
-    st = getVariable(42932);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU1_AVTOMAT.DISABLED_SIG", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU1_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42933 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.RELIABILITY
-    st = getVariable(42933);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.RELIABILITY", 77);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42934 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.INVERSE
-    st = getVariable(42934);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.INVERSE", 73);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42935 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYON
-    st = getVariable(42935);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYON", 73);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42936 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYOFF
-    st = getVariable(42936);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.DELAYOFF", 74);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42937 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.Q
-    st = getVariable(42937);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.Q", 67);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42938 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.STATUS
-    st = getVariable(42938);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.STATUS", 72);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42939 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.DISABLED_SIG
-    st = getVariable(42939);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NU2_AVTOMAT.DISABLED_SIG", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NU2_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42940 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.RELIABILITY
-    st = getVariable(42940);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.RELIABILITY", 87);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42941 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.INVERSE
-    st = getVariable(42941);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.INVERSE", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42942 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYON
-    st = getVariable(42942);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYON", 83);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42943 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYOFF
-    st = getVariable(42943);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DELAYOFF", 84);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42944 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.Q
-    st = getVariable(42944);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.Q", 77);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42945 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.STATUS
-    st = getVariable(42945);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.STATUS", 82);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42946 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DISABLED_SIG
-    st = getVariable(42946);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_MB_AVTOMAT_REZERV.DISABLED_SIG", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_MB_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42947 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.RELIABILITY
-    st = getVariable(42947);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.RELIABILITY", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42948 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.INVERSE
-    st = getVariable(42948);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.INVERSE", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42949 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYON
-    st = getVariable(42949);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYON", 84);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42950 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYOFF
-    st = getVariable(42950);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DELAYOFF", 85);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42951 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.Q
-    st = getVariable(42951);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.Q", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42952 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.STATUS
-    st = getVariable(42952);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.STATUS", 83);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42953 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DISABLED_SIG
-    st = getVariable(42953);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.TEN_KOLLECTORA_AVTOMAT.DISABLED_SIG", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->TEN_KOLLECTORA_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42954 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.RELIABILITY
-    st = getVariable(42954);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.RELIABILITY", 87);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42955 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.INVERSE
-    st = getVariable(42955);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.INVERSE", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42956 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYON
-    st = getVariable(42956);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYON", 83);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42957 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYOFF
-    st = getVariable(42957);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DELAYOFF", 84);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42958 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.Q
-    st = getVariable(42958);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.Q", 77);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42959 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.STATUS
-    st = getVariable(42959);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.STATUS", 82);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42960 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DISABLED_SIG
-    st = getVariable(42960);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KALORIFERAVOM_AVTOMAT.DISABLED_SIG", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KALORIFERAVOM_AVTOMAT;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42961 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.RELIABILITY
-    st = getVariable(42961);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.RELIABILITY", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 42962 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.INVERSE
-    st = getVariable(42962);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.INVERSE", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 42963 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYON
-    st = getVariable(42963);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYON", 80);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 42964 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYOFF
-    st = getVariable(42964);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DELAYOFF", 81);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 42965 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.Q
-    st = getVariable(42965);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.Q", 74);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 42966 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.STATUS
-    st = getVariable(42966);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.STATUS", 79);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 42967 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DISABLED_SIG
-    st = getVariable(42967);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CMN_AVTOMAT_REZERV.DISABLED_SIG", 85);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->CMN_AVTOMAT_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 42968 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.RELIABILITY
-    st = getVariable(42968);
+  { // 41479 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.RELIABILITY
+    st = getVariable(41479);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.RELIABILITY", 84);
     st->size_data = sizeof(BOOL);
@@ -11910,8 +9950,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42969 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.INVERSE
-    st = getVariable(42969);
+  { // 41480 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.INVERSE
+    st = getVariable(41480);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.INVERSE", 80);
     st->size_data = sizeof(BOOL);
@@ -11924,8 +9964,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42970 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYON
-    st = getVariable(42970);
+  { // 41481 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYON
+    st = getVariable(41481);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYON", 80);
     st->size_data = sizeof(TIME);
@@ -11938,8 +9978,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42971 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYOFF
-    st = getVariable(42971);
+  { // 41482 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYOFF
+    st = getVariable(41482);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DELAYOFF", 81);
     st->size_data = sizeof(TIME);
@@ -11952,8 +9992,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42972 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.Q
-    st = getVariable(42972);
+  { // 41483 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.Q
+    st = getVariable(41483);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.Q", 74);
     st->size_data = sizeof(BOOL);
@@ -11966,8 +10006,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42973 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.STATUS
-    st = getVariable(42973);
+  { // 41484 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.STATUS
+    st = getVariable(41484);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.STATUS", 79);
     st->size_data = sizeof(DWORD);
@@ -11980,8 +10020,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42974 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DISABLED_SIG
-    st = getVariable(42974);
+  { // 41485 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DISABLED_SIG
+    st = getVariable(41485);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.UROVEN_MASLA_AKKUM.DISABLED_SIG", 85);
     st->size_data = sizeof(BOOL);
@@ -11994,694 +10034,400 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42975 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.RELIABILITY
-    st = getVariable(42975);
+  { // 41486 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.RELIABILITY
+    st = getVariable(41486);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.RELIABILITY", 84);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.RELIABILITY", 77);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42976 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.INVERSE
-    st = getVariable(42976);
+  { // 41487 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.INVERSE
+    st = getVariable(41487);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.INVERSE", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.INVERSE", 73);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42977 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYON
-    st = getVariable(42977);
+  { // 41488 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.DELAYON
+    st = getVariable(41488);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYON", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.DELAYON", 73);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42978 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYOFF
-    st = getVariable(42978);
+  { // 41489 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.DELAYOFF
+    st = getVariable(41489);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DELAYOFF", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.DELAYOFF", 74);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42979 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.Q
-    st = getVariable(42979);
+  { // 41490 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.Q
+    st = getVariable(41490);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.Q", 74);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.Q", 67);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42980 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.STATUS
-    st = getVariable(42980);
+  { // 41491 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.STATUS
+    st = getVariable(41491);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.STATUS", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.STATUS", 72);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42981 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DISABLED_SIG
-    st = getVariable(42981);
+  { // 41492 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.DISABLED_SIG
+    st = getVariable(41492);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON_REZERV.DISABLED_SIG", 85);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU1_GPA_ON.DISABLED_SIG", 78);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU1_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42982 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.RELIABILITY
-    st = getVariable(42982);
+  { // 41493 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.RELIABILITY
+    st = getVariable(41493);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.RELIABILITY", 84);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.RELIABILITY", 77);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42983 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.INVERSE
-    st = getVariable(42983);
+  { // 41494 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.INVERSE
+    st = getVariable(41494);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.INVERSE", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.INVERSE", 73);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42984 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYON
-    st = getVariable(42984);
+  { // 41495 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.DELAYON
+    st = getVariable(41495);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYON", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.DELAYON", 73);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42985 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYOFF
-    st = getVariable(42985);
+  { // 41496 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.DELAYOFF
+    st = getVariable(41496);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DELAYOFF", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.DELAYOFF", 74);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42986 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.Q
-    st = getVariable(42986);
+  { // 41497 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.Q
+    st = getVariable(41497);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.Q", 74);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.Q", 67);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42987 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.STATUS
-    st = getVariable(42987);
+  { // 41498 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.STATUS
+    st = getVariable(41498);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.STATUS", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.STATUS", 72);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42988 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DISABLED_SIG
-    st = getVariable(42988);
+  { // 41499 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.DISABLED_SIG
+    st = getVariable(41499);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON_REZERV.DISABLED_SIG", 85);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NKU2_GPA_ON.DISABLED_SIG", 78);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON_REZERV;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NKU2_GPA_ON;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42989 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.RELIABILITY
-    st = getVariable(42989);
+  { // 41500 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.RELIABILITY
+    st = getVariable(41500);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.RELIABILITY", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.RELIABILITY", 79);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42990 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.INVERSE
-    st = getVariable(42990);
+  { // 41501 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.INVERSE
+    st = getVariable(41501);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.INVERSE", 67);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.INVERSE", 75);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42991 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.DELAYON
-    st = getVariable(42991);
+  { // 41502 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.DELAYON
+    st = getVariable(41502);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.DELAYON", 67);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.DELAYON", 75);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42992 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.DELAYOFF
-    st = getVariable(42992);
+  { // 41503 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.DELAYOFF
+    st = getVariable(41503);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.DELAYOFF", 68);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.DELAYOFF", 76);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 42993 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.Q
-    st = getVariable(42993);
+  { // 41504 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.Q
+    st = getVariable(41504);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.Q", 61);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.Q", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 42994 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.STATUS
-    st = getVariable(42994);
+  { // 41505 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.STATUS
+    st = getVariable(41505);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.STATUS", 66);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.STATUS", 74);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 42995 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG
-    st = getVariable(42995);
+  { // 41506 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.DISABLED_SIG
+    st = getVariable(41506);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC.DISABLED_SIG", 72);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_KC_OT_SHKS.DISABLED_SIG", 80);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_KC_OT_SHKS;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 42996 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.RELIABILITY
-    st = getVariable(42996);
+  { // 41507 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.RELIABILITY
+    st = getVariable(41507);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.RELIABILITY", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.RELIABILITY", 79);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 42997 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.INVERSE
-    st = getVariable(42997);
+  { // 41508 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.INVERSE
+    st = getVariable(41508);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.INVERSE", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.INVERSE", 75);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 42998 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYON
-    st = getVariable(42998);
+  { // 41509 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.DELAYON
+    st = getVariable(41509);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYON", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.DELAYON", 75);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 42999 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYOFF
-    st = getVariable(42999);
+  { // 41510 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.DELAYOFF
+    st = getVariable(41510);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DELAYOFF", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.DELAYOFF", 76);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 43000 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.Q
-    st = getVariable(43000);
+  { // 41511 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.Q
+    st = getVariable(41511);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.Q", 73);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.Q", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 43001 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.STATUS
-    st = getVariable(43001);
+  { // 41512 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.STATUS
+    st = getVariable(41512);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.STATUS", 78);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.STATUS", 74);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43002 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DISABLED_SIG
-    st = getVariable(43002);
+  { // 41513 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.DISABLED_SIG
+    st = getVariable(41513);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_PRU.DISABLED_SIG", 84);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_SHU.DISABLED_SIG", 80);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_PRU;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 43003 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.RELIABILITY
-    st = getVariable(43003);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.RELIABILITY", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43004 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.INVERSE
-    st = getVariable(43004);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.INVERSE", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43005 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYON
-    st = getVariable(43005);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYON", 79);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43006 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYOFF
-    st = getVariable(43006);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DELAYOFF", 80);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43007 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.Q
-    st = getVariable(43007);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.Q", 73);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43008 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.STATUS
-    st = getVariable(43008);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.STATUS", 78);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43009 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DISABLED_SIG
-    st = getVariable(43009);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_PRU.DISABLED_SIG", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_PRU;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43010 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.RELIABILITY
-    st = getVariable(43010);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.RELIABILITY", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43011 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.INVERSE
-    st = getVariable(43011);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.INVERSE", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43012 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYON
-    st = getVariable(43012);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYON", 84);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43013 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYOFF
-    st = getVariable(43013);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DELAYOFF", 85);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43014 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.Q
-    st = getVariable(43014);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.Q", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43015 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.STATUS
-    st = getVariable(43015);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.STATUS", 83);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43016 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG
-    st = getVariable(43016);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43017 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.RELIABILITY
-    st = getVariable(43017);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.RELIABILITY", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43018 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.INVERSE
-    st = getVariable(43018);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.INVERSE", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43019 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYON
-    st = getVariable(43019);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYON", 84);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43020 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYOFF
-    st = getVariable(43020);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DELAYOFF", 85);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43021 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.Q
-    st = getVariable(43021);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.Q", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43022 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.STATUS
-    st = getVariable(43022);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.STATUS", 83);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43023 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG
-    st = getVariable(43023);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_KNOPKA_SHU_EGPA.DISABLED_SIG", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_KNOPKA_SHU_EGPA;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43024 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.RELIABILITY
-    st = getVariable(43024);
+  { // 41514 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.RELIABILITY
+    st = getVariable(41514);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.RELIABILITY", 79);
     st->size_data = sizeof(BOOL);
@@ -12694,8 +10440,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43025 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.INVERSE
-    st = getVariable(43025);
+  { // 41515 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.INVERSE
+    st = getVariable(41515);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.INVERSE", 75);
     st->size_data = sizeof(BOOL);
@@ -12708,8 +10454,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 43026 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYON
-    st = getVariable(43026);
+  { // 41516 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYON
+    st = getVariable(41516);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYON", 75);
     st->size_data = sizeof(TIME);
@@ -12722,8 +10468,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 43027 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYOFF
-    st = getVariable(43027);
+  { // 41517 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYOFF
+    st = getVariable(41517);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DELAYOFF", 76);
     st->size_data = sizeof(TIME);
@@ -12736,8 +10482,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 43028 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.Q
-    st = getVariable(43028);
+  { // 41518 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.Q
+    st = getVariable(41518);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.Q", 69);
     st->size_data = sizeof(BOOL);
@@ -12750,8 +10496,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 43029 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.STATUS
-    st = getVariable(43029);
+  { // 41519 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.STATUS
+    st = getVariable(41519);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.STATUS", 74);
     st->size_data = sizeof(DWORD);
@@ -12764,8 +10510,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43030 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DISABLED_SIG
-    st = getVariable(43030);
+  { // 41520 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DISABLED_SIG
+    st = getVariable(41520);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO_SRABOTAL.DISABLED_SIG", 80);
     st->size_data = sizeof(BOOL);
@@ -12778,596 +10524,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 43031 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.RELIABILITY
-    st = getVariable(43031);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.RELIABILITY", 90);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43032 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.INVERSE
-    st = getVariable(43032);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.INVERSE", 86);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43033 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYON
-    st = getVariable(43033);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYON", 86);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43034 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYOFF
-    st = getVariable(43034);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DELAYOFF", 87);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43035 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.Q
-    st = getVariable(43035);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.Q", 80);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43036 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.STATUS
-    st = getVariable(43036);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.STATUS", 85);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43037 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DISABLED_SIG
-    st = getVariable(43037);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_OSNOVNOY_EST.DISABLED_SIG", 91);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_OSNOVNOY_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43038 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.RELIABILITY
-    st = getVariable(43038);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.RELIABILITY", 88);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43039 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.INVERSE
-    st = getVariable(43039);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.INVERSE", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43040 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYON
-    st = getVariable(43040);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYON", 84);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43041 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYOFF
-    st = getVariable(43041);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DELAYOFF", 85);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43042 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.Q
-    st = getVariable(43042);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.Q", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43043 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.STATUS
-    st = getVariable(43043);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.STATUS", 83);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43044 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DISABLED_SIG
-    st = getVariable(43044);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SAU_GPA220V_RESERV_EST.DISABLED_SIG", 89);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SAU_GPA220V_RESERV_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43045 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.RELIABILITY
-    st = getVariable(43045);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.RELIABILITY", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43046 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.INVERSE
-    st = getVariable(43046);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.INVERSE", 74);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43047 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.DELAYON
-    st = getVariable(43047);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.DELAYON", 74);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43048 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.DELAYOFF
-    st = getVariable(43048);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.DELAYOFF", 75);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43049 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.Q
-    st = getVariable(43049);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.Q", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43050 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.STATUS
-    st = getVariable(43050);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.STATUS", 73);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43051 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.DISABLED_SIG
-    st = getVariable(43051);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.KRANI24V_EST.DISABLED_SIG", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->KRANI24V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43052 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.RELIABILITY
-    st = getVariable(43052);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.RELIABILITY", 78);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43053 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.INVERSE
-    st = getVariable(43053);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.INVERSE", 74);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43054 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.DELAYON
-    st = getVariable(43054);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.DELAYON", 74);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43055 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.DELAYOFF
-    st = getVariable(43055);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.DELAYOFF", 75);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43056 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.Q
-    st = getVariable(43056);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.Q", 68);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43057 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.STATUS
-    st = getVariable(43057);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.STATUS", 73);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43058 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.DISABLED_SIG
-    st = getVariable(43058);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.BEAO220V_EST.DISABLED_SIG", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->BEAO220V_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43059 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.RELIABILITY
-    st = getVariable(43059);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.RELIABILITY", 73);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43060 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.INVERSE
-    st = getVariable(43060);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.INVERSE", 69);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43061 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.DELAYON
-    st = getVariable(43061);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.DELAYON", 69);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43062 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.DELAYOFF
-    st = getVariable(43062);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.DELAYOFF", 70);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43063 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.Q
-    st = getVariable(43063);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.Q", 63);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43064 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.STATUS
-    st = getVariable(43064);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.STATUS", 68);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43065 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.DISABLED_SIG
-    st = getVariable(43065);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.V24_EST.DISABLED_SIG", 74);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->V24_EST;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43066 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.RELIABILITY
-    st = getVariable(43066);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.RELIABILITY", 83);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
-    st->value_p = p_BOOL;
-  }
-  { // 43067 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.INVERSE
-    st = getVariable(43067);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.INVERSE", 79);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
-    st->value_p = p_BOOL;
-  }
-  { // 43068 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYON
-    st = getVariable(43068);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYON", 79);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
-    st->value_p = p_TIME;
-  }
-  { // 43069 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYOFF
-    st = getVariable(43069);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DELAYOFF", 80);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
-    st->value_p = p_TIME;
-  }
-  { // 43070 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.Q
-    st = getVariable(43070);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.Q", 73);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
-    st->value_p = p_BOOL;
-  }
-  { // 43071 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.STATUS
-    st = getVariable(43071);
-    memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.STATUS", 78);
-    st->size_data = sizeof(DWORD);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
-    st->value_p = p_DWORD;
-  }
-  { // 43072 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DISABLED_SIG
-    st = getVariable(43072);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.GPA_POZHAR_REZERV.DISABLED_SIG", 84);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
-    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
-    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
-    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->GPA_POZHAR_REZERV;
-    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
-    st->value_p = p_BOOL;
-  }
-  { // 43073 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.RELIABILITY
-    st = getVariable(43073);
+  { // 41521 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.RELIABILITY
+    st = getVariable(41521);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.RELIABILITY", 80);
     st->size_data = sizeof(BOOL);
@@ -13380,8 +10538,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43074 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.INVERSE
-    st = getVariable(43074);
+  { // 41522 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.INVERSE
+    st = getVariable(41522);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.INVERSE", 76);
     st->size_data = sizeof(BOOL);
@@ -13394,8 +10552,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 43075 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYON
-    st = getVariable(43075);
+  { // 41523 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYON
+    st = getVariable(41523);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYON", 76);
     st->size_data = sizeof(TIME);
@@ -13408,8 +10566,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 43076 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYOFF
-    st = getVariable(43076);
+  { // 41524 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYOFF
+    st = getVariable(41524);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DELAYOFF", 77);
     st->size_data = sizeof(TIME);
@@ -13422,8 +10580,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 43077 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.Q
-    st = getVariable(43077);
+  { // 41525 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.Q
+    st = getVariable(41525);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.Q", 70);
     st->size_data = sizeof(BOOL);
@@ -13436,8 +10594,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 43078 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.STATUS
-    st = getVariable(43078);
+  { // 41526 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.STATUS
+    st = getVariable(41526);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.STATUS", 75);
     st->size_data = sizeof(DWORD);
@@ -13450,8 +10608,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43079 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DISABLED_SIG
-    st = getVariable(43079);
+  { // 41527 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DISABLED_SIG
+    st = getVariable(41527);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.CHASTOTNY_PUSK.DISABLED_SIG", 81);
     st->size_data = sizeof(BOOL);
@@ -13464,8 +10622,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 43080 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.RELIABILITY
-    st = getVariable(43080);
+  { // 41528 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.RELIABILITY
+    st = getVariable(41528);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.RELIABILITY", 89);
     st->size_data = sizeof(BOOL);
@@ -13478,8 +10636,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43081 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.INVERSE
-    st = getVariable(43081);
+  { // 41529 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.INVERSE
+    st = getVariable(41529);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.INVERSE", 85);
     st->size_data = sizeof(BOOL);
@@ -13492,8 +10650,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 43082 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYON
-    st = getVariable(43082);
+  { // 41530 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYON
+    st = getVariable(41530);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYON", 85);
     st->size_data = sizeof(TIME);
@@ -13506,8 +10664,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 43083 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYOFF
-    st = getVariable(43083);
+  { // 41531 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYOFF
+    st = getVariable(41531);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DELAYOFF", 86);
     st->size_data = sizeof(TIME);
@@ -13520,8 +10678,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 43084 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.Q
-    st = getVariable(43084);
+  { // 41532 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.Q
+    st = getVariable(41532);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.Q", 79);
     st->size_data = sizeof(BOOL);
@@ -13534,8 +10692,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 43085 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.STATUS
-    st = getVariable(43085);
+  { // 41533 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.STATUS
+    st = getVariable(41533);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.STATUS", 84);
     st->size_data = sizeof(DWORD);
@@ -13548,8 +10706,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43086 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DISABLED_SIG
-    st = getVariable(43086);
+  { // 41534 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DISABLED_SIG
+    st = getVariable(41534);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NEUSPESH_CHASTOTNY_PUSK.DISABLED_SIG", 90);
     st->size_data = sizeof(BOOL);
@@ -13562,8 +10720,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 43087 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.RELIABILITY
-    st = getVariable(43087);
+  { // 41535 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.RELIABILITY
+    st = getVariable(41535);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.RELIABILITY", 96);
     st->size_data = sizeof(BOOL);
@@ -13576,8 +10734,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43088 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.INVERSE
-    st = getVariable(43088);
+  { // 41536 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.INVERSE
+    st = getVariable(41536);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.INVERSE", 92);
     st->size_data = sizeof(BOOL);
@@ -13590,8 +10748,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 43089 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYON
-    st = getVariable(43089);
+  { // 41537 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYON
+    st = getVariable(41537);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYON", 92);
     st->size_data = sizeof(TIME);
@@ -13604,8 +10762,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 43090 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYOFF
-    st = getVariable(43090);
+  { // 41538 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYOFF
+    st = getVariable(41538);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DELAYOFF", 93);
     st->size_data = sizeof(TIME);
@@ -13618,8 +10776,8 @@ int __variables_init_FB_REMONTALG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 43091 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.Q
-    st = getVariable(43091);
+  { // 41539 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.Q
+    st = getVariable(41539);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.Q", 86);
     st->size_data = sizeof(BOOL);
@@ -13632,8 +10790,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 43092 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.STATUS
-    st = getVariable(43092);
+  { // 41540 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.STATUS
+    st = getVariable(41540);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.STATUS", 91);
     st->size_data = sizeof(DWORD);
@@ -13646,8 +10804,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43093 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DISABLED_SIG
-    st = getVariable(43093);
+  { // 41541 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DISABLED_SIG
+    st = getVariable(41541);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REZHIM_RUCHNOGO_REGULIROVANIYA.DISABLED_SIG", 97);
     st->size_data = sizeof(BOOL);
@@ -13660,890 +10818,4026 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 43094 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.RELIABILITY
-    st = getVariable(43094);
+  { // 41542 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.RELIABILITY
+    st = getVariable(41542);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.RELIABILITY", 87);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.RELIABILITY", 84);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43095 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.INVERSE
-    st = getVariable(43095);
+  { // 41543 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.INVERSE
+    st = getVariable(41543);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.INVERSE", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.INVERSE", 80);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 43096 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYON
-    st = getVariable(43096);
+  { // 41544 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.DELAYON
+    st = getVariable(41544);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYON", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.DELAYON", 80);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 43097 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYOFF
-    st = getVariable(43097);
+  { // 41545 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.DELAYOFF
+    st = getVariable(41545);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DELAYOFF", 84);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.DELAYOFF", 81);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 43098 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.Q
-    st = getVariable(43098);
+  { // 41546 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.Q
+    st = getVariable(41546);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.Q", 77);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.Q", 74);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 43099 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.STATUS
-    st = getVariable(43099);
+  { // 41547 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.STATUS
+    st = getVariable(41547);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.STATUS", 82);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.STATUS", 79);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43100 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DISABLED_SIG
-    st = getVariable(43100);
+  { // 41548 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.DISABLED_SIG
+    st = getVariable(41548);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REAKTORNII_PUSK_PEREK.DISABLED_SIG", 88);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.OSNOVNOY_REGUL_OFF.DISABLED_SIG", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
-    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REAKTORNII_PUSK_PEREK;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->OSNOVNOY_REGUL_OFF;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 43101 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.WAIT_TIME
-    st = getVariable(43101);
+  { // 41549 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.RELIABILITY
+    st = getVariable(41549);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.RELIABILITY", 85);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41550 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.INVERSE
+    st = getVariable(41550);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.INVERSE", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41551 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.DELAYON
+    st = getVariable(41551);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.WAIT_TIME", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.DELAYON", 81);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41552 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.DELAYOFF
+    st = getVariable(41552);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.DELAYOFF", 82);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41553 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.Q
+    st = getVariable(41553);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.Q", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41554 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.STATUS
+    st = getVariable(41554);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.STATUS", 80);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41555 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.DISABLED_SIG
+    st = getVariable(41555);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.VOLTAGE_SEKCII_NORM.DISABLED_SIG", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->VOLTAGE_SEKCII_NORM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41556 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.RELIABILITY
+    st = getVariable(41556);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.RELIABILITY", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41557 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.INVERSE
+    st = getVariable(41557);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.INVERSE", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41558 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.DELAYON
+    st = getVariable(41558);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.DELAYON", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41559 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.DELAYOFF
+    st = getVariable(41559);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.DELAYOFF", 77);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41560 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.Q
+    st = getVariable(41560);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.Q", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41561 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.STATUS
+    st = getVariable(41561);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.STATUS", 75);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41562 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.DISABLED_SIG
+    st = getVariable(41562);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.REACTORNY_PUSK.DISABLED_SIG", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->REACTORNY_PUSK;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41563 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.RELIABILITY
+    st = getVariable(41563);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.RELIABILITY", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41564 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.INVERSE
+    st = getVariable(41564);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.INVERSE", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41565 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.DELAYON
+    st = getVariable(41565);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.DELAYON", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41566 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.DELAYOFF
+    st = getVariable(41566);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.DELAYOFF", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41567 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.Q
+    st = getVariable(41567);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.Q", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41568 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.STATUS
+    st = getVariable(41568);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.STATUS", 74);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41569 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.DISABLED_SIG
+    st = getVariable(41569);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NO_GPA_OT_SHU.DISABLED_SIG", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NO_GPA_OT_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41570 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.RELIABILITY
+    st = getVariable(41570);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.RELIABILITY", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41571 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.INVERSE
+    st = getVariable(41571);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.INVERSE", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41572 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.DELAYON
+    st = getVariable(41572);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.DELAYON", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41573 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.DELAYOFF
+    st = getVariable(41573);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.DELAYOFF", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41574 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.Q
+    st = getVariable(41574);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.Q", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41575 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.STATUS
+    st = getVariable(41575);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.STATUS", 74);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41576 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.DISABLED_SIG
+    st = getVariable(41576);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.AO_GPA_OT_PRU.DISABLED_SIG", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->AO_GPA_OT_PRU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41577 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.RELIABILITY
+    st = getVariable(41577);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.RELIABILITY", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41578 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.INVERSE
+    st = getVariable(41578);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.INVERSE", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41579 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.DELAYON
+    st = getVariable(41579);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.DELAYON", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41580 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.DELAYOFF
+    st = getVariable(41580);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.DELAYOFF", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41581 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.Q
+    st = getVariable(41581);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41582 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.STATUS
+    st = getVariable(41582);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41583 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.DISABLED_SIG
+    st = getVariable(41583);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP1.DISABLED_SIG", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41584 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.RELIABILITY
+    st = getVariable(41584);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.RELIABILITY", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41585 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.INVERSE
+    st = getVariable(41585);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.INVERSE", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41586 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.DELAYON
+    st = getVariable(41586);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.DELAYON", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41587 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.DELAYOFF
+    st = getVariable(41587);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.DELAYOFF", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41588 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.Q
+    st = getVariable(41588);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41589 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.STATUS
+    st = getVariable(41589);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41590 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.DISABLED_SIG
+    st = getVariable(41590);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP2.DISABLED_SIG", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP2;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41591 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.RELIABILITY
+    st = getVariable(41591);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.RELIABILITY", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41592 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.INVERSE
+    st = getVariable(41592);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.INVERSE", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41593 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.DELAYON
+    st = getVariable(41593);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.DELAYON", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41594 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.DELAYOFF
+    st = getVariable(41594);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.DELAYOFF", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41595 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.Q
+    st = getVariable(41595);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41596 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.STATUS
+    st = getVariable(41596);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41597 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.DISABLED_SIG
+    st = getVariable(41597);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP3.DISABLED_SIG", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP3;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41598 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.RELIABILITY
+    st = getVariable(41598);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.RELIABILITY", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41599 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.INVERSE
+    st = getVariable(41599);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.INVERSE", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41600 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.DELAYON
+    st = getVariable(41600);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.DELAYON", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41601 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.DELAYOFF
+    st = getVariable(41601);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.DELAYOFF", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41602 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.Q
+    st = getVariable(41602);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41603 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.STATUS
+    st = getVariable(41603);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41604 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.DISABLED_SIG
+    st = getVariable(41604);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP4.DISABLED_SIG", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP4;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41605 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.RELIABILITY
+    st = getVariable(41605);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.RELIABILITY", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41606 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.INVERSE
+    st = getVariable(41606);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.INVERSE", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41607 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.DELAYON
+    st = getVariable(41607);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.DELAYON", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41608 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.DELAYOFF
+    st = getVariable(41608);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.DELAYOFF", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41609 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.Q
+    st = getVariable(41609);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41610 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.STATUS
+    st = getVariable(41610);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41611 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.DISABLED_SIG
+    st = getVariable(41611);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP5.DISABLED_SIG", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP5;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41612 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.RELIABILITY
+    st = getVariable(41612);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.RELIABILITY", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41613 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.INVERSE
+    st = getVariable(41613);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.INVERSE", 74);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41614 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.DELAYON
+    st = getVariable(41614);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.DELAYON", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41615 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.DELAYOFF
+    st = getVariable(41615);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.DELAYOFF", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41616 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.Q
+    st = getVariable(41616);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41617 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.STATUS
+    st = getVariable(41617);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41618 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.DISABLED_SIG
+    st = getVariable(41618);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP6.DISABLED_SIG", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP6;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41619 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.RELIABILITY
+    st = getVariable(41619);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.RELIABILITY", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41620 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.INVERSE
+    st = getVariable(41620);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.INVERSE", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41621 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.DELAYON
+    st = getVariable(41621);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.DELAYON", 78);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41622 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.DELAYOFF
+    st = getVariable(41622);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.DELAYOFF", 79);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41623 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.Q
+    st = getVariable(41623);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.Q", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41624 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.STATUS
+    st = getVariable(41624);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.STATUS", 77);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41625 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.DISABLED_SIG
+    st = getVariable(41625);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP7_BP8.DISABLED_SIG", 83);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP7_BP8;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41626 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.RELIABILITY
+    st = getVariable(41626);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.RELIABILITY", 83);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41627 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.INVERSE
+    st = getVariable(41627);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.INVERSE", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41628 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.DELAYON
+    st = getVariable(41628);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.DELAYON", 79);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41629 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.DELAYOFF
+    st = getVariable(41629);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.DELAYOFF", 80);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41630 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.Q
+    st = getVariable(41630);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.Q", 73);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41631 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.STATUS
+    st = getVariable(41631);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.STATUS", 78);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41632 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.DISABLED_SIG
+    st = getVariable(41632);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP9_BP10.DISABLED_SIG", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP9_BP10;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41633 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.RELIABILITY
+    st = getVariable(41633);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.RELIABILITY", 92);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41634 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.INVERSE
+    st = getVariable(41634);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.INVERSE", 88);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41635 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.DELAYON
+    st = getVariable(41635);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.DELAYON", 88);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41636 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.DELAYOFF
+    st = getVariable(41636);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.DELAYOFF", 89);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41637 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.Q
+    st = getVariable(41637);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.Q", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41638 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.STATUS
+    st = getVariable(41638);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.STATUS", 87);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41639 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.DISABLED_SIG
+    st = getVariable(41639);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_CEPEI_UPRAVLEN_MV.DISABLED_SIG", 93);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_CEPEI_UPRAVLEN_MV;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41640 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.RELIABILITY
+    st = getVariable(41640);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.RELIABILITY", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41641 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.INVERSE
+    st = getVariable(41641);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.INVERSE", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41642 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.DELAYON
+    st = getVariable(41642);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.DELAYON", 78);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41643 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.DELAYOFF
+    st = getVariable(41643);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.DELAYOFF", 79);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41644 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.Q
+    st = getVariable(41644);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.Q", 72);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41645 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.STATUS
+    st = getVariable(41645);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.STATUS", 77);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41646 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.DISABLED_SIG
+    st = getVariable(41646);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_220BEAO.DISABLED_SIG", 83);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_220BEAO;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41647 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.RELIABILITY
+    st = getVariable(41647);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.RELIABILITY", 91);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41648 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.INVERSE
+    st = getVariable(41648);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.INVERSE", 87);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41649 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.DELAYON
+    st = getVariable(41649);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.DELAYON", 87);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41650 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.DELAYOFF
+    st = getVariable(41650);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.DELAYOFF", 88);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41651 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.Q
+    st = getVariable(41651);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.Q", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41652 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.STATUS
+    st = getVariable(41652);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.STATUS", 86);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41653 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.DISABLED_SIG
+    st = getVariable(41653);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_PER_220_NA_VHODE.DISABLED_SIG", 92);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_PER_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41654 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.RELIABILITY
+    st = getVariable(41654);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.RELIABILITY", 92);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41655 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.INVERSE
+    st = getVariable(41655);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.INVERSE", 88);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41656 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.DELAYON
+    st = getVariable(41656);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.DELAYON", 88);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41657 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.DELAYOFF
+    st = getVariable(41657);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.DELAYOFF", 89);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41658 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.Q
+    st = getVariable(41658);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.Q", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41659 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.STATUS
+    st = getVariable(41659);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.STATUS", 87);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41660 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.DISABLED_SIG
+    st = getVariable(41660);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_POST_220_NA_VHODE.DISABLED_SIG", 93);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_POST_220_NA_VHODE;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41661 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.RELIABILITY
+    st = getVariable(41661);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.RELIABILITY", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41662 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.INVERSE
+    st = getVariable(41662);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.INVERSE", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41663 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.DELAYON
+    st = getVariable(41663);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.DELAYON", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41664 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.DELAYOFF
+    st = getVariable(41664);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.DELAYOFF", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41665 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.Q
+    st = getVariable(41665);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.Q", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41666 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.STATUS
+    st = getVariable(41666);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.STATUS", 74);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41667 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.DISABLED_SIG
+    st = getVariable(41667);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP11.DISABLED_SIG", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP11;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41668 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.RELIABILITY
+    st = getVariable(41668);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.RELIABILITY", 79);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41669 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.INVERSE
+    st = getVariable(41669);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.INVERSE", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41670 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.DELAYON
+    st = getVariable(41670);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.DELAYON", 75);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41671 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.DELAYOFF
+    st = getVariable(41671);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.DELAYOFF", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41672 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.Q
+    st = getVariable(41672);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.Q", 69);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41673 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.STATUS
+    st = getVariable(41673);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.STATUS", 74);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41674 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.DISABLED_SIG
+    st = getVariable(41674);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.NALICHIE_BP12.DISABLED_SIG", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->NALICHIE_BP12;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41675 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.RELIABILITY
+    st = getVariable(41675);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.RELIABILITY", 88);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41676 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.INVERSE
+    st = getVariable(41676);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.INVERSE", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41677 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.DELAYON
+    st = getVariable(41677);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.DELAYON", 84);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41678 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.DELAYOFF
+    st = getVariable(41678);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.DELAYOFF", 85);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41679 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.Q
+    st = getVariable(41679);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.Q", 78);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41680 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.STATUS
+    st = getVariable(41680);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.STATUS", 83);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41681 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.DISABLED_SIG
+    st = getVariable(41681);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_PERED_OTKRITA.DISABLED_SIG", 89);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_PERED_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41682 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.RELIABILITY
+    st = getVariable(41682);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.RELIABILITY", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41683 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.INVERSE
+    st = getVariable(41683);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.INVERSE", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41684 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.DELAYON
+    st = getVariable(41684);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.DELAYON", 82);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41685 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.DELAYOFF
+    st = getVariable(41685);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.DELAYOFF", 83);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41686 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.Q
+    st = getVariable(41686);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.Q", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41687 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.STATUS
+    st = getVariable(41687);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.STATUS", 81);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41688 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.DISABLED_SIG
+    st = getVariable(41688);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.DVER_SHU_ZAD_OTKRITA.DISABLED_SIG", 87);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->DVER_SHU_ZAD_OTKRITA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41689 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.RELIABILITY
+    st = getVariable(41689);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.RELIABILITY", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41690 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.INVERSE
+    st = getVariable(41690);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.INVERSE", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41691 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.DELAYON
+    st = getVariable(41691);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.DELAYON", 82);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41692 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.DELAYOFF
+    st = getVariable(41692);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.DELAYOFF", 83);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41693 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.Q
+    st = getVariable(41693);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.Q", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41694 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.STATUS
+    st = getVariable(41694);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.STATUS", 81);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41695 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.DISABLED_SIG
+    st = getVariable(41695);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_GPA_OT_KNOPKI_SHU.DISABLED_SIG", 87);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_GPA_OT_KNOPKI_SHU;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41696 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.RELIABILITY
+    st = getVariable(41696);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.RELIABILITY", 80);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41697 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.INVERSE
+    st = getVariable(41697);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.INVERSE", 76);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41698 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.DELAYON
+    st = getVariable(41698);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.DELAYON", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41699 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.DELAYOFF
+    st = getVariable(41699);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.DELAYOFF", 77);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41700 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.Q
+    st = getVariable(41700);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.Q", 70);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41701 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.STATUS
+    st = getVariable(41701);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.STATUS", 75);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41702 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.DISABLED_SIG
+    st = getVariable(41702);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.EO_EGPA_OT_PRY.DISABLED_SIG", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->EO_EGPA_OT_PRY;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41703 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.RELIABILITY
+    st = getVariable(41703);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.RELIABILITY", 87);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41704 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.INVERSE
+    st = getVariable(41704);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.INVERSE", 83);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41705 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.DELAYON
+    st = getVariable(41705);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.DELAYON", 83);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41706 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.DELAYOFF
+    st = getVariable(41706);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.DELAYOFF", 84);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41707 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.Q
+    st = getVariable(41707);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.Q", 77);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41708 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.STATUS
+    st = getVariable(41708);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.STATUS", 82);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41709 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.DISABLED_SIG
+    st = getVariable(41709);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.SYNCHRONIZ_REZHIMA_K1.DISABLED_SIG", 88);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->SYNCHRONIZ_REZHIMA_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41710 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.RELIABILITY
+    st = getVariable(41710);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.RELIABILITY", 85);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
+    st->value_p = p_BOOL;
+  }
+  { // 41711 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.INVERSE
+    st = getVariable(41711);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.INVERSE", 81);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
+    st->value_p = p_BOOL;
+  }
+  { // 41712 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.DELAYON
+    st = getVariable(41712);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.DELAYON", 81);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
+    st->value_p = p_TIME;
+  }
+  { // 41713 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.DELAYOFF
+    st = getVariable(41713);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.DELAYOFF", 82);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
+    st->value_p = p_TIME;
+  }
+  { // 41714 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.Q
+    st = getVariable(41714);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.Q", 75);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41715 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.STATUS
+    st = getVariable(41715);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.STATUS", 80);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41716 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.DISABLED_SIG
+    st = getVariable(41716);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLESIGNALS.POTOK_MS_POSLE_AVOM.DISABLED_SIG", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLESIGNALS = (IM_SINGLESIGNALS*)&p_IMCONFIG->SINGLESIGNALS;
+    p_STRUCT_SINGLESIGNAL = (STRUCT_SINGLESIGNAL*)&p_IM_SINGLESIGNALS->POTOK_MS_POSLE_AVOM;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
+    st->value_p = p_BOOL;
+  }
+  { // 41717 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.WAIT_TIME
+    st = getVariable(41717);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.WAIT_TIME", 75);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43102 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND
-    st = getVariable(43102);
+  { // 41718 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INCOMMAND
+    st = getVariable(41718);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INCOMMAND", 75);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43103 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INOPCCOMMANDSDISABLED
-    st = getVariable(43103);
+  { // 41719 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INOPCCOMMANDSDISABLED
+    st = getVariable(41719);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INOPCCOMMANDSDISABLED", 91);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INOPCCOMMANDSDISABLED", 87);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43104 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.Q
-    st = getVariable(43104);
+  { // 41720 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.Q
+    st = getVariable(41720);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.Q", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.Q", 67);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43105 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.STATUS
-    st = getVariable(43105);
+  { // 41721 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.STATUS
+    st = getVariable(41721);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.STATUS", 76);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.STATUS", 72);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43106 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.OPCCOMMANDSDISABLED
-    st = getVariable(43106);
+  { // 41722 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.OPCCOMMANDSDISABLED
+    st = getVariable(41722);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.OPCCOMMANDSDISABLED", 89);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.OPCCOMMANDSDISABLED", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43107 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ALG
-    st = getVariable(43107);
+  { // 41723 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INCOMMAND_ALG
+    st = getVariable(41723);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ALG", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INCOMMAND_ALG", 79);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43108 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ARM
-    st = getVariable(43108);
+  { // 41724 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INCOMMAND_ARM
+    st = getVariable(41724);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN1_SMAZKA_ON.INCOMMAND_ARM", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.RABOTA_EGPA.INCOMMAND_ARM", 79);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN1_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->RABOTA_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43109 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.WAIT_TIME
-    st = getVariable(43109);
+  { // 41725 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.WAIT_TIME
+    st = getVariable(41725);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.WAIT_TIME", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.WAIT_TIME", 75);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43110 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND
-    st = getVariable(43110);
+  { // 41726 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INCOMMAND
+    st = getVariable(41726);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INCOMMAND", 75);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43111 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INOPCCOMMANDSDISABLED
-    st = getVariable(43111);
+  { // 41727 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INOPCCOMMANDSDISABLED
+    st = getVariable(41727);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INOPCCOMMANDSDISABLED", 91);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INOPCCOMMANDSDISABLED", 87);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43112 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.Q
-    st = getVariable(43112);
+  { // 41728 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.Q
+    st = getVariable(41728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.Q", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.Q", 67);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43113 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.STATUS
-    st = getVariable(43113);
+  { // 41729 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.STATUS
+    st = getVariable(41729);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.STATUS", 76);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.STATUS", 72);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43114 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.OPCCOMMANDSDISABLED
-    st = getVariable(43114);
+  { // 41730 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.OPCCOMMANDSDISABLED
+    st = getVariable(41730);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.OPCCOMMANDSDISABLED", 89);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.OPCCOMMANDSDISABLED", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43115 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ALG
-    st = getVariable(43115);
+  { // 41731 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INCOMMAND_ALG
+    st = getVariable(41731);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ALG", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INCOMMAND_ALG", 79);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43116 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ARM
-    st = getVariable(43116);
+  { // 41732 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INCOMMAND_ARM
+    st = getVariable(41732);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KRAN2_SMAZKA_ON.INCOMMAND_ARM", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NEISPR_EGPA.INCOMMAND_ARM", 79);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KRAN2_SMAZKA_ON;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NEISPR_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43117 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.WAIT_TIME
-    st = getVariable(43117);
+  { // 41733 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.WAIT_TIME
+    st = getVariable(41733);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.WAIT_TIME", 75);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.WAIT_TIME", 74);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43118 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INCOMMAND
-    st = getVariable(43118);
+  { // 41734 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INCOMMAND
+    st = getVariable(41734);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INCOMMAND", 75);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INCOMMAND", 74);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43119 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INOPCCOMMANDSDISABLED
-    st = getVariable(43119);
+  { // 41735 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INOPCCOMMANDSDISABLED
+    st = getVariable(41735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INOPCCOMMANDSDISABLED", 87);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INOPCCOMMANDSDISABLED", 86);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43120 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.Q
-    st = getVariable(43120);
+  { // 41736 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.Q
+    st = getVariable(41736);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.Q", 67);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.Q", 66);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43121 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.STATUS
-    st = getVariable(43121);
+  { // 41737 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.STATUS
+    st = getVariable(41737);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.STATUS", 72);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.STATUS", 71);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43122 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.OPCCOMMANDSDISABLED
-    st = getVariable(43122);
+  { // 41738 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.OPCCOMMANDSDISABLED
+    st = getVariable(41738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.OPCCOMMANDSDISABLED", 85);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.OPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43123 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INCOMMAND_ALG
-    st = getVariable(43123);
+  { // 41739 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INCOMMAND_ALG
+    st = getVariable(41739);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INCOMMAND_ALG", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INCOMMAND_ALG", 78);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43124 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INCOMMAND_ARM
-    st = getVariable(43124);
+  { // 41740 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INCOMMAND_ARM
+    st = getVariable(41740);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_RABOTA.INCOMMAND_ARM", 79);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AVARY_EGPA.INCOMMAND_ARM", 78);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_RABOTA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AVARY_EGPA;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43125 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.WAIT_TIME
-    st = getVariable(43125);
+  { // 41741 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.WAIT_TIME
+    st = getVariable(41741);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.WAIT_TIME", 77);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.WAIT_TIME", 74);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43126 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND
-    st = getVariable(43126);
+  { // 41742 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INCOMMAND
+    st = getVariable(41742);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND", 77);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INCOMMAND", 74);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43127 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INOPCCOMMANDSDISABLED
-    st = getVariable(43127);
+  { // 41743 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INOPCCOMMANDSDISABLED
+    st = getVariable(41743);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INOPCCOMMANDSDISABLED", 89);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INOPCCOMMANDSDISABLED", 86);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43128 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.Q
-    st = getVariable(43128);
+  { // 41744 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.Q
+    st = getVariable(41744);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.Q", 69);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.Q", 66);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43129 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.STATUS
-    st = getVariable(43129);
+  { // 41745 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.STATUS
+    st = getVariable(41745);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.STATUS", 74);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.STATUS", 71);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43130 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.OPCCOMMANDSDISABLED
-    st = getVariable(43130);
+  { // 41746 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.OPCCOMMANDSDISABLED
+    st = getVariable(41746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.OPCCOMMANDSDISABLED", 87);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.OPCCOMMANDSDISABLED", 84);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43131 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ALG
-    st = getVariable(43131);
+  { // 41747 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INCOMMAND_ALG
+    st = getVariable(41747);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ALG", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INCOMMAND_ALG", 78);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43132 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ARM
-    st = getVariable(43132);
+  { // 41748 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INCOMMAND_ARM
+    st = getVariable(41748);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_NEISPRAV.INCOMMAND_ARM", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.U_LAMP_SHU.INCOMMAND_ARM", 78);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_NEISPRAV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->U_LAMP_SHU;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43133 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.WAIT_TIME
-    st = getVariable(43133);
+  { // 41749 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.WAIT_TIME
+    st = getVariable(41749);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.WAIT_TIME", 76);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.WAIT_TIME", 77);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43134 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND
-    st = getVariable(43134);
+  { // 41750 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INCOMMAND
+    st = getVariable(41750);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND", 76);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INCOMMAND", 77);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43135 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INOPCCOMMANDSDISABLED
-    st = getVariable(43135);
+  { // 41751 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INOPCCOMMANDSDISABLED
+    st = getVariable(41751);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INOPCCOMMANDSDISABLED", 88);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INOPCCOMMANDSDISABLED", 89);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43136 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.Q
-    st = getVariable(43136);
+  { // 41752 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.Q
+    st = getVariable(41752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.Q", 68);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.Q", 69);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43137 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.STATUS
-    st = getVariable(43137);
+  { // 41753 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.STATUS
+    st = getVariable(41753);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.STATUS", 73);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.STATUS", 74);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43138 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.OPCCOMMANDSDISABLED
-    st = getVariable(43138);
+  { // 41754 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.OPCCOMMANDSDISABLED
+    st = getVariable(41754);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.OPCCOMMANDSDISABLED", 86);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.OPCCOMMANDSDISABLED", 87);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43139 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ALG
-    st = getVariable(43139);
+  { // 41755 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INCOMMAND_ALG
+    st = getVariable(41755);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ALG", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INCOMMAND_ALG", 81);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43140 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ARM
-    st = getVariable(43140);
+  { // 41756 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INCOMMAND_ARM
+    st = getVariable(41756);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.GPA1_AVARIYA.INCOMMAND_ARM", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AO_KNOPKA_IND.INCOMMAND_ARM", 81);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->GPA1_AVARIYA;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AO_KNOPKA_IND;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43141 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.WAIT_TIME
-    st = getVariable(43141);
+  { // 41757 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.WAIT_TIME
+    st = getVariable(41757);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.WAIT_TIME", 68);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.WAIT_TIME", 73);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43142 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INCOMMAND
-    st = getVariable(43142);
+  { // 41758 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INCOMMAND
+    st = getVariable(41758);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INCOMMAND", 68);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INCOMMAND", 73);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43143 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INOPCCOMMANDSDISABLED
-    st = getVariable(43143);
+  { // 41759 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INOPCCOMMANDSDISABLED
+    st = getVariable(41759);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INOPCCOMMANDSDISABLED", 80);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INOPCCOMMANDSDISABLED", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43144 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.Q
-    st = getVariable(43144);
+  { // 41760 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.Q
+    st = getVariable(41760);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.Q", 60);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.Q", 65);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43145 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.STATUS
-    st = getVariable(43145);
+  { // 41761 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.STATUS
+    st = getVariable(41761);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.STATUS", 65);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.STATUS", 70);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43146 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.OPCCOMMANDSDISABLED
-    st = getVariable(43146);
+  { // 41762 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.OPCCOMMANDSDISABLED
+    st = getVariable(41762);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.OPCCOMMANDSDISABLED", 78);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.OPCCOMMANDSDISABLED", 83);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43147 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ALG
-    st = getVariable(43147);
+  { // 41763 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INCOMMAND_ALG
+    st = getVariable(41763);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ALG", 72);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INCOMMAND_ALG", 77);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43148 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ARM
-    st = getVariable(43148);
+  { // 41764 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INCOMMAND_ARM
+    st = getVariable(41764);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK.INCOMMAND_ARM", 72);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PUSK_SHUP.INCOMMAND_ARM", 77);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PUSK_SHUP;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43149 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.WAIT_TIME
-    st = getVariable(43149);
+  { // 41765 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.WAIT_TIME
+    st = getVariable(41765);
     memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.WAIT_TIME", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.WAIT_TIME", 73);
     st->size_data = sizeof(TIME);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 43150 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND
-    st = getVariable(43150);
+  { // 41766 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INCOMMAND
+    st = getVariable(41766);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND", 71);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INCOMMAND", 73);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43151 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INOPCCOMMANDSDISABLED
-    st = getVariable(43151);
+  { // 41767 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INOPCCOMMANDSDISABLED
+    st = getVariable(41767);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INOPCCOMMANDSDISABLED", 83);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INOPCCOMMANDSDISABLED", 85);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43152 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.Q
-    st = getVariable(43152);
+  { // 41768 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.Q
+    st = getVariable(41768);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.Q", 63);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.Q", 65);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 43153 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.STATUS
-    st = getVariable(43153);
+  { // 41769 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.STATUS
+    st = getVariable(41769);
     memcpy(st->IEC_TYPE, "DWORD", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.STATUS", 68);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.STATUS", 70);
     st->size_data = sizeof(DWORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43154 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.OPCCOMMANDSDISABLED
-    st = getVariable(43154);
+  { // 41770 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.OPCCOMMANDSDISABLED
+    st = getVariable(41770);
     memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.OPCCOMMANDSDISABLED", 81);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.OPCCOMMANDSDISABLED", 83);
     st->size_data = sizeof(BOOL);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43155 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ALG
-    st = getVariable(43155);
+  { // 41771 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INCOMMAND_ALG
+    st = getVariable(41771);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ALG", 75);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INCOMMAND_ALG", 77);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43156 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ARM
-    st = getVariable(43156);
+  { // 41772 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INCOMMAND_ARM
+    st = getVariable(41772);
     memcpy(st->IEC_TYPE, "WORD", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.OSTANOV.INCOMMAND_ARM", 75);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.STOP_SHUP.INCOMMAND_ARM", 77);
     st->size_data = sizeof(WORD);
     p_PROGRAM0 = &RESOURCE1__INSTANCE0;
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
     p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
     p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
-    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->OSTANOV;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->STOP_SHUP;
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43157 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND
-    st = getVariable(43157);
+  { // 41773 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.WAIT_TIME
+    st = getVariable(41773);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.WAIT_TIME", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41774 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INCOMMAND
+    st = getVariable(41774);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INCOMMAND", 72);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41775 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INOPCCOMMANDSDISABLED
+    st = getVariable(41775);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INOPCCOMMANDSDISABLED", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41776 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.Q
+    st = getVariable(41776);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.Q", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41777 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.STATUS
+    st = getVariable(41777);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.STATUS", 69);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41778 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.OPCCOMMANDSDISABLED
+    st = getVariable(41778);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.OPCCOMMANDSDISABLED", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41779 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INCOMMAND_ALG
+    st = getVariable(41779);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INCOMMAND_ALG", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41780 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INCOMMAND_ARM
+    st = getVariable(41780);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.NO_FONAR.INCOMMAND_ARM", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->NO_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41781 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.WAIT_TIME
+    st = getVariable(41781);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.WAIT_TIME", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41782 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INCOMMAND
+    st = getVariable(41782);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INCOMMAND", 72);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41783 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INOPCCOMMANDSDISABLED
+    st = getVariable(41783);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INOPCCOMMANDSDISABLED", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41784 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.Q
+    st = getVariable(41784);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.Q", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41785 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.STATUS
+    st = getVariable(41785);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.STATUS", 69);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41786 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.OPCCOMMANDSDISABLED
+    st = getVariable(41786);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.OPCCOMMANDSDISABLED", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41787 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INCOMMAND_ALG
+    st = getVariable(41787);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INCOMMAND_ALG", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41788 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INCOMMAND_ARM
+    st = getVariable(41788);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.PC_FONAR.INCOMMAND_ARM", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->PC_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41789 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.WAIT_TIME
+    st = getVariable(41789);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.WAIT_TIME", 72);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41790 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INCOMMAND
+    st = getVariable(41790);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INCOMMAND", 72);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41791 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INOPCCOMMANDSDISABLED
+    st = getVariable(41791);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INOPCCOMMANDSDISABLED", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41792 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.Q
+    st = getVariable(41792);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.Q", 64);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41793 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.STATUS
+    st = getVariable(41793);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.STATUS", 69);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41794 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.OPCCOMMANDSDISABLED
+    st = getVariable(41794);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.OPCCOMMANDSDISABLED", 82);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41795 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INCOMMAND_ALG
+    st = getVariable(41795);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INCOMMAND_ALG", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41796 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INCOMMAND_ARM
+    st = getVariable(41796);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.AC_FONAR.INCOMMAND_ARM", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->AC_FONAR;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41797 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.WAIT_TIME
+    st = getVariable(41797);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.WAIT_TIME", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41798 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INCOMMAND
+    st = getVariable(41798);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INCOMMAND", 74);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41799 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INOPCCOMMANDSDISABLED
+    st = getVariable(41799);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INOPCCOMMANDSDISABLED", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41800 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.Q
+    st = getVariable(41800);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.Q", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41801 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.STATUS
+    st = getVariable(41801);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.STATUS", 71);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41802 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.OPCCOMMANDSDISABLED
+    st = getVariable(41802);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.OPCCOMMANDSDISABLED", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41803 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INCOMMAND_ALG
+    st = getVariable(41803);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INCOMMAND_ALG", 78);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41804 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INCOMMAND_ARM
+    st = getVariable(41804);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR1_SMAZKA.INCOMMAND_ARM", 78);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR1_SMAZKA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41805 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.WAIT_TIME
+    st = getVariable(41805);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.WAIT_TIME", 74);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41806 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INCOMMAND
+    st = getVariable(41806);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INCOMMAND", 74);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41807 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INOPCCOMMANDSDISABLED
+    st = getVariable(41807);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INOPCCOMMANDSDISABLED", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41808 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.Q
+    st = getVariable(41808);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.Q", 66);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41809 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.STATUS
+    st = getVariable(41809);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.STATUS", 71);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41810 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.OPCCOMMANDSDISABLED
+    st = getVariable(41810);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.OPCCOMMANDSDISABLED", 84);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41811 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INCOMMAND_ALG
+    st = getVariable(41811);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INCOMMAND_ALG", 78);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41812 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INCOMMAND_ARM
+    st = getVariable(41812);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR2_SMAZKA.INCOMMAND_ARM", 78);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR2_SMAZKA;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41813 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.WAIT_TIME
+    st = getVariable(41813);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.WAIT_TIME", 81);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41814 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INCOMMAND
+    st = getVariable(41814);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INCOMMAND", 81);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41815 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INOPCCOMMANDSDISABLED
+    st = getVariable(41815);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INOPCCOMMANDSDISABLED", 93);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41816 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.Q
+    st = getVariable(41816);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.Q", 73);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41817 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.STATUS
+    st = getVariable(41817);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.STATUS", 78);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41818 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.OPCCOMMANDSDISABLED
+    st = getVariable(41818);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.OPCCOMMANDSDISABLED", 91);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41819 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INCOMMAND_ALG
+    st = getVariable(41819);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INCOMMAND_ALG", 85);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41820 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INCOMMAND_ARM
+    st = getVariable(41820);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.KR4_OPEN_FROM_ALG.INCOMMAND_ARM", 85);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->KR4_OPEN_FROM_ALG;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41821 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.WAIT_TIME
+    st = getVariable(41821);
+    memcpy(st->IEC_TYPE, "TIME", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.WAIT_TIME", 76);
+    st->size_data = sizeof(TIME);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
+    st->value_p = p_TIME;
+  }
+  { // 41822 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INCOMMAND
+    st = getVariable(41822);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INCOMMAND", 76);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
+    st->value_p = p_WORD;
+  }
+  { // 41823 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INOPCCOMMANDSDISABLED
+    st = getVariable(41823);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INOPCCOMMANDSDISABLED", 88);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41824 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.Q
+    st = getVariable(41824);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.Q", 68);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
+    st->value_p = p_BOOL;
+  }
+  { // 41825 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.STATUS
+    st = getVariable(41825);
+    memcpy(st->IEC_TYPE, "DWORD", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.STATUS", 73);
+    st->size_data = sizeof(DWORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
+    st->value_p = p_DWORD;
+  }
+  { // 41826 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.OPCCOMMANDSDISABLED
+    st = getVariable(41826);
+    memcpy(st->IEC_TYPE, "BOOL", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.OPCCOMMANDSDISABLED", 86);
+    st->size_data = sizeof(BOOL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
+    st->value_p = p_BOOL;
+  }
+  { // 41827 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INCOMMAND_ALG
+    st = getVariable(41827);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INCOMMAND_ALG", 80);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
+    st->value_p = p_WORD;
+  }
+  { // 41828 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INCOMMAND_ARM
+    st = getVariable(41828);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.SINGLEOUTPUTS.SYNCH_REJ_K1.INCOMMAND_ARM", 80);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_REMONTALG = (REMONTALG*)&p_PROC_ALGORITMS->FB_REMONTALG;
+    p_IMCONFIG = (IMCONFIG*)p_REMONTALG->IM.value;
+    p_IM_SINGLEOUTPUTS = (IM_SINGLEOUTPUTS*)&p_IMCONFIG->SINGLEOUTPUTS;
+    p_STRUCT_SINGLEOUTPUT = (STRUCT_SINGLEOUTPUT*)&p_IM_SINGLEOUTPUTS->SYNCH_REJ_K1;
+    p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
+    st->value_p = p_WORD;
+  }
+  { // 41829 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND
+    st = getVariable(41829);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -14555,8 +14849,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43158 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.STATUS
-    st = getVariable(43158);
+  { // 41830 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.STATUS
+    st = getVariable(41830);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -14568,8 +14862,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43159 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ONSTATUS
-    st = getVariable(43159);
+  { // 41831 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ONSTATUS
+    st = getVariable(41831);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ONSTATUS", 62);
     st->size_data = sizeof(BYTE);
@@ -14581,8 +14875,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 43160 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED
-    st = getVariable(43160);
+  { // 41832 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED
+    st = getVariable(41832);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INOPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -14594,8 +14888,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43161 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.SDVIG
-    st = getVariable(43161);
+  { // 41833 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.SDVIG
+    st = getVariable(41833);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.SDVIG", 59);
     st->size_data = sizeof(BOOL);
@@ -14607,8 +14901,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 43162 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.NS
-    st = getVariable(43162);
+  { // 41834 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.NS
+    st = getVariable(41834);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.NS", 56);
     st->size_data = sizeof(BOOL);
@@ -14620,8 +14914,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 43163 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.COMMANDFAULT
-    st = getVariable(43163);
+  { // 41835 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.COMMANDFAULT
+    st = getVariable(41835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.COMMANDFAULT", 66);
     st->size_data = sizeof(BOOL);
@@ -14633,8 +14927,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 43164 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ACCIDENT
-    st = getVariable(43164);
+  { // 41836 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ACCIDENT
+    st = getVariable(41836);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ACCIDENT", 62);
     st->size_data = sizeof(BOOL);
@@ -14646,8 +14940,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 43165 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.AUTO
-    st = getVariable(43165);
+  { // 41837 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.AUTO
+    st = getVariable(41837);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.AUTO", 58);
     st->size_data = sizeof(BOOL);
@@ -14659,8 +14953,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 43166 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.MANUAL
-    st = getVariable(43166);
+  { // 41838 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.MANUAL
+    st = getVariable(41838);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.MANUAL", 60);
     st->size_data = sizeof(BOOL);
@@ -14672,8 +14966,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 43167 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.LOCAL
-    st = getVariable(43167);
+  { // 41839 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.LOCAL
+    st = getVariable(41839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.LOCAL", 59);
     st->size_data = sizeof(BOOL);
@@ -14685,8 +14979,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 43168 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.DISTANCE
-    st = getVariable(43168);
+  { // 41840 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.DISTANCE
+    st = getVariable(41840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.DISTANCE", 62);
     st->size_data = sizeof(BOOL);
@@ -14698,8 +14992,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 43169 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ERRORPOWEROFF
-    st = getVariable(43169);
+  { // 41841 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ERRORPOWEROFF
+    st = getVariable(41841);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ERRORPOWEROFF", 67);
     st->size_data = sizeof(BOOL);
@@ -14711,8 +15005,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 43170 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ERRORBLOCK
-    st = getVariable(43170);
+  { // 41842 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ERRORBLOCK
+    st = getVariable(41842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ERRORBLOCK", 64);
     st->size_data = sizeof(BOOL);
@@ -14724,8 +15018,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 43171 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.BREAKCMDON
-    st = getVariable(43171);
+  { // 41843 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.BREAKCMDON
+    st = getVariable(41843);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.BREAKCMDON", 64);
     st->size_data = sizeof(BOOL);
@@ -14737,8 +15031,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43172 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.BREAKCMDOFF
-    st = getVariable(43172);
+  { // 41844 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.BREAKCMDOFF
+    st = getVariable(41844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.BREAKCMDOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -14750,8 +15044,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43173 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED
-    st = getVariable(43173);
+  { // 41845 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED
+    st = getVariable(41845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.OPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -14763,8 +15057,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43174 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.LASTCMDISON
-    st = getVariable(43174);
+  { // 41846 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.LASTCMDISON
+    st = getVariable(41846);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.LASTCMDISON", 65);
     st->size_data = sizeof(BOOL);
@@ -14776,8 +15070,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 43175 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_STATON
-    st = getVariable(43175);
+  { // 41847 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_STATON
+    st = getVariable(41847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_STATON", 71);
     st->size_data = sizeof(BOOL);
@@ -14789,8 +15083,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 43176 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_STATOFF
-    st = getVariable(43176);
+  { // 41848 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_STATOFF
+    st = getVariable(41848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_STATOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -14802,8 +15096,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 43177 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_CMDON
-    st = getVariable(43177);
+  { // 41849 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_CMDON
+    st = getVariable(41849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_CMDON", 70);
     st->size_data = sizeof(BOOL);
@@ -14815,8 +15109,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43178 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF
-    st = getVariable(43178);
+  { // 41850 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF
+    st = getVariable(41850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_CMDOFF", 71);
     st->size_data = sizeof(BOOL);
@@ -14828,8 +15122,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43179 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON
-    st = getVariable(43179);
+  { // 41851 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41851);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDON", 77);
     st->size_data = sizeof(BOOL);
@@ -14841,8 +15135,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43180 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(43180);
+  { // 41852 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41852);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.ISVALIDREF_INBREAKCMDOFF", 78);
     st->size_data = sizeof(BOOL);
@@ -14854,8 +15148,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43181 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND_ALG
-    st = getVariable(43181);
+  { // 41853 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND_ALG
+    st = getVariable(41853);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND_ALG", 67);
     st->size_data = sizeof(WORD);
@@ -14867,8 +15161,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43182 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND_ARM
-    st = getVariable(43182);
+  { // 41854 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND_ARM
+    st = getVariable(41854);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.INCOMMAND_ARM", 67);
     st->size_data = sizeof(WORD);
@@ -14880,8 +15174,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43183 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.CMDON
-    st = getVariable(43183);
+  { // 41855 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.CMDON
+    st = getVariable(41855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.CMDON", 59);
     st->size_data = sizeof(BOOL);
@@ -14893,8 +15187,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43184 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.CMDOFF
-    st = getVariable(43184);
+  { // 41856 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.CMDOFF
+    st = getVariable(41856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.CMDOFF", 60);
     st->size_data = sizeof(BOOL);
@@ -14906,8 +15200,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43185 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.RELIABILITY
-    st = getVariable(43185);
+  { // 41857 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.RELIABILITY
+    st = getVariable(41857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.KALORIFERAVOM.RELIABILITY", 65);
     st->size_data = sizeof(BOOL);
@@ -14919,8 +15213,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43186 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND
-    st = getVariable(43186);
+  { // 41858 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND
+    st = getVariable(41858);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -14932,8 +15226,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43187 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.STATUS
-    st = getVariable(43187);
+  { // 41859 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.STATUS
+    st = getVariable(41859);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -14945,8 +15239,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43188 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ONSTATUS
-    st = getVariable(43188);
+  { // 41860 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ONSTATUS
+    st = getVariable(41860);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -14958,8 +15252,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 43189 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INOPCCOMMANDSDISABLED
-    st = getVariable(43189);
+  { // 41861 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INOPCCOMMANDSDISABLED
+    st = getVariable(41861);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -14971,8 +15265,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43190 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.SDVIG
-    st = getVariable(43190);
+  { // 41862 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.SDVIG
+    st = getVariable(41862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -14984,8 +15278,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 43191 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.NS
-    st = getVariable(43191);
+  { // 41863 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.NS
+    st = getVariable(41863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -14997,8 +15291,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 43192 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.COMMANDFAULT
-    st = getVariable(43192);
+  { // 41864 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.COMMANDFAULT
+    st = getVariable(41864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -15010,8 +15304,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 43193 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ACCIDENT
-    st = getVariable(43193);
+  { // 41865 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ACCIDENT
+    st = getVariable(41865);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -15023,8 +15317,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 43194 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.AUTO
-    st = getVariable(43194);
+  { // 41866 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.AUTO
+    st = getVariable(41866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.AUTO", 48);
     st->size_data = sizeof(BOOL);
@@ -15036,8 +15330,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 43195 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.MANUAL
-    st = getVariable(43195);
+  { // 41867 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.MANUAL
+    st = getVariable(41867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.MANUAL", 50);
     st->size_data = sizeof(BOOL);
@@ -15049,8 +15343,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 43196 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.LOCAL
-    st = getVariable(43196);
+  { // 41868 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.LOCAL
+    st = getVariable(41868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -15062,8 +15356,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 43197 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.DISTANCE
-    st = getVariable(43197);
+  { // 41869 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.DISTANCE
+    st = getVariable(41869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -15075,8 +15369,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 43198 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ERRORPOWEROFF
-    st = getVariable(43198);
+  { // 41870 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ERRORPOWEROFF
+    st = getVariable(41870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ERRORPOWEROFF", 57);
     st->size_data = sizeof(BOOL);
@@ -15088,8 +15382,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 43199 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ERRORBLOCK
-    st = getVariable(43199);
+  { // 41871 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ERRORBLOCK
+    st = getVariable(41871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ERRORBLOCK", 54);
     st->size_data = sizeof(BOOL);
@@ -15101,8 +15395,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 43200 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.BREAKCMDON
-    st = getVariable(43200);
+  { // 41872 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.BREAKCMDON
+    st = getVariable(41872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.BREAKCMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -15114,8 +15408,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43201 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.BREAKCMDOFF
-    st = getVariable(43201);
+  { // 41873 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.BREAKCMDOFF
+    st = getVariable(41873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.BREAKCMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -15127,8 +15421,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43202 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.OPCCOMMANDSDISABLED
-    st = getVariable(43202);
+  { // 41874 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.OPCCOMMANDSDISABLED
+    st = getVariable(41874);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -15140,8 +15434,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43203 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.LASTCMDISON
-    st = getVariable(43203);
+  { // 41875 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.LASTCMDISON
+    st = getVariable(41875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -15153,8 +15447,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 43204 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_STATON
-    st = getVariable(43204);
+  { // 41876 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_STATON
+    st = getVariable(41876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -15166,8 +15460,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 43205 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_STATOFF
-    st = getVariable(43205);
+  { // 41877 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_STATOFF
+    st = getVariable(41877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -15179,8 +15473,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 43206 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_CMDON
-    st = getVariable(43206);
+  { // 41878 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_CMDON
+    st = getVariable(41878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -15192,8 +15486,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43207 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_CMDOFF
-    st = getVariable(43207);
+  { // 41879 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_CMDOFF
+    st = getVariable(41879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -15205,8 +15499,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43208 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_INBREAKCMDON
-    st = getVariable(43208);
+  { // 41880 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_INBREAKCMDON", 67);
     st->size_data = sizeof(BOOL);
@@ -15218,8 +15512,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43209 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(43209);
+  { // 41881 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.ISVALIDREF_INBREAKCMDOFF", 68);
     st->size_data = sizeof(BOOL);
@@ -15231,8 +15525,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43210 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND_ALG
-    st = getVariable(43210);
+  { // 41882 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND_ALG
+    st = getVariable(41882);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -15244,8 +15538,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43211 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND_ARM
-    st = getVariable(43211);
+  { // 41883 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND_ARM
+    st = getVariable(41883);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -15257,8 +15551,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43212 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.CMDON
-    st = getVariable(43212);
+  { // 41884 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.CMDON
+    st = getVariable(41884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -15270,8 +15564,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43213 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.CMDOFF
-    st = getVariable(43213);
+  { // 41885 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.CMDOFF
+    st = getVariable(41885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -15283,8 +15577,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43214 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.RELIABILITY
-    st = getVariable(43214);
+  { // 41886 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.RELIABILITY
+    st = getVariable(41886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.CMN.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -15296,8 +15590,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43215 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND
-    st = getVariable(43215);
+  { // 41887 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND
+    st = getVariable(41887);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND", 64);
     st->size_data = sizeof(WORD);
@@ -15309,8 +15603,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43216 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.STATUS
-    st = getVariable(43216);
+  { // 41888 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.STATUS
+    st = getVariable(41888);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.STATUS", 61);
     st->size_data = sizeof(DWORD);
@@ -15322,8 +15616,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43217 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ONSTATUS
-    st = getVariable(43217);
+  { // 41889 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ONSTATUS
+    st = getVariable(41889);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ONSTATUS", 63);
     st->size_data = sizeof(BYTE);
@@ -15335,8 +15629,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 43218 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INOPCCOMMANDSDISABLED
-    st = getVariable(43218);
+  { // 41890 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INOPCCOMMANDSDISABLED
+    st = getVariable(41890);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INOPCCOMMANDSDISABLED", 76);
     st->size_data = sizeof(BOOL);
@@ -15348,8 +15642,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43219 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.SDVIG
-    st = getVariable(43219);
+  { // 41891 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.SDVIG
+    st = getVariable(41891);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.SDVIG", 60);
     st->size_data = sizeof(BOOL);
@@ -15361,8 +15655,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 43220 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.NS
-    st = getVariable(43220);
+  { // 41892 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.NS
+    st = getVariable(41892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.NS", 57);
     st->size_data = sizeof(BOOL);
@@ -15374,8 +15668,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 43221 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.COMMANDFAULT
-    st = getVariable(43221);
+  { // 41893 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.COMMANDFAULT
+    st = getVariable(41893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.COMMANDFAULT", 67);
     st->size_data = sizeof(BOOL);
@@ -15387,8 +15681,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 43222 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ACCIDENT
-    st = getVariable(43222);
+  { // 41894 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ACCIDENT
+    st = getVariable(41894);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ACCIDENT", 63);
     st->size_data = sizeof(BOOL);
@@ -15400,8 +15694,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 43223 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.AUTO
-    st = getVariable(43223);
+  { // 41895 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.AUTO
+    st = getVariable(41895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.AUTO", 59);
     st->size_data = sizeof(BOOL);
@@ -15413,8 +15707,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 43224 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.MANUAL
-    st = getVariable(43224);
+  { // 41896 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.MANUAL
+    st = getVariable(41896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.MANUAL", 61);
     st->size_data = sizeof(BOOL);
@@ -15426,8 +15720,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 43225 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.LOCAL
-    st = getVariable(43225);
+  { // 41897 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.LOCAL
+    st = getVariable(41897);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.LOCAL", 60);
     st->size_data = sizeof(BOOL);
@@ -15439,8 +15733,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 43226 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.DISTANCE
-    st = getVariable(43226);
+  { // 41898 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.DISTANCE
+    st = getVariable(41898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.DISTANCE", 63);
     st->size_data = sizeof(BOOL);
@@ -15452,8 +15746,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 43227 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ERRORPOWEROFF
-    st = getVariable(43227);
+  { // 41899 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ERRORPOWEROFF
+    st = getVariable(41899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ERRORPOWEROFF", 68);
     st->size_data = sizeof(BOOL);
@@ -15465,8 +15759,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 43228 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ERRORBLOCK
-    st = getVariable(43228);
+  { // 41900 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ERRORBLOCK
+    st = getVariable(41900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ERRORBLOCK", 65);
     st->size_data = sizeof(BOOL);
@@ -15478,8 +15772,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 43229 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.BREAKCMDON
-    st = getVariable(43229);
+  { // 41901 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.BREAKCMDON
+    st = getVariable(41901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.BREAKCMDON", 65);
     st->size_data = sizeof(BOOL);
@@ -15491,8 +15785,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43230 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.BREAKCMDOFF
-    st = getVariable(43230);
+  { // 41902 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.BREAKCMDOFF
+    st = getVariable(41902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.BREAKCMDOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -15504,8 +15798,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43231 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.OPCCOMMANDSDISABLED
-    st = getVariable(43231);
+  { // 41903 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.OPCCOMMANDSDISABLED
+    st = getVariable(41903);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.OPCCOMMANDSDISABLED", 74);
     st->size_data = sizeof(BOOL);
@@ -15517,8 +15811,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43232 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.LASTCMDISON
-    st = getVariable(43232);
+  { // 41904 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.LASTCMDISON
+    st = getVariable(41904);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.LASTCMDISON", 66);
     st->size_data = sizeof(BOOL);
@@ -15530,8 +15824,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 43233 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_STATON
-    st = getVariable(43233);
+  { // 41905 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_STATON
+    st = getVariable(41905);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_STATON", 72);
     st->size_data = sizeof(BOOL);
@@ -15543,8 +15837,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 43234 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_STATOFF
-    st = getVariable(43234);
+  { // 41906 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_STATOFF
+    st = getVariable(41906);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_STATOFF", 73);
     st->size_data = sizeof(BOOL);
@@ -15556,8 +15850,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 43235 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_CMDON
-    st = getVariable(43235);
+  { // 41907 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_CMDON
+    st = getVariable(41907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_CMDON", 71);
     st->size_data = sizeof(BOOL);
@@ -15569,8 +15863,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43236 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_CMDOFF
-    st = getVariable(43236);
+  { // 41908 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_CMDOFF
+    st = getVariable(41908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_CMDOFF", 72);
     st->size_data = sizeof(BOOL);
@@ -15582,8 +15876,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43237 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDON
-    st = getVariable(43237);
+  { // 41909 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDON", 78);
     st->size_data = sizeof(BOOL);
@@ -15595,8 +15889,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43238 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(43238);
+  { // 41910 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.ISVALIDREF_INBREAKCMDOFF", 79);
     st->size_data = sizeof(BOOL);
@@ -15608,8 +15902,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43239 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND_ALG
-    st = getVariable(43239);
+  { // 41911 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND_ALG
+    st = getVariable(41911);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND_ALG", 68);
     st->size_data = sizeof(WORD);
@@ -15621,8 +15915,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43240 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND_ARM
-    st = getVariable(43240);
+  { // 41912 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND_ARM
+    st = getVariable(41912);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.INCOMMAND_ARM", 68);
     st->size_data = sizeof(WORD);
@@ -15634,8 +15928,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43241 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.CMDON
-    st = getVariable(43241);
+  { // 41913 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.CMDON
+    st = getVariable(41913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -15647,8 +15941,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43242 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.CMDOFF
-    st = getVariable(43242);
+  { // 41914 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.CMDOFF
+    st = getVariable(41914);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -15660,8 +15954,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43243 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.RELIABILITY
-    st = getVariable(43243);
+  { // 41915 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.RELIABILITY
+    st = getVariable(41915);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_KOLLECTORA.RELIABILITY", 66);
     st->size_data = sizeof(BOOL);
@@ -15673,8 +15967,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 43244 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND
-    st = getVariable(43244);
+  { // 41916 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND
+    st = getVariable(41916);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -15686,8 +15980,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 43245 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.STATUS
-    st = getVariable(43245);
+  { // 41917 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.STATUS
+    st = getVariable(41917);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -15699,8 +15993,8 @@ int __variables_init_FB_REMONTALG(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 43246 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ONSTATUS
-    st = getVariable(43246);
+  { // 41918 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ONSTATUS
+    st = getVariable(41918);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ONSTATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -15712,8 +16006,8 @@ int __variables_init_FB_REMONTALG(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 43247 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INOPCCOMMANDSDISABLED
-    st = getVariable(43247);
+  { // 41919 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INOPCCOMMANDSDISABLED
+    st = getVariable(41919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INOPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -15725,8 +16019,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43248 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.SDVIG
-    st = getVariable(43248);
+  { // 41920 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.SDVIG
+    st = getVariable(41920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.SDVIG", 52);
     st->size_data = sizeof(BOOL);
@@ -15738,8 +16032,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 43249 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.NS
-    st = getVariable(43249);
+  { // 41921 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.NS
+    st = getVariable(41921);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.NS", 49);
     st->size_data = sizeof(BOOL);
@@ -15751,8 +16045,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 43250 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.COMMANDFAULT
-    st = getVariable(43250);
+  { // 41922 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.COMMANDFAULT
+    st = getVariable(41922);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.COMMANDFAULT", 59);
     st->size_data = sizeof(BOOL);
@@ -15764,8 +16058,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 43251 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ACCIDENT
-    st = getVariable(43251);
+  { // 41923 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ACCIDENT
+    st = getVariable(41923);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ACCIDENT", 55);
     st->size_data = sizeof(BOOL);
@@ -15777,8 +16071,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 43252 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.AUTO
-    st = getVariable(43252);
+  { // 41924 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.AUTO
+    st = getVariable(41924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.AUTO", 51);
     st->size_data = sizeof(BOOL);
@@ -15790,8 +16084,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 43253 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.MANUAL
-    st = getVariable(43253);
+  { // 41925 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.MANUAL
+    st = getVariable(41925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.MANUAL", 53);
     st->size_data = sizeof(BOOL);
@@ -15803,8 +16097,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 43254 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.LOCAL
-    st = getVariable(43254);
+  { // 41926 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.LOCAL
+    st = getVariable(41926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.LOCAL", 52);
     st->size_data = sizeof(BOOL);
@@ -15816,8 +16110,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 43255 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.DISTANCE
-    st = getVariable(43255);
+  { // 41927 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.DISTANCE
+    st = getVariable(41927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.DISTANCE", 55);
     st->size_data = sizeof(BOOL);
@@ -15829,8 +16123,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 43256 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ERRORPOWEROFF
-    st = getVariable(43256);
+  { // 41928 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ERRORPOWEROFF
+    st = getVariable(41928);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ERRORPOWEROFF", 60);
     st->size_data = sizeof(BOOL);
@@ -15842,8 +16136,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 43257 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ERRORBLOCK
-    st = getVariable(43257);
+  { // 41929 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ERRORBLOCK
+    st = getVariable(41929);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ERRORBLOCK", 57);
     st->size_data = sizeof(BOOL);
@@ -15855,8 +16149,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 43258 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.BREAKCMDON
-    st = getVariable(43258);
+  { // 41930 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.BREAKCMDON
+    st = getVariable(41930);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.BREAKCMDON", 57);
     st->size_data = sizeof(BOOL);
@@ -15868,8 +16162,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43259 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.BREAKCMDOFF
-    st = getVariable(43259);
+  { // 41931 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.BREAKCMDOFF
+    st = getVariable(41931);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.BREAKCMDOFF", 58);
     st->size_data = sizeof(BOOL);
@@ -15881,8 +16175,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43260 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.OPCCOMMANDSDISABLED
-    st = getVariable(43260);
+  { // 41932 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.OPCCOMMANDSDISABLED
+    st = getVariable(41932);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.OPCCOMMANDSDISABLED", 66);
     st->size_data = sizeof(BOOL);
@@ -15894,8 +16188,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 43261 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.LASTCMDISON
-    st = getVariable(43261);
+  { // 41933 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.LASTCMDISON
+    st = getVariable(41933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.LASTCMDISON", 58);
     st->size_data = sizeof(BOOL);
@@ -15907,8 +16201,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 43262 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_STATON
-    st = getVariable(43262);
+  { // 41934 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_STATON
+    st = getVariable(41934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_STATON", 64);
     st->size_data = sizeof(BOOL);
@@ -15920,8 +16214,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 43263 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_STATOFF
-    st = getVariable(43263);
+  { // 41935 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_STATOFF
+    st = getVariable(41935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_STATOFF", 65);
     st->size_data = sizeof(BOOL);
@@ -15933,8 +16227,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 43264 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_CMDON
-    st = getVariable(43264);
+  { // 41936 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_CMDON
+    st = getVariable(41936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_CMDON", 63);
     st->size_data = sizeof(BOOL);
@@ -15946,8 +16240,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43265 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_CMDOFF
-    st = getVariable(43265);
+  { // 41937 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_CMDOFF
+    st = getVariable(41937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_CMDOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -15959,8 +16253,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43266 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDON
-    st = getVariable(43266);
+  { // 41938 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDON
+    st = getVariable(41938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDON", 70);
     st->size_data = sizeof(BOOL);
@@ -15972,8 +16266,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 43267 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(43267);
+  { // 41939 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(41939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.ISVALIDREF_INBREAKCMDOFF", 71);
     st->size_data = sizeof(BOOL);
@@ -15985,8 +16279,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43268 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND_ALG
-    st = getVariable(43268);
+  { // 41940 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND_ALG
+    st = getVariable(41940);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND_ALG", 60);
     st->size_data = sizeof(WORD);
@@ -15998,8 +16292,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 43269 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND_ARM
-    st = getVariable(43269);
+  { // 41941 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND_ARM
+    st = getVariable(41941);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.INCOMMAND_ARM", 60);
     st->size_data = sizeof(WORD);
@@ -16011,8 +16305,8 @@ int __variables_init_FB_REMONTALG(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 43270 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.CMDON
-    st = getVariable(43270);
+  { // 41942 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.CMDON
+    st = getVariable(41942);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.CMDON", 52);
     st->size_data = sizeof(BOOL);
@@ -16024,8 +16318,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 43271 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.CMDOFF
-    st = getVariable(43271);
+  { // 41943 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.CMDOFF
+    st = getVariable(41943);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.CMDOFF", 53);
     st->size_data = sizeof(BOOL);
@@ -16037,8 +16331,8 @@ int __variables_init_FB_REMONTALG(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 43272 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.RELIABILITY
-    st = getVariable(43272);
+  { // 41944 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.RELIABILITY
+    st = getVariable(41944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG.IM.TEN_MB.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);

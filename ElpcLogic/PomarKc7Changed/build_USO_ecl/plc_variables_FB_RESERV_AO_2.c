@@ -181,8 +181,8 @@ int __variables_init_FB_RESERV_AO_2(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 14592 PROGRAM0.AO_PROC.FB_RESERV_AO_2.OUTCURRENT.WFLAGS
-    st = getVariable(14592);
+  { // 14094 PROGRAM0.AO_PROC.FB_RESERV_AO_2.OUTCURRENT.WFLAGS
+    st = getVariable(14094);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.OUTCURRENT.WFLAGS", 49);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_UINT = (UINT*)&p_TDOUBLEDATA->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 14593 PROGRAM0.AO_PROC.FB_RESERV_AO_2.OUTCURRENT.DBLVALUE
-    st = getVariable(14593);
+  { // 14095 PROGRAM0.AO_PROC.FB_RESERV_AO_2.OUTCURRENT.DBLVALUE
+    st = getVariable(14095);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.OUTCURRENT.DBLVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -205,8 +205,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_TDOUBLEDATA->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 14594 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NVALUE
-    st = getVariable(14594);
+  { // 14096 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NVALUE
+    st = getVariable(14096);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NVALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -217,8 +217,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NVALUE;
     st->value_p = p_LREAL;
   }
-  { // 14595 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.BLCONNECT
-    st = getVariable(14595);
+  { // 14097 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.BLCONNECT
+    st = getVariable(14097);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.BLCONNECT", 47);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 14596 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OUTLL
-    st = getVariable(14596);
+  { // 14098 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OUTLL
+    st = getVariable(14098);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OUTLL", 43);
     st->size_data = sizeof(LREAL);
@@ -241,8 +241,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTLL;
     st->value_p = p_LREAL;
   }
-  { // 14597 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OUTHL
-    st = getVariable(14597);
+  { // 14099 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OUTHL
+    st = getVariable(14099);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OUTHL", 43);
     st->size_data = sizeof(LREAL);
@@ -253,8 +253,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTHL;
     st->value_p = p_LREAL;
   }
-  { // 14598 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWLL
-    st = getVariable(14598);
+  { // 14100 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWLL
+    st = getVariable(14100);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWLL", 43);
     st->size_data = sizeof(LREAL);
@@ -265,8 +265,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWLL;
     st->value_p = p_LREAL;
   }
-  { // 14599 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWHL
-    st = getVariable(14599);
+  { // 14101 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWHL
+    st = getVariable(14101);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWHL", 43);
     st->size_data = sizeof(LREAL);
@@ -277,8 +277,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWHL;
     st->value_p = p_LREAL;
   }
-  { // 14600 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWLL_ISVALIDREF
-    st = getVariable(14600);
+  { // 14102 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWLL_ISVALIDREF
+    st = getVariable(14102);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWLL_ISVALIDREF", 54);
     st->size_data = sizeof(BOOL);
@@ -289,8 +289,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWLL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14601 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWHL_ISVALIDREF
-    st = getVariable(14601);
+  { // 14103 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWHL_ISVALIDREF
+    st = getVariable(14103);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.NEWHL_ISVALIDREF", 54);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWHL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14602 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.INCOMMAND
-    st = getVariable(14602);
+  { // 14104 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.INCOMMAND
+    st = getVariable(14104);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.INCOMMAND", 47);
     st->size_data = sizeof(WORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_WORD = (WORD*)&p_STRUCT_AO->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 14603 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.VALUE
-    st = getVariable(14603);
+  { // 14105 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.VALUE
+    st = getVariable(14105);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.VALUE", 43);
     st->size_data = sizeof(LREAL);
@@ -325,8 +325,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 14604 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.STATUS
-    st = getVariable(14604);
+  { // 14106 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.STATUS
+    st = getVariable(14106);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.STATUS", 44);
     st->size_data = sizeof(DWORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_DWORD = (DWORD*)&p_STRUCT_AO->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 14605 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.LL
-    st = getVariable(14605);
+  { // 14107 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.LL
+    st = getVariable(14107);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.LL", 40);
     st->size_data = sizeof(LREAL);
@@ -349,8 +349,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->LL;
     st->value_p = p_LREAL;
   }
-  { // 14606 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.HL
-    st = getVariable(14606);
+  { // 14108 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.HL
+    st = getVariable(14108);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.HL", 40);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->HL;
     st->value_p = p_LREAL;
   }
-  { // 14607 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OPCCOMMANDSDISABLED
-    st = getVariable(14607);
+  { // 14109 PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OPCCOMMANDSDISABLED
+    st = getVariable(14109);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.STRAO.OPCCOMMANDSDISABLED", 57);
     st->size_data = sizeof(BOOL);
@@ -373,8 +373,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 14608 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RETAINLL
-    st = getVariable(14608);
+  { // 14110 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RETAINLL
+    st = getVariable(14110);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RETAINLL", 40);
     st->size_data = sizeof(LREAL);
@@ -384,8 +384,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_FB_AOSOURCEMLP->RETAINLL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14609 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RETAINHL
-    st = getVariable(14609);
+  { // 14111 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RETAINHL
+    st = getVariable(14111);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RETAINHL", 40);
     st->size_data = sizeof(LREAL);
@@ -395,8 +395,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_LREAL = (LREAL*)&p_FB_AOSOURCEMLP->RETAINHL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14614 PROGRAM0.AO_PROC.FB_RESERV_AO_2.SOURCE
-    st = getVariable(14614);
+  { // 14116 PROGRAM0.AO_PROC.FB_RESERV_AO_2.SOURCE
+    st = getVariable(14116);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.SOURCE", 38);
     st->size_data = sizeof(BYTE);
@@ -406,8 +406,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BYTE = (BYTE*)&p_FB_AOSOURCEMLP->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14615 PROGRAM0.AO_PROC.FB_RESERV_AO_2.SOURCE_FOR_STATUS
-    st = getVariable(14615);
+  { // 14117 PROGRAM0.AO_PROC.FB_RESERV_AO_2.SOURCE_FOR_STATUS
+    st = getVariable(14117);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.SOURCE_FOR_STATUS", 49);
     st->size_data = sizeof(BYTE);
@@ -417,8 +417,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BYTE = (BYTE*)&p_FB_AOSOURCEMLP->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14616 PROGRAM0.AO_PROC.FB_RESERV_AO_2.CMD
-    st = getVariable(14616);
+  { // 14118 PROGRAM0.AO_PROC.FB_RESERV_AO_2.CMD
+    st = getVariable(14118);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.CMD", 35);
     st->size_data = sizeof(BYTE);
@@ -428,8 +428,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BYTE = (BYTE*)&p_FB_AOSOURCEMLP->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14617 PROGRAM0.AO_PROC.FB_RESERV_AO_2.CMD_FOR_STATUS
-    st = getVariable(14617);
+  { // 14119 PROGRAM0.AO_PROC.FB_RESERV_AO_2.CMD_FOR_STATUS
+    st = getVariable(14119);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.CMD_FOR_STATUS", 46);
     st->size_data = sizeof(BYTE);
@@ -439,8 +439,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BYTE = (BYTE*)&p_FB_AOSOURCEMLP->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14618 PROGRAM0.AO_PROC.FB_RESERV_AO_2.LASTCMD
-    st = getVariable(14618);
+  { // 14120 PROGRAM0.AO_PROC.FB_RESERV_AO_2.LASTCMD
+    st = getVariable(14120);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.LASTCMD", 39);
     st->size_data = sizeof(BYTE);
@@ -450,8 +450,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BYTE = (BYTE*)&p_FB_AOSOURCEMLP->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14619 PROGRAM0.AO_PROC.FB_RESERV_AO_2.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(14619);
+  { // 14121 PROGRAM0.AO_PROC.FB_RESERV_AO_2.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(14121);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.COMMAND_ERROR_FOR_STATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -461,8 +461,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BYTE = (BYTE*)&p_FB_AOSOURCEMLP->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14620 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.IN
-    st = getVariable(14620);
+  { // 14122 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.IN
+    st = getVariable(14122);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -473,8 +473,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 14621 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.PT
-    st = getVariable(14621);
+  { // 14123 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.PT
+    st = getVariable(14123);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.PT", 48);
     st->size_data = sizeof(TIME);
@@ -485,8 +485,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 14622 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.Q
-    st = getVariable(14622);
+  { // 14124 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.Q
+    st = getVariable(14124);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -497,8 +497,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 14623 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.ET
-    st = getVariable(14623);
+  { // 14125 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.ET
+    st = getVariable(14125);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER.ET", 48);
     st->size_data = sizeof(TIME);
@@ -509,8 +509,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 14624 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER
-    st = getVariable(14624);
+  { // 14126 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER
+    st = getVariable(14126);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMER", 45);
     st->size_data = sizeof(TON);
@@ -520,8 +520,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_TON = (TON*)&p_FB_AOSOURCEMLP->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 14625 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMERPRIZNAK
-    st = getVariable(14625);
+  { // 14127 PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMERPRIZNAK
+    st = getVariable(14127);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.RESETCMDTIMERPRIZNAK", 52);
     st->size_data = sizeof(BOOL);
@@ -531,8 +531,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_FB_AOSOURCEMLP->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14626 PROGRAM0.AO_PROC.FB_RESERV_AO_2.SECONDTACK
-    st = getVariable(14626);
+  { // 14128 PROGRAM0.AO_PROC.FB_RESERV_AO_2.SECONDTACK
+    st = getVariable(14128);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.SECONDTACK", 42);
     st->size_data = sizeof(BOOL);
@@ -542,8 +542,8 @@ int __variables_init_FB_RESERV_AO_2(){
     p_BOOL = (BOOL*)&p_FB_AOSOURCEMLP->SECONDTACK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14627 PROGRAM0.AO_PROC.FB_RESERV_AO_2.INOPCCOMMANDSDISABLED
-    st = getVariable(14627);
+  { // 14129 PROGRAM0.AO_PROC.FB_RESERV_AO_2.INOPCCOMMANDSDISABLED
+    st = getVariable(14129);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_PROC.FB_RESERV_AO_2.INOPCCOMMANDSDISABLED", 53);
     st->size_data = sizeof(BOOL);

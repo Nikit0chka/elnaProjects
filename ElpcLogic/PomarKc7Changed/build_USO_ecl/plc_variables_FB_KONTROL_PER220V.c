@@ -181,8 +181,8 @@ int __variables_init_FB_KONTROL_PER220V(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 9496 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.WFLAGS
-    st = getVariable(9496);
+  { // 9386 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.WFLAGS
+    st = getVariable(9386);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.WFLAGS", 48);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_UINT = (UINT*)&p_TITEMAIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9497 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.WRESERVED
-    st = getVariable(9497);
+  { // 9387 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.WRESERVED
+    st = getVariable(9387);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.WRESERVED", 51);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_UINT = (UINT*)&p_TITEMAIN->WRESERVED;
     st->value_p = p_UINT;
   }
-  { // 9498 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.DBLVALUE
-    st = getVariable(9498);
+  { // 9388 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.DBLVALUE
+    st = getVariable(9388);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.DBLVALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -217,8 +217,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_TITEMAIN->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9499 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.NANOSEC
-    st = getVariable(9499);
+  { // 9389 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.NANOSEC
+    st = getVariable(9389);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.NANOSEC", 49);
     st->size_data = sizeof(ULINT);
@@ -229,8 +229,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_ULINT = (ULINT*)&p_TITEMAIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9500 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.RESERVE
-    st = getVariable(9500);
+  { // 9390 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.RESERVE
+    st = getVariable(9390);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ARAIN.RESERVE", 49);
     st->size_data = sizeof(ULINT);
@@ -241,8 +241,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_ULINT = (ULINT*)&p_TITEMAIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9501 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.WFLAGS
-    st = getVariable(9501);
+  { // 9391 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.WFLAGS
+    st = getVariable(9391);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.WFLAGS", 50);
     st->size_data = sizeof(UINT);
@@ -253,8 +253,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9502 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.WVALUE
-    st = getVariable(9502);
+  { // 9392 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.WVALUE
+    st = getVariable(9392);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.WVALUE", 50);
     st->size_data = sizeof(UINT);
@@ -265,8 +265,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 9503 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.NANOSEC
-    st = getVariable(9503);
+  { // 9393 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.NANOSEC
+    st = getVariable(9393);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.NANOSEC", 51);
     st->size_data = sizeof(ULINT);
@@ -277,8 +277,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9504 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.RESERVE
-    st = getVariable(9504);
+  { // 9394 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.RESERVE
+    st = getVariable(9394);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ERR_MOD.RESERVE", 51);
     st->size_data = sizeof(ULINT);
@@ -289,8 +289,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9505 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.VALUE
-    st = getVariable(9505);
+  { // 9395 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.VALUE
+    st = getVariable(9395);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.VALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 9506 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.STATUS
-    st = getVariable(9506);
+  { // 9396 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.STATUS
+    st = getVariable(9396);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.STATUS", 48);
     st->size_data = sizeof(DWORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 9507 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INTERVAL
-    st = getVariable(9507);
+  { // 9397 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INTERVAL
+    st = getVariable(9397);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INTERVAL", 50);
     st->size_data = sizeof(BYTE);
@@ -325,8 +325,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 9508 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND
-    st = getVariable(9508);
+  { // 9398 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND
+    st = getVariable(9398);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 9509 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.BLCONNECT
-    st = getVariable(9509);
+  { // 9399 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.BLCONNECT
+    st = getVariable(9399);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.BLCONNECT", 51);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 9510 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLL
-    st = getVariable(9510);
+  { // 9400 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLL
+    st = getVariable(9400);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLL", 45);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 9511 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHL
-    st = getVariable(9511);
+  { // 9401 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHL
+    st = getVariable(9401);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHL", 45);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 9512 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLA
-    st = getVariable(9512);
+  { // 9402 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLA
+    st = getVariable(9402);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLA", 45);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 9513 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHA
-    st = getVariable(9513);
+  { // 9403 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHA
+    st = getVariable(9403);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHA", 45);
     st->size_data = sizeof(LREAL);
@@ -397,8 +397,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 9514 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLW
-    st = getVariable(9514);
+  { // 9404 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLW
+    st = getVariable(9404);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DLW", 45);
     st->size_data = sizeof(LREAL);
@@ -409,8 +409,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 9515 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHW
-    st = getVariable(9515);
+  { // 9405 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHW
+    st = getVariable(9405);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DHW", 45);
     st->size_data = sizeof(LREAL);
@@ -421,8 +421,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 9516 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LL
-    st = getVariable(9516);
+  { // 9406 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LL
+    st = getVariable(9406);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LL", 44);
     st->size_data = sizeof(LREAL);
@@ -433,8 +433,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 9517 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HL
-    st = getVariable(9517);
+  { // 9407 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HL
+    st = getVariable(9407);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HL", 44);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 9518 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LA
-    st = getVariable(9518);
+  { // 9408 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LA
+    st = getVariable(9408);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LA", 44);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 9519 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HA
-    st = getVariable(9519);
+  { // 9409 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HA
+    st = getVariable(9409);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HA", 44);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 9520 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LW
-    st = getVariable(9520);
+  { // 9410 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LW
+    st = getVariable(9410);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.LW", 44);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 9521 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HW
-    st = getVariable(9521);
+  { // 9411 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HW
+    st = getVariable(9411);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HW", 44);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 9522 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_LA
-    st = getVariable(9522);
+  { // 9412 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_LA
+    st = getVariable(9412);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_LA", 55);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 9523 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_HA
-    st = getVariable(9523);
+  { // 9413 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_HA
+    st = getVariable(9413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_HA", 55);
     st->size_data = sizeof(BOOL);
@@ -517,8 +517,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 9524 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_LW
-    st = getVariable(9524);
+  { // 9414 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_LW
+    st = getVariable(9414);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_LW", 55);
     st->size_data = sizeof(BOOL);
@@ -529,8 +529,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 9525 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_HW
-    st = getVariable(9525);
+  { // 9415 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_HW
+    st = getVariable(9415);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.ISVALIDREF_HW", 55);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 9526 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INPLL
-    st = getVariable(9526);
+  { // 9416 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INPLL
+    st = getVariable(9416);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INPLL", 47);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 9527 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INPHL
-    st = getVariable(9527);
+  { // 9417 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INPHL
+    st = getVariable(9417);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INPHL", 47);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 9528 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(9528);
+  { // 9418 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(9418);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CURRENTSHOTCIRCUIT", 60);
     st->size_data = sizeof(LREAL);
@@ -577,8 +577,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9529 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(9529);
+  { // 9419 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(9419);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CURRENTBREAKCIRCUIT", 61);
     st->size_data = sizeof(LREAL);
@@ -589,8 +589,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9530 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXCHANGESPEED
-    st = getVariable(9530);
+  { // 9420 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXCHANGESPEED
+    st = getVariable(9420);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXCHANGESPEED", 56);
     st->size_data = sizeof(LREAL);
@@ -601,8 +601,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9531 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(9531);
+  { // 9421 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(9421);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXCHANGESPEEDDOWN", 60);
     st->size_data = sizeof(LREAL);
@@ -613,8 +613,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9532 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CHANGESPEED
-    st = getVariable(9532);
+  { // 9422 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CHANGESPEED
+    st = getVariable(9422);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.CHANGESPEED", 53);
     st->size_data = sizeof(LREAL);
@@ -625,8 +625,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9533 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HISTERESIS
-    st = getVariable(9533);
+  { // 9423 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HISTERESIS
+    st = getVariable(9423);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.HISTERESIS", 52);
     st->size_data = sizeof(LREAL);
@@ -637,8 +637,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 9534 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.APERTURFILTER
-    st = getVariable(9534);
+  { // 9424 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.APERTURFILTER
+    st = getVariable(9424);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.APERTURFILTER", 55);
     st->size_data = sizeof(LREAL);
@@ -649,8 +649,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9535 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.EXPONENTIALFILTER
-    st = getVariable(9535);
+  { // 9425 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.EXPONENTIALFILTER
+    st = getVariable(9425);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.EXPONENTIALFILTER", 59);
     st->size_data = sizeof(LREAL);
@@ -661,8 +661,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9536 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.RASSOGLASOVANIE
-    st = getVariable(9536);
+  { // 9426 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.RASSOGLASOVANIE
+    st = getVariable(9426);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.RASSOGLASOVANIE", 57);
     st->size_data = sizeof(LREAL);
@@ -673,8 +673,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 9537 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(9537);
+  { // 9427 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(9427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.OPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9538 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_LA
-    st = getVariable(9538);
+  { // 9428 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_LA
+    st = getVariable(9428);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_LA", 53);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 9539 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_HA
-    st = getVariable(9539);
+  { // 9429 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_HA
+    st = getVariable(9429);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_HA", 53);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 9540 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_LW
-    st = getVariable(9540);
+  { // 9430 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_LW
+    st = getVariable(9430);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_LW", 53);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 9541 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_HW
-    st = getVariable(9541);
+  { // 9431 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_HW
+    st = getVariable(9431);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DISABLED_HW", 53);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 9542 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYLA
-    st = getVariable(9542);
+  { // 9432 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYLA
+    st = getVariable(9432);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYLA", 49);
     st->size_data = sizeof(TIME);
@@ -745,8 +745,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 9543 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYLW
-    st = getVariable(9543);
+  { // 9433 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYLW
+    st = getVariable(9433);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYLW", 49);
     st->size_data = sizeof(TIME);
@@ -757,8 +757,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 9544 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYHW
-    st = getVariable(9544);
+  { // 9434 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYHW
+    st = getVariable(9434);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYHW", 49);
     st->size_data = sizeof(TIME);
@@ -769,8 +769,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 9545 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYHA
-    st = getVariable(9545);
+  { // 9435 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYHA
+    st = getVariable(9435);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DELAYHA", 49);
     st->size_data = sizeof(TIME);
@@ -781,8 +781,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 9546 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(9546);
+  { // 9436 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(9436);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MINVALUE_ISVALIDREF", 61);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9547 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(9547);
+  { // 9437 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(9437);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXVALUE_ISVALIDREF", 61);
     st->size_data = sizeof(BOOL);
@@ -805,8 +805,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9548 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MINVALUE
-    st = getVariable(9548);
+  { // 9438 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MINVALUE
+    st = getVariable(9438);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MINVALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -817,8 +817,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9549 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXVALUE
-    st = getVariable(9549);
+  { // 9439 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXVALUE
+    st = getVariable(9439);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.MAXVALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9550 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(9550);
+  { // 9440 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(9440);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INOPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9551 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.IMIT
-    st = getVariable(9551);
+  { // 9441 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.IMIT
+    st = getVariable(9441);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.IMIT", 46);
     st->size_data = sizeof(BOOL);
@@ -853,8 +853,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 9552 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.REMONT
-    st = getVariable(9552);
+  { // 9442 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.REMONT
+    st = getVariable(9442);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.REMONT", 48);
     st->size_data = sizeof(BOOL);
@@ -865,8 +865,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 9553 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS
-    st = getVariable(9553);
+  { // 9443 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS
+    st = getVariable(9443);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS", 44);
     st->size_data = sizeof(BOOL);
@@ -877,8 +877,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 9554 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS_MIN
-    st = getVariable(9554);
+  { // 9444 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS_MIN
+    st = getVariable(9444);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS_MIN", 48);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 9555 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS_MAX
-    st = getVariable(9555);
+  { // 9445 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS_MAX
+    st = getVariable(9445);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.NS_MAX", 48);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 9556 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND_ALG
-    st = getVariable(9556);
+  { // 9446 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND_ALG
+    st = getVariable(9446);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND_ALG", 55);
     st->size_data = sizeof(WORD);
@@ -913,8 +913,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 9557 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND_ARM
-    st = getVariable(9557);
+  { // 9447 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND_ARM
+    st = getVariable(9447);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.INCOMMAND_ARM", 55);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 9558 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DMAXCHANGESPEED
-    st = getVariable(9558);
+  { // 9448 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DMAXCHANGESPEED
+    st = getVariable(9448);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DMAXCHANGESPEED", 57);
     st->size_data = sizeof(LREAL);
@@ -937,8 +937,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9559 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(9559);
+  { // 9449 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(9449);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.STRAI.DMAXCHANGESPEEDDOWN", 61);
     st->size_data = sizeof(LREAL);
@@ -949,8 +949,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9560 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NOTDEFINED
-    st = getVariable(9560);
+  { // 9450 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NOTDEFINED
+    st = getVariable(9450);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NOTDEFINED", 56);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 9561 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LL
-    st = getVariable(9561);
+  { // 9451 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LL
+    st = getVariable(9451);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LL", 48);
     st->size_data = sizeof(BYTE);
@@ -973,8 +973,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 9562 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HL
-    st = getVariable(9562);
+  { // 9452 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HL
+    st = getVariable(9452);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HL", 48);
     st->size_data = sizeof(BYTE);
@@ -985,8 +985,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 9563 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NOTRELIABLE
-    st = getVariable(9563);
+  { // 9453 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NOTRELIABLE
+    st = getVariable(9453);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NOTRELIABLE", 57);
     st->size_data = sizeof(BYTE);
@@ -997,8 +997,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 9564 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NORMAL
-    st = getVariable(9564);
+  { // 9454 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NORMAL
+    st = getVariable(9454);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.NORMAL", 52);
     st->size_data = sizeof(BYTE);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 9565 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LW
-    st = getVariable(9565);
+  { // 9455 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LW
+    st = getVariable(9455);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LW", 48);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 9566 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HW
-    st = getVariable(9566);
+  { // 9456 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HW
+    st = getVariable(9456);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HW", 48);
     st->size_data = sizeof(BYTE);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 9567 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LA
-    st = getVariable(9567);
+  { // 9457 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LA
+    st = getVariable(9457);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.LA", 48);
     st->size_data = sizeof(BYTE);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 9568 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HA
-    st = getVariable(9568);
+  { // 9458 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HA
+    st = getVariable(9458);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._STATUSAI.HA", 48);
     st->size_data = sizeof(BYTE);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 9569 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_SETUSTAVKI
-    st = getVariable(9569);
+  { // 9459 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_SETUSTAVKI
+    st = getVariable(9459);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_SETUSTAVKI", 65);
     st->size_data = sizeof(WORD);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETUSTAVKI;
     st->value_p = p_WORD;
   }
-  { // 9570 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_SETREMONT
-    st = getVariable(9570);
+  { // 9460 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_SETREMONT
+    st = getVariable(9460);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_SETREMONT", 64);
     st->size_data = sizeof(WORD);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9571 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_RESETREMONT
-    st = getVariable(9571);
+  { // 9461 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_RESETREMONT
+    st = getVariable(9461);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_RESETREMONT", 66);
     st->size_data = sizeof(WORD);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_RESETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9572 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_KVITNOTRELIABLE
-    st = getVariable(9572);
+  { // 9462 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_KVITNOTRELIABLE
+    st = getVariable(9462);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._COMMANDANALOG.CMD_KVITNOTRELIABLE", 70);
     st->size_data = sizeof(WORD);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_KVITNOTRELIABLE;
     st->value_p = p_WORD;
   }
-  { // 9577 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.NONE
-    st = getVariable(9577);
+  { // 9467 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.NONE
+    st = getVariable(9467);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.NONE", 58);
     st->size_data = sizeof(BYTE);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->NONE;
     st->value_p = p_BYTE;
   }
-  { // 9578 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LL
-    st = getVariable(9578);
+  { // 9468 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LL
+    st = getVariable(9468);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LL", 56);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LL;
     st->value_p = p_BYTE;
   }
-  { // 9579 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LW
-    st = getVariable(9579);
+  { // 9469 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LW
+    st = getVariable(9469);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LW", 56);
     st->size_data = sizeof(BYTE);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LW;
     st->value_p = p_BYTE;
   }
-  { // 9580 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HW
-    st = getVariable(9580);
+  { // 9470 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HW
+    st = getVariable(9470);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HW", 56);
     st->size_data = sizeof(BYTE);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HW;
     st->value_p = p_BYTE;
   }
-  { // 9581 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LA
-    st = getVariable(9581);
+  { // 9471 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LA
+    st = getVariable(9471);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.LA", 56);
     st->size_data = sizeof(BYTE);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LA;
     st->value_p = p_BYTE;
   }
-  { // 9582 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HA
-    st = getVariable(9582);
+  { // 9472 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HA
+    st = getVariable(9472);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HA", 56);
     st->size_data = sizeof(BYTE);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HA;
     st->value_p = p_BYTE;
   }
-  { // 9583 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HL
-    st = getVariable(9583);
+  { // 9473 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HL
+    st = getVariable(9473);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.HL", 56);
     st->size_data = sizeof(BYTE);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HL;
     st->value_p = p_BYTE;
   }
-  { // 9584 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.SIPUP
-    st = getVariable(9584);
+  { // 9474 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.SIPUP
+    st = getVariable(9474);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.SIPUP", 59);
     st->size_data = sizeof(BYTE);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPUP;
     st->value_p = p_BYTE;
   }
-  { // 9585 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.SIPDOWN
-    st = getVariable(9585);
+  { // 9475 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.SIPDOWN
+    st = getVariable(9475);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._ANALOGLIMITFLAGS.SIPDOWN", 61);
     st->size_data = sizeof(BYTE);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPDOWN;
     st->value_p = p_BYTE;
   }
-  { // 9586 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NOTRELIABLE
-    st = getVariable(9586);
+  { // 9476 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NOTRELIABLE
+    st = getVariable(9476);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NOTRELIABLE", 47);
     st->size_data = sizeof(BOOL);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->NOTRELIABLE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9587 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUE
-    st = getVariable(9587);
+  { // 9477 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUE
+    st = getVariable(9477);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUE", 46);
     st->size_data = sizeof(LREAL);
@@ -1235,8 +1235,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->_LASTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9588 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.IN
-    st = getVariable(9588);
+  { // 9478 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.IN
+    st = getVariable(9478);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -1247,8 +1247,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 9589 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.PT
-    st = getVariable(9589);
+  { // 9479 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.PT
+    st = getVariable(9479);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.PT", 52);
     st->size_data = sizeof(TIME);
@@ -1259,8 +1259,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 9590 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.Q
-    st = getVariable(9590);
+  { // 9480 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.Q
+    st = getVariable(9480);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 9591 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.ET
-    st = getVariable(9591);
+  { // 9481 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.ET
+    st = getVariable(9481);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER.ET", 52);
     st->size_data = sizeof(TIME);
@@ -1283,8 +1283,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 9592 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER
-    st = getVariable(9592);
+  { // 9482 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER
+    st = getVariable(9482);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMER", 49);
     st->size_data = sizeof(TON);
@@ -1294,8 +1294,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 9593 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.IN
-    st = getVariable(9593);
+  { // 9483 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.IN
+    st = getVariable(9483);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.IN", 54);
     st->size_data = sizeof(BOOL);
@@ -1306,8 +1306,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 9594 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.PT
-    st = getVariable(9594);
+  { // 9484 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.PT
+    st = getVariable(9484);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.PT", 54);
     st->size_data = sizeof(TIME);
@@ -1318,8 +1318,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 9595 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.Q
-    st = getVariable(9595);
+  { // 9485 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.Q
+    st = getVariable(9485);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -1330,8 +1330,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 9596 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.ET
-    st = getVariable(9596);
+  { // 9486 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.ET
+    st = getVariable(9486);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER.ET", 54);
     st->size_data = sizeof(TIME);
@@ -1342,8 +1342,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 9597 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER
-    st = getVariable(9597);
+  { // 9487 PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER
+    st = getVariable(9487);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V._LASTVALUETIMER", 51);
     st->size_data = sizeof(TON);
@@ -1353,8 +1353,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->_LASTVALUETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 9598 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMERPRIZNAK
-    st = getVariable(9598);
+  { // 9488 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMERPRIZNAK
+    st = getVariable(9488);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RESETCMDTIMERPRIZNAK", 56);
     st->size_data = sizeof(BOOL);
@@ -1364,8 +1364,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9599 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.K
-    st = getVariable(9599);
+  { // 9489 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.K
+    st = getVariable(9489);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.K", 37);
     st->size_data = sizeof(LREAL);
@@ -1375,8 +1375,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->K;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9600 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.B
-    st = getVariable(9600);
+  { // 9490 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.B
+    st = getVariable(9490);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.B", 37);
     st->size_data = sizeof(LREAL);
@@ -1386,8 +1386,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->B;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9601 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.AP
-    st = getVariable(9601);
+  { // 9491 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.AP
+    st = getVariable(9491);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.AP", 38);
     st->size_data = sizeof(LREAL);
@@ -1397,8 +1397,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->AP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9602 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RAZNITSA
-    st = getVariable(9602);
+  { // 9492 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RAZNITSA
+    st = getVariable(9492);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RAZNITSA", 44);
     st->size_data = sizeof(LREAL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RAZNITSA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9603 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RABS
-    st = getVariable(9603);
+  { // 9493 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RABS
+    st = getVariable(9493);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.RABS", 40);
     st->size_data = sizeof(LREAL);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RABS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9604 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.H
-    st = getVariable(9604);
+  { // 9494 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.H
+    st = getVariable(9494);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.H", 37);
     st->size_data = sizeof(LREAL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->H;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9605 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.MISMATCH
-    st = getVariable(9605);
+  { // 9495 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.MISMATCH
+    st = getVariable(9495);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.MISMATCH", 44);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->MISMATCH;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9606 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.PARAMETR
-    st = getVariable(9606);
+  { // 9496 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.PARAMETR
+    st = getVariable(9496);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.PARAMETR", 44);
     st->size_data = sizeof(BYTE);
@@ -1452,8 +1452,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9607 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.SOURCE
-    st = getVariable(9607);
+  { // 9497 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.SOURCE
+    st = getVariable(9497);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.SOURCE", 42);
     st->size_data = sizeof(BYTE);
@@ -1463,8 +1463,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9608 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.CMD
-    st = getVariable(9608);
+  { // 9498 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.CMD
+    st = getVariable(9498);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.CMD", 39);
     st->size_data = sizeof(BYTE);
@@ -1474,8 +1474,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9609 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LASTCMD
-    st = getVariable(9609);
+  { // 9499 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LASTCMD
+    st = getVariable(9499);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LASTCMD", 43);
     st->size_data = sizeof(BYTE);
@@ -1485,8 +1485,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9610 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.SOURCE_FOR_STATUS
-    st = getVariable(9610);
+  { // 9500 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.SOURCE_FOR_STATUS
+    st = getVariable(9500);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.SOURCE_FOR_STATUS", 53);
     st->size_data = sizeof(BYTE);
@@ -1496,8 +1496,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9611 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.CMD_FOR_STATUS
-    st = getVariable(9611);
+  { // 9501 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.CMD_FOR_STATUS
+    st = getVariable(9501);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.CMD_FOR_STATUS", 50);
     st->size_data = sizeof(BYTE);
@@ -1507,8 +1507,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9612 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(9612);
+  { // 9502 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(9502);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.COMMAND_ERROR_FOR_STATUS", 60);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1518,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9613 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ONINIT
-    st = getVariable(9613);
+  { // 9503 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ONINIT
+    st = getVariable(9503);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ONINIT", 42);
     st->size_data = sizeof(BOOL);
@@ -1529,8 +1529,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 9614 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG.CLK
-    st = getVariable(9614);
+  { // 9504 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG.CLK
+    st = getVariable(9504);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG.CLK", 48);
     st->size_data = sizeof(BOOL);
@@ -1541,8 +1541,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9615 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG.Q
-    st = getVariable(9615);
+  { // 9505 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG.Q
+    st = getVariable(9505);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -1553,8 +1553,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9616 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG
-    st = getVariable(9616);
+  { // 9506 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG
+    st = getVariable(9506);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.OFF_TRIG", 44);
     st->size_data = sizeof(R_TRIG);
@@ -1564,8 +1564,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->OFF_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9617 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG.CLK
-    st = getVariable(9617);
+  { // 9507 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG.CLK
+    st = getVariable(9507);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG.CLK", 47);
     st->size_data = sizeof(BOOL);
@@ -1576,8 +1576,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9618 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG.Q
-    st = getVariable(9618);
+  { // 9508 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG.Q
+    st = getVariable(9508);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -1588,8 +1588,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9619 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG
-    st = getVariable(9619);
+  { // 9509 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG
+    st = getVariable(9509);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.ON_TRIG", 43);
     st->size_data = sizeof(R_TRIG);
@@ -1599,8 +1599,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->ON_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9620 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG.CLK
-    st = getVariable(9620);
+  { // 9510 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG.CLK
+    st = getVariable(9510);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG.CLK", 51);
     st->size_data = sizeof(BOOL);
@@ -1611,8 +1611,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9621 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG.Q
-    st = getVariable(9621);
+  { // 9511 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG.Q
+    st = getVariable(9511);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1623,8 +1623,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9622 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG
-    st = getVariable(9622);
+  { // 9512 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG
+    st = getVariable(9512);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.REMONT_TRIG", 47);
     st->size_data = sizeof(R_TRIG);
@@ -1634,8 +1634,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->REMONT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9623 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG.CLK
-    st = getVariable(9623);
+  { // 9513 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG.CLK
+    st = getVariable(9513);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG.CLK", 47);
     st->size_data = sizeof(BOOL);
@@ -1646,8 +1646,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9624 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG.Q
-    st = getVariable(9624);
+  { // 9514 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG.Q
+    st = getVariable(9514);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -1658,8 +1658,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9625 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG
-    st = getVariable(9625);
+  { // 9515 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG
+    st = getVariable(9515);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.LL_TRIG", 43);
     st->size_data = sizeof(R_TRIG);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->LL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9626 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG.CLK
-    st = getVariable(9626);
+  { // 9516 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG.CLK
+    st = getVariable(9516);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG.CLK", 47);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9627 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG.Q
-    st = getVariable(9627);
+  { // 9517 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG.Q
+    st = getVariable(9517);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9628 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG
-    st = getVariable(9628);
+  { // 9518 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG
+    st = getVariable(9518);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.HL_TRIG", 43);
     st->size_data = sizeof(R_TRIG);
@@ -1704,8 +1704,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->HL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9629 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG.CLK
-    st = getVariable(9629);
+  { // 9519 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG.CLK
+    st = getVariable(9519);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG.CLK", 51);
     st->size_data = sizeof(BOOL);
@@ -1716,8 +1716,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9630 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG.Q
-    st = getVariable(9630);
+  { // 9520 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG.Q
+    st = getVariable(9520);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1728,8 +1728,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9631 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG
-    st = getVariable(9631);
+  { // 9521 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG
+    st = getVariable(9521);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NORMAL_TRIG", 47);
     st->size_data = sizeof(R_TRIG);
@@ -1739,8 +1739,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->NORMAL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 9632 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG.CLK
-    st = getVariable(9632);
+  { // 9522 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG.CLK
+    st = getVariable(9522);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG.CLK", 55);
     st->size_data = sizeof(BOOL);
@@ -1751,8 +1751,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 9633 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG.Q
-    st = getVariable(9633);
+  { // 9523 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG.Q
+    st = getVariable(9523);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -1763,8 +1763,8 @@ int __variables_init_FB_KONTROL_PER220V(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 9634 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG
-    st = getVariable(9634);
+  { // 9524 PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG
+    st = getVariable(9524);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_KONTROL_PER220V.NEDOSTOVER_TRIG", 51);
     st->size_data = sizeof(R_TRIG);

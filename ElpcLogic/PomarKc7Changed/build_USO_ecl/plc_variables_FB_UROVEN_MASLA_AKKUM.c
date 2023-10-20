@@ -181,8 +181,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26643 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL.VALUE
-    st = getVariable(26643);
+  { // 26327 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL.VALUE
+    st = getVariable(26327);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL.VALUE", 51);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26644 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL.RELIABILITY
-    st = getVariable(26644);
+  { // 26328 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL.RELIABILITY
+    st = getVariable(26328);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26645 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL._INVERSED
-    st = getVariable(26645);
+  { // 26329 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL._INVERSED
+    st = getVariable(26329);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.SIGNAL._INVERSED", 55);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26646 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.RELIABILITY
-    st = getVariable(26646);
+  { // 26330 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.RELIABILITY
+    st = getVariable(26330);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.RELIABILITY", 57);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26647 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.INVERSE
-    st = getVariable(26647);
+  { // 26331 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.INVERSE
+    st = getVariable(26331);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.INVERSE", 53);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26648 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DELAYON
-    st = getVariable(26648);
+  { // 26332 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DELAYON
+    st = getVariable(26332);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DELAYON", 53);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26649 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DELAYOFF
-    st = getVariable(26649);
+  { // 26333 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DELAYOFF
+    st = getVariable(26333);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DELAYOFF", 54);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26650 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.Q
-    st = getVariable(26650);
+  { // 26334 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.Q
+    st = getVariable(26334);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26651 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.STATUS
-    st = getVariable(26651);
+  { // 26335 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.STATUS
+    st = getVariable(26335);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26652 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DISABLED_SIG
-    st = getVariable(26652);
+  { // 26336 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DISABLED_SIG
+    st = getVariable(26336);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.STR_SS.DISABLED_SIG", 58);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26653 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.IN
-    st = getVariable(26653);
+  { // 26337 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.IN
+    st = getVariable(26337);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26654 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.PT
-    st = getVariable(26654);
+  { // 26338 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.PT
+    st = getVariable(26338);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.PT", 49);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26655 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.Q
-    st = getVariable(26655);
+  { // 26339 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.Q
+    st = getVariable(26339);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26656 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.ET
-    st = getVariable(26656);
+  { // 26340 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.ET
+    st = getVariable(26340);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON.ET", 49);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26657 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON
-    st = getVariable(26657);
+  { // 26341 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON
+    st = getVariable(26341);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMERON", 46);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26658 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.IN
-    st = getVariable(26658);
+  { // 26342 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.IN
+    st = getVariable(26342);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26659 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.PT
-    st = getVariable(26659);
+  { // 26343 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.PT
+    st = getVariable(26343);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.PT", 50);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26660 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.Q
-    st = getVariable(26660);
+  { // 26344 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.Q
+    st = getVariable(26344);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26661 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.ET
-    st = getVariable(26661);
+  { // 26345 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.ET
+    st = getVariable(26345);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF.ET", 50);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_UROVEN_MASLA_AKKUM(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26662 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF
-    st = getVariable(26662);
+  { // 26346 PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF
+    st = getVariable(26346);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_UROVEN_MASLA_AKKUM.TIMEROFF", 47);
     st->size_data = sizeof(TOF);

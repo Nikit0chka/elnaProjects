@@ -181,8 +181,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26863 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL.VALUE
-    st = getVariable(26863);
+  { // 26467 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL.VALUE
+    st = getVariable(26467);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL.VALUE", 56);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26864 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL.RELIABILITY
-    st = getVariable(26864);
+  { // 26468 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL.RELIABILITY
+    st = getVariable(26468);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL.RELIABILITY", 62);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26865 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL._INVERSED
-    st = getVariable(26865);
+  { // 26469 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL._INVERSED
+    st = getVariable(26469);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.SIGNAL._INVERSED", 60);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26866 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.RELIABILITY
-    st = getVariable(26866);
+  { // 26470 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.RELIABILITY
+    st = getVariable(26470);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.RELIABILITY", 62);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26867 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.INVERSE
-    st = getVariable(26867);
+  { // 26471 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.INVERSE
+    st = getVariable(26471);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.INVERSE", 58);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26868 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DELAYON
-    st = getVariable(26868);
+  { // 26472 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DELAYON
+    st = getVariable(26472);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DELAYON", 58);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26869 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DELAYOFF
-    st = getVariable(26869);
+  { // 26473 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DELAYOFF
+    st = getVariable(26473);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DELAYOFF", 59);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26870 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.Q
-    st = getVariable(26870);
+  { // 26474 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.Q
+    st = getVariable(26474);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26871 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.STATUS
-    st = getVariable(26871);
+  { // 26475 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.STATUS
+    st = getVariable(26475);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.STATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26872 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DISABLED_SIG
-    st = getVariable(26872);
+  { // 26476 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DISABLED_SIG
+    st = getVariable(26476);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.STR_SS.DISABLED_SIG", 63);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26873 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.IN
-    st = getVariable(26873);
+  { // 26477 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.IN
+    st = getVariable(26477);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.IN", 54);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26874 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.PT
-    st = getVariable(26874);
+  { // 26478 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.PT
+    st = getVariable(26478);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.PT", 54);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26875 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.Q
-    st = getVariable(26875);
+  { // 26479 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.Q
+    st = getVariable(26479);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26876 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.ET
-    st = getVariable(26876);
+  { // 26480 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.ET
+    st = getVariable(26480);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON.ET", 54);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26877 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON
-    st = getVariable(26877);
+  { // 26481 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON
+    st = getVariable(26481);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMERON", 51);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26878 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.IN
-    st = getVariable(26878);
+  { // 26482 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.IN
+    st = getVariable(26482);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.IN", 55);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26879 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.PT
-    st = getVariable(26879);
+  { // 26483 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.PT
+    st = getVariable(26483);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.PT", 55);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26880 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.Q
-    st = getVariable(26880);
+  { // 26484 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.Q
+    st = getVariable(26484);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26881 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.ET
-    st = getVariable(26881);
+  { // 26485 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.ET
+    st = getVariable(26485);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF.ET", 55);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_NEUSPESH_CHASTOTNY_PUSK(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26882 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF
-    st = getVariable(26882);
+  { // 26486 PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF
+    st = getVariable(26486);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEUSPESH_CHASTOTNY_PUSK.TIMEROFF", 52);
     st->size_data = sizeof(TOF);

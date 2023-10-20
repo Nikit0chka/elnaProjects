@@ -181,8 +181,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 9913 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.WFLAGS
-    st = getVariable(9913);
+  { // 9803 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.WFLAGS
+    st = getVariable(9803);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.WFLAGS", 52);
     st->size_data = sizeof(UINT);
@@ -193,8 +193,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_UINT = (UINT*)&p_TITEMAIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9914 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.WRESERVED
-    st = getVariable(9914);
+  { // 9804 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.WRESERVED
+    st = getVariable(9804);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.WRESERVED", 55);
     st->size_data = sizeof(UINT);
@@ -205,8 +205,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_UINT = (UINT*)&p_TITEMAIN->WRESERVED;
     st->value_p = p_UINT;
   }
-  { // 9915 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.DBLVALUE
-    st = getVariable(9915);
+  { // 9805 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.DBLVALUE
+    st = getVariable(9805);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.DBLVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -217,8 +217,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_TITEMAIN->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9916 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.NANOSEC
-    st = getVariable(9916);
+  { // 9806 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.NANOSEC
+    st = getVariable(9806);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.NANOSEC", 53);
     st->size_data = sizeof(ULINT);
@@ -229,8 +229,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_ULINT = (ULINT*)&p_TITEMAIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9917 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.RESERVE
-    st = getVariable(9917);
+  { // 9807 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.RESERVE
+    st = getVariable(9807);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ARAIN.RESERVE", 53);
     st->size_data = sizeof(ULINT);
@@ -241,8 +241,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_ULINT = (ULINT*)&p_TITEMAIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9918 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.WFLAGS
-    st = getVariable(9918);
+  { // 9808 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.WFLAGS
+    st = getVariable(9808);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.WFLAGS", 54);
     st->size_data = sizeof(UINT);
@@ -253,8 +253,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 9919 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.WVALUE
-    st = getVariable(9919);
+  { // 9809 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.WVALUE
+    st = getVariable(9809);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.WVALUE", 54);
     st->size_data = sizeof(UINT);
@@ -265,8 +265,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 9920 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.NANOSEC
-    st = getVariable(9920);
+  { // 9810 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.NANOSEC
+    st = getVariable(9810);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.NANOSEC", 55);
     st->size_data = sizeof(ULINT);
@@ -277,8 +277,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 9921 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.RESERVE
-    st = getVariable(9921);
+  { // 9811 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.RESERVE
+    st = getVariable(9811);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ERR_MOD.RESERVE", 55);
     st->size_data = sizeof(ULINT);
@@ -289,8 +289,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 9922 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.VALUE
-    st = getVariable(9922);
+  { // 9812 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.VALUE
+    st = getVariable(9812);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.VALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 9923 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.STATUS
-    st = getVariable(9923);
+  { // 9813 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.STATUS
+    st = getVariable(9813);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.STATUS", 52);
     st->size_data = sizeof(DWORD);
@@ -313,8 +313,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 9924 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INTERVAL
-    st = getVariable(9924);
+  { // 9814 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INTERVAL
+    st = getVariable(9814);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INTERVAL", 54);
     st->size_data = sizeof(BYTE);
@@ -325,8 +325,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 9925 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND
-    st = getVariable(9925);
+  { // 9815 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND
+    st = getVariable(9815);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -337,8 +337,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 9926 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.BLCONNECT
-    st = getVariable(9926);
+  { // 9816 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.BLCONNECT
+    st = getVariable(9816);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.BLCONNECT", 55);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 9927 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLL
-    st = getVariable(9927);
+  { // 9817 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLL
+    st = getVariable(9817);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLL", 49);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 9928 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHL
-    st = getVariable(9928);
+  { // 9818 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHL
+    st = getVariable(9818);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHL", 49);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 9929 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLA
-    st = getVariable(9929);
+  { // 9819 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLA
+    st = getVariable(9819);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLA", 49);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 9930 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHA
-    st = getVariable(9930);
+  { // 9820 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHA
+    st = getVariable(9820);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHA", 49);
     st->size_data = sizeof(LREAL);
@@ -397,8 +397,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 9931 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLW
-    st = getVariable(9931);
+  { // 9821 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLW
+    st = getVariable(9821);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DLW", 49);
     st->size_data = sizeof(LREAL);
@@ -409,8 +409,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 9932 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHW
-    st = getVariable(9932);
+  { // 9822 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHW
+    st = getVariable(9822);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DHW", 49);
     st->size_data = sizeof(LREAL);
@@ -421,8 +421,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 9933 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LL
-    st = getVariable(9933);
+  { // 9823 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LL
+    st = getVariable(9823);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LL", 48);
     st->size_data = sizeof(LREAL);
@@ -433,8 +433,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 9934 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HL
-    st = getVariable(9934);
+  { // 9824 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HL
+    st = getVariable(9824);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HL", 48);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 9935 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LA
-    st = getVariable(9935);
+  { // 9825 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LA
+    st = getVariable(9825);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LA", 48);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 9936 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HA
-    st = getVariable(9936);
+  { // 9826 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HA
+    st = getVariable(9826);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HA", 48);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 9937 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LW
-    st = getVariable(9937);
+  { // 9827 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LW
+    st = getVariable(9827);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.LW", 48);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 9938 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HW
-    st = getVariable(9938);
+  { // 9828 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HW
+    st = getVariable(9828);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HW", 48);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 9939 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_LA
-    st = getVariable(9939);
+  { // 9829 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_LA
+    st = getVariable(9829);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_LA", 59);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 9940 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_HA
-    st = getVariable(9940);
+  { // 9830 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_HA
+    st = getVariable(9830);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_HA", 59);
     st->size_data = sizeof(BOOL);
@@ -517,8 +517,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 9941 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_LW
-    st = getVariable(9941);
+  { // 9831 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_LW
+    st = getVariable(9831);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_LW", 59);
     st->size_data = sizeof(BOOL);
@@ -529,8 +529,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 9942 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_HW
-    st = getVariable(9942);
+  { // 9832 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_HW
+    st = getVariable(9832);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.ISVALIDREF_HW", 59);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 9943 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INPLL
-    st = getVariable(9943);
+  { // 9833 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INPLL
+    st = getVariable(9833);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INPLL", 51);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 9944 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INPHL
-    st = getVariable(9944);
+  { // 9834 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INPHL
+    st = getVariable(9834);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INPHL", 51);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 9945 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(9945);
+  { // 9835 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(9835);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CURRENTSHOTCIRCUIT", 64);
     st->size_data = sizeof(LREAL);
@@ -577,8 +577,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9946 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(9946);
+  { // 9836 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(9836);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CURRENTBREAKCIRCUIT", 65);
     st->size_data = sizeof(LREAL);
@@ -589,8 +589,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 9947 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXCHANGESPEED
-    st = getVariable(9947);
+  { // 9837 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXCHANGESPEED
+    st = getVariable(9837);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXCHANGESPEED", 60);
     st->size_data = sizeof(LREAL);
@@ -601,8 +601,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9948 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(9948);
+  { // 9838 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(9838);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXCHANGESPEEDDOWN", 64);
     st->size_data = sizeof(LREAL);
@@ -613,8 +613,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9949 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CHANGESPEED
-    st = getVariable(9949);
+  { // 9839 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CHANGESPEED
+    st = getVariable(9839);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.CHANGESPEED", 57);
     st->size_data = sizeof(LREAL);
@@ -625,8 +625,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9950 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HISTERESIS
-    st = getVariable(9950);
+  { // 9840 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HISTERESIS
+    st = getVariable(9840);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.HISTERESIS", 56);
     st->size_data = sizeof(LREAL);
@@ -637,8 +637,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 9951 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.APERTURFILTER
-    st = getVariable(9951);
+  { // 9841 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.APERTURFILTER
+    st = getVariable(9841);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.APERTURFILTER", 59);
     st->size_data = sizeof(LREAL);
@@ -649,8 +649,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9952 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.EXPONENTIALFILTER
-    st = getVariable(9952);
+  { // 9842 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.EXPONENTIALFILTER
+    st = getVariable(9842);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.EXPONENTIALFILTER", 63);
     st->size_data = sizeof(LREAL);
@@ -661,8 +661,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 9953 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.RASSOGLASOVANIE
-    st = getVariable(9953);
+  { // 9843 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.RASSOGLASOVANIE
+    st = getVariable(9843);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.RASSOGLASOVANIE", 61);
     st->size_data = sizeof(LREAL);
@@ -673,8 +673,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 9954 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(9954);
+  { // 9844 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(9844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.OPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9955 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_LA
-    st = getVariable(9955);
+  { // 9845 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_LA
+    st = getVariable(9845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 9956 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_HA
-    st = getVariable(9956);
+  { // 9846 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_HA
+    st = getVariable(9846);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 9957 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_LW
-    st = getVariable(9957);
+  { // 9847 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_LW
+    st = getVariable(9847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 9958 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_HW
-    st = getVariable(9958);
+  { // 9848 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_HW
+    st = getVariable(9848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DISABLED_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 9959 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYLA
-    st = getVariable(9959);
+  { // 9849 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYLA
+    st = getVariable(9849);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYLA", 53);
     st->size_data = sizeof(TIME);
@@ -745,8 +745,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 9960 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYLW
-    st = getVariable(9960);
+  { // 9850 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYLW
+    st = getVariable(9850);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYLW", 53);
     st->size_data = sizeof(TIME);
@@ -757,8 +757,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 9961 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYHW
-    st = getVariable(9961);
+  { // 9851 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYHW
+    st = getVariable(9851);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYHW", 53);
     st->size_data = sizeof(TIME);
@@ -769,8 +769,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 9962 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYHA
-    st = getVariable(9962);
+  { // 9852 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYHA
+    st = getVariable(9852);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DELAYHA", 53);
     st->size_data = sizeof(TIME);
@@ -781,8 +781,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 9963 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(9963);
+  { // 9853 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(9853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MINVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9964 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(9964);
+  { // 9854 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(9854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXVALUE_ISVALIDREF", 65);
     st->size_data = sizeof(BOOL);
@@ -805,8 +805,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 9965 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MINVALUE
-    st = getVariable(9965);
+  { // 9855 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MINVALUE
+    st = getVariable(9855);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MINVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -817,8 +817,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9966 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXVALUE
-    st = getVariable(9966);
+  { // 9856 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXVALUE
+    st = getVariable(9856);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.MAXVALUE", 54);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 9967 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(9967);
+  { // 9857 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(9857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INOPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 9968 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.IMIT
-    st = getVariable(9968);
+  { // 9858 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.IMIT
+    st = getVariable(9858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.IMIT", 50);
     st->size_data = sizeof(BOOL);
@@ -853,8 +853,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 9969 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.REMONT
-    st = getVariable(9969);
+  { // 9859 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.REMONT
+    st = getVariable(9859);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.REMONT", 52);
     st->size_data = sizeof(BOOL);
@@ -865,8 +865,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 9970 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS
-    st = getVariable(9970);
+  { // 9860 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS
+    st = getVariable(9860);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS", 48);
     st->size_data = sizeof(BOOL);
@@ -877,8 +877,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 9971 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS_MIN
-    st = getVariable(9971);
+  { // 9861 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS_MIN
+    st = getVariable(9861);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS_MIN", 52);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 9972 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS_MAX
-    st = getVariable(9972);
+  { // 9862 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS_MAX
+    st = getVariable(9862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.NS_MAX", 52);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 9973 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND_ALG
-    st = getVariable(9973);
+  { // 9863 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND_ALG
+    st = getVariable(9863);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND_ALG", 59);
     st->size_data = sizeof(WORD);
@@ -913,8 +913,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 9974 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND_ARM
-    st = getVariable(9974);
+  { // 9864 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND_ARM
+    st = getVariable(9864);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.INCOMMAND_ARM", 59);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 9975 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DMAXCHANGESPEED
-    st = getVariable(9975);
+  { // 9865 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DMAXCHANGESPEED
+    st = getVariable(9865);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DMAXCHANGESPEED", 61);
     st->size_data = sizeof(LREAL);
@@ -937,8 +937,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 9976 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(9976);
+  { // 9866 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(9866);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.STRAI.DMAXCHANGESPEEDDOWN", 65);
     st->size_data = sizeof(LREAL);
@@ -949,8 +949,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 9977 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NOTDEFINED
-    st = getVariable(9977);
+  { // 9867 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NOTDEFINED
+    st = getVariable(9867);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NOTDEFINED", 60);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 9978 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LL
-    st = getVariable(9978);
+  { // 9868 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LL
+    st = getVariable(9868);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LL", 52);
     st->size_data = sizeof(BYTE);
@@ -973,8 +973,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 9979 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HL
-    st = getVariable(9979);
+  { // 9869 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HL
+    st = getVariable(9869);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HL", 52);
     st->size_data = sizeof(BYTE);
@@ -985,8 +985,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 9980 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NOTRELIABLE
-    st = getVariable(9980);
+  { // 9870 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NOTRELIABLE
+    st = getVariable(9870);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NOTRELIABLE", 61);
     st->size_data = sizeof(BYTE);
@@ -997,8 +997,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 9981 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NORMAL
-    st = getVariable(9981);
+  { // 9871 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NORMAL
+    st = getVariable(9871);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.NORMAL", 56);
     st->size_data = sizeof(BYTE);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 9982 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LW
-    st = getVariable(9982);
+  { // 9872 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LW
+    st = getVariable(9872);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LW", 52);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 9983 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HW
-    st = getVariable(9983);
+  { // 9873 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HW
+    st = getVariable(9873);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HW", 52);
     st->size_data = sizeof(BYTE);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 9984 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LA
-    st = getVariable(9984);
+  { // 9874 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LA
+    st = getVariable(9874);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.LA", 52);
     st->size_data = sizeof(BYTE);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 9985 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HA
-    st = getVariable(9985);
+  { // 9875 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HA
+    st = getVariable(9875);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._STATUSAI.HA", 52);
     st->size_data = sizeof(BYTE);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 9986 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_SETUSTAVKI
-    st = getVariable(9986);
+  { // 9876 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_SETUSTAVKI
+    st = getVariable(9876);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_SETUSTAVKI", 69);
     st->size_data = sizeof(WORD);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETUSTAVKI;
     st->value_p = p_WORD;
   }
-  { // 9987 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_SETREMONT
-    st = getVariable(9987);
+  { // 9877 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_SETREMONT
+    st = getVariable(9877);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_SETREMONT", 68);
     st->size_data = sizeof(WORD);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9988 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_RESETREMONT
-    st = getVariable(9988);
+  { // 9878 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_RESETREMONT
+    st = getVariable(9878);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_RESETREMONT", 70);
     st->size_data = sizeof(WORD);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_RESETREMONT;
     st->value_p = p_WORD;
   }
-  { // 9989 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_KVITNOTRELIABLE
-    st = getVariable(9989);
+  { // 9879 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_KVITNOTRELIABLE
+    st = getVariable(9879);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._COMMANDANALOG.CMD_KVITNOTRELIABLE", 74);
     st->size_data = sizeof(WORD);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_KVITNOTRELIABLE;
     st->value_p = p_WORD;
   }
-  { // 9994 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.NONE
-    st = getVariable(9994);
+  { // 9884 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.NONE
+    st = getVariable(9884);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.NONE", 62);
     st->size_data = sizeof(BYTE);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->NONE;
     st->value_p = p_BYTE;
   }
-  { // 9995 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LL
-    st = getVariable(9995);
+  { // 9885 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LL
+    st = getVariable(9885);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LL", 60);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LL;
     st->value_p = p_BYTE;
   }
-  { // 9996 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LW
-    st = getVariable(9996);
+  { // 9886 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LW
+    st = getVariable(9886);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LW", 60);
     st->size_data = sizeof(BYTE);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LW;
     st->value_p = p_BYTE;
   }
-  { // 9997 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HW
-    st = getVariable(9997);
+  { // 9887 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HW
+    st = getVariable(9887);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HW", 60);
     st->size_data = sizeof(BYTE);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HW;
     st->value_p = p_BYTE;
   }
-  { // 9998 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LA
-    st = getVariable(9998);
+  { // 9888 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LA
+    st = getVariable(9888);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.LA", 60);
     st->size_data = sizeof(BYTE);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LA;
     st->value_p = p_BYTE;
   }
-  { // 9999 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HA
-    st = getVariable(9999);
+  { // 9889 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HA
+    st = getVariable(9889);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HA", 60);
     st->size_data = sizeof(BYTE);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HA;
     st->value_p = p_BYTE;
   }
-  { // 10000 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HL
-    st = getVariable(10000);
+  { // 9890 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HL
+    st = getVariable(9890);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.HL", 60);
     st->size_data = sizeof(BYTE);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HL;
     st->value_p = p_BYTE;
   }
-  { // 10001 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.SIPUP
-    st = getVariable(10001);
+  { // 9891 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.SIPUP
+    st = getVariable(9891);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.SIPUP", 63);
     st->size_data = sizeof(BYTE);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPUP;
     st->value_p = p_BYTE;
   }
-  { // 10002 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.SIPDOWN
-    st = getVariable(10002);
+  { // 9892 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.SIPDOWN
+    st = getVariable(9892);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._ANALOGLIMITFLAGS.SIPDOWN", 65);
     st->size_data = sizeof(BYTE);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPDOWN;
     st->value_p = p_BYTE;
   }
-  { // 10003 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NOTRELIABLE
-    st = getVariable(10003);
+  { // 9893 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NOTRELIABLE
+    st = getVariable(9893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NOTRELIABLE", 51);
     st->size_data = sizeof(BOOL);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->NOTRELIABLE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10004 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUE
-    st = getVariable(10004);
+  { // 9894 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUE
+    st = getVariable(9894);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUE", 50);
     st->size_data = sizeof(LREAL);
@@ -1235,8 +1235,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->_LASTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10005 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.IN
-    st = getVariable(10005);
+  { // 9895 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.IN
+    st = getVariable(9895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.IN", 56);
     st->size_data = sizeof(BOOL);
@@ -1247,8 +1247,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 10006 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.PT
-    st = getVariable(10006);
+  { // 9896 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.PT
+    st = getVariable(9896);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.PT", 56);
     st->size_data = sizeof(TIME);
@@ -1259,8 +1259,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 10007 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.Q
-    st = getVariable(10007);
+  { // 9897 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.Q
+    st = getVariable(9897);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 10008 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.ET
-    st = getVariable(10008);
+  { // 9898 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.ET
+    st = getVariable(9898);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER.ET", 56);
     st->size_data = sizeof(TIME);
@@ -1283,8 +1283,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 10009 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER
-    st = getVariable(10009);
+  { // 9899 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER
+    st = getVariable(9899);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMER", 53);
     st->size_data = sizeof(TON);
@@ -1294,8 +1294,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 10010 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.IN
-    st = getVariable(10010);
+  { // 9900 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.IN
+    st = getVariable(9900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.IN", 58);
     st->size_data = sizeof(BOOL);
@@ -1306,8 +1306,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 10011 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.PT
-    st = getVariable(10011);
+  { // 9901 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.PT
+    st = getVariable(9901);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.PT", 58);
     st->size_data = sizeof(TIME);
@@ -1318,8 +1318,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 10012 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.Q
-    st = getVariable(10012);
+  { // 9902 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.Q
+    st = getVariable(9902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -1330,8 +1330,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 10013 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.ET
-    st = getVariable(10013);
+  { // 9903 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.ET
+    st = getVariable(9903);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER.ET", 58);
     st->size_data = sizeof(TIME);
@@ -1342,8 +1342,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 10014 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER
-    st = getVariable(10014);
+  { // 9904 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER
+    st = getVariable(9904);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1._LASTVALUETIMER", 55);
     st->size_data = sizeof(TON);
@@ -1353,8 +1353,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_TON = (TON*)&p_FB_AISOURCEMLP->_LASTVALUETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 10015 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMERPRIZNAK
-    st = getVariable(10015);
+  { // 9905 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMERPRIZNAK
+    st = getVariable(9905);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RESETCMDTIMERPRIZNAK", 60);
     st->size_data = sizeof(BOOL);
@@ -1364,8 +1364,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10016 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.K
-    st = getVariable(10016);
+  { // 9906 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.K
+    st = getVariable(9906);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.K", 41);
     st->size_data = sizeof(LREAL);
@@ -1375,8 +1375,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->K;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10017 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.B
-    st = getVariable(10017);
+  { // 9907 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.B
+    st = getVariable(9907);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.B", 41);
     st->size_data = sizeof(LREAL);
@@ -1386,8 +1386,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->B;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10018 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.AP
-    st = getVariable(10018);
+  { // 9908 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.AP
+    st = getVariable(9908);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.AP", 42);
     st->size_data = sizeof(LREAL);
@@ -1397,8 +1397,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->AP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10019 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RAZNITSA
-    st = getVariable(10019);
+  { // 9909 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RAZNITSA
+    st = getVariable(9909);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RAZNITSA", 48);
     st->size_data = sizeof(LREAL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RAZNITSA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10020 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RABS
-    st = getVariable(10020);
+  { // 9910 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RABS
+    st = getVariable(9910);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.RABS", 44);
     st->size_data = sizeof(LREAL);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->RABS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10021 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.H
-    st = getVariable(10021);
+  { // 9911 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.H
+    st = getVariable(9911);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.H", 41);
     st->size_data = sizeof(LREAL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->H;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10022 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.MISMATCH
-    st = getVariable(10022);
+  { // 9912 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.MISMATCH
+    st = getVariable(9912);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.MISMATCH", 48);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP->MISMATCH;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10023 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.PARAMETR
-    st = getVariable(10023);
+  { // 9913 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.PARAMETR
+    st = getVariable(9913);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.PARAMETR", 48);
     st->size_data = sizeof(BYTE);
@@ -1452,8 +1452,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10024 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.SOURCE
-    st = getVariable(10024);
+  { // 9914 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.SOURCE
+    st = getVariable(9914);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.SOURCE", 46);
     st->size_data = sizeof(BYTE);
@@ -1463,8 +1463,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10025 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.CMD
-    st = getVariable(10025);
+  { // 9915 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.CMD
+    st = getVariable(9915);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.CMD", 43);
     st->size_data = sizeof(BYTE);
@@ -1474,8 +1474,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10026 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LASTCMD
-    st = getVariable(10026);
+  { // 9916 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LASTCMD
+    st = getVariable(9916);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LASTCMD", 47);
     st->size_data = sizeof(BYTE);
@@ -1485,8 +1485,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10027 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.SOURCE_FOR_STATUS
-    st = getVariable(10027);
+  { // 9917 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.SOURCE_FOR_STATUS
+    st = getVariable(9917);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.SOURCE_FOR_STATUS", 57);
     st->size_data = sizeof(BYTE);
@@ -1496,8 +1496,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10028 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.CMD_FOR_STATUS
-    st = getVariable(10028);
+  { // 9918 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.CMD_FOR_STATUS
+    st = getVariable(9918);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.CMD_FOR_STATUS", 54);
     st->size_data = sizeof(BYTE);
@@ -1507,8 +1507,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10029 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(10029);
+  { // 9919 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(9919);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.COMMAND_ERROR_FOR_STATUS", 64);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1518,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10030 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ONINIT
-    st = getVariable(10030);
+  { // 9920 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ONINIT
+    st = getVariable(9920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ONINIT", 46);
     st->size_data = sizeof(BOOL);
@@ -1529,8 +1529,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 10031 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG.CLK
-    st = getVariable(10031);
+  { // 9921 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG.CLK
+    st = getVariable(9921);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG.CLK", 52);
     st->size_data = sizeof(BOOL);
@@ -1541,8 +1541,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10032 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG.Q
-    st = getVariable(10032);
+  { // 9922 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG.Q
+    st = getVariable(9922);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -1553,8 +1553,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10033 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG
-    st = getVariable(10033);
+  { // 9923 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG
+    st = getVariable(9923);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.OFF_TRIG", 48);
     st->size_data = sizeof(R_TRIG);
@@ -1564,8 +1564,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->OFF_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 10034 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG.CLK
-    st = getVariable(10034);
+  { // 9924 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG.CLK
+    st = getVariable(9924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG.CLK", 51);
     st->size_data = sizeof(BOOL);
@@ -1576,8 +1576,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10035 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG.Q
-    st = getVariable(10035);
+  { // 9925 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG.Q
+    st = getVariable(9925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1588,8 +1588,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10036 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG
-    st = getVariable(10036);
+  { // 9926 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG
+    st = getVariable(9926);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.ON_TRIG", 47);
     st->size_data = sizeof(R_TRIG);
@@ -1599,8 +1599,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->ON_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 10037 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG.CLK
-    st = getVariable(10037);
+  { // 9927 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG.CLK
+    st = getVariable(9927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG.CLK", 55);
     st->size_data = sizeof(BOOL);
@@ -1611,8 +1611,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10038 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG.Q
-    st = getVariable(10038);
+  { // 9928 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG.Q
+    st = getVariable(9928);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -1623,8 +1623,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10039 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG
-    st = getVariable(10039);
+  { // 9929 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG
+    st = getVariable(9929);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.REMONT_TRIG", 51);
     st->size_data = sizeof(R_TRIG);
@@ -1634,8 +1634,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->REMONT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 10040 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG.CLK
-    st = getVariable(10040);
+  { // 9930 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG.CLK
+    st = getVariable(9930);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG.CLK", 51);
     st->size_data = sizeof(BOOL);
@@ -1646,8 +1646,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10041 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG.Q
-    st = getVariable(10041);
+  { // 9931 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG.Q
+    st = getVariable(9931);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1658,8 +1658,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10042 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG
-    st = getVariable(10042);
+  { // 9932 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG
+    st = getVariable(9932);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.LL_TRIG", 47);
     st->size_data = sizeof(R_TRIG);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->LL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 10043 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG.CLK
-    st = getVariable(10043);
+  { // 9933 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG.CLK
+    st = getVariable(9933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG.CLK", 51);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10044 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG.Q
-    st = getVariable(10044);
+  { // 9934 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG.Q
+    st = getVariable(9934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10045 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG
-    st = getVariable(10045);
+  { // 9935 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG
+    st = getVariable(9935);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.HL_TRIG", 47);
     st->size_data = sizeof(R_TRIG);
@@ -1704,8 +1704,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->HL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 10046 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG.CLK
-    st = getVariable(10046);
+  { // 9936 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG.CLK
+    st = getVariable(9936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG.CLK", 55);
     st->size_data = sizeof(BOOL);
@@ -1716,8 +1716,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10047 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG.Q
-    st = getVariable(10047);
+  { // 9937 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG.Q
+    st = getVariable(9937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -1728,8 +1728,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10048 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG
-    st = getVariable(10048);
+  { // 9938 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG
+    st = getVariable(9938);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NORMAL_TRIG", 51);
     st->size_data = sizeof(R_TRIG);
@@ -1739,8 +1739,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP->NORMAL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 10049 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG.CLK
-    st = getVariable(10049);
+  { // 9939 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG.CLK
+    st = getVariable(9939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -1751,8 +1751,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 10050 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG.Q
-    st = getVariable(10050);
+  { // 9940 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG.Q
+    st = getVariable(9940);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -1763,8 +1763,8 @@ int __variables_init_FB_VIBROSKOROSTOPED_T1(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 10051 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG
-    st = getVariable(10051);
+  { // 9941 PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG
+    st = getVariable(9941);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_VIBROSKOROSTOPED_T1.NEDOSTOVER_TRIG", 55);
     st->size_data = sizeof(R_TRIG);

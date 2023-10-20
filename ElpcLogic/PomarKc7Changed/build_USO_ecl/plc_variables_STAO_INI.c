@@ -181,8 +181,8 @@ int __variables_init_STAO_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 14504 PROGRAM0.AO_STRUCTS_INI.STAO_INI.DATA_INI
-    st = getVariable(14504);
+  { // 14006 PROGRAM0.AO_STRUCTS_INI.STAO_INI.DATA_INI
+    st = getVariable(14006);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_FB_AO_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14505 PROGRAM0.AO_STRUCTS_INI.STAO_INI.OUTLL
-    st = getVariable(14505);
+  { // 14007 PROGRAM0.AO_STRUCTS_INI.STAO_INI.OUTLL
+    st = getVariable(14007);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.OUTLL", 38);
     st->size_data = sizeof(LREAL);
@@ -203,8 +203,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_FB_AO_INIT->OUTLL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14506 PROGRAM0.AO_STRUCTS_INI.STAO_INI.OUTHL
-    st = getVariable(14506);
+  { // 14008 PROGRAM0.AO_STRUCTS_INI.STAO_INI.OUTHL
+    st = getVariable(14008);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.OUTHL", 38);
     st->size_data = sizeof(LREAL);
@@ -214,8 +214,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_FB_AO_INIT->OUTHL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14507 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWLL
-    st = getVariable(14507);
+  { // 14009 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWLL
+    st = getVariable(14009);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWLL", 38);
     st->size_data = sizeof(LREAL);
@@ -225,8 +225,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_FB_AO_INIT->NEWLL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14508 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWHL
-    st = getVariable(14508);
+  { // 14010 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWHL
+    st = getVariable(14010);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWHL", 38);
     st->size_data = sizeof(LREAL);
@@ -236,8 +236,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_FB_AO_INIT->NEWHL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14509 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWLL_ISVALIDREF
-    st = getVariable(14509);
+  { // 14011 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWLL_ISVALIDREF
+    st = getVariable(14011);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWLL_ISVALIDREF", 49);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_FB_AO_INIT->NEWLL_ISVALIDREF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14510 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWHL_ISVALIDREF
-    st = getVariable(14510);
+  { // 14012 PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWHL_ISVALIDREF
+    st = getVariable(14012);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.NEWHL_ISVALIDREF", 49);
     st->size_data = sizeof(BOOL);
@@ -258,8 +258,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_FB_AO_INIT->NEWHL_ISVALIDREF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14511 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NVALUE
-    st = getVariable(14511);
+  { // 14013 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NVALUE
+    st = getVariable(14013);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NVALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -270,8 +270,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NVALUE;
     st->value_p = p_LREAL;
   }
-  { // 14512 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.BLCONNECT
-    st = getVariable(14512);
+  { // 14014 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.BLCONNECT
+    st = getVariable(14014);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.BLCONNECT", 48);
     st->size_data = sizeof(BOOL);
@@ -282,8 +282,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 14513 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OUTLL
-    st = getVariable(14513);
+  { // 14015 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OUTLL
+    st = getVariable(14015);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OUTLL", 44);
     st->size_data = sizeof(LREAL);
@@ -294,8 +294,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTLL;
     st->value_p = p_LREAL;
   }
-  { // 14514 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OUTHL
-    st = getVariable(14514);
+  { // 14016 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OUTHL
+    st = getVariable(14016);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OUTHL", 44);
     st->size_data = sizeof(LREAL);
@@ -306,8 +306,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTHL;
     st->value_p = p_LREAL;
   }
-  { // 14515 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWLL
-    st = getVariable(14515);
+  { // 14017 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWLL
+    st = getVariable(14017);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWLL", 44);
     st->size_data = sizeof(LREAL);
@@ -318,8 +318,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWLL;
     st->value_p = p_LREAL;
   }
-  { // 14516 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWHL
-    st = getVariable(14516);
+  { // 14018 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWHL
+    st = getVariable(14018);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWHL", 44);
     st->size_data = sizeof(LREAL);
@@ -330,8 +330,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWHL;
     st->value_p = p_LREAL;
   }
-  { // 14517 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWLL_ISVALIDREF
-    st = getVariable(14517);
+  { // 14019 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWLL_ISVALIDREF
+    st = getVariable(14019);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWLL_ISVALIDREF", 55);
     st->size_data = sizeof(BOOL);
@@ -342,8 +342,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWLL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14518 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWHL_ISVALIDREF
-    st = getVariable(14518);
+  { // 14020 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWHL_ISVALIDREF
+    st = getVariable(14020);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.NEWHL_ISVALIDREF", 55);
     st->size_data = sizeof(BOOL);
@@ -354,8 +354,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWHL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14519 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.INCOMMAND
-    st = getVariable(14519);
+  { // 14021 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.INCOMMAND
+    st = getVariable(14021);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.INCOMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -366,8 +366,8 @@ int __variables_init_STAO_INI(){
     p_WORD = (WORD*)&p_STRUCT_AO->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 14520 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.VALUE
-    st = getVariable(14520);
+  { // 14022 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.VALUE
+    st = getVariable(14022);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -378,8 +378,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 14521 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.STATUS
-    st = getVariable(14521);
+  { // 14023 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.STATUS
+    st = getVariable(14023);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -390,8 +390,8 @@ int __variables_init_STAO_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_AO->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 14522 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.LL
-    st = getVariable(14522);
+  { // 14024 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.LL
+    st = getVariable(14024);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.LL", 41);
     st->size_data = sizeof(LREAL);
@@ -402,8 +402,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->LL;
     st->value_p = p_LREAL;
   }
-  { // 14523 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.HL
-    st = getVariable(14523);
+  { // 14025 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.HL
+    st = getVariable(14025);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.HL", 41);
     st->size_data = sizeof(LREAL);
@@ -414,8 +414,8 @@ int __variables_init_STAO_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->HL;
     st->value_p = p_LREAL;
   }
-  { // 14524 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OPCCOMMANDSDISABLED
-    st = getVariable(14524);
+  { // 14026 PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OPCCOMMANDSDISABLED
+    st = getVariable(14026);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.STRAO.OPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);
@@ -426,8 +426,8 @@ int __variables_init_STAO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 14525 PROGRAM0.AO_STRUCTS_INI.STAO_INI.INIT
-    st = getVariable(14525);
+  { // 14027 PROGRAM0.AO_STRUCTS_INI.STAO_INI.INIT
+    st = getVariable(14027);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.STAO_INI.INIT", 37);
     st->size_data = sizeof(BOOL);

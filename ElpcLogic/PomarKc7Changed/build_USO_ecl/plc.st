@@ -168,8 +168,6 @@ TYPE
     Vibro_skorost_OP_kolesa_RH_T4 : struct_AI;
     Vibro_skorost_OP_shesterni_RED_T5 : struct_AI;
     Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AI;
-    Vibro_peremeshenie_vala_N_T7 : struct_AI;
-    Vibro_peremeshenie_vala_N_T8 : struct_AI;
   END_STRUCT;
   TYPE_AnalogLimitFlags : STRUCT
     NONE : BYTE := 0;
@@ -257,25 +255,16 @@ TYPE
   IM_singleSignals : STRUCT
     dP_maslo_gaz_Less100 : struct_singleSignal;
     dp_kran1_Less100 : struct_singleSignal;
-    Zagazovannost_dvigatelya_05prc_rezerv : struct_singleSignal;
-    Zagazovannost_dvigatelya_1prc_rezerv : struct_singleSignal;
-    Zagazovannost_nagnetatelya_05prc_rezerv : struct_singleSignal;
-    Zagazovannost_nagnetatelya_1prc_rezerv : struct_singleSignal;
-    Vozbud_neispr_tsepey_upr_AVR_pit : struct_singleSignal;
-    Vozbud_razreshenie_zagruzki : struct_singleSignal;
+    Razreshenie_zagruzki_dvig : struct_singleSignal;
     Vozbud_gotovnost : struct_singleSignal;
+    Vozbud_neispr_tsepey_upr_AVR_pit : struct_singleSignal;
     Vozbud_neispravnost : struct_singleSignal;
     SHAVR1_v_rabote : struct_singleSignal;
     SHAVR2_v_rabote : struct_singleSignal;
-    Net_10kv_rezerv : struct_singleSignal;
-    MV_telezhka_vikachen : struct_singleSignal;
     Avariinoe_otkluch_vikluchatelya : struct_singleSignal;
     Assinhronnii_hod_peregruzka : struct_singleSignal;
     SHU_v_GPA_vkluch : struct_singleSignal;
     SHP_v_GPA_vkluch : struct_singleSignal;
-    KRU_neispr_rezerv : struct_singleSignal;
-    Tok_vozbuzhdenia_est_rezerv : struct_singleSignal;
-    Voltage_na_sektsii_norm : struct_singleSignal;
     QF1_on : struct_singleSignal;
     QF2_on : struct_singleSignal;
     QF23_on : struct_singleSignal;
@@ -295,36 +284,40 @@ TYPE
     NS_G18_G19 : struct_singleSignal;
     NS_G10_G11 : struct_singleSignal;
     NS_G13_G14 : struct_singleSignal;
-    AVOM1_avtomat : struct_singleSignal;
-    AVOM2_avtomat : struct_singleSignal;
-    AVOM3_avtomat : struct_singleSignal;
-    AVOM4_avtomat : struct_singleSignal;
-    PNS_avtomat_rezerv : struct_singleSignal;
-    NU1_avtomat : struct_singleSignal;
-    NU2_avtomat : struct_singleSignal;
-    TEN_MB_avtomat_rezerv : struct_singleSignal;
-    TEN_kollectora_avtomat : struct_singleSignal;
-    KaloriferAVOM_avtomat : struct_singleSignal;
-    CMN_avtomat_rezerv : struct_singleSignal;
     Uroven_masla_akkum : struct_singleSignal;
-    NKU1_GPA_on_rezerv : struct_singleSignal;
-    NKU2_GPA_on_rezerv : struct_singleSignal;
-    AO_KC : struct_singleSignal;
-    AO_GPA_knopka_PRU : struct_singleSignal;
-    EO_GPA_knopka_PRU : struct_singleSignal;
-    AO_GPA_knopka_SHU_EGPA : struct_singleSignal;
-    EO_GPA_knopka_SHU_EGPA : struct_singleSignal;
+    NKU1_GPA_on : struct_singleSignal;
+    NKU2_GPA_on : struct_singleSignal;
+    AO_KC_ot_SHKS : struct_singleSignal;
+    AO_GPA_ot_SHU : struct_singleSignal;
     BEAO_srabotal : struct_singleSignal;
-    SAU_GPA220V_osnovnoy_est : struct_singleSignal;
-    SAU_GPA220V_reserv_est : struct_singleSignal;
-    Krani24V_est : struct_singleSignal;
-    BEAO220V_est : struct_singleSignal;
-    V24_est : struct_singleSignal;
-    GPA_pozhar_rezerv : struct_singleSignal;
     Chastotny_pusk : struct_singleSignal;
     Neuspesh_chastotny_pusk : struct_singleSignal;
     Rezhim_ruchnogo_regulirovaniya : struct_singleSignal;
-    Reaktornii_pusk_perek : struct_singleSignal;
+    Osnovnoy_regul_off : struct_singleSignal;
+    Voltage_sekcii_norm : struct_singleSignal;
+    Reactorny_pusk : struct_singleSignal;
+    NO_GPA_ot_SHU : struct_singleSignal;
+    AO_GPA_ot_PRU : struct_singleSignal;
+    Nalichie_BP1 : struct_singleSignal;
+    Nalichie_BP2 : struct_singleSignal;
+    Nalichie_BP3 : struct_singleSignal;
+    Nalichie_BP4 : struct_singleSignal;
+    Nalichie_BP5 : struct_singleSignal;
+    Nalichie_BP6 : struct_singleSignal;
+    Nalichie_BP7_BP8 : struct_singleSignal;
+    Nalichie_BP9_BP10 : struct_singleSignal;
+    Nalichie_cepei_upravlen_mv : struct_singleSignal;
+    Nalichie_220BEAO : struct_singleSignal;
+    Nalichie_per_220_na_vhode : struct_singleSignal;
+    Nalichie_post_220_na_vhode : struct_singleSignal;
+    Nalichie_BP11 : struct_singleSignal;
+    Nalichie_BP12 : struct_singleSignal;
+    Dver_SHU_pered_otkrita : struct_singleSignal;
+    Dver_SHU_zad_otkrita : struct_singleSignal;
+    EO_GPA_ot_knopki_SHU : struct_singleSignal;
+    EO_EGPA_ot_PRY : struct_singleSignal;
+    Synchroniz_rezhima_K1 : struct_singleSignal;
+    Potok_ms_posle_AVOM : struct_singleSignal;
   END_STRUCT;
   struct_singleOutput : STRUCT
     wait_time : TIME;
@@ -337,13 +330,20 @@ TYPE
     inCommand_ARM : WORD;
   END_STRUCT;
   IM_singleOutputs : STRUCT
-    Kran1_smazka_on : struct_singleOutput;
-    Kran2_smazka_on : struct_singleOutput;
-    Gpa1_rabota : struct_singleOutput;
-    Gpa1_neisprav : struct_singleOutput;
-    Gpa1_avariya : struct_singleOutput;
-    Pusk : struct_singleOutput;
-    Ostanov : struct_singleOutput;
+    Rabota_EGPA : struct_singleOutput;
+    Neispr_EGPA : struct_singleOutput;
+    Avary_EGPA : struct_singleOutput;
+    U_lamp_SHU : struct_singleOutput;
+    AO_knopka_ind : struct_singleOutput;
+    Pusk_SHUP : struct_singleOutput;
+    Stop_SHUP : struct_singleOutput;
+    NO_fonar : struct_singleOutput;
+    PC_fonar : struct_singleOutput;
+    AC_fonar : struct_singleOutput;
+    Kr1_smazka : struct_singleOutput;
+    Kr2_smazka : struct_singleOutput;
+    Kr4_open_from_alg : struct_singleOutput;
+    Synch_rej_K1 : struct_singleOutput;
   END_STRUCT;
   struct_Kran : STRUCT
     inCommand : WORD;
@@ -626,58 +626,31 @@ TYPE
     Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8 : struct_AiProtection;
     Typornogo_podshipnika_rav_kolodok_HT_9 : struct_AiProtection;
     Typornogo_podshipnika_nerab_kolodok_HT_10 : struct_AiProtection;
-    Tgaza_na_vhode_H : struct_AiProtection;
     Tgaza_na_vyhode_H : struct_AiProtection;
-    Tmasla_v_mb : struct_AiProtection;
-    Tmasla_v_mb_nad_ten : struct_AiProtection;
-    Tgorjachego_vozduha_ED_kanal_1 : struct_AiProtection;
-    Tgorjachego_vozduha_ED_kanal_2 : struct_AiProtection;
-    Tmasla_do_AVOM : struct_AiProtection;
-    Tmasla_posle_AVOM : struct_AiProtection;
-    Tmedi_statora_kanal_1 : struct_AiProtection;
-    Tmedi_statora_kanal_2 : struct_AiProtection;
-    Tmedi_statora_kanal_3 : struct_AiProtection;
-    Tstali_statora_kanal_1 : struct_AiProtection;
-    Tstali_statora_kanal_2 : struct_AiProtection;
-    Tstali_statora_kanal_3 : struct_AiProtection;
-    Tholodnogo_vozduha_ED_kanal_1 : struct_AiProtection;
-    Tholodnogo_vozduha_ED_kanal_2 : struct_AiProtection;
-    Pmaslo_sm_nizkoe : struct_AiProtection;
-    Pmaslo_sm_vysokoe : struct_AiProtection;
-    Pgaza_na_vhode_nagnetatelia : struct_AiProtection;
-    Pgaza_na_vyhode_nagnetatelia : struct_AiProtection;
-    Pmasla_posle_NU : struct_AiProtection;
-    Pmasla_smazki_posle_gns : struct_AiProtection;
-    Pimpuls_gaz : struct_AiProtection;
-    dPmaslo_gaz : struct_AiProtection;
-    dPmaslo_gaz_less100 : struct_DiProtection;
-    dP_kran1 : struct_DiProtection;
-    dP_maslo_na_filtre : struct_AiProtection;
     Os_sdvig_nagnetatelja_plus : struct_AiProtection;
     Os_sdvig_nagnetatelja_minus : struct_AiProtection;
+    Pgaza_na_vyhode_nagnetatelia_GPA_STOP : struct_AiProtection;
+    Pgaza_na_vhode_nagnetatelia_GPA_STOP : struct_AiProtection;
+    Pgaza_na_vyhode_nagnetatelia : struct_AiProtection;
+    dPmaslo_gaz : struct_AiProtection;
+    Pmaslo_sm_nizkoe : struct_AiProtection;
+    Pmaslo_sm_vysokoe : struct_AiProtection;
     Vibro_skorost_OPED_T1 : struct_AiProtection;
     Vibro_skorost_OPED_T2 : struct_AiProtection;
     Vibro_skorost_OYP_kolesa_ED_T3 : struct_AiProtection;
     Vibro_skorost_OP_kolesa_RH_T4 : struct_AiProtection;
     Vibro_skorost_OP_shesterni_RED_T5 : struct_AiProtection;
     Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AiProtection;
-    Vibroperemesh_vala_N_T7 : struct_AiProtection;
-    Vibroperemesh_vala_N_T8 : struct_AiProtection;
+    dPmaslo_gaz_less100 : struct_DiProtection;
+    Reg_vozb_off : struct_DiProtection;
+    Fail_chastotnii_pusk : struct_DiProtection;
+    Off_avar_vikluchatel : struct_DiProtection;
+    AOKC_SHKC : struct_DiProtection;
+    AO_PRU : struct_DiProtection;
+    AO_ot_SHU : struct_DiProtection;
     mvOff : struct_DiProtection;
-    Kran1sdvig : struct_DiProtection;
-    Kran2sdvig : struct_DiProtection;
-    Uroven_masla_v_mb : struct_AiProtection;
-    Uroven_masla_v_akkum : struct_DiProtection;
-    Tok_statora : struct_AiProtection;
-    Kontrol_per_220V_less187 : struct_AiProtection;
-    Kontrol_per_220V_high242 : struct_AiProtection;
-    Kontrol_post_220V_less187 : struct_AiProtection;
-    Kontrol_post_220V_high242 : struct_AiProtection;
-    Neispravnost_vozbud : struct_DiProtection;
-    Avariya_vozbud : struct_DiProtection;
-    NY1_net_voltage : struct_DiProtection;
-    NY2_net_voltage : struct_DiProtection;
-    PNS_net_voltage : struct_DiProtection;
+    Kran1_sdvig : struct_DiProtection;
+    Kran2_sdvig : struct_DiProtection;
   END_STRUCT;
   TYPE_ModeGpa : STRUCT
     MODE_NOTDEFINED : UINT := 0;
@@ -1334,16 +1307,6 @@ FUNCTION_BLOCK proc_AI_Init
   strAI := ai.Tok_statora);
   inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
-  stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 125.0,
-  ISVALIDREF_LW := TRUE, ISVALIDREF_HA := TRUE, dHW := 50.0, dHA := 70.0, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0,
-  strAI := ai.Vibro_peremeshenie_vala_N_T7);
-  inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
-
-  stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 125.0,
-  ISVALIDREF_LW := TRUE, ISVALIDREF_HA := TRUE, dHW := 50.0, dHA := 70.0, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0,
-  strAI := ai.Vibro_peremeshenie_vala_N_T8);
-  inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
-
   initiales := 0;
   IF init THEN initiales := inits; END_IF;
 END_FUNCTION_BLOCK
@@ -1887,8 +1850,6 @@ FUNCTION_BLOCK proc_AI
     fb_VibroSkorostOPShesterniRED_T5 : fb_AiSourceMlp;
     fb_VibroSkorostOPShesterniReduktoraH_T6 : fb_AiSourceMlp;
     fb_TokStatora : fb_AiSourceMlp;
-    fb_Vibro_peremeshenie_vala_N_T7 : fb_AiSourceMlp;
-    fb_Vibro_peremeshenie_vala_N_T8 : fb_AiSourceMlp;
   END_VAR
   VAR_EXTERNAL
     arAIN_0 : TItemAIN;
@@ -2234,7 +2195,7 @@ FUNCTION_BLOCK proc_AI
   AI_45_dblValue := arAIN_45.dblValue;
 
 
-  (********************************************** Модуль A1-5 *********************************************************)
+  (**********************************************s Модуль A1-5 *********************************************************)
   A1_4_err_mode := arERR_3.wValue;
   A1_6_err_mode := arERR_5.wValue;
   A1_5_err_mode := arERR_4.wValue;
@@ -2272,14 +2233,6 @@ FUNCTION_BLOCK proc_AI
   (* [A1-10, AI6-7]  Напряжение питания ШУ, резервный ввод *)
   fb_Kontrol_post220V(arAIN := arAIN_48, strAI := ai.Kontrol_post_220V, err_mod:=arERR_9);
   AI_52_dblValue := arAIN_52.dblValue;
-
-  (* [A1-10, AI6-7]  Напряжение питания ШУ, резервный ввод *)
-  fb_Vibro_peremeshenie_vala_N_T7(arAIN := arAIN_49, strAI := ai.Vibro_peremeshenie_vala_N_T7, err_mod:=arERR_9);
-  AI_53_dblValue := arAIN_53.dblValue;
-
-  (* [A1-10, AI6-7]  Напряжение питания ШУ, резервный ввод *)
-  fb_Vibro_peremeshenie_vala_N_T8(arAIN := arAIN_50, strAI := ai.Vibro_peremeshenie_vala_N_T8, err_mod:=arERR_9);
-  AI_54_dblValue := arAIN_54.dblValue;
 
 
   A1_10_err_mode := arERR_9.wValue;
@@ -3775,10 +3728,6 @@ FUNCTION_BLOCK proc_IM_Init
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-      (* Асинхронный ход и перегрузка *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_razreshenie_zagruzki);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
       (* Работа схемы ресинхронизации *)
   stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Vozbud_gotovnost);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
@@ -3795,20 +3744,12 @@ FUNCTION_BLOCK proc_IM_Init
   stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHAVR2_v_rabote);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* АО ГПА от кнопки на ПРУ  *)
-  stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.MV_telezhka_vikachen);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
     (* Готовность включения БЭО по отказу контроллера  *)
   stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Срабатывание БЭАО  *)
   stSs_Ini(data_Ini := true, inverse:=FALSE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-      (* Дверь шкафа открыта   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Voltage_na_sektsii_norm);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Выключатель основного ввода питания QF1  в положении включен   *)
@@ -3887,84 +3828,12 @@ FUNCTION_BLOCK proc_IM_Init
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NS_G13_G14);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM1_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM2_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM3_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AVOM4_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NU1_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NU2_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.TEN_kollectora_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.KaloriferAVOM_avtomat);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
       (* Неисправность источников питания G13, G14 (=24 В)   *)
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Uroven_masla_akkum);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_KC);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_GPA_knopka_PRU);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.EO_GPA_knopka_PRU);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.AO_GPA_knopka_SHU_EGPA);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.EO_GPA_knopka_SHU_EGPA);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEAO_srabotal);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SAU_GPA220V_osnovnoy_est);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SAU_GPA220V_reserv_est);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Krani24V_est);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.BEAO220V_est);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.V24_est);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Неисправность источников питания G13, G14 (=24 В)   *)
@@ -3980,10 +3849,6 @@ FUNCTION_BLOCK proc_IM_Init
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
     (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Reaktornii_pusk_perek);   
-  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
@@ -3991,88 +3856,181 @@ FUNCTION_BLOCK proc_IM_Init
   stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_05prc_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.NKU1_GPA_on);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_1prc_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.NKU2_GPA_on);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_05prc_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.AO_KC_ot_SHKS);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_1prc_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.AO_GPA_ot_SHU);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Net_10kv_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Razreshenie_zagruzki_dvig);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.Tok_vozbuzhdenia_est_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Osnovnoy_regul_off);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.KRU_neispr_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Voltage_sekcii_norm);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.PNS_avtomat_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Reactorny_pusk);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.TEN_MB_avtomat_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.NO_GPA_ot_SHU);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.CMN_avtomat_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.AO_GPA_ot_PRU);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NKU1_GPA_on_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP1);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.NKU2_GPA_on_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP2);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
 
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  stSs_Ini(data_Ini := true, inverse:=TRUE, (*DelayOn:=T#0S, DelayOff:=T#0S,*) str_SS := IM.SingleSignals.GPA_pozhar_rezerv);   
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP3);   
   inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP4);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP5);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP6);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP7_BP8);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP9_BP10);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_cepei_upravlen_mv);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_220BEAO);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_per_220_na_vhode);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_post_220_na_vhode);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP11);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Nalichie_BP12);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Dver_SHU_pered_otkrita);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Dver_SHU_zad_otkrita);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.EO_GPA_ot_knopki_SHU);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.EO_EGPA_ot_PRY);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSs_Ini(data_Ini := true, inverse:=TRUE, (*wait_time:=T#0S,*) str_SS := IM.SingleSignals.Synchroniz_rezhima_K1);   
+  inits := inits + BOOL_TO_UINT(stSs_Ini.Init);
+
 
                                        (* Стартовая инициализация singleOutput *)
   (* Идикация НО (подсветка кнопки на шкафу)   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Kran1_smazka_on);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Rabota_EGPA);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Взвод включения БЭАО по неисправности ПТС   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, wait_time:=T#2S, str_SO := IM.SingleOutputs.Kran2_smazka_on);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, wait_time:=T#0S, str_SO := IM.SingleOutputs.Neispr_EGPA);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Авария ЭГПА в КЦ   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_rabota);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Avary_EGPA);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Авария ЭГПА в КЦ   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_neisprav);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.U_lamp_SHU);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Индикация ПС Фонарь   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Gpa1_avariya);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.AO_knopka_ind);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Индикация АС Фонарь   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Pusk);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Pusk_SHUP);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
   (* Отключение МВ1 от КНА   *)
-  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Ostanov);   
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Stop_SHUP);   
   inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
 
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.NO_fonar);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.PC_fonar);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.AC_fonar);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Kr1_smazka);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Kr2_smazka);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Kr4_open_from_alg);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
+
+  (* Отключение МВ1 от КНА   *)
+  stSo_Ini(data_Ini := true, inOpcCommandsDisabled:=TRUE, (*wait_time:=T#0S,*) str_SO := IM.SingleOutputs.Synch_rej_K1);   
+  inits := inits + BOOL_TO_UINT(stSo_Ini.Init);
   initiales := 0;
+
   IF init THEN initiales := inits; END_IF;
 END_FUNCTION_BLOCK
 
@@ -5335,42 +5293,6 @@ FUNCTION_BLOCK proc_IM
   VAR
     fb_dP_maslo_gaz_Less100 : fb_singleSignal;
     fb_dp_kran1_Less100 : fb_singleSignal;
-    fb_Vozbud_neispr_tsepey_upr_AVR_pit : fb_singleSignal;
-    fb_Vozbud_razreshenie_zagruzki : fb_singleSignal;
-    fb_Vozbud_gotovnost : fb_singleSignal;
-    fb_Vozbud_neispravnost : fb_singleSignal;
-    fb_SHAVR1_v_rabote : fb_singleSignal;
-    fb_SHAVR2_v_rabote : fb_singleSignal;
-    fb_Vozb_AVR_off : fb_singleSignal;
-    fb_MV_telezhka_vikachen : fb_singleSignal;
-    fb_Assinhronnii_hod_peregruzka : fb_singleSignal;
-    fb_SHU_v_GPA_vkluch : fb_singleSignal;
-    fb_SHP_v_GPA_vkluch : fb_singleSignal;
-    fb_AVOM1_avtomat : fb_singleSignal;
-    fb_Voltage_na_sektsii_norm : fb_singleSignal;
-    fb_AVOM2_avtomat : fb_singleSignal;
-    fb_AVOM3_avtomat : fb_singleSignal;
-    fb_AVOM4_avtomat : fb_singleSignal;
-    fb_NU1_avtomat : fb_singleSignal;
-    fb_NU2_avtomat : fb_singleSignal;
-    fb_TEN_kollectora_avtomat : fb_singleSignal;
-    fb_KaloriferAVOM_avtomat : fb_singleSignal;
-    fb_CMN_avtomat : fb_singleSignal;
-    fb_Uroven_masla_akkum : fb_singleSignal;
-    fb_AO_KC : fb_singleSignal;
-    fb_AO_GPA_knopka_PRU : fb_singleSignal;
-    fb_EO_GPA_knopka_PRU : fb_singleSignal;
-    fb_AO_GPA_knopka_SHU_EGPA : fb_singleSignal;
-    fb_EO_GPA_knopka_SHU_EGPA : fb_singleSignal;
-    fb_BEAO_srabotal : fb_singleSignal;
-    fb_SAU_GPA220V_est : fb_singleSignal;
-    fb_Krani24V_est : fb_singleSignal;
-    fb_V24_est : fb_singleSignal;
-    fb_Chastotny_pusk : fb_singleSignal;
-    fb_Neuspesh_chastotny_pusk : fb_singleSignal;
-    fb_Rezhim_ruchnogo_regulirovaniya : fb_singleSignal;
-    fb_Reaktornii_pusk_perek : fb_singleSignal;
-    fb_SAU_GPA220V_reserv_est : fb_singleSignal;
     fb_QF1_on : fb_singleSignal;
     fb_QF2_on : fb_singleSignal;
     fb_QF23_on : fb_singleSignal;
@@ -5390,28 +5312,64 @@ FUNCTION_BLOCK proc_IM
     fb_NS_G18_G19 : fb_singleSignal;
     fb_NS_G10_G11 : fb_singleSignal;
     fb_NS_G13_G14 : fb_singleSignal;
-    fb_Zagazovannost_dvigatelya_05prc_rezerv : fb_singleSignal;
-    fb_Zagazovannost_dvigatelya_1prc_rezerv : fb_singleSignal;
-    fb_Zagazovannost_nagnetatelya_05prc_rezerv : fb_singleSignal;
-    fb_Zagazovannost_nagnetatelya_1prc_rezerv : fb_singleSignal;
-    fb_Net_10kv_rezerv : fb_singleSignal;
-    fb_KRU_neispr_rezerv : fb_singleSignal;
-    fb_Tok_vozbuzhdenia_est_rezerv : fb_singleSignal;
-    fb_PNS_avtomat_rezerv : fb_singleSignal;
-    fb_CMN_avtomat_rezerv : fb_singleSignal;
-    fb_NKU1_GPA_on_rezerv : fb_singleSignal;
-    fb_NKU2_GPA_on_rezerv : fb_singleSignal;
-    fb_GPA_pozhar_rezerv : fb_singleSignal;
-    fb_TEN_MB_avtomat_rezerv : fb_singleSignal;
+    fb_Vozbud_neispr_tsepey_upr_AVR_pit : fb_singleSignal;
+    fb_Vozbud_gotovnost : fb_singleSignal;
+    fb_Vozbud_neispravnost : fb_singleSignal;
+    fb_SHAVR1_v_rabote : fb_singleSignal;
+    fb_SHAVR2_v_rabote : fb_singleSignal;
     fb_Avariinoe_otkluch_vikluchatelya : fb_singleSignal;
-    fb_BEAO220V_est : fb_singleSignal;
-    fb_Kran1_smazka_on : fb_singleOutput;
-    fb_Kran2_smazka_on : fb_singleOutput;
-    fb_Gpa1_norm : fb_singleOutput;
-    fb_Gpa1_neisprav : fb_singleOutput;
-    fb_Gpa1_avariya : fb_singleOutput;
+    fb_Assinhronnii_hod_peregruzka : fb_singleSignal;
+    fb_SHU_v_GPA_vkluch : fb_singleSignal;
+    fb_SHP_v_GPA_vkluch : fb_singleSignal;
+    fb_Uroven_masla_akkum : fb_singleSignal;
+    fb_NKU1_GPA_on : fb_singleSignal;
+    fb_NKU2_GPA_on : fb_singleSignal;
+    fb_AO_KC_ot_SHKS : fb_singleSignal;
+    fb_AO_GPA_ot_SHU : fb_singleSignal;
+    fb_BEAO_srabotal : fb_singleSignal;
+    fb_Chastotny_pusk : fb_singleSignal;
+    fb_Neuspesh_chastotny_pusk : fb_singleSignal;
+    fb_Rezhim_ruchnogo_regulirovaniya : fb_singleSignal;
+    fb_Razreshenie_zagruzki_dvig : fb_singleSignal;
+    fb_Osnovnoy_regul_off : fb_singleSignal;
+    fb_Voltage_sekcii_norm : fb_singleSignal;
+    fb_Reactorny_pusk : fb_singleSignal;
+    fb_NO_GPA_ot_SHU : fb_singleSignal;
+    fb_AO_GPA_ot_PRU : fb_singleSignal;
+    fb_Nalichie_BP1 : fb_singleSignal;
+    fb_Nalichie_BP2 : fb_singleSignal;
+    fb_Nalichie_BP3 : fb_singleSignal;
+    fb_Nalichie_BP4 : fb_singleSignal;
+    fb_Nalichie_BP5 : fb_singleSignal;
+    fb_Nalichie_BP6 : fb_singleSignal;
+    fb_Nalichie_BP7_BP8 : fb_singleSignal;
+    fb_Nalichie_BP9_BP10 : fb_singleSignal;
+    fb_Nalichie_cepei_upravlen_mv : fb_singleSignal;
+    fb_Nalichie_220BEAO : fb_singleSignal;
+    fb_Nalichie_per_220_na_vhode : fb_singleSignal;
+    fb_Nalichie_post_220_na_vhode : fb_singleSignal;
+    fb_Nalichie_BP11 : fb_singleSignal;
+    fb_Nalichie_BP12 : fb_singleSignal;
+    fb_Dver_SHU_pered_otkrita : fb_singleSignal;
+    fb_Dver_SHU_zad_otkrita : fb_singleSignal;
+    fb_EO_GPA_ot_knopki_SHU : fb_singleSignal;
+    fb_EO_EGPA_ot_PRY : fb_singleSignal;
+    fb_Synchroniz_rezhima_K1 : fb_singleSignal;
+    fb_Potok_ms_posle_AVOM : fb_singleSignal;
+    fb_Avary_EGPA : fb_singleOutput;
+    fb_U_lamp_SHU : fb_singleOutput;
+    fb_AO_knopka_ind : fb_singleOutput;
     fb_Pusk : fb_singleOutput;
-    fb_Ostanov : fb_singleOutput;
+    fb_Stop_SHUP : fb_singleOutput;
+    fb_NO_fonar : fb_singleOutput;
+    fb_PC_fonar : fb_singleOutput;
+    fb_AC_fonar : fb_singleOutput;
+    fb_Kr1_smazka : fb_singleOutput;
+    fb_Kr2_smazka : fb_singleOutput;
+    fb_Kr4_open_from_alg : fb_singleOutput;
+    fb_Synch_rej_K1 : fb_singleOutput;
+    fb_Rabota_EGPA : fb_singleOutput;
+    fb_Neispr_EGPA : fb_singleOutput;
   END_VAR
 
   (* Циклический опрос. ИМ *)
@@ -5551,9 +5509,6 @@ FUNCTION_BLOCK proc_IM
   (* Неисправность цепей управления возбудителя *)
   fb_Vozbud_neispr_tsepey_upr_AVR_pit(signal :=di.di_2.bits[2], str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
 
-   (* Возбудитель разрешение загрузки *)
-  fb_Vozbud_razreshenie_zagruzki(signal :=di.di_2.bits[3], str_SS := IM.SingleSignals.Vozbud_razreshenie_zagruzki);   
-
   (* Возбудитель готовность *)
   fb_Vozbud_gotovnost(signal :=di.di_2.bits[4], str_SS := IM.SingleSignals.Vozbud_gotovnost);   
 
@@ -5564,98 +5519,124 @@ FUNCTION_BLOCK proc_IM
   fb_SHAVR1_v_rabote(signal :=di.di_3.bits[3], str_SS := IM.SingleSignals.SHAVR1_v_rabote);   
 
   (* ЩАВР 2 в работе *)
-  fb_SHAVR2_v_rabote(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHAVR2_v_rabote);   
+  fb_SHAVR2_v_rabote(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHAVR2_v_rabote); 
 
-  (* МВ в контр положениии тележка выкачена *)
-  fb_MV_telezhka_vikachen(signal :=di.di_4.bits[1], str_SS := IM.SingleSignals.MV_telezhka_vikachen);   
+  (* ЩАВР 2 в работе *)
+  fb_Avariinoe_otkluch_vikluchatelya(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);    
 
-  (* Ассинхронный ход перегрузка *)
-  fb_Assinhronnii_hod_peregruzka(signal :=di.di_4.bits[2], str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);   
+  (* ЩАВР 2 в работе *)
+  fb_Assinhronnii_hod_peregruzka(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);    
 
-  (* Автомат ШУ в ячейке ГПА включен *)
-  fb_SHU_v_GPA_vkluch(signal :=di.di_4.bits[3], str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);   
+  (* ЩАВР 2 в работе *)
+  fb_SHU_v_GPA_vkluch(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);    
 
-  (* Автомат ШП в ячейке ГПА включен *)
-  fb_SHP_v_GPA_vkluch(signal :=di.di_4.bits[4], str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);   
+  (* ЩАВР 2 в работе *)
+  fb_SHP_v_GPA_vkluch(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);    
 
-  (* АО ГПА от кнопки на ПРУ  *)
-  fb_Voltage_na_sektsii_norm(signal :=di.di_5.bits[6], str_SS := IM.SingleSignals.Voltage_na_sektsii_norm);   
+  (* ЩАВР 2 в работе *)
+  fb_Uroven_masla_akkum(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Uroven_masla_akkum);    
 
-  (* АВОМ 1 в автоматическом режиме  *)
-  fb_AVOM1_avtomat(signal :=di.di_6.bits[0], str_SS := IM.SingleSignals.AVOM1_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_NKU1_GPA_on(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.NKU1_GPA_on);    
 
-  (* АВОМ 2 в автоматическом режиме  *)
-  fb_AVOM2_avtomat(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.AVOM2_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_NKU2_GPA_on(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.NKU2_GPA_on);    
 
-  (* АВОМ 3 в автоматическом режиме  *)
-  fb_AVOM3_avtomat(signal :=di.di_6.bits[2], str_SS := IM.SingleSignals.AVOM3_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_AO_KC_ot_SHKS(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.AO_KC_ot_SHKS);    
 
-  (* АВОМ 4 в автоматическом режиме  *)
-  fb_AVOM4_avtomat(signal :=di.di_6.bits[7], str_SS := IM.SingleSignals.AVOM4_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_AO_GPA_ot_SHU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.AO_GPA_ot_SHU);    
 
-    (* Дверь шкафа открыта   *)
-  fb_NU1_avtomat(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.NU1_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_BEAO_srabotal(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.BEAO_srabotal);    
 
-    (* Перегрузка  *)
-  fb_NU2_avtomat(signal :=di.di_4.bits[4], str_SS := IM.SingleSignals.NU2_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_Chastotny_pusk(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Chastotny_pusk);    
 
-    (* Аварийный останов цеха  *)
-  fb_TEN_kollectora_avtomat(signal :=di.di_5.bits[5], str_SS := IM.SingleSignals.TEN_kollectora_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_Neuspesh_chastotny_pusk(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Neuspesh_chastotny_pusk);    
 
-    (* АО ГПА от кнопки на ПРУ  *)
-  fb_KaloriferAVOM_avtomat(signal :=di.di_5.bits[6], str_SS := IM.SingleSignals.KaloriferAVOM_avtomat);   
+  (* ЩАВР 2 в работе *)
+  fb_Rezhim_ruchnogo_regulirovaniya(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Rezhim_ruchnogo_regulirovaniya);    
 
-    (* Срабатывание БЭАО  *)
-  fb_Uroven_masla_akkum(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.Uroven_masla_akkum);   
+  (* ЩАВР 2 в работе *)
+  fb_Razreshenie_zagruzki_dvig(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Razreshenie_zagruzki_dvig);    
 
-    (* НО ГПА от ШУ   *)
-  fb_AO_KC(signal :=di.di_6.bits[3], str_SS := IM.SingleSignals.AO_KC);   
+  (* ЩАВР 2 в работе *)
+  fb_Osnovnoy_regul_off(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Osnovnoy_regul_off);    
 
-    (* АО ГПА от ШУ   *)
-  fb_AO_GPA_knopka_PRU(signal :=di.di_6.bits[4], str_SS := IM.SingleSignals.AO_GPA_knopka_PRU);   
+  (* ЩАВР 2 в работе *)
+  fb_Voltage_sekcii_norm(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Voltage_sekcii_norm);    
 
-    (* Дверь шкафа открыта   *)
-  fb_EO_GPA_knopka_PRU(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.EO_GPA_knopka_PRU);    
+  (* ЩАВР 2 в работе *)
+  fb_Reactorny_pusk(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Reactorny_pusk);    
 
-    (* Дверь шкафа открыта   *)
-  fb_AO_GPA_knopka_SHU_EGPA(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.AO_GPA_knopka_SHU_EGPA);  
+  (* ЩАВР 2 в работе *)
+  fb_NO_GPA_ot_SHU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.NO_GPA_ot_SHU);    
 
-    (* Дверь шкафа открыта   *)
-  fb_EO_GPA_knopka_SHU_EGPA(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.EO_GPA_knopka_SHU_EGPA);  
+  (* ЩАВР 2 в работе *)
+  fb_AO_GPA_ot_PRU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.AO_GPA_ot_PRU);    
 
-    (* Дверь шкафа открыта   *)
-  fb_BEAO_srabotal(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.BEAO_srabotal);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP1(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP1);    
 
-    (* Дверь шкафа открыта   *)
-  fb_SAU_GPA220V_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.SAU_GPA220V_osnovnoy_est);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP2(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP2);    
 
-    (* Дверь шкафа открыта   *)
-  fb_SAU_GPA220V_reserv_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.SAU_GPA220V_reserv_est); 
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP3(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP3);    
 
-    (* Дверь шкафа открыта   *)
-  fb_Krani24V_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Krani24V_est);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP4(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP4);    
 
-    (* Дверь шкафа открыта   *)
-  fb_V24_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.V24_est);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP5(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP5);    
 
-    (* Дверь шкафа открыта   *)
-  fb_Chastotny_pusk(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Chastotny_pusk);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP6(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP6);    
 
-    (* Дверь шкафа открыта   *)
-  fb_Neuspesh_chastotny_pusk(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Neuspesh_chastotny_pusk);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP7_BP8(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP7_BP8);    
 
-    (* Дверь шкафа открыта   *)
-  fb_Rezhim_ruchnogo_regulirovaniya(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Rezhim_ruchnogo_regulirovaniya);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP9_BP10(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP9_BP10);    
 
-    (* Дверь шкафа открыта   *)
-  fb_Reaktornii_pusk_perek(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Reaktornii_pusk_perek);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_cepei_upravlen_mv(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_cepei_upravlen_mv);    
 
-    (* Дверь шкафа открыта   *)
-  fb_Avariinoe_otkluch_vikluchatelya(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_220BEAO(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_220BEAO);    
 
-    (* Дверь шкафа открыта   *)
-  fb_BEAO220V_est(signal :=di.di_6.bits[6], str_SS := IM.SingleSignals.BEAO220V_est);  
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_per_220_na_vhode(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_per_220_na_vhode);    
 
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_post_220_na_vhode(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_post_220_na_vhode);    
+
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP11(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP11);    
+
+  (* ЩАВР 2 в работе *)
+  fb_Nalichie_BP12(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP12);    
+
+  (* ЩАВР 2 в работе *)
+  fb_Dver_SHU_pered_otkrita(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Dver_SHU_pered_otkrita);    
+
+  (* ЩАВР 2 в работе *)
+  fb_Dver_SHU_zad_otkrita(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Dver_SHU_zad_otkrita);    
+
+  (* ЩАВР 2 в работе *)
+  fb_EO_GPA_ot_knopki_SHU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.EO_GPA_ot_knopki_SHU);    
+
+  (* ЩАВР 2 в работе *)
+  fb_EO_EGPA_ot_PRY(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.EO_EGPA_ot_PRY);    
+
+  (* ЩАВР 2 в работе *)
+  fb_Synchroniz_rezhima_K1(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Synchroniz_rezhima_K1);
+
+  (* ЩАВР 2 в работе *)
+  fb_Potok_ms_posle_AVOM(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Potok_ms_posle_AVOM);   
 
     (* Выключатель основного ввода питания QF1  в положении включен   *)
   fb_QF1_on(signal :=di.di_7.bits[6], str_SS := IM.SingleSignals.QF1_on);   
@@ -5714,68 +5695,50 @@ FUNCTION_BLOCK proc_IM
     (* Неисправность источников питания G13, G14 (=24 В)   *)
   fb_NS_G13_G14(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.NS_G13_G14); 
 
-    (* Неисправность источников питания группы 2: G3, G4 (=24 В)   *)
-  fb_Zagazovannost_dvigatelya_05prc_rezerv(signal :=di.di_9.bits[0], str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_05prc_rezerv);   
-
-    (* Неисправность источников питания внутренних ПТС: G15, G16 (=24 В)   *)
-  fb_Zagazovannost_dvigatelya_1prc_rezerv(signal :=di.di_9.bits[1], str_SS := IM.SingleSignals.Zagazovannost_dvigatelya_1prc_rezerv);   
-
-    (* Неисправность источника питания аналоговых сигналов: G17 (=24 В)   *)
-  fb_Zagazovannost_nagnetatelya_05prc_rezerv(signal :=di.di_9.bits[2], str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_05prc_rezerv);   
-
-    (* Неисправность источников питания группы 3: G5, G6 (=24 В)   *)
-  fb_Zagazovannost_nagnetatelya_1prc_rezerv(signal :=di.di_9.bits[3], str_SS := IM.SingleSignals.Zagazovannost_nagnetatelya_1prc_rezerv);   
-
-    (* Неисправность источников питания группы 4: G7, G8 (=24 В)   *)
-  fb_Net_10kv_rezerv(signal :=di.di_9.bits[4], str_SS := IM.SingleSignals.Net_10kv_rezerv);   
-
-    (* Неисправность источников питания внешних цепей: G18, G19 (=24 В)   *)
-  fb_KRU_neispr_rezerv(signal :=di.di_9.bits[5], str_SS := IM.SingleSignals.KRU_neispr_rezerv);   
-
-    (* Неисправность источников питания группы 5: G9, G10, G11, G12 (=110 В)   *)
-  fb_Tok_vozbuzhdenia_est_rezerv(signal :=di.di_9.bits[6], str_SS := IM.SingleSignals.Tok_vozbuzhdenia_est_rezerv);   
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  fb_PNS_avtomat_rezerv(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.PNS_avtomat_rezerv); 
-
-    (* Неисправность источников питания группы 3: G5, G6 (=24 В)   *)
-  fb_CMN_avtomat_rezerv(signal :=di.di_9.bits[3], str_SS := IM.SingleSignals.CMN_avtomat_rezerv);   
-
-    (* Неисправность источников питания группы 4: G7, G8 (=24 В)   *)
-  fb_NKU1_GPA_on_rezerv(signal :=di.di_9.bits[4], str_SS := IM.SingleSignals.NKU1_GPA_on_rezerv);   
-
-    (* Неисправность источников питания внешних цепей: G18, G19 (=24 В)   *)
-  fb_NKU2_GPA_on_rezerv(signal :=di.di_9.bits[5], str_SS := IM.SingleSignals.NKU2_GPA_on_rezerv);   
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  fb_GPA_pozhar_rezerv(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.GPA_pozhar_rezerv); 
-
-    (* Неисправность источников питания G13, G14 (=24 В)   *)
-  fb_TEN_MB_avtomat_rezerv(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.TEN_MB_avtomat_rezerv); 
-
 
   (*************************************************** SingleOutputs ********************************************)
 
   (* Идикация НО (подсветка кнопки на шкафу)   *)
-  fb_Kran1_smazka_on(str_SO := IM.SingleOutputs.Kran1_smazka_on, signal:=od.do_2.bits[11]);  
+  fb_Rabota_EGPA(str_SO := IM.SingleOutputs.Rabota_EGPA, signal:=od.do_2.bits[11]);  
 
   (* Взвод включения БЭАО по неисправности ПТС   *)
-  fb_Kran2_smazka_on(str_SO := IM.SingleOutputs.Kran2_smazka_on, signal:=od.do_2.bits[14]);  
+  fb_Neispr_EGPA(str_SO := IM.SingleOutputs.Neispr_EGPA, signal:=od.do_2.bits[14]);  
 
   (* Авария ЭГПА в КЦ   *)
-  fb_Gpa1_norm(str_SO := IM.SingleOutputs.Gpa1_rabota, signal:=od.do_2.bits[0]);    
+  fb_Avary_EGPA(str_SO := IM.SingleOutputs.Avary_EGPA, signal:=od.do_2.bits[0]);    
 
   (* Сброс включения БЭАО по неисправности ПТС   *)
-  fb_Gpa1_neisprav(str_SO := IM.SingleOutputs.Gpa1_neisprav, signal:=od.do_2.bits[15]);   
+  fb_U_lamp_SHU(str_SO := IM.SingleOutputs.U_lamp_SHU, signal:=od.do_2.bits[15]);   
 
   (* Индикация ПС Фонарь   *)
-  fb_Gpa1_avariya(str_SO := IM.SingleOutputs.Gpa1_avariya, signal:=od.do_2.bits[13]);    
+  fb_AO_knopka_ind(str_SO := IM.SingleOutputs.AO_knopka_ind, signal:=od.do_2.bits[13]);    
 
   (* Индикация АС Фонарь   *)
-  fb_Pusk(str_SO := IM.SingleOutputs.Pusk, signal:=od.do_2.bits[12]);   
+  fb_Pusk(str_SO := IM.SingleOutputs.Pusk_SHUP, signal:=od.do_2.bits[12]);   
 
   (* Отключение МВ1 от КНА   *)
-  fb_Ostanov(str_SO := IM.SingleOutputs.Ostanov, signal:=od.do_1.bits[12]);   
+  fb_Stop_SHUP(str_SO := IM.SingleOutputs.Stop_SHUP, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_NO_fonar(str_SO := IM.SingleOutputs.NO_fonar, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_PC_fonar(str_SO := IM.SingleOutputs.PC_fonar, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_AC_fonar(str_SO := IM.SingleOutputs.AC_fonar, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_Kr1_smazka(str_SO := IM.SingleOutputs.Kr1_smazka, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_Kr2_smazka(str_SO := IM.SingleOutputs.Kr2_smazka, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_Kr4_open_from_alg(str_SO := IM.SingleOutputs.Kr4_open_from_alg, signal:=od.do_1.bits[12]);   
+
+  (* Отключение МВ1 от КНА   *)
+  fb_Synch_rej_K1(str_SO := IM.SingleOutputs.Synch_rej_K1, signal:=od.do_1.bits[12]);   
 
 
    (**************************************** Аналоговые и Дискретные параметры ***********************************)
@@ -5874,47 +5837,43 @@ FUNCTION_BLOCK proc_Protections_Init
 
   (*************************************************Стартовая инициализация DiProtection ***************************************************)
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz_less100);
+  stDIp_Ini(data_Ini := true, delay:=T#03S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Reg_vozb_off);
+  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
+
+  (* МВ отключен 
+  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Fail_chastotnii_pusk);
+  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);*)
+
+  (* МВ отключен *)
+  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Off_avar_vikluchatel);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.mvOff);
+  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.AOKC_SHKC);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Uroven_masla_v_akkum);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.AO_PRU);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Neispravnost_vozbud);
+  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.AO_ot_SHU);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Avariya_vozbud);
+  stDIp_Ini(data_Ini := true, delay:=T#1S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.mvOff);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Kran1sdvig);
+  stDIp_Ini(data_Ini := true, delay:=T#10S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Kran1_sdvig);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE, str_DIp := protections.Kran2sdvig);
+  stDIp_Ini(data_Ini := true, delay:=T#10S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.Kran2_sdvig);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.NY1_net_voltage);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
-
-  (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.NY2_net_voltage);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
-
-  (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.PNS_net_voltage);
-  inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
-
-  (* МВ отключен *)
-  stDIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz_less100);
+  stDIp_Ini(data_Ini := true, delay:=T#20S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE, str_DIp := protections.dPmaslo_gaz_less100);
   inits := inits + BOOL_TO_UINT(stDIp_Ini.Init);
 
   (*************************************************Стартовая инициализация AiProtection ***************************************************)
@@ -5974,205 +5933,89 @@ FUNCTION_BLOCK proc_Protections_Init
   inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
   (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tgaza_na_vhode_H);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Tmasla_v_mb);
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Os_sdvig_nagnetatelja_plus);
   inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
   (* Температура газа на выходе нагнетателя *)
   stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tmasla_v_mb_nad_ten);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tgorjachego_vozduha_ED_kanal_1);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tgorjachego_vozduha_ED_kanal_2);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Tmasla_do_AVOM);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Tmasla_posle_AVOM);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tmedi_statora_kanal_1);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tmedi_statora_kanal_2);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tmedi_statora_kanal_3);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tstali_statora_kanal_1);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tstali_statora_kanal_2);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tstali_statora_kanal_3);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tholodnogo_vozduha_ED_kanal_1);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Tholodnogo_vozduha_ED_kanal_2);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#16S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Pmaslo_sm_nizkoe);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)
-  stAIp_Ini(data_Ini := true, delay:=T#16S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Pmaslo_sm_vysokoe);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#16S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Pgaza_na_vhode_nagnetatelia);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#16S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Pgaza_na_vyhode_nagnetatelia);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Pmasla_posle_NU);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Pmasla_smazki_posle_gns);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Pimpuls_gaz);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.dP_maslo_na_filtre);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Os_sdvig_nagnetatelja_plus);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;
-
-  (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
   controlLimit:=_StatusAi.HA, str_AIp := protections.Os_sdvig_nagnetatelja_minus);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;  
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OPED_T1);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ;     
+  (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OPED_T2);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
+  (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OYP_kolesa_ED_T3);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
+  (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Pgaza_na_vyhode_nagnetatelia);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibroperemesh_vala_N_T7);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibroperemesh_vala_N_T8);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Uroven_masla_v_mb);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Tok_statora);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Kontrol_per_220V_less187);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Kontrol_per_220V_high242);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.LA, str_AIp := protections.Kontrol_post_220V_less187);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-  controlLimit:=_StatusAi.HA, str_AIp := protections.Kontrol_post_220V_high242);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
-
-   (* Температура газа на выходе нагнетателя *)(*Ничего не понимаю, помогите*)
-  stAIp_Ini(data_Ini := true, delay:=T#0S, inTag:=_ProtectionTags.AOS, inRunOnStart:=FALSE,
+  (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#20S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
   controlLimit:=_StatusAi.HA, str_AIp := protections.dPmaslo_gaz);
-  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init) ; 
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
+  (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#16S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Pmaslo_sm_nizkoe);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+  (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#16S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Pmaslo_sm_vysokoe);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OPED_T1);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OPED_T2);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OYP_kolesa_ED_T3);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_kolesa_RH_T4);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OYP_kolesa_ED_T3);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OYP_kolesa_ED_T3);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
+
+   (* Температура газа на выходе нагнетателя *)
+  stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
+  controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OYP_kolesa_ED_T3);
+  inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
   IF init THEN initiales := inits; END_IF;
 END_FUNCTION_BLOCK
@@ -6786,11 +6629,14 @@ FUNCTION_BLOCK proc_Protection
   VAR
     fb_mvOff : fb_MvProtection;
     fb_dPmaslo_gaz_Less100 : fb_DiProtection;
-    fb_Uroven_masla_v_akkum : fb_DiProtection;
-    fb_Neispravnost_vozbud : fb_DiProtection;
-    fb_Avariya_vozbud : fb_DiProtection;
-    fb_Kran1sdvig : fb_KranOpenProtection;
-    fb_Kran2sdvig : fb_KranOpenProtection;
+    fb_Reg_vozb_off : fb_DiProtection;
+    fb_Fail_chastotnii_pusk : fb_DiProtection;
+    fb_Off_avar_vikluchatel : fb_DiProtection;
+    fb_AOKC_SHKC : fb_DiProtection;
+    fb_AO_PRU : fb_DiProtection;
+    fb_AO_ot_SHU : fb_DiProtection;
+    fb_Kran1_sdvig : fb_KranOpenProtection;
+    fb_Kran2_sdvig : fb_KranOpenProtection;
     fb_Toporno_podshipnika_EDT_1 : fb_AiProtection;
     fb_Toporno_ypornogo_podshipnika_EDT_2 : fb_AiProtection;
     fb_Toporno_ypornogo_podshipnika_kolesa_red_EDT_3 : fb_AiProtection;
@@ -6854,32 +6700,35 @@ FUNCTION_BLOCK proc_Protection
   END_VAR
 
   (************************************************************* DiProtection ************************************************************)
-  (* МВ отключен *)
-  fb_mvOff(sw:=IM.mv, StrDIp := protections.mvOff);
+  (* МВ отключен 
+  fb_mvOff(sw:=IM.mv, StrDIp := protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);*)
 
   (* Неисправность возбудительного устройства *)
   fb_dPmaslo_gaz_Less100(di := IM.SingleSignals.dP_maslo_gaz_Less100, StrDIp := protections.dPmaslo_gaz_less100);
 
-  (* Аварийный останов цеха *)
-  fb_Uroven_masla_v_akkum(di := IM.SingleSignals.Uroven_masla_akkum, StrDIp := protections.Uroven_masla_v_akkum);
-
-  (* Аварийный останов АО ЭГПА с ПРУ *)
-  fb_Neispravnost_vozbud(di := IM.SingleSignals.Vozbud_neispravnost, StrDIp := protections.Neispravnost_vozbud);
-
-  (* Аварийный останов АО ЭГПА с ШУ *)
-  fb_Avariya_vozbud(di := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit, StrDIp := protections.Avariya_vozbud);
-
-  (* Сдвиг крана №1 *)
-  fb_Kran1sdvig(im:=IM.Kran1, StrDIp := protections.Kran1sdvig);
+  (* Сдвиг крана №2 *)
+  fb_Reg_vozb_off(di:=IM.SingleSignals.Vozbud_neispravnost, StrDIp := protections.Reg_vozb_off);
 
   (* Сдвиг крана №2 *)
-  fb_Kran2sdvig(im:=IM.Kran2, StrDIp := protections.Kran2sdvig);
-  (*
-  fb_NY1_net_voltage(im:=IM.nu1, StrDIp := protections.NY1_net_voltage);
+  fb_Fail_chastotnii_pusk(di:=IM.SingleSignals.Neuspesh_chastotny_pusk, StrDIp := protections.Fail_chastotnii_pusk);
 
-  fb_NY2_net_voltage(im:=IM.nu2, StrDIp := protections.NY2_net_voltage);
+  (* Сдвиг крана №2 *)
+  fb_Off_avar_vikluchatel(di:=IM.SingleSignals.Avariinoe_otkluch_vikluchatelya, StrDIp := protections.Off_avar_vikluchatel);
 
-  fb_PNS_net_voltage(im:=IM.pns, StrDIp := protections.PNS_net_voltage);*)
+  (* Сдвиг крана №2 *)
+  fb_AOKC_SHKC(di:=IM.SingleSignals.AO_KC_ot_SHKS, StrDIp := protections.AOKC_SHKC);
+
+  (* Сдвиг крана №2 *)
+  fb_AO_PRU(di:=IM.SingleSignals.AO_GPA_ot_PRU, StrDIp := protections.AO_PRU);
+
+  (* Сдвиг крана №2 *)
+  fb_AO_ot_SHU(di:=IM.SingleSignals.AO_GPA_ot_SHU, StrDIp := protections.AO_ot_SHU);
+
+  (* Сдвиг крана №2 *)
+  fb_Kran1_sdvig(im:=IM.Kran1, StrDIp := protections.Kran1_sdvig);
+
+  (* Сдвиг крана №2 *)
+  fb_Kran2_sdvig(im:=IM.Kran2, StrDIp := protections.Kran2_sdvig);
 
   (************************************************************* AiProtection ************************************************************)
 
@@ -6930,79 +6779,22 @@ FUNCTION_BLOCK proc_Protection
   fb_Tgaza_na_vyhode_H(ai := ai.Tgaza_na_vhode_H, StrAIp := protections.Tgaza_na_vyhode_H);
 
   (* Температура газа на выходе нагнетателя *)
-  fb_Tgaza_na_vhode_H(ai := ai.Tgaza_na_vhode_H, StrAIp := protections.Tgaza_na_vhode_H);
+  fb_Os_sdvig_nagnetatelja_plus(ai := ai.Os_sdvig_nagnetatelja_plus, StrAIp := protections.Os_sdvig_nagnetatelja_plus);
 
   (* Температура газа на выходе нагнетателя *)
-  fb_Tmasla_v_mb(ai := ai.Tmasla_MB, StrAIp := protections.Tmasla_v_mb);
+  fb_Os_sdvig_nagnetatelja_minus(ai := ai.Os_sdvig_nagnetatelja_minus, StrAIp := protections.Os_sdvig_nagnetatelja_minus);
 
   (* Температура газа на выходе нагнетателя *)
-  fb_Tmasla_v_mb_nad_ten(ai := ai.Tmasla_MB_TEN, StrAIp := protections.Tmasla_v_mb_nad_ten);
+  fb_Pgaza_na_vyhode_nagnetatelia(ai := ai.Pgaza_na_vyhode_nagnetatelia, StrAIp := protections.Pgaza_na_vyhode_nagnetatelia);
 
   (* Температура газа на выходе нагнетателя *)
-  fb_Tgorjachego_vozduha_ED_kanal_1(ai := ai.Tgorjachego_vozduha_ED_kanal_1, StrAIp := protections.Tgorjachego_vozduha_ED_kanal_1);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tgorjachego_vozduha_ED_kanal_2(ai := ai.Tgorjachego_vozduha_ED_kanal_2, StrAIp := protections.Tgorjachego_vozduha_ED_kanal_2);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tmasla_do_AVOM(ai := ai.Tmasla_do_AVOM, StrAIp := protections.Tmasla_do_AVOM);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tmasla_posle_AVOM(ai := ai.Tmasla_posle_AVOM, StrAIp := protections.Tmasla_posle_AVOM);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tmedi_statora_kanal_1(ai := ai.Tmedi_statora_kanal_1, StrAIp := protections.Tmedi_statora_kanal_1);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tmedi_statora_kanal_2(ai := ai.Tmedi_statora_kanal_2, StrAIp := protections.Tmedi_statora_kanal_2);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tmedi_statora_kanal_3(ai := ai.Tmedi_statora_kanal_3, StrAIp := protections.Tmedi_statora_kanal_3);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tstali_statora_kanal_1(ai := ai.Tstali_statora_kanal_1, StrAIp := protections.Tstali_statora_kanal_1);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tstali_statora_kanal_2(ai := ai.Tstali_statora_kanal_2, StrAIp := protections.Tstali_statora_kanal_2);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tstali_statora_kanal_3(ai := ai.Tstali_statora_kanal_3, StrAIp := protections.Tstali_statora_kanal_3);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tholodnogo_vozduha_ED_kanal_1(ai := ai.Tholodnogo_vozduha_ED_kanal_1, StrAIp := protections.Tholodnogo_vozduha_ED_kanal_1);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tholodnogo_vozduha_ED_kanal_2(ai := ai.Tholodnogo_vozduha_ED_kanal_2, StrAIp := protections.Tholodnogo_vozduha_ED_kanal_2);
+  fb_dPmaslo_gaz(ai := ai.dPmaslo_gaz, StrAIp := protections.dPmaslo_gaz);
 
   (* Температура газа на выходе нагнетателя *)
   fb_Pmaslo_sm_nizkoe(ai := ai.Pmaslo_sm_nizkoe, StrAIp := protections.Pmaslo_sm_nizkoe);
 
   (* Температура газа на выходе нагнетателя *)
   fb_Pmaslo_sm_vysokoe(ai := ai.Pmaslo_sm_vysokoe, StrAIp := protections.Pmaslo_sm_vysokoe);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Pgaza_na_vhode_nagnetatelia(ai := ai.Pgaza_na_vhode_nagnetatelia, StrAIp := protections.Pgaza_na_vhode_nagnetatelia);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Pgaza_na_vyhode_nagnetatelia(ai := ai.Pgaza_na_vyhode_nagnetatelia, StrAIp := protections.Pgaza_na_vyhode_nagnetatelia);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Pmasla_posle_NU(ai := ai.Pmasla_posle_NU, StrAIp := protections.Pmasla_posle_NU);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Pmasla_smazki_posle_gns(ai := ai.Pmasla_posle_GNS, StrAIp := protections.Pmasla_smazki_posle_gns);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Pimpuls_gaz(ai := ai.Pimpuls_gaz, StrAIp := protections.Pimpuls_gaz);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_dP_maslo_na_filtre(ai := ai.dPgaza_na_maslo_filtre, StrAIp := protections.dP_maslo_na_filtre);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Os_sdvig_nagnetatelja_plus(ai := ai.Os_sdvig_nagnetatelja_plus, StrAIp := protections.Os_sdvig_nagnetatelja_plus);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Os_sdvig_nagnetatelja_minus(ai := ai.Os_sdvig_nagnetatelja_minus, StrAIp := protections.Os_sdvig_nagnetatelja_minus);
 
   (* Температура газа на выходе нагнетателя *)
   fb_Vibro_skorost_OPED_T1(ai := ai.Vibro_skorost_OPED_T1, StrAIp := protections.Vibro_skorost_OPED_T1);
@@ -7021,33 +6813,6 @@ FUNCTION_BLOCK proc_Protection
 
   (* Температура газа на выходе нагнетателя *)
   fb_Vibro_skorost_OP_shesterni_reduktora_H_T6(ai := ai.Vibro_skorost_OP_shesterni_reduktora_H_T6, StrAIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Vibroperemesh_vala_N_T7(ai := ai.Vibro_peremeshenie_vala_N_T7, StrAIp := protections.Vibroperemesh_vala_N_T7);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Vibroperemesh_vala_N_T8(ai := ai.Vibro_peremeshenie_vala_N_T8, StrAIp := protections.Vibroperemesh_vala_N_T8);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Uroven_masla_v_mb(ai := ai.Yroven_masla_MB, StrAIp := protections.Uroven_masla_v_mb);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Tok_statora(ai := ai.Tok_statora, StrAIp := protections.Tok_statora);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Kontrol_per_220V_less187(ai := ai.Kontrol_per_220V, StrAIp := protections.Kontrol_per_220V_less187);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Kontrol_per_220V_high242(ai := ai.Kontrol_per_220V, StrAIp := protections.Kontrol_per_220V_high242);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Kontrol_post_220V_less187(ai := ai.Kontrol_post_220V, StrAIp := protections.Kontrol_post_220V_less187);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_Kontrol_post_220V_high242(ai := ai.Kontrol_post_220V, StrAIp := protections.Kontrol_post_220V_high242);
-
-  (* Температура газа на выходе нагнетателя *)
-  fb_dPmaslo_gaz(ai := ai.dPmaslo_gaz, StrAIp := protections.dPmaslo_gaz);
 END_FUNCTION_BLOCK
 
 FUNCTION resetDiProtection : BOOL
@@ -7096,8 +6861,10 @@ FUNCTION resetAllProtections : BOOL
   resetAiProtection(protections.Tgaza_na_vyhode_H);
   resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
   resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
-  resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
+  resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
   resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  resetAiProtection(protections.dPmaslo_gaz);
   resetAiProtection(protections.Pmaslo_sm_nizkoe);
   resetAiProtection(protections.Pmaslo_sm_vysokoe);
   resetAiProtection(protections.Vibro_skorost_OPED_T1);
@@ -7106,19 +6873,19 @@ FUNCTION resetAllProtections : BOOL
   resetAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
   resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
   resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-  resetAiProtection(protections.dPmaslo_gaz);
+
 
   resetDiProtection(protections.dPmaslo_gaz_less100);
+  resetDiProtection(protections.Reg_vozb_off);
+  resetDiProtection(protections.Fail_chastotnii_pusk);
+  resetDiProtection(protections.Off_avar_vikluchatel);
+  resetDiProtection(protections.AOKC_SHKC);
+  resetDiProtection(protections.AO_PRU);
+  resetDiProtection(protections.AO_ot_SHU);
   resetDiProtection(protections.mvOff);
-  resetDiProtection(protections.dPmaslo_gaz_less100);
-  resetDiProtection(protections.Uroven_masla_v_akkum);
-  resetDiProtection(protections.Neispravnost_vozbud);
-  resetDiProtection(protections.Avariya_vozbud);
-  resetDiProtection(protections.NY1_net_voltage);
-  resetDiProtection(protections.NY2_net_voltage);
-  resetDiProtection(protections.PNS_net_voltage);
-  resetDiProtection(protections.Kran1sdvig);
-  resetDiProtection(protections.Kran2sdvig);
+  resetDiProtection(protections.Kran1_sdvig);
+  resetDiProtection(protections.Reg_vozb_off);
+  resetDiProtection(protections.Kran2_sdvig);
 END_FUNCTION
 
 FUNCTION BlockAllIM : BOOL
@@ -9885,7 +9652,7 @@ FUNCTION_BLOCK NOAlg
       END_IF;
 
       IF kran5Open.top THEN
-         resetDiProtection(protections.mvOff);
+         (*resetDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);*)
          runPhase(mvOff);
       END_IF;
 
@@ -9999,14 +9766,14 @@ FUNCTION_BLOCK NOAlg
                                                     runPhase(waitCloseKran);
                                                     runPhase(runUnsuccessful); 
 
-                                                    resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+                                                   (* resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
                                                     resetAiProtection(protections.dPmaslo_gaz);
                                                     resetAiProtection(protections.Pmaslo_sm_nizkoe);
                                                     resetAiProtection(protections.Pmaslo_sm_vysokoe);
                                                     resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
                                                     resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
-                                                    resetDiProtection(protections.Kran1sdvig);
-                                                    resetDiProtection(protections.Kran2sdvig);
+                                                    resetDiProtection(protections.Reg_vozb_off);
+                                                    resetDiProtection(protections.Fail_chastotnii_pusk);*)
 
   					cmd_for_Status := cmd;
   					source_for_Status := source;
@@ -10328,7 +10095,7 @@ FUNCTION_BLOCK AOAlg
   	ai.Tmasla_MB.Disabled_LA:=TRUE;
             ai.Tmasla_MB.Disabled_LW:=TRUE;
             (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
-            resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
+            (*resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);*)
             (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
 
             runPhase(autoNuOff);
@@ -10393,15 +10160,15 @@ FUNCTION_BLOCK AOAlg
                                                     runPhase(waitKran);
                                                     runPhase(runUnsuccessful); 
 
-                                                    resetDiProtection(protections.mvOff);
+                                                   (* resetDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
                                                     resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
                                                     resetAiProtection(protections.dPmaslo_gaz);
                                                     resetAiProtection(protections.Pmaslo_sm_nizkoe);
                                                     resetAiProtection(protections.Pmaslo_sm_vysokoe);
                                                     resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
                                                     resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
-                                                    resetDiProtection(protections.Kran1sdvig);
-                                                    resetDiProtection(protections.Kran2sdvig);
+                                                    resetDiProtection(protections.Reg_vozb_off);
+                                                    resetDiProtection(protections.Fail_chastotnii_pusk);*)
 
   					cmd_for_Status := cmd;
   					source_for_Status := source;
@@ -10553,7 +10320,8 @@ FUNCTION anyProtectionSignaling : BOOL
   protections.Tgaza_na_vyhode_H.Signaling OR
   protections.Os_sdvig_nagnetatelja_plus.Signaling OR
   protections.Os_sdvig_nagnetatelja_minus.Signaling OR
-  protections.Pgaza_na_vhode_nagnetatelia.Signaling OR
+  protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.Signaling OR
+  protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.Signaling OR
   protections.Pgaza_na_vyhode_nagnetatelia.Signaling OR
   protections.dPmaslo_gaz.Signaling OR
   protections.Pmaslo_sm_nizkoe.Signaling OR
@@ -10564,17 +10332,17 @@ FUNCTION anyProtectionSignaling : BOOL
   protections.Vibro_skorost_OP_kolesa_RH_T4.Signaling OR
   protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling OR
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling OR
-  protections.mvOff.Signaling OR
-  protections.dPmaslo_gaz.Signaling OR
   protections.dPmaslo_gaz_less100.Signaling OR
-  protections.Kran1sdvig.Signaling OR
-  protections.Kran2sdvig.Signaling OR
-  protections.Uroven_masla_v_akkum.Signaling OR
-  protections.Neispravnost_vozbud.Signaling OR
-  protections.Avariya_vozbud.Signaling OR
-  protections.NY1_net_voltage.Signaling OR
-  protections.NY2_net_voltage.Signaling OR
-  protections.PNS_net_voltage.Signaling;
+  protections.Reg_vozb_off.Signaling OR
+  protections.Fail_chastotnii_pusk.Signaling OR
+  protections.Off_avar_vikluchatel.Signaling OR
+  protections.AOKC_SHKC.Signaling OR
+  protections.AO_PRU.Signaling OR
+  protections.AO_ot_SHU.Signaling OR
+  protections.mvOff.Signaling OR
+  protections.Kran1_sdvig.Signaling OR
+  protections.Kran2_sdvig.Signaling OR
+  protections.Tgaza_na_vyhode_H.Signaling;
 END_FUNCTION
 
 FUNCTION anyAnalogsPs : BOOL
@@ -10933,10 +10701,10 @@ FUNCTION_BLOCK ppuAlg
       Gotov_Vozb.top:= IM.SingleSignals.Vozbud_gotovnost.Q;
 
       (* реакторный пуск *)
-      Reactornyi_P.top := IM.SingleSignals.Reaktornii_pusk_perek.Q AND NOT IM.SingleSignals.Chastotny_pusk.Q;
+      (*Reactornyi_P.top := IM.SingleSignals.Reaktornii_pusk_perek.Q AND NOT IM.SingleSignals.Chastotny_pusk.Q;*)
 
       (* частотный пуск *)
-      Chastotnyi_P.top:=IM.SingleSignals.Chastotny_pusk.Q AND NOT IM.SingleSignals.Reaktornii_pusk_perek.Q;
+     (* Chastotnyi_P.top:=IM.SingleSignals.Chastotny_pusk.Q AND NOT IM.SingleSignals.Reaktornii_pusk_perek.Q;*)
 
       (* нет перепада давления на кране 1 *)                                                                                                
       dP_kr1.top:= NOT IM.SingleSignals.dp_kran1_Less100.Q (*AND (IM.PerepadDavlenieKran1_CK.status = 1))*);
@@ -11357,8 +11125,8 @@ FUNCTION_BLOCK fillingAlg
                 fb_kran2Open(StrPh:=kran2Open, Im:=Im.kran2);
               fb_kran3bClose(StrPh:=kran3bClose, Im:=Im.kran3b);
                fb_kran4Close(StrPh:=kran4Close, Im:=Im.kran4);
-        fb_RunProtection_kr1(StrPh:=RunProtection_kr1 , StrDiP:=protections.Kran1sdvig);
-        fb_RunProtection_kr2(StrPh:=RunProtection_kr2 , StrDiP:=protections.Kran2sdvig);
+        fb_RunProtection_kr1(StrPh:=RunProtection_kr1 , StrDiP:=protections.Reg_vozb_off);
+        fb_RunProtection_kr2(StrPh:=RunProtection_kr2 , StrDiP:=protections.Fail_chastotnii_pusk);
            fb_waitAfterKran5(StrPh:=waitAfterKran5, timer:=AlgTimers.filling_waitAfterKran5);
   fb_testUnsuccessfulFilling(StrPh:=testUnsuccessfulFilling);
 
@@ -11404,12 +11172,12 @@ FUNCTION_BLOCK fillingAlg
             runPhase(RunProtection_kr1);
             runPhase(RunProtection_kr2); 
 
-            runAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
+            (*runAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
             runAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
             runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
             runAiProtection(protections.dPmaslo_gaz);
             runAiProtection(protections.Pmaslo_sm_nizkoe);
-            runAiProtection(protections.Pmaslo_sm_vysokoe);
+            runAiProtection(protections.Pmaslo_sm_vysokoe);*)
 
       END_IF;
 
@@ -11631,7 +11399,7 @@ FUNCTION_BLOCK engineRunAlg
               fb_AutoPns_ph(StrPh:=AutoPns_ph, alg:=algoritms.AutoPns);
              fb_AutoAvom_ph(StrPh:=AutoAvom_ph, alg:=algoritms.AutoAvom);
                   fb_pnsOff(StrPh:=pnsOff, Im:=Im.pns);
-     fb_RunProtection_mvoff(StrPh:=RunProtection_mvoff, StrDiP:=protections.mvOff);
+    (*fb_RunProtection_mvoff(StrPh:=RunProtection_mvoff, StrDiP:=protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);*)
         fb_testUnsuccessful(StrPh:=testUnsuccessful);          
 
   StrAlg.CanRun := StrAlg.inCanRun;
@@ -11929,8 +11697,8 @@ FUNCTION_BLOCK puskKalg
 
       IF filling.top THEN
          OpcCommandsKransEnabled:=TRUE;
-         resetDiProtection(protections.Kran1sdvig);
-         (*resetDiProtection(protections.Kran2sdvig);*)
+         resetDiProtection(protections.Reg_vozb_off);
+         (*resetDiProtection(protections.Fail_chastotnii_pusk);*)
          IF NOT _resetQuestion2 THEN
          askQuestion(questionUnload);
          _resetQuestion2:=TRUE;
@@ -11945,8 +11713,8 @@ FUNCTION_BLOCK puskKalg
       END_IF;
 
       IF kran3bOpen.top THEN
-            resetDiProtection(protections.Kran1sdvig);
-            resetDiProtection(protections.Kran2sdvig);
+            resetDiProtection(protections.Reg_vozb_off);
+            resetDiProtection(protections.Fail_chastotnii_pusk);
 
             runPhase(kran1Close);
             runPhase(kran2Close);
@@ -12330,8 +12098,8 @@ FUNCTION_BLOCK puskValg
 
        IF questionMVoff.answer = _Answers.ANS_YES THEN
 
-          resetDiProtection(protections.mvOff);
-          resetIfRunning(algoritms.AutoPns);
+          (*resetDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+         *) resetIfRunning(algoritms.AutoPns);
           runPhase(mvOff);
           runPhase(wait600);
           resetQuestion(questionMVoff);
@@ -12346,7 +12114,7 @@ FUNCTION_BLOCK puskValg
             ai.Tmasla_MB.Disabled_LA:=TRUE;
             ai.Tmasla_MB.Disabled_LW:=TRUE;
             (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
-            resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
+            (*resetAiProtection(protections.Os_sdvig_nagnetatelja_plus)*)
            (* resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
   	runPhase(AutoNUoff);
 
@@ -13730,13 +13498,13 @@ FUNCTION anyDiscretPS : BOOL
     im : ImConfig;
   END_VAR
 
-  anyDiscretPS:= 
-      Im.SingleSignals.BEAO_srabotal.Q                   (*  OR 
+  anyDiscretPS:= TRUE;
+      (*Im.SingleSignals.BEAO_srabotal.Q                     OR 
       Im.SingleSignals.Vozb_ProboiVentila.Q	 OR
       Im.SingleSignals.Vozb_AsinchHod.Q	           OR
       Im.SingleSignals.NS_ForsingVozbugdenia.Q       OR
       Im.SingleSignals.Vozb_AutoUprVozbuditela_off.Q OR
-      Im.SingleSignals.Vozb_KontaktorON.Q*);
+      Im.SingleSignals.Vozb_KontaktorON.Q*)
 END_FUNCTION
 
 FUNCTION UnBlockAllProtections : BOOL
@@ -13757,7 +13525,8 @@ FUNCTION UnBlockAllProtections : BOOL
   protections.Tgaza_na_vyhode_H.inOpcCommandsDisabled:=FALSE;
   protections.Os_sdvig_nagnetatelja_plus.inOpcCommandsDisabled:=FALSE;
   protections.Os_sdvig_nagnetatelja_minus.inOpcCommandsDisabled:=FALSE;
-  protections.Pgaza_na_vhode_nagnetatelia.inOpcCommandsDisabled:=FALSE;
+  protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.inOpcCommandsDisabled:=FALSE;
+  protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.inOpcCommandsDisabled:=FALSE;
   protections.Pgaza_na_vyhode_nagnetatelia.inOpcCommandsDisabled:=FALSE;
   protections.dPmaslo_gaz.inOpcCommandsDisabled:=FALSE;
   protections.Pmaslo_sm_nizkoe.inOpcCommandsDisabled:=FALSE;
@@ -13768,18 +13537,16 @@ FUNCTION UnBlockAllProtections : BOOL
   protections.Vibro_skorost_OP_kolesa_RH_T4.inOpcCommandsDisabled:=FALSE;
   protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=FALSE;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=FALSE;
-  protections.mvOff.inOpcCommandsDisabled:=FALSE;
   protections.dPmaslo_gaz_less100.inOpcCommandsDisabled:=FALSE;
-  protections.Kran1sdvig.inOpcCommandsDisabled:=FALSE;
-  protections.Kran2sdvig.inOpcCommandsDisabled:=FALSE;
-  protections.Uroven_masla_v_akkum.inOpcCommandsDisabled:=FALSE;
-  protections.Neispravnost_vozbud.inOpcCommandsDisabled:=FALSE;
-  protections.Avariya_vozbud.inOpcCommandsDisabled:=FALSE;
-  protections.Kran1sdvig.inOpcCommandsDisabled:=FALSE;
-  protections.Kran2sdvig.inOpcCommandsDisabled:=FALSE;
-  protections.NY1_net_voltage.inOpcCommandsDisabled:=FALSE;
-  protections.NY2_net_voltage.inOpcCommandsDisabled:=FALSE;
-  protections.PNS_net_voltage.inOpcCommandsDisabled:=FALSE;
+  protections.Reg_vozb_off.inOpcCommandsDisabled:=FALSE;
+  protections.Fail_chastotnii_pusk.inOpcCommandsDisabled:=FALSE;
+  protections.Off_avar_vikluchatel.inOpcCommandsDisabled:=FALSE;
+  protections.AOKC_SHKC.inOpcCommandsDisabled:=FALSE;
+  protections.AO_PRU.inOpcCommandsDisabled:=FALSE;
+  protections.AO_ot_SHU.inOpcCommandsDisabled:=FALSE;
+  protections.mvOff.inOpcCommandsDisabled:=FALSE;
+  protections.Kran1_sdvig.inOpcCommandsDisabled:=FALSE;
+  protections.Kran2_sdvig.inOpcCommandsDisabled:=FALSE;
 END_FUNCTION
 
 FUNCTION_BLOCK fb_AlgoritmsManager
@@ -14078,7 +13845,8 @@ FUNCTION anyProtectionInRemont : BOOL
   protections.Tgaza_na_vyhode_H.Remont OR
   protections.Os_sdvig_nagnetatelja_plus.Remont OR
   protections.Os_sdvig_nagnetatelja_minus.Remont OR
-  protections.Pgaza_na_vhode_nagnetatelia.Remont OR
+  protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.Remont OR
+  protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.Remont OR
   protections.Pgaza_na_vyhode_nagnetatelia.Remont OR
   protections.dPmaslo_gaz.Remont OR
   protections.Pmaslo_sm_nizkoe.Remont OR
@@ -14089,16 +13857,16 @@ FUNCTION anyProtectionInRemont : BOOL
   protections.Vibro_skorost_OP_kolesa_RH_T4.Remont OR
   protections.Vibro_skorost_OP_shesterni_RED_T5.Remont OR
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Remont OR
-  protections.mvOff.Remont OR
   protections.dPmaslo_gaz_less100.Remont OR
-  protections.Kran1sdvig.Remont OR
-  protections.Kran2sdvig.Remont OR
-  protections.Uroven_masla_v_akkum.Remont OR
-  protections.Neispravnost_vozbud.Remont OR
-  protections.Avariya_vozbud.Remont OR
-  protections.NY1_net_voltage.Remont OR
-  protections.NY2_net_voltage.Remont OR
-  protections.PNS_net_voltage.Remont;
+  protections.Reg_vozb_off.Remont OR
+  protections.Fail_chastotnii_pusk.Remont OR
+  protections.Off_avar_vikluchatel.Remont OR
+  protections.AOKC_SHKC.Remont OR
+  protections.AO_PRU.Remont OR
+  protections.AO_ot_SHU.Remont OR
+  protections.mvOff.Remont OR
+  protections.Kran1_sdvig.Remont OR
+  protections.Kran2_sdvig.Remont;
 END_FUNCTION
 
 FUNCTION runAllProtections : BOOL
@@ -14119,8 +13887,10 @@ FUNCTION runAllProtections : BOOL
   runAiProtection(protections.Tgaza_na_vyhode_H);
   runAiProtection(protections.Os_sdvig_nagnetatelja_plus);
   runAiProtection(protections.Os_sdvig_nagnetatelja_minus);
-  runAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
+  runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  runAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
   runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  runAiProtection(protections.dPmaslo_gaz);
   runAiProtection(protections.Pmaslo_sm_nizkoe);
   runAiProtection(protections.Pmaslo_sm_vysokoe);
   runAiProtection(protections.Vibro_skorost_OPED_T1);
@@ -14129,18 +13899,17 @@ FUNCTION runAllProtections : BOOL
   runAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
   runAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
   runAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
-  runAiProtection(protections.dPmaslo_gaz);
 
-  runDiProtection(protections.mvOff);
   runDiProtection(protections.dPmaslo_gaz_less100);
-  runDiProtection(protections.Kran1sdvig);
-  runDiProtection(protections.Kran2sdvig);
-  runDiProtection(protections.Uroven_masla_v_akkum);
-  runDiProtection(protections.Neispravnost_vozbud);
-  runDiProtection(protections.Avariya_vozbud);
-  runDiProtection(protections.NY1_net_voltage);
-  runDiProtection(protections.NY2_net_voltage);
-  runDiProtection(protections.PNS_net_voltage);
+  runDiProtection(protections.Reg_vozb_off);
+  runDiProtection(protections.Fail_chastotnii_pusk);
+  runDiProtection(protections.Off_avar_vikluchatel);
+  runDiProtection(protections.AOKC_SHKC);
+  runDiProtection(protections.AO_PRU);
+  runDiProtection(protections.AO_ot_SHU);
+  runDiProtection(protections.mvOff);
+  runDiProtection(protections.Kran1_sdvig);
+  runDiProtection(protections.Kran2_sdvig);
 END_FUNCTION
 
 FUNCTION ResetAllSignaling : BOOL
@@ -14187,11 +13956,17 @@ FUNCTION ResetAllSignaling : BOOL
   IF protections.Os_sdvig_nagnetatelja_minus.Signaling THEN
       resetAiProtection(protections.Os_sdvig_nagnetatelja_minus); END_IF;
 
-  IF protections.Pgaza_na_vhode_nagnetatelia.Signaling THEN
-      resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia); END_IF;
+  IF protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.Signaling THEN
+      resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP); END_IF;
+
+  IF protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.Signaling THEN
+      resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP); END_IF;
 
   IF protections.Pgaza_na_vyhode_nagnetatelia.Signaling THEN
       resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia); END_IF;
+
+  IF protections.dPmaslo_gaz.Signaling THEN
+      resetAiProtection(protections.dPmaslo_gaz); END_IF;
 
   IF protections.Pmaslo_sm_nizkoe.Signaling THEN
       resetAiProtection(protections.Pmaslo_sm_nizkoe); END_IF;
@@ -14217,38 +13992,35 @@ FUNCTION ResetAllSignaling : BOOL
   IF protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling THEN
       resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6); END_IF;
 
-  IF protections.dPmaslo_gaz.Signaling THEN
-      resetAiProtection(protections.dPmaslo_gaz); END_IF;
+  IF protections.dPmaslo_gaz_less100.Signaling THEN
+      resetDiProtection(protections.dPmaslo_gaz_less100); END_IF;
+
+  IF protections.Reg_vozb_off.Signaling THEN
+      resetDiProtection(protections.Reg_vozb_off); END_IF;
+
+  IF protections.Fail_chastotnii_pusk.Signaling THEN
+      resetDiProtection(protections.Fail_chastotnii_pusk); END_IF;
+
+  IF protections.Off_avar_vikluchatel.Signaling THEN
+      resetDiProtection(protections.Off_avar_vikluchatel); END_IF;
+
+  IF protections.AOKC_SHKC.Signaling THEN
+      resetDiProtection(protections.AOKC_SHKC); END_IF;
+
+  IF protections.AO_PRU.Signaling THEN
+      resetDiProtection(protections.AO_PRU); END_IF;
+
+  IF protections.AO_ot_SHU.Signaling THEN
+      resetDiProtection(protections.AO_ot_SHU); END_IF;
 
   IF protections.mvOff.Signaling THEN
       resetDiProtection(protections.mvOff); END_IF;
 
-  IF protections.dPmaslo_gaz_less100.Signaling THEN
-      resetDiProtection(protections.dPmaslo_gaz_less100); END_IF;
+  IF protections.Kran1_sdvig.Signaling THEN
+      resetDiProtection(protections.Kran1_sdvig); END_IF;
 
-  IF protections.Kran1sdvig.Signaling THEN
-      resetDiProtection(protections.Kran1sdvig); END_IF;
-
-  IF protections.Kran2sdvig.Signaling THEN
-      resetDiProtection(protections.Kran2sdvig); END_IF;
-
-  IF protections.Uroven_masla_v_akkum.Signaling THEN
-      resetDiProtection(protections.Uroven_masla_v_akkum); END_IF;
-
-  IF protections.Neispravnost_vozbud.Signaling THEN
-      resetDiProtection(protections.Neispravnost_vozbud); END_IF;
-
-  IF protections.Avariya_vozbud.Signaling THEN
-      resetDiProtection(protections.Avariya_vozbud); END_IF;
-
-  IF protections.NY1_net_voltage.Signaling THEN
-      resetDiProtection(protections.NY1_net_voltage); END_IF;
-
-  IF protections.NY2_net_voltage.Signaling THEN
-      resetDiProtection(protections.NY2_net_voltage); END_IF;
-
-  IF protections.PNS_net_voltage.Signaling THEN
-      resetDiProtection(protections.PNS_net_voltage); END_IF;
+  IF protections.Kran2_sdvig.Signaling THEN
+      resetDiProtection(protections.Kran2_sdvig); END_IF;
 END_FUNCTION
 
 FUNCTION autoRunProtections : BOOL
@@ -14278,6 +14050,22 @@ FUNCTION autoRunProtections : BOOL
 
       runAiProtection(protections.Tgaza_na_vyhode_H);
 
+      runAiProtection(protections.Os_sdvig_nagnetatelja_plus);
+
+      runAiProtection(protections.Os_sdvig_nagnetatelja_minus);
+
+      runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+
+      runAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+
+      runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+
+      runAiProtection(protections.dPmaslo_gaz);
+
+      runAiProtection(protections.Pmaslo_sm_nizkoe);
+
+      runAiProtection(protections.Pmaslo_sm_vysokoe);
+
       runAiProtection(protections.Vibro_skorost_OPED_T1);
 
       runAiProtection(protections.Vibro_skorost_OPED_T2);    
@@ -14286,27 +14074,30 @@ FUNCTION autoRunProtections : BOOL
 
       runAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
 
+      runAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
+
+      runAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);    
 
 
       runDiProtection(protections.dPmaslo_gaz_less100);
 
+      runDiProtection(protections.AO_PRU);
+
+      runDiProtection(protections.Reg_vozb_off);
+
+      runDiProtection(protections.Fail_chastotnii_pusk);
+
+      runDiProtection(protections.AOKC_SHKC);
+
       runDiProtection(protections.mvOff);
 
-      runDiProtection(protections.Kran1sdvig);
+      runDiProtection(protections.AO_ot_SHU);
 
-      runDiProtection(protections.Kran2sdvig);
+      runDiProtection(protections.Off_avar_vikluchatel);
 
-      runDiProtection(protections.Uroven_masla_v_akkum);
+      runDiProtection(protections.Kran1_sdvig);
 
-      runDiProtection(protections.Neispravnost_vozbud);
-
-      runDiProtection(protections.Avariya_vozbud);
-
-      runDiProtection(protections.NY1_net_voltage);
-
-      runDiProtection(protections.NY2_net_voltage);
-
-      runDiProtection(protections.PNS_net_voltage);
+      runDiProtection(protections.Kran2_sdvig);
 END_FUNCTION
 
 FUNCTION_BLOCK fb_ProtectionsManager
@@ -15138,7 +14929,8 @@ FUNCTION remontAllProtections : BOOL
   protections.Tgaza_na_vyhode_H.inCommand_Alg:=cmdRemont;
   protections.Os_sdvig_nagnetatelja_plus.inCommand_Alg:=cmdRemont;
   protections.Os_sdvig_nagnetatelja_minus.inCommand_Alg:=cmdRemont;
-  protections.Pgaza_na_vhode_nagnetatelia.inCommand_Alg:=cmdRemont;
+  protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.inCommand_Alg:=cmdRemont;
+  protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.inCommand_Alg:=cmdRemont;
   protections.Pgaza_na_vyhode_nagnetatelia.inCommand_Alg:=cmdRemont;
   protections.dPmaslo_gaz.inCommand_Alg:=cmdRemont;
   protections.Pmaslo_sm_nizkoe.inCommand_Alg:=cmdRemont;
@@ -15149,16 +14941,16 @@ FUNCTION remontAllProtections : BOOL
   protections.Vibro_skorost_OP_kolesa_RH_T4.inCommand_Alg:=cmdRemont;
   protections.Vibro_skorost_OP_shesterni_RED_T5.inCommand_Alg:=cmdRemont;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inCommand_Alg:=cmdRemont;
-  protections.mvOff.inCommand_Alg:=cmdRemont;
   protections.dPmaslo_gaz_less100.inCommand_Alg:=cmdRemont;
-  protections.Uroven_masla_v_akkum.inCommand_Alg:=cmdRemont;
-  protections.Neispravnost_vozbud.inCommand_Alg:=cmdRemont;
-  protections.Avariya_vozbud.inCommand_Alg:=cmdRemont;
-  protections.NY1_net_voltage.inCommand_Alg:=cmdRemont;
-  protections.NY2_net_voltage.inCommand_Alg:=cmdRemont;
-  protections.PNS_net_voltage.inCommand_Alg:=cmdRemont;
-  protections.Kran1sdvig.inCommand_Alg:=cmdRemont;
-  protections.Kran2sdvig.inCommand_Alg:=cmdRemont;
+  protections.Reg_vozb_off.inCommand_Alg:=cmdRemont;
+  protections.Fail_chastotnii_pusk.inCommand_Alg:=cmdRemont;
+  protections.Off_avar_vikluchatel.inCommand_Alg:=cmdRemont;
+  protections.AOKC_SHKC.inCommand_Alg:=cmdRemont;
+  protections.AO_PRU.inCommand_Alg:=cmdRemont;
+  protections.AO_ot_SHU.inCommand_Alg:=cmdRemont;
+  protections.mvOff.inCommand_Alg:=cmdRemont;
+  protections.Kran1_sdvig.inCommand_Alg:=cmdRemont;
+  protections.Kran2_sdvig.inCommand_Alg:=cmdRemont;
 END_FUNCTION
 
 FUNCTION BlockAllProtections : BOOL
@@ -15179,7 +14971,8 @@ FUNCTION BlockAllProtections : BOOL
   protections.Tgaza_na_vyhode_H.inOpcCommandsDisabled:=TRUE;
   protections.Os_sdvig_nagnetatelja_plus.inOpcCommandsDisabled:=TRUE;
   protections.Os_sdvig_nagnetatelja_minus.inOpcCommandsDisabled:=TRUE;
-  protections.Pgaza_na_vhode_nagnetatelia.inOpcCommandsDisabled:=TRUE;
+  protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.inOpcCommandsDisabled:=TRUE;
+  protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.inOpcCommandsDisabled:=TRUE;
   protections.Pgaza_na_vyhode_nagnetatelia.inOpcCommandsDisabled:=TRUE;
   protections.dPmaslo_gaz.inOpcCommandsDisabled:=TRUE;
   protections.Pmaslo_sm_nizkoe.inOpcCommandsDisabled:=TRUE;
@@ -15190,16 +14983,16 @@ FUNCTION BlockAllProtections : BOOL
   protections.Vibro_skorost_OP_kolesa_RH_T4.inOpcCommandsDisabled:=TRUE;
   protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=TRUE;
   protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=TRUE;
-  protections.mvOff.inOpcCommandsDisabled:=TRUE;
   protections.dPmaslo_gaz_less100.inOpcCommandsDisabled:=TRUE;
-  protections.Kran1sdvig.inOpcCommandsDisabled:=TRUE;
-  protections.Kran2sdvig.inOpcCommandsDisabled:=TRUE;
-  protections.Uroven_masla_v_akkum.inOpcCommandsDisabled:=TRUE;
-  protections.Neispravnost_vozbud.inOpcCommandsDisabled:=TRUE;
-  protections.Avariya_vozbud.inOpcCommandsDisabled:=TRUE;
-  protections.NY1_net_voltage.inOpcCommandsDisabled:=TRUE;
-  protections.NY2_net_voltage.inOpcCommandsDisabled:=TRUE;
-  protections.PNS_net_voltage.inOpcCommandsDisabled:=TRUE;
+  protections.Reg_vozb_off.inOpcCommandsDisabled:=TRUE;
+  protections.Fail_chastotnii_pusk.inOpcCommandsDisabled:=TRUE;
+  protections.Off_avar_vikluchatel.inOpcCommandsDisabled:=TRUE;
+  protections.AOKC_SHKC.inOpcCommandsDisabled:=TRUE;
+  protections.AO_PRU.inOpcCommandsDisabled:=TRUE;
+  protections.AO_ot_SHU.inOpcCommandsDisabled:=TRUE;
+  protections.mvOff.inOpcCommandsDisabled:=TRUE;
+  protections.Kran1_sdvig.inOpcCommandsDisabled:=TRUE;
+  protections.Kran2_sdvig.inOpcCommandsDisabled:=TRUE;
 END_FUNCTION
 
 FUNCTION_BLOCK ph_SingleOutput
@@ -15760,10 +15553,10 @@ FUNCTION_BLOCK Pusk_first_faza2
 
       IF dPmg_more100.top AND nu1On.top AND nu2On.top THEN
   	Auto_NU1.top:=TRUE;
-  	runAiProtection(protections.dPmaslo_gaz);
+  	(*runAiProtection(protections.dPmaslo_gaz);
             runDiProtection(protections.dPmaslo_gaz_less100);
   	resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
-  	resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  	resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);*)
   	algoritms.autoNu.CanRun:=TRUE;
   	(*algoritms.autoNu.run ();ниче не ясно*)
   	resetPhase(timer240);
@@ -16016,7 +15809,7 @@ FUNCTION_BLOCK Pusk_second_faza_chastotny
                 runphase(dPmg_Top);
   	END_IF;
 
-            runDiProtection(protections.mvOff); 
+            (*runDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP); *)
   	(*protections.p_OFFAvarSwitch.run();
   	protections.p_RegVozbOff.run(); таких защит нет *)
       END_IF;
@@ -16025,10 +15818,10 @@ FUNCTION_BLOCK Pusk_second_faza_chastotny
       IF dPmg_Top.start AND NOT dPmg_Top.top THEN
   	IF NOT IM.SingleSignals.dP_maslo_gaz_Less100.Q AND IM.SingleSignals.dP_maslo_gaz_Less100.status = 1 AND ai.dPmaslo_gaz.value > 150.0 THEN 
   		dPmg_Top.top:=TRUE;
-  		runAiProtection(protections.dPmaslo_gaz);
+  		(*runAiProtection(protections.dPmaslo_gaz);
   		runDiProtection(protections.dPmaslo_gaz_less100);
   		resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
-  		resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  		resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);*)
   		(*algoritms.autoNu.CanRun:=TRUE;*)
   		(*algoritms.autoNu.run(); кого чего, ничего не понимаю *)
   	END_IF;

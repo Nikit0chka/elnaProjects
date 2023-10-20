@@ -181,8 +181,8 @@ int __variables_init_FB_KALORIFERAVOM(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 23332 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATON
-    st = getVariable(23332);
+  { // 22855 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATON
+    st = getVariable(22855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATON", 40);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23333 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATOFF
-    st = getVariable(23333);
+  { // 22856 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATOFF
+    st = getVariable(22856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATOFF", 41);
     st->size_data = sizeof(BOOL);
@@ -203,8 +203,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23334 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATON_RELIABILITY
-    st = getVariable(23334);
+  { // 22857 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATON_RELIABILITY
+    st = getVariable(22857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATON_RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -214,8 +214,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATON_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23335 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATOFF_RELIABILITY
-    st = getVariable(23335);
+  { // 22858 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATOFF_RELIABILITY
+    st = getVariable(22858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STATOFF_RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -225,8 +225,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATOFF_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23336 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND
-    st = getVariable(23336);
+  { // 22859 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND
+    st = getVariable(22859);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -237,8 +237,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 23337 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.STATUS
-    st = getVariable(23337);
+  { // 22860 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.STATUS
+    st = getVariable(22860);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -249,8 +249,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 23338 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ONSTATUS
-    st = getVariable(23338);
+  { // 22861 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ONSTATUS
+    st = getVariable(22861);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ONSTATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -261,8 +261,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 23339 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INOPCCOMMANDSDISABLED
-    st = getVariable(23339);
+  { // 22862 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INOPCCOMMANDSDISABLED
+    st = getVariable(22862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -273,8 +273,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 23340 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.SDVIG
-    st = getVariable(23340);
+  { // 22863 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.SDVIG
+    st = getVariable(22863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.SDVIG", 45);
     st->size_data = sizeof(BOOL);
@@ -285,8 +285,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 23341 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.NS
-    st = getVariable(23341);
+  { // 22864 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.NS
+    st = getVariable(22864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.NS", 42);
     st->size_data = sizeof(BOOL);
@@ -297,8 +297,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 23342 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.COMMANDFAULT
-    st = getVariable(23342);
+  { // 22865 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.COMMANDFAULT
+    st = getVariable(22865);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.COMMANDFAULT", 52);
     st->size_data = sizeof(BOOL);
@@ -309,8 +309,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 23343 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ACCIDENT
-    st = getVariable(23343);
+  { // 22866 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ACCIDENT
+    st = getVariable(22866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ACCIDENT", 48);
     st->size_data = sizeof(BOOL);
@@ -321,8 +321,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 23344 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.AUTO
-    st = getVariable(23344);
+  { // 22867 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.AUTO
+    st = getVariable(22867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.AUTO", 44);
     st->size_data = sizeof(BOOL);
@@ -333,8 +333,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 23345 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.MANUAL
-    st = getVariable(23345);
+  { // 22868 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.MANUAL
+    st = getVariable(22868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.MANUAL", 46);
     st->size_data = sizeof(BOOL);
@@ -345,8 +345,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 23346 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.LOCAL
-    st = getVariable(23346);
+  { // 22869 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.LOCAL
+    st = getVariable(22869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.LOCAL", 45);
     st->size_data = sizeof(BOOL);
@@ -357,8 +357,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 23347 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.DISTANCE
-    st = getVariable(23347);
+  { // 22870 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.DISTANCE
+    st = getVariable(22870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.DISTANCE", 48);
     st->size_data = sizeof(BOOL);
@@ -369,8 +369,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 23348 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ERRORPOWEROFF
-    st = getVariable(23348);
+  { // 22871 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ERRORPOWEROFF
+    st = getVariable(22871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ERRORPOWEROFF", 53);
     st->size_data = sizeof(BOOL);
@@ -381,8 +381,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 23349 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ERRORBLOCK
-    st = getVariable(23349);
+  { // 22872 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ERRORBLOCK
+    st = getVariable(22872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ERRORBLOCK", 50);
     st->size_data = sizeof(BOOL);
@@ -393,8 +393,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 23350 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.BREAKCMDON
-    st = getVariable(23350);
+  { // 22873 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.BREAKCMDON
+    st = getVariable(22873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.BREAKCMDON", 50);
     st->size_data = sizeof(BOOL);
@@ -405,8 +405,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 23351 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.BREAKCMDOFF
-    st = getVariable(23351);
+  { // 22874 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.BREAKCMDOFF
+    st = getVariable(22874);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.BREAKCMDOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -417,8 +417,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 23352 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.OPCCOMMANDSDISABLED
-    st = getVariable(23352);
+  { // 22875 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.OPCCOMMANDSDISABLED
+    st = getVariable(22875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -429,8 +429,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 23353 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.LASTCMDISON
-    st = getVariable(23353);
+  { // 22876 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.LASTCMDISON
+    st = getVariable(22876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.LASTCMDISON", 51);
     st->size_data = sizeof(BOOL);
@@ -441,8 +441,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 23354 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_STATON
-    st = getVariable(23354);
+  { // 22877 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_STATON
+    st = getVariable(22877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_STATON", 57);
     st->size_data = sizeof(BOOL);
@@ -453,8 +453,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 23355 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_STATOFF
-    st = getVariable(23355);
+  { // 22878 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_STATOFF
+    st = getVariable(22878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_STATOFF", 58);
     st->size_data = sizeof(BOOL);
@@ -465,8 +465,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 23356 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_CMDON
-    st = getVariable(23356);
+  { // 22879 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_CMDON
+    st = getVariable(22879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_CMDON", 56);
     st->size_data = sizeof(BOOL);
@@ -477,8 +477,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 23357 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_CMDOFF
-    st = getVariable(23357);
+  { // 22880 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_CMDOFF
+    st = getVariable(22880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_CMDOFF", 57);
     st->size_data = sizeof(BOOL);
@@ -489,8 +489,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 23358 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_INBREAKCMDON
-    st = getVariable(23358);
+  { // 22881 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_INBREAKCMDON
+    st = getVariable(22881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_INBREAKCMDON", 63);
     st->size_data = sizeof(BOOL);
@@ -501,8 +501,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 23359 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(23359);
+  { // 22882 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(22882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.ISVALIDREF_INBREAKCMDOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -513,8 +513,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 23360 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND_ALG
-    st = getVariable(23360);
+  { // 22883 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND_ALG
+    st = getVariable(22883);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -525,8 +525,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 23361 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND_ARM
-    st = getVariable(23361);
+  { // 22884 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND_ARM
+    st = getVariable(22884);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -537,8 +537,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 23362 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.CMDON
-    st = getVariable(23362);
+  { // 22885 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.CMDON
+    st = getVariable(22885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.CMDON", 45);
     st->size_data = sizeof(BOOL);
@@ -549,8 +549,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 23363 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.CMDOFF
-    st = getVariable(23363);
+  { // 22886 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.CMDOFF
+    st = getVariable(22886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.CMDOFF", 46);
     st->size_data = sizeof(BOOL);
@@ -561,8 +561,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 23364 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.RELIABILITY
-    st = getVariable(23364);
+  { // 22887 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.RELIABILITY
+    st = getVariable(22887);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.STRSW.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -573,8 +573,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23365 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS.VALUE
-    st = getVariable(23365);
+  { // 22888 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS.VALUE
+    st = getVariable(22888);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS.VALUE", 44);
     st->size_data = sizeof(BOOL);
@@ -585,8 +585,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23366 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS.RELIABILITY
-    st = getVariable(23366);
+  { // 22889 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS.RELIABILITY
+    st = getVariable(22889);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS.RELIABILITY", 50);
     st->size_data = sizeof(BOOL);
@@ -597,8 +597,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23367 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS._INVERSED
-    st = getVariable(23367);
+  { // 22890 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS._INVERSED
+    st = getVariable(22890);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INNS._INVERSED", 48);
     st->size_data = sizeof(BOOL);
@@ -609,8 +609,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23368 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT.VALUE
-    st = getVariable(23368);
+  { // 22891 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT.VALUE
+    st = getVariable(22891);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT.VALUE", 50);
     st->size_data = sizeof(BOOL);
@@ -621,8 +621,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23369 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT.RELIABILITY
-    st = getVariable(23369);
+  { // 22892 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT.RELIABILITY
+    st = getVariable(22892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -633,8 +633,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23370 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT._INVERSED
-    st = getVariable(23370);
+  { // 22893 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT._INVERSED
+    st = getVariable(22893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INACCIDENT._INVERSED", 54);
     st->size_data = sizeof(BOOL);
@@ -645,8 +645,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23371 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO.VALUE
-    st = getVariable(23371);
+  { // 22894 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO.VALUE
+    st = getVariable(22894);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO.VALUE", 46);
     st->size_data = sizeof(BOOL);
@@ -657,8 +657,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23372 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO.RELIABILITY
-    st = getVariable(23372);
+  { // 22895 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO.RELIABILITY
+    st = getVariable(22895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -669,8 +669,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23373 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO._INVERSED
-    st = getVariable(23373);
+  { // 22896 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO._INVERSED
+    st = getVariable(22896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INAUTO._INVERSED", 50);
     st->size_data = sizeof(BOOL);
@@ -681,8 +681,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23374 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL.VALUE
-    st = getVariable(23374);
+  { // 22897 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL.VALUE
+    st = getVariable(22897);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL.VALUE", 48);
     st->size_data = sizeof(BOOL);
@@ -693,8 +693,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23375 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL.RELIABILITY
-    st = getVariable(23375);
+  { // 22898 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL.RELIABILITY
+    st = getVariable(22898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -705,8 +705,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23376 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL._INVERSED
-    st = getVariable(23376);
+  { // 22899 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL._INVERSED
+    st = getVariable(22899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INMANUAL._INVERSED", 52);
     st->size_data = sizeof(BOOL);
@@ -717,8 +717,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23377 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL.VALUE
-    st = getVariable(23377);
+  { // 22900 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL.VALUE
+    st = getVariable(22900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL.VALUE", 47);
     st->size_data = sizeof(BOOL);
@@ -729,8 +729,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23378 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL.RELIABILITY
-    st = getVariable(23378);
+  { // 22901 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL.RELIABILITY
+    st = getVariable(22901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -741,8 +741,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23379 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL._INVERSED
-    st = getVariable(23379);
+  { // 22902 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL._INVERSED
+    st = getVariable(22902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INLOCAL._INVERSED", 51);
     st->size_data = sizeof(BOOL);
@@ -753,8 +753,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23380 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE.VALUE
-    st = getVariable(23380);
+  { // 22903 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE.VALUE
+    st = getVariable(22903);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE.VALUE", 50);
     st->size_data = sizeof(BOOL);
@@ -765,8 +765,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23381 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE.RELIABILITY
-    st = getVariable(23381);
+  { // 22904 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE.RELIABILITY
+    st = getVariable(22904);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -777,8 +777,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23382 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE._INVERSED
-    st = getVariable(23382);
+  { // 22905 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE._INVERSED
+    st = getVariable(22905);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INDISTANCE._INVERSED", 54);
     st->size_data = sizeof(BOOL);
@@ -789,8 +789,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23383 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF.VALUE
-    st = getVariable(23383);
+  { // 22906 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF.VALUE
+    st = getVariable(22906);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF.VALUE", 55);
     st->size_data = sizeof(BOOL);
@@ -801,8 +801,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23384 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF.RELIABILITY
-    st = getVariable(23384);
+  { // 22907 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF.RELIABILITY
+    st = getVariable(22907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF.RELIABILITY", 61);
     st->size_data = sizeof(BOOL);
@@ -813,8 +813,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23385 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF._INVERSED
-    st = getVariable(23385);
+  { // 22908 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF._INVERSED
+    st = getVariable(22908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORPOWEROFF._INVERSED", 59);
     st->size_data = sizeof(BOOL);
@@ -825,8 +825,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23386 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK.VALUE
-    st = getVariable(23386);
+  { // 22909 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK.VALUE
+    st = getVariable(22909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK.VALUE", 52);
     st->size_data = sizeof(BOOL);
@@ -837,8 +837,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23387 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK.RELIABILITY
-    st = getVariable(23387);
+  { // 22910 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK.RELIABILITY
+    st = getVariable(22910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -849,8 +849,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23388 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK._INVERSED
-    st = getVariable(23388);
+  { // 22911 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK._INVERSED
+    st = getVariable(22911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INERRORBLOCK._INVERSED", 56);
     st->size_data = sizeof(BOOL);
@@ -861,8 +861,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23389 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON.VALUE
-    st = getVariable(23389);
+  { // 22912 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON.VALUE
+    st = getVariable(22912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON.VALUE", 52);
     st->size_data = sizeof(BOOL);
@@ -873,8 +873,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23390 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON.RELIABILITY
-    st = getVariable(23390);
+  { // 22913 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON.RELIABILITY
+    st = getVariable(22913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -885,8 +885,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23391 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON._INVERSED
-    st = getVariable(23391);
+  { // 22914 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON._INVERSED
+    st = getVariable(22914);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDON._INVERSED", 56);
     st->size_data = sizeof(BOOL);
@@ -897,8 +897,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23392 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF.VALUE
-    st = getVariable(23392);
+  { // 22915 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF.VALUE
+    st = getVariable(22915);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF.VALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -909,8 +909,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 23393 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF.RELIABILITY
-    st = getVariable(23393);
+  { // 22916 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF.RELIABILITY
+    st = getVariable(22916);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -921,8 +921,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 23394 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF._INVERSED
-    st = getVariable(23394);
+  { // 22917 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF._INVERSED
+    st = getVariable(22917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.INBREAKCMDOFF._INVERSED", 57);
     st->size_data = sizeof(BOOL);
@@ -933,8 +933,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 23395 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ONINIT
-    st = getVariable(23395);
+  { // 22918 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ONINIT
+    st = getVariable(22918);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ONINIT", 40);
     st->size_data = sizeof(BOOL);
@@ -944,8 +944,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23396 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATON
-    st = getVariable(23396);
+  { // 22919 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATON
+    st = getVariable(22919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATON", 41);
     st->size_data = sizeof(BOOL);
@@ -955,8 +955,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23397 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATOFF
-    st = getVariable(23397);
+  { // 22920 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATOFF
+    st = getVariable(22920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATOFF", 42);
     st->size_data = sizeof(BOOL);
@@ -966,8 +966,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23398 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.LASTONSTATUS
-    st = getVariable(23398);
+  { // 22921 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.LASTONSTATUS
+    st = getVariable(22921);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.LASTONSTATUS", 46);
     st->size_data = sizeof(BYTE);
@@ -977,8 +977,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->LASTONSTATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23399 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMD
-    st = getVariable(23399);
+  { // 22922 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMD
+    st = getVariable(22922);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMD", 37);
     st->size_data = sizeof(BYTE);
@@ -988,8 +988,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23400 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SOURCE
-    st = getVariable(23400);
+  { // 22923 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SOURCE
+    st = getVariable(22923);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SOURCE", 40);
     st->size_data = sizeof(BYTE);
@@ -999,8 +999,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23401 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.LASTCMD
-    st = getVariable(23401);
+  { // 22924 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.LASTCMD
+    st = getVariable(22924);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.LASTCMD", 41);
     st->size_data = sizeof(BYTE);
@@ -1010,8 +1010,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23402 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SOURCE_FOR_STATUS
-    st = getVariable(23402);
+  { // 22925 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SOURCE_FOR_STATUS
+    st = getVariable(22925);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SOURCE_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23403 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMD_FOR_STATUS
-    st = getVariable(23403);
+  { // 22926 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMD_FOR_STATUS
+    st = getVariable(22926);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMD_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -1032,8 +1032,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23404 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(23404);
+  { // 22927 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(22927);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.COMMAND_ERROR_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -1043,8 +1043,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23409 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(23409);
+  { // 22932 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(22932);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_NOTDEFINED", 68);
     st->size_data = sizeof(BYTE);
@@ -1055,8 +1055,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 23410 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(23410);
+  { // 22933 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(22933);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_ON", 60);
     st->size_data = sizeof(BYTE);
@@ -1067,8 +1067,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 23411 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(23411);
+  { // 22934 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(22934);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_OFF", 61);
     st->size_data = sizeof(BYTE);
@@ -1079,8 +1079,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 23412 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(23412);
+  { // 22935 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(22935);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_TRANSITIONAL", 70);
     st->size_data = sizeof(BYTE);
@@ -1091,8 +1091,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 23413 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(23413);
+  { // 22936 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(22936);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._STATUSDUALINPUT.STATUS_ERROR", 63);
     st->size_data = sizeof(BYTE);
@@ -1103,8 +1103,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 23414 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_ON
-    st = getVariable(23414);
+  { // 22937 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_ON
+    st = getVariable(22937);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_ON", 58);
     st->size_data = sizeof(BYTE);
@@ -1115,8 +1115,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_ON;
     st->value_p = p_BYTE;
   }
-  { // 23415 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_OFF
-    st = getVariable(23415);
+  { // 22938 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_OFF
+    st = getVariable(22938);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_OFF", 59);
     st->size_data = sizeof(BYTE);
@@ -1127,8 +1127,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_OFF;
     st->value_p = p_BYTE;
   }
-  { // 23416 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_RESET
-    st = getVariable(23416);
+  { // 22939 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_RESET
+    st = getVariable(22939);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDDUALINPUT.CMD_RESET", 61);
     st->size_data = sizeof(BYTE);
@@ -1139,8 +1139,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_RESET;
     st->value_p = p_BYTE;
   }
-  { // 23417 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDERRORTIMER
-    st = getVariable(23417);
+  { // 22940 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDERRORTIMER
+    st = getVariable(22940);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._COMMANDERRORTIMER", 52);
     st->size_data = sizeof(BOOL);
@@ -1150,8 +1150,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_COMMANDERRORTIMER;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23418 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.RESETERRORTIMER
-    st = getVariable(23418);
+  { // 22941 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.RESETERRORTIMER
+    st = getVariable(22941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.RESETERRORTIMER", 49);
     st->size_data = sizeof(BOOL);
@@ -1161,8 +1161,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->RESETERRORTIMER;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23419 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.GETSDVIG
-    st = getVariable(23419);
+  { // 22942 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.GETSDVIG
+    st = getVariable(22942);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.GETSDVIG", 42);
     st->size_data = sizeof(BOOL);
@@ -1172,8 +1172,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->GETSDVIG;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23420 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._CHANGWITHOUTCOMMAND
-    st = getVariable(23420);
+  { // 22943 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._CHANGWITHOUTCOMMAND
+    st = getVariable(22943);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._CHANGWITHOUTCOMMAND", 54);
     st->size_data = sizeof(BOOL);
@@ -1183,8 +1183,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_CHANGWITHOUTCOMMAND;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23421 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.IN
-    st = getVariable(23421);
+  { // 22944 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.IN
+    st = getVariable(22944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -1195,8 +1195,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23422 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.PT
-    st = getVariable(23422);
+  { // 22945 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.PT
+    st = getVariable(22945);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -1207,8 +1207,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23423 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.Q
-    st = getVariable(23423);
+  { // 22946 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.Q
+    st = getVariable(22946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1219,8 +1219,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23424 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.ET
-    st = getVariable(23424);
+  { // 22947 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.ET
+    st = getVariable(22947);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -1231,8 +1231,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23425 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER
-    st = getVariable(23425);
+  { // 22948 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER
+    st = getVariable(22948);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.ERRORCMDTIMER", 47);
     st->size_data = sizeof(TON);
@@ -1242,8 +1242,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TON = (TON*)&p_FB_SWITCH->ERRORCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 23426 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.IN
-    st = getVariable(23426);
+  { // 22949 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.IN
+    st = getVariable(22949);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -1254,8 +1254,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23427 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.PT
-    st = getVariable(23427);
+  { // 22950 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.PT
+    st = getVariable(22950);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.PT", 47);
     st->size_data = sizeof(TIME);
@@ -1266,8 +1266,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23428 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.Q
-    st = getVariable(23428);
+  { // 22951 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.Q
+    st = getVariable(22951);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -1278,8 +1278,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23429 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.ET
-    st = getVariable(23429);
+  { // 22952 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.ET
+    st = getVariable(22952);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET.ET", 47);
     st->size_data = sizeof(TIME);
@@ -1290,8 +1290,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23430 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET
-    st = getVariable(23430);
+  { // 22953 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET
+    st = getVariable(22953);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.SDVIGRESET", 44);
     st->size_data = sizeof(TON);
@@ -1301,8 +1301,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TON = (TON*)&p_FB_SWITCH->SDVIGRESET;
     st->value_p = (void *)p_TON;
   }
-  { // 23431 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.IN
-    st = getVariable(23431);
+  { // 22954 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.IN
+    st = getVariable(22954);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -1313,8 +1313,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23432 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.PT
-    st = getVariable(23432);
+  { // 22955 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.PT
+    st = getVariable(22955);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.PT", 48);
     st->size_data = sizeof(TIME);
@@ -1325,8 +1325,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23433 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.Q
-    st = getVariable(23433);
+  { // 22956 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.Q
+    st = getVariable(22956);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1337,8 +1337,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23434 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.ET
-    st = getVariable(23434);
+  { // 22957 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.ET
+    st = getVariable(22957);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET.ET", 48);
     st->size_data = sizeof(TIME);
@@ -1349,8 +1349,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23435 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET
-    st = getVariable(23435);
+  { // 22958 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET
+    st = getVariable(22958);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._ERRORRESET", 45);
     st->size_data = sizeof(TON);
@@ -1360,8 +1360,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TON = (TON*)&p_FB_SWITCH->_ERRORRESET;
     st->value_p = (void *)p_TON;
   }
-  { // 23436 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.IN
-    st = getVariable(23436);
+  { // 22959 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.IN
+    st = getVariable(22959);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -1372,8 +1372,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 23437 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.PT
-    st = getVariable(23437);
+  { // 22960 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.PT
+    st = getVariable(22960);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.PT", 48);
     st->size_data = sizeof(TIME);
@@ -1384,8 +1384,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 23438 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.Q
-    st = getVariable(23438);
+  { // 22961 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.Q
+    st = getVariable(22961);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1396,8 +1396,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 23439 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.ET
-    st = getVariable(23439);
+  { // 22962 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.ET
+    st = getVariable(22962);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS.ET", 48);
     st->size_data = sizeof(TIME);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 23440 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS
-    st = getVariable(23440);
+  { // 22963 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS
+    st = getVariable(22963);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.OUTPUTSSETS", 45);
     st->size_data = sizeof(TOF);
@@ -1419,8 +1419,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_TOF = (TOF*)&p_FB_SWITCH->OUTPUTSSETS;
     st->value_p = (void *)p_TOF;
   }
-  { // 23441 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMDON
-    st = getVariable(23441);
+  { // 22964 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMDON
+    st = getVariable(22964);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMDON", 39);
     st->size_data = sizeof(BOOL);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_KALORIFERAVOM(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->CMDON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23442 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMDOFF
-    st = getVariable(23442);
+  { // 22965 PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMDOFF
+    st = getVariable(22965);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM.CMDOFF", 40);
     st->size_data = sizeof(BOOL);
