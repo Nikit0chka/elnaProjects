@@ -181,8 +181,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 33806 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.VALUE
-    st = getVariable(33806);
+  { // 33809 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.VALUE
+    st = getVariable(33809);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.VALUE", 56);
     st->size_data = sizeof(LREAL);
@@ -193,8 +193,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 33807 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.STATUS
-    st = getVariable(33807);
+  { // 33810 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.STATUS
+    st = getVariable(33810);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.STATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -205,8 +205,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 33808 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INTERVAL
-    st = getVariable(33808);
+  { // 33811 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INTERVAL
+    st = getVariable(33811);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INTERVAL", 59);
     st->size_data = sizeof(BYTE);
@@ -217,8 +217,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 33809 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND
-    st = getVariable(33809);
+  { // 33812 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND
+    st = getVariable(33812);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -229,8 +229,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 33810 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.BLCONNECT
-    st = getVariable(33810);
+  { // 33813 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.BLCONNECT
+    st = getVariable(33813);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.BLCONNECT", 60);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 33811 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLL
-    st = getVariable(33811);
+  { // 33814 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLL
+    st = getVariable(33814);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLL", 54);
     st->size_data = sizeof(LREAL);
@@ -253,8 +253,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 33812 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHL
-    st = getVariable(33812);
+  { // 33815 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHL
+    st = getVariable(33815);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHL", 54);
     st->size_data = sizeof(LREAL);
@@ -265,8 +265,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 33813 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLA
-    st = getVariable(33813);
+  { // 33816 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLA
+    st = getVariable(33816);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLA", 54);
     st->size_data = sizeof(LREAL);
@@ -277,8 +277,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 33814 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHA
-    st = getVariable(33814);
+  { // 33817 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHA
+    st = getVariable(33817);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHA", 54);
     st->size_data = sizeof(LREAL);
@@ -289,8 +289,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 33815 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLW
-    st = getVariable(33815);
+  { // 33818 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLW
+    st = getVariable(33818);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DLW", 54);
     st->size_data = sizeof(LREAL);
@@ -301,8 +301,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 33816 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHW
-    st = getVariable(33816);
+  { // 33819 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHW
+    st = getVariable(33819);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DHW", 54);
     st->size_data = sizeof(LREAL);
@@ -313,8 +313,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 33817 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LL
-    st = getVariable(33817);
+  { // 33820 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LL
+    st = getVariable(33820);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LL", 53);
     st->size_data = sizeof(LREAL);
@@ -325,8 +325,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 33818 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HL
-    st = getVariable(33818);
+  { // 33821 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HL
+    st = getVariable(33821);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HL", 53);
     st->size_data = sizeof(LREAL);
@@ -337,8 +337,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 33819 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LA
-    st = getVariable(33819);
+  { // 33822 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LA
+    st = getVariable(33822);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LA", 53);
     st->size_data = sizeof(LREAL);
@@ -349,8 +349,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 33820 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HA
-    st = getVariable(33820);
+  { // 33823 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HA
+    st = getVariable(33823);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HA", 53);
     st->size_data = sizeof(LREAL);
@@ -361,8 +361,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 33821 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LW
-    st = getVariable(33821);
+  { // 33824 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LW
+    st = getVariable(33824);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.LW", 53);
     st->size_data = sizeof(LREAL);
@@ -373,8 +373,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 33822 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HW
-    st = getVariable(33822);
+  { // 33825 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HW
+    st = getVariable(33825);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HW", 53);
     st->size_data = sizeof(LREAL);
@@ -385,8 +385,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 33823 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_LA
-    st = getVariable(33823);
+  { // 33826 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_LA
+    st = getVariable(33826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_LA", 64);
     st->size_data = sizeof(BOOL);
@@ -397,8 +397,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 33824 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_HA
-    st = getVariable(33824);
+  { // 33827 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_HA
+    st = getVariable(33827);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_HA", 64);
     st->size_data = sizeof(BOOL);
@@ -409,8 +409,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 33825 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_LW
-    st = getVariable(33825);
+  { // 33828 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_LW
+    st = getVariable(33828);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_LW", 64);
     st->size_data = sizeof(BOOL);
@@ -421,8 +421,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 33826 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_HW
-    st = getVariable(33826);
+  { // 33829 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_HW
+    st = getVariable(33829);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.ISVALIDREF_HW", 64);
     st->size_data = sizeof(BOOL);
@@ -433,8 +433,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 33827 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INPLL
-    st = getVariable(33827);
+  { // 33830 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INPLL
+    st = getVariable(33830);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INPLL", 56);
     st->size_data = sizeof(LREAL);
@@ -445,8 +445,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 33828 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INPHL
-    st = getVariable(33828);
+  { // 33831 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INPHL
+    st = getVariable(33831);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INPHL", 56);
     st->size_data = sizeof(LREAL);
@@ -457,8 +457,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 33829 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CURRENTSHOTCIRCUIT
-    st = getVariable(33829);
+  { // 33832 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CURRENTSHOTCIRCUIT
+    st = getVariable(33832);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CURRENTSHOTCIRCUIT", 69);
     st->size_data = sizeof(LREAL);
@@ -469,8 +469,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 33830 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CURRENTBREAKCIRCUIT
-    st = getVariable(33830);
+  { // 33833 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CURRENTBREAKCIRCUIT
+    st = getVariable(33833);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CURRENTBREAKCIRCUIT", 70);
     st->size_data = sizeof(LREAL);
@@ -481,8 +481,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 33831 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXCHANGESPEED
-    st = getVariable(33831);
+  { // 33834 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXCHANGESPEED
+    st = getVariable(33834);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXCHANGESPEED", 65);
     st->size_data = sizeof(LREAL);
@@ -493,8 +493,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 33832 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXCHANGESPEEDDOWN
-    st = getVariable(33832);
+  { // 33835 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXCHANGESPEEDDOWN
+    st = getVariable(33835);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXCHANGESPEEDDOWN", 69);
     st->size_data = sizeof(LREAL);
@@ -505,8 +505,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 33833 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CHANGESPEED
-    st = getVariable(33833);
+  { // 33836 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CHANGESPEED
+    st = getVariable(33836);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.CHANGESPEED", 62);
     st->size_data = sizeof(LREAL);
@@ -517,8 +517,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 33834 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HISTERESIS
-    st = getVariable(33834);
+  { // 33837 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HISTERESIS
+    st = getVariable(33837);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.HISTERESIS", 61);
     st->size_data = sizeof(LREAL);
@@ -529,8 +529,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 33835 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.APERTURFILTER
-    st = getVariable(33835);
+  { // 33838 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.APERTURFILTER
+    st = getVariable(33838);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.APERTURFILTER", 64);
     st->size_data = sizeof(LREAL);
@@ -541,8 +541,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 33836 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.EXPONENTIALFILTER
-    st = getVariable(33836);
+  { // 33839 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.EXPONENTIALFILTER
+    st = getVariable(33839);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.EXPONENTIALFILTER", 68);
     st->size_data = sizeof(LREAL);
@@ -553,8 +553,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 33837 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.RASSOGLASOVANIE
-    st = getVariable(33837);
+  { // 33840 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.RASSOGLASOVANIE
+    st = getVariable(33840);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.RASSOGLASOVANIE", 66);
     st->size_data = sizeof(LREAL);
@@ -565,8 +565,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 33838 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.OPCCOMMANDSDISABLED
-    st = getVariable(33838);
+  { // 33841 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.OPCCOMMANDSDISABLED
+    st = getVariable(33841);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.OPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -577,8 +577,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 33839 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_LA
-    st = getVariable(33839);
+  { // 33842 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_LA
+    st = getVariable(33842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_LA", 62);
     st->size_data = sizeof(BOOL);
@@ -589,8 +589,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 33840 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_HA
-    st = getVariable(33840);
+  { // 33843 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_HA
+    st = getVariable(33843);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_HA", 62);
     st->size_data = sizeof(BOOL);
@@ -601,8 +601,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 33841 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_LW
-    st = getVariable(33841);
+  { // 33844 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_LW
+    st = getVariable(33844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_LW", 62);
     st->size_data = sizeof(BOOL);
@@ -613,8 +613,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 33842 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_HW
-    st = getVariable(33842);
+  { // 33845 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_HW
+    st = getVariable(33845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DISABLED_HW", 62);
     st->size_data = sizeof(BOOL);
@@ -625,8 +625,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 33843 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYLA
-    st = getVariable(33843);
+  { // 33846 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYLA
+    st = getVariable(33846);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYLA", 58);
     st->size_data = sizeof(TIME);
@@ -637,8 +637,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 33844 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYLW
-    st = getVariable(33844);
+  { // 33847 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYLW
+    st = getVariable(33847);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYLW", 58);
     st->size_data = sizeof(TIME);
@@ -649,8 +649,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 33845 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYHW
-    st = getVariable(33845);
+  { // 33848 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYHW
+    st = getVariable(33848);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYHW", 58);
     st->size_data = sizeof(TIME);
@@ -661,8 +661,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 33846 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYHA
-    st = getVariable(33846);
+  { // 33849 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYHA
+    st = getVariable(33849);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DELAYHA", 58);
     st->size_data = sizeof(TIME);
@@ -673,8 +673,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 33847 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MINVALUE_ISVALIDREF
-    st = getVariable(33847);
+  { // 33850 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MINVALUE_ISVALIDREF
+    st = getVariable(33850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MINVALUE_ISVALIDREF", 70);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 33848 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXVALUE_ISVALIDREF
-    st = getVariable(33848);
+  { // 33851 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXVALUE_ISVALIDREF
+    st = getVariable(33851);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXVALUE_ISVALIDREF", 70);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 33849 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MINVALUE
-    st = getVariable(33849);
+  { // 33852 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MINVALUE
+    st = getVariable(33852);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MINVALUE", 59);
     st->size_data = sizeof(LREAL);
@@ -709,8 +709,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 33850 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXVALUE
-    st = getVariable(33850);
+  { // 33853 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXVALUE
+    st = getVariable(33853);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.MAXVALUE", 59);
     st->size_data = sizeof(LREAL);
@@ -721,8 +721,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 33851 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INOPCCOMMANDSDISABLED
-    st = getVariable(33851);
+  { // 33854 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INOPCCOMMANDSDISABLED
+    st = getVariable(33854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INOPCCOMMANDSDISABLED", 72);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 33852 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.IMIT
-    st = getVariable(33852);
+  { // 33855 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.IMIT
+    st = getVariable(33855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.IMIT", 55);
     st->size_data = sizeof(BOOL);
@@ -745,8 +745,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 33853 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.REMONT
-    st = getVariable(33853);
+  { // 33856 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.REMONT
+    st = getVariable(33856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.REMONT", 57);
     st->size_data = sizeof(BOOL);
@@ -757,8 +757,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 33854 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS
-    st = getVariable(33854);
+  { // 33857 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS
+    st = getVariable(33857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS", 53);
     st->size_data = sizeof(BOOL);
@@ -769,8 +769,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 33855 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS_MIN
-    st = getVariable(33855);
+  { // 33858 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS_MIN
+    st = getVariable(33858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS_MIN", 57);
     st->size_data = sizeof(BOOL);
@@ -781,8 +781,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 33856 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS_MAX
-    st = getVariable(33856);
+  { // 33859 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS_MAX
+    st = getVariable(33859);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.NS_MAX", 57);
     st->size_data = sizeof(BOOL);
@@ -793,8 +793,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 33857 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND_ALG
-    st = getVariable(33857);
+  { // 33860 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND_ALG
+    st = getVariable(33860);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND_ALG", 64);
     st->size_data = sizeof(WORD);
@@ -805,8 +805,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 33858 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND_ARM
-    st = getVariable(33858);
+  { // 33861 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND_ARM
+    st = getVariable(33861);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.INCOMMAND_ARM", 64);
     st->size_data = sizeof(WORD);
@@ -817,8 +817,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 33859 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DMAXCHANGESPEED
-    st = getVariable(33859);
+  { // 33862 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DMAXCHANGESPEED
+    st = getVariable(33862);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DMAXCHANGESPEED", 66);
     st->size_data = sizeof(LREAL);
@@ -829,8 +829,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 33860 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DMAXCHANGESPEEDDOWN
-    st = getVariable(33860);
+  { // 33863 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DMAXCHANGESPEEDDOWN
+    st = getVariable(33863);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.AI.DMAXCHANGESPEEDDOWN", 70);
     st->size_data = sizeof(LREAL);
@@ -841,8 +841,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 33861 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CONTROLLIMIT
-    st = getVariable(33861);
+  { // 33864 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CONTROLLIMIT
+    st = getVariable(33864);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CONTROLLIMIT", 67);
     st->size_data = sizeof(BYTE);
@@ -853,8 +853,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->CONTROLLIMIT;
     st->value_p = p_BYTE;
   }
-  { // 33862 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.DELAY
-    st = getVariable(33862);
+  { // 33865 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.DELAY
+    st = getVariable(33865);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.DELAY", 60);
     st->size_data = sizeof(TIME);
@@ -865,8 +865,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_STRUCT_AIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 33863 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INTAG
-    st = getVariable(33863);
+  { // 33866 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INTAG
+    st = getVariable(33866);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INTAG", 60);
     st->size_data = sizeof(BYTE);
@@ -877,8 +877,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 33864 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INRUNONSTART
-    st = getVariable(33864);
+  { // 33867 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INRUNONSTART
+    st = getVariable(33867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INRUNONSTART", 67);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 33865 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCANRUN
-    st = getVariable(33865);
+  { // 33868 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCANRUN
+    st = getVariable(33868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCANRUN", 63);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 33866 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INOPCCOMMANDSDISABLED
-    st = getVariable(33866);
+  { // 33869 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INOPCCOMMANDSDISABLED
+    st = getVariable(33869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INOPCCOMMANDSDISABLED", 76);
     st->size_data = sizeof(BOOL);
@@ -913,8 +913,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 33867 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND
-    st = getVariable(33867);
+  { // 33870 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND
+    st = getVariable(33870);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND", 64);
     st->size_data = sizeof(WORD);
@@ -925,8 +925,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 33868 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND_ALG
-    st = getVariable(33868);
+  { // 33871 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND_ALG
+    st = getVariable(33871);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND_ALG", 68);
     st->size_data = sizeof(WORD);
@@ -937,8 +937,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 33869 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND_ARM
-    st = getVariable(33869);
+  { // 33872 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND_ARM
+    st = getVariable(33872);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.INCOMMAND_ARM", 68);
     st->size_data = sizeof(WORD);
@@ -949,8 +949,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 33870 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.TAG
-    st = getVariable(33870);
+  { // 33873 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.TAG
+    st = getVariable(33873);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.TAG", 58);
     st->size_data = sizeof(BYTE);
@@ -961,8 +961,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 33871 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.STATUS
-    st = getVariable(33871);
+  { // 33874 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.STATUS
+    st = getVariable(33874);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.STATUS", 61);
     st->size_data = sizeof(DWORD);
@@ -973,8 +973,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_DWORD = (DWORD*)&p_STRUCT_AIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 33872 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CANRUN
-    st = getVariable(33872);
+  { // 33875 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CANRUN
+    st = getVariable(33875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CANRUN", 61);
     st->size_data = sizeof(BOOL);
@@ -985,8 +985,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 33873 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.OPCCOMMANDSDISABLED
-    st = getVariable(33873);
+  { // 33876 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.OPCCOMMANDSDISABLED
+    st = getVariable(33876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.OPCCOMMANDSDISABLED", 74);
     st->size_data = sizeof(BOOL);
@@ -997,8 +997,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 33874 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.ISRUNNING
-    st = getVariable(33874);
+  { // 33877 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.ISRUNNING
+    st = getVariable(33877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.ISRUNNING", 64);
     st->size_data = sizeof(BOOL);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 33875 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.HASERROR
-    st = getVariable(33875);
+  { // 33878 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.HASERROR
+    st = getVariable(33878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.HASERROR", 63);
     st->size_data = sizeof(BOOL);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 33876 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.ISENDED
-    st = getVariable(33876);
+  { // 33879 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.ISENDED
+    st = getVariable(33879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.ISENDED", 62);
     st->size_data = sizeof(BOOL);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 33877 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.REMONT
-    st = getVariable(33877);
+  { // 33880 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.REMONT
+    st = getVariable(33880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.REMONT", 61);
     st->size_data = sizeof(BOOL);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 33878 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CHECK
-    st = getVariable(33878);
+  { // 33881 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CHECK
+    st = getVariable(33881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.CHECK", 60);
     st->size_data = sizeof(BOOL);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 33879 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.SIGNALING
-    st = getVariable(33879);
+  { // 33882 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.SIGNALING
+    st = getVariable(33882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.SIGNALING", 64);
     st->size_data = sizeof(BOOL);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 33880 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.SIGNALINGTP
-    st = getVariable(33880);
+  { // 33883 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.SIGNALINGTP
+    st = getVariable(33883);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.SIGNALINGTP", 66);
     st->size_data = sizeof(BOOL);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 33881 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.RUNONSTART
-    st = getVariable(33881);
+  { // 33884 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.RUNONSTART
+    st = getVariable(33884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.STRAIP.RUNONSTART", 65);
     st->size_data = sizeof(BOOL);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 33886 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.IN
-    st = getVariable(33886);
+  { // 33889 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.IN
+    st = getVariable(33889);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.IN", 63);
     st->size_data = sizeof(BOOL);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 33887 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.PT
-    st = getVariable(33887);
+  { // 33890 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.PT
+    st = getVariable(33890);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.PT", 63);
     st->size_data = sizeof(TIME);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 33888 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.Q
-    st = getVariable(33888);
+  { // 33891 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.Q
+    st = getVariable(33891);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 33889 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.ET
-    st = getVariable(33889);
+  { // 33892 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.ET
+    st = getVariable(33892);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP.ET", 63);
     st->size_data = sizeof(TIME);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 33890 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP
-    st = getVariable(33890);
+  { // 33893 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP
+    st = getVariable(33893);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SIGNALINGTP", 60);
     st->size_data = sizeof(TOF);
@@ -1152,8 +1152,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TOF = (TOF*)&p_FB_AIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 33891 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NOTDEFINED
-    st = getVariable(33891);
+  { // 33894 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NOTDEFINED
+    st = getVariable(33894);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NOTDEFINED", 68);
     st->size_data = sizeof(BYTE);
@@ -1164,8 +1164,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 33892 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LL
-    st = getVariable(33892);
+  { // 33895 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LL
+    st = getVariable(33895);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LL", 60);
     st->size_data = sizeof(BYTE);
@@ -1176,8 +1176,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 33893 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HL
-    st = getVariable(33893);
+  { // 33896 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HL
+    st = getVariable(33896);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HL", 60);
     st->size_data = sizeof(BYTE);
@@ -1188,8 +1188,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 33894 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NOTRELIABLE
-    st = getVariable(33894);
+  { // 33897 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NOTRELIABLE
+    st = getVariable(33897);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NOTRELIABLE", 69);
     st->size_data = sizeof(BYTE);
@@ -1200,8 +1200,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 33895 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NORMAL
-    st = getVariable(33895);
+  { // 33898 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NORMAL
+    st = getVariable(33898);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.NORMAL", 64);
     st->size_data = sizeof(BYTE);
@@ -1212,8 +1212,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 33896 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LW
-    st = getVariable(33896);
+  { // 33899 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LW
+    st = getVariable(33899);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LW", 60);
     st->size_data = sizeof(BYTE);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 33897 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HW
-    st = getVariable(33897);
+  { // 33900 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HW
+    st = getVariable(33900);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HW", 60);
     st->size_data = sizeof(BYTE);
@@ -1236,8 +1236,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 33898 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LA
-    st = getVariable(33898);
+  { // 33901 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LA
+    st = getVariable(33901);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.LA", 60);
     st->size_data = sizeof(BYTE);
@@ -1248,8 +1248,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 33899 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HA
-    st = getVariable(33899);
+  { // 33902 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HA
+    st = getVariable(33902);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._STATUSAI.HA", 60);
     st->size_data = sizeof(BYTE);
@@ -1260,8 +1260,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 33900 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SOURCE
-    st = getVariable(33900);
+  { // 33903 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SOURCE
+    st = getVariable(33903);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SOURCE", 54);
     st->size_data = sizeof(BYTE);
@@ -1271,8 +1271,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33901 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.CMD
-    st = getVariable(33901);
+  { // 33904 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.CMD
+    st = getVariable(33904);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.CMD", 51);
     st->size_data = sizeof(BYTE);
@@ -1282,8 +1282,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33902 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.LASTCMD
-    st = getVariable(33902);
+  { // 33905 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.LASTCMD
+    st = getVariable(33905);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.LASTCMD", 55);
     st->size_data = sizeof(BYTE);
@@ -1293,8 +1293,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33903 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SOURCE_FOR_STATUS
-    st = getVariable(33903);
+  { // 33906 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SOURCE_FOR_STATUS
+    st = getVariable(33906);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SOURCE_FOR_STATUS", 65);
     st->size_data = sizeof(BYTE);
@@ -1304,8 +1304,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33904 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.CMD_FOR_STATUS
-    st = getVariable(33904);
+  { // 33907 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.CMD_FOR_STATUS
+    st = getVariable(33907);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.CMD_FOR_STATUS", 62);
     st->size_data = sizeof(BYTE);
@@ -1315,8 +1315,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33905 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(33905);
+  { // 33908 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(33908);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.COMMAND_ERROR_FOR_STATUS", 72);
     st->size_data = sizeof(BYTE);
@@ -1326,8 +1326,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33906 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.IN
-    st = getVariable(33906);
+  { // 33909 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.IN
+    st = getVariable(33909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.IN", 64);
     st->size_data = sizeof(BOOL);
@@ -1338,8 +1338,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 33907 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.PT
-    st = getVariable(33907);
+  { // 33910 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.PT
+    st = getVariable(33910);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.PT", 64);
     st->size_data = sizeof(TIME);
@@ -1350,8 +1350,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 33908 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.Q
-    st = getVariable(33908);
+  { // 33911 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.Q
+    st = getVariable(33911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -1362,8 +1362,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 33909 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.ET
-    st = getVariable(33909);
+  { // 33912 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.ET
+    st = getVariable(33912);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER.ET", 64);
     st->size_data = sizeof(TIME);
@@ -1374,8 +1374,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 33910 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER
-    st = getVariable(33910);
+  { // 33913 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER
+    st = getVariable(33913);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMER", 61);
     st->size_data = sizeof(TON);
@@ -1385,8 +1385,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TON = (TON*)&p_FB_AIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 33911 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMERPRIZNAK
-    st = getVariable(33911);
+  { // 33914 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMERPRIZNAK
+    st = getVariable(33914);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.RESETCMDTIMERPRIZNAK", 68);
     st->size_data = sizeof(BOOL);
@@ -1396,8 +1396,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33912 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.IN
-    st = getVariable(33912);
+  { // 33915 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.IN
+    st = getVariable(33915);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.IN", 64);
     st->size_data = sizeof(BOOL);
@@ -1408,8 +1408,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 33913 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.PT
-    st = getVariable(33913);
+  { // 33916 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.PT
+    st = getVariable(33916);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.PT", 64);
     st->size_data = sizeof(TIME);
@@ -1420,8 +1420,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 33914 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.Q
-    st = getVariable(33914);
+  { // 33917 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.Q
+    st = getVariable(33917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -1432,8 +1432,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 33915 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.ET
-    st = getVariable(33915);
+  { // 33918 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.ET
+    st = getVariable(33918);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER.ET", 64);
     st->size_data = sizeof(TIME);
@@ -1444,8 +1444,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 33916 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER
-    st = getVariable(33916);
+  { // 33919 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER
+    st = getVariable(33919);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINTIMER", 61);
     st->size_data = sizeof(TON);
@@ -1455,8 +1455,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TON = (TON*)&p_FB_AIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 33917 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.IN
-    st = getVariable(33917);
+  { // 33920 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.IN
+    st = getVariable(33920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.IN", 56);
     st->size_data = sizeof(BOOL);
@@ -1467,8 +1467,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 33918 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.PT
-    st = getVariable(33918);
+  { // 33921 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.PT
+    st = getVariable(33921);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.PT", 56);
     st->size_data = sizeof(TIME);
@@ -1479,8 +1479,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 33919 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.Q
-    st = getVariable(33919);
+  { // 33922 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.Q
+    st = getVariable(33922);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -1491,8 +1491,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 33920 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.ET
-    st = getVariable(33920);
+  { // 33923 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.ET
+    st = getVariable(33923);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER.ET", 56);
     st->size_data = sizeof(TIME);
@@ -1503,8 +1503,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 33921 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER
-    st = getVariable(33921);
+  { // 33924 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER
+    st = getVariable(33924);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.TIMER", 53);
     st->size_data = sizeof(TON);
@@ -1514,8 +1514,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_TON = (TON*)&p_FB_AIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 33922 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG.CLK
-    st = getVariable(33922);
+  { // 33925 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG.CLK
+    st = getVariable(33925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG.CLK", 65);
     st->size_data = sizeof(BOOL);
@@ -1526,8 +1526,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 33923 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG.Q
-    st = getVariable(33923);
+  { // 33926 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG.Q
+    st = getVariable(33926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -1538,8 +1538,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 33924 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG
-    st = getVariable(33924);
+  { // 33927 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG
+    st = getVariable(33927);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGTRIG", 61);
     st->size_data = sizeof(R_TRIG);
@@ -1549,8 +1549,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_R_TRIG = (R_TRIG*)&p_FB_AIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 33925 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG.CLK
-    st = getVariable(33925);
+  { // 33928 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG.CLK
+    st = getVariable(33928);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG.CLK", 66);
     st->size_data = sizeof(BOOL);
@@ -1561,8 +1561,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 33926 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG.Q
-    st = getVariable(33926);
+  { // 33929 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG.Q
+    st = getVariable(33929);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -1573,8 +1573,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 33927 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG
-    st = getVariable(33927);
+  { // 33930 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG
+    st = getVariable(33930);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGFTRIG", 62);
     st->size_data = sizeof(F_TRIG);
@@ -1584,8 +1584,8 @@ int __variables_init_FB_DP_MASLO_NA_FILTRE(){
     p_F_TRIG = (F_TRIG*)&p_FB_AIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 33928 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGAI
-    st = getVariable(33928);
+  { // 33931 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGAI
+    st = getVariable(33931);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE.SIGNALINGAI", 59);
     st->size_data = sizeof(BOOL);

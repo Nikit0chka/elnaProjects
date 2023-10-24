@@ -181,8 +181,8 @@ int __variables_init_STSO_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 19909 PROGRAM0.IM_STRUCTS_INI.STSO_INI.DATA_INI
-    st = getVariable(19909);
+  { // 19912 PROGRAM0.IM_STRUCTS_INI.STSO_INI.DATA_INI
+    st = getVariable(19912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_STSO_INI(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19910 PROGRAM0.IM_STRUCTS_INI.STSO_INI.INOPCCOMMANDSDISABLED
-    st = getVariable(19910);
+  { // 19913 PROGRAM0.IM_STRUCTS_INI.STSO_INI.INOPCCOMMANDSDISABLED
+    st = getVariable(19913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.INOPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -203,8 +203,8 @@ int __variables_init_STSO_INI(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT_INIT->INOPCCOMMANDSDISABLED;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19911 PROGRAM0.IM_STRUCTS_INI.STSO_INI.WAIT_TIME
-    st = getVariable(19911);
+  { // 19914 PROGRAM0.IM_STRUCTS_INI.STSO_INI.WAIT_TIME
+    st = getVariable(19914);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.WAIT_TIME", 42);
     st->size_data = sizeof(TIME);
@@ -214,8 +214,8 @@ int __variables_init_STSO_INI(){
     p_TIME = (TIME*)&p_FB_SINGLEOUTPUT_INIT->WAIT_TIME;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19912 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.WAIT_TIME
-    st = getVariable(19912);
+  { // 19915 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.WAIT_TIME
+    st = getVariable(19915);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.WAIT_TIME", 49);
     st->size_data = sizeof(TIME);
@@ -226,8 +226,8 @@ int __variables_init_STSO_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 19913 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND
-    st = getVariable(19913);
+  { // 19916 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND
+    st = getVariable(19916);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -238,8 +238,8 @@ int __variables_init_STSO_INI(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 19914 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(19914);
+  { // 19917 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(19917);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -250,8 +250,8 @@ int __variables_init_STSO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19915 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.Q
-    st = getVariable(19915);
+  { // 19918 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.Q
+    st = getVariable(19918);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -262,8 +262,8 @@ int __variables_init_STSO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 19916 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.STATUS
-    st = getVariable(19916);
+  { // 19919 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.STATUS
+    st = getVariable(19919);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -274,8 +274,8 @@ int __variables_init_STSO_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 19917 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(19917);
+  { // 19920 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(19920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -286,8 +286,8 @@ int __variables_init_STSO_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19918 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND_ALG
-    st = getVariable(19918);
+  { // 19921 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND_ALG
+    st = getVariable(19921);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -298,8 +298,8 @@ int __variables_init_STSO_INI(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 19919 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND_ARM
-    st = getVariable(19919);
+  { // 19922 PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND_ARM
+    st = getVariable(19922);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.STR_SO.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -310,8 +310,8 @@ int __variables_init_STSO_INI(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 19920 PROGRAM0.IM_STRUCTS_INI.STSO_INI.INIT
-    st = getVariable(19920);
+  { // 19923 PROGRAM0.IM_STRUCTS_INI.STSO_INI.INIT
+    st = getVariable(19923);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSO_INI.INIT", 37);
     st->size_data = sizeof(BOOL);

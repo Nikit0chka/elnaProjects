@@ -181,8 +181,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27099 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SIGNAL
-    st = getVariable(27099);
+  { // 27102 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SIGNAL
+    st = getVariable(27102);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SIGNAL", 40);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27100 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.WAIT_TIME
-    st = getVariable(27100);
+  { // 27103 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.WAIT_TIME
+    st = getVariable(27103);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.WAIT_TIME", 50);
     st->size_data = sizeof(TIME);
@@ -204,8 +204,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 27101 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND
-    st = getVariable(27101);
+  { // 27104 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND
+    st = getVariable(27104);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -216,8 +216,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 27102 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(27102);
+  { // 27105 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(27105);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -228,8 +228,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27103 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.Q
-    st = getVariable(27103);
+  { // 27106 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.Q
+    st = getVariable(27106);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -240,8 +240,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 27104 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.STATUS
-    st = getVariable(27104);
+  { // 27107 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.STATUS
+    st = getVariable(27107);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -252,8 +252,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27105 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(27105);
+  { // 27108 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(27108);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -264,8 +264,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 27106 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND_ALG
-    st = getVariable(27106);
+  { // 27109 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND_ALG
+    st = getVariable(27109);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -276,8 +276,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 27107 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND_ARM
-    st = getVariable(27107);
+  { // 27110 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND_ARM
+    st = getVariable(27110);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.STR_SO.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -288,8 +288,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 27108 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.IN
-    st = getVariable(27108);
+  { // 27111 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.IN
+    st = getVariable(27111);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -300,8 +300,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27109 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.PT
-    st = getVariable(27109);
+  { // 27112 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.PT
+    st = getVariable(27112);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.PT", 47);
     st->size_data = sizeof(TIME);
@@ -312,8 +312,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27110 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.Q
-    st = getVariable(27110);
+  { // 27113 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.Q
+    st = getVariable(27113);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -324,8 +324,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27111 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.ET
-    st = getVariable(27111);
+  { // 27114 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.ET
+    st = getVariable(27114);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER.ET", 47);
     st->size_data = sizeof(TIME);
@@ -336,8 +336,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27112 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER
-    st = getVariable(27112);
+  { // 27115 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER
+    st = getVariable(27115);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMER", 44);
     st->size_data = sizeof(TON);
@@ -347,8 +347,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27113 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.IN
-    st = getVariable(27113);
+  { // 27116 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.IN
+    st = getVariable(27116);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -359,8 +359,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27114 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.PT
-    st = getVariable(27114);
+  { // 27117 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.PT
+    st = getVariable(27117);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -371,8 +371,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27115 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.Q
-    st = getVariable(27115);
+  { // 27118 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.Q
+    st = getVariable(27118);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -383,8 +383,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27116 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.ET
-    st = getVariable(27116);
+  { // 27119 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.ET
+    st = getVariable(27119);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -395,8 +395,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27117 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER
-    st = getVariable(27117);
+  { // 27120 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER
+    st = getVariable(27120);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMER", 47);
     st->size_data = sizeof(TON);
@@ -406,8 +406,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 27118 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.IN
-    st = getVariable(27118);
+  { // 27121 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.IN
+    st = getVariable(27121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -418,8 +418,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27119 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.PT
-    st = getVariable(27119);
+  { // 27122 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.PT
+    st = getVariable(27122);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.PT", 48);
     st->size_data = sizeof(TIME);
@@ -430,8 +430,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27120 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.Q
-    st = getVariable(27120);
+  { // 27123 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.Q
+    st = getVariable(27123);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -442,8 +442,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27121 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.ET
-    st = getVariable(27121);
+  { // 27124 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.ET
+    st = getVariable(27124);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND.ET", 48);
     st->size_data = sizeof(TIME);
@@ -454,8 +454,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27122 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND
-    st = getVariable(27122);
+  { // 27125 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND
+    st = getVariable(27125);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.TON_COMMAND", 45);
     st->size_data = sizeof(TON);
@@ -465,8 +465,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 27123 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SOURCE
-    st = getVariable(27123);
+  { // 27126 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SOURCE
+    st = getVariable(27126);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SOURCE", 40);
     st->size_data = sizeof(BYTE);
@@ -476,8 +476,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27124 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.CMD
-    st = getVariable(27124);
+  { // 27127 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.CMD
+    st = getVariable(27127);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.CMD", 37);
     st->size_data = sizeof(BYTE);
@@ -487,8 +487,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27125 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.LASTCMD
-    st = getVariable(27125);
+  { // 27128 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.LASTCMD
+    st = getVariable(27128);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.LASTCMD", 41);
     st->size_data = sizeof(BYTE);
@@ -498,8 +498,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27126 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SOURCE_FOR_STATUS
-    st = getVariable(27126);
+  { // 27129 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SOURCE_FOR_STATUS
+    st = getVariable(27129);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.SOURCE_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -509,8 +509,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27127 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.CMD_FOR_STATUS
-    st = getVariable(27127);
+  { // 27130 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.CMD_FOR_STATUS
+    st = getVariable(27130);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.CMD_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -520,8 +520,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27128 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(27128);
+  { // 27131 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(27131);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.COMMAND_ERROR_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -531,8 +531,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27129 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMERPRIZNAK
-    st = getVariable(27129);
+  { // 27132 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMERPRIZNAK
+    st = getVariable(27132);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.PULSETIMERPRIZNAK", 51);
     st->size_data = sizeof(BOOL);
@@ -542,8 +542,8 @@ int __variables_init_FB_AO_KNOPKA_IND(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27130 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMERPRIZNAK
-    st = getVariable(27130);
+  { // 27133 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMERPRIZNAK
+    st = getVariable(27133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND.RESETCMDTIMERPRIZNAK", 54);
     st->size_data = sizeof(BOOL);

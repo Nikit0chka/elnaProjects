@@ -760,6 +760,9 @@ TYPE
     filling_waitAfterKran5 : UINT;
     puskK_wait720 : UINT;
     puskV_wait600 : UINT;
+    No_wait120 : UINT;
+    No_wait600 : UINT;
+    No_wait5 : UINT;
   END_STRUCT;
   struct_PhaseAlgoritm : STRUCT
     run : BOOL;
@@ -2686,9 +2689,6 @@ FUNCTION_BLOCK proc_DI
   END_VAR
 
   (* Циклический опрос. Входные дискретные параметры *)
-
-
-
   (* Модуль A1-12 *)
   di_0(arDIN := arDIN_0, strDI:=di.di_0, err_mod:=arERR_11);
   di_1(arDIN := arDIN_1, strDI:=di.di_1, err_mod:=arERR_11);
@@ -9504,8 +9504,8 @@ FUNCTION impulseSO : BOOL
   END_VAR
 
   IF NOT so.Q THEN
-                      so.inOpcCommandsDisabled:=TRUE;
-  		so.inCommand_Alg:=cmdImpulse;
+      so.inOpcCommandsDisabled:=TRUE;
+      so.inCommand_Alg:=cmdImpulse;
   END_IF;
 END_FUNCTION
 
@@ -9514,44 +9514,62 @@ FUNCTION_BLOCK NOAlg
     StrAlg : struct_Alg;
   END_VAR
   VAR
-    kran4Close : struct_PhaseAlgoritm;
-    mvOff : struct_PhaseAlgoritm;
+    timer120 : struct_PhaseAlgoritm;
+    kran6Open : struct_PhaseAlgoritm;
     pnsOn : struct_PhaseAlgoritm;
+    kran4Close : struct_PhaseAlgoritm;
     kran3bOpen : struct_PhaseAlgoritm;
+    mvOff : struct_PhaseAlgoritm;
     kran1Close : struct_PhaseAlgoritm;
     kran2Close : struct_PhaseAlgoritm;
+    kran3Close : struct_PhaseAlgoritm;
     kran5Open : struct_PhaseAlgoritm;
-    autoNuOff : struct_PhaseAlgoritm;
+    error_Krans : struct_PhaseAlgoritm;
     autoPnsOff : struct_PhaseAlgoritm;
-    pInNagLess100 : struct_PhaseAlgoritm;
-    autoAvomOff : struct_PhaseAlgoritm;
-    avom1cmdOff : struct_PhaseAlgoritm;
-    avom2cmdOff : struct_PhaseAlgoritm;
+    Pg_VhodLessThen300 : struct_PhaseAlgoritm;
+    Pg_VyhodLessThen300 : struct_PhaseAlgoritm;
     nu1off : struct_PhaseAlgoritm;
     nu2off : struct_PhaseAlgoritm;
-    LowOil : struct_PhaseAlgoritm;
-    waitCloseKran : struct_PhaseAlgoritm;
-    pnsWaitOff : struct_PhaseAlgoritm;
-    runUnsuccessful : struct_PhaseAlgoritm;
-    fb_kran4Close : fb_ph_Kran;
-    fb_mvOff : fb_ph_SectionSwitch;
+    AutoNU_Off : struct_PhaseAlgoritm;
+    timer600 : struct_PhaseAlgoritm;
+    pnsOff : struct_PhaseAlgoritm;
+    Avom1Off : struct_PhaseAlgoritm;
+    Avom2Off : struct_PhaseAlgoritm;
+    Avom3Off : struct_PhaseAlgoritm;
+    Avom4Off : struct_PhaseAlgoritm;
+    autoAVOMOff : struct_PhaseAlgoritm;
+    timer5 : struct_PhaseAlgoritm;
+    klapan1 : struct_PhaseAlgoritm;
+    klapan2 : struct_PhaseAlgoritm;
+    nu_On : struct_PhaseAlgoritm;
+    fb_timer120 : fb_ph_Timer;
+    fb_kran6Open : fb_ph_Kran;
     fb_pnsOn : fb_ph_Switch;
+    fb_kran4Close : fb_ph_Kran;
     fb_kran3bOpen : fb_ph_Kran;
+    fb_mvOff : fb_ph_SectionSwitch;
     fb_kran1Close : fb_ph_Kran;
     fb_kran2Close : fb_ph_Kran;
+    fb_kran3Close : fb_ph_Kran;
     fb_kran5Open : fb_ph_Kran;
-    fb_autoNuOff : fb_ph_algoritm;
+    fb_error_Krans : fb_ph_CustomPhase;
     fb_autoPnsOff : fb_ph_algoritm;
-    fb_pInNagLess100 : fb_ph_CustomPhase;
-    fb_autoAvomOff : fb_ph_algoritm;
-    fb_avom1cmdOff : fb_ph_Switch;
-    fb_avom2cmdOff : fb_ph_Switch;
-    fb_nu1off : fb_ph_OilPump;
-    fb_nu2off : fb_ph_OilPump;
-    fb_LowOil : fb_ph_WaitAnalogValue;
-    fb_waitCloseKran : fb_ph_Timer;
-    fb_pnsWaitOff : fb_ph_algoritm;
-    fb_runUnsuccessful : fb_ph_CustomPhase;
+    fb_Pg_VhodLessThen300 : fb_ph_CustomPhase;
+    fb_Pg_VyhodLessThen300 : fb_ph_CustomPhase;
+    fb_nu1Off : fb_ph_OilPump;
+    fb_nu2Off : fb_ph_OilPump;
+    fb_autoNuOff : fb_ph_algoritm;
+    fb_timer600 : fb_ph_Timer;
+    fb_pnsOff : fb_ph_Switch;
+    fb_Avom1Off : fb_ph_Switch;
+    fb_Avom2Off : fb_ph_Switch;
+    fb_Avom3Off : fb_ph_Switch;
+    fb_Avom4Off : fb_ph_Switch;
+    fb_autoAVOMOff : fb_ph_algoritm;
+    fb_timer5 : fb_ph_Timer;
+    fb_klapan1 : fb_ph_CustomPhase;
+    fb_klapan2 : fb_ph_CustomPhase;
+    fb_nu_On : fb_ph_CustomPhase;
     _sunpackerCommand : fb_sunpackerCommand;
     _statusAi : TYPE_StatusAi;
     _Answers : TYPE_Answers;
@@ -9586,164 +9604,231 @@ FUNCTION_BLOCK NOAlg
   END_VAR
 
   IF NOT onInit THEN
-
-         fb_kran4Close(phaseNumber:=1, act:=_off);
-              fb_mvOff(phaseNumber:=2, act:=_off);
-              fb_pnsOn(phaseNumber:=3, act:=_on);
-         fb_kran3bOpen(phaseNumber:=4, act:=_on);
-         fb_kran1Close(phaseNumber:=5, act:=_off);
-         fb_kran2Close(phaseNumber:=6, act:=_off);
-          fb_kran5Open(phaseNumber:=7, act:=_on);
-          fb_autoNuOff(phaseNumber:=8, act:=_reset, waitCompletion:=FALSE);
-         fb_autoPnsOff(phaseNumber:=9, act:=_reset, waitCompletion:=FALSE);
-      fb_pInNagLess100(phaseNumber:=10);
-        fb_autoAvomOff(phaseNumber:=11, act:=_reset, waitCompletion:=FALSE);
-        fb_avom1cmdOff(phaseNumber:=12, act:=_off);
-        fb_avom2cmdOff(phaseNumber:=13, act:=_off);
-             fb_nu1off(phaseNumber:=14, act:=_off);
-             fb_nu2off(phaseNumber:=15, act:=_off);
-      fb_waitCloseKran(phaseNumber:=16, delay:=T#240S);           
-             fb_LowOil(phaseNumber:=17);
-         fb_pnsWaitOff(phaseNumber:=18, act:=_run, waitCompletion:=TRUE);
-    fb_runUnsuccessful(phaseNumber:=20);
-
-
-
+      fb_timer120(phaseNumber:=1, delay:=T#120S);
+      fb_kran6Open(phaseNumber:=2, act:=_on);
+      fb_kran4Close(phaseNumber:=3, act:=_off);
+      fb_kran3bOpen(phaseNumber:=4, act:=_off);
+      fb_mvOff(phaseNumber:=5, act:=_off);
+      fb_kran1Close(phaseNumber:=6, act:=_off);
+      fb_kran2Close(phaseNumber:=7, act:=_off);
+      fb_kran3Close(phaseNumber:=8, act:=_off);
+      fb_kran5Open(phaseNumber:=9, act:=_on);
+      fb_error_Krans(phaseNumber:=10);
+      fb_autoPnsOff(phaseNumber:=11, act:=_reset, waitCompletion:=FALSE);
+      fb_pnsOn(phaseNumber:=12, act:=_on);
+      fb_Pg_VhodLessThen300(phaseNumber:=13);
+      fb_Pg_VyhodLessThen300(phaseNumber:=14);
+      fb_nu1Off(phaseNumber:=15, act:=_off);           
+      fb_nu2Off(phaseNumber:=16, act:=_off);
+      fb_autoNuOff(phaseNumber:=17, act:=_reset, waitCompletion:=FALSE);
+      fb_timer600(phaseNumber:=18, delay:=T#600S);
+      fb_pnsOff(phaseNumber:=19, act:=_off);
+      fb_Avom1Off(phaseNumber:=20, act:=_off);
+      fb_Avom2Off(phaseNumber:=21, act:=_off);
+      fb_Avom3Off(phaseNumber:=22, act:=_off);
+      fb_Avom4Off(phaseNumber:=23, act:=_off);
+      fb_autoAVOMOff(phaseNumber:=24, act:=_reset, waitCompletion:=FALSE);
+      fb_timer5(phaseNumber:=25, delay:=T#5S);
+      fb_klapan1(phaseNumber:=26);
+      fb_klapan2(phaseNumber:=27);
+      fb_nu_On(phaseNumber:=28);
 
   onInit:=TRUE;
   END_IF;
 
-         fb_kran4Close(StrPh:=kran4Close, Im:=Im.kran4);
-              fb_mvOff(StrPh:=mvOff, Im:=Im.mv);
-              fb_pnsOn(StrPh:=pnsOn, Im:=Im.pns);
-         fb_kran3bOpen(StrPh:=kran3bOpen, Im:=Im.kran3b);
-         fb_kran1Close(StrPh:=kran1Close, Im:=Im.kran1);
-         fb_kran2Close(StrPh:=kran2Close, Im:=Im.kran2);
-          fb_kran5Open(StrPh:=kran5Open, Im:=Im.kran5);
-          fb_autoNuOff(StrPh:=autoNuOff, alg:=algoritms.autoNu);
-         fb_autoPnsOff(StrPh:=autoPnsOff, alg:=algoritms.autoPns);
-      fb_pInNagLess100(StrPh:=pInNagLess100);
-        fb_autoAvomOff(StrPh:=autoAvomOff, alg:=algoritms.AutoAvom);
-        fb_avom1cmdOff(StrPh:=avom1cmdOff, Im:=Im.v1_Avom);
-        fb_avom2cmdOff(StrPh:=avom2cmdOff, Im:=Im.v2_Avom);
-             fb_nu1off(StrPh:=nu1off, Im:=Im.nu1);
-             fb_nu2off(StrPh:=nu2off, Im:=Im.nu2);
-      fb_waitCloseKran(StrPh:=waitCloseKran, timer:=AlgTimers.NO_waitCloseKran);           
-             (*fb_LowOil(StrPh:=LowOil, ai:=ai.Pmasla_posle_GNS, less:=im.AutoPns_UstRun.value);*)
-         fb_pnsWaitOff(StrPh:=pnsWaitOff, alg:=algoritms.vibegPNS, waitCompletion:=TRUE);
-    fb_runUnsuccessful(StrPh:=runUnsuccessful);
+  fb_timer120(StrPh:=timer120, timer:=AlgTimers.No_wait120);
+  fb_kran6Open(StrPh:=kran6Open, Im:=Im.kran6);
+  fb_pnsOn(StrPh:=pnsOn, Im:=Im.pns);
+  fb_kran4Close(StrPh:=kran4Close, Im:=Im.kran4);
+  fb_kran3bOpen(StrPh:=kran3bOpen, Im:=Im.kran3b);
+  fb_mvOff(StrPh:=mvOff, Im:=Im.mv);
+  fb_kran1Close(StrPh:=kran1Close, Im:=Im.kran1);
+  fb_kran2Close(StrPh:=kran2Close, Im:=Im.Kran2);
+  fb_kran3Close(StrPh:=kran3Close, Im:=Im.Kran3);
+  fb_kran5Open(StrPh:=kran5Open, Im:=Im.Kran5);
+  fb_error_Krans(StrPh:=error_Krans);
+  fb_autoPnsOff(StrPh:=autoPnsOff, alg:=algoritms.autoPns);
+  fb_Pg_VhodLessThen300(StrPh:=Pg_VhodLessThen300);
+  fb_Pg_VyhodLessThen300(StrPh:=Pg_VyhodLessThen300);
+  fb_nu1Off(StrPh:=nu1off, Im:=Im.nu1);           
+  fb_nu2Off(StrPh:=nu2off, Im:=Im.nu2);
+  fb_autoNuOff(StrPh:=AutoNU_Off, alg:=algoritms.autoNu);
+  fb_timer600(StrPh:=timer600, timer:=AlgTimers.No_wait600);
+  fb_pnsOff(StrPh:=pnsOff, Im:=Im.pns);
+  fb_Avom1Off(StrPh:=Avom1Off, Im:=Im.v1_Avom);
+  fb_Avom2Off(StrPh:=Avom2Off, Im:=Im.v2_Avom);
+  fb_Avom3Off(StrPh:=Avom3Off, Im:=Im.v3_Avom);
+  fb_Avom4Off(StrPh:=Avom4Off, Im:=Im.v4_Avom);
+  fb_autoAVOMOff(StrPh:=autoAVOMOff, alg:=algoritms.AutoAvom);
+  fb_timer5(StrPh:=timer5, timer:=AlgTimers.No_wait5);
+  fb_klapan1(StrPh:=klapan1);
+  fb_klapan2(StrPh:=klapan2);
+  fb_nu_On(StrPh:=nu_On);
 
   StrAlg.CanRun := StrAlg.inCanRun;
   StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
 
   IF StrAlg.isRuning THEN
-
-
-      StrAlg.hasError := kran4Close.error OR mvOff.error OR pnsOn.error OR kran3bOpen.error
-      OR kran1Close.error OR kran2Close.error OR kran5Open.error OR runUnsuccessful.error;
-
-      IF kran3bOpen.top THEN	
-          runPhase(kran1Close);
-          runPhase(kran2Close);
+      (* кран 6 не открыт - запуск таймера *)
+      IF NOT kran6Open.top AND NOT timer120.top  THEN 
+  	runPhase(timer120);
+      ELSE
+      (* счетчик отработал и кран 6 не открыт - ошибка *)
+          IF timer120.top AND NOT kran6Open.top THEN 
+              error_Krans.error := TRUE;
+          END_IF;
       END_IF;
 
-      IF kran4Close.top AND kran1Close.top AND kran2Close.top THEN
+      (* старт смазки кранов *)
+      IF (*algoritms.F3.Smazka_1_2 OR *)IM.kran1.onStatus = _statusDualInput.STATUS_ON OR IM.kran1.onStatus = _statusDualInput.STATUS_TRANSITIONAL
+  	OR IM.kran2.onStatus = _statusDualInput.STATUS_ON OR IM.kran2.onStatus = _statusDualInput.STATUS_TRANSITIONAL  THEN
+          IF (*(algoritms.F3.Smazka_1_2 OR *)IM.kran1.onStatus = _statusDualInput.STATUS_ON OR IM.kran1.onStatus = _statusDualInput.STATUS_TRANSITIONAL AND NOT klapan1.start AND NOT kran1Close.top THEN
+              runPhase(klapan1);
+          END_IF;
+          IF (*(algoritms.F3.Smazka_1_2 OR *)IM.kran2.onStatus = _statusDualInput.STATUS_ON OR IM.kran2.onStatus = _statusDualInput.STATUS_TRANSITIONAL AND NOT klapan2.start AND NOT kran2Close.top THEN
+              runPhase(klapan2);
+          END_IF;
+      (*algoritms.F3.Smazka_1_2:=FALSE;*)
+      END_IF;
+
+      (* открыть кран 6 кран 4 *)
+      runPhase(kran6Open);
+      runPhase(kran4Close);
+
+      (*не понимаю
+      IF kran4Close.top THEN
+          ystavki.Block_kr4_alg.setValue (0);
+      END_IF;*)
+
+      (* кран 6 открыт *)
+      IF kran6Open.top THEN
+  	runPhase(kran3bOpen);
+  	resetPhase(timer120); 
+  	(*error_Krans.top := FALSE;
+  	error_Krans.error := FALSE;*)
+  	(*algoritms.S_Vibr.CanRun:=FALSE;
+  	algoritms.S_Vibr.reset (); net takogo alg*)
+      END_IF;
+      IF kran3bOpen.top AND NOT mvoff.start THEN
+  	resetDiProtection(protections.mvOff);
+  	resetDiProtection(protections.Off_avar_vikluchatel);
+  	resetDiProtection(protections.Reg_vozb_off);
+  	runPhase(mvOff); 
+      END_IF;
+
+      IF mvOff.top (*AND NOT flag1*) THEN 
+          algoritms.AutoPns.inCanRun :=FALSE;
+          (*algoritms.AutoPNS_Start.reset (); nichego ne ponimau
+          algoritms.AutoPns.inCanRun :=FALSE;*)
+          runPhase(autoPnsOff);
+          runPhase(pnsOn);
+          resetDiProtection(protections.Kran1_sdvig);
+          resetDiProtection(protections.Kran2_sdvig);
+          runPhase(kran1Close);
+          runPhase(kran2Close);
+          runPhase(kran3Close);
+          runPhase(nu_On);
+
+          (*тут запустить насосы уплотнения *)
+
+          (*algoritms.autoNu.inCanRun:=FALSE;
+          algoritms.autoNu_2.reset ();
+          algoritms.autoNu_1.inCanRun:=TRUE;
+          algoritms.autoNu_1.run ();
+          flag1:=TRUE; что тут происходит?*)
+      END_IF;
+      IF ((IM.nu1.onStatus =_statusDualInput.STATUS_ON) OR (IM.nu2.onStatus =_statusDualInput.STATUS_ON)) AND nu_On.start AND NOT nu_On.top THEN
+          nu_On.top:=TRUE;
+      END_IF;
+
+      (* выдача смазки *)
+      IF klapan1.start AND kran1Close.top THEN
+          (*IM.Kr1_Smazka.impulse(); не понимаю((((((((*)
+          klapan1.top:=TRUE;
+      END_IF;
+
+      IF klapan2.start AND kran2Close.top THEN
+  	(*IM.Kr2_Smazka.impulse(); не понимаю *)
+  	klapan2.top:=TRUE;
+      END_IF;
+
+      (* кран 1 кран 2 кран 3 кран 4 закрыты - открыть кран 5 *)
+      IF kran1Close.top AND kran2Close.top AND kran3Close.top AND kran4Close.top THEN
           runPhase(kran5Open);
+          resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
       END_IF;
 
       IF kran5Open.top THEN
-         (*resetDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);*)
-         runPhase(mvOff);
+          runPhase(Pg_VhodLessThen300);
+          runPhase(Pg_VyhodLessThen300); 
       END_IF;
 
-      IF mvOff.top THEN
-            runPhase(autoPnsOff); 
-  	runPhase(pInNagLess100);
-  	runPhase(LowOil);
+      IF Pg_VhodLessThen300.start AND NOT Pg_VhodLessThen300.top THEN
+          IF (ai.Pgaza_na_vhode_nagnetatelia.interval>= _statusAi.NORMAL) AND (ai.Pgaza_na_vhode_nagnetatelia.value < 0.3) THEN
+              Pg_VhodLessThen300.top:=TRUE;
+          END_IF;
       END_IF;
 
-      IF LowOil.start AND NOT LowOil.top THEN
-         im.pns.inopcCommandsDisabled:=FALSE;
-             IF (im.pns.onStatus = _statusDualInput.STATUS_ON) THEN
-                 im.pns.inopcCommandsDisabled:=TRUE;
-                 im.pns.inCommand_Alg:=BYTE_TO_WORD(_commandDualInput.CMD_OFF);
-             END_IF;
-
-      END_IF;	
-
-
-      IF autoPnsOff.top AND LowOil.top THEN
-  	runPhase(pnsOn);	
-      END_IF;	
-
-     IF pInNagLess100.start AND NOT pInNagLess100.top THEN
-  	pInNagLess100.top:=( ai.dPgaza_na_maslo_filtre.interval >= _statusAi.NORMAL AND
-            ai.dPgaza_na_maslo_filtre.value < Ust_Pgaza ) AND 
-           (ai.Pmaslo_sm_vysokoe.interval >= _statusAi.NORMAL AND
-            ai.Pmaslo_sm_vysokoe.value < Ust_Pgaza); 
-
-     END_IF; 
-
-     IF pInNagLess100.top THEN
-     resetPhase(waitCloseKran);
-     END_IF; 
-
-
-      IF pInNagLess100.top AND pnsOn.top THEN
-  	ai.Tmasla_MB.Disabled_LA:=TRUE;
-            ai.Tmasla_MB.Disabled_LW:=TRUE;
-            (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
-            resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
-            (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
-
-            runPhase(autoNuOff);           
+      IF Pg_VyhodLessThen300.start AND NOT Pg_VyhodLessThen300.top THEN
+          IF (ai.Pgaza_na_vyhode_nagnetatelia.interval>=_statusAi.NORMAL) AND (ai.Pgaza_na_vyhode_nagnetatelia.value < 0.3) THEN
+              Pg_VyhodLessThen300.top:=TRUE;
+          END_IF;
       END_IF;
 
-      IF autoNuOff.top THEN
-  	runPhase(nu1off);
-            runPhase(nu2off);  
+      IF Pg_VhodLessThen300.top AND Pg_VyhodLessThen300.top AND pnsOn.top AND nu_On.top AND mvOff.top  THEN 
+          runphase(nu1Off);
+          runphase(nu2Off);
+
+          resetAiProtection(protections.dPmaslo_gaz);
+          resetDiProtection(protections.dPmaslo_gaz_less100);
+
+
+          runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+          runAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+          algoritms.autoNu.CanRun:=FALSE;
+          AutoNU_Off.top:=TRUE;
+          (*algoritms.autoNu_1.reset(); кого, чего куда*)
       END_IF;
 
-      IF nu1off.top AND  nu2off.top THEN
-  	runPhase(pnsWaitOff);
-      END_IF;	
-
-      IF waitCloseKran.top AND (NOT pInNagLess100.top) THEN
-  	runUnsuccessful.error:=TRUE;
+      IF nu1Off.top THEN
+          IF (*NOT algManager.reg_V AND кто чего*) NOT pnsoff.start THEN
+              runPhase(timer600);
+          END_IF;
+          (*IF NOT pnsoff.start THEN
+              sbrosVibeg.ask();
+          END_IF; kto chego?*)
       END_IF;
 
-      IF pnsWaitOff.top THEN
-  	runPhase(autoAvomOff);	
+      IF timer600.top (*OR sbrosVibeg.answer=Answers.ANS_YES kto chto *)THEN
+  	runPhase(pnsOff);
+  	resetAiProtection(protections.Pmaslo_sm_nizkoe);
+  	resetAiProtection(protections.Pmaslo_sm_vysokoe);
+  	(*sbrosVibeg.reset (); pomogite *)
+  	resetPhase(timer600);
+  	(*algoritms.F2_Ch.autoAVOM_canrun_flag:=FALSE;
+  	algoritms.F2_R.autoAVOM_canrun_flag:=FALSE;*)
+      END_IF;
+      IF (*(NOT algoritms.F2_Ch.autoAVOM_canrun_flag) AND (NOT algoritms.F2_R.autoAVOM_canrun_flag) AND*)pnsoff.start THEN
+  	runPhase(Avom1Off);
+  	runPhase(Avom2Off);
+  	runPhase(Avom3Off);
+  	runPhase(Avom4Off);
+
+  	(*algoritms.R_AutoAVOM.CanRun:=FALSE; 
+  	algoritms.R_AutoAVOM.reset();
+  	algoritms.S_AutoAVOM.CanRun:=FALSE;
+  	algoritms.S_AutoAVOM.reset();
+  	algoritms.Auto_Avom_.CanRun:=FALSE;*)
+  	runPhase(autoAVOMOff);
       END_IF;
 
-      IF autoAvomOff.top THEN
-  	runPhase(avom1cmdOff);
-  	runPhase(avom2cmdOff);
+      IF pnsOff.top AND Avom1Off.top AND Avom2Off.top AND Avom3Off.top AND Avom4Off.top AND autoAVOMOff.top  THEN 
+          runPhase(timer5);
       END_IF;
 
-      IF avom1cmdOff.top AND avom2cmdOff.top THEN
-  	waitReset(IN:=TRUE, PT:= T#2S);
+      IF timer5.top THEN
+  	resetPhase(timer5);
       END_IF;
-
-      IF waitReset.Q THEN
-      resetIfRunning(algoritms.vibegPNS);
-      algManager.nMode:=ModeGpa.MODE_STOP;
-      resetIfRunning(StrAlg);
-      END_IF;
-
-      StrAlg.isEnded:= avom1cmdOff.top AND avom2cmdOff.top AND pnsWaitOff.top;
-  END_IF;
-
-
-
-  StrAlg.CanRun := StrAlg.inCanRun;
-  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
-
-  (* ---- Если управление с ВУ заблокировано, то  передаем команду из алгоритма ---- *)
-  IF StrAlg.inOpcCommandsDisabled THEN
-  	StrAlg.inCommand := StrAlg.inCommand_Alg;
-  ELSE (* иначе передаем команду с АРМа*)
-  	StrAlg.inCommand := StrAlg.inCommand_ARM;
   END_IF;
 
   _sunpackerCommand(command := StrAlg.inCommand);
@@ -9761,10 +9846,10 @@ FUNCTION_BLOCK NOAlg
                                                     algManager.nMode:=ModeGpa.MODE_NO;
                                                     (*runIfNotRunningSO(IM.SingleOutputs.Lampa_NO);*)
 
-                                                    runPhase(kran3bOpen);
-                                                    runPhase(kran4Close);         
-                                                    runPhase(waitCloseKran);
-                                                    runPhase(runUnsuccessful); 
+                                                    runPhase(kran4Close);
+                                                    runPhase(timer120);         
+                                                    runPhase(nu1Off);
+                                                    runPhase(timer600); 
 
                                                    (* resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
                                                     resetAiProtection(protections.dPmaslo_gaz);
@@ -9797,25 +9882,25 @@ FUNCTION_BLOCK NOAlg
                                           resetIfRunning(algoritms.vibegPNS);
                                           (*impulseSO(Im.SingleOutputs.SbrosBREO);*)
 
-                                          resetPhase(kran4Close);
-                                          resetPhase(mvOff);
+                                          resetPhase(timer120);
+                                          resetPhase(kran6Open);
                                           resetPhase(pnsOn);
+                                          resetPhase(kran4Close);
                                           resetPhase(kran3bOpen);
+                                          resetPhase(mvOff);
                                           resetPhase(kran1Close);
                                           resetPhase(kran2Close);
+                                          resetPhase(kran3Close);
                                           resetPhase(kran5Open);
-                                          resetPhase(autoNuOff);
+  	                              resetPhase(error_Krans);
                                           resetPhase(autoPnsOff);
-                                          resetPhase(pInNagLess100);
-  	                              resetPhase(autoAvomOff);
-                                          resetPhase(avom1cmdOff);
-                                          resetPhase(avom2cmdOff);
-                                          resetPhase(nu1off);
-                                          resetPhase(nu2off);
-                                          resetPhase(LowOil);
-                                          resetPhase(waitCloseKran);
-                                          resetPhase(pnsWaitOff);
-                                          resetPhase(runUnsuccessful);
+                                          resetPhase(pnsOn);
+                                          resetPhase(Pg_VhodLessThen300);
+                                          resetPhase(Pg_VyhodLessThen300);
+                                          resetPhase(nu2Off);
+                                          resetPhase(nu1Off);
+                                          resetPhase(AutoNU_Off);
+                                          resetPhase(timer600);
 
   				cmd_for_Status := cmd;
   				source_for_Status := source;
@@ -9834,67 +9919,67 @@ FUNCTION_BLOCK NOAlg
   	command_error_for_Status := 0;
   END_IF; 
 
-  StrAlg.Start:= kran4Close.startStatus
-              OR mvOff.startStatus
+  StrAlg.Start:= timer120.startStatus
+              OR kran6Open.startStatus
               OR pnsOn.startStatus
+              OR kran4Close.startStatus
               OR kran3bOpen.startStatus
+              OR mvOff.startStatus
               OR kran1Close.startStatus
               OR kran2Close.startStatus
+              OR kran3Close.startStatus
               OR kran5Open.startStatus
-              OR autoNuOff.startStatus
+              OR error_Krans.startStatus
               OR autoPnsOff.startStatus
-              OR pInNagLess100.startStatus
-              OR autoAvomOff.startStatus
-              OR avom1cmdOff.startStatus
-              OR avom2cmdOff.startStatus
-              OR nu1off.startStatus
-              OR nu2off.startStatus
-              OR LowOil.startStatus
-              OR waitCloseKran.startStatus
-              OR pnsWaitOff.startStatus
-              OR runUnsuccessful.startStatus;
+              OR pnsOn.startStatus
+              OR Pg_VhodLessThen300.startStatus
+              OR Pg_VyhodLessThen300.startStatus
+              OR nu2Off.startStatus
+              OR nu1Off.startStatus
+              OR AutoNU_Off.startStatus
+              OR timer600.startStatus;
 
 
-  StrAlg.Error:= kran4Close.errorStatus
-              OR mvOff.errorStatus
+  StrAlg.Error:= timer120.errorStatus
+              OR kran6Open.errorStatus
               OR pnsOn.errorStatus
+              OR kran4Close.errorStatus
               OR kran3bOpen.errorStatus
+              OR mvOff.errorStatus
               OR kran1Close.errorStatus
               OR kran2Close.errorStatus
+              OR kran3Close.errorStatus
               OR kran5Open.errorStatus
-              OR autoNuOff.errorStatus
+              OR error_Krans.errorStatus
               OR autoPnsOff.errorStatus
-              OR pInNagLess100.errorStatus
-              OR autoAvomOff.errorStatus
-              OR avom1cmdOff.errorStatus
-              OR avom2cmdOff.errorStatus
-              OR nu1off.errorStatus
-              OR nu2off.errorStatus
-              OR LowOil.errorStatus
-              OR waitCloseKran.errorStatus
-              OR pnsWaitOff.errorStatus
-              OR runUnsuccessful.errorStatus;
+              OR pnsOn.errorStatus
+              OR Pg_VhodLessThen300.errorStatus
+              OR Pg_VyhodLessThen300.errorStatus
+              OR nu2Off.errorStatus
+              OR nu1Off.errorStatus
+              OR AutoNU_Off.errorStatus
+              OR timer600.errorStatus;
 
 
-  StrAlg.Top:=   kran4Close.topStatus
-              OR mvOff.topStatus
+  StrAlg.Top:=   timer120.topStatus
+              OR kran6Open.topStatus
               OR pnsOn.topStatus
+              OR kran4Close.topStatus
               OR kran3bOpen.topStatus
+              OR mvOff.topStatus
               OR kran1Close.topStatus
               OR kran2Close.topStatus
+              OR kran3Close.topStatus
               OR kran5Open.topStatus
-              OR autoNuOff.topStatus
+              OR error_Krans.topStatus
               OR autoPnsOff.topStatus
-              OR pInNagLess100.topStatus
-              OR autoAvomOff.topStatus
-              OR avom1cmdOff.topStatus
-              OR avom2cmdOff.topStatus
-              OR nu1off.topStatus
-              OR nu2off.topStatus
-              OR LowOil.topStatus
-              OR waitCloseKran.topStatus
-              OR pnsWaitOff.topStatus
-              OR runUnsuccessful.topStatus;                           
+              OR pnsOn.topStatus
+              OR Pg_VhodLessThen300.topStatus
+              OR Pg_VyhodLessThen300.topStatus
+              OR nu2Off.topStatus
+              OR nu1Off.topStatus
+              OR AutoNU_Off.topStatus
+              OR timer600.topStatus;                           
 
   (*TODO: TYPE PROGRAM CODE HERE*)
   StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
@@ -9907,68 +9992,65 @@ FUNCTION_BLOCK NOAlg
   			OR BOOL_TO_DWORD(StrAlg.isRuning);
 END_FUNCTION_BLOCK
 
-FUNCTION stopPusk : BOOL
-  VAR_IN_OUT
-    algoritms : AlgoritmsConfig;
-  END_VAR
-
-  resetAndDisable(alg:=algoritms.Apusk);
-  resetAndDisable(alg:=algoritms.SemiAutoPusk);
-  resetAndDisable(alg:=algoritms.testPms);
-  resetAndDisable(alg:=algoritms.puskV);		
-  resetAndDisable(alg:=algoritms.puskK);	
-  resetAndDisable(alg:=algoritms.testdPmg);
-  resetAndDisable(alg:=algoritms.ppu);
-  resetAndDisable(alg:=algoritms.puskOilSystem);
-  resetAndDisable(alg:=algoritms.filling);
-  resetAndDisable(alg:=algoritms.engineRun);
-  resetAndDisable(alg:=algoritms.RingToLine);
-  resetAndDisable(alg:=algoritms.LineToRing);
-END_FUNCTION
-
 FUNCTION_BLOCK AOAlg
   VAR_IN_OUT
     StrAlg : struct_Alg;
   END_VAR
   VAR
+    kran6Open : struct_PhaseAlgoritm;
     kran4Close : struct_PhaseAlgoritm;
-    mvOff : struct_PhaseAlgoritm;
-    pnsOn : struct_PhaseAlgoritm;
     kran3bOpen : struct_PhaseAlgoritm;
+    mvOff : struct_PhaseAlgoritm;
     kran1Close : struct_PhaseAlgoritm;
     kran2Close : struct_PhaseAlgoritm;
+    kran3Close : struct_PhaseAlgoritm;
     kran5Open : struct_PhaseAlgoritm;
-    autoNuOff : struct_PhaseAlgoritm;
     autoPnsOff : struct_PhaseAlgoritm;
-    pInNagLess100 : struct_PhaseAlgoritm;
-    autoAvomOff : struct_PhaseAlgoritm;
-    avom1cmdOff : struct_PhaseAlgoritm;
-    avom2cmdOff : struct_PhaseAlgoritm;
+    pnsOn : struct_PhaseAlgoritm;
+    Pg_VhodLessThen300 : struct_PhaseAlgoritm;
+    Pg_VyhodLessThen300 : struct_PhaseAlgoritm;
     nu1off : struct_PhaseAlgoritm;
     nu2off : struct_PhaseAlgoritm;
-    LowOil : struct_PhaseAlgoritm;
-    waitKran : struct_PhaseAlgoritm;
-    pnsWaitOff : struct_PhaseAlgoritm;
-    runUnsuccessful : struct_PhaseAlgoritm;
-    fb_kran4Close : fb_ph_Kran;
-    fb_mvOff : fb_ph_SectionSwitch;
+    AutoNU_Off : struct_PhaseAlgoritm;
+    timer600 : struct_PhaseAlgoritm;
+    pnsOff : struct_PhaseAlgoritm;
+    Avom1Off : struct_PhaseAlgoritm;
+    Avom2Off : struct_PhaseAlgoritm;
+    Avom3Off : struct_PhaseAlgoritm;
+    Avom4Off : struct_PhaseAlgoritm;
+    autoAVOMOff : struct_PhaseAlgoritm;
+    timer5 : struct_PhaseAlgoritm;
+    klapan1 : struct_PhaseAlgoritm;
+    klapan2 : struct_PhaseAlgoritm;
+    nu_On : struct_PhaseAlgoritm;
+    Start_AO_From : struct_PhaseAlgoritm;
+    fb_kran6Open : fb_ph_Kran;
     fb_pnsOn : fb_ph_Switch;
+    fb_kran4Close : fb_ph_Kran;
     fb_kran3bOpen : fb_ph_Kran;
+    fb_mvOff : fb_ph_SectionSwitch;
     fb_kran1Close : fb_ph_Kran;
     fb_kran2Close : fb_ph_Kran;
+    fb_kran3Close : fb_ph_Kran;
     fb_kran5Open : fb_ph_Kran;
-    fb_autoNuOff : fb_ph_algoritm;
     fb_autoPnsOff : fb_ph_algoritm;
-    fb_pInNagLess100 : fb_ph_CustomPhase;
-    fb_autoAvomOff : fb_ph_algoritm;
-    fb_avom1cmdOff : fb_ph_Switch;
-    fb_avom2cmdOff : fb_ph_Switch;
-    fb_nu1off : fb_ph_OilPump;
-    fb_nu2off : fb_ph_OilPump;
-    fb_LowOil : fb_ph_WaitAnalogValue;
-    fb_waitKran : fb_ph_Timer;
-    fb_pnsWaitOff : fb_ph_algoritm;
-    fb_runUnsuccessful : fb_ph_CustomPhase;
+    fb_Pg_VhodLessThen300 : fb_ph_CustomPhase;
+    fb_Pg_VyhodLessThen300 : fb_ph_CustomPhase;
+    fb_nu1Off : fb_ph_OilPump;
+    fb_nu2Off : fb_ph_OilPump;
+    fb_autoNuOff : fb_ph_algoritm;
+    fb_timer600 : fb_ph_Timer;
+    fb_pnsOff : fb_ph_Switch;
+    fb_Avom1Off : fb_ph_Switch;
+    fb_Avom2Off : fb_ph_Switch;
+    fb_Avom3Off : fb_ph_Switch;
+    fb_Avom4Off : fb_ph_Switch;
+    fb_autoAVOMOff : fb_ph_algoritm;
+    fb_timer5 : fb_ph_Timer;
+    fb_klapan1 : fb_ph_CustomPhase;
+    fb_klapan2 : fb_ph_CustomPhase;
+    fb_nu_On : fb_ph_CustomPhase;
+    fb_Start_AO_From : fb_ph_CustomPhase;
     _sunpackerCommand : fb_sunpackerCommand;
     _statusAi : TYPE_StatusAi;
     _Answers : TYPE_Answers;
@@ -10000,143 +10082,251 @@ FUNCTION_BLOCK AOAlg
     ModeGpa : TYPE_ModeGpa;
     algManager : struct_AlgoritmsManager;
     AlgTimers : struct_AlgTimers;
-    PMcommand : TYPE_CommandsPotectionsManager;
-    protectManager : struct_ProtectionsManager;
   END_VAR
 
-  IF NOT onInit THEN
-
-         fb_kran4Close(phaseNumber:=1, act:=_off);
-         fb_kran3bOpen(phaseNumber:=2, act:=_on);       
-              fb_mvOff(phaseNumber:=3, act:=_off);
-              fb_pnsOn(phaseNumber:=4, act:=_on);
-         fb_kran1Close(phaseNumber:=6, act:=_off);
-         fb_kran2Close(phaseNumber:=7, act:=_off);            
-          fb_kran5Open(phaseNumber:=8, act:=_on);
-          fb_autoNuOff(phaseNumber:=9, act:=_reset, waitCompletion:=FALSE);
-         fb_autoPnsOff(phaseNumber:=10, act:=_reset, waitCompletion:=FALSE);
-        fb_autoAvomOff(phaseNumber:=11, act:=_reset, waitCompletion:=FALSE);
-        fb_avom1cmdOff(phaseNumber:=12, act:=_off);
-        fb_avom2cmdOff(phaseNumber:=13, act:=_off);       
-      fb_pInNagLess100(phaseNumber:=14);       
-           fb_waitKran(phaseNumber:=15, delay:=T#240S);        
-         fb_pnsWaitOff(phaseNumber:=17, act:=_run, waitCompletion:=TRUE);       
-             fb_nu1off(phaseNumber:=18, act:=_off);
-             fb_nu2off(phaseNumber:=19, act:=_off);
-    fb_runUnsuccessful(phaseNumber:=20);
-
+  IF NOT onInit THEN    
+      fb_kran6Open(phaseNumber:=1, act:=_on);
+      fb_kran4Close(phaseNumber:=2, act:=_off);
+      fb_kran3bOpen(phaseNumber:=3, act:=_off);
+      fb_mvOff(phaseNumber:=4, act:=_off);
+      fb_kran1Close(phaseNumber:=5, act:=_off);
+      fb_kran2Close(phaseNumber:=6, act:=_off);
+      fb_kran3Close(phaseNumber:=7, act:=_off);
+      fb_kran5Open(phaseNumber:=8, act:=_on);
+      fb_autoPnsOff(phaseNumber:=9, act:=_reset, waitCompletion:=FALSE);
+      fb_pnsOn(phaseNumber:=10, act:=_on);
+      fb_Pg_VhodLessThen300(phaseNumber:=11);
+      fb_Pg_VyhodLessThen300(phaseNumber:=12);
+      fb_nu1Off(phaseNumber:=13, act:=_off);           
+      fb_nu2Off(phaseNumber:=14, act:=_off);
+      fb_autoNuOff(phaseNumber:=15, act:=_reset, waitCompletion:=FALSE);
+      fb_timer600(phaseNumber:=16, delay:=T#600S);
+      fb_pnsOff(phaseNumber:=17, act:=_off);
+      fb_Avom1Off(phaseNumber:=18, act:=_off);
+      fb_Avom2Off(phaseNumber:=19, act:=_off);
+      fb_Avom3Off(phaseNumber:=20, act:=_off);
+      fb_Avom4Off(phaseNumber:=21, act:=_off);
+      fb_autoAVOMOff(phaseNumber:=22, act:=_reset, waitCompletion:=FALSE);
+      fb_timer5(phaseNumber:=23, delay:=T#5S);
+      fb_klapan1(phaseNumber:=24);
+      fb_klapan2(phaseNumber:=25);
+      fb_nu_On(phaseNumber:=26);
+      fb_Start_AO_From(phaseNumber:=27);  
   onInit:=TRUE;
   END_IF;
 
-         fb_kran4Close(StrPh:=kran4Close, Im:=Im.kran4);
-         fb_kran3bOpen(StrPh:=kran3bOpen, Im:=Im.kran3b);       
-              fb_mvOff(StrPh:=mvOff, Im:=Im.mv);
-              fb_pnsOn(StrPh:=pnsOn, Im:=Im.pns);
-
-         fb_kran1Close(StrPh:=kran1Close, Im:=Im.kran1);
-         fb_kran2Close(StrPh:=kran2Close, Im:=Im.kran2);
-          fb_kran5Open(StrPh:=kran5Open, Im:=Im.kran5);
-          fb_autoNuOff(StrPh:=autoNuOff, alg:=algoritms.autoNu);
-         fb_autoPnsOff(StrPh:=autoPnsOff, alg:=algoritms.autoPns);
-        fb_autoAvomOff(StrPh:=autoAvomOff, alg:=algoritms.AutoAvom);
-        fb_avom1cmdOff(StrPh:=avom1cmdOff, Im:=Im.v1_Avom);
-        fb_avom2cmdOff(StrPh:=avom2cmdOff, Im:=Im.v2_Avom);
-      fb_pInNagLess100(StrPh:=pInNagLess100);      
-           fb_waitKran(StrPh:=waitKran, timer:=AlgTimers.AO_waitKran);       
-         fb_pnsWaitOff(StrPh:=pnsWaitOff, alg:=algoritms.vibegPNS, waitCompletion:=TRUE);      
-             fb_nu1off(StrPh:=nu1off, Im:=Im.nu1);
-             fb_nu2off(StrPh:=nu2off, Im:=Im.nu2);
-    fb_runUnsuccessful(StrPh:=runUnsuccessful);
+  fb_kran6Open(StrPh:=kran6Open, Im:=Im.kran6);
+  fb_pnsOn(StrPh:=pnsOn, Im:=Im.pns);
+  fb_kran4Close(StrPh:=kran4Close, Im:=Im.kran4);
+  fb_kran3bOpen(StrPh:=kran3bOpen, Im:=Im.kran3b);
+  fb_mvOff(StrPh:=mvOff, Im:=Im.mv);
+  fb_kran1Close(StrPh:=kran1Close, Im:=Im.kran1);
+  fb_kran2Close(StrPh:=kran2Close, Im:=Im.Kran2);
+  fb_kran3Close(StrPh:=kran3Close, Im:=Im.Kran3);
+  fb_kran5Open(StrPh:=kran5Open, Im:=Im.Kran5);
+  fb_autoPnsOff(StrPh:=autoPnsOff, alg:=algoritms.autoPns);
+  fb_Pg_VhodLessThen300(StrPh:=Pg_VhodLessThen300);
+  fb_Pg_VyhodLessThen300(StrPh:=Pg_VyhodLessThen300);
+  fb_nu1Off(StrPh:=nu1off, Im:=Im.nu1);           
+  fb_nu2Off(StrPh:=nu2off, Im:=Im.nu2);
+  fb_autoNuOff(StrPh:=AutoNU_Off, alg:=algoritms.autoNu);
+  fb_timer600(StrPh:=timer600, timer:=AlgTimers.No_wait600);
+  fb_pnsOff(StrPh:=pnsOff, Im:=Im.pns);
+  fb_Avom1Off(StrPh:=Avom1Off, Im:=Im.v1_Avom);
+  fb_Avom2Off(StrPh:=Avom2Off, Im:=Im.v2_Avom);
+  fb_Avom3Off(StrPh:=Avom3Off, Im:=Im.v3_Avom);
+  fb_Avom4Off(StrPh:=Avom4Off, Im:=Im.v4_Avom);
+  fb_autoAVOMOff(StrPh:=autoAVOMOff, alg:=algoritms.AutoAvom);
+  fb_timer5(StrPh:=timer5, timer:=AlgTimers.No_wait5);
+  fb_klapan1(StrPh:=klapan1);
+  fb_klapan2(StrPh:=klapan2);
+  fb_nu_On(StrPh:=nu_On);
+  fb_Start_AO_From(StrPh:=Start_AO_From);  
 
   StrAlg.CanRun := StrAlg.inCanRun;
   StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
 
   IF StrAlg.isRuning THEN
 
+      IF	(*algoritms.F3.Smazka_1_2 OR*) IM.kran1.onStatus = _statusDualInput.STATUS_ON OR IM.kran1.onStatus = _statusDualInput.STATUS_TRANSITIONAL
+  	    OR IM.kran2.onStatus = _statusDualInput.STATUS_ON OR IM.kran2.onStatus = _statusDualInput.STATUS_TRANSITIONAL  THEN
+  	    IF (*(algoritms.F3.Smazka_1_2 OR*) IM.kran1.onStatus = _statusDualInput.STATUS_ON OR IM.kran1.onStatus = _statusDualInput.STATUS_TRANSITIONAL AND NOT klapan1.start AND NOT kran1Close.top THEN
+  		    runPhase(klapan1);
+  	    END_IF;
+  	    IF (*algoritms.F3.Smazka_1_2 OR*) IM.kran2.onStatus = _statusDualInput.STATUS_ON OR IM.kran2.onStatus = _statusDualInput.STATUS_TRANSITIONAL AND NOT klapan2.start AND NOT kran2Close.top THEN
+  		    runPhase(klapan2);
+      	END_IF;
+  	(*algoritms.F3.Smazka_1_2:=FALSE; у меня нет такой штуки*)
+      END_IF;
 
-      StrAlg.hasError := kran4Close.error OR mvOff.error OR pnsOn.error OR kran3bOpen.error
-      OR kran1Close.error OR kran2Close.error OR kran5Open.error OR runUnsuccessful.error;
 
+     (* IF NOT kran6Open.start THEN
+  	    ystavki.Block_kr6_alg.setValue (1);
+  	    IF IM.kran6._cmdreset.IN = FALSE THEN
+  		    ystavki.Block_kr6_alg.setValue (0); такой штуки тоже нет
+  		        runPhase(kran6Open);
+  	    END_IF;
+      END_IF;*)
 
-      runPhase(kran4Close);
-      runPhase(kran3bOpen);
-      runPhase(kran1Close);
-      runPhase(kran2Close);
+      (*IF NOT kran4Close.start THEN
+  	    ystavki.Block_kr4_alg.setValue (1);
+  	    IF IM.kran4._cmdreset.IN = FALSE THEN
+  		    ystavki.Block_kr4_alg.setValue (0);
+  		    kran4Close.run(); 
+  	    END_IF;
+      END_IF;*)
+
+      (*IF NOT kran3bOpen.start THEN
+  	    ystavki.Block_kr3b_alg.setValue (1);
+  	    IF IM.kran3b._cmdreset.IN = FALSE THEN
+  		    ystavki.Block_kr3b_alg.setValue (0);
+  		    runPhase(kran3bOpen);
+  	    END_IF;
+      END_IF;*)
+
+      resetDiProtection(protections.mvOff);
+      resetDiProtection(protections.Off_avar_vikluchatel);
+      resetDiProtection(protections.Reg_vozb_off);
+      resetDiProtection(protections.Kran1_sdvig);
+      resetDiProtection(protections.Kran2_sdvig);
       runPhase(mvOff);
 
-      IF kran1Close.top AND kran2Close.top AND kran4Close.top THEN
-          runPhase(kran5Open);
+      (*IF NOT kran1Close.start THEN
+  	ystavki.Block_kr1_alg.setValue (1);*)
+  	    (*IF IM.kran1._cmdreset.IN = FALSE THEN
+  		    ystavki.Block_kr1_alg.setValue (0);
+  		    runPhase(kran1Close);
+  	    END_IF;
+      END_IF;*)
+
+      (*IF NOT kran2Close.start THEN
+  	    ystavki.Block_kr2_alg.setValue (1);
+  	    IF IM.kran2._cmdreset.IN = FALSE THEN
+  		    ystavki.Block_kr2_alg.setValue (0);
+  		    runPhase(kran2Close); 
+  	    END_IF;
+      END_IF;*)
+
+      (*IF NOT kran3Close.start THEN
+  	    ystavki.Block_kr3_alg.setValue (1);
+  	    IF	IM.kran3._cmdreset.IN = FALSE THEN
+  		    ystavki.Block_kr3_alg.setValue (0);
+  		    runPhase(kran3Close);
+  	    END_IF;
+      END_IF;*)
+
+      (*IF kran6Open.top THEN
+  	    algoritms.S_Vibr.CanRun:=FALSE;
+  	    algoritms.S_Vibr.reset ();
+      END_IF;*)
+
+      IF klapan1.start AND kran1Close.top THEN
+  	    (*IM.Kr1_Smazka.impulse();*)
+  	    klapan1.top:=TRUE;
+      END_IF;
+      IF	klapan2.start AND kran2Close.top THEN
+  	    (*zIM.Kr2_Smazka.impulse();*)
+  	    klapan2.top:=TRUE;
       END_IF;
 
-      IF mvOff.top THEN
-            runPhase(autoPnsOff); 
-      END_IF;        	
+      (*IF 	kran1Close.top AND kran2Close.top AND kran3Close.top AND kran4Close.top AND NOT kran5Open.top THEN
+  	    IF	NOT	kran5Open.start THEN
+              ystavki.Block_kr5_alg.setValue (1);
+  		    IF	IM.kran5._cmdreset.IN = FALSE THEN
+  			    ystavki.Block_kr5_alg.setValue (0);
+  			    runPhase(kran5Open);
+  		    END_IF;
+  	    END_IF;
 
-       IF autoPnsOff.top THEN
-  	runPhase(pnsOn);	
+  	    resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+      END_IF; *)
+
+      IF mvOff.top (*AND NOT flag1*) THEN
+  	    (*algoritms.AutoPNS_Start.canrun :=FALSE;
+  	    algoritms.AutoPNS_Start.reset ();*)
+  	    algoritms.autoPns.canrun :=FALSE;
+  	    runPhase(autoPnsOff);
+  	    runPhase(pnsOn);
+  	    runPhase(nu_On);
+  	    (*vkluchit nasosi*)
+  	    algoritms.autoNu.canrun:=FALSE;
+  	    (*algoritms.autoNu_2.reset ();
+  	    algoritms.autoNu_1.canrun:=TRUE;
+  	    algoritms.autoNu_1.run ();
+  	    flag1:=TRUE;*)
       END_IF;
 
-      IF kran5Open.top THEN
-         runPhase(pInNagLess100);
-         resetPhase(waitKran);
-      END_IF;              
-
-
-
-     IF pInNagLess100.start AND NOT pInNagLess100.top THEN
-  	pInNagLess100.top:=( ai.dPgaza_na_maslo_filtre.interval >= _statusAi.NORMAL AND
-            ai.dPgaza_na_maslo_filtre.value < Ust_Pgaza ) AND 
-           (ai.Pmaslo_sm_vysokoe.interval >= _statusAi.NORMAL AND
-            ai.Pmaslo_sm_vysokoe.value < Ust_Pgaza); 
-
-     END_IF; 
-
-      IF pInNagLess100.top AND kran3bOpen.top AND mvOff.top THEN
-  	ai.Tmasla_MB.Disabled_LA:=TRUE;
-            ai.Tmasla_MB.Disabled_LW:=TRUE;
-            (*IM.SingleSignals.dP_oilgaz_low.Disabled_Sig:=TRUE;*)
-            (*resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);*)
-            (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
-
-            runPhase(autoNuOff);
-            runPhase(nu1off);
-            runPhase(nu2off);       
+      IF	IM.nu1.onStatus =_statusDualInput.STATUS_ON OR IM.nu2.onStatus =_statusDualInput.STATUS_ON AND nu_On.start AND NOT nu_On.top THEN
+  	    nu_On.top:=TRUE;
       END_IF;
 
-       IF nu1off.top AND  nu2off.top THEN
-  	runPhase(pnsWaitOff);
-      END_IF;	
+      IF kran5Open.top THEN 
+  	    runPhase(Pg_VhodLessThen300);
+  	    runPhase(Pg_VyhodLessThen300); 
+  	END_IF; 
 
-      IF waitKran.top AND (NOT kran5Open.top) THEN
-  	runUnsuccessful.error:=TRUE;
+      IF Pg_VhodLessThen300.start AND NOT Pg_VhodLessThen300.top THEN
+  	    IF ai.Pgaza_na_vhode_nagnetatelia.interval >= _statusAi.NORMAL AND ai.Pgaza_na_vhode_nagnetatelia.value < 0.3 THEN
+  		    Pg_VhodLessThen300.top:=TRUE;
+  	    END_IF;
       END_IF;
 
-      IF pnsWaitOff.top THEN
-  	runPhase(autoAvomOff);
+      IF Pg_VyhodLessThen300.start AND NOT Pg_VyhodLessThen300.top THEN
+  	    IF ai.Pgaza_na_vyhode_nagnetatelia.interval>=_statusAi.NORMAL AND ai.Pgaza_na_vyhode_nagnetatelia.value < 0.3 THEN
+  		    Pg_VyhodLessThen300.top:=TRUE;
+  	    END_IF;
       END_IF;
 
-      IF autoAvomOff.top THEN
-  	runPhase(avom1cmdOff);
-  	runPhase(avom2cmdOff);
+      IF Pg_VhodLessThen300.top AND Pg_VyhodLessThen300.top AND pnsOn.top AND nu_On.top AND mvOff.top THEN 
+  	    runPhase(nu1Off);
+      	    resetAiProtection(protections.dPmaslo_gaz);
+  	    resetDiProtection(protections.dPmaslo_gaz_less100);
+  	    runAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+  	    runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  	    AutoNU_Off.top:=TRUE;
+      	(*algoritms.autoNu_1.CanRun:=FALSE;
+  	    algoritms.autoNu_1.reset ();*)
       END_IF;
 
-      IF avom1cmdOff.top AND avom2cmdOff.top THEN
-  	 StrAlg.opcCommandsDisabled:=FALSE;
+      (*IF nuOff.top THEN
+  	    IF NOT algmanager.reg_V AND NOT pnsoff.start THEN
+  		    runPhase(timer600);
+  	    END_IF;
+  	    IF	NOT pnsoff.start THEN
+  		    sbrosVibeg.ask();
+  	    END_IF;
+      END_IF;*)
+
+      IF timer600.top (*OR sbrosVibeg.answer=Answers.ANS_YES*)  THEN
+  	    runPhase(pnsOff);
+  	    resetAiProtection(protections.Pmaslo_sm_nizkoe);
+  	    resetAiProtection(protections.Pmaslo_sm_vysokoe);
+  	    (*resetPhase(sbrosVibeg);*)
+  	    resetPhase(timer600);
+  	    (*algoritms.F2_Ch.autoAVOM_canrun_flag:=FALSE;
+  	    algoritms.F2_R.autoAVOM_canrun_flag:=FALSE;*)
       END_IF;
 
-      StrAlg.isEnded:= avom1cmdOff.top AND avom2cmdOff.top;
-  END_IF;
+      IF (*NOT algoritms.F2_Ch.autoAVOM_canrun_flag AND NOT algoritms.F2_R.autoAVOM_canrun_flag AND*) pnsoff.start THEN
+  	    runPhase(Avom1Off);
+  	    runPhase(Avom2Off);
+  	    runPhase(Avom3Off);
+  	    runPhase(Avom4Off);
+  	    (*algoritms.R_AutoAVOM.CanRun:=FALSE;
+  	    algoritms.R_AutoAVOM.reset();
+  	    algoritms.S_AutoAVOM.CanRun:=FALSE;
+  	    algoritms.S_AutoAVOM.reset();
+  	    algoritms.Auto_Avom_.CanRun:=FALSE;*)
+  	    runPhase(autoAVOMOff);
+      END_IF;
 
+      IF pnsOff.top AND Avom1Off.top AND Avom2Off.top AND Avom3Off.top AND Avom4Off.top AND autoAVOMOff.top  THEN
+  	    runPhase(timer5);
+      END_IF;
 
-
-  StrAlg.CanRun := StrAlg.inCanRun;
-  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
-
-  (* ---- Если управление с ВУ заблокировано, то  передаем команду из алгоритма ---- *)
-  IF StrAlg.inOpcCommandsDisabled THEN
-  	StrAlg.inCommand := StrAlg.inCommand_Alg;
-  ELSE (* иначе передаем команду с АРМа*)
-  	StrAlg.inCommand := StrAlg.inCommand_ARM;
+      IF timer5.top THEN
+  	    runPhase(timer5);
+      END_IF;
   END_IF;
 
   _sunpackerCommand(command := StrAlg.inCommand);
@@ -10151,17 +10341,15 @@ FUNCTION_BLOCK AOAlg
   					StrAlg.hasError := FALSE;
   					(*****************       OnRun       *****************)
 
-                                                    StrAlg.opcCommandsDisabled:=TRUE;
-                                                    (*runIfNotRunningSO(IM.SingleOutputs.IndikicijaAS_fonar);
-                                                    runIfNotRunningSO(IM.SingleOutputs.AO_GPA);*)
-                                                    stopPusk(algoritms);
-                                                    algManager.nMode:=ModeGpa.MODE_AO;
+                                                    algManager.nMode:=ModeGpa.MODE_NO;
+                                                    (*runIfNotRunningSO(IM.SingleOutputs.Lampa_NO);*)
 
-                                                    runPhase(waitKran);
-                                                    runPhase(runUnsuccessful); 
+                                                    runPhase(kran4Close);
+                                                    (*runPhase(timer120);*)         
+                                                    runPhase(nu1Off);
+                                                    runPhase(timer600); 
 
-                                                   (* resetDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
-                                                    resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+                                                   (* resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
                                                     resetAiProtection(protections.dPmaslo_gaz);
                                                     resetAiProtection(protections.Pmaslo_sm_nizkoe);
                                                     resetAiProtection(protections.Pmaslo_sm_vysokoe);
@@ -10187,32 +10375,30 @@ FUNCTION_BLOCK AOAlg
   				StrAlg.hasError 	:= FALSE;
 
                                            (*****************       OnReset       *****************)
-                                          protectManager.inCommand:=PMcommand.RestartAllSignaling;
                                           waitReset(IN:=FALSE);
-                                          (*resetIfRunningSO(IM.SingleOutputs.IndikicijaAS_fonar);
-                                          resetIfRunningSO(IM.SingleOutputs.AO_GPA);*)
+                                          (*resetIfRunningSO(IM.SingleOutputs.Lampa_NO);*)
                                           resetIfRunning(algoritms.vibegPNS);
-                                          algManager.nMode:=ModeGpa.MODE_STOP;
                                           (*impulseSO(Im.SingleOutputs.SbrosBREO);*)
 
-                                          resetPhase(kran4Close);
-                                          resetPhase(mvOff);
+                                          (*resetPhase(timer120);*)
+                                          resetPhase(kran6Open);
                                           resetPhase(pnsOn);
+                                          resetPhase(kran4Close);
                                           resetPhase(kran3bOpen);
+                                          resetPhase(mvOff);
                                           resetPhase(kran1Close);
                                           resetPhase(kran2Close);
+                                          resetPhase(kran3Close);
                                           resetPhase(kran5Open);
-                                          resetPhase(autoNuOff);
+  	                              (*resetPhase(error_Krans);*)
                                           resetPhase(autoPnsOff);
-                                          resetPhase(pInNagLess100);
-  	                              resetPhase(autoAvomOff);
-                                          resetPhase(avom1cmdOff);
-                                          resetPhase(avom2cmdOff);
-                                          resetPhase(nu1off);
-                                          resetPhase(nu2off);
-                                          resetPhase(waitKran);
-                                          resetPhase(pnsWaitOff);
-                                          resetPhase(runUnsuccessful);
+                                          resetPhase(pnsOn);
+                                          resetPhase(Pg_VhodLessThen300);
+                                          resetPhase(Pg_VyhodLessThen300);
+                                          resetPhase(nu2Off);
+                                          resetPhase(nu1Off);
+                                          resetPhase(AutoNU_Off);
+                                          resetPhase(timer600);
 
   				cmd_for_Status := cmd;
   				source_for_Status := source;
@@ -10231,64 +10417,87 @@ FUNCTION_BLOCK AOAlg
   	command_error_for_Status := 0;
   END_IF; 
 
-  StrAlg.Start:= kran4Close.startStatus
-              OR mvOff.startStatus
+  StrAlg.Start:= kran6Open.startStatus
               OR pnsOn.startStatus
+              OR kran4Close.startStatus
               OR kran3bOpen.startStatus
+              OR mvOff.startStatus
               OR kran1Close.startStatus
               OR kran2Close.startStatus
+              OR kran3Close.startStatus
               OR kran5Open.startStatus
-              OR autoNuOff.startStatus
-              OR autoPnsOff.startStatus
-              OR pInNagLess100.startStatus
-              OR autoAvomOff.startStatus
-              OR avom1cmdOff.startStatus
-              OR avom2cmdOff.startStatus
+              OR Pg_VhodLessThen300.startStatus
               OR nu1off.startStatus
               OR nu2off.startStatus
-              OR waitKran.startStatus
-              OR pnsWaitOff.startStatus
-              OR runUnsuccessful.startStatus;
+              OR Pg_VyhodLessThen300.startStatus
+              OR AutoNU_Off.startStatus
+              OR timer600.startStatus
+              OR pnsOff.startStatus
+              OR Avom1Off.startStatus
+              OR Avom2Off.startStatus
+              OR Avom3Off.startStatus
+              OR Avom4Off.startStatus
+              OR autoAVOMOff.startStatus
+              OR timer5.startStatus
+              OR klapan1.startStatus
+              OR klapan2.startStatus
+              OR nu_On.startStatus
+              OR Start_AO_From.startStatus;            
 
-
-  StrAlg.Error:= kran4Close.errorStatus
-              OR mvOff.errorStatus
+  StrAlg.Error:= kran6Open.errorStatus
               OR pnsOn.errorStatus
+              OR kran4Close.errorStatus
               OR kran3bOpen.errorStatus
+              OR mvOff.errorStatus
               OR kran1Close.errorStatus
               OR kran2Close.errorStatus
+              OR kran3Close.errorStatus
               OR kran5Open.errorStatus
-              OR autoNuOff.errorStatus
-              OR autoPnsOff.errorStatus
-              OR pInNagLess100.errorStatus
-              OR autoAvomOff.errorStatus
-              OR avom1cmdOff.errorStatus
-              OR avom2cmdOff.errorStatus
+              OR Pg_VhodLessThen300.errorStatus
               OR nu1off.errorStatus
               OR nu2off.errorStatus
-              OR waitKran.errorStatus
-              OR pnsWaitOff.errorStatus
-              OR runUnsuccessful.errorStatus;
+              OR Pg_VyhodLessThen300.errorStatus
+              OR AutoNU_Off.errorStatus
+              OR timer600.errorStatus
+              OR pnsOff.errorStatus
+              OR Avom1Off.errorStatus
+              OR Avom2Off.errorStatus
+              OR Avom3Off.errorStatus
+              OR Avom4Off.errorStatus
+              OR autoAVOMOff.errorStatus
+              OR timer5.errorStatus
+              OR klapan1.errorStatus
+              OR klapan2.errorStatus
+              OR nu_On.errorStatus
+              OR Start_AO_From.errorStatus;
 
 
-  StrAlg.Top:=   kran4Close.topStatus
-              OR mvOff.topStatus
+  StrAlg.Top:= kran6Open.topStatus
               OR pnsOn.topStatus
+              OR kran4Close.topStatus
               OR kran3bOpen.topStatus
+              OR mvOff.topStatus
               OR kran1Close.topStatus
               OR kran2Close.topStatus
+              OR kran3Close.topStatus
               OR kran5Open.topStatus
-              OR autoNuOff.topStatus
-              OR autoPnsOff.topStatus
-              OR pInNagLess100.topStatus
-              OR autoAvomOff.topStatus
-              OR avom1cmdOff.topStatus
-              OR avom2cmdOff.topStatus
+              OR Pg_VhodLessThen300.topStatus
               OR nu1off.topStatus
               OR nu2off.topStatus
-              OR waitKran.topStatus
-              OR pnsWaitOff.topStatus
-              OR runUnsuccessful.topStatus;                           
+              OR Pg_VyhodLessThen300.topStatus
+              OR AutoNU_Off.topStatus
+              OR timer600.topStatus
+              OR pnsOff.topStatus
+              OR Avom1Off.topStatus
+              OR Avom2Off.topStatus
+              OR Avom3Off.topStatus
+              OR Avom4Off.topStatus
+              OR autoAVOMOff.topStatus
+              OR timer5.topStatus
+              OR klapan1.topStatus
+              OR klapan2.topStatus
+              OR nu_On.topStatus
+              OR Start_AO_From.topStatus;                                      
 
   (*TODO: TYPE PROGRAM CODE HERE*)
   StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
@@ -10661,22 +10870,22 @@ FUNCTION_BLOCK ppuAlg
       (*Наличие 220 в шу*)
       Nalichie220_SHU_Ai.top :=	(ai.Kontrol_per_220V.interval = _statusAi.normal)	 AND (ai.Kontrol_post_220V.interval = _statusAi.normal);				
 
-      (*Блоки питания норм
+      (*Блоки питания норм*)
       BP_Norm.top:= 
-  		(IM.NalichieBP1.Q AND
-  		IM.NalichieBP2.Q AND	
-  		IM.NalichieBP3.Q AND
-  		IM.NalichieBP4.Q AND
-  		IM.NalichieBP5.Q AND
-  		IM.NalichieBP6.Q AND
-  		IM.NalichieBP7_BP8.Q AND
-  		IM.NalichieBP9_BP10.Q AND
+  		(IM.SingleSignals.Nalichie_BP1.Q AND
+  		IM.SingleSignals.Nalichie_BP2.Q AND	
+  		IM.SingleSignals.Nalichie_BP3.Q AND
+  		IM.SingleSignals.Nalichie_BP4.Q AND
+  		IM.SingleSignals.Nalichie_BP5.Q AND
+  		IM.SingleSignals.Nalichie_BP6.Q AND
+  		IM.SingleSignals.Nalichie_BP7_BP8.Q AND
+  		IM.SingleSignals.Nalichie_BP9_BP10.Q AND
 
-  		IM.Nalichie220BEAO.Q AND
-  		IM.NalichiePer220naVhode.Q AND
-  		IM.NalichiePost220naVhode.Q AND
-  		IM.NalichieBP11.Q AND
-  		IM.NalichieBP12.Q); нет сигналов таких *)
+  		IM.SingleSignals.Nalichie_220BEAO.Q AND
+  		IM.SingleSignals.Nalichie_per_220_na_vhode.Q AND
+  		IM.SingleSignals.Nalichie_post_220_na_vhode.Q AND
+  		IM.SingleSignals.Nalichie_BP11.Q AND
+  		IM.SingleSignals.Nalichie_BP12.Q);
 
       (*Напряжение исполнительниых механизмов                
       Naprajenie_U_IM.top := IM.NalichieU_CMN.q AND IM.NalichieU_NU1.Q AND IM.Nalichie_CU_MV.Q  AND IM.NalichieU_NU2.Q AND 
@@ -13549,6 +13758,25 @@ FUNCTION UnBlockAllProtections : BOOL
   protections.Kran2_sdvig.inOpcCommandsDisabled:=FALSE;
 END_FUNCTION
 
+FUNCTION stopPusk : BOOL
+  VAR_IN_OUT
+    algoritms : AlgoritmsConfig;
+  END_VAR
+
+  resetAndDisable(alg:=algoritms.Apusk);
+  resetAndDisable(alg:=algoritms.SemiAutoPusk);
+  resetAndDisable(alg:=algoritms.testPms);
+  resetAndDisable(alg:=algoritms.puskV);		
+  resetAndDisable(alg:=algoritms.puskK);	
+  resetAndDisable(alg:=algoritms.testdPmg);
+  resetAndDisable(alg:=algoritms.ppu);
+  resetAndDisable(alg:=algoritms.puskOilSystem);
+  resetAndDisable(alg:=algoritms.filling);
+  resetAndDisable(alg:=algoritms.engineRun);
+  resetAndDisable(alg:=algoritms.RingToLine);
+  resetAndDisable(alg:=algoritms.LineToRing);
+END_FUNCTION
+
 FUNCTION_BLOCK fb_AlgoritmsManager
   VAR_IN_OUT
     str_AM : struct_AlgoritmsManager;
@@ -15299,13 +15527,14 @@ FUNCTION_BLOCK Pusk_first_faza1
       (* запуск пнс завершен - запус защит *)
       IF pnsOn.top THEN
            runPhase(pmsMore50);
+           runPhase(pmsMore300);
       END_IF;   
 
 
       (* не завершился запуск защиты 50 - проверка давления 50 *)
       IF pmsMore50.start AND (NOT pmsMore50.top) THEN
   	IF ai.Pmaslo_sm_nizkoe.interval = _statusAi.NORMAL AND ai.Pmaslo_sm_nizkoe.value > 50.0  THEN
-  	    runPhase(pnsOn);(*kak-to vozvesti zashitu *)
+  	   pmsMore50.top := TRUE;
             END_IF;
       END_IF;
 
@@ -15313,16 +15542,16 @@ FUNCTION_BLOCK Pusk_first_faza1
       (* не завершился запуск защиты 300 - проверка давления 300 *)
       IF  pmsMore300.start AND (NOT pmsMore300.top) THEN
   	IF ai.Pmaslo_sm_vysokoe.interval = _statusAi.NORMAL AND ai.Pmaslo_sm_vysokoe.value > 300.0  THEN
-  	    runPhase(pnsOn);(*kak-to vozvesti zashitu *)
+  	    pmsMore300.top := TRUE;
   	END_IF;
       END_IF;
 
-      (* давление было проверено - запуск защит*)     
+      (* давление было проверено - запуск защит *)     
       IF pmsMore50.top AND pmsMore300.top THEN
           runPhase(Protection_Pms);
       END_IF;
 
-      (* запуск защит не завршен - запуск защит*)
+      (* запуск защит не завршен - запуск защит *)
       IF Protection_Pms.start AND (NOT Protection_Pms.top) THEN
   	runAiProtection(protections.Pmaslo_sm_nizkoe);
             runAiProtection(protections.Pmaslo_sm_vysokoe);
@@ -15504,7 +15733,7 @@ FUNCTION_BLOCK Pusk_first_faza2
   fb_nu1On(StrPh:= nu1On,Im:=Im.nu1);
   fb_nu2On(StrPh:= nu2On,Im:=Im.nu2);
   fb_dPmg_more100(StrPh:=dPmg_more100);
-  fb_Auto_NU1(StrPh:=Auto_NU1, alg:=algoritms.autoNu); (*komu ono nujno to blat *) (*Kak vibrat nason osnovnim? *)
+  fb_Auto_NU1(StrPh:=Auto_NU1, alg:=algoritms.autoNu); (*komu ono nujno to blat *)
   fb_Error_Alg(StrPh:=Error_Alg);             
 
   StrAlg.CanRun := StrAlg.inCanRun;
@@ -15553,10 +15782,10 @@ FUNCTION_BLOCK Pusk_first_faza2
 
       IF dPmg_more100.top AND nu1On.top AND nu2On.top THEN
   	Auto_NU1.top:=TRUE;
-  	(*runAiProtection(protections.dPmaslo_gaz);
+  	runAiProtection(protections.dPmaslo_gaz);
             runDiProtection(protections.dPmaslo_gaz_less100);
-  	resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
-  	resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);*)
+  	resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+  	resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
   	algoritms.autoNu.CanRun:=TRUE;
   	(*algoritms.autoNu.run ();ниче не ясно*)
   	resetPhase(timer240);
@@ -15761,7 +15990,7 @@ FUNCTION_BLOCK Pusk_second_faza_chastotny
 
       (* ШУП не завершился - запуск ШУПб МВ *)
       IF NOT Shup.top AND Shup.start THEN
-  	(*IM.Pusk_SHUP.impulse (); как запустить ШПУ *)
+  	runIfNotRunningSO(IM.SingleOutputs.Pusk_SHUP);
   	Shup.top:=TRUE;
   	runphase(mvOn);
       END_IF;
@@ -15780,11 +16009,11 @@ FUNCTION_BLOCK Pusk_second_faza_chastotny
       END_IF;
 
       (* таймер не истек и мв не включен - вовзедение защиты *)
-      (*IF (NOT timer120.top) AND (NOT mvOn.top) THEN
-  	protections.p_Fail_Chastotniy_Pusk.run();
+      IF (NOT timer120.top) AND (NOT mvOn.top) THEN
+  	runDiProtection(protections.Fail_chastotnii_pusk);
       ELSE
-  	protections.p_Fail_Chastotniy_Pusk.reset();
-      END_IF;*)(*nijego ne ponimay *)
+  	resetDiProtection(protections.Fail_chastotnii_pusk);
+      END_IF;
 
       (* мв не завершился - включение мв *)
       IF mvOn.start AND NOT mvOn.top THEN
@@ -15809,20 +16038,20 @@ FUNCTION_BLOCK Pusk_second_faza_chastotny
                 runphase(dPmg_Top);
   	END_IF;
 
-            (*runDiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP); *)
-  	(*protections.p_OFFAvarSwitch.run();
-  	protections.p_RegVozbOff.run(); таких защит нет *)
+            runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  	runDiProtection(protections.Off_avar_vikluchatel);
+  	runDiProtection(protections.Reg_vozb_off);
       END_IF;
 
 
       IF dPmg_Top.start AND NOT dPmg_Top.top THEN
   	IF NOT IM.SingleSignals.dP_maslo_gaz_Less100.Q AND IM.SingleSignals.dP_maslo_gaz_Less100.status = 1 AND ai.dPmaslo_gaz.value > 150.0 THEN 
   		dPmg_Top.top:=TRUE;
-  		(*runAiProtection(protections.dPmaslo_gaz);
+  		runAiProtection(protections.dPmaslo_gaz);
   		runDiProtection(protections.dPmaslo_gaz_less100);
-  		resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia);
-  		resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);*)
-  		(*algoritms.autoNu.CanRun:=TRUE;*)
+  		resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+  		resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  		algoritms.autoNu.CanRun:=TRUE;
   		(*algoritms.autoNu.run(); кого чего, ничего не понимаю *)
   	END_IF;
       END_IF;
@@ -15973,11 +16202,11 @@ FUNCTION_BLOCK Pusk_second_faza_reactor
   VAR
     timer25 : struct_PhaseAlgoritm;
     timer3 : struct_PhaseAlgoritm;
-    Mv_Error : struct_PhaseAlgoritm;
     mvOn : struct_PhaseAlgoritm;
     pGNSmore04 : struct_PhaseAlgoritm;
     gotov_K_zagruzke : struct_PhaseAlgoritm;
     dPmg_Top : struct_PhaseAlgoritm;
+    Mv_Error : struct_PhaseAlgoritm;
     AutoPNS_Start : struct_PhaseAlgoritm;
     fb_timer25 : fb_ph_Timer;
     fb_timer3 : fb_ph_Timer;
@@ -16011,7 +16240,929 @@ FUNCTION_BLOCK Pusk_second_faza_reactor
     statusAi : TYPE_StatusAi;
   END_VAR
 
-  fb_Mv_Error(phaseNumber:=7);
+  IF NOT onInit THEN         
+           fb_timer25(phaseNumber:=1, delay:=T#25S);
+           fb_timer3(phaseNumber:=2, delay:=T#3S);
+           fb_mvOn(phaseNumber:=3, act:=_on);
+           fb_pGNSmore04(phaseNumber:=4);
+           fb_gotov_K_zagruzke(phaseNumber:=5); 
+           fb_dPmg_Top(phaseNumber:=6); 
+           fb_Mv_Error(phaseNumber:=7); 
+           fb_AutoPNS_start(phaseNumber:=8, act:=_run, waitCompletion:=FALSE); 
+
+  onInit:=TRUE;
+  END_IF;
+
+  fb_timer25(StrPh:=timer25);
+  fb_timer3(StrPh:= timer3);
+  fb_mvOn(StrPh:= mvOn, Im:=IM.mv);
+  fb_pGNSmore04(StrPh:=pGNSmore04);
+  fb_gotov_K_zagruzke(StrPh:=gotov_K_zagruzke);
+  fb_dPmg_Top(StrPh:=dPmg_Top); 
+  fb_Mv_Error(StrPh:=Mv_Error);  
+  fb_AutoPNS_start(StrPh:=AutoPNS_start, alg:=algoritms.autoPns);              
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+  IF StrAlg.isRuning THEN
+      (* если мв не завершен - включаем таймер *)
+      IF NOT mvOn.top THEN
+          runPhase(timer25); 
+      END_IF;
+
+      (* если мв не заврешен - включаем таймер *)
+      IF NOT mvOn.top THEN
+          runPhase(timer3); 
+      END_IF;
+
+      (* мв не запущен - запускаем мв *)
+      IF NOT mvOn.start THEN
+          runPhase(mvOn);
+      END_IF;
+
+      (* мв завершен *)
+      IF mvOn.top  THEN 
+      (*если проверка пгнс не включена - включаем *)
+          IF NOT pGNSmore04.start (*AND ((algManager.mode = modegpa.MODE_PUSKAP_R) OR (algManager.mode = modegpa.MODE_PUSKPP_R))*) THEN
+              runPhase(pGNSmore04); 
+          END_IF;
+
+          (*kakoito flag, hz zachem on 
+          IF NOT autoAVOM_canrun_flag THEN
+              algoritms.S_AutoAVOM.CanRun:=TRUE;
+              autoAVOM_canrun_flag:=TRUE;
+          END_IF;*)
+          resetPhase(timer3);
+          resetPhase(timer25);
+          Mv_Error.error := FALSE;
+          runPhase(gotov_K_zagruzke);
+          IF NOT dPmg_Top.start (*AND ((algManager.mode = modegpa.MODE_PUSKAP_R) OR (algManager.mode = modegpa.MODE_PUSKPP_R))*) THEN
+              runPhase(dPmg_Top);
+          END_IF;
+
+          runDiProtection(protections.mvOff); 
+          runDiProtection(protections.Off_avar_vikluchatel);
+          runDiProtection(protections.Reg_vozb_off);
+          ELSIF NOT mvOn.top AND timer3.top THEN
+  		Mv_Error.error := TRUE;
+      END_IF;
+
+      IF	dPmg_Top.start AND NOT dPmg_Top.top THEN
+  	    IF	NOT IM.SingleSignals.dP_maslo_gaz_Less100.Q AND IM.SingleSignals.dP_maslo_gaz_Less100.status = 1 AND ai.dPmaslo_gaz.value > 150.0	THEN
+  		    dPmg_Top.top:=TRUE;
+  		    runAiProtection(protections.dPmaslo_gaz);
+  		    runDiProtection(protections.dPmaslo_gaz_less100);
+  		    resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
+  		    resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
+  		    (*algoritms.autoNu_2.CanRun:=TRUE;
+  		    algoritms.autoNu_2.run (); не понимаю*)
+  	    END_IF;
+      END_IF;
+
+      IF	pGNSmore04.start AND NOT pGNSmore04.top THEN 
+  	    IF 	ai.Pmasla_posle_GNS.interval	>=statusAi.NORMAL AND ai.Pmasla_posle_GNS.value	 > 400.0 THEN
+  	  	    pGNSmore04.top:=TRUE; 
+  	    END_IF;
+      END_IF;
+
+      IF	pGNSmore04.top AND gotov_K_zagruzke.top AND dPmg_Top.top (*AND algManager.mode = modegpa.MODE_PUSKAP_R) OR (algManager.mode = modegpa.MODE_PUSKPP_R)))*) OR 
+  	    gotov_K_zagruzke.top (*AND ((algManager.mode = modegpa.MODE_PUSKV_R) OR (algManager.mode = modegpa.MODE_I))))*) AND NOT AutoPNS_start.top  THEN 
+  	    algoritms.AutoPns.CanRun :=TRUE;
+  	   (*algoritms.AutoPNS_Start.run();*)
+  	    AutoPNS_start.top:=TRUE;
+      END_IF;
+      IF	timer25.top AND Mv_Error.error THEN
+  	algoritms.ao.CanRun:=TRUE;
+  	(*algoritms.ao.run ();*)
+      END_IF;
+
+      (*StrAlg.isEnded:= avom1cmdOff.top AND avom2cmdOff.top;*)
+  END_IF;
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  (* ---- Если управление с ВУ заблокировано, то  передаем команду из алгоритма ---- *)
+  IF StrAlg.inOpcCommandsDisabled THEN
+  	StrAlg.inCommand := StrAlg.inCommand_Alg;
+  ELSE (* иначе передаем команду с АРМа*)
+  	StrAlg.inCommand := StrAlg.inCommand_ARM;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cmdRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA2;
+
+                                                    (*runPhase(timer120);
+                                                    runPhase(timer5);
+                                                    runPhase(Shup);
+                                                    resetAiProtection(protections.dPmaslo_gaz);                                                  
+                                                    resetDiProtection(protections.dPmaslo_gaz_less100);*)
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          (*resetPhase(timer5);
+                                          resetPhase(Shup);
+                                          resetPhase(timer120);
+                                          resetPhase(Net_Chast);
+                                          resetPhase(mvOn);
+                                          resetPhase(pGNSmore04);
+                                          resetPhase(gotov_K_zagruzke);
+                                          resetPhase(dPmg_Top);
+                                          resetPhase(AutoPNS_Start);*)
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= timer25.errorStatus
+              OR timer3.errorStatus
+              OR mvOn.errorStatus
+              OR pGNSmore04.errorStatus
+              OR gotov_K_zagruzke.errorStatus
+              OR dPmg_Top.errorStatus
+              OR Mv_Error.errorStatus
+              OR AutoPNS_Start.errorStatus;
+
+
+
+
+
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Pusk_third_faza
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    timer480 : struct_PhaseAlgoritm;
+    kran4Open : struct_PhaseAlgoritm;
+    waitAfterKran4 : struct_PhaseAlgoritm;
+    kran5Close : struct_PhaseAlgoritm;
+    kran3bOpen : struct_PhaseAlgoritm;
+    dP_kr1less100 : struct_PhaseAlgoritm;
+    Pvh_vyhMore5 : struct_PhaseAlgoritm;
+    kran1Open : struct_PhaseAlgoritm;
+    kran2Open : struct_PhaseAlgoritm;
+    kran3Open : struct_PhaseAlgoritm;
+    kran3bClose : struct_PhaseAlgoritm;
+    Err_ALG : struct_PhaseAlgoritm;
+    fb_timer480 : fb_ph_Timer;
+    fb_kran4Open : fb_ph_Kran;
+    fb_waitAfterKran4 : fb_ph_Timer;
+    fb_kran5Close : fb_ph_Kran;
+    fb_kran3bOpen : fb_ph_Kran;
+    fb_dP_kr1less100 : fb_ph_algoritm;
+    fb_Pvh_vyhMore5 : fb_ph_algoritm;
+    fb_kran1Open : fb_ph_Kran;
+    fb_kran2Open : fb_ph_Kran;
+    fb_kran3Open : fb_ph_Kran;
+    fb_kran3bClose : fb_ph_Kran;
+    fb_Err_ALG : fb_ph_algoritm;
+    _sunpackerCommand : fb_sunpackerCommand;
+    _statusDualInput : TYPE_statusDualInput;
+    _Answers : TYPE_Answers;
+    source : BYTE;
+    cmd : BYTE;
+    lastCmd : BYTE;
+    source_for_Status : BYTE;
+    cmd_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    resetCmdTimerPriznak : BOOL;
+    onInit : BOOL;
+    waitReset : TON;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+    IM : ImConfig;
+    protections : ProtectionsConfig;
+    algoritms : AlgoritmsConfig;
+    ai : AiConfig;
+    statusAi : TYPE_StatusAi;
+  END_VAR
+
+  IF NOT onInit THEN         
+           fb_timer480(phaseNumber:=1, delay:=T#480S);
+           fb_kran4Open(phaseNumber:=2, act:=_on);
+           fb_waitAfterKran4(phaseNumber:=3, delay:=T#10S);
+           fb_kran5Close(phaseNumber:=4, act:=_off);
+           fb_kran3bOpen(phaseNumber:=5, act:=_on); 
+           fb_dP_kr1less100(phaseNumber:=6); 
+           fb_Pvh_vyhMore5(phaseNumber:=7); 
+           fb_kran1Open(phaseNumber:=8, act:=_on); 
+           fb_kran2Open(phaseNumber:=9, act:=_on);       
+           fb_kran3Open(phaseNumber:=10, act:=_on);
+           fb_kran3bClose(phaseNumber:=11, act:=_off);
+           fb_Err_ALG(phaseNumber:=12);
+  onInit:=TRUE;
+  END_IF;
+
+  fb_timer480(StrPh:=timer480);
+  fb_kran4Open(StrPh:= kran4Open, Im:=Im.kran4);
+  fb_waitAfterKran4(StrPh:= waitAfterKran4);
+  fb_kran5Close(StrPh:=kran5Close, Im:=Im.kran5);
+  fb_kran3bOpen(StrPh:=kran3bOpen, Im:=Im.kran3b);
+  fb_dP_kr1less100(StrPh:=dP_kr1less100); 
+  fb_Pvh_vyhMore5(StrPh:=Pvh_vyhMore5);  
+  fb_kran1Open(StrPh:=kran1Open, Im:=Im.kran1);              
+  fb_kran2Open(StrPh:=kran2Open, Im:=Im.kran2);  
+  fb_kran3Open(StrPh:=kran3Open, Im:=Im.kran3);  
+  fb_kran3bClose(StrPh:=kran3bClose, Im:=Im.kran3b);  
+  fb_Err_ALG(StrPh:=Err_ALG); 
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+
+  IF StrAlg.isRuning THEN
+      (* запуск таймера *)
+      IF NOT (kran3bClose.top) THEN
+  	    runPhase(timer480);
+      END_IF;
+
+      (*если кран1 не открыт - октрыть кран 4*)
+      IF	NOT kran1Open.top (*AND IM.kran4._cmdreset.IN = FALSE*)  THEN
+  	    runIfNotRunningSO(IM.SingleOutputs.Kr4_open_from_alg);
+  	    runPhase(kran4Open);
+      END_IF;
+      IF	kran4Open.start AND NOT kran4Open.top THEN
+  	    IF	IM.kran4.onStatus = _statusDualInput.STATUS_ON THEN
+  		    kran4Open.top:=TRUE;
+  	    END_IF;
+      END_IF;
+
+      (* продувка крана *)
+      IF kran4Open.top THEN 
+          runPhase(waitAfterKran4);
+      END_IF;
+
+      (* кран продулся - закрытие кран 5*)
+      IF waitAfterKran4.top THEN
+  	    runPhase(kran5Close);
+      END_IF;
+
+      (* кран 5 закрыт - открытие крана 3б проверка перепада давление*)
+      IF	kran5Close.top THEN
+  	    runPhase(kran3bOpen);
+  	    runPhase(dP_kr1less100); 
+  	    runPhase(Pvh_vyhMore5);
+      END_IF;
+
+      (* проверка давления крана *)
+      IF	Pvh_vyhMore5.start AND NOT Pvh_vyhMore5.top THEN 
+  	    IF	(ai.Pgaza_na_vhode_nagnetatelia.interval >=statusAi.NORMAL) AND (ai.Pgaza_na_vhode_nagnetatelia.value	 >= 4.0) AND 
+  		    (ai.Pgaza_na_vyhode_nagnetatelia.interval >=statusAi.NORMAL) AND (ai.Pgaza_na_vyhode_nagnetatelia.value	 >= 4.0) THEN
+  		        Pvh_vyhMore5.top := TRUE;
+      		    runAiProtection(protections.Pgaza_na_vyhode_nagnetatelia);
+  	    END_IF;
+      END_IF;
+
+      (* проверка открытия крана 3б *)
+      IF	kran3bOpen.start AND NOT kran3bOpen.top THEN
+  	    IF	IM.kran3b.onStatus=_statusDualInput.STATUS_ON THEN
+  		    kran3bOpen.top :=TRUE;	
+  	    END_IF;
+      END_IF;
+      IF	kran3bOpen.top AND	kran5Close.top AND dP_kr1less100.top AND Pvh_vyhMore5.top THEN
+  	    runPhase(kran1Open);
+  	    runPhase(kran2Open);    
+  	    runPhase(kran3Open);
+  	    (*Smazka_1_2:=TRUE; нет такого *)
+      END_IF;
+      IF	kran1Open.top THEN
+  	    resetIfRunningSO(IM.SingleOutputs.Kr4_open_from_alg);
+  	    (*ystavki.Block_kr4_alg.setValue (0);что такое уставки*)
+      END_IF;
+
+      (* закрытие крана 3бис *)
+      IF kran1Open.top AND kran2Open.top AND kran3Open.top THEN 
+  	    runPhase(kran3bClose); 
+      END_IF;
+      IF 	kran3bClose.top THEN
+  	    Err_ALG.error :=FALSE;
+  	    resetPhase(timer480);
+      ELSIF NOT kran3bClose.top AND timer480.top THEN
+  		Err_ALG.error :=TRUE;
+      END_IF;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cmdRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA2;
+
+                                                    (*runPhase(timer120);
+                                                    runPhase(timer5);
+                                                    runPhase(Shup);
+                                                    resetAiProtection(protections.dPmaslo_gaz);                                                  
+                                                    resetDiProtection(protections.dPmaslo_gaz_less100);*)
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          (*resetPhase(timer5);
+                                          resetPhase(Shup);
+                                          resetPhase(timer120);
+                                          resetPhase(Net_Chast);
+                                          resetPhase(mvOn);
+                                          resetPhase(pGNSmore04);
+                                          resetPhase(gotov_K_zagruzke);
+                                          resetPhase(dPmg_Top);
+                                          resetPhase(AutoPNS_Start);*)
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= timer480.startStatus
+              OR kran4Open.startStatus
+              OR waitAfterKran4.startStatus
+              OR kran5Close.startStatus
+              OR kran3bOpen.startStatus
+              OR dP_kr1less100.startStatus
+              OR Pvh_vyhMore5.startStatus
+              OR kran1Open.startStatus
+              OR kran2Open.startStatus
+              OR kran3Open.startStatus
+              OR kran3bClose.startStatus
+              OR Err_ALG.startStatus;
+
+
+  StrAlg.Error := timer480.errorStatus
+              OR kran4Open.errorStatus
+              OR waitAfterKran4.errorStatus
+              OR kran5Close.errorStatus
+              OR kran3bOpen.errorStatus
+              OR dP_kr1less100.errorStatus
+              OR Pvh_vyhMore5.errorStatus
+              OR kran1Open.errorStatus
+              OR kran2Open.errorStatus
+              OR kran3Open.errorStatus
+              OR kran3bClose.errorStatus
+              OR Err_ALG.errorStatus;                 
+
+  StrAlg.Top := timer480.topStatus
+              OR kran4Open.topStatus
+              OR waitAfterKran4.topStatus
+              OR kran5Close.topStatus
+              OR kran3bOpen.topStatus
+              OR dP_kr1less100.topStatus
+              OR Pvh_vyhMore5.topStatus
+              OR kran1Open.topStatus
+              OR kran2Open.topStatus
+              OR kran3Open.topStatus
+              OR kran3bClose.topStatus
+              OR Err_ALG.topStatus;  
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Prov_dP_mg
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    nu1Off : struct_PhaseAlgoritm;
+    nu2Off : struct_PhaseAlgoritm;
+    pnsOff : struct_PhaseAlgoritm;
+    timer120 : struct_PhaseAlgoritm;
+    dPmg_less_100 : struct_PhaseAlgoritm;
+    nu1On : struct_PhaseAlgoritm;
+    nu2On : struct_PhaseAlgoritm;
+    pnsOn : struct_PhaseAlgoritm;
+    Error_Alg : struct_PhaseAlgoritm;
+    dPmg_more_100 : struct_PhaseAlgoritm;
+    fb_nu1Off : fb_ph_OilPump;
+    fb_nu2Off : fb_ph_OilPump;
+    fb_pnsOff : fb_ph_Switch;
+    fb_timer120 : fb_ph_Timer;
+    fb_dPmg_less_100 : fb_ph_algoritm;
+    fb_nu1On : fb_ph_OilPump;
+    fb_nu2On : fb_ph_OilPump;
+    fb_pnsOn : fb_ph_Switch;
+    fb_Error_Alg : fb_ph_algoritm;
+    fb_dPmg_more_100 : fb_ph_algoritm;
+    onInit : BOOL;
+  END_VAR
+  VAR_EXTERNAL
+    Im : ImConfig;
+    ai : AiConfig;
+  END_VAR
+  VAR
+    _sunpackerCommand : fb_sunpackerCommand;
+    source : BYTE;
+    cmd : BYTE;
+    _statusDualInput : TYPE_statusDualInput;
+    lastCmd : BYTE;
+    _Answers : TYPE_Answers;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+  END_VAR
+  VAR
+    cmd_for_Status : BYTE;
+    source_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    waitReset : TON;
+    resetCmdTimerPriznak : BOOL;
+  END_VAR
+
+  IF NOT onInit THEN      
+      fb_nu1Off(phaseNumber:=1, act:=_off);
+      fb_nu2Off(phaseNumber:=2, act:=_off);
+      fb_pnsOff(phaseNumber:=3, act:=_off);
+      fb_timer120(phaseNumber:=4, delay:=T#120S);
+      fb_dPmg_less_100(phaseNumber:=5);
+      fb_nu1On(phaseNumber:=6, act:=_on);
+      fb_nu2On(phaseNumber:=7, act:=_on);
+      fb_pnsOn(phaseNumber:=8, act:=_on);
+      fb_Error_Alg(phaseNumber:=9);
+      fb_dPmg_more_100(phaseNumber:=10);
+      onInit:=TRUE;
+  END_IF;
+
+
+  fb_nu1Off(StrPh:=nu1Off, Im:=Im.nu1);
+  fb_nu2Off(StrPh:=nu2Off, Im:=Im.nu2);
+  fb_pnsOff(StrPh:=pnsOff, Im:=Im.pns);
+  fb_timer120(StrPh:=timer120);
+  fb_dPmg_less_100(StrPh:=dPmg_less_100);
+  fb_nu1On(StrPh:=nu1On, Im:=Im.nu1);
+  fb_nu2On(StrPh:=nu2On, Im:=Im.nu2);
+  fb_pnsOn(StrPh:=pnsOn, Im:=Im.pns);
+  fb_Error_Alg(StrPh:=Error_Alg);
+  fb_dPmg_more_100(StrPh:=dPmg_more_100);
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+
+      IF StrAlg.isRuning THEN
+      (* kto takoi ask 
+          IF	NOT nuOff.start THEN
+  	    NU_OFF_Ask.ask ();
+      END_IF;*)
+
+      (*
+      IF	(nu_OFF_Ask.answer=Answers.ANS_YES) THEN
+  	    runPhase(nu1Off);
+  	    runPhase(nu2Off);
+          runPhase(pnsOff);
+  	    NU_OFF_Ask.reset ();
+  	    runPhase(timer120);
+      END_IF;*)
+
+      (*насосы выключены - запуск проверки *)
+      IF	nu1Off.top AND nu2Off.top THEN
+  	    runPhase(dPmg_less_100);
+      END_IF;
+
+      (*проверка перепада маслогаз по аналогу и дискрету*)
+      IF	dPmg_less_100.start AND NOT dPmg_less_100.top THEN
+          IF 	Im.SingleSignals.dP_maslo_gaz_Less100.Q AND ai.dPmaslo_gaz.value < 150.0 THEN
+  	  	    dPmg_less_100.top:=TRUE;
+  		    runPhase(nu1On);
+              runPhase(nu2On);
+              runPhase(pnsOn);
+  	    END_IF;
+      END_IF;
+
+
+      IF	Im.nu1.onStatus = _statusDualInput.STATUS_ON OR Im.nu2.onStatus = _statusDualInput.STATUS_ON  AND nu1On.start  AND nu2On.start AND NOT nu1On.top AND NOT nu2On.top THEN
+  	    nu1On.top := TRUE;
+          nu2On.top := TRUE;
+      END_IF;
+
+      (*ошибка завершения по таймеру*)
+      IF	timer120.top THEN 
+  	    Error_Alg.ERROR := TRUE;
+      ELSE
+  	    Error_Alg.ERROR := FALSE;	
+      END_IF;
+
+      (*ыва*)
+      IF	nu1On.top AND nu2On.top AND pnsOn.top THEN
+  	    runPhase(dPmg_more_100);
+      END_IF;
+
+      (**)
+      IF	dPmg_more_100.start AND NOT dPmg_more_100.top (*AND NOT algoritms.autoNu_1.flag1 OR algoritms.autoNu_1.flag2*) THEN 
+  	    IF 	NOT Im.SingleSignals.dP_maslo_gaz_Less100.Q AND Im.SingleSignals.dP_maslo_gaz_Less100.status = 1 AND  ai.dPmaslo_gaz.value > 150.0 THEN
+      		dPmg_more_100.top :=TRUE;
+  		    resetPhase(timer120);
+  	    END_IF;
+      END_IF;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cm dRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA2;
+
+                                                    (*runPhase(timer120);
+                                                    runPhase(timer5);
+                                                    runPhase(Shup);
+                                                    resetAiProtection(protections.dPmaslo_gaz);                                                  
+                                                    resetDiProtection(protections.dPmaslo_gaz_less100);*)
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          (*resetPhase(timer5);
+                                          resetPhase(Shup);
+                                          resetPhase(timer120);
+                                          resetPhase(Net_Chast);
+                                          resetPhase(mvOn);
+                                          resetPhase(pGNSmore04);
+                                          resetPhase(gotov_K_zagruzke);
+                                          resetPhase(dPmg_Top);
+                                          resetPhase(AutoPNS_Start);*)
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= nu1Off.startStatus
+              OR nu2Off.startStatus
+              OR pnsOff.startStatus
+              OR timer120.startStatus
+              OR dPmg_less_100.startStatus
+              OR nu1On.startStatus
+              OR nu2On.startStatus
+              OR pnsOn.startStatus;
+
+
+  StrAlg.Top := nu1Off.topStatus
+              OR nu2Off.topStatus
+              OR pnsOff.topStatus
+              OR timer120.topStatus
+              OR dPmg_less_100.topStatus
+              OR nu1On.topStatus
+              OR nu2On.topStatus
+              OR pnsOn.topStatus;                   
+
+  StrAlg.Error := nu1Off.errorStatus
+              OR nu2Off.errorStatus
+              OR pnsOff.errorStatus
+              OR timer120.errorStatus
+              OR dPmg_less_100.errorStatus
+              OR nu1On.errorStatus
+              OR nu2On.errorStatus
+              OR pnsOn.errorStatus;
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
+END_FUNCTION_BLOCK
+
+FUNCTION_BLOCK Prov_PMS
+  VAR_IN_OUT
+    StrAlg : struct_Alg;
+  END_VAR
+  VAR
+    pnsOff : struct_PhaseAlgoritm;
+    timer120 : struct_PhaseAlgoritm;
+    Pms_less_25 : struct_PhaseAlgoritm;
+    Pms_less_250 : struct_PhaseAlgoritm;
+    Error_Alg : struct_PhaseAlgoritm;
+    fb_Pms_less_25 : fb_ph_algoritm;
+    fb_Pms_less_250 : fb_ph_algoritm;
+    fb_pnsOff : fb_ph_Switch;
+    fb_timer120 : fb_ph_Timer;
+    fb_Error_Alg : fb_ph_algoritm;
+    onInit : BOOL;
+  END_VAR
+  VAR_EXTERNAL
+    Im : ImConfig;
+    ai : AiConfig;
+  END_VAR
+  VAR
+    _sunpackerCommand : fb_sunpackerCommand;
+    source : BYTE;
+    cmd : BYTE;
+    _statusDualInput : TYPE_statusDualInput;
+    lastCmd : BYTE;
+    _Answers : TYPE_Answers;
+  END_VAR
+  VAR_EXTERNAL
+    ModeGpa : TYPE_ModeGpa;
+    algManager : struct_AlgoritmsManager;
+  END_VAR
+  VAR
+    cmd_for_Status : BYTE;
+    source_for_Status : BYTE;
+    command_error_for_Status : BYTE;
+    resetCmdTimer : TON;
+    waitReset : TON;
+    resetCmdTimerPriznak : BOOL;
+    _statusAi : TYPE_StatusAi;
+  END_VAR
+
+  IF NOT onInit THEN      
+      fb_pnsOff(phaseNumber:=1, act:=_off);
+      fb_timer120(phaseNumber:=2, delay:=T#120S);
+      fb_Pms_less_25(phaseNumber:=3);
+      fb_Pms_less_250(phaseNumber:=4);
+      fb_Error_Alg(phaseNumber:=5);
+      onInit:=TRUE;
+  END_IF;
+
+  fb_pnsOff(StrPh:=pnsOff, Im:=Im.pns);
+  fb_timer120(StrPh:=timer120);
+  fb_Pms_less_25(StrPh:=Pms_less_25);
+  fb_Pms_less_250(StrPh:=Pms_less_250);
+  fb_Error_Alg(StrPh:=Error_Alg);
+
+
+  StrAlg.CanRun := StrAlg.inCanRun;
+  StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
+
+  IF StrAlg.isRuning THEN
+     (*IF NOT pnsOff.start THEN
+  	    PNS_OFF_Ask.ask ();
+      END_IF;
+      IF	(PNS_OFF_Ask.answer=Answers.ANS_YES) THEN
+  	    runPhase(pnsOff);
+          PNS_OFF_Ask.reset ();
+  	    IF NOT (Pms_less_250.top AND Pms_less_25.top) THEN
+  	    	runPhase(timer120);
+  	    END_IF;
+      END_IF;*)
+
+      (*запуск проверок давления*)
+      IF	pnsOff.top  THEN 
+          runPhase(Pms_less_25);
+  	    runPhase(Pms_less_250);
+      END_IF;
+
+      (*проверка давления масла низкое*)
+      IF	Pms_less_25.start AND NOT Pms_less_25.top THEN 
+  	    IF 	ai.Pmaslo_sm_nizkoe.interval>=_statusAi.NORMAL AND ai.Pmaslo_sm_nizkoe.value < 25.0 THEN
+  	  	    Pms_less_25.top:=TRUE;
+  	    END_IF;
+      END_IF;
+
+      IF	Pms_less_250.start AND NOT Pms_less_250.top THEN
+  	    IF	ai.Pmaslo_sm_vysokoe.interval>=_statusAi.NORMAL AND ai.Pmaslo_sm_vysokoe.value < 250.0 THEN
+  	  	    Pms_less_250.top:=TRUE;
+  	    END_IF;
+      END_IF;
+
+      (*ошибка заврешия алгоритма по таймеру*)
+      IF	timer120.top THEN 
+  	    Error_Alg.ERROR := TRUE;
+      ELSE
+  	    Error_Alg.ERROR := FALSE;	
+      END_IF;
+
+      (*если проверка прошла - сброс таймера *)
+      IF	Pms_less_250.top AND Pms_less_25.top  THEN 
+          resetPhase(timer120);
+      END_IF;
+  END_IF;
+
+  _sunpackerCommand(command := StrAlg.inCommand);
+  	source := _sunpackerCommand.source;
+  	cmd := _sunpackerCommand.cmd;
+
+  IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source > 0) OR source = 0) then	
+  	CASE BYTE_TO_INT(cmd) OF
+  		(*cm dRun*) 1: 	IF (StrAlg.CanRun) THEN
+  					StrAlg.isRuning := TRUE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+  					(*****************       OnRun       *****************)
+                                                    algManager.nMode:=ModeGpa.MODE_PUSK_FIRST_FAZA2;
+
+                                                    (*runPhase(timer120);
+                                                    runPhase(timer5);
+                                                    runPhase(Shup);
+                                                    resetAiProtection(protections.dPmaslo_gaz);                                                  
+                                                    resetDiProtection(protections.dPmaslo_gaz_less100);*)
+
+  					cmd_for_Status := cmd;
+  					source_for_Status := source;
+  					command_error_for_Status := 0;
+  				ELSE
+  					StrAlg.isRuning := FALSE;
+  					StrAlg.isEnded := FALSE;
+  					StrAlg.hasError := FALSE;
+
+  					cmd_for_Status := 0;
+  					source_for_Status := source;
+  					command_error_for_Status := cmd;
+  				END_IF;
+  		(*cmdReset*) 2: 	StrAlg.isRuning := FALSE;
+  				StrAlg.isEnded := FALSE;
+  				StrAlg.hasError 	:= FALSE;
+
+                                           (*****************       OnReset       *****************)
+                                          waitReset(IN:=FALSE);
+                                          StrAlg.inCanRun:=FALSE;
+
+                                          (*resetPhase(timer5);
+                                          resetPhase(Shup);
+                                          resetPhase(timer120);
+                                          resetPhase(Net_Chast);
+                                          resetPhase(mvOn);
+                                          resetPhase(pGNSmore04);
+                                          resetPhase(gotov_K_zagruzke);
+                                          resetPhase(dPmg_Top);
+                                          resetPhase(AutoPNS_Start);*)
+
+                                          StrAlg.inOpcCommandsDisabled:=FALSE;                
+
+  				cmd_for_Status := cmd;
+  				source_for_Status := source;
+  				command_error_for_Status := 0;
+  	END_CASE;			
+  	resetCmdTimer(IN := false);
+  	resetCmdTimerPriznak := TRUE;
+  END_IF;
+  lastCmd := cmd;
+
+  resetCmdTimer(IN := resetCmdTimerPriznak, PT := T#5S);
+  IF resetCmdTimer.Q THEN
+  	resetCmdTimerPriznak := FALSE;
+  	source_for_Status := 0;
+  	cmd_for_Status := 0;
+  	command_error_for_Status := 0;
+  END_IF; 
+
+  StrAlg.Start:= pnsOff.startStatus
+              OR timer120.startStatus
+              OR Pms_less_25.startStatus
+              OR Pms_less_250.startStatus;
+
+
+  StrAlg.Top :=  pnsOff.topStatus
+              OR timer120.topStatus
+              OR Pms_less_25.topStatus
+              OR Pms_less_250.topStatus;                  
+
+  StrAlg.Top :=  pnsOff.errorStatus
+              OR timer120.errorStatus
+              OR Pms_less_25.errorStatus
+              OR Pms_less_250.errorStatus; 
+
+  (*TODO: TYPE PROGRAM CODE HERE*)
+  StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 
+  			OR SHL(BYTE_TO_DWORD(cmd_for_Status), 26) 
+  			OR SHL(BYTE_TO_DWORD(command_error_for_Status), 23)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.OpcCommandsDisabled ), 21)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.hasError),4)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.CanRun),2)
+  			OR SHL(BOOL_TO_DWORD(StrAlg.isEnded),1)
+  			OR BOOL_TO_DWORD(StrAlg.isRuning);
 END_FUNCTION_BLOCK
 
 
