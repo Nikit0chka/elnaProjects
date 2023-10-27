@@ -33911,7 +33911,67 @@ __end:
 
 
 
-static inline BOOL __PROV_OPRESSOVKA_RUNPHASE1(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_ASKQUESTION1(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_QUESTION __TMP_STRQ = __GET_VAR(data__->OPRESSOVKA_START,);
+  __res = ASKQUESTION(EN,
+    NULL,
+    &__TMP_STRQ);
+  __SET_VAR(,data__->OPRESSOVKA_START,,__TMP_STRQ);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE2(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->OPC_CONTROL,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->OPC_CONTROL,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETAIPROTECTION3(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_AIPROTECTION __TMP_PROTECTION = __GET_VAR(data__->PROTECTIONS,.PGAZA_NA_VYHODE_NAGNETATELIA_GPA_STOP);
+  __res = RESETAIPROTECTION(EN,
+    NULL,
+    &__TMP_PROTECTION);
+  __SET_VAR(,data__->PROTECTIONS,.PGAZA_NA_VYHODE_NAGNETATELIA_GPA_STOP,__TMP_PROTECTION);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETAIPROTECTION4(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_AIPROTECTION __TMP_PROTECTION = __GET_VAR(data__->PROTECTIONS,.PGAZA_NA_VHODE_NAGNETATELIA_GPA_STOP);
+  __res = RESETAIPROTECTION(EN,
+    NULL,
+    &__TMP_PROTECTION);
+  __SET_VAR(,data__->PROTECTIONS,.PGAZA_NA_VHODE_NAGNETATELIA_GPA_STOP,__TMP_PROTECTION);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETQUESTION5(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_QUESTION __TMP_STRQ = __GET_VAR(data__->OPRESSOVKA_START,);
+  __res = RESETQUESTION(EN,
+    NULL,
+    &__TMP_STRQ);
+  __SET_VAR(,data__->OPRESSOVKA_START,,__TMP_STRQ);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE6(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33923,7 +33983,7 @@ static inline BOOL __PROV_OPRESSOVKA_RUNPHASE1(BOOL EN,
   return __res;
 }
 
-static inline BOOL __PROV_OPRESSOVKA_RUNPHASE2(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE7(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33935,7 +33995,7 @@ static inline BOOL __PROV_OPRESSOVKA_RUNPHASE2(BOOL EN,
   return __res;
 }
 
-static inline BOOL __PROV_OPRESSOVKA_RUNPHASE3(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE8(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33947,7 +34007,7 @@ static inline BOOL __PROV_OPRESSOVKA_RUNPHASE3(BOOL EN,
   return __res;
 }
 
-static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION4(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION9(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33959,7 +34019,7 @@ static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION4(BOOL EN,
   return __res;
 }
 
-static inline BOOL __PROV_OPRESSOVKA_RUNDIPROTECTION5(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_RUNDIPROTECTION10(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33971,7 +34031,7 @@ static inline BOOL __PROV_OPRESSOVKA_RUNDIPROTECTION5(BOOL EN,
   return __res;
 }
 
-static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION6(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION11(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33983,7 +34043,7 @@ static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION6(BOOL EN,
   return __res;
 }
 
-static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION7(BOOL EN,
+static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION12(BOOL EN,
   PROV_OPRESSOVKA *data__)
 {
   BOOL __res;
@@ -33992,6 +34052,222 @@ static inline BOOL __PROV_OPRESSOVKA_RUNAIPROTECTION7(BOOL EN,
     NULL,
     &__TMP_PROTECTION);
   __SET_VAR(,data__->PROTECTIONS,.PMASLO_SM_VYSOKOE,__TMP_PROTECTION);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE13(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->P_VH_VYH_MORE_ZAD,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->P_VH_VYH_MORE_ZAD,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE14(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN5OPEN,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN5OPEN,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE15(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN4OPEN,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN4OPEN,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE16(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->TIMER10,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->TIMER10,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE17(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN5CLOSE,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN5CLOSE,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE18(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN4CLOSE,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN4CLOSE,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE19(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->P_ZAD,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->P_ZAD,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_ASKQUESTION20(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_QUESTION __TMP_STRQ = __GET_VAR(data__->ZAPOLNIT_KONTUR,);
+  __res = ASKQUESTION(EN,
+    NULL,
+    &__TMP_STRQ);
+  __SET_VAR(,data__->ZAPOLNIT_KONTUR,,__TMP_STRQ);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETQUESTION21(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_QUESTION __TMP_STRQ = __GET_VAR(data__->ZAPOLNIT_KONTUR,);
+  __res = RESETQUESTION(EN,
+    NULL,
+    &__TMP_STRQ);
+  __SET_VAR(,data__->ZAPOLNIT_KONTUR,,__TMP_STRQ);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE22(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN5OPEN,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN5OPEN,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE23(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN4OPEN,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN4OPEN,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETQUESTION24(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_QUESTION __TMP_STRQ = __GET_VAR(data__->ZAPOLNIT_KONTUR,);
+  __res = RESETQUESTION(EN,
+    NULL,
+    &__TMP_STRQ);
+  __SET_VAR(,data__->ZAPOLNIT_KONTUR,,__TMP_STRQ);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE25(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN4OPEN,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN4OPEN,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE26(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->TIMER10,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->TIMER10,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE27(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN5CLOSE,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN5CLOSE,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE28(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->P_VH_VYH_MORE_ZAD,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->P_VH_VYH_MORE_ZAD,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RUNPHASE29(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->KRAN4CLOSE,);
+  __res = RUNPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->KRAN4CLOSE,,__TMP_PH);
+  return __res;
+}
+
+static inline BOOL __PROV_OPRESSOVKA_RESETPHASE30(BOOL EN,
+  PROV_OPRESSOVKA *data__)
+{
+  BOOL __res;
+  STRUCT_PHASEALGORITM __TMP_PH = __GET_VAR(data__->P_ZAD,);
+  __res = RESETPHASE(EN,
+    NULL,
+    &__TMP_PH);
+  __SET_VAR(,data__->P_ZAD,,__TMP_PH);
   return __res;
 }
 
@@ -34055,6 +34331,18 @@ void PROV_OPRESSOVKA_init__(PROV_OPRESSOVKA *data__, BOOL retain) {
     __SET_VAR(data__->,FIRST_STEP,,temp);
   }
   __INIT_VAR(data__->MAXZAPOLNENIE_IZM,0,retain)
+  {
+    static const STRUCT_QUESTION temp = {0,0,__BOOL_LITERAL(FALSE),__BOOL_LITERAL(FALSE),0,0,__BOOL_LITERAL(FALSE),__BOOL_LITERAL(FALSE)};
+    __SET_VAR(data__->,OPRESSOVKA_START,,temp);
+  }
+  {
+    static const STRUCT_QUESTION temp = {0,0,__BOOL_LITERAL(FALSE),__BOOL_LITERAL(FALSE),0,0,__BOOL_LITERAL(FALSE),__BOOL_LITERAL(FALSE)};
+    __SET_VAR(data__->,PNS_NU_ON_ASK,,temp);
+  }
+  {
+    static const STRUCT_QUESTION temp = {0,0,__BOOL_LITERAL(FALSE),__BOOL_LITERAL(FALSE),0,0,__BOOL_LITERAL(FALSE),__BOOL_LITERAL(FALSE)};
+    __SET_VAR(data__->,ZAPOLNIT_KONTUR,,temp);
+  }
   FB_PH_ALGORITM_init__(&data__->FB_OPC_CONTROL,retain);
   FB_PH_ALGORITM_init__(&data__->FB_PMS_MORE_50,retain);
   FB_PH_ALGORITM_init__(&data__->FB_PMS_MORE_300,retain);
@@ -34068,6 +34356,9 @@ void PROV_OPRESSOVKA_init__(PROV_OPRESSOVKA *data__, BOOL retain) {
   FB_PH_ALGORITM_init__(&data__->FB_P_VH_VYH_MORE_ZAD,retain);
   FB_PH_ALGORITM_init__(&data__->FB_ZAPOLN_NORM,retain);
   FB_PH_ALGORITM_init__(&data__->FB_FIRST_STEP,retain);
+  FB_QUESTION_init__(&data__->FB_OPRESSOVKA_START,retain);
+  FB_QUESTION_init__(&data__->FB_PNS_NU_ON_ASK,retain);
+  FB_QUESTION_init__(&data__->FB_ZAPOLNIT_KONTUR,retain);
   __INIT_VAR(data__->ONINIT,__BOOL_LITERAL(FALSE),retain)
   __INIT_EXTERNAL(IMCONFIG,IM,data__->IM,retain)
   __INIT_EXTERNAL(AICONFIG,AI,data__->AI,retain)
@@ -34145,6 +34436,9 @@ void PROV_OPRESSOVKA_body__(PROV_OPRESSOVKA *data__) {
     FB_PH_ALGORITM_body__(&data__->FB_ZAPOLN_NORM);
     __SET_VAR(data__->FB_FIRST_STEP.,PHASENUMBER,,13);
     FB_PH_ALGORITM_body__(&data__->FB_FIRST_STEP);
+    __SET_VAR(data__->,OPRESSOVKA_START,.ANSWERVARIANTS,(__GET_VAR(data__->_ANSWERS,.ANS_YES) + __GET_VAR(data__->_ANSWERS,.ANS_NO)));
+    __SET_VAR(data__->,PNS_NU_ON_ASK,.ANSWERVARIANTS,__GET_VAR(data__->_ANSWERS,.ANS_YES));
+    __SET_VAR(data__->,ZAPOLNIT_KONTUR,.ANSWERVARIANTS,__GET_VAR(data__->_ANSWERS,.ANS_YES));
     __SET_VAR(data__->,ONINIT,,__BOOL_LITERAL(TRUE));
   };
   __SET_VAR(data__->FB_OPC_CONTROL.,STRPH,,__GET_VAR(data__->OPC_CONTROL,));
@@ -34194,29 +34488,61 @@ void PROV_OPRESSOVKA_body__(PROV_OPRESSOVKA *data__) {
   __SET_VAR(data__->FB_FIRST_STEP.,STRPH,,__GET_VAR(data__->FIRST_STEP,));
   FB_PH_ALGORITM_body__(&data__->FB_FIRST_STEP);
   __SET_VAR(data__->,FIRST_STEP,,__GET_VAR(data__->FB_FIRST_STEP.STRPH));
+  __SET_VAR(data__->FB_OPRESSOVKA_START.,STRQ,,__GET_VAR(data__->OPRESSOVKA_START,));
+  FB_QUESTION_body__(&data__->FB_OPRESSOVKA_START);
+  __SET_VAR(data__->,OPRESSOVKA_START,,__GET_VAR(data__->FB_OPRESSOVKA_START.STRQ));
+  __SET_VAR(data__->FB_PNS_NU_ON_ASK.,STRQ,,__GET_VAR(data__->PNS_NU_ON_ASK,));
+  FB_QUESTION_body__(&data__->FB_PNS_NU_ON_ASK);
+  __SET_VAR(data__->,PNS_NU_ON_ASK,,__GET_VAR(data__->FB_PNS_NU_ON_ASK.STRQ));
+  __SET_VAR(data__->FB_ZAPOLNIT_KONTUR.,STRQ,,__GET_VAR(data__->ZAPOLNIT_KONTUR,));
+  FB_QUESTION_body__(&data__->FB_ZAPOLNIT_KONTUR);
+  __SET_VAR(data__->,ZAPOLNIT_KONTUR,,__GET_VAR(data__->FB_ZAPOLNIT_KONTUR.STRQ));
   __SET_VAR(data__->,STRALG,.CANRUN,__GET_VAR(data__->STRALG,.INCANRUN));
   __SET_VAR(data__->,STRALG,.OPCCOMMANDSDISABLED,__GET_VAR(data__->STRALG,.INOPCCOMMANDSDISABLED));
   if (__GET_VAR(data__->STRALG,.ISRUNING)) {
-    if ((__GET_VAR(data__->OPC_CONTROL,.TOP) && !(__GET_VAR(data__->PMS_MORE_50,.START)))) {
-      __PROV_OPRESSOVKA_RUNPHASE1(
+    if ((__GET_VAR(data__->OPRESSOVKA_START,.ANSWER) == __GET_VAR(data__->_ANSWERS,.ANS_YES))) {
+      __PROV_OPRESSOVKA_ASKQUESTION1(
         (BOOL)__BOOL_LITERAL(TRUE),
         data__);
+      __SET_EXTERNAL(data__->,IM,.KRAN6.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
       __PROV_OPRESSOVKA_RUNPHASE2(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETAIPROTECTION3(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETAIPROTECTION4(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    } else if ((__GET_VAR(data__->OPRESSOVKA_START,.ANSWER) == __GET_VAR(data__->_ANSWERS,.ANS_NO))) {
+      __PROV_OPRESSOVKA_RESETQUESTION5(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if ((__GET_VAR(data__->OPC_CONTROL,.TOP) && !(__GET_VAR(data__->PMS_MORE_50,.START)))) {
+      __SET_EXTERNAL(data__->,IM,.PNS.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __SET_EXTERNAL(data__->,IM,.KRAN6.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __PROV_OPRESSOVKA_RUNPHASE6(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RUNPHASE7(
         (BOOL)__BOOL_LITERAL(TRUE),
         data__);
     };
     if (((__GET_VAR(data__->OPC_CONTROL,.TOP) && (__GET_EXTERNAL(data__->IM,.PNS.ONSTATUS) == __GET_VAR(data__->_STATUSDUALINPUT,.STATUS_ON))) && !(__GET_VAR(data__->DPMG_MORE_100,.START)))) {
-      __PROV_OPRESSOVKA_RUNPHASE3(
+      __SET_EXTERNAL(data__->,IM,.NU1.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __SET_EXTERNAL(data__->,IM,.NU2.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __PROV_OPRESSOVKA_RUNPHASE8(
         (BOOL)__BOOL_LITERAL(TRUE),
         data__);
     };
     if (((__GET_EXTERNAL(data__->IM,.NU1.ONSTATUS) == __GET_VAR(data__->_STATUSDUALINPUT,.STATUS_ON)) || (((__GET_EXTERNAL(data__->IM,.NU2.ONSTATUS) == __GET_VAR(data__->_STATUSDUALINPUT,.STATUS_ON)) && __GET_VAR(data__->DPMG_MORE_100,.START)) && !(__GET_VAR(data__->DPMG_MORE_100,.TOP))))) {
-      if ((((__GET_EXTERNAL(data__->AI,.DPMASLO_GAZ.INTERVAL) >= __GET_VAR(data__->_STATUSAI,.NORMAL)) && (__GET_EXTERNAL(data__->AI,.DPMASLO_GAZ.VALUE) > 150.0)) && !(__GET_EXTERNAL(data__->IM,.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q)))) {
+      if (((((__GET_EXTERNAL(data__->AI,.DPMASLO_GAZ.INTERVAL) >= __GET_VAR(data__->_STATUSAI,.NORMAL)) && (__GET_EXTERNAL(data__->AI,.DPMASLO_GAZ.VALUE) > 150.0)) && (__GET_EXTERNAL(data__->IM,.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.RELIABILITY) == __BOOL_LITERAL(TRUE))) && !(__GET_EXTERNAL(data__->IM,.SINGLESIGNALS.DP_MASLO_GAZ_LESS100.Q)))) {
         __SET_VAR(data__->,DPMG_MORE_100,.TOP,__BOOL_LITERAL(TRUE));
-        __PROV_OPRESSOVKA_RUNAIPROTECTION4(
+        __PROV_OPRESSOVKA_RUNAIPROTECTION9(
           (BOOL)__BOOL_LITERAL(TRUE),
           data__);
-        __PROV_OPRESSOVKA_RUNDIPROTECTION5(
+        __PROV_OPRESSOVKA_RUNDIPROTECTION10(
           (BOOL)__BOOL_LITERAL(TRUE),
           data__);
       };
@@ -34224,7 +34550,7 @@ void PROV_OPRESSOVKA_body__(PROV_OPRESSOVKA *data__) {
     if ((((__GET_EXTERNAL(data__->IM,.PNS.ONSTATUS) == __GET_VAR(data__->_STATUSDUALINPUT,.STATUS_ON)) && __GET_VAR(data__->PMS_MORE_50,.START)) && !(__GET_VAR(data__->PMS_MORE_50,.TOP)))) {
       if (((__GET_EXTERNAL(data__->AI,.PMASLO_SM_NIZKOE.INTERVAL) >= __GET_VAR(data__->_STATUSAI,.NORMAL)) && (__GET_EXTERNAL(data__->AI,.PMASLO_SM_NIZKOE.VALUE) > 50.0))) {
         __SET_VAR(data__->,PMS_MORE_50,.TOP,__BOOL_LITERAL(TRUE));
-        __PROV_OPRESSOVKA_RUNAIPROTECTION6(
+        __PROV_OPRESSOVKA_RUNAIPROTECTION11(
           (BOOL)__BOOL_LITERAL(TRUE),
           data__);
       };
@@ -34232,10 +34558,113 @@ void PROV_OPRESSOVKA_body__(PROV_OPRESSOVKA *data__) {
     if ((((__GET_EXTERNAL(data__->IM,.PNS.ONSTATUS) == __GET_VAR(data__->_STATUSDUALINPUT,.STATUS_ON)) && __GET_VAR(data__->PMS_MORE_300,.START)) && !(__GET_VAR(data__->PMS_MORE_300,.TOP)))) {
       if (((__GET_EXTERNAL(data__->AI,.PMASLO_SM_VYSOKOE.INTERVAL) >= __GET_VAR(data__->_STATUSAI,.NORMAL)) && (__GET_EXTERNAL(data__->AI,.PMASLO_SM_VYSOKOE.VALUE) > 300.0))) {
         __SET_VAR(data__->,PMS_MORE_300,.TOP,__BOOL_LITERAL(TRUE));
-        __PROV_OPRESSOVKA_RUNAIPROTECTION7(
+        __PROV_OPRESSOVKA_RUNAIPROTECTION12(
           (BOOL)__BOOL_LITERAL(TRUE),
           data__);
       };
+    };
+    if (((__GET_VAR(data__->KRAN4CLOSE,.TOP) && __GET_VAR(data__->ZAPOLN_NORM,.TOP)) && !(__GET_VAR(data__->P_ZAD,.START)))) {
+      __PROV_OPRESSOVKA_RESETPHASE13(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETPHASE14(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETPHASE15(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETPHASE16(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETPHASE17(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __PROV_OPRESSOVKA_RESETPHASE18(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if ((!(__GET_VAR(data__->KRAN4CLOSE,.TOP)) || ((__GET_VAR(data__->KRAN4CLOSE,.TOP) && __GET_VAR(data__->ZAPOLN_NORM,.TOP)) && !(__GET_VAR(data__->P_ZAD,.START))))) {
+      __PROV_OPRESSOVKA_RUNPHASE19(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if (((!(__GET_VAR(data__->P_ZAD,.TOP)) && __GET_VAR(data__->P_ZAD,.START)) && __GET_VAR(data__->ZAPOLN_NORM,.TOP))) {
+      __PROV_OPRESSOVKA_ASKQUESTION20(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __SET_EXTERNAL(data__->,IM,.KRAN3.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN4.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN5.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN3B.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN1.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN2.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+    } else if ((!(__GET_VAR(data__->ZAPOLN_NORM,.TOP)) && !(__GET_VAR(data__->P_ZAD,.TOP)))) {
+      __PROV_OPRESSOVKA_RESETQUESTION21(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if (((__GET_VAR(data__->ZAPOLNIT_KONTUR,.ANSWER) == __GET_VAR(data__->_ANSWERS,.ANS_YES)) && __GET_VAR(data__->P_ZAD,.START))) {
+      if (!(__GET_VAR(data__->FIRST_STEP,.TOP))) {
+        __PROV_OPRESSOVKA_RUNPHASE22(
+          (BOOL)__BOOL_LITERAL(TRUE),
+          data__);
+      } else {
+        __PROV_OPRESSOVKA_RUNPHASE23(
+          (BOOL)__BOOL_LITERAL(TRUE),
+          data__);
+      };
+      __PROV_OPRESSOVKA_RESETQUESTION24(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __SET_VAR(data__->,P_ZAD,.TOP,__BOOL_LITERAL(TRUE));
+    };
+    if ((__GET_VAR(data__->KRAN5OPEN,.TOP) && !(__GET_VAR(data__->FIRST_STEP,.TOP)))) {
+      __PROV_OPRESSOVKA_RUNPHASE25(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if (((__GET_VAR(data__->KRAN4OPEN,.TOP) && !(__GET_VAR(data__->TIMER10,.TOP))) && !(__GET_VAR(data__->FIRST_STEP,.TOP)))) {
+      __PROV_OPRESSOVKA_RUNPHASE26(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if ((__GET_VAR(data__->TIMER10,.TOP) && !(__GET_VAR(data__->FIRST_STEP,.TOP)))) {
+      __PROV_OPRESSOVKA_RUNPHASE27(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if ((__GET_VAR(data__->KRAN5CLOSE,.TOP) || (__GET_VAR(data__->FIRST_STEP,.TOP) && __GET_VAR(data__->KRAN4OPEN,.TOP)))) {
+      __PROV_OPRESSOVKA_RUNPHASE28(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+    };
+    if (((((__GET_EXTERNAL(data__->AI,.PGAZA_NA_VHODE_NAGNETATELIA.INTERVAL) >= __GET_VAR(data__->_STATUSAI,.NORMAL)) && (__GET_EXTERNAL(data__->AI,.PGAZA_NA_VYHODE_NAGNETATELIA.INTERVAL) >= __GET_VAR(data__->_STATUSAI,.NORMAL))) && __GET_VAR(data__->P_VH_VYH_MORE_ZAD,.START)) && !(__GET_VAR(data__->P_VH_VYH_MORE_ZAD,.TOP)))) {
+      __PROV_OPRESSOVKA_RUNPHASE29(
+        (BOOL)__BOOL_LITERAL(TRUE),
+        data__);
+      __SET_VAR(data__->,P_VH_VYH_MORE_ZAD,.TOP,__BOOL_LITERAL(TRUE));
+    };
+    if (__GET_VAR(data__->KRAN4CLOSE,.TOP)) {
+      __SET_VAR(data__->,FIRST_STEP,.TOP,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN3.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __SET_EXTERNAL(data__->,IM,.KRAN4.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __SET_EXTERNAL(data__->,IM,.KRAN5.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      __SET_EXTERNAL(data__->,IM,.KRAN3B.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      if (__GET_VAR(data__->ZAPOLN_NORM,.TOP)) {
+        __PROV_OPRESSOVKA_RESETPHASE30(
+          (BOOL)__BOOL_LITERAL(TRUE),
+          data__);
+      };
+      if (__GET_EXTERNAL(data__->IM,.SINGLESIGNALS.DP_KRAN1_LESS100.Q)) {
+        __SET_EXTERNAL(data__->,IM,.KRAN1.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+        __SET_EXTERNAL(data__->,IM,.KRAN2.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(FALSE));
+      } else {
+        __SET_EXTERNAL(data__->,IM,.KRAN1.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+        __SET_EXTERNAL(data__->,IM,.KRAN2.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      };
+    } else {
+      __SET_EXTERNAL(data__->,IM,.KRAN1.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
+      __SET_EXTERNAL(data__->,IM,.KRAN2.INOPCCOMMANDSDISABLED,__BOOL_LITERAL(TRUE));
     };
   };
   __SET_VAR(data__->_SUNPACKERCOMMAND.,COMMAND,,__GET_VAR(data__->STRALG,.INCOMMAND));

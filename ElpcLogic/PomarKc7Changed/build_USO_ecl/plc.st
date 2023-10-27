@@ -17184,6 +17184,9 @@ FUNCTION_BLOCK Prov_opressovka
     Zapoln_Norm : struct_PhaseAlgoritm;
     First_Step : struct_PhaseAlgoritm;
     MaxZapolnenie_izm : REAL;
+    Opressovka_Start : struct_Question;
+    PNS_NU_ON_Ask : struct_Question;
+    Zapolnit_kontur : struct_Question;
     fb_OPC_Control : fb_ph_algoritm;
     fb_Pms_more_50 : fb_ph_algoritm;
     fb_Pms_more_300 : fb_ph_algoritm;
@@ -17197,6 +17200,9 @@ FUNCTION_BLOCK Prov_opressovka
     fb_P_vh_vyh_more_zad : fb_ph_algoritm;
     fb_Zapoln_Norm : fb_ph_algoritm;
     fb_First_Step : fb_ph_algoritm;
+    fb_Opressovka_Start : fb_Question;
+    fb_PNS_NU_ON_Ask : fb_Question;
+    fb_Zapolnit_kontur : fb_Question;
     onInit : BOOL;
   END_VAR
   VAR_EXTERNAL
@@ -17240,6 +17246,9 @@ FUNCTION_BLOCK Prov_opressovka
       fb_P_vh_vyh_more_zad(phaseNumber:=11);
       fb_Zapoln_Norm(phaseNumber:=12);
       fb_First_Step(phaseNumber:=13);
+      Opressovka_Start.AnswerVariants:=_Answers.ANS_YES + _Answers.ANS_NO;
+      PNS_NU_ON_Ask.AnswerVariants:=_Answers.ANS_YES;
+      Zapolnit_kontur.AnswerVariants:=_Answers.ANS_YES;
       onInit:=TRUE;
   END_IF;
 
@@ -17256,6 +17265,10 @@ FUNCTION_BLOCK Prov_opressovka
   fb_P_vh_vyh_more_zad(StrPh:=P_vh_vyh_more_zad);
   fb_Zapoln_Norm(StrPh:=Zapoln_Norm);
   fb_First_Step(StrPh:=First_Step);
+  fb_Opressovka_Start(StrQ:=Opressovka_Start);
+  fb_PNS_NU_ON_Ask(StrQ:=PNS_NU_ON_Ask);
+  fb_Zapolnit_kontur(StrQ:=Zapolnit_kontur);
+
 
 
   StrAlg.CanRun := StrAlg.inCanRun;
@@ -17263,43 +17276,43 @@ FUNCTION_BLOCK Prov_opressovka
 
   IF StrAlg.isRuning THEN
      (*IF	algManager.mode <> ModeGpa.MODE_O THEN
-  	    Opressovka_Start.ask ();
+  	    askQuestion(Opressovka_Start);
       END_IF;*)
 
-      (*IF	(Opressovka_Start.answer=Answers.ANS_YES) THEN
-  	    resetPhase(Opressovka_Start);
-  	    Im.kran6.EnableOpcControl();
-  	    algManager.setMode(nMode:=ModeGpa.MODE_O);
+      IF	Opressovka_Start.answer=_Answers.ANS_YES THEN
+  	    askQuestion(Opressovka_Start);
+  	    Im.kran6.inOpcCommandsDisabled := FALSE;
+  	    (*algManager.setMode(nMode:=ModeGpa.MODE_O);*)
   	    runPhase(OPC_Control);
   	    resetAiProtection(protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);
   	    resetAiProtection(protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP);
-          ELSIF	(Opressovka_Start.answer=Answers.ANS_no) THEN
-  		resetPhase(Opressovka_Start);
-      END_IF;*)
+          ELSIF Opressovka_Start.answer=_Answers.ANS_no THEN
+                resetQuestion(Opressovka_Start);
+      END_IF;
 
       (*IF	OPC_Control.start AND NOT OPC_Control.top THEN
   	    PNS_NU_ON_Ask.ask ();
       END_IF;
-      IF	(PNS_NU_ON_Ask.answer=Answers.ANS_YES) AND NOT OPC_Control.top THEN
+      IF	(PNS_NU_ON_Ask.answer=_Answers.ANS_YES) AND NOT OPC_Control.top THEN
   	    OPC_Control.top:=TRUE;
   	    resetPhase(PNS_NU_ON_Ask);
       END_IF;*)
 
       IF	OPC_Control.top AND NOT Pms_more_50.start  THEN
-  	    (*Im.pns.EnableOpcControl();
-  	    Im.kran6.EnableOpcControl();*)
+  	    Im.pns.inOpcCommandsDisabled := FALSE;
+  	    Im.kran6.inOpcCommandsDisabled := FALSE;
   	    runPhase(Pms_more_50);
   	    runPhase(Pms_more_300);
       END_IF;
       IF	OPC_Control.top AND Im.pns.onStatus = _statusDualInput.STATUS_On AND NOT dPmg_more_100.start THEN
-  	   (*Im.nu.nu1.EnableOpcControl();
-  	    Im.nu.nu2.EnableOpcControl();*)
+  	    Im.nu1.inOpcCommandsDisabled := FALSE;
+  	    Im.nu2.inOpcCommandsDisabled := FALSE;
   	    runPhase(dPmg_more_100);
       END_IF;
 
       IF	Im.nu1.onStatus = _statusDualInput.STATUS_On OR Im.nu2.onStatus = _statusDualInput.STATUS_On AND dPmg_more_100.start AND NOT dPmg_more_100.top THEN
   	    IF ai.dPmaslo_gaz.interval	>=	_statusAi.NORMAL AND 
-  		    ai.dPmaslo_gaz.value > 150.0 (*AND проверить целостность цепиIm.PerepadDavlenieMasloGaz_CK.status = 1*) AND NOT Im.SingleSignals.dP_maslo_gaz_Less100.Q THEN
+  		    ai.dPmaslo_gaz.value > 150.0 AND Im.SingleSignals.dP_maslo_gaz_Less100.reliability = TRUE AND NOT Im.SingleSignals.dP_maslo_gaz_Less100.Q THEN
   		    dPmg_more_100.top:=TRUE;
   		    runAiProtection(protections.dPmaslo_gaz);
   		    runDiProtection(protections.dPmaslo_gaz_less100);
@@ -17324,17 +17337,17 @@ FUNCTION_BLOCK Prov_opressovka
 
       (*IF	dPmg_more_100.top AND Pms_more_50.top AND Pms_more_300.top THEN
   	    CASE	Auto.value OF
-  	    0:	Im.kran3.EnableOpcControl();
-  		Im.kran4.EnableOpcControl();
-  		Im.kran5.EnableOpcControl();
-  		Im.kran3b.EnableOpcControl();
+  	    0:	Im.kran3.inOpcCommandsDisabled := FALSE;
+  		Im.kran4.inOpcCommandsDisabled := FALSE;
+  		Im.kran5.inOpcCommandsDisabled := FALSE;
+  		Im.kran3b.inOpcCommandsDisabled := FALSE;
   		resetPhase(Zapolnit_kontur);
   		IF	Im.PerepadDavlenieKran1_Less100.Q THEN
-  			Im.kran1.EnableOpcControl();
-  			Im.kran2.EnableOpcControl();
+  			Im.kran1.inOpcCommandsDisabled := FALSE;
+  			Im.kran2.inOpcCommandsDisabled := FALSE;
   		ELSE
-  			Im.kran1.DisableOpcControl();
-  			Im.kran2.DisableOpcControl();
+  			Im.kran1.inOpcCommandsDisabled := TRUE;
+  			Im.kran2.inOpcCommandsDisabled := TRUE;
   		END_IF
   		resetPhase(P_vh_vyh_more_zad);
   		resetPhase(kran5Open);
@@ -17349,7 +17362,7 @@ FUNCTION_BLOCK Prov_opressovka
   	1:	
   		Zapoln_Norm.top:= MaxZapolnenie.value - MaxZapolnenie_izm > 0.4 AND MaxZapolnenie.value >= 0.4 AND MaxZapolnenie.value <= 10 AND 
   			ai.DGazaNaVhodeNagnetatelja.interval >= _statusAi.NORMAL AND MaxZapolnenie.value - ai.DGazaNaVhodeNagnetatelja.value > 0.4 AND 
-  			ai.DGazaNaVyhodeNagnetatelja.interval >= _statusAi.NORMAL AND MaxZapolnenie.value - ai.DGazaNaVyhodeNagnetatelja.value > 0.4 
+  			ai.DGazaNaVyhodeNagnetatelja.interval >= _statusAi.NORMAL AND MaxZapolnenie.value - ai.DGazaNaVyhodeNagnetatelja.value > 0.4 *)
   		IF	kran4Close.top AND Zapoln_Norm.top AND NOT P_zad.start THEN
   			resetPhase(P_vh_vyh_more_zad);
   			resetPhase(kran5Open);
@@ -17362,36 +17375,36 @@ FUNCTION_BLOCK Prov_opressovka
   		 	runPhase(P_zad);			
   		END_IF;
   		IF NOT P_zad.top AND P_zad.start AND Zapoln_Norm.top THEN
-  			Zapolnit_kontur.ask ();
-  			Im.kran3.DisableOpcControl();
-  			Im.kran4.DisableOpcControl();
-  			Im.kran5.DisableOpcControl();
-  			Im.kran3b.DisableOpcControl();
-  			Im.kran1.DisableOpcControl();
-  			Im.kran2.DisableOpcControl();
+  			askQuestion(Zapolnit_kontur);
+  			Im.kran3.inOpcCommandsDisabled := TRUE;
+  			Im.kran4.inOpcCommandsDisabled := TRUE;
+  			Im.kran5.inOpcCommandsDisabled := TRUE;
+  			Im.kran3b.inOpcCommandsDisabled := TRUE;
+  			Im.kran1.inOpcCommandsDisabled := TRUE;
+  			Im.kran2.inOpcCommandsDisabled := TRUE;
 
 
   		ELSIF NOT Zapoln_Norm.top AND NOT P_zad.top THEN
-  				resetPhase(Zapolnit_kontur);
+  				resetQuestion(Zapolnit_kontur);
   		END_IF;
 
-          IF	(Zapolnit_kontur.answer=Answers.ANS_YES) AND P_zad.start THEN
-  			MaxZapolnenie_izm:= MaxZapolnenie.value;
+          IF	(Zapolnit_kontur.answer=_Answers.ANS_YES) AND P_zad.start THEN
+  			(*MaxZapolnenie_izm:= MaxZapolnenie.value;*)
   			IF 	NOT First_Step.top THEN
   				runPhase(kran5Open);
   			ELSE
   				runPhase(kran4Open);
   			END_IF;
-  			resetPhase(Zapolnit_kontur);
+  			resetQuestion(Zapolnit_kontur);
   			P_zad.top:=TRUE;
   		END_IF;
-
+                      (*
 
   		IF	P_zad.top AND NOT kran4Close.top THEN
   			MaxZapolnenie.newvalue:=MaxZapolnenie_izm;
   		ELSE
   			MaxZapolnenie.newvalue:= MaxZapolnenie.newvalue; 
-  		END_IF;
+  		END_IF;*)
 
   		IF	kran5Open.top AND NOT First_Step.top THEN
   			runPhase(kran4Open);
@@ -17409,37 +17422,37 @@ FUNCTION_BLOCK Prov_opressovka
   			runPhase(P_vh_vyh_more_zad);
           END_IF;
 
-  		IF	ai.Pgaza_na_vhode_nagnetatelia.interval >= _statusAi.NORMAL AND ai.Pgaza_na_vhode_nagnetatelia.value >= MaxZapolnenie.value AND 
-  			ai.Pgaza_na_vyhode_nagnetatelia.interval >= _statusAi.NORMAL AND ai.Pgaza_na_vyhode_nagnetatelia.value >= MaxZapolnenie.value AND  P_vh_vyh_more_zad.start AND NOT P_vh_vyh_more_zad.top THEN
+  		IF	ai.Pgaza_na_vhode_nagnetatelia.interval >= _statusAi.NORMAL (*AND ai.Pgaza_na_vhode_nagnetatelia.value >= MaxZapolnenie.value*) AND 
+  			ai.Pgaza_na_vyhode_nagnetatelia.interval >= _statusAi.NORMAL (*AND ai.Pgaza_na_vyhode_nagnetatelia.value >= MaxZapolnenie.value*) AND  P_vh_vyh_more_zad.start AND NOT P_vh_vyh_more_zad.top THEN
   			runPhase(kran4Close);
   			P_vh_vyh_more_zad.top:=TRUE;
   		END_IF;
 
   		IF	kran4Close.top THEN
   			First_Step.top:=TRUE;
-  			Im.kran3.EnableOpcControl();
-  			Im.kran4.EnableOpcControl();
-  			Im.kran5.EnableOpcControl();
-  			Im.kran3b.EnableOpcControl();
+  			Im.kran3.inOpcCommandsDisabled := FALSE;
+  			Im.kran4.inOpcCommandsDisabled := FALSE;
+  			Im.kran5.inOpcCommandsDisabled := FALSE;
+  			Im.kran3b.inOpcCommandsDisabled := FALSE;
 
               IF	Zapoln_Norm.top THEN
   				resetPhase(P_zad);
   			END_IF;
 
-              IF	Im.dp_kran1_Less100.Q THEN
-  				Im.kran1.EnableOpcControl();
-  				Im.kran2.EnableOpcControl();	
+              IF	Im.SingleSignals.dp_kran1_Less100.Q THEN
+  				Im.kran1.inOpcCommandsDisabled := FALSE;
+  				Im.kran2.inOpcCommandsDisabled := FALSE;	
   			ELSE
-  				Im.kran1.DisableOpcControl();
-  				Im.kran2.DisableOpcControl();
+  				Im.kran1.inOpcCommandsDisabled := TRUE;
+  				Im.kran2.inOpcCommandsDisabled := TRUE;
   			END_IF;
   		ELSE
-  			Im.kran1.DisableOpcControl();
-  			Im.kran2.DisableOpcControl();
+  			Im.kran1.inOpcCommandsDisabled := TRUE;
+  			Im.kran2.inOpcCommandsDisabled := TRUE;
   	    END_IF;
-  	    END_CASE
-      END_IF;*)
-  END_IF;
+          END_IF;
+          (*END_CASE;    
+  END_IF;*)
 
   _sunpackerCommand(command := StrAlg.inCommand);
   	source := _sunpackerCommand.source;
