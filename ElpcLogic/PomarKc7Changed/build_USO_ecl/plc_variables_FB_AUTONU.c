@@ -181,8 +181,8 @@ int __variables_init_FB_AUTONU(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 53532 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INRUNONSTART
-    st = getVariable(53532);
+  { // 53694 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INRUNONSTART
+    st = getVariable(53694);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INRUNONSTART", 53);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 53533 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCANRUN
-    st = getVariable(53533);
+  { // 53695 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCANRUN
+    st = getVariable(53695);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCANRUN", 49);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 53534 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INHASERROR
-    st = getVariable(53534);
+  { // 53696 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INHASERROR
+    st = getVariable(53696);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INHASERROR", 51);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INHASERROR;
     st->value_p = p_BOOL;
   }
-  { // 53535 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INENDED
-    st = getVariable(53535);
+  { // 53697 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INENDED
+    st = getVariable(53697);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INENDED", 48);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INENDED;
     st->value_p = p_BOOL;
   }
-  { // 53536 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INOPCCOMMANDSDISABLED
-    st = getVariable(53536);
+  { // 53698 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INOPCCOMMANDSDISABLED
+    st = getVariable(53698);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53537 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND
-    st = getVariable(53537);
+  { // 53699 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND
+    st = getVariable(53699);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -253,8 +253,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 53538 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND_ARM
-    st = getVariable(53538);
+  { // 53700 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND_ARM
+    st = getVariable(53700);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -265,8 +265,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 53539 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND_ALG
-    st = getVariable(53539);
+  { // 53701 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND_ALG
+    st = getVariable(53701);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -277,8 +277,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_ALG->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 53540 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.STATUS
-    st = getVariable(53540);
+  { // 53702 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.STATUS
+    st = getVariable(53702);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53541 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.CANRUN
-    st = getVariable(53541);
+  { // 53703 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.CANRUN
+    st = getVariable(53703);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.CANRUN", 47);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 53542 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.OPCCOMMANDSDISABLED
-    st = getVariable(53542);
+  { // 53704 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.OPCCOMMANDSDISABLED
+    st = getVariable(53704);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53543 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ISRUNING
-    st = getVariable(53543);
+  { // 53705 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ISRUNING
+    st = getVariable(53705);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ISRUNING", 49);
     st->size_data = sizeof(BOOL);
@@ -325,8 +325,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISRUNING;
     st->value_p = p_BOOL;
   }
-  { // 53544 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.HASERROR
-    st = getVariable(53544);
+  { // 53706 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.HASERROR
+    st = getVariable(53706);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.HASERROR", 49);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 53545 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ISENDED
-    st = getVariable(53545);
+  { // 53707 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ISENDED
+    st = getVariable(53707);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ISENDED", 48);
     st->size_data = sizeof(BOOL);
@@ -349,8 +349,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 53546 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.RUNONSTART
-    st = getVariable(53546);
+  { // 53708 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.RUNONSTART
+    st = getVariable(53708);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.RUNONSTART", 51);
     st->size_data = sizeof(BOOL);
@@ -361,8 +361,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ALG->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 53547 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.START
-    st = getVariable(53547);
+  { // 53709 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.START
+    st = getVariable(53709);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.START", 46);
     st->size_data = sizeof(DWORD);
@@ -373,8 +373,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->START;
     st->value_p = p_DWORD;
   }
-  { // 53548 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ERROR
-    st = getVariable(53548);
+  { // 53710 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ERROR
+    st = getVariable(53710);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.ERROR", 46);
     st->size_data = sizeof(DWORD);
@@ -385,8 +385,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->ERROR;
     st->value_p = p_DWORD;
   }
-  { // 53549 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.TOP
-    st = getVariable(53549);
+  { // 53711 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.TOP
+    st = getVariable(53711);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.STRALG.TOP", 44);
     st->size_data = sizeof(DWORD);
@@ -397,8 +397,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_ALG->TOP;
     st->value_p = p_DWORD;
   }
-  { // 53550 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND
-    st = getVariable(53550);
+  { // 53712 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND
+    st = getVariable(53712);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND", 47);
     st->size_data = sizeof(WORD);
@@ -409,8 +409,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 53551 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND_ALG
-    st = getVariable(53551);
+  { // 53713 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND_ALG
+    st = getVariable(53713);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND_ALG", 51);
     st->size_data = sizeof(WORD);
@@ -421,8 +421,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 53552 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND_ARM
-    st = getVariable(53552);
+  { // 53714 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND_ARM
+    st = getVariable(53714);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INCOMMAND_ARM", 51);
     st->size_data = sizeof(WORD);
@@ -433,8 +433,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 53553 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.STATUS
-    st = getVariable(53553);
+  { // 53715 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.STATUS
+    st = getVariable(53715);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.STATUS", 44);
     st->size_data = sizeof(DWORD);
@@ -445,8 +445,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53554 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ONSTATUS
-    st = getVariable(53554);
+  { // 53716 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ONSTATUS
+    st = getVariable(53716);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ONSTATUS", 46);
     st->size_data = sizeof(BYTE);
@@ -457,8 +457,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 53555 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INOPCCOMMANDSDISABLED
-    st = getVariable(53555);
+  { // 53717 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INOPCCOMMANDSDISABLED
+    st = getVariable(53717);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INOPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -469,8 +469,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53556 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.SDVIG
-    st = getVariable(53556);
+  { // 53718 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.SDVIG
+    st = getVariable(53718);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.SDVIG", 43);
     st->size_data = sizeof(BOOL);
@@ -481,8 +481,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 53557 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.NS
-    st = getVariable(53557);
+  { // 53719 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.NS
+    st = getVariable(53719);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.NS", 40);
     st->size_data = sizeof(BOOL);
@@ -493,8 +493,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 53558 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.COMMANDFAULT
-    st = getVariable(53558);
+  { // 53720 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.COMMANDFAULT
+    st = getVariable(53720);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.COMMANDFAULT", 50);
     st->size_data = sizeof(BOOL);
@@ -505,8 +505,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 53559 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ACCIDENT
-    st = getVariable(53559);
+  { // 53721 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ACCIDENT
+    st = getVariable(53721);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ACCIDENT", 46);
     st->size_data = sizeof(BOOL);
@@ -517,8 +517,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 53560 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.LOCAL
-    st = getVariable(53560);
+  { // 53722 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.LOCAL
+    st = getVariable(53722);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.LOCAL", 43);
     st->size_data = sizeof(BOOL);
@@ -529,8 +529,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 53561 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.DISTANCE
-    st = getVariable(53561);
+  { // 53723 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.DISTANCE
+    st = getVariable(53723);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.DISTANCE", 46);
     st->size_data = sizeof(BOOL);
@@ -541,8 +541,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 53562 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BREAKCMDON
-    st = getVariable(53562);
+  { // 53724 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BREAKCMDON
+    st = getVariable(53724);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BREAKCMDON", 48);
     st->size_data = sizeof(BOOL);
@@ -553,8 +553,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 53563 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BREAKCMDOFF
-    st = getVariable(53563);
+  { // 53725 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BREAKCMDOFF
+    st = getVariable(53725);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BREAKCMDOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -565,8 +565,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53564 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.OPCCOMMANDSDISABLED
-    st = getVariable(53564);
+  { // 53726 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.OPCCOMMANDSDISABLED
+    st = getVariable(53726);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.OPCCOMMANDSDISABLED", 57);
     st->size_data = sizeof(BOOL);
@@ -577,8 +577,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53565 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.LASTCMDISON
-    st = getVariable(53565);
+  { // 53727 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.LASTCMDISON
+    st = getVariable(53727);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.LASTCMDISON", 49);
     st->size_data = sizeof(BOOL);
@@ -589,8 +589,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 53566 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_STATON
-    st = getVariable(53566);
+  { // 53728 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_STATON
+    st = getVariable(53728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_STATON", 55);
     st->size_data = sizeof(BOOL);
@@ -601,8 +601,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 53567 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_STATOFF
-    st = getVariable(53567);
+  { // 53729 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_STATOFF
+    st = getVariable(53729);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_STATOFF", 56);
     st->size_data = sizeof(BOOL);
@@ -613,8 +613,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 53568 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_CMDON
-    st = getVariable(53568);
+  { // 53730 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_CMDON
+    st = getVariable(53730);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_CMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -625,8 +625,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 53569 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_CMDOFF
-    st = getVariable(53569);
+  { // 53731 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_CMDOFF
+    st = getVariable(53731);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_CMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -637,8 +637,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53570 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_INBREAKCMDON
-    st = getVariable(53570);
+  { // 53732 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_INBREAKCMDON
+    st = getVariable(53732);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_INBREAKCMDON", 61);
     st->size_data = sizeof(BOOL);
@@ -649,8 +649,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 53571 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(53571);
+  { // 53733 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(53733);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.ISVALIDREF_INBREAKCMDOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -661,8 +661,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53572 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INBLOCKED
-    st = getVariable(53572);
+  { // 53734 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INBLOCKED
+    st = getVariable(53734);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.INBLOCKED", 47);
     st->size_data = sizeof(BOOL);
@@ -673,8 +673,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 53573 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BLOCKED
-    st = getVariable(53573);
+  { // 53735 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BLOCKED
+    st = getVariable(53735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.BLOCKED", 45);
     st->size_data = sizeof(BOOL);
@@ -685,8 +685,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 53574 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.OSNOVNOY
-    st = getVariable(53574);
+  { // 53736 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.OSNOVNOY
+    st = getVariable(53736);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.OSNOVNOY", 46);
     st->size_data = sizeof(BOOL);
@@ -697,8 +697,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 53575 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.REZERVNY
-    st = getVariable(53575);
+  { // 53737 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.REZERVNY
+    st = getVariable(53737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.REZERVNY", 46);
     st->size_data = sizeof(BOOL);
@@ -709,8 +709,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 53576 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.CMDON
-    st = getVariable(53576);
+  { // 53738 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.CMDON
+    st = getVariable(53738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.CMDON", 43);
     st->size_data = sizeof(BOOL);
@@ -721,8 +721,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 53577 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.CMDOFF
-    st = getVariable(53577);
+  { // 53739 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.CMDOFF
+    st = getVariable(53739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.CMDOFF", 44);
     st->size_data = sizeof(BOOL);
@@ -733,8 +733,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53578 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.RELIABILITY
-    st = getVariable(53578);
+  { // 53740 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.RELIABILITY
+    st = getVariable(53740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU1.RELIABILITY", 49);
     st->size_data = sizeof(BOOL);
@@ -745,8 +745,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 53579 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND
-    st = getVariable(53579);
+  { // 53741 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND
+    st = getVariable(53741);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND", 47);
     st->size_data = sizeof(WORD);
@@ -757,8 +757,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 53580 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND_ALG
-    st = getVariable(53580);
+  { // 53742 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND_ALG
+    st = getVariable(53742);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND_ALG", 51);
     st->size_data = sizeof(WORD);
@@ -769,8 +769,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 53581 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND_ARM
-    st = getVariable(53581);
+  { // 53743 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND_ARM
+    st = getVariable(53743);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INCOMMAND_ARM", 51);
     st->size_data = sizeof(WORD);
@@ -781,8 +781,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_OILPUMP->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 53582 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.STATUS
-    st = getVariable(53582);
+  { // 53744 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.STATUS
+    st = getVariable(53744);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.STATUS", 44);
     st->size_data = sizeof(DWORD);
@@ -793,8 +793,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_OILPUMP->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53583 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ONSTATUS
-    st = getVariable(53583);
+  { // 53745 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ONSTATUS
+    st = getVariable(53745);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ONSTATUS", 46);
     st->size_data = sizeof(BYTE);
@@ -805,8 +805,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_STRUCT_OILPUMP->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 53584 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INOPCCOMMANDSDISABLED
-    st = getVariable(53584);
+  { // 53746 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INOPCCOMMANDSDISABLED
+    st = getVariable(53746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INOPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -817,8 +817,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53585 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.SDVIG
-    st = getVariable(53585);
+  { // 53747 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.SDVIG
+    st = getVariable(53747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.SDVIG", 43);
     st->size_data = sizeof(BOOL);
@@ -829,8 +829,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 53586 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.NS
-    st = getVariable(53586);
+  { // 53748 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.NS
+    st = getVariable(53748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.NS", 40);
     st->size_data = sizeof(BOOL);
@@ -841,8 +841,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->NS;
     st->value_p = p_BOOL;
   }
-  { // 53587 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.COMMANDFAULT
-    st = getVariable(53587);
+  { // 53749 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.COMMANDFAULT
+    st = getVariable(53749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.COMMANDFAULT", 50);
     st->size_data = sizeof(BOOL);
@@ -853,8 +853,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 53588 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ACCIDENT
-    st = getVariable(53588);
+  { // 53750 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ACCIDENT
+    st = getVariable(53750);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ACCIDENT", 46);
     st->size_data = sizeof(BOOL);
@@ -865,8 +865,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 53589 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.LOCAL
-    st = getVariable(53589);
+  { // 53751 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.LOCAL
+    st = getVariable(53751);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.LOCAL", 43);
     st->size_data = sizeof(BOOL);
@@ -877,8 +877,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 53590 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.DISTANCE
-    st = getVariable(53590);
+  { // 53752 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.DISTANCE
+    st = getVariable(53752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.DISTANCE", 46);
     st->size_data = sizeof(BOOL);
@@ -889,8 +889,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 53591 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BREAKCMDON
-    st = getVariable(53591);
+  { // 53753 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BREAKCMDON
+    st = getVariable(53753);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BREAKCMDON", 48);
     st->size_data = sizeof(BOOL);
@@ -901,8 +901,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 53592 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BREAKCMDOFF
-    st = getVariable(53592);
+  { // 53754 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BREAKCMDOFF
+    st = getVariable(53754);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BREAKCMDOFF", 49);
     st->size_data = sizeof(BOOL);
@@ -913,8 +913,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53593 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.OPCCOMMANDSDISABLED
-    st = getVariable(53593);
+  { // 53755 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.OPCCOMMANDSDISABLED
+    st = getVariable(53755);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.OPCCOMMANDSDISABLED", 57);
     st->size_data = sizeof(BOOL);
@@ -925,8 +925,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53594 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.LASTCMDISON
-    st = getVariable(53594);
+  { // 53756 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.LASTCMDISON
+    st = getVariable(53756);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.LASTCMDISON", 49);
     st->size_data = sizeof(BOOL);
@@ -937,8 +937,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 53595 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_STATON
-    st = getVariable(53595);
+  { // 53757 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_STATON
+    st = getVariable(53757);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_STATON", 55);
     st->size_data = sizeof(BOOL);
@@ -949,8 +949,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 53596 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_STATOFF
-    st = getVariable(53596);
+  { // 53758 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_STATOFF
+    st = getVariable(53758);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_STATOFF", 56);
     st->size_data = sizeof(BOOL);
@@ -961,8 +961,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 53597 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_CMDON
-    st = getVariable(53597);
+  { // 53759 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_CMDON
+    st = getVariable(53759);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_CMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -973,8 +973,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 53598 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_CMDOFF
-    st = getVariable(53598);
+  { // 53760 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_CMDOFF
+    st = getVariable(53760);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_CMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -985,8 +985,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53599 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_INBREAKCMDON
-    st = getVariable(53599);
+  { // 53761 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_INBREAKCMDON
+    st = getVariable(53761);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_INBREAKCMDON", 61);
     st->size_data = sizeof(BOOL);
@@ -997,8 +997,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 53600 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(53600);
+  { // 53762 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(53762);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.ISVALIDREF_INBREAKCMDOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -1009,8 +1009,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53601 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INBLOCKED
-    st = getVariable(53601);
+  { // 53763 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INBLOCKED
+    st = getVariable(53763);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.INBLOCKED", 47);
     st->size_data = sizeof(BOOL);
@@ -1021,8 +1021,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->INBLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 53602 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BLOCKED
-    st = getVariable(53602);
+  { // 53764 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BLOCKED
+    st = getVariable(53764);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.BLOCKED", 45);
     st->size_data = sizeof(BOOL);
@@ -1033,8 +1033,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->BLOCKED;
     st->value_p = p_BOOL;
   }
-  { // 53603 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.OSNOVNOY
-    st = getVariable(53603);
+  { // 53765 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.OSNOVNOY
+    st = getVariable(53765);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.OSNOVNOY", 46);
     st->size_data = sizeof(BOOL);
@@ -1045,8 +1045,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->OSNOVNOY;
     st->value_p = p_BOOL;
   }
-  { // 53604 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.REZERVNY
-    st = getVariable(53604);
+  { // 53766 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.REZERVNY
+    st = getVariable(53766);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.REZERVNY", 46);
     st->size_data = sizeof(BOOL);
@@ -1057,8 +1057,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->REZERVNY;
     st->value_p = p_BOOL;
   }
-  { // 53605 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.CMDON
-    st = getVariable(53605);
+  { // 53767 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.CMDON
+    st = getVariable(53767);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.CMDON", 43);
     st->size_data = sizeof(BOOL);
@@ -1069,8 +1069,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 53606 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.CMDOFF
-    st = getVariable(53606);
+  { // 53768 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.CMDOFF
+    st = getVariable(53768);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.CMDOFF", 44);
     st->size_data = sizeof(BOOL);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 53607 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.RELIABILITY
-    st = getVariable(53607);
+  { // 53769 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.RELIABILITY
+    st = getVariable(53769);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NU2.RELIABILITY", 49);
     st->size_data = sizeof(BOOL);
@@ -1093,8 +1093,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_OILPUMP->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 53608 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.VALUE
-    st = getVariable(53608);
+  { // 53770 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.VALUE
+    st = getVariable(53770);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -1105,8 +1105,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 53609 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.STATUS
-    st = getVariable(53609);
+  { // 53771 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.STATUS
+    st = getVariable(53771);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -1117,8 +1117,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53610 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INTERVAL
-    st = getVariable(53610);
+  { // 53772 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INTERVAL
+    st = getVariable(53772);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INTERVAL", 48);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 53611 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND
-    st = getVariable(53611);
+  { // 53773 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND
+    st = getVariable(53773);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -1141,8 +1141,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 53612 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.BLCONNECT
-    st = getVariable(53612);
+  { // 53774 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.BLCONNECT
+    st = getVariable(53774);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.BLCONNECT", 49);
     st->size_data = sizeof(BOOL);
@@ -1153,8 +1153,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 53613 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLL
-    st = getVariable(53613);
+  { // 53775 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLL
+    st = getVariable(53775);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLL", 43);
     st->size_data = sizeof(LREAL);
@@ -1165,8 +1165,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 53614 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHL
-    st = getVariable(53614);
+  { // 53776 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHL
+    st = getVariable(53776);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHL", 43);
     st->size_data = sizeof(LREAL);
@@ -1177,8 +1177,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 53615 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLA
-    st = getVariable(53615);
+  { // 53777 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLA
+    st = getVariable(53777);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLA", 43);
     st->size_data = sizeof(LREAL);
@@ -1189,8 +1189,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 53616 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHA
-    st = getVariable(53616);
+  { // 53778 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHA
+    st = getVariable(53778);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHA", 43);
     st->size_data = sizeof(LREAL);
@@ -1201,8 +1201,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 53617 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLW
-    st = getVariable(53617);
+  { // 53779 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLW
+    st = getVariable(53779);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DLW", 43);
     st->size_data = sizeof(LREAL);
@@ -1213,8 +1213,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 53618 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHW
-    st = getVariable(53618);
+  { // 53780 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHW
+    st = getVariable(53780);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DHW", 43);
     st->size_data = sizeof(LREAL);
@@ -1225,8 +1225,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 53619 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LL
-    st = getVariable(53619);
+  { // 53781 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LL
+    st = getVariable(53781);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LL", 42);
     st->size_data = sizeof(LREAL);
@@ -1237,8 +1237,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 53620 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HL
-    st = getVariable(53620);
+  { // 53782 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HL
+    st = getVariable(53782);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HL", 42);
     st->size_data = sizeof(LREAL);
@@ -1249,8 +1249,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 53621 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LA
-    st = getVariable(53621);
+  { // 53783 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LA
+    st = getVariable(53783);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LA", 42);
     st->size_data = sizeof(LREAL);
@@ -1261,8 +1261,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 53622 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HA
-    st = getVariable(53622);
+  { // 53784 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HA
+    st = getVariable(53784);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HA", 42);
     st->size_data = sizeof(LREAL);
@@ -1273,8 +1273,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 53623 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LW
-    st = getVariable(53623);
+  { // 53785 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LW
+    st = getVariable(53785);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.LW", 42);
     st->size_data = sizeof(LREAL);
@@ -1285,8 +1285,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 53624 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HW
-    st = getVariable(53624);
+  { // 53786 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HW
+    st = getVariable(53786);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HW", 42);
     st->size_data = sizeof(LREAL);
@@ -1297,8 +1297,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 53625 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_LA
-    st = getVariable(53625);
+  { // 53787 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_LA
+    st = getVariable(53787);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_LA", 53);
     st->size_data = sizeof(BOOL);
@@ -1309,8 +1309,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 53626 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_HA
-    st = getVariable(53626);
+  { // 53788 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_HA
+    st = getVariable(53788);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_HA", 53);
     st->size_data = sizeof(BOOL);
@@ -1321,8 +1321,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 53627 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_LW
-    st = getVariable(53627);
+  { // 53789 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_LW
+    st = getVariable(53789);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_LW", 53);
     st->size_data = sizeof(BOOL);
@@ -1333,8 +1333,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 53628 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_HW
-    st = getVariable(53628);
+  { // 53790 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_HW
+    st = getVariable(53790);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.ISVALIDREF_HW", 53);
     st->size_data = sizeof(BOOL);
@@ -1345,8 +1345,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 53629 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INPLL
-    st = getVariable(53629);
+  { // 53791 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INPLL
+    st = getVariable(53791);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INPLL", 45);
     st->size_data = sizeof(LREAL);
@@ -1357,8 +1357,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 53630 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INPHL
-    st = getVariable(53630);
+  { // 53792 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INPHL
+    st = getVariable(53792);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INPHL", 45);
     st->size_data = sizeof(LREAL);
@@ -1369,8 +1369,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 53631 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CURRENTSHOTCIRCUIT
-    st = getVariable(53631);
+  { // 53793 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CURRENTSHOTCIRCUIT
+    st = getVariable(53793);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CURRENTSHOTCIRCUIT", 58);
     st->size_data = sizeof(LREAL);
@@ -1381,8 +1381,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 53632 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CURRENTBREAKCIRCUIT
-    st = getVariable(53632);
+  { // 53794 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CURRENTBREAKCIRCUIT
+    st = getVariable(53794);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CURRENTBREAKCIRCUIT", 59);
     st->size_data = sizeof(LREAL);
@@ -1393,8 +1393,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 53633 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXCHANGESPEED
-    st = getVariable(53633);
+  { // 53795 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXCHANGESPEED
+    st = getVariable(53795);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXCHANGESPEED", 54);
     st->size_data = sizeof(LREAL);
@@ -1405,8 +1405,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 53634 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXCHANGESPEEDDOWN
-    st = getVariable(53634);
+  { // 53796 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXCHANGESPEEDDOWN
+    st = getVariable(53796);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXCHANGESPEEDDOWN", 58);
     st->size_data = sizeof(LREAL);
@@ -1417,8 +1417,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 53635 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CHANGESPEED
-    st = getVariable(53635);
+  { // 53797 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CHANGESPEED
+    st = getVariable(53797);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.CHANGESPEED", 51);
     st->size_data = sizeof(LREAL);
@@ -1429,8 +1429,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 53636 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HISTERESIS
-    st = getVariable(53636);
+  { // 53798 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HISTERESIS
+    st = getVariable(53798);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.HISTERESIS", 50);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1441,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 53637 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.APERTURFILTER
-    st = getVariable(53637);
+  { // 53799 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.APERTURFILTER
+    st = getVariable(53799);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.APERTURFILTER", 53);
     st->size_data = sizeof(LREAL);
@@ -1453,8 +1453,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 53638 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.EXPONENTIALFILTER
-    st = getVariable(53638);
+  { // 53800 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.EXPONENTIALFILTER
+    st = getVariable(53800);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.EXPONENTIALFILTER", 57);
     st->size_data = sizeof(LREAL);
@@ -1465,8 +1465,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 53639 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.RASSOGLASOVANIE
-    st = getVariable(53639);
+  { // 53801 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.RASSOGLASOVANIE
+    st = getVariable(53801);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.RASSOGLASOVANIE", 55);
     st->size_data = sizeof(LREAL);
@@ -1477,8 +1477,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 53640 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.OPCCOMMANDSDISABLED
-    st = getVariable(53640);
+  { // 53802 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.OPCCOMMANDSDISABLED
+    st = getVariable(53802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -1489,8 +1489,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53641 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_LA
-    st = getVariable(53641);
+  { // 53803 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_LA
+    st = getVariable(53803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_LA", 51);
     st->size_data = sizeof(BOOL);
@@ -1501,8 +1501,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 53642 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_HA
-    st = getVariable(53642);
+  { // 53804 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_HA
+    st = getVariable(53804);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_HA", 51);
     st->size_data = sizeof(BOOL);
@@ -1513,8 +1513,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 53643 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_LW
-    st = getVariable(53643);
+  { // 53805 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_LW
+    st = getVariable(53805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_LW", 51);
     st->size_data = sizeof(BOOL);
@@ -1525,8 +1525,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 53644 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_HW
-    st = getVariable(53644);
+  { // 53806 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_HW
+    st = getVariable(53806);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DISABLED_HW", 51);
     st->size_data = sizeof(BOOL);
@@ -1537,8 +1537,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 53645 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYLA
-    st = getVariable(53645);
+  { // 53807 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYLA
+    st = getVariable(53807);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYLA", 47);
     st->size_data = sizeof(TIME);
@@ -1549,8 +1549,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 53646 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYLW
-    st = getVariable(53646);
+  { // 53808 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYLW
+    st = getVariable(53808);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYLW", 47);
     st->size_data = sizeof(TIME);
@@ -1561,8 +1561,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 53647 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYHW
-    st = getVariable(53647);
+  { // 53809 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYHW
+    st = getVariable(53809);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYHW", 47);
     st->size_data = sizeof(TIME);
@@ -1573,8 +1573,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 53648 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYHA
-    st = getVariable(53648);
+  { // 53810 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYHA
+    st = getVariable(53810);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DELAYHA", 47);
     st->size_data = sizeof(TIME);
@@ -1585,8 +1585,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 53649 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MINVALUE_ISVALIDREF
-    st = getVariable(53649);
+  { // 53811 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MINVALUE_ISVALIDREF
+    st = getVariable(53811);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MINVALUE_ISVALIDREF", 59);
     st->size_data = sizeof(BOOL);
@@ -1597,8 +1597,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 53650 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXVALUE_ISVALIDREF
-    st = getVariable(53650);
+  { // 53812 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXVALUE_ISVALIDREF
+    st = getVariable(53812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXVALUE_ISVALIDREF", 59);
     st->size_data = sizeof(BOOL);
@@ -1609,8 +1609,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 53651 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MINVALUE
-    st = getVariable(53651);
+  { // 53813 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MINVALUE
+    st = getVariable(53813);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MINVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -1621,8 +1621,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 53652 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXVALUE
-    st = getVariable(53652);
+  { // 53814 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXVALUE
+    st = getVariable(53814);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.MAXVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -1633,8 +1633,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 53653 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INOPCCOMMANDSDISABLED
-    st = getVariable(53653);
+  { // 53815 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INOPCCOMMANDSDISABLED
+    st = getVariable(53815);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -1645,8 +1645,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53654 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.IMIT
-    st = getVariable(53654);
+  { // 53816 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.IMIT
+    st = getVariable(53816);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.IMIT", 44);
     st->size_data = sizeof(BOOL);
@@ -1657,8 +1657,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 53655 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.REMONT
-    st = getVariable(53655);
+  { // 53817 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.REMONT
+    st = getVariable(53817);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.REMONT", 46);
     st->size_data = sizeof(BOOL);
@@ -1669,8 +1669,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 53656 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS
-    st = getVariable(53656);
+  { // 53818 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS
+    st = getVariable(53818);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS", 42);
     st->size_data = sizeof(BOOL);
@@ -1681,8 +1681,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 53657 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS_MIN
-    st = getVariable(53657);
+  { // 53819 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS_MIN
+    st = getVariable(53819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS_MIN", 46);
     st->size_data = sizeof(BOOL);
@@ -1693,8 +1693,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 53658 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS_MAX
-    st = getVariable(53658);
+  { // 53820 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS_MAX
+    st = getVariable(53820);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.NS_MAX", 46);
     st->size_data = sizeof(BOOL);
@@ -1705,8 +1705,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 53659 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND_ALG
-    st = getVariable(53659);
+  { // 53821 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND_ALG
+    st = getVariable(53821);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -1717,8 +1717,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 53660 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND_ARM
-    st = getVariable(53660);
+  { // 53822 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND_ARM
+    st = getVariable(53822);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -1729,8 +1729,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 53661 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DMAXCHANGESPEED
-    st = getVariable(53661);
+  { // 53823 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DMAXCHANGESPEED
+    st = getVariable(53823);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DMAXCHANGESPEED", 55);
     st->size_data = sizeof(LREAL);
@@ -1741,8 +1741,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 53662 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DMAXCHANGESPEEDDOWN
-    st = getVariable(53662);
+  { // 53824 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DMAXCHANGESPEEDDOWN
+    st = getVariable(53824);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.DPOIL.DMAXCHANGESPEEDDOWN", 59);
     st->size_data = sizeof(LREAL);
@@ -1753,8 +1753,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 53663 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.NEWVALUE
-    st = getVariable(53663);
+  { // 53825 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.NEWVALUE
+    st = getVariable(53825);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.NEWVALUE", 49);
     st->size_data = sizeof(UINT);
@@ -1765,8 +1765,8 @@ int __variables_init_FB_AUTONU(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
     st->value_p = p_UINT;
   }
-  { // 53664 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.CURRENTVALUE
-    st = getVariable(53664);
+  { // 53826 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.CURRENTVALUE
+    st = getVariable(53826);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.CURRENTVALUE", 53);
     st->size_data = sizeof(UINT);
@@ -1777,8 +1777,8 @@ int __variables_init_FB_AUTONU(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
     st->value_p = p_UINT;
   }
-  { // 53665 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INOPCCOMMANDSDISABLED
-    st = getVariable(53665);
+  { // 53827 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INOPCCOMMANDSDISABLED
+    st = getVariable(53827);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INOPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -1789,8 +1789,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53666 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND
-    st = getVariable(53666);
+  { // 53828 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND
+    st = getVariable(53828);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -1801,8 +1801,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 53667 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND_ALG
-    st = getVariable(53667);
+  { // 53829 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND_ALG
+    st = getVariable(53829);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND_ALG", 54);
     st->size_data = sizeof(WORD);
@@ -1813,8 +1813,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 53668 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND_ARM
-    st = getVariable(53668);
+  { // 53830 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND_ARM
+    st = getVariable(53830);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.INCOMMAND_ARM", 54);
     st->size_data = sizeof(WORD);
@@ -1825,8 +1825,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 53669 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.STATUS
-    st = getVariable(53669);
+  { // 53831 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.STATUS
+    st = getVariable(53831);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -1837,8 +1837,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53670 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.OPCCOMMANDSDISABLED
-    st = getVariable(53670);
+  { // 53832 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.OPCCOMMANDSDISABLED
+    st = getVariable(53832);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.OPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -1849,8 +1849,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53671 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.VALUE
-    st = getVariable(53671);
+  { // 53833 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.VALUE
+    st = getVariable(53833);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.MAINNU.VALUE", 46);
     st->size_data = sizeof(UINT);
@@ -1861,8 +1861,8 @@ int __variables_init_FB_AUTONU(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
     st->value_p = p_UINT;
   }
-  { // 53672 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.RELIABILITY
-    st = getVariable(53672);
+  { // 53834 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.RELIABILITY
+    st = getVariable(53834);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -1873,8 +1873,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 53673 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.INVERSE
-    st = getVariable(53673);
+  { // 53835 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.INVERSE
+    st = getVariable(53835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.INVERSE", 50);
     st->size_data = sizeof(BOOL);
@@ -1885,8 +1885,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 53674 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DELAYON
-    st = getVariable(53674);
+  { // 53836 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DELAYON
+    st = getVariable(53836);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DELAYON", 50);
     st->size_data = sizeof(TIME);
@@ -1897,8 +1897,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 53675 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DELAYOFF
-    st = getVariable(53675);
+  { // 53837 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DELAYOFF
+    st = getVariable(53837);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DELAYOFF", 51);
     st->size_data = sizeof(TIME);
@@ -1909,8 +1909,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 53676 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.Q
-    st = getVariable(53676);
+  { // 53838 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.Q
+    st = getVariable(53838);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -1921,8 +1921,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 53677 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.STATUS
-    st = getVariable(53677);
+  { // 53839 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.STATUS
+    st = getVariable(53839);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -1933,8 +1933,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53678 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DISABLED_SIG
-    st = getVariable(53678);
+  { // 53840 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DISABLED_SIG
+    st = getVariable(53840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LOWDP_DI.DISABLED_SIG", 55);
     st->size_data = sizeof(BOOL);
@@ -1945,8 +1945,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 53679 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND
-    st = getVariable(53679);
+  { // 53841 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND
+    st = getVariable(53841);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -1957,8 +1957,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 53680 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND_ALG
-    st = getVariable(53680);
+  { // 53842 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND_ALG
+    st = getVariable(53842);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND_ALG", 56);
     st->size_data = sizeof(WORD);
@@ -1969,8 +1969,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 53681 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND_ARM
-    st = getVariable(53681);
+  { // 53843 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND_ARM
+    st = getVariable(53843);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INCOMMAND_ARM", 56);
     st->size_data = sizeof(WORD);
@@ -1981,8 +1981,8 @@ int __variables_init_FB_AUTONU(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 53682 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.STATUS
-    st = getVariable(53682);
+  { // 53844 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.STATUS
+    st = getVariable(53844);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -1993,8 +1993,8 @@ int __variables_init_FB_AUTONU(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 53683 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.NEWVALUE
-    st = getVariable(53683);
+  { // 53845 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.NEWVALUE
+    st = getVariable(53845);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.NEWVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -2005,8 +2005,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 53684 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.CURRENTVALUE
-    st = getVariable(53684);
+  { // 53846 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.CURRENTVALUE
+    st = getVariable(53846);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.CURRENTVALUE", 55);
     st->size_data = sizeof(LREAL);
@@ -2017,8 +2017,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 53685 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MINVAL
-    st = getVariable(53685);
+  { // 53847 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MINVAL
+    st = getVariable(53847);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MINVAL", 49);
     st->size_data = sizeof(LREAL);
@@ -2029,8 +2029,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 53686 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXVAL
-    st = getVariable(53686);
+  { // 53848 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXVAL
+    st = getVariable(53848);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXVAL", 49);
     st->size_data = sizeof(LREAL);
@@ -2041,8 +2041,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 53687 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXSTEP
-    st = getVariable(53687);
+  { // 53849 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXSTEP
+    st = getVariable(53849);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXSTEP", 50);
     st->size_data = sizeof(LREAL);
@@ -2053,8 +2053,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 53688 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MINVAL_ISVALIDREF
-    st = getVariable(53688);
+  { // 53850 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MINVAL_ISVALIDREF
+    st = getVariable(53850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MINVAL_ISVALIDREF", 60);
     st->size_data = sizeof(BOOL);
@@ -2065,8 +2065,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 53689 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXVAL_ISVALIDREF
-    st = getVariable(53689);
+  { // 53851 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXVAL_ISVALIDREF
+    st = getVariable(53851);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXVAL_ISVALIDREF", 60);
     st->size_data = sizeof(BOOL);
@@ -2077,8 +2077,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 53690 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXSTEP_ISVALIDREF
-    st = getVariable(53690);
+  { // 53852 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXSTEP_ISVALIDREF
+    st = getVariable(53852);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.MAXSTEP_ISVALIDREF", 61);
     st->size_data = sizeof(BOOL);
@@ -2089,8 +2089,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 53691 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INOPCCOMMANDSDISABLED
-    st = getVariable(53691);
+  { // 53853 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INOPCCOMMANDSDISABLED
+    st = getVariable(53853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.INOPCCOMMANDSDISABLED", 64);
     st->size_data = sizeof(BOOL);
@@ -2101,8 +2101,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53692 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.VALUE
-    st = getVariable(53692);
+  { // 53854 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.VALUE
+    st = getVariable(53854);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.VALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -2113,8 +2113,8 @@ int __variables_init_FB_AUTONU(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 53693 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.ISVALIDVALUE
-    st = getVariable(53693);
+  { // 53855 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.ISVALIDVALUE
+    st = getVariable(53855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.ISVALIDVALUE", 55);
     st->size_data = sizeof(BOOL);
@@ -2125,8 +2125,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 53694 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.OPCCOMMANDSDISABLED
-    st = getVariable(53694);
+  { // 53856 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.OPCCOMMANDSDISABLED
+    st = getVariable(53856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.UST_SWAP.OPCCOMMANDSDISABLED", 62);
     st->size_data = sizeof(BOOL);
@@ -2137,8 +2137,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 53695 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._PREVMAINNU
-    st = getVariable(53695);
+  { // 53857 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._PREVMAINNU
+    st = getVariable(53857);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._PREVMAINNU", 45);
     st->size_data = sizeof(UINT);
@@ -2148,8 +2148,8 @@ int __variables_init_FB_AUTONU(){
     p_UINT = (UINT*)&p_FB_AUTONUALG->_PREVMAINNU;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53700 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NOTDEFINED
-    st = getVariable(53700);
+  { // 53862 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NOTDEFINED
+    st = getVariable(53862);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NOTDEFINED", 54);
     st->size_data = sizeof(BYTE);
@@ -2160,8 +2160,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 53701 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LL
-    st = getVariable(53701);
+  { // 53863 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LL
+    st = getVariable(53863);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LL", 46);
     st->size_data = sizeof(BYTE);
@@ -2172,8 +2172,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 53702 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HL
-    st = getVariable(53702);
+  { // 53864 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HL
+    st = getVariable(53864);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HL", 46);
     st->size_data = sizeof(BYTE);
@@ -2184,8 +2184,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 53703 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NOTRELIABLE
-    st = getVariable(53703);
+  { // 53865 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NOTRELIABLE
+    st = getVariable(53865);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NOTRELIABLE", 55);
     st->size_data = sizeof(BYTE);
@@ -2196,8 +2196,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 53704 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NORMAL
-    st = getVariable(53704);
+  { // 53866 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NORMAL
+    st = getVariable(53866);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.NORMAL", 50);
     st->size_data = sizeof(BYTE);
@@ -2208,8 +2208,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 53705 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LW
-    st = getVariable(53705);
+  { // 53867 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LW
+    st = getVariable(53867);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LW", 46);
     st->size_data = sizeof(BYTE);
@@ -2220,8 +2220,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 53706 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HW
-    st = getVariable(53706);
+  { // 53868 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HW
+    st = getVariable(53868);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HW", 46);
     st->size_data = sizeof(BYTE);
@@ -2232,8 +2232,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 53707 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LA
-    st = getVariable(53707);
+  { // 53869 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LA
+    st = getVariable(53869);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.LA", 46);
     st->size_data = sizeof(BYTE);
@@ -2244,8 +2244,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 53708 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HA
-    st = getVariable(53708);
+  { // 53870 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HA
+    st = getVariable(53870);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSAI.HA", 46);
     st->size_data = sizeof(BYTE);
@@ -2256,8 +2256,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 53709 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(53709);
+  { // 53871 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(53871);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_NOTDEFINED", 68);
     st->size_data = sizeof(BYTE);
@@ -2268,8 +2268,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 53710 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(53710);
+  { // 53872 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(53872);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_ON", 60);
     st->size_data = sizeof(BYTE);
@@ -2280,8 +2280,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 53711 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(53711);
+  { // 53873 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(53873);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_OFF", 61);
     st->size_data = sizeof(BYTE);
@@ -2292,8 +2292,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 53712 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(53712);
+  { // 53874 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(53874);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_TRANSITIONAL", 70);
     st->size_data = sizeof(BYTE);
@@ -2304,8 +2304,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 53713 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(53713);
+  { // 53875 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(53875);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._STATUSDUALINPUT.STATUS_ERROR", 63);
     st->size_data = sizeof(BYTE);
@@ -2316,8 +2316,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 53714 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_ON
-    st = getVariable(53714);
+  { // 53876 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_ON
+    st = getVariable(53876);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_ON", 58);
     st->size_data = sizeof(BYTE);
@@ -2328,8 +2328,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_ON;
     st->value_p = p_BYTE;
   }
-  { // 53715 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_OFF
-    st = getVariable(53715);
+  { // 53877 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_OFF
+    st = getVariable(53877);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_OFF", 59);
     st->size_data = sizeof(BYTE);
@@ -2340,8 +2340,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_OFF;
     st->value_p = p_BYTE;
   }
-  { // 53716 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_RESET
-    st = getVariable(53716);
+  { // 53878 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_RESET
+    st = getVariable(53878);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._COMMANDDUALINPUT.CMD_RESET", 61);
     st->size_data = sizeof(BYTE);
@@ -2352,8 +2352,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_RESET;
     st->value_p = p_BYTE;
   }
-  { // 53717 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.SOURCE
-    st = getVariable(53717);
+  { // 53879 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.SOURCE
+    st = getVariable(53879);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.SOURCE", 40);
     st->size_data = sizeof(BYTE);
@@ -2363,8 +2363,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_FB_AUTONUALG->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53718 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.CMD
-    st = getVariable(53718);
+  { // 53880 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.CMD
+    st = getVariable(53880);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.CMD", 37);
     st->size_data = sizeof(BYTE);
@@ -2374,8 +2374,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_FB_AUTONUALG->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53719 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LASTCMD
-    st = getVariable(53719);
+  { // 53881 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LASTCMD
+    st = getVariable(53881);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.LASTCMD", 41);
     st->size_data = sizeof(BYTE);
@@ -2385,8 +2385,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_FB_AUTONUALG->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53720 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.SOURCE_FOR_STATUS
-    st = getVariable(53720);
+  { // 53882 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.SOURCE_FOR_STATUS
+    st = getVariable(53882);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.SOURCE_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -2396,8 +2396,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_FB_AUTONUALG->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53721 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.CMD_FOR_STATUS
-    st = getVariable(53721);
+  { // 53883 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.CMD_FOR_STATUS
+    st = getVariable(53883);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.CMD_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -2407,8 +2407,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_FB_AUTONUALG->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53722 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(53722);
+  { // 53884 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(53884);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.COMMAND_ERROR_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -2418,8 +2418,8 @@ int __variables_init_FB_AUTONU(){
     p_BYTE = (BYTE*)&p_FB_AUTONUALG->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53723 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.IN
-    st = getVariable(53723);
+  { // 53885 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.IN
+    st = getVariable(53885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -2430,8 +2430,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 53724 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.PT
-    st = getVariable(53724);
+  { // 53886 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.PT
+    st = getVariable(53886);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -2442,8 +2442,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 53725 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.Q
-    st = getVariable(53725);
+  { // 53887 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.Q
+    st = getVariable(53887);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -2454,8 +2454,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 53726 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.ET
-    st = getVariable(53726);
+  { // 53888 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.ET
+    st = getVariable(53888);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -2466,8 +2466,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 53727 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER
-    st = getVariable(53727);
+  { // 53889 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER
+    st = getVariable(53889);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMER", 47);
     st->size_data = sizeof(TON);
@@ -2477,8 +2477,8 @@ int __variables_init_FB_AUTONU(){
     p_TON = (TON*)&p_FB_AUTONUALG->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 53728 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.IN
-    st = getVariable(53728);
+  { // 53890 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.IN
+    st = getVariable(53890);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -2489,8 +2489,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 53729 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.PT
-    st = getVariable(53729);
+  { // 53891 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.PT
+    st = getVariable(53891);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.PT", 49);
     st->size_data = sizeof(TIME);
@@ -2501,8 +2501,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 53730 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.Q
-    st = getVariable(53730);
+  { // 53892 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.Q
+    st = getVariable(53892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -2513,8 +2513,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 53731 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.ET
-    st = getVariable(53731);
+  { // 53893 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.ET
+    st = getVariable(53893);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE.ET", 49);
     st->size_data = sizeof(TIME);
@@ -2525,8 +2525,8 @@ int __variables_init_FB_AUTONU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 53732 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE
-    st = getVariable(53732);
+  { // 53894 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE
+    st = getVariable(53894);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURE", 46);
     st->size_data = sizeof(TON);
@@ -2536,8 +2536,8 @@ int __variables_init_FB_AUTONU(){
     p_TON = (TON*)&p_FB_AUTONUALG->WAITPRESSURE;
     st->value_p = (void *)p_TON;
   }
-  { // 53733 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG.CLK
-    st = getVariable(53733);
+  { // 53895 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG.CLK
+    st = getVariable(53895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG.CLK", 54);
     st->size_data = sizeof(BOOL);
@@ -2548,8 +2548,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 53734 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG.Q
-    st = getVariable(53734);
+  { // 53896 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG.Q
+    st = getVariable(53896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -2560,8 +2560,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 53735 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG
-    st = getVariable(53735);
+  { // 53897 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG
+    st = getVariable(53897);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.WAITPRESSURETRIG", 50);
     st->size_data = sizeof(R_TRIG);
@@ -2571,8 +2571,8 @@ int __variables_init_FB_AUTONU(){
     p_R_TRIG = (R_TRIG*)&p_FB_AUTONUALG->WAITPRESSURETRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 53736 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMERPRIZNAK
-    st = getVariable(53736);
+  { // 53898 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMERPRIZNAK
+    st = getVariable(53898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESETCMDTIMERPRIZNAK", 54);
     st->size_data = sizeof(BOOL);
@@ -2582,8 +2582,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_FB_AUTONUALG->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53737 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.ONINIT
-    st = getVariable(53737);
+  { // 53899 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.ONINIT
+    st = getVariable(53899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.ONINIT", 40);
     st->size_data = sizeof(BOOL);
@@ -2593,8 +2593,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_FB_AUTONUALG->ONINIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53738 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.ONSTART
-    st = getVariable(53738);
+  { // 53900 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.ONSTART
+    st = getVariable(53900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.ONSTART", 41);
     st->size_data = sizeof(BOOL);
@@ -2604,8 +2604,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)&p_FB_AUTONUALG->ONSTART;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53739 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NOTHASREZERVNU
-    st = getVariable(53739);
+  { // 53901 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NOTHASREZERVNU
+    st = getVariable(53901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.NOTHASREZERVNU", 48);
     st->size_data = sizeof(BOOL);
@@ -2615,8 +2615,8 @@ int __variables_init_FB_AUTONU(){
     p_BOOL = (BOOL*)p_FB_AUTONUALG->NOTHASREZERVNU.value;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53740 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESET_HASNU
-    st = getVariable(53740);
+  { // 53902 PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESET_HASNU
+    st = getVariable(53902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU.RESET_HASNU", 45);
     st->size_data = sizeof(BOOL);

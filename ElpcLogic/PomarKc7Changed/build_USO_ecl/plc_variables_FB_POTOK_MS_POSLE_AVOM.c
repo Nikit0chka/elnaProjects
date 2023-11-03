@@ -181,8 +181,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 27010 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL.VALUE
-    st = getVariable(27010);
+  { // 27118 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL.VALUE
+    st = getVariable(27118);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL.VALUE", 52);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 27011 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL.RELIABILITY
-    st = getVariable(27011);
+  { // 27119 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL.RELIABILITY
+    st = getVariable(27119);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 27012 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL._INVERSED
-    st = getVariable(27012);
+  { // 27120 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL._INVERSED
+    st = getVariable(27120);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.SIGNAL._INVERSED", 56);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 27013 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.RELIABILITY
-    st = getVariable(27013);
+  { // 27121 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.RELIABILITY
+    st = getVariable(27121);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 27014 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.INVERSE
-    st = getVariable(27014);
+  { // 27122 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.INVERSE
+    st = getVariable(27122);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.INVERSE", 54);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 27015 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DELAYON
-    st = getVariable(27015);
+  { // 27123 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DELAYON
+    st = getVariable(27123);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DELAYON", 54);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 27016 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DELAYOFF
-    st = getVariable(27016);
+  { // 27124 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DELAYOFF
+    st = getVariable(27124);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DELAYOFF", 55);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 27017 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.Q
-    st = getVariable(27017);
+  { // 27125 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.Q
+    st = getVariable(27125);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 27018 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.STATUS
-    st = getVariable(27018);
+  { // 27126 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.STATUS
+    st = getVariable(27126);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 27019 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DISABLED_SIG
-    st = getVariable(27019);
+  { // 27127 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DISABLED_SIG
+    st = getVariable(27127);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.STR_SS.DISABLED_SIG", 59);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 27020 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.IN
-    st = getVariable(27020);
+  { // 27128 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.IN
+    st = getVariable(27128);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 27021 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.PT
-    st = getVariable(27021);
+  { // 27129 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.PT
+    st = getVariable(27129);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.PT", 50);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 27022 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.Q
-    st = getVariable(27022);
+  { // 27130 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.Q
+    st = getVariable(27130);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 27023 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.ET
-    st = getVariable(27023);
+  { // 27131 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.ET
+    st = getVariable(27131);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON.ET", 50);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 27024 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON
-    st = getVariable(27024);
+  { // 27132 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON
+    st = getVariable(27132);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMERON", 47);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 27025 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.IN
-    st = getVariable(27025);
+  { // 27133 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.IN
+    st = getVariable(27133);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.IN", 51);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 27026 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.PT
-    st = getVariable(27026);
+  { // 27134 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.PT
+    st = getVariable(27134);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.PT", 51);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 27027 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.Q
-    st = getVariable(27027);
+  { // 27135 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.Q
+    st = getVariable(27135);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 27028 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.ET
-    st = getVariable(27028);
+  { // 27136 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.ET
+    st = getVariable(27136);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF.ET", 51);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_POTOK_MS_POSLE_AVOM(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 27029 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF
-    st = getVariable(27029);
+  { // 27137 PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF
+    st = getVariable(27137);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_POTOK_MS_POSLE_AVOM.TIMEROFF", 48);
     st->size_data = sizeof(TOF);

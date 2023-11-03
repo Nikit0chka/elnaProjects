@@ -1,0 +1,6 @@
+TYPE
+TYPE_TableRec : STRUCT 
+	x : REAL;
+	y : REAL;
+END_STRUCT;
+END_TYPE

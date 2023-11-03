@@ -1,0 +1,45 @@
+FUNCTION remontAllProtections : BOOL
+
+VAR_IN_OUT
+	protections : ProtectionsConfig;
+END_VAR
+
+VAR CONSTANT
+	cmdRemont : WORD := 4;
+END_VAR
+
+protections.Topornogo_podshipnika_EDT_1.inCommand_Alg:=cmdRemont;
+protections.Toporno_ypornogo_podshipnika_EDT_2.inCommand_Alg:=cmdRemont; 
+protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.inCommand_Alg:=cmdRemont; 
+protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.inCommand_Alg:=cmdRemont;
+protections.Topornogo_podshipnika_shesterni_reduktora_T_5.inCommand_Alg:=cmdRemont;
+protections.Topornogo_podshipnika_reduktora_HT_6.inCommand_Alg:=cmdRemont;
+protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.inCommand_Alg:=cmdRemont;
+protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.inCommand_Alg:=cmdRemont;
+protections.Typornogo_podshipnika_rav_kolodok_HT_9.inCommand_Alg:=cmdRemont;
+protections.Typornogo_podshipnika_nerab_kolodok_HT_10.inCommand_Alg:=cmdRemont;
+protections.Tgaza_na_vyhode_H.inCommand_Alg:=cmdRemont;
+protections.Os_sdvig_nagnetatelja_plus.inCommand_Alg:=cmdRemont;
+protections.Os_sdvig_nagnetatelja_minus.inCommand_Alg:=cmdRemont;
+protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.inCommand_Alg:=cmdRemont;
+protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.inCommand_Alg:=cmdRemont;
+protections.Pgaza_na_vyhode_nagnetatelia.inCommand_Alg:=cmdRemont;
+protections.dPmaslo_gaz.inCommand_Alg:=cmdRemont;
+protections.Pmaslo_sm_nizkoe.inCommand_Alg:=cmdRemont;
+protections.Pmaslo_sm_vysokoe.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OPED_T1.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OPED_T2.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OYP_kolesa_ED_T3.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OP_kolesa_RH_T4.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OP_shesterni_RED_T5.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inCommand_Alg:=cmdRemont;
+protections.dPmaslo_gaz_less100.inCommand_Alg:=cmdRemont;
+protections.Reg_vozb_off.inCommand_Alg:=cmdRemont;
+protections.Fail_chastotnii_pusk.inCommand_Alg:=cmdRemont;
+protections.Off_avar_vikluchatel.inCommand_Alg:=cmdRemont;
+protections.AOKC_SHKC.inCommand_Alg:=cmdRemont;
+protections.AO_PRU.inCommand_Alg:=cmdRemont;
+protections.AO_ot_SHU.inCommand_Alg:=cmdRemont;
+protections.mvOff.inCommand_Alg:=cmdRemont;
+protections.Kran1_sdvig.inCommand_Alg:=cmdRemont;
+protections.Kran2_sdvig.inCommand_Alg:=cmdRemont;

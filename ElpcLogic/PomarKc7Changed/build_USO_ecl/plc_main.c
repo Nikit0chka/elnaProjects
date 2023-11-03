@@ -14,8 +14,8 @@
 #include "config1.h"
 // clang-format off
 
-#if (ELPLC_RUNTIME_VERSION_MAJOR != 3 || ELPLC_RUNTIME_VERSION_MINOR != 4)
-#pragma message "Incompatible library version. Plugin=elplc_runtime Library=elplc_runtime Found=" STR(ELPLC_RUNTIME_VERSION_MAJOR) "." STR(ELPLC_RUNTIME_VERSION_MINOR) "." STR(ELPLC_RUNTIME_VERSION_PATCH)" Required=3.4.X."
+#if (ELPLC_RUNTIME_VERSION_MAJOR != 3 || ELPLC_RUNTIME_VERSION_MINOR != 3)
+#pragma message "Incompatible library version. Plugin=elplc_runtime Library=elplc_runtime Found=" STR(ELPLC_RUNTIME_VERSION_MAJOR) "." STR(ELPLC_RUNTIME_VERSION_MINOR) "." STR(ELPLC_RUNTIME_VERSION_PATCH)" Required=3.3.X."
 #error "Incompatible library version"
 #endif
 
@@ -71,13 +71,8 @@ brzrte_callbacks_t *g_callbacks = NULL;
 tmpfs_stats_t *g_tmpfs_stats = NULL;
 
 IEC_TIME __CURRENT_TIME;
-
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wpointer-sign"
 IEC_ULINT *__IL0_10_10 = &__CURRENT_TIME.tv_sec;
 IEC_ULINT *__IL0_10_11 = &__CURRENT_TIME.tv_nsec;
-#pragma GCC diagnostic pop
-
 IEC_BOOL __DEBUG = 0;
 
 IEC_ULINT *__IL0_10_12 = &t_retrieve_us;
@@ -334,107 +329,6 @@ static bool g_shed_rt_enabled = false;
 
 bool GetRedundancyStatus(){ return __redundancy_get_status(); }
 
-/// @brief Priority for realtime scheduler
-#define TASK_PRIORITY 99
-
-pthread_t PLC_thread;
-
-/// Global flag to stop PLC thread.
-int PLC_shutdown = 0;
-
-static pthread_mutex_t Run_PLC;
-
-/// @defgroup Clocking mechanism definitions.
-/// @{
-static int clocking_init(void);
-static void clocking_clean(void);
-/// @}
-
-void PLC_timer_notify(sigval_t val)
-{
-    PLC_GetTime(&__CURRENT_TIME);
-    pthread_mutex_unlock(&Run_PLC);
-}
-
-/// Thread that runs PLC cycles.
-void PLC_thread_proc(void *arg)
-{
-    (void)arg;
-
-   if (g_shed_rt_enabled)
-      setShedulerRT();
-
-    while (!PLC_shutdown) {
-        pthread_mutex_lock(&Run_PLC);
-        __run();
-    }
-
-    pthread_exit(0);
-}
-
-int startPLC(start_args_t *args)
-{
-//    setlocale(LC_NUMERIC, "C");
-
-    PLC_shutdown = 0;
-
-    g_shed_rt_enabled = args->cfg->shed_rt == 0 ? false : true;
-
-    // Prepare clocking mechanism
-    if ((pthread_mutex_init(&Run_PLC, NULL)) == -1)
-        return -1;
-    pthread_mutex_lock(&Run_PLC);
-    if ((clocking_init()) == -1) {
-        perror("clocking_init");
-        exit(EXIT_FAILURE);
-    }
-
-    if ((pthread_create(&PLC_thread, NULL, (void*)&PLC_thread_proc, NULL)) != 0) {
-        perror("pthread_create");
-        exit(EXIT_FAILURE);
-    }
-
-    // Initialize debug and configuration sections.
-    if ((__init(args)) != 0) {
-        // FIXME: Free resources on fail??
-        return 1;
-    }
-
-    // Reset clocking tick interval and current value.
-    PLC_SetTimer(Ttick, Ttick);
-
-    if (args->transfer_type == OFFLINE)
-        LogMessage(LOG_INFO, "PLC for target 'Linux' started successfully");
-
-    return 0;
-}
-
-int stopPLC()
-{
-    /* Stop the PLC */
-    PLC_shutdown = 1;
-    pthread_mutex_unlock(&Run_PLC);
-    PLC_SetTimer(0,0);
-    pthread_join(PLC_thread, NULL);
-    pthread_mutex_destroy(&Run_PLC);
-    clocking_clean();
-    __cleanup();
-
-    if (g_transfer_type == OFFLINE)
-        LogMessage(LOG_INFO, "PLC stopped successfully");
-
-    return 0;
-}
-
-/// Sets CURRENT_TIME value that accessable to IDE user.
-void PLC_GetTime(IEC_TIME *CURRENT_TIME)
-{
-    struct timespec tmp;
-    clock_gettime(CLOCK_REALTIME, &tmp);
-    CURRENT_TIME->tv_sec = tmp.tv_sec;
-    CURRENT_TIME->tv_nsec = tmp.tv_nsec;
-}
-
 // clang-format on
 /**
  * @file plc_Linux_main.c
@@ -453,6 +347,16 @@ void PLC_GetTime(IEC_TIME *CURRENT_TIME)
 #include <sys/stat.h>
 #include <time.h>
 
+/// @brief Priority for realtime scheduler
+#define TASK_PRIORITY 99
+
+#define maxval(a,b) ((a>b)?a:b)
+
+/// Global flag to stop PLC thread.
+int PLC_shutdown = 0;
+
+static sem_t Run_PLC;
+
 /// @defgroup Clocking mechanism definitions.
 /// @{
 static int clocking_init(void);
@@ -468,8 +372,22 @@ long long AtomicCompareExchange64(long long* atomicvar, long long compared, long
     return __sync_val_compare_and_swap(atomicvar, compared, exchange);
 }
 
+void PLC_GetTime(IEC_TIME *CURRENT_TIME)
+{
+    struct timespec tmp;
+    clock_gettime(CLOCK_REALTIME, &tmp);
+    CURRENT_TIME->tv_sec = tmp.tv_sec;
+    CURRENT_TIME->tv_nsec = tmp.tv_nsec;
+}
+
 /// POSIX timer used to clock PLC cycles.
 static timer_t PLC_timer;
+
+void PLC_timer_notify(sigval_t val)
+{
+    PLC_GetTime(&__CURRENT_TIME);
+    sem_post(&Run_PLC);
+}
 
 /// Arm POSIX timer that will clock PLC using separate thread.
 static int clocking_init(void)
@@ -518,6 +436,78 @@ void PLC_SetTimer(unsigned long long next, unsigned long long period)
 #endif
 	}
     timer_settime (PLC_timer, 0, &timerValues, NULL);
+}
+
+static unsigned long __debug_tick;
+
+pthread_t PLC_thread;
+
+/// Thread that runs PLC cycles.
+void PLC_thread_proc(void *arg)
+{
+    (void)arg;
+
+   if (g_shed_rt_enabled)
+      setShedulerRT();
+
+    while (!PLC_shutdown) {
+        sem_wait(&Run_PLC);
+        __run();
+    }
+
+    pthread_exit(0);
+}
+
+int startPLC(start_args_t *args)
+{
+    setlocale(LC_NUMERIC, "C");
+
+    PLC_shutdown = 0;
+
+    g_shed_rt_enabled = args->cfg->shed_rt == 0 ? false : true;
+
+    // Prepare clocking mechanism
+    if ((sem_init(&Run_PLC, 0, 0)) == -1)
+        return -1;
+    if ((clocking_init()) == -1) {
+        perror("clocking_init");
+        exit(EXIT_FAILURE);
+    }
+
+    if ((pthread_create(&PLC_thread, NULL, (void*)&PLC_thread_proc, NULL)) != 0) {
+        perror("pthread_create");
+        exit(EXIT_FAILURE);
+    }
+
+    // Initialize debug and configuration sections.
+    if ((__init(args)) != 0) {
+        // FIXME: Free resources on fail??
+        return 1;
+    }
+
+    // Reset clocking tick interval and current value.
+    PLC_SetTimer(Ttick, Ttick);
+
+    if (args->transfer_type == OFFLINE)
+        LogMessage(LOG_INFO, "PLC for target 'Linux' started successfully");
+
+    return 0;
+}
+
+int stopPLC()
+{
+    /* Stop the PLC */
+    PLC_shutdown = 1;
+    sem_post(&Run_PLC);
+    PLC_SetTimer(0,0);
+	pthread_join(PLC_thread, NULL);
+	sem_destroy(&Run_PLC);
+    timer_delete (PLC_timer);
+    __cleanup();
+
+    if (g_transfer_type == OFFLINE)
+        LogMessage(LOG_INFO, "PLC stopped successfully");
+    return 0;
 }
 /** @file plc_main_tail.c */
 int LogMessageImpl(uint8_t level, char *buf, uint32_t size){
@@ -716,14 +706,12 @@ void getTimeStr(char *res){
 
 void setShedulerRT(void)
 {
+    cpu_set_t cpu_set;
     pthread_attr_t thread_attr;
     struct sched_param param;
 
     // Force realtime scheduling for this thread.
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wimplicit-function-declaration"
     pthread_getattr_np(pthread_self(), &thread_attr);
-#pragma GCC diagnostic pop
     pthread_attr_getschedparam(&thread_attr, &param);
     param.sched_priority = sched_get_priority_max(SCHED_FIFO);
     if ((pthread_setschedparam(pthread_self(), SCHED_FIFO, &param)) < 0) {

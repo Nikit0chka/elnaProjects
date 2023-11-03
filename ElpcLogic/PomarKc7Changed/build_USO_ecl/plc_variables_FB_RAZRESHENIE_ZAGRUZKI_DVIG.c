@@ -181,8 +181,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26510 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL.VALUE
-    st = getVariable(26510);
+  { // 26618 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL.VALUE
+    st = getVariable(26618);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL.VALUE", 58);
     st->size_data = sizeof(BOOL);
@@ -193,8 +193,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26511 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL.RELIABILITY
-    st = getVariable(26511);
+  { // 26619 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL.RELIABILITY
+    st = getVariable(26619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL.RELIABILITY", 64);
     st->size_data = sizeof(BOOL);
@@ -205,8 +205,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26512 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL._INVERSED
-    st = getVariable(26512);
+  { // 26620 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL._INVERSED
+    st = getVariable(26620);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.SIGNAL._INVERSED", 62);
     st->size_data = sizeof(BOOL);
@@ -217,8 +217,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26513 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.RELIABILITY
-    st = getVariable(26513);
+  { // 26621 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.RELIABILITY
+    st = getVariable(26621);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.RELIABILITY", 64);
     st->size_data = sizeof(BOOL);
@@ -229,8 +229,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26514 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.INVERSE
-    st = getVariable(26514);
+  { // 26622 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.INVERSE
+    st = getVariable(26622);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.INVERSE", 60);
     st->size_data = sizeof(BOOL);
@@ -241,8 +241,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26515 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DELAYON
-    st = getVariable(26515);
+  { // 26623 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DELAYON
+    st = getVariable(26623);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DELAYON", 60);
     st->size_data = sizeof(TIME);
@@ -253,8 +253,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26516 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DELAYOFF
-    st = getVariable(26516);
+  { // 26624 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DELAYOFF
+    st = getVariable(26624);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DELAYOFF", 61);
     st->size_data = sizeof(TIME);
@@ -265,8 +265,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26517 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.Q
-    st = getVariable(26517);
+  { // 26625 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.Q
+    st = getVariable(26625);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -277,8 +277,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26518 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.STATUS
-    st = getVariable(26518);
+  { // 26626 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.STATUS
+    st = getVariable(26626);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.STATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -289,8 +289,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26519 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DISABLED_SIG
-    st = getVariable(26519);
+  { // 26627 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DISABLED_SIG
+    st = getVariable(26627);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.STR_SS.DISABLED_SIG", 65);
     st->size_data = sizeof(BOOL);
@@ -301,8 +301,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26520 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.IN
-    st = getVariable(26520);
+  { // 26628 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.IN
+    st = getVariable(26628);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.IN", 56);
     st->size_data = sizeof(BOOL);
@@ -313,8 +313,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26521 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.PT
-    st = getVariable(26521);
+  { // 26629 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.PT
+    st = getVariable(26629);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.PT", 56);
     st->size_data = sizeof(TIME);
@@ -325,8 +325,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26522 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.Q
-    st = getVariable(26522);
+  { // 26630 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.Q
+    st = getVariable(26630);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -337,8 +337,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26523 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.ET
-    st = getVariable(26523);
+  { // 26631 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.ET
+    st = getVariable(26631);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON.ET", 56);
     st->size_data = sizeof(TIME);
@@ -349,8 +349,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26524 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON
-    st = getVariable(26524);
+  { // 26632 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON
+    st = getVariable(26632);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMERON", 53);
     st->size_data = sizeof(TON);
@@ -360,8 +360,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26525 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.IN
-    st = getVariable(26525);
+  { // 26633 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.IN
+    st = getVariable(26633);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -372,8 +372,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26526 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.PT
-    st = getVariable(26526);
+  { // 26634 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.PT
+    st = getVariable(26634);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.PT", 57);
     st->size_data = sizeof(TIME);
@@ -384,8 +384,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26527 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.Q
-    st = getVariable(26527);
+  { // 26635 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.Q
+    st = getVariable(26635);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -396,8 +396,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26528 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.ET
-    st = getVariable(26528);
+  { // 26636 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.ET
+    st = getVariable(26636);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF.ET", 57);
     st->size_data = sizeof(TIME);
@@ -408,8 +408,8 @@ int __variables_init_FB_RAZRESHENIE_ZAGRUZKI_DVIG(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26529 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF
-    st = getVariable(26529);
+  { // 26637 PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF
+    st = getVariable(26637);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RAZRESHENIE_ZAGRUZKI_DVIG.TIMEROFF", 54);
     st->size_data = sizeof(TOF);

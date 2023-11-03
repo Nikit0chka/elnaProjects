@@ -181,8 +181,8 @@ int __variables_init_STDP_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 19888 PROGRAM0.IM_STRUCTS_INI.STDP_INI.DATA_INI
-    st = getVariable(19888);
+  { // 19996 PROGRAM0.IM_STRUCTS_INI.STDP_INI.DATA_INI
+    st = getVariable(19996);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -192,8 +192,8 @@ int __variables_init_STDP_INI(){
     p_BOOL = (BOOL*)&p_FB_DISCRETPARAMETR_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19889 PROGRAM0.IM_STRUCTS_INI.STDP_INI.CURRENTVALUE
-    st = getVariable(19889);
+  { // 19997 PROGRAM0.IM_STRUCTS_INI.STDP_INI.CURRENTVALUE
+    st = getVariable(19997);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.CURRENTVALUE", 45);
     st->size_data = sizeof(UINT);
@@ -203,8 +203,8 @@ int __variables_init_STDP_INI(){
     p_UINT = (UINT*)&p_FB_DISCRETPARAMETR_INIT->CURRENTVALUE;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19890 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.NEWVALUE
-    st = getVariable(19890);
+  { // 19998 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.NEWVALUE
+    st = getVariable(19998);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.NEWVALUE", 47);
     st->size_data = sizeof(UINT);
@@ -215,8 +215,8 @@ int __variables_init_STDP_INI(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->NEWVALUE;
     st->value_p = p_UINT;
   }
-  { // 19891 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.CURRENTVALUE
-    st = getVariable(19891);
+  { // 19999 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.CURRENTVALUE
+    st = getVariable(19999);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.CURRENTVALUE", 51);
     st->size_data = sizeof(UINT);
@@ -227,8 +227,8 @@ int __variables_init_STDP_INI(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->CURRENTVALUE;
     st->value_p = p_UINT;
   }
-  { // 19892 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INOPCCOMMANDSDISABLED
-    st = getVariable(19892);
+  { // 20000 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INOPCCOMMANDSDISABLED
+    st = getVariable(20000);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INOPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -239,8 +239,8 @@ int __variables_init_STDP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19893 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND
-    st = getVariable(19893);
+  { // 20001 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND
+    st = getVariable(20001);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -251,8 +251,8 @@ int __variables_init_STDP_INI(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 19894 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND_ALG
-    st = getVariable(19894);
+  { // 20002 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND_ALG
+    st = getVariable(20002);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND_ALG", 52);
     st->size_data = sizeof(WORD);
@@ -263,8 +263,8 @@ int __variables_init_STDP_INI(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 19895 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND_ARM
-    st = getVariable(19895);
+  { // 20003 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND_ARM
+    st = getVariable(20003);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.INCOMMAND_ARM", 52);
     st->size_data = sizeof(WORD);
@@ -275,8 +275,8 @@ int __variables_init_STDP_INI(){
     p_WORD = (WORD*)&p_STRUCT_DISCRETPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 19896 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.STATUS
-    st = getVariable(19896);
+  { // 20004 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.STATUS
+    st = getVariable(20004);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -287,8 +287,8 @@ int __variables_init_STDP_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_DISCRETPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 19897 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.OPCCOMMANDSDISABLED
-    st = getVariable(19897);
+  { // 20005 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.OPCCOMMANDSDISABLED
+    st = getVariable(20005);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.OPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);
@@ -299,8 +299,8 @@ int __variables_init_STDP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_DISCRETPARAMETR->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19898 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.VALUE
-    st = getVariable(19898);
+  { // 20006 PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.VALUE
+    st = getVariable(20006);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.STRDP.VALUE", 44);
     st->size_data = sizeof(UINT);
@@ -311,8 +311,8 @@ int __variables_init_STDP_INI(){
     p_UINT = (UINT*)&p_STRUCT_DISCRETPARAMETR->VALUE;
     st->value_p = p_UINT;
   }
-  { // 19899 PROGRAM0.IM_STRUCTS_INI.STDP_INI.INIT
-    st = getVariable(19899);
+  { // 20007 PROGRAM0.IM_STRUCTS_INI.STDP_INI.INIT
+    st = getVariable(20007);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STDP_INI.INIT", 37);
     st->size_data = sizeof(BOOL);

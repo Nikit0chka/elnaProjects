@@ -298,7 +298,7 @@ void __publish_1(void) {
 	#ifdef ELNA_DEBUG
 	printf("pMPLC_WriteWords res_w = %d\n", res_w);
 
-	#endif // ELNA_DEBUG
+	#endif ELNA_DEBUG
 
 	for (int i = 0; i < 2; i++) {
 
@@ -315,7 +315,7 @@ void __publish_1(void) {
 	#ifdef ELNA_DEBUG
 	printf("pMPLC_WriteDoubles res_d = %d\n", res_d);
 
-	#endif // ELNA_DEBUG
+	#endif ELNA_DEBUG
 
 //   ai_signals[1]->wFlags = x++;
 //   ai_signals[1]->dblValue = 1.33;

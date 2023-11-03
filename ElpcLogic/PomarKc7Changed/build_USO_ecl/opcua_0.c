@@ -20,7 +20,7 @@
 static opcua_cb *cb = NULL;
 extern transfer_type_t g_transfer_type;
 
-static dataUnion signalStorage[COUNT];
+static dataUnion signalStorage[COUNT] = {0};
 
 IEC_LREAL *__QL0_2 = (double*)&signalStorage[0];
 IEC_LREAL *__QL0_3 = (double*)&signalStorage[1];
@@ -901,8 +901,6 @@ IEC_UINT *__QW0_494 = (uint16_t*)&signalStorage[875];
 IEC_UDINT *__QD0_529 = (uint32_t*)&signalStorage[876];
 
 int __init_0(start_args_t *args) {
-  memset(signalStorage, 0, sizeof(dataUnion) * COUNT);
-
   int res;
   cb = &args->callbacks->opcua;
 
@@ -911,12 +909,12 @@ int __init_0(start_args_t *args) {
     return 0;
   }
 
-  if((res = cb->initServer("0.0.0.0", true, true, 5,  250, 5,  250, 5,  COUNT, 0, 4840, 1)) == 0) {
+  if(res = cb->initServer("0.0.0.0", true, true, 5,  250, 5,  250, 5,  COUNT, 0, 4840, 1) == 0) {
       
       
       cb->setStrategy("DEFAULT",1);
 
-    if((res = cb->getStorage(COUNT)) != 0) {
+      if(res = cb->getStorage(COUNT) != 0) {
 #ifdef DEBUG_0
             printf("Can't get storage for signals\n");
 #endif
@@ -1801,11 +1799,7 @@ int __init_0(start_args_t *args) {
         cb->initSignal("protections", "protections_mvOff_inCommand_ARM", 4,  0b1 | 0b10, (void *)(&signalStorage[875]), false, 0, 0, 0, 0);
         cb->initSignal("protections", "protections_mvOff_status", 6, 0b1 | 0b10, (void *)(&signalStorage[876]), false, 0, 0, 0, 0);
 
-        cb->setAsyncMode(false);
-#ifdef ASYNC_MODE
-        cb->setAsyncMode(true);
-#endif
-        if ((res = cb->startServer()) != 0) {
+        if (res = cb->startServer()!= 0) {
 #ifdef DEBUG_0
             printf("Can't start OPC UA server\n");
 #endif
@@ -1823,11 +1817,7 @@ int __init_0(start_args_t *args) {
 
 void __retrieve_0(void)
 {
-#ifdef ASYNC_MODE
-  int res = cb->readAllAsync(signalStorage, COUNT);
-#else
-  int res = cb->readAll(signalStorage, COUNT);
-#endif
+    int res = cb->readAll(signalStorage, COUNT);
     if (res != 0) {
 #ifdef DEBUG_0
         printf("Retrieve failed\n");
@@ -1838,11 +1828,8 @@ void __retrieve_0(void)
 
 void __publish_0(void)
 {
-#ifdef ASYNC_MODE
-  int res = cb->writeAllAsync(signalStorage, COUNT);
-#else
-  int res = cb->writeAll(signalStorage, COUNT);
-#endif
+
+    int res = cb->writeAll(signalStorage, COUNT);
     if (res != 0) {
 #ifdef DEBUG_0
         printf("Publish failed\n");

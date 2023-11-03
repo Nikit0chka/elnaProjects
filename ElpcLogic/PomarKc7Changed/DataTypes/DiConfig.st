@@ -1,0 +1,5 @@
+TYPE
+DiConfig : STRUCT
+	Di : struct_DI;
+END_STRUCT;
+END_TYPE
