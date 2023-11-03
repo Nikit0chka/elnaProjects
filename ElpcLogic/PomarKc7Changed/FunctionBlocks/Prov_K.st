@@ -223,7 +223,7 @@ StrAlg.Error :=  OPC_Control.errorStatus
             OR timer10.errorStatus
             OR P_vh_vyh_more_zad.errorStatus
             OR Zapoln_Norm.errorStatus
-            OR First_Step.errorStatus;*)  
+            OR First_Step.errorStatus;*)
             
 (*TODO: TYPE PROGRAM CODE HERE*)
 StrAlg.status :=  SHL(BYTE_TO_DWORD(source_for_Status), 29) 

@@ -1,6 +1,39 @@
 TYPE
-ProtectionsConfig : STRUCT
-	Ap1 : struct_AiProtection;
-	Dip1 : struct_DiProtection;
+ProtectionsConfig : STRUCT 
+	Topornogo_podshipnika_EDT_1 : struct_AiProtection;
+	Toporno_ypornogo_podshipnika_EDT_2 : struct_AiProtection;
+	Toporno_ypornogo_podshipnika_kolesa_red_EDT_3 : struct_AiProtection;
+	Toporno_ypornogo_podshipnika_kolesa_red_HT_4 : struct_AiProtection;
+	Topornogo_podshipnika_shesterni_reduktora_T_5 : struct_AiProtection;
+	Topornogo_podshipnika_reduktora_HT_6 : struct_AiProtection;
+	Toporno_ypornogo_podshipnika_nagnetatelja_T_7 : struct_AiProtection;
+	Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8 : struct_AiProtection;
+	Typornogo_podshipnika_rav_kolodok_HT_9 : struct_AiProtection;
+	Typornogo_podshipnika_nerab_kolodok_HT_10 : struct_AiProtection;
+	Tgaza_na_vyhode_H : struct_AiProtection;
+	Os_sdvig_nagnetatelja_plus : struct_AiProtection;
+	Os_sdvig_nagnetatelja_minus : struct_AiProtection;
+	Pgaza_na_vyhode_nagnetatelia_GPA_STOP : struct_AiProtection;
+	Pgaza_na_vhode_nagnetatelia_GPA_STOP : struct_AiProtection;
+	Pgaza_na_vyhode_nagnetatelia : struct_AiProtection;
+	dPmaslo_gaz : struct_AiProtection;
+	Pmaslo_sm_nizkoe : struct_AiProtection;
+	Pmaslo_sm_vysokoe : struct_AiProtection;
+	Vibro_skorost_OPED_T1 : struct_AiProtection;
+	Vibro_skorost_OPED_T2 : struct_AiProtection;
+	Vibro_skorost_OYP_kolesa_ED_T3 : struct_AiProtection;
+	Vibro_skorost_OP_kolesa_RH_T4 : struct_AiProtection;
+	Vibro_skorost_OP_shesterni_RED_T5 : struct_AiProtection;
+	Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AiProtection;
+	dPmaslo_gaz_less100 : struct_DiProtection;
+	Reg_vozb_off : struct_DiProtection;
+	Fail_chastotnii_pusk : struct_DiProtection;
+	Off_avar_vikluchatel : struct_DiProtection;
+	AOKC_SHKC : struct_DiProtection;
+	AO_PRU : struct_DiProtection;
+	AO_ot_SHU : struct_DiProtection;
+	mvOff : struct_DiProtection;
+	Kran1_sdvig : struct_DiProtection;
+	Kran2_sdvig : struct_DiProtection;
 END_STRUCT;
 END_TYPE

@@ -7,7 +7,7 @@ END_VAR
 anyProtectioninRemont:=
 protections.Topornogo_podshipnika_EDT_1.Remont OR
 protections.Toporno_ypornogo_podshipnika_EDT_2.Remont OR
-protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.Remont OR
+protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.remont OR
 protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.Remont OR
 protections.Topornogo_podshipnika_shesterni_reduktora_T_5.Remont OR
 protections.Topornogo_podshipnika_reduktora_HT_6.Remont OR

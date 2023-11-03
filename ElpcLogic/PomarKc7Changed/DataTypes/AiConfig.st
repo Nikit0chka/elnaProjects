@@ -1,6 +1,58 @@
 TYPE
-AiConfig : STRUCT
-	A1 : struct_AI;
-	A1 : struct_AI;
+AiConfig : STRUCT (*Входные аналоговые параметры*)
+	Tstali_statora_kanal_1 : struct_AI; (*Резерв (A1-14:1)*)
+	Tstali_statora_kanal_2 : struct_AI; (*Резерв (A1-14:2)*)
+	Tstali_statora_kanal_3 : struct_AI; (*Резерв (A1-14:3)*)
+	Tmedi_statora_kanal_1 : struct_AI; (*Резерв (A1-14:4)*)
+	Tmedi_statora_kanal_2 : struct_AI; (*Резерв (A1-14:5)*)
+	Tmedi_statora_kanal_3 : struct_AI; (*Резерв (A1-14:6)*)
+	Toporno_podshipnika_EDT_1 : struct_AI; (*Резерв (A1-14:7)*)
+	Toporno_ypornogo_podshipnika_EDT_2 : struct_AI; (*Резерв (A1-14:8)*)
+	Toporno_ypornogo_podshipnika_kolesa_red_EDT_3 : struct_AI;
+	Toporno_ypornogo_podshipnika_kolesa_red_HT_4 : struct_AI;
+	Toporno_podshipnika_shesterni_reduktora_T_5 : struct_AI;
+	Toporno_podshipnika_reduktora_HT_6 : struct_AI;
+	Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1 : struct_AI;
+	Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2 : struct_AI;
+	Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1 : struct_AI;
+	Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2 : struct_AI;
+	Typornogo_podshipnika_rav_kolodok_HT_9_1 : struct_AI;
+	Typornogo_podshipnika_rav_kolodok_HT_9_2 : struct_AI;
+	Typornogo_podshipnika_nerab_kolodok_HT_10_1 : struct_AI;
+	Typornogo_podshipnika_nerab_kolodok_HT_10_2 : struct_AI;
+	Tholodnogo_vozduha_ED_kanal_1 : struct_AI;
+	Tholodnogo_vozduha_ED_kanal_2 : struct_AI;
+	Tgorjachego_vozduha_ED_kanal_1 : struct_AI;
+	Tgorjachego_vozduha_ED_kanal_2 : struct_AI;
+	Tnarujnogo_vozduha : struct_AI;
+	Tgaza_na_vhode_H : struct_AI;
+	Tgaza_na_vyhode_H : struct_AI;
+	Tmasla_do_AVOM : struct_AI;
+	Tmasla_posle_AVOM : struct_AI;
+	Tmasla_MB : struct_AI;
+	Tmasla_MB_TEN : struct_AI;
+	Tshu : struct_AI;
+	Pmaslo_sm_nizkoe : struct_AI;
+	Pmaslo_sm_vysokoe : struct_AI;
+	Pmasla_posle_GNS : struct_AI;
+	Pmasla_posle_NU : struct_AI;
+	Pgaza_na_vhode_nagnetatelia : struct_AI;
+	Pgaza_na_vyhode_nagnetatelia : struct_AI;
+	Pimpuls_gaz : struct_AI;
+	dPgaza_na_maslo_filtre : struct_AI;
+	dPgaza_na_konfuzore : struct_AI;
+	dPmaslo_gaz : struct_AI;
+	Os_sdvig_nagnetatelja_plus : struct_AI;
+	Os_sdvig_nagnetatelja_minus : struct_AI;
+	Yroven_masla_MB : struct_AI;
+	Kontrol_per_220V : struct_AI;
+	Kontrol_post_220V : struct_AI;
+	Tok_statora : struct_AI;
+	Vibro_skorost_OPED_T1 : struct_AI;
+	Vibro_skorost_OYPED_T2 : struct_AI;
+	Vibro_skorost_OYP_kolesa_ED_T3 : struct_AI;
+	Vibro_skorost_OP_kolesa_RH_T4 : struct_AI;
+	Vibro_skorost_OP_shesterni_RED_T5 : struct_AI;
+	Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AI;
 END_STRUCT;
 END_TYPE
