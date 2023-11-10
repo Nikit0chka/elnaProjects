@@ -111,265 +111,257 @@ VAR
 	fb_Neispr_EGPA : fb_singleOutput;
 END_VAR
 
+
+
+
+
 (* Циклический опрос. ИМ *)
 
 (* GPIO *)
 fb_PLC_Control(output:=od.gpio_out.bits[0]);                              
 
 (* Кран 1 *)
-fb_Kran1(statOn := di.di_0.bits[0]._inversed, statOn_reliability:= di.di_0.bits[0].reliability,
-         statOff := di.di_0.bits[1]._inversed, statOff_reliability:= di.di_0.bits[1].reliability,
-         inSo := di.di_12.bits[0], inSz := di.di_12.bits[1],
-         inDp:= di.di_2.bits[0],
+fb_Kran1(statOn := di.di_20.bits[5]._inversed, 
+         statOff := di.di_20.bits[4]._inversed,
+         inSo := di.di_16.bits[0], inSz := di.di_16.bits[1],
          cmdOn:=od.do_0.bits[0], cmdOff:=od.do_0.bits[1],      
          strKr:= IM.Kran1  );
          
 (* Кран 2 *)
-fb_Kran2(statOn := di.di_0.bits[2]._inversed, statOn_reliability:= di.di_0.bits[2].reliability,
-         statOff := di.di_0.bits[3]._inversed,  statOff_reliability:= di.di_0.bits[3].reliability,
-         inSo := di.di_12.bits[2], inSz := di.di_12.bits[3],
-         cmdOn:=od.do_0.bits[2], cmdOff:=od.do_0.bits[3],
+fb_Kran2(statOn := di.di_21.bits[0]._inversed, 
+         statOff := di.di_20.bits[7]._inversed,
+         inSo := di.di_16.bits[2], inSz := di.di_16.bits[3],
+         cmdOn:=od.do_0.bits[2], cmdOff:=od.do_0.bits[3],  
          strKr:= IM.Kran2  );
 
 (* Кран 3 *)
-fb_Kran3(statOn := di.di_0.bits[2]._inversed, statOn_reliability:= di.di_0.bits[2].reliability,
-         statOff := di.di_0.bits[3]._inversed,  statOff_reliability:= di.di_0.bits[3].reliability,
-         inSo := di.di_12.bits[2], inSz := di.di_12.bits[3],
-         cmdOn:=od.do_0.bits[2], cmdOff:=od.do_0.bits[3],
+fb_Kran3(statOn := di.di_0.bits[5]._inversed, 
+         statOff := di.di_0.bits[4]._inversed,
+         inSo := di.di_16.bits[4], inSz := di.di_16.bits[5],
+         cmdOn:=od.do_0.bits[4], cmdOff:=od.do_0.bits[5],  
          strKr:= IM.Kran3  );
 
 (* Кран 3b *)
-fb_Kran3b(statOn := di.di_0.bits[4]._inversed, statOn_reliability:= di.di_0.bits[4].reliability,
-         statOff := di.di_0.bits[5]._inversed,  statOff_reliability:= di.di_0.bits[5].reliability,
-         inSo := di.di_12.bits[4], inSz := di.di_12.bits[5],
-         cmdOn:=od.do_0.bits[4], cmdOff:=od.do_0.bits[5],
+fb_Kran3b(statOn := di.di_0.bits[7]._inversed, 
+         statOff := di.di_0.bits[6]._inversed,
+         inSo := di.di_16.bits[6]._inversed, inSz := di.di_16.bits[7]._inversed,
+         cmdOn:=od.do_0.bits[6], cmdOff:=od.do_0.bits[7],  
          strKr:= IM.Kran3b  );
 
 (* Кран 4 *)
-fb_Kran4(statOn := di.di_0.bits[6]._inversed, statOn_reliability:= di.di_0.bits[6].reliability,
-         statOff := di.di_0.bits[7]._inversed,  statOff_reliability:= di.di_0.bits[7].reliability,
-         inSo := di.di_12.bits[6], inSz := di.di_12.bits[7],
-         cmdOn:=od.do_0.bits[6], cmdOff:=od.do_0.bits[7],
+fb_Kran4(statOn := di.di_1.bits[1]._inversed, 
+         statOff := di.di_1.bits[0]._inversed,
+         inSo := di.di_17.bits[0]._inversed, inSz := di.di_17.bits[1]._inversed,
+         cmdOn:=od.do_0.bits[8], cmdOff:=od.do_0.bits[9],  
          strKr:= IM.Kran4  );
          
 (* Кран 5 *)
-fb_Kran5(statOn := di.di_1.bits[0]._inversed, statOn_reliability:= di.di_1.bits[0].reliability,
-         statOff := di.di_1.bits[1]._inversed,  statOff_reliability:= di.di_1.bits[1].reliability,
-         inSo := di.di_13.bits[0], inSz := di.di_13.bits[1],
-         cmdOn:=od.do_0.bits[8], cmdOff:=od.do_0.bits[9],
+fb_Kran5(statOn := di.di_1.bits[3]._inversed, 
+         statOff := di.di_1.bits[2]._inversed,
+         inSo := di.di_17.bits[2]._inversed, inSz := di.di_17.bits[3]._inversed,
+         cmdOn:=od.do_0.bits[10], cmdOff:=od.do_0.bits[11],  
          strKr:= IM.Kran5  );
 
 (* Кран 6НР *)
-fb_Kran6(statOn := di.di_1.bits[2].value, statOn_reliability:= di.di_1.bits[2].reliability,
-         statOff := di.di_1.bits[3].value,  statOff_reliability:= di.di_1.bits[3].reliability,
-         cmdOn:=od.do_1.bits[14], cmdOff:=od.do_1.bits[15],
+fb_Kran6(statOn := di.di_1.bits[5]._inversed, 
+         statOff := di.di_1.bits[4]._inversed,
+         inSo := di.di_17.bits[4], inSz := di.di_17.bits[5],
+         cmdOn:=od.do_0.bits[12], cmdOff:=od.do_0.bits[13],  
          strKr:= IM.Kran6  );
 
 (*  НУ1 Насос уплотнения *)
-fb_nu1(statOn := di.di_2.bits[5].value, statOn_reliability:= di.di_2.bits[5].reliability,
-         inBreakCmdOn := di.di_10.bits[2],
-         cmdOn:=od.do_1.bits[2], cmdOff:=od.do_1.bits[3],
+fb_nu1(statOn := di.di_5.bits[1], statOff := di.di_5.bits[1]._inversed,
+         cmdOn:=od.do_1.bits[4], cmdOff:=od.do_1.bits[5],
          StrSw:= IM.nu1  );
 
 (*  НУ2 Насос уплотнения *)
-fb_nu2(statOn := di.di_2.bits[6].value, statOn_reliability:= di.di_2.bits[6].reliability,
-         inBreakCmdOn := di.di_10.bits[4],
-         cmdOn:=od.do_1.bits[4], cmdOff:=od.do_1.bits[5],
+fb_nu2(statOn := di.di_5.bits[2], statOff := di.di_5.bits[2]._inversed,
+         cmdOn:=od.do_1.bits[6], cmdOff:=od.do_1.bits[7],
          StrSw:= IM.nu2  );
          
 (*  ПНС Насос смазки *)
-fb_pns(statOn := di.di_2.bits[7].value, statOn_reliability:= di.di_2.bits[7].reliability,
-         inBreakCmdOn := di.di_10.bits[0],
-         cmdOn:=od.do_1.bits[0] , cmdOff:=od.do_1.bits[1],
+fb_pns(statOn := di.di_5.bits[0], statOff := di.di_5.bits[0]._inversed,
+         cmdOn:=od.do_1.bits[0], cmdOff:=od.do_1.bits[1],
          StrSw:= IM.pns  );
          
 (*  В1 АВОМ вентилятор охлаждения *)
-fb_v1_Avom(statOn := di.di_3.bits[0].value, statOn_reliability:= di.di_3.bits[0].reliability,
-         inBreakCmdOn := di.di_10.bits[6],
-         cmdOn:=od.do_1.bits[6] , cmdOff:=od.do_1.bits[7],
+fb_v1_Avom(statOn := di.di_5.bits[3], statOff := di.di_5.bits[3]._inversed,
+         cmdOn:=od.do_1.bits[8], cmdOff:=od.do_1.bits[9],
          StrSw:= IM.v1_Avom  );
                  
 (*  В2 АВОМ вентилятор охлаждения *)
-fb_v2_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_v2_Avom(statOn := di.di_5.bits[4], statOff := di.di_5.bits[4]._inversed,
+         cmdOn:=od.do_1.bits[10], cmdOff:=od.do_1.bits[11],
          StrSw:= IM.v2_Avom  );
          
 (*  В3 АВОМ вентилятор охлаждения *)
-fb_v3_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_v3_Avom(statOn := di.di_5.bits[5], statOff := di.di_5.bits[5]._inversed,
+         cmdOn:=od.do_1.bits[12], cmdOff:=od.do_1.bits[13],
          StrSw:= IM.v3_Avom  );
          
 (*  В4 АВОМ вентилятор охлаждения *)
-fb_v4_Avom(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_v4_Avom(statOn := di.di_5.bits[6], statOff := di.di_5.bits[6]._inversed,
+         cmdOn:=od.do_1.bits[14], cmdOff:=od.do_1.bits[15],
          StrSw:= IM.v4_Avom  );
          
 (*  МВ масляный выключатель *)
-fb_mv(statOff := di.di_4.bits[7].value, statOff_reliability:= di.di_4.bits[7].reliability,
-         inBreakCmdOff := di.di_11.bits[2], inoffKNA:= di.di_5.bits[2],
-         basketRolledin:= di.di_5.bits[1], basketRolledout:= di.di_5.bits[0],
-         cmdOn:=od.do_1.bits[10] , cmdOff:=od.do_1.bits[11],
+fb_mv(statOn := di.di_7.bits[0], statOff := di.di_20.bits[3],
+         basketRolledin:= di.di_7.bits[2]._inversed, basketRolledout:= di.di_7.bits[2],
+         cmdOn:=od.do_4.bits[6] , cmdOff:=od.do_4.bits[7],
          StrSw:= IM.mv  );
 
 (* Тен коллектора *)
-fb_TEN_kollectora(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_TEN_kollectora(statOn := di.di_10.bits[1], statOff := di.di_10.bits[1]._inversed,
+         cmdOn:=od.do_2.bits[6], cmdOff:=od.do_2.bits[6],
          StrSw:= IM.TEN_kollectora  );
 
 (* Калорифер АВОМ *)
-fb_KaloriferAVOM(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_KaloriferAVOM(statOn := di.di_10.bits[2], statOff := di.di_10.bits[2]._inversed,
+         cmdOn:=od.do_2.bits[0], cmdOff:=od.do_2.bits[1],
          StrSw:= IM.KaloriferAVOM  ); 
 
 (* ЦМН *)
-fb_CMN(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_CMN(statOn := di.di_10.bits[3], statOff := di.di_10.bits[3]._inversed,
+         cmdOn:=od.do_2.bits[4], cmdOff:=od.do_2.bits[5],
          StrSw:= IM.CMN);
 
 (* Тен маслобака *)
-fb_TEN_MB(statOn := di.di_3.bits[1].value, statOn_reliability:= di.di_3.bits[1].reliability,
-         inBreakCmdOn := di.di_11.bits[0],
-         cmdOn:=od.do_1.bits[8] , cmdOff:=od.do_1.bits[9],
+fb_TEN_MB(statOn := di.di_10.bits[0], statOff := di.di_10.bits[0]._inversed,
+         cmdOn:=od.do_2.bits[2], cmdOff:=od.do_2.bits[3],
          StrSw:= IM.TEN_MB);                         
 (*************************************************** singleSignals ********************************************)
 
 (* Перепад давления масло газ м*)
-fb_dP_maslo_gaz_Less100(signal :=di.di_2.bits[0], str_SS := IM.SingleSignals.dP_maslo_gaz_Less100);   
+fb_dP_maslo_gaz_Less100(signal :=di.di_20.bits[6], str_SS := IM.SingleSignals.dP_maslo_gaz_Less100);   
 
 (* Перепад давления кран 1 *)
-fb_dp_kran1_Less100(signal :=di.di_2.bits[1], str_SS := IM.SingleSignals.dp_kran1_Less100);   
+fb_dp_kran1_Less100(signal :=di.di_4.bits[1], str_SS := IM.SingleSignals.dp_kran1_Less100);   
 
 (* Неисправность цепей управления возбудителя *)
-fb_Vozbud_neispr_tsepey_upr_AVR_pit(signal :=di.di_2.bits[2], str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
+fb_Vozbud_neispr_tsepey_upr_AVR_pit(signal :=di.di_6.bits[4], str_SS := IM.SingleSignals.Vozbud_neispr_tsepey_upr_AVR_pit);   
 
 (* Возбудитель готовность *)
-fb_Vozbud_gotovnost(signal :=di.di_2.bits[4], str_SS := IM.SingleSignals.Vozbud_gotovnost);   
+fb_Vozbud_gotovnost(signal :=di.di_6.bits[0], str_SS := IM.SingleSignals.Vozbud_gotovnost);   
                                 
 (* Возбудитель неисправность *)
-fb_Vozbud_neispravnost(signal :=di.di_3.bits[2], str_SS := IM.SingleSignals.Vozbud_neispravnost);   
+fb_Vozbud_neispravnost(signal :=di.di_21.bits[7], str_SS := IM.SingleSignals.Vozbud_neispravnost);   
                                
 (* ЩАВР 1 в работе *)
-fb_SHAVR1_v_rabote(signal :=di.di_3.bits[3], str_SS := IM.SingleSignals.SHAVR1_v_rabote);   
+fb_SHAVR1_v_rabote(signal :=di.di_13.bits[6], str_SS := IM.SingleSignals.SHAVR1_v_rabote);   
                                 
 (* ЩАВР 2 в работе *)
-fb_SHAVR2_v_rabote(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHAVR2_v_rabote); 
+fb_SHAVR2_v_rabote(signal :=di.di_13.bits[7], str_SS := IM.SingleSignals.SHAVR2_v_rabote); 
 
 (* ЩАВР 2 в работе *)
-fb_Avariinoe_otkluch_vikluchatelya(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);    
+fb_Avariinoe_otkluch_vikluchatelya(signal :=di.di_8.bits[0], str_SS := IM.SingleSignals.Avariinoe_otkluch_vikluchatelya);    
   
 (* ЩАВР 2 в работе *)
-fb_Assinhronnii_hod_peregruzka(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);    
+fb_Assinhronnii_hod_peregruzka(signal :=di.di_8.bits[1], str_SS := IM.SingleSignals.Assinhronnii_hod_peregruzka);    
  
 (* ЩАВР 2 в работе *)
-fb_SHU_v_GPA_vkluch(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);    
+fb_SHU_v_GPA_vkluch(signal :=di.di_8.bits[2], str_SS := IM.SingleSignals.SHU_v_GPA_vkluch);    
  
 (* ЩАВР 2 в работе *)
-fb_SHP_v_GPA_vkluch(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);    
+fb_SHP_v_GPA_vkluch(signal :=di.di_8.bits[3], str_SS := IM.SingleSignals.SHP_v_GPA_vkluch);    
  
 (* ЩАВР 2 в работе *)
-fb_Uroven_masla_akkum(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Uroven_masla_akkum);    
+fb_Uroven_masla_akkum(signal :=di.di_4.bits[2], str_SS := IM.SingleSignals.Uroven_masla_akkum);    
  
 (* ЩАВР 2 в работе *)
-fb_NKU1_GPA_on(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.NKU1_GPA_on);    
+fb_NKU1_GPA_on(signal :=di.di_10.bits[4], str_SS := IM.SingleSignals.NKU1_GPA_on);    
  
 (* ЩАВР 2 в работе *)
-fb_NKU2_GPA_on(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.NKU2_GPA_on);    
+fb_NKU2_GPA_on(signal :=di.di_10.bits[5], str_SS := IM.SingleSignals.NKU2_GPA_on);    
  
 (* ЩАВР 2 в работе *)
-fb_AO_KC_ot_SHKS(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.AO_KC_ot_SHKS);    
+fb_AO_KC_ot_SHKS(signal :=di.di_20.bits[0], str_SS := IM.SingleSignals.AO_KC_ot_SHKS);    
  
 (* ЩАВР 2 в работе *)
-fb_AO_GPA_ot_SHU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.AO_GPA_ot_SHU);    
+fb_AO_GPA_ot_SHU(signal :=di.di_21.bits[2], str_SS := IM.SingleSignals.AO_GPA_ot_SHU);    
  
 (* ЩАВР 2 в работе *)
-fb_BEAO_srabotal(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.BEAO_srabotal);    
+fb_BEAO_srabotal(signal :=di.di_18.bits[1], str_SS := IM.SingleSignals.BEAO_srabotal);    
  
 (* ЩАВР 2 в работе *)
-fb_Chastotny_pusk(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Chastotny_pusk);    
+fb_Chastotny_pusk(signal :=di.di_9.bits[0], str_SS := IM.SingleSignals.Chastotny_pusk);    
  
 (* ЩАВР 2 в работе *)
-fb_Neuspesh_chastotny_pusk(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Neuspesh_chastotny_pusk);    
+fb_Neuspesh_chastotny_pusk(signal :=di.di_9.bits[1], str_SS := IM.SingleSignals.Neuspesh_chastotny_pusk);    
  
 (* ЩАВР 2 в работе *)
-fb_Rezhim_ruchnogo_regulirovaniya(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Rezhim_ruchnogo_regulirovaniya);    
+fb_Rezhim_ruchnogo_regulirovaniya(signal :=di.di_9.bits[2], str_SS := IM.SingleSignals.Rezhim_ruchnogo_regulirovaniya);    
  
 (* ЩАВР 2 в работе *)
-fb_Razreshenie_zagruzki_dvig(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Razreshenie_zagruzki_dvig);    
+fb_Razreshenie_zagruzki_dvig(signal :=di.di_6.bits[1], str_SS := IM.SingleSignals.Razreshenie_zagruzki_dvig);    
  
 (* ЩАВР 2 в работе *)
-fb_Osnovnoy_regul_off(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Osnovnoy_regul_off);    
+fb_Osnovnoy_regul_off(signal :=di.di_6.bits[3], str_SS := IM.SingleSignals.Osnovnoy_regul_off);    
  
 (* ЩАВР 2 в работе *)
-fb_Voltage_sekcii_norm(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Voltage_sekcii_norm);    
+fb_Voltage_sekcii_norm(signal :=di.di_8.bits[4], str_SS := IM.SingleSignals.Voltage_sekcii_norm);    
  
 (* ЩАВР 2 в работе *)
-fb_Reactorny_pusk(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Reactorny_pusk);    
+fb_Reactorny_pusk(signal :=di.di_8.bits[5], str_SS := IM.SingleSignals.Reactorny_pusk);    
  
 (* ЩАВР 2 в работе *)
-fb_NO_GPA_ot_SHU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.NO_GPA_ot_SHU);    
+fb_NO_GPA_ot_SHU(signal :=di.di_21.bits[1], str_SS := IM.SingleSignals.NO_GPA_ot_SHU);    
  
 (* ЩАВР 2 в работе *)
-fb_AO_GPA_ot_PRU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.AO_GPA_ot_PRU);    
+fb_AO_GPA_ot_PRU(signal :=di.di_21.bits[3], str_SS := IM.SingleSignals.AO_GPA_ot_PRU);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP1(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP1);    
+fb_Nalichie_BP1(signal :=di.di_11.bits[0], str_SS := IM.SingleSignals.Nalichie_BP1);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP2(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP2);    
+fb_Nalichie_BP2(signal :=di.di_11.bits[1], str_SS := IM.SingleSignals.Nalichie_BP2);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP3(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP3);    
+fb_Nalichie_BP3(signal :=di.di_11.bits[2], str_SS := IM.SingleSignals.Nalichie_BP3);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP4(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP4);    
+fb_Nalichie_BP4(signal :=di.di_11.bits[3], str_SS := IM.SingleSignals.Nalichie_BP4);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP5(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP5);    
+fb_Nalichie_BP5(signal :=di.di_11.bits[4], str_SS := IM.SingleSignals.Nalichie_BP5);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP6(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP6);    
+fb_Nalichie_BP6(signal :=di.di_11.bits[5], str_SS := IM.SingleSignals.Nalichie_BP6);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP7_BP8(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP7_BP8);    
+fb_Nalichie_BP7_BP8(signal :=di.di_11.bits[6], str_SS := IM.SingleSignals.Nalichie_BP7_BP8);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP9_BP10(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP9_BP10);    
+fb_Nalichie_BP9_BP10(signal :=di.di_11.bits[7], str_SS := IM.SingleSignals.Nalichie_BP9_BP10);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_cepei_upravlen_mv(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_cepei_upravlen_mv);    
+fb_Nalichie_cepei_upravlen_mv(signal :=di.di_12.bits[0], str_SS := IM.SingleSignals.Nalichie_cepei_upravlen_mv);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_220BEAO(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_220BEAO);    
+fb_Nalichie_220BEAO(signal :=di.di_12.bits[1], str_SS := IM.SingleSignals.Nalichie_220BEAO);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_per_220_na_vhode(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_per_220_na_vhode);    
+fb_Nalichie_per_220_na_vhode(signal :=di.di_12.bits[2], str_SS := IM.SingleSignals.Nalichie_per_220_na_vhode);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_post_220_na_vhode(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_post_220_na_vhode);    
+fb_Nalichie_post_220_na_vhode(signal :=di.di_12.bits[3], str_SS := IM.SingleSignals.Nalichie_post_220_na_vhode);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP11(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP11);    
+fb_Nalichie_BP11(signal :=di.di_12.bits[4], str_SS := IM.SingleSignals.Nalichie_BP11);    
  
 (* ЩАВР 2 в работе *)
-fb_Nalichie_BP12(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Nalichie_BP12);    
+fb_Nalichie_BP12(signal :=di.di_12.bits[4], str_SS := IM.SingleSignals.Nalichie_BP12);    
  
 (* ЩАВР 2 в работе *)
-fb_Dver_SHU_pered_otkrita(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Dver_SHU_pered_otkrita);    
+fb_Dver_SHU_pered_otkrita(signal :=di.di_13.bits[0], str_SS := IM.SingleSignals.Dver_SHU_pered_otkrita);    
  
 (* ЩАВР 2 в работе *)
-fb_Dver_SHU_zad_otkrita(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Dver_SHU_zad_otkrita);    
+fb_Dver_SHU_zad_otkrita(signal :=di.di_13.bits[1], str_SS := IM.SingleSignals.Dver_SHU_zad_otkrita);    
  
 (* ЩАВР 2 в работе *)
-fb_EO_GPA_ot_knopki_SHU(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.EO_GPA_ot_knopki_SHU);    
+fb_EO_GPA_ot_knopki_SHU(signal :=di.di_14.bits[0], str_SS := IM.SingleSignals.EO_GPA_ot_knopki_SHU);    
  
 (* ЩАВР 2 в работе *)
-fb_EO_EGPA_ot_PRY(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.EO_EGPA_ot_PRY);    
+fb_EO_EGPA_ot_PRY(signal :=di.di_14.bits[1], str_SS := IM.SingleSignals.EO_EGPA_ot_PRY);    
  
 (* ЩАВР 2 в работе *)
 fb_Synchroniz_rezhima_K1(signal :=di.di_3.bits[4], str_SS := IM.SingleSignals.Synchroniz_rezhima_K1);
@@ -438,46 +430,46 @@ fb_NS_G13_G14(signal :=di.di_9.bits[7], str_SS := IM.SingleSignals.NS_G13_G14);
 (*************************************************** SingleOutputs ********************************************)
 
 (* Идикация НО (подсветка кнопки на шкафу)   *)
-fb_Rabota_EGPA(str_SO := IM.SingleOutputs.Rabota_EGPA, signal:=od.do_2.bits[11]);  
+fb_Rabota_EGPA(str_SO := IM.SingleOutputs.Rabota_EGPA, signal:=od.do_4.bits[2]);  
 
 (* Взвод включения БЭАО по неисправности ПТС   *)
-fb_Neispr_EGPA(str_SO := IM.SingleOutputs.Neispr_EGPA, signal:=od.do_2.bits[14]);  
+fb_Neispr_EGPA(str_SO := IM.SingleOutputs.Neispr_EGPA, signal:=od.do_4.bits[0]);  
 
 (* Авария ЭГПА в КЦ   *)
-fb_Avary_EGPA(str_SO := IM.SingleOutputs.Avary_EGPA, signal:=od.do_2.bits[0]);    
+fb_Avary_EGPA(str_SO := IM.SingleOutputs.Avary_EGPA, signal:=od.do_4.bits[1);    
 
 (* Сброс включения БЭАО по неисправности ПТС   *)
-fb_U_lamp_SHU(str_SO := IM.SingleOutputs.U_lamp_SHU, signal:=od.do_2.bits[15]);   
+fb_U_lamp_SHU(str_SO := IM.SingleOutputs.U_lamp_SHU, signal:=od.do_4.bits[3]);   
 
 (* Индикация ПС Фонарь   *)
-fb_AO_knopka_ind(str_SO := IM.SingleOutputs.AO_knopka_ind, signal:=od.do_2.bits[13]);    
+fb_AO_knopka_ind(str_SO := IM.SingleOutputs.AO_knopka_ind, signal:=od.do_4.bits[4]);    
 
 (* Индикация АС Фонарь   *)
-fb_Pusk(str_SO := IM.SingleOutputs.Pusk_SHUP, signal:=od.do_2.bits[12]);   
+fb_Pusk(str_SO := IM.SingleOutputs.Pusk_SHUP, signal:=od.do_4.bits[8]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_Stop_SHUP(str_SO := IM.SingleOutputs.Stop_SHUP, signal:=od.do_1.bits[12]);   
+fb_Stop_SHUP(str_SO := IM.SingleOutputs.Stop_SHUP, signal:=od.do_4.bits[9]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_NO_fonar(str_SO := IM.SingleOutputs.NO_fonar, signal:=od.do_1.bits[12]);   
+fb_NO_fonar(str_SO := IM.SingleOutputs.NO_fonar, signal:=od.do_3.bits[10]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_PC_fonar(str_SO := IM.SingleOutputs.PC_fonar, signal:=od.do_1.bits[12]);   
+fb_PC_fonar(str_SO := IM.SingleOutputs.PC_fonar, signal:=od.do_3.bits[9]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_AC_fonar(str_SO := IM.SingleOutputs.AC_fonar, signal:=od.do_1.bits[12]);   
+fb_AC_fonar(str_SO := IM.SingleOutputs.AC_fonar, signal:=od.do_3.bits[8]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_Kr1_smazka(str_SO := IM.SingleOutputs.Kr1_smazka, signal:=od.do_1.bits[12]);   
+fb_Kr1_smazka(str_SO := IM.SingleOutputs.Kr1_smazka, signal:=od.do_0.bits[14]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_Kr2_smazka(str_SO := IM.SingleOutputs.Kr2_smazka, signal:=od.do_1.bits[12]);   
+fb_Kr2_smazka(str_SO := IM.SingleOutputs.Kr2_smazka, signal:=od.do_0.bits[15]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_Kr4_open_from_alg(str_SO := IM.SingleOutputs.Kr4_open_from_alg, signal:=od.do_1.bits[12]);   
+fb_Kr4_open_from_alg(str_SO := IM.SingleOutputs.Kr4_open_from_alg, signal:=od.do_0.bits[8]);   
 
 (* Отключение МВ1 от КНА   *)
-fb_Synch_rej_K1(str_SO := IM.SingleOutputs.Synch_rej_K1, signal:=od.do_1.bits[12]);   
+fb_Synch_rej_K1(str_SO := IM.SingleOutputs.Synch_rej_K1, signal:=od.do_3.bits[13]);   
 
 
  (**************************************** Аналоговые и Дискретные параметры ***********************************)                                                                    

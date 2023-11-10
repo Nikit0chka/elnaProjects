@@ -37,11 +37,11 @@ int __variables_init_AO_STRUCTS_INI(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_AO_STRUCTS_INI(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_AO_STRUCTS_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 14005 PROGRAM0.AO_STRUCTS_INI.INIT
-    st = getVariable(14005);
+  { // 14041 PROGRAM0.AO_STRUCTS_INI.INIT
+    st = getVariable(14041);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.INIT", 28);
     st->size_data = sizeof(BOOL);
@@ -191,8 +190,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_PROC_AO_INIT->INIT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14028 PROGRAM0.AO_STRUCTS_INI.INITS
-    st = getVariable(14028);
+  { // 14061 PROGRAM0.AO_STRUCTS_INI.INITS
+    st = getVariable(14061);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.INITS", 29);
     st->size_data = sizeof(UINT);
@@ -201,8 +200,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_UINT = (UINT*)&p_PROC_AO_INIT->INITS;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14029 PROGRAM0.AO_STRUCTS_INI.INITIALES
-    st = getVariable(14029);
+  { // 14062 PROGRAM0.AO_STRUCTS_INI.INITIALES
+    st = getVariable(14062);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.INITIALES", 33);
     st->size_data = sizeof(UINT);
@@ -211,8 +210,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_UINT = (UINT*)&p_PROC_AO_INIT->INITIALES;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 14030 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NVALUE
-    st = getVariable(14030);
+  { // 14063 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NVALUE
+    st = getVariable(14063);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NVALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -223,8 +222,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NVALUE;
     st->value_p = p_LREAL;
   }
-  { // 14031 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.BLCONNECT
-    st = getVariable(14031);
+  { // 14064 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.BLCONNECT
+    st = getVariable(14064);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.BLCONNECT", 48);
     st->size_data = sizeof(BOOL);
@@ -235,8 +234,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 14032 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OUTLL
-    st = getVariable(14032);
+  { // 14065 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OUTLL
+    st = getVariable(14065);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OUTLL", 44);
     st->size_data = sizeof(LREAL);
@@ -247,8 +246,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTLL;
     st->value_p = p_LREAL;
   }
-  { // 14033 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OUTHL
-    st = getVariable(14033);
+  { // 14066 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OUTHL
+    st = getVariable(14066);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OUTHL", 44);
     st->size_data = sizeof(LREAL);
@@ -259,8 +258,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTHL;
     st->value_p = p_LREAL;
   }
-  { // 14034 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWLL
-    st = getVariable(14034);
+  { // 14067 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWLL
+    st = getVariable(14067);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWLL", 44);
     st->size_data = sizeof(LREAL);
@@ -271,8 +270,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWLL;
     st->value_p = p_LREAL;
   }
-  { // 14035 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWHL
-    st = getVariable(14035);
+  { // 14068 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWHL
+    st = getVariable(14068);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWHL", 44);
     st->size_data = sizeof(LREAL);
@@ -283,8 +282,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWHL;
     st->value_p = p_LREAL;
   }
-  { // 14036 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWLL_ISVALIDREF
-    st = getVariable(14036);
+  { // 14069 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWLL_ISVALIDREF
+    st = getVariable(14069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWLL_ISVALIDREF", 55);
     st->size_data = sizeof(BOOL);
@@ -295,8 +294,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWLL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14037 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWHL_ISVALIDREF
-    st = getVariable(14037);
+  { // 14070 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWHL_ISVALIDREF
+    st = getVariable(14070);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.NEWHL_ISVALIDREF", 55);
     st->size_data = sizeof(BOOL);
@@ -307,8 +306,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWHL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14038 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.INCOMMAND
-    st = getVariable(14038);
+  { // 14071 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.INCOMMAND
+    st = getVariable(14071);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.INCOMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -319,8 +318,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_AO->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 14039 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.VALUE
-    st = getVariable(14039);
+  { // 14072 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.VALUE
+    st = getVariable(14072);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -331,8 +330,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 14040 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.STATUS
-    st = getVariable(14040);
+  { // 14073 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.STATUS
+    st = getVariable(14073);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -343,8 +342,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_AO->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 14041 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.LL
-    st = getVariable(14041);
+  { // 14074 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.LL
+    st = getVariable(14074);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.LL", 41);
     st->size_data = sizeof(LREAL);
@@ -355,8 +354,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->LL;
     st->value_p = p_LREAL;
   }
-  { // 14042 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.HL
-    st = getVariable(14042);
+  { // 14075 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.HL
+    st = getVariable(14075);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.HL", 41);
     st->size_data = sizeof(LREAL);
@@ -367,8 +366,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->HL;
     st->value_p = p_LREAL;
   }
-  { // 14043 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OPCCOMMANDSDISABLED
-    st = getVariable(14043);
+  { // 14076 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OPCCOMMANDSDISABLED
+    st = getVariable(14076);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_1.OPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);
@@ -379,8 +378,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 14044 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NVALUE
-    st = getVariable(14044);
+  { // 14077 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NVALUE
+    st = getVariable(14077);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NVALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -391,8 +390,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NVALUE;
     st->value_p = p_LREAL;
   }
-  { // 14045 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.BLCONNECT
-    st = getVariable(14045);
+  { // 14078 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.BLCONNECT
+    st = getVariable(14078);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.BLCONNECT", 48);
     st->size_data = sizeof(BOOL);
@@ -403,8 +402,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 14046 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OUTLL
-    st = getVariable(14046);
+  { // 14079 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OUTLL
+    st = getVariable(14079);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OUTLL", 44);
     st->size_data = sizeof(LREAL);
@@ -415,8 +414,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTLL;
     st->value_p = p_LREAL;
   }
-  { // 14047 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OUTHL
-    st = getVariable(14047);
+  { // 14080 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OUTHL
+    st = getVariable(14080);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OUTHL", 44);
     st->size_data = sizeof(LREAL);
@@ -427,8 +426,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->OUTHL;
     st->value_p = p_LREAL;
   }
-  { // 14048 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWLL
-    st = getVariable(14048);
+  { // 14081 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWLL
+    st = getVariable(14081);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWLL", 44);
     st->size_data = sizeof(LREAL);
@@ -439,8 +438,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWLL;
     st->value_p = p_LREAL;
   }
-  { // 14049 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWHL
-    st = getVariable(14049);
+  { // 14082 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWHL
+    st = getVariable(14082);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWHL", 44);
     st->size_data = sizeof(LREAL);
@@ -451,8 +450,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->NEWHL;
     st->value_p = p_LREAL;
   }
-  { // 14050 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWLL_ISVALIDREF
-    st = getVariable(14050);
+  { // 14083 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWLL_ISVALIDREF
+    st = getVariable(14083);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWLL_ISVALIDREF", 55);
     st->size_data = sizeof(BOOL);
@@ -463,8 +462,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWLL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14051 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWHL_ISVALIDREF
-    st = getVariable(14051);
+  { // 14084 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWHL_ISVALIDREF
+    st = getVariable(14084);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.NEWHL_ISVALIDREF", 55);
     st->size_data = sizeof(BOOL);
@@ -475,8 +474,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AO->NEWHL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 14052 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.INCOMMAND
-    st = getVariable(14052);
+  { // 14085 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.INCOMMAND
+    st = getVariable(14085);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.INCOMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -487,8 +486,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_WORD = (WORD*)&p_STRUCT_AO->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 14053 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.VALUE
-    st = getVariable(14053);
+  { // 14086 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.VALUE
+    st = getVariable(14086);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -499,8 +498,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 14054 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.STATUS
-    st = getVariable(14054);
+  { // 14087 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.STATUS
+    st = getVariable(14087);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -511,8 +510,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_AO->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 14055 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.LL
-    st = getVariable(14055);
+  { // 14088 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.LL
+    st = getVariable(14088);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.LL", 41);
     st->size_data = sizeof(LREAL);
@@ -523,8 +522,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->LL;
     st->value_p = p_LREAL;
   }
-  { // 14056 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.HL
-    st = getVariable(14056);
+  { // 14089 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.HL
+    st = getVariable(14089);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.HL", 41);
     st->size_data = sizeof(LREAL);
@@ -535,8 +534,8 @@ int __variables_init_AO_STRUCTS_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AO->HL;
     st->value_p = p_LREAL;
   }
-  { // 14057 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OPCCOMMANDSDISABLED
-    st = getVariable(14057);
+  { // 14090 PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OPCCOMMANDSDISABLED
+    st = getVariable(14090);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AO_STRUCTS_INI.AO.RESERV_AO_2.OPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);

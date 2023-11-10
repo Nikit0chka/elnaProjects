@@ -23,6 +23,10 @@ VAR
 	_StatusAi : TYPE_StatusAi;
 END_VAR
 
+
+
+
+
 inits := 0; (* Флаг необходимости инициализации структур-дескрипторов *)
      
 (*************************************************Стартовая инициализация DiProtection ***************************************************)
@@ -74,42 +78,42 @@ inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура заднего опорного подшипника двигателя, т.2 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Toporno_ypornogo_podshipnika_EDT_2);
+controlLimit:=_StatusAi.HA, str_AIp := protections.Toy_podshipnika_EDT_2);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура подшипника редуктора, т1 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3);
+controlLimit:=_StatusAi.HA, str_AIp := protections.Toy_podshipnika_kol_EDT_3);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура подшипника редуктора, т2 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4);
+controlLimit:=_StatusAi.HA, str_AIp := protections.Toy_podshipnika_kol_EDT_4);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура подшипника редуктора, т3 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Topornogo_podshipnika_shesterni_reduktora_T_5);
+controlLimit:=_StatusAi.HA, str_AIp := protections.To_podshipnika_shest_red_EDT_5);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура подшипника редуктора, т4 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Topornogo_podshipnika_reduktora_HT_6);
+controlLimit:=_StatusAi.HA, str_AIp := protections.To_podshipnika_shest_red_EDT_6);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура опорного подшипника нагнетателя, т1 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7);
+controlLimit:=_StatusAi.HA, str_AIp := protections.To_podshipnika_N_EDT_7);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура опорного подшипника нагнетателя, т2 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8);
+controlLimit:=_StatusAi.HA, str_AIp := protections.To_podshipnika_svob_konca_EDT_8);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура опорного подшипника нагнетателя, т3 *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Typornogo_podshipnika_rav_kolodok_HT_9);
+controlLimit:=_StatusAi.HA, str_AIp := protections.Ty_podshipnika_rab_kol_EDT_9);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
 (* Температура упорно опорного подшипника нагнетателя, т4 *)
@@ -189,7 +193,7 @@ inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
  (* Температура газа на выходе нагнетателя *)
 stAIp_Ini(data_Ini := true, delay:=T#3S, inTag:=_ProtectionTags.AOS, inRunOnStart:=TRUE,
-controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+controlLimit:=_StatusAi.HA, str_AIp := protections.Vibro_skorost_OP_shesterni_RED_T6);
 inits := inits + BOOL_TO_UINT(stAIp_Ini.Init);
 
  (* Температура газа на выходе нагнетателя *)

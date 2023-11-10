@@ -4,6 +4,10 @@ VAR_INPUT
 	im : ImConfig;
 END_VAR
 
+
+
+
+
 NapryageniaOK:=
 NOT (Im.SingleSignals.NS_G1_G2.Q
 OR Im.SingleSignals.NS_G10_G11.Q

@@ -7,19 +7,19 @@ AiConfig : STRUCT (*Входные аналоговые параметры*)
 	Tmedi_statora_kanal_2 : struct_AI; (*Резерв (A1-14:5)*)
 	Tmedi_statora_kanal_3 : struct_AI; (*Резерв (A1-14:6)*)
 	Toporno_podshipnika_EDT_1 : struct_AI; (*Резерв (A1-14:7)*)
-	Toporno_ypornogo_podshipnika_EDT_2 : struct_AI; (*Резерв (A1-14:8)*)
-	Toporno_ypornogo_podshipnika_kolesa_red_EDT_3 : struct_AI;
-	Toporno_ypornogo_podshipnika_kolesa_red_HT_4 : struct_AI;
-	Toporno_podshipnika_shesterni_reduktora_T_5 : struct_AI;
-	Toporno_podshipnika_reduktora_HT_6 : struct_AI;
-	Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1 : struct_AI;
-	Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2 : struct_AI;
-	Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1 : struct_AI;
-	Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2 : struct_AI;
-	Typornogo_podshipnika_rav_kolodok_HT_9_1 : struct_AI;
-	Typornogo_podshipnika_rav_kolodok_HT_9_2 : struct_AI;
-	Typornogo_podshipnika_nerab_kolodok_HT_10_1 : struct_AI;
-	Typornogo_podshipnika_nerab_kolodok_HT_10_2 : struct_AI;
+	Toy_podshipnika_EDT_2 : struct_AI; (*Резерв (A1-14:8)*)
+	Toy_podshipnika_kol_EDT_3 : struct_AI;
+	Toy_podshipnika_kol_EDT_4 : struct_AI;
+	Toy_podshipnika_shest_red_EDT_5 : struct_AI;
+	Ty_podshipnika_red_EDT_6 : struct_AI;
+	Ty_podshipnika_nagnet_EDT_7_1 : struct_AI;
+	Ty_podshipnika_nagnet_EDT_7_2 : struct_AI;
+	Toy_podshipnika_svobod_konca_EDT_8_1 : struct_AI;
+	Toy_podshipnika_svobod_konca_EDT_8_2 : struct_AI;
+	Toy_podshipnika_rab_kol_EDT_9_1 : struct_AI;
+	Toy_podshipnika_rab_kol_EDT_9_2 : struct_AI;
+	Toy_podshipnika_nerab_kol_EDT_10_1 : struct_AI;
+	Toy_podshipnika_nerab_kol_EDT_10_2 : struct_AI;
 	Tholodnogo_vozduha_ED_kanal_1 : struct_AI;
 	Tholodnogo_vozduha_ED_kanal_2 : struct_AI;
 	Tgorjachego_vozduha_ED_kanal_1 : struct_AI;
@@ -53,6 +53,6 @@ AiConfig : STRUCT (*Входные аналоговые параметры*)
 	Vibro_skorost_OYP_kolesa_ED_T3 : struct_AI;
 	Vibro_skorost_OP_kolesa_RH_T4 : struct_AI;
 	Vibro_skorost_OP_shesterni_RED_T5 : struct_AI;
-	Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AI;
+	Vibro_skorost_OP_shesterni_RED_T6 : struct_AI;
 END_STRUCT;
 END_TYPE

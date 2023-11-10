@@ -37,11 +37,11 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26658 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL.VALUE
-    st = getVariable(26658);
+  { // 26256 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL.VALUE
+    st = getVariable(26256);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL.VALUE", 52);
     st->size_data = sizeof(BOOL);
@@ -193,8 +192,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26659 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL.RELIABILITY
-    st = getVariable(26659);
+  { // 26257 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL.RELIABILITY
+    st = getVariable(26257);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -205,8 +204,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26660 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL._INVERSED
-    st = getVariable(26660);
+  { // 26258 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL._INVERSED
+    st = getVariable(26258);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.SIGNAL._INVERSED", 56);
     st->size_data = sizeof(BOOL);
@@ -217,8 +216,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26661 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.RELIABILITY
-    st = getVariable(26661);
+  { // 26259 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.RELIABILITY
+    st = getVariable(26259);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.RELIABILITY", 58);
     st->size_data = sizeof(BOOL);
@@ -229,8 +228,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26662 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.INVERSE
-    st = getVariable(26662);
+  { // 26260 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.INVERSE
+    st = getVariable(26260);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.INVERSE", 54);
     st->size_data = sizeof(BOOL);
@@ -241,8 +240,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26663 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DELAYON
-    st = getVariable(26663);
+  { // 26261 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DELAYON
+    st = getVariable(26261);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DELAYON", 54);
     st->size_data = sizeof(TIME);
@@ -253,8 +252,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26664 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DELAYOFF
-    st = getVariable(26664);
+  { // 26262 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DELAYOFF
+    st = getVariable(26262);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DELAYOFF", 55);
     st->size_data = sizeof(TIME);
@@ -265,8 +264,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26665 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.Q
-    st = getVariable(26665);
+  { // 26263 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.Q
+    st = getVariable(26263);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -277,8 +276,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26666 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.STATUS
-    st = getVariable(26666);
+  { // 26264 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.STATUS
+    st = getVariable(26264);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.STATUS", 53);
     st->size_data = sizeof(DWORD);
@@ -289,8 +288,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26667 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DISABLED_SIG
-    st = getVariable(26667);
+  { // 26265 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DISABLED_SIG
+    st = getVariable(26265);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.STR_SS.DISABLED_SIG", 59);
     st->size_data = sizeof(BOOL);
@@ -301,8 +300,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26668 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.IN
-    st = getVariable(26668);
+  { // 26266 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.IN
+    st = getVariable(26266);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -313,8 +312,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26669 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.PT
-    st = getVariable(26669);
+  { // 26267 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.PT
+    st = getVariable(26267);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.PT", 50);
     st->size_data = sizeof(TIME);
@@ -325,8 +324,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26670 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.Q
-    st = getVariable(26670);
+  { // 26268 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.Q
+    st = getVariable(26268);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -337,8 +336,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26671 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.ET
-    st = getVariable(26671);
+  { // 26269 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.ET
+    st = getVariable(26269);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON.ET", 50);
     st->size_data = sizeof(TIME);
@@ -349,8 +348,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26672 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON
-    st = getVariable(26672);
+  { // 26270 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON
+    st = getVariable(26270);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMERON", 47);
     st->size_data = sizeof(TON);
@@ -360,8 +359,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26673 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.IN
-    st = getVariable(26673);
+  { // 26271 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.IN
+    st = getVariable(26271);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.IN", 51);
     st->size_data = sizeof(BOOL);
@@ -372,8 +371,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26674 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.PT
-    st = getVariable(26674);
+  { // 26272 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.PT
+    st = getVariable(26272);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.PT", 51);
     st->size_data = sizeof(TIME);
@@ -384,8 +383,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26675 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.Q
-    st = getVariable(26675);
+  { // 26273 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.Q
+    st = getVariable(26273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -396,8 +395,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26676 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.ET
-    st = getVariable(26676);
+  { // 26274 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.ET
+    st = getVariable(26274);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF.ET", 51);
     st->size_data = sizeof(TIME);
@@ -408,8 +407,8 @@ int __variables_init_FB_VOLTAGE_SEKCII_NORM(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26677 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF
-    st = getVariable(26677);
+  { // 26275 PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF
+    st = getVariable(26275);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_VOLTAGE_SEKCII_NORM.TIMEROFF", 48);
     st->size_data = sizeof(TOF);

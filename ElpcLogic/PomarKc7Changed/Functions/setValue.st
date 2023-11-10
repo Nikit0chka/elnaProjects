@@ -9,8 +9,12 @@ VAR_INPUT
 END_VAR
 
 VAR
-	cmd_ChangeValue : WORD := 1;
+	cmd_ChangeValue : WORD   := 1;
 END_VAR
+
+
+
+
 
 StrDP.newValue:=newValue;
 StrDP.inOpcCommandsDisabled:=TRUE;

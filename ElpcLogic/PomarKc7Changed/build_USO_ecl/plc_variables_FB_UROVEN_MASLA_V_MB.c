@@ -37,11 +37,11 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 35270 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.VALUE
-    st = getVariable(35270);
+  { // 34866 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.VALUE
+    st = getVariable(34866);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.VALUE", 55);
     st->size_data = sizeof(LREAL);
@@ -193,8 +192,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 35271 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.STATUS
-    st = getVariable(35271);
+  { // 34867 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.STATUS
+    st = getVariable(34867);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -205,8 +204,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 35272 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INTERVAL
-    st = getVariable(35272);
+  { // 34868 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INTERVAL
+    st = getVariable(34868);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INTERVAL", 58);
     st->size_data = sizeof(BYTE);
@@ -217,8 +216,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 35273 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND
-    st = getVariable(35273);
+  { // 34869 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND
+    st = getVariable(34869);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -229,8 +228,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 35274 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.BLCONNECT
-    st = getVariable(35274);
+  { // 34870 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.BLCONNECT
+    st = getVariable(34870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.BLCONNECT", 59);
     st->size_data = sizeof(BOOL);
@@ -241,8 +240,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 35275 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLL
-    st = getVariable(35275);
+  { // 34871 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLL
+    st = getVariable(34871);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLL", 53);
     st->size_data = sizeof(LREAL);
@@ -253,8 +252,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 35276 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHL
-    st = getVariable(35276);
+  { // 34872 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHL
+    st = getVariable(34872);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHL", 53);
     st->size_data = sizeof(LREAL);
@@ -265,8 +264,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 35277 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLA
-    st = getVariable(35277);
+  { // 34873 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLA
+    st = getVariable(34873);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLA", 53);
     st->size_data = sizeof(LREAL);
@@ -277,8 +276,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 35278 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHA
-    st = getVariable(35278);
+  { // 34874 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHA
+    st = getVariable(34874);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHA", 53);
     st->size_data = sizeof(LREAL);
@@ -289,8 +288,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 35279 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLW
-    st = getVariable(35279);
+  { // 34875 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLW
+    st = getVariable(34875);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DLW", 53);
     st->size_data = sizeof(LREAL);
@@ -301,8 +300,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 35280 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHW
-    st = getVariable(35280);
+  { // 34876 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHW
+    st = getVariable(34876);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DHW", 53);
     st->size_data = sizeof(LREAL);
@@ -313,8 +312,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 35281 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LL
-    st = getVariable(35281);
+  { // 34877 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LL
+    st = getVariable(34877);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LL", 52);
     st->size_data = sizeof(LREAL);
@@ -325,8 +324,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 35282 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HL
-    st = getVariable(35282);
+  { // 34878 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HL
+    st = getVariable(34878);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HL", 52);
     st->size_data = sizeof(LREAL);
@@ -337,8 +336,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 35283 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LA
-    st = getVariable(35283);
+  { // 34879 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LA
+    st = getVariable(34879);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LA", 52);
     st->size_data = sizeof(LREAL);
@@ -349,8 +348,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 35284 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HA
-    st = getVariable(35284);
+  { // 34880 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HA
+    st = getVariable(34880);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HA", 52);
     st->size_data = sizeof(LREAL);
@@ -361,8 +360,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 35285 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LW
-    st = getVariable(35285);
+  { // 34881 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LW
+    st = getVariable(34881);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.LW", 52);
     st->size_data = sizeof(LREAL);
@@ -373,8 +372,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 35286 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HW
-    st = getVariable(35286);
+  { // 34882 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HW
+    st = getVariable(34882);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HW", 52);
     st->size_data = sizeof(LREAL);
@@ -385,8 +384,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 35287 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_LA
-    st = getVariable(35287);
+  { // 34883 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_LA
+    st = getVariable(34883);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_LA", 63);
     st->size_data = sizeof(BOOL);
@@ -397,8 +396,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 35288 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_HA
-    st = getVariable(35288);
+  { // 34884 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_HA
+    st = getVariable(34884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_HA", 63);
     st->size_data = sizeof(BOOL);
@@ -409,8 +408,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 35289 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_LW
-    st = getVariable(35289);
+  { // 34885 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_LW
+    st = getVariable(34885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_LW", 63);
     st->size_data = sizeof(BOOL);
@@ -421,8 +420,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 35290 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_HW
-    st = getVariable(35290);
+  { // 34886 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_HW
+    st = getVariable(34886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.ISVALIDREF_HW", 63);
     st->size_data = sizeof(BOOL);
@@ -433,8 +432,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 35291 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INPLL
-    st = getVariable(35291);
+  { // 34887 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INPLL
+    st = getVariable(34887);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INPLL", 55);
     st->size_data = sizeof(LREAL);
@@ -445,8 +444,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 35292 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INPHL
-    st = getVariable(35292);
+  { // 34888 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INPHL
+    st = getVariable(34888);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INPHL", 55);
     st->size_data = sizeof(LREAL);
@@ -457,8 +456,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 35293 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CURRENTSHOTCIRCUIT
-    st = getVariable(35293);
+  { // 34889 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CURRENTSHOTCIRCUIT
+    st = getVariable(34889);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CURRENTSHOTCIRCUIT", 68);
     st->size_data = sizeof(LREAL);
@@ -469,8 +468,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 35294 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CURRENTBREAKCIRCUIT
-    st = getVariable(35294);
+  { // 34890 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CURRENTBREAKCIRCUIT
+    st = getVariable(34890);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CURRENTBREAKCIRCUIT", 69);
     st->size_data = sizeof(LREAL);
@@ -481,8 +480,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 35295 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXCHANGESPEED
-    st = getVariable(35295);
+  { // 34891 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXCHANGESPEED
+    st = getVariable(34891);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXCHANGESPEED", 64);
     st->size_data = sizeof(LREAL);
@@ -493,8 +492,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 35296 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXCHANGESPEEDDOWN
-    st = getVariable(35296);
+  { // 34892 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXCHANGESPEEDDOWN
+    st = getVariable(34892);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXCHANGESPEEDDOWN", 68);
     st->size_data = sizeof(LREAL);
@@ -505,8 +504,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 35297 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CHANGESPEED
-    st = getVariable(35297);
+  { // 34893 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CHANGESPEED
+    st = getVariable(34893);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.CHANGESPEED", 61);
     st->size_data = sizeof(LREAL);
@@ -517,8 +516,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 35298 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HISTERESIS
-    st = getVariable(35298);
+  { // 34894 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HISTERESIS
+    st = getVariable(34894);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.HISTERESIS", 60);
     st->size_data = sizeof(LREAL);
@@ -529,8 +528,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 35299 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.APERTURFILTER
-    st = getVariable(35299);
+  { // 34895 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.APERTURFILTER
+    st = getVariable(34895);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.APERTURFILTER", 63);
     st->size_data = sizeof(LREAL);
@@ -541,8 +540,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 35300 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.EXPONENTIALFILTER
-    st = getVariable(35300);
+  { // 34896 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.EXPONENTIALFILTER
+    st = getVariable(34896);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.EXPONENTIALFILTER", 67);
     st->size_data = sizeof(LREAL);
@@ -553,8 +552,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 35301 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.RASSOGLASOVANIE
-    st = getVariable(35301);
+  { // 34897 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.RASSOGLASOVANIE
+    st = getVariable(34897);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.RASSOGLASOVANIE", 65);
     st->size_data = sizeof(LREAL);
@@ -565,8 +564,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 35302 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.OPCCOMMANDSDISABLED
-    st = getVariable(35302);
+  { // 34898 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.OPCCOMMANDSDISABLED
+    st = getVariable(34898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.OPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -577,8 +576,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35303 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_LA
-    st = getVariable(35303);
+  { // 34899 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_LA
+    st = getVariable(34899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_LA", 61);
     st->size_data = sizeof(BOOL);
@@ -589,8 +588,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 35304 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_HA
-    st = getVariable(35304);
+  { // 34900 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_HA
+    st = getVariable(34900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_HA", 61);
     st->size_data = sizeof(BOOL);
@@ -601,8 +600,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 35305 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_LW
-    st = getVariable(35305);
+  { // 34901 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_LW
+    st = getVariable(34901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_LW", 61);
     st->size_data = sizeof(BOOL);
@@ -613,8 +612,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 35306 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_HW
-    st = getVariable(35306);
+  { // 34902 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_HW
+    st = getVariable(34902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DISABLED_HW", 61);
     st->size_data = sizeof(BOOL);
@@ -625,8 +624,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 35307 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYLA
-    st = getVariable(35307);
+  { // 34903 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYLA
+    st = getVariable(34903);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYLA", 57);
     st->size_data = sizeof(TIME);
@@ -637,8 +636,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 35308 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYLW
-    st = getVariable(35308);
+  { // 34904 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYLW
+    st = getVariable(34904);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYLW", 57);
     st->size_data = sizeof(TIME);
@@ -649,8 +648,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 35309 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYHW
-    st = getVariable(35309);
+  { // 34905 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYHW
+    st = getVariable(34905);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYHW", 57);
     st->size_data = sizeof(TIME);
@@ -661,8 +660,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 35310 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYHA
-    st = getVariable(35310);
+  { // 34906 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYHA
+    st = getVariable(34906);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DELAYHA", 57);
     st->size_data = sizeof(TIME);
@@ -673,8 +672,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 35311 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MINVALUE_ISVALIDREF
-    st = getVariable(35311);
+  { // 34907 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MINVALUE_ISVALIDREF
+    st = getVariable(34907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MINVALUE_ISVALIDREF", 69);
     st->size_data = sizeof(BOOL);
@@ -685,8 +684,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 35312 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXVALUE_ISVALIDREF
-    st = getVariable(35312);
+  { // 34908 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXVALUE_ISVALIDREF
+    st = getVariable(34908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXVALUE_ISVALIDREF", 69);
     st->size_data = sizeof(BOOL);
@@ -697,8 +696,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 35313 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MINVALUE
-    st = getVariable(35313);
+  { // 34909 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MINVALUE
+    st = getVariable(34909);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MINVALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -709,8 +708,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 35314 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXVALUE
-    st = getVariable(35314);
+  { // 34910 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXVALUE
+    st = getVariable(34910);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.MAXVALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -721,8 +720,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 35315 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INOPCCOMMANDSDISABLED
-    st = getVariable(35315);
+  { // 34911 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INOPCCOMMANDSDISABLED
+    st = getVariable(34911);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INOPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -733,8 +732,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35316 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.IMIT
-    st = getVariable(35316);
+  { // 34912 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.IMIT
+    st = getVariable(34912);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.IMIT", 54);
     st->size_data = sizeof(BOOL);
@@ -745,8 +744,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 35317 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.REMONT
-    st = getVariable(35317);
+  { // 34913 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.REMONT
+    st = getVariable(34913);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.REMONT", 56);
     st->size_data = sizeof(BOOL);
@@ -757,8 +756,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 35318 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS
-    st = getVariable(35318);
+  { // 34914 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS
+    st = getVariable(34914);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS", 52);
     st->size_data = sizeof(BOOL);
@@ -769,8 +768,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 35319 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS_MIN
-    st = getVariable(35319);
+  { // 34915 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS_MIN
+    st = getVariable(34915);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS_MIN", 56);
     st->size_data = sizeof(BOOL);
@@ -781,8 +780,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 35320 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS_MAX
-    st = getVariable(35320);
+  { // 34916 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS_MAX
+    st = getVariable(34916);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.NS_MAX", 56);
     st->size_data = sizeof(BOOL);
@@ -793,8 +792,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 35321 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND_ALG
-    st = getVariable(35321);
+  { // 34917 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND_ALG
+    st = getVariable(34917);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND_ALG", 63);
     st->size_data = sizeof(WORD);
@@ -805,8 +804,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 35322 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND_ARM
-    st = getVariable(35322);
+  { // 34918 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND_ARM
+    st = getVariable(34918);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.INCOMMAND_ARM", 63);
     st->size_data = sizeof(WORD);
@@ -817,8 +816,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 35323 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DMAXCHANGESPEED
-    st = getVariable(35323);
+  { // 34919 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DMAXCHANGESPEED
+    st = getVariable(34919);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DMAXCHANGESPEED", 65);
     st->size_data = sizeof(LREAL);
@@ -829,8 +828,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 35324 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DMAXCHANGESPEEDDOWN
-    st = getVariable(35324);
+  { // 34920 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DMAXCHANGESPEEDDOWN
+    st = getVariable(34920);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.AI.DMAXCHANGESPEEDDOWN", 69);
     st->size_data = sizeof(LREAL);
@@ -841,8 +840,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 35325 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CONTROLLIMIT
-    st = getVariable(35325);
+  { // 34921 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CONTROLLIMIT
+    st = getVariable(34921);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CONTROLLIMIT", 66);
     st->size_data = sizeof(BYTE);
@@ -853,8 +852,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->CONTROLLIMIT;
     st->value_p = p_BYTE;
   }
-  { // 35326 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.DELAY
-    st = getVariable(35326);
+  { // 34922 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.DELAY
+    st = getVariable(34922);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.DELAY", 59);
     st->size_data = sizeof(TIME);
@@ -865,8 +864,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_STRUCT_AIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 35327 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INTAG
-    st = getVariable(35327);
+  { // 34923 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INTAG
+    st = getVariable(34923);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INTAG", 59);
     st->size_data = sizeof(BYTE);
@@ -877,8 +876,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 35328 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INRUNONSTART
-    st = getVariable(35328);
+  { // 34924 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INRUNONSTART
+    st = getVariable(34924);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INRUNONSTART", 66);
     st->size_data = sizeof(BOOL);
@@ -889,8 +888,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 35329 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCANRUN
-    st = getVariable(35329);
+  { // 34925 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCANRUN
+    st = getVariable(34925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCANRUN", 62);
     st->size_data = sizeof(BOOL);
@@ -901,8 +900,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 35330 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INOPCCOMMANDSDISABLED
-    st = getVariable(35330);
+  { // 34926 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INOPCCOMMANDSDISABLED
+    st = getVariable(34926);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INOPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -913,8 +912,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35331 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND
-    st = getVariable(35331);
+  { // 34927 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND
+    st = getVariable(34927);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -925,8 +924,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 35332 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND_ALG
-    st = getVariable(35332);
+  { // 34928 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND_ALG
+    st = getVariable(34928);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND_ALG", 67);
     st->size_data = sizeof(WORD);
@@ -937,8 +936,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 35333 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND_ARM
-    st = getVariable(35333);
+  { // 34929 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND_ARM
+    st = getVariable(34929);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.INCOMMAND_ARM", 67);
     st->size_data = sizeof(WORD);
@@ -949,8 +948,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 35334 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.TAG
-    st = getVariable(35334);
+  { // 34930 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.TAG
+    st = getVariable(34930);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.TAG", 57);
     st->size_data = sizeof(BYTE);
@@ -961,8 +960,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 35335 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.STATUS
-    st = getVariable(35335);
+  { // 34931 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.STATUS
+    st = getVariable(34931);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -973,8 +972,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_DWORD = (DWORD*)&p_STRUCT_AIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 35336 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CANRUN
-    st = getVariable(35336);
+  { // 34932 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CANRUN
+    st = getVariable(34932);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CANRUN", 60);
     st->size_data = sizeof(BOOL);
@@ -985,8 +984,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 35337 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.OPCCOMMANDSDISABLED
-    st = getVariable(35337);
+  { // 34933 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.OPCCOMMANDSDISABLED
+    st = getVariable(34933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.OPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -997,8 +996,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35338 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.ISRUNNING
-    st = getVariable(35338);
+  { // 34934 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.ISRUNNING
+    st = getVariable(34934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.ISRUNNING", 63);
     st->size_data = sizeof(BOOL);
@@ -1009,8 +1008,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 35339 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.HASERROR
-    st = getVariable(35339);
+  { // 34935 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.HASERROR
+    st = getVariable(34935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.HASERROR", 62);
     st->size_data = sizeof(BOOL);
@@ -1021,8 +1020,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 35340 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.ISENDED
-    st = getVariable(35340);
+  { // 34936 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.ISENDED
+    st = getVariable(34936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.ISENDED", 61);
     st->size_data = sizeof(BOOL);
@@ -1033,8 +1032,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 35341 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.REMONT
-    st = getVariable(35341);
+  { // 34937 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.REMONT
+    st = getVariable(34937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.REMONT", 60);
     st->size_data = sizeof(BOOL);
@@ -1045,8 +1044,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 35342 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CHECK
-    st = getVariable(35342);
+  { // 34938 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CHECK
+    st = getVariable(34938);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.CHECK", 59);
     st->size_data = sizeof(BOOL);
@@ -1057,8 +1056,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 35343 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.SIGNALING
-    st = getVariable(35343);
+  { // 34939 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.SIGNALING
+    st = getVariable(34939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.SIGNALING", 63);
     st->size_data = sizeof(BOOL);
@@ -1069,8 +1068,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 35344 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.SIGNALINGTP
-    st = getVariable(35344);
+  { // 34940 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.SIGNALINGTP
+    st = getVariable(34940);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.SIGNALINGTP", 65);
     st->size_data = sizeof(BOOL);
@@ -1081,8 +1080,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 35345 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.RUNONSTART
-    st = getVariable(35345);
+  { // 34941 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.RUNONSTART
+    st = getVariable(34941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.STRAIP.RUNONSTART", 64);
     st->size_data = sizeof(BOOL);
@@ -1093,8 +1092,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 35350 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.IN
-    st = getVariable(35350);
+  { // 34946 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.IN
+    st = getVariable(34946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.IN", 62);
     st->size_data = sizeof(BOOL);
@@ -1105,8 +1104,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 35351 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.PT
-    st = getVariable(35351);
+  { // 34947 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.PT
+    st = getVariable(34947);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.PT", 62);
     st->size_data = sizeof(TIME);
@@ -1117,8 +1116,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 35352 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.Q
-    st = getVariable(35352);
+  { // 34948 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.Q
+    st = getVariable(34948);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -1129,8 +1128,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 35353 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.ET
-    st = getVariable(35353);
+  { // 34949 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.ET
+    st = getVariable(34949);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP.ET", 62);
     st->size_data = sizeof(TIME);
@@ -1141,8 +1140,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 35354 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP
-    st = getVariable(35354);
+  { // 34950 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP
+    st = getVariable(34950);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SIGNALINGTP", 59);
     st->size_data = sizeof(TOF);
@@ -1152,8 +1151,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TOF = (TOF*)&p_FB_AIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 35355 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NOTDEFINED
-    st = getVariable(35355);
+  { // 34951 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NOTDEFINED
+    st = getVariable(34951);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NOTDEFINED", 67);
     st->size_data = sizeof(BYTE);
@@ -1164,8 +1163,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 35356 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LL
-    st = getVariable(35356);
+  { // 34952 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LL
+    st = getVariable(34952);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LL", 59);
     st->size_data = sizeof(BYTE);
@@ -1176,8 +1175,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 35357 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HL
-    st = getVariable(35357);
+  { // 34953 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HL
+    st = getVariable(34953);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HL", 59);
     st->size_data = sizeof(BYTE);
@@ -1188,8 +1187,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 35358 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NOTRELIABLE
-    st = getVariable(35358);
+  { // 34954 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NOTRELIABLE
+    st = getVariable(34954);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NOTRELIABLE", 68);
     st->size_data = sizeof(BYTE);
@@ -1200,8 +1199,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 35359 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NORMAL
-    st = getVariable(35359);
+  { // 34955 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NORMAL
+    st = getVariable(34955);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.NORMAL", 63);
     st->size_data = sizeof(BYTE);
@@ -1212,8 +1211,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 35360 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LW
-    st = getVariable(35360);
+  { // 34956 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LW
+    st = getVariable(34956);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LW", 59);
     st->size_data = sizeof(BYTE);
@@ -1224,8 +1223,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 35361 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HW
-    st = getVariable(35361);
+  { // 34957 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HW
+    st = getVariable(34957);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HW", 59);
     st->size_data = sizeof(BYTE);
@@ -1236,8 +1235,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 35362 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LA
-    st = getVariable(35362);
+  { // 34958 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LA
+    st = getVariable(34958);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.LA", 59);
     st->size_data = sizeof(BYTE);
@@ -1248,8 +1247,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 35363 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HA
-    st = getVariable(35363);
+  { // 34959 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HA
+    st = getVariable(34959);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._STATUSAI.HA", 59);
     st->size_data = sizeof(BYTE);
@@ -1260,8 +1259,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 35364 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SOURCE
-    st = getVariable(35364);
+  { // 34960 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SOURCE
+    st = getVariable(34960);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SOURCE", 53);
     st->size_data = sizeof(BYTE);
@@ -1271,8 +1270,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35365 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.CMD
-    st = getVariable(35365);
+  { // 34961 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.CMD
+    st = getVariable(34961);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.CMD", 50);
     st->size_data = sizeof(BYTE);
@@ -1282,8 +1281,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35366 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.LASTCMD
-    st = getVariable(35366);
+  { // 34962 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.LASTCMD
+    st = getVariable(34962);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.LASTCMD", 54);
     st->size_data = sizeof(BYTE);
@@ -1293,8 +1292,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35367 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SOURCE_FOR_STATUS
-    st = getVariable(35367);
+  { // 34963 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SOURCE_FOR_STATUS
+    st = getVariable(34963);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SOURCE_FOR_STATUS", 64);
     st->size_data = sizeof(BYTE);
@@ -1304,8 +1303,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35368 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.CMD_FOR_STATUS
-    st = getVariable(35368);
+  { // 34964 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.CMD_FOR_STATUS
+    st = getVariable(34964);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.CMD_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -1315,8 +1314,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35369 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(35369);
+  { // 34965 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(34965);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.COMMAND_ERROR_FOR_STATUS", 71);
     st->size_data = sizeof(BYTE);
@@ -1326,8 +1325,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35370 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.IN
-    st = getVariable(35370);
+  { // 34966 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.IN
+    st = getVariable(34966);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.IN", 63);
     st->size_data = sizeof(BOOL);
@@ -1338,8 +1337,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 35371 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.PT
-    st = getVariable(35371);
+  { // 34967 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.PT
+    st = getVariable(34967);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.PT", 63);
     st->size_data = sizeof(TIME);
@@ -1350,8 +1349,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 35372 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.Q
-    st = getVariable(35372);
+  { // 34968 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.Q
+    st = getVariable(34968);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1362,8 +1361,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 35373 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.ET
-    st = getVariable(35373);
+  { // 34969 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.ET
+    st = getVariable(34969);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER.ET", 63);
     st->size_data = sizeof(TIME);
@@ -1374,8 +1373,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 35374 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER
-    st = getVariable(35374);
+  { // 34970 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER
+    st = getVariable(34970);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMER", 60);
     st->size_data = sizeof(TON);
@@ -1385,8 +1384,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TON = (TON*)&p_FB_AIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 35375 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMERPRIZNAK
-    st = getVariable(35375);
+  { // 34971 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMERPRIZNAK
+    st = getVariable(34971);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.RESETCMDTIMERPRIZNAK", 67);
     st->size_data = sizeof(BOOL);
@@ -1396,8 +1395,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35376 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.IN
-    st = getVariable(35376);
+  { // 34972 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.IN
+    st = getVariable(34972);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.IN", 63);
     st->size_data = sizeof(BOOL);
@@ -1408,8 +1407,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 35377 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.PT
-    st = getVariable(35377);
+  { // 34973 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.PT
+    st = getVariable(34973);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.PT", 63);
     st->size_data = sizeof(TIME);
@@ -1420,8 +1419,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 35378 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.Q
-    st = getVariable(35378);
+  { // 34974 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.Q
+    st = getVariable(34974);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1432,8 +1431,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 35379 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.ET
-    st = getVariable(35379);
+  { // 34975 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.ET
+    st = getVariable(34975);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER.ET", 63);
     st->size_data = sizeof(TIME);
@@ -1444,8 +1443,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 35380 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER
-    st = getVariable(35380);
+  { // 34976 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER
+    st = getVariable(34976);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINTIMER", 60);
     st->size_data = sizeof(TON);
@@ -1455,8 +1454,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TON = (TON*)&p_FB_AIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 35381 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.IN
-    st = getVariable(35381);
+  { // 34977 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.IN
+    st = getVariable(34977);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.IN", 55);
     st->size_data = sizeof(BOOL);
@@ -1467,8 +1466,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 35382 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.PT
-    st = getVariable(35382);
+  { // 34978 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.PT
+    st = getVariable(34978);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.PT", 55);
     st->size_data = sizeof(TIME);
@@ -1479,8 +1478,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 35383 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.Q
-    st = getVariable(35383);
+  { // 34979 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.Q
+    st = getVariable(34979);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -1491,8 +1490,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 35384 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.ET
-    st = getVariable(35384);
+  { // 34980 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.ET
+    st = getVariable(34980);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER.ET", 55);
     st->size_data = sizeof(TIME);
@@ -1503,8 +1502,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 35385 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER
-    st = getVariable(35385);
+  { // 34981 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER
+    st = getVariable(34981);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.TIMER", 52);
     st->size_data = sizeof(TON);
@@ -1514,8 +1513,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_TON = (TON*)&p_FB_AIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 35386 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG.CLK
-    st = getVariable(35386);
+  { // 34982 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG.CLK
+    st = getVariable(34982);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG.CLK", 64);
     st->size_data = sizeof(BOOL);
@@ -1526,8 +1525,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 35387 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG.Q
-    st = getVariable(35387);
+  { // 34983 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG.Q
+    st = getVariable(34983);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1538,8 +1537,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 35388 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG
-    st = getVariable(35388);
+  { // 34984 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG
+    st = getVariable(34984);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGTRIG", 60);
     st->size_data = sizeof(R_TRIG);
@@ -1549,8 +1548,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_R_TRIG = (R_TRIG*)&p_FB_AIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 35389 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG.CLK
-    st = getVariable(35389);
+  { // 34985 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG.CLK
+    st = getVariable(34985);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG.CLK", 65);
     st->size_data = sizeof(BOOL);
@@ -1561,8 +1560,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 35390 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG.Q
-    st = getVariable(35390);
+  { // 34986 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG.Q
+    st = getVariable(34986);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -1573,8 +1572,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 35391 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG
-    st = getVariable(35391);
+  { // 34987 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG
+    st = getVariable(34987);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGFTRIG", 61);
     st->size_data = sizeof(F_TRIG);
@@ -1584,8 +1583,8 @@ int __variables_init_FB_UROVEN_MASLA_V_MB(){
     p_F_TRIG = (F_TRIG*)&p_FB_AIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 35392 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGAI
-    st = getVariable(35392);
+  { // 34988 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGAI
+    st = getVariable(34988);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB.SIGNALINGAI", 58);
     st->size_data = sizeof(BOOL);

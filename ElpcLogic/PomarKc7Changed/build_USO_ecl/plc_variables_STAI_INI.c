@@ -37,11 +37,11 @@ int __variables_init_STAI_INI(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_STAI_INI(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_STAI_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { //   25 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DATA_INI
-    st = getVariable(25);
+  { //   24 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DATA_INI
+    st = getVariable(24);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -192,8 +191,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_FB_AI_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   26 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLL
-    st = getVariable(26);
+  { //   25 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLL
+    st = getVariable(25);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLL", 36);
     st->size_data = sizeof(LREAL);
@@ -203,8 +202,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DLL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   27 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHL
-    st = getVariable(27);
+  { //   26 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHL
+    st = getVariable(26);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHL", 36);
     st->size_data = sizeof(LREAL);
@@ -214,8 +213,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DHL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   28 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLA
-    st = getVariable(28);
+  { //   27 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLA
+    st = getVariable(27);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLA", 36);
     st->size_data = sizeof(LREAL);
@@ -225,8 +224,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DLA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   29 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHA
-    st = getVariable(29);
+  { //   28 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHA
+    st = getVariable(28);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHA", 36);
     st->size_data = sizeof(LREAL);
@@ -236,8 +235,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DHA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   30 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLW
-    st = getVariable(30);
+  { //   29 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLW
+    st = getVariable(29);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DLW", 36);
     st->size_data = sizeof(LREAL);
@@ -247,8 +246,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DLW;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   31 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHW
-    st = getVariable(31);
+  { //   30 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHW
+    st = getVariable(30);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DHW", 36);
     st->size_data = sizeof(LREAL);
@@ -258,140 +257,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DHW;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   32 PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_LA
-    st = getVariable(32);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_LA", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_BOOL = (BOOL*)&p_FB_AI_INIT->ISVALIDREF_LA;
-    UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   33 PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_HA
-    st = getVariable(33);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_HA", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_BOOL = (BOOL*)&p_FB_AI_INIT->ISVALIDREF_HA;
-    UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   34 PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_LW
-    st = getVariable(34);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_LW", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_BOOL = (BOOL*)&p_FB_AI_INIT->ISVALIDREF_LW;
-    UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   35 PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_HW
-    st = getVariable(35);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.ISVALIDREF_HW", 46);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_BOOL = (BOOL*)&p_FB_AI_INIT->ISVALIDREF_HW;
-    UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   36 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYLA
-    st = getVariable(36);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYLA", 40);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_TIME = (TIME*)&p_FB_AI_INIT->DELAYLA;
-    UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   37 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYLW
-    st = getVariable(37);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYLW", 40);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_TIME = (TIME*)&p_FB_AI_INIT->DELAYLW;
-    UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   38 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYHW
-    st = getVariable(38);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYHW", 40);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_TIME = (TIME*)&p_FB_AI_INIT->DELAYHW;
-    UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   39 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYHA
-    st = getVariable(39);
-    memcpy(st->IEC_TYPE, "TIME", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DELAYHA", 40);
-    st->size_data = sizeof(TIME);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_TIME = (TIME*)&p_FB_AI_INIT->DELAYHA;
-    UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   40 PROGRAM0.AI_STRUCTS_INI.STAI_INI.INPLL
-    st = getVariable(40);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.INPLL", 38);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_LREAL = (LREAL*)&p_FB_AI_INIT->INPLL;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   41 PROGRAM0.AI_STRUCTS_INI.STAI_INI.INPHL
-    st = getVariable(41);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.INPHL", 38);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_LREAL = (LREAL*)&p_FB_AI_INIT->INPHL;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   42 PROGRAM0.AI_STRUCTS_INI.STAI_INI.CURRENTSHOTCIRCUIT
-    st = getVariable(42);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.CURRENTSHOTCIRCUIT", 51);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_LREAL = (LREAL*)&p_FB_AI_INIT->CURRENTSHOTCIRCUIT;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   43 PROGRAM0.AI_STRUCTS_INI.STAI_INI.CURRENTBREAKCIRCUIT
-    st = getVariable(43);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.CURRENTBREAKCIRCUIT", 52);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_LREAL = (LREAL*)&p_FB_AI_INIT->CURRENTBREAKCIRCUIT;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { //   44 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DMAXCHANGESPEED
-    st = getVariable(44);
+  { //   31 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DMAXCHANGESPEED
+    st = getVariable(31);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DMAXCHANGESPEED", 48);
     st->size_data = sizeof(LREAL);
@@ -401,8 +268,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DMAXCHANGESPEED;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   45 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DMAXCHANGESPEEDDOWN
-    st = getVariable(45);
+  { //   32 PROGRAM0.AI_STRUCTS_INI.STAI_INI.DMAXCHANGESPEEDDOWN
+    st = getVariable(32);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.DMAXCHANGESPEEDDOWN", 52);
     st->size_data = sizeof(LREAL);
@@ -412,8 +279,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->DMAXCHANGESPEEDDOWN;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   46 PROGRAM0.AI_STRUCTS_INI.STAI_INI.HISTERESIS
-    st = getVariable(46);
+  { //   33 PROGRAM0.AI_STRUCTS_INI.STAI_INI.HISTERESIS
+    st = getVariable(33);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.HISTERESIS", 43);
     st->size_data = sizeof(LREAL);
@@ -423,8 +290,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->HISTERESIS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   47 PROGRAM0.AI_STRUCTS_INI.STAI_INI.APERTURFILTER
-    st = getVariable(47);
+  { //   34 PROGRAM0.AI_STRUCTS_INI.STAI_INI.APERTURFILTER
+    st = getVariable(34);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.APERTURFILTER", 46);
     st->size_data = sizeof(LREAL);
@@ -434,8 +301,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->APERTURFILTER;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   48 PROGRAM0.AI_STRUCTS_INI.STAI_INI.EXPONENTIALFILTER
-    st = getVariable(48);
+  { //   35 PROGRAM0.AI_STRUCTS_INI.STAI_INI.EXPONENTIALFILTER
+    st = getVariable(35);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.EXPONENTIALFILTER", 50);
     st->size_data = sizeof(LREAL);
@@ -445,8 +312,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->EXPONENTIALFILTER;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   49 PROGRAM0.AI_STRUCTS_INI.STAI_INI.RASSOGLASOVANIE
-    st = getVariable(49);
+  { //   36 PROGRAM0.AI_STRUCTS_INI.STAI_INI.RASSOGLASOVANIE
+    st = getVariable(36);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.RASSOGLASOVANIE", 48);
     st->size_data = sizeof(LREAL);
@@ -456,8 +323,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_FB_AI_INIT->RASSOGLASOVANIE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   50 PROGRAM0.AI_STRUCTS_INI.STAI_INI.INOPCCOMMANDSDISABLED
-    st = getVariable(50);
+  { //   37 PROGRAM0.AI_STRUCTS_INI.STAI_INI.INOPCCOMMANDSDISABLED
+    st = getVariable(37);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.INOPCCOMMANDSDISABLED", 54);
     st->size_data = sizeof(BOOL);
@@ -467,8 +334,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_FB_AI_INIT->INOPCCOMMANDSDISABLED;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { //   51 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.VALUE
-    st = getVariable(51);
+  { //   38 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.VALUE
+    st = getVariable(38);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -479,8 +346,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { //   52 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.STATUS
-    st = getVariable(52);
+  { //   39 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.STATUS
+    st = getVariable(39);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -491,8 +358,8 @@ int __variables_init_STAI_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { //   53 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INTERVAL
-    st = getVariable(53);
+  { //   40 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INTERVAL
+    st = getVariable(40);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INTERVAL", 47);
     st->size_data = sizeof(BYTE);
@@ -503,8 +370,8 @@ int __variables_init_STAI_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { //   54 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND
-    st = getVariable(54);
+  { //   41 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND
+    st = getVariable(41);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -515,8 +382,8 @@ int __variables_init_STAI_INI(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { //   55 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.BLCONNECT
-    st = getVariable(55);
+  { //   42 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.BLCONNECT
+    st = getVariable(42);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.BLCONNECT", 48);
     st->size_data = sizeof(BOOL);
@@ -527,8 +394,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { //   56 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLL
-    st = getVariable(56);
+  { //   43 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLL
+    st = getVariable(43);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLL", 42);
     st->size_data = sizeof(LREAL);
@@ -539,8 +406,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { //   57 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHL
-    st = getVariable(57);
+  { //   44 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHL
+    st = getVariable(44);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHL", 42);
     st->size_data = sizeof(LREAL);
@@ -551,8 +418,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { //   58 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLA
-    st = getVariable(58);
+  { //   45 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLA
+    st = getVariable(45);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLA", 42);
     st->size_data = sizeof(LREAL);
@@ -563,8 +430,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { //   59 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHA
-    st = getVariable(59);
+  { //   46 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHA
+    st = getVariable(46);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHA", 42);
     st->size_data = sizeof(LREAL);
@@ -575,8 +442,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { //   60 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLW
-    st = getVariable(60);
+  { //   47 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLW
+    st = getVariable(47);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DLW", 42);
     st->size_data = sizeof(LREAL);
@@ -587,8 +454,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { //   61 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHW
-    st = getVariable(61);
+  { //   48 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHW
+    st = getVariable(48);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DHW", 42);
     st->size_data = sizeof(LREAL);
@@ -599,8 +466,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { //   62 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LL
-    st = getVariable(62);
+  { //   49 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LL
+    st = getVariable(49);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LL", 41);
     st->size_data = sizeof(LREAL);
@@ -611,8 +478,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { //   63 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HL
-    st = getVariable(63);
+  { //   50 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HL
+    st = getVariable(50);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HL", 41);
     st->size_data = sizeof(LREAL);
@@ -623,8 +490,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { //   64 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LA
-    st = getVariable(64);
+  { //   51 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LA
+    st = getVariable(51);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LA", 41);
     st->size_data = sizeof(LREAL);
@@ -635,8 +502,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { //   65 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HA
-    st = getVariable(65);
+  { //   52 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HA
+    st = getVariable(52);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HA", 41);
     st->size_data = sizeof(LREAL);
@@ -647,8 +514,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { //   66 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LW
-    st = getVariable(66);
+  { //   53 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LW
+    st = getVariable(53);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.LW", 41);
     st->size_data = sizeof(LREAL);
@@ -659,8 +526,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { //   67 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HW
-    st = getVariable(67);
+  { //   54 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HW
+    st = getVariable(54);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HW", 41);
     st->size_data = sizeof(LREAL);
@@ -671,8 +538,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { //   68 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_LA
-    st = getVariable(68);
+  { //   55 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_LA
+    st = getVariable(55);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_LA", 52);
     st->size_data = sizeof(BOOL);
@@ -683,8 +550,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { //   69 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_HA
-    st = getVariable(69);
+  { //   56 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_HA
+    st = getVariable(56);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_HA", 52);
     st->size_data = sizeof(BOOL);
@@ -695,8 +562,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { //   70 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_LW
-    st = getVariable(70);
+  { //   57 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_LW
+    st = getVariable(57);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_LW", 52);
     st->size_data = sizeof(BOOL);
@@ -707,8 +574,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { //   71 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_HW
-    st = getVariable(71);
+  { //   58 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_HW
+    st = getVariable(58);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.ISVALIDREF_HW", 52);
     st->size_data = sizeof(BOOL);
@@ -719,8 +586,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { //   72 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INPLL
-    st = getVariable(72);
+  { //   59 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INPLL
+    st = getVariable(59);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INPLL", 44);
     st->size_data = sizeof(LREAL);
@@ -731,8 +598,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { //   73 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INPHL
-    st = getVariable(73);
+  { //   60 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INPHL
+    st = getVariable(60);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INPHL", 44);
     st->size_data = sizeof(LREAL);
@@ -743,8 +610,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { //   74 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(74);
+  { //   61 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(61);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CURRENTSHOTCIRCUIT", 57);
     st->size_data = sizeof(LREAL);
@@ -755,8 +622,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { //   75 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(75);
+  { //   62 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(62);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CURRENTBREAKCIRCUIT", 58);
     st->size_data = sizeof(LREAL);
@@ -767,8 +634,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { //   76 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXCHANGESPEED
-    st = getVariable(76);
+  { //   63 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXCHANGESPEED
+    st = getVariable(63);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXCHANGESPEED", 53);
     st->size_data = sizeof(LREAL);
@@ -779,8 +646,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { //   77 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(77);
+  { //   64 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(64);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXCHANGESPEEDDOWN", 57);
     st->size_data = sizeof(LREAL);
@@ -791,8 +658,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { //   78 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CHANGESPEED
-    st = getVariable(78);
+  { //   65 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CHANGESPEED
+    st = getVariable(65);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.CHANGESPEED", 50);
     st->size_data = sizeof(LREAL);
@@ -803,8 +670,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { //   79 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HISTERESIS
-    st = getVariable(79);
+  { //   66 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HISTERESIS
+    st = getVariable(66);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.HISTERESIS", 49);
     st->size_data = sizeof(LREAL);
@@ -815,8 +682,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { //   80 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.APERTURFILTER
-    st = getVariable(80);
+  { //   67 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.APERTURFILTER
+    st = getVariable(67);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.APERTURFILTER", 52);
     st->size_data = sizeof(LREAL);
@@ -827,8 +694,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { //   81 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.EXPONENTIALFILTER
-    st = getVariable(81);
+  { //   68 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.EXPONENTIALFILTER
+    st = getVariable(68);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.EXPONENTIALFILTER", 56);
     st->size_data = sizeof(LREAL);
@@ -839,8 +706,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { //   82 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.RASSOGLASOVANIE
-    st = getVariable(82);
+  { //   69 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.RASSOGLASOVANIE
+    st = getVariable(69);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.RASSOGLASOVANIE", 54);
     st->size_data = sizeof(LREAL);
@@ -851,8 +718,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { //   83 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(83);
+  { //   70 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(70);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.OPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);
@@ -863,8 +730,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { //   84 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_LA
-    st = getVariable(84);
+  { //   71 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_LA
+    st = getVariable(71);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_LA", 50);
     st->size_data = sizeof(BOOL);
@@ -875,8 +742,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { //   85 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_HA
-    st = getVariable(85);
+  { //   72 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_HA
+    st = getVariable(72);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_HA", 50);
     st->size_data = sizeof(BOOL);
@@ -887,8 +754,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { //   86 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_LW
-    st = getVariable(86);
+  { //   73 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_LW
+    st = getVariable(73);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_LW", 50);
     st->size_data = sizeof(BOOL);
@@ -899,8 +766,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { //   87 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_HW
-    st = getVariable(87);
+  { //   74 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_HW
+    st = getVariable(74);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DISABLED_HW", 50);
     st->size_data = sizeof(BOOL);
@@ -911,8 +778,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { //   88 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYLA
-    st = getVariable(88);
+  { //   75 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYLA
+    st = getVariable(75);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYLA", 46);
     st->size_data = sizeof(TIME);
@@ -923,8 +790,8 @@ int __variables_init_STAI_INI(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { //   89 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYLW
-    st = getVariable(89);
+  { //   76 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYLW
+    st = getVariable(76);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYLW", 46);
     st->size_data = sizeof(TIME);
@@ -935,8 +802,8 @@ int __variables_init_STAI_INI(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { //   90 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYHW
-    st = getVariable(90);
+  { //   77 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYHW
+    st = getVariable(77);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYHW", 46);
     st->size_data = sizeof(TIME);
@@ -947,8 +814,8 @@ int __variables_init_STAI_INI(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { //   91 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYHA
-    st = getVariable(91);
+  { //   78 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYHA
+    st = getVariable(78);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DELAYHA", 46);
     st->size_data = sizeof(TIME);
@@ -959,8 +826,8 @@ int __variables_init_STAI_INI(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { //   92 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(92);
+  { //   79 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(79);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MINVALUE_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -971,8 +838,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { //   93 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(93);
+  { //   80 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(80);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXVALUE_ISVALIDREF", 58);
     st->size_data = sizeof(BOOL);
@@ -983,8 +850,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { //   94 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MINVALUE
-    st = getVariable(94);
+  { //   81 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MINVALUE
+    st = getVariable(81);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MINVALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -995,8 +862,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { //   95 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXVALUE
-    st = getVariable(95);
+  { //   82 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXVALUE
+    st = getVariable(82);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.MAXVALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -1007,8 +874,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { //   96 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(96);
+  { //   83 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(83);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INOPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -1019,8 +886,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { //   97 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.IMIT
-    st = getVariable(97);
+  { //   84 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.IMIT
+    st = getVariable(84);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.IMIT", 43);
     st->size_data = sizeof(BOOL);
@@ -1031,8 +898,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { //   98 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.REMONT
-    st = getVariable(98);
+  { //   85 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.REMONT
+    st = getVariable(85);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.REMONT", 45);
     st->size_data = sizeof(BOOL);
@@ -1043,8 +910,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { //   99 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS
-    st = getVariable(99);
+  { //   86 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS
+    st = getVariable(86);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS", 41);
     st->size_data = sizeof(BOOL);
@@ -1055,8 +922,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { //  100 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS_MIN
-    st = getVariable(100);
+  { //   87 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS_MIN
+    st = getVariable(87);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS_MIN", 45);
     st->size_data = sizeof(BOOL);
@@ -1067,8 +934,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { //  101 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS_MAX
-    st = getVariable(101);
+  { //   88 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS_MAX
+    st = getVariable(88);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.NS_MAX", 45);
     st->size_data = sizeof(BOOL);
@@ -1079,8 +946,8 @@ int __variables_init_STAI_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { //  102 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND_ALG
-    st = getVariable(102);
+  { //   89 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND_ALG
+    st = getVariable(89);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND_ALG", 52);
     st->size_data = sizeof(WORD);
@@ -1091,8 +958,8 @@ int __variables_init_STAI_INI(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { //  103 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND_ARM
-    st = getVariable(103);
+  { //   90 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND_ARM
+    st = getVariable(90);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.INCOMMAND_ARM", 52);
     st->size_data = sizeof(WORD);
@@ -1103,8 +970,8 @@ int __variables_init_STAI_INI(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { //  104 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DMAXCHANGESPEED
-    st = getVariable(104);
+  { //   91 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DMAXCHANGESPEED
+    st = getVariable(91);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DMAXCHANGESPEED", 54);
     st->size_data = sizeof(LREAL);
@@ -1115,8 +982,8 @@ int __variables_init_STAI_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { //  105 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(105);
+  { //   92 PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(92);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.STRAI.DMAXCHANGESPEEDDOWN", 58);
     st->size_data = sizeof(LREAL);
@@ -1126,17 +993,6 @@ int __variables_init_STAI_INI(){
     p_STRUCT_AI = (STRUCT_AI*)&p_FB_AI_INIT->STRAI;
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
-  }
-  { //  106 PROGRAM0.AI_STRUCTS_INI.STAI_INI.INIT
-    st = getVariable(106);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_STRUCTS_INI.STAI_INI.INIT", 37);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI_INIT = (PROC_AI_INIT*)&p_PROGRAM0->AI_STRUCTS_INI;
-    p_FB_AI_INIT = (FB_AI_INIT*)&p_PROC_AI_INIT->STAI_INI;
-    p_BOOL = (BOOL*)&p_FB_AI_INIT->INIT;
-    UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
 
   return 0;

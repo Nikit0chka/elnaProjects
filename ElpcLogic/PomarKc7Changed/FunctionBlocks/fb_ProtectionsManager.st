@@ -24,6 +24,10 @@ VAR
 	UnBlockPriznak : BOOL;
 END_VAR
 
+
+
+
+
 IF NOT onInit THEN
     
     autoRunProtections(protections);     

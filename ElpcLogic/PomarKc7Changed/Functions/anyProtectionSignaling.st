@@ -4,16 +4,20 @@ VAR_INPUT
 	protections : ProtectionsConfig;
 END_VAR
 
+
+
+
+
 anyProtectionSignaling:=
 protections.Topornogo_podshipnika_EDT_1.Signaling OR
-protections.Toporno_ypornogo_podshipnika_EDT_2.Signaling OR
-protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.Signaling OR
-protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.Signaling OR
-protections.Topornogo_podshipnika_shesterni_reduktora_T_5.Signaling OR
-protections.Topornogo_podshipnika_reduktora_HT_6.Signaling OR
-protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.Signaling OR
-protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.Signaling OR
-protections.Typornogo_podshipnika_rav_kolodok_HT_9.Signaling OR
+protections.Toy_podshipnika_EDT_2.Signaling OR
+protections.Toy_podshipnika_kol_EDT_3.Signaling OR
+protections.Toy_podshipnika_kol_EDT_4.Signaling OR
+protections.To_podshipnika_shest_red_EDT_5.Signaling OR
+protections.To_podshipnika_shest_red_EDT_6.Signaling OR
+protections.To_podshipnika_N_EDT_7.Signaling OR
+protections.To_podshipnika_svob_konca_EDT_8.Signaling OR
+protections.Ty_podshipnika_rab_kol_EDT_9.Signaling OR
 protections.Typornogo_podshipnika_nerab_kolodok_HT_10.Signaling OR
 protections.Tgaza_na_vyhode_H.Signaling OR
 protections.Os_sdvig_nagnetatelja_plus.Signaling OR
@@ -29,7 +33,7 @@ protections.Vibro_skorost_OPED_T2.Signaling OR
 protections.Vibro_skorost_OYP_kolesa_ED_T3.Signaling OR
 protections.Vibro_skorost_OP_kolesa_RH_T4.Signaling OR
 protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling OR
-protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling OR
+protections.Vibro_skorost_OP_shesterni_RED_T6.Signaling OR
 protections.dPmaslo_gaz_less100.Signaling OR
 protections.Reg_vozb_off.Signaling OR
 protections.Fail_chastotnii_pusk.Signaling OR

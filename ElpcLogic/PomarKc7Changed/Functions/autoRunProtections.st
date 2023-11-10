@@ -4,23 +4,27 @@ VAR_IN_OUT
 	protections : ProtectionsConfig;
 END_VAR
 
+
+
+
+
     runAiProtection(protections.Topornogo_podshipnika_EDT_1); 
 
-    runAiProtection(protections.Toporno_ypornogo_podshipnika_EDT_2);
+    runAiProtection(protections.Toy_podshipnika_EDT_2);
     
-    runAiProtection(protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3);
+    runAiProtection(protections.Toy_podshipnika_kol_EDT_3);
 
-    runAiProtection(protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4);
+    runAiProtection(protections.Toy_podshipnika_kol_EDT_4);
 
-    runAiProtection(protections.Topornogo_podshipnika_shesterni_reduktora_T_5);
+    runAiProtection(protections.To_podshipnika_shest_red_EDT_5);
 
-    runAiProtection(protections.Topornogo_podshipnika_reduktora_HT_6);
+    runAiProtection(protections.To_podshipnika_shest_red_EDT_6);
 
-    runAiProtection(protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7);
+    runAiProtection(protections.To_podshipnika_N_EDT_7);
 
-    runAiProtection(protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8);
+    runAiProtection(protections.To_podshipnika_svob_konca_EDT_8);
 
-    runAiProtection(protections.Typornogo_podshipnika_rav_kolodok_HT_9);
+    runAiProtection(protections.Ty_podshipnika_rab_kol_EDT_9);
 
     runAiProtection(protections.Typornogo_podshipnika_nerab_kolodok_HT_10);
 
@@ -52,7 +56,7 @@ END_VAR
 
     runAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
 
-    runAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);    
+    runAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6);    
     
 
     runDiProtection(protections.dPmaslo_gaz_less100);

@@ -14,6 +14,10 @@ VAR
 END_VAR
 
 
+
+
+
+
 str_SS.reliability:=signal.reliability;
 
 IF NOT str_SS.inverse THEN

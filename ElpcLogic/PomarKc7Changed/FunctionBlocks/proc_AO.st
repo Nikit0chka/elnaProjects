@@ -11,6 +11,10 @@ VAR_EXTERNAL
 	arAOUT_1 : TDoubleData;
 END_VAR
 
+
+
+
+
 (* Циклический опрос. Входные аналоговые параметры *)
 
 

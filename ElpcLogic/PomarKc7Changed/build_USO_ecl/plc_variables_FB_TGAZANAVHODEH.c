@@ -37,11 +37,11 @@ int __variables_init_FB_TGAZANAVHODEH(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_FB_TGAZANAVHODEH(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 6554 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.WFLAGS
-    st = getVariable(6554);
+  { // 6540 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.WFLAGS
+    st = getVariable(6540);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.WFLAGS", 46);
     st->size_data = sizeof(UINT);
@@ -193,8 +192,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_UINT = (UINT*)&p_TITEMAIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 6555 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.WRESERVED
-    st = getVariable(6555);
+  { // 6541 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.WRESERVED
+    st = getVariable(6541);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.WRESERVED", 49);
     st->size_data = sizeof(UINT);
@@ -205,8 +204,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_UINT = (UINT*)&p_TITEMAIN->WRESERVED;
     st->value_p = p_UINT;
   }
-  { // 6556 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.DBLVALUE
-    st = getVariable(6556);
+  { // 6542 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.DBLVALUE
+    st = getVariable(6542);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.DBLVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -217,8 +216,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_TITEMAIN->DBLVALUE;
     st->value_p = p_LREAL;
   }
-  { // 6557 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.NANOSEC
-    st = getVariable(6557);
+  { // 6543 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.NANOSEC
+    st = getVariable(6543);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.NANOSEC", 47);
     st->size_data = sizeof(ULINT);
@@ -229,8 +228,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_ULINT = (ULINT*)&p_TITEMAIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 6558 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.RESERVE
-    st = getVariable(6558);
+  { // 6544 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.RESERVE
+    st = getVariable(6544);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ARAIN.RESERVE", 47);
     st->size_data = sizeof(ULINT);
@@ -241,8 +240,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_ULINT = (ULINT*)&p_TITEMAIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 6559 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.WFLAGS
-    st = getVariable(6559);
+  { // 6545 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.WFLAGS
+    st = getVariable(6545);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.WFLAGS", 48);
     st->size_data = sizeof(UINT);
@@ -253,8 +252,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 6560 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.WVALUE
-    st = getVariable(6560);
+  { // 6546 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.WVALUE
+    st = getVariable(6546);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.WVALUE", 48);
     st->size_data = sizeof(UINT);
@@ -265,8 +264,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 6561 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.NANOSEC
-    st = getVariable(6561);
+  { // 6547 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.NANOSEC
+    st = getVariable(6547);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.NANOSEC", 49);
     st->size_data = sizeof(ULINT);
@@ -277,8 +276,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 6562 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.RESERVE
-    st = getVariable(6562);
+  { // 6548 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.RESERVE
+    st = getVariable(6548);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ERR_MOD.RESERVE", 49);
     st->size_data = sizeof(ULINT);
@@ -289,8 +288,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 6563 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.VALUE
-    st = getVariable(6563);
+  { // 6549 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.VALUE
+    st = getVariable(6549);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.VALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -301,8 +300,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 6564 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.STATUS
-    st = getVariable(6564);
+  { // 6550 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.STATUS
+    st = getVariable(6550);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -313,8 +312,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 6565 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INTERVAL
-    st = getVariable(6565);
+  { // 6551 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INTERVAL
+    st = getVariable(6551);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INTERVAL", 48);
     st->size_data = sizeof(BYTE);
@@ -325,8 +324,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 6566 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND
-    st = getVariable(6566);
+  { // 6552 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND
+    st = getVariable(6552);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -337,8 +336,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 6567 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.BLCONNECT
-    st = getVariable(6567);
+  { // 6553 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.BLCONNECT
+    st = getVariable(6553);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.BLCONNECT", 49);
     st->size_data = sizeof(BOOL);
@@ -349,8 +348,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 6568 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLL
-    st = getVariable(6568);
+  { // 6554 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLL
+    st = getVariable(6554);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLL", 43);
     st->size_data = sizeof(LREAL);
@@ -361,8 +360,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 6569 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHL
-    st = getVariable(6569);
+  { // 6555 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHL
+    st = getVariable(6555);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHL", 43);
     st->size_data = sizeof(LREAL);
@@ -373,8 +372,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 6570 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLA
-    st = getVariable(6570);
+  { // 6556 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLA
+    st = getVariable(6556);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLA", 43);
     st->size_data = sizeof(LREAL);
@@ -385,8 +384,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 6571 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHA
-    st = getVariable(6571);
+  { // 6557 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHA
+    st = getVariable(6557);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHA", 43);
     st->size_data = sizeof(LREAL);
@@ -397,8 +396,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 6572 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLW
-    st = getVariable(6572);
+  { // 6558 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLW
+    st = getVariable(6558);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DLW", 43);
     st->size_data = sizeof(LREAL);
@@ -409,8 +408,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 6573 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHW
-    st = getVariable(6573);
+  { // 6559 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHW
+    st = getVariable(6559);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DHW", 43);
     st->size_data = sizeof(LREAL);
@@ -421,8 +420,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 6574 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LL
-    st = getVariable(6574);
+  { // 6560 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LL
+    st = getVariable(6560);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LL", 42);
     st->size_data = sizeof(LREAL);
@@ -433,8 +432,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 6575 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HL
-    st = getVariable(6575);
+  { // 6561 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HL
+    st = getVariable(6561);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HL", 42);
     st->size_data = sizeof(LREAL);
@@ -445,8 +444,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 6576 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LA
-    st = getVariable(6576);
+  { // 6562 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LA
+    st = getVariable(6562);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LA", 42);
     st->size_data = sizeof(LREAL);
@@ -457,8 +456,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 6577 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HA
-    st = getVariable(6577);
+  { // 6563 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HA
+    st = getVariable(6563);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HA", 42);
     st->size_data = sizeof(LREAL);
@@ -469,8 +468,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 6578 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LW
-    st = getVariable(6578);
+  { // 6564 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LW
+    st = getVariable(6564);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.LW", 42);
     st->size_data = sizeof(LREAL);
@@ -481,8 +480,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 6579 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HW
-    st = getVariable(6579);
+  { // 6565 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HW
+    st = getVariable(6565);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HW", 42);
     st->size_data = sizeof(LREAL);
@@ -493,8 +492,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 6580 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_LA
-    st = getVariable(6580);
+  { // 6566 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_LA
+    st = getVariable(6566);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_LA", 53);
     st->size_data = sizeof(BOOL);
@@ -505,8 +504,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 6581 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_HA
-    st = getVariable(6581);
+  { // 6567 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_HA
+    st = getVariable(6567);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_HA", 53);
     st->size_data = sizeof(BOOL);
@@ -517,8 +516,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 6582 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_LW
-    st = getVariable(6582);
+  { // 6568 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_LW
+    st = getVariable(6568);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_LW", 53);
     st->size_data = sizeof(BOOL);
@@ -529,8 +528,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 6583 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_HW
-    st = getVariable(6583);
+  { // 6569 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_HW
+    st = getVariable(6569);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.ISVALIDREF_HW", 53);
     st->size_data = sizeof(BOOL);
@@ -541,8 +540,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 6584 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INPLL
-    st = getVariable(6584);
+  { // 6570 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INPLL
+    st = getVariable(6570);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INPLL", 45);
     st->size_data = sizeof(LREAL);
@@ -553,8 +552,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 6585 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INPHL
-    st = getVariable(6585);
+  { // 6571 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INPHL
+    st = getVariable(6571);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INPHL", 45);
     st->size_data = sizeof(LREAL);
@@ -565,8 +564,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 6586 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CURRENTSHOTCIRCUIT
-    st = getVariable(6586);
+  { // 6572 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CURRENTSHOTCIRCUIT
+    st = getVariable(6572);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CURRENTSHOTCIRCUIT", 58);
     st->size_data = sizeof(LREAL);
@@ -577,8 +576,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 6587 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CURRENTBREAKCIRCUIT
-    st = getVariable(6587);
+  { // 6573 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CURRENTBREAKCIRCUIT
+    st = getVariable(6573);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CURRENTBREAKCIRCUIT", 59);
     st->size_data = sizeof(LREAL);
@@ -589,8 +588,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 6588 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXCHANGESPEED
-    st = getVariable(6588);
+  { // 6574 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXCHANGESPEED
+    st = getVariable(6574);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXCHANGESPEED", 54);
     st->size_data = sizeof(LREAL);
@@ -601,8 +600,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 6589 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXCHANGESPEEDDOWN
-    st = getVariable(6589);
+  { // 6575 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXCHANGESPEEDDOWN
+    st = getVariable(6575);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXCHANGESPEEDDOWN", 58);
     st->size_data = sizeof(LREAL);
@@ -613,8 +612,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 6590 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CHANGESPEED
-    st = getVariable(6590);
+  { // 6576 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CHANGESPEED
+    st = getVariable(6576);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.CHANGESPEED", 51);
     st->size_data = sizeof(LREAL);
@@ -625,8 +624,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 6591 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HISTERESIS
-    st = getVariable(6591);
+  { // 6577 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HISTERESIS
+    st = getVariable(6577);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.HISTERESIS", 50);
     st->size_data = sizeof(LREAL);
@@ -637,8 +636,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 6592 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.APERTURFILTER
-    st = getVariable(6592);
+  { // 6578 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.APERTURFILTER
+    st = getVariable(6578);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.APERTURFILTER", 53);
     st->size_data = sizeof(LREAL);
@@ -649,8 +648,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 6593 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.EXPONENTIALFILTER
-    st = getVariable(6593);
+  { // 6579 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.EXPONENTIALFILTER
+    st = getVariable(6579);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.EXPONENTIALFILTER", 57);
     st->size_data = sizeof(LREAL);
@@ -661,8 +660,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 6594 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.RASSOGLASOVANIE
-    st = getVariable(6594);
+  { // 6580 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.RASSOGLASOVANIE
+    st = getVariable(6580);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.RASSOGLASOVANIE", 55);
     st->size_data = sizeof(LREAL);
@@ -673,8 +672,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 6595 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.OPCCOMMANDSDISABLED
-    st = getVariable(6595);
+  { // 6581 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.OPCCOMMANDSDISABLED
+    st = getVariable(6581);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -685,8 +684,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 6596 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_LA
-    st = getVariable(6596);
+  { // 6582 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_LA
+    st = getVariable(6582);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_LA", 51);
     st->size_data = sizeof(BOOL);
@@ -697,8 +696,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 6597 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_HA
-    st = getVariable(6597);
+  { // 6583 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_HA
+    st = getVariable(6583);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_HA", 51);
     st->size_data = sizeof(BOOL);
@@ -709,8 +708,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 6598 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_LW
-    st = getVariable(6598);
+  { // 6584 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_LW
+    st = getVariable(6584);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_LW", 51);
     st->size_data = sizeof(BOOL);
@@ -721,8 +720,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 6599 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_HW
-    st = getVariable(6599);
+  { // 6585 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_HW
+    st = getVariable(6585);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DISABLED_HW", 51);
     st->size_data = sizeof(BOOL);
@@ -733,8 +732,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 6600 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYLA
-    st = getVariable(6600);
+  { // 6586 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYLA
+    st = getVariable(6586);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYLA", 47);
     st->size_data = sizeof(TIME);
@@ -745,8 +744,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 6601 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYLW
-    st = getVariable(6601);
+  { // 6587 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYLW
+    st = getVariable(6587);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYLW", 47);
     st->size_data = sizeof(TIME);
@@ -757,8 +756,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 6602 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYHW
-    st = getVariable(6602);
+  { // 6588 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYHW
+    st = getVariable(6588);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYHW", 47);
     st->size_data = sizeof(TIME);
@@ -769,8 +768,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 6603 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYHA
-    st = getVariable(6603);
+  { // 6589 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYHA
+    st = getVariable(6589);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DELAYHA", 47);
     st->size_data = sizeof(TIME);
@@ -781,8 +780,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 6604 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MINVALUE_ISVALIDREF
-    st = getVariable(6604);
+  { // 6590 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MINVALUE_ISVALIDREF
+    st = getVariable(6590);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MINVALUE_ISVALIDREF", 59);
     st->size_data = sizeof(BOOL);
@@ -793,8 +792,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 6605 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXVALUE_ISVALIDREF
-    st = getVariable(6605);
+  { // 6591 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXVALUE_ISVALIDREF
+    st = getVariable(6591);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXVALUE_ISVALIDREF", 59);
     st->size_data = sizeof(BOOL);
@@ -805,8 +804,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 6606 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MINVALUE
-    st = getVariable(6606);
+  { // 6592 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MINVALUE
+    st = getVariable(6592);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MINVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -817,8 +816,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 6607 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXVALUE
-    st = getVariable(6607);
+  { // 6593 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXVALUE
+    st = getVariable(6593);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.MAXVALUE", 48);
     st->size_data = sizeof(LREAL);
@@ -829,8 +828,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 6608 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INOPCCOMMANDSDISABLED
-    st = getVariable(6608);
+  { // 6594 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INOPCCOMMANDSDISABLED
+    st = getVariable(6594);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -841,8 +840,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 6609 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.IMIT
-    st = getVariable(6609);
+  { // 6595 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.IMIT
+    st = getVariable(6595);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.IMIT", 44);
     st->size_data = sizeof(BOOL);
@@ -853,8 +852,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 6610 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.REMONT
-    st = getVariable(6610);
+  { // 6596 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.REMONT
+    st = getVariable(6596);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.REMONT", 46);
     st->size_data = sizeof(BOOL);
@@ -865,8 +864,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 6611 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS
-    st = getVariable(6611);
+  { // 6597 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS
+    st = getVariable(6597);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS", 42);
     st->size_data = sizeof(BOOL);
@@ -877,8 +876,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 6612 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS_MIN
-    st = getVariable(6612);
+  { // 6598 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS_MIN
+    st = getVariable(6598);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS_MIN", 46);
     st->size_data = sizeof(BOOL);
@@ -889,8 +888,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 6613 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS_MAX
-    st = getVariable(6613);
+  { // 6599 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS_MAX
+    st = getVariable(6599);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.NS_MAX", 46);
     st->size_data = sizeof(BOOL);
@@ -901,8 +900,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 6614 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND_ALG
-    st = getVariable(6614);
+  { // 6600 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND_ALG
+    st = getVariable(6600);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -913,8 +912,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 6615 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND_ARM
-    st = getVariable(6615);
+  { // 6601 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND_ARM
+    st = getVariable(6601);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -925,8 +924,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 6616 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DMAXCHANGESPEED
-    st = getVariable(6616);
+  { // 6602 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DMAXCHANGESPEED
+    st = getVariable(6602);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DMAXCHANGESPEED", 55);
     st->size_data = sizeof(LREAL);
@@ -937,8 +936,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 6617 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DMAXCHANGESPEEDDOWN
-    st = getVariable(6617);
+  { // 6603 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DMAXCHANGESPEEDDOWN
+    st = getVariable(6603);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.STRAI.DMAXCHANGESPEEDDOWN", 59);
     st->size_data = sizeof(LREAL);
@@ -949,74 +948,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 6618 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLL
-    st = getVariable(6618);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLL", 42);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
-    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
-    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINLL;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { // 6619 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHL
-    st = getVariable(6619);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHL", 42);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
-    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
-    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINHL;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { // 6620 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLA
-    st = getVariable(6620);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLA", 42);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
-    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
-    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINLA;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { // 6621 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHA
-    st = getVariable(6621);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHA", 42);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
-    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
-    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINHA;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { // 6622 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLW
-    st = getVariable(6622);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLW", 42);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
-    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
-    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINLW;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { // 6623 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHW
-    st = getVariable(6623);
-    memcpy(st->IEC_TYPE, "LREAL", 5);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHW", 42);
-    st->size_data = sizeof(LREAL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
-    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
-    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINHW;
-    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
-  }
-  { // 6624 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NOTDEFINED
-    st = getVariable(6624);
+  { // 6604 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NOTDEFINED
+    st = getVariable(6604);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NOTDEFINED", 54);
     st->size_data = sizeof(BYTE);
@@ -1027,8 +960,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 6625 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LL
-    st = getVariable(6625);
+  { // 6605 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LL
+    st = getVariable(6605);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LL", 46);
     st->size_data = sizeof(BYTE);
@@ -1039,8 +972,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 6626 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HL
-    st = getVariable(6626);
+  { // 6606 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HL
+    st = getVariable(6606);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HL", 46);
     st->size_data = sizeof(BYTE);
@@ -1051,8 +984,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 6627 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NOTRELIABLE
-    st = getVariable(6627);
+  { // 6607 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NOTRELIABLE
+    st = getVariable(6607);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NOTRELIABLE", 55);
     st->size_data = sizeof(BYTE);
@@ -1063,8 +996,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 6628 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NORMAL
-    st = getVariable(6628);
+  { // 6608 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NORMAL
+    st = getVariable(6608);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.NORMAL", 50);
     st->size_data = sizeof(BYTE);
@@ -1075,8 +1008,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 6629 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LW
-    st = getVariable(6629);
+  { // 6609 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LW
+    st = getVariable(6609);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LW", 46);
     st->size_data = sizeof(BYTE);
@@ -1087,8 +1020,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 6630 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HW
-    st = getVariable(6630);
+  { // 6610 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HW
+    st = getVariable(6610);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HW", 46);
     st->size_data = sizeof(BYTE);
@@ -1099,8 +1032,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 6631 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LA
-    st = getVariable(6631);
+  { // 6611 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LA
+    st = getVariable(6611);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.LA", 46);
     st->size_data = sizeof(BYTE);
@@ -1111,8 +1044,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 6632 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HA
-    st = getVariable(6632);
+  { // 6612 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HA
+    st = getVariable(6612);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._STATUSAI.HA", 46);
     st->size_data = sizeof(BYTE);
@@ -1123,8 +1056,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 6633 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_SETUSTAVKI
-    st = getVariable(6633);
+  { // 6613 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_SETUSTAVKI
+    st = getVariable(6613);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_SETUSTAVKI", 63);
     st->size_data = sizeof(WORD);
@@ -1135,8 +1068,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETUSTAVKI;
     st->value_p = p_WORD;
   }
-  { // 6634 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_SETREMONT
-    st = getVariable(6634);
+  { // 6614 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_SETREMONT
+    st = getVariable(6614);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_SETREMONT", 62);
     st->size_data = sizeof(WORD);
@@ -1147,8 +1080,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_SETREMONT;
     st->value_p = p_WORD;
   }
-  { // 6635 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_RESETREMONT
-    st = getVariable(6635);
+  { // 6615 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_RESETREMONT
+    st = getVariable(6615);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_RESETREMONT", 64);
     st->size_data = sizeof(WORD);
@@ -1159,8 +1092,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_RESETREMONT;
     st->value_p = p_WORD;
   }
-  { // 6636 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_KVITNOTRELIABLE
-    st = getVariable(6636);
+  { // 6616 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_KVITNOTRELIABLE
+    st = getVariable(6616);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._COMMANDANALOG.CMD_KVITNOTRELIABLE", 68);
     st->size_data = sizeof(WORD);
@@ -1171,8 +1104,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_WORD = (WORD*)&p_TYPE_COMMANDANALOG->CMD_KVITNOTRELIABLE;
     st->value_p = p_WORD;
   }
-  { // 6641 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.NONE
-    st = getVariable(6641);
+  { // 6621 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.NONE
+    st = getVariable(6621);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.NONE", 56);
     st->size_data = sizeof(BYTE);
@@ -1183,8 +1116,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->NONE;
     st->value_p = p_BYTE;
   }
-  { // 6642 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LL
-    st = getVariable(6642);
+  { // 6622 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LL
+    st = getVariable(6622);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LL", 54);
     st->size_data = sizeof(BYTE);
@@ -1195,8 +1128,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LL;
     st->value_p = p_BYTE;
   }
-  { // 6643 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LW
-    st = getVariable(6643);
+  { // 6623 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LW
+    st = getVariable(6623);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LW", 54);
     st->size_data = sizeof(BYTE);
@@ -1207,8 +1140,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LW;
     st->value_p = p_BYTE;
   }
-  { // 6644 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HW
-    st = getVariable(6644);
+  { // 6624 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HW
+    st = getVariable(6624);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HW", 54);
     st->size_data = sizeof(BYTE);
@@ -1219,8 +1152,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HW;
     st->value_p = p_BYTE;
   }
-  { // 6645 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LA
-    st = getVariable(6645);
+  { // 6625 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LA
+    st = getVariable(6625);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.LA", 54);
     st->size_data = sizeof(BYTE);
@@ -1231,8 +1164,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->LA;
     st->value_p = p_BYTE;
   }
-  { // 6646 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HA
-    st = getVariable(6646);
+  { // 6626 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HA
+    st = getVariable(6626);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HA", 54);
     st->size_data = sizeof(BYTE);
@@ -1243,8 +1176,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HA;
     st->value_p = p_BYTE;
   }
-  { // 6647 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HL
-    st = getVariable(6647);
+  { // 6627 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HL
+    st = getVariable(6627);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.HL", 54);
     st->size_data = sizeof(BYTE);
@@ -1255,8 +1188,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->HL;
     st->value_p = p_BYTE;
   }
-  { // 6648 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.SIPUP
-    st = getVariable(6648);
+  { // 6628 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.SIPUP
+    st = getVariable(6628);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.SIPUP", 57);
     st->size_data = sizeof(BYTE);
@@ -1267,8 +1200,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPUP;
     st->value_p = p_BYTE;
   }
-  { // 6649 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.SIPDOWN
-    st = getVariable(6649);
+  { // 6629 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.SIPDOWN
+    st = getVariable(6629);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._ANALOGLIMITFLAGS.SIPDOWN", 59);
     st->size_data = sizeof(BYTE);
@@ -1279,8 +1212,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_TYPE_ANALOGLIMITFLAGS->SIPDOWN;
     st->value_p = p_BYTE;
   }
-  { // 6650 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NOTRELIABLE
-    st = getVariable(6650);
+  { // 6630 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NOTRELIABLE
+    st = getVariable(6630);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NOTRELIABLE", 45);
     st->size_data = sizeof(BOOL);
@@ -1290,8 +1223,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP_TIMER->NOTRELIABLE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6651 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUE
-    st = getVariable(6651);
+  { // 6631 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUE
+    st = getVariable(6631);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -1301,8 +1234,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->_LASTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6652 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.IN
-    st = getVariable(6652);
+  { // 6632 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.IN
+    st = getVariable(6632);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -1313,8 +1246,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 6653 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.PT
-    st = getVariable(6653);
+  { // 6633 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.PT
+    st = getVariable(6633);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -1325,8 +1258,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 6654 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.Q
-    st = getVariable(6654);
+  { // 6634 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.Q
+    st = getVariable(6634);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -1337,8 +1270,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 6655 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.ET
-    st = getVariable(6655);
+  { // 6635 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.ET
+    st = getVariable(6635);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -1349,8 +1282,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 6656 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER
-    st = getVariable(6656);
+  { // 6636 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER
+    st = getVariable(6636);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMER", 47);
     st->size_data = sizeof(TON);
@@ -1360,8 +1293,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TON = (TON*)&p_FB_AISOURCEMLP_TIMER->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 6657 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.IN
-    st = getVariable(6657);
+  { // 6637 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.IN
+    st = getVariable(6637);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -1372,8 +1305,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 6658 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.PT
-    st = getVariable(6658);
+  { // 6638 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.PT
+    st = getVariable(6638);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.PT", 52);
     st->size_data = sizeof(TIME);
@@ -1384,8 +1317,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 6659 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.Q
-    st = getVariable(6659);
+  { // 6639 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.Q
+    st = getVariable(6639);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -1396,8 +1329,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 6660 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.ET
-    st = getVariable(6660);
+  { // 6640 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.ET
+    st = getVariable(6640);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER.ET", 52);
     st->size_data = sizeof(TIME);
@@ -1408,8 +1341,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 6661 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER
-    st = getVariable(6661);
+  { // 6641 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER
+    st = getVariable(6641);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH._LASTVALUETIMER", 49);
     st->size_data = sizeof(TON);
@@ -1419,8 +1352,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TON = (TON*)&p_FB_AISOURCEMLP_TIMER->_LASTVALUETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 6662 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMERPRIZNAK
-    st = getVariable(6662);
+  { // 6642 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMERPRIZNAK
+    st = getVariable(6642);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RESETCMDTIMERPRIZNAK", 54);
     st->size_data = sizeof(BOOL);
@@ -1430,8 +1363,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP_TIMER->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6663 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.K
-    st = getVariable(6663);
+  { // 6643 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.K
+    st = getVariable(6643);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.K", 35);
     st->size_data = sizeof(LREAL);
@@ -1441,8 +1374,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->K;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6664 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.B
-    st = getVariable(6664);
+  { // 6644 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.B
+    st = getVariable(6644);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.B", 35);
     st->size_data = sizeof(LREAL);
@@ -1452,8 +1385,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->B;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6665 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.AP
-    st = getVariable(6665);
+  { // 6645 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.AP
+    st = getVariable(6645);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.AP", 36);
     st->size_data = sizeof(LREAL);
@@ -1463,8 +1396,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->AP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6666 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RAZNITSA
-    st = getVariable(6666);
+  { // 6646 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RAZNITSA
+    st = getVariable(6646);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RAZNITSA", 42);
     st->size_data = sizeof(LREAL);
@@ -1474,8 +1407,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RAZNITSA;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6667 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RABS
-    st = getVariable(6667);
+  { // 6647 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RABS
+    st = getVariable(6647);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RABS", 38);
     st->size_data = sizeof(LREAL);
@@ -1485,8 +1418,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RABS;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6668 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.H
-    st = getVariable(6668);
+  { // 6648 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.H
+    st = getVariable(6648);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.H", 35);
     st->size_data = sizeof(LREAL);
@@ -1496,8 +1429,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->H;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6669 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.MISMATCH
-    st = getVariable(6669);
+  { // 6649 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.MISMATCH
+    st = getVariable(6649);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.MISMATCH", 42);
     st->size_data = sizeof(LREAL);
@@ -1507,8 +1440,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->MISMATCH;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6670 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.PARAMETR
-    st = getVariable(6670);
+  { // 6650 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.PARAMETR
+    st = getVariable(6650);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.PARAMETR", 42);
     st->size_data = sizeof(BYTE);
@@ -1518,8 +1451,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6671 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SOURCE
-    st = getVariable(6671);
+  { // 6651 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SOURCE
+    st = getVariable(6651);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SOURCE", 40);
     st->size_data = sizeof(BYTE);
@@ -1529,8 +1462,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6672 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.CMD
-    st = getVariable(6672);
+  { // 6652 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.CMD
+    st = getVariable(6652);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.CMD", 37);
     st->size_data = sizeof(BYTE);
@@ -1540,8 +1473,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6673 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LASTCMD
-    st = getVariable(6673);
+  { // 6653 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LASTCMD
+    st = getVariable(6653);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LASTCMD", 41);
     st->size_data = sizeof(BYTE);
@@ -1551,8 +1484,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6674 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SOURCE_FOR_STATUS
-    st = getVariable(6674);
+  { // 6654 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SOURCE_FOR_STATUS
+    st = getVariable(6654);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SOURCE_FOR_STATUS", 51);
     st->size_data = sizeof(BYTE);
@@ -1562,8 +1495,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6675 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.CMD_FOR_STATUS
-    st = getVariable(6675);
+  { // 6655 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.CMD_FOR_STATUS
+    st = getVariable(6655);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.CMD_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -1573,8 +1506,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6676 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(6676);
+  { // 6656 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(6656);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.COMMAND_ERROR_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -1584,8 +1517,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BYTE = (BYTE*)&p_FB_AISOURCEMLP_TIMER->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6677 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SECONDTAKT
-    st = getVariable(6677);
+  { // 6657 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SECONDTAKT
+    st = getVariable(6657);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.SECONDTAKT", 44);
     st->size_data = sizeof(BOOL);
@@ -1595,8 +1528,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_FB_AISOURCEMLP_TIMER->SECONDTAKT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 6678 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG.CLK
-    st = getVariable(6678);
+  { // 6658 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG.CLK
+    st = getVariable(6658);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG.CLK", 46);
     st->size_data = sizeof(BOOL);
@@ -1607,8 +1540,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6679 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG.Q
-    st = getVariable(6679);
+  { // 6659 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG.Q
+    st = getVariable(6659);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -1619,8 +1552,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6680 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG
-    st = getVariable(6680);
+  { // 6660 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG
+    st = getVariable(6660);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.OFF_TRIG", 42);
     st->size_data = sizeof(R_TRIG);
@@ -1630,8 +1563,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->OFF_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6681 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG.CLK
-    st = getVariable(6681);
+  { // 6661 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG.CLK
+    st = getVariable(6661);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG.CLK", 45);
     st->size_data = sizeof(BOOL);
@@ -1642,8 +1575,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6682 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG.Q
-    st = getVariable(6682);
+  { // 6662 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG.Q
+    st = getVariable(6662);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -1654,8 +1587,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6683 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG
-    st = getVariable(6683);
+  { // 6663 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG
+    st = getVariable(6663);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.ON_TRIG", 41);
     st->size_data = sizeof(R_TRIG);
@@ -1665,8 +1598,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->ON_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6684 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG.CLK
-    st = getVariable(6684);
+  { // 6664 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG.CLK
+    st = getVariable(6664);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG.CLK", 49);
     st->size_data = sizeof(BOOL);
@@ -1677,8 +1610,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6685 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG.Q
-    st = getVariable(6685);
+  { // 6665 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG.Q
+    st = getVariable(6665);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1689,8 +1622,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6686 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG
-    st = getVariable(6686);
+  { // 6666 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG
+    st = getVariable(6666);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.REMONT_TRIG", 45);
     st->size_data = sizeof(R_TRIG);
@@ -1700,8 +1633,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->REMONT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6687 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG.CLK
-    st = getVariable(6687);
+  { // 6667 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG.CLK
+    st = getVariable(6667);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG.CLK", 45);
     st->size_data = sizeof(BOOL);
@@ -1712,8 +1645,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6688 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG.Q
-    st = getVariable(6688);
+  { // 6668 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG.Q
+    st = getVariable(6668);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -1724,8 +1657,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6689 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG
-    st = getVariable(6689);
+  { // 6669 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG
+    st = getVariable(6669);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.LL_TRIG", 41);
     st->size_data = sizeof(R_TRIG);
@@ -1735,8 +1668,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->LL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6690 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG.CLK
-    st = getVariable(6690);
+  { // 6670 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG.CLK
+    st = getVariable(6670);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG.CLK", 45);
     st->size_data = sizeof(BOOL);
@@ -1747,8 +1680,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6691 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG.Q
-    st = getVariable(6691);
+  { // 6671 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG.Q
+    st = getVariable(6671);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -1759,8 +1692,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6692 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG
-    st = getVariable(6692);
+  { // 6672 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG
+    st = getVariable(6672);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.HL_TRIG", 41);
     st->size_data = sizeof(R_TRIG);
@@ -1770,8 +1703,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->HL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6693 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG.CLK
-    st = getVariable(6693);
+  { // 6673 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG.CLK
+    st = getVariable(6673);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG.CLK", 49);
     st->size_data = sizeof(BOOL);
@@ -1782,8 +1715,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6694 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG.Q
-    st = getVariable(6694);
+  { // 6674 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG.Q
+    st = getVariable(6674);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -1794,8 +1727,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6695 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG
-    st = getVariable(6695);
+  { // 6675 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG
+    st = getVariable(6675);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NORMAL_TRIG", 45);
     st->size_data = sizeof(R_TRIG);
@@ -1805,8 +1738,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->NORMAL_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6696 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG.CLK
-    st = getVariable(6696);
+  { // 6676 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG.CLK
+    st = getVariable(6676);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG.CLK", 53);
     st->size_data = sizeof(BOOL);
@@ -1817,8 +1750,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 6697 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG.Q
-    st = getVariable(6697);
+  { // 6677 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG.Q
+    st = getVariable(6677);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -1829,8 +1762,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 6698 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG
-    st = getVariable(6698);
+  { // 6678 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG
+    st = getVariable(6678);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.NEDOSTOVER_TRIG", 49);
     st->size_data = sizeof(R_TRIG);
@@ -1840,8 +1773,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_R_TRIG = (R_TRIG*)&p_FB_AISOURCEMLP_TIMER->NEDOSTOVER_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 6699 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.IN
-    st = getVariable(6699);
+  { // 6679 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.IN
+    st = getVariable(6679);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -1852,8 +1785,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 6700 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.PT
-    st = getVariable(6700);
+  { // 6680 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.PT
+    st = getVariable(6680);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.PT", 44);
     st->size_data = sizeof(TIME);
@@ -1864,8 +1797,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 6701 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.Q
-    st = getVariable(6701);
+  { // 6681 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.Q
+    st = getVariable(6681);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -1876,8 +1809,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 6702 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.ET
-    st = getVariable(6702);
+  { // 6682 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.ET
+    st = getVariable(6682);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA.ET", 44);
     st->size_data = sizeof(TIME);
@@ -1888,8 +1821,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 6703 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA
-    st = getVariable(6703);
+  { // 6683 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA
+    st = getVariable(6683);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLA", 41);
     st->size_data = sizeof(TON);
@@ -1899,8 +1832,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TON = (TON*)&p_FB_AISOURCEMLP_TIMER->TIMERLA;
     st->value_p = (void *)p_TON;
   }
-  { // 6704 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.IN
-    st = getVariable(6704);
+  { // 6684 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.IN
+    st = getVariable(6684);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -1911,8 +1844,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 6705 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.PT
-    st = getVariable(6705);
+  { // 6685 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.PT
+    st = getVariable(6685);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.PT", 44);
     st->size_data = sizeof(TIME);
@@ -1923,8 +1856,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 6706 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.Q
-    st = getVariable(6706);
+  { // 6686 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.Q
+    st = getVariable(6686);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -1935,8 +1868,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 6707 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.ET
-    st = getVariable(6707);
+  { // 6687 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.ET
+    st = getVariable(6687);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA.ET", 44);
     st->size_data = sizeof(TIME);
@@ -1947,8 +1880,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 6708 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA
-    st = getVariable(6708);
+  { // 6688 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA
+    st = getVariable(6688);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHA", 41);
     st->size_data = sizeof(TON);
@@ -1958,8 +1891,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TON = (TON*)&p_FB_AISOURCEMLP_TIMER->TIMERHA;
     st->value_p = (void *)p_TON;
   }
-  { // 6709 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.IN
-    st = getVariable(6709);
+  { // 6689 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.IN
+    st = getVariable(6689);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -1970,8 +1903,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 6710 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.PT
-    st = getVariable(6710);
+  { // 6690 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.PT
+    st = getVariable(6690);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.PT", 44);
     st->size_data = sizeof(TIME);
@@ -1982,8 +1915,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 6711 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.Q
-    st = getVariable(6711);
+  { // 6691 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.Q
+    st = getVariable(6691);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -1994,8 +1927,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 6712 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.ET
-    st = getVariable(6712);
+  { // 6692 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.ET
+    st = getVariable(6692);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW.ET", 44);
     st->size_data = sizeof(TIME);
@@ -2006,8 +1939,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 6713 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW
-    st = getVariable(6713);
+  { // 6693 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW
+    st = getVariable(6693);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERLW", 41);
     st->size_data = sizeof(TON);
@@ -2017,8 +1950,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TON = (TON*)&p_FB_AISOURCEMLP_TIMER->TIMERLW;
     st->value_p = (void *)p_TON;
   }
-  { // 6714 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.IN
-    st = getVariable(6714);
+  { // 6694 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.IN
+    st = getVariable(6694);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -2029,8 +1962,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 6715 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.PT
-    st = getVariable(6715);
+  { // 6695 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.PT
+    st = getVariable(6695);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.PT", 44);
     st->size_data = sizeof(TIME);
@@ -2041,8 +1974,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 6716 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.Q
-    st = getVariable(6716);
+  { // 6696 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.Q
+    st = getVariable(6696);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -2053,8 +1986,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 6717 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.ET
-    st = getVariable(6717);
+  { // 6697 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.ET
+    st = getVariable(6697);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW.ET", 44);
     st->size_data = sizeof(TIME);
@@ -2065,8 +1998,8 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 6718 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW
-    st = getVariable(6718);
+  { // 6698 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW
+    st = getVariable(6698);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.TIMERHW", 41);
     st->size_data = sizeof(TON);
@@ -2075,6 +2008,72 @@ int __variables_init_FB_TGAZANAVHODEH(){
     p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
     p_TON = (TON*)&p_FB_AISOURCEMLP_TIMER->TIMERHW;
     st->value_p = (void *)p_TON;
+  }
+  { // 6699 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLL
+    st = getVariable(6699);
+    memcpy(st->IEC_TYPE, "LREAL", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLL", 42);
+    st->size_data = sizeof(LREAL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
+    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
+    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINLL;
+    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 6700 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHL
+    st = getVariable(6700);
+    memcpy(st->IEC_TYPE, "LREAL", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHL", 42);
+    st->size_data = sizeof(LREAL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
+    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
+    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINHL;
+    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 6701 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLA
+    st = getVariable(6701);
+    memcpy(st->IEC_TYPE, "LREAL", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLA", 42);
+    st->size_data = sizeof(LREAL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
+    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
+    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINLA;
+    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 6702 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHA
+    st = getVariable(6702);
+    memcpy(st->IEC_TYPE, "LREAL", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHA", 42);
+    st->size_data = sizeof(LREAL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
+    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
+    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINHA;
+    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 6703 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLW
+    st = getVariable(6703);
+    memcpy(st->IEC_TYPE, "LREAL", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINLW", 42);
+    st->size_data = sizeof(LREAL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
+    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
+    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINLW;
+    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 6704 PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHW
+    st = getVariable(6704);
+    memcpy(st->IEC_TYPE, "LREAL", 5);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.AI_PROC.FB_TGAZANAVHODEH.RETAINHW", 42);
+    st->size_data = sizeof(LREAL);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_AI = (PROC_AI*)&p_PROGRAM0->AI_PROC;
+    p_FB_AISOURCEMLP_TIMER = (FB_AISOURCEMLP_TIMER*)&p_PROC_AI->FB_TGAZANAVHODEH;
+    p_LREAL = (LREAL*)&p_FB_AISOURCEMLP_TIMER->RETAINHW;
+    UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
 
   return 0;

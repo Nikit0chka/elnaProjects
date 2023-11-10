@@ -56,6 +56,10 @@ VAR_EXTERNAL
 END_VAR
 
 
+
+
+
+
 IF NOT onInit THEN
                fb_pnsOn(phaseNumber:=0, act:=_on);
               fb_LowOil(phaseNumber:=1);
@@ -100,7 +104,7 @@ IF StrAlg.isRuning THEN
 
     IF LowOil.top THEN
         runAiProtection(protections.Os_sdvig_nagnetatelja_minus);
-        (*runDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
+        (*runDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6);*)
         runPhase(Poil_DefenseActive);
         (*IM.SingleSignals.P_oil_low.Disabled_Sig:=FALSE;*)
         ai.Pmasla_posle_GNS.Disabled_LA:=FALSE;
@@ -109,7 +113,7 @@ IF StrAlg.isRuning THEN
     END_IF;
 
     IF Poil_DefenseActive.start AND NOT Poil_DefenseActive.top THEN
-       Poil_DefenseActive.top:=protections.Os_sdvig_nagnetatelja_minus.isRunning AND protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.isRunning;
+       Poil_DefenseActive.top:=protections.Os_sdvig_nagnetatelja_minus.isRunning AND protections.Vibro_skorost_OP_shesterni_RED_T6.isRunning;
     END_IF;
 
     IF Poil_DefenseActive.top THEN
@@ -225,7 +229,7 @@ IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source
                                         resetPhase(runProtect_dP);
                                         resetPhase(testUnsuccessful);
 	                              (*protections.Os_sdvig_nagnetatelja_minus.inOpcCommandsDisabled:=FALSE;
-                                        protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=FALSE; 
+                                        protections.Vibro_skorost_OP_shesterni_RED_T6.inOpcCommandsDisabled:=FALSE; 
                                         protections.Os_sdvig_nagnetatelja_plus.inOpcCommandsDisabled:=FALSE;
                                         protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=FALSE;*) 
                                            

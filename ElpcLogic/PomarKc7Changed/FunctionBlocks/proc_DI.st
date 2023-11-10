@@ -84,6 +84,10 @@ VAR_EXTERNAL
 	arERR_24 : TItemDIN;
 END_VAR
 
+
+
+
+
 (* Циклический опрос. Входные дискретные параметры *)
 (* Модуль A1-12 *)
 di_0(arDIN := arDIN_0, strDI:=di.di_0, err_mod:=arERR_11);

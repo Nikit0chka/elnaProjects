@@ -32,6 +32,10 @@ VAR
 	onInit : BOOL;
 END_VAR
 
+
+
+
+
 (*
 IF NOT onInit THEN
 StrAlg.inCanRun:=TRUE;

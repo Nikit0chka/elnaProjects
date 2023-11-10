@@ -1,14 +1,14 @@
 TYPE
 ProtectionsConfig : STRUCT 
 	Topornogo_podshipnika_EDT_1 : struct_AiProtection;
-	Toporno_ypornogo_podshipnika_EDT_2 : struct_AiProtection;
-	Toporno_ypornogo_podshipnika_kolesa_red_EDT_3 : struct_AiProtection;
-	Toporno_ypornogo_podshipnika_kolesa_red_HT_4 : struct_AiProtection;
-	Topornogo_podshipnika_shesterni_reduktora_T_5 : struct_AiProtection;
-	Topornogo_podshipnika_reduktora_HT_6 : struct_AiProtection;
-	Toporno_ypornogo_podshipnika_nagnetatelja_T_7 : struct_AiProtection;
-	Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8 : struct_AiProtection;
-	Typornogo_podshipnika_rav_kolodok_HT_9 : struct_AiProtection;
+	Toy_podshipnika_EDT_2 : struct_AiProtection;
+	Toy_podshipnika_kol_EDT_3 : struct_AiProtection;
+	Toy_podshipnika_kol_EDT_4 : struct_AiProtection;
+	To_podshipnika_shest_red_EDT_5 : struct_AiProtection;
+	To_podshipnika_shest_red_EDT_6 : struct_AiProtection;
+	To_podshipnika_N_EDT_7 : struct_AiProtection;
+	To_podshipnika_svob_konca_EDT_8 : struct_AiProtection;
+	Ty_podshipnika_rab_kol_EDT_9 : struct_AiProtection;
 	Typornogo_podshipnika_nerab_kolodok_HT_10 : struct_AiProtection;
 	Tgaza_na_vyhode_H : struct_AiProtection;
 	Os_sdvig_nagnetatelja_plus : struct_AiProtection;
@@ -24,7 +24,7 @@ ProtectionsConfig : STRUCT
 	Vibro_skorost_OYP_kolesa_ED_T3 : struct_AiProtection;
 	Vibro_skorost_OP_kolesa_RH_T4 : struct_AiProtection;
 	Vibro_skorost_OP_shesterni_RED_T5 : struct_AiProtection;
-	Vibro_skorost_OP_shesterni_reduktora_H_T6 : struct_AiProtection;
+	Vibro_skorost_OP_shesterni_RED_T6 : struct_AiProtection;
 	dPmaslo_gaz_less100 : struct_DiProtection;
 	Reg_vozb_off : struct_DiProtection;
 	Fail_chastotnii_pusk : struct_DiProtection;

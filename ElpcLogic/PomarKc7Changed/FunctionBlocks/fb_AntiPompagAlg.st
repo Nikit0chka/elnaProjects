@@ -42,6 +42,10 @@ VAR
 END_VAR
 
 
+
+
+
+
 tableQ_min(parametr:=LREAL_TO_REAL(UgolVNA.Value));
 
 tableQ_max(parametr:=LREAL_TO_REAL(UgolVNA.Value));

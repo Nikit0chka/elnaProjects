@@ -37,11 +37,11 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26898 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL.VALUE
-    st = getVariable(26898);
+  { // 26496 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL.VALUE
+    st = getVariable(26496);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL.VALUE", 59);
     st->size_data = sizeof(BOOL);
@@ -193,8 +192,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26899 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL.RELIABILITY
-    st = getVariable(26899);
+  { // 26497 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL.RELIABILITY
+    st = getVariable(26497);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL.RELIABILITY", 65);
     st->size_data = sizeof(BOOL);
@@ -205,8 +204,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26900 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL._INVERSED
-    st = getVariable(26900);
+  { // 26498 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL._INVERSED
+    st = getVariable(26498);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.SIGNAL._INVERSED", 63);
     st->size_data = sizeof(BOOL);
@@ -217,8 +216,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26901 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.RELIABILITY
-    st = getVariable(26901);
+  { // 26499 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.RELIABILITY
+    st = getVariable(26499);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.RELIABILITY", 65);
     st->size_data = sizeof(BOOL);
@@ -229,8 +228,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26902 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.INVERSE
-    st = getVariable(26902);
+  { // 26500 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.INVERSE
+    st = getVariable(26500);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.INVERSE", 61);
     st->size_data = sizeof(BOOL);
@@ -241,8 +240,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26903 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DELAYON
-    st = getVariable(26903);
+  { // 26501 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DELAYON
+    st = getVariable(26501);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DELAYON", 61);
     st->size_data = sizeof(TIME);
@@ -253,8 +252,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26904 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DELAYOFF
-    st = getVariable(26904);
+  { // 26502 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DELAYOFF
+    st = getVariable(26502);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DELAYOFF", 62);
     st->size_data = sizeof(TIME);
@@ -265,8 +264,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26905 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.Q
-    st = getVariable(26905);
+  { // 26503 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.Q
+    st = getVariable(26503);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -277,8 +276,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26906 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.STATUS
-    st = getVariable(26906);
+  { // 26504 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.STATUS
+    st = getVariable(26504);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -289,8 +288,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26907 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DISABLED_SIG
-    st = getVariable(26907);
+  { // 26505 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DISABLED_SIG
+    st = getVariable(26505);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.STR_SS.DISABLED_SIG", 66);
     st->size_data = sizeof(BOOL);
@@ -301,8 +300,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26908 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.IN
-    st = getVariable(26908);
+  { // 26506 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.IN
+    st = getVariable(26506);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -313,8 +312,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26909 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.PT
-    st = getVariable(26909);
+  { // 26507 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.PT
+    st = getVariable(26507);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.PT", 57);
     st->size_data = sizeof(TIME);
@@ -325,8 +324,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26910 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.Q
-    st = getVariable(26910);
+  { // 26508 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.Q
+    st = getVariable(26508);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -337,8 +336,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26911 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.ET
-    st = getVariable(26911);
+  { // 26509 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.ET
+    st = getVariable(26509);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON.ET", 57);
     st->size_data = sizeof(TIME);
@@ -349,8 +348,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26912 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON
-    st = getVariable(26912);
+  { // 26510 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON
+    st = getVariable(26510);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMERON", 54);
     st->size_data = sizeof(TON);
@@ -360,8 +359,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26913 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.IN
-    st = getVariable(26913);
+  { // 26511 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.IN
+    st = getVariable(26511);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.IN", 58);
     st->size_data = sizeof(BOOL);
@@ -372,8 +371,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26914 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.PT
-    st = getVariable(26914);
+  { // 26512 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.PT
+    st = getVariable(26512);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.PT", 58);
     st->size_data = sizeof(TIME);
@@ -384,8 +383,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26915 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.Q
-    st = getVariable(26915);
+  { // 26513 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.Q
+    st = getVariable(26513);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -396,8 +395,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26916 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.ET
-    st = getVariable(26916);
+  { // 26514 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.ET
+    st = getVariable(26514);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF.ET", 58);
     st->size_data = sizeof(TIME);
@@ -408,8 +407,8 @@ int __variables_init_FB_NALICHIE_CEPEI_UPRAVLEN_MV(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26917 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF
-    st = getVariable(26917);
+  { // 26515 PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF
+    st = getVariable(26515);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_CEPEI_UPRAVLEN_MV.TIMEROFF", 55);
     st->size_data = sizeof(TOF);

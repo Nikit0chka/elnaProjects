@@ -42,6 +42,10 @@ VAR_EXTERNAL
 	statusAi : TYPE_StatusAi;
 END_VAR
 
+
+
+
+
 IF NOT onInit THEN         
          fb_nu1On(phaseNumber:=1, act:=_on );
          fb_nu2On(phaseNumber:=2, act:=_on);

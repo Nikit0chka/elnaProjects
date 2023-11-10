@@ -8,16 +8,20 @@ VAR
 	statusAi : TYPE_StatusAi;
 END_VAR
 
+
+
+
+
 anyAnalogsPs:=
 ai.Toporno_podshipnika_EDT_1.interval= statusAi.HW OR
 ai.Toporno_podshipnika_EDT_1.interval= statusAi.LW OR
-ai.Toporno_ypornogo_podshipnika_EDT_2.interval= statusAi.HW OR
-ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.interval= statusAi.HW OR
-ai.Toporno_podshipnika_reduktora_HT_6.interval= statusAi.HW OR
-ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1.interval= statusAi.HW OR
-ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2.interval= statusAi.HW OR
-ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1.interval= statusAi.HW OR
-ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2.interval= statusAi.HW OR
+ai.Toy_podshipnika_EDT_2.interval= statusAi.HW OR
+ai.Toy_podshipnika_kol_EDT_3.interval= statusAi.HW OR
+ai.Ty_podshipnika_red_EDT_6.interval= statusAi.HW OR
+ai.Ty_podshipnika_nagnet_EDT_7_1.interval= statusAi.HW OR
+ai.Ty_podshipnika_nagnet_EDT_7_2.interval= statusAi.HW OR
+ai.Toy_podshipnika_svobod_konca_EDT_8_1.interval= statusAi.HW OR
+ai.Toy_podshipnika_svobod_konca_EDT_8_2.interval= statusAi.HW OR
 ai.Tholodnogo_vozduha_ED_kanal_1.interval= statusAi.HW OR
 ai.Tholodnogo_vozduha_ED_kanal_2.interval= statusAi.HW OR
 ai.Tgorjachego_vozduha_ED_kanal_1.interval= statusAi.HW OR

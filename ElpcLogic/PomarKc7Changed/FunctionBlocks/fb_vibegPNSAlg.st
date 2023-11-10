@@ -48,6 +48,10 @@ VAR_EXTERNAL
 END_VAR
 
 
+
+
+
+
 IF NOT onInit THEN
  fb_autoPnsOff(phaseNumber:=0, act:=_reset, waitCompletion:=FALSE);
   fb_waitVibeg(phaseNumber:=1, delay:=T#300S);
@@ -84,7 +88,7 @@ StrAlg.hasError := autoPnsOff.error OR pnsOff.error;
           resetQuestion(algContinue);
           
           resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
-          (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
+          (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6);*)
           
 	(*IM.SingleSignals.P_oil_low.Disabled_Sig:=TRUE;*)
 	ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;

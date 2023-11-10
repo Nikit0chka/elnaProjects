@@ -5,32 +5,36 @@ VAR_IN_OUT
 END_VAR
 
 
+
+
+
+
 IF protections.Topornogo_podshipnika_EDT_1.Signaling THEN
     resetAiProtection(protections.Topornogo_podshipnika_EDT_1);  END_IF;
 
-IF protections.Toporno_ypornogo_podshipnika_EDT_2.Signaling THEN
-    resetAiProtection(protections.Toporno_ypornogo_podshipnika_EDT_2); END_IF;
+IF protections.Toy_podshipnika_EDT_2.Signaling THEN
+    resetAiProtection(protections.Toy_podshipnika_EDT_2); END_IF;
     
-IF protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.Signaling THEN
-    resetAiProtection(protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3); END_IF;
+IF protections.Toy_podshipnika_kol_EDT_3.Signaling THEN
+    resetAiProtection(protections.Toy_podshipnika_kol_EDT_3); END_IF;
     
-IF protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.Signaling THEN
-    resetAiProtection(protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4); END_IF;
+IF protections.Toy_podshipnika_kol_EDT_4.Signaling THEN
+    resetAiProtection(protections.Toy_podshipnika_kol_EDT_4); END_IF;
     
-IF protections.Topornogo_podshipnika_shesterni_reduktora_T_5.Signaling THEN
-    resetAiProtection(protections.Topornogo_podshipnika_shesterni_reduktora_T_5); END_IF;
+IF protections.To_podshipnika_shest_red_EDT_5.Signaling THEN
+    resetAiProtection(protections.To_podshipnika_shest_red_EDT_5); END_IF;
     
-IF protections.Topornogo_podshipnika_reduktora_HT_6.Signaling THEN
-    resetAiProtection(protections.Topornogo_podshipnika_reduktora_HT_6); END_IF;
+IF protections.To_podshipnika_shest_red_EDT_6.Signaling THEN
+    resetAiProtection(protections.To_podshipnika_shest_red_EDT_6); END_IF;
     
-IF protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.Signaling THEN
-    resetAiProtection(protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7); END_IF;
+IF protections.To_podshipnika_N_EDT_7.Signaling THEN
+    resetAiProtection(protections.To_podshipnika_N_EDT_7); END_IF;
     
-IF protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.Signaling THEN
-    resetAiProtection(protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8); END_IF;
+IF protections.To_podshipnika_svob_konca_EDT_8.Signaling THEN
+    resetAiProtection(protections.To_podshipnika_svob_konca_EDT_8); END_IF;
     
-IF protections.Typornogo_podshipnika_rav_kolodok_HT_9.Signaling THEN
-    resetAiProtection(protections.Typornogo_podshipnika_rav_kolodok_HT_9); END_IF;
+IF protections.Ty_podshipnika_rab_kol_EDT_9.Signaling THEN
+    resetAiProtection(protections.Ty_podshipnika_rab_kol_EDT_9); END_IF;
     
 IF protections.Typornogo_podshipnika_nerab_kolodok_HT_10.Signaling THEN
     resetAiProtection(protections.Typornogo_podshipnika_nerab_kolodok_HT_10); END_IF;
@@ -77,8 +81,8 @@ IF protections.Vibro_skorost_OP_kolesa_RH_T4.Signaling THEN
 IF protections.Vibro_skorost_OP_shesterni_RED_T5.Signaling THEN
     resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5); END_IF;
     
-IF protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.Signaling THEN
-    resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6); END_IF;
+IF protections.Vibro_skorost_OP_shesterni_RED_T6.Signaling THEN
+    resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6); END_IF;
     
 IF protections.dPmaslo_gaz_less100.Signaling THEN
     resetDiProtection(protections.dPmaslo_gaz_less100); END_IF;

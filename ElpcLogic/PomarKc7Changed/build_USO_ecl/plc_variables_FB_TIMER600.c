@@ -37,11 +37,11 @@ int __variables_init_FB_TIMER600(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_FB_TIMER600(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_FB_TIMER600(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 61719 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.DELAY
-    st = getVariable(61719);
+  { // 61302 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.DELAY
+    st = getVariable(61302);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.DELAY", 50);
     st->size_data = sizeof(TIME);
@@ -193,8 +192,8 @@ int __variables_init_FB_TIMER600(){
     p_TIME = (TIME*)&p_FB_PH_TIMER->DELAY;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61720 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.PHASENUMBER
-    st = getVariable(61720);
+  { // 61303 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.PHASENUMBER
+    st = getVariable(61303);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.PHASENUMBER", 56);
     st->size_data = sizeof(UINT);
@@ -205,8 +204,8 @@ int __variables_init_FB_TIMER600(){
     p_UINT = (UINT*)&p_FB_PH_TIMER->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61721 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.RUN
-    st = getVariable(61721);
+  { // 61304 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.RUN
+    st = getVariable(61304);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.RUN", 54);
     st->size_data = sizeof(BOOL);
@@ -218,8 +217,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 61722 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.RESET
-    st = getVariable(61722);
+  { // 61305 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.RESET
+    st = getVariable(61305);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.RESET", 56);
     st->size_data = sizeof(BOOL);
@@ -231,8 +230,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 61723 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.START
-    st = getVariable(61723);
+  { // 61306 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.START
+    st = getVariable(61306);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.START", 56);
     st->size_data = sizeof(BOOL);
@@ -244,8 +243,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 61724 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.ERROR
-    st = getVariable(61724);
+  { // 61307 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.ERROR
+    st = getVariable(61307);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.ERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -257,8 +256,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 61725 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.TOP
-    st = getVariable(61725);
+  { // 61308 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.TOP
+    st = getVariable(61308);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.TOP", 54);
     st->size_data = sizeof(BOOL);
@@ -270,8 +269,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 61726 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.STARTSTATUS
-    st = getVariable(61726);
+  { // 61309 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.STARTSTATUS
+    st = getVariable(61309);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.STARTSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -283,8 +282,8 @@ int __variables_init_FB_TIMER600(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 61727 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.ERRORSTATUS
-    st = getVariable(61727);
+  { // 61310 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.ERRORSTATUS
+    st = getVariable(61310);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.ERRORSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -296,8 +295,8 @@ int __variables_init_FB_TIMER600(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 61728 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.TOPSTATUS
-    st = getVariable(61728);
+  { // 61311 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.TOPSTATUS
+    st = getVariable(61311);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.STRPH.TOPSTATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -309,8 +308,8 @@ int __variables_init_FB_TIMER600(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 61729 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG.CLK
-    st = getVariable(61729);
+  { // 61312 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG.CLK
+    st = getVariable(61312);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG.CLK", 66);
     st->size_data = sizeof(BOOL);
@@ -322,8 +321,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 61730 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG.Q
-    st = getVariable(61730);
+  { // 61313 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG.Q
+    st = getVariable(61313);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -335,8 +334,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 61731 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG
-    st = getVariable(61731);
+  { // 61314 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG
+    st = getVariable(61314);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.COMMANDFAULT_TRIG", 62);
     st->size_data = sizeof(R_TRIG);
@@ -347,8 +346,8 @@ int __variables_init_FB_TIMER600(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_TIMER->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 61732 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG.CLK
-    st = getVariable(61732);
+  { // 61315 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG.CLK
+    st = getVariable(61315);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -360,8 +359,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 61733 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG.Q
-    st = getVariable(61733);
+  { // 61316 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG.Q
+    st = getVariable(61316);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -373,8 +372,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 61734 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG
-    st = getVariable(61734);
+  { // 61317 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG
+    st = getVariable(61317);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.RESET_TRIG", 55);
     st->size_data = sizeof(R_TRIG);
@@ -385,8 +384,8 @@ int __variables_init_FB_TIMER600(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_TIMER->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 61735 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.TIMER
-    st = getVariable(61735);
+  { // 61318 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.TIMER
+    st = getVariable(61318);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600.TIMER", 50);
     st->size_data = sizeof(UINT);
@@ -397,8 +396,8 @@ int __variables_init_FB_TIMER600(){
     p_UINT = (UINT*)&p_FB_PH_TIMER->TIMER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61736 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.IN
-    st = getVariable(61736);
+  { // 61319 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.IN
+    st = getVariable(61319);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.IN", 54);
     st->size_data = sizeof(BOOL);
@@ -410,8 +409,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 61737 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.PT
-    st = getVariable(61737);
+  { // 61320 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.PT
+    st = getVariable(61320);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.PT", 54);
     st->size_data = sizeof(TIME);
@@ -423,8 +422,8 @@ int __variables_init_FB_TIMER600(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 61738 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.Q
-    st = getVariable(61738);
+  { // 61321 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.Q
+    st = getVariable(61321);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -436,8 +435,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 61739 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.ET
-    st = getVariable(61739);
+  { // 61322 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.ET
+    st = getVariable(61322);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER.ET", 54);
     st->size_data = sizeof(TIME);
@@ -449,8 +448,8 @@ int __variables_init_FB_TIMER600(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 61740 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER
-    st = getVariable(61740);
+  { // 61323 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER
+    st = getVariable(61323);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._TIMER", 51);
     st->size_data = sizeof(TON);
@@ -461,8 +460,8 @@ int __variables_init_FB_TIMER600(){
     p_TON = (TON*)&p_FB_PH_TIMER->_TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 61741 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(61741);
+  { // 61324 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(61324);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_NOTDEFINED", 79);
     st->size_data = sizeof(BYTE);
@@ -474,8 +473,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 61742 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(61742);
+  { // 61325 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(61325);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ON", 71);
     st->size_data = sizeof(BYTE);
@@ -487,8 +486,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 61743 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(61743);
+  { // 61326 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(61326);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_OFF", 72);
     st->size_data = sizeof(BYTE);
@@ -500,8 +499,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 61744 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(61744);
+  { // 61327 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(61327);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_TRANSITIONAL", 81);
     st->size_data = sizeof(BYTE);
@@ -513,8 +512,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 61745 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(61745);
+  { // 61328 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(61328);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ERROR", 74);
     st->size_data = sizeof(BYTE);
@@ -526,8 +525,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 68424 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.DELAY
-    st = getVariable(68424);
+  { // 68006 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.DELAY
+    st = getVariable(68006);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.DELAY", 50);
     st->size_data = sizeof(TIME);
@@ -538,8 +537,8 @@ int __variables_init_FB_TIMER600(){
     p_TIME = (TIME*)&p_FB_PH_TIMER->DELAY;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68425 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.PHASENUMBER
-    st = getVariable(68425);
+  { // 68007 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.PHASENUMBER
+    st = getVariable(68007);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.PHASENUMBER", 56);
     st->size_data = sizeof(UINT);
@@ -550,8 +549,8 @@ int __variables_init_FB_TIMER600(){
     p_UINT = (UINT*)&p_FB_PH_TIMER->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68426 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.RUN
-    st = getVariable(68426);
+  { // 68008 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.RUN
+    st = getVariable(68008);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.RUN", 54);
     st->size_data = sizeof(BOOL);
@@ -563,8 +562,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 68427 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.RESET
-    st = getVariable(68427);
+  { // 68009 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.RESET
+    st = getVariable(68009);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.RESET", 56);
     st->size_data = sizeof(BOOL);
@@ -576,8 +575,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 68428 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.START
-    st = getVariable(68428);
+  { // 68010 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.START
+    st = getVariable(68010);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.START", 56);
     st->size_data = sizeof(BOOL);
@@ -589,8 +588,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 68429 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.ERROR
-    st = getVariable(68429);
+  { // 68011 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.ERROR
+    st = getVariable(68011);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.ERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -602,8 +601,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 68430 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.TOP
-    st = getVariable(68430);
+  { // 68012 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.TOP
+    st = getVariable(68012);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.TOP", 54);
     st->size_data = sizeof(BOOL);
@@ -615,8 +614,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 68431 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.STARTSTATUS
-    st = getVariable(68431);
+  { // 68013 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.STARTSTATUS
+    st = getVariable(68013);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.STARTSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -628,8 +627,8 @@ int __variables_init_FB_TIMER600(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 68432 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.ERRORSTATUS
-    st = getVariable(68432);
+  { // 68014 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.ERRORSTATUS
+    st = getVariable(68014);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.ERRORSTATUS", 62);
     st->size_data = sizeof(DWORD);
@@ -641,8 +640,8 @@ int __variables_init_FB_TIMER600(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 68433 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.TOPSTATUS
-    st = getVariable(68433);
+  { // 68015 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.TOPSTATUS
+    st = getVariable(68015);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.STRPH.TOPSTATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -654,8 +653,8 @@ int __variables_init_FB_TIMER600(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 68434 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG.CLK
-    st = getVariable(68434);
+  { // 68016 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG.CLK
+    st = getVariable(68016);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG.CLK", 66);
     st->size_data = sizeof(BOOL);
@@ -667,8 +666,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 68435 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG.Q
-    st = getVariable(68435);
+  { // 68017 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG.Q
+    st = getVariable(68017);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG.Q", 64);
     st->size_data = sizeof(BOOL);
@@ -680,8 +679,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 68436 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG
-    st = getVariable(68436);
+  { // 68018 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG
+    st = getVariable(68018);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.COMMANDFAULT_TRIG", 62);
     st->size_data = sizeof(R_TRIG);
@@ -692,8 +691,8 @@ int __variables_init_FB_TIMER600(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_TIMER->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 68437 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG.CLK
-    st = getVariable(68437);
+  { // 68019 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG.CLK
+    st = getVariable(68019);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -705,8 +704,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 68438 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG.Q
-    st = getVariable(68438);
+  { // 68020 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG.Q
+    st = getVariable(68020);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -718,8 +717,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 68439 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG
-    st = getVariable(68439);
+  { // 68021 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG
+    st = getVariable(68021);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.RESET_TRIG", 55);
     st->size_data = sizeof(R_TRIG);
@@ -730,8 +729,8 @@ int __variables_init_FB_TIMER600(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_TIMER->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 68440 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.TIMER
-    st = getVariable(68440);
+  { // 68022 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.TIMER
+    st = getVariable(68022);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600.TIMER", 50);
     st->size_data = sizeof(UINT);
@@ -742,8 +741,8 @@ int __variables_init_FB_TIMER600(){
     p_UINT = (UINT*)&p_FB_PH_TIMER->TIMER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68441 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.IN
-    st = getVariable(68441);
+  { // 68023 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.IN
+    st = getVariable(68023);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.IN", 54);
     st->size_data = sizeof(BOOL);
@@ -755,8 +754,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 68442 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.PT
-    st = getVariable(68442);
+  { // 68024 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.PT
+    st = getVariable(68024);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.PT", 54);
     st->size_data = sizeof(TIME);
@@ -768,8 +767,8 @@ int __variables_init_FB_TIMER600(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 68443 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.Q
-    st = getVariable(68443);
+  { // 68025 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.Q
+    st = getVariable(68025);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.Q", 53);
     st->size_data = sizeof(BOOL);
@@ -781,8 +780,8 @@ int __variables_init_FB_TIMER600(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 68444 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.ET
-    st = getVariable(68444);
+  { // 68026 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.ET
+    st = getVariable(68026);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER.ET", 54);
     st->size_data = sizeof(TIME);
@@ -794,8 +793,8 @@ int __variables_init_FB_TIMER600(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 68445 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER
-    st = getVariable(68445);
+  { // 68027 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER
+    st = getVariable(68027);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._TIMER", 51);
     st->size_data = sizeof(TON);
@@ -806,8 +805,8 @@ int __variables_init_FB_TIMER600(){
     p_TON = (TON*)&p_FB_PH_TIMER->_TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 68446 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(68446);
+  { // 68028 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(68028);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_NOTDEFINED", 79);
     st->size_data = sizeof(BYTE);
@@ -819,8 +818,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 68447 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(68447);
+  { // 68029 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(68029);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ON", 71);
     st->size_data = sizeof(BYTE);
@@ -832,8 +831,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 68448 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(68448);
+  { // 68030 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(68030);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_OFF", 72);
     st->size_data = sizeof(BYTE);
@@ -845,8 +844,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 68449 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(68449);
+  { // 68031 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(68031);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_TRANSITIONAL", 81);
     st->size_data = sizeof(BYTE);
@@ -858,8 +857,8 @@ int __variables_init_FB_TIMER600(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 68450 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(68450);
+  { // 68032 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(68032);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_TIMER600._STATUSDUALINPUT.STATUS_ERROR", 74);
     st->size_data = sizeof(BYTE);

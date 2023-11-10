@@ -41,6 +41,10 @@ VAR_EXTERNAL
 	algoritms_vibegPNS_inCommand_ARM : UINT;
 END_VAR
 
+
+
+
+
 (* OPC Get - algoritms. Чтение текущих состояний тэгов _______________________________________________________*)
 
 algoritms.ao.inCommand_ARM	:= UINT_TO_WORD(algoritms_ao_inCommand_ARM);

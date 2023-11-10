@@ -8,6 +8,10 @@ VAR
 	statusAi : TYPE_StatusAi;
 END_VAR
 
+
+
+
+
 analogsNS:= 
   ((ai.Tstali_statora_kanal_1.Interval < statusAi.Normal) AND NOT ai.Tstali_statora_kanal_1.remont)
 OR((ai.Tstali_statora_kanal_2.Interval < statusAi.Normal) AND NOT ai.Tstali_statora_kanal_2.remont)
@@ -16,15 +20,15 @@ OR((ai.Tmedi_statora_kanal_1.Interval < statusAi.Normal) AND NOT ai.Tmedi_stator
 OR((ai.Tmedi_statora_kanal_2.Interval < statusAi.Normal) AND NOT ai.Tmedi_statora_kanal_2.remont)
 OR((ai.Tmedi_statora_kanal_3.Interval < statusAi.Normal) AND NOT ai.Tmedi_statora_kanal_3.remont)
 OR((ai.Toporno_podshipnika_EDT_1.Interval < statusAi.Normal) AND NOT ai.Toporno_podshipnika_EDT_1.remont)
-OR((ai.Toporno_ypornogo_podshipnika_EDT_2.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_EDT_2.remont)
-OR((ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.remont)
-OR((ai.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.remont)
-OR((ai.Toporno_podshipnika_shesterni_reduktora_T_5.Interval < statusAi.Normal) AND NOT ai.Toporno_podshipnika_shesterni_reduktora_T_5.remont)
-OR((ai.Toporno_podshipnika_reduktora_HT_6.Interval < statusAi.Normal) AND NOT ai.Toporno_podshipnika_reduktora_HT_6.remont)
-OR((ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1.remont)
-OR((ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2.remont)
-OR((ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1.remont)
-OR((ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2.Interval < statusAi.Normal) AND NOT ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2.remont)
+OR((ai.Toy_podshipnika_EDT_2.Interval < statusAi.Normal) AND NOT ai.Toy_podshipnika_EDT_2.remont)
+OR((ai.Toy_podshipnika_kol_EDT_3.Interval < statusAi.Normal) AND NOT ai.Toy_podshipnika_kol_EDT_3.remont)
+OR((ai.Toy_podshipnika_kol_EDT_4.Interval < statusAi.Normal) AND NOT ai.Toy_podshipnika_kol_EDT_4.remont)
+OR((ai.Toy_podshipnika_shest_red_EDT_5.Interval < statusAi.Normal) AND NOT ai.Toy_podshipnika_shest_red_EDT_5.remont)
+OR((ai.Ty_podshipnika_red_EDT_6.Interval < statusAi.Normal) AND NOT ai.Ty_podshipnika_red_EDT_6.remont)
+OR((ai.Ty_podshipnika_nagnet_EDT_7_1.Interval < statusAi.Normal) AND NOT ai.Ty_podshipnika_nagnet_EDT_7_1.remont)
+OR((ai.Ty_podshipnika_nagnet_EDT_7_2.Interval < statusAi.Normal) AND NOT ai.Ty_podshipnika_nagnet_EDT_7_2.remont)
+OR((ai.Toy_podshipnika_svobod_konca_EDT_8_1.Interval < statusAi.Normal) AND NOT ai.Toy_podshipnika_svobod_konca_EDT_8_1.remont)
+OR((ai.Toy_podshipnika_svobod_konca_EDT_8_2.Interval < statusAi.Normal) AND NOT ai.Toy_podshipnika_svobod_konca_EDT_8_2.remont)
 OR((ai.Tholodnogo_vozduha_ED_kanal_1.Interval < statusAi.Normal) AND NOT ai.Tholodnogo_vozduha_ED_kanal_1.remont)
 OR((ai.Tholodnogo_vozduha_ED_kanal_2.Interval < statusAi.Normal) AND NOT ai.Tholodnogo_vozduha_ED_kanal_2.remont)
 OR((ai.Tgorjachego_vozduha_ED_kanal_1.Interval < statusAi.Normal) AND NOT ai.Tgorjachego_vozduha_ED_kanal_1.remont)

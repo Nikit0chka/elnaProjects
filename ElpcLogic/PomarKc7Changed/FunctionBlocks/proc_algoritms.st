@@ -32,6 +32,10 @@ VAR_EXTERNAL
 	AlgTimers : struct_AlgTimers;
 END_VAR
 
+
+
+
+
 fb_RemontAlg(StrAlg:=algoritms.Remont);
 
 fb_TestProtectionAlg(StrAlg:=algoritms.TestProtection);
@@ -76,7 +80,7 @@ Lowdp_di:=Im.SingleSignals.dP_oilgaz_low
 fb_puskOilSystem(StrAlg:=algoritms.puskOilSystem);
 
 (*fb_AntiPompag(StrAlg:=algoritms.AntiPompag,
-Rashod:= ai.Vibro_skorost_OP_shesterni_reduktora_H_T6,
+Rashod:= ai.Vibro_skorost_OP_shesterni_RED_T6,
 Zapas:= ai.Vibro_skorost_OP_shesterni_RED_T5,
 P_gasIn:=ai.dPgaza_na_maslo_filtre,
 T_gasIn:=ai.Tgaza_na_vhode_H,

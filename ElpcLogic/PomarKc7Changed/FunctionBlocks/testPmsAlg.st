@@ -53,6 +53,10 @@ VAR_EXTERNAL
 END_VAR
 
 
+
+
+
+
 IF NOT onInit THEN
 
                    fb_pnsOn(phaseNumber:=0, act:=_on);

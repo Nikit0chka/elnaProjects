@@ -46,6 +46,10 @@ VAR_EXTERNAL
 	statusAi : TYPE_StatusAi;
 END_VAR
 
+
+
+
+
 IF NOT onInit THEN         
          fb_timer25(phaseNumber:=1, delay:=T#25S);
          fb_timer3(phaseNumber:=2, delay:=T#3S);

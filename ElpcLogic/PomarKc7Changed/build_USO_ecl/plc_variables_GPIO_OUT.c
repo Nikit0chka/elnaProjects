@@ -37,11 +37,11 @@ int __variables_init_GPIO_OUT(){
   UINT *p_UINT;
   PROC_AI_INIT *p_PROC_AI_INIT;
   FB_AI_INIT *p_FB_AI_INIT;
-  TIME *p_TIME;
   STRUCT_AI *p_STRUCT_AI;
   DWORD *p_DWORD;
   BYTE *p_BYTE;
   WORD *p_WORD;
+  TIME *p_TIME;
   AICONFIG *p_AICONFIG;
   PROC_AI *p_PROC_AI;
   FB_AISOURCEMLP *p_FB_AISOURCEMLP;
@@ -74,7 +74,6 @@ int __variables_init_GPIO_OUT(){
   PROC_DO_INIT *p_PROC_DO_INIT;
   FB_DO_INIT *p_FB_DO_INIT;
   STRUCT_DO *p_STRUCT_DO;
-  __IEC___ARRAY_OF_BOOL_16_t *p___IEC___ARRAY_OF_BOOL_16_t;
   DOCONFIG *p_DOCONFIG;
   PROC_DO *p_PROC_DO;
   FB_DOSOURCEMLP *p_FB_DOSOURCEMLP;
@@ -181,8 +180,8 @@ int __variables_init_GPIO_OUT(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 18361 PROGRAM0.DO_PROC.GPIO_OUT.ARDOUT.WFLAGS
-    st = getVariable(18361);
+  { // 18198 PROGRAM0.DO_PROC.GPIO_OUT.ARDOUT.WFLAGS
+    st = getVariable(18198);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.ARDOUT.WFLAGS", 39);
     st->size_data = sizeof(UINT);
@@ -193,8 +192,8 @@ int __variables_init_GPIO_OUT(){
     p_UINT = (UINT*)&p_TWORDDATA->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 18362 PROGRAM0.DO_PROC.GPIO_OUT.ARDOUT.WVALUE
-    st = getVariable(18362);
+  { // 18199 PROGRAM0.DO_PROC.GPIO_OUT.ARDOUT.WVALUE
+    st = getVariable(18199);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.ARDOUT.WVALUE", 39);
     st->size_data = sizeof(UINT);
@@ -205,8 +204,8 @@ int __variables_init_GPIO_OUT(){
     p_UINT = (UINT*)&p_TWORDDATA->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 18363 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.WFLAGS
-    st = getVariable(18363);
+  { // 18200 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.WFLAGS
+    st = getVariable(18200);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.WFLAGS", 40);
     st->size_data = sizeof(UINT);
@@ -217,8 +216,8 @@ int __variables_init_GPIO_OUT(){
     p_UINT = (UINT*)&p_TITEMDIN->WFLAGS;
     st->value_p = p_UINT;
   }
-  { // 18364 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.WVALUE
-    st = getVariable(18364);
+  { // 18201 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.WVALUE
+    st = getVariable(18201);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.WVALUE", 40);
     st->size_data = sizeof(UINT);
@@ -229,8 +228,8 @@ int __variables_init_GPIO_OUT(){
     p_UINT = (UINT*)&p_TITEMDIN->WVALUE;
     st->value_p = p_UINT;
   }
-  { // 18365 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.NANOSEC
-    st = getVariable(18365);
+  { // 18202 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.NANOSEC
+    st = getVariable(18202);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.NANOSEC", 41);
     st->size_data = sizeof(ULINT);
@@ -241,8 +240,8 @@ int __variables_init_GPIO_OUT(){
     p_ULINT = (ULINT*)&p_TITEMDIN->NANOSEC;
     st->value_p = p_ULINT;
   }
-  { // 18366 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.RESERVE
-    st = getVariable(18366);
+  { // 18203 PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.RESERVE
+    st = getVariable(18203);
     memcpy(st->IEC_TYPE, "ULINT", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.ERR_MOD.RESERVE", 41);
     st->size_data = sizeof(ULINT);
@@ -253,8 +252,8 @@ int __variables_init_GPIO_OUT(){
     p_ULINT = (ULINT*)&p_TITEMDIN->RESERVE;
     st->value_p = p_ULINT;
   }
-  { // 18367 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.IMIT
-    st = getVariable(18367);
+  { // 18204 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.IMIT
+    st = getVariable(18204);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.IMIT", 36);
     st->size_data = sizeof(BOOL);
@@ -265,8 +264,8 @@ int __variables_init_GPIO_OUT(){
     p_BOOL = (BOOL*)&p_STRUCT_DO->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 18368 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BLCONNECT
-    st = getVariable(18368);
+  { // 18205 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BLCONNECT
+    st = getVariable(18205);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BLCONNECT", 41);
     st->size_data = sizeof(BOOL);
@@ -277,8 +276,8 @@ int __variables_init_GPIO_OUT(){
     p_BOOL = (BOOL*)&p_STRUCT_DO->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 18369 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.VALUE
-    st = getVariable(18369);
+  { // 18206 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.VALUE
+    st = getVariable(18206);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.VALUE", 37);
     st->size_data = sizeof(WORD);
@@ -289,200 +288,8 @@ int __variables_init_GPIO_OUT(){
     p_WORD = (WORD*)&p_STRUCT_DO->VALUE;
     st->value_p = p_WORD;
   }
-  { // 18370 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[0]
-    st = getVariable(18370);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[0]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[0];;
-  }
-  { // 18371 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[1]
-    st = getVariable(18371);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[1]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[1];;
-  }
-  { // 18372 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[2]
-    st = getVariable(18372);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[2]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[2];;
-  }
-  { // 18373 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[3]
-    st = getVariable(18373);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[3]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[3];;
-  }
-  { // 18374 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[4]
-    st = getVariable(18374);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[4]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[4];;
-  }
-  { // 18375 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[5]
-    st = getVariable(18375);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[5]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[5];;
-  }
-  { // 18376 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[6]
-    st = getVariable(18376);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[6]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[6];;
-  }
-  { // 18377 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[7]
-    st = getVariable(18377);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[7]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[7];;
-  }
-  { // 18378 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[8]
-    st = getVariable(18378);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[8]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[8];;
-  }
-  { // 18379 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[9]
-    st = getVariable(18379);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[9]", 39);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[9];;
-  }
-  { // 18380 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[10]
-    st = getVariable(18380);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[10]", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[10];;
-  }
-  { // 18381 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[11]
-    st = getVariable(18381);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[11]", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[11];;
-  }
-  { // 18382 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[12]
-    st = getVariable(18382);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[12]", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[12];;
-  }
-  { // 18383 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[13]
-    st = getVariable(18383);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[13]", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[13];;
-  }
-  { // 18384 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[14]
-    st = getVariable(18384);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[14]", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[14];;
-  }
-  { // 18385 PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[15]
-    st = getVariable(18385);
-    memcpy(st->IEC_TYPE, "BOOL", 4);
-    memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.STRDO.BITS[15]", 40);
-    st->size_data = sizeof(BOOL);
-    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
-    p_PROC_DO = (PROC_DO*)&p_PROGRAM0->DO_PROC;
-    p_FB_DOSOURCEMLP = (FB_DOSOURCEMLP*)&p_PROC_DO->GPIO_OUT;
-    p_STRUCT_DO = (STRUCT_DO*)&p_FB_DOSOURCEMLP->STRDO;
-    p___IEC___ARRAY_OF_BOOL_16_t = (__IEC___ARRAY_OF_BOOL_16_t*)&p_STRUCT_DO->BITS;
-    st->value_p = &p___IEC___ARRAY_OF_BOOL_16_t->value.table[15];;
-  }
-  { // 18386 PROGRAM0.DO_PROC.GPIO_OUT.BITNUMBER
-    st = getVariable(18386);
+  { // 18207 PROGRAM0.DO_PROC.GPIO_OUT.BITNUMBER
+    st = getVariable(18207);
     memcpy(st->IEC_TYPE, "INT", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.DO_PROC.GPIO_OUT.BITNUMBER", 35);
     st->size_data = sizeof(INT);

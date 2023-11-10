@@ -17,6 +17,10 @@ VAR_EXTERNAL
 	ai : AiConfig;
 END_VAR
 
+
+
+
+
 inits := 0; (* Флаг необходимости инициализации структур-дескрипторов *)
 
 (********************************************* Модуль A2-14 ******************************************************)
@@ -67,7 +71,7 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A2-15, AI1-3]  TOpornoYpornogoPodshipnikaEDT_2 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_EDT_2);
+strAI := ai.Toy_podshipnika_EDT_2);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (********************************************* Модуль A3-1 ******************************************************)
@@ -75,25 +79,25 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A3-1, AI2-0]  TOpornoYpornogoPodshipnikaKolesaRedEDT_3 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3);
+strAI := ai.Toy_podshipnika_kol_EDT_3);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-1, AI2-1] TOpornoYpornogoPodshipnikaKolesaRedHT_4 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_kolesa_red_HT_4);
+strAI := ai.Toy_podshipnika_kol_EDT_4);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-1, AI2-2] TOpornogoPodshipnikaShesterniReduktoraT_5 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_podshipnika_shesterni_reduktora_T_5);
+strAI := ai.Toy_podshipnika_shest_red_EDT_5);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-1, AI2-3] TOpornogoPodshipnikaReduktoraHT_6 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_podshipnika_reduktora_HT_6);
+strAI := ai.Ty_podshipnika_red_EDT_6);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (********************************************* Модуль A3-2 ******************************************************)
@@ -101,26 +105,26 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A3-2, AI3-01]  TOpornoYpornogoPodshipnikaNagnetateljaT_7_1 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1);
+strAI := ai.Ty_podshipnika_nagnet_EDT_7_1);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-2, AI3-01]  TOpornoYpornogoPodshipnikaNagnetateljaT_7_2 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2);
+strAI := ai.Ty_podshipnika_nagnet_EDT_7_2);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 
 (* [A3-2, AI3-2]  TOpornoYpornogoPodshipnikaSvobodnogoKoncaNT_8_1 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1);
+strAI := ai.Toy_podshipnika_svobod_konca_EDT_8_1);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-2, AI3-2]  TOpornoYpornogoPodshipnikaSvobodnogoKoncaNT_8_2 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2);
+strAI := ai.Toy_podshipnika_svobod_konca_EDT_8_2);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (********************************************* Модуль A3-3 ******************************************************)
@@ -128,25 +132,25 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A3-3, AI4-1]  TYpornogoPodshipnikaRavKolodokHT_9_1 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Typornogo_podshipnika_rav_kolodok_HT_9_1);
+strAI := ai.Toy_podshipnika_rab_kol_EDT_9_1);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-3, AI4-1]  TYpornogoPodshipnikaRavKolodokHT_9_2 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Typornogo_podshipnika_rav_kolodok_HT_9_2);
+strAI := ai.Toy_podshipnika_rab_kol_EDT_9_2);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-3, AI4-3] TYpornogoPodshipnikaNerabKolodokHT_10_1 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Typornogo_podshipnika_nerab_kolodok_HT_10_1);
+strAI := ai.Toy_podshipnika_nerab_kol_EDT_10_1);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-3, AI4-3] TYpornogoPodshipnikaNerabKolodokHT_10_2 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 100.0,
 ISVALIDREF_HA := TRUE, ISVALIDREF_HW := TRUE, dHA := 80.0, dHW := 75.0, aperturFilter:= 0.5, dMaxChangeSpeed := 10.0,
-strAI := ai.Typornogo_podshipnika_nerab_kolodok_HT_10_2);
+strAI := ai.Toy_podshipnika_nerab_kol_EDT_10_2);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (********************************************* Модуль A3-4 ******************************************************)
@@ -355,7 +359,7 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A3-11, AI12-2]  VibroSkorostOPShesterniRED_T5 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 25.0,
 ISVALIDREF_HW := TRUE, ISVALIDREF_HA := TRUE, dHW := 11.0, dHA := 18.0, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0,
-strAI := ai.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+strAI := ai.Vibro_skorost_OP_shesterni_RED_T6);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-11, AI12-2]  VibroSkorostOPShesterniRED_T5 *)

@@ -89,8 +89,12 @@ VAR_EXTERNAL
 END_VAR
 
 VAR CONSTANT
-	Ust_Pgaza : LREAL := 0.3;
+	Ust_Pgaza : LREAL   := 0.3;
 END_VAR
+
+
+
+
 
 IF NOT onInit THEN    
     fb_kran6Open(phaseNumber:=1, act:=_on);

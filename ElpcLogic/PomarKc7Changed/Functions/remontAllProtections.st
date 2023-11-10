@@ -5,18 +5,22 @@ VAR_IN_OUT
 END_VAR
 
 VAR CONSTANT
-	cmdRemont : WORD := 4;
+	cmdRemont : WORD   := 4;
 END_VAR
 
+
+
+
+
 protections.Topornogo_podshipnika_EDT_1.inCommand_Alg:=cmdRemont;
-protections.Toporno_ypornogo_podshipnika_EDT_2.inCommand_Alg:=cmdRemont; 
-protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.inCommand_Alg:=cmdRemont; 
-protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.inCommand_Alg:=cmdRemont;
-protections.Topornogo_podshipnika_shesterni_reduktora_T_5.inCommand_Alg:=cmdRemont;
-protections.Topornogo_podshipnika_reduktora_HT_6.inCommand_Alg:=cmdRemont;
-protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.inCommand_Alg:=cmdRemont;
-protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.inCommand_Alg:=cmdRemont;
-protections.Typornogo_podshipnika_rav_kolodok_HT_9.inCommand_Alg:=cmdRemont;
+protections.Toy_podshipnika_EDT_2.inCommand_Alg:=cmdRemont; 
+protections.Toy_podshipnika_kol_EDT_3.inCommand_Alg:=cmdRemont; 
+protections.Toy_podshipnika_kol_EDT_4.inCommand_Alg:=cmdRemont;
+protections.To_podshipnika_shest_red_EDT_5.inCommand_Alg:=cmdRemont;
+protections.To_podshipnika_shest_red_EDT_6.inCommand_Alg:=cmdRemont;
+protections.To_podshipnika_N_EDT_7.inCommand_Alg:=cmdRemont;
+protections.To_podshipnika_svob_konca_EDT_8.inCommand_Alg:=cmdRemont;
+protections.Ty_podshipnika_rab_kol_EDT_9.inCommand_Alg:=cmdRemont;
 protections.Typornogo_podshipnika_nerab_kolodok_HT_10.inCommand_Alg:=cmdRemont;
 protections.Tgaza_na_vyhode_H.inCommand_Alg:=cmdRemont;
 protections.Os_sdvig_nagnetatelja_plus.inCommand_Alg:=cmdRemont;
@@ -32,7 +36,7 @@ protections.Vibro_skorost_OPED_T2.inCommand_Alg:=cmdRemont;
 protections.Vibro_skorost_OYP_kolesa_ED_T3.inCommand_Alg:=cmdRemont;
 protections.Vibro_skorost_OP_kolesa_RH_T4.inCommand_Alg:=cmdRemont;
 protections.Vibro_skorost_OP_shesterni_RED_T5.inCommand_Alg:=cmdRemont;
-protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inCommand_Alg:=cmdRemont;
+protections.Vibro_skorost_OP_shesterni_RED_T6.inCommand_Alg:=cmdRemont;
 protections.dPmaslo_gaz_less100.inCommand_Alg:=cmdRemont;
 protections.Reg_vozb_off.inCommand_Alg:=cmdRemont;
 protections.Fail_chastotnii_pusk.inCommand_Alg:=cmdRemont;

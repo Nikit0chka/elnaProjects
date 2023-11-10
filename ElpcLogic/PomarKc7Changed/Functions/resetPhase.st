@@ -5,6 +5,10 @@ VAR_IN_OUT
 END_VAR
 
 
+
+
+
+
 IF ph.start OR ph.top THEN
                     ph.reset:=TRUE;                 
 END_IF;

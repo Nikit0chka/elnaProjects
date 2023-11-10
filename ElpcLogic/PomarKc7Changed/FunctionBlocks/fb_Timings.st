@@ -28,6 +28,10 @@ VAR
 	Tmr_1_min : REAL; (*Таймер меток времени 1 мин .*)
 END_VAR
 
+
+
+
+
 (* Обработка времени. *)
 Tmr_100_ms := Tmr_100_ms + cur_Cycle;
 gF_T_100mSec := FALSE; 

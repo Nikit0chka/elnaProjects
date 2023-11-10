@@ -101,6 +101,10 @@ VAR_EXTERNAL
 	algoritms : AlgoritmsConfig;
 END_VAR
 
+
+
+
+
 IF NOT onInit THEN
 
     fb_BMP_Err(phaseNumber:=0);

@@ -115,6 +115,16 @@ VAR_EXTERNAL
 	arAIN_53 : TItemAIN;
 	arAIN_54 : TItemAIN;
 	arAIN_55 : TItemAIN;
+	arAIN_56 : TItemAIN;
+	arAIN_57 : TItemAIN;
+	arAIN_58 : TItemAIN;
+	arAIN_59 : TItemAIN;
+	arAIN_60 : TItemAIN;
+	arAIN_61 : TItemAIN;
+	arAIN_62 : TItemAIN;
+	arAIN_63 : TItemAIN;
+	arAIN_64 : TItemAIN;
+	arAIN_65 : TItemAIN;
 	arERR_3 : TItemDIN;
 	arERR_4 : TItemDIN;
 	arERR_5 : TItemDIN;
@@ -214,191 +224,195 @@ VAR_EXTERNAL
 	AI_9_dblValue : LREAL;
 END_VAR
 
+
+
+
+
 (* Циклический опрос. Входные аналоговые параметры *)
 
 (* [A1-9, AI5-4]  dР газа на конфузоре *)
-fb_PerepadDavlenieNaKonfuzore(arAIN := arAIN_0, strAI := ai.dPgaza_na_konfuzore, err_mod:=arERR_8);
-AI_0_dblValue := arAIN_0.dblValue;
-
-(* [A1-9, AI5-0] dР масла на масляном фильтре *)
-fb_PerepadDavlenieNaMasloFiltre(arAIN := arAIN_1, strAI := ai.dPgaza_na_maslo_filtre, err_mod:=arERR_8);
-AI_1_dblValue := arAIN_1.dblValue;
-
-(* [A1-9, AI5-7]  dР масло-газ *)
-fb_PerepadDavlenieMasloGaz(arAIN := arAIN_2, strAI := ai.dPmaslo_gaz, err_mod:=arERR_8);
-AI_2_dblValue := arAIN_2.dblValue;
-
-(* [A1-10, AI6-2] Р газа на входе нагнетателя *)
-fb_DGazaNaVhodeNagnetatelja(arAIN := arAIN_3, strAI := ai.Pgaza_na_vhode_nagnetatelia, err_mod:=arERR_9);
-AI_3_dblValue := arAIN_3.dblValue;
-
-(* [A1-10, AI6-3] Р газа на выходе нагнетателя *)
-fb_DGazaNaVyhodeNagnetatelja(arAIN := arAIN_4, strAI := ai.Pgaza_na_vyhode_nagnetatelia, err_mod:=arERR_9);
-AI_4_dblValue := arAIN_4.dblValue;
-
-(* [A1-9, AI5-3]  Р масла после НУ *)
-fb_DavlenijaMaslaPosleNU(arAIN := arAIN_5, strAI := ai.Pmasla_posle_NU, err_mod:=arERR_8);
-AI_5_dblValue := arAIN_5.dblValue;
-
-(* [A1-8, AI4-6]  Р масла смазки низкое) *)
-fb_DavlenijaMasloSmNizkoe(arAIN := arAIN_6, strAI := ai.Pmaslo_sm_nizkoe, err_mod:=arERR_7);
-AI_6_dblValue := arAIN_6.dblValue;
-
-(* [A1-9, AI5-2]  Р масла смазки после ГМНС *)
-fb_DavlenijaMaslaPosleGNS(arAIN := arAIN_7, strAI := ai.Pmasla_posle_GNS, err_mod:=arERR_8);
-AI_7_dblValue := arAIN_7.dblValue;
-
-(* [A1-9, AI5-1]  Р масла смазки высокое *)
-fb_DavlenijaMasloSmVysokoe(arAIN := arAIN_8, strAI := ai.Pmaslo_sm_vysokoe, err_mod:=arERR_8);
-AI_8_dblValue := arAIN_8.dblValue;
-
-(* [A1-7, AI3-2] Т наружного воздуха *)
-fb_TNArujnogoVozduha(arAIN := arAIN_9, strAI := ai.Tnarujnogo_vozduha, err_mod:=arERR_6);
-AI_9_dblValue := arAIN_9.dblValue;
-
-(* [A1-8, AI4-0]  Т газа на входе нагнетателя *)
-fb_TgazaNaVhodeH(arAIN := arAIN_10, strAI := ai.Tgaza_na_vhode_H, err_mod:=arERR_7);
-AI_10_dblValue := arAIN_10.dblValue;
-
-(* [A1-8, AI4-1] Т газа на выходе нагнетателя *)
-fb_TgazaNaVyhodeH(arAIN := arAIN_11, strAI := ai.Tgaza_na_vyhode_H, err_mod:=arERR_7);
-AI_11_dblValue := arAIN_11.dblValue;
-
-(* [A1-6, AI2-7]  Т горячего воздуха в ЭД, точка 1 *)
-fb_TGorjachegoVozduhaEDKanall(arAIN := arAIN_12, strAI := ai.Tgorjachego_vozduha_ED_kanal_1, err_mod:=arERR_5);
-AI_12_dblValue := arAIN_12.dblValue;
-
-(* [A1-7, AI3-0] Т горячего воздуха в ЭД, точка 2 *)
-fb_TGorjachegoVozduhaEDKanal2(arAIN := arAIN_13, strAI := ai.Tgorjachego_vozduha_ED_kanal_2, err_mod:=arERR_6);
-AI_13_dblValue := arAIN_13.dblValue;
-
-(* [A1-8, AI4-4] Т масла в маслобаке *)
-fb_TMaslaMB(arAIN := arAIN_14, strAI := ai.Tmasla_MB, err_mod:=arERR_7);
-AI_14_dblValue := arAIN_14.dblValue;
-
-(* [A1-8, AI4-4] Т масла в маслобаке над ТЭНом *)
-fb_TMaslaMB(arAIN := arAIN_15, strAI := ai.Tmasla_MB_TEN, err_mod:=arERR_7);
-AI_15_dblValue := arAIN_15.dblValue;
-
-(* [A1-8, AI4-2] Т масла до АВО М *)
-fb_TMasladoAVOM(arAIN := arAIN_16, strAI := ai.Tgorjachego_vozduha_ED_kanal_2, err_mod:=arERR_7);
-AI_16_dblValue := arAIN_16.dblValue;
-
-(* [A1-8, AI4-3] Т масла после АВО М *)
-fb_TMaslaPosleAVOM(arAIN := arAIN_17, strAI := ai.Tmasla_posle_AVOM, err_mod:=arERR_7);
-AI_17_dblValue := arAIN_17.dblValue;
-
-(* [A1-4, AI0-3] Т Т меди статора фаза 1 *)
-fb_TMediStatoraKanal1(arAIN := arAIN_18, strAI := ai.Tmedi_statora_kanal_1, err_mod:=arERR_3);
-AI_18_dblValue := arAIN_18.dblValue;
-
-(* [A1-4, AI0-4] Т обмотки фазы 3 канал *)
-fb_TMediStatoraKanal2(arAIN := arAIN_19, strAI := ai.Tmedi_statora_kanal_2, err_mod:=arERR_3);
-AI_19_dblValue := arAIN_19.dblValue;
-
-(* [A1-4, AI0-5] Т меди статора фаза 2 *)
-fb_TMediStatoraKanal3(arAIN := arAIN_20, strAI := ai.Tmedi_statora_kanal_3, err_mod:=arERR_3);
-AI_20_dblValue := arAIN_20.dblValue;
-
-(* [A1-4, AI0-6] Т ОП ЭД со стороны свободного конца (т.1) } *)
-fb_TOpornogoPodshipnikaEDT_1(arAIN := arAIN_21, strAI := ai.Toporno_podshipnika_EDT_1, err_mod:=arERR_3);
-AI_21_dblValue := arAIN_21.dblValue;
-
-(* [A1-5, AI1-0]  Т ОУП ЭД со стороны редуктора (т.2) *)
-fb_TOpornoYpornogoPodshipnikaEDT_2(arAIN := arAIN_22, strAI := ai.Toporno_ypornogo_podshipnika_EDT_2, err_mod:=arERR_4);
-AI_22_dblValue := arAIN_22.dblValue;
-
-(* [A1-5, AI1-1]  Т ОУП колеса редуктора со стороны ЭД (т.3) *)
-fb_TOpornoYpornogoPodshipnikaKolesaRedEDT_3(arAIN := arAIN_23, strAI := ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3, err_mod:=arERR_4);
-AI_23_dblValue := arAIN_23.dblValue;
-
-(* [A1-5, AI1-2]Т ОП колеса редуктора со стороны Н (т.4) *)
-fb_TOpornoYpornogoPodshipnikaKolesaRedHT_4(arAIN := arAIN_24, strAI := ai.Toporno_ypornogo_podshipnika_kolesa_red_HT_4, err_mod:=arERR_4);
-AI_24_dblValue := arAIN_24.dblValue;
-
-(* [A1-5, AI1-3] Т ОП шестерни редуктора со стороны ЭД (т.5) *)
-fb_TOpornogoPodshipnikaShesterniReduktoraT_5(arAIN := arAIN_25, strAI := ai.Toporno_podshipnika_shesterni_reduktora_T_5, err_mod:=arERR_4);
-AI_25_dblValue := arAIN_25.dblValue;
-
-(* [A1-5, AI1-4]  Т ОП шестерни редуктора со стороны Н (т.6) *)
-fb_TOpornogoPodshipnikaReduktoraHT_6(arAIN := arAIN_26, strAI := ai.Toporno_podshipnika_reduktora_HT_6, err_mod:=arERR_4);
-AI_26_dblValue := arAIN_26.dblValue;
-
-(* [A1-5, AI1-5]  Т ОП Н со стороны редуктора (т.7) *)
-fb_TOpornoYpornogoPodshipnikaNagnetateljaT_7_1(arAIN := arAIN_27, strAI := ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1, err_mod:=arERR_4);
-AI_27_dblValue := arAIN_27.dblValue;
-
-(* [A1-5, AI1-5]  Т ОП Н со стороны редуктора (т.7) *)
-fb_TOpornoYpornogoPodshipnikaNagnetateljaT_7_2(arAIN := arAIN_28, strAI := ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2, err_mod:=arERR_4);
-AI_28_dblValue := arAIN_28.dblValue;
-
-(* [A1-5, AI1-7]  Т ОП Н со стороны свободного вала (т.8) *)
-fb_TOpornoYpornogoPodshipnikaSvobodnogoKoncaNT_8_1(arAIN := arAIN_28, strAI := ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1, err_mod:=arERR_4);
-AI_29_dblValue := arAIN_29.dblValue;
-
-(* [A1-5, AI1-7]  Т ОП Н со стороны свободного вала (т.8) *)
-fb_TOpornoYpornogoPodshipnikaSvobodnogoKoncaNT_8_2(arAIN := arAIN_28, strAI := ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2, err_mod:=arERR_4);
-AI_30_dblValue := arAIN_30.dblValue;
-
-(* [A1-6, AI2-1]  Т УП рабочих колодок нагнетателя(т9) *)
-fb_TYpornogoPodshipnikaRabKolodokHT_9_1(arAIN := arAIN_29, strAI := ai.Typornogo_podshipnika_rav_kolodok_HT_9_1, err_mod:=arERR_5);
-AI_31_dblValue := arAIN_31.dblValue;
-
-(* [A1-6, AI2-1]  Т УП рабочих колодок нагнетателя(т9) *)
-fb_TYpornogoPodshipnikaRabKolodokHT_9_2(arAIN := arAIN_29, strAI := ai.Typornogo_podshipnika_rav_kolodok_HT_9_2, err_mod:=arERR_5);
-AI_32_dblValue := arAIN_32.dblValue;
-
-(* [A1-6, AI2-3]  Т ОП установочных колодок нагнетателя(т10) *)
-fb_TYpornogoPodshipnikYstanKolodokHT_10_1(arAIN := arAIN_30, strAI := ai.Typornogo_podshipnika_nerab_kolodok_HT_10_1, err_mod:=arERR_5);
-AI_33_dblValue := arAIN_33.dblValue;
-
-(* [A1-6, AI2-3]  Т ОП установочных колодок нагнетателя(т10) *)
-fb_TYpornogoPodshipnikYstanKolodokHT_10_2(arAIN := arAIN_30, strAI := ai.Typornogo_podshipnika_nerab_kolodok_HT_10_2, err_mod:=arERR_5);
-AI_34_dblValue := arAIN_34.dblValue;
-
-(* [A1-4, AI0-0] Т стали статора фаза 1 *)
-fb_TStalisStatoraKanal1(arAIN := arAIN_31, strAI := ai.Tstali_statora_kanal_1, err_mod:=arERR_3);
-AI_35_dblValue := arAIN_35.dblValue;
-
-(* [A1-4, AI0-1] Т стали статора фаза 2 *)
-fb_TStalisStatoraKanal2(arAIN := arAIN_32, strAI := ai.Tstali_statora_kanal_2, err_mod:=arERR_3);
-AI_36_dblValue := arAIN_36.dblValue;
-
-(* [A1-4, AI0-2] Т стали статора фаза 3 *)
-fb_TStalisStatoraKanal3(arAIN := arAIN_33, strAI := ai.Tstali_statora_kanal_3, err_mod:=arERR_3);
-AI_37_dblValue := arAIN_37.dblValue;
-
-(* [A1-6, AI2-5] Т холодного воздуха в ЭД, точка 1 *)
-fb_THolodnogoVozduhaEDKanall(arAIN := arAIN_34, strAI := ai.Tholodnogo_vozduha_ED_kanal_1, err_mod:=arERR_5);
-AI_38_dblValue := arAIN_38.dblValue;
-
-(* [A1-6, AI2-6] Т холодного воздуха в ЭД, точка 2 *)
-fb_THolodnogoVozduhaEDKanal2(arAIN := arAIN_35, strAI := ai.Tholodnogo_vozduha_ED_kanal_2, err_mod:=arERR_5);
-AI_39_dblValue := arAIN_39.dblValue;
-
-(* [A1-10, AI6-5] Уровень масла в маслобаке *)
-fb_YrovenMaslaMB(arAIN := arAIN_36, strAI := ai.Yroven_masla_MB, err_mod:=arERR_9);
+fb_PerepadDavlenieNaKonfuzore(arAIN := arAIN_40, strAI := ai.dPgaza_na_konfuzore, err_mod:=arERR_8);
 AI_40_dblValue := arAIN_40.dblValue;
 
-(* [A1-10, AI6-5] Уровень масла в маслобаке *)
-fb_VibroSkorostOPED_T1(arAIN := arAIN_37, strAI := ai.Kontrol_post_220V, err_mod:=arERR_9);
+(* [A1-9, AI5-0] dР масла на масляном фильтре *)
+fb_PerepadDavlenieNaMasloFiltre(arAIN := arAIN_34, strAI := ai.dPgaza_na_maslo_filtre, err_mod:=arERR_8);
+AI_34_dblValue := arAIN_34.dblValue;
+
+(* [A1-9, AI5-7]  dР масло-газ *)
+fb_PerepadDavlenieMasloGaz(arAIN := arAIN_41, strAI := ai.dPmaslo_gaz, err_mod:=arERR_8);
 AI_41_dblValue := arAIN_41.dblValue;
 
-(* [A1-10, AI6-5] Уровень масла в маслобаке *)
-fb_VibroSkorostOYPED_T2(arAIN := arAIN_38, strAI := ai.Vibro_skorost_OPED_T1, err_mod:=arERR_9);
-AI_42_dblValue := arAIN_42.dblValue;
-
-(* [A1-10, AI6-5] Уровень масла в маслобаке *)
-fb_VibroSkorostOPKolesaRH_T4(arAIN := arAIN_39, strAI := ai.Vibro_skorost_OP_kolesa_RH_T4, err_mod:=arERR_9);
-AI_43_dblValue := arAIN_43.dblValue;
-
-(* [A1-10, AI6-5] Уровень масла в маслобаке *)
-fb_VibroSkorostOPShesterniRED_T5(arAIN := arAIN_40, strAI := ai.Vibro_skorost_OP_shesterni_RED_T5, err_mod:=arERR_9);
+(* [A1-10, AI6-2] Р газа на входе нагнетателя *)
+fb_DGazaNaVhodeNagnetatelja(arAIN := arAIN_44, strAI := ai.Pgaza_na_vhode_nagnetatelia, err_mod:=arERR_9);
 AI_44_dblValue := arAIN_44.dblValue;
 
-(* [A1-10, AI6-5] Уровень масла в маслобаке *)
-fb_VibroSkorostOPShesterniReduktoraH_T6(arAIN := arAIN_41, strAI := ai.Vibro_skorost_OP_shesterni_reduktora_H_T6, err_mod:=arERR_9);
+(* [A1-10, AI6-3] Р газа на выходе нагнетателя *)
+fb_DGazaNaVyhodeNagnetatelja(arAIN := arAIN_45, strAI := ai.Pgaza_na_vyhode_nagnetatelia, err_mod:=arERR_9);
 AI_45_dblValue := arAIN_45.dblValue;
+
+(* [A1-9, AI5-3]  Р масла после НУ *)
+fb_DavlenijaMaslaPosleNU(arAIN := arAIN_37, strAI := ai.Pmasla_posle_NU, err_mod:=arERR_8);
+AI_37_dblValue := arAIN_37.dblValue;
+
+(* [A1-8, AI4-6]  Р масла смазки низкое) *)
+fb_DavlenijaMasloSmNizkoe(arAIN := arAIN_33, strAI := ai.Pmaslo_sm_nizkoe, err_mod:=arERR_7);
+AI_33_dblValue := arAIN_33.dblValue;
+
+(* [A1-9, AI5-2]  Р масла смазки после ГМНС *)
+fb_DavlenijaMaslaPosleGNS(arAIN := arAIN_36, strAI := ai.Pmasla_posle_GNS, err_mod:=arERR_8);
+AI_36_dblValue := arAIN_36.dblValue;
+
+(* [A1-9, AI5-1]  Р масла смазки высокое *)
+fb_DavlenijaMasloSmVysokoe(arAIN := arAIN_35, strAI := ai.Pmaslo_sm_vysokoe, err_mod:=arERR_8);
+AI_35_dblValue := arAIN_35.dblValue;
+
+(* [A1-7, AI3-2] Т наружного воздуха *)
+fb_TNArujnogoVozduha(arAIN := arAIN_24, strAI := ai.Tnarujnogo_vozduha, err_mod:=arERR_6);
+AI_24_dblValue := arAIN_24.dblValue;
+
+(* [A1-8, AI4-0]  Т газа на входе нагнетателя *)
+fb_TgazaNaVhodeH(arAIN := arAIN_25, strAI := ai.Tgaza_na_vhode_H, err_mod:=arERR_7);
+AI_25_dblValue := arAIN_25.dblValue;
+
+(* [A1-8, AI4-1] Т газа на выходе нагнетателя *)
+fb_TgazaNaVyhodeH(arAIN := arAIN_26, strAI := ai.Tgaza_na_vyhode_H, err_mod:=arERR_7);
+AI_26_dblValue := arAIN_26.dblValue;
+
+(* [A1-6, AI2-7]  Т горячего воздуха в ЭД, точка 1 *)
+fb_TGorjachegoVozduhaEDKanall(arAIN := arAIN_22, strAI := ai.Tgorjachego_vozduha_ED_kanal_1, err_mod:=arERR_5);
+AI_22_dblValue := arAIN_22.dblValue;
+
+(* [A1-7, AI3-0] Т горячего воздуха в ЭД, точка 2 *)
+fb_TGorjachegoVozduhaEDKanal2(arAIN := arAIN_23, strAI := ai.Tgorjachego_vozduha_ED_kanal_2, err_mod:=arERR_6);
+AI_23_dblValue := arAIN_23.dblValue;
+
+(* [A1-8, AI4-4] Т масла в маслобаке *)
+fb_TMaslaMB(arAIN := arAIN_29, strAI := ai.Tmasla_MB, err_mod:=arERR_7);
+AI_29_dblValue := arAIN_29.dblValue;
+
+(* [A1-8, AI4-4] Т масла в маслобаке над ТЭНом *)
+fb_TMaslaMB_TEN(arAIN := arAIN_30, strAI := ai.Tmasla_MB_TEN, err_mod:=arERR_7);
+AI_30_dblValue := arAIN_30.dblValue;
+
+(* [A1-8, AI4-2] Т масла до АВО М *)
+fb_TMasladoAVOM(arAIN := arAIN_27, strAI := ai.Tgorjachego_vozduha_ED_kanal_2, err_mod:=arERR_7);
+AI_27_dblValue := arAIN_27.dblValue;
+
+(* [A1-8, AI4-3] Т масла после АВО М *)
+fb_TMaslaPosleAVOM(arAIN := arAIN_28, strAI := ai.Tmasla_posle_AVOM, err_mod:=arERR_7);
+AI_28_dblValue := arAIN_28.dblValue;
+
+(* [A1-4, AI0-3] Т Т меди статора фаза 1 *)
+fb_TMediStatoraKanal1(arAIN := arAIN_3, strAI := ai.Tmedi_statora_kanal_1, err_mod:=arERR_3);
+AI_3_dblValue := arAIN_3.dblValue;
+
+(* [A1-4, AI0-4] Т обмотки фазы 3 канал *)
+fb_TMediStatoraKanal2(arAIN := arAIN_4, strAI := ai.Tmedi_statora_kanal_2, err_mod:=arERR_3);
+AI_4_dblValue := arAIN_4.dblValue;
+
+(* [A1-4, AI0-5] Т меди статора фаза 2 *)
+fb_TMediStatoraKanal3(arAIN := arAIN_5, strAI := ai.Tmedi_statora_kanal_3, err_mod:=arERR_3);
+AI_5_dblValue := arAIN_5.dblValue;
+
+(* [A1-4, AI0-6] Т ОП ЭД со стороны свободного конца (т.1) } *)
+fb_TOpornogoPodshipnikaEDT_1(arAIN := arAIN_6, strAI := ai.Toporno_podshipnika_EDT_1, err_mod:=arERR_3);
+AI_6_dblValue := arAIN_6.dblValue;
+
+(* [A1-5, AI1-0]  Т ОУП ЭД со стороны редуктора (т.2) *)
+fb_TOpornoYpornogoPodshipnikaEDT_2(arAIN := arAIN_7, strAI := ai.Toy_podshipnika_EDT_2, err_mod:=arERR_4);
+AI_7_dblValue := arAIN_7.dblValue;
+
+(* [A1-5, AI1-1]  Т ОУП колеса редуктора со стороны ЭД (т.3) *)
+fb_TOpornoYpornogoPodshipnikaKolesaRedEDT_3(arAIN := arAIN_8, strAI := ai.Toy_podshipnika_kol_EDT_3, err_mod:=arERR_4);
+AI_8_dblValue := arAIN_8.dblValue;
+
+(* [A1-5, AI1-2]Т ОП колеса редуктора со стороны Н (т.4) *)
+fb_TOpornoYpornogoPodshipnikaKolesaRedHT_4(arAIN := arAIN_9, strAI := ai.Toy_podshipnika_kol_EDT_4, err_mod:=arERR_4);
+AI_9_dblValue := arAIN_9.dblValue;
+
+(* [A1-5, AI1-3] Т ОП шестерни редуктора со стороны ЭД (т.5) *)
+fb_TOpornogoPodshipnikaShesterniReduktoraT_5(arAIN := arAIN_10, strAI := ai.Toy_podshipnika_shest_red_EDT_5, err_mod:=arERR_4);
+AI_10_dblValue := arAIN_10.dblValue;
+
+(* [A1-5, AI1-4]  Т ОП шестерни редуктора со стороны Н (т.6) *)
+fb_TOpornogoPodshipnikaReduktoraHT_6(arAIN := arAIN_11, strAI := ai.Ty_podshipnika_red_EDT_6, err_mod:=arERR_4);
+AI_11_dblValue := arAIN_11.dblValue;
+
+(* [A1-5, AI1-5]  Т ОП Н со стороны редуктора (т.7) *)
+fb_TOpornoYpornogoPodshipnikaNagnetateljaT_7_1(arAIN := arAIN_12, strAI := ai.Ty_podshipnika_nagnet_EDT_7_1, err_mod:=arERR_4);
+AI_12_dblValue := arAIN_12.dblValue;
+
+(* [A1-5, AI1-5]  Т ОП Н со стороны редуктора (т.7) *)
+fb_TOpornoYpornogoPodshipnikaNagnetateljaT_7_2(arAIN := arAIN_13, strAI := ai.Ty_podshipnika_nagnet_EDT_7_2, err_mod:=arERR_4);
+AI_13_dblValue := arAIN_13.dblValue;
+
+(* [A1-5, AI1-7]  Т ОП Н со стороны свободного вала (т.8) *)
+fb_TOpornoYpornogoPodshipnikaSvobodnogoKoncaNT_8_1(arAIN := arAIN_14, strAI := ai.Toy_podshipnika_svobod_konca_EDT_8_1, err_mod:=arERR_4);
+AI_14_dblValue := arAIN_14.dblValue;
+
+(* [A1-5, AI1-7]  Т ОП Н со стороны свободного вала (т.8) *)
+fb_TOpornoYpornogoPodshipnikaSvobodnogoKoncaNT_8_2(arAIN := arAIN_15, strAI := ai.Toy_podshipnika_svobod_konca_EDT_8_2, err_mod:=arERR_4);
+AI_15_dblValue := arAIN_15.dblValue;
+
+(* [A1-6, AI2-1]  Т УП рабочих колодок нагнетателя(т9) *)
+fb_TYpornogoPodshipnikaRabKolodokHT_9_1(arAIN := arAIN_16, strAI := ai.Toy_podshipnika_rab_kol_EDT_9_1, err_mod:=arERR_5);
+AI_16_dblValue := arAIN_16.dblValue;
+
+(* [A1-6, AI2-1]  Т УП рабочих колодок нагнетателя(т9) *)
+fb_TYpornogoPodshipnikaRabKolodokHT_9_2(arAIN := arAIN_17, strAI := ai.Toy_podshipnika_rab_kol_EDT_9_2, err_mod:=arERR_5);
+AI_17_dblValue := arAIN_17.dblValue;
+
+(* [A1-6, AI2-3]  Т ОП установочных колодок нагнетателя(т10) *)
+fb_TYpornogoPodshipnikYstanKolodokHT_10_1(arAIN := arAIN_18, strAI := ai.Toy_podshipnika_nerab_kol_EDT_10_1, err_mod:=arERR_5);
+AI_18_dblValue := arAIN_18.dblValue;
+
+(* [A1-6, AI2-3]  Т ОП установочных колодок нагнетателя(т10) *)
+fb_TYpornogoPodshipnikYstanKolodokHT_10_2(arAIN := arAIN_19, strAI := ai.Toy_podshipnika_nerab_kol_EDT_10_2, err_mod:=arERR_5);
+AI_19_dblValue := arAIN_19.dblValue;
+
+(* [A1-4, AI0-0] Т стали статора фаза 1 *)
+fb_TStalisStatoraKanal1(arAIN := arAIN_0, strAI := ai.Tstali_statora_kanal_1, err_mod:=arERR_3);
+AI_0_dblValue := arAIN_0.dblValue;
+
+(* [A1-4, AI0-1] Т стали статора фаза 2 *)
+fb_TStalisStatoraKanal2(arAIN := arAIN_1, strAI := ai.Tstali_statora_kanal_2, err_mod:=arERR_3);
+AI_1_dblValue := arAIN_1.dblValue;
+
+(* [A1-4, AI0-2] Т стали статора фаза 3 *)
+fb_TStalisStatoraKanal3(arAIN := arAIN_2, strAI := ai.Tstali_statora_kanal_3, err_mod:=arERR_3);
+AI_2_dblValue := arAIN_2.dblValue;
+
+(* [A1-6, AI2-5] Т холодного воздуха в ЭД, точка 1 *)
+fb_THolodnogoVozduhaEDKanall(arAIN := arAIN_20, strAI := ai.Tholodnogo_vozduha_ED_kanal_1, err_mod:=arERR_5);
+AI_20_dblValue := arAIN_20.dblValue;
+
+(* [A1-6, AI2-6] Т холодного воздуха в ЭД, точка 2 *)
+fb_THolodnogoVozduhaEDKanal2(arAIN := arAIN_21, strAI := ai.Tholodnogo_vozduha_ED_kanal_2, err_mod:=arERR_5);
+AI_21_dblValue := arAIN_21.dblValue;
+
+(* [A1-10, AI6-5] Уровень масла в маслобаке *)
+fb_YrovenMaslaMB(arAIN := arAIN_48, strAI := ai.Yroven_masla_MB, err_mod:=arERR_9);
+AI_48_dblValue := arAIN_48.dblValue;
+
+(* [A1-10, AI6-5] Уровень масла в маслобаке *)
+fb_VibroSkorostOPED_T1(arAIN := arAIN_56, strAI := ai.Kontrol_post_220V, err_mod:=arERR_9);
+AI_56_dblValue := arAIN_56.dblValue;
+
+(* [A1-10, AI6-5] Уровень масла в маслобаке *)
+fb_VibroSkorostOYPED_T2(arAIN := arAIN_57, strAI := ai.Vibro_skorost_OPED_T1, err_mod:=arERR_9);
+AI_57_dblValue := arAIN_57.dblValue;
+
+(* [A1-10, AI6-5] Уровень масла в маслобаке *)
+fb_VibroSkorostOPKolesaRH_T4(arAIN := arAIN_59, strAI := ai.Vibro_skorost_OP_kolesa_RH_T4, err_mod:=arERR_9);
+AI_59_dblValue := arAIN_59.dblValue;
+
+(* [A1-10, AI6-5] Уровень масла в маслобаке *)
+fb_VibroSkorostOPShesterniRED_T5(arAIN := arAIN_60, strAI := ai.Vibro_skorost_OP_shesterni_RED_T5, err_mod:=arERR_9);
+AI_60_dblValue := arAIN_60.dblValue;
+
+(* [A1-10, AI6-5] Уровень масла в маслобаке *)
+fb_VibroSkorostOPShesterniReduktoraH_T6(arAIN := arAIN_61, strAI := ai.Vibro_skorost_OP_shesterni_RED_T6, err_mod:=arERR_9);
+AI_61_dblValue := arAIN_61.dblValue;
 
 
 (**********************************************s Модуль A1-5 *********************************************************)
@@ -409,36 +423,40 @@ A1_7_err_mode := arERR_6.wValue;
 
 (********************************************** Модуль A1-8 *********************************************************)
 (* [A1-8, AI4-5]  Температура в шкафу САУ *)
-fb_TEmperatura_v_SHU(arAIN := arAIN_42, strAI := ai.Tshu, err_mod:=arERR_7);
-AI_46_dblValue := arAIN_46.dblValue;
+fb_TEmperatura_v_SHU(arAIN := arAIN_32, strAI := ai.Tshu, err_mod:=arERR_7);
+AI_32_dblValue := arAIN_32.dblValue;
 
 (* [A1-9, AI5-5]  Вибрация ротора нагнетателя т.4 *)
-fb_OsSdvigNagnetatelja_Plus(arAIN := arAIN_43, strAI := ai.Os_sdvig_nagnetatelja_plus, err_mod:=arERR_8);
-AI_47_dblValue := arAIN_47.dblValue;
+fb_OsSdvigNagnetatelja_Plus(arAIN := arAIN_42, strAI := ai.Os_sdvig_nagnetatelja_plus, err_mod:=arERR_8);
+AI_42_dblValue := arAIN_42.dblValue;
 
 (* [A1-9, AI5-6]  Осевой сдвиг ротора нагнетателя *)
-fb_OsSdvigNagnetatelja_Minus(arAIN := arAIN_44, strAI := ai.Os_sdvig_nagnetatelja_minus, err_mod:=arERR_8);
-AI_48_dblValue := arAIN_48.dblValue;
+fb_OsSdvigNagnetatelja_Minus(arAIN := arAIN_43, strAI := ai.Os_sdvig_nagnetatelja_minus, err_mod:=arERR_8);
+AI_43_dblValue := arAIN_43.dblValue;
 
 A1_9_err_mode := arERR_8.wValue;
 
 
 (********************************************** Модуль A1-10 *********************************************************)
 (* [A1-10, AI6-0] Температура внутри шкафа *)
-fb_VibroSkorostOYPKolesaED_T3(arAIN := arAIN_45, strAI := ai.Vibro_skorost_OYP_kolesa_ED_T3, err_mod:=arERR_9);
-AI_49_dblValue := arAIN_49.dblValue;
+fb_VibroSkorostOYPKolesaED_T3(arAIN := arAIN_58, strAI := ai.Vibro_skorost_OYP_kolesa_ED_T3, err_mod:=arERR_9);
+AI_58_dblValue := arAIN_58.dblValue;
 
 (* [A1-10, AI6-4] Активная мощность *)
 fb_DavlenieImpulsGaz(arAIN := arAIN_46, strAI := ai.Pimpuls_gaz, err_mod:=arERR_9);
-AI_50_dblValue := arAIN_50.dblValue;
+AI_46_dblValue := arAIN_46.dblValue;
 
 (* [A1-10, AI6-6]  Напряжение питания ШУ, основной ввод *)
-fb_Kontrol_per220V(arAIN := arAIN_47, strAI := ai.Kontrol_per_220V, err_mod:=arERR_9);
-AI_51_dblValue := arAIN_51.dblValue;
+fb_Kontrol_per220V(arAIN := arAIN_52, strAI := ai.Kontrol_per_220V, err_mod:=arERR_9);
+AI_52_dblValue := arAIN_52.dblValue;
 
 (* [A1-10, AI6-7]  Напряжение питания ШУ, резервный ввод *)
-fb_Kontrol_post220V(arAIN := arAIN_48, strAI := ai.Kontrol_post_220V, err_mod:=arERR_9);
-AI_52_dblValue := arAIN_52.dblValue;
+fb_Kontrol_post220V(arAIN := arAIN_53, strAI := ai.Kontrol_post_220V, err_mod:=arERR_9);
+AI_53_dblValue := arAIN_53.dblValue;
+
+(* [A1-10, AI6-7]  Напряжение питания ШУ, резервный ввод *)
+fb_TokStatora(arAIN := arAIN_65, strAI := ai.Tok_statora, err_mod:=arERR_9);
+AI_65_dblValue := arAIN_65.dblValue;
 
 
 A1_10_err_mode := arERR_9.wValue;

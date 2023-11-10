@@ -1,7 +1,7 @@
 FUNCTION_BLOCK ExtNarabotka
 
 VAR
-	saveInterval : TIME := T#30S;
+	saveInterval : TIME   := T#30S;
 	narabotka : UDINT;
 	timer : RTC;
 	saveTimer : TON;
@@ -19,6 +19,10 @@ VAR_INPUT
 	started : BOOL;
 	reset : BOOL;
 END_VAR
+
+
+
+
 
 IF NOT initialized THEN	
 	narabotka:=retain_narabotka;

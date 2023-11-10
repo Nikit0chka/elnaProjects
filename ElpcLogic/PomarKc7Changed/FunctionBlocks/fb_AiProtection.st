@@ -27,6 +27,10 @@ VAR
 	SignalingAi : BOOL;
 END_VAR
 
+
+
+
+
 timer(IN :=(ai.interval=StrAIp.controlLimit) AND (ai.interval >= _statusAi.normal) AND StrAIp.isRunning, PT :=StrAIp.delay);
 SignalingTrig(CLK := timer.Q);
 IF SignalingTrig.Q THEN

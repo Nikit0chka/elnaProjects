@@ -12,19 +12,19 @@ VAR
 	fb_Kran1_sdvig : fb_KranOpenProtection;
 	fb_Kran2_sdvig : fb_KranOpenProtection;
 	fb_Toporno_podshipnika_EDT_1 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_EDT_2 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_kolesa_red_EDT_3 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_kolesa_red_HT_4 : fb_AiProtection;
-	fb_Toporno_podshipnika_shesterni_reduktora_T_5 : fb_AiProtection;
-	fb_Toporno_podshipnika_reduktora_HT_6 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1 : fb_AiProtection;
-	fb_Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2 : fb_AiProtection;
-	fb_Typornogo_podshipnika_rav_kolodok_HT_9_1 : fb_AiProtection;
-	fb_Typornogo_podshipnika_rav_kolodok_HT_9_2 : fb_AiProtection;
-	fb_Typornogo_podshipnika_nerab_kolodok_HT_10_1 : fb_AiProtection;
-	fb_Typornogo_podshipnika_nerab_kolodok_HT_10_2 : fb_AiProtection;
+	fb_Toy_podshipnika_EDT_2 : fb_AiProtection;
+	fb_Toy_podshipnika_kol_EDT_3 : fb_AiProtection;
+	fb_Toy_podshipnika_kol_EDT_4 : fb_AiProtection;
+	fb_Toy_podshipnika_shest_red_EDT_5 : fb_AiProtection;
+	fb_Ty_podshipnika_red_EDT_6 : fb_AiProtection;
+	fb_Ty_podshipnika_nagnet_EDT_7_1 : fb_AiProtection;
+	fb_Ty_podshipnika_nagnet_EDT_7_2 : fb_AiProtection;
+	fb_Toy_podshipnika_svobod_konca_EDT_8_1 : fb_AiProtection;
+	fb_Toy_podshipnika_svobod_konca_EDT_8_2 : fb_AiProtection;
+	fb_Toy_podshipnika_rab_kol_EDT_9_1 : fb_AiProtection;
+	fb_Toy_podshipnika_rab_kol_EDT_9_2 : fb_AiProtection;
+	fb_Toy_podshipnika_nerab_kol_EDT_10_1 : fb_AiProtection;
+	fb_Toy_podshipnika_nerab_kol_EDT_10_2 : fb_AiProtection;
 	fb_Tgaza_na_vhode_H : fb_AiProtection;
 	fb_Tgaza_na_vyhode_H : fb_AiProtection;
 	fb_Tmasla_v_mb : fb_AiProtection;
@@ -57,7 +57,7 @@ VAR
 	fb_Vibro_skorost_OYP_kolesa_ED_T3 : fb_AiProtection;
 	fb_Vibro_skorost_OP_kolesa_RH_T4 : fb_AiProtection;
 	fb_Vibro_skorost_OP_shesterni_RED_T5 : fb_AiProtection;
-	fb_Vibro_skorost_OP_shesterni_reduktora_H_T6 : fb_AiProtection;
+	fb_Vibro_skorost_OP_shesterni_RED_T6 : fb_AiProtection;
 	fb_Vibroperemesh_vala_N_T7 : fb_AiProtection;
 	fb_Vibroperemesh_vala_N_T8 : fb_AiProtection;
 	fb_Uroven_masla_v_mb : fb_AiProtection;
@@ -73,6 +73,10 @@ VAR_EXTERNAL
 	ai : AiConfig;
 	IM : ImConfig;
 END_VAR
+
+
+
+
 
 (************************************************************* DiProtection ************************************************************)
 (* МВ отключен 
@@ -112,43 +116,43 @@ fb_Kran2_sdvig(im:=IM.Kran2, StrDIp := protections.Kran2_sdvig);
 fb_Toporno_podshipnika_EDT_1(ai := ai.Toporno_podshipnika_EDT_1, StrAIp := protections.Topornogo_podshipnika_EDT_1);
 
 (* Температура заднего опорного подшипника двигателя, т.2 *)
-fb_Toporno_ypornogo_podshipnika_EDT_2(ai := ai.Toporno_ypornogo_podshipnika_EDT_2, StrAIp := protections.Toporno_ypornogo_podshipnika_EDT_2);
+fb_Toy_podshipnika_EDT_2(ai := ai.Toy_podshipnika_EDT_2, StrAIp := protections.Toy_podshipnika_EDT_2);
 
 (* Температура подшипника редуктора, т1 *)
-fb_Toporno_ypornogo_podshipnika_kolesa_red_EDT_3(ai := ai.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3, StrAIp := protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3);
+fb_Toy_podshipnika_kol_EDT_3(ai := ai.Toy_podshipnika_kol_EDT_3, StrAIp := protections.Toy_podshipnika_kol_EDT_3);
 
 (* Температура подшипника редуктора, т2 *)
-fb_Toporno_ypornogo_podshipnika_kolesa_red_HT_4(ai := ai.Toporno_ypornogo_podshipnika_kolesa_red_HT_4, StrAIp := protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4);
+fb_Toy_podshipnika_kol_EDT_4(ai := ai.Toy_podshipnika_kol_EDT_4, StrAIp := protections.Toy_podshipnika_kol_EDT_4);
 
 (* Температура подшипника редуктора, т3 *)
-fb_Toporno_podshipnika_shesterni_reduktora_T_5(ai := ai.Toporno_podshipnika_shesterni_reduktora_T_5, StrAIp := protections.Topornogo_podshipnika_shesterni_reduktora_T_5);
+fb_Toy_podshipnika_shest_red_EDT_5(ai := ai.Toy_podshipnika_shest_red_EDT_5, StrAIp := protections.To_podshipnika_shest_red_EDT_5);
 
 (* Температура подшипника редуктора, т4 *)
-fb_Toporno_podshipnika_reduktora_HT_6(ai := ai.Toporno_podshipnika_reduktora_HT_6, StrAIp := protections.Topornogo_podshipnika_reduktora_HT_6);
+fb_Ty_podshipnika_red_EDT_6(ai := ai.Ty_podshipnika_red_EDT_6, StrAIp := protections.To_podshipnika_shest_red_EDT_6);
 
 (* Температура опорного подшипника нагнетателя, т1 *)
-fb_Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1(ai := ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_1, StrAIp := protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7);
+fb_Ty_podshipnika_nagnet_EDT_7_1(ai := ai.Ty_podshipnika_nagnet_EDT_7_1, StrAIp := protections.To_podshipnika_N_EDT_7);
 
 (* Температура опорного подшипника нагнетателя, т1 *)
-fb_Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2(ai := ai.Toporno_ypornogo_podshipnika_nagnetatelja_T_7_2, StrAIp := protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7);
+fb_Ty_podshipnika_nagnet_EDT_7_2(ai := ai.Ty_podshipnika_nagnet_EDT_7_2, StrAIp := protections.To_podshipnika_N_EDT_7);
 
 (* Температура опорного подшипника нагнетателя, т2 *)
-fb_Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1(ai := ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_1, StrAIp := protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8);
+fb_Toy_podshipnika_svobod_konca_EDT_8_1(ai := ai.Toy_podshipnika_svobod_konca_EDT_8_1, StrAIp := protections.To_podshipnika_svob_konca_EDT_8);
 
 (* Температура опорного подшипника нагнетателя, т2 *)
-fb_Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2(ai := ai.Toporno_ypornogo_podshipnika_svobodnogo_konca_NT_8_2, StrAIp := protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8);
+fb_Toy_podshipnika_svobod_konca_EDT_8_2(ai := ai.Toy_podshipnika_svobod_konca_EDT_8_2, StrAIp := protections.To_podshipnika_svob_konca_EDT_8);
 
 (* Температура опорного подшипника нагнетателя, т3 *)
-fb_Typornogo_podshipnika_rav_kolodok_HT_9_1(ai := ai.Typornogo_podshipnika_rav_kolodok_HT_9_1, StrAIp := protections.Typornogo_podshipnika_rav_kolodok_HT_9);
+fb_Toy_podshipnika_rab_kol_EDT_9_1(ai := ai.Toy_podshipnika_rab_kol_EDT_9_1, StrAIp := protections.Ty_podshipnika_rab_kol_EDT_9);
 
 (* Температура опорного подшипника нагнетателя, т3 *)
-fb_Typornogo_podshipnika_rav_kolodok_HT_9_2(ai := ai.Typornogo_podshipnika_rav_kolodok_HT_9_2, StrAIp := protections.Typornogo_podshipnika_rav_kolodok_HT_9);
+fb_Toy_podshipnika_rab_kol_EDT_9_2(ai := ai.Toy_podshipnika_rab_kol_EDT_9_2, StrAIp := protections.Ty_podshipnika_rab_kol_EDT_9);
 
 (* Температура упорно опорного подшипника нагнетателя, т4 *)
-fb_Typornogo_podshipnika_nerab_kolodok_HT_10_1(ai := ai.Typornogo_podshipnika_nerab_kolodok_HT_10_1, StrAIp := protections.Typornogo_podshipnika_nerab_kolodok_HT_10);
+fb_Toy_podshipnika_nerab_kol_EDT_10_1(ai := ai.Toy_podshipnika_nerab_kol_EDT_10_1, StrAIp := protections.Typornogo_podshipnika_nerab_kolodok_HT_10);
 
 (* Температура упорно опорного подшипника нагнетателя, т4 *)
-fb_Typornogo_podshipnika_nerab_kolodok_HT_10_2(ai := ai.Typornogo_podshipnika_nerab_kolodok_HT_10_2, StrAIp := protections.Typornogo_podshipnika_nerab_kolodok_HT_10);
+fb_Toy_podshipnika_nerab_kol_EDT_10_2(ai := ai.Toy_podshipnika_nerab_kol_EDT_10_2, StrAIp := protections.Typornogo_podshipnika_nerab_kolodok_HT_10);
 
 (* Температура газа на выходе нагнетателя *)
 fb_Tgaza_na_vyhode_H(ai := ai.Tgaza_na_vhode_H, StrAIp := protections.Tgaza_na_vyhode_H);
@@ -187,4 +191,4 @@ fb_Vibro_skorost_OP_kolesa_RH_T4(ai := ai.Vibro_skorost_OP_kolesa_RH_T4, StrAIp 
 fb_Vibro_skorost_OP_shesterni_RED_T5(ai := ai.Vibro_skorost_OP_shesterni_RED_T5, StrAIp := protections.Vibro_skorost_OP_shesterni_RED_T5);
 
 (* Температура газа на выходе нагнетателя *)
-fb_Vibro_skorost_OP_shesterni_reduktora_H_T6(ai := ai.Vibro_skorost_OP_shesterni_reduktora_H_T6, StrAIp := protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+fb_Vibro_skorost_OP_shesterni_RED_T6(ai := ai.Vibro_skorost_OP_shesterni_RED_T6, StrAIp := protections.Vibro_skorost_OP_shesterni_RED_T6);

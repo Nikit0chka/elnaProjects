@@ -4,15 +4,19 @@ VAR_IN_OUT
 	protections : ProtectionsConfig;
 END_VAR
 
+
+
+
+
 protections.Topornogo_podshipnika_EDT_1.inOpcCommandsDisabled:=TRUE;
-protections.Toporno_ypornogo_podshipnika_EDT_2.inOpcCommandsDisabled:=TRUE;
-protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3.inOpcCommandsDisabled:=TRUE;
-protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4.inOpcCommandsDisabled:=TRUE;
-protections.Topornogo_podshipnika_shesterni_reduktora_T_5.inOpcCommandsDisabled:=TRUE;
-protections.Topornogo_podshipnika_reduktora_HT_6.inOpcCommandsDisabled:=TRUE;
-protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7.inOpcCommandsDisabled:=TRUE;
-protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8.inOpcCommandsDisabled:=TRUE;
-protections.Typornogo_podshipnika_rav_kolodok_HT_9.inOpcCommandsDisabled:=TRUE;
+protections.Toy_podshipnika_EDT_2.inOpcCommandsDisabled:=TRUE;
+protections.Toy_podshipnika_kol_EDT_3.inOpcCommandsDisabled:=TRUE;
+protections.Toy_podshipnika_kol_EDT_4.inOpcCommandsDisabled:=TRUE;
+protections.To_podshipnika_shest_red_EDT_5.inOpcCommandsDisabled:=TRUE;
+protections.To_podshipnika_shest_red_EDT_6.inOpcCommandsDisabled:=TRUE;
+protections.To_podshipnika_N_EDT_7.inOpcCommandsDisabled:=TRUE;
+protections.To_podshipnika_svob_konca_EDT_8.inOpcCommandsDisabled:=TRUE;
+protections.Ty_podshipnika_rab_kol_EDT_9.inOpcCommandsDisabled:=TRUE;
 protections.Typornogo_podshipnika_nerab_kolodok_HT_10.inOpcCommandsDisabled:=TRUE;
 protections.Tgaza_na_vyhode_H.inOpcCommandsDisabled:=TRUE;
 protections.Os_sdvig_nagnetatelja_plus.inOpcCommandsDisabled:=TRUE;
@@ -28,7 +32,7 @@ protections.Vibro_skorost_OPED_T2.inOpcCommandsDisabled:=TRUE;
 protections.Vibro_skorost_OYP_kolesa_ED_T3.inOpcCommandsDisabled:=TRUE;
 protections.Vibro_skorost_OP_kolesa_RH_T4.inOpcCommandsDisabled:=TRUE;
 protections.Vibro_skorost_OP_shesterni_RED_T5.inOpcCommandsDisabled:=TRUE;
-protections.Vibro_skorost_OP_shesterni_reduktora_H_T6.inOpcCommandsDisabled:=TRUE;
+protections.Vibro_skorost_OP_shesterni_RED_T6.inOpcCommandsDisabled:=TRUE;
 protections.dPmaslo_gaz_less100.inOpcCommandsDisabled:=TRUE;
 protections.Reg_vozb_off.inOpcCommandsDisabled:=TRUE;
 protections.Fail_chastotnii_pusk.inOpcCommandsDisabled:=TRUE;

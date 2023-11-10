@@ -91,8 +91,12 @@ VAR_EXTERNAL
 END_VAR
 
 VAR CONSTANT
-	Ust_Pgaza : LREAL := 0.3;
+	Ust_Pgaza : LREAL   := 0.3;
 END_VAR
+
+
+
+
 
 IF NOT onInit THEN
     fb_timer120(phaseNumber:=1, delay:=T#120S);

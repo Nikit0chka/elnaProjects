@@ -4,15 +4,19 @@ VAR_IN_OUT
 	protections : ProtectionsConfig;
 END_VAR
 
+
+
+
+
 resetAiProtection(protections.Topornogo_podshipnika_EDT_1);
-resetAiProtection(protections.Toporno_ypornogo_podshipnika_EDT_2);
-resetAiProtection(protections.Toporno_ypornogo_podshipnika_kolesa_red_EDT_3);
-resetAiProtection(protections.Toporno_ypornogo_podshipnika_kolesa_red_HT_4);
-resetAiProtection(protections.Topornogo_podshipnika_shesterni_reduktora_T_5);
-resetAiProtection(protections.Topornogo_podshipnika_reduktora_HT_6);
-resetAiProtection(protections.TOporno_ypornogo_podshipnika_Nagnetatelja_T_7);
-resetAiProtection(protections.Topporno_ypornogo_podshipnika_svobodnogo_konca_NT_8);
-resetAiProtection(protections.Typornogo_podshipnika_rav_kolodok_HT_9);
+resetAiProtection(protections.Toy_podshipnika_EDT_2);
+resetAiProtection(protections.Toy_podshipnika_kol_EDT_3);
+resetAiProtection(protections.Toy_podshipnika_kol_EDT_4);
+resetAiProtection(protections.To_podshipnika_shest_red_EDT_5);
+resetAiProtection(protections.To_podshipnika_shest_red_EDT_6);
+resetAiProtection(protections.To_podshipnika_N_EDT_7);
+resetAiProtection(protections.To_podshipnika_svob_konca_EDT_8);
+resetAiProtection(protections.Ty_podshipnika_rab_kol_EDT_9);
 resetAiProtection(protections.Typornogo_podshipnika_nerab_kolodok_HT_10);
 resetAiProtection(protections.Tgaza_na_vyhode_H);
 resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
@@ -28,7 +32,7 @@ resetAiProtection(protections.Vibro_skorost_OPED_T2);
 resetAiProtection(protections.Vibro_skorost_OYP_kolesa_ED_T3);
 resetAiProtection(protections.Vibro_skorost_OP_kolesa_RH_T4);
 resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);
-resetAiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);
+resetAiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6);
 
 
 resetDiProtection(protections.dPmaslo_gaz_less100);

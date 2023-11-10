@@ -8,7 +8,7 @@ VAR_INPUT
 	ISVALIDREF_cmdOff : BOOL;
 	ISVALIDREF_inSo : BOOL;
 	ISVALIDREF_inSz : BOOL;
-	ISVALIDREF_inDp : BOOL := False;
+	ISVALIDREF_inDp : BOOL   := False;
 	continueHoldCommand : TIME;
 END_VAR
 
@@ -17,8 +17,12 @@ VAR_IN_OUT
 END_VAR
 
 VAR_OUTPUT
-	Init : BOOL := FALSE; (*Флаг успешно выполненной инициализации.*)
+	Init : BOOL   := FALSE; (*Флаг успешно выполненной инициализации.*)
 END_VAR
+
+
+
+
 
 (*****            Функциональный блок переинициализации структуры  Kran          *****)
 

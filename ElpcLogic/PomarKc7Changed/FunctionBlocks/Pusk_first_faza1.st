@@ -42,6 +42,10 @@ VAR_EXTERNAL
 	ai : AiConfig;
 END_VAR
 
+
+
+
+
 IF NOT onInit THEN
 
          fb_timer240(phaseNumber:=0, delay:=T#240S);

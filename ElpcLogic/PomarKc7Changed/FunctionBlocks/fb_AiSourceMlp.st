@@ -43,6 +43,10 @@ VAR
 	Nedostover_trig : R_TRIG;
 END_VAR
 
+
+
+
+
 strAI.opcCommandsDisabled := strAI.inopcCommandsDisabled ;
 
 (* ---- При первом пуске принимаем значение уставок ---- *)

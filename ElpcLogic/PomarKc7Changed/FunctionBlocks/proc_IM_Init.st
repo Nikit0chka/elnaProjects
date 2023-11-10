@@ -24,11 +24,15 @@ VAR_EXTERNAL
 	IM : ImConfig;
 END_VAR
 
+
+
+
+
 inits := 0; (* Флаг необходимости инициализации структур-дескрипторов *)
                                      (* Стартовая инициализация ИМ *)
 (* Кран 1 *)
 stKr_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
-      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, ISVALIDREF_inDp:=true,
+      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true,
       ISVALIDREF_inSo:=true, ISVALIDREF_inSz:=true, 
       str_Kr := IM.Kran1);
 inits := inits + BOOL_TO_UINT(stKr_Ini.Init);
@@ -50,7 +54,7 @@ inits := inits + BOOL_TO_UINT(stKr_Ini.Init);
 (* Кран 3b *)
 stKr_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inSo:=true, ISVALIDREF_inSz:=true, continueHoldCommand:=T#5S,
+      ISVALIDREF_inSo:=true, ISVALIDREF_inSz:=true,
       str_Kr := IM.Kran3b);
 inits := inits + BOOL_TO_UINT(stKr_Ini.Init);
 
@@ -75,88 +79,75 @@ stKr_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
 inits := inits + BOOL_TO_UINT(stKr_Ini.Init);
 
 (* НУ1 Насос уплотнения *)
-stOp_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stOp_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Op := IM.nu1);
 inits := inits + BOOL_TO_UINT(stOp_Ini.Init);
 
 (* НУ2 Насос уплотнения *)
-stOp_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stOp_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Op := IM.nu2);
 inits := inits + BOOL_TO_UINT(stOp_Ini.Init);
 
 (* ПНС Насос смазки *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Sw := IM.pns);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* В1 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
-      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
+      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true,
       str_Sw := IM.v1_Avom);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
-
 (* В2 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
-      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
+      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true,
       str_Sw := IM.v2_Avom);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* В3 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
-      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
+      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true,
       str_Sw := IM.v3_Avom);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* В4 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
-      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
+      ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true,
       str_Sw := IM.v4_Avom);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* МВ масляный выключатель *)
-stSSw_Ini(data_Ini := true, (*ISVALIDREF_statOn:=true,*) ISVALIDREF_statOff:=true,
+stSSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      (*ISVALIDREF_inBreakCmdOn:=true,*) ISVALIDREF_inBreakCmdOff:=true,
       ISVALIDREF_basketRolledIn:=true, ISVALIDREF_basketRolledout:=true,
       str_Sw := IM.mv);
 inits := inits + BOOL_TO_UINT(stSSw_Ini.Init);
 
 (* В4 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true, 
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Sw := IM.KaloriferAVOM);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* В4 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Sw := IM.CMN);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* В4 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Sw := IM.TEN_kollectora);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init);
 
 (* В4 АВОМ вентилятор охлаждения *)
-stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, (*ISVALIDREF_statOff:=true,*) 
+stSw_Ini(data_Ini := true, ISVALIDREF_statOn:=true, ISVALIDREF_statOff:=true,
       ISVALIDREF_cmdOn:=true, ISVALIDREF_cmdOff:=true, 
-      ISVALIDREF_inBreakCmdOn:=true, (*ISVALIDREF_inBreakCmdOff:=true,*)
       str_Sw := IM.TEN_MB);
 inits := inits + BOOL_TO_UINT(stSw_Ini.Init); 
 

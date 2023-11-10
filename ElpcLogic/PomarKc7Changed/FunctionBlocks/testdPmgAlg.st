@@ -74,6 +74,10 @@ VAR_EXTERNAL
 END_VAR
 
 
+
+
+
+
 IF NOT onInit THEN
 
     fb_puskOilSystem(phaseNumber:=0, act:=_run, waitCompletion:=TRUE);
@@ -183,7 +187,7 @@ IF StrAlg.isRuning THEN
         ai.Pmasla_posle_NU.Disabled_LW:=TRUE;
         
         resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
-        (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
+        (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6);*)
         resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
         (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
         
@@ -279,7 +283,7 @@ IF cmd <> 0 AND lastCmd <> cmd AND (((NOT StrAlg.opcCommandsDisabled) AND source
                                         ai.Tmasla_MB.Disabled_LA:=TRUE;
                                         ai.Tmasla_MB.Disabled_LW:=TRUE;
                                         resetAiProtection(protections.Os_sdvig_nagnetatelja_minus);
-                                        (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_reduktora_H_T6);*)
+                                        (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T6);*)
                                         resetAiProtection(protections.Os_sdvig_nagnetatelja_plus);
                                         (*resetDiProtection(protections.Vibro_skorost_OP_shesterni_RED_T5);*)
                                         
