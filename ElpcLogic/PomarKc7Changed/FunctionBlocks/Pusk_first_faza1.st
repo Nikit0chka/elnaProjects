@@ -38,9 +38,19 @@ VAR_EXTERNAL
 	algManager : struct_AlgoritmsManager;
 	IM : ImConfig;
 	protections : ProtectionsConfig;
+END_VAR
+
+VAR
 	_statusAi : TYPE_StatusAi;
+END_VAR
+
+VAR_EXTERNAL
 	ai : AiConfig;
 END_VAR
+
+
+
+
 
 
 

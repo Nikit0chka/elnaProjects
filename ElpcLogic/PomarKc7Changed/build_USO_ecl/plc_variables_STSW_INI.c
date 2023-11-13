@@ -177,11 +177,18 @@ int __variables_init_STSW_INI(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 19579 PROGRAM0.IM_STRUCTS_INI.STSW_INI.DATA_INI
-    st = getVariable(19579);
+  { // 19723 PROGRAM0.IM_STRUCTS_INI.STSW_INI.DATA_INI
+    st = getVariable(19723);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -191,8 +198,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19580 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_STATON
-    st = getVariable(19580);
+  { // 19724 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_STATON
+    st = getVariable(19724);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_STATON", 50);
     st->size_data = sizeof(BOOL);
@@ -202,8 +209,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->ISVALIDREF_STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19581 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_STATOFF
-    st = getVariable(19581);
+  { // 19725 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_STATOFF
+    st = getVariable(19725);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_STATOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -213,8 +220,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->ISVALIDREF_STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19582 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_CMDON
-    st = getVariable(19582);
+  { // 19726 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_CMDON
+    st = getVariable(19726);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -224,8 +231,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->ISVALIDREF_CMDON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19583 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_CMDOFF
-    st = getVariable(19583);
+  { // 19727 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_CMDOFF
+    st = getVariable(19727);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -235,8 +242,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->ISVALIDREF_CMDOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19584 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_INBREAKCMDON
-    st = getVariable(19584);
+  { // 19728 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_INBREAKCMDON
+    st = getVariable(19728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_INBREAKCMDON", 56);
     st->size_data = sizeof(BOOL);
@@ -246,8 +253,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->ISVALIDREF_INBREAKCMDON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19585 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(19585);
+  { // 19729 PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(19729);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.ISVALIDREF_INBREAKCMDOFF", 57);
     st->size_data = sizeof(BOOL);
@@ -257,8 +264,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_FB_SWITCH_INIT->ISVALIDREF_INBREAKCMDOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19586 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND
-    st = getVariable(19586);
+  { // 19730 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND
+    st = getVariable(19730);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -269,8 +276,8 @@ int __variables_init_STSW_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 19587 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.STATUS
-    st = getVariable(19587);
+  { // 19731 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.STATUS
+    st = getVariable(19731);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -281,8 +288,8 @@ int __variables_init_STSW_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 19588 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ONSTATUS
-    st = getVariable(19588);
+  { // 19732 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ONSTATUS
+    st = getVariable(19732);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ONSTATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -293,8 +300,8 @@ int __variables_init_STSW_INI(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 19589 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INOPCCOMMANDSDISABLED
-    st = getVariable(19589);
+  { // 19733 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INOPCCOMMANDSDISABLED
+    st = getVariable(19733);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INOPCCOMMANDSDISABLED", 61);
     st->size_data = sizeof(BOOL);
@@ -305,8 +312,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19590 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.SDVIG
-    st = getVariable(19590);
+  { // 19734 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.SDVIG
+    st = getVariable(19734);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.SDVIG", 45);
     st->size_data = sizeof(BOOL);
@@ -317,8 +324,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 19591 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.NS
-    st = getVariable(19591);
+  { // 19735 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.NS
+    st = getVariable(19735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.NS", 42);
     st->size_data = sizeof(BOOL);
@@ -329,8 +336,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 19592 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.COMMANDFAULT
-    st = getVariable(19592);
+  { // 19736 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.COMMANDFAULT
+    st = getVariable(19736);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.COMMANDFAULT", 52);
     st->size_data = sizeof(BOOL);
@@ -341,8 +348,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 19593 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ACCIDENT
-    st = getVariable(19593);
+  { // 19737 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ACCIDENT
+    st = getVariable(19737);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ACCIDENT", 48);
     st->size_data = sizeof(BOOL);
@@ -353,8 +360,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 19594 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.AUTO
-    st = getVariable(19594);
+  { // 19738 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.AUTO
+    st = getVariable(19738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.AUTO", 44);
     st->size_data = sizeof(BOOL);
@@ -365,8 +372,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 19595 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.MANUAL
-    st = getVariable(19595);
+  { // 19739 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.MANUAL
+    st = getVariable(19739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.MANUAL", 46);
     st->size_data = sizeof(BOOL);
@@ -377,8 +384,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 19596 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.LOCAL
-    st = getVariable(19596);
+  { // 19740 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.LOCAL
+    st = getVariable(19740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.LOCAL", 45);
     st->size_data = sizeof(BOOL);
@@ -389,8 +396,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 19597 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.DISTANCE
-    st = getVariable(19597);
+  { // 19741 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.DISTANCE
+    st = getVariable(19741);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.DISTANCE", 48);
     st->size_data = sizeof(BOOL);
@@ -401,8 +408,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 19598 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ERRORPOWEROFF
-    st = getVariable(19598);
+  { // 19742 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ERRORPOWEROFF
+    st = getVariable(19742);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ERRORPOWEROFF", 53);
     st->size_data = sizeof(BOOL);
@@ -413,8 +420,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 19599 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ERRORBLOCK
-    st = getVariable(19599);
+  { // 19743 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ERRORBLOCK
+    st = getVariable(19743);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ERRORBLOCK", 50);
     st->size_data = sizeof(BOOL);
@@ -425,8 +432,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 19600 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.BREAKCMDON
-    st = getVariable(19600);
+  { // 19744 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.BREAKCMDON
+    st = getVariable(19744);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.BREAKCMDON", 50);
     st->size_data = sizeof(BOOL);
@@ -437,8 +444,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 19601 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.BREAKCMDOFF
-    st = getVariable(19601);
+  { // 19745 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.BREAKCMDOFF
+    st = getVariable(19745);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.BREAKCMDOFF", 51);
     st->size_data = sizeof(BOOL);
@@ -449,8 +456,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 19602 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.OPCCOMMANDSDISABLED
-    st = getVariable(19602);
+  { // 19746 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.OPCCOMMANDSDISABLED
+    st = getVariable(19746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.OPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -461,8 +468,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19603 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.LASTCMDISON
-    st = getVariable(19603);
+  { // 19747 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.LASTCMDISON
+    st = getVariable(19747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.LASTCMDISON", 51);
     st->size_data = sizeof(BOOL);
@@ -473,8 +480,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 19604 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_STATON
-    st = getVariable(19604);
+  { // 19748 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_STATON
+    st = getVariable(19748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_STATON", 57);
     st->size_data = sizeof(BOOL);
@@ -485,8 +492,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 19605 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_STATOFF
-    st = getVariable(19605);
+  { // 19749 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_STATOFF
+    st = getVariable(19749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_STATOFF", 58);
     st->size_data = sizeof(BOOL);
@@ -497,8 +504,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 19606 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_CMDON
-    st = getVariable(19606);
+  { // 19750 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_CMDON
+    st = getVariable(19750);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_CMDON", 56);
     st->size_data = sizeof(BOOL);
@@ -509,8 +516,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 19607 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_CMDOFF
-    st = getVariable(19607);
+  { // 19751 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_CMDOFF
+    st = getVariable(19751);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_CMDOFF", 57);
     st->size_data = sizeof(BOOL);
@@ -521,8 +528,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 19608 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_INBREAKCMDON
-    st = getVariable(19608);
+  { // 19752 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_INBREAKCMDON
+    st = getVariable(19752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_INBREAKCMDON", 63);
     st->size_data = sizeof(BOOL);
@@ -533,8 +540,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 19609 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(19609);
+  { // 19753 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(19753);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.ISVALIDREF_INBREAKCMDOFF", 64);
     st->size_data = sizeof(BOOL);
@@ -545,8 +552,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 19610 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND_ALG
-    st = getVariable(19610);
+  { // 19754 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND_ALG
+    st = getVariable(19754);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND_ALG", 53);
     st->size_data = sizeof(WORD);
@@ -557,8 +564,8 @@ int __variables_init_STSW_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 19611 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND_ARM
-    st = getVariable(19611);
+  { // 19755 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND_ARM
+    st = getVariable(19755);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.INCOMMAND_ARM", 53);
     st->size_data = sizeof(WORD);
@@ -569,8 +576,8 @@ int __variables_init_STSW_INI(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 19612 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.CMDON
-    st = getVariable(19612);
+  { // 19756 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.CMDON
+    st = getVariable(19756);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.CMDON", 45);
     st->size_data = sizeof(BOOL);
@@ -581,8 +588,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 19613 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.CMDOFF
-    st = getVariable(19613);
+  { // 19757 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.CMDOFF
+    st = getVariable(19757);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.CMDOFF", 46);
     st->size_data = sizeof(BOOL);
@@ -593,8 +600,8 @@ int __variables_init_STSW_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 19614 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.RELIABILITY
-    st = getVariable(19614);
+  { // 19758 PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.RELIABILITY
+    st = getVariable(19758);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSW_INI.STR_SW.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);

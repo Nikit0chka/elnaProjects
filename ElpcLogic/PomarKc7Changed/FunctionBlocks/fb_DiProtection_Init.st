@@ -12,8 +12,12 @@ VAR_IN_OUT
 END_VAR
 
 VAR_OUTPUT
-	Init : BOOL   := FALSE; (*Флаг успешно выполненной инициализации.*)
+	Init : BOOL     := FALSE; (*Флаг успешно выполненной инициализации.*)
 END_VAR
+
+
+
+
 
 
 

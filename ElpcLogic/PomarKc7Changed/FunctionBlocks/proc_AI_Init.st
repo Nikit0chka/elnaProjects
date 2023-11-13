@@ -21,6 +21,10 @@ END_VAR
 
 
 
+
+
+
+
 inits := 0; (* Флаг необходимости инициализации структур-дескрипторов *)
 
 (********************************************* Модуль A2-14 ******************************************************)
@@ -203,7 +207,7 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A3-6, AI7-0] TMasladoAVOM *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 150.0,
 ISVALIDREF_HW := TRUE, dHW := 55.0, aperturFilter:= 0.5,
-strAI := ai.Tgorjachego_vozduha_ED_kanal_2);
+strAI := ai.Tmasla_do_AVOM);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-6, AI7-1] TMaslaPosleAVOM *)
@@ -289,7 +293,7 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (********************************************* Модуль A3-11 ******************************************************)
 (* [A3-11, AI12-0]  DGazaNaVhodeNagnetatelja *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 10.0,
-ISVALIDREF_LW := TRUE, dLW := 4.895, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0, (*ISVALIDREF_LA := TRUE, dLA := 4.589,*)
+ISVALIDREF_LW := TRUE, dLW := 4.895, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0,
 strAI := ai.Pgaza_na_vhode_nagnetatelia);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
@@ -328,13 +332,13 @@ inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 (* [A3-13, AI14-2]  VibroSkorostOPED_T1 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 25.0,
 ISVALIDREF_HW := TRUE, ISVALIDREF_HA := TRUE, dHW := 11.0, dHA := 18.0, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0,
-strAI := ai.Kontrol_post_220V);
+strAI := ai.Vibro_skorost_OPED_T1);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (* [A3-13, AI14-3]  VibroSkorostOYPED_T2 *)
 stAI_Ini(data_Ini := TRUE,  dLL := 0.0, dHL := 25.0,
 ISVALIDREF_HW := TRUE, ISVALIDREF_HA := TRUE, dHW := 11.0, dHA := 18.0, aperturFilter := 0.5, CurrentShotCircuit := 20240.0, CurrentBreakCircuit := 3760.0,
-strAI := ai.Vibro_skorost_OPED_T1);
+strAI := ai.Vibro_skorost_OYPED_T2);
 inits := inits + BOOL_TO_UINT(stAI_Ini.Init);
 
 (********************************************* Модуль A3-14 ******************************************************)

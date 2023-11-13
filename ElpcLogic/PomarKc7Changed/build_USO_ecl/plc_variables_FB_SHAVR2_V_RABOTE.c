@@ -177,11 +177,18 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 25936 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL.VALUE
-    st = getVariable(25936);
+  { // 26080 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL.VALUE
+    st = getVariable(26080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL.VALUE", 48);
     st->size_data = sizeof(BOOL);
@@ -192,8 +199,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 25937 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL.RELIABILITY
-    st = getVariable(25937);
+  { // 26081 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL.RELIABILITY
+    st = getVariable(26081);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -204,8 +211,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25938 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL._INVERSED
-    st = getVariable(25938);
+  { // 26082 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL._INVERSED
+    st = getVariable(26082);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.SIGNAL._INVERSED", 52);
     st->size_data = sizeof(BOOL);
@@ -216,8 +223,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 25939 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.RELIABILITY
-    st = getVariable(25939);
+  { // 26083 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.RELIABILITY
+    st = getVariable(26083);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.RELIABILITY", 54);
     st->size_data = sizeof(BOOL);
@@ -228,8 +235,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25940 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.INVERSE
-    st = getVariable(25940);
+  { // 26084 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.INVERSE
+    st = getVariable(26084);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.INVERSE", 50);
     st->size_data = sizeof(BOOL);
@@ -240,8 +247,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 25941 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DELAYON
-    st = getVariable(25941);
+  { // 26085 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DELAYON
+    st = getVariable(26085);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DELAYON", 50);
     st->size_data = sizeof(TIME);
@@ -252,8 +259,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 25942 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DELAYOFF
-    st = getVariable(25942);
+  { // 26086 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DELAYOFF
+    st = getVariable(26086);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DELAYOFF", 51);
     st->size_data = sizeof(TIME);
@@ -264,8 +271,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 25943 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.Q
-    st = getVariable(25943);
+  { // 26087 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.Q
+    st = getVariable(26087);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -276,8 +283,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 25944 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.STATUS
-    st = getVariable(25944);
+  { // 26088 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.STATUS
+    st = getVariable(26088);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.STATUS", 49);
     st->size_data = sizeof(DWORD);
@@ -288,8 +295,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 25945 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DISABLED_SIG
-    st = getVariable(25945);
+  { // 26089 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DISABLED_SIG
+    st = getVariable(26089);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.STR_SS.DISABLED_SIG", 55);
     st->size_data = sizeof(BOOL);
@@ -300,8 +307,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 25946 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.IN
-    st = getVariable(25946);
+  { // 26090 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.IN
+    st = getVariable(26090);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -312,8 +319,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 25947 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.PT
-    st = getVariable(25947);
+  { // 26091 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.PT
+    st = getVariable(26091);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.PT", 46);
     st->size_data = sizeof(TIME);
@@ -324,8 +331,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 25948 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.Q
-    st = getVariable(25948);
+  { // 26092 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.Q
+    st = getVariable(26092);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -336,8 +343,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 25949 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.ET
-    st = getVariable(25949);
+  { // 26093 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.ET
+    st = getVariable(26093);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON.ET", 46);
     st->size_data = sizeof(TIME);
@@ -348,8 +355,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 25950 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON
-    st = getVariable(25950);
+  { // 26094 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON
+    st = getVariable(26094);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMERON", 43);
     st->size_data = sizeof(TON);
@@ -359,8 +366,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 25951 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.IN
-    st = getVariable(25951);
+  { // 26095 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.IN
+    st = getVariable(26095);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -371,8 +378,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 25952 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.PT
-    st = getVariable(25952);
+  { // 26096 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.PT
+    st = getVariable(26096);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.PT", 47);
     st->size_data = sizeof(TIME);
@@ -383,8 +390,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 25953 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.Q
-    st = getVariable(25953);
+  { // 26097 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.Q
+    st = getVariable(26097);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -395,8 +402,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 25954 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.ET
-    st = getVariable(25954);
+  { // 26098 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.ET
+    st = getVariable(26098);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF.ET", 47);
     st->size_data = sizeof(TIME);
@@ -407,8 +414,8 @@ int __variables_init_FB_SHAVR2_V_RABOTE(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 25955 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF
-    st = getVariable(25955);
+  { // 26099 PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF
+    st = getVariable(26099);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHAVR2_V_RABOTE.TIMEROFF", 44);
     st->size_data = sizeof(TOF);

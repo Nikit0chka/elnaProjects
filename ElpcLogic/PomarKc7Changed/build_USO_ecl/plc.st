@@ -634,6 +634,10 @@ TYPE
     Pusk_F_faza1 : struct_Alg;
     Pusk_F_faza2 : struct_Alg;
     Pusk_TH_faza : struct_Alg;
+    Prov_PMS_ALG : struct_Alg;
+    Prov_opressovka_ALG : struct_Alg;
+    Pusk_SEC_faza_chastotny : struct_Alg;
+    Pusk_SEC_faza_reactor : struct_Alg;
   END_STRUCT;
   struct_AlgTimers : STRUCT
     AutoPns_OffTimer : UINT;
@@ -3645,6 +3649,8 @@ FUNCTION_BLOCK Pusk_first_faza2
     protections : ProtectionsConfig;
     algoritms : AlgoritmsConfig;
     ai : AiConfig;
+  END_VAR
+  VAR
     statusAi : TYPE_StatusAi;
   END_VAR
 
@@ -3894,6 +3900,8 @@ FUNCTION_BLOCK Pusk_third_faza
     protections : ProtectionsConfig;
     algoritms : AlgoritmsConfig;
     ai : AiConfig;
+  END_VAR
+  VAR
     statusAi : TYPE_StatusAi;
   END_VAR
 
@@ -4227,6 +4235,8 @@ FUNCTION_BLOCK Pusk_second_faza_reactor
     protections : ProtectionsConfig;
     algoritms : AlgoritmsConfig;
     ai : AiConfig;
+  END_VAR
+  VAR
     statusAi : TYPE_StatusAi;
   END_VAR
 
@@ -4475,6 +4485,8 @@ FUNCTION_BLOCK Pusk_second_faza_chastotny
     protections : ProtectionsConfig;
     algoritms : AlgoritmsConfig;
     ai : AiConfig;
+  END_VAR
+  VAR
     statusAi : TYPE_StatusAi;
   END_VAR
 
@@ -8922,7 +8934,11 @@ FUNCTION_BLOCK Pusk_first_faza1
     algManager : struct_AlgoritmsManager;
     IM : ImConfig;
     protections : ProtectionsConfig;
+  END_VAR
+  VAR
     _statusAi : TYPE_StatusAi;
+  END_VAR
+  VAR_EXTERNAL
     ai : AiConfig;
   END_VAR
 
@@ -15741,6 +15757,13 @@ FUNCTION_BLOCK proc_algoritms
     fb_testPmsAlg : testPmsAlg;
     fb_ApuskAlg : ApuskAlg;
     fb_SemiAutoPuskAlg : SemiAutoPuskAlg;
+    fb_Pusk_first_faza1 : Pusk_first_faza1;
+    fb_Pusk_first_faza2 : Pusk_first_faza2;
+    fb_Pusk_third_faza : Pusk_third_faza;
+    fb_Pusk_Prov_PMS : Prov_PMS;
+    fb_Prov_opressovka : Prov_opressovka;
+    fb_Pusk_second_faza_chastotny : Pusk_second_faza_chastotny;
+    fb_Pusk_second_faza_reactor : Pusk_second_faza_reactor;
   END_VAR
   VAR_EXTERNAL
     algoritms : AlgoritmsConfig;
@@ -15840,6 +15863,21 @@ FUNCTION_BLOCK proc_algoritms
    cmdRun2ph:=AlgQuestions.SemiAutoPusk_cmdRun2ph,
    cmdRun3ph:=AlgQuestions.SemiAutoPusk_cmdRun3ph
   );
+
+
+  fb_Pusk_first_faza1(Stralg:=algoritms.Pusk_F_faza1);
+
+  fb_Pusk_first_faza2(Stralg:=algoritms.Pusk_F_faza2);
+
+  fb_Pusk_third_faza(Stralg:=algoritms.Pusk_TH_faza);
+
+  fb_Pusk_Prov_PMS(Stralg:=algoritms.Prov_PMS_ALG);
+
+  fb_Prov_opressovka(Stralg:=algoritms.Prov_opressovka_ALG);
+
+  (*fb_Pusk_second_faza_chastotny(Stralg:=algoritms.Pusk_SEC_faza_chastotny);
+
+  fb_Pusk_second_faza_reactor(Stralg:=algoritms.Pusk_SEC_faza_reactor);*)
 END_FUNCTION_BLOCK
 
 FUNCTION_BLOCK fb_AI_Init

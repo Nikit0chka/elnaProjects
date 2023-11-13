@@ -8,6 +8,10 @@ END_VAR
 
 
 
+
+
+
+
 anyProtectionSignaling:=
 protections.Topornogo_podshipnika_EDT_1.Signaling OR
 protections.Toy_podshipnika_EDT_2.Signaling OR

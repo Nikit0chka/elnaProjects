@@ -177,11 +177,18 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 25436 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL.VALUE
-    st = getVariable(25436);
+  { // 25580 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL.VALUE
+    st = getVariable(25580);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL.VALUE", 53);
     st->size_data = sizeof(BOOL);
@@ -192,8 +199,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 25437 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL.RELIABILITY
-    st = getVariable(25437);
+  { // 25581 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL.RELIABILITY
+    st = getVariable(25581);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -204,8 +211,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25438 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL._INVERSED
-    st = getVariable(25438);
+  { // 25582 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL._INVERSED
+    st = getVariable(25582);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.SIGNAL._INVERSED", 57);
     st->size_data = sizeof(BOOL);
@@ -216,8 +223,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 25439 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.RELIABILITY
-    st = getVariable(25439);
+  { // 25583 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.RELIABILITY
+    st = getVariable(25583);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.RELIABILITY", 59);
     st->size_data = sizeof(BOOL);
@@ -228,8 +235,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25440 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.INVERSE
-    st = getVariable(25440);
+  { // 25584 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.INVERSE
+    st = getVariable(25584);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.INVERSE", 55);
     st->size_data = sizeof(BOOL);
@@ -240,8 +247,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 25441 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DELAYON
-    st = getVariable(25441);
+  { // 25585 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DELAYON
+    st = getVariable(25585);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DELAYON", 55);
     st->size_data = sizeof(TIME);
@@ -252,8 +259,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 25442 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DELAYOFF
-    st = getVariable(25442);
+  { // 25586 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DELAYOFF
+    st = getVariable(25586);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DELAYOFF", 56);
     st->size_data = sizeof(TIME);
@@ -264,8 +271,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 25443 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.Q
-    st = getVariable(25443);
+  { // 25587 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.Q
+    st = getVariable(25587);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -276,8 +283,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 25444 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.STATUS
-    st = getVariable(25444);
+  { // 25588 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.STATUS
+    st = getVariable(25588);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -288,8 +295,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 25445 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DISABLED_SIG
-    st = getVariable(25445);
+  { // 25589 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DISABLED_SIG
+    st = getVariable(25589);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.STR_SS.DISABLED_SIG", 60);
     st->size_data = sizeof(BOOL);
@@ -300,8 +307,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 25446 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.IN
-    st = getVariable(25446);
+  { // 25590 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.IN
+    st = getVariable(25590);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.IN", 51);
     st->size_data = sizeof(BOOL);
@@ -312,8 +319,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 25447 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.PT
-    st = getVariable(25447);
+  { // 25591 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.PT
+    st = getVariable(25591);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.PT", 51);
     st->size_data = sizeof(TIME);
@@ -324,8 +331,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 25448 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.Q
-    st = getVariable(25448);
+  { // 25592 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.Q
+    st = getVariable(25592);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -336,8 +343,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 25449 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.ET
-    st = getVariable(25449);
+  { // 25593 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.ET
+    st = getVariable(25593);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON.ET", 51);
     st->size_data = sizeof(TIME);
@@ -348,8 +355,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 25450 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON
-    st = getVariable(25450);
+  { // 25594 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON
+    st = getVariable(25594);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMERON", 48);
     st->size_data = sizeof(TON);
@@ -359,8 +366,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 25451 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.IN
-    st = getVariable(25451);
+  { // 25595 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.IN
+    st = getVariable(25595);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -371,8 +378,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 25452 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.PT
-    st = getVariable(25452);
+  { // 25596 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.PT
+    st = getVariable(25596);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.PT", 52);
     st->size_data = sizeof(TIME);
@@ -383,8 +390,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 25453 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.Q
-    st = getVariable(25453);
+  { // 25597 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.Q
+    st = getVariable(25597);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -395,8 +402,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 25454 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.ET
-    st = getVariable(25454);
+  { // 25598 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.ET
+    st = getVariable(25598);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF.ET", 52);
     st->size_data = sizeof(TIME);
@@ -407,8 +414,8 @@ int __variables_init_FB_DP_MASLO_GAZ_LESS100(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 25455 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF
-    st = getVariable(25455);
+  { // 25599 PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF
+    st = getVariable(25599);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_DP_MASLO_GAZ_LESS100.TIMEROFF", 49);
     st->size_data = sizeof(TOF);

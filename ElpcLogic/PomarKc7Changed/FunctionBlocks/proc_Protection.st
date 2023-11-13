@@ -78,6 +78,10 @@ END_VAR
 
 
 
+
+
+
+
 (************************************************************* DiProtection ************************************************************)
 (* МВ отключен 
 fb_mvOff(sw:=IM.mv, StrDIp := protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP);*)

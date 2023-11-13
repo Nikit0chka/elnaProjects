@@ -28,6 +28,10 @@ END_VAR
 
 
 
+
+
+
+
 StrAlg.CanRun := StrAlg.inCanRun;
 StrAlg.OpcCommandsDisabled := StrAlg.inOpcCommandsDisabled;
 

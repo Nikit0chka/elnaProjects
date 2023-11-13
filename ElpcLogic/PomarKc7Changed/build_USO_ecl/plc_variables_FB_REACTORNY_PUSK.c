@@ -177,11 +177,18 @@ int __variables_init_FB_REACTORNY_PUSK(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26276 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL.VALUE
-    st = getVariable(26276);
+  { // 26420 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL.VALUE
+    st = getVariable(26420);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL.VALUE", 47);
     st->size_data = sizeof(BOOL);
@@ -192,8 +199,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26277 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL.RELIABILITY
-    st = getVariable(26277);
+  { // 26421 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL.RELIABILITY
+    st = getVariable(26421);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -204,8 +211,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26278 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL._INVERSED
-    st = getVariable(26278);
+  { // 26422 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL._INVERSED
+    st = getVariable(26422);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.SIGNAL._INVERSED", 51);
     st->size_data = sizeof(BOOL);
@@ -216,8 +223,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26279 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.RELIABILITY
-    st = getVariable(26279);
+  { // 26423 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.RELIABILITY
+    st = getVariable(26423);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.RELIABILITY", 53);
     st->size_data = sizeof(BOOL);
@@ -228,8 +235,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26280 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.INVERSE
-    st = getVariable(26280);
+  { // 26424 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.INVERSE
+    st = getVariable(26424);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.INVERSE", 49);
     st->size_data = sizeof(BOOL);
@@ -240,8 +247,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26281 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DELAYON
-    st = getVariable(26281);
+  { // 26425 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DELAYON
+    st = getVariable(26425);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DELAYON", 49);
     st->size_data = sizeof(TIME);
@@ -252,8 +259,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26282 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DELAYOFF
-    st = getVariable(26282);
+  { // 26426 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DELAYOFF
+    st = getVariable(26426);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DELAYOFF", 50);
     st->size_data = sizeof(TIME);
@@ -264,8 +271,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26283 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.Q
-    st = getVariable(26283);
+  { // 26427 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.Q
+    st = getVariable(26427);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -276,8 +283,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26284 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.STATUS
-    st = getVariable(26284);
+  { // 26428 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.STATUS
+    st = getVariable(26428);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.STATUS", 48);
     st->size_data = sizeof(DWORD);
@@ -288,8 +295,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26285 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DISABLED_SIG
-    st = getVariable(26285);
+  { // 26429 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DISABLED_SIG
+    st = getVariable(26429);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.STR_SS.DISABLED_SIG", 54);
     st->size_data = sizeof(BOOL);
@@ -300,8 +307,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26286 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.IN
-    st = getVariable(26286);
+  { // 26430 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.IN
+    st = getVariable(26430);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -312,8 +319,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26287 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.PT
-    st = getVariable(26287);
+  { // 26431 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.PT
+    st = getVariable(26431);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.PT", 45);
     st->size_data = sizeof(TIME);
@@ -324,8 +331,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26288 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.Q
-    st = getVariable(26288);
+  { // 26432 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.Q
+    st = getVariable(26432);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -336,8 +343,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26289 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.ET
-    st = getVariable(26289);
+  { // 26433 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.ET
+    st = getVariable(26433);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON.ET", 45);
     st->size_data = sizeof(TIME);
@@ -348,8 +355,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26290 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON
-    st = getVariable(26290);
+  { // 26434 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON
+    st = getVariable(26434);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMERON", 42);
     st->size_data = sizeof(TON);
@@ -359,8 +366,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26291 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.IN
-    st = getVariable(26291);
+  { // 26435 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.IN
+    st = getVariable(26435);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.IN", 46);
     st->size_data = sizeof(BOOL);
@@ -371,8 +378,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26292 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.PT
-    st = getVariable(26292);
+  { // 26436 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.PT
+    st = getVariable(26436);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.PT", 46);
     st->size_data = sizeof(TIME);
@@ -383,8 +390,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26293 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.Q
-    st = getVariable(26293);
+  { // 26437 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.Q
+    st = getVariable(26437);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -395,8 +402,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26294 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.ET
-    st = getVariable(26294);
+  { // 26438 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.ET
+    st = getVariable(26438);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF.ET", 46);
     st->size_data = sizeof(TIME);
@@ -407,8 +414,8 @@ int __variables_init_FB_REACTORNY_PUSK(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26295 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF
-    st = getVariable(26295);
+  { // 26439 PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF
+    st = getVariable(26439);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_REACTORNY_PUSK.TIMEROFF", 43);
     st->size_data = sizeof(TOF);

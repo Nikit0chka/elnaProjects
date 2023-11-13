@@ -8,6 +8,10 @@ END_VAR
 
 
 
+
+
+
+
 runAiProtection(protections.Topornogo_podshipnika_EDT_1);
 runAiProtection(protections.Toy_podshipnika_EDT_2);
 runAiProtection(protections.Toy_podshipnika_kol_EDT_3);

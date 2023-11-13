@@ -60,6 +60,10 @@ END_VAR
 
 
 
+
+
+
+
 IF NOT onInit THEN      
     fb_nu1Off(phaseNumber:=1, act:=_off);
     fb_nu2Off(phaseNumber:=2, act:=_off);

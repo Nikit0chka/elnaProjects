@@ -12,6 +12,10 @@ END_VAR
 
 
 
+
+
+
+
 analogsNS:= 
   ((ai.Tstali_statora_kanal_1.Interval < statusAi.Normal) AND NOT ai.Tstali_statora_kanal_1.remont)
 OR((ai.Tstali_statora_kanal_2.Interval < statusAi.Normal) AND NOT ai.Tstali_statora_kanal_2.remont)

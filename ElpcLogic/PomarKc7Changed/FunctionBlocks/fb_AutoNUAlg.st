@@ -46,6 +46,10 @@ END_VAR
 
 
 
+
+
+
+
 IF NOT onInit THEN
 StrAlg.inCanRun:=TRUE;
 StrAlg.inOpcCommandsDisabled:=TRUE;

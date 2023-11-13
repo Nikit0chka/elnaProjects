@@ -177,11 +177,18 @@ int __variables_init_FB_U_LAMP_SHU(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26772 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SIGNAL
-    st = getVariable(26772);
+  { // 26916 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SIGNAL
+    st = getVariable(26916);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SIGNAL", 37);
     st->size_data = sizeof(BOOL);
@@ -191,8 +198,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26773 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.WAIT_TIME
-    st = getVariable(26773);
+  { // 26917 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.WAIT_TIME
+    st = getVariable(26917);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.WAIT_TIME", 47);
     st->size_data = sizeof(TIME);
@@ -203,8 +210,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 26774 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND
-    st = getVariable(26774);
+  { // 26918 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND
+    st = getVariable(26918);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND", 47);
     st->size_data = sizeof(WORD);
@@ -215,8 +222,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 26775 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(26775);
+  { // 26919 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(26919);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INOPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -227,8 +234,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 26776 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.Q
-    st = getVariable(26776);
+  { // 26920 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.Q
+    st = getVariable(26920);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.Q", 39);
     st->size_data = sizeof(BOOL);
@@ -239,8 +246,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 26777 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.STATUS
-    st = getVariable(26777);
+  { // 26921 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.STATUS
+    st = getVariable(26921);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.STATUS", 44);
     st->size_data = sizeof(DWORD);
@@ -251,8 +258,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26778 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(26778);
+  { // 26922 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(26922);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.OPCCOMMANDSDISABLED", 57);
     st->size_data = sizeof(BOOL);
@@ -263,8 +270,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 26779 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND_ALG
-    st = getVariable(26779);
+  { // 26923 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND_ALG
+    st = getVariable(26923);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND_ALG", 51);
     st->size_data = sizeof(WORD);
@@ -275,8 +282,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 26780 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND_ARM
-    st = getVariable(26780);
+  { // 26924 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND_ARM
+    st = getVariable(26924);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.STR_SO.INCOMMAND_ARM", 51);
     st->size_data = sizeof(WORD);
@@ -287,8 +294,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 26781 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.IN
-    st = getVariable(26781);
+  { // 26925 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.IN
+    st = getVariable(26925);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -299,8 +306,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26782 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.PT
-    st = getVariable(26782);
+  { // 26926 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.PT
+    st = getVariable(26926);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.PT", 44);
     st->size_data = sizeof(TIME);
@@ -311,8 +318,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26783 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.Q
-    st = getVariable(26783);
+  { // 26927 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.Q
+    st = getVariable(26927);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -323,8 +330,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26784 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.ET
-    st = getVariable(26784);
+  { // 26928 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.ET
+    st = getVariable(26928);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER.ET", 44);
     st->size_data = sizeof(TIME);
@@ -335,8 +342,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26785 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER
-    st = getVariable(26785);
+  { // 26929 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER
+    st = getVariable(26929);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMER", 41);
     st->size_data = sizeof(TON);
@@ -346,8 +353,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 26786 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.IN
-    st = getVariable(26786);
+  { // 26930 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.IN
+    st = getVariable(26930);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -358,8 +365,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26787 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.PT
-    st = getVariable(26787);
+  { // 26931 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.PT
+    st = getVariable(26931);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.PT", 47);
     st->size_data = sizeof(TIME);
@@ -370,8 +377,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26788 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.Q
-    st = getVariable(26788);
+  { // 26932 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.Q
+    st = getVariable(26932);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -382,8 +389,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26789 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.ET
-    st = getVariable(26789);
+  { // 26933 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.ET
+    st = getVariable(26933);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER.ET", 47);
     st->size_data = sizeof(TIME);
@@ -394,8 +401,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26790 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER
-    st = getVariable(26790);
+  { // 26934 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER
+    st = getVariable(26934);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMER", 44);
     st->size_data = sizeof(TON);
@@ -405,8 +412,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 26791 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.IN
-    st = getVariable(26791);
+  { // 26935 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.IN
+    st = getVariable(26935);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -417,8 +424,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26792 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.PT
-    st = getVariable(26792);
+  { // 26936 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.PT
+    st = getVariable(26936);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.PT", 45);
     st->size_data = sizeof(TIME);
@@ -429,8 +436,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26793 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.Q
-    st = getVariable(26793);
+  { // 26937 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.Q
+    st = getVariable(26937);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -441,8 +448,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26794 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.ET
-    st = getVariable(26794);
+  { // 26938 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.ET
+    st = getVariable(26938);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND.ET", 45);
     st->size_data = sizeof(TIME);
@@ -453,8 +460,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26795 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND
-    st = getVariable(26795);
+  { // 26939 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND
+    st = getVariable(26939);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.TON_COMMAND", 42);
     st->size_data = sizeof(TON);
@@ -464,8 +471,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 26796 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SOURCE
-    st = getVariable(26796);
+  { // 26940 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SOURCE
+    st = getVariable(26940);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SOURCE", 37);
     st->size_data = sizeof(BYTE);
@@ -475,8 +482,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26797 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.CMD
-    st = getVariable(26797);
+  { // 26941 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.CMD
+    st = getVariable(26941);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.CMD", 34);
     st->size_data = sizeof(BYTE);
@@ -486,8 +493,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26798 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.LASTCMD
-    st = getVariable(26798);
+  { // 26942 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.LASTCMD
+    st = getVariable(26942);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.LASTCMD", 38);
     st->size_data = sizeof(BYTE);
@@ -497,8 +504,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26799 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SOURCE_FOR_STATUS
-    st = getVariable(26799);
+  { // 26943 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SOURCE_FOR_STATUS
+    st = getVariable(26943);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.SOURCE_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -508,8 +515,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26800 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.CMD_FOR_STATUS
-    st = getVariable(26800);
+  { // 26944 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.CMD_FOR_STATUS
+    st = getVariable(26944);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.CMD_FOR_STATUS", 45);
     st->size_data = sizeof(BYTE);
@@ -519,8 +526,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26801 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(26801);
+  { // 26945 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26945);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.COMMAND_ERROR_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -530,8 +537,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26802 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMERPRIZNAK
-    st = getVariable(26802);
+  { // 26946 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMERPRIZNAK
+    st = getVariable(26946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.PULSETIMERPRIZNAK", 48);
     st->size_data = sizeof(BOOL);
@@ -541,8 +548,8 @@ int __variables_init_FB_U_LAMP_SHU(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26803 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMERPRIZNAK
-    st = getVariable(26803);
+  { // 26947 PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMERPRIZNAK
+    st = getVariable(26947);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU.RESETCMDTIMERPRIZNAK", 51);
     st->size_data = sizeof(BOOL);

@@ -17,7 +17,7 @@ END_VAR
 
 VAR
 	Timings : fb_Timings;
-	_init : BOOL   := TRUE; (*Инициализация (первый цикл)*)
+	_init : BOOL     := TRUE; (*Инициализация (первый цикл)*)
 	life_count : UINT;
 	AI_structs_ini : proc_AI_Init;
 	AI_Proc : proc_AI;
@@ -42,6 +42,10 @@ VAR_EXTERNAL
 	algManager : struct_AlgoritmsManager;
 	protectManager : struct_ProtectionsManager;
 END_VAR
+
+
+
+
 
 
 

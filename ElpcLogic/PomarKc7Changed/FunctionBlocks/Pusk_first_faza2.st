@@ -39,8 +39,15 @@ VAR_EXTERNAL
 	protections : ProtectionsConfig;
 	algoritms : AlgoritmsConfig;
 	ai : AiConfig;
+END_VAR
+
+VAR
 	statusAi : TYPE_StatusAi;
 END_VAR
+
+
+
+
 
 
 

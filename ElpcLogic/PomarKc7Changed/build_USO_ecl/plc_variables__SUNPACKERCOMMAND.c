@@ -177,6 +177,13 @@ int __variables_init__SUNPACKERCOMMAND(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
@@ -2868,8 +2875,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20973 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(20973);
+  { // 21117 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21117);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.COMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -2880,8 +2887,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20974 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(20974);
+  { // 21118 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21118);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -2892,8 +2899,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20975 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(20975);
+  { // 21119 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21119);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.PARAMETR", 52);
     st->size_data = sizeof(BYTE);
@@ -2904,8 +2911,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 20976 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.CMD
-    st = getVariable(20976);
+  { // 21120 PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.CMD
+    st = getVariable(21120);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN1._SUNPACKERCOMMAND.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -2916,8 +2923,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21104 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21104);
+  { // 21248 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21248);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.COMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -2928,8 +2935,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21105 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21105);
+  { // 21249 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21249);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -2940,8 +2947,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21106 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21106);
+  { // 21250 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21250);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.PARAMETR", 52);
     st->size_data = sizeof(BYTE);
@@ -2952,8 +2959,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21107 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.CMD
-    st = getVariable(21107);
+  { // 21251 PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.CMD
+    st = getVariable(21251);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN2._SUNPACKERCOMMAND.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -2964,8 +2971,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21235 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21235);
+  { // 21379 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21379);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.COMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -2976,8 +2983,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21236 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21236);
+  { // 21380 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21380);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -2988,8 +2995,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21237 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21237);
+  { // 21381 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21381);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.PARAMETR", 52);
     st->size_data = sizeof(BYTE);
@@ -3000,8 +3007,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21238 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.CMD
-    st = getVariable(21238);
+  { // 21382 PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.CMD
+    st = getVariable(21382);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3._SUNPACKERCOMMAND.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -3012,8 +3019,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21366 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21366);
+  { // 21510 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21510);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.COMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -3024,8 +3031,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21367 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21367);
+  { // 21511 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21511);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.SOURCE", 51);
     st->size_data = sizeof(BYTE);
@@ -3036,8 +3043,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21368 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21368);
+  { // 21512 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21512);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.PARAMETR", 53);
     st->size_data = sizeof(BYTE);
@@ -3048,8 +3055,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21369 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.CMD
-    st = getVariable(21369);
+  { // 21513 PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.CMD
+    st = getVariable(21513);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN3B._SUNPACKERCOMMAND.CMD", 48);
     st->size_data = sizeof(BYTE);
@@ -3060,8 +3067,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21497 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21497);
+  { // 21641 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21641);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.COMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -3072,8 +3079,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21498 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21498);
+  { // 21642 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21642);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -3084,8 +3091,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21499 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21499);
+  { // 21643 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21643);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.PARAMETR", 52);
     st->size_data = sizeof(BYTE);
@@ -3096,8 +3103,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21500 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.CMD
-    st = getVariable(21500);
+  { // 21644 PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.CMD
+    st = getVariable(21644);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN4._SUNPACKERCOMMAND.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -3108,8 +3115,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21628 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21628);
+  { // 21772 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21772);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.COMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -3120,8 +3127,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21629 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21629);
+  { // 21773 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21773);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -3132,8 +3139,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21630 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21630);
+  { // 21774 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21774);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.PARAMETR", 52);
     st->size_data = sizeof(BYTE);
@@ -3144,8 +3151,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21631 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.CMD
-    st = getVariable(21631);
+  { // 21775 PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.CMD
+    st = getVariable(21775);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN5._SUNPACKERCOMMAND.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -3156,8 +3163,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21759 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21759);
+  { // 21903 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(21903);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.COMMAND", 51);
     st->size_data = sizeof(WORD);
@@ -3168,8 +3175,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21760 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21760);
+  { // 21904 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(21904);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.SOURCE", 50);
     st->size_data = sizeof(BYTE);
@@ -3180,8 +3187,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21761 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21761);
+  { // 21905 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(21905);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.PARAMETR", 52);
     st->size_data = sizeof(BYTE);
@@ -3192,8 +3199,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21762 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.CMD
-    st = getVariable(21762);
+  { // 21906 PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.CMD
+    st = getVariable(21906);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KRAN6._SUNPACKERCOMMAND.CMD", 47);
     st->size_data = sizeof(BYTE);
@@ -3204,8 +3211,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21872 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21872);
+  { // 22016 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22016);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.COMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -3216,8 +3223,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21873 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21873);
+  { // 22017 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22017);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.SOURCE", 48);
     st->size_data = sizeof(BYTE);
@@ -3228,8 +3235,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21874 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21874);
+  { // 22018 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22018);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.PARAMETR", 50);
     st->size_data = sizeof(BYTE);
@@ -3240,8 +3247,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21875 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.CMD
-    st = getVariable(21875);
+  { // 22019 PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.CMD
+    st = getVariable(22019);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU1._SUNPACKERCOMMAND.CMD", 45);
     st->size_data = sizeof(BYTE);
@@ -3252,8 +3259,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21970 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(21970);
+  { // 22114 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22114);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.COMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -3264,8 +3271,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21971 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(21971);
+  { // 22115 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22115);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.SOURCE", 48);
     st->size_data = sizeof(BYTE);
@@ -3276,8 +3283,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21972 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(21972);
+  { // 22116 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22116);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.PARAMETR", 50);
     st->size_data = sizeof(BYTE);
@@ -3288,8 +3295,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 21973 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.CMD
-    st = getVariable(21973);
+  { // 22117 PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.CMD
+    st = getVariable(22117);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NU2._SUNPACKERCOMMAND.CMD", 45);
     st->size_data = sizeof(BYTE);
@@ -3300,8 +3307,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22079 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22079);
+  { // 22223 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22223);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.COMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -3312,8 +3319,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22080 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22080);
+  { // 22224 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22224);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.SOURCE", 48);
     st->size_data = sizeof(BYTE);
@@ -3324,8 +3331,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22081 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22081);
+  { // 22225 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22225);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.PARAMETR", 50);
     st->size_data = sizeof(BYTE);
@@ -3336,8 +3343,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22082 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.CMD
-    st = getVariable(22082);
+  { // 22226 PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.CMD
+    st = getVariable(22226);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PNS._SUNPACKERCOMMAND.CMD", 45);
     st->size_data = sizeof(BYTE);
@@ -3348,8 +3355,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22189 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22189);
+  { // 22333 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22333);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.COMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3360,8 +3367,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22190 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22190);
+  { // 22334 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22334);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.SOURCE", 52);
     st->size_data = sizeof(BYTE);
@@ -3372,8 +3379,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22191 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22191);
+  { // 22335 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22335);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.PARAMETR", 54);
     st->size_data = sizeof(BYTE);
@@ -3384,8 +3391,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22192 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(22192);
+  { // 22336 PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(22336);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V1_AVOM._SUNPACKERCOMMAND.CMD", 49);
     st->size_data = sizeof(BYTE);
@@ -3396,8 +3403,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22299 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22299);
+  { // 22443 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22443);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.COMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3408,8 +3415,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22300 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22300);
+  { // 22444 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22444);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.SOURCE", 52);
     st->size_data = sizeof(BYTE);
@@ -3420,8 +3427,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22301 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22301);
+  { // 22445 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22445);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.PARAMETR", 54);
     st->size_data = sizeof(BYTE);
@@ -3432,8 +3439,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22302 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(22302);
+  { // 22446 PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(22446);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V2_AVOM._SUNPACKERCOMMAND.CMD", 49);
     st->size_data = sizeof(BYTE);
@@ -3444,8 +3451,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22409 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22409);
+  { // 22553 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22553);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.COMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3456,8 +3463,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22410 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22410);
+  { // 22554 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22554);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.SOURCE", 52);
     st->size_data = sizeof(BYTE);
@@ -3468,8 +3475,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22411 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22411);
+  { // 22555 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22555);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.PARAMETR", 54);
     st->size_data = sizeof(BYTE);
@@ -3480,8 +3487,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22412 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(22412);
+  { // 22556 PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(22556);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V3_AVOM._SUNPACKERCOMMAND.CMD", 49);
     st->size_data = sizeof(BYTE);
@@ -3492,8 +3499,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22519 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22519);
+  { // 22663 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22663);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.COMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -3504,8 +3511,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22520 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22520);
+  { // 22664 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22664);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.SOURCE", 52);
     st->size_data = sizeof(BYTE);
@@ -3516,8 +3523,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22521 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22521);
+  { // 22665 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22665);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.PARAMETR", 54);
     st->size_data = sizeof(BYTE);
@@ -3528,8 +3535,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22522 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(22522);
+  { // 22666 PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(22666);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_V4_AVOM._SUNPACKERCOMMAND.CMD", 49);
     st->size_data = sizeof(BYTE);
@@ -3540,8 +3547,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22629 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22629);
+  { // 22773 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22773);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.COMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -3552,8 +3559,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22630 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22630);
+  { // 22774 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22774);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.SOURCE", 59);
     st->size_data = sizeof(BYTE);
@@ -3564,8 +3571,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22631 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22631);
+  { // 22775 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22775);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.PARAMETR", 61);
     st->size_data = sizeof(BYTE);
@@ -3576,8 +3583,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22632 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.CMD
-    st = getVariable(22632);
+  { // 22776 PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.CMD
+    st = getVariable(22776);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_KOLLECTORA._SUNPACKERCOMMAND.CMD", 56);
     st->size_data = sizeof(BYTE);
@@ -3588,8 +3595,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22739 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22739);
+  { // 22883 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22883);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.COMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -3600,8 +3607,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22740 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22740);
+  { // 22884 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22884);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.SOURCE", 58);
     st->size_data = sizeof(BYTE);
@@ -3612,8 +3619,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22741 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22741);
+  { // 22885 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22885);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.PARAMETR", 60);
     st->size_data = sizeof(BYTE);
@@ -3624,8 +3631,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22742 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(22742);
+  { // 22886 PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(22886);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KALORIFERAVOM._SUNPACKERCOMMAND.CMD", 55);
     st->size_data = sizeof(BYTE);
@@ -3636,8 +3643,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22849 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22849);
+  { // 22993 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(22993);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.COMMAND", 49);
     st->size_data = sizeof(WORD);
@@ -3648,8 +3655,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22850 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22850);
+  { // 22994 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(22994);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.SOURCE", 48);
     st->size_data = sizeof(BYTE);
@@ -3660,8 +3667,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22851 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22851);
+  { // 22995 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(22995);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.PARAMETR", 50);
     st->size_data = sizeof(BYTE);
@@ -3672,8 +3679,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22852 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.CMD
-    st = getVariable(22852);
+  { // 22996 PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.CMD
+    st = getVariable(22996);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._SUNPACKERCOMMAND.CMD", 45);
     st->size_data = sizeof(BYTE);
@@ -3684,8 +3691,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22959 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(22959);
+  { // 23103 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(23103);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.COMMAND", 52);
     st->size_data = sizeof(WORD);
@@ -3696,8 +3703,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22960 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(22960);
+  { // 23104 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(23104);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.SOURCE", 51);
     st->size_data = sizeof(BYTE);
@@ -3708,8 +3715,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22961 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(22961);
+  { // 23105 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(23105);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.PARAMETR", 53);
     st->size_data = sizeof(BYTE);
@@ -3720,8 +3727,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22962 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.CMD
-    st = getVariable(22962);
+  { // 23106 PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.CMD
+    st = getVariable(23106);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_TEN_MB._SUNPACKERCOMMAND.CMD", 48);
     st->size_data = sizeof(BYTE);
@@ -3732,8 +3739,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23080 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(23080);
+  { // 23224 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(23224);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.COMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -3744,8 +3751,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23081 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(23081);
+  { // 23225 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(23225);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.SOURCE", 47);
     st->size_data = sizeof(BYTE);
@@ -3756,8 +3763,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23082 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(23082);
+  { // 23226 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(23226);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.PARAMETR", 49);
     st->size_data = sizeof(BYTE);
@@ -3768,8 +3775,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23083 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.CMD
-    st = getVariable(23083);
+  { // 23227 PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.CMD
+    st = getVariable(23227);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_MV._SUNPACKERCOMMAND.CMD", 44);
     st->size_data = sizeof(BYTE);
@@ -3780,8 +3787,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26768 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26768);
+  { // 26912 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(26912);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.COMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -3792,8 +3799,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26769 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26769);
+  { // 26913 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(26913);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.SOURCE", 55);
     st->size_data = sizeof(BYTE);
@@ -3804,8 +3811,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26770 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26770);
+  { // 26914 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(26914);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.PARAMETR", 57);
     st->size_data = sizeof(BYTE);
@@ -3816,8 +3823,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26771 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.CMD
-    st = getVariable(26771);
+  { // 26915 PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.CMD
+    st = getVariable(26915);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA._SUNPACKERCOMMAND.CMD", 52);
     st->size_data = sizeof(BYTE);
@@ -3828,8 +3835,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26804 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26804);
+  { // 26948 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(26948);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.COMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -3840,8 +3847,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26805 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26805);
+  { // 26949 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(26949);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.SOURCE", 55);
     st->size_data = sizeof(BYTE);
@@ -3852,8 +3859,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26806 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26806);
+  { // 26950 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(26950);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.PARAMETR", 57);
     st->size_data = sizeof(BYTE);
@@ -3864,8 +3871,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26807 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.CMD
-    st = getVariable(26807);
+  { // 26951 PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.CMD
+    st = getVariable(26951);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_U_LAMP_SHU._SUNPACKERCOMMAND.CMD", 52);
     st->size_data = sizeof(BYTE);
@@ -3876,8 +3883,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26840 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26840);
+  { // 26984 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(26984);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.COMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -3888,8 +3895,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26841 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26841);
+  { // 26985 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(26985);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.SOURCE", 58);
     st->size_data = sizeof(BYTE);
@@ -3900,8 +3907,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26842 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26842);
+  { // 26986 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(26986);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.PARAMETR", 60);
     st->size_data = sizeof(BYTE);
@@ -3912,8 +3919,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26843 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.CMD
-    st = getVariable(26843);
+  { // 26987 PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.CMD
+    st = getVariable(26987);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AO_KNOPKA_IND._SUNPACKERCOMMAND.CMD", 55);
     st->size_data = sizeof(BYTE);
@@ -3924,8 +3931,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26876 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26876);
+  { // 27020 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27020);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.COMMAND", 50);
     st->size_data = sizeof(WORD);
@@ -3936,8 +3943,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26877 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26877);
+  { // 27021 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27021);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.SOURCE", 49);
     st->size_data = sizeof(BYTE);
@@ -3948,8 +3955,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26878 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26878);
+  { // 27022 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27022);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.PARAMETR", 51);
     st->size_data = sizeof(BYTE);
@@ -3960,8 +3967,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26879 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.CMD
-    st = getVariable(26879);
+  { // 27023 PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.CMD
+    st = getVariable(27023);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PUSK._SUNPACKERCOMMAND.CMD", 46);
     st->size_data = sizeof(BYTE);
@@ -3972,8 +3979,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26912 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26912);
+  { // 27056 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27056);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.COMMAND", 55);
     st->size_data = sizeof(WORD);
@@ -3984,8 +3991,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26913 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26913);
+  { // 27057 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27057);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.SOURCE", 54);
     st->size_data = sizeof(BYTE);
@@ -3996,8 +4003,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26914 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26914);
+  { // 27058 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27058);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.PARAMETR", 56);
     st->size_data = sizeof(BYTE);
@@ -4008,8 +4015,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26915 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.CMD
-    st = getVariable(26915);
+  { // 27059 PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.CMD
+    st = getVariable(27059);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_STOP_SHUP._SUNPACKERCOMMAND.CMD", 51);
     st->size_data = sizeof(BYTE);
@@ -4020,8 +4027,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26948 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26948);
+  { // 27092 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27092);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.COMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -4032,8 +4039,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26949 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26949);
+  { // 27093 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27093);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.SOURCE", 53);
     st->size_data = sizeof(BYTE);
@@ -4044,8 +4051,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26950 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26950);
+  { // 27094 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27094);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.PARAMETR", 55);
     st->size_data = sizeof(BYTE);
@@ -4056,8 +4063,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26951 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.CMD
-    st = getVariable(26951);
+  { // 27095 PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.CMD
+    st = getVariable(27095);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NO_FONAR._SUNPACKERCOMMAND.CMD", 50);
     st->size_data = sizeof(BYTE);
@@ -4068,8 +4075,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26984 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(26984);
+  { // 27128 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27128);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.COMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -4080,8 +4087,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26985 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(26985);
+  { // 27129 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27129);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.SOURCE", 53);
     st->size_data = sizeof(BYTE);
@@ -4092,8 +4099,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26986 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(26986);
+  { // 27130 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27130);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.PARAMETR", 55);
     st->size_data = sizeof(BYTE);
@@ -4104,8 +4111,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26987 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.CMD
-    st = getVariable(26987);
+  { // 27131 PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.CMD
+    st = getVariable(27131);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PC_FONAR._SUNPACKERCOMMAND.CMD", 50);
     st->size_data = sizeof(BYTE);
@@ -4116,8 +4123,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27020 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27020);
+  { // 27164 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27164);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.COMMAND", 54);
     st->size_data = sizeof(WORD);
@@ -4128,8 +4135,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27021 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27021);
+  { // 27165 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27165);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.SOURCE", 53);
     st->size_data = sizeof(BYTE);
@@ -4140,8 +4147,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27022 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27022);
+  { // 27166 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27166);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.PARAMETR", 55);
     st->size_data = sizeof(BYTE);
@@ -4152,8 +4159,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27023 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.CMD
-    st = getVariable(27023);
+  { // 27167 PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.CMD
+    st = getVariable(27167);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AC_FONAR._SUNPACKERCOMMAND.CMD", 50);
     st->size_data = sizeof(BYTE);
@@ -4164,8 +4171,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27056 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27056);
+  { // 27200 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27200);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.COMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -4176,8 +4183,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27057 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27057);
+  { // 27201 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27201);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.SOURCE", 55);
     st->size_data = sizeof(BYTE);
@@ -4188,8 +4195,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27058 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27058);
+  { // 27202 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27202);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.PARAMETR", 57);
     st->size_data = sizeof(BYTE);
@@ -4200,8 +4207,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27059 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.CMD
-    st = getVariable(27059);
+  { // 27203 PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.CMD
+    st = getVariable(27203);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR1_SMAZKA._SUNPACKERCOMMAND.CMD", 52);
     st->size_data = sizeof(BYTE);
@@ -4212,8 +4219,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27092 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27092);
+  { // 27236 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27236);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.COMMAND", 56);
     st->size_data = sizeof(WORD);
@@ -4224,8 +4231,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27093 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27093);
+  { // 27237 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27237);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.SOURCE", 55);
     st->size_data = sizeof(BYTE);
@@ -4236,8 +4243,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27094 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27094);
+  { // 27238 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27238);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.PARAMETR", 57);
     st->size_data = sizeof(BYTE);
@@ -4248,8 +4255,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27095 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.CMD
-    st = getVariable(27095);
+  { // 27239 PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.CMD
+    st = getVariable(27239);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR2_SMAZKA._SUNPACKERCOMMAND.CMD", 52);
     st->size_data = sizeof(BYTE);
@@ -4260,8 +4267,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27128 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27128);
+  { // 27272 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27272);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.COMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -4272,8 +4279,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27129 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27129);
+  { // 27273 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27273);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.SOURCE", 62);
     st->size_data = sizeof(BYTE);
@@ -4284,8 +4291,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27130 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27130);
+  { // 27274 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27274);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.PARAMETR", 64);
     st->size_data = sizeof(BYTE);
@@ -4296,8 +4303,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27131 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(27131);
+  { // 27275 PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(27275);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_KR4_OPEN_FROM_ALG._SUNPACKERCOMMAND.CMD", 59);
     st->size_data = sizeof(BYTE);
@@ -4308,8 +4315,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27164 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27164);
+  { // 27308 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27308);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.COMMAND", 58);
     st->size_data = sizeof(WORD);
@@ -4320,8 +4327,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27165 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27165);
+  { // 27309 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27309);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.SOURCE", 57);
     st->size_data = sizeof(BYTE);
@@ -4332,8 +4339,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27166 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27166);
+  { // 27310 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27310);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.PARAMETR", 59);
     st->size_data = sizeof(BYTE);
@@ -4344,8 +4351,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27167 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.CMD
-    st = getVariable(27167);
+  { // 27311 PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.CMD
+    st = getVariable(27311);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCH_REJ_K1._SUNPACKERCOMMAND.CMD", 54);
     st->size_data = sizeof(BYTE);
@@ -4356,8 +4363,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27200 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27200);
+  { // 27344 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27344);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.COMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -4368,8 +4375,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27201 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27201);
+  { // 27345 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27345);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.SOURCE", 56);
     st->size_data = sizeof(BYTE);
@@ -4380,8 +4387,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27202 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27202);
+  { // 27346 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27346);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.PARAMETR", 58);
     st->size_data = sizeof(BYTE);
@@ -4392,8 +4399,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27203 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.CMD
-    st = getVariable(27203);
+  { // 27347 PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.CMD
+    st = getVariable(27347);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_RABOTA_EGPA._SUNPACKERCOMMAND.CMD", 53);
     st->size_data = sizeof(BYTE);
@@ -4404,8 +4411,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27236 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(27236);
+  { // 27380 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(27380);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.COMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -4416,8 +4423,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27237 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(27237);
+  { // 27381 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(27381);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.SOURCE", 56);
     st->size_data = sizeof(BYTE);
@@ -4428,8 +4435,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27238 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(27238);
+  { // 27382 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(27382);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.PARAMETR", 58);
     st->size_data = sizeof(BYTE);
@@ -4440,8 +4447,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 27239 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.CMD
-    st = getVariable(27239);
+  { // 27383 PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.CMD
+    st = getVariable(27383);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NEISPR_EGPA._SUNPACKERCOMMAND.CMD", 53);
     st->size_data = sizeof(BYTE);
@@ -4452,8 +4459,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28081 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28081);
+  { // 28225 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28225);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.COMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -4464,8 +4471,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28082 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28082);
+  { // 28226 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28226);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.SOURCE", 59);
     st->size_data = sizeof(BYTE);
@@ -4476,8 +4483,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28083 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28083);
+  { // 28227 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28227);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.PARAMETR", 61);
     st->size_data = sizeof(BYTE);
@@ -4488,8 +4495,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28084 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.CMD
-    st = getVariable(28084);
+  { // 28228 PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.CMD
+    st = getVariable(28228);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_MVOFF._SUNPACKERCOMMAND.CMD", 56);
     st->size_data = sizeof(BYTE);
@@ -4500,8 +4507,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28158 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28158);
+  { // 28302 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28302);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.COMMAND", 74);
     st->size_data = sizeof(WORD);
@@ -4512,8 +4519,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28159 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28159);
+  { // 28303 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28303);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.SOURCE", 73);
     st->size_data = sizeof(BYTE);
@@ -4524,8 +4531,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28160 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28160);
+  { // 28304 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28304);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.PARAMETR", 75);
     st->size_data = sizeof(BYTE);
@@ -4536,8 +4543,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28161 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.CMD
-    st = getVariable(28161);
+  { // 28305 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.CMD
+    st = getVariable(28305);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ_LESS100._SUNPACKERCOMMAND.CMD", 70);
     st->size_data = sizeof(BYTE);
@@ -4548,8 +4555,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28230 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28230);
+  { // 28374 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28374);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.COMMAND", 67);
     st->size_data = sizeof(WORD);
@@ -4560,8 +4567,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28231 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28231);
+  { // 28375 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28375);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.SOURCE", 66);
     st->size_data = sizeof(BYTE);
@@ -4572,8 +4579,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28232 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28232);
+  { // 28376 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28376);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.PARAMETR", 68);
     st->size_data = sizeof(BYTE);
@@ -4584,8 +4591,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28233 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.CMD
-    st = getVariable(28233);
+  { // 28377 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.CMD
+    st = getVariable(28377);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SUNPACKERCOMMAND.CMD", 63);
     st->size_data = sizeof(BYTE);
@@ -4596,8 +4603,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28302 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28302);
+  { // 28446 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28446);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.COMMAND", 75);
     st->size_data = sizeof(WORD);
@@ -4608,8 +4615,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28303 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28303);
+  { // 28447 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28447);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.SOURCE", 74);
     st->size_data = sizeof(BYTE);
@@ -4620,8 +4627,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28304 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28304);
+  { // 28448 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28448);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.PARAMETR", 76);
     st->size_data = sizeof(BYTE);
@@ -4632,8 +4639,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28305 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.CMD
-    st = getVariable(28305);
+  { // 28449 PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.CMD
+    st = getVariable(28449);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_FAIL_CHASTOTNII_PUSK._SUNPACKERCOMMAND.CMD", 71);
     st->size_data = sizeof(BYTE);
@@ -4644,8 +4651,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28374 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28374);
+  { // 28518 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28518);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.COMMAND", 75);
     st->size_data = sizeof(WORD);
@@ -4656,8 +4663,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28375 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28375);
+  { // 28519 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28519);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.SOURCE", 74);
     st->size_data = sizeof(BYTE);
@@ -4668,8 +4675,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28376 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28376);
+  { // 28520 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28520);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.PARAMETR", 76);
     st->size_data = sizeof(BYTE);
@@ -4680,8 +4687,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28377 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.CMD
-    st = getVariable(28377);
+  { // 28521 PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.CMD
+    st = getVariable(28521);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OFF_AVAR_VIKLUCHATEL._SUNPACKERCOMMAND.CMD", 71);
     st->size_data = sizeof(BYTE);
@@ -4692,8 +4699,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28446 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28446);
+  { // 28590 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28590);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.COMMAND", 64);
     st->size_data = sizeof(WORD);
@@ -4704,8 +4711,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28447 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28447);
+  { // 28591 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28591);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.SOURCE", 63);
     st->size_data = sizeof(BYTE);
@@ -4716,8 +4723,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28448 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28448);
+  { // 28592 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28592);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.PARAMETR", 65);
     st->size_data = sizeof(BYTE);
@@ -4728,8 +4735,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28449 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.CMD
-    st = getVariable(28449);
+  { // 28593 PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.CMD
+    st = getVariable(28593);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AOKC_SHKC._SUNPACKERCOMMAND.CMD", 60);
     st->size_data = sizeof(BYTE);
@@ -4740,8 +4747,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28518 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28518);
+  { // 28662 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28662);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.COMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -4752,8 +4759,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28519 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28519);
+  { // 28663 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28663);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.SOURCE", 60);
     st->size_data = sizeof(BYTE);
@@ -4764,8 +4771,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28520 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28520);
+  { // 28664 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28664);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.PARAMETR", 62);
     st->size_data = sizeof(BYTE);
@@ -4776,8 +4783,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28521 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.CMD
-    st = getVariable(28521);
+  { // 28665 PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.CMD
+    st = getVariable(28665);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_PRU._SUNPACKERCOMMAND.CMD", 57);
     st->size_data = sizeof(BYTE);
@@ -4788,8 +4795,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28590 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28590);
+  { // 28734 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28734);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.COMMAND", 64);
     st->size_data = sizeof(WORD);
@@ -4800,8 +4807,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28591 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28591);
+  { // 28735 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28735);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.SOURCE", 63);
     st->size_data = sizeof(BYTE);
@@ -4812,8 +4819,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28592 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28592);
+  { // 28736 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28736);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.PARAMETR", 65);
     st->size_data = sizeof(BYTE);
@@ -4824,8 +4831,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28593 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.CMD
-    st = getVariable(28593);
+  { // 28737 PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.CMD
+    st = getVariable(28737);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_AO_OT_SHU._SUNPACKERCOMMAND.CMD", 60);
     st->size_data = sizeof(BYTE);
@@ -4836,8 +4843,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28687 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28687);
+  { // 28831 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28831);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -4848,8 +4855,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28688 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28688);
+  { // 28832 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28832);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -4860,8 +4867,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28689 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28689);
+  { // 28833 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28833);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -4872,8 +4879,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28690 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.CMD
-    st = getVariable(28690);
+  { // 28834 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.CMD
+    st = getVariable(28834);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -4884,8 +4891,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28789 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28789);
+  { // 28933 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(28933);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -4896,8 +4903,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28790 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28790);
+  { // 28934 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(28934);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -4908,8 +4915,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28791 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28791);
+  { // 28935 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(28935);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -4920,8 +4927,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28792 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.CMD
-    st = getVariable(28792);
+  { // 28936 PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.CMD
+    st = getVariable(28936);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN2_SDVIG._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -4932,8 +4939,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28915 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(28915);
+  { // 29059 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29059);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.COMMAND", 80);
     st->size_data = sizeof(WORD);
@@ -4944,8 +4951,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28916 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(28916);
+  { // 29060 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29060);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.SOURCE", 79);
     st->size_data = sizeof(BYTE);
@@ -4956,8 +4963,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28917 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(28917);
+  { // 29061 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29061);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.PARAMETR", 81);
     st->size_data = sizeof(BYTE);
@@ -4968,8 +4975,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28918 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(28918);
+  { // 29062 PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(29062);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOPORNO_PODSHIPNIKA_EDT_1._SUNPACKERCOMMAND.CMD", 76);
     st->size_data = sizeof(BYTE);
@@ -4980,8 +4987,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29038 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29038);
+  { // 29182 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29182);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -4992,8 +4999,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29039 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29039);
+  { // 29183 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29183);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -5004,8 +5011,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29040 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29040);
+  { // 29184 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29184);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -5016,8 +5023,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29041 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(29041);
+  { // 29185 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(29185);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_EDT_2._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -5028,8 +5035,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29161 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29161);
+  { // 29305 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29305);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.COMMAND", 80);
     st->size_data = sizeof(WORD);
@@ -5040,8 +5047,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29162 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29162);
+  { // 29306 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29306);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.SOURCE", 79);
     st->size_data = sizeof(BYTE);
@@ -5052,8 +5059,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29163 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29163);
+  { // 29307 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29307);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.PARAMETR", 81);
     st->size_data = sizeof(BYTE);
@@ -5064,8 +5071,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29164 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.CMD
-    st = getVariable(29164);
+  { // 29308 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.CMD
+    st = getVariable(29308);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_3._SUNPACKERCOMMAND.CMD", 76);
     st->size_data = sizeof(BYTE);
@@ -5076,8 +5083,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29284 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29284);
+  { // 29428 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29428);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.COMMAND", 80);
     st->size_data = sizeof(WORD);
@@ -5088,8 +5095,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29285 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29285);
+  { // 29429 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29429);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.SOURCE", 79);
     st->size_data = sizeof(BYTE);
@@ -5100,8 +5107,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29286 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29286);
+  { // 29430 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29430);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.PARAMETR", 81);
     st->size_data = sizeof(BYTE);
@@ -5112,8 +5119,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29287 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.CMD
-    st = getVariable(29287);
+  { // 29431 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.CMD
+    st = getVariable(29431);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_KOL_EDT_4._SUNPACKERCOMMAND.CMD", 76);
     st->size_data = sizeof(BYTE);
@@ -5124,8 +5131,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29407 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29407);
+  { // 29551 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29551);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.COMMAND", 86);
     st->size_data = sizeof(WORD);
@@ -5136,8 +5143,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29408 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29408);
+  { // 29552 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29552);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.SOURCE", 85);
     st->size_data = sizeof(BYTE);
@@ -5148,8 +5155,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29409 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29409);
+  { // 29553 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29553);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.PARAMETR", 87);
     st->size_data = sizeof(BYTE);
@@ -5160,8 +5167,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29410 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.CMD
-    st = getVariable(29410);
+  { // 29554 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.CMD
+    st = getVariable(29554);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SHEST_RED_EDT_5._SUNPACKERCOMMAND.CMD", 82);
     st->size_data = sizeof(BYTE);
@@ -5172,8 +5179,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29530 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29530);
+  { // 29674 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29674);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.COMMAND", 79);
     st->size_data = sizeof(WORD);
@@ -5184,8 +5191,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29531 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29531);
+  { // 29675 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29675);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.SOURCE", 78);
     st->size_data = sizeof(BYTE);
@@ -5196,8 +5203,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29532 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29532);
+  { // 29676 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29676);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.PARAMETR", 80);
     st->size_data = sizeof(BYTE);
@@ -5208,8 +5215,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29533 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.CMD
-    st = getVariable(29533);
+  { // 29677 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.CMD
+    st = getVariable(29677);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_RED_EDT_6._SUNPACKERCOMMAND.CMD", 75);
     st->size_data = sizeof(BYTE);
@@ -5220,8 +5227,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29653 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29653);
+  { // 29797 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29797);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.COMMAND", 84);
     st->size_data = sizeof(WORD);
@@ -5232,8 +5239,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29654 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29654);
+  { // 29798 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29798);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.SOURCE", 83);
     st->size_data = sizeof(BYTE);
@@ -5244,8 +5251,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29655 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29655);
+  { // 29799 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29799);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.PARAMETR", 85);
     st->size_data = sizeof(BYTE);
@@ -5256,8 +5263,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29656 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(29656);
+  { // 29800 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(29800);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_1._SUNPACKERCOMMAND.CMD", 80);
     st->size_data = sizeof(BYTE);
@@ -5268,8 +5275,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29776 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29776);
+  { // 29920 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(29920);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.COMMAND", 84);
     st->size_data = sizeof(WORD);
@@ -5280,8 +5287,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29777 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29777);
+  { // 29921 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(29921);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.SOURCE", 83);
     st->size_data = sizeof(BYTE);
@@ -5292,8 +5299,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29778 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29778);
+  { // 29922 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(29922);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.PARAMETR", 85);
     st->size_data = sizeof(BYTE);
@@ -5304,8 +5311,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29779 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(29779);
+  { // 29923 PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(29923);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TY_PODSHIPNIKA_NAGNET_EDT_7_2._SUNPACKERCOMMAND.CMD", 80);
     st->size_data = sizeof(BYTE);
@@ -5316,8 +5323,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29899 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(29899);
+  { // 30043 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30043);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.COMMAND", 91);
     st->size_data = sizeof(WORD);
@@ -5328,8 +5335,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29900 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(29900);
+  { // 30044 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30044);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.SOURCE", 90);
     st->size_data = sizeof(BYTE);
@@ -5340,8 +5347,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29901 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(29901);
+  { // 30045 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30045);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.PARAMETR", 92);
     st->size_data = sizeof(BYTE);
@@ -5352,8 +5359,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 29902 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(29902);
+  { // 30046 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(30046);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_1._SUNPACKERCOMMAND.CMD", 87);
     st->size_data = sizeof(BYTE);
@@ -5364,8 +5371,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30022 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30022);
+  { // 30166 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30166);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.COMMAND", 91);
     st->size_data = sizeof(WORD);
@@ -5376,8 +5383,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30023 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30023);
+  { // 30167 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30167);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.SOURCE", 90);
     st->size_data = sizeof(BYTE);
@@ -5388,8 +5395,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30024 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30024);
+  { // 30168 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30168);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.PARAMETR", 92);
     st->size_data = sizeof(BYTE);
@@ -5400,8 +5407,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30025 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(30025);
+  { // 30169 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(30169);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_SVOBOD_KONCA_EDT_8_2._SUNPACKERCOMMAND.CMD", 87);
     st->size_data = sizeof(BYTE);
@@ -5412,8 +5419,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30145 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30145);
+  { // 30289 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30289);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.COMMAND", 86);
     st->size_data = sizeof(WORD);
@@ -5424,8 +5431,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30146 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30146);
+  { // 30290 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30290);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.SOURCE", 85);
     st->size_data = sizeof(BYTE);
@@ -5436,8 +5443,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30147 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30147);
+  { // 30291 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30291);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.PARAMETR", 87);
     st->size_data = sizeof(BYTE);
@@ -5448,8 +5455,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30148 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(30148);
+  { // 30292 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(30292);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_1._SUNPACKERCOMMAND.CMD", 82);
     st->size_data = sizeof(BYTE);
@@ -5460,8 +5467,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30268 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30268);
+  { // 30412 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30412);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.COMMAND", 86);
     st->size_data = sizeof(WORD);
@@ -5472,8 +5479,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30269 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30269);
+  { // 30413 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30413);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.SOURCE", 85);
     st->size_data = sizeof(BYTE);
@@ -5484,8 +5491,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30270 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30270);
+  { // 30414 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30414);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.PARAMETR", 87);
     st->size_data = sizeof(BYTE);
@@ -5496,8 +5503,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30271 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(30271);
+  { // 30415 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(30415);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_RAB_KOL_EDT_9_2._SUNPACKERCOMMAND.CMD", 82);
     st->size_data = sizeof(BYTE);
@@ -5508,8 +5515,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30391 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30391);
+  { // 30535 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30535);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.COMMAND", 89);
     st->size_data = sizeof(WORD);
@@ -5520,8 +5527,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30392 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30392);
+  { // 30536 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30536);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.SOURCE", 88);
     st->size_data = sizeof(BYTE);
@@ -5532,8 +5539,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30393 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30393);
+  { // 30537 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30537);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.PARAMETR", 90);
     st->size_data = sizeof(BYTE);
@@ -5544,8 +5551,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30394 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(30394);
+  { // 30538 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(30538);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_1._SUNPACKERCOMMAND.CMD", 85);
     st->size_data = sizeof(BYTE);
@@ -5556,8 +5563,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30514 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30514);
+  { // 30658 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30658);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.COMMAND", 89);
     st->size_data = sizeof(WORD);
@@ -5568,8 +5575,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30515 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30515);
+  { // 30659 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30659);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.SOURCE", 88);
     st->size_data = sizeof(BYTE);
@@ -5580,8 +5587,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30516 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30516);
+  { // 30660 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30660);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.PARAMETR", 90);
     st->size_data = sizeof(BYTE);
@@ -5592,8 +5599,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30517 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(30517);
+  { // 30661 PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(30661);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOY_PODSHIPNIKA_NERAB_KOL_EDT_10_2._SUNPACKERCOMMAND.CMD", 85);
     st->size_data = sizeof(BYTE);
@@ -5604,8 +5611,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30637 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30637);
+  { // 30781 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30781);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.COMMAND", 71);
     st->size_data = sizeof(WORD);
@@ -5616,8 +5623,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30638 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30638);
+  { // 30782 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30782);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.SOURCE", 70);
     st->size_data = sizeof(BYTE);
@@ -5628,8 +5635,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30639 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30639);
+  { // 30783 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30783);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.PARAMETR", 72);
     st->size_data = sizeof(BYTE);
@@ -5640,8 +5647,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30640 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.CMD
-    st = getVariable(30640);
+  { // 30784 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.CMD
+    st = getVariable(30784);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VHODE_H._SUNPACKERCOMMAND.CMD", 67);
     st->size_data = sizeof(BYTE);
@@ -5652,8 +5659,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30760 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30760);
+  { // 30904 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(30904);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.COMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -5664,8 +5671,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30761 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30761);
+  { // 30905 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(30905);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.SOURCE", 71);
     st->size_data = sizeof(BYTE);
@@ -5676,8 +5683,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30762 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30762);
+  { // 30906 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(30906);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.PARAMETR", 73);
     st->size_data = sizeof(BYTE);
@@ -5688,8 +5695,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30763 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.CMD
-    st = getVariable(30763);
+  { // 30907 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.CMD
+    st = getVariable(30907);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SUNPACKERCOMMAND.CMD", 68);
     st->size_data = sizeof(BYTE);
@@ -5700,8 +5707,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30883 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(30883);
+  { // 31027 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31027);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -5712,8 +5719,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30884 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(30884);
+  { // 31028 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31028);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -5724,8 +5731,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30885 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(30885);
+  { // 31029 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31029);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -5736,8 +5743,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30886 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.CMD
-    st = getVariable(30886);
+  { // 31030 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.CMD
+    st = getVariable(31030);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -5748,8 +5755,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31006 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31006);
+  { // 31150 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31150);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.COMMAND", 74);
     st->size_data = sizeof(WORD);
@@ -5760,8 +5767,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31007 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31007);
+  { // 31151 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31151);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.SOURCE", 73);
     st->size_data = sizeof(BYTE);
@@ -5772,8 +5779,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31008 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31008);
+  { // 31152 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31152);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.PARAMETR", 75);
     st->size_data = sizeof(BYTE);
@@ -5784,8 +5791,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31009 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.CMD
-    st = getVariable(31009);
+  { // 31153 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.CMD
+    st = getVariable(31153);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_V_MB_NAD_TEN._SUNPACKERCOMMAND.CMD", 70);
     st->size_data = sizeof(BYTE);
@@ -5796,8 +5803,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31129 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31129);
+  { // 31273 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31273);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.COMMAND", 85);
     st->size_data = sizeof(WORD);
@@ -5808,8 +5815,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31130 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31130);
+  { // 31274 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31274);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.SOURCE", 84);
     st->size_data = sizeof(BYTE);
@@ -5820,8 +5827,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31131 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31131);
+  { // 31275 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31275);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.PARAMETR", 86);
     st->size_data = sizeof(BYTE);
@@ -5832,8 +5839,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31132 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(31132);
+  { // 31276 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(31276);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.CMD", 81);
     st->size_data = sizeof(BYTE);
@@ -5844,8 +5851,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31252 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31252);
+  { // 31396 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31396);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.COMMAND", 85);
     st->size_data = sizeof(WORD);
@@ -5856,8 +5863,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31253 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31253);
+  { // 31397 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31397);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.SOURCE", 84);
     st->size_data = sizeof(BYTE);
@@ -5868,8 +5875,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31254 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31254);
+  { // 31398 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31398);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.PARAMETR", 86);
     st->size_data = sizeof(BYTE);
@@ -5880,8 +5887,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31255 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(31255);
+  { // 31399 PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(31399);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGORJACHEGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.CMD", 81);
     st->size_data = sizeof(BYTE);
@@ -5892,8 +5899,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31375 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31375);
+  { // 31519 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31519);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.COMMAND", 69);
     st->size_data = sizeof(WORD);
@@ -5904,8 +5911,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31376 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31376);
+  { // 31520 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31520);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.SOURCE", 68);
     st->size_data = sizeof(BYTE);
@@ -5916,8 +5923,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31377 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31377);
+  { // 31521 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31521);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.PARAMETR", 70);
     st->size_data = sizeof(BYTE);
@@ -5928,8 +5935,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31378 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(31378);
+  { // 31522 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(31522);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_DO_AVOM._SUNPACKERCOMMAND.CMD", 65);
     st->size_data = sizeof(BYTE);
@@ -5940,8 +5947,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31498 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31498);
+  { // 31642 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31642);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.COMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -5952,8 +5959,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31499 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31499);
+  { // 31643 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31643);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.SOURCE", 71);
     st->size_data = sizeof(BYTE);
@@ -5964,8 +5971,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31500 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31500);
+  { // 31644 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31644);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.PARAMETR", 73);
     st->size_data = sizeof(BYTE);
@@ -5976,8 +5983,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31501 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(31501);
+  { // 31645 PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(31645);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMASLA_POSLE_AVOM._SUNPACKERCOMMAND.CMD", 68);
     st->size_data = sizeof(BYTE);
@@ -5988,8 +5995,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31621 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31621);
+  { // 31765 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31765);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -6000,8 +6007,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31622 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31622);
+  { // 31766 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31766);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -6012,8 +6019,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31623 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31623);
+  { // 31767 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31767);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -6024,8 +6031,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31624 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(31624);
+  { // 31768 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(31768);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_1._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -6036,8 +6043,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31744 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31744);
+  { // 31888 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(31888);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -6048,8 +6055,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31745 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31745);
+  { // 31889 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(31889);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -6060,8 +6067,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31746 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31746);
+  { // 31890 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(31890);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -6072,8 +6079,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31747 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(31747);
+  { // 31891 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(31891);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_2._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -6084,8 +6091,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31867 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31867);
+  { // 32011 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32011);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -6096,8 +6103,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31868 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31868);
+  { // 32012 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32012);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -6108,8 +6115,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31869 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31869);
+  { // 32013 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32013);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -6120,8 +6127,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31870 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.CMD
-    st = getVariable(31870);
+  { // 32014 PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.CMD
+    st = getVariable(32014);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TMEDI_STATORA_KANAL_3._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -6132,8 +6139,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31990 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(31990);
+  { // 32134 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32134);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.COMMAND", 77);
     st->size_data = sizeof(WORD);
@@ -6144,8 +6151,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31991 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(31991);
+  { // 32135 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32135);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.SOURCE", 76);
     st->size_data = sizeof(BYTE);
@@ -6156,8 +6163,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31992 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(31992);
+  { // 32136 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32136);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.PARAMETR", 78);
     st->size_data = sizeof(BYTE);
@@ -6168,8 +6175,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 31993 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(31993);
+  { // 32137 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(32137);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_1._SUNPACKERCOMMAND.CMD", 73);
     st->size_data = sizeof(BYTE);
@@ -6180,8 +6187,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32113 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32113);
+  { // 32257 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32257);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.COMMAND", 77);
     st->size_data = sizeof(WORD);
@@ -6192,8 +6199,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32114 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32114);
+  { // 32258 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32258);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.SOURCE", 76);
     st->size_data = sizeof(BYTE);
@@ -6204,8 +6211,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32115 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32115);
+  { // 32259 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32259);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.PARAMETR", 78);
     st->size_data = sizeof(BYTE);
@@ -6216,8 +6223,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32116 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(32116);
+  { // 32260 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(32260);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_2._SUNPACKERCOMMAND.CMD", 73);
     st->size_data = sizeof(BYTE);
@@ -6228,8 +6235,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32236 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32236);
+  { // 32380 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32380);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.COMMAND", 77);
     st->size_data = sizeof(WORD);
@@ -6240,8 +6247,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32237 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32237);
+  { // 32381 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32381);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.SOURCE", 76);
     st->size_data = sizeof(BYTE);
@@ -6252,8 +6259,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32238 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32238);
+  { // 32382 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32382);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.PARAMETR", 78);
     st->size_data = sizeof(BYTE);
@@ -6264,8 +6271,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32239 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.CMD
-    st = getVariable(32239);
+  { // 32383 PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.CMD
+    st = getVariable(32383);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TSTALI_STATORA_KANAL_3._SUNPACKERCOMMAND.CMD", 73);
     st->size_data = sizeof(BYTE);
@@ -6276,8 +6283,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32359 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32359);
+  { // 32503 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32503);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.COMMAND", 84);
     st->size_data = sizeof(WORD);
@@ -6288,8 +6295,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32360 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32360);
+  { // 32504 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32504);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.SOURCE", 83);
     st->size_data = sizeof(BYTE);
@@ -6300,8 +6307,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32361 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32361);
+  { // 32505 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32505);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.PARAMETR", 85);
     st->size_data = sizeof(BYTE);
@@ -6312,8 +6319,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32362 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.CMD
-    st = getVariable(32362);
+  { // 32506 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.CMD
+    st = getVariable(32506);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_1._SUNPACKERCOMMAND.CMD", 80);
     st->size_data = sizeof(BYTE);
@@ -6324,8 +6331,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32482 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32482);
+  { // 32626 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32626);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.COMMAND", 84);
     st->size_data = sizeof(WORD);
@@ -6336,8 +6343,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32483 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32483);
+  { // 32627 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32627);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.SOURCE", 83);
     st->size_data = sizeof(BYTE);
@@ -6348,8 +6355,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32484 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32484);
+  { // 32628 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32628);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.PARAMETR", 85);
     st->size_data = sizeof(BYTE);
@@ -6360,8 +6367,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32485 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.CMD
-    st = getVariable(32485);
+  { // 32629 PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.CMD
+    st = getVariable(32629);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_THOLODNOGO_VOZDUHA_ED_KANAL_2._SUNPACKERCOMMAND.CMD", 80);
     st->size_data = sizeof(BYTE);
@@ -6372,8 +6379,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32605 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32605);
+  { // 32749 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32749);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.COMMAND", 71);
     st->size_data = sizeof(WORD);
@@ -6384,8 +6391,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32606 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32606);
+  { // 32750 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32750);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.SOURCE", 70);
     st->size_data = sizeof(BYTE);
@@ -6396,8 +6403,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32607 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32607);
+  { // 32751 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32751);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.PARAMETR", 72);
     st->size_data = sizeof(BYTE);
@@ -6408,8 +6415,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32608 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.CMD
-    st = getVariable(32608);
+  { // 32752 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.CMD
+    st = getVariable(32752);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_NIZKOE._SUNPACKERCOMMAND.CMD", 67);
     st->size_data = sizeof(BYTE);
@@ -6420,8 +6427,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32728 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32728);
+  { // 32872 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32872);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.COMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -6432,8 +6439,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32729 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32729);
+  { // 32873 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32873);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.SOURCE", 71);
     st->size_data = sizeof(BYTE);
@@ -6444,8 +6451,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32730 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32730);
+  { // 32874 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32874);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.PARAMETR", 73);
     st->size_data = sizeof(BYTE);
@@ -6456,8 +6463,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32731 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.CMD
-    st = getVariable(32731);
+  { // 32875 PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.CMD
+    st = getVariable(32875);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLO_SM_VYSOKOE._SUNPACKERCOMMAND.CMD", 68);
     st->size_data = sizeof(BYTE);
@@ -6468,8 +6475,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32851 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32851);
+  { // 32995 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(32995);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.COMMAND", 82);
     st->size_data = sizeof(WORD);
@@ -6480,8 +6487,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32852 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32852);
+  { // 32996 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(32996);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.SOURCE", 81);
     st->size_data = sizeof(BYTE);
@@ -6492,8 +6499,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32853 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32853);
+  { // 32997 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(32997);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.PARAMETR", 83);
     st->size_data = sizeof(BYTE);
@@ -6504,8 +6511,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32854 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.CMD
-    st = getVariable(32854);
+  { // 32998 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.CMD
+    st = getVariable(32998);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VHODE_NAGNETATELIA._SUNPACKERCOMMAND.CMD", 78);
     st->size_data = sizeof(BYTE);
@@ -6516,8 +6523,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32974 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(32974);
+  { // 33118 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33118);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.COMMAND", 83);
     st->size_data = sizeof(WORD);
@@ -6528,8 +6535,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32975 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(32975);
+  { // 33119 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33119);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.SOURCE", 82);
     st->size_data = sizeof(BYTE);
@@ -6540,8 +6547,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32976 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(32976);
+  { // 33120 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33120);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.PARAMETR", 84);
     st->size_data = sizeof(BYTE);
@@ -6552,8 +6559,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 32977 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.CMD
-    st = getVariable(32977);
+  { // 33121 PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.CMD
+    st = getVariable(33121);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PGAZA_NA_VYHODE_NAGNETATELIA._SUNPACKERCOMMAND.CMD", 79);
     st->size_data = sizeof(BYTE);
@@ -6564,8 +6571,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33097 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33097);
+  { // 33241 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33241);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.COMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -6576,8 +6583,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33098 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33098);
+  { // 33242 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33242);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.SOURCE", 69);
     st->size_data = sizeof(BYTE);
@@ -6588,8 +6595,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33099 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33099);
+  { // 33243 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33243);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.PARAMETR", 71);
     st->size_data = sizeof(BYTE);
@@ -6600,8 +6607,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33100 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.CMD
-    st = getVariable(33100);
+  { // 33244 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.CMD
+    st = getVariable(33244);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_POSLE_NU._SUNPACKERCOMMAND.CMD", 66);
     st->size_data = sizeof(BYTE);
@@ -6612,8 +6619,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33220 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33220);
+  { // 33364 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33364);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.COMMAND", 78);
     st->size_data = sizeof(WORD);
@@ -6624,8 +6631,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33221 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33221);
+  { // 33365 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33365);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.SOURCE", 77);
     st->size_data = sizeof(BYTE);
@@ -6636,8 +6643,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33222 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33222);
+  { // 33366 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33366);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.PARAMETR", 79);
     st->size_data = sizeof(BYTE);
@@ -6648,8 +6655,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33223 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.CMD
-    st = getVariable(33223);
+  { // 33367 PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.CMD
+    st = getVariable(33367);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PMASLA_SMAZKI_POSLE_GNS._SUNPACKERCOMMAND.CMD", 74);
     st->size_data = sizeof(BYTE);
@@ -6660,8 +6667,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33343 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33343);
+  { // 33487 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33487);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -6672,8 +6679,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33344 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33344);
+  { // 33488 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33488);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -6684,8 +6691,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33345 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33345);
+  { // 33489 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33489);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -6696,8 +6703,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33346 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.CMD
-    st = getVariable(33346);
+  { // 33490 PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.CMD
+    st = getVariable(33490);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_PIMPULS_GAZ._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -6708,8 +6715,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33466 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33466);
+  { // 33610 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33610);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -6720,8 +6727,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33467 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33467);
+  { // 33611 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33611);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -6732,8 +6739,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33468 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33468);
+  { // 33612 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33612);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -6744,8 +6751,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33469 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.CMD
-    st = getVariable(33469);
+  { // 33613 PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.CMD
+    st = getVariable(33613);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DPMASLO_GAZ._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -6756,8 +6763,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33589 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33589);
+  { // 33733 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33733);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.COMMAND", 73);
     st->size_data = sizeof(WORD);
@@ -6768,8 +6775,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33590 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33590);
+  { // 33734 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33734);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.SOURCE", 72);
     st->size_data = sizeof(BYTE);
@@ -6780,8 +6787,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33591 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33591);
+  { // 33735 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33735);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.PARAMETR", 74);
     st->size_data = sizeof(BYTE);
@@ -6792,8 +6799,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33592 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.CMD
-    st = getVariable(33592);
+  { // 33736 PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.CMD
+    st = getVariable(33736);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_DP_MASLO_NA_FILTRE._SUNPACKERCOMMAND.CMD", 69);
     st->size_data = sizeof(BYTE);
@@ -6804,8 +6811,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33712 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33712);
+  { // 33856 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33856);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.COMMAND", 81);
     st->size_data = sizeof(WORD);
@@ -6816,8 +6823,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33713 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33713);
+  { // 33857 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33857);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.SOURCE", 80);
     st->size_data = sizeof(BYTE);
@@ -6828,8 +6835,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33714 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33714);
+  { // 33858 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33858);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.PARAMETR", 82);
     st->size_data = sizeof(BYTE);
@@ -6840,8 +6847,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33715 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.CMD
-    st = getVariable(33715);
+  { // 33859 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.CMD
+    st = getVariable(33859);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_PLUS._SUNPACKERCOMMAND.CMD", 77);
     st->size_data = sizeof(BYTE);
@@ -6852,8 +6859,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33835 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33835);
+  { // 33979 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(33979);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.COMMAND", 82);
     st->size_data = sizeof(WORD);
@@ -6864,8 +6871,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33836 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33836);
+  { // 33980 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(33980);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.SOURCE", 81);
     st->size_data = sizeof(BYTE);
@@ -6876,8 +6883,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33837 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33837);
+  { // 33981 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(33981);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.PARAMETR", 83);
     st->size_data = sizeof(BYTE);
@@ -6888,8 +6895,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33838 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.CMD
-    st = getVariable(33838);
+  { // 33982 PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.CMD
+    st = getVariable(33982);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_OS_SDVIG_NAGNETATELJA_MINUS._SUNPACKERCOMMAND.CMD", 78);
     st->size_data = sizeof(BYTE);
@@ -6900,8 +6907,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33958 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(33958);
+  { // 34102 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34102);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -6912,8 +6919,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33959 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(33959);
+  { // 34103 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34103);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -6924,8 +6931,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33960 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(33960);
+  { // 34104 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34104);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -6936,8 +6943,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 33961 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.CMD
-    st = getVariable(33961);
+  { // 34105 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.CMD
+    st = getVariable(34105);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T1._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -6948,8 +6955,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34081 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34081);
+  { // 34225 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34225);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -6960,8 +6967,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34082 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34082);
+  { // 34226 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34226);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -6972,8 +6979,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34083 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34083);
+  { // 34227 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34227);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -6984,8 +6991,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34084 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.CMD
-    st = getVariable(34084);
+  { // 34228 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.CMD
+    st = getVariable(34228);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OPED_T2._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -6996,8 +7003,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34204 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34204);
+  { // 34348 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34348);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.COMMAND", 85);
     st->size_data = sizeof(WORD);
@@ -7008,8 +7015,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34205 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34205);
+  { // 34349 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34349);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.SOURCE", 84);
     st->size_data = sizeof(BYTE);
@@ -7020,8 +7027,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34206 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34206);
+  { // 34350 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34350);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.PARAMETR", 86);
     st->size_data = sizeof(BYTE);
@@ -7032,8 +7039,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34207 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.CMD
-    st = getVariable(34207);
+  { // 34351 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.CMD
+    st = getVariable(34351);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OYP_KOLESA_ED_T3._SUNPACKERCOMMAND.CMD", 81);
     st->size_data = sizeof(BYTE);
@@ -7044,8 +7051,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34327 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34327);
+  { // 34471 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34471);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.COMMAND", 84);
     st->size_data = sizeof(WORD);
@@ -7056,8 +7063,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34328 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34328);
+  { // 34472 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34472);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.SOURCE", 83);
     st->size_data = sizeof(BYTE);
@@ -7068,8 +7075,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34329 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34329);
+  { // 34473 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34473);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.PARAMETR", 85);
     st->size_data = sizeof(BYTE);
@@ -7080,8 +7087,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34330 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.CMD
-    st = getVariable(34330);
+  { // 34474 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.CMD
+    st = getVariable(34474);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_KOLESA_RH_T4._SUNPACKERCOMMAND.CMD", 80);
     st->size_data = sizeof(BYTE);
@@ -7092,8 +7099,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34450 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34450);
+  { // 34594 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34594);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.COMMAND", 88);
     st->size_data = sizeof(WORD);
@@ -7104,8 +7111,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34451 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34451);
+  { // 34595 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34595);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.SOURCE", 87);
     st->size_data = sizeof(BYTE);
@@ -7116,8 +7123,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34452 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34452);
+  { // 34596 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34596);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.PARAMETR", 89);
     st->size_data = sizeof(BYTE);
@@ -7128,8 +7135,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34453 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.CMD
-    st = getVariable(34453);
+  { // 34597 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.CMD
+    st = getVariable(34597);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T5._SUNPACKERCOMMAND.CMD", 84);
     st->size_data = sizeof(BYTE);
@@ -7140,8 +7147,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34573 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34573);
+  { // 34717 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34717);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.COMMAND", 88);
     st->size_data = sizeof(WORD);
@@ -7152,8 +7159,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34574 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34574);
+  { // 34718 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34718);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.SOURCE", 87);
     st->size_data = sizeof(BYTE);
@@ -7164,8 +7171,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34575 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34575);
+  { // 34719 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34719);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.PARAMETR", 89);
     st->size_data = sizeof(BYTE);
@@ -7176,8 +7183,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34576 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.CMD
-    st = getVariable(34576);
+  { // 34720 PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.CMD
+    st = getVariable(34720);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBRO_SKOROST_OP_SHESTERNI_RED_T6._SUNPACKERCOMMAND.CMD", 84);
     st->size_data = sizeof(BYTE);
@@ -7188,8 +7195,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34696 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34696);
+  { // 34840 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34840);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.COMMAND", 78);
     st->size_data = sizeof(WORD);
@@ -7200,8 +7207,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34697 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34697);
+  { // 34841 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34841);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.SOURCE", 77);
     st->size_data = sizeof(BYTE);
@@ -7212,8 +7219,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34698 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34698);
+  { // 34842 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34842);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.PARAMETR", 79);
     st->size_data = sizeof(BYTE);
@@ -7224,8 +7231,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34699 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.CMD
-    st = getVariable(34699);
+  { // 34843 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.CMD
+    st = getVariable(34843);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T7._SUNPACKERCOMMAND.CMD", 74);
     st->size_data = sizeof(BYTE);
@@ -7236,8 +7243,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34819 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34819);
+  { // 34963 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(34963);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.COMMAND", 78);
     st->size_data = sizeof(WORD);
@@ -7248,8 +7255,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34820 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34820);
+  { // 34964 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(34964);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.SOURCE", 77);
     st->size_data = sizeof(BYTE);
@@ -7260,8 +7267,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34821 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34821);
+  { // 34965 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(34965);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.PARAMETR", 79);
     st->size_data = sizeof(BYTE);
@@ -7272,8 +7279,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34822 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.CMD
-    st = getVariable(34822);
+  { // 34966 PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.CMD
+    st = getVariable(34966);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_VIBROPEREMESH_VALA_N_T8._SUNPACKERCOMMAND.CMD", 74);
     st->size_data = sizeof(BYTE);
@@ -7284,8 +7291,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34942 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(34942);
+  { // 35086 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(35086);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.COMMAND", 72);
     st->size_data = sizeof(WORD);
@@ -7296,8 +7303,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34943 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(34943);
+  { // 35087 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(35087);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.SOURCE", 71);
     st->size_data = sizeof(BYTE);
@@ -7308,8 +7315,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34944 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(34944);
+  { // 35088 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(35088);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.PARAMETR", 73);
     st->size_data = sizeof(BYTE);
@@ -7320,8 +7327,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 34945 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.CMD
-    st = getVariable(34945);
+  { // 35089 PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.CMD
+    st = getVariable(35089);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_UROVEN_MASLA_V_MB._SUNPACKERCOMMAND.CMD", 68);
     st->size_data = sizeof(BYTE);
@@ -7332,8 +7339,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35065 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(35065);
+  { // 35209 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(35209);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -7344,8 +7351,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35066 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(35066);
+  { // 35210 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(35210);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -7356,8 +7363,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35067 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(35067);
+  { // 35211 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(35211);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -7368,8 +7375,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35068 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.CMD
-    st = getVariable(35068);
+  { // 35212 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.CMD
+    st = getVariable(35212);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -7380,8 +7387,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35188 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(35188);
+  { // 35332 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(35332);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.COMMAND", 79);
     st->size_data = sizeof(WORD);
@@ -7392,8 +7399,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35189 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(35189);
+  { // 35333 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(35333);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.SOURCE", 78);
     st->size_data = sizeof(BYTE);
@@ -7404,8 +7411,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35190 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(35190);
+  { // 35334 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(35334);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.PARAMETR", 80);
     st->size_data = sizeof(BYTE);
@@ -7416,8 +7423,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35191 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.CMD
-    st = getVariable(35191);
+  { // 35335 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.CMD
+    st = getVariable(35335);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_LESS187._SUNPACKERCOMMAND.CMD", 75);
     st->size_data = sizeof(BYTE);
@@ -7428,8 +7435,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35311 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(35311);
+  { // 35455 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(35455);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.COMMAND", 79);
     st->size_data = sizeof(WORD);
@@ -7440,8 +7447,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35312 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(35312);
+  { // 35456 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(35456);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.SOURCE", 78);
     st->size_data = sizeof(BYTE);
@@ -7452,8 +7459,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35313 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(35313);
+  { // 35457 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(35457);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.PARAMETR", 80);
     st->size_data = sizeof(BYTE);
@@ -7464,8 +7471,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35314 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.CMD
-    st = getVariable(35314);
+  { // 35458 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.CMD
+    st = getVariable(35458);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_PER_220V_HIGH242._SUNPACKERCOMMAND.CMD", 75);
     st->size_data = sizeof(BYTE);
@@ -7476,8 +7483,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35434 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(35434);
+  { // 35578 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(35578);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.COMMAND", 80);
     st->size_data = sizeof(WORD);
@@ -7488,8 +7495,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35435 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(35435);
+  { // 35579 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(35579);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.SOURCE", 79);
     st->size_data = sizeof(BYTE);
@@ -7500,8 +7507,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35436 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(35436);
+  { // 35580 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(35580);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.PARAMETR", 81);
     st->size_data = sizeof(BYTE);
@@ -7512,8 +7519,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35437 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.CMD
-    st = getVariable(35437);
+  { // 35581 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.CMD
+    st = getVariable(35581);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_LESS187._SUNPACKERCOMMAND.CMD", 76);
     st->size_data = sizeof(BYTE);
@@ -7524,8 +7531,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35557 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(35557);
+  { // 35701 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(35701);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.COMMAND", 80);
     st->size_data = sizeof(WORD);
@@ -7536,8 +7543,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35558 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(35558);
+  { // 35702 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(35702);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.SOURCE", 79);
     st->size_data = sizeof(BYTE);
@@ -7548,8 +7555,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35559 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(35559);
+  { // 35703 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(35703);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.PARAMETR", 81);
     st->size_data = sizeof(BYTE);
@@ -7560,8 +7567,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35560 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.CMD
-    st = getVariable(35560);
+  { // 35704 PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.CMD
+    st = getVariable(35704);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KONTROL_POST_220V_HIGH242._SUNPACKERCOMMAND.CMD", 76);
     st->size_data = sizeof(BYTE);
@@ -7572,8 +7579,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 40461 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(40461);
+  { // 40605 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(40605);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.COMMAND", 62);
     st->size_data = sizeof(WORD);
@@ -7584,8 +7591,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 40462 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(40462);
+  { // 40606 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(40606);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.SOURCE", 61);
     st->size_data = sizeof(BYTE);
@@ -7596,8 +7603,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 40463 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(40463);
+  { // 40607 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(40607);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.PARAMETR", 63);
     st->size_data = sizeof(BYTE);
@@ -7608,8 +7615,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 40464 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(40464);
+  { // 40608 PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(40608);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_REMONTALG._SUNPACKERCOMMAND.CMD", 58);
     st->size_data = sizeof(BYTE);
@@ -7620,8 +7627,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 41670 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(41670);
+  { // 41814 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(41814);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.COMMAND", 70);
     st->size_data = sizeof(WORD);
@@ -7632,8 +7639,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 41671 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(41671);
+  { // 41815 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(41815);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.SOURCE", 69);
     st->size_data = sizeof(BYTE);
@@ -7644,8 +7651,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 41672 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(41672);
+  { // 41816 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(41816);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.PARAMETR", 71);
     st->size_data = sizeof(BYTE);
@@ -7656,8 +7663,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 41673 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(41673);
+  { // 41817 PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(41817);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPROTECTIONALG._SUNPACKERCOMMAND.CMD", 66);
     st->size_data = sizeof(BYTE);
@@ -7668,8 +7675,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 45849 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(45849);
+  { // 45993 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(45993);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.COMMAND", 62);
     st->size_data = sizeof(WORD);
@@ -7680,8 +7687,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 45850 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(45850);
+  { // 45994 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(45994);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.SOURCE", 61);
     st->size_data = sizeof(BYTE);
@@ -7692,8 +7699,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 45851 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(45851);
+  { // 45995 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(45995);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.PARAMETR", 63);
     st->size_data = sizeof(BYTE);
@@ -7704,8 +7711,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 45852 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(45852);
+  { // 45996 PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(45996);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTIMALG._SUNPACKERCOMMAND.CMD", 58);
     st->size_data = sizeof(BYTE);
@@ -7716,8 +7723,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47242 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(47242);
+  { // 47386 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(47386);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.COMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -7728,8 +7735,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47243 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(47243);
+  { // 47387 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(47387);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.SOURCE", 59);
     st->size_data = sizeof(BYTE);
@@ -7740,8 +7747,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47244 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(47244);
+  { // 47388 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(47388);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.PARAMETR", 61);
     st->size_data = sizeof(BYTE);
@@ -7752,8 +7759,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47245 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.CMD
-    st = getVariable(47245);
+  { // 47389 PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.CMD
+    st = getVariable(47389);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOTEN._SUNPACKERCOMMAND.CMD", 56);
     st->size_data = sizeof(BYTE);
@@ -7764,8 +7771,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47417 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(47417);
+  { // 47561 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(47561);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.COMMAND", 60);
     st->size_data = sizeof(WORD);
@@ -7776,8 +7783,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47418 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(47418);
+  { // 47562 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(47562);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.SOURCE", 59);
     st->size_data = sizeof(BYTE);
@@ -7788,8 +7795,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47419 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(47419);
+  { // 47563 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(47563);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.PARAMETR", 61);
     st->size_data = sizeof(BYTE);
@@ -7800,8 +7807,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47420 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.CMD
-    st = getVariable(47420);
+  { // 47564 PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.CMD
+    st = getVariable(47564);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOPNS._SUNPACKERCOMMAND.CMD", 56);
     st->size_data = sizeof(BYTE);
@@ -7812,8 +7819,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47663 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(47663);
+  { // 47807 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(47807);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.COMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -7824,8 +7831,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47664 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(47664);
+  { // 47808 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(47808);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.SOURCE", 60);
     st->size_data = sizeof(BYTE);
@@ -7836,8 +7843,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47665 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(47665);
+  { // 47809 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(47809);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.PARAMETR", 62);
     st->size_data = sizeof(BYTE);
@@ -7848,8 +7855,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47666 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.CMD
-    st = getVariable(47666);
+  { // 47810 PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.CMD
+    st = getVariable(47810);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTOAVOM._SUNPACKERCOMMAND.CMD", 57);
     st->size_data = sizeof(BYTE);
@@ -7860,8 +7867,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47835 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(47835);
+  { // 47979 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(47979);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND", 76);
     st->size_data = sizeof(WORD);
@@ -7873,8 +7880,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47836 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(47836);
+  { // 47980 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(47980);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE", 75);
     st->size_data = sizeof(BYTE);
@@ -7886,8 +7893,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47837 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(47837);
+  { // 47981 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(47981);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR", 77);
     st->size_data = sizeof(BYTE);
@@ -7899,8 +7906,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47838 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD
-    st = getVariable(47838);
+  { // 47982 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD
+    st = getVariable(47982);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD", 72);
     st->size_data = sizeof(BYTE);
@@ -7912,8 +7919,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47924 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(47924);
+  { // 48068 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(48068);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.COMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -7924,8 +7931,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47925 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(47925);
+  { // 48069 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(48069);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.SOURCE", 60);
     st->size_data = sizeof(BYTE);
@@ -7936,8 +7943,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47926 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(47926);
+  { // 48070 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(48070);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.PARAMETR", 62);
     st->size_data = sizeof(BYTE);
@@ -7948,8 +7955,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 47927 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.CMD
-    st = getVariable(47927);
+  { // 48071 PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.CMD
+    st = getVariable(48071);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_VIBEGPNS._SUNPACKERCOMMAND.CMD", 57);
     st->size_data = sizeof(BYTE);
@@ -7960,8 +7967,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53453 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(53453);
+  { // 53669 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(53669);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.COMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -7972,8 +7979,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53454 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(53454);
+  { // 53670 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(53670);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.SOURCE", 58);
     st->size_data = sizeof(BYTE);
@@ -7984,8 +7991,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53455 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(53455);
+  { // 53671 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(53671);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.PARAMETR", 60);
     st->size_data = sizeof(BYTE);
@@ -7996,8 +8003,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 53456 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.CMD
-    st = getVariable(53456);
+  { // 53672 PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.CMD
+    st = getVariable(53672);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AUTONU._SUNPACKERCOMMAND.CMD", 55);
     st->size_data = sizeof(BYTE);
@@ -8008,8 +8015,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 54097 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(54097);
+  { // 54313 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(54313);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.COMMAND", 66);
     st->size_data = sizeof(WORD);
@@ -8020,8 +8027,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 54098 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(54098);
+  { // 54314 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(54314);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.SOURCE", 65);
     st->size_data = sizeof(BYTE);
@@ -8032,8 +8039,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 54099 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(54099);
+  { // 54315 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(54315);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.PARAMETR", 67);
     st->size_data = sizeof(BYTE);
@@ -8044,8 +8051,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 54100 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.CMD
-    st = getVariable(54100);
+  { // 54316 PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.CMD
+    st = getVariable(54316);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKOILSYSTEM._SUNPACKERCOMMAND.CMD", 62);
     st->size_data = sizeof(BYTE);
@@ -8056,8 +8063,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 60318 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(60318);
+  { // 60606 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(60606);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.COMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -8068,8 +8075,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 60319 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(60319);
+  { // 60607 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(60607);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.SOURCE", 62);
     st->size_data = sizeof(BYTE);
@@ -8080,8 +8087,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 60320 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(60320);
+  { // 60608 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(60608);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.PARAMETR", 64);
     st->size_data = sizeof(BYTE);
@@ -8092,8 +8099,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 60321 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.CMD
-    st = getVariable(60321);
+  { // 60609 PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.CMD
+    st = getVariable(60609);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ANTIPOMPAG._SUNPACKERCOMMAND.CMD", 59);
     st->size_data = sizeof(BYTE);
@@ -8104,8 +8111,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61700 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(61700);
+  { // 61988 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(61988);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.COMMAND", 58);
     st->size_data = sizeof(WORD);
@@ -8116,8 +8123,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61701 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(61701);
+  { // 61989 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(61989);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.SOURCE", 57);
     st->size_data = sizeof(BYTE);
@@ -8128,8 +8135,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61702 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(61702);
+  { // 61990 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(61990);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.PARAMETR", 59);
     st->size_data = sizeof(BYTE);
@@ -8140,8 +8147,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61703 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(61703);
+  { // 61991 PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(61991);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG._SUNPACKERCOMMAND.CMD", 54);
     st->size_data = sizeof(BYTE);
@@ -8152,8 +8159,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68424 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(68424);
+  { // 68784 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(68784);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.COMMAND", 58);
     st->size_data = sizeof(WORD);
@@ -8164,8 +8171,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68425 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(68425);
+  { // 68785 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(68785);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.SOURCE", 57);
     st->size_data = sizeof(BYTE);
@@ -8176,8 +8183,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68426 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(68426);
+  { // 68786 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(68786);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.PARAMETR", 59);
     st->size_data = sizeof(BYTE);
@@ -8188,8 +8195,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68427 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(68427);
+  { // 68787 PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(68787);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG._SUNPACKERCOMMAND.CMD", 54);
     st->size_data = sizeof(BYTE);
@@ -8200,8 +8207,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 74535 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(74535);
+  { // 74967 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(74967);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.COMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -8212,8 +8219,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 74536 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(74536);
+  { // 74968 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(74968);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.SOURCE", 58);
     st->size_data = sizeof(BYTE);
@@ -8224,8 +8231,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 74537 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(74537);
+  { // 74969 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(74969);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.PARAMETR", 60);
     st->size_data = sizeof(BYTE);
@@ -8236,8 +8243,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 74538 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(74538);
+  { // 74970 PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(74970);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PPUALG._SUNPACKERCOMMAND.CMD", 55);
     st->size_data = sizeof(BYTE);
@@ -8248,8 +8255,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 81035 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(81035);
+  { // 81539 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(81539);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.COMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -8260,8 +8267,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 81036 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(81036);
+  { // 81540 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(81540);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.SOURCE", 62);
     st->size_data = sizeof(BYTE);
@@ -8272,8 +8279,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 81037 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(81037);
+  { // 81541 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(81541);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.PARAMETR", 64);
     st->size_data = sizeof(BYTE);
@@ -8284,8 +8291,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 81038 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(81038);
+  { // 81542 PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(81542);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_FILLINGALG._SUNPACKERCOMMAND.CMD", 59);
     st->size_data = sizeof(BYTE);
@@ -8296,8 +8303,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 86813 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(86813);
+  { // 87389 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(87389);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.COMMAND", 65);
     st->size_data = sizeof(WORD);
@@ -8308,8 +8315,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 86814 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(86814);
+  { // 87390 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(87390);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.SOURCE", 64);
     st->size_data = sizeof(BYTE);
@@ -8320,8 +8327,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 86815 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(86815);
+  { // 87391 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(87391);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.PARAMETR", 66);
     st->size_data = sizeof(BYTE);
@@ -8332,8 +8339,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 86816 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(86816);
+  { // 87392 PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(87392);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_ENGINERUNALG._SUNPACKERCOMMAND.CMD", 61);
     st->size_data = sizeof(BYTE);
@@ -8344,8 +8351,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92358 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(92358);
+  { // 93006 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(93006);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.COMMAND", 80);
     st->size_data = sizeof(WORD);
@@ -8357,8 +8364,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92359 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(92359);
+  { // 93007 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(93007);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.SOURCE", 79);
     st->size_data = sizeof(BYTE);
@@ -8370,8 +8377,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92360 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(92360);
+  { // 93008 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(93008);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.PARAMETR", 81);
     st->size_data = sizeof(BYTE);
@@ -8383,8 +8390,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92361 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.CMD
-    st = getVariable(92361);
+  { // 93009 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.CMD
+    st = getVariable(93009);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONFILLING._SUNPACKERCOMMAND.CMD", 76);
     st->size_data = sizeof(BYTE);
@@ -8396,8 +8403,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92431 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(92431);
+  { // 93079 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(93079);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.COMMAND", 79);
     st->size_data = sizeof(WORD);
@@ -8409,8 +8416,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92432 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(92432);
+  { // 93080 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(93080);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.SOURCE", 78);
     st->size_data = sizeof(BYTE);
@@ -8422,8 +8429,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92433 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(92433);
+  { // 93081 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(93081);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.PARAMETR", 80);
     st->size_data = sizeof(BYTE);
@@ -8435,8 +8442,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92434 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.CMD
-    st = getVariable(92434);
+  { // 93082 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.CMD
+    st = getVariable(93082);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG.FB_QUESTIONUNLOAD._SUNPACKERCOMMAND.CMD", 75);
     st->size_data = sizeof(BYTE);
@@ -8448,8 +8455,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92922 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(92922);
+  { // 93570 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(93570);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.COMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -8460,8 +8467,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92923 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(92923);
+  { // 93571 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(93571);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.SOURCE", 60);
     st->size_data = sizeof(BYTE);
@@ -8472,8 +8479,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92924 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(92924);
+  { // 93572 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(93572);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.PARAMETR", 62);
     st->size_data = sizeof(BYTE);
@@ -8484,8 +8491,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 92925 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(92925);
+  { // 93573 PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(93573);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKKALG._SUNPACKERCOMMAND.CMD", 57);
     st->size_data = sizeof(BYTE);
@@ -8496,8 +8503,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98507 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(98507);
+  { // 99227 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(99227);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.COMMAND", 79);
     st->size_data = sizeof(WORD);
@@ -8509,8 +8516,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98508 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(98508);
+  { // 99228 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(99228);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.SOURCE", 78);
     st->size_data = sizeof(BYTE);
@@ -8522,8 +8529,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98509 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(98509);
+  { // 99229 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(99229);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.PARAMETR", 80);
     st->size_data = sizeof(BYTE);
@@ -8535,8 +8542,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98510 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.CMD
-    st = getVariable(98510);
+  { // 99230 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.CMD
+    st = getVariable(99230);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONENGINE._SUNPACKERCOMMAND.CMD", 75);
     st->size_data = sizeof(BYTE);
@@ -8548,8 +8555,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98580 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(98580);
+  { // 99300 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(99300);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.COMMAND", 78);
     st->size_data = sizeof(WORD);
@@ -8561,8 +8568,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98581 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(98581);
+  { // 99301 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(99301);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.SOURCE", 77);
     st->size_data = sizeof(BYTE);
@@ -8574,8 +8581,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98582 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(98582);
+  { // 99302 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(99302);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.PARAMETR", 79);
     st->size_data = sizeof(BYTE);
@@ -8587,8 +8594,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 98583 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.CMD
-    st = getVariable(98583);
+  { // 99303 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.CMD
+    st = getVariable(99303);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG.FB_QUESTIONMVOFF._SUNPACKERCOMMAND.CMD", 74);
     st->size_data = sizeof(BYTE);
@@ -8600,8 +8607,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 99059 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(99059);
+  { // 99779 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(99779);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.COMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -8612,8 +8619,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 99060 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(99060);
+  { // 99780 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(99780);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.SOURCE", 60);
     st->size_data = sizeof(BYTE);
@@ -8624,8 +8631,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 99061 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(99061);
+  { // 99781 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(99781);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.PARAMETR", 62);
     st->size_data = sizeof(BYTE);
@@ -8636,8 +8643,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 99062 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(99062);
+  { // 99782 PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(99782);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSKVALG._SUNPACKERCOMMAND.CMD", 57);
     st->size_data = sizeof(BYTE);
@@ -8648,8 +8655,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 104650 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(104650);
+  { // 105442 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(105442);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND", 79);
     st->size_data = sizeof(WORD);
@@ -8661,8 +8668,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 104651 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(104651);
+  { // 105443 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(105443);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE", 78);
     st->size_data = sizeof(BYTE);
@@ -8674,8 +8681,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 104652 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(104652);
+  { // 105444 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(105444);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR", 80);
     st->size_data = sizeof(BYTE);
@@ -8687,8 +8694,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 104653 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD
-    st = getVariable(104653);
+  { // 105445 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD
+    st = getVariable(105445);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD", 75);
     st->size_data = sizeof(BYTE);
@@ -8700,8 +8707,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 105148 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(105148);
+  { // 105940 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(105940);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.COMMAND", 64);
     st->size_data = sizeof(WORD);
@@ -8712,8 +8719,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 105149 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(105149);
+  { // 105941 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(105941);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.SOURCE", 63);
     st->size_data = sizeof(BYTE);
@@ -8724,8 +8731,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 105150 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(105150);
+  { // 105942 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(105942);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.PARAMETR", 65);
     st->size_data = sizeof(BYTE);
@@ -8736,8 +8743,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 105151 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(105151);
+  { // 105943 PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(105943);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTDPMGALG._SUNPACKERCOMMAND.CMD", 60);
     st->size_data = sizeof(BYTE);
@@ -8748,8 +8755,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110784 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(110784);
+  { // 111648 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(111648);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.COMMAND", 78);
     st->size_data = sizeof(WORD);
@@ -8761,8 +8768,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110785 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(110785);
+  { // 111649 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(111649);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.SOURCE", 77);
     st->size_data = sizeof(BYTE);
@@ -8774,8 +8781,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110786 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(110786);
+  { // 111650 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(111650);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.PARAMETR", 79);
     st->size_data = sizeof(BYTE);
@@ -8787,8 +8794,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110787 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD
-    st = getVariable(110787);
+  { // 111651 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD
+    st = getVariable(111651);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG.FB_ALGCONTINUE._SUNPACKERCOMMAND.CMD", 74);
     st->size_data = sizeof(BYTE);
@@ -8800,8 +8807,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110981 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(110981);
+  { // 111845 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(111845);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.COMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -8812,8 +8819,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110982 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(110982);
+  { // 111846 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(111846);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.SOURCE", 62);
     st->size_data = sizeof(BYTE);
@@ -8824,8 +8831,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110983 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(110983);
+  { // 111847 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(111847);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.PARAMETR", 64);
     st->size_data = sizeof(BYTE);
@@ -8836,8 +8843,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 110984 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(110984);
+  { // 111848 PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(111848);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_TESTPMSALG._SUNPACKERCOMMAND.CMD", 59);
     st->size_data = sizeof(BYTE);
@@ -8848,8 +8855,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 116531 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(116531);
+  { // 117467 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(117467);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.COMMAND", 61);
     st->size_data = sizeof(WORD);
@@ -8860,8 +8867,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 116532 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(116532);
+  { // 117468 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(117468);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.SOURCE", 60);
     st->size_data = sizeof(BYTE);
@@ -8872,8 +8879,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 116533 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(116533);
+  { // 117469 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(117469);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.PARAMETR", 62);
     st->size_data = sizeof(BYTE);
@@ -8884,8 +8891,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 116534 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(116534);
+  { // 117470 PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(117470);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_APUSKALG._SUNPACKERCOMMAND.CMD", 57);
     st->size_data = sizeof(BYTE);
@@ -8896,8 +8903,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118392 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(118392);
+  { // 119400 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(119400);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.COMMAND", 81);
     st->size_data = sizeof(WORD);
@@ -8909,8 +8916,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118393 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(118393);
+  { // 119401 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(119401);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.SOURCE", 80);
     st->size_data = sizeof(BYTE);
@@ -8922,8 +8929,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118394 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(118394);
+  { // 119402 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(119402);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.PARAMETR", 82);
     st->size_data = sizeof(BYTE);
@@ -8935,8 +8942,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118395 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.CMD
-    st = getVariable(118395);
+  { // 119403 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.CMD
+    st = getVariable(119403);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN1PH._SUNPACKERCOMMAND.CMD", 77);
     st->size_data = sizeof(BYTE);
@@ -8948,8 +8955,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118426 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(118426);
+  { // 119434 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(119434);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.COMMAND", 81);
     st->size_data = sizeof(WORD);
@@ -8961,8 +8968,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118427 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(118427);
+  { // 119435 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(119435);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.SOURCE", 80);
     st->size_data = sizeof(BYTE);
@@ -8974,8 +8981,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118428 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(118428);
+  { // 119436 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(119436);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.PARAMETR", 82);
     st->size_data = sizeof(BYTE);
@@ -8987,8 +8994,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118429 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.CMD
-    st = getVariable(118429);
+  { // 119437 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.CMD
+    st = getVariable(119437);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN2PH._SUNPACKERCOMMAND.CMD", 77);
     st->size_data = sizeof(BYTE);
@@ -9000,8 +9007,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118460 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(118460);
+  { // 119468 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(119468);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.COMMAND", 81);
     st->size_data = sizeof(WORD);
@@ -9013,8 +9020,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118461 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(118461);
+  { // 119469 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(119469);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.SOURCE", 80);
     st->size_data = sizeof(BYTE);
@@ -9026,8 +9033,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118462 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(118462);
+  { // 119470 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(119470);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.PARAMETR", 82);
     st->size_data = sizeof(BYTE);
@@ -9039,8 +9046,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118463 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.CMD
-    st = getVariable(118463);
+  { // 119471 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.CMD
+    st = getVariable(119471);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG.FB_CMDRUN3PH._SUNPACKERCOMMAND.CMD", 77);
     st->size_data = sizeof(BYTE);
@@ -9052,8 +9059,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118480 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.COMMAND
-    st = getVariable(118480);
+  { // 119488 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(119488);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.COMMAND", 68);
     st->size_data = sizeof(WORD);
@@ -9064,8 +9071,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
     UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118481 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.SOURCE
-    st = getVariable(118481);
+  { // 119489 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(119489);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.SOURCE", 67);
     st->size_data = sizeof(BYTE);
@@ -9076,8 +9083,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118482 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.PARAMETR
-    st = getVariable(118482);
+  { // 119490 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(119490);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.PARAMETR", 69);
     st->size_data = sizeof(BYTE);
@@ -9088,8 +9095,8 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 118483 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.CMD
-    st = getVariable(118483);
+  { // 119491 PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.CMD
+    st = getVariable(119491);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_SEMIAUTOPUSKALG._SUNPACKERCOMMAND.CMD", 64);
     st->size_data = sizeof(BYTE);
@@ -9097,6 +9104,498 @@ int __variables_init__SUNPACKERCOMMAND(){
     p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
     p_SEMIAUTOPUSKALG = (SEMIAUTOPUSKALG*)&p_PROC_ALGORITMS->FB_SEMIAUTOPUSKALG;
     p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_SEMIAUTOPUSKALG->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 121527 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(121527);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.COMMAND", 69);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA1 = (PUSK_FIRST_FAZA1*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA1;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA1->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 121528 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(121528);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.SOURCE", 68);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA1 = (PUSK_FIRST_FAZA1*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA1;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA1->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 121529 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(121529);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.PARAMETR", 70);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA1 = (PUSK_FIRST_FAZA1*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA1;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA1->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 121530 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.CMD
+    st = getVariable(121530);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA1._SUNPACKERCOMMAND.CMD", 65);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA1 = (PUSK_FIRST_FAZA1*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA1;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA1->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 126740 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(126740);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.COMMAND", 69);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA2 = (PUSK_FIRST_FAZA2*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA2;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA2->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 126741 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(126741);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.SOURCE", 68);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA2 = (PUSK_FIRST_FAZA2*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA2;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA2->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 126742 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(126742);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.PARAMETR", 70);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA2 = (PUSK_FIRST_FAZA2*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA2;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA2->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 126743 PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.CMD
+    st = getVariable(126743);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_FIRST_FAZA2._SUNPACKERCOMMAND.CMD", 65);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_FIRST_FAZA2 = (PUSK_FIRST_FAZA2*)&p_PROC_ALGORITMS->FB_PUSK_FIRST_FAZA2;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_FIRST_FAZA2->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 132834 PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(132834);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.COMMAND", 68);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_THIRD_FAZA = (PUSK_THIRD_FAZA*)&p_PROC_ALGORITMS->FB_PUSK_THIRD_FAZA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_THIRD_FAZA->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 132835 PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(132835);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.SOURCE", 67);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_THIRD_FAZA = (PUSK_THIRD_FAZA*)&p_PROC_ALGORITMS->FB_PUSK_THIRD_FAZA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_THIRD_FAZA->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 132836 PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(132836);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.PARAMETR", 69);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_THIRD_FAZA = (PUSK_THIRD_FAZA*)&p_PROC_ALGORITMS->FB_PUSK_THIRD_FAZA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_THIRD_FAZA->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 132837 PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.CMD
+    st = getVariable(132837);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_THIRD_FAZA._SUNPACKERCOMMAND.CMD", 64);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_THIRD_FAZA = (PUSK_THIRD_FAZA*)&p_PROC_ALGORITMS->FB_PUSK_THIRD_FAZA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_THIRD_FAZA->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 142645 PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(142645);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.COMMAND", 66);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_PMS = (PROV_PMS*)&p_PROC_ALGORITMS->FB_PUSK_PROV_PMS;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_PMS->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 142646 PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(142646);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.SOURCE", 65);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_PMS = (PROV_PMS*)&p_PROC_ALGORITMS->FB_PUSK_PROV_PMS;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_PMS->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 142647 PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(142647);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.PARAMETR", 67);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_PMS = (PROV_PMS*)&p_PROC_ALGORITMS->FB_PUSK_PROV_PMS;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_PMS->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 142648 PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.CMD
+    st = getVariable(142648);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_PROV_PMS._SUNPACKERCOMMAND.CMD", 62);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_PMS = (PROV_PMS*)&p_PROC_ALGORITMS->FB_PUSK_PROV_PMS;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_PMS->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143418 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(143418);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.COMMAND", 88);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_OPRESSOVKA_START;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143419 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(143419);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.SOURCE", 87);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_OPRESSOVKA_START;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143420 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(143420);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.PARAMETR", 89);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_OPRESSOVKA_START;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143421 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.CMD
+    st = getVariable(143421);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_OPRESSOVKA_START._SUNPACKERCOMMAND.CMD", 84);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_OPRESSOVKA_START;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143452 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(143452);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.COMMAND", 85);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_PNS_NU_ON_ASK;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143453 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(143453);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.SOURCE", 84);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_PNS_NU_ON_ASK;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143454 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(143454);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.PARAMETR", 86);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_PNS_NU_ON_ASK;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143455 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.CMD
+    st = getVariable(143455);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_PNS_NU_ON_ASK._SUNPACKERCOMMAND.CMD", 81);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_PNS_NU_ON_ASK;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143486 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(143486);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.COMMAND", 87);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_ZAPOLNIT_KONTUR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143487 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(143487);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.SOURCE", 86);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_ZAPOLNIT_KONTUR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143488 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(143488);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.PARAMETR", 88);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_ZAPOLNIT_KONTUR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 143489 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.CMD
+    st = getVariable(143489);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA.FB_ZAPOLNIT_KONTUR._SUNPACKERCOMMAND.CMD", 83);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_QUESTION = (FB_QUESTION*)&p_PROV_OPRESSOVKA->FB_ZAPOLNIT_KONTUR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_FB_QUESTION->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 147621 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(147621);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.COMMAND", 68);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_OPRESSOVKA->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 147622 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(147622);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.SOURCE", 67);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_OPRESSOVKA->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 147623 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(147623);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.PARAMETR", 69);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_OPRESSOVKA->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 147624 PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.CMD
+    st = getVariable(147624);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PROV_OPRESSOVKA._SUNPACKERCOMMAND.CMD", 64);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PROV_OPRESSOVKA = (PROV_OPRESSOVKA*)&p_PROC_ALGORITMS->FB_PROV_OPRESSOVKA;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PROV_OPRESSOVKA->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 148849 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(148849);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.COMMAND", 79);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_CHASTOTNY = (PUSK_SECOND_FAZA_CHASTOTNY*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_CHASTOTNY;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_CHASTOTNY->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 148850 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(148850);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.SOURCE", 78);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_CHASTOTNY = (PUSK_SECOND_FAZA_CHASTOTNY*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_CHASTOTNY;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_CHASTOTNY->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 148851 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(148851);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.PARAMETR", 80);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_CHASTOTNY = (PUSK_SECOND_FAZA_CHASTOTNY*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_CHASTOTNY;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_CHASTOTNY->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 148852 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.CMD
+    st = getVariable(148852);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_CHASTOTNY._SUNPACKERCOMMAND.CMD", 75);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_CHASTOTNY = (PUSK_SECOND_FAZA_CHASTOTNY*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_CHASTOTNY;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_CHASTOTNY->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 154675 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.COMMAND
+    st = getVariable(154675);
+    memcpy(st->IEC_TYPE, "WORD", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.COMMAND", 77);
+    st->size_data = sizeof(WORD);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_REACTOR = (PUSK_SECOND_FAZA_REACTOR*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_REACTOR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_REACTOR->_SUNPACKERCOMMAND;
+    p_WORD = (WORD*)&p_FB_SUNPACKERCOMMAND->COMMAND;
+    UnpackVar(p_WORD, WORD_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 154676 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.SOURCE
+    st = getVariable(154676);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.SOURCE", 76);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_REACTOR = (PUSK_SECOND_FAZA_REACTOR*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_REACTOR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_REACTOR->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->SOURCE;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 154677 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.PARAMETR
+    st = getVariable(154677);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.PARAMETR", 78);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_REACTOR = (PUSK_SECOND_FAZA_REACTOR*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_REACTOR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_REACTOR->_SUNPACKERCOMMAND;
+    p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->PARAMETR;
+    UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
+  }
+  { // 154678 PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.CMD
+    st = getVariable(154678);
+    memcpy(st->IEC_TYPE, "BYTE", 4);
+    memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_PUSK_SECOND_FAZA_REACTOR._SUNPACKERCOMMAND.CMD", 73);
+    st->size_data = sizeof(BYTE);
+    p_PROGRAM0 = &RESOURCE1__INSTANCE0;
+    p_PROC_ALGORITMS = (PROC_ALGORITMS*)&p_PROGRAM0->ALGORITMS_PROC;
+    p_PUSK_SECOND_FAZA_REACTOR = (PUSK_SECOND_FAZA_REACTOR*)&p_PROC_ALGORITMS->FB_PUSK_SECOND_FAZA_REACTOR;
+    p_FB_SUNPACKERCOMMAND = (FB_SUNPACKERCOMMAND*)&p_PUSK_SECOND_FAZA_REACTOR->_SUNPACKERCOMMAND;
     p_BYTE = (BYTE*)&p_FB_SUNPACKERCOMMAND->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }

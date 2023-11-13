@@ -177,11 +177,18 @@ int __variables_init_FB_PLC_CONTROL(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 23123 PROGRAM0.IM_PROC.FB_PLC_CONTROL._OUTPUT
-    st = getVariable(23123);
+  { // 23267 PROGRAM0.IM_PROC.FB_PLC_CONTROL._OUTPUT
+    st = getVariable(23267);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL._OUTPUT", 39);
     st->size_data = sizeof(BOOL);
@@ -191,8 +198,8 @@ int __variables_init_FB_PLC_CONTROL(){
     p_BOOL = (BOOL*)&p_FB_MEANDR->_OUTPUT;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23124 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.IN
-    st = getVariable(23124);
+  { // 23268 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.IN
+    st = getVariable(23268);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.IN", 40);
     st->size_data = sizeof(BOOL);
@@ -203,8 +210,8 @@ int __variables_init_FB_PLC_CONTROL(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23125 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.PT
-    st = getVariable(23125);
+  { // 23269 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.PT
+    st = getVariable(23269);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.PT", 40);
     st->size_data = sizeof(TIME);
@@ -215,8 +222,8 @@ int __variables_init_FB_PLC_CONTROL(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23126 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.Q
-    st = getVariable(23126);
+  { // 23270 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.Q
+    st = getVariable(23270);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.Q", 39);
     st->size_data = sizeof(BOOL);
@@ -227,8 +234,8 @@ int __variables_init_FB_PLC_CONTROL(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23127 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.ET
-    st = getVariable(23127);
+  { // 23271 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.ET
+    st = getVariable(23271);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER.ET", 40);
     st->size_data = sizeof(TIME);
@@ -239,8 +246,8 @@ int __variables_init_FB_PLC_CONTROL(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23128 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER
-    st = getVariable(23128);
+  { // 23272 PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER
+    st = getVariable(23272);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL.TIMER", 37);
     st->size_data = sizeof(TON);
@@ -250,8 +257,8 @@ int __variables_init_FB_PLC_CONTROL(){
     p_TON = (TON*)&p_FB_MEANDR->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 23129 PROGRAM0.IM_PROC.FB_PLC_CONTROL.OUTPUT
-    st = getVariable(23129);
+  { // 23273 PROGRAM0.IM_PROC.FB_PLC_CONTROL.OUTPUT
+    st = getVariable(23273);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_PLC_CONTROL.OUTPUT", 38);
     st->size_data = sizeof(BOOL);

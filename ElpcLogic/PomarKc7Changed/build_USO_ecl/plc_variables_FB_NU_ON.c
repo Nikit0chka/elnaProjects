@@ -177,11 +177,18 @@ int __variables_init_FB_NU_ON(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 61680 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.PHASENUMBER
-    st = getVariable(61680);
+  { // 61968 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.PHASENUMBER
+    st = getVariable(61968);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.PHASENUMBER", 53);
     st->size_data = sizeof(UINT);
@@ -192,8 +199,8 @@ int __variables_init_FB_NU_ON(){
     p_UINT = (UINT*)&p_FB_PH_CUSTOMPHASE->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 61681 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.RUN
-    st = getVariable(61681);
+  { // 61969 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.RUN
+    st = getVariable(61969);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.RUN", 51);
     st->size_data = sizeof(BOOL);
@@ -205,8 +212,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 61682 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.RESET
-    st = getVariable(61682);
+  { // 61970 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.RESET
+    st = getVariable(61970);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.RESET", 53);
     st->size_data = sizeof(BOOL);
@@ -218,8 +225,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 61683 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.START
-    st = getVariable(61683);
+  { // 61971 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.START
+    st = getVariable(61971);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.START", 53);
     st->size_data = sizeof(BOOL);
@@ -231,8 +238,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 61684 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.ERROR
-    st = getVariable(61684);
+  { // 61972 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.ERROR
+    st = getVariable(61972);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.ERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -244,8 +251,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 61685 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.TOP
-    st = getVariable(61685);
+  { // 61973 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.TOP
+    st = getVariable(61973);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.TOP", 51);
     st->size_data = sizeof(BOOL);
@@ -257,8 +264,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 61686 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.STARTSTATUS
-    st = getVariable(61686);
+  { // 61974 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.STARTSTATUS
+    st = getVariable(61974);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.STARTSTATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -270,8 +277,8 @@ int __variables_init_FB_NU_ON(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 61687 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.ERRORSTATUS
-    st = getVariable(61687);
+  { // 61975 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.ERRORSTATUS
+    st = getVariable(61975);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.ERRORSTATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -283,8 +290,8 @@ int __variables_init_FB_NU_ON(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 61688 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.TOPSTATUS
-    st = getVariable(61688);
+  { // 61976 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.TOPSTATUS
+    st = getVariable(61976);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.STRPH.TOPSTATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -296,8 +303,8 @@ int __variables_init_FB_NU_ON(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 61689 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG.CLK
-    st = getVariable(61689);
+  { // 61977 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG.CLK
+    st = getVariable(61977);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG.CLK", 63);
     st->size_data = sizeof(BOOL);
@@ -309,8 +316,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 61690 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG.Q
-    st = getVariable(61690);
+  { // 61978 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG.Q
+    st = getVariable(61978);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -322,8 +329,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 61691 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG
-    st = getVariable(61691);
+  { // 61979 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG
+    st = getVariable(61979);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.COMMANDFAULT_TRIG", 59);
     st->size_data = sizeof(R_TRIG);
@@ -334,8 +341,8 @@ int __variables_init_FB_NU_ON(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_CUSTOMPHASE->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 61692 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG.CLK
-    st = getVariable(61692);
+  { // 61980 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG.CLK
+    st = getVariable(61980);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG.CLK", 56);
     st->size_data = sizeof(BOOL);
@@ -347,8 +354,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 61693 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG.Q
-    st = getVariable(61693);
+  { // 61981 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG.Q
+    st = getVariable(61981);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -360,8 +367,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 61694 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG
-    st = getVariable(61694);
+  { // 61982 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG
+    st = getVariable(61982);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON.RESET_TRIG", 52);
     st->size_data = sizeof(R_TRIG);
@@ -372,8 +379,8 @@ int __variables_init_FB_NU_ON(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_CUSTOMPHASE->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 61695 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(61695);
+  { // 61983 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(61983);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_NOTDEFINED", 76);
     st->size_data = sizeof(BYTE);
@@ -385,8 +392,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 61696 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(61696);
+  { // 61984 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(61984);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ON", 68);
     st->size_data = sizeof(BYTE);
@@ -398,8 +405,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 61697 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(61697);
+  { // 61985 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(61985);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_OFF", 69);
     st->size_data = sizeof(BYTE);
@@ -411,8 +418,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 61698 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(61698);
+  { // 61986 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(61986);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_TRANSITIONAL", 78);
     st->size_data = sizeof(BYTE);
@@ -424,8 +431,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 61699 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(61699);
+  { // 61987 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(61987);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ERROR", 71);
     st->size_data = sizeof(BYTE);
@@ -437,8 +444,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 68384 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.PHASENUMBER
-    st = getVariable(68384);
+  { // 68744 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.PHASENUMBER
+    st = getVariable(68744);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.PHASENUMBER", 53);
     st->size_data = sizeof(UINT);
@@ -449,8 +456,8 @@ int __variables_init_FB_NU_ON(){
     p_UINT = (UINT*)&p_FB_PH_CUSTOMPHASE->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 68385 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.RUN
-    st = getVariable(68385);
+  { // 68745 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.RUN
+    st = getVariable(68745);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.RUN", 51);
     st->size_data = sizeof(BOOL);
@@ -462,8 +469,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 68386 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.RESET
-    st = getVariable(68386);
+  { // 68746 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.RESET
+    st = getVariable(68746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.RESET", 53);
     st->size_data = sizeof(BOOL);
@@ -475,8 +482,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 68387 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.START
-    st = getVariable(68387);
+  { // 68747 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.START
+    st = getVariable(68747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.START", 53);
     st->size_data = sizeof(BOOL);
@@ -488,8 +495,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 68388 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.ERROR
-    st = getVariable(68388);
+  { // 68748 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.ERROR
+    st = getVariable(68748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.ERROR", 53);
     st->size_data = sizeof(BOOL);
@@ -501,8 +508,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 68389 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.TOP
-    st = getVariable(68389);
+  { // 68749 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.TOP
+    st = getVariable(68749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.TOP", 51);
     st->size_data = sizeof(BOOL);
@@ -514,8 +521,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 68390 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.STARTSTATUS
-    st = getVariable(68390);
+  { // 68750 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.STARTSTATUS
+    st = getVariable(68750);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.STARTSTATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -527,8 +534,8 @@ int __variables_init_FB_NU_ON(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 68391 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.ERRORSTATUS
-    st = getVariable(68391);
+  { // 68751 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.ERRORSTATUS
+    st = getVariable(68751);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.ERRORSTATUS", 59);
     st->size_data = sizeof(DWORD);
@@ -540,8 +547,8 @@ int __variables_init_FB_NU_ON(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 68392 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.TOPSTATUS
-    st = getVariable(68392);
+  { // 68752 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.TOPSTATUS
+    st = getVariable(68752);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.STRPH.TOPSTATUS", 57);
     st->size_data = sizeof(DWORD);
@@ -553,8 +560,8 @@ int __variables_init_FB_NU_ON(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 68393 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG.CLK
-    st = getVariable(68393);
+  { // 68753 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG.CLK
+    st = getVariable(68753);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG.CLK", 63);
     st->size_data = sizeof(BOOL);
@@ -566,8 +573,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 68394 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG.Q
-    st = getVariable(68394);
+  { // 68754 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG.Q
+    st = getVariable(68754);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -579,8 +586,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 68395 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG
-    st = getVariable(68395);
+  { // 68755 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG
+    st = getVariable(68755);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.COMMANDFAULT_TRIG", 59);
     st->size_data = sizeof(R_TRIG);
@@ -591,8 +598,8 @@ int __variables_init_FB_NU_ON(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_CUSTOMPHASE->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 68396 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG.CLK
-    st = getVariable(68396);
+  { // 68756 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG.CLK
+    st = getVariable(68756);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG.CLK", 56);
     st->size_data = sizeof(BOOL);
@@ -604,8 +611,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 68397 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG.Q
-    st = getVariable(68397);
+  { // 68757 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG.Q
+    st = getVariable(68757);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -617,8 +624,8 @@ int __variables_init_FB_NU_ON(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 68398 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG
-    st = getVariable(68398);
+  { // 68758 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG
+    st = getVariable(68758);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON.RESET_TRIG", 52);
     st->size_data = sizeof(R_TRIG);
@@ -629,8 +636,8 @@ int __variables_init_FB_NU_ON(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_CUSTOMPHASE->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 68399 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(68399);
+  { // 68759 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(68759);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_NOTDEFINED", 76);
     st->size_data = sizeof(BYTE);
@@ -642,8 +649,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 68400 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(68400);
+  { // 68760 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(68760);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ON", 68);
     st->size_data = sizeof(BYTE);
@@ -655,8 +662,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 68401 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(68401);
+  { // 68761 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(68761);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_OFF", 69);
     st->size_data = sizeof(BYTE);
@@ -668,8 +675,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 68402 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(68402);
+  { // 68762 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(68762);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_TRANSITIONAL", 78);
     st->size_data = sizeof(BYTE);
@@ -681,8 +688,8 @@ int __variables_init_FB_NU_ON(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 68403 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(68403);
+  { // 68763 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(68763);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_NU_ON._STATUSDUALINPUT.STATUS_ERROR", 71);
     st->size_data = sizeof(BYTE);

@@ -5,8 +5,12 @@ VAR_IN_OUT
 END_VAR
 
 VAR CONSTANT
-	cmdRemont : WORD   := 4;
+	cmdRemont : WORD     := 4;
 END_VAR
+
+
+
+
 
 
 

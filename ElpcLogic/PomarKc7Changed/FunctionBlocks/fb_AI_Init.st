@@ -8,18 +8,18 @@ VAR_INPUT
 	dHA : LREAL;
 	dLW : LREAL;
 	dHW : LREAL;
-	ISVALIDREF_LA : BOOL   := False;
-	ISVALIDREF_HA : BOOL   := False;
-	ISVALIDREF_LW : BOOL   := False;
-	ISVALIDREF_HW : BOOL   := False;
-	delayLA : TIME   := T#0S;
-	delayLW : TIME   := T#0S;
-	delayHW : TIME   := T#0S;
-	delayHA : TIME   := T#0S;
-	inpLL : LREAL   := 4000.0;
-	inpHL : LREAL   := 20000.0;
-	CurrentShotCircuit : LREAL   := 21000.0;
-	CurrentBreakCircuit : LREAL   := 3700.0;
+	ISVALIDREF_LA : BOOL     := False;
+	ISVALIDREF_HA : BOOL     := False;
+	ISVALIDREF_LW : BOOL     := False;
+	ISVALIDREF_HW : BOOL     := False;
+	delayLA : TIME     := T#0S;
+	delayLW : TIME     := T#0S;
+	delayHW : TIME     := T#0S;
+	delayHA : TIME     := T#0S;
+	inpLL : LREAL     := 4000.0;
+	inpHL : LREAL     := 20000.0;
+	CurrentShotCircuit : LREAL     := 21000.0;
+	CurrentBreakCircuit : LREAL     := 3700.0;
 	dMaxChangeSpeed : LREAL;
 	dMaxChangeSpeedDown : LREAL;
 	histeresis : LREAL;
@@ -34,8 +34,12 @@ VAR_IN_OUT
 END_VAR
 
 VAR_OUTPUT
-	Init : BOOL   := FALSE; (*Флаг успешно выполненной инициализации.*)
+	Init : BOOL     := FALSE; (*Флаг успешно выполненной инициализации.*)
 END_VAR
+
+
+
+
 
 
 

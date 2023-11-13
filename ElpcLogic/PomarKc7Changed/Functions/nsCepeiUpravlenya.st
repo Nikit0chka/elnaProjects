@@ -8,6 +8,10 @@ END_VAR
 
 
 
+
+
+
+
 nsCepeiUpravlenya:=
 	im.kran1.So OR im.kran1.Sz OR
 	im.kran2.So OR im.kran2.Sz OR

@@ -177,11 +177,18 @@ int __variables_init_FB_TOK_STATORA(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 34989 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.VALUE
-    st = getVariable(34989);
+  { // 35133 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.VALUE
+    st = getVariable(35133);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.VALUE", 49);
     st->size_data = sizeof(LREAL);
@@ -192,8 +199,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 34990 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.STATUS
-    st = getVariable(34990);
+  { // 35134 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.STATUS
+    st = getVariable(35134);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -204,8 +211,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 34991 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INTERVAL
-    st = getVariable(34991);
+  { // 35135 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INTERVAL
+    st = getVariable(35135);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INTERVAL", 52);
     st->size_data = sizeof(BYTE);
@@ -216,8 +223,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 34992 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND
-    st = getVariable(34992);
+  { // 35136 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND
+    st = getVariable(35136);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -228,8 +235,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 34993 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.BLCONNECT
-    st = getVariable(34993);
+  { // 35137 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.BLCONNECT
+    st = getVariable(35137);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.BLCONNECT", 53);
     st->size_data = sizeof(BOOL);
@@ -240,8 +247,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 34994 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLL
-    st = getVariable(34994);
+  { // 35138 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLL
+    st = getVariable(35138);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLL", 47);
     st->size_data = sizeof(LREAL);
@@ -252,8 +259,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 34995 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHL
-    st = getVariable(34995);
+  { // 35139 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHL
+    st = getVariable(35139);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHL", 47);
     st->size_data = sizeof(LREAL);
@@ -264,8 +271,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 34996 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLA
-    st = getVariable(34996);
+  { // 35140 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLA
+    st = getVariable(35140);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLA", 47);
     st->size_data = sizeof(LREAL);
@@ -276,8 +283,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 34997 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHA
-    st = getVariable(34997);
+  { // 35141 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHA
+    st = getVariable(35141);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHA", 47);
     st->size_data = sizeof(LREAL);
@@ -288,8 +295,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 34998 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLW
-    st = getVariable(34998);
+  { // 35142 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLW
+    st = getVariable(35142);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DLW", 47);
     st->size_data = sizeof(LREAL);
@@ -300,8 +307,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 34999 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHW
-    st = getVariable(34999);
+  { // 35143 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHW
+    st = getVariable(35143);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DHW", 47);
     st->size_data = sizeof(LREAL);
@@ -312,8 +319,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 35000 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LL
-    st = getVariable(35000);
+  { // 35144 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LL
+    st = getVariable(35144);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LL", 46);
     st->size_data = sizeof(LREAL);
@@ -324,8 +331,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 35001 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HL
-    st = getVariable(35001);
+  { // 35145 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HL
+    st = getVariable(35145);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HL", 46);
     st->size_data = sizeof(LREAL);
@@ -336,8 +343,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 35002 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LA
-    st = getVariable(35002);
+  { // 35146 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LA
+    st = getVariable(35146);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LA", 46);
     st->size_data = sizeof(LREAL);
@@ -348,8 +355,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 35003 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HA
-    st = getVariable(35003);
+  { // 35147 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HA
+    st = getVariable(35147);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HA", 46);
     st->size_data = sizeof(LREAL);
@@ -360,8 +367,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 35004 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LW
-    st = getVariable(35004);
+  { // 35148 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LW
+    st = getVariable(35148);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.LW", 46);
     st->size_data = sizeof(LREAL);
@@ -372,8 +379,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 35005 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HW
-    st = getVariable(35005);
+  { // 35149 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HW
+    st = getVariable(35149);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HW", 46);
     st->size_data = sizeof(LREAL);
@@ -384,8 +391,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 35006 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_LA
-    st = getVariable(35006);
+  { // 35150 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_LA
+    st = getVariable(35150);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_LA", 57);
     st->size_data = sizeof(BOOL);
@@ -396,8 +403,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 35007 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_HA
-    st = getVariable(35007);
+  { // 35151 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_HA
+    st = getVariable(35151);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_HA", 57);
     st->size_data = sizeof(BOOL);
@@ -408,8 +415,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 35008 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_LW
-    st = getVariable(35008);
+  { // 35152 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_LW
+    st = getVariable(35152);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_LW", 57);
     st->size_data = sizeof(BOOL);
@@ -420,8 +427,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 35009 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_HW
-    st = getVariable(35009);
+  { // 35153 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_HW
+    st = getVariable(35153);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.ISVALIDREF_HW", 57);
     st->size_data = sizeof(BOOL);
@@ -432,8 +439,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 35010 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INPLL
-    st = getVariable(35010);
+  { // 35154 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INPLL
+    st = getVariable(35154);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INPLL", 49);
     st->size_data = sizeof(LREAL);
@@ -444,8 +451,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 35011 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INPHL
-    st = getVariable(35011);
+  { // 35155 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INPHL
+    st = getVariable(35155);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INPHL", 49);
     st->size_data = sizeof(LREAL);
@@ -456,8 +463,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 35012 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CURRENTSHOTCIRCUIT
-    st = getVariable(35012);
+  { // 35156 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CURRENTSHOTCIRCUIT
+    st = getVariable(35156);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CURRENTSHOTCIRCUIT", 62);
     st->size_data = sizeof(LREAL);
@@ -468,8 +475,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 35013 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CURRENTBREAKCIRCUIT
-    st = getVariable(35013);
+  { // 35157 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CURRENTBREAKCIRCUIT
+    st = getVariable(35157);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CURRENTBREAKCIRCUIT", 63);
     st->size_data = sizeof(LREAL);
@@ -480,8 +487,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 35014 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXCHANGESPEED
-    st = getVariable(35014);
+  { // 35158 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXCHANGESPEED
+    st = getVariable(35158);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXCHANGESPEED", 58);
     st->size_data = sizeof(LREAL);
@@ -492,8 +499,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 35015 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXCHANGESPEEDDOWN
-    st = getVariable(35015);
+  { // 35159 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXCHANGESPEEDDOWN
+    st = getVariable(35159);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXCHANGESPEEDDOWN", 62);
     st->size_data = sizeof(LREAL);
@@ -504,8 +511,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 35016 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CHANGESPEED
-    st = getVariable(35016);
+  { // 35160 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CHANGESPEED
+    st = getVariable(35160);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.CHANGESPEED", 55);
     st->size_data = sizeof(LREAL);
@@ -516,8 +523,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 35017 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HISTERESIS
-    st = getVariable(35017);
+  { // 35161 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HISTERESIS
+    st = getVariable(35161);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.HISTERESIS", 54);
     st->size_data = sizeof(LREAL);
@@ -528,8 +535,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 35018 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.APERTURFILTER
-    st = getVariable(35018);
+  { // 35162 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.APERTURFILTER
+    st = getVariable(35162);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.APERTURFILTER", 57);
     st->size_data = sizeof(LREAL);
@@ -540,8 +547,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 35019 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.EXPONENTIALFILTER
-    st = getVariable(35019);
+  { // 35163 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.EXPONENTIALFILTER
+    st = getVariable(35163);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.EXPONENTIALFILTER", 61);
     st->size_data = sizeof(LREAL);
@@ -552,8 +559,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 35020 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.RASSOGLASOVANIE
-    st = getVariable(35020);
+  { // 35164 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.RASSOGLASOVANIE
+    st = getVariable(35164);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.RASSOGLASOVANIE", 59);
     st->size_data = sizeof(LREAL);
@@ -564,8 +571,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 35021 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.OPCCOMMANDSDISABLED
-    st = getVariable(35021);
+  { // 35165 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.OPCCOMMANDSDISABLED
+    st = getVariable(35165);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -576,8 +583,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35022 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_LA
-    st = getVariable(35022);
+  { // 35166 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_LA
+    st = getVariable(35166);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_LA", 55);
     st->size_data = sizeof(BOOL);
@@ -588,8 +595,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 35023 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_HA
-    st = getVariable(35023);
+  { // 35167 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_HA
+    st = getVariable(35167);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_HA", 55);
     st->size_data = sizeof(BOOL);
@@ -600,8 +607,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 35024 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_LW
-    st = getVariable(35024);
+  { // 35168 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_LW
+    st = getVariable(35168);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_LW", 55);
     st->size_data = sizeof(BOOL);
@@ -612,8 +619,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 35025 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_HW
-    st = getVariable(35025);
+  { // 35169 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_HW
+    st = getVariable(35169);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DISABLED_HW", 55);
     st->size_data = sizeof(BOOL);
@@ -624,8 +631,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 35026 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYLA
-    st = getVariable(35026);
+  { // 35170 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYLA
+    st = getVariable(35170);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYLA", 51);
     st->size_data = sizeof(TIME);
@@ -636,8 +643,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 35027 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYLW
-    st = getVariable(35027);
+  { // 35171 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYLW
+    st = getVariable(35171);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYLW", 51);
     st->size_data = sizeof(TIME);
@@ -648,8 +655,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 35028 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYHW
-    st = getVariable(35028);
+  { // 35172 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYHW
+    st = getVariable(35172);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYHW", 51);
     st->size_data = sizeof(TIME);
@@ -660,8 +667,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 35029 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYHA
-    st = getVariable(35029);
+  { // 35173 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYHA
+    st = getVariable(35173);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DELAYHA", 51);
     st->size_data = sizeof(TIME);
@@ -672,8 +679,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 35030 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MINVALUE_ISVALIDREF
-    st = getVariable(35030);
+  { // 35174 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MINVALUE_ISVALIDREF
+    st = getVariable(35174);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MINVALUE_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -684,8 +691,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 35031 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXVALUE_ISVALIDREF
-    st = getVariable(35031);
+  { // 35175 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXVALUE_ISVALIDREF
+    st = getVariable(35175);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXVALUE_ISVALIDREF", 63);
     st->size_data = sizeof(BOOL);
@@ -696,8 +703,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 35032 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MINVALUE
-    st = getVariable(35032);
+  { // 35176 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MINVALUE
+    st = getVariable(35176);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MINVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -708,8 +715,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 35033 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXVALUE
-    st = getVariable(35033);
+  { // 35177 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXVALUE
+    st = getVariable(35177);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.MAXVALUE", 52);
     st->size_data = sizeof(LREAL);
@@ -720,8 +727,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 35034 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INOPCCOMMANDSDISABLED
-    st = getVariable(35034);
+  { // 35178 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INOPCCOMMANDSDISABLED
+    st = getVariable(35178);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -732,8 +739,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35035 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.IMIT
-    st = getVariable(35035);
+  { // 35179 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.IMIT
+    st = getVariable(35179);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.IMIT", 48);
     st->size_data = sizeof(BOOL);
@@ -744,8 +751,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 35036 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.REMONT
-    st = getVariable(35036);
+  { // 35180 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.REMONT
+    st = getVariable(35180);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.REMONT", 50);
     st->size_data = sizeof(BOOL);
@@ -756,8 +763,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 35037 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS
-    st = getVariable(35037);
+  { // 35181 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS
+    st = getVariable(35181);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -768,8 +775,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 35038 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS_MIN
-    st = getVariable(35038);
+  { // 35182 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS_MIN
+    st = getVariable(35182);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS_MIN", 50);
     st->size_data = sizeof(BOOL);
@@ -780,8 +787,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 35039 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS_MAX
-    st = getVariable(35039);
+  { // 35183 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS_MAX
+    st = getVariable(35183);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.NS_MAX", 50);
     st->size_data = sizeof(BOOL);
@@ -792,8 +799,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 35040 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND_ALG
-    st = getVariable(35040);
+  { // 35184 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND_ALG
+    st = getVariable(35184);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -804,8 +811,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 35041 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND_ARM
-    st = getVariable(35041);
+  { // 35185 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND_ARM
+    st = getVariable(35185);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -816,8 +823,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 35042 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DMAXCHANGESPEED
-    st = getVariable(35042);
+  { // 35186 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DMAXCHANGESPEED
+    st = getVariable(35186);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DMAXCHANGESPEED", 59);
     st->size_data = sizeof(LREAL);
@@ -828,8 +835,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 35043 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DMAXCHANGESPEEDDOWN
-    st = getVariable(35043);
+  { // 35187 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DMAXCHANGESPEEDDOWN
+    st = getVariable(35187);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.AI.DMAXCHANGESPEEDDOWN", 63);
     st->size_data = sizeof(LREAL);
@@ -840,8 +847,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 35044 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CONTROLLIMIT
-    st = getVariable(35044);
+  { // 35188 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CONTROLLIMIT
+    st = getVariable(35188);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CONTROLLIMIT", 60);
     st->size_data = sizeof(BYTE);
@@ -852,8 +859,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->CONTROLLIMIT;
     st->value_p = p_BYTE;
   }
-  { // 35045 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.DELAY
-    st = getVariable(35045);
+  { // 35189 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.DELAY
+    st = getVariable(35189);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.DELAY", 53);
     st->size_data = sizeof(TIME);
@@ -864,8 +871,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_STRUCT_AIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 35046 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INTAG
-    st = getVariable(35046);
+  { // 35190 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INTAG
+    st = getVariable(35190);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INTAG", 53);
     st->size_data = sizeof(BYTE);
@@ -876,8 +883,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 35047 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INRUNONSTART
-    st = getVariable(35047);
+  { // 35191 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INRUNONSTART
+    st = getVariable(35191);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INRUNONSTART", 60);
     st->size_data = sizeof(BOOL);
@@ -888,8 +895,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 35048 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCANRUN
-    st = getVariable(35048);
+  { // 35192 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCANRUN
+    st = getVariable(35192);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCANRUN", 56);
     st->size_data = sizeof(BOOL);
@@ -900,8 +907,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 35049 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INOPCCOMMANDSDISABLED
-    st = getVariable(35049);
+  { // 35193 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INOPCCOMMANDSDISABLED
+    st = getVariable(35193);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -912,8 +919,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35050 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND
-    st = getVariable(35050);
+  { // 35194 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND
+    st = getVariable(35194);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -924,8 +931,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 35051 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND_ALG
-    st = getVariable(35051);
+  { // 35195 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND_ALG
+    st = getVariable(35195);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -936,8 +943,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 35052 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND_ARM
-    st = getVariable(35052);
+  { // 35196 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND_ARM
+    st = getVariable(35196);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -948,8 +955,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 35053 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.TAG
-    st = getVariable(35053);
+  { // 35197 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.TAG
+    st = getVariable(35197);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.TAG", 51);
     st->size_data = sizeof(BYTE);
@@ -960,8 +967,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 35054 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.STATUS
-    st = getVariable(35054);
+  { // 35198 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.STATUS
+    st = getVariable(35198);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -972,8 +979,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_DWORD = (DWORD*)&p_STRUCT_AIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 35055 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CANRUN
-    st = getVariable(35055);
+  { // 35199 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CANRUN
+    st = getVariable(35199);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -984,8 +991,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 35056 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.OPCCOMMANDSDISABLED
-    st = getVariable(35056);
+  { // 35200 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.OPCCOMMANDSDISABLED
+    st = getVariable(35200);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -996,8 +1003,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 35057 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.ISRUNNING
-    st = getVariable(35057);
+  { // 35201 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.ISRUNNING
+    st = getVariable(35201);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.ISRUNNING", 57);
     st->size_data = sizeof(BOOL);
@@ -1008,8 +1015,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 35058 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.HASERROR
-    st = getVariable(35058);
+  { // 35202 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.HASERROR
+    st = getVariable(35202);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.HASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -1020,8 +1027,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 35059 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.ISENDED
-    st = getVariable(35059);
+  { // 35203 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.ISENDED
+    st = getVariable(35203);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.ISENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -1032,8 +1039,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 35060 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.REMONT
-    st = getVariable(35060);
+  { // 35204 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.REMONT
+    st = getVariable(35204);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.REMONT", 54);
     st->size_data = sizeof(BOOL);
@@ -1044,8 +1051,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 35061 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CHECK
-    st = getVariable(35061);
+  { // 35205 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CHECK
+    st = getVariable(35205);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.CHECK", 53);
     st->size_data = sizeof(BOOL);
@@ -1056,8 +1063,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 35062 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.SIGNALING
-    st = getVariable(35062);
+  { // 35206 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.SIGNALING
+    st = getVariable(35206);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.SIGNALING", 57);
     st->size_data = sizeof(BOOL);
@@ -1068,8 +1075,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 35063 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.SIGNALINGTP
-    st = getVariable(35063);
+  { // 35207 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.SIGNALINGTP
+    st = getVariable(35207);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.SIGNALINGTP", 59);
     st->size_data = sizeof(BOOL);
@@ -1080,8 +1087,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 35064 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.RUNONSTART
-    st = getVariable(35064);
+  { // 35208 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.RUNONSTART
+    st = getVariable(35208);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.STRAIP.RUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -1092,8 +1099,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 35069 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.IN
-    st = getVariable(35069);
+  { // 35213 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.IN
+    st = getVariable(35213);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.IN", 56);
     st->size_data = sizeof(BOOL);
@@ -1104,8 +1111,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 35070 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.PT
-    st = getVariable(35070);
+  { // 35214 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.PT
+    st = getVariable(35214);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.PT", 56);
     st->size_data = sizeof(TIME);
@@ -1116,8 +1123,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 35071 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.Q
-    st = getVariable(35071);
+  { // 35215 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.Q
+    st = getVariable(35215);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -1128,8 +1135,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 35072 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.ET
-    st = getVariable(35072);
+  { // 35216 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.ET
+    st = getVariable(35216);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP.ET", 56);
     st->size_data = sizeof(TIME);
@@ -1140,8 +1147,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 35073 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP
-    st = getVariable(35073);
+  { // 35217 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP
+    st = getVariable(35217);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._SIGNALINGTP", 53);
     st->size_data = sizeof(TOF);
@@ -1151,8 +1158,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TOF = (TOF*)&p_FB_AIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 35074 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NOTDEFINED
-    st = getVariable(35074);
+  { // 35218 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NOTDEFINED
+    st = getVariable(35218);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NOTDEFINED", 61);
     st->size_data = sizeof(BYTE);
@@ -1163,8 +1170,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 35075 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LL
-    st = getVariable(35075);
+  { // 35219 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LL
+    st = getVariable(35219);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LL", 53);
     st->size_data = sizeof(BYTE);
@@ -1175,8 +1182,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 35076 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HL
-    st = getVariable(35076);
+  { // 35220 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HL
+    st = getVariable(35220);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HL", 53);
     st->size_data = sizeof(BYTE);
@@ -1187,8 +1194,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 35077 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NOTRELIABLE
-    st = getVariable(35077);
+  { // 35221 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NOTRELIABLE
+    st = getVariable(35221);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NOTRELIABLE", 62);
     st->size_data = sizeof(BYTE);
@@ -1199,8 +1206,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 35078 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NORMAL
-    st = getVariable(35078);
+  { // 35222 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NORMAL
+    st = getVariable(35222);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.NORMAL", 57);
     st->size_data = sizeof(BYTE);
@@ -1211,8 +1218,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 35079 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LW
-    st = getVariable(35079);
+  { // 35223 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LW
+    st = getVariable(35223);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LW", 53);
     st->size_data = sizeof(BYTE);
@@ -1223,8 +1230,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 35080 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HW
-    st = getVariable(35080);
+  { // 35224 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HW
+    st = getVariable(35224);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HW", 53);
     st->size_data = sizeof(BYTE);
@@ -1235,8 +1242,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 35081 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LA
-    st = getVariable(35081);
+  { // 35225 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LA
+    st = getVariable(35225);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.LA", 53);
     st->size_data = sizeof(BYTE);
@@ -1247,8 +1254,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 35082 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HA
-    st = getVariable(35082);
+  { // 35226 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HA
+    st = getVariable(35226);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA._STATUSAI.HA", 53);
     st->size_data = sizeof(BYTE);
@@ -1259,8 +1266,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 35083 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SOURCE
-    st = getVariable(35083);
+  { // 35227 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SOURCE
+    st = getVariable(35227);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SOURCE", 47);
     st->size_data = sizeof(BYTE);
@@ -1270,8 +1277,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35084 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.CMD
-    st = getVariable(35084);
+  { // 35228 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.CMD
+    st = getVariable(35228);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.CMD", 44);
     st->size_data = sizeof(BYTE);
@@ -1281,8 +1288,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35085 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.LASTCMD
-    st = getVariable(35085);
+  { // 35229 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.LASTCMD
+    st = getVariable(35229);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.LASTCMD", 48);
     st->size_data = sizeof(BYTE);
@@ -1292,8 +1299,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35086 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SOURCE_FOR_STATUS
-    st = getVariable(35086);
+  { // 35230 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SOURCE_FOR_STATUS
+    st = getVariable(35230);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SOURCE_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -1303,8 +1310,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35087 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.CMD_FOR_STATUS
-    st = getVariable(35087);
+  { // 35231 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.CMD_FOR_STATUS
+    st = getVariable(35231);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.CMD_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -1314,8 +1321,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35088 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(35088);
+  { // 35232 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(35232);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.COMMAND_ERROR_FOR_STATUS", 65);
     st->size_data = sizeof(BYTE);
@@ -1325,8 +1332,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35089 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.IN
-    st = getVariable(35089);
+  { // 35233 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.IN
+    st = getVariable(35233);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -1337,8 +1344,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 35090 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.PT
-    st = getVariable(35090);
+  { // 35234 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.PT
+    st = getVariable(35234);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.PT", 57);
     st->size_data = sizeof(TIME);
@@ -1349,8 +1356,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 35091 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.Q
-    st = getVariable(35091);
+  { // 35235 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.Q
+    st = getVariable(35235);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1361,8 +1368,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 35092 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.ET
-    st = getVariable(35092);
+  { // 35236 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.ET
+    st = getVariable(35236);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER.ET", 57);
     st->size_data = sizeof(TIME);
@@ -1373,8 +1380,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 35093 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER
-    st = getVariable(35093);
+  { // 35237 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER
+    st = getVariable(35237);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMER", 54);
     st->size_data = sizeof(TON);
@@ -1384,8 +1391,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TON = (TON*)&p_FB_AIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 35094 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMERPRIZNAK
-    st = getVariable(35094);
+  { // 35238 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMERPRIZNAK
+    st = getVariable(35238);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.RESETCMDTIMERPRIZNAK", 61);
     st->size_data = sizeof(BOOL);
@@ -1395,8 +1402,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 35095 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.IN
-    st = getVariable(35095);
+  { // 35239 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.IN
+    st = getVariable(35239);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -1407,8 +1414,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 35096 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.PT
-    st = getVariable(35096);
+  { // 35240 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.PT
+    st = getVariable(35240);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.PT", 57);
     st->size_data = sizeof(TIME);
@@ -1419,8 +1426,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 35097 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.Q
-    st = getVariable(35097);
+  { // 35241 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.Q
+    st = getVariable(35241);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1431,8 +1438,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 35098 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.ET
-    st = getVariable(35098);
+  { // 35242 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.ET
+    st = getVariable(35242);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER.ET", 57);
     st->size_data = sizeof(TIME);
@@ -1443,8 +1450,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 35099 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER
-    st = getVariable(35099);
+  { // 35243 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER
+    st = getVariable(35243);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINTIMER", 54);
     st->size_data = sizeof(TON);
@@ -1454,8 +1461,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TON = (TON*)&p_FB_AIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 35100 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.IN
-    st = getVariable(35100);
+  { // 35244 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.IN
+    st = getVariable(35244);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -1466,8 +1473,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 35101 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.PT
-    st = getVariable(35101);
+  { // 35245 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.PT
+    st = getVariable(35245);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.PT", 49);
     st->size_data = sizeof(TIME);
@@ -1478,8 +1485,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 35102 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.Q
-    st = getVariable(35102);
+  { // 35246 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.Q
+    st = getVariable(35246);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1490,8 +1497,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 35103 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.ET
-    st = getVariable(35103);
+  { // 35247 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.ET
+    st = getVariable(35247);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER.ET", 49);
     st->size_data = sizeof(TIME);
@@ -1502,8 +1509,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 35104 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER
-    st = getVariable(35104);
+  { // 35248 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER
+    st = getVariable(35248);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.TIMER", 46);
     st->size_data = sizeof(TON);
@@ -1513,8 +1520,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_TON = (TON*)&p_FB_AIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 35105 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG.CLK
-    st = getVariable(35105);
+  { // 35249 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG.CLK
+    st = getVariable(35249);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG.CLK", 58);
     st->size_data = sizeof(BOOL);
@@ -1525,8 +1532,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 35106 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG.Q
-    st = getVariable(35106);
+  { // 35250 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG.Q
+    st = getVariable(35250);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1537,8 +1544,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 35107 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG
-    st = getVariable(35107);
+  { // 35251 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG
+    st = getVariable(35251);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGTRIG", 54);
     st->size_data = sizeof(R_TRIG);
@@ -1548,8 +1555,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_R_TRIG = (R_TRIG*)&p_FB_AIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 35108 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG.CLK
-    st = getVariable(35108);
+  { // 35252 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG.CLK
+    st = getVariable(35252);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -1560,8 +1567,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 35109 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG.Q
-    st = getVariable(35109);
+  { // 35253 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG.Q
+    st = getVariable(35253);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -1572,8 +1579,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 35110 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG
-    st = getVariable(35110);
+  { // 35254 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG
+    st = getVariable(35254);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGFTRIG", 55);
     st->size_data = sizeof(F_TRIG);
@@ -1583,8 +1590,8 @@ int __variables_init_FB_TOK_STATORA(){
     p_F_TRIG = (F_TRIG*)&p_FB_AIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 35111 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGAI
-    st = getVariable(35111);
+  { // 35255 PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGAI
+    st = getVariable(35255);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TOK_STATORA.SIGNALINGAI", 52);
     st->size_data = sizeof(BOOL);

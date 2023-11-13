@@ -177,11 +177,18 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26696 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL.VALUE
-    st = getVariable(26696);
+  { // 26840 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL.VALUE
+    st = getVariable(26840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL.VALUE", 54);
     st->size_data = sizeof(BOOL);
@@ -192,8 +199,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26697 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL.RELIABILITY
-    st = getVariable(26697);
+  { // 26841 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL.RELIABILITY
+    st = getVariable(26841);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -204,8 +211,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26698 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL._INVERSED
-    st = getVariable(26698);
+  { // 26842 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL._INVERSED
+    st = getVariable(26842);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.SIGNAL._INVERSED", 58);
     st->size_data = sizeof(BOOL);
@@ -216,8 +223,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26699 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.RELIABILITY
-    st = getVariable(26699);
+  { // 26843 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.RELIABILITY
+    st = getVariable(26843);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -228,8 +235,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26700 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.INVERSE
-    st = getVariable(26700);
+  { // 26844 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.INVERSE
+    st = getVariable(26844);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.INVERSE", 56);
     st->size_data = sizeof(BOOL);
@@ -240,8 +247,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26701 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DELAYON
-    st = getVariable(26701);
+  { // 26845 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DELAYON
+    st = getVariable(26845);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DELAYON", 56);
     st->size_data = sizeof(TIME);
@@ -252,8 +259,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26702 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DELAYOFF
-    st = getVariable(26702);
+  { // 26846 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DELAYOFF
+    st = getVariable(26846);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DELAYOFF", 57);
     st->size_data = sizeof(TIME);
@@ -264,8 +271,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26703 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.Q
-    st = getVariable(26703);
+  { // 26847 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.Q
+    st = getVariable(26847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.Q", 50);
     st->size_data = sizeof(BOOL);
@@ -276,8 +283,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26704 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.STATUS
-    st = getVariable(26704);
+  { // 26848 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.STATUS
+    st = getVariable(26848);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -288,8 +295,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26705 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DISABLED_SIG
-    st = getVariable(26705);
+  { // 26849 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DISABLED_SIG
+    st = getVariable(26849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.STR_SS.DISABLED_SIG", 61);
     st->size_data = sizeof(BOOL);
@@ -300,8 +307,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26706 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.IN
-    st = getVariable(26706);
+  { // 26850 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.IN
+    st = getVariable(26850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.IN", 52);
     st->size_data = sizeof(BOOL);
@@ -312,8 +319,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26707 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.PT
-    st = getVariable(26707);
+  { // 26851 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.PT
+    st = getVariable(26851);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.PT", 52);
     st->size_data = sizeof(TIME);
@@ -324,8 +331,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26708 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.Q
-    st = getVariable(26708);
+  { // 26852 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.Q
+    st = getVariable(26852);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.Q", 51);
     st->size_data = sizeof(BOOL);
@@ -336,8 +343,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26709 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.ET
-    st = getVariable(26709);
+  { // 26853 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.ET
+    st = getVariable(26853);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON.ET", 52);
     st->size_data = sizeof(TIME);
@@ -348,8 +355,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26710 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON
-    st = getVariable(26710);
+  { // 26854 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON
+    st = getVariable(26854);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMERON", 49);
     st->size_data = sizeof(TON);
@@ -359,8 +366,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26711 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.IN
-    st = getVariable(26711);
+  { // 26855 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.IN
+    st = getVariable(26855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.IN", 53);
     st->size_data = sizeof(BOOL);
@@ -371,8 +378,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26712 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.PT
-    st = getVariable(26712);
+  { // 26856 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.PT
+    st = getVariable(26856);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.PT", 53);
     st->size_data = sizeof(TIME);
@@ -383,8 +390,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26713 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.Q
-    st = getVariable(26713);
+  { // 26857 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.Q
+    st = getVariable(26857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.Q", 52);
     st->size_data = sizeof(BOOL);
@@ -395,8 +402,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26714 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.ET
-    st = getVariable(26714);
+  { // 26858 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.ET
+    st = getVariable(26858);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF.ET", 53);
     st->size_data = sizeof(TIME);
@@ -407,8 +414,8 @@ int __variables_init_FB_SYNCHRONIZ_REZHIMA_K1(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26715 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF
-    st = getVariable(26715);
+  { // 26859 PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF
+    st = getVariable(26859);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SYNCHRONIZ_REZHIMA_K1.TIMEROFF", 50);
     st->size_data = sizeof(TOF);

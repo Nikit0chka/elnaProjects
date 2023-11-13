@@ -26,5 +26,9 @@ AlgoritmsConfig : STRUCT
 	Pusk_F_faza1 : struct_Alg;
 	Pusk_F_faza2 : struct_Alg;
 	Pusk_TH_faza : struct_Alg;
+	Prov_PMS_ALG : struct_Alg;
+	Prov_opressovka_ALG : struct_Alg;
+	Pusk_SEC_faza_chastotny : struct_Alg;
+	Pusk_SEC_faza_reactor : struct_Alg;
 END_STRUCT;
 END_TYPE

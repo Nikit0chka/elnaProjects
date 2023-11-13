@@ -52,6 +52,10 @@ END_VAR
 
 
 
+
+
+
+
 IF NOT onInit THEN
  fb_autoPnsOff(phaseNumber:=0, act:=_reset, waitCompletion:=FALSE);
   fb_waitVibeg(phaseNumber:=1, delay:=T#300S);

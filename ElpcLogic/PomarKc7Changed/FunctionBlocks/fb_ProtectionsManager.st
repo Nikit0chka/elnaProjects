@@ -28,6 +28,10 @@ END_VAR
 
 
 
+
+
+
+
 IF NOT onInit THEN
     
     autoRunProtections(protections);     

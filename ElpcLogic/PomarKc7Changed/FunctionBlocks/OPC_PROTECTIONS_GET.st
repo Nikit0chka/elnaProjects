@@ -1,0 +1,109 @@
+FUNCTION_BLOCK OPC_PROTECTIONS_GET
+
+VAR_EXTERNAL
+protections : protectionsConfig
+protections_Topornogo_podshipnika_EDT_1_command : UINT;
+protections_Toy_podshipnika_EDT_2_command : UINT;
+protections_Toy_podshipnika_kol_EDT_3_command : UINT;
+protections_Toy_podshipnika_kol_EDT_4_command : UINT;
+protections_To_podshipnika_shest_red_EDT_5_command : UINT;
+protections_To_podshipnika_shest_red_EDT_6_command : UINT;
+protections_To_podshipnika_N_EDT_7_command : UINT;
+protections_To_podshipnika_svob_konca_EDT_8_command : UINT;
+protections_Ty_podshipnika_rab_kol_EDT_9_command : UINT;
+protections_Typornogo_podshipnika_nerab_kolodok_HT_10_command : UINT;
+protections_Tgaza_na_vyhode_H_command : UINT;
+protections_Os_sdvig_nagnetatelja_plus_command : UINT;
+protections_Os_sdvig_nagnetatelja_minus_command : UINT;
+protections_Pgaza_na_vyhode_nagnetatelia_GPA_STOP_command : UINT;
+protections_Pgaza_na_vhode_nagnetatelia_GPA_STOP_command : UINT;
+protections_Pgaza_na_vyhode_nagnetatelia_command : UINT;
+protections_dPmaslo_gaz_command : UINT;
+protections_Pmaslo_sm_nizkoe_command : UINT;
+protections_Pmaslo_sm_vysokoe_command : UINT;
+protections_Vibro_skorost_OPED_T1_command : UINT;
+protections_Vibro_skorost_OPED_T2_command : UINT;
+protections_Vibro_skorost_OYP_kolesa_ED_T3_command : UINT;
+protections_Vibro_skorost_OP_kolesa_RH_T4_command : UINT;
+protections_Vibro_skorost_OP_shesterni_RED_T5_command : UINT;
+protections_Vibro_skorost_OP_shesterni_RED_T6_command : UINT;
+protections_dPmaslo_gaz_less100_command : UINT;
+protections_Reg_vozb_off_command : UINT;
+protections_Fprotectionsl_chastotnii_pusk_command : UINT;
+protections_Off_avar_vikluchatel_command : UINT;
+protections_AOKC_SHKC_command : UINT;
+protections_AO_PRU_command : UINT;
+protections_AO_ot_SHU_command : UINT;
+protections_mvOff_command : UINT;
+protections_Kran1_sdvig_command : UINT;
+protections_Kran2_sdvig_command : UINT;
+END_VAR
+protections.Topornogo_podshipnika_EDT_1.inCommand_ARM := UINT_TO_WORD(protections_Topornogo_podshipnika_EDT_1_command);
+
+protections.Toy_podshipnika_EDT_2.inCommand_ARM := UINT_TO_WORD(protections_Toy_podshipnika_EDT_2_command);
+
+protections.Toy_podshipnika_kol_EDT_3.inCommand_ARM := UINT_TO_WORD(protections_Toy_podshipnika_kol_EDT_3_command);
+
+protections.Toy_podshipnika_kol_EDT_4.inCommand_ARM := UINT_TO_WORD(protections_Toy_podshipnika_kol_EDT_4_command);
+
+protections.To_podshipnika_shest_red_EDT_5.inCommand_ARM := UINT_TO_WORD(protections_To_podshipnika_shest_red_EDT_5_command);
+
+protections.To_podshipnika_shest_red_EDT_6.inCommand_ARM := UINT_TO_WORD(protections_To_podshipnika_shest_red_EDT_6_command);
+
+protections.To_podshipnika_N_EDT_7.inCommand_ARM := UINT_TO_WORD(protections_To_podshipnika_N_EDT_7_command);
+
+protections.To_podshipnika_svob_konca_EDT_8.inCommand_ARM := UINT_TO_WORD(protections_To_podshipnika_svob_konca_EDT_8_command);
+
+protections.Ty_podshipnika_rab_kol_EDT_9.inCommand_ARM := UINT_TO_WORD(protections_Ty_podshipnika_rab_kol_EDT_9_command);
+
+protections.Typornogo_podshipnika_nerab_kolodok_HT_10.inCommand_ARM := UINT_TO_WORD(protections_Typornogo_podshipnika_nerab_kolodok_HT_10_command);
+
+protections.Tgaza_na_vyhode_H.inCommand_ARM := UINT_TO_WORD(protections_Tgaza_na_vyhode_H_command);
+
+protections.Os_sdvig_nagnetatelja_plus.inCommand_ARM := UINT_TO_WORD(protections_Os_sdvig_nagnetatelja_plus_command);
+
+protections.Os_sdvig_nagnetatelja_minus.inCommand_ARM := UINT_TO_WORD(protections_Os_sdvig_nagnetatelja_minus_command);
+
+protections.Pgaza_na_vyhode_nagnetatelia_GPA_STOP.inCommand_ARM := UINT_TO_WORD(protections_Pgaza_na_vyhode_nagnetatelia_GPA_STOP_command);
+
+protections.Pgaza_na_vhode_nagnetatelia_GPA_STOP.inCommand_ARM := UINT_TO_WORD(protections_Pgaza_na_vhode_nagnetatelia_GPA_STOP_command);
+
+protections.Pgaza_na_vyhode_nagnetatelia.inCommand_ARM := UINT_TO_WORD(protections_Pgaza_na_vyhode_nagnetatelia_command);
+
+protections.dPmaslo_gaz.inCommand_ARM := UINT_TO_WORD(protections_dPmaslo_gaz_command);
+
+protections.Pmaslo_sm_nizkoe.inCommand_ARM := UINT_TO_WORD(protections_Pmaslo_sm_nizkoe_command);
+
+protections.Pmaslo_sm_vysokoe.inCommand_ARM := UINT_TO_WORD(protections_Pmaslo_sm_vysokoe_command);
+
+protections.Vibro_skorost_OPED_T1.inCommand_ARM := UINT_TO_WORD(protections_Vibro_skorost_OPED_T1_command);
+
+protections.Vibro_skorost_OPED_T2.inCommand_ARM := UINT_TO_WORD(protections_Vibro_skorost_OPED_T2_command);
+
+protections.Vibro_skorost_OYP_kolesa_ED_T3.inCommand_ARM := UINT_TO_WORD(protections_Vibro_skorost_OYP_kolesa_ED_T3_command);
+
+protections.Vibro_skorost_OP_kolesa_RH_T4.inCommand_ARM := UINT_TO_WORD(protections_Vibro_skorost_OP_kolesa_RH_T4_command);
+
+protections.Vibro_skorost_OP_shesterni_RED_T5.inCommand_ARM := UINT_TO_WORD(protections_Vibro_skorost_OP_shesterni_RED_T5_command);
+
+protections.Vibro_skorost_OP_shesterni_RED_T6.inCommand_ARM := UINT_TO_WORD(protections_Vibro_skorost_OP_shesterni_RED_T6_command);
+
+protections.dPmaslo_gaz_less100.inCommand_ARM := UINT_TO_WORD(protections_dPmaslo_gaz_less100_command);
+
+protections.Reg_vozb_off.inCommand_ARM := UINT_TO_WORD(protections_Reg_vozb_off_command);
+
+protections.Fprotectionsl_chastotnii_pusk.inCommand_ARM := UINT_TO_WORD(protections_Fprotectionsl_chastotnii_pusk_command);
+
+protections.Off_avar_vikluchatel.inCommand_ARM := UINT_TO_WORD(protections_Off_avar_vikluchatel_command);
+
+protections.AOKC_SHKC.inCommand_ARM := UINT_TO_WORD(protections_AOKC_SHKC_command);
+
+protections.AO_PRU.inCommand_ARM := UINT_TO_WORD(protections_AO_PRU_command);
+
+protections.AO_ot_SHU.inCommand_ARM := UINT_TO_WORD(protections_AO_ot_SHU_command);
+
+protections.mvOff.inCommand_ARM := UINT_TO_WORD(protections_mvOff_command);
+
+protections.Kran1_sdvig.inCommand_ARM := UINT_TO_WORD(protections_Kran1_sdvig_command);
+
+protections.Kran2_sdvig.inCommand_ARM := UINT_TO_WORD(protections_Kran2_sdvig_command);

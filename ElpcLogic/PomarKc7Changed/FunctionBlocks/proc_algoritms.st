@@ -22,6 +22,13 @@ VAR
 	fb_testPmsAlg : testPmsAlg;
 	fb_ApuskAlg : ApuskAlg;
 	fb_SemiAutoPuskAlg : SemiAutoPuskAlg;
+	fb_Pusk_first_faza1 : Pusk_first_faza1;
+	fb_Pusk_first_faza2 : Pusk_first_faza2;
+	fb_Pusk_third_faza : Pusk_third_faza;
+	fb_Pusk_Prov_PMS : Prov_PMS;
+	fb_Prov_opressovka : Prov_opressovka;
+	fb_Pusk_second_faza_chastotny : Pusk_second_faza_chastotny;
+	fb_Pusk_second_faza_reactor : Pusk_second_faza_reactor;
 END_VAR
 
 VAR_EXTERNAL
@@ -31,6 +38,10 @@ VAR_EXTERNAL
 	IM : ImConfig;
 	AlgTimers : struct_AlgTimers;
 END_VAR
+
+
+
+
 
 
 
@@ -126,3 +137,18 @@ fb_SemiAutoPuskAlg(StrAlg:=algoritms.SemiAutoPusk,
  cmdRun2ph:=AlgQuestions.SemiAutoPusk_cmdRun2ph,
  cmdRun3ph:=AlgQuestions.SemiAutoPusk_cmdRun3ph
 );
+
+
+fb_Pusk_first_faza1(Stralg:=algoritms.Pusk_F_faza1);
+
+fb_Pusk_first_faza2(Stralg:=algoritms.Pusk_F_faza2);
+
+fb_Pusk_third_faza(Stralg:=algoritms.Pusk_TH_faza);
+
+fb_Pusk_Prov_PMS(Stralg:=algoritms.Prov_PMS_ALG);
+
+fb_Prov_opressovka(Stralg:=algoritms.Prov_opressovka_ALG);
+
+fb_Pusk_second_faza_chastotny(Stralg:=algoritms.Pusk_SEC_faza_chastotny);
+
+fb_Pusk_second_faza_reactor(Stralg:=algoritms.Pusk_SEC_faza_reactor);

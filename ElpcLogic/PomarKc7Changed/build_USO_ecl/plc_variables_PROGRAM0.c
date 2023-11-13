@@ -177,6 +177,13 @@ int __variables_init_PROGRAM0(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
@@ -270,8 +277,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_PROGRAM0->LIFE_COUNT;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 130934 PROGRAM0.ALGMANAGER.MODE
-    st = getVariable(130934);
+  { // 171049 PROGRAM0.ALGMANAGER.MODE
+    st = getVariable(171049);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.MODE", 24);
     st->size_data = sizeof(UINT);
@@ -280,8 +287,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->MODE;
     st->value_p = p_UINT;
   }
-  { // 130935 PROGRAM0.ALGMANAGER.NARABOTKA
-    st = getVariable(130935);
+  { // 171050 PROGRAM0.ALGMANAGER.NARABOTKA
+    st = getVariable(171050);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.NARABOTKA", 29);
     st->size_data = sizeof(UINT);
@@ -290,8 +297,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NARABOTKA;
     st->value_p = p_UINT;
   }
-  { // 130936 PROGRAM0.ALGMANAGER.NMODE
-    st = getVariable(130936);
+  { // 171051 PROGRAM0.ALGMANAGER.NMODE
+    st = getVariable(171051);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.NMODE", 25);
     st->size_data = sizeof(UINT);
@@ -300,8 +307,8 @@ int __variables_init_PROGRAM0(){
     p_UINT = (UINT*)&p_STRUCT_ALGORITMSMANAGER->NMODE;
     st->value_p = p_UINT;
   }
-  { // 130937 PROGRAM0.ALGMANAGER.ANALOGSPS
-    st = getVariable(130937);
+  { // 171052 PROGRAM0.ALGMANAGER.ANALOGSPS
+    st = getVariable(171052);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.ANALOGSPS", 29);
     st->size_data = sizeof(BOOL);
@@ -310,8 +317,8 @@ int __variables_init_PROGRAM0(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->ANALOGSPS;
     st->value_p = p_BOOL;
   }
-  { // 130938 PROGRAM0.ALGMANAGER.DISCRETPS
-    st = getVariable(130938);
+  { // 171053 PROGRAM0.ALGMANAGER.DISCRETPS
+    st = getVariable(171053);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.DISCRETPS", 29);
     st->size_data = sizeof(BOOL);
@@ -320,8 +327,8 @@ int __variables_init_PROGRAM0(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->DISCRETPS;
     st->value_p = p_BOOL;
   }
-  { // 130939 PROGRAM0.ALGMANAGER.PROTECTIONSIGNALING
-    st = getVariable(130939);
+  { // 171054 PROGRAM0.ALGMANAGER.PROTECTIONSIGNALING
+    st = getVariable(171054);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGMANAGER.PROTECTIONSIGNALING", 39);
     st->size_data = sizeof(BOOL);
@@ -330,8 +337,8 @@ int __variables_init_PROGRAM0(){
     p_BOOL = (BOOL*)&p_STRUCT_ALGORITMSMANAGER->PROTECTIONSIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 130940 PROGRAM0.PROTECTMANAGER.INCOMMAND
-    st = getVariable(130940);
+  { // 171055 PROGRAM0.PROTECTMANAGER.INCOMMAND
+    st = getVariable(171055);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTMANAGER.INCOMMAND", 33);
     st->size_data = sizeof(BYTE);
@@ -340,8 +347,8 @@ int __variables_init_PROGRAM0(){
     p_BYTE = (BYTE*)&p_STRUCT_PROTECTIONSMANAGER->INCOMMAND;
     st->value_p = p_BYTE;
   }
-  { // 130941 PROGRAM0.PROTECTMANAGER.PROTECTIONINREMONT
-    st = getVariable(130941);
+  { // 171056 PROGRAM0.PROTECTMANAGER.PROTECTIONINREMONT
+    st = getVariable(171056);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTMANAGER.PROTECTIONINREMONT", 42);
     st->size_data = sizeof(BOOL);

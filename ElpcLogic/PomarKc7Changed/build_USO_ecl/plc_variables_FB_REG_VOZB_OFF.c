@@ -177,11 +177,18 @@ int __variables_init_FB_REG_VOZB_OFF(){
   FB_PH_AIPROTECTION *p_FB_PH_AIPROTECTION;
   APUSKALG *p_APUSKALG;
   SEMIAUTOPUSKALG *p_SEMIAUTOPUSKALG;
+  PUSK_FIRST_FAZA1 *p_PUSK_FIRST_FAZA1;
+  PUSK_FIRST_FAZA2 *p_PUSK_FIRST_FAZA2;
+  PUSK_THIRD_FAZA *p_PUSK_THIRD_FAZA;
+  PROV_PMS *p_PROV_PMS;
+  PROV_OPRESSOVKA *p_PROV_OPRESSOVKA;
+  PUSK_SECOND_FAZA_CHASTOTNY *p_PUSK_SECOND_FAZA_CHASTOTNY;
+  PUSK_SECOND_FAZA_REACTOR *p_PUSK_SECOND_FAZA_REACTOR;
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 28203 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.RELIABILITY
-    st = getVariable(28203);
+  { // 28347 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.RELIABILITY
+    st = getVariable(28347);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.RELIABILITY", 56);
     st->size_data = sizeof(BOOL);
@@ -192,8 +199,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 28204 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.INVERSE
-    st = getVariable(28204);
+  { // 28348 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.INVERSE
+    st = getVariable(28348);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.INVERSE", 52);
     st->size_data = sizeof(BOOL);
@@ -204,8 +211,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 28205 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DELAYON
-    st = getVariable(28205);
+  { // 28349 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DELAYON
+    st = getVariable(28349);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DELAYON", 52);
     st->size_data = sizeof(TIME);
@@ -216,8 +223,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 28206 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DELAYOFF
-    st = getVariable(28206);
+  { // 28350 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DELAYOFF
+    st = getVariable(28350);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DELAYOFF", 53);
     st->size_data = sizeof(TIME);
@@ -228,8 +235,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 28207 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.Q
-    st = getVariable(28207);
+  { // 28351 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.Q
+    st = getVariable(28351);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -240,8 +247,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 28208 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.STATUS
-    st = getVariable(28208);
+  { // 28352 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.STATUS
+    st = getVariable(28352);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.STATUS", 51);
     st->size_data = sizeof(DWORD);
@@ -252,8 +259,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 28209 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DISABLED_SIG
-    st = getVariable(28209);
+  { // 28353 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DISABLED_SIG
+    st = getVariable(28353);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.DI.DISABLED_SIG", 57);
     st->size_data = sizeof(BOOL);
@@ -264,8 +271,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 28210 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.DELAY
-    st = getVariable(28210);
+  { // 28354 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.DELAY
+    st = getVariable(28354);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.DELAY", 54);
     st->size_data = sizeof(TIME);
@@ -276,8 +283,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_STRUCT_DIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 28211 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INTAG
-    st = getVariable(28211);
+  { // 28355 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INTAG
+    st = getVariable(28355);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INTAG", 54);
     st->size_data = sizeof(BYTE);
@@ -288,8 +295,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 28212 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INRUNONSTART
-    st = getVariable(28212);
+  { // 28356 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INRUNONSTART
+    st = getVariable(28356);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INRUNONSTART", 61);
     st->size_data = sizeof(BOOL);
@@ -300,8 +307,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 28213 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCANRUN
-    st = getVariable(28213);
+  { // 28357 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCANRUN
+    st = getVariable(28357);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCANRUN", 57);
     st->size_data = sizeof(BOOL);
@@ -312,8 +319,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 28214 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INOPCCOMMANDSDISABLED
-    st = getVariable(28214);
+  { // 28358 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INOPCCOMMANDSDISABLED
+    st = getVariable(28358);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INOPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -324,8 +331,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 28215 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND
-    st = getVariable(28215);
+  { // 28359 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND
+    st = getVariable(28359);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND", 58);
     st->size_data = sizeof(WORD);
@@ -336,8 +343,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 28216 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND_ALG
-    st = getVariable(28216);
+  { // 28360 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND_ALG
+    st = getVariable(28360);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND_ALG", 62);
     st->size_data = sizeof(WORD);
@@ -348,8 +355,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 28217 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND_ARM
-    st = getVariable(28217);
+  { // 28361 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND_ARM
+    st = getVariable(28361);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.INCOMMAND_ARM", 62);
     st->size_data = sizeof(WORD);
@@ -360,8 +367,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 28218 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.TAG
-    st = getVariable(28218);
+  { // 28362 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.TAG
+    st = getVariable(28362);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.TAG", 52);
     st->size_data = sizeof(BYTE);
@@ -372,8 +379,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 28219 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.STATUS
-    st = getVariable(28219);
+  { // 28363 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.STATUS
+    st = getVariable(28363);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -384,8 +391,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_DWORD = (DWORD*)&p_STRUCT_DIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 28220 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.CANRUN
-    st = getVariable(28220);
+  { // 28364 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.CANRUN
+    st = getVariable(28364);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.CANRUN", 55);
     st->size_data = sizeof(BOOL);
@@ -396,8 +403,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 28221 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.OPCCOMMANDSDISABLED
-    st = getVariable(28221);
+  { // 28365 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.OPCCOMMANDSDISABLED
+    st = getVariable(28365);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.OPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -408,8 +415,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 28222 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.ISRUNNING
-    st = getVariable(28222);
+  { // 28366 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.ISRUNNING
+    st = getVariable(28366);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.ISRUNNING", 58);
     st->size_data = sizeof(BOOL);
@@ -420,8 +427,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 28223 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.HASERROR
-    st = getVariable(28223);
+  { // 28367 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.HASERROR
+    st = getVariable(28367);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.HASERROR", 57);
     st->size_data = sizeof(BOOL);
@@ -432,8 +439,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 28224 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.ISENDED
-    st = getVariable(28224);
+  { // 28368 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.ISENDED
+    st = getVariable(28368);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.ISENDED", 56);
     st->size_data = sizeof(BOOL);
@@ -444,8 +451,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 28225 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.REMONT
-    st = getVariable(28225);
+  { // 28369 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.REMONT
+    st = getVariable(28369);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.REMONT", 55);
     st->size_data = sizeof(BOOL);
@@ -456,8 +463,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 28226 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.CHECK
-    st = getVariable(28226);
+  { // 28370 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.CHECK
+    st = getVariable(28370);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.CHECK", 54);
     st->size_data = sizeof(BOOL);
@@ -468,8 +475,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 28227 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.SIGNALING
-    st = getVariable(28227);
+  { // 28371 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.SIGNALING
+    st = getVariable(28371);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.SIGNALING", 58);
     st->size_data = sizeof(BOOL);
@@ -480,8 +487,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 28228 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.SIGNALINGTP
-    st = getVariable(28228);
+  { // 28372 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.SIGNALINGTP
+    st = getVariable(28372);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.SIGNALINGTP", 60);
     st->size_data = sizeof(BOOL);
@@ -492,8 +499,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 28229 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.RUNONSTART
-    st = getVariable(28229);
+  { // 28373 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.RUNONSTART
+    st = getVariable(28373);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.STRDIP.RUNONSTART", 59);
     st->size_data = sizeof(BOOL);
@@ -504,8 +511,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 28234 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.NOTHING
-    st = getVariable(28234);
+  { // 28378 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.NOTHING
+    st = getVariable(28378);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.NOTHING", 65);
     st->size_data = sizeof(BYTE);
@@ -516,8 +523,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->NOTHING;
     st->value_p = p_BYTE;
   }
-  { // 28235 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOB
-    st = getVariable(28235);
+  { // 28379 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOB
+    st = getVariable(28379);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOB", 61);
     st->size_data = sizeof(BYTE);
@@ -528,8 +535,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOB;
     st->value_p = p_BYTE;
   }
-  { // 28236 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOS
-    st = getVariable(28236);
+  { // 28380 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOS
+    st = getVariable(28380);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOS", 61);
     st->size_data = sizeof(BYTE);
@@ -540,8 +547,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOS;
     st->value_p = p_BYTE;
   }
-  { // 28237 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOPOJ
-    st = getVariable(28237);
+  { // 28381 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOPOJ
+    st = getVariable(28381);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._PROTECTIONTAGS.AOPOJ", 63);
     st->size_data = sizeof(BYTE);
@@ -552,8 +559,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOPOJ;
     st->value_p = p_BYTE;
   }
-  { // 28238 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.IN
-    st = getVariable(28238);
+  { // 28382 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.IN
+    st = getVariable(28382);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -564,8 +571,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 28239 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.PT
-    st = getVariable(28239);
+  { // 28383 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.PT
+    st = getVariable(28383);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.PT", 57);
     st->size_data = sizeof(TIME);
@@ -576,8 +583,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 28240 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.Q
-    st = getVariable(28240);
+  { // 28384 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.Q
+    st = getVariable(28384);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -588,8 +595,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 28241 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.ET
-    st = getVariable(28241);
+  { // 28385 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.ET
+    st = getVariable(28385);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP.ET", 57);
     st->size_data = sizeof(TIME);
@@ -600,8 +607,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 28242 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP
-    st = getVariable(28242);
+  { // 28386 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP
+    st = getVariable(28386);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF._SIGNALINGTP", 54);
     st->size_data = sizeof(TOF);
@@ -611,8 +618,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TOF = (TOF*)&p_FB_DIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 28243 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.IN
-    st = getVariable(28243);
+  { // 28387 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.IN
+    st = getVariable(28387);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.IN", 50);
     st->size_data = sizeof(BOOL);
@@ -623,8 +630,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 28244 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.PT
-    st = getVariable(28244);
+  { // 28388 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.PT
+    st = getVariable(28388);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.PT", 50);
     st->size_data = sizeof(TIME);
@@ -635,8 +642,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 28245 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.Q
-    st = getVariable(28245);
+  { // 28389 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.Q
+    st = getVariable(28389);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.Q", 49);
     st->size_data = sizeof(BOOL);
@@ -647,8 +654,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 28246 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.ET
-    st = getVariable(28246);
+  { // 28390 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.ET
+    st = getVariable(28390);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER.ET", 50);
     st->size_data = sizeof(TIME);
@@ -659,8 +666,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 28247 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER
-    st = getVariable(28247);
+  { // 28391 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER
+    st = getVariable(28391);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.TIMER", 47);
     st->size_data = sizeof(TON);
@@ -670,8 +677,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TON = (TON*)&p_FB_DIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 28248 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG.CLK
-    st = getVariable(28248);
+  { // 28392 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG.CLK
+    st = getVariable(28392);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -682,8 +689,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 28249 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG.Q
-    st = getVariable(28249);
+  { // 28393 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG.Q
+    st = getVariable(28393);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -694,8 +701,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 28250 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG
-    st = getVariable(28250);
+  { // 28394 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG
+    st = getVariable(28394);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGTRIG", 55);
     st->size_data = sizeof(R_TRIG);
@@ -705,8 +712,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_R_TRIG = (R_TRIG*)&p_FB_DIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 28251 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG.CLK
-    st = getVariable(28251);
+  { // 28395 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG.CLK
+    st = getVariable(28395);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG.CLK", 60);
     st->size_data = sizeof(BOOL);
@@ -717,8 +724,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 28252 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG.Q
-    st = getVariable(28252);
+  { // 28396 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG.Q
+    st = getVariable(28396);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG.Q", 58);
     st->size_data = sizeof(BOOL);
@@ -729,8 +736,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 28253 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG
-    st = getVariable(28253);
+  { // 28397 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG
+    st = getVariable(28397);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGFTRIG", 56);
     st->size_data = sizeof(F_TRIG);
@@ -740,8 +747,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_F_TRIG = (F_TRIG*)&p_FB_DIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 28254 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGDI
-    st = getVariable(28254);
+  { // 28398 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGDI
+    st = getVariable(28398);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINGDI", 53);
     st->size_data = sizeof(BOOL);
@@ -751,8 +758,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_FB_DIPROTECTION->SIGNALINGDI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28255 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SOURCE
-    st = getVariable(28255);
+  { // 28399 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SOURCE
+    st = getVariable(28399);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SOURCE", 48);
     st->size_data = sizeof(BYTE);
@@ -762,8 +769,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28256 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.CMD
-    st = getVariable(28256);
+  { // 28400 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.CMD
+    st = getVariable(28400);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.CMD", 45);
     st->size_data = sizeof(BYTE);
@@ -773,8 +780,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28257 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.LASTCMD
-    st = getVariable(28257);
+  { // 28401 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.LASTCMD
+    st = getVariable(28401);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.LASTCMD", 49);
     st->size_data = sizeof(BYTE);
@@ -784,8 +791,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28258 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SOURCE_FOR_STATUS
-    st = getVariable(28258);
+  { // 28402 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SOURCE_FOR_STATUS
+    st = getVariable(28402);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SOURCE_FOR_STATUS", 59);
     st->size_data = sizeof(BYTE);
@@ -795,8 +802,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28259 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.CMD_FOR_STATUS
-    st = getVariable(28259);
+  { // 28403 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.CMD_FOR_STATUS
+    st = getVariable(28403);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.CMD_FOR_STATUS", 56);
     st->size_data = sizeof(BYTE);
@@ -806,8 +813,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28260 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(28260);
+  { // 28404 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(28404);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.COMMAND_ERROR_FOR_STATUS", 66);
     st->size_data = sizeof(BYTE);
@@ -817,8 +824,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BYTE = (BYTE*)&p_FB_DIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28261 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.IN
-    st = getVariable(28261);
+  { // 28405 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.IN
+    st = getVariable(28405);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.IN", 58);
     st->size_data = sizeof(BOOL);
@@ -829,8 +836,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 28262 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.PT
-    st = getVariable(28262);
+  { // 28406 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.PT
+    st = getVariable(28406);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.PT", 58);
     st->size_data = sizeof(TIME);
@@ -841,8 +848,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 28263 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.Q
-    st = getVariable(28263);
+  { // 28407 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.Q
+    st = getVariable(28407);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -853,8 +860,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 28264 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.ET
-    st = getVariable(28264);
+  { // 28408 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.ET
+    st = getVariable(28408);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER.ET", 58);
     st->size_data = sizeof(TIME);
@@ -865,8 +872,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 28265 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER
-    st = getVariable(28265);
+  { // 28409 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER
+    st = getVariable(28409);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMER", 55);
     st->size_data = sizeof(TON);
@@ -876,8 +883,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TON = (TON*)&p_FB_DIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 28266 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMERPRIZNAK
-    st = getVariable(28266);
+  { // 28410 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMERPRIZNAK
+    st = getVariable(28410);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RESETCMDTIMERPRIZNAK", 62);
     st->size_data = sizeof(BOOL);
@@ -887,8 +894,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_FB_DIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28267 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.IN
-    st = getVariable(28267);
+  { // 28411 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.IN
+    st = getVariable(28411);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.IN", 58);
     st->size_data = sizeof(BOOL);
@@ -899,8 +906,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 28268 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.PT
-    st = getVariable(28268);
+  { // 28412 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.PT
+    st = getVariable(28412);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.PT", 58);
     st->size_data = sizeof(TIME);
@@ -911,8 +918,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 28269 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.Q
-    st = getVariable(28269);
+  { // 28413 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.Q
+    st = getVariable(28413);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -923,8 +930,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 28270 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.ET
-    st = getVariable(28270);
+  { // 28414 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.ET
+    st = getVariable(28414);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER.ET", 58);
     st->size_data = sizeof(TIME);
@@ -935,8 +942,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 28271 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER
-    st = getVariable(28271);
+  { // 28415 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER
+    st = getVariable(28415);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.SIGNALINTIMER", 55);
     st->size_data = sizeof(TON);
@@ -946,8 +953,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_TON = (TON*)&p_FB_DIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 28272 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG.CLK
-    st = getVariable(28272);
+  { // 28416 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG.CLK
+    st = getVariable(28416);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG.CLK", 61);
     st->size_data = sizeof(BOOL);
@@ -958,8 +965,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 28273 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG.Q
-    st = getVariable(28273);
+  { // 28417 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG.Q
+    st = getVariable(28417);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG.Q", 59);
     st->size_data = sizeof(BOOL);
@@ -970,8 +977,8 @@ int __variables_init_FB_REG_VOZB_OFF(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 28274 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG
-    st = getVariable(28274);
+  { // 28418 PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG
+    st = getVariable(28418);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_REG_VOZB_OFF.RUNONSTART_TRIG", 57);
     st->size_data = sizeof(R_TRIG);

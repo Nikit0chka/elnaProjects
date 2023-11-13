@@ -5,8 +5,12 @@ VAR_IN_OUT
 END_VAR
 
 VAR CONSTANT
-	cmdImpulse : WORD   := 3;
+	cmdImpulse : WORD     := 3;
 END_VAR
+
+
+
+
 
 
 

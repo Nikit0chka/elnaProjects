@@ -65,6 +65,10 @@ END_VAR
 
 
 
+
+
+
+
 IF NOT onInit THEN      
     fb_F1_1_start(phaseNumber:=1, act:=_run);
     fb_F1_2_start(phaseNumber:=2, act:=_run);

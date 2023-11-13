@@ -115,6 +115,10 @@ END_VAR
 
 
 
+
+
+
+
 (* Циклический опрос. ИМ *)
 
 (* GPIO *)
@@ -144,21 +148,21 @@ fb_Kran3(statOn := di.di_0.bits[5]._inversed,
 (* Кран 3b *)
 fb_Kran3b(statOn := di.di_0.bits[7]._inversed, 
          statOff := di.di_0.bits[6]._inversed,
-         inSo := di.di_16.bits[6]._inversed, inSz := di.di_16.bits[7]._inversed,
+         inSo := di.di_16.bits[6], inSz := di.di_16.bits[7],
          cmdOn:=od.do_0.bits[6], cmdOff:=od.do_0.bits[7],  
          strKr:= IM.Kran3b  );
 
 (* Кран 4 *)
 fb_Kran4(statOn := di.di_1.bits[1]._inversed, 
          statOff := di.di_1.bits[0]._inversed,
-         inSo := di.di_17.bits[0]._inversed, inSz := di.di_17.bits[1]._inversed,
+         inSo := di.di_17.bits[0], inSz := di.di_17.bits[1],
          cmdOn:=od.do_0.bits[8], cmdOff:=od.do_0.bits[9],  
          strKr:= IM.Kran4  );
          
 (* Кран 5 *)
 fb_Kran5(statOn := di.di_1.bits[3]._inversed, 
          statOff := di.di_1.bits[2]._inversed,
-         inSo := di.di_17.bits[2]._inversed, inSz := di.di_17.bits[3]._inversed,
+         inSo := di.di_17.bits[2], inSz := di.di_17.bits[3],
          cmdOn:=od.do_0.bits[10], cmdOff:=od.do_0.bits[11],  
          strKr:= IM.Kran5  );
 
@@ -170,63 +174,63 @@ fb_Kran6(statOn := di.di_1.bits[5]._inversed,
          strKr:= IM.Kran6  );
 
 (*  НУ1 Насос уплотнения *)
-fb_nu1(statOn := di.di_5.bits[1], statOff := di.di_5.bits[1]._inversed,
+fb_nu1(statOn := di.di_5.bits[1].value, statOff := di.di_5.bits[1]._inversed,
          cmdOn:=od.do_1.bits[4], cmdOff:=od.do_1.bits[5],
          StrSw:= IM.nu1  );
 
 (*  НУ2 Насос уплотнения *)
-fb_nu2(statOn := di.di_5.bits[2], statOff := di.di_5.bits[2]._inversed,
+fb_nu2(statOn := di.di_5.bits[2].value, statOff := di.di_5.bits[2]._inversed,
          cmdOn:=od.do_1.bits[6], cmdOff:=od.do_1.bits[7],
          StrSw:= IM.nu2  );
          
 (*  ПНС Насос смазки *)
-fb_pns(statOn := di.di_5.bits[0], statOff := di.di_5.bits[0]._inversed,
+fb_pns(statOn := di.di_5.bits[0].value, statOff := di.di_5.bits[0]._inversed,
          cmdOn:=od.do_1.bits[0], cmdOff:=od.do_1.bits[1],
          StrSw:= IM.pns  );
          
 (*  В1 АВОМ вентилятор охлаждения *)
-fb_v1_Avom(statOn := di.di_5.bits[3], statOff := di.di_5.bits[3]._inversed,
+fb_v1_Avom(statOn := di.di_5.bits[3].value, statOff := di.di_5.bits[3]._inversed,
          cmdOn:=od.do_1.bits[8], cmdOff:=od.do_1.bits[9],
          StrSw:= IM.v1_Avom  );
                  
 (*  В2 АВОМ вентилятор охлаждения *)
-fb_v2_Avom(statOn := di.di_5.bits[4], statOff := di.di_5.bits[4]._inversed,
+fb_v2_Avom(statOn := di.di_5.bits[4].value, statOff := di.di_5.bits[4]._inversed,
          cmdOn:=od.do_1.bits[10], cmdOff:=od.do_1.bits[11],
          StrSw:= IM.v2_Avom  );
          
 (*  В3 АВОМ вентилятор охлаждения *)
-fb_v3_Avom(statOn := di.di_5.bits[5], statOff := di.di_5.bits[5]._inversed,
+fb_v3_Avom(statOn := di.di_5.bits[5].value, statOff := di.di_5.bits[5]._inversed,
          cmdOn:=od.do_1.bits[12], cmdOff:=od.do_1.bits[13],
          StrSw:= IM.v3_Avom  );
          
 (*  В4 АВОМ вентилятор охлаждения *)
-fb_v4_Avom(statOn := di.di_5.bits[6], statOff := di.di_5.bits[6]._inversed,
+fb_v4_Avom(statOn := di.di_5.bits[6].value, statOff := di.di_5.bits[6]._inversed,
          cmdOn:=od.do_1.bits[14], cmdOff:=od.do_1.bits[15],
          StrSw:= IM.v4_Avom  );
          
 (*  МВ масляный выключатель *)
-fb_mv(statOn := di.di_7.bits[0], statOff := di.di_20.bits[3],
-         basketRolledin:= di.di_7.bits[2]._inversed, basketRolledout:= di.di_7.bits[2],
+fb_mv(statOn := di.di_7.bits[0].value, statOff := di.di_20.bits[3].value,
+         basketRolledin:= di.di_7.bits[2], basketRolledout:= di.di_7.bits[2],
          cmdOn:=od.do_4.bits[6] , cmdOff:=od.do_4.bits[7],
          StrSw:= IM.mv  );
 
 (* Тен коллектора *)
-fb_TEN_kollectora(statOn := di.di_10.bits[1], statOff := di.di_10.bits[1]._inversed,
+fb_TEN_kollectora(statOn := di.di_10.bits[1].value, statOff := di.di_10.bits[1]._inversed,
          cmdOn:=od.do_2.bits[6], cmdOff:=od.do_2.bits[6],
          StrSw:= IM.TEN_kollectora  );
 
 (* Калорифер АВОМ *)
-fb_KaloriferAVOM(statOn := di.di_10.bits[2], statOff := di.di_10.bits[2]._inversed,
+fb_KaloriferAVOM(statOn := di.di_10.bits[2].value, statOff := di.di_10.bits[2]._inversed,
          cmdOn:=od.do_2.bits[0], cmdOff:=od.do_2.bits[1],
          StrSw:= IM.KaloriferAVOM  ); 
 
 (* ЦМН *)
-fb_CMN(statOn := di.di_10.bits[3], statOff := di.di_10.bits[3]._inversed,
+fb_CMN(statOn := di.di_10.bits[3].value, statOff := di.di_10.bits[3]._inversed,
          cmdOn:=od.do_2.bits[4], cmdOff:=od.do_2.bits[5],
          StrSw:= IM.CMN);
 
 (* Тен маслобака *)
-fb_TEN_MB(statOn := di.di_10.bits[0], statOff := di.di_10.bits[0]._inversed,
+fb_TEN_MB(statOn := di.di_10.bits[0].value, statOff := di.di_10.bits[0]._inversed,
          cmdOn:=od.do_2.bits[2], cmdOff:=od.do_2.bits[3],
          StrSw:= IM.TEN_MB);                         
 (*************************************************** singleSignals ********************************************)
@@ -435,8 +439,8 @@ fb_Rabota_EGPA(str_SO := IM.SingleOutputs.Rabota_EGPA, signal:=od.do_4.bits[2]);
 (* Взвод включения БЭАО по неисправности ПТС   *)
 fb_Neispr_EGPA(str_SO := IM.SingleOutputs.Neispr_EGPA, signal:=od.do_4.bits[0]);  
 
-(* Авария ЭГПА в КЦ   *)
-fb_Avary_EGPA(str_SO := IM.SingleOutputs.Avary_EGPA, signal:=od.do_4.bits[1);    
+(* Авария ЭГПА в КЦ   
+fb_Avary_EGPA(str_SO := IM.SingleOutputs.Avary_EGPA, signal:=od.do_4.bits[1);  *)  
 
 (* Сброс включения БЭАО по неисправности ПТС   *)
 fb_U_lamp_SHU(str_SO := IM.SingleOutputs.U_lamp_SHU, signal:=od.do_4.bits[3]);   

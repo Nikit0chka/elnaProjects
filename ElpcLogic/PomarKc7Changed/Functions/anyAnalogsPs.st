@@ -12,6 +12,10 @@ END_VAR
 
 
 
+
+
+
+
 anyAnalogsPs:=
 ai.Toporno_podshipnika_EDT_1.interval= statusAi.HW OR
 ai.Toporno_podshipnika_EDT_1.interval= statusAi.LW OR
