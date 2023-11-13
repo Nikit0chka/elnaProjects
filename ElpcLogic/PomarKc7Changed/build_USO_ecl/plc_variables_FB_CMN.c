@@ -187,8 +187,8 @@ int __variables_init_FB_CMN(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 22921 PROGRAM0.IM_PROC.FB_CMN.STATON
-    st = getVariable(22921);
+  { // 22846 PROGRAM0.IM_PROC.FB_CMN.STATON
+    st = getVariable(22846);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STATON", 30);
     st->size_data = sizeof(BOOL);
@@ -198,8 +198,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22922 PROGRAM0.IM_PROC.FB_CMN.STATOFF
-    st = getVariable(22922);
+  { // 22847 PROGRAM0.IM_PROC.FB_CMN.STATOFF
+    st = getVariable(22847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STATOFF", 31);
     st->size_data = sizeof(BOOL);
@@ -209,8 +209,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22923 PROGRAM0.IM_PROC.FB_CMN.STATON_RELIABILITY
-    st = getVariable(22923);
+  { // 22848 PROGRAM0.IM_PROC.FB_CMN.STATON_RELIABILITY
+    st = getVariable(22848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STATON_RELIABILITY", 42);
     st->size_data = sizeof(BOOL);
@@ -220,8 +220,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATON_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22924 PROGRAM0.IM_PROC.FB_CMN.STATOFF_RELIABILITY
-    st = getVariable(22924);
+  { // 22849 PROGRAM0.IM_PROC.FB_CMN.STATOFF_RELIABILITY
+    st = getVariable(22849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STATOFF_RELIABILITY", 43);
     st->size_data = sizeof(BOOL);
@@ -231,8 +231,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->STATOFF_RELIABILITY;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22925 PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND
-    st = getVariable(22925);
+  { // 22850 PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND
+    st = getVariable(22850);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND", 39);
     st->size_data = sizeof(WORD);
@@ -243,8 +243,8 @@ int __variables_init_FB_CMN(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 22926 PROGRAM0.IM_PROC.FB_CMN.STRSW.STATUS
-    st = getVariable(22926);
+  { // 22851 PROGRAM0.IM_PROC.FB_CMN.STRSW.STATUS
+    st = getVariable(22851);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.STATUS", 36);
     st->size_data = sizeof(DWORD);
@@ -255,8 +255,8 @@ int __variables_init_FB_CMN(){
     p_DWORD = (DWORD*)&p_STRUCT_SWITCH->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 22927 PROGRAM0.IM_PROC.FB_CMN.STRSW.ONSTATUS
-    st = getVariable(22927);
+  { // 22852 PROGRAM0.IM_PROC.FB_CMN.STRSW.ONSTATUS
+    st = getVariable(22852);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ONSTATUS", 38);
     st->size_data = sizeof(BYTE);
@@ -267,8 +267,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_STRUCT_SWITCH->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 22928 PROGRAM0.IM_PROC.FB_CMN.STRSW.INOPCCOMMANDSDISABLED
-    st = getVariable(22928);
+  { // 22853 PROGRAM0.IM_PROC.FB_CMN.STRSW.INOPCCOMMANDSDISABLED
+    st = getVariable(22853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.INOPCCOMMANDSDISABLED", 51);
     st->size_data = sizeof(BOOL);
@@ -279,8 +279,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 22929 PROGRAM0.IM_PROC.FB_CMN.STRSW.SDVIG
-    st = getVariable(22929);
+  { // 22854 PROGRAM0.IM_PROC.FB_CMN.STRSW.SDVIG
+    st = getVariable(22854);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.SDVIG", 35);
     st->size_data = sizeof(BOOL);
@@ -291,8 +291,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 22930 PROGRAM0.IM_PROC.FB_CMN.STRSW.NS
-    st = getVariable(22930);
+  { // 22855 PROGRAM0.IM_PROC.FB_CMN.STRSW.NS
+    st = getVariable(22855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.NS", 32);
     st->size_data = sizeof(BOOL);
@@ -303,8 +303,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->NS;
     st->value_p = p_BOOL;
   }
-  { // 22931 PROGRAM0.IM_PROC.FB_CMN.STRSW.COMMANDFAULT
-    st = getVariable(22931);
+  { // 22856 PROGRAM0.IM_PROC.FB_CMN.STRSW.COMMANDFAULT
+    st = getVariable(22856);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.COMMANDFAULT", 42);
     st->size_data = sizeof(BOOL);
@@ -315,8 +315,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 22932 PROGRAM0.IM_PROC.FB_CMN.STRSW.ACCIDENT
-    st = getVariable(22932);
+  { // 22857 PROGRAM0.IM_PROC.FB_CMN.STRSW.ACCIDENT
+    st = getVariable(22857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ACCIDENT", 38);
     st->size_data = sizeof(BOOL);
@@ -327,8 +327,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 22933 PROGRAM0.IM_PROC.FB_CMN.STRSW.AUTO
-    st = getVariable(22933);
+  { // 22858 PROGRAM0.IM_PROC.FB_CMN.STRSW.AUTO
+    st = getVariable(22858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.AUTO", 34);
     st->size_data = sizeof(BOOL);
@@ -339,8 +339,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 22934 PROGRAM0.IM_PROC.FB_CMN.STRSW.MANUAL
-    st = getVariable(22934);
+  { // 22859 PROGRAM0.IM_PROC.FB_CMN.STRSW.MANUAL
+    st = getVariable(22859);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.MANUAL", 36);
     st->size_data = sizeof(BOOL);
@@ -351,8 +351,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 22935 PROGRAM0.IM_PROC.FB_CMN.STRSW.LOCAL
-    st = getVariable(22935);
+  { // 22860 PROGRAM0.IM_PROC.FB_CMN.STRSW.LOCAL
+    st = getVariable(22860);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.LOCAL", 35);
     st->size_data = sizeof(BOOL);
@@ -363,8 +363,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 22936 PROGRAM0.IM_PROC.FB_CMN.STRSW.DISTANCE
-    st = getVariable(22936);
+  { // 22861 PROGRAM0.IM_PROC.FB_CMN.STRSW.DISTANCE
+    st = getVariable(22861);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.DISTANCE", 38);
     st->size_data = sizeof(BOOL);
@@ -375,8 +375,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 22937 PROGRAM0.IM_PROC.FB_CMN.STRSW.ERRORPOWEROFF
-    st = getVariable(22937);
+  { // 22862 PROGRAM0.IM_PROC.FB_CMN.STRSW.ERRORPOWEROFF
+    st = getVariable(22862);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ERRORPOWEROFF", 43);
     st->size_data = sizeof(BOOL);
@@ -387,8 +387,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 22938 PROGRAM0.IM_PROC.FB_CMN.STRSW.ERRORBLOCK
-    st = getVariable(22938);
+  { // 22863 PROGRAM0.IM_PROC.FB_CMN.STRSW.ERRORBLOCK
+    st = getVariable(22863);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ERRORBLOCK", 40);
     st->size_data = sizeof(BOOL);
@@ -399,8 +399,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 22939 PROGRAM0.IM_PROC.FB_CMN.STRSW.BREAKCMDON
-    st = getVariable(22939);
+  { // 22864 PROGRAM0.IM_PROC.FB_CMN.STRSW.BREAKCMDON
+    st = getVariable(22864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.BREAKCMDON", 40);
     st->size_data = sizeof(BOOL);
@@ -411,8 +411,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 22940 PROGRAM0.IM_PROC.FB_CMN.STRSW.BREAKCMDOFF
-    st = getVariable(22940);
+  { // 22865 PROGRAM0.IM_PROC.FB_CMN.STRSW.BREAKCMDOFF
+    st = getVariable(22865);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.BREAKCMDOFF", 41);
     st->size_data = sizeof(BOOL);
@@ -423,8 +423,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->BREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22941 PROGRAM0.IM_PROC.FB_CMN.STRSW.OPCCOMMANDSDISABLED
-    st = getVariable(22941);
+  { // 22866 PROGRAM0.IM_PROC.FB_CMN.STRSW.OPCCOMMANDSDISABLED
+    st = getVariable(22866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.OPCCOMMANDSDISABLED", 49);
     st->size_data = sizeof(BOOL);
@@ -435,8 +435,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 22942 PROGRAM0.IM_PROC.FB_CMN.STRSW.LASTCMDISON
-    st = getVariable(22942);
+  { // 22867 PROGRAM0.IM_PROC.FB_CMN.STRSW.LASTCMDISON
+    st = getVariable(22867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.LASTCMDISON", 41);
     st->size_data = sizeof(BOOL);
@@ -447,8 +447,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 22943 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_STATON
-    st = getVariable(22943);
+  { // 22868 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_STATON
+    st = getVariable(22868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_STATON", 47);
     st->size_data = sizeof(BOOL);
@@ -459,8 +459,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 22944 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_STATOFF
-    st = getVariable(22944);
+  { // 22869 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_STATOFF
+    st = getVariable(22869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_STATOFF", 48);
     st->size_data = sizeof(BOOL);
@@ -471,8 +471,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 22945 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_CMDON
-    st = getVariable(22945);
+  { // 22870 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_CMDON
+    st = getVariable(22870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_CMDON", 46);
     st->size_data = sizeof(BOOL);
@@ -483,8 +483,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 22946 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_CMDOFF
-    st = getVariable(22946);
+  { // 22871 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_CMDOFF
+    st = getVariable(22871);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_CMDOFF", 47);
     st->size_data = sizeof(BOOL);
@@ -495,8 +495,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22947 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_INBREAKCMDON
-    st = getVariable(22947);
+  { // 22872 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_INBREAKCMDON
+    st = getVariable(22872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_INBREAKCMDON", 53);
     st->size_data = sizeof(BOOL);
@@ -507,8 +507,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDON;
     st->value_p = p_BOOL;
   }
-  { // 22948 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_INBREAKCMDOFF
-    st = getVariable(22948);
+  { // 22873 PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_INBREAKCMDOFF
+    st = getVariable(22873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.ISVALIDREF_INBREAKCMDOFF", 54);
     st->size_data = sizeof(BOOL);
@@ -519,8 +519,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->ISVALIDREF_INBREAKCMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22949 PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND_ALG
-    st = getVariable(22949);
+  { // 22874 PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND_ALG
+    st = getVariable(22874);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND_ALG", 43);
     st->size_data = sizeof(WORD);
@@ -531,8 +531,8 @@ int __variables_init_FB_CMN(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 22950 PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND_ARM
-    st = getVariable(22950);
+  { // 22875 PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND_ARM
+    st = getVariable(22875);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.INCOMMAND_ARM", 43);
     st->size_data = sizeof(WORD);
@@ -543,8 +543,8 @@ int __variables_init_FB_CMN(){
     p_WORD = (WORD*)&p_STRUCT_SWITCH->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 22951 PROGRAM0.IM_PROC.FB_CMN.STRSW.CMDON
-    st = getVariable(22951);
+  { // 22876 PROGRAM0.IM_PROC.FB_CMN.STRSW.CMDON
+    st = getVariable(22876);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.CMDON", 35);
     st->size_data = sizeof(BOOL);
@@ -555,8 +555,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 22952 PROGRAM0.IM_PROC.FB_CMN.STRSW.CMDOFF
-    st = getVariable(22952);
+  { // 22877 PROGRAM0.IM_PROC.FB_CMN.STRSW.CMDOFF
+    st = getVariable(22877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.CMDOFF", 36);
     st->size_data = sizeof(BOOL);
@@ -567,8 +567,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 22953 PROGRAM0.IM_PROC.FB_CMN.STRSW.RELIABILITY
-    st = getVariable(22953);
+  { // 22878 PROGRAM0.IM_PROC.FB_CMN.STRSW.RELIABILITY
+    st = getVariable(22878);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.STRSW.RELIABILITY", 41);
     st->size_data = sizeof(BOOL);
@@ -579,8 +579,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_STRUCT_SWITCH->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22954 PROGRAM0.IM_PROC.FB_CMN.INNS.VALUE
-    st = getVariable(22954);
+  { // 22879 PROGRAM0.IM_PROC.FB_CMN.INNS.VALUE
+    st = getVariable(22879);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INNS.VALUE", 34);
     st->size_data = sizeof(BOOL);
@@ -591,8 +591,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22955 PROGRAM0.IM_PROC.FB_CMN.INNS.RELIABILITY
-    st = getVariable(22955);
+  { // 22880 PROGRAM0.IM_PROC.FB_CMN.INNS.RELIABILITY
+    st = getVariable(22880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INNS.RELIABILITY", 40);
     st->size_data = sizeof(BOOL);
@@ -603,8 +603,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22956 PROGRAM0.IM_PROC.FB_CMN.INNS._INVERSED
-    st = getVariable(22956);
+  { // 22881 PROGRAM0.IM_PROC.FB_CMN.INNS._INVERSED
+    st = getVariable(22881);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INNS._INVERSED", 38);
     st->size_data = sizeof(BOOL);
@@ -615,8 +615,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22957 PROGRAM0.IM_PROC.FB_CMN.INACCIDENT.VALUE
-    st = getVariable(22957);
+  { // 22882 PROGRAM0.IM_PROC.FB_CMN.INACCIDENT.VALUE
+    st = getVariable(22882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INACCIDENT.VALUE", 40);
     st->size_data = sizeof(BOOL);
@@ -627,8 +627,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22958 PROGRAM0.IM_PROC.FB_CMN.INACCIDENT.RELIABILITY
-    st = getVariable(22958);
+  { // 22883 PROGRAM0.IM_PROC.FB_CMN.INACCIDENT.RELIABILITY
+    st = getVariable(22883);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INACCIDENT.RELIABILITY", 46);
     st->size_data = sizeof(BOOL);
@@ -639,8 +639,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22959 PROGRAM0.IM_PROC.FB_CMN.INACCIDENT._INVERSED
-    st = getVariable(22959);
+  { // 22884 PROGRAM0.IM_PROC.FB_CMN.INACCIDENT._INVERSED
+    st = getVariable(22884);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INACCIDENT._INVERSED", 44);
     st->size_data = sizeof(BOOL);
@@ -651,8 +651,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22960 PROGRAM0.IM_PROC.FB_CMN.INAUTO.VALUE
-    st = getVariable(22960);
+  { // 22885 PROGRAM0.IM_PROC.FB_CMN.INAUTO.VALUE
+    st = getVariable(22885);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INAUTO.VALUE", 36);
     st->size_data = sizeof(BOOL);
@@ -663,8 +663,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22961 PROGRAM0.IM_PROC.FB_CMN.INAUTO.RELIABILITY
-    st = getVariable(22961);
+  { // 22886 PROGRAM0.IM_PROC.FB_CMN.INAUTO.RELIABILITY
+    st = getVariable(22886);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INAUTO.RELIABILITY", 42);
     st->size_data = sizeof(BOOL);
@@ -675,8 +675,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22962 PROGRAM0.IM_PROC.FB_CMN.INAUTO._INVERSED
-    st = getVariable(22962);
+  { // 22887 PROGRAM0.IM_PROC.FB_CMN.INAUTO._INVERSED
+    st = getVariable(22887);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INAUTO._INVERSED", 40);
     st->size_data = sizeof(BOOL);
@@ -687,8 +687,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22963 PROGRAM0.IM_PROC.FB_CMN.INMANUAL.VALUE
-    st = getVariable(22963);
+  { // 22888 PROGRAM0.IM_PROC.FB_CMN.INMANUAL.VALUE
+    st = getVariable(22888);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INMANUAL.VALUE", 38);
     st->size_data = sizeof(BOOL);
@@ -699,8 +699,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22964 PROGRAM0.IM_PROC.FB_CMN.INMANUAL.RELIABILITY
-    st = getVariable(22964);
+  { // 22889 PROGRAM0.IM_PROC.FB_CMN.INMANUAL.RELIABILITY
+    st = getVariable(22889);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INMANUAL.RELIABILITY", 44);
     st->size_data = sizeof(BOOL);
@@ -711,8 +711,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22965 PROGRAM0.IM_PROC.FB_CMN.INMANUAL._INVERSED
-    st = getVariable(22965);
+  { // 22890 PROGRAM0.IM_PROC.FB_CMN.INMANUAL._INVERSED
+    st = getVariable(22890);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INMANUAL._INVERSED", 42);
     st->size_data = sizeof(BOOL);
@@ -723,8 +723,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22966 PROGRAM0.IM_PROC.FB_CMN.INLOCAL.VALUE
-    st = getVariable(22966);
+  { // 22891 PROGRAM0.IM_PROC.FB_CMN.INLOCAL.VALUE
+    st = getVariable(22891);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INLOCAL.VALUE", 37);
     st->size_data = sizeof(BOOL);
@@ -735,8 +735,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22967 PROGRAM0.IM_PROC.FB_CMN.INLOCAL.RELIABILITY
-    st = getVariable(22967);
+  { // 22892 PROGRAM0.IM_PROC.FB_CMN.INLOCAL.RELIABILITY
+    st = getVariable(22892);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INLOCAL.RELIABILITY", 43);
     st->size_data = sizeof(BOOL);
@@ -747,8 +747,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22968 PROGRAM0.IM_PROC.FB_CMN.INLOCAL._INVERSED
-    st = getVariable(22968);
+  { // 22893 PROGRAM0.IM_PROC.FB_CMN.INLOCAL._INVERSED
+    st = getVariable(22893);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INLOCAL._INVERSED", 41);
     st->size_data = sizeof(BOOL);
@@ -759,8 +759,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22969 PROGRAM0.IM_PROC.FB_CMN.INDISTANCE.VALUE
-    st = getVariable(22969);
+  { // 22894 PROGRAM0.IM_PROC.FB_CMN.INDISTANCE.VALUE
+    st = getVariable(22894);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INDISTANCE.VALUE", 40);
     st->size_data = sizeof(BOOL);
@@ -771,8 +771,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22970 PROGRAM0.IM_PROC.FB_CMN.INDISTANCE.RELIABILITY
-    st = getVariable(22970);
+  { // 22895 PROGRAM0.IM_PROC.FB_CMN.INDISTANCE.RELIABILITY
+    st = getVariable(22895);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INDISTANCE.RELIABILITY", 46);
     st->size_data = sizeof(BOOL);
@@ -783,8 +783,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22971 PROGRAM0.IM_PROC.FB_CMN.INDISTANCE._INVERSED
-    st = getVariable(22971);
+  { // 22896 PROGRAM0.IM_PROC.FB_CMN.INDISTANCE._INVERSED
+    st = getVariable(22896);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INDISTANCE._INVERSED", 44);
     st->size_data = sizeof(BOOL);
@@ -795,8 +795,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22972 PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF.VALUE
-    st = getVariable(22972);
+  { // 22897 PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF.VALUE
+    st = getVariable(22897);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF.VALUE", 45);
     st->size_data = sizeof(BOOL);
@@ -807,8 +807,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22973 PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF.RELIABILITY
-    st = getVariable(22973);
+  { // 22898 PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF.RELIABILITY
+    st = getVariable(22898);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -819,8 +819,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22974 PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF._INVERSED
-    st = getVariable(22974);
+  { // 22899 PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF._INVERSED
+    st = getVariable(22899);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INERRORPOWEROFF._INVERSED", 49);
     st->size_data = sizeof(BOOL);
@@ -831,8 +831,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22975 PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK.VALUE
-    st = getVariable(22975);
+  { // 22900 PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK.VALUE
+    st = getVariable(22900);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK.VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -843,8 +843,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22976 PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK.RELIABILITY
-    st = getVariable(22976);
+  { // 22901 PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK.RELIABILITY
+    st = getVariable(22901);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK.RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -855,8 +855,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22977 PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK._INVERSED
-    st = getVariable(22977);
+  { // 22902 PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK._INVERSED
+    st = getVariable(22902);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INERRORBLOCK._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -867,8 +867,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22978 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON.VALUE
-    st = getVariable(22978);
+  { // 22903 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON.VALUE
+    st = getVariable(22903);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON.VALUE", 42);
     st->size_data = sizeof(BOOL);
@@ -879,8 +879,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22979 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON.RELIABILITY
-    st = getVariable(22979);
+  { // 22904 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON.RELIABILITY
+    st = getVariable(22904);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON.RELIABILITY", 48);
     st->size_data = sizeof(BOOL);
@@ -891,8 +891,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22980 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON._INVERSED
-    st = getVariable(22980);
+  { // 22905 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON._INVERSED
+    st = getVariable(22905);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDON._INVERSED", 46);
     st->size_data = sizeof(BOOL);
@@ -903,8 +903,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22981 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF.VALUE
-    st = getVariable(22981);
+  { // 22906 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF.VALUE
+    st = getVariable(22906);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF.VALUE", 43);
     st->size_data = sizeof(BOOL);
@@ -915,8 +915,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 22982 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF.RELIABILITY
-    st = getVariable(22982);
+  { // 22907 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF.RELIABILITY
+    st = getVariable(22907);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF.RELIABILITY", 49);
     st->size_data = sizeof(BOOL);
@@ -927,8 +927,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 22983 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF._INVERSED
-    st = getVariable(22983);
+  { // 22908 PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF._INVERSED
+    st = getVariable(22908);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.INBREAKCMDOFF._INVERSED", 47);
     st->size_data = sizeof(BOOL);
@@ -939,8 +939,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 22984 PROGRAM0.IM_PROC.FB_CMN._STATON
-    st = getVariable(22984);
+  { // 22909 PROGRAM0.IM_PROC.FB_CMN._STATON
+    st = getVariable(22909);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATON", 31);
     st->size_data = sizeof(BOOL);
@@ -950,8 +950,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_STATON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22985 PROGRAM0.IM_PROC.FB_CMN._STATOFF
-    st = getVariable(22985);
+  { // 22910 PROGRAM0.IM_PROC.FB_CMN._STATOFF
+    st = getVariable(22910);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATOFF", 32);
     st->size_data = sizeof(BOOL);
@@ -961,8 +961,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_STATOFF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22986 PROGRAM0.IM_PROC.FB_CMN.LASTONSTATUS
-    st = getVariable(22986);
+  { // 22911 PROGRAM0.IM_PROC.FB_CMN.LASTONSTATUS
+    st = getVariable(22911);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.LASTONSTATUS", 36);
     st->size_data = sizeof(BYTE);
@@ -972,8 +972,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->LASTONSTATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22987 PROGRAM0.IM_PROC.FB_CMN.CMD
-    st = getVariable(22987);
+  { // 22912 PROGRAM0.IM_PROC.FB_CMN.CMD
+    st = getVariable(22912);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.CMD", 27);
     st->size_data = sizeof(BYTE);
@@ -983,8 +983,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22988 PROGRAM0.IM_PROC.FB_CMN.SOURCE
-    st = getVariable(22988);
+  { // 22913 PROGRAM0.IM_PROC.FB_CMN.SOURCE
+    st = getVariable(22913);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SOURCE", 30);
     st->size_data = sizeof(BYTE);
@@ -994,8 +994,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22989 PROGRAM0.IM_PROC.FB_CMN.LASTCMD
-    st = getVariable(22989);
+  { // 22914 PROGRAM0.IM_PROC.FB_CMN.LASTCMD
+    st = getVariable(22914);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.LASTCMD", 31);
     st->size_data = sizeof(BYTE);
@@ -1005,8 +1005,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22990 PROGRAM0.IM_PROC.FB_CMN.SOURCE_FOR_STATUS
-    st = getVariable(22990);
+  { // 22915 PROGRAM0.IM_PROC.FB_CMN.SOURCE_FOR_STATUS
+    st = getVariable(22915);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SOURCE_FOR_STATUS", 41);
     st->size_data = sizeof(BYTE);
@@ -1016,8 +1016,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22991 PROGRAM0.IM_PROC.FB_CMN.CMD_FOR_STATUS
-    st = getVariable(22991);
+  { // 22916 PROGRAM0.IM_PROC.FB_CMN.CMD_FOR_STATUS
+    st = getVariable(22916);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.CMD_FOR_STATUS", 38);
     st->size_data = sizeof(BYTE);
@@ -1027,8 +1027,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22992 PROGRAM0.IM_PROC.FB_CMN.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(22992);
+  { // 22917 PROGRAM0.IM_PROC.FB_CMN.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(22917);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.COMMAND_ERROR_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -1038,8 +1038,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_FB_SWITCH->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 22997 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(22997);
+  { // 22922 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(22922);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_NOTDEFINED", 58);
     st->size_data = sizeof(BYTE);
@@ -1050,8 +1050,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 22998 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(22998);
+  { // 22923 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(22923);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_ON", 50);
     st->size_data = sizeof(BYTE);
@@ -1062,8 +1062,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 22999 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(22999);
+  { // 22924 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(22924);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_OFF", 51);
     st->size_data = sizeof(BYTE);
@@ -1074,8 +1074,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 23000 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(23000);
+  { // 22925 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(22925);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_TRANSITIONAL", 60);
     st->size_data = sizeof(BYTE);
@@ -1086,8 +1086,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 23001 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(23001);
+  { // 22926 PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(22926);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._STATUSDUALINPUT.STATUS_ERROR", 53);
     st->size_data = sizeof(BYTE);
@@ -1098,8 +1098,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 23002 PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_ON
-    st = getVariable(23002);
+  { // 22927 PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_ON
+    st = getVariable(22927);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_ON", 48);
     st->size_data = sizeof(BYTE);
@@ -1110,8 +1110,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_ON;
     st->value_p = p_BYTE;
   }
-  { // 23003 PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_OFF
-    st = getVariable(23003);
+  { // 22928 PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_OFF
+    st = getVariable(22928);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_OFF", 49);
     st->size_data = sizeof(BYTE);
@@ -1122,8 +1122,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_OFF;
     st->value_p = p_BYTE;
   }
-  { // 23004 PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_RESET
-    st = getVariable(23004);
+  { // 22929 PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_RESET
+    st = getVariable(22929);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._COMMANDDUALINPUT.CMD_RESET", 51);
     st->size_data = sizeof(BYTE);
@@ -1134,8 +1134,8 @@ int __variables_init_FB_CMN(){
     p_BYTE = (BYTE*)&p_TYPE_COMMANDDUALINPUT->CMD_RESET;
     st->value_p = p_BYTE;
   }
-  { // 23005 PROGRAM0.IM_PROC.FB_CMN._COMMANDERRORTIMER
-    st = getVariable(23005);
+  { // 22930 PROGRAM0.IM_PROC.FB_CMN._COMMANDERRORTIMER
+    st = getVariable(22930);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._COMMANDERRORTIMER", 42);
     st->size_data = sizeof(BOOL);
@@ -1145,8 +1145,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_COMMANDERRORTIMER;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23006 PROGRAM0.IM_PROC.FB_CMN.RESETERRORTIMER
-    st = getVariable(23006);
+  { // 22931 PROGRAM0.IM_PROC.FB_CMN.RESETERRORTIMER
+    st = getVariable(22931);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.RESETERRORTIMER", 39);
     st->size_data = sizeof(BOOL);
@@ -1156,8 +1156,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->RESETERRORTIMER;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23007 PROGRAM0.IM_PROC.FB_CMN.GETSDVIG
-    st = getVariable(23007);
+  { // 22932 PROGRAM0.IM_PROC.FB_CMN.GETSDVIG
+    st = getVariable(22932);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.GETSDVIG", 32);
     st->size_data = sizeof(BOOL);
@@ -1167,8 +1167,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->GETSDVIG;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23008 PROGRAM0.IM_PROC.FB_CMN._CHANGWITHOUTCOMMAND
-    st = getVariable(23008);
+  { // 22933 PROGRAM0.IM_PROC.FB_CMN._CHANGWITHOUTCOMMAND
+    st = getVariable(22933);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._CHANGWITHOUTCOMMAND", 44);
     st->size_data = sizeof(BOOL);
@@ -1178,8 +1178,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->_CHANGWITHOUTCOMMAND;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23009 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.IN
-    st = getVariable(23009);
+  { // 22934 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.IN
+    st = getVariable(22934);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.IN", 40);
     st->size_data = sizeof(BOOL);
@@ -1190,8 +1190,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23010 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.PT
-    st = getVariable(23010);
+  { // 22935 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.PT
+    st = getVariable(22935);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.PT", 40);
     st->size_data = sizeof(TIME);
@@ -1202,8 +1202,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23011 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.Q
-    st = getVariable(23011);
+  { // 22936 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.Q
+    st = getVariable(22936);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.Q", 39);
     st->size_data = sizeof(BOOL);
@@ -1214,8 +1214,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23012 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.ET
-    st = getVariable(23012);
+  { // 22937 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.ET
+    st = getVariable(22937);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER.ET", 40);
     st->size_data = sizeof(TIME);
@@ -1226,8 +1226,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23013 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER
-    st = getVariable(23013);
+  { // 22938 PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER
+    st = getVariable(22938);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.ERRORCMDTIMER", 37);
     st->size_data = sizeof(TON);
@@ -1237,8 +1237,8 @@ int __variables_init_FB_CMN(){
     p_TON = (TON*)&p_FB_SWITCH->ERRORCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 23014 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.IN
-    st = getVariable(23014);
+  { // 22939 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.IN
+    st = getVariable(22939);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.IN", 37);
     st->size_data = sizeof(BOOL);
@@ -1249,8 +1249,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23015 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.PT
-    st = getVariable(23015);
+  { // 22940 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.PT
+    st = getVariable(22940);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.PT", 37);
     st->size_data = sizeof(TIME);
@@ -1261,8 +1261,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23016 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.Q
-    st = getVariable(23016);
+  { // 22941 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.Q
+    st = getVariable(22941);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.Q", 36);
     st->size_data = sizeof(BOOL);
@@ -1273,8 +1273,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23017 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.ET
-    st = getVariable(23017);
+  { // 22942 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.ET
+    st = getVariable(22942);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET.ET", 37);
     st->size_data = sizeof(TIME);
@@ -1285,8 +1285,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23018 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET
-    st = getVariable(23018);
+  { // 22943 PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET
+    st = getVariable(22943);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.SDVIGRESET", 34);
     st->size_data = sizeof(TON);
@@ -1296,8 +1296,8 @@ int __variables_init_FB_CMN(){
     p_TON = (TON*)&p_FB_SWITCH->SDVIGRESET;
     st->value_p = (void *)p_TON;
   }
-  { // 23019 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.IN
-    st = getVariable(23019);
+  { // 22944 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.IN
+    st = getVariable(22944);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.IN", 38);
     st->size_data = sizeof(BOOL);
@@ -1308,8 +1308,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 23020 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.PT
-    st = getVariable(23020);
+  { // 22945 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.PT
+    st = getVariable(22945);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.PT", 38);
     st->size_data = sizeof(TIME);
@@ -1320,8 +1320,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 23021 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.Q
-    st = getVariable(23021);
+  { // 22946 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.Q
+    st = getVariable(22946);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.Q", 37);
     st->size_data = sizeof(BOOL);
@@ -1332,8 +1332,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 23022 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.ET
-    st = getVariable(23022);
+  { // 22947 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.ET
+    st = getVariable(22947);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._ERRORRESET.ET", 38);
     st->size_data = sizeof(TIME);
@@ -1344,8 +1344,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 23023 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET
-    st = getVariable(23023);
+  { // 22948 PROGRAM0.IM_PROC.FB_CMN._ERRORRESET
+    st = getVariable(22948);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN._ERRORRESET", 35);
     st->size_data = sizeof(TON);
@@ -1355,8 +1355,8 @@ int __variables_init_FB_CMN(){
     p_TON = (TON*)&p_FB_SWITCH->_ERRORRESET;
     st->value_p = (void *)p_TON;
   }
-  { // 23024 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.IN
-    st = getVariable(23024);
+  { // 22949 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.IN
+    st = getVariable(22949);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.IN", 38);
     st->size_data = sizeof(BOOL);
@@ -1367,8 +1367,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 23025 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.PT
-    st = getVariable(23025);
+  { // 22950 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.PT
+    st = getVariable(22950);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.PT", 38);
     st->size_data = sizeof(TIME);
@@ -1379,8 +1379,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 23026 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.Q
-    st = getVariable(23026);
+  { // 22951 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.Q
+    st = getVariable(22951);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.Q", 37);
     st->size_data = sizeof(BOOL);
@@ -1391,8 +1391,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 23027 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.ET
-    st = getVariable(23027);
+  { // 22952 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.ET
+    st = getVariable(22952);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS.ET", 38);
     st->size_data = sizeof(TIME);
@@ -1403,8 +1403,8 @@ int __variables_init_FB_CMN(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 23028 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS
-    st = getVariable(23028);
+  { // 22953 PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS
+    st = getVariable(22953);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.OUTPUTSSETS", 35);
     st->size_data = sizeof(TOF);
@@ -1414,8 +1414,8 @@ int __variables_init_FB_CMN(){
     p_TOF = (TOF*)&p_FB_SWITCH->OUTPUTSSETS;
     st->value_p = (void *)p_TOF;
   }
-  { // 23029 PROGRAM0.IM_PROC.FB_CMN.CMDON
-    st = getVariable(23029);
+  { // 22954 PROGRAM0.IM_PROC.FB_CMN.CMDON
+    st = getVariable(22954);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.CMDON", 29);
     st->size_data = sizeof(BOOL);
@@ -1425,8 +1425,8 @@ int __variables_init_FB_CMN(){
     p_BOOL = (BOOL*)&p_FB_SWITCH->CMDON;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 23030 PROGRAM0.IM_PROC.FB_CMN.CMDOFF
-    st = getVariable(23030);
+  { // 22955 PROGRAM0.IM_PROC.FB_CMN.CMDOFF
+    st = getVariable(22955);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_CMN.CMDOFF", 30);
     st->size_data = sizeof(BOOL);

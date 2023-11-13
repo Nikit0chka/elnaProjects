@@ -187,8 +187,8 @@ int __variables_init_STAP_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 19835 PROGRAM0.IM_STRUCTS_INI.STAP_INI.DATA_INI
-    st = getVariable(19835);
+  { // 19760 PROGRAM0.IM_STRUCTS_INI.STAP_INI.DATA_INI
+    st = getVariable(19760);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -198,8 +198,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19836 PROGRAM0.IM_STRUCTS_INI.STAP_INI.CURRENTVALUE
-    st = getVariable(19836);
+  { // 19761 PROGRAM0.IM_STRUCTS_INI.STAP_INI.CURRENTVALUE
+    st = getVariable(19761);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.CURRENTVALUE", 45);
     st->size_data = sizeof(LREAL);
@@ -209,8 +209,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_FB_ANALOGPARAMETR_INIT->CURRENTVALUE;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19837 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MINVAL
-    st = getVariable(19837);
+  { // 19762 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MINVAL
+    st = getVariable(19762);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.MINVAL", 39);
     st->size_data = sizeof(LREAL);
@@ -220,8 +220,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_FB_ANALOGPARAMETR_INIT->MINVAL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19838 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXVAL
-    st = getVariable(19838);
+  { // 19763 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXVAL
+    st = getVariable(19763);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXVAL", 39);
     st->size_data = sizeof(LREAL);
@@ -231,8 +231,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_FB_ANALOGPARAMETR_INIT->MAXVAL;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19839 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXSTEP
-    st = getVariable(19839);
+  { // 19764 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXSTEP
+    st = getVariable(19764);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXSTEP", 40);
     st->size_data = sizeof(LREAL);
@@ -242,8 +242,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_FB_ANALOGPARAMETR_INIT->MAXSTEP;
     UnpackVar(p_LREAL, LREAL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19840 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MINVAL_ISVALIDREF
-    st = getVariable(19840);
+  { // 19765 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MINVAL_ISVALIDREF
+    st = getVariable(19765);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.MINVAL_ISVALIDREF", 50);
     st->size_data = sizeof(BOOL);
@@ -253,8 +253,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR_INIT->MINVAL_ISVALIDREF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19841 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXVAL_ISVALIDREF
-    st = getVariable(19841);
+  { // 19766 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXVAL_ISVALIDREF
+    st = getVariable(19766);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXVAL_ISVALIDREF", 50);
     st->size_data = sizeof(BOOL);
@@ -264,8 +264,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR_INIT->MAXVAL_ISVALIDREF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19842 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXSTEP_ISVALIDREF
-    st = getVariable(19842);
+  { // 19767 PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXSTEP_ISVALIDREF
+    st = getVariable(19767);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.MAXSTEP_ISVALIDREF", 51);
     st->size_data = sizeof(BOOL);
@@ -275,8 +275,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_FB_ANALOGPARAMETR_INIT->MAXSTEP_ISVALIDREF;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19843 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND
-    st = getVariable(19843);
+  { // 19768 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND
+    st = getVariable(19768);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND", 48);
     st->size_data = sizeof(WORD);
@@ -287,8 +287,8 @@ int __variables_init_STAP_INI(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 19844 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND_ALG
-    st = getVariable(19844);
+  { // 19769 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND_ALG
+    st = getVariable(19769);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND_ALG", 52);
     st->size_data = sizeof(WORD);
@@ -299,8 +299,8 @@ int __variables_init_STAP_INI(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 19845 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND_ARM
-    st = getVariable(19845);
+  { // 19770 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND_ARM
+    st = getVariable(19770);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INCOMMAND_ARM", 52);
     st->size_data = sizeof(WORD);
@@ -311,8 +311,8 @@ int __variables_init_STAP_INI(){
     p_WORD = (WORD*)&p_STRUCT_ANALOGPARAMETR->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 19846 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.STATUS
-    st = getVariable(19846);
+  { // 19771 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.STATUS
+    st = getVariable(19771);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.STATUS", 45);
     st->size_data = sizeof(DWORD);
@@ -323,8 +323,8 @@ int __variables_init_STAP_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_ANALOGPARAMETR->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 19847 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.NEWVALUE
-    st = getVariable(19847);
+  { // 19772 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.NEWVALUE
+    st = getVariable(19772);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.NEWVALUE", 47);
     st->size_data = sizeof(LREAL);
@@ -335,8 +335,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->NEWVALUE;
     st->value_p = p_LREAL;
   }
-  { // 19848 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.CURRENTVALUE
-    st = getVariable(19848);
+  { // 19773 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.CURRENTVALUE
+    st = getVariable(19773);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.CURRENTVALUE", 51);
     st->size_data = sizeof(LREAL);
@@ -347,8 +347,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->CURRENTVALUE;
     st->value_p = p_LREAL;
   }
-  { // 19849 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MINVAL
-    st = getVariable(19849);
+  { // 19774 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MINVAL
+    st = getVariable(19774);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MINVAL", 45);
     st->size_data = sizeof(LREAL);
@@ -359,8 +359,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MINVAL;
     st->value_p = p_LREAL;
   }
-  { // 19850 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXVAL
-    st = getVariable(19850);
+  { // 19775 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXVAL
+    st = getVariable(19775);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXVAL", 45);
     st->size_data = sizeof(LREAL);
@@ -371,8 +371,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL;
     st->value_p = p_LREAL;
   }
-  { // 19851 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXSTEP
-    st = getVariable(19851);
+  { // 19776 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXSTEP
+    st = getVariable(19776);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXSTEP", 46);
     st->size_data = sizeof(LREAL);
@@ -383,8 +383,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP;
     st->value_p = p_LREAL;
   }
-  { // 19852 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MINVAL_ISVALIDREF
-    st = getVariable(19852);
+  { // 19777 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MINVAL_ISVALIDREF
+    st = getVariable(19777);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MINVAL_ISVALIDREF", 56);
     st->size_data = sizeof(BOOL);
@@ -395,8 +395,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MINVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 19853 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXVAL_ISVALIDREF
-    st = getVariable(19853);
+  { // 19778 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXVAL_ISVALIDREF
+    st = getVariable(19778);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXVAL_ISVALIDREF", 56);
     st->size_data = sizeof(BOOL);
@@ -407,8 +407,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXVAL_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 19854 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXSTEP_ISVALIDREF
-    st = getVariable(19854);
+  { // 19779 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXSTEP_ISVALIDREF
+    st = getVariable(19779);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.MAXSTEP_ISVALIDREF", 57);
     st->size_data = sizeof(BOOL);
@@ -419,8 +419,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->MAXSTEP_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 19855 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INOPCCOMMANDSDISABLED
-    st = getVariable(19855);
+  { // 19780 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INOPCCOMMANDSDISABLED
+    st = getVariable(19780);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.INOPCCOMMANDSDISABLED", 60);
     st->size_data = sizeof(BOOL);
@@ -431,8 +431,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 19856 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.VALUE
-    st = getVariable(19856);
+  { // 19781 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.VALUE
+    st = getVariable(19781);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.VALUE", 44);
     st->size_data = sizeof(LREAL);
@@ -443,8 +443,8 @@ int __variables_init_STAP_INI(){
     p_LREAL = (LREAL*)&p_STRUCT_ANALOGPARAMETR->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 19857 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.ISVALIDVALUE
-    st = getVariable(19857);
+  { // 19782 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.ISVALIDVALUE
+    st = getVariable(19782);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.ISVALIDVALUE", 51);
     st->size_data = sizeof(BOOL);
@@ -455,8 +455,8 @@ int __variables_init_STAP_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_ANALOGPARAMETR->ISVALIDVALUE;
     st->value_p = p_BOOL;
   }
-  { // 19858 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.OPCCOMMANDSDISABLED
-    st = getVariable(19858);
+  { // 19783 PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.OPCCOMMANDSDISABLED
+    st = getVariable(19783);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STAP_INI.STRAP.OPCCOMMANDSDISABLED", 58);
     st->size_data = sizeof(BOOL);

@@ -24,6 +24,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 StrAlg.CanRun := StrAlg.inCanRun;
 StrAlg.hasError := StrAlg.inHasError OR (command_error_for_Status <> 0);
 StrAlg.isEnded := StrAlg.inEnded;

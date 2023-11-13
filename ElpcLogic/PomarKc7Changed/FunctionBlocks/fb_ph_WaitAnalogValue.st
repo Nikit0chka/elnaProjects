@@ -31,6 +31,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 IF StrPh.run AND NOT StrPh.start THEN
 	StrPh.start := TRUE;
 	StrPh.top := FALSE;

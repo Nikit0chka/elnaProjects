@@ -29,6 +29,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 str_SO.OpcCommandsDisabled := str_SO.inOpcCommandsDisabled;
 
 (* ---- Если управление с ВУ заблокировано, то передаем команду из алгоритма ---- *)

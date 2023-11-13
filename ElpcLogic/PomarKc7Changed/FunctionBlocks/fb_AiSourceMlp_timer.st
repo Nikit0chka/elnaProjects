@@ -64,6 +64,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 strAI.opcCommandsDisabled := strAI.inopcCommandsDisabled ;
 
 (* ---- При первом пуске принимаем значение уставок ---- *)

@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
  ai.Pmasla_posle_GNS.Disabled_LA:=TRUE;
  ai.Pmasla_posle_GNS.Disabled_LW:=TRUE;
  ai.Pmasla_posle_NU.Disabled_LW:=TRUE;

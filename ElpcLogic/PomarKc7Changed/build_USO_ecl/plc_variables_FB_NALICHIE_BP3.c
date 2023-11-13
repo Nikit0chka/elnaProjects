@@ -187,8 +187,8 @@ int __variables_init_FB_NALICHIE_BP3(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26520 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL.VALUE
-    st = getVariable(26520);
+  { // 26445 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL.VALUE
+    st = getVariable(26445);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL.VALUE", 45);
     st->size_data = sizeof(BOOL);
@@ -199,8 +199,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26521 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL.RELIABILITY
-    st = getVariable(26521);
+  { // 26446 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL.RELIABILITY
+    st = getVariable(26446);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -211,8 +211,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26522 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL._INVERSED
-    st = getVariable(26522);
+  { // 26447 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL._INVERSED
+    st = getVariable(26447);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.SIGNAL._INVERSED", 49);
     st->size_data = sizeof(BOOL);
@@ -223,8 +223,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26523 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.RELIABILITY
-    st = getVariable(26523);
+  { // 26448 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.RELIABILITY
+    st = getVariable(26448);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -235,8 +235,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26524 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.INVERSE
-    st = getVariable(26524);
+  { // 26449 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.INVERSE
+    st = getVariable(26449);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.INVERSE", 47);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26525 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DELAYON
-    st = getVariable(26525);
+  { // 26450 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DELAYON
+    st = getVariable(26450);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DELAYON", 47);
     st->size_data = sizeof(TIME);
@@ -259,8 +259,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26526 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DELAYOFF
-    st = getVariable(26526);
+  { // 26451 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DELAYOFF
+    st = getVariable(26451);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DELAYOFF", 48);
     st->size_data = sizeof(TIME);
@@ -271,8 +271,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26527 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.Q
-    st = getVariable(26527);
+  { // 26452 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.Q
+    st = getVariable(26452);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -283,8 +283,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26528 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.STATUS
-    st = getVariable(26528);
+  { // 26453 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.STATUS
+    st = getVariable(26453);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -295,8 +295,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26529 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DISABLED_SIG
-    st = getVariable(26529);
+  { // 26454 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DISABLED_SIG
+    st = getVariable(26454);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.STR_SS.DISABLED_SIG", 52);
     st->size_data = sizeof(BOOL);
@@ -307,8 +307,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26530 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.IN
-    st = getVariable(26530);
+  { // 26455 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.IN
+    st = getVariable(26455);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.IN", 43);
     st->size_data = sizeof(BOOL);
@@ -319,8 +319,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26531 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.PT
-    st = getVariable(26531);
+  { // 26456 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.PT
+    st = getVariable(26456);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.PT", 43);
     st->size_data = sizeof(TIME);
@@ -331,8 +331,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26532 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.Q
-    st = getVariable(26532);
+  { // 26457 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.Q
+    st = getVariable(26457);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -343,8 +343,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26533 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.ET
-    st = getVariable(26533);
+  { // 26458 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.ET
+    st = getVariable(26458);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON.ET", 43);
     st->size_data = sizeof(TIME);
@@ -355,8 +355,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26534 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON
-    st = getVariable(26534);
+  { // 26459 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON
+    st = getVariable(26459);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMERON", 40);
     st->size_data = sizeof(TON);
@@ -366,8 +366,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26535 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.IN
-    st = getVariable(26535);
+  { // 26460 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.IN
+    st = getVariable(26460);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -378,8 +378,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26536 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.PT
-    st = getVariable(26536);
+  { // 26461 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.PT
+    st = getVariable(26461);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.PT", 44);
     st->size_data = sizeof(TIME);
@@ -390,8 +390,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26537 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.Q
-    st = getVariable(26537);
+  { // 26462 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.Q
+    st = getVariable(26462);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -402,8 +402,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26538 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.ET
-    st = getVariable(26538);
+  { // 26463 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.ET
+    st = getVariable(26463);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF.ET", 44);
     st->size_data = sizeof(TIME);
@@ -414,8 +414,8 @@ int __variables_init_FB_NALICHIE_BP3(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26539 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF
-    st = getVariable(26539);
+  { // 26464 PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF
+    st = getVariable(26464);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NALICHIE_BP3.TIMEROFF", 41);
     st->size_data = sizeof(TOF);

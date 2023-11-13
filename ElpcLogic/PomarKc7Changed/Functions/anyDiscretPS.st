@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 anyDiscretPS:= TRUE;
     (*Im.SingleSignals.BEAO_srabotal.Q                     OR 
     Im.SingleSignals.Vozb_ProboiVentila.Q	 OR

@@ -187,8 +187,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 28779 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND
-    st = getVariable(28779);
+  { // 28704 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND
+    st = getVariable(28704);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND", 53);
     st->size_data = sizeof(WORD);
@@ -199,8 +199,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 28780 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.STATUS
-    st = getVariable(28780);
+  { // 28705 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.STATUS
+    st = getVariable(28705);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -211,8 +211,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 28781 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ONSTATUS
-    st = getVariable(28781);
+  { // 28706 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ONSTATUS
+    st = getVariable(28706);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ONSTATUS", 52);
     st->size_data = sizeof(BYTE);
@@ -223,8 +223,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 28782 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INOPCCOMMANDSDISABLED
-    st = getVariable(28782);
+  { // 28707 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INOPCCOMMANDSDISABLED
+    st = getVariable(28707);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INOPCCOMMANDSDISABLED", 65);
     st->size_data = sizeof(BOOL);
@@ -235,8 +235,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 28783 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SDVIG
-    st = getVariable(28783);
+  { // 28708 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SDVIG
+    st = getVariable(28708);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SDVIG", 49);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 28784 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.NS
-    st = getVariable(28784);
+  { // 28709 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.NS
+    st = getVariable(28709);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.NS", 46);
     st->size_data = sizeof(BOOL);
@@ -259,8 +259,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 28785 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.DP
-    st = getVariable(28785);
+  { // 28710 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.DP
+    st = getVariable(28710);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.DP", 46);
     st->size_data = sizeof(BOOL);
@@ -271,8 +271,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 28786 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.COMMANDFAULT
-    st = getVariable(28786);
+  { // 28711 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.COMMANDFAULT
+    st = getVariable(28711);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.COMMANDFAULT", 56);
     st->size_data = sizeof(BOOL);
@@ -283,8 +283,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 28787 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ACCIDENT
-    st = getVariable(28787);
+  { // 28712 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ACCIDENT
+    st = getVariable(28712);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ACCIDENT", 52);
     st->size_data = sizeof(BOOL);
@@ -295,8 +295,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 28788 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.AUTO
-    st = getVariable(28788);
+  { // 28713 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.AUTO
+    st = getVariable(28713);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.AUTO", 48);
     st->size_data = sizeof(BOOL);
@@ -307,8 +307,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 28789 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.MANUAL
-    st = getVariable(28789);
+  { // 28714 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.MANUAL
+    st = getVariable(28714);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.MANUAL", 50);
     st->size_data = sizeof(BOOL);
@@ -319,8 +319,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 28790 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.LOCAL
-    st = getVariable(28790);
+  { // 28715 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.LOCAL
+    st = getVariable(28715);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.LOCAL", 49);
     st->size_data = sizeof(BOOL);
@@ -331,8 +331,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 28791 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.DISTANCE
-    st = getVariable(28791);
+  { // 28716 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.DISTANCE
+    st = getVariable(28716);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.DISTANCE", 52);
     st->size_data = sizeof(BOOL);
@@ -343,8 +343,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 28792 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ERRORPOWEROFF
-    st = getVariable(28792);
+  { // 28717 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ERRORPOWEROFF
+    st = getVariable(28717);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ERRORPOWEROFF", 57);
     st->size_data = sizeof(BOOL);
@@ -355,8 +355,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 28793 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ERRORBLOCK
-    st = getVariable(28793);
+  { // 28718 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ERRORBLOCK
+    st = getVariable(28718);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ERRORBLOCK", 54);
     st->size_data = sizeof(BOOL);
@@ -367,8 +367,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 28794 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SO
-    st = getVariable(28794);
+  { // 28719 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SO
+    st = getVariable(28719);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SO", 46);
     st->size_data = sizeof(BOOL);
@@ -379,8 +379,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 28795 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SZ
-    st = getVariable(28795);
+  { // 28720 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SZ
+    st = getVariable(28720);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.SZ", 46);
     st->size_data = sizeof(BOOL);
@@ -391,8 +391,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 28796 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.OPCCOMMANDSDISABLED
-    st = getVariable(28796);
+  { // 28721 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.OPCCOMMANDSDISABLED
+    st = getVariable(28721);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.OPCCOMMANDSDISABLED", 63);
     st->size_data = sizeof(BOOL);
@@ -403,8 +403,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 28797 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.LASTCMDISON
-    st = getVariable(28797);
+  { // 28722 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.LASTCMDISON
+    st = getVariable(28722);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.LASTCMDISON", 55);
     st->size_data = sizeof(BOOL);
@@ -415,8 +415,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 28798 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_STATON
-    st = getVariable(28798);
+  { // 28723 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_STATON
+    st = getVariable(28723);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_STATON", 61);
     st->size_data = sizeof(BOOL);
@@ -427,8 +427,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 28799 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_STATOFF
-    st = getVariable(28799);
+  { // 28724 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_STATOFF
+    st = getVariable(28724);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_STATOFF", 62);
     st->size_data = sizeof(BOOL);
@@ -439,8 +439,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 28800 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_CMDON
-    st = getVariable(28800);
+  { // 28725 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_CMDON
+    st = getVariable(28725);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_CMDON", 60);
     st->size_data = sizeof(BOOL);
@@ -451,8 +451,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 28801 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_CMDOFF
-    st = getVariable(28801);
+  { // 28726 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_CMDOFF
+    st = getVariable(28726);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_CMDOFF", 61);
     st->size_data = sizeof(BOOL);
@@ -463,8 +463,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 28802 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INSO
-    st = getVariable(28802);
+  { // 28727 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INSO
+    st = getVariable(28727);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INSO", 59);
     st->size_data = sizeof(BOOL);
@@ -475,8 +475,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 28803 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INSZ
-    st = getVariable(28803);
+  { // 28728 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INSZ
+    st = getVariable(28728);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INSZ", 59);
     st->size_data = sizeof(BOOL);
@@ -487,8 +487,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 28804 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INDP
-    st = getVariable(28804);
+  { // 28729 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INDP
+    st = getVariable(28729);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.ISVALIDREF_INDP", 59);
     st->size_data = sizeof(BOOL);
@@ -499,8 +499,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 28805 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CONTINUEHOLDCOMMAND
-    st = getVariable(28805);
+  { // 28730 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CONTINUEHOLDCOMMAND
+    st = getVariable(28730);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CONTINUEHOLDCOMMAND", 63);
     st->size_data = sizeof(TIME);
@@ -511,8 +511,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 28806 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND_ALG
-    st = getVariable(28806);
+  { // 28731 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND_ALG
+    st = getVariable(28731);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND_ALG", 57);
     st->size_data = sizeof(WORD);
@@ -523,8 +523,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 28807 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND_ARM
-    st = getVariable(28807);
+  { // 28732 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND_ARM
+    st = getVariable(28732);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.INCOMMAND_ARM", 57);
     st->size_data = sizeof(WORD);
@@ -535,8 +535,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 28808 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CMDON
-    st = getVariable(28808);
+  { // 28733 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CMDON
+    st = getVariable(28733);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CMDON", 49);
     st->size_data = sizeof(BOOL);
@@ -547,8 +547,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 28809 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CMDOFF
-    st = getVariable(28809);
+  { // 28734 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CMDOFF
+    st = getVariable(28734);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.CMDOFF", 50);
     st->size_data = sizeof(BOOL);
@@ -559,8 +559,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 28810 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.RELIABILITY
-    st = getVariable(28810);
+  { // 28735 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.RELIABILITY
+    st = getVariable(28735);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.IM.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -571,8 +571,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 28811 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.DELAY
-    st = getVariable(28811);
+  { // 28736 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.DELAY
+    st = getVariable(28736);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.DELAY", 53);
     st->size_data = sizeof(TIME);
@@ -583,8 +583,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_STRUCT_DIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 28812 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INTAG
-    st = getVariable(28812);
+  { // 28737 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INTAG
+    st = getVariable(28737);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INTAG", 53);
     st->size_data = sizeof(BYTE);
@@ -595,8 +595,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 28813 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INRUNONSTART
-    st = getVariable(28813);
+  { // 28738 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INRUNONSTART
+    st = getVariable(28738);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INRUNONSTART", 60);
     st->size_data = sizeof(BOOL);
@@ -607,8 +607,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 28814 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCANRUN
-    st = getVariable(28814);
+  { // 28739 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCANRUN
+    st = getVariable(28739);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCANRUN", 56);
     st->size_data = sizeof(BOOL);
@@ -619,8 +619,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 28815 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INOPCCOMMANDSDISABLED
-    st = getVariable(28815);
+  { // 28740 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INOPCCOMMANDSDISABLED
+    st = getVariable(28740);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INOPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -631,8 +631,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 28816 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND
-    st = getVariable(28816);
+  { // 28741 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND
+    st = getVariable(28741);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND", 57);
     st->size_data = sizeof(WORD);
@@ -643,8 +643,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 28817 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND_ALG
-    st = getVariable(28817);
+  { // 28742 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND_ALG
+    st = getVariable(28742);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND_ALG", 61);
     st->size_data = sizeof(WORD);
@@ -655,8 +655,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 28818 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND_ARM
-    st = getVariable(28818);
+  { // 28743 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND_ARM
+    st = getVariable(28743);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.INCOMMAND_ARM", 61);
     st->size_data = sizeof(WORD);
@@ -667,8 +667,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_WORD = (WORD*)&p_STRUCT_DIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 28819 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.TAG
-    st = getVariable(28819);
+  { // 28744 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.TAG
+    st = getVariable(28744);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.TAG", 51);
     st->size_data = sizeof(BYTE);
@@ -679,8 +679,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_STRUCT_DIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 28820 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.STATUS
-    st = getVariable(28820);
+  { // 28745 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.STATUS
+    st = getVariable(28745);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.STATUS", 54);
     st->size_data = sizeof(DWORD);
@@ -691,8 +691,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_DWORD = (DWORD*)&p_STRUCT_DIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 28821 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.CANRUN
-    st = getVariable(28821);
+  { // 28746 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.CANRUN
+    st = getVariable(28746);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.CANRUN", 54);
     st->size_data = sizeof(BOOL);
@@ -703,8 +703,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 28822 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.OPCCOMMANDSDISABLED
-    st = getVariable(28822);
+  { // 28747 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.OPCCOMMANDSDISABLED
+    st = getVariable(28747);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.OPCCOMMANDSDISABLED", 67);
     st->size_data = sizeof(BOOL);
@@ -715,8 +715,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 28823 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.ISRUNNING
-    st = getVariable(28823);
+  { // 28748 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.ISRUNNING
+    st = getVariable(28748);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.ISRUNNING", 57);
     st->size_data = sizeof(BOOL);
@@ -727,8 +727,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 28824 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.HASERROR
-    st = getVariable(28824);
+  { // 28749 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.HASERROR
+    st = getVariable(28749);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.HASERROR", 56);
     st->size_data = sizeof(BOOL);
@@ -739,8 +739,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 28825 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.ISENDED
-    st = getVariable(28825);
+  { // 28750 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.ISENDED
+    st = getVariable(28750);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.ISENDED", 55);
     st->size_data = sizeof(BOOL);
@@ -751,8 +751,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 28826 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.REMONT
-    st = getVariable(28826);
+  { // 28751 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.REMONT
+    st = getVariable(28751);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.REMONT", 54);
     st->size_data = sizeof(BOOL);
@@ -763,8 +763,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 28827 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.CHECK
-    st = getVariable(28827);
+  { // 28752 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.CHECK
+    st = getVariable(28752);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.CHECK", 53);
     st->size_data = sizeof(BOOL);
@@ -775,8 +775,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 28828 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.SIGNALING
-    st = getVariable(28828);
+  { // 28753 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.SIGNALING
+    st = getVariable(28753);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.SIGNALING", 57);
     st->size_data = sizeof(BOOL);
@@ -787,8 +787,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 28829 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.SIGNALINGTP
-    st = getVariable(28829);
+  { // 28754 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.SIGNALINGTP
+    st = getVariable(28754);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.SIGNALINGTP", 59);
     st->size_data = sizeof(BOOL);
@@ -799,8 +799,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 28830 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.RUNONSTART
-    st = getVariable(28830);
+  { // 28755 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.RUNONSTART
+    st = getVariable(28755);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STRDIP.RUNONSTART", 58);
     st->size_data = sizeof(BOOL);
@@ -811,8 +811,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_STRUCT_DIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 28835 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(28835);
+  { // 28760 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(28760);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_NOTDEFINED", 74);
     st->size_data = sizeof(BYTE);
@@ -823,8 +823,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 28836 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_ON
-    st = getVariable(28836);
+  { // 28761 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_ON
+    st = getVariable(28761);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_ON", 66);
     st->size_data = sizeof(BYTE);
@@ -835,8 +835,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 28837 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(28837);
+  { // 28762 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(28762);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_OFF", 67);
     st->size_data = sizeof(BYTE);
@@ -847,8 +847,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 28838 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(28838);
+  { // 28763 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(28763);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_TRANSITIONAL", 76);
     st->size_data = sizeof(BYTE);
@@ -859,8 +859,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 28839 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(28839);
+  { // 28764 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(28764);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.STATUSDUALINPUT.STATUS_ERROR", 69);
     st->size_data = sizeof(BYTE);
@@ -871,8 +871,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 28840 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.NOTHING
-    st = getVariable(28840);
+  { // 28765 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.NOTHING
+    st = getVariable(28765);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.NOTHING", 64);
     st->size_data = sizeof(BYTE);
@@ -883,8 +883,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->NOTHING;
     st->value_p = p_BYTE;
   }
-  { // 28841 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOB
-    st = getVariable(28841);
+  { // 28766 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOB
+    st = getVariable(28766);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOB", 60);
     st->size_data = sizeof(BYTE);
@@ -895,8 +895,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOB;
     st->value_p = p_BYTE;
   }
-  { // 28842 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOS
-    st = getVariable(28842);
+  { // 28767 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOS
+    st = getVariable(28767);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOS", 60);
     st->size_data = sizeof(BYTE);
@@ -907,8 +907,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOS;
     st->value_p = p_BYTE;
   }
-  { // 28843 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOPOJ
-    st = getVariable(28843);
+  { // 28768 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOPOJ
+    st = getVariable(28768);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._PROTECTIONTAGS.AOPOJ", 62);
     st->size_data = sizeof(BYTE);
@@ -919,8 +919,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_TYPE_PROTECTIONTAGS->AOPOJ;
     st->value_p = p_BYTE;
   }
-  { // 28844 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.IN
-    st = getVariable(28844);
+  { // 28769 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.IN
+    st = getVariable(28769);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.IN", 56);
     st->size_data = sizeof(BOOL);
@@ -931,8 +931,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 28845 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.PT
-    st = getVariable(28845);
+  { // 28770 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.PT
+    st = getVariable(28770);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.PT", 56);
     st->size_data = sizeof(TIME);
@@ -943,8 +943,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 28846 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.Q
-    st = getVariable(28846);
+  { // 28771 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.Q
+    st = getVariable(28771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.Q", 55);
     st->size_data = sizeof(BOOL);
@@ -955,8 +955,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 28847 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.ET
-    st = getVariable(28847);
+  { // 28772 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.ET
+    st = getVariable(28772);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP.ET", 56);
     st->size_data = sizeof(TIME);
@@ -967,8 +967,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 28848 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP
-    st = getVariable(28848);
+  { // 28773 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP
+    st = getVariable(28773);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG._SIGNALINGTP", 53);
     st->size_data = sizeof(TOF);
@@ -978,8 +978,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TOF = (TOF*)&p_FB_KRANOPENPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 28849 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.IN
-    st = getVariable(28849);
+  { // 28774 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.IN
+    st = getVariable(28774);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.IN", 49);
     st->size_data = sizeof(BOOL);
@@ -990,8 +990,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 28850 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.PT
-    st = getVariable(28850);
+  { // 28775 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.PT
+    st = getVariable(28775);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.PT", 49);
     st->size_data = sizeof(TIME);
@@ -1002,8 +1002,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 28851 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.Q
-    st = getVariable(28851);
+  { // 28776 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.Q
+    st = getVariable(28776);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.Q", 48);
     st->size_data = sizeof(BOOL);
@@ -1014,8 +1014,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 28852 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.ET
-    st = getVariable(28852);
+  { // 28777 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.ET
+    st = getVariable(28777);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER.ET", 49);
     st->size_data = sizeof(TIME);
@@ -1026,8 +1026,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 28853 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER
-    st = getVariable(28853);
+  { // 28778 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER
+    st = getVariable(28778);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.TIMER", 46);
     st->size_data = sizeof(TON);
@@ -1037,8 +1037,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TON = (TON*)&p_FB_KRANOPENPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 28854 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG.CLK
-    st = getVariable(28854);
+  { // 28779 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG.CLK
+    st = getVariable(28779);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG.CLK", 58);
     st->size_data = sizeof(BOOL);
@@ -1049,8 +1049,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 28855 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG.Q
-    st = getVariable(28855);
+  { // 28780 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG.Q
+    st = getVariable(28780);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1061,8 +1061,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 28856 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG
-    st = getVariable(28856);
+  { // 28781 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG
+    st = getVariable(28781);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGTRIG", 54);
     st->size_data = sizeof(R_TRIG);
@@ -1072,8 +1072,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_R_TRIG = (R_TRIG*)&p_FB_KRANOPENPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 28857 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG.CLK
-    st = getVariable(28857);
+  { // 28782 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG.CLK
+    st = getVariable(28782);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG.CLK", 59);
     st->size_data = sizeof(BOOL);
@@ -1084,8 +1084,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 28858 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG.Q
-    st = getVariable(28858);
+  { // 28783 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG.Q
+    st = getVariable(28783);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG.Q", 57);
     st->size_data = sizeof(BOOL);
@@ -1096,8 +1096,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 28859 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG
-    st = getVariable(28859);
+  { // 28784 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG
+    st = getVariable(28784);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGFTRIG", 55);
     st->size_data = sizeof(F_TRIG);
@@ -1107,8 +1107,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_F_TRIG = (F_TRIG*)&p_FB_KRANOPENPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 28860 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGDI
-    st = getVariable(28860);
+  { // 28785 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGDI
+    st = getVariable(28785);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINGDI", 52);
     st->size_data = sizeof(BOOL);
@@ -1118,8 +1118,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_FB_KRANOPENPROTECTION->SIGNALINGDI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28861 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SOURCE
-    st = getVariable(28861);
+  { // 28786 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SOURCE
+    st = getVariable(28786);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SOURCE", 47);
     st->size_data = sizeof(BYTE);
@@ -1129,8 +1129,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_FB_KRANOPENPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28862 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.CMD
-    st = getVariable(28862);
+  { // 28787 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.CMD
+    st = getVariable(28787);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.CMD", 44);
     st->size_data = sizeof(BYTE);
@@ -1140,8 +1140,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_FB_KRANOPENPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28863 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.LASTCMD
-    st = getVariable(28863);
+  { // 28788 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.LASTCMD
+    st = getVariable(28788);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.LASTCMD", 48);
     st->size_data = sizeof(BYTE);
@@ -1151,8 +1151,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_FB_KRANOPENPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28864 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SOURCE_FOR_STATUS
-    st = getVariable(28864);
+  { // 28789 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SOURCE_FOR_STATUS
+    st = getVariable(28789);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SOURCE_FOR_STATUS", 58);
     st->size_data = sizeof(BYTE);
@@ -1162,8 +1162,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_FB_KRANOPENPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28865 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.CMD_FOR_STATUS
-    st = getVariable(28865);
+  { // 28790 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.CMD_FOR_STATUS
+    st = getVariable(28790);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.CMD_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -1173,8 +1173,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_FB_KRANOPENPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28866 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(28866);
+  { // 28791 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(28791);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.COMMAND_ERROR_FOR_STATUS", 65);
     st->size_data = sizeof(BYTE);
@@ -1184,8 +1184,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BYTE = (BYTE*)&p_FB_KRANOPENPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28867 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.IN
-    st = getVariable(28867);
+  { // 28792 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.IN
+    st = getVariable(28792);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -1196,8 +1196,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 28868 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.PT
-    st = getVariable(28868);
+  { // 28793 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.PT
+    st = getVariable(28793);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.PT", 57);
     st->size_data = sizeof(TIME);
@@ -1208,8 +1208,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 28869 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.Q
-    st = getVariable(28869);
+  { // 28794 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.Q
+    st = getVariable(28794);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1220,8 +1220,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 28870 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.ET
-    st = getVariable(28870);
+  { // 28795 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.ET
+    st = getVariable(28795);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER.ET", 57);
     st->size_data = sizeof(TIME);
@@ -1232,8 +1232,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 28871 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER
-    st = getVariable(28871);
+  { // 28796 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER
+    st = getVariable(28796);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMER", 54);
     st->size_data = sizeof(TON);
@@ -1243,8 +1243,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TON = (TON*)&p_FB_KRANOPENPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 28872 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMERPRIZNAK
-    st = getVariable(28872);
+  { // 28797 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMERPRIZNAK
+    st = getVariable(28797);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RESETCMDTIMERPRIZNAK", 61);
     st->size_data = sizeof(BOOL);
@@ -1254,8 +1254,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_FB_KRANOPENPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 28873 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.IN
-    st = getVariable(28873);
+  { // 28798 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.IN
+    st = getVariable(28798);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.IN", 57);
     st->size_data = sizeof(BOOL);
@@ -1266,8 +1266,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 28874 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.PT
-    st = getVariable(28874);
+  { // 28799 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.PT
+    st = getVariable(28799);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.PT", 57);
     st->size_data = sizeof(TIME);
@@ -1278,8 +1278,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 28875 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.Q
-    st = getVariable(28875);
+  { // 28800 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.Q
+    st = getVariable(28800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.Q", 56);
     st->size_data = sizeof(BOOL);
@@ -1290,8 +1290,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 28876 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.ET
-    st = getVariable(28876);
+  { // 28801 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.ET
+    st = getVariable(28801);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER.ET", 57);
     st->size_data = sizeof(TIME);
@@ -1302,8 +1302,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 28877 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER
-    st = getVariable(28877);
+  { // 28802 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER
+    st = getVariable(28802);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.SIGNALINTIMER", 54);
     st->size_data = sizeof(TON);
@@ -1313,8 +1313,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_TON = (TON*)&p_FB_KRANOPENPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 28878 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG.CLK
-    st = getVariable(28878);
+  { // 28803 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG.CLK
+    st = getVariable(28803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG.CLK", 60);
     st->size_data = sizeof(BOOL);
@@ -1325,8 +1325,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 28879 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG.Q
-    st = getVariable(28879);
+  { // 28804 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG.Q
+    st = getVariable(28804);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG.Q", 58);
     st->size_data = sizeof(BOOL);
@@ -1337,8 +1337,8 @@ int __variables_init_FB_KRAN1_SDVIG(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 28880 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG
-    st = getVariable(28880);
+  { // 28805 PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG
+    st = getVariable(28805);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_KRAN1_SDVIG.RUNONSTART_TRIG", 56);
     st->size_data = sizeof(R_TRIG);

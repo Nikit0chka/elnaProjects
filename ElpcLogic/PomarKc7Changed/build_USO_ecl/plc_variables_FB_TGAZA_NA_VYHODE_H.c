@@ -187,8 +187,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 30828 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.VALUE
-    st = getVariable(30828);
+  { // 30753 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.VALUE
+    st = getVariable(30753);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.VALUE", 55);
     st->size_data = sizeof(LREAL);
@@ -199,8 +199,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->VALUE;
     st->value_p = p_LREAL;
   }
-  { // 30829 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.STATUS
-    st = getVariable(30829);
+  { // 30754 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.STATUS
+    st = getVariable(30754);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.STATUS", 56);
     st->size_data = sizeof(DWORD);
@@ -211,8 +211,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_DWORD = (DWORD*)&p_STRUCT_AI->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 30830 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INTERVAL
-    st = getVariable(30830);
+  { // 30755 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INTERVAL
+    st = getVariable(30755);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INTERVAL", 58);
     st->size_data = sizeof(BYTE);
@@ -223,8 +223,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_STRUCT_AI->INTERVAL;
     st->value_p = p_BYTE;
   }
-  { // 30831 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND
-    st = getVariable(30831);
+  { // 30756 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND
+    st = getVariable(30756);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND", 59);
     st->size_data = sizeof(WORD);
@@ -235,8 +235,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 30832 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.BLCONNECT
-    st = getVariable(30832);
+  { // 30757 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.BLCONNECT
+    st = getVariable(30757);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.BLCONNECT", 59);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->BLCONNECT;
     st->value_p = p_BOOL;
   }
-  { // 30833 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLL
-    st = getVariable(30833);
+  { // 30758 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLL
+    st = getVariable(30758);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLL", 53);
     st->size_data = sizeof(LREAL);
@@ -259,8 +259,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLL;
     st->value_p = p_LREAL;
   }
-  { // 30834 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHL
-    st = getVariable(30834);
+  { // 30759 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHL
+    st = getVariable(30759);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHL", 53);
     st->size_data = sizeof(LREAL);
@@ -271,8 +271,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHL;
     st->value_p = p_LREAL;
   }
-  { // 30835 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLA
-    st = getVariable(30835);
+  { // 30760 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLA
+    st = getVariable(30760);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLA", 53);
     st->size_data = sizeof(LREAL);
@@ -283,8 +283,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLA;
     st->value_p = p_LREAL;
   }
-  { // 30836 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHA
-    st = getVariable(30836);
+  { // 30761 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHA
+    st = getVariable(30761);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHA", 53);
     st->size_data = sizeof(LREAL);
@@ -295,8 +295,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHA;
     st->value_p = p_LREAL;
   }
-  { // 30837 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLW
-    st = getVariable(30837);
+  { // 30762 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLW
+    st = getVariable(30762);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DLW", 53);
     st->size_data = sizeof(LREAL);
@@ -307,8 +307,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DLW;
     st->value_p = p_LREAL;
   }
-  { // 30838 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHW
-    st = getVariable(30838);
+  { // 30763 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHW
+    st = getVariable(30763);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DHW", 53);
     st->size_data = sizeof(LREAL);
@@ -319,8 +319,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DHW;
     st->value_p = p_LREAL;
   }
-  { // 30839 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LL
-    st = getVariable(30839);
+  { // 30764 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LL
+    st = getVariable(30764);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LL", 52);
     st->size_data = sizeof(LREAL);
@@ -331,8 +331,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LL;
     st->value_p = p_LREAL;
   }
-  { // 30840 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HL
-    st = getVariable(30840);
+  { // 30765 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HL
+    st = getVariable(30765);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HL", 52);
     st->size_data = sizeof(LREAL);
@@ -343,8 +343,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HL;
     st->value_p = p_LREAL;
   }
-  { // 30841 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LA
-    st = getVariable(30841);
+  { // 30766 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LA
+    st = getVariable(30766);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LA", 52);
     st->size_data = sizeof(LREAL);
@@ -355,8 +355,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LA;
     st->value_p = p_LREAL;
   }
-  { // 30842 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HA
-    st = getVariable(30842);
+  { // 30767 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HA
+    st = getVariable(30767);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HA", 52);
     st->size_data = sizeof(LREAL);
@@ -367,8 +367,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HA;
     st->value_p = p_LREAL;
   }
-  { // 30843 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LW
-    st = getVariable(30843);
+  { // 30768 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LW
+    st = getVariable(30768);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.LW", 52);
     st->size_data = sizeof(LREAL);
@@ -379,8 +379,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->LW;
     st->value_p = p_LREAL;
   }
-  { // 30844 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HW
-    st = getVariable(30844);
+  { // 30769 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HW
+    st = getVariable(30769);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HW", 52);
     st->size_data = sizeof(LREAL);
@@ -391,8 +391,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HW;
     st->value_p = p_LREAL;
   }
-  { // 30845 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_LA
-    st = getVariable(30845);
+  { // 30770 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_LA
+    st = getVariable(30770);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_LA", 63);
     st->size_data = sizeof(BOOL);
@@ -403,8 +403,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LA;
     st->value_p = p_BOOL;
   }
-  { // 30846 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_HA
-    st = getVariable(30846);
+  { // 30771 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_HA
+    st = getVariable(30771);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_HA", 63);
     st->size_data = sizeof(BOOL);
@@ -415,8 +415,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HA;
     st->value_p = p_BOOL;
   }
-  { // 30847 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_LW
-    st = getVariable(30847);
+  { // 30772 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_LW
+    st = getVariable(30772);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_LW", 63);
     st->size_data = sizeof(BOOL);
@@ -427,8 +427,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_LW;
     st->value_p = p_BOOL;
   }
-  { // 30848 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_HW
-    st = getVariable(30848);
+  { // 30773 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_HW
+    st = getVariable(30773);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.ISVALIDREF_HW", 63);
     st->size_data = sizeof(BOOL);
@@ -439,8 +439,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->ISVALIDREF_HW;
     st->value_p = p_BOOL;
   }
-  { // 30849 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INPLL
-    st = getVariable(30849);
+  { // 30774 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INPLL
+    st = getVariable(30774);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INPLL", 55);
     st->size_data = sizeof(LREAL);
@@ -451,8 +451,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPLL;
     st->value_p = p_LREAL;
   }
-  { // 30850 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INPHL
-    st = getVariable(30850);
+  { // 30775 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INPHL
+    st = getVariable(30775);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INPHL", 55);
     st->size_data = sizeof(LREAL);
@@ -463,8 +463,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->INPHL;
     st->value_p = p_LREAL;
   }
-  { // 30851 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CURRENTSHOTCIRCUIT
-    st = getVariable(30851);
+  { // 30776 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CURRENTSHOTCIRCUIT
+    st = getVariable(30776);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CURRENTSHOTCIRCUIT", 68);
     st->size_data = sizeof(LREAL);
@@ -475,8 +475,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTSHOTCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 30852 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CURRENTBREAKCIRCUIT
-    st = getVariable(30852);
+  { // 30777 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CURRENTBREAKCIRCUIT
+    st = getVariable(30777);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CURRENTBREAKCIRCUIT", 69);
     st->size_data = sizeof(LREAL);
@@ -487,8 +487,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CURRENTBREAKCIRCUIT;
     st->value_p = p_LREAL;
   }
-  { // 30853 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXCHANGESPEED
-    st = getVariable(30853);
+  { // 30778 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXCHANGESPEED
+    st = getVariable(30778);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXCHANGESPEED", 64);
     st->size_data = sizeof(LREAL);
@@ -499,8 +499,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 30854 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXCHANGESPEEDDOWN
-    st = getVariable(30854);
+  { // 30779 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXCHANGESPEEDDOWN
+    st = getVariable(30779);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXCHANGESPEEDDOWN", 68);
     st->size_data = sizeof(LREAL);
@@ -511,8 +511,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 30855 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CHANGESPEED
-    st = getVariable(30855);
+  { // 30780 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CHANGESPEED
+    st = getVariable(30780);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.CHANGESPEED", 61);
     st->size_data = sizeof(LREAL);
@@ -523,8 +523,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->CHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 30856 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HISTERESIS
-    st = getVariable(30856);
+  { // 30781 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HISTERESIS
+    st = getVariable(30781);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.HISTERESIS", 60);
     st->size_data = sizeof(LREAL);
@@ -535,8 +535,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->HISTERESIS;
     st->value_p = p_LREAL;
   }
-  { // 30857 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.APERTURFILTER
-    st = getVariable(30857);
+  { // 30782 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.APERTURFILTER
+    st = getVariable(30782);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.APERTURFILTER", 63);
     st->size_data = sizeof(LREAL);
@@ -547,8 +547,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->APERTURFILTER;
     st->value_p = p_LREAL;
   }
-  { // 30858 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.EXPONENTIALFILTER
-    st = getVariable(30858);
+  { // 30783 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.EXPONENTIALFILTER
+    st = getVariable(30783);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.EXPONENTIALFILTER", 67);
     st->size_data = sizeof(LREAL);
@@ -559,8 +559,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->EXPONENTIALFILTER;
     st->value_p = p_LREAL;
   }
-  { // 30859 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.RASSOGLASOVANIE
-    st = getVariable(30859);
+  { // 30784 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.RASSOGLASOVANIE
+    st = getVariable(30784);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.RASSOGLASOVANIE", 65);
     st->size_data = sizeof(LREAL);
@@ -571,8 +571,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->RASSOGLASOVANIE;
     st->value_p = p_LREAL;
   }
-  { // 30860 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.OPCCOMMANDSDISABLED
-    st = getVariable(30860);
+  { // 30785 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.OPCCOMMANDSDISABLED
+    st = getVariable(30785);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.OPCCOMMANDSDISABLED", 69);
     st->size_data = sizeof(BOOL);
@@ -583,8 +583,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 30861 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_LA
-    st = getVariable(30861);
+  { // 30786 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_LA
+    st = getVariable(30786);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_LA", 61);
     st->size_data = sizeof(BOOL);
@@ -595,8 +595,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LA;
     st->value_p = p_BOOL;
   }
-  { // 30862 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_HA
-    st = getVariable(30862);
+  { // 30787 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_HA
+    st = getVariable(30787);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_HA", 61);
     st->size_data = sizeof(BOOL);
@@ -607,8 +607,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HA;
     st->value_p = p_BOOL;
   }
-  { // 30863 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_LW
-    st = getVariable(30863);
+  { // 30788 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_LW
+    st = getVariable(30788);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_LW", 61);
     st->size_data = sizeof(BOOL);
@@ -619,8 +619,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_LW;
     st->value_p = p_BOOL;
   }
-  { // 30864 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_HW
-    st = getVariable(30864);
+  { // 30789 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_HW
+    st = getVariable(30789);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DISABLED_HW", 61);
     st->size_data = sizeof(BOOL);
@@ -631,8 +631,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->DISABLED_HW;
     st->value_p = p_BOOL;
   }
-  { // 30865 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYLA
-    st = getVariable(30865);
+  { // 30790 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYLA
+    st = getVariable(30790);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYLA", 57);
     st->size_data = sizeof(TIME);
@@ -643,8 +643,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLA;
     st->value_p = p_TIME;
   }
-  { // 30866 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYLW
-    st = getVariable(30866);
+  { // 30791 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYLW
+    st = getVariable(30791);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYLW", 57);
     st->size_data = sizeof(TIME);
@@ -655,8 +655,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYLW;
     st->value_p = p_TIME;
   }
-  { // 30867 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYHW
-    st = getVariable(30867);
+  { // 30792 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYHW
+    st = getVariable(30792);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYHW", 57);
     st->size_data = sizeof(TIME);
@@ -667,8 +667,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHW;
     st->value_p = p_TIME;
   }
-  { // 30868 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYHA
-    st = getVariable(30868);
+  { // 30793 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYHA
+    st = getVariable(30793);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DELAYHA", 57);
     st->size_data = sizeof(TIME);
@@ -679,8 +679,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_STRUCT_AI->DELAYHA;
     st->value_p = p_TIME;
   }
-  { // 30869 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MINVALUE_ISVALIDREF
-    st = getVariable(30869);
+  { // 30794 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MINVALUE_ISVALIDREF
+    st = getVariable(30794);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MINVALUE_ISVALIDREF", 69);
     st->size_data = sizeof(BOOL);
@@ -691,8 +691,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MINVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 30870 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXVALUE_ISVALIDREF
-    st = getVariable(30870);
+  { // 30795 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXVALUE_ISVALIDREF
+    st = getVariable(30795);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXVALUE_ISVALIDREF", 69);
     st->size_data = sizeof(BOOL);
@@ -703,8 +703,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->MAXVALUE_ISVALIDREF;
     st->value_p = p_BOOL;
   }
-  { // 30871 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MINVALUE
-    st = getVariable(30871);
+  { // 30796 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MINVALUE
+    st = getVariable(30796);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MINVALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -715,8 +715,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MINVALUE;
     st->value_p = p_LREAL;
   }
-  { // 30872 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXVALUE
-    st = getVariable(30872);
+  { // 30797 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXVALUE
+    st = getVariable(30797);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.MAXVALUE", 58);
     st->size_data = sizeof(LREAL);
@@ -727,8 +727,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->MAXVALUE;
     st->value_p = p_LREAL;
   }
-  { // 30873 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INOPCCOMMANDSDISABLED
-    st = getVariable(30873);
+  { // 30798 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INOPCCOMMANDSDISABLED
+    st = getVariable(30798);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INOPCCOMMANDSDISABLED", 71);
     st->size_data = sizeof(BOOL);
@@ -739,8 +739,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 30874 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.IMIT
-    st = getVariable(30874);
+  { // 30799 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.IMIT
+    st = getVariable(30799);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.IMIT", 54);
     st->size_data = sizeof(BOOL);
@@ -751,8 +751,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->IMIT;
     st->value_p = p_BOOL;
   }
-  { // 30875 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.REMONT
-    st = getVariable(30875);
+  { // 30800 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.REMONT
+    st = getVariable(30800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.REMONT", 56);
     st->size_data = sizeof(BOOL);
@@ -763,8 +763,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 30876 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS
-    st = getVariable(30876);
+  { // 30801 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS
+    st = getVariable(30801);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS", 52);
     st->size_data = sizeof(BOOL);
@@ -775,8 +775,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS;
     st->value_p = p_BOOL;
   }
-  { // 30877 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS_MIN
-    st = getVariable(30877);
+  { // 30802 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS_MIN
+    st = getVariable(30802);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS_MIN", 56);
     st->size_data = sizeof(BOOL);
@@ -787,8 +787,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MIN;
     st->value_p = p_BOOL;
   }
-  { // 30878 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS_MAX
-    st = getVariable(30878);
+  { // 30803 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS_MAX
+    st = getVariable(30803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.NS_MAX", 56);
     st->size_data = sizeof(BOOL);
@@ -799,8 +799,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AI->NS_MAX;
     st->value_p = p_BOOL;
   }
-  { // 30879 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND_ALG
-    st = getVariable(30879);
+  { // 30804 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND_ALG
+    st = getVariable(30804);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND_ALG", 63);
     st->size_data = sizeof(WORD);
@@ -811,8 +811,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 30880 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND_ARM
-    st = getVariable(30880);
+  { // 30805 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND_ARM
+    st = getVariable(30805);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.INCOMMAND_ARM", 63);
     st->size_data = sizeof(WORD);
@@ -823,8 +823,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_WORD = (WORD*)&p_STRUCT_AI->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 30881 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DMAXCHANGESPEED
-    st = getVariable(30881);
+  { // 30806 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DMAXCHANGESPEED
+    st = getVariable(30806);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DMAXCHANGESPEED", 65);
     st->size_data = sizeof(LREAL);
@@ -835,8 +835,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEED;
     st->value_p = p_LREAL;
   }
-  { // 30882 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DMAXCHANGESPEEDDOWN
-    st = getVariable(30882);
+  { // 30807 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DMAXCHANGESPEEDDOWN
+    st = getVariable(30807);
     memcpy(st->IEC_TYPE, "LREAL", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.AI.DMAXCHANGESPEEDDOWN", 69);
     st->size_data = sizeof(LREAL);
@@ -847,8 +847,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_LREAL = (LREAL*)&p_STRUCT_AI->DMAXCHANGESPEEDDOWN;
     st->value_p = p_LREAL;
   }
-  { // 30883 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CONTROLLIMIT
-    st = getVariable(30883);
+  { // 30808 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CONTROLLIMIT
+    st = getVariable(30808);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CONTROLLIMIT", 66);
     st->size_data = sizeof(BYTE);
@@ -859,8 +859,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->CONTROLLIMIT;
     st->value_p = p_BYTE;
   }
-  { // 30884 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.DELAY
-    st = getVariable(30884);
+  { // 30809 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.DELAY
+    st = getVariable(30809);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.DELAY", 59);
     st->size_data = sizeof(TIME);
@@ -871,8 +871,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_STRUCT_AIPROTECTION->DELAY;
     st->value_p = p_TIME;
   }
-  { // 30885 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INTAG
-    st = getVariable(30885);
+  { // 30810 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INTAG
+    st = getVariable(30810);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INTAG", 59);
     st->size_data = sizeof(BYTE);
@@ -883,8 +883,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->INTAG;
     st->value_p = p_BYTE;
   }
-  { // 30886 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INRUNONSTART
-    st = getVariable(30886);
+  { // 30811 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INRUNONSTART
+    st = getVariable(30811);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INRUNONSTART", 66);
     st->size_data = sizeof(BOOL);
@@ -895,8 +895,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INRUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 30887 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCANRUN
-    st = getVariable(30887);
+  { // 30812 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCANRUN
+    st = getVariable(30812);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCANRUN", 62);
     st->size_data = sizeof(BOOL);
@@ -907,8 +907,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INCANRUN;
     st->value_p = p_BOOL;
   }
-  { // 30888 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INOPCCOMMANDSDISABLED
-    st = getVariable(30888);
+  { // 30813 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INOPCCOMMANDSDISABLED
+    st = getVariable(30813);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INOPCCOMMANDSDISABLED", 75);
     st->size_data = sizeof(BOOL);
@@ -919,8 +919,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 30889 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND
-    st = getVariable(30889);
+  { // 30814 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND
+    st = getVariable(30814);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND", 63);
     st->size_data = sizeof(WORD);
@@ -931,8 +931,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 30890 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND_ALG
-    st = getVariable(30890);
+  { // 30815 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND_ALG
+    st = getVariable(30815);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND_ALG", 67);
     st->size_data = sizeof(WORD);
@@ -943,8 +943,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 30891 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND_ARM
-    st = getVariable(30891);
+  { // 30816 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND_ARM
+    st = getVariable(30816);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.INCOMMAND_ARM", 67);
     st->size_data = sizeof(WORD);
@@ -955,8 +955,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_WORD = (WORD*)&p_STRUCT_AIPROTECTION->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 30892 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.TAG
-    st = getVariable(30892);
+  { // 30817 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.TAG
+    st = getVariable(30817);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.TAG", 57);
     st->size_data = sizeof(BYTE);
@@ -967,8 +967,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_STRUCT_AIPROTECTION->TAG;
     st->value_p = p_BYTE;
   }
-  { // 30893 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.STATUS
-    st = getVariable(30893);
+  { // 30818 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.STATUS
+    st = getVariable(30818);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.STATUS", 60);
     st->size_data = sizeof(DWORD);
@@ -979,8 +979,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_DWORD = (DWORD*)&p_STRUCT_AIPROTECTION->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 30894 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CANRUN
-    st = getVariable(30894);
+  { // 30819 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CANRUN
+    st = getVariable(30819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CANRUN", 60);
     st->size_data = sizeof(BOOL);
@@ -991,8 +991,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CANRUN;
     st->value_p = p_BOOL;
   }
-  { // 30895 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.OPCCOMMANDSDISABLED
-    st = getVariable(30895);
+  { // 30820 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.OPCCOMMANDSDISABLED
+    st = getVariable(30820);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.OPCCOMMANDSDISABLED", 73);
     st->size_data = sizeof(BOOL);
@@ -1003,8 +1003,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 30896 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.ISRUNNING
-    st = getVariable(30896);
+  { // 30821 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.ISRUNNING
+    st = getVariable(30821);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.ISRUNNING", 63);
     st->size_data = sizeof(BOOL);
@@ -1015,8 +1015,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISRUNNING;
     st->value_p = p_BOOL;
   }
-  { // 30897 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.HASERROR
-    st = getVariable(30897);
+  { // 30822 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.HASERROR
+    st = getVariable(30822);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.HASERROR", 62);
     st->size_data = sizeof(BOOL);
@@ -1027,8 +1027,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->HASERROR;
     st->value_p = p_BOOL;
   }
-  { // 30898 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.ISENDED
-    st = getVariable(30898);
+  { // 30823 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.ISENDED
+    st = getVariable(30823);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.ISENDED", 61);
     st->size_data = sizeof(BOOL);
@@ -1039,8 +1039,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->ISENDED;
     st->value_p = p_BOOL;
   }
-  { // 30899 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.REMONT
-    st = getVariable(30899);
+  { // 30824 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.REMONT
+    st = getVariable(30824);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.REMONT", 60);
     st->size_data = sizeof(BOOL);
@@ -1051,8 +1051,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->REMONT;
     st->value_p = p_BOOL;
   }
-  { // 30900 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CHECK
-    st = getVariable(30900);
+  { // 30825 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CHECK
+    st = getVariable(30825);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.CHECK", 59);
     st->size_data = sizeof(BOOL);
@@ -1063,8 +1063,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->CHECK;
     st->value_p = p_BOOL;
   }
-  { // 30901 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.SIGNALING
-    st = getVariable(30901);
+  { // 30826 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.SIGNALING
+    st = getVariable(30826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.SIGNALING", 63);
     st->size_data = sizeof(BOOL);
@@ -1075,8 +1075,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALING;
     st->value_p = p_BOOL;
   }
-  { // 30902 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.SIGNALINGTP
-    st = getVariable(30902);
+  { // 30827 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.SIGNALINGTP
+    st = getVariable(30827);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.SIGNALINGTP", 65);
     st->size_data = sizeof(BOOL);
@@ -1087,8 +1087,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->SIGNALINGTP;
     st->value_p = p_BOOL;
   }
-  { // 30903 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.RUNONSTART
-    st = getVariable(30903);
+  { // 30828 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.RUNONSTART
+    st = getVariable(30828);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.STRAIP.RUNONSTART", 64);
     st->size_data = sizeof(BOOL);
@@ -1099,8 +1099,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_STRUCT_AIPROTECTION->RUNONSTART;
     st->value_p = p_BOOL;
   }
-  { // 30908 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.IN
-    st = getVariable(30908);
+  { // 30833 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.IN
+    st = getVariable(30833);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.IN", 62);
     st->size_data = sizeof(BOOL);
@@ -1111,8 +1111,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 30909 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.PT
-    st = getVariable(30909);
+  { // 30834 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.PT
+    st = getVariable(30834);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.PT", 62);
     st->size_data = sizeof(TIME);
@@ -1123,8 +1123,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 30910 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.Q
-    st = getVariable(30910);
+  { // 30835 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.Q
+    st = getVariable(30835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.Q", 61);
     st->size_data = sizeof(BOOL);
@@ -1135,8 +1135,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 30911 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.ET
-    st = getVariable(30911);
+  { // 30836 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.ET
+    st = getVariable(30836);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP.ET", 62);
     st->size_data = sizeof(TIME);
@@ -1147,8 +1147,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 30912 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP
-    st = getVariable(30912);
+  { // 30837 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP
+    st = getVariable(30837);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._SIGNALINGTP", 59);
     st->size_data = sizeof(TOF);
@@ -1158,8 +1158,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TOF = (TOF*)&p_FB_AIPROTECTION->_SIGNALINGTP;
     st->value_p = (void *)p_TOF;
   }
-  { // 30913 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NOTDEFINED
-    st = getVariable(30913);
+  { // 30838 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NOTDEFINED
+    st = getVariable(30838);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NOTDEFINED", 67);
     st->size_data = sizeof(BYTE);
@@ -1170,8 +1170,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 30914 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LL
-    st = getVariable(30914);
+  { // 30839 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LL
+    st = getVariable(30839);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LL", 59);
     st->size_data = sizeof(BYTE);
@@ -1182,8 +1182,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LL;
     st->value_p = p_BYTE;
   }
-  { // 30915 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HL
-    st = getVariable(30915);
+  { // 30840 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HL
+    st = getVariable(30840);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HL", 59);
     st->size_data = sizeof(BYTE);
@@ -1194,8 +1194,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HL;
     st->value_p = p_BYTE;
   }
-  { // 30916 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NOTRELIABLE
-    st = getVariable(30916);
+  { // 30841 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NOTRELIABLE
+    st = getVariable(30841);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NOTRELIABLE", 68);
     st->size_data = sizeof(BYTE);
@@ -1206,8 +1206,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NOTRELIABLE;
     st->value_p = p_BYTE;
   }
-  { // 30917 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NORMAL
-    st = getVariable(30917);
+  { // 30842 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NORMAL
+    st = getVariable(30842);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.NORMAL", 63);
     st->size_data = sizeof(BYTE);
@@ -1218,8 +1218,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->NORMAL;
     st->value_p = p_BYTE;
   }
-  { // 30918 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LW
-    st = getVariable(30918);
+  { // 30843 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LW
+    st = getVariable(30843);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LW", 59);
     st->size_data = sizeof(BYTE);
@@ -1230,8 +1230,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LW;
     st->value_p = p_BYTE;
   }
-  { // 30919 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HW
-    st = getVariable(30919);
+  { // 30844 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HW
+    st = getVariable(30844);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HW", 59);
     st->size_data = sizeof(BYTE);
@@ -1242,8 +1242,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HW;
     st->value_p = p_BYTE;
   }
-  { // 30920 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LA
-    st = getVariable(30920);
+  { // 30845 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LA
+    st = getVariable(30845);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.LA", 59);
     st->size_data = sizeof(BYTE);
@@ -1254,8 +1254,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->LA;
     st->value_p = p_BYTE;
   }
-  { // 30921 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HA
-    st = getVariable(30921);
+  { // 30846 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HA
+    st = getVariable(30846);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H._STATUSAI.HA", 59);
     st->size_data = sizeof(BYTE);
@@ -1266,8 +1266,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSAI->HA;
     st->value_p = p_BYTE;
   }
-  { // 30922 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SOURCE
-    st = getVariable(30922);
+  { // 30847 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SOURCE
+    st = getVariable(30847);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SOURCE", 53);
     st->size_data = sizeof(BYTE);
@@ -1277,8 +1277,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30923 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.CMD
-    st = getVariable(30923);
+  { // 30848 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.CMD
+    st = getVariable(30848);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.CMD", 50);
     st->size_data = sizeof(BYTE);
@@ -1288,8 +1288,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30924 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.LASTCMD
-    st = getVariable(30924);
+  { // 30849 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.LASTCMD
+    st = getVariable(30849);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.LASTCMD", 54);
     st->size_data = sizeof(BYTE);
@@ -1299,8 +1299,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30925 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SOURCE_FOR_STATUS
-    st = getVariable(30925);
+  { // 30850 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SOURCE_FOR_STATUS
+    st = getVariable(30850);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SOURCE_FOR_STATUS", 64);
     st->size_data = sizeof(BYTE);
@@ -1310,8 +1310,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30926 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.CMD_FOR_STATUS
-    st = getVariable(30926);
+  { // 30851 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.CMD_FOR_STATUS
+    st = getVariable(30851);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.CMD_FOR_STATUS", 61);
     st->size_data = sizeof(BYTE);
@@ -1321,8 +1321,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30927 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(30927);
+  { // 30852 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(30852);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.COMMAND_ERROR_FOR_STATUS", 71);
     st->size_data = sizeof(BYTE);
@@ -1332,8 +1332,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BYTE = (BYTE*)&p_FB_AIPROTECTION->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30928 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.IN
-    st = getVariable(30928);
+  { // 30853 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.IN
+    st = getVariable(30853);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.IN", 63);
     st->size_data = sizeof(BOOL);
@@ -1344,8 +1344,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 30929 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.PT
-    st = getVariable(30929);
+  { // 30854 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.PT
+    st = getVariable(30854);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.PT", 63);
     st->size_data = sizeof(TIME);
@@ -1356,8 +1356,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 30930 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.Q
-    st = getVariable(30930);
+  { // 30855 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.Q
+    st = getVariable(30855);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1368,8 +1368,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 30931 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.ET
-    st = getVariable(30931);
+  { // 30856 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.ET
+    st = getVariable(30856);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER.ET", 63);
     st->size_data = sizeof(TIME);
@@ -1380,8 +1380,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 30932 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER
-    st = getVariable(30932);
+  { // 30857 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER
+    st = getVariable(30857);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMER", 60);
     st->size_data = sizeof(TON);
@@ -1391,8 +1391,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TON = (TON*)&p_FB_AIPROTECTION->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 30933 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMERPRIZNAK
-    st = getVariable(30933);
+  { // 30858 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMERPRIZNAK
+    st = getVariable(30858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.RESETCMDTIMERPRIZNAK", 67);
     st->size_data = sizeof(BOOL);
@@ -1402,8 +1402,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_FB_AIPROTECTION->RESETCMDTIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 30934 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.IN
-    st = getVariable(30934);
+  { // 30859 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.IN
+    st = getVariable(30859);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.IN", 63);
     st->size_data = sizeof(BOOL);
@@ -1414,8 +1414,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 30935 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.PT
-    st = getVariable(30935);
+  { // 30860 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.PT
+    st = getVariable(30860);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.PT", 63);
     st->size_data = sizeof(TIME);
@@ -1426,8 +1426,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 30936 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.Q
-    st = getVariable(30936);
+  { // 30861 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.Q
+    st = getVariable(30861);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1438,8 +1438,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 30937 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.ET
-    st = getVariable(30937);
+  { // 30862 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.ET
+    st = getVariable(30862);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER.ET", 63);
     st->size_data = sizeof(TIME);
@@ -1450,8 +1450,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 30938 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER
-    st = getVariable(30938);
+  { // 30863 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER
+    st = getVariable(30863);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINTIMER", 60);
     st->size_data = sizeof(TON);
@@ -1461,8 +1461,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TON = (TON*)&p_FB_AIPROTECTION->SIGNALINTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 30939 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.IN
-    st = getVariable(30939);
+  { // 30864 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.IN
+    st = getVariable(30864);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.IN", 55);
     st->size_data = sizeof(BOOL);
@@ -1473,8 +1473,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 30940 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.PT
-    st = getVariable(30940);
+  { // 30865 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.PT
+    st = getVariable(30865);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.PT", 55);
     st->size_data = sizeof(TIME);
@@ -1485,8 +1485,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 30941 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.Q
-    st = getVariable(30941);
+  { // 30866 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.Q
+    st = getVariable(30866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.Q", 54);
     st->size_data = sizeof(BOOL);
@@ -1497,8 +1497,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 30942 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.ET
-    st = getVariable(30942);
+  { // 30867 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.ET
+    st = getVariable(30867);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER.ET", 55);
     st->size_data = sizeof(TIME);
@@ -1509,8 +1509,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 30943 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER
-    st = getVariable(30943);
+  { // 30868 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER
+    st = getVariable(30868);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.TIMER", 52);
     st->size_data = sizeof(TON);
@@ -1520,8 +1520,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_TON = (TON*)&p_FB_AIPROTECTION->TIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 30944 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG.CLK
-    st = getVariable(30944);
+  { // 30869 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG.CLK
+    st = getVariable(30869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG.CLK", 64);
     st->size_data = sizeof(BOOL);
@@ -1532,8 +1532,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 30945 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG.Q
-    st = getVariable(30945);
+  { // 30870 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG.Q
+    st = getVariable(30870);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG.Q", 62);
     st->size_data = sizeof(BOOL);
@@ -1544,8 +1544,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 30946 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG
-    st = getVariable(30946);
+  { // 30871 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG
+    st = getVariable(30871);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGTRIG", 60);
     st->size_data = sizeof(R_TRIG);
@@ -1555,8 +1555,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_R_TRIG = (R_TRIG*)&p_FB_AIPROTECTION->SIGNALINGTRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 30947 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG.CLK
-    st = getVariable(30947);
+  { // 30872 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG.CLK
+    st = getVariable(30872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG.CLK", 65);
     st->size_data = sizeof(BOOL);
@@ -1567,8 +1567,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_F_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 30948 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG.Q
-    st = getVariable(30948);
+  { // 30873 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG.Q
+    st = getVariable(30873);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG.Q", 63);
     st->size_data = sizeof(BOOL);
@@ -1579,8 +1579,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_BOOL = (BOOL*)&p_F_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 30949 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG
-    st = getVariable(30949);
+  { // 30874 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG
+    st = getVariable(30874);
     memcpy(st->IEC_TYPE, "F_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGFTRIG", 61);
     st->size_data = sizeof(F_TRIG);
@@ -1590,8 +1590,8 @@ int __variables_init_FB_TGAZA_NA_VYHODE_H(){
     p_F_TRIG = (F_TRIG*)&p_FB_AIPROTECTION->SIGNALINGFTRIG;
     st->value_p = (void *)p_F_TRIG;
   }
-  { // 30950 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGAI
-    st = getVariable(30950);
+  { // 30875 PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGAI
+    st = getVariable(30875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.PROTECTIONS_PROC.FB_TGAZA_NA_VYHODE_H.SIGNALINGAI", 58);
     st->size_data = sizeof(BOOL);

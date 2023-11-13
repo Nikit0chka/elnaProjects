@@ -21,8 +21,16 @@ VAR
 END_VAR
 
 VAR CONSTANT
-	cmd_answer : UINT     := 1;
+	cmd_answer : UINT         := 1;
 END_VAR
+
+
+
+
+
+
+
+
 
 
 

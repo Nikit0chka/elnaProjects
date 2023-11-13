@@ -187,8 +187,8 @@ int __variables_init_FB_AVARY_EGPA(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26880 PROGRAM0.IM_PROC.FB_AVARY_EGPA.SIGNAL
-    st = getVariable(26880);
+  { // 26805 PROGRAM0.IM_PROC.FB_AVARY_EGPA.SIGNAL
+    st = getVariable(26805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.SIGNAL", 37);
     st->size_data = sizeof(BOOL);
@@ -198,8 +198,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->SIGNAL;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26881 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.WAIT_TIME
-    st = getVariable(26881);
+  { // 26806 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.WAIT_TIME
+    st = getVariable(26806);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.WAIT_TIME", 47);
     st->size_data = sizeof(TIME);
@@ -210,8 +210,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_STRUCT_SINGLEOUTPUT->WAIT_TIME;
     st->value_p = p_TIME;
   }
-  { // 26882 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND
-    st = getVariable(26882);
+  { // 26807 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND
+    st = getVariable(26807);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND", 47);
     st->size_data = sizeof(WORD);
@@ -222,8 +222,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 26883 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INOPCCOMMANDSDISABLED
-    st = getVariable(26883);
+  { // 26808 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INOPCCOMMANDSDISABLED
+    st = getVariable(26808);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INOPCCOMMANDSDISABLED", 59);
     st->size_data = sizeof(BOOL);
@@ -234,8 +234,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 26884 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.Q
-    st = getVariable(26884);
+  { // 26809 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.Q
+    st = getVariable(26809);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.Q", 39);
     st->size_data = sizeof(BOOL);
@@ -246,8 +246,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->Q;
     st->value_p = p_BOOL;
   }
-  { // 26885 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.STATUS
-    st = getVariable(26885);
+  { // 26810 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.STATUS
+    st = getVariable(26810);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.STATUS", 44);
     st->size_data = sizeof(DWORD);
@@ -258,8 +258,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLEOUTPUT->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26886 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.OPCCOMMANDSDISABLED
-    st = getVariable(26886);
+  { // 26811 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.OPCCOMMANDSDISABLED
+    st = getVariable(26811);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.OPCCOMMANDSDISABLED", 57);
     st->size_data = sizeof(BOOL);
@@ -270,8 +270,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLEOUTPUT->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 26887 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND_ALG
-    st = getVariable(26887);
+  { // 26812 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND_ALG
+    st = getVariable(26812);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND_ALG", 51);
     st->size_data = sizeof(WORD);
@@ -282,8 +282,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 26888 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND_ARM
-    st = getVariable(26888);
+  { // 26813 PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND_ARM
+    st = getVariable(26813);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.STR_SO.INCOMMAND_ARM", 51);
     st->size_data = sizeof(WORD);
@@ -294,8 +294,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_WORD = (WORD*)&p_STRUCT_SINGLEOUTPUT->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 26889 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.IN
-    st = getVariable(26889);
+  { // 26814 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.IN
+    st = getVariable(26814);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -306,8 +306,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26890 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.PT
-    st = getVariable(26890);
+  { // 26815 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.PT
+    st = getVariable(26815);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.PT", 44);
     st->size_data = sizeof(TIME);
@@ -318,8 +318,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26891 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.Q
-    st = getVariable(26891);
+  { // 26816 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.Q
+    st = getVariable(26816);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -330,8 +330,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26892 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.ET
-    st = getVariable(26892);
+  { // 26817 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.ET
+    st = getVariable(26817);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER.ET", 44);
     st->size_data = sizeof(TIME);
@@ -342,8 +342,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26893 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER
-    st = getVariable(26893);
+  { // 26818 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER
+    st = getVariable(26818);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMER", 41);
     st->size_data = sizeof(TON);
@@ -353,8 +353,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->PULSETIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 26894 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.IN
-    st = getVariable(26894);
+  { // 26819 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.IN
+    st = getVariable(26819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -365,8 +365,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26895 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.PT
-    st = getVariable(26895);
+  { // 26820 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.PT
+    st = getVariable(26820);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.PT", 47);
     st->size_data = sizeof(TIME);
@@ -377,8 +377,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26896 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.Q
-    st = getVariable(26896);
+  { // 26821 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.Q
+    st = getVariable(26821);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -389,8 +389,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26897 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.ET
-    st = getVariable(26897);
+  { // 26822 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.ET
+    st = getVariable(26822);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER.ET", 47);
     st->size_data = sizeof(TIME);
@@ -401,8 +401,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26898 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER
-    st = getVariable(26898);
+  { // 26823 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER
+    st = getVariable(26823);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMER", 44);
     st->size_data = sizeof(TON);
@@ -412,8 +412,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->RESETCMDTIMER;
     st->value_p = (void *)p_TON;
   }
-  { // 26899 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.IN
-    st = getVariable(26899);
+  { // 26824 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.IN
+    st = getVariable(26824);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -424,8 +424,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26900 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.PT
-    st = getVariable(26900);
+  { // 26825 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.PT
+    st = getVariable(26825);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.PT", 45);
     st->size_data = sizeof(TIME);
@@ -436,8 +436,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26901 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.Q
-    st = getVariable(26901);
+  { // 26826 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.Q
+    st = getVariable(26826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -448,8 +448,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26902 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.ET
-    st = getVariable(26902);
+  { // 26827 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.ET
+    st = getVariable(26827);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND.ET", 45);
     st->size_data = sizeof(TIME);
@@ -460,8 +460,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26903 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND
-    st = getVariable(26903);
+  { // 26828 PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND
+    st = getVariable(26828);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.TON_COMMAND", 42);
     st->size_data = sizeof(TON);
@@ -471,8 +471,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_TON = (TON*)&p_FB_SINGLEOUTPUT->TON_COMMAND;
     st->value_p = (void *)p_TON;
   }
-  { // 26904 PROGRAM0.IM_PROC.FB_AVARY_EGPA.SOURCE
-    st = getVariable(26904);
+  { // 26829 PROGRAM0.IM_PROC.FB_AVARY_EGPA.SOURCE
+    st = getVariable(26829);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.SOURCE", 37);
     st->size_data = sizeof(BYTE);
@@ -482,8 +482,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26905 PROGRAM0.IM_PROC.FB_AVARY_EGPA.CMD
-    st = getVariable(26905);
+  { // 26830 PROGRAM0.IM_PROC.FB_AVARY_EGPA.CMD
+    st = getVariable(26830);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.CMD", 34);
     st->size_data = sizeof(BYTE);
@@ -493,8 +493,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26906 PROGRAM0.IM_PROC.FB_AVARY_EGPA.LASTCMD
-    st = getVariable(26906);
+  { // 26831 PROGRAM0.IM_PROC.FB_AVARY_EGPA.LASTCMD
+    st = getVariable(26831);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.LASTCMD", 38);
     st->size_data = sizeof(BYTE);
@@ -504,8 +504,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->LASTCMD;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26907 PROGRAM0.IM_PROC.FB_AVARY_EGPA.SOURCE_FOR_STATUS
-    st = getVariable(26907);
+  { // 26832 PROGRAM0.IM_PROC.FB_AVARY_EGPA.SOURCE_FOR_STATUS
+    st = getVariable(26832);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.SOURCE_FOR_STATUS", 48);
     st->size_data = sizeof(BYTE);
@@ -515,8 +515,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->SOURCE_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26908 PROGRAM0.IM_PROC.FB_AVARY_EGPA.CMD_FOR_STATUS
-    st = getVariable(26908);
+  { // 26833 PROGRAM0.IM_PROC.FB_AVARY_EGPA.CMD_FOR_STATUS
+    st = getVariable(26833);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.CMD_FOR_STATUS", 45);
     st->size_data = sizeof(BYTE);
@@ -526,8 +526,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->CMD_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26909 PROGRAM0.IM_PROC.FB_AVARY_EGPA.COMMAND_ERROR_FOR_STATUS
-    st = getVariable(26909);
+  { // 26834 PROGRAM0.IM_PROC.FB_AVARY_EGPA.COMMAND_ERROR_FOR_STATUS
+    st = getVariable(26834);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.COMMAND_ERROR_FOR_STATUS", 55);
     st->size_data = sizeof(BYTE);
@@ -537,8 +537,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BYTE = (BYTE*)&p_FB_SINGLEOUTPUT->COMMAND_ERROR_FOR_STATUS;
     UnpackVar(p_BYTE, BYTE_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26910 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMERPRIZNAK
-    st = getVariable(26910);
+  { // 26835 PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMERPRIZNAK
+    st = getVariable(26835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.PULSETIMERPRIZNAK", 48);
     st->size_data = sizeof(BOOL);
@@ -548,8 +548,8 @@ int __variables_init_FB_AVARY_EGPA(){
     p_BOOL = (BOOL*)&p_FB_SINGLEOUTPUT->PULSETIMERPRIZNAK;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 26911 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMERPRIZNAK
-    st = getVariable(26911);
+  { // 26836 PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMERPRIZNAK
+    st = getVariable(26836);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_AVARY_EGPA.RESETCMDTIMERPRIZNAK", 51);
     st->size_data = sizeof(BOOL);

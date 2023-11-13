@@ -187,8 +187,8 @@ int __variables_init_FB_KRAN6OPEN(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 60891 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND
-    st = getVariable(60891);
+  { // 60816 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND
+    st = getVariable(60816);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND", 58);
     st->size_data = sizeof(WORD);
@@ -200,8 +200,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 60892 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.STATUS
-    st = getVariable(60892);
+  { // 60817 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.STATUS
+    st = getVariable(60817);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -213,8 +213,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 60893 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ONSTATUS
-    st = getVariable(60893);
+  { // 60818 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ONSTATUS
+    st = getVariable(60818);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ONSTATUS", 57);
     st->size_data = sizeof(BYTE);
@@ -226,8 +226,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 60894 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INOPCCOMMANDSDISABLED
-    st = getVariable(60894);
+  { // 60819 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INOPCCOMMANDSDISABLED
+    st = getVariable(60819);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INOPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -239,8 +239,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 60895 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SDVIG
-    st = getVariable(60895);
+  { // 60820 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SDVIG
+    st = getVariable(60820);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SDVIG", 54);
     st->size_data = sizeof(BOOL);
@@ -252,8 +252,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 60896 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.NS
-    st = getVariable(60896);
+  { // 60821 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.NS
+    st = getVariable(60821);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.NS", 51);
     st->size_data = sizeof(BOOL);
@@ -265,8 +265,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 60897 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.DP
-    st = getVariable(60897);
+  { // 60822 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.DP
+    st = getVariable(60822);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.DP", 51);
     st->size_data = sizeof(BOOL);
@@ -278,8 +278,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 60898 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.COMMANDFAULT
-    st = getVariable(60898);
+  { // 60823 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.COMMANDFAULT
+    st = getVariable(60823);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.COMMANDFAULT", 61);
     st->size_data = sizeof(BOOL);
@@ -291,8 +291,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 60899 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ACCIDENT
-    st = getVariable(60899);
+  { // 60824 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ACCIDENT
+    st = getVariable(60824);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ACCIDENT", 57);
     st->size_data = sizeof(BOOL);
@@ -304,8 +304,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 60900 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.AUTO
-    st = getVariable(60900);
+  { // 60825 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.AUTO
+    st = getVariable(60825);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.AUTO", 53);
     st->size_data = sizeof(BOOL);
@@ -317,8 +317,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 60901 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.MANUAL
-    st = getVariable(60901);
+  { // 60826 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.MANUAL
+    st = getVariable(60826);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.MANUAL", 55);
     st->size_data = sizeof(BOOL);
@@ -330,8 +330,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 60902 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.LOCAL
-    st = getVariable(60902);
+  { // 60827 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.LOCAL
+    st = getVariable(60827);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.LOCAL", 54);
     st->size_data = sizeof(BOOL);
@@ -343,8 +343,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 60903 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.DISTANCE
-    st = getVariable(60903);
+  { // 60828 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.DISTANCE
+    st = getVariable(60828);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.DISTANCE", 57);
     st->size_data = sizeof(BOOL);
@@ -356,8 +356,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 60904 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ERRORPOWEROFF
-    st = getVariable(60904);
+  { // 60829 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ERRORPOWEROFF
+    st = getVariable(60829);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ERRORPOWEROFF", 62);
     st->size_data = sizeof(BOOL);
@@ -369,8 +369,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 60905 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ERRORBLOCK
-    st = getVariable(60905);
+  { // 60830 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ERRORBLOCK
+    st = getVariable(60830);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ERRORBLOCK", 59);
     st->size_data = sizeof(BOOL);
@@ -382,8 +382,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 60906 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SO
-    st = getVariable(60906);
+  { // 60831 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SO
+    st = getVariable(60831);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SO", 51);
     st->size_data = sizeof(BOOL);
@@ -395,8 +395,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 60907 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SZ
-    st = getVariable(60907);
+  { // 60832 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SZ
+    st = getVariable(60832);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.SZ", 51);
     st->size_data = sizeof(BOOL);
@@ -408,8 +408,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 60908 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.OPCCOMMANDSDISABLED
-    st = getVariable(60908);
+  { // 60833 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.OPCCOMMANDSDISABLED
+    st = getVariable(60833);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.OPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -421,8 +421,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 60909 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.LASTCMDISON
-    st = getVariable(60909);
+  { // 60834 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.LASTCMDISON
+    st = getVariable(60834);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.LASTCMDISON", 60);
     st->size_data = sizeof(BOOL);
@@ -434,8 +434,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 60910 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATON
-    st = getVariable(60910);
+  { // 60835 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATON
+    st = getVariable(60835);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATON", 66);
     st->size_data = sizeof(BOOL);
@@ -447,8 +447,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 60911 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATOFF
-    st = getVariable(60911);
+  { // 60836 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATOFF
+    st = getVariable(60836);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATOFF", 67);
     st->size_data = sizeof(BOOL);
@@ -460,8 +460,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 60912 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDON
-    st = getVariable(60912);
+  { // 60837 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDON
+    st = getVariable(60837);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDON", 65);
     st->size_data = sizeof(BOOL);
@@ -473,8 +473,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 60913 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDOFF
-    st = getVariable(60913);
+  { // 60838 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDOFF
+    st = getVariable(60838);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -486,8 +486,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 60914 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSO
-    st = getVariable(60914);
+  { // 60839 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSO
+    st = getVariable(60839);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSO", 64);
     st->size_data = sizeof(BOOL);
@@ -499,8 +499,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 60915 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSZ
-    st = getVariable(60915);
+  { // 60840 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSZ
+    st = getVariable(60840);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSZ", 64);
     st->size_data = sizeof(BOOL);
@@ -512,8 +512,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 60916 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INDP
-    st = getVariable(60916);
+  { // 60841 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INDP
+    st = getVariable(60841);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INDP", 64);
     st->size_data = sizeof(BOOL);
@@ -525,8 +525,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 60917 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CONTINUEHOLDCOMMAND
-    st = getVariable(60917);
+  { // 60842 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CONTINUEHOLDCOMMAND
+    st = getVariable(60842);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CONTINUEHOLDCOMMAND", 68);
     st->size_data = sizeof(TIME);
@@ -538,8 +538,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 60918 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND_ALG
-    st = getVariable(60918);
+  { // 60843 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND_ALG
+    st = getVariable(60843);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND_ALG", 62);
     st->size_data = sizeof(WORD);
@@ -551,8 +551,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 60919 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND_ARM
-    st = getVariable(60919);
+  { // 60844 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND_ARM
+    st = getVariable(60844);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.INCOMMAND_ARM", 62);
     st->size_data = sizeof(WORD);
@@ -564,8 +564,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 60920 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CMDON
-    st = getVariable(60920);
+  { // 60845 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CMDON
+    st = getVariable(60845);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -577,8 +577,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 60921 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CMDOFF
-    st = getVariable(60921);
+  { // 60846 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CMDOFF
+    st = getVariable(60846);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.CMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -590,8 +590,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 60922 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.RELIABILITY
-    st = getVariable(60922);
+  { // 60847 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.RELIABILITY
+    st = getVariable(60847);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.IM.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -603,8 +603,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 60923 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.RUN
-    st = getVariable(60923);
+  { // 60848 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.RUN
+    st = getVariable(60848);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.RUN", 55);
     st->size_data = sizeof(BOOL);
@@ -616,8 +616,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 60924 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.RESET
-    st = getVariable(60924);
+  { // 60849 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.RESET
+    st = getVariable(60849);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.RESET", 57);
     st->size_data = sizeof(BOOL);
@@ -629,8 +629,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 60925 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.START
-    st = getVariable(60925);
+  { // 60850 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.START
+    st = getVariable(60850);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.START", 57);
     st->size_data = sizeof(BOOL);
@@ -642,8 +642,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 60926 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.ERROR
-    st = getVariable(60926);
+  { // 60851 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.ERROR
+    st = getVariable(60851);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.ERROR", 57);
     st->size_data = sizeof(BOOL);
@@ -655,8 +655,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 60927 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.TOP
-    st = getVariable(60927);
+  { // 60852 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.TOP
+    st = getVariable(60852);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.TOP", 55);
     st->size_data = sizeof(BOOL);
@@ -668,8 +668,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 60928 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.STARTSTATUS
-    st = getVariable(60928);
+  { // 60853 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.STARTSTATUS
+    st = getVariable(60853);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.STARTSTATUS", 63);
     st->size_data = sizeof(DWORD);
@@ -681,8 +681,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 60929 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.ERRORSTATUS
-    st = getVariable(60929);
+  { // 60854 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.ERRORSTATUS
+    st = getVariable(60854);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.ERRORSTATUS", 63);
     st->size_data = sizeof(DWORD);
@@ -694,8 +694,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 60930 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.TOPSTATUS
-    st = getVariable(60930);
+  { // 60855 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.TOPSTATUS
+    st = getVariable(60855);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.STRPH.TOPSTATUS", 61);
     st->size_data = sizeof(DWORD);
@@ -707,8 +707,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 60931 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.PHASENUMBER
-    st = getVariable(60931);
+  { // 60856 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.PHASENUMBER
+    st = getVariable(60856);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.PHASENUMBER", 57);
     st->size_data = sizeof(UINT);
@@ -719,8 +719,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_UINT = (UINT*)&p_FB_PH_KRAN->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 60932 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.CLK
-    st = getVariable(60932);
+  { // 60857 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.CLK
+    st = getVariable(60857);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.CLK", 67);
     st->size_data = sizeof(BOOL);
@@ -732,8 +732,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 60933 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.Q
-    st = getVariable(60933);
+  { // 60858 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.Q
+    st = getVariable(60858);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -745,8 +745,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 60934 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG
-    st = getVariable(60934);
+  { // 60859 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG
+    st = getVariable(60859);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG", 63);
     st->size_data = sizeof(R_TRIG);
@@ -757,8 +757,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 60935 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG.CLK
-    st = getVariable(60935);
+  { // 60860 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG.CLK
+    st = getVariable(60860);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG.CLK", 60);
     st->size_data = sizeof(BOOL);
@@ -770,8 +770,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 60936 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG.Q
-    st = getVariable(60936);
+  { // 60861 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG.Q
+    st = getVariable(60861);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG.Q", 58);
     st->size_data = sizeof(BOOL);
@@ -783,8 +783,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 60937 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG
-    st = getVariable(60937);
+  { // 60862 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG
+    st = getVariable(60862);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN.RESET_TRIG", 56);
     st->size_data = sizeof(R_TRIG);
@@ -795,8 +795,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 60938 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(60938);
+  { // 60863 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(60863);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_NOTDEFINED", 80);
     st->size_data = sizeof(BYTE);
@@ -808,8 +808,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 60939 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(60939);
+  { // 60864 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(60864);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ON", 72);
     st->size_data = sizeof(BYTE);
@@ -821,8 +821,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 60940 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(60940);
+  { // 60865 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(60865);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_OFF", 73);
     st->size_data = sizeof(BYTE);
@@ -834,8 +834,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 60941 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(60941);
+  { // 60866 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(60866);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_TRANSITIONAL", 82);
     st->size_data = sizeof(BYTE);
@@ -847,8 +847,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 60942 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(60942);
+  { // 60867 PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(60867);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_NOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ERROR", 75);
     st->size_data = sizeof(BYTE);
@@ -860,8 +860,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ERROR;
     st->value_p = p_BYTE;
   }
-  { // 67687 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND
-    st = getVariable(67687);
+  { // 67612 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND
+    st = getVariable(67612);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND", 58);
     st->size_data = sizeof(WORD);
@@ -873,8 +873,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND;
     st->value_p = p_WORD;
   }
-  { // 67688 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.STATUS
-    st = getVariable(67688);
+  { // 67613 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.STATUS
+    st = getVariable(67613);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.STATUS", 55);
     st->size_data = sizeof(DWORD);
@@ -886,8 +886,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_KRAN->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 67689 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ONSTATUS
-    st = getVariable(67689);
+  { // 67614 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ONSTATUS
+    st = getVariable(67614);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ONSTATUS", 57);
     st->size_data = sizeof(BYTE);
@@ -899,8 +899,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_STRUCT_KRAN->ONSTATUS;
     st->value_p = p_BYTE;
   }
-  { // 67690 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INOPCCOMMANDSDISABLED
-    st = getVariable(67690);
+  { // 67615 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INOPCCOMMANDSDISABLED
+    st = getVariable(67615);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INOPCCOMMANDSDISABLED", 70);
     st->size_data = sizeof(BOOL);
@@ -912,8 +912,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->INOPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 67691 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SDVIG
-    st = getVariable(67691);
+  { // 67616 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SDVIG
+    st = getVariable(67616);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SDVIG", 54);
     st->size_data = sizeof(BOOL);
@@ -925,8 +925,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SDVIG;
     st->value_p = p_BOOL;
   }
-  { // 67692 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.NS
-    st = getVariable(67692);
+  { // 67617 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.NS
+    st = getVariable(67617);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.NS", 51);
     st->size_data = sizeof(BOOL);
@@ -938,8 +938,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->NS;
     st->value_p = p_BOOL;
   }
-  { // 67693 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.DP
-    st = getVariable(67693);
+  { // 67618 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.DP
+    st = getVariable(67618);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.DP", 51);
     st->size_data = sizeof(BOOL);
@@ -951,8 +951,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DP;
     st->value_p = p_BOOL;
   }
-  { // 67694 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.COMMANDFAULT
-    st = getVariable(67694);
+  { // 67619 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.COMMANDFAULT
+    st = getVariable(67619);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.COMMANDFAULT", 61);
     st->size_data = sizeof(BOOL);
@@ -964,8 +964,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->COMMANDFAULT;
     st->value_p = p_BOOL;
   }
-  { // 67695 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ACCIDENT
-    st = getVariable(67695);
+  { // 67620 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ACCIDENT
+    st = getVariable(67620);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ACCIDENT", 57);
     st->size_data = sizeof(BOOL);
@@ -977,8 +977,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ACCIDENT;
     st->value_p = p_BOOL;
   }
-  { // 67696 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.AUTO
-    st = getVariable(67696);
+  { // 67621 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.AUTO
+    st = getVariable(67621);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.AUTO", 53);
     st->size_data = sizeof(BOOL);
@@ -990,8 +990,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->AUTO;
     st->value_p = p_BOOL;
   }
-  { // 67697 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.MANUAL
-    st = getVariable(67697);
+  { // 67622 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.MANUAL
+    st = getVariable(67622);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.MANUAL", 55);
     st->size_data = sizeof(BOOL);
@@ -1003,8 +1003,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->MANUAL;
     st->value_p = p_BOOL;
   }
-  { // 67698 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.LOCAL
-    st = getVariable(67698);
+  { // 67623 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.LOCAL
+    st = getVariable(67623);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.LOCAL", 54);
     st->size_data = sizeof(BOOL);
@@ -1016,8 +1016,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LOCAL;
     st->value_p = p_BOOL;
   }
-  { // 67699 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.DISTANCE
-    st = getVariable(67699);
+  { // 67624 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.DISTANCE
+    st = getVariable(67624);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.DISTANCE", 57);
     st->size_data = sizeof(BOOL);
@@ -1029,8 +1029,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->DISTANCE;
     st->value_p = p_BOOL;
   }
-  { // 67700 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ERRORPOWEROFF
-    st = getVariable(67700);
+  { // 67625 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ERRORPOWEROFF
+    st = getVariable(67625);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ERRORPOWEROFF", 62);
     st->size_data = sizeof(BOOL);
@@ -1042,8 +1042,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORPOWEROFF;
     st->value_p = p_BOOL;
   }
-  { // 67701 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ERRORBLOCK
-    st = getVariable(67701);
+  { // 67626 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ERRORBLOCK
+    st = getVariable(67626);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ERRORBLOCK", 59);
     st->size_data = sizeof(BOOL);
@@ -1055,8 +1055,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ERRORBLOCK;
     st->value_p = p_BOOL;
   }
-  { // 67702 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SO
-    st = getVariable(67702);
+  { // 67627 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SO
+    st = getVariable(67627);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SO", 51);
     st->size_data = sizeof(BOOL);
@@ -1068,8 +1068,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SO;
     st->value_p = p_BOOL;
   }
-  { // 67703 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SZ
-    st = getVariable(67703);
+  { // 67628 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SZ
+    st = getVariable(67628);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.SZ", 51);
     st->size_data = sizeof(BOOL);
@@ -1081,8 +1081,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->SZ;
     st->value_p = p_BOOL;
   }
-  { // 67704 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.OPCCOMMANDSDISABLED
-    st = getVariable(67704);
+  { // 67629 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.OPCCOMMANDSDISABLED
+    st = getVariable(67629);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.OPCCOMMANDSDISABLED", 68);
     st->size_data = sizeof(BOOL);
@@ -1094,8 +1094,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->OPCCOMMANDSDISABLED;
     st->value_p = p_BOOL;
   }
-  { // 67705 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.LASTCMDISON
-    st = getVariable(67705);
+  { // 67630 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.LASTCMDISON
+    st = getVariable(67630);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.LASTCMDISON", 60);
     st->size_data = sizeof(BOOL);
@@ -1107,8 +1107,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->LASTCMDISON;
     st->value_p = p_BOOL;
   }
-  { // 67706 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATON
-    st = getVariable(67706);
+  { // 67631 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATON
+    st = getVariable(67631);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATON", 66);
     st->size_data = sizeof(BOOL);
@@ -1120,8 +1120,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATON;
     st->value_p = p_BOOL;
   }
-  { // 67707 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATOFF
-    st = getVariable(67707);
+  { // 67632 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATOFF
+    st = getVariable(67632);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_STATOFF", 67);
     st->size_data = sizeof(BOOL);
@@ -1133,8 +1133,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_STATOFF;
     st->value_p = p_BOOL;
   }
-  { // 67708 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDON
-    st = getVariable(67708);
+  { // 67633 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDON
+    st = getVariable(67633);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDON", 65);
     st->size_data = sizeof(BOOL);
@@ -1146,8 +1146,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDON;
     st->value_p = p_BOOL;
   }
-  { // 67709 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDOFF
-    st = getVariable(67709);
+  { // 67634 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDOFF
+    st = getVariable(67634);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_CMDOFF", 66);
     st->size_data = sizeof(BOOL);
@@ -1159,8 +1159,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 67710 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSO
-    st = getVariable(67710);
+  { // 67635 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSO
+    st = getVariable(67635);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSO", 64);
     st->size_data = sizeof(BOOL);
@@ -1172,8 +1172,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSO;
     st->value_p = p_BOOL;
   }
-  { // 67711 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSZ
-    st = getVariable(67711);
+  { // 67636 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSZ
+    st = getVariable(67636);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INSZ", 64);
     st->size_data = sizeof(BOOL);
@@ -1185,8 +1185,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INSZ;
     st->value_p = p_BOOL;
   }
-  { // 67712 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INDP
-    st = getVariable(67712);
+  { // 67637 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INDP
+    st = getVariable(67637);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.ISVALIDREF_INDP", 64);
     st->size_data = sizeof(BOOL);
@@ -1198,8 +1198,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->ISVALIDREF_INDP;
     st->value_p = p_BOOL;
   }
-  { // 67713 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CONTINUEHOLDCOMMAND
-    st = getVariable(67713);
+  { // 67638 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CONTINUEHOLDCOMMAND
+    st = getVariable(67638);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CONTINUEHOLDCOMMAND", 68);
     st->size_data = sizeof(TIME);
@@ -1211,8 +1211,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_TIME = (TIME*)&p_STRUCT_KRAN->CONTINUEHOLDCOMMAND;
     st->value_p = p_TIME;
   }
-  { // 67714 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND_ALG
-    st = getVariable(67714);
+  { // 67639 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND_ALG
+    st = getVariable(67639);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND_ALG", 62);
     st->size_data = sizeof(WORD);
@@ -1224,8 +1224,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ALG;
     st->value_p = p_WORD;
   }
-  { // 67715 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND_ARM
-    st = getVariable(67715);
+  { // 67640 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND_ARM
+    st = getVariable(67640);
     memcpy(st->IEC_TYPE, "WORD", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.INCOMMAND_ARM", 62);
     st->size_data = sizeof(WORD);
@@ -1237,8 +1237,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_WORD = (WORD*)&p_STRUCT_KRAN->INCOMMAND_ARM;
     st->value_p = p_WORD;
   }
-  { // 67716 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CMDON
-    st = getVariable(67716);
+  { // 67641 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CMDON
+    st = getVariable(67641);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CMDON", 54);
     st->size_data = sizeof(BOOL);
@@ -1250,8 +1250,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDON;
     st->value_p = p_BOOL;
   }
-  { // 67717 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CMDOFF
-    st = getVariable(67717);
+  { // 67642 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CMDOFF
+    st = getVariable(67642);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.CMDOFF", 55);
     st->size_data = sizeof(BOOL);
@@ -1263,8 +1263,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->CMDOFF;
     st->value_p = p_BOOL;
   }
-  { // 67718 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.RELIABILITY
-    st = getVariable(67718);
+  { // 67643 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.RELIABILITY
+    st = getVariable(67643);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.IM.RELIABILITY", 60);
     st->size_data = sizeof(BOOL);
@@ -1276,8 +1276,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_KRAN->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 67719 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.RUN
-    st = getVariable(67719);
+  { // 67644 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.RUN
+    st = getVariable(67644);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.RUN", 55);
     st->size_data = sizeof(BOOL);
@@ -1289,8 +1289,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RUN;
     st->value_p = p_BOOL;
   }
-  { // 67720 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.RESET
-    st = getVariable(67720);
+  { // 67645 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.RESET
+    st = getVariable(67645);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.RESET", 57);
     st->size_data = sizeof(BOOL);
@@ -1302,8 +1302,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->RESET;
     st->value_p = p_BOOL;
   }
-  { // 67721 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.START
-    st = getVariable(67721);
+  { // 67646 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.START
+    st = getVariable(67646);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.START", 57);
     st->size_data = sizeof(BOOL);
@@ -1315,8 +1315,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->START;
     st->value_p = p_BOOL;
   }
-  { // 67722 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.ERROR
-    st = getVariable(67722);
+  { // 67647 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.ERROR
+    st = getVariable(67647);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.ERROR", 57);
     st->size_data = sizeof(BOOL);
@@ -1328,8 +1328,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->ERROR;
     st->value_p = p_BOOL;
   }
-  { // 67723 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.TOP
-    st = getVariable(67723);
+  { // 67648 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.TOP
+    st = getVariable(67648);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.TOP", 55);
     st->size_data = sizeof(BOOL);
@@ -1341,8 +1341,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_STRUCT_PHASEALGORITM->TOP;
     st->value_p = p_BOOL;
   }
-  { // 67724 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.STARTSTATUS
-    st = getVariable(67724);
+  { // 67649 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.STARTSTATUS
+    st = getVariable(67649);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.STARTSTATUS", 63);
     st->size_data = sizeof(DWORD);
@@ -1354,8 +1354,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->STARTSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 67725 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.ERRORSTATUS
-    st = getVariable(67725);
+  { // 67650 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.ERRORSTATUS
+    st = getVariable(67650);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.ERRORSTATUS", 63);
     st->size_data = sizeof(DWORD);
@@ -1367,8 +1367,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->ERRORSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 67726 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.TOPSTATUS
-    st = getVariable(67726);
+  { // 67651 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.TOPSTATUS
+    st = getVariable(67651);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.STRPH.TOPSTATUS", 61);
     st->size_data = sizeof(DWORD);
@@ -1380,8 +1380,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_DWORD = (DWORD*)&p_STRUCT_PHASEALGORITM->TOPSTATUS;
     st->value_p = p_DWORD;
   }
-  { // 67727 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.PHASENUMBER
-    st = getVariable(67727);
+  { // 67652 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.PHASENUMBER
+    st = getVariable(67652);
     memcpy(st->IEC_TYPE, "UINT", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.PHASENUMBER", 57);
     st->size_data = sizeof(UINT);
@@ -1392,8 +1392,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_UINT = (UINT*)&p_FB_PH_KRAN->PHASENUMBER;
     UnpackVar(p_UINT, UINT_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 67728 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.CLK
-    st = getVariable(67728);
+  { // 67653 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.CLK
+    st = getVariable(67653);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.CLK", 67);
     st->size_data = sizeof(BOOL);
@@ -1405,8 +1405,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 67729 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.Q
-    st = getVariable(67729);
+  { // 67654 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.Q
+    st = getVariable(67654);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG.Q", 65);
     st->size_data = sizeof(BOOL);
@@ -1418,8 +1418,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 67730 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG
-    st = getVariable(67730);
+  { // 67655 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG
+    st = getVariable(67655);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.COMMANDFAULT_TRIG", 63);
     st->size_data = sizeof(R_TRIG);
@@ -1430,8 +1430,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->COMMANDFAULT_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 67731 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG.CLK
-    st = getVariable(67731);
+  { // 67656 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG.CLK
+    st = getVariable(67656);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG.CLK", 60);
     st->size_data = sizeof(BOOL);
@@ -1443,8 +1443,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->CLK;
     st->value_p = p_BOOL;
   }
-  { // 67732 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG.Q
-    st = getVariable(67732);
+  { // 67657 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG.Q
+    st = getVariable(67657);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG.Q", 58);
     st->size_data = sizeof(BOOL);
@@ -1456,8 +1456,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BOOL = (BOOL*)&p_R_TRIG->Q;
     st->value_p = p_BOOL;
   }
-  { // 67733 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG
-    st = getVariable(67733);
+  { // 67658 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG
+    st = getVariable(67658);
     memcpy(st->IEC_TYPE, "R_TRIG", 6);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN.RESET_TRIG", 56);
     st->size_data = sizeof(R_TRIG);
@@ -1468,8 +1468,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_R_TRIG = (R_TRIG*)&p_FB_PH_KRAN->RESET_TRIG;
     st->value_p = (void *)p_R_TRIG;
   }
-  { // 67734 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_NOTDEFINED
-    st = getVariable(67734);
+  { // 67659 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_NOTDEFINED
+    st = getVariable(67659);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_NOTDEFINED", 80);
     st->size_data = sizeof(BYTE);
@@ -1481,8 +1481,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_NOTDEFINED;
     st->value_p = p_BYTE;
   }
-  { // 67735 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ON
-    st = getVariable(67735);
+  { // 67660 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ON
+    st = getVariable(67660);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ON", 72);
     st->size_data = sizeof(BYTE);
@@ -1494,8 +1494,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_ON;
     st->value_p = p_BYTE;
   }
-  { // 67736 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_OFF
-    st = getVariable(67736);
+  { // 67661 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_OFF
+    st = getVariable(67661);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_OFF", 73);
     st->size_data = sizeof(BYTE);
@@ -1507,8 +1507,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_OFF;
     st->value_p = p_BYTE;
   }
-  { // 67737 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_TRANSITIONAL
-    st = getVariable(67737);
+  { // 67662 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_TRANSITIONAL
+    st = getVariable(67662);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_TRANSITIONAL", 82);
     st->size_data = sizeof(BYTE);
@@ -1520,8 +1520,8 @@ int __variables_init_FB_KRAN6OPEN(){
     p_BYTE = (BYTE*)&p_TYPE_STATUSDUALINPUT->STATUS_TRANSITIONAL;
     st->value_p = p_BYTE;
   }
-  { // 67738 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ERROR
-    st = getVariable(67738);
+  { // 67663 PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ERROR
+    st = getVariable(67663);
     memcpy(st->IEC_TYPE, "BYTE", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.ALGORITMS_PROC.FB_AOALG.FB_KRAN6OPEN._STATUSDUALINPUT.STATUS_ERROR", 75);
     st->size_data = sizeof(BYTE);

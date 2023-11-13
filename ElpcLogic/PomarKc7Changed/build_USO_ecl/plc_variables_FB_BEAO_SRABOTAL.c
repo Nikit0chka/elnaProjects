@@ -187,8 +187,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26280 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL.VALUE
-    st = getVariable(26280);
+  { // 26205 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL.VALUE
+    st = getVariable(26205);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL.VALUE", 46);
     st->size_data = sizeof(BOOL);
@@ -199,8 +199,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26281 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL.RELIABILITY
-    st = getVariable(26281);
+  { // 26206 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL.RELIABILITY
+    st = getVariable(26206);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -211,8 +211,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26282 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL._INVERSED
-    st = getVariable(26282);
+  { // 26207 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL._INVERSED
+    st = getVariable(26207);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.SIGNAL._INVERSED", 50);
     st->size_data = sizeof(BOOL);
@@ -223,8 +223,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26283 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.RELIABILITY
-    st = getVariable(26283);
+  { // 26208 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.RELIABILITY
+    st = getVariable(26208);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.RELIABILITY", 52);
     st->size_data = sizeof(BOOL);
@@ -235,8 +235,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26284 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.INVERSE
-    st = getVariable(26284);
+  { // 26209 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.INVERSE
+    st = getVariable(26209);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.INVERSE", 48);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26285 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DELAYON
-    st = getVariable(26285);
+  { // 26210 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DELAYON
+    st = getVariable(26210);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DELAYON", 48);
     st->size_data = sizeof(TIME);
@@ -259,8 +259,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26286 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DELAYOFF
-    st = getVariable(26286);
+  { // 26211 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DELAYOFF
+    st = getVariable(26211);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DELAYOFF", 49);
     st->size_data = sizeof(TIME);
@@ -271,8 +271,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26287 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.Q
-    st = getVariable(26287);
+  { // 26212 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.Q
+    st = getVariable(26212);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.Q", 42);
     st->size_data = sizeof(BOOL);
@@ -283,8 +283,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26288 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.STATUS
-    st = getVariable(26288);
+  { // 26213 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.STATUS
+    st = getVariable(26213);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.STATUS", 47);
     st->size_data = sizeof(DWORD);
@@ -295,8 +295,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26289 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DISABLED_SIG
-    st = getVariable(26289);
+  { // 26214 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DISABLED_SIG
+    st = getVariable(26214);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.STR_SS.DISABLED_SIG", 53);
     st->size_data = sizeof(BOOL);
@@ -307,8 +307,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26290 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.IN
-    st = getVariable(26290);
+  { // 26215 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.IN
+    st = getVariable(26215);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.IN", 44);
     st->size_data = sizeof(BOOL);
@@ -319,8 +319,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26291 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.PT
-    st = getVariable(26291);
+  { // 26216 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.PT
+    st = getVariable(26216);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.PT", 44);
     st->size_data = sizeof(TIME);
@@ -331,8 +331,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26292 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.Q
-    st = getVariable(26292);
+  { // 26217 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.Q
+    st = getVariable(26217);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.Q", 43);
     st->size_data = sizeof(BOOL);
@@ -343,8 +343,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26293 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.ET
-    st = getVariable(26293);
+  { // 26218 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.ET
+    st = getVariable(26218);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON.ET", 44);
     st->size_data = sizeof(TIME);
@@ -355,8 +355,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26294 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON
-    st = getVariable(26294);
+  { // 26219 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON
+    st = getVariable(26219);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMERON", 41);
     st->size_data = sizeof(TON);
@@ -366,8 +366,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26295 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.IN
-    st = getVariable(26295);
+  { // 26220 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.IN
+    st = getVariable(26220);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.IN", 45);
     st->size_data = sizeof(BOOL);
@@ -378,8 +378,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26296 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.PT
-    st = getVariable(26296);
+  { // 26221 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.PT
+    st = getVariable(26221);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.PT", 45);
     st->size_data = sizeof(TIME);
@@ -390,8 +390,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26297 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.Q
-    st = getVariable(26297);
+  { // 26222 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.Q
+    st = getVariable(26222);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.Q", 44);
     st->size_data = sizeof(BOOL);
@@ -402,8 +402,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26298 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.ET
-    st = getVariable(26298);
+  { // 26223 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.ET
+    st = getVariable(26223);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF.ET", 45);
     st->size_data = sizeof(TIME);
@@ -414,8 +414,8 @@ int __variables_init_FB_BEAO_SRABOTAL(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26299 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF
-    st = getVariable(26299);
+  { // 26224 PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF
+    st = getVariable(26224);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_BEAO_SRABOTAL.TIMEROFF", 42);
     st->size_data = sizeof(TOF);

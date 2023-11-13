@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 resetAndDisable(alg:=algoritms.Apusk);
 resetAndDisable(alg:=algoritms.SemiAutoPusk);
 resetAndDisable(alg:=algoritms.testPms);

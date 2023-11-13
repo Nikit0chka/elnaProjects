@@ -36,6 +36,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 timer(IN := di.Q AND StrDIp.isRunning  , PT := StrDIp.delay);
 SignalingTrig(CLK := timer.Q);
 IF SignalingTrig.Q THEN

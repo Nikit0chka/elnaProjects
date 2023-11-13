@@ -47,6 +47,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 fb_RemontAlg(StrAlg:=algoritms.Remont);
 
 fb_TestProtectionAlg(StrAlg:=algoritms.TestProtection);

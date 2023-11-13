@@ -187,8 +187,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 26140 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL.VALUE
-    st = getVariable(26140);
+  { // 26065 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL.VALUE
+    st = getVariable(26065);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL.VALUE", 49);
     st->size_data = sizeof(BOOL);
@@ -199,8 +199,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 26141 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL.RELIABILITY
-    st = getVariable(26141);
+  { // 26066 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL.RELIABILITY
+    st = getVariable(26066);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -211,8 +211,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26142 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL._INVERSED
-    st = getVariable(26142);
+  { // 26067 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL._INVERSED
+    st = getVariable(26067);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.SIGNAL._INVERSED", 53);
     st->size_data = sizeof(BOOL);
@@ -223,8 +223,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 26143 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.RELIABILITY
-    st = getVariable(26143);
+  { // 26068 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.RELIABILITY
+    st = getVariable(26068);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.RELIABILITY", 55);
     st->size_data = sizeof(BOOL);
@@ -235,8 +235,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 26144 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.INVERSE
-    st = getVariable(26144);
+  { // 26069 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.INVERSE
+    st = getVariable(26069);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.INVERSE", 51);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 26145 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DELAYON
-    st = getVariable(26145);
+  { // 26070 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DELAYON
+    st = getVariable(26070);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DELAYON", 51);
     st->size_data = sizeof(TIME);
@@ -259,8 +259,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 26146 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DELAYOFF
-    st = getVariable(26146);
+  { // 26071 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DELAYOFF
+    st = getVariable(26071);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DELAYOFF", 52);
     st->size_data = sizeof(TIME);
@@ -271,8 +271,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 26147 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.Q
-    st = getVariable(26147);
+  { // 26072 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.Q
+    st = getVariable(26072);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.Q", 45);
     st->size_data = sizeof(BOOL);
@@ -283,8 +283,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 26148 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.STATUS
-    st = getVariable(26148);
+  { // 26073 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.STATUS
+    st = getVariable(26073);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.STATUS", 50);
     st->size_data = sizeof(DWORD);
@@ -295,8 +295,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 26149 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DISABLED_SIG
-    st = getVariable(26149);
+  { // 26074 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DISABLED_SIG
+    st = getVariable(26074);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.STR_SS.DISABLED_SIG", 56);
     st->size_data = sizeof(BOOL);
@@ -307,8 +307,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 26150 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.IN
-    st = getVariable(26150);
+  { // 26075 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.IN
+    st = getVariable(26075);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.IN", 47);
     st->size_data = sizeof(BOOL);
@@ -319,8 +319,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 26151 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.PT
-    st = getVariable(26151);
+  { // 26076 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.PT
+    st = getVariable(26076);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.PT", 47);
     st->size_data = sizeof(TIME);
@@ -331,8 +331,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 26152 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.Q
-    st = getVariable(26152);
+  { // 26077 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.Q
+    st = getVariable(26077);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.Q", 46);
     st->size_data = sizeof(BOOL);
@@ -343,8 +343,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 26153 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.ET
-    st = getVariable(26153);
+  { // 26078 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.ET
+    st = getVariable(26078);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON.ET", 47);
     st->size_data = sizeof(TIME);
@@ -355,8 +355,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 26154 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON
-    st = getVariable(26154);
+  { // 26079 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON
+    st = getVariable(26079);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMERON", 44);
     st->size_data = sizeof(TON);
@@ -366,8 +366,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 26155 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.IN
-    st = getVariable(26155);
+  { // 26080 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.IN
+    st = getVariable(26080);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.IN", 48);
     st->size_data = sizeof(BOOL);
@@ -378,8 +378,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 26156 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.PT
-    st = getVariable(26156);
+  { // 26081 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.PT
+    st = getVariable(26081);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.PT", 48);
     st->size_data = sizeof(TIME);
@@ -390,8 +390,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 26157 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.Q
-    st = getVariable(26157);
+  { // 26082 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.Q
+    st = getVariable(26082);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.Q", 47);
     st->size_data = sizeof(BOOL);
@@ -402,8 +402,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 26158 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.ET
-    st = getVariable(26158);
+  { // 26083 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.ET
+    st = getVariable(26083);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF.ET", 48);
     st->size_data = sizeof(TIME);
@@ -414,8 +414,8 @@ int __variables_init_FB_SHU_V_GPA_VKLUCH(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 26159 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF
-    st = getVariable(26159);
+  { // 26084 PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF
+    st = getVariable(26084);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_SHU_V_GPA_VKLUCH.TIMEROFF", 45);
     st->size_data = sizeof(TOF);

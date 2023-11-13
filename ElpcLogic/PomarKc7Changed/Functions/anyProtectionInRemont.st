@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 anyProtectioninRemont:=
 protections.Topornogo_podshipnika_EDT_1.Remont OR
 protections.Toy_podshipnika_EDT_2.Remont OR

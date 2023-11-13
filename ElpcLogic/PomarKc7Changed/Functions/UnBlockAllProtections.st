@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 protections.Topornogo_podshipnika_EDT_1.inOpcCommandsDisabled:=FALSE;
 protections.Toy_podshipnika_EDT_2.inOpcCommandsDisabled:=FALSE;
 protections.Toy_podshipnika_kol_EDT_3.inOpcCommandsDisabled:=FALSE;

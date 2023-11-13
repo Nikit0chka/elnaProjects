@@ -29,6 +29,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 strDI.blConnect := (*((UINT_TO_WORD(arDIN.wFlags) = 1472) and*) (UINT_TO_WORD(err_mod.wValue) = 20) and (UINT_TO_WORD(err_mod.wFlags) = 192);
 Bounce := (UINT_TO_WORD(arDIN.wFlags) AND 16#0020) <> 0;
 

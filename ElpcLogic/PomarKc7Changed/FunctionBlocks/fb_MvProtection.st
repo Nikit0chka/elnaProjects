@@ -37,6 +37,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 timer(IN := (sw.onStatus = statusDualInput.STATUS_OFF) AND StrDIp.isRunning  , PT := StrDIp.delay);
 SignalingTrig(CLK := timer.Q);
 IF SignalingTrig.Q THEN

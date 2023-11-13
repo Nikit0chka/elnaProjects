@@ -13,6 +13,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 IF StrQ.ask THEN
                     StrQ.inOpcCommandsDisabled:=TRUE;
                     StrQ.reset:=TRUE;                   

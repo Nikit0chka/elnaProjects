@@ -18,6 +18,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 cmd := WORD_TO_BYTE(command and 16#7);
 parametr := WORD_TO_BYTE(SHR((command and 16#1FF8), 3));
 source := WORD_TO_BYTE(SHR(command, 13));

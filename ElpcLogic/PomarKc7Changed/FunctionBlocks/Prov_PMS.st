@@ -55,6 +55,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 IF NOT onInit THEN      
     fb_pnsOff(phaseNumber:=1, act:=_off);
     fb_timer120(phaseNumber:=2, delay:=T#120S);

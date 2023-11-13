@@ -25,7 +25,7 @@ VAR_INPUT
 END_VAR
 
 VAR
-	onInit : BOOL     := FALSE;
+	onInit : BOOL         := FALSE;
 	_statOn : BOOL;
 	_statOff : BOOL;
 	getSdvig : BOOL;
@@ -56,6 +56,14 @@ VAR_IN_OUT
 	cmdOn : BOOL;
 	cmdOff : BOOL;
 END_VAR
+
+
+
+
+
+
+
+
 
 
 

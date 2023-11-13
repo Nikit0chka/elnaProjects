@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 nsCepeiControl:= NOT (
 	im.kran1.reliability OR
 	im.kran2.reliability OR 

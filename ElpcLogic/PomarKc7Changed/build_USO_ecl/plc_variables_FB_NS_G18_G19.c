@@ -187,8 +187,8 @@ int __variables_init_FB_NS_G18_G19(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 25940 PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL.VALUE
-    st = getVariable(25940);
+  { // 25865 PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL.VALUE
+    st = getVariable(25865);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL.VALUE", 43);
     st->size_data = sizeof(BOOL);
@@ -199,8 +199,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->VALUE;
     st->value_p = p_BOOL;
   }
-  { // 25941 PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL.RELIABILITY
-    st = getVariable(25941);
+  { // 25866 PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL.RELIABILITY
+    st = getVariable(25866);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL.RELIABILITY", 49);
     st->size_data = sizeof(BOOL);
@@ -211,8 +211,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25942 PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL._INVERSED
-    st = getVariable(25942);
+  { // 25867 PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL._INVERSED
+    st = getVariable(25867);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.SIGNAL._INVERSED", 47);
     st->size_data = sizeof(BOOL);
@@ -223,8 +223,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TYPE_RELIABLEBIT->_INVERSED;
     st->value_p = p_BOOL;
   }
-  { // 25943 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.RELIABILITY
-    st = getVariable(25943);
+  { // 25868 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.RELIABILITY
+    st = getVariable(25868);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.RELIABILITY", 49);
     st->size_data = sizeof(BOOL);
@@ -235,8 +235,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 25944 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.INVERSE
-    st = getVariable(25944);
+  { // 25869 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.INVERSE
+    st = getVariable(25869);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.INVERSE", 45);
     st->size_data = sizeof(BOOL);
@@ -247,8 +247,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 25945 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DELAYON
-    st = getVariable(25945);
+  { // 25870 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DELAYON
+    st = getVariable(25870);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DELAYON", 45);
     st->size_data = sizeof(TIME);
@@ -259,8 +259,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 25946 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DELAYOFF
-    st = getVariable(25946);
+  { // 25871 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DELAYOFF
+    st = getVariable(25871);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DELAYOFF", 46);
     st->size_data = sizeof(TIME);
@@ -271,8 +271,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 25947 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.Q
-    st = getVariable(25947);
+  { // 25872 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.Q
+    st = getVariable(25872);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.Q", 39);
     st->size_data = sizeof(BOOL);
@@ -283,8 +283,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 25948 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.STATUS
-    st = getVariable(25948);
+  { // 25873 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.STATUS
+    st = getVariable(25873);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.STATUS", 44);
     st->size_data = sizeof(DWORD);
@@ -295,8 +295,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 25949 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DISABLED_SIG
-    st = getVariable(25949);
+  { // 25874 PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DISABLED_SIG
+    st = getVariable(25874);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.STR_SS.DISABLED_SIG", 50);
     st->size_data = sizeof(BOOL);
@@ -307,8 +307,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->DISABLED_SIG;
     st->value_p = p_BOOL;
   }
-  { // 25950 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.IN
-    st = getVariable(25950);
+  { // 25875 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.IN
+    st = getVariable(25875);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.IN", 41);
     st->size_data = sizeof(BOOL);
@@ -319,8 +319,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TON->IN;
     st->value_p = p_BOOL;
   }
-  { // 25951 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.PT
-    st = getVariable(25951);
+  { // 25876 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.PT
+    st = getVariable(25876);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.PT", 41);
     st->size_data = sizeof(TIME);
@@ -331,8 +331,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TIME = (TIME*)&p_TON->PT;
     st->value_p = p_TIME;
   }
-  { // 25952 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.Q
-    st = getVariable(25952);
+  { // 25877 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.Q
+    st = getVariable(25877);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.Q", 40);
     st->size_data = sizeof(BOOL);
@@ -343,8 +343,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TON->Q;
     st->value_p = p_BOOL;
   }
-  { // 25953 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.ET
-    st = getVariable(25953);
+  { // 25878 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.ET
+    st = getVariable(25878);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON.ET", 41);
     st->size_data = sizeof(TIME);
@@ -355,8 +355,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TIME = (TIME*)&p_TON->ET;
     st->value_p = p_TIME;
   }
-  { // 25954 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON
-    st = getVariable(25954);
+  { // 25879 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON
+    st = getVariable(25879);
     memcpy(st->IEC_TYPE, "TON", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMERON", 38);
     st->size_data = sizeof(TON);
@@ -366,8 +366,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TON = (TON*)&p_FB_SINGLESIGNAL->TIMERON;
     st->value_p = (void *)p_TON;
   }
-  { // 25955 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.IN
-    st = getVariable(25955);
+  { // 25880 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.IN
+    st = getVariable(25880);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.IN", 42);
     st->size_data = sizeof(BOOL);
@@ -378,8 +378,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TOF->IN;
     st->value_p = p_BOOL;
   }
-  { // 25956 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.PT
-    st = getVariable(25956);
+  { // 25881 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.PT
+    st = getVariable(25881);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.PT", 42);
     st->size_data = sizeof(TIME);
@@ -390,8 +390,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TIME = (TIME*)&p_TOF->PT;
     st->value_p = p_TIME;
   }
-  { // 25957 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.Q
-    st = getVariable(25957);
+  { // 25882 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.Q
+    st = getVariable(25882);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -402,8 +402,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_BOOL = (BOOL*)&p_TOF->Q;
     st->value_p = p_BOOL;
   }
-  { // 25958 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.ET
-    st = getVariable(25958);
+  { // 25883 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.ET
+    st = getVariable(25883);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF.ET", 42);
     st->size_data = sizeof(TIME);
@@ -414,8 +414,8 @@ int __variables_init_FB_NS_G18_G19(){
     p_TIME = (TIME*)&p_TOF->ET;
     st->value_p = p_TIME;
   }
-  { // 25959 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF
-    st = getVariable(25959);
+  { // 25884 PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF
+    st = getVariable(25884);
     memcpy(st->IEC_TYPE, "TOF", 3);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_PROC.FB_NS_G18_G19.TIMEROFF", 39);
     st->size_data = sizeof(TOF);

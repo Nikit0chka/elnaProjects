@@ -23,9 +23,17 @@ VAR
 END_VAR
 
 VAR CONSTANT
-	P0 : LREAL     := 0.1033;
-	T0 : LREAL     := 293.0;
+	P0 : LREAL         := 0.1033;
+	T0 : LREAL         := 293.0;
 END_VAR
+
+
+
+
+
+
+
+
 
 
 

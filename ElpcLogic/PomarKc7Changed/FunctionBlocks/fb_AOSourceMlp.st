@@ -32,6 +32,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 IF NOT secondTack THEN
           IF (strAO.newLL <> retainLL) AND (retainLL <> 0.0) THEN  strAO.LL := retainLL;
           ELSE strAO.LL:= strAO.newLL; END_IF;

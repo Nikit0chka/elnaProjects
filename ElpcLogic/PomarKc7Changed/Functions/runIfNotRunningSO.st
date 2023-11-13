@@ -5,8 +5,16 @@ VAR_IN_OUT
 END_VAR
 
 VAR CONSTANT
-	cmdRun : WORD     := 1;
+	cmdRun : WORD         := 1;
 END_VAR
+
+
+
+
+
+
+
+
 
 
 

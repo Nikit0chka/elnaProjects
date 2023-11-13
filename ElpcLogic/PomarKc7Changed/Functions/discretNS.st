@@ -12,6 +12,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 discretNS:=  ((di.di_0.reliability <> 255)
               OR (di.di_1.reliability <> 255)
               OR (di.di_2.reliability <> 255)

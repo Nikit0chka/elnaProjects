@@ -1,7 +1,6 @@
 FUNCTION_BLOCK OPC_AI_INIT
 
 VAR_EXTERNAL
-	ai : aiConfig
 	AI_Tstali_statora_kanal_1_HL : LREAL;
 	AI_Tstali_statora_kanal_1_LL : LREAL;
 	AI_Tstali_statora_kanal_1_command : UINT;
@@ -546,7 +545,16 @@ VAR_EXTERNAL
 	AI_Vibro_skorost_OP_shesterni_RED_T6_newHW : LREAL;
 	AI_Vibro_skorost_OP_shesterni_RED_T6_HA : LREAL;
 	AI_Vibro_skorost_OP_shesterni_RED_T6_newHA : LREAL;
+	ai : AiConfig;
 END_VAR
+
+
+
+
+
+
+
+
 AI_Tstali_statora_kanal_1_HL := ai.Tstali_statora_kanal_1.HL;
 AI_Tstali_statora_kanal_1_LL := ai.Tstali_statora_kanal_1.LL;
 AI_Tstali_statora_kanal_1_newHL := ai.Tstali_statora_kanal_1.dHL;

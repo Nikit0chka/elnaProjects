@@ -187,8 +187,8 @@ int __variables_init_STSS_INI(){
   FB_ALGORITMSMANAGER *p_FB_ALGORITMSMANAGER;
   FB_PROTECTIONSMANAGER *p_FB_PROTECTIONSMANAGER;
 
-  { // 19870 PROGRAM0.IM_STRUCTS_INI.STSS_INI.DATA_INI
-    st = getVariable(19870);
+  { // 19795 PROGRAM0.IM_STRUCTS_INI.STSS_INI.DATA_INI
+    st = getVariable(19795);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.DATA_INI", 41);
     st->size_data = sizeof(BOOL);
@@ -198,8 +198,8 @@ int __variables_init_STSS_INI(){
     p_BOOL = (BOOL*)&p_FB_SINGLESIGNAL_INIT->DATA_INI;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19871 PROGRAM0.IM_STRUCTS_INI.STSS_INI.INVERSE
-    st = getVariable(19871);
+  { // 19796 PROGRAM0.IM_STRUCTS_INI.STSS_INI.INVERSE
+    st = getVariable(19796);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.INVERSE", 40);
     st->size_data = sizeof(BOOL);
@@ -209,8 +209,8 @@ int __variables_init_STSS_INI(){
     p_BOOL = (BOOL*)&p_FB_SINGLESIGNAL_INIT->INVERSE;
     UnpackVar(p_BOOL, BOOL_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19872 PROGRAM0.IM_STRUCTS_INI.STSS_INI.DELAYON
-    st = getVariable(19872);
+  { // 19797 PROGRAM0.IM_STRUCTS_INI.STSS_INI.DELAYON
+    st = getVariable(19797);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.DELAYON", 40);
     st->size_data = sizeof(TIME);
@@ -220,8 +220,8 @@ int __variables_init_STSS_INI(){
     p_TIME = (TIME*)&p_FB_SINGLESIGNAL_INIT->DELAYON;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19873 PROGRAM0.IM_STRUCTS_INI.STSS_INI.DELAYOFF
-    st = getVariable(19873);
+  { // 19798 PROGRAM0.IM_STRUCTS_INI.STSS_INI.DELAYOFF
+    st = getVariable(19798);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.DELAYOFF", 41);
     st->size_data = sizeof(TIME);
@@ -231,8 +231,8 @@ int __variables_init_STSS_INI(){
     p_TIME = (TIME*)&p_FB_SINGLESIGNAL_INIT->DELAYOFF;
     UnpackVar(p_TIME, TIME_ENUM, &st->value_p, &st->f_value_p, &st->flags);
   }
-  { // 19874 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.RELIABILITY
-    st = getVariable(19874);
+  { // 19799 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.RELIABILITY
+    st = getVariable(19799);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.RELIABILITY", 51);
     st->size_data = sizeof(BOOL);
@@ -243,8 +243,8 @@ int __variables_init_STSS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->RELIABILITY;
     st->value_p = p_BOOL;
   }
-  { // 19875 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.INVERSE
-    st = getVariable(19875);
+  { // 19800 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.INVERSE
+    st = getVariable(19800);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.INVERSE", 47);
     st->size_data = sizeof(BOOL);
@@ -255,8 +255,8 @@ int __variables_init_STSS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->INVERSE;
     st->value_p = p_BOOL;
   }
-  { // 19876 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DELAYON
-    st = getVariable(19876);
+  { // 19801 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DELAYON
+    st = getVariable(19801);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DELAYON", 47);
     st->size_data = sizeof(TIME);
@@ -267,8 +267,8 @@ int __variables_init_STSS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYON;
     st->value_p = p_TIME;
   }
-  { // 19877 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DELAYOFF
-    st = getVariable(19877);
+  { // 19802 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DELAYOFF
+    st = getVariable(19802);
     memcpy(st->IEC_TYPE, "TIME", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DELAYOFF", 48);
     st->size_data = sizeof(TIME);
@@ -279,8 +279,8 @@ int __variables_init_STSS_INI(){
     p_TIME = (TIME*)&p_STRUCT_SINGLESIGNAL->DELAYOFF;
     st->value_p = p_TIME;
   }
-  { // 19878 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.Q
-    st = getVariable(19878);
+  { // 19803 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.Q
+    st = getVariable(19803);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.Q", 41);
     st->size_data = sizeof(BOOL);
@@ -291,8 +291,8 @@ int __variables_init_STSS_INI(){
     p_BOOL = (BOOL*)&p_STRUCT_SINGLESIGNAL->Q;
     st->value_p = p_BOOL;
   }
-  { // 19879 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.STATUS
-    st = getVariable(19879);
+  { // 19804 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.STATUS
+    st = getVariable(19804);
     memcpy(st->IEC_TYPE, "DWORD", 5);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.STATUS", 46);
     st->size_data = sizeof(DWORD);
@@ -303,8 +303,8 @@ int __variables_init_STSS_INI(){
     p_DWORD = (DWORD*)&p_STRUCT_SINGLESIGNAL->STATUS;
     st->value_p = p_DWORD;
   }
-  { // 19880 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DISABLED_SIG
-    st = getVariable(19880);
+  { // 19805 PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DISABLED_SIG
+    st = getVariable(19805);
     memcpy(st->IEC_TYPE, "BOOL", 4);
     memcpy(st->IEC_VAR_NAME, "PROGRAM0.IM_STRUCTS_INI.STSS_INI.STR_SS.DISABLED_SIG", 52);
     st->size_data = sizeof(BOOL);

@@ -13,6 +13,14 @@ END_VAR
 
 
 
+
+
+
+
+
+
+
+
 IF protections.Topornogo_podshipnika_EDT_1.Signaling THEN
     resetAiProtection(protections.Topornogo_podshipnika_EDT_1);  END_IF;
 

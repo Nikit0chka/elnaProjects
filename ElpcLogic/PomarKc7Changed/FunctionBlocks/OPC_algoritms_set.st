@@ -12,6 +12,34 @@ VAR_EXTERNAL
 	algoritms_TestProtection_status : UDINT;
 	algoritms_autoNu_NotHasRezervNU : BOOL;
 	algoritms_autoNu_status : UDINT;
+	algoritms_Pusk_SEC_faza_reactor_Top : UDINT;
+	algoritms_Pusk_SEC_faza_reactor_Error : UDINT;
+	algoritms_Pusk_SEC_faza_reactor_Start : UDINT;
+	algoritms_Pusk_SEC_faza_reactor_status : UDINT;
+	algoritms_Pusk_SEC_faza_chastotny_Top : UDINT;
+	algoritms_Pusk_SEC_faza_chastotny_Error : UDINT;
+	algoritms_Pusk_SEC_faza_chastotny_Start : UDINT;
+	algoritms_Pusk_SEC_faza_chastotny_status : UDINT;
+	algoritms_Prov_opressovka_ALG_Top : UDINT;
+	algoritms_Prov_opressovka_ALG_Error : UDINT;
+	algoritms_Prov_opressovka_ALG_Start : UDINT;
+	algoritms_Prov_opressovka_ALG_status : UDINT;
+	algoritms_Prov_PMS_ALG_Top : UDINT;
+	algoritms_Prov_PMS_ALG_Error : UDINT;
+	algoritms_Prov_PMS_ALG_Start : UDINT;
+	algoritms_Prov_PMS_ALG_status : UDINT;
+	algoritms_Pusk_TH_faza_Top : UDINT;
+	algoritms_Pusk_TH_faza_Error : UDINT;
+	algoritms_Pusk_TH_faza_Start : UDINT;
+	algoritms_Pusk_TH_faza_status : UDINT;
+	algoritms_Pusk_F_faza2_Top : UDINT;
+	algoritms_Pusk_F_faza2_Error : UDINT;
+	algoritms_Pusk_F_faza2_Start : UDINT;
+	algoritms_Pusk_F_faza2_status : UDINT;
+	algoritms_Pusk_F_faza1_Top : UDINT;
+	algoritms_Pusk_F_faza1_Error : UDINT;
+	algoritms_Pusk_F_faza1_Start : UDINT;
+	algoritms_Pusk_F_faza1_status : UDINT;
 	algoritms_puskOilSystem_Error : UDINT;
 	algoritms_puskOilSystem_Start : UDINT;
 	algoritms_puskOilSystem_Top : UDINT;
@@ -37,14 +65,6 @@ VAR_EXTERNAL
 	algoritms_RingToLine_Start : UDINT;
 	algoritms_RingToLine_Top : UDINT;
 	algoritms_RingToLine_status : UDINT;
-	algoritms_SemiAutoPusk_Error : UDINT;
-	algoritms_SemiAutoPusk_Start : UDINT;
-	algoritms_SemiAutoPusk_Top : UDINT;
-	algoritms_SemiAutoPusk_cmdRun1ph_status : UDINT;
-	algoritms_SemiAutoPusk_cmdRun2ph_status : UDINT;
-	algoritms_SemiAutoPusk_cmdRun3ph_status : UDINT;
-	algoritms_SemiAutoPusk_cmdRun4ph_status : UDINT;
-	algoritms_SemiAutoPusk_status : UDINT;
 	algoritms_ao_Error : UDINT;
 	algoritms_ao_Start : UDINT;
 	algoritms_ao_Top : UDINT;
@@ -77,16 +97,15 @@ VAR_EXTERNAL
 	algoritms_puskK_questionFilling_status : UDINT;
 	algoritms_puskK_questionUnload_status : UDINT;
 	algoritms_puskK_status : UDINT;
+	algoritms_autoNu_Start : UDINT;
+	algoritms_autoNu_Error : UDINT;
+	algoritms_autoNu_Top : UDINT;
+	algoritms_AutoAvom_Start : UDINT;
+	algoritms_AutoAvom_Error : UDINT;
+	algoritms_AutoAvom_Top : UDINT;
 	algoritms_puskK_wait720_timer : UINT;
 	algoritms_puskOilSystem_BreakPuskTimer_Poil_timer : UINT;
 	algoritms_puskOilSystem_BreakPuskTimer_dPmg_timer : UINT;
-	algoritms_puskV_Error : UDINT;
-	algoritms_puskV_Start : UDINT;
-	algoritms_puskV_Top : UDINT;
-	algoritms_puskV_questionFilling_status : UDINT;
-	algoritms_puskV_questionMVoff_status : UDINT;
-	algoritms_puskV_status : UDINT;
-	algoritms_puskV_wait600_timer : UINT;
 	algoritms_testPms_BreakTest_timer : UINT;
 	algoritms_testPms_Error : UDINT;
 	algoritms_testPms_Start : UDINT;
@@ -100,7 +119,6 @@ VAR_EXTERNAL
 	algoritms_testdPmg_algContinue_status : UDINT;
 	algoritms_testdPmg_status : UDINT;
 END_VAR
-
 
 
 
@@ -182,45 +200,54 @@ algoritms_RingToLine_Start	:= DWORD_TO_UDINT(algoritms.RingToLine.Start);
 algoritms_RingToLine_Error	:= DWORD_TO_UDINT(algoritms.RingToLine.Error);
 algoritms_RingToLine_Top	:= DWORD_TO_UDINT(algoritms.RingToLine.Top);
 
-algoritms_puskK_status	            := DWORD_TO_UDINT(algoritms.puskK.status);
-algoritms_puskK_Start	            := DWORD_TO_UDINT(algoritms.puskK.Start);
-algoritms_puskK_Error	            := DWORD_TO_UDINT(algoritms.puskK.Error);
-algoritms_puskK_Top	                      := DWORD_TO_UDINT(algoritms.puskK.Top);
-algoritms_puskK_wait720_timer	            := AlgTimers.puskK_wait720;
-algoritms_puskK_questionFilling_status	  := DWORD_TO_UDINT(AlgQuestions.puskK_questionFilling.status);
-algoritms_puskK_questionUnload_status	  := DWORD_TO_UDINT(AlgQuestions.puskK_questionUnload.status);
-
-algoritms_puskV_status	          := DWORD_TO_UDINT(algoritms.puskV.status);
-algoritms_puskV_Start	          := DWORD_TO_UDINT(algoritms.puskV.Start);
-algoritms_puskV_Error	          := DWORD_TO_UDINT(algoritms.puskV.Error);
-algoritms_puskV_Top	                    := DWORD_TO_UDINT(algoritms.puskV.Top);
-algoritms_puskV_wait600_timer	          := AlgTimers.puskV_wait600;
-algoritms_puskV_questionFilling_status	:= DWORD_TO_UDINT(AlgQuestions.puskV_questionEngine.status);
-algoritms_puskV_questionMVoff_status	:= DWORD_TO_UDINT(AlgQuestions.puskV_questionMVoff.status);
-
-algoritms_Apusk_status	:= DWORD_TO_UDINT(algoritms.Apusk.status);
-algoritms_Apusk_Start	:= DWORD_TO_UDINT(algoritms.Apusk.Start);
-algoritms_Apusk_Error	:= DWORD_TO_UDINT(algoritms.Apusk.Error);
-algoritms_Apusk_Top	          := DWORD_TO_UDINT(algoritms.Apusk.Top);
-
-algoritms_SemiAutoPusk_status	:= DWORD_TO_UDINT(algoritms.SemiAutoPusk.status);
-algoritms_SemiAutoPusk_Start	:= DWORD_TO_UDINT(algoritms.SemiAutoPusk.Start);
-algoritms_SemiAutoPusk_Error	:= DWORD_TO_UDINT(algoritms.SemiAutoPusk.Error);
-algoritms_SemiAutoPusk_Top	:= DWORD_TO_UDINT(algoritms.SemiAutoPusk.Top);
-algoritms_SemiAutoPusk_cmdRun1ph_status	:= DWORD_TO_UDINT(AlgQuestions.SemiAutoPusk_cmdRun1ph.status);
-algoritms_SemiAutoPusk_cmdRun2ph_status	:= DWORD_TO_UDINT(AlgQuestions.SemiAutoPusk_cmdRun2ph.status);
-algoritms_SemiAutoPusk_cmdRun3ph_status	:= DWORD_TO_UDINT(AlgQuestions.SemiAutoPusk_cmdRun3ph.status);
-algoritms_SemiAutoPusk_cmdRun4ph_status	:= DWORD_TO_UDINT(AlgQuestions.SemiAutoPusk_cmdRun4ph.status);
-
 algoritms_AutoPns_status	:= DWORD_TO_UDINT(algoritms.AutoPns.status);
 algoritms_AutoPns_OnTimer	:= AlgTimers.AutoPns_OnTimer;
 algoritms_AutoPns_OffTimer	:= AlgTimers.AutoPns_OffTimer;
 
 algoritms_autoNu_status	:= DWORD_TO_UDINT(algoritms.autoNu.status);
+algoritms_autoNu_Start	:= DWORD_TO_UDINT(algoritms.autoNu.Start);
+algoritms_autoNu_Error	:= DWORD_TO_UDINT(algoritms.autoNu.Error);
+algoritms_autoNu_Top	:= DWORD_TO_UDINT(algoritms.autoNu.Top);
 
 algoritms_AutoAvom_status	:= DWORD_TO_UDINT(algoritms.AutoAvom.status);
+algoritms_AutoAvom_Start	:= DWORD_TO_UDINT(algoritms.AutoAvom.Start);
+algoritms_AutoAvom_Error	:= DWORD_TO_UDINT(algoritms.AutoAvom.Error);
+algoritms_AutoAvom_Top	:= DWORD_TO_UDINT(algoritms.AutoAvom.Top);
 
-algoritms_TestProtection_status	:= DWORD_TO_UDINT(algoritms.TestProtection.status);
+algoritms_Pusk_F_faza1_status	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza1.status);
+algoritms_Pusk_F_faza1_Start	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza1.Start);
+algoritms_Pusk_F_faza1_Error	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza1.Error);
+algoritms_Pusk_F_faza1_Top	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza1.Top);
+
+algoritms_Pusk_F_faza2_status	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza2.status);
+algoritms_Pusk_F_faza2_Start	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza2.Start);
+algoritms_Pusk_F_faza2_Error	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza2.Error);
+algoritms_Pusk_F_faza2_Top	:= DWORD_TO_UDINT(algoritms.Pusk_F_faza2.Top);
+
+algoritms_Pusk_TH_faza_status	:= DWORD_TO_UDINT(algoritms.Pusk_TH_faza.status);
+algoritms_Pusk_TH_faza_Start	:= DWORD_TO_UDINT(algoritms.Pusk_TH_faza.Start);
+algoritms_Pusk_TH_faza_Error	:= DWORD_TO_UDINT(algoritms.Pusk_TH_faza.Error);
+algoritms_Pusk_TH_faza_Top	:= DWORD_TO_UDINT(algoritms.Pusk_TH_faza.Top);
+
+algoritms_Prov_PMS_ALG_status	:= DWORD_TO_UDINT(algoritms.Prov_PMS_ALG.status);
+algoritms_Prov_PMS_ALG_Start	:= DWORD_TO_UDINT(algoritms.Prov_PMS_ALG.Start);
+algoritms_Prov_PMS_ALG_Error	:= DWORD_TO_UDINT(algoritms.Prov_PMS_ALG.Error);
+algoritms_Prov_PMS_ALG_Top	:= DWORD_TO_UDINT(algoritms.Prov_PMS_ALG.Top);
+
+algoritms_Prov_opressovka_ALG_status	:= DWORD_TO_UDINT(algoritms.Prov_opressovka_ALG.status);
+algoritms_Prov_opressovka_ALG_Start	:= DWORD_TO_UDINT(algoritms.Prov_opressovka_ALG.Start);
+algoritms_Prov_opressovka_ALG_Error	:= DWORD_TO_UDINT(algoritms.Prov_opressovka_ALG.Error);
+algoritms_Prov_opressovka_ALG_Top	:= DWORD_TO_UDINT(algoritms.Prov_opressovka_ALG.Top);
+
+algoritms_Pusk_SEC_faza_chastotny_status	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_chastotny.status);
+algoritms_Pusk_SEC_faza_chastotny_Start	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_chastotny.Start);
+algoritms_Pusk_SEC_faza_chastotny_Error	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_chastotny.Error);
+algoritms_Pusk_SEC_faza_chastotny_Top	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_chastotny.Top);
+
+algoritms_Pusk_SEC_faza_reactor_status	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_reactor.status);
+algoritms_Pusk_SEC_faza_reactor_Start	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_reactor.Start);
+algoritms_Pusk_SEC_faza_reactor_Error	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_reactor.Error);
+algoritms_Pusk_SEC_faza_reactor_Top	:= DWORD_TO_UDINT(algoritms.Pusk_SEC_faza_reactor.Top);
 
 algoritms_Remont_status	:= DWORD_TO_UDINT(algoritms.Remont.status);
 
