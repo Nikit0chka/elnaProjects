@@ -1,6 +1,7 @@
 FUNCTION_BLOCK OPC_AI_SET
 
 VAR_EXTERNAL
+	ai : aiConfig;
 	AI_Tstali_statora_kanal_1_HL : LREAL;
 	AI_Tstali_statora_kanal_1_LL : LREAL;
 	AI_Tstali_statora_kanal_1_command : UINT;
@@ -299,8 +300,8 @@ VAR_EXTERNAL
 	AI_Tmasla_MB_newLL : LREAL;
 	AI_Tmasla_MB_status : UDINT;
 	AI_Tmasla_MB_value : LREAL;
-	AI_Tmasla_MB_LW : LREAL;
-	AI_Tmasla_MB_newLW : LREAL;
+	AI_Tmasla_MB_HW : LREAL;
+	AI_Tmasla_MB_newHW : LREAL;
 	AI_Tmasla_MB_TEN_HL : LREAL;
 	AI_Tmasla_MB_TEN_LL : LREAL;
 	AI_Tmasla_MB_TEN_command : UINT;
@@ -375,8 +376,8 @@ VAR_EXTERNAL
 	AI_Pgaza_na_vyhode_nagnetatelia_newLL : LREAL;
 	AI_Pgaza_na_vyhode_nagnetatelia_status : UDINT;
 	AI_Pgaza_na_vyhode_nagnetatelia_value : LREAL;
-	AI_Pgaza_na_vyhode_nagnetatelia_HW : LREAL;
-	AI_Pgaza_na_vyhode_nagnetatelia_newHW : LREAL;
+	AI_Pgaza_na_vyhode_nagnetatelia_LW : LREAL;
+	AI_Pgaza_na_vyhode_nagnetatelia_newLW : LREAL;
 	AI_Pgaza_na_vyhode_nagnetatelia_HA : LREAL;
 	AI_Pgaza_na_vyhode_nagnetatelia_newHA : LREAL;
 	AI_Pimpuls_gaz_HL : LREAL;
@@ -545,449 +546,410 @@ VAR_EXTERNAL
 	AI_Vibro_skorost_OP_shesterni_RED_T6_newHW : LREAL;
 	AI_Vibro_skorost_OP_shesterni_RED_T6_HA : LREAL;
 	AI_Vibro_skorost_OP_shesterni_RED_T6_newHA : LREAL;
-	ai : AiConfig;
 END_VAR
-
-
-
-
-
-
-
 
 AI_Tstali_statora_kanal_1_HL := ai.Tstali_statora_kanal_1.HL;
 AI_Tstali_statora_kanal_1_LL := ai.Tstali_statora_kanal_1.LL;
 AI_Tstali_statora_kanal_1_status := DWORD_TO_UDINT(ai.Tstali_statora_kanal_1.status);
 AI_Tstali_statora_kanal_1_value := ai.Tstali_statora_kanal_1.value;
 AI_Tstali_statora_kanal_1_HW := ai.Tstali_statora_kanal_1.HW;
-AI_Tstali_statora_kanal_1_newHW := ai.Tstali_statora_kanal_1.dHW;
+
 
 AI_Tstali_statora_kanal_2_HL := ai.Tstali_statora_kanal_2.HL;
 AI_Tstali_statora_kanal_2_LL := ai.Tstali_statora_kanal_2.LL;
 AI_Tstali_statora_kanal_2_status := DWORD_TO_UDINT(ai.Tstali_statora_kanal_2.status);
 AI_Tstali_statora_kanal_2_value := ai.Tstali_statora_kanal_2.value;
 AI_Tstali_statora_kanal_2_HW := ai.Tstali_statora_kanal_2.HW;
-AI_Tstali_statora_kanal_2_newHW := ai.Tstali_statora_kanal_2.dHW;
+
 
 AI_Tstali_statora_kanal_3_HL := ai.Tstali_statora_kanal_3.HL;
 AI_Tstali_statora_kanal_3_LL := ai.Tstali_statora_kanal_3.LL;
 AI_Tstali_statora_kanal_3_status := DWORD_TO_UDINT(ai.Tstali_statora_kanal_3.status);
 AI_Tstali_statora_kanal_3_value := ai.Tstali_statora_kanal_3.value;
 AI_Tstali_statora_kanal_3_HW := ai.Tstali_statora_kanal_3.HW;
-AI_Tstali_statora_kanal_3_newHW := ai.Tstali_statora_kanal_3.dHW;
+
 
 AI_Tmedi_statora_kanal_1_HL := ai.Tmedi_statora_kanal_1.HL;
 AI_Tmedi_statora_kanal_1_LL := ai.Tmedi_statora_kanal_1.LL;
 AI_Tmedi_statora_kanal_1_status := DWORD_TO_UDINT(ai.Tmedi_statora_kanal_1.status);
 AI_Tmedi_statora_kanal_1_value := ai.Tmedi_statora_kanal_1.value;
 AI_Tmedi_statora_kanal_1_HW := ai.Tmedi_statora_kanal_1.HW;
-AI_Tmedi_statora_kanal_1_newHW := ai.Tmedi_statora_kanal_1.dHW;
+
 
 AI_Tmedi_statora_kanal_2_HL := ai.Tmedi_statora_kanal_2.HL;
 AI_Tmedi_statora_kanal_2_LL := ai.Tmedi_statora_kanal_2.LL;
 AI_Tmedi_statora_kanal_2_status := DWORD_TO_UDINT(ai.Tmedi_statora_kanal_2.status);
 AI_Tmedi_statora_kanal_2_value := ai.Tmedi_statora_kanal_2.value;
 AI_Tmedi_statora_kanal_2_HW := ai.Tmedi_statora_kanal_2.HW;
-AI_Tmedi_statora_kanal_2_newHW := ai.Tmedi_statora_kanal_2.dHW;
+
 
 AI_Tmedi_statora_kanal_3_HL := ai.Tmedi_statora_kanal_3.HL;
 AI_Tmedi_statora_kanal_3_LL := ai.Tmedi_statora_kanal_3.LL;
 AI_Tmedi_statora_kanal_3_status := DWORD_TO_UDINT(ai.Tmedi_statora_kanal_3.status);
 AI_Tmedi_statora_kanal_3_value := ai.Tmedi_statora_kanal_3.value;
 AI_Tmedi_statora_kanal_3_HW := ai.Tmedi_statora_kanal_3.HW;
-AI_Tmedi_statora_kanal_3_newHW := ai.Tmedi_statora_kanal_3.dHW;
+
 
 AI_Toporno_podshipnika_EDT_1_HL := ai.Toporno_podshipnika_EDT_1.HL;
 AI_Toporno_podshipnika_EDT_1_LL := ai.Toporno_podshipnika_EDT_1.LL;
 AI_Toporno_podshipnika_EDT_1_status := DWORD_TO_UDINT(ai.Toporno_podshipnika_EDT_1.status);
 AI_Toporno_podshipnika_EDT_1_value := ai.Toporno_podshipnika_EDT_1.value;
 AI_Toporno_podshipnika_EDT_1_HW := ai.Toporno_podshipnika_EDT_1.HW;
-AI_Toporno_podshipnika_EDT_1_newHW := ai.Toporno_podshipnika_EDT_1.dHW;
 AI_Toporno_podshipnika_EDT_1_HA := ai.Toporno_podshipnika_EDT_1.HA;
-AI_Toporno_podshipnika_EDT_1_newHA := ai.Toporno_podshipnika_EDT_1.dHA;
+
 
 AI_Toy_podshipnika_EDT_2_HL := ai.Toy_podshipnika_EDT_2.HL;
 AI_Toy_podshipnika_EDT_2_LL := ai.Toy_podshipnika_EDT_2.LL;
 AI_Toy_podshipnika_EDT_2_status := DWORD_TO_UDINT(ai.Toy_podshipnika_EDT_2.status);
 AI_Toy_podshipnika_EDT_2_value := ai.Toy_podshipnika_EDT_2.value;
 AI_Toy_podshipnika_EDT_2_HW := ai.Toy_podshipnika_EDT_2.HW;
-AI_Toy_podshipnika_EDT_2_newHW := ai.Toy_podshipnika_EDT_2.dHW;
 AI_Toy_podshipnika_EDT_2_HA := ai.Toy_podshipnika_EDT_2.HA;
-AI_Toy_podshipnika_EDT_2_newHA := ai.Toy_podshipnika_EDT_2.dHA;
+
 
 AI_Toy_podshipnika_kol_EDT_3_HL := ai.Toy_podshipnika_kol_EDT_3.HL;
 AI_Toy_podshipnika_kol_EDT_3_LL := ai.Toy_podshipnika_kol_EDT_3.LL;
 AI_Toy_podshipnika_kol_EDT_3_status := DWORD_TO_UDINT(ai.Toy_podshipnika_kol_EDT_3.status);
 AI_Toy_podshipnika_kol_EDT_3_value := ai.Toy_podshipnika_kol_EDT_3.value;
 AI_Toy_podshipnika_kol_EDT_3_HW := ai.Toy_podshipnika_kol_EDT_3.HW;
-AI_Toy_podshipnika_kol_EDT_3_newHW := ai.Toy_podshipnika_kol_EDT_3.dHW;
 AI_Toy_podshipnika_kol_EDT_3_HA := ai.Toy_podshipnika_kol_EDT_3.HA;
-AI_Toy_podshipnika_kol_EDT_3_newHA := ai.Toy_podshipnika_kol_EDT_3.dHA;
+
 
 AI_Toy_podshipnika_kol_EDT_4_HL := ai.Toy_podshipnika_kol_EDT_4.HL;
 AI_Toy_podshipnika_kol_EDT_4_LL := ai.Toy_podshipnika_kol_EDT_4.LL;
 AI_Toy_podshipnika_kol_EDT_4_status := DWORD_TO_UDINT(ai.Toy_podshipnika_kol_EDT_4.status);
 AI_Toy_podshipnika_kol_EDT_4_value := ai.Toy_podshipnika_kol_EDT_4.value;
 AI_Toy_podshipnika_kol_EDT_4_HW := ai.Toy_podshipnika_kol_EDT_4.HW;
-AI_Toy_podshipnika_kol_EDT_4_newHW := ai.Toy_podshipnika_kol_EDT_4.dHW;
 AI_Toy_podshipnika_kol_EDT_4_HA := ai.Toy_podshipnika_kol_EDT_4.HA;
-AI_Toy_podshipnika_kol_EDT_4_newHA := ai.Toy_podshipnika_kol_EDT_4.dHA;
+
 
 AI_Toy_podshipnika_shest_red_EDT_5_HL := ai.Toy_podshipnika_shest_red_EDT_5.HL;
 AI_Toy_podshipnika_shest_red_EDT_5_LL := ai.Toy_podshipnika_shest_red_EDT_5.LL;
 AI_Toy_podshipnika_shest_red_EDT_5_status := DWORD_TO_UDINT(ai.Toy_podshipnika_shest_red_EDT_5.status);
 AI_Toy_podshipnika_shest_red_EDT_5_value := ai.Toy_podshipnika_shest_red_EDT_5.value;
 AI_Toy_podshipnika_shest_red_EDT_5_HW := ai.Toy_podshipnika_shest_red_EDT_5.HW;
-AI_Toy_podshipnika_shest_red_EDT_5_newHW := ai.Toy_podshipnika_shest_red_EDT_5.dHW;
 AI_Toy_podshipnika_shest_red_EDT_5_HA := ai.Toy_podshipnika_shest_red_EDT_5.HA;
-AI_Toy_podshipnika_shest_red_EDT_5_newHA := ai.Toy_podshipnika_shest_red_EDT_5.dHA;
+
 
 AI_Ty_podshipnika_red_EDT_6_HL := ai.Ty_podshipnika_red_EDT_6.HL;
 AI_Ty_podshipnika_red_EDT_6_LL := ai.Ty_podshipnika_red_EDT_6.LL;
 AI_Ty_podshipnika_red_EDT_6_status := DWORD_TO_UDINT(ai.Ty_podshipnika_red_EDT_6.status);
 AI_Ty_podshipnika_red_EDT_6_value := ai.Ty_podshipnika_red_EDT_6.value;
 AI_Ty_podshipnika_red_EDT_6_HW := ai.Ty_podshipnika_red_EDT_6.HW;
-AI_Ty_podshipnika_red_EDT_6_newHW := ai.Ty_podshipnika_red_EDT_6.dHW;
 AI_Ty_podshipnika_red_EDT_6_HA := ai.Ty_podshipnika_red_EDT_6.HA;
-AI_Ty_podshipnika_red_EDT_6_newHA := ai.Ty_podshipnika_red_EDT_6.dHA;
+
 
 AI_Ty_podshipnika_nagnet_EDT_7_1_HL := ai.Ty_podshipnika_nagnet_EDT_7_1.HL;
 AI_Ty_podshipnika_nagnet_EDT_7_1_LL := ai.Ty_podshipnika_nagnet_EDT_7_1.LL;
 AI_Ty_podshipnika_nagnet_EDT_7_1_status := DWORD_TO_UDINT(ai.Ty_podshipnika_nagnet_EDT_7_1.status);
 AI_Ty_podshipnika_nagnet_EDT_7_1_value := ai.Ty_podshipnika_nagnet_EDT_7_1.value;
 AI_Ty_podshipnika_nagnet_EDT_7_1_HW := ai.Ty_podshipnika_nagnet_EDT_7_1.HW;
-AI_Ty_podshipnika_nagnet_EDT_7_1_newHW := ai.Ty_podshipnika_nagnet_EDT_7_1.dHW;
 AI_Ty_podshipnika_nagnet_EDT_7_1_HA := ai.Ty_podshipnika_nagnet_EDT_7_1.HA;
-AI_Ty_podshipnika_nagnet_EDT_7_1_newHA := ai.Ty_podshipnika_nagnet_EDT_7_1.dHA;
+
 
 AI_Ty_podshipnika_nagnet_EDT_7_2_HL := ai.Ty_podshipnika_nagnet_EDT_7_2.HL;
 AI_Ty_podshipnika_nagnet_EDT_7_2_LL := ai.Ty_podshipnika_nagnet_EDT_7_2.LL;
 AI_Ty_podshipnika_nagnet_EDT_7_2_status := DWORD_TO_UDINT(ai.Ty_podshipnika_nagnet_EDT_7_2.status);
 AI_Ty_podshipnika_nagnet_EDT_7_2_value := ai.Ty_podshipnika_nagnet_EDT_7_2.value;
 AI_Ty_podshipnika_nagnet_EDT_7_2_HW := ai.Ty_podshipnika_nagnet_EDT_7_2.HW;
-AI_Ty_podshipnika_nagnet_EDT_7_2_newHW := ai.Ty_podshipnika_nagnet_EDT_7_2.dHW;
 AI_Ty_podshipnika_nagnet_EDT_7_2_HA := ai.Ty_podshipnika_nagnet_EDT_7_2.HA;
-AI_Ty_podshipnika_nagnet_EDT_7_2_newHA := ai.Ty_podshipnika_nagnet_EDT_7_2.dHA;
+
 
 AI_Toy_podshipnika_svobod_konca_EDT_8_1_HL := ai.Toy_podshipnika_svobod_konca_EDT_8_1.HL;
 AI_Toy_podshipnika_svobod_konca_EDT_8_1_LL := ai.Toy_podshipnika_svobod_konca_EDT_8_1.LL;
 AI_Toy_podshipnika_svobod_konca_EDT_8_1_status := DWORD_TO_UDINT(ai.Toy_podshipnika_svobod_konca_EDT_8_1.status);
 AI_Toy_podshipnika_svobod_konca_EDT_8_1_value := ai.Toy_podshipnika_svobod_konca_EDT_8_1.value;
 AI_Toy_podshipnika_svobod_konca_EDT_8_1_HW := ai.Toy_podshipnika_svobod_konca_EDT_8_1.HW;
-AI_Toy_podshipnika_svobod_konca_EDT_8_1_newHW := ai.Toy_podshipnika_svobod_konca_EDT_8_1.dHW;
 AI_Toy_podshipnika_svobod_konca_EDT_8_1_HA := ai.Toy_podshipnika_svobod_konca_EDT_8_1.HA;
-AI_Toy_podshipnika_svobod_konca_EDT_8_1_newHA := ai.Toy_podshipnika_svobod_konca_EDT_8_1.dHA;
+
 
 AI_Toy_podshipnika_svobod_konca_EDT_8_2_HL := ai.Toy_podshipnika_svobod_konca_EDT_8_2.HL;
 AI_Toy_podshipnika_svobod_konca_EDT_8_2_LL := ai.Toy_podshipnika_svobod_konca_EDT_8_2.LL;
 AI_Toy_podshipnika_svobod_konca_EDT_8_2_status := DWORD_TO_UDINT(ai.Toy_podshipnika_svobod_konca_EDT_8_2.status);
 AI_Toy_podshipnika_svobod_konca_EDT_8_2_value := ai.Toy_podshipnika_svobod_konca_EDT_8_2.value;
 AI_Toy_podshipnika_svobod_konca_EDT_8_2_HW := ai.Toy_podshipnika_svobod_konca_EDT_8_2.HW;
-AI_Toy_podshipnika_svobod_konca_EDT_8_2_newHW := ai.Toy_podshipnika_svobod_konca_EDT_8_2.dHW;
 AI_Toy_podshipnika_svobod_konca_EDT_8_2_HA := ai.Toy_podshipnika_svobod_konca_EDT_8_2.HA;
-AI_Toy_podshipnika_svobod_konca_EDT_8_2_newHA := ai.Toy_podshipnika_svobod_konca_EDT_8_2.dHA;
+
 
 AI_Toy_podshipnika_rab_kol_EDT_9_1_HL := ai.Toy_podshipnika_rab_kol_EDT_9_1.HL;
 AI_Toy_podshipnika_rab_kol_EDT_9_1_LL := ai.Toy_podshipnika_rab_kol_EDT_9_1.LL;
 AI_Toy_podshipnika_rab_kol_EDT_9_1_status := DWORD_TO_UDINT(ai.Toy_podshipnika_rab_kol_EDT_9_1.status);
 AI_Toy_podshipnika_rab_kol_EDT_9_1_value := ai.Toy_podshipnika_rab_kol_EDT_9_1.value;
 AI_Toy_podshipnika_rab_kol_EDT_9_1_HW := ai.Toy_podshipnika_rab_kol_EDT_9_1.HW;
-AI_Toy_podshipnika_rab_kol_EDT_9_1_newHW := ai.Toy_podshipnika_rab_kol_EDT_9_1.dHW;
 AI_Toy_podshipnika_rab_kol_EDT_9_1_HA := ai.Toy_podshipnika_rab_kol_EDT_9_1.HA;
-AI_Toy_podshipnika_rab_kol_EDT_9_1_newHA := ai.Toy_podshipnika_rab_kol_EDT_9_1.dHA;
+
 
 AI_Toy_podshipnika_rab_kol_EDT_9_2_HL := ai.Toy_podshipnika_rab_kol_EDT_9_2.HL;
 AI_Toy_podshipnika_rab_kol_EDT_9_2_LL := ai.Toy_podshipnika_rab_kol_EDT_9_2.LL;
 AI_Toy_podshipnika_rab_kol_EDT_9_2_status := DWORD_TO_UDINT(ai.Toy_podshipnika_rab_kol_EDT_9_2.status);
 AI_Toy_podshipnika_rab_kol_EDT_9_2_value := ai.Toy_podshipnika_rab_kol_EDT_9_2.value;
 AI_Toy_podshipnika_rab_kol_EDT_9_2_HW := ai.Toy_podshipnika_rab_kol_EDT_9_2.HW;
-AI_Toy_podshipnika_rab_kol_EDT_9_2_newHW := ai.Toy_podshipnika_rab_kol_EDT_9_2.dHW;
 AI_Toy_podshipnika_rab_kol_EDT_9_2_HA := ai.Toy_podshipnika_rab_kol_EDT_9_2.HA;
-AI_Toy_podshipnika_rab_kol_EDT_9_2_newHA := ai.Toy_podshipnika_rab_kol_EDT_9_2.dHA;
+
 
 AI_Toy_podshipnika_nerab_kol_EDT_10_1_HL := ai.Toy_podshipnika_nerab_kol_EDT_10_1.HL;
 AI_Toy_podshipnika_nerab_kol_EDT_10_1_LL := ai.Toy_podshipnika_nerab_kol_EDT_10_1.LL;
 AI_Toy_podshipnika_nerab_kol_EDT_10_1_status := DWORD_TO_UDINT(ai.Toy_podshipnika_nerab_kol_EDT_10_1.status);
 AI_Toy_podshipnika_nerab_kol_EDT_10_1_value := ai.Toy_podshipnika_nerab_kol_EDT_10_1.value;
 AI_Toy_podshipnika_nerab_kol_EDT_10_1_HW := ai.Toy_podshipnika_nerab_kol_EDT_10_1.HW;
-AI_Toy_podshipnika_nerab_kol_EDT_10_1_newHW := ai.Toy_podshipnika_nerab_kol_EDT_10_1.dHW;
 AI_Toy_podshipnika_nerab_kol_EDT_10_1_HA := ai.Toy_podshipnika_nerab_kol_EDT_10_1.HA;
-AI_Toy_podshipnika_nerab_kol_EDT_10_1_newHA := ai.Toy_podshipnika_nerab_kol_EDT_10_1.dHA;
+
 
 AI_Toy_podshipnika_nerab_kol_EDT_10_2_HL := ai.Toy_podshipnika_nerab_kol_EDT_10_2.HL;
 AI_Toy_podshipnika_nerab_kol_EDT_10_2_LL := ai.Toy_podshipnika_nerab_kol_EDT_10_2.LL;
 AI_Toy_podshipnika_nerab_kol_EDT_10_2_status := DWORD_TO_UDINT(ai.Toy_podshipnika_nerab_kol_EDT_10_2.status);
 AI_Toy_podshipnika_nerab_kol_EDT_10_2_value := ai.Toy_podshipnika_nerab_kol_EDT_10_2.value;
 AI_Toy_podshipnika_nerab_kol_EDT_10_2_HW := ai.Toy_podshipnika_nerab_kol_EDT_10_2.HW;
-AI_Toy_podshipnika_nerab_kol_EDT_10_2_newHW := ai.Toy_podshipnika_nerab_kol_EDT_10_2.dHW;
 AI_Toy_podshipnika_nerab_kol_EDT_10_2_HA := ai.Toy_podshipnika_nerab_kol_EDT_10_2.HA;
-AI_Toy_podshipnika_nerab_kol_EDT_10_2_newHA := ai.Toy_podshipnika_nerab_kol_EDT_10_2.dHA;
+
 
 AI_Tholodnogo_vozduha_ED_kanal_1_HL := ai.Tholodnogo_vozduha_ED_kanal_1.HL;
 AI_Tholodnogo_vozduha_ED_kanal_1_LL := ai.Tholodnogo_vozduha_ED_kanal_1.LL;
 AI_Tholodnogo_vozduha_ED_kanal_1_status := DWORD_TO_UDINT(ai.Tholodnogo_vozduha_ED_kanal_1.status);
 AI_Tholodnogo_vozduha_ED_kanal_1_value := ai.Tholodnogo_vozduha_ED_kanal_1.value;
 AI_Tholodnogo_vozduha_ED_kanal_1_HW := ai.Tholodnogo_vozduha_ED_kanal_1.HW;
-AI_Tholodnogo_vozduha_ED_kanal_1_newHW := ai.Tholodnogo_vozduha_ED_kanal_1.dHW;
+
 
 AI_Tholodnogo_vozduha_ED_kanal_2_HL := ai.Tholodnogo_vozduha_ED_kanal_2.HL;
 AI_Tholodnogo_vozduha_ED_kanal_2_LL := ai.Tholodnogo_vozduha_ED_kanal_2.LL;
 AI_Tholodnogo_vozduha_ED_kanal_2_status := DWORD_TO_UDINT(ai.Tholodnogo_vozduha_ED_kanal_2.status);
 AI_Tholodnogo_vozduha_ED_kanal_2_value := ai.Tholodnogo_vozduha_ED_kanal_2.value;
 AI_Tholodnogo_vozduha_ED_kanal_2_HW := ai.Tholodnogo_vozduha_ED_kanal_2.HW;
-AI_Tholodnogo_vozduha_ED_kanal_2_newHW := ai.Tholodnogo_vozduha_ED_kanal_2.dHW;
+
 
 AI_Tgorjachego_vozduha_ED_kanal_1_HL := ai.Tgorjachego_vozduha_ED_kanal_1.HL;
 AI_Tgorjachego_vozduha_ED_kanal_1_LL := ai.Tgorjachego_vozduha_ED_kanal_1.LL;
 AI_Tgorjachego_vozduha_ED_kanal_1_status := DWORD_TO_UDINT(ai.Tgorjachego_vozduha_ED_kanal_1.status);
 AI_Tgorjachego_vozduha_ED_kanal_1_value := ai.Tgorjachego_vozduha_ED_kanal_1.value;
 AI_Tgorjachego_vozduha_ED_kanal_1_HW := ai.Tgorjachego_vozduha_ED_kanal_1.HW;
-AI_Tgorjachego_vozduha_ED_kanal_1_newHW := ai.Tgorjachego_vozduha_ED_kanal_1.dHW;
+
 
 AI_Tgorjachego_vozduha_ED_kanal_2_HL := ai.Tgorjachego_vozduha_ED_kanal_2.HL;
 AI_Tgorjachego_vozduha_ED_kanal_2_LL := ai.Tgorjachego_vozduha_ED_kanal_2.LL;
 AI_Tgorjachego_vozduha_ED_kanal_2_status := DWORD_TO_UDINT(ai.Tgorjachego_vozduha_ED_kanal_2.status);
 AI_Tgorjachego_vozduha_ED_kanal_2_value := ai.Tgorjachego_vozduha_ED_kanal_2.value;
 AI_Tgorjachego_vozduha_ED_kanal_2_HW := ai.Tgorjachego_vozduha_ED_kanal_2.HW;
-AI_Tgorjachego_vozduha_ED_kanal_2_newHW := ai.Tgorjachego_vozduha_ED_kanal_2.dHW;
+
 
 AI_Tnarujnogo_vozduha_HL := ai.Tnarujnogo_vozduha.HL;
 AI_Tnarujnogo_vozduha_LL := ai.Tnarujnogo_vozduha.LL;
 AI_Tnarujnogo_vozduha_status := DWORD_TO_UDINT(ai.Tnarujnogo_vozduha.status);
 AI_Tnarujnogo_vozduha_value := ai.Tnarujnogo_vozduha.value;
 AI_Tnarujnogo_vozduha_HW := ai.Tnarujnogo_vozduha.HW;
-AI_Tnarujnogo_vozduha_newHW := ai.Tnarujnogo_vozduha.dHW;
+
 
 AI_Tgaza_na_vhode_H_HL := ai.Tgaza_na_vhode_H.HL;
 AI_Tgaza_na_vhode_H_LL := ai.Tgaza_na_vhode_H.LL;
 AI_Tgaza_na_vhode_H_status := DWORD_TO_UDINT(ai.Tgaza_na_vhode_H.status);
 AI_Tgaza_na_vhode_H_value := ai.Tgaza_na_vhode_H.value;
 AI_Tgaza_na_vhode_H_HW := ai.Tgaza_na_vhode_H.HW;
-AI_Tgaza_na_vhode_H_newHW := ai.Tgaza_na_vhode_H.dHW;
+
 
 AI_Tgaza_na_vyhode_H_HL := ai.Tgaza_na_vyhode_H.HL;
 AI_Tgaza_na_vyhode_H_LL := ai.Tgaza_na_vyhode_H.LL;
 AI_Tgaza_na_vyhode_H_status := DWORD_TO_UDINT(ai.Tgaza_na_vyhode_H.status);
 AI_Tgaza_na_vyhode_H_value := ai.Tgaza_na_vyhode_H.value;
 AI_Tgaza_na_vyhode_H_HW := ai.Tgaza_na_vyhode_H.HW;
-AI_Tgaza_na_vyhode_H_newHW := ai.Tgaza_na_vyhode_H.dHW;
 AI_Tgaza_na_vyhode_H_HA := ai.Tgaza_na_vyhode_H.HA;
-AI_Tgaza_na_vyhode_H_newHA := ai.Tgaza_na_vyhode_H.dHA;
+
 
 AI_Tmasla_do_AVOM_HL := ai.Tmasla_do_AVOM.HL;
 AI_Tmasla_do_AVOM_LL := ai.Tmasla_do_AVOM.LL;
 AI_Tmasla_do_AVOM_status := DWORD_TO_UDINT(ai.Tmasla_do_AVOM.status);
 AI_Tmasla_do_AVOM_value := ai.Tmasla_do_AVOM.value;
 AI_Tmasla_do_AVOM_HW := ai.Tmasla_do_AVOM.HW;
-AI_Tmasla_do_AVOM_newHW := ai.Tmasla_do_AVOM.dHW;
+
 
 AI_Tmasla_posle_AVOM_HL := ai.Tmasla_posle_AVOM.HL;
 AI_Tmasla_posle_AVOM_LL := ai.Tmasla_posle_AVOM.LL;
 AI_Tmasla_posle_AVOM_status := DWORD_TO_UDINT(ai.Tmasla_posle_AVOM.status);
 AI_Tmasla_posle_AVOM_value := ai.Tmasla_posle_AVOM.value;
 AI_Tmasla_posle_AVOM_HW := ai.Tmasla_posle_AVOM.HW;
-AI_Tmasla_posle_AVOM_newHW := ai.Tmasla_posle_AVOM.dHW;
+
 
 AI_Tmasla_MB_HL := ai.Tmasla_MB.HL;
 AI_Tmasla_MB_LL := ai.Tmasla_MB.LL;
 AI_Tmasla_MB_status := DWORD_TO_UDINT(ai.Tmasla_MB.status);
 AI_Tmasla_MB_value := ai.Tmasla_MB.value;
-AI_Tmasla_MB_LW := ai.Tmasla_MB.LW;
-AI_Tmasla_MB_newLW := ai.Tmasla_MB.dLW;
+AI_Tmasla_MB_HW := ai.Tmasla_MB.HW;
+
 
 AI_Tmasla_MB_TEN_HL := ai.Tmasla_MB_TEN.HL;
 AI_Tmasla_MB_TEN_LL := ai.Tmasla_MB_TEN.LL;
 AI_Tmasla_MB_TEN_status := DWORD_TO_UDINT(ai.Tmasla_MB_TEN.status);
 AI_Tmasla_MB_TEN_value := ai.Tmasla_MB_TEN.value;
 AI_Tmasla_MB_TEN_HW := ai.Tmasla_MB_TEN.HW;
-AI_Tmasla_MB_TEN_newHW := ai.Tmasla_MB_TEN.dHW;
+
 
 AI_Tshu_HL := ai.Tshu.HL;
 AI_Tshu_LL := ai.Tshu.LL;
 AI_Tshu_status := DWORD_TO_UDINT(ai.Tshu.status);
 AI_Tshu_value := ai.Tshu.value;
 
+
 AI_Pmaslo_sm_nizkoe_HL := ai.Pmaslo_sm_nizkoe.HL;
 AI_Pmaslo_sm_nizkoe_LL := ai.Pmaslo_sm_nizkoe.LL;
 AI_Pmaslo_sm_nizkoe_status := DWORD_TO_UDINT(ai.Pmaslo_sm_nizkoe.status);
 AI_Pmaslo_sm_nizkoe_value := ai.Pmaslo_sm_nizkoe.value;
 AI_Pmaslo_sm_nizkoe_LW := ai.Pmaslo_sm_nizkoe.LW;
-AI_Pmaslo_sm_nizkoe_newLW := ai.Pmaslo_sm_nizkoe.dLW;
 AI_Pmaslo_sm_nizkoe_LA := ai.Pmaslo_sm_nizkoe.LA;
-AI_Pmaslo_sm_nizkoe_newLA := ai.Pmaslo_sm_nizkoe.dLA;
+
 
 AI_Pmaslo_sm_vysokoe_HL := ai.Pmaslo_sm_vysokoe.HL;
 AI_Pmaslo_sm_vysokoe_LL := ai.Pmaslo_sm_vysokoe.LL;
 AI_Pmaslo_sm_vysokoe_status := DWORD_TO_UDINT(ai.Pmaslo_sm_vysokoe.status);
 AI_Pmaslo_sm_vysokoe_value := ai.Pmaslo_sm_vysokoe.value;
 AI_Pmaslo_sm_vysokoe_LW := ai.Pmaslo_sm_vysokoe.LW;
-AI_Pmaslo_sm_vysokoe_newLW := ai.Pmaslo_sm_vysokoe.dLW;
 AI_Pmaslo_sm_vysokoe_LA := ai.Pmaslo_sm_vysokoe.LA;
-AI_Pmaslo_sm_vysokoe_newLA := ai.Pmaslo_sm_vysokoe.dLA;
+
 
 AI_Pmasla_posle_GNS_HL := ai.Pmasla_posle_GNS.HL;
 AI_Pmasla_posle_GNS_LL := ai.Pmasla_posle_GNS.LL;
 AI_Pmasla_posle_GNS_status := DWORD_TO_UDINT(ai.Pmasla_posle_GNS.status);
 AI_Pmasla_posle_GNS_value := ai.Pmasla_posle_GNS.value;
 AI_Pmasla_posle_GNS_HW := ai.Pmasla_posle_GNS.HW;
-AI_Pmasla_posle_GNS_newHW := ai.Pmasla_posle_GNS.dHW;
 AI_Pmasla_posle_GNS_LW := ai.Pmasla_posle_GNS.LW;
-AI_Pmasla_posle_GNS_newLW := ai.Pmasla_posle_GNS.dLW;
+
 
 AI_Pmasla_posle_NU_HL := ai.Pmasla_posle_NU.HL;
 AI_Pmasla_posle_NU_LL := ai.Pmasla_posle_NU.LL;
 AI_Pmasla_posle_NU_status := DWORD_TO_UDINT(ai.Pmasla_posle_NU.status);
 AI_Pmasla_posle_NU_value := ai.Pmasla_posle_NU.value;
 AI_Pmasla_posle_NU_LW := ai.Pmasla_posle_NU.LW;
-AI_Pmasla_posle_NU_newLW := ai.Pmasla_posle_NU.dLW;
+
 
 AI_Pgaza_na_vhode_nagnetatelia_HL := ai.Pgaza_na_vhode_nagnetatelia.HL;
 AI_Pgaza_na_vhode_nagnetatelia_LL := ai.Pgaza_na_vhode_nagnetatelia.LL;
 AI_Pgaza_na_vhode_nagnetatelia_status := DWORD_TO_UDINT(ai.Pgaza_na_vhode_nagnetatelia.status);
 AI_Pgaza_na_vhode_nagnetatelia_value := ai.Pgaza_na_vhode_nagnetatelia.value;
 AI_Pgaza_na_vhode_nagnetatelia_LW := ai.Pgaza_na_vhode_nagnetatelia.LW;
-AI_Pgaza_na_vhode_nagnetatelia_newLW := ai.Pgaza_na_vhode_nagnetatelia.dLW;
+
 
 AI_Pgaza_na_vyhode_nagnetatelia_HL := ai.Pgaza_na_vyhode_nagnetatelia.HL;
 AI_Pgaza_na_vyhode_nagnetatelia_LL := ai.Pgaza_na_vyhode_nagnetatelia.LL;
 AI_Pgaza_na_vyhode_nagnetatelia_status := DWORD_TO_UDINT(ai.Pgaza_na_vyhode_nagnetatelia.status);
 AI_Pgaza_na_vyhode_nagnetatelia_value := ai.Pgaza_na_vyhode_nagnetatelia.value;
-AI_Pgaza_na_vyhode_nagnetatelia_HW := ai.Pgaza_na_vyhode_nagnetatelia.HW;
-AI_Pgaza_na_vyhode_nagnetatelia_newHW := ai.Pgaza_na_vyhode_nagnetatelia.dHW;
+AI_Pgaza_na_vyhode_nagnetatelia_LW := ai.Pgaza_na_vyhode_nagnetatelia.LW;
 AI_Pgaza_na_vyhode_nagnetatelia_HA := ai.Pgaza_na_vyhode_nagnetatelia.HA;
-AI_Pgaza_na_vyhode_nagnetatelia_newHA := ai.Pgaza_na_vyhode_nagnetatelia.dHA;
+
 
 AI_Pimpuls_gaz_HL := ai.Pimpuls_gaz.HL;
 AI_Pimpuls_gaz_LL := ai.Pimpuls_gaz.LL;
 AI_Pimpuls_gaz_status := DWORD_TO_UDINT(ai.Pimpuls_gaz.status);
 AI_Pimpuls_gaz_value := ai.Pimpuls_gaz.value;
 AI_Pimpuls_gaz_LW := ai.Pimpuls_gaz.LW;
-AI_Pimpuls_gaz_newLW := ai.Pimpuls_gaz.dLW;
+
 
 AI_dPgaza_na_maslo_filtre_HL := ai.dPgaza_na_maslo_filtre.HL;
 AI_dPgaza_na_maslo_filtre_LL := ai.dPgaza_na_maslo_filtre.LL;
 AI_dPgaza_na_maslo_filtre_status := DWORD_TO_UDINT(ai.dPgaza_na_maslo_filtre.status);
 AI_dPgaza_na_maslo_filtre_value := ai.dPgaza_na_maslo_filtre.value;
 AI_dPgaza_na_maslo_filtre_HW := ai.dPgaza_na_maslo_filtre.HW;
-AI_dPgaza_na_maslo_filtre_newHW := ai.dPgaza_na_maslo_filtre.dHW;
+
 
 AI_dPgaza_na_konfuzore_HL := ai.dPgaza_na_konfuzore.HL;
 AI_dPgaza_na_konfuzore_LL := ai.dPgaza_na_konfuzore.LL;
 AI_dPgaza_na_konfuzore_status := DWORD_TO_UDINT(ai.dPgaza_na_konfuzore.status);
 AI_dPgaza_na_konfuzore_value := ai.dPgaza_na_konfuzore.value;
 AI_dPgaza_na_konfuzore_LW := ai.dPgaza_na_konfuzore.LW;
-AI_dPgaza_na_konfuzore_newLW := ai.dPgaza_na_konfuzore.dLW;
+
 
 AI_dPmaslo_gaz_HL := ai.dPmaslo_gaz.HL;
 AI_dPmaslo_gaz_LL := ai.dPmaslo_gaz.LL;
 AI_dPmaslo_gaz_status := DWORD_TO_UDINT(ai.dPmaslo_gaz.status);
 AI_dPmaslo_gaz_value := ai.dPmaslo_gaz.value;
 AI_dPmaslo_gaz_LW := ai.dPmaslo_gaz.LW;
-AI_dPmaslo_gaz_newLW := ai.dPmaslo_gaz.dLW;
 AI_dPmaslo_gaz_LA := ai.dPmaslo_gaz.LA;
-AI_dPmaslo_gaz_newLA := ai.dPmaslo_gaz.dLA;
+
 
 AI_Os_sdvig_nagnetatelja_plus_HL := ai.Os_sdvig_nagnetatelja_plus.HL;
 AI_Os_sdvig_nagnetatelja_plus_LL := ai.Os_sdvig_nagnetatelja_plus.LL;
 AI_Os_sdvig_nagnetatelja_plus_status := DWORD_TO_UDINT(ai.Os_sdvig_nagnetatelja_plus.status);
 AI_Os_sdvig_nagnetatelja_plus_value := ai.Os_sdvig_nagnetatelja_plus.value;
 AI_Os_sdvig_nagnetatelja_plus_HW := ai.Os_sdvig_nagnetatelja_plus.HW;
-AI_Os_sdvig_nagnetatelja_plus_newHW := ai.Os_sdvig_nagnetatelja_plus.dHW;
 AI_Os_sdvig_nagnetatelja_plus_HA := ai.Os_sdvig_nagnetatelja_plus.HA;
-AI_Os_sdvig_nagnetatelja_plus_newHA := ai.Os_sdvig_nagnetatelja_plus.dHA;
+
 
 AI_Os_sdvig_nagnetatelja_minus_HL := ai.Os_sdvig_nagnetatelja_minus.HL;
 AI_Os_sdvig_nagnetatelja_minus_LL := ai.Os_sdvig_nagnetatelja_minus.LL;
 AI_Os_sdvig_nagnetatelja_minus_status := DWORD_TO_UDINT(ai.Os_sdvig_nagnetatelja_minus.status);
 AI_Os_sdvig_nagnetatelja_minus_value := ai.Os_sdvig_nagnetatelja_minus.value;
 AI_Os_sdvig_nagnetatelja_minus_LW := ai.Os_sdvig_nagnetatelja_minus.LW;
-AI_Os_sdvig_nagnetatelja_minus_newLW := ai.Os_sdvig_nagnetatelja_minus.dLW;
 AI_Os_sdvig_nagnetatelja_minus_LA := ai.Os_sdvig_nagnetatelja_minus.LA;
-AI_Os_sdvig_nagnetatelja_minus_newLA := ai.Os_sdvig_nagnetatelja_minus.dLA;
+
 
 AI_Yroven_masla_MB_HL := ai.Yroven_masla_MB.HL;
 AI_Yroven_masla_MB_LL := ai.Yroven_masla_MB.LL;
 AI_Yroven_masla_MB_status := DWORD_TO_UDINT(ai.Yroven_masla_MB.status);
 AI_Yroven_masla_MB_value := ai.Yroven_masla_MB.value;
 AI_Yroven_masla_MB_LW := ai.Yroven_masla_MB.LW;
-AI_Yroven_masla_MB_newLW := ai.Yroven_masla_MB.dLW;
+
 
 AI_Kontrol_per_220V_HL := ai.Kontrol_per_220V.HL;
 AI_Kontrol_per_220V_LL := ai.Kontrol_per_220V.LL;
 AI_Kontrol_per_220V_status := DWORD_TO_UDINT(ai.Kontrol_per_220V.status);
 AI_Kontrol_per_220V_value := ai.Kontrol_per_220V.value;
 AI_Kontrol_per_220V_HW := ai.Kontrol_per_220V.HW;
-AI_Kontrol_per_220V_newHW := ai.Kontrol_per_220V.dHW;
 AI_Kontrol_per_220V_LW := ai.Kontrol_per_220V.LW;
-AI_Kontrol_per_220V_newLW := ai.Kontrol_per_220V.dLW;
+
 
 AI_Kontrol_post_220V_HL := ai.Kontrol_post_220V.HL;
 AI_Kontrol_post_220V_LL := ai.Kontrol_post_220V.LL;
 AI_Kontrol_post_220V_status := DWORD_TO_UDINT(ai.Kontrol_post_220V.status);
 AI_Kontrol_post_220V_value := ai.Kontrol_post_220V.value;
 AI_Kontrol_post_220V_HW := ai.Kontrol_post_220V.HW;
-AI_Kontrol_post_220V_newHW := ai.Kontrol_post_220V.dHW;
 AI_Kontrol_post_220V_LW := ai.Kontrol_post_220V.LW;
-AI_Kontrol_post_220V_newLW := ai.Kontrol_post_220V.dLW;
+
 
 AI_Tok_statora_HL := ai.Tok_statora.HL;
 AI_Tok_statora_LL := ai.Tok_statora.LL;
 AI_Tok_statora_status := DWORD_TO_UDINT(ai.Tok_statora.status);
 AI_Tok_statora_value := ai.Tok_statora.value;
 AI_Tok_statora_LW := ai.Tok_statora.LW;
-AI_Tok_statora_newLW := ai.Tok_statora.dLW;
+
 
 AI_Vibro_skorost_OPED_T1_HL := ai.Vibro_skorost_OPED_T1.HL;
 AI_Vibro_skorost_OPED_T1_LL := ai.Vibro_skorost_OPED_T1.LL;
 AI_Vibro_skorost_OPED_T1_status := DWORD_TO_UDINT(ai.Vibro_skorost_OPED_T1.status);
 AI_Vibro_skorost_OPED_T1_value := ai.Vibro_skorost_OPED_T1.value;
 AI_Vibro_skorost_OPED_T1_HW := ai.Vibro_skorost_OPED_T1.HW;
-AI_Vibro_skorost_OPED_T1_newHW := ai.Vibro_skorost_OPED_T1.dHW;
 AI_Vibro_skorost_OPED_T1_HA := ai.Vibro_skorost_OPED_T1.HA;
-AI_Vibro_skorost_OPED_T1_newHA := ai.Vibro_skorost_OPED_T1.dHA;
+
 
 AI_Vibro_skorost_OYPED_T2_HL := ai.Vibro_skorost_OYPED_T2.HL;
 AI_Vibro_skorost_OYPED_T2_LL := ai.Vibro_skorost_OYPED_T2.LL;
 AI_Vibro_skorost_OYPED_T2_status := DWORD_TO_UDINT(ai.Vibro_skorost_OYPED_T2.status);
 AI_Vibro_skorost_OYPED_T2_value := ai.Vibro_skorost_OYPED_T2.value;
 AI_Vibro_skorost_OYPED_T2_HW := ai.Vibro_skorost_OYPED_T2.HW;
-AI_Vibro_skorost_OYPED_T2_newHW := ai.Vibro_skorost_OYPED_T2.dHW;
 AI_Vibro_skorost_OYPED_T2_HA := ai.Vibro_skorost_OYPED_T2.HA;
-AI_Vibro_skorost_OYPED_T2_newHA := ai.Vibro_skorost_OYPED_T2.dHA;
+
 
 AI_Vibro_skorost_OYP_kolesa_ED_T3_HL := ai.Vibro_skorost_OYP_kolesa_ED_T3.HL;
 AI_Vibro_skorost_OYP_kolesa_ED_T3_LL := ai.Vibro_skorost_OYP_kolesa_ED_T3.LL;
 AI_Vibro_skorost_OYP_kolesa_ED_T3_status := DWORD_TO_UDINT(ai.Vibro_skorost_OYP_kolesa_ED_T3.status);
 AI_Vibro_skorost_OYP_kolesa_ED_T3_value := ai.Vibro_skorost_OYP_kolesa_ED_T3.value;
 AI_Vibro_skorost_OYP_kolesa_ED_T3_HW := ai.Vibro_skorost_OYP_kolesa_ED_T3.HW;
-AI_Vibro_skorost_OYP_kolesa_ED_T3_newHW := ai.Vibro_skorost_OYP_kolesa_ED_T3.dHW;
 AI_Vibro_skorost_OYP_kolesa_ED_T3_HA := ai.Vibro_skorost_OYP_kolesa_ED_T3.HA;
-AI_Vibro_skorost_OYP_kolesa_ED_T3_newHA := ai.Vibro_skorost_OYP_kolesa_ED_T3.dHA;
+
 
 AI_Vibro_skorost_OP_kolesa_RH_T4_HL := ai.Vibro_skorost_OP_kolesa_RH_T4.HL;
 AI_Vibro_skorost_OP_kolesa_RH_T4_LL := ai.Vibro_skorost_OP_kolesa_RH_T4.LL;
 AI_Vibro_skorost_OP_kolesa_RH_T4_status := DWORD_TO_UDINT(ai.Vibro_skorost_OP_kolesa_RH_T4.status);
 AI_Vibro_skorost_OP_kolesa_RH_T4_value := ai.Vibro_skorost_OP_kolesa_RH_T4.value;
 AI_Vibro_skorost_OP_kolesa_RH_T4_HW := ai.Vibro_skorost_OP_kolesa_RH_T4.HW;
-AI_Vibro_skorost_OP_kolesa_RH_T4_newHW := ai.Vibro_skorost_OP_kolesa_RH_T4.dHW;
 AI_Vibro_skorost_OP_kolesa_RH_T4_HA := ai.Vibro_skorost_OP_kolesa_RH_T4.HA;
-AI_Vibro_skorost_OP_kolesa_RH_T4_newHA := ai.Vibro_skorost_OP_kolesa_RH_T4.dHA;
+
 
 AI_Vibro_skorost_OP_shesterni_RED_T5_HL := ai.Vibro_skorost_OP_shesterni_RED_T5.HL;
 AI_Vibro_skorost_OP_shesterni_RED_T5_LL := ai.Vibro_skorost_OP_shesterni_RED_T5.LL;
 AI_Vibro_skorost_OP_shesterni_RED_T5_status := DWORD_TO_UDINT(ai.Vibro_skorost_OP_shesterni_RED_T5.status);
 AI_Vibro_skorost_OP_shesterni_RED_T5_value := ai.Vibro_skorost_OP_shesterni_RED_T5.value;
 AI_Vibro_skorost_OP_shesterni_RED_T5_HW := ai.Vibro_skorost_OP_shesterni_RED_T5.HW;
-AI_Vibro_skorost_OP_shesterni_RED_T5_newHW := ai.Vibro_skorost_OP_shesterni_RED_T5.dHW;
 AI_Vibro_skorost_OP_shesterni_RED_T5_HA := ai.Vibro_skorost_OP_shesterni_RED_T5.HA;
-AI_Vibro_skorost_OP_shesterni_RED_T5_newHA := ai.Vibro_skorost_OP_shesterni_RED_T5.dHA;
+
 
 AI_Vibro_skorost_OP_shesterni_RED_T6_HL := ai.Vibro_skorost_OP_shesterni_RED_T6.HL;
 AI_Vibro_skorost_OP_shesterni_RED_T6_LL := ai.Vibro_skorost_OP_shesterni_RED_T6.LL;
 AI_Vibro_skorost_OP_shesterni_RED_T6_status := DWORD_TO_UDINT(ai.Vibro_skorost_OP_shesterni_RED_T6.status);
 AI_Vibro_skorost_OP_shesterni_RED_T6_value := ai.Vibro_skorost_OP_shesterni_RED_T6.value;
 AI_Vibro_skorost_OP_shesterni_RED_T6_HW := ai.Vibro_skorost_OP_shesterni_RED_T6.HW;
-AI_Vibro_skorost_OP_shesterni_RED_T6_newHW := ai.Vibro_skorost_OP_shesterni_RED_T6.dHW;
 AI_Vibro_skorost_OP_shesterni_RED_T6_HA := ai.Vibro_skorost_OP_shesterni_RED_T6.HA;
-AI_Vibro_skorost_OP_shesterni_RED_T6_newHA := ai.Vibro_skorost_OP_shesterni_RED_T6.dHA;
-

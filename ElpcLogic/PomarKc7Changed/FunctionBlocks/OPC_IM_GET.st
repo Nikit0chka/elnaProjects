@@ -42,8 +42,6 @@ VAR_EXTERNAL
 	IM_TEN_MB_inCommand_ARM : UINT;
 END_VAR
 
-
-
 IM.Kran1.inCommand_ARM := UINT_TO_WORD(IM_Kran1_inCommand_ARM);
 
 IM.Kran2.inCommand_ARM := UINT_TO_WORD(IM_Kran2_inCommand_ARM);

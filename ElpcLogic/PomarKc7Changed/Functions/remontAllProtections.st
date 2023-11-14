@@ -5,24 +5,8 @@ VAR_IN_OUT
 END_VAR
 
 VAR CONSTANT
-	cmdRemont : WORD         := 4;
+	cmdRemont : WORD          := 4;
 END_VAR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 protections.Topornogo_podshipnika_EDT_1.inCommand_Alg:=cmdRemont;
 protections.Toy_podshipnika_EDT_2.inCommand_Alg:=cmdRemont; 

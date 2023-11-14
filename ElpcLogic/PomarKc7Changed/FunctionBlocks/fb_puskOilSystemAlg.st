@@ -55,23 +55,6 @@ VAR_EXTERNAL
 	AlgTimers : struct_AlgTimers;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT onInit THEN
                fb_pnsOn(phaseNumber:=0, act:=_on);
               fb_LowOil(phaseNumber:=1);

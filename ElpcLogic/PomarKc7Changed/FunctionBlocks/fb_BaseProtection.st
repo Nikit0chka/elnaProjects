@@ -42,22 +42,6 @@ VAR
 	runOnStart_Trig : R_TRIG;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Tag := inTag;
 RunOnStart := inRunOnStart;
 

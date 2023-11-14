@@ -36,23 +36,6 @@ VAR_EXTERNAL
 	AlgTimers : struct_AlgTimers;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT onInit THEN
 StrAlg.inOpcCommandsDisabled:=TRUE;
 StrAlg.inCanRun:=TRUE;

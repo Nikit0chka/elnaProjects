@@ -18,22 +18,6 @@ VAR
 	rABS : LREAL;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT secondTact THEN
 	StrAP.Value := StrAP.currentValue;
 	secondTact := true;

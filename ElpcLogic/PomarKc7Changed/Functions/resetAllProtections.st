@@ -4,22 +4,6 @@ VAR_IN_OUT
 	protections : ProtectionsConfig;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 resetAiProtection(protections.Topornogo_podshipnika_EDT_1);
 resetAiProtection(protections.Toy_podshipnika_EDT_2);
 resetAiProtection(protections.Toy_podshipnika_kol_EDT_3);

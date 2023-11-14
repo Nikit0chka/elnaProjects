@@ -5,7 +5,7 @@ VAR_IN_OUT
 END_VAR
 
 VAR_INPUT
-	expectedValue : BOOL         := TRUE;
+	expectedValue : BOOL          := TRUE;
 	PhaseNumber : UINT;
 END_VAR
 
@@ -16,24 +16,6 @@ END_VAR
 VAR
 	reset_Trig : R_TRIG;
 END_VAR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 IF StrPh.run AND NOT StrPh.start THEN
 	StrPh.start := TRUE;

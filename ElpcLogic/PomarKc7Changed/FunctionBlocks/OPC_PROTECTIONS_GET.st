@@ -74,8 +74,6 @@ VAR_EXTERNAL
 	protections_Kran2_sdvig_status : UDINT;
 END_VAR
 
-
-
 protections.Topornogo_podshipnika_EDT_1.inCommand_ARM := UINT_TO_WORD(protections_Topornogo_podshipnika_EDT_1_inCommand_ARM);
 
 protections.Toy_podshipnika_EDT_2.inCommand_ARM := UINT_TO_WORD(protections_Toy_podshipnika_EDT_2_inCommand_ARM);

@@ -2,7 +2,7 @@ FUNCTION_BLOCK fb_DI_Init
 
 VAR_INPUT
 	data_Ini : BOOL; (*Флаг необходимости инициализации параметров.*)
-	imit : BOOL         := FALSE;
+	imit : BOOL          := FALSE;
 END_VAR
 
 VAR_IN_OUT
@@ -10,24 +10,8 @@ VAR_IN_OUT
 END_VAR
 
 VAR_OUTPUT
-	Init : BOOL         := FALSE; (*Флаг успешно выполненной инициализации.*)
+	Init : BOOL          := FALSE; (*Флаг успешно выполненной инициализации.*)
 END_VAR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 (*****            Функциональный блок переинициализации структуры-дескриптора канала дискретного ввода        *****)
 

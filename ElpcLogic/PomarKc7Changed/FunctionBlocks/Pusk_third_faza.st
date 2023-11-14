@@ -57,22 +57,6 @@ VAR
 	statusAi : TYPE_StatusAi;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT onInit THEN         
          fb_timer480(phaseNumber:=1, delay:=T#480S);
          fb_kran4Open(phaseNumber:=2, act:=_on);

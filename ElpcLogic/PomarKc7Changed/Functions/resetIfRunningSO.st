@@ -5,25 +5,8 @@ VAR_IN_OUT
 END_VAR
 
 VAR CONSTANT
-	cmdReset : WORD         := 2;
+	cmdReset : WORD          := 2;
 END_VAR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 IF so.Q THEN
                     so.inOpcCommandsDisabled:=TRUE;

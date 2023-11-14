@@ -74,8 +74,6 @@ VAR_EXTERNAL
 	protections_Kran2_sdvig_status : UDINT;
 END_VAR
 
-
-
     protections_Topornogo_podshipnika_EDT_1_status := DWORD_TO_UDINT(protections.Topornogo_podshipnika_EDT_1.status);
 
     protections_Toy_podshipnika_EDT_2_status := DWORD_TO_UDINT(protections.Toy_podshipnika_EDT_2.status);
@@ -145,4 +143,3 @@ END_VAR
     protections_Kran1_sdvig_status := DWORD_TO_UDINT(protections.Kran1_sdvig.status);
 
     protections_Kran2_sdvig_status := DWORD_TO_UDINT(protections.Kran2_sdvig.status);
-

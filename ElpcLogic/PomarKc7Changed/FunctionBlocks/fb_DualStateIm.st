@@ -32,7 +32,7 @@ VAR
 	_statusDualInput : TYPE_statusDualInput;
 	_commandDualInput : TYPE_commandDualInput;
 	_commandErrorTimer : BOOL;
-	onInit : BOOL         := FALSE;
+	onInit : BOOL          := FALSE;
 	resetErrorTimer : BOOL;
 	_changWithoutCommand : BOOL;
 	errorCMDTimer : TON;
@@ -47,22 +47,6 @@ END_VAR
 VAR_OUTPUT
 	cmdOff : BOOL;
 END_VAR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 IF NOT onInit THEN
 IF StrDs.ISVALIDREF_cmdOn XOR StrDs.ISVALIDREF_cmdOff THEN

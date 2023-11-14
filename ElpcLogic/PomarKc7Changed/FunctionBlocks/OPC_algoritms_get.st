@@ -34,8 +34,6 @@ VAR_EXTERNAL
 	algoritms : AlgoritmsConfig;
 END_VAR
 
-
-
 algoritms.autoNu.inCommand_ARM := UINT_TO_WORD(algoritms_autoNu);
 
 algoritms.AutoPns.inCommand_ARM := UINT_TO_WORD(algoritms_AutoPns);

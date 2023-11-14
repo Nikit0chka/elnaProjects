@@ -41,23 +41,6 @@ VAR_EXTERNAL
 	Reset_HasNU : BOOL;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT onInit THEN
 StrAlg.inCanRun:=TRUE;
 StrAlg.inOpcCommandsDisabled:=TRUE;

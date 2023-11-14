@@ -18,22 +18,6 @@ VAR
 	secondTact : BOOL;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT secondTact THEN
 	StrDP.Value := StrDP.currentValue;
 	secondTact := true;

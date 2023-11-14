@@ -111,22 +111,6 @@ VAR
 	fb_Neispr_EGPA : fb_singleOutput;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (* Циклический опрос. ИМ *)
 
 (* GPIO *)

@@ -33,23 +33,6 @@ VAR_EXTERNAL
 	IM : ImConfig;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT onInit THEN
 
          fb_runOilsystem(phaseNumber:=0, act:=_run, waitCompletion:=TRUE);

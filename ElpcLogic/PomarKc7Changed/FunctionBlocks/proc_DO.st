@@ -35,25 +35,7 @@ VAR_EXTERNAL
 	DO_4_wValue : UINT;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (* Циклический опрос. Входные дискретные параметры *)
-
-
 
 (* Модуль A1-1 *)
 do_0(arDout := arDOUT_0, strDO := od.do_0, err_mod:=arERR_0);

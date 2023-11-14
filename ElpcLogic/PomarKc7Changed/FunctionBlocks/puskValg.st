@@ -78,8 +78,10 @@ VAR_EXTERNAL
 END_VAR
 
 VAR CONSTANT
-	Ust_Pgaza : LREAL         := 0.3;
+	Ust_Pgaza : LREAL          := 0.3;
 END_VAR
+
+
 
 
 

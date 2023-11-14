@@ -17,23 +17,6 @@ VAR
 	_statusAi : TYPE_StatusAi;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF (Q_actual.interval < _statusAi.normal) THEN
 	StrAi.interval := _statusAi.NOTRELIABLE;
           strAI.status := 	SHL(BOOL_TO_DWORD(strAI.OpcCommandsDisabled ), 21)

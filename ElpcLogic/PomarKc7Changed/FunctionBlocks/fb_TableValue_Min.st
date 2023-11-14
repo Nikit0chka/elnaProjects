@@ -9,7 +9,7 @@ VAR
 END_VAR
 
 VAR_INPUT
-	inverse : BOOL         := FALSE;
+	inverse : BOOL          := FALSE;
 END_VAR
 
 VAR_IN_OUT
@@ -17,35 +17,19 @@ VAR_IN_OUT
 END_VAR
 
 VAR
-	indexLess : INT         := -1;
-	indexMore : INT         := -1;
+	indexLess : INT          := -1;
+	indexMore : INT          := -1;
 	Vali : REAL;
 	i : INT;
 	moreDistance : REAL;
 	lessDistance : REAL;
 	onInit : BOOL;
-	_prevParam : REAL         := 50.0;
+	_prevParam : REAL          := 50.0;
 END_VAR
 
 VAR CONSTANT
-	maxTableLength : INT         := 9;
+	maxTableLength : INT          := 9;
 END_VAR
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 IF NOT onInit THEN
 _table[0].x:=-35.0;  _table[0].y:=130.0;

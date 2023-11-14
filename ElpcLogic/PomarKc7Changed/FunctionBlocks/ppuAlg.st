@@ -101,22 +101,6 @@ VAR_EXTERNAL
 	algoritms : AlgoritmsConfig;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT onInit THEN
 
     fb_BMP_Err(phaseNumber:=0);
@@ -256,10 +240,10 @@ IF StrAlg.isRuning THEN
     Gotov_Vozb.top:= IM.SingleSignals.Vozbud_gotovnost.Q;
 
     (* реакторный пуск *)
-    (*Reactornyi_P.top := IM.SingleSignals.Reaktornii_pusk_perek.Q AND NOT IM.SingleSignals.Chastotny_pusk.Q;*)
+    Reactornyi_P.top := IM.SingleSignals.Reactorny_pusk.Q AND NOT IM.SingleSignals.Chastotny_pusk.Q;
     
     (* частотный пуск *)
-   (* Chastotnyi_P.top:=IM.SingleSignals.Chastotny_pusk.Q AND NOT IM.SingleSignals.Reaktornii_pusk_perek.Q;*)
+    Chastotnyi_P.top:=IM.SingleSignals.Chastotny_pusk.Q AND NOT IM.SingleSignals.Reactorny_pusk.Q;
                                                                 
     (* нет перепада давления на кране 1 *)                                                                                                
     dP_kr1.top:= NOT IM.SingleSignals.dp_kran1_Less100.Q (*AND (IM.PerepadDavlenieKran1_CK.status = 1))*);

@@ -4,23 +4,6 @@ VAR_IN_OUT
 	IM : ImConfig;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 (*IF IM.TypeSwitch.Value = 1 THEN*)
 
 IF IM.Kran1.inOpcCommandsDisabled   THEN IM.Kran1.inOpcCommandsDisabled:=FALSE; END_IF;

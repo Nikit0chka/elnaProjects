@@ -29,22 +29,6 @@ VAR
 	runOnStart_Trig : R_TRIG;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 timer(IN := (im.onStatus<>statusDualInput.STATUS_ON) AND StrDIp.isRunning  , PT := StrDIp.delay);
 SignalingTrig(CLK := timer.Q);
 IF SignalingTrig.Q THEN

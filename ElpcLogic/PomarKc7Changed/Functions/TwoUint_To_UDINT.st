@@ -5,21 +5,4 @@ VAR_INPUT
 	val2 : UINT;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 TwoUint_To_UDINT:= DWORD_TO_UDINT(UINT_TO_DWORD(val1) OR shl(UINT_TO_DWORD(val2), 16));

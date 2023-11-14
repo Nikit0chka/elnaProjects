@@ -56,22 +56,6 @@ VAR RETAIN
 	retainHW : LREAL; (*Текущее значение ВП*)
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 strAI.opcCommandsDisabled := strAI.inopcCommandsDisabled ;
 
 (* ---- При первом пуске принимаем значение уставок ---- *)

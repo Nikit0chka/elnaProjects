@@ -4,22 +4,6 @@ VAR_IN_OUT
 	IM : ImConfig;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 IF NOT IM.Kran1.inOpcCommandsDisabled   THEN IM.Kran1.inOpcCommandsDisabled:=TRUE; END_IF;
 IF NOT IM.Kran2.inOpcCommandsDisabled   THEN IM.Kran2.inOpcCommandsDisabled:=TRUE; END_IF;
 IF NOT IM.Kran3b.inOpcCommandsDisabled  THEN IM.Kran3b.inOpcCommandsDisabled:=TRUE; END_IF;

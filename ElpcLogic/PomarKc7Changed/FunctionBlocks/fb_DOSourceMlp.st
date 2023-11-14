@@ -16,23 +16,6 @@ VAR
 	bitNumber : INT;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 strDO.blConnect := ((UINT_TO_WORD(err_mod.wValue) = 20) and (UINT_TO_WORD(err_mod.wFlags) = 192));
 
 strDO.value:=0;

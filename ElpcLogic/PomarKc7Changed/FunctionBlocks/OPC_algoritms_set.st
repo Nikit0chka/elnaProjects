@@ -120,13 +120,6 @@ VAR_EXTERNAL
 	algoritms_testdPmg_status : UDINT;
 END_VAR
 
-
-
-
-
-
-
-
 (* OPC Set - algoritms. Запись текущих состояний тэгов _______________________________________________________*)
 
 algManager_Mode := algManager.mode;

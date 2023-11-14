@@ -107,8 +107,6 @@ VAR_EXTERNAL
 	IM_SingleSignals_Potok_ms_posle_AVOM_status : UDINT;
 END_VAR
 
-
-
 IM_SingleSignals_dP_maslo_gaz_Less100_status := DWORD_TO_UDINT(Im.SingleSignals.dP_maslo_gaz_Less100.status);
 
 IM_SingleSignals_dp_kran1_Less100_status := DWORD_TO_UDINT(Im.SingleSignals.dp_kran1_Less100.status);

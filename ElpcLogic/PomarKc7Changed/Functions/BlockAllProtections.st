@@ -4,22 +4,6 @@ VAR_IN_OUT
 	protections : ProtectionsConfig;
 END_VAR
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 protections.Topornogo_podshipnika_EDT_1.inOpcCommandsDisabled:=TRUE;
 protections.Toy_podshipnika_EDT_2.inOpcCommandsDisabled:=TRUE;
 protections.Toy_podshipnika_kol_EDT_3.inOpcCommandsDisabled:=TRUE;
